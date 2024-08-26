@@ -1,0 +1,10 @@
+---
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 1
+  image-height: 573px
+
+page-layout: full
+---

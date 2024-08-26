@@ -1,0 +1,113 @@
+---
+title: "Gergely Daróczi’s Journey: Empowering R Users in Hungary"
+description: "Gergely Daróczi, the founder and organizer of the Budapest Users of R Network, updated the R Consortium about the group’s recent activities."
+author: "R Consortium"
+image: "Untitled.jpg"
+date: "05/16/2024"
+format:
+  html:
+    css: 
+      - https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+---
+
+Gergely Daróczi, the founder and organizer of the [Budapest Users of R Network](https://www.meetup.com/budapest-users-of-r-network/), updated the R Consortium about the group’s recent activities. Last year, Gergely discussed the [group’s inception](https://www.r-consortium.org/blog/2023/01/11/how-a-user-2014-experience-led-to-development-of-r-community-in-budapest), and the challenges faced by the group during the pandemic. The group has now resumed in-person meetings, followed by networking sessions. The recent events organized by the group have focused on bioinformatics, large language models, and mathematical modeling. 
+
+
+
+
+
+<div class="container">
+  <div class="row align-items-center">
+  <div class="col-md-4">
+  <img src="Untitled.jpg" class="img-fluid" alt="Gergely Daróczi">
+  </div>
+  <div class="col-md-8">
+  <p>
+  <a href="https://www.linkedin.com/in/daroczig">Gergely Daróczi</a> is an enthusiast R user and package developer, Ph.D. in Sociology; former assistant professor and founder of an R-based web reporting application at rapporter.net; ex Lead R Developer, then Director of Analytics at CARD.com; later Senior Director of Data Operations at System1; currently balancing the CTO role of Rx Studio, part-time lecturer at CEU along with a few open source side projects. He has contributed to a number of scientific journal articles (mainly in social sciences but in medical sciences as well), maintains a dozen CRAN packages, and wrote a book on “[Mastering Data Analysis with R](https://www.amazon.com/Mastering-Data-Analysis-Gergely-Dar%C3%B3czi-ebook/dp/B00YSILUQS)“.
+  </p>
+  </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 40px;"></div>
+**Please share about your background and involvement with the RUGS group.**
+
+
+
+
+
+![](Untitled%20(1).jpg)
+
+
+I have a background in social sciences, and it was during one of my university classes 20 years ago that I was introduced to the R language. We had to use R to run simulations related to the chaotic behavior of the Hungarian potato market. I found R more enjoyable and versatile than other GUI tools like IBM’s SPSS and started using it for other projects as well. Later, I even developed some additional packages for R.
+
+I have been working with R for almost 20 years now. Despite my academic background in social sciences, I have worked in various industries, such as ad tech, fintech, and health tech, for the past 10 years.
+
+In 2013, I attended my first [useR! conference](https://www.r-project.org/conferences/useR-2013/) in Albacete, Spain, and it was a great experience to meet fellow R users from around the world. At the conference, I met [Szilard Pafka](https://www.r-consortium.org/blog/2021/09/15/la-r-expands-beyond-california), a Hungarian living in LA and organizer of the [Los Angeles R User group](https://www.meetup.com/real-data-science-usa-r-meetup/). He suggested that I start an R User group in Hungary. After returning home, I decided to give it a shot, and we held our first meeting at the end of the summer of 2013. In a university room, it felt like there were only a dozen R users from academia. However, a lot has changed since then, as we now have almost 2,000 members in the local R User group, which exceeded my original expectations for such a small country like Hungary. It has been an interesting and great experience. 
+
+
+
+
+
+![](Untitled%20(2).jpg)
+
+
+In Hungary, the community’s growth began slowly, with only 20 to 30 members in the first few years. However, it gradually increased over time. The community also hosted some famous personalities such as [Romain Francois](https://www.linkedin.com/in/romain-francois/), Matt Dowle, and [Hadley Wickham](https://www.rstudio.com/authors/hadley-wickham/), which further accelerated its growth. Additionally, the community organized the [first satRday](https://budapest.satrdays.org/) and [second ERUM conference](https://2018.erum.io/), which provided a platform for networking and knowledge sharing, further strengthening the community.
+
+
+
+
+
+![](Untitled%20(3).jpg)
+
+
+**How has the group been doing since our last conversation?**
+
+After COVID, restarting the meetups was very challenging. We didn’t organize any virtual events because the main benefit of meetups was meeting in person, having face-to-face conversations, and getting to know each other. Therefore, we waited until the quarantine was over and it was safe to meet in person. We started slowly, organizing only two events per year with around 30 to 70 attendees, which was much lower than before COVID-19. However, it has been great to reconnect with old friends and make new ones.
+
+
+
+
+
+![](Untitled%20(4).jpg)
+
+
+Recently, we have been focusing on bioinformatics and I was introduced to a local company that offered help with reaching out to speakers. Speakers drive these community meetings by bringing in a topic for discussion and talk, which we continue to discuss later on. Our past few events have focused on life sciences and have followed a lightning talk format, where we had around five 15-minute talks at each event. The topics were diverse, covering life sciences, some with LLMs involved, others focused on highly advanced math for modeling. We also had shiny applications that showed the biodiversity of forests in Hungary and some open-source tools besides R. 
+
+**Any techniques you recommend using for planning for or during the event? **
+
+I can only offer subjective experiences on the matter, but I have witnessed the success of both virtual and in-person communities. However, our focus is on providing an exceptional in-person experience. To achieve this, we search for a central venue that is easily accessible for most of our members. This can be challenging, even in Hungary, a small country, as it can be difficult for members from other cities to travel to the capital for meetups. Nevertheless, we do our best to find a central venue, such as a university or an industry partner who can offer a space for talks and a networking opportunity afterward. 
+
+
+
+
+
+![](Untitled%20(5).jpg)
+
+
+It is important to have a room with plenty of chairs and a larger area for people to gather after the talks. We can provide soft drinks, beer, or wine along with some pizzas and have a chat for an hour or two after the talk. The venue is a crucial factor. It’s also important to have speakers who are interested in the community so that they will come to learn as well. It’s great to have speakers with interesting topics, but the most important thing for me is networking. After the talks, coming together and getting to know others, learning about their struggles, and maybe sharing some tips in person with each other, becoming friends, or learning about opportunities in other industries. Networking and facilitating connections are crucial tasks for R user group organizers.
+
+**What trends do you currently see in R language?**
+
+Five years ago, machine learning models were a hot topic, and everyone discussed different implementations of GBM. However, things have changed, and nowadays, large language models (LLM) rule over all the topics. LLMs are often implemented in languages other than R, making it difficult to train them from R. Despite this, there are still many use cases for LLMs, even in life sciences and health tech. However, caution must be taken when using AI and LLMs in these fields. Recently, at two bioinformatics events, some nice use cases of LLMs were shared with the audience. This has attracted new members interested in learning how to use AI or LLMs, which can be as simple as doing some API integrations in R, such as calling the chatGPT API to generate text or images.
+
+I’m excited that COVID restrictions are easing up and meetups are returning to normal. I can’t wait for the first in-person [useR! conference](https://events.linuxfoundation.org/user/?__hstc=98577409.44d7f16716270a3b9b81de6d864e02dc.1720553161514.1722362450895.1722365475900.16&__hssc=98577409.7.1722365475900&__hsfp=2807912576) in Salzburg in a few months. I highly recommend that anyone who can travel to Salzburg in July join us. The city has excellent train connections to European cities, so I hope many people from Europe can make it. I’m looking forward to attending an in-person useR! conference again.
+
+**Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?**
+
+
+
+
+
+![](Untitled.png)
+
+
+Currently, I’m focusing on the ETL pipeline of the [Spare Cores](https://sparecores.com/) project, collecting information on cloud compute resources, which will soon have the R bindings as well. In the past, I’ve been working on R packages related to reporting (e.g. “[pander](https://cran.r-project.org/web/packages/pander/index.html)”) and using R in production (e.g. “[logger](https://cran.r-project.org/web/packages/logger/index.html),” “[dbr](https://github.com/daroczig/dbr)” or “boto3”). Recently, I enjoyed integrating APIs and frameworks from other programming languages, such as Python (kudos to the [reticulate](https://rstudio.github.io/reticulate/) team!), in R.
+
+
+## **How do I Join?**
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](https://www.r-consortium.org/all-projects/r-user-group-support-program)
+

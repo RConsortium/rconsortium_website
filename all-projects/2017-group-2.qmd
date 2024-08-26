@@ -1,0 +1,70 @@
+## Funded ISC Grants (2017-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [An Earth data processing backend for testing and evaluating stars](#an-earth-data-processing-backend-for-testing-and-evaluating-stars)
+-   [Future Minimal API: Specification with Backend Conformance Test Suite](#future-minimal-api-specification-with-backend-conformance-test-suite)
+-   [Quantities for R](#quantities-for-r)
+-   [Refactoring and updating the SWIG R module](#refactoring-and-updating-the-swig-r-module)
+
+___
+
+### An Earth data processing backend for testing and evaluating stars
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Edzer Pebesma
+
+**Website:**  
+[https://r-spatial.github.io/stars/](https://r-spatial.github.io/stars/)
+
+**Summary:**  
+The stars project enables the processing Earth imagery data that is held on servers, without the need to download it to local hard driver. This project will (i) create software to run a back-end, (ii) develop scripts and tutorials that explain how such a data server and processing backend can be set up, and (iii) create an instance of such a backend in the AWS cloud that can be used for testing and evaluation purposes.
+
+### Future Minimal API: Specification with Backend Conformance Test Suite
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Henrik Bengtsson
+
+**Website:**  
+[https://github.com/HenrikBengtsson/](https://github.com/HenrikBengtsson/)
+
+**Summary:**  
+The objective of the Future Framework implemented in the future package is to simplify how parallel and distributed processing is conducted in R. This project aims to provide a formal Future API specification and provide a test framework for validating the conformance of existing (e.g. future.batchtools and future.callr) and to-come third-party parallel backends to the Future framework.
+
+### Quantities for R
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Inaki Ucar
+
+**Website:**  
+[https://github.com/r-quantities/quantities](https://github.com/r-quantities/quantities) and [https://www.r-spatial.org/r/2018/08/31/quantities-final.html](https://www.r-spatial.org/r/2018/08/31/quantities-final.html)
+
+**Summary:**  
+The 'units' package has become the reference for quantity calculus in R, with a wide and welcoming response from the R community. Along the same lines, the 'errors' package integrates and automatises error propagation and printing for R vectors. A significant fraction of R users, both practitioners and researchers, use R to analyse measurements, and would benefit from a joint processing of quantity values with errors.
+
+This project not only aims at orchestrating units and errors in a new data type, but will also extend the existing frameworks (compatibility with base R as well as other frameworks such as the tidyverse) and standardise how to import/export data with units and errors.
+
+### Refactoring and updating the SWIG R module
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Richard Beare
+
+**Website:**  
+[https://github.com/richardbeare/RConsortiumSwig](https://github.com/richardbeare/RConsortiumSwig)
+
+**Summary:**  
+The Simplified Wrapper and Interface Generator (SWIG) is a tool for automatically generating interface code between interpreters, including R, and a C or C++ library. The R module needs to be updated to support modern developments in R and the rest of SWIG. This project aims to make the R module conform to the recommended SWIG standards and thus ensure that there is support for R in the future. We hope that this project will be the first step in allowing SWIG generated R code using reference classes.

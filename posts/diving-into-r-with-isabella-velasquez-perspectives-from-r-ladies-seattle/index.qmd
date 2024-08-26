@@ -1,0 +1,106 @@
+---
+title: "Diving into R with Isabella Velasquez: Perspectives from R-Ladies Seattle"
+description: "Isabella started as a beginner but has become a key figure in the R community thanks to the supportive and collaborative learning environment."
+author: "R Consortium"
+image: "Isabella-main.jpg"
+date: "07/03/2024"
+---
+
+[Isabella Velasquez](https://www.linkedin.com/in/ivelasq/), co-organizer of [R-Ladies Seattle](https://www.meetup.com/rladies-seattle/), recently spoke with the R Consortium about her journey with R and the group’s recent activities. Isabella started as a beginner but has become a key figure in the R community thanks to the supportive and collaborative learning environment. R-Ladies Seattle regularly hosts in-person, hybrid, and online events, such as casual happy hours, lightning talks, and collaborations with other user groups. The group engages its members through creative activities and uses tools like GitHub for event planning. Their commitment to inclusivity and continuous learning helps maintain a dynamic and supportive community for R users in Seattle.
+
+
+
+
+![](Isabella.jpg)
+
+
+
+
+R-Ladies Seattle is seeking speakers for an upcoming lightning talks session. If you are interested in presenting, please contact Isabella.
+
+
+[Personal website](https://ivelasq.rbind.io/) | [Twitter](https://x.com/ivelasq3) | [Mastodon](https://fosstodon.org/deck/@ivelasq3)
+
+
+**_Please share your background and involvement with the RUGS group._**
+
+
+I first encountered R when I started my graduate program in 2014. I was pursuing a Master’s in Analytics in Chicago. The program mainly revolved around using R. At that time, I was a complete beginner and had to start from the basics, like installing R. Since the program was fairly new, there wasn’t a well-structured curriculum for introducing R. It was assumed that students would either pick it up or already have some knowledge. The coursework focused on R from there.
+
+
+My older brother [Gustavo](https://github.com/gvelasq/) was a great resource when I started learning R and picking up the necessary skills. He is a highly proficient R user, so I asked him for help. He introduced me to many tools that made it much easier for a beginner to work in RStudio and pick up the tidyverse syntax. The main course curriculum was open to different approaches to using R, which provided flexibility in learning the tools and skills that interested me the most.
+
+
+After completing my program in 2016, I landed my first job as a data analyst. I began using R and regularly working with data. Back then, Twitter was buzzing with activity. I stayed enthusiastic and continued learning from the community. My brother and I collaborated to solve problems and acquire new skills. At work, my team had diverse tool proficiency; some were adept in Excel, while others had data expertise. Eventually, we formed a learning community and collectively mastered R. We utilized R to generate presentations, reports, visualizations, and clean up data. It was fantastic to have a small community at work and a larger one outside through social media.
+
+
+One of my colleagues, Chaya Jones, at my previous workplace, where I worked as a data analyst, was one of the original co-organizers for [R-Ladies Seattle](https://rladiesseattle.org/). The R user group had just started in 2018, and she invited me to join and give one of the earliest presentations for R-Ladies Seattle. Over time, the membership grew, and eventually, I became one of the co-organizers. My role involved coordinating events, finding speakers, and other related tasks.
+![](Isabella2.jpg)
+
+
+
+
+I am very fortunate because I got into R in a friendly and collaborative environment. During graduate school, I collaborated with classmates and gained valuable knowledge from my brother. Later, I landed a new data analyst job and had a whole team of people who were interested in learning and using R. It has truly been a joy, and I feel appreciative for how well things have worked out and for the length of time that I’ve been able to use R.
+
+
+**_Can you share what the R community is like in Seattle?_**
+
+
+As I mentioned, my workplace involved various programming languages, but there were quite a few R users. We used to have these small study groups where we discussed creating an R Markdown template for our company and shared Shiny apps and other similar things. The field I worked in was education, but in Seattle, you see a lot of R being used in bioinformatics and scientific research related to diseases. It’s very popular among those groups, and they have solid user groups where they grow and learn together. Many members of R Ladies Seattle are from organizations like [Fred Hutch](https://www.fredhutch.org/en.html), where the emphasis on using R is very strong, which is pretty great.
+
+
+
+
+![](R-LadiesSeattle.jpg)
+
+
+
+
+Every month, R-Ladies Seattle [hosts a casual happy hour](https://www.meetup.com/rladies-seattle/). We have good chips and salsa, and it’s a great opportunity for members to join, chat, and have a good time. Additionally, after the [Cascadia R Conference](https://cascadiarconf.com/) in June, we will have a social hour where people can keep the conversation going in a relaxed setting. We will also host a social hour at the end of [posit::conf](https://posit.co/conference/) in August, and R-Ladies who didn’t attend the conference are more than welcome to join and hang out. We organize many social events, so there are plenty of opportunities to connect with us.
+
+
+We have some exciting events related to R coming up. We are currently looking for speakers for a lightning talk session, where individuals can quickly share the projects they are working on or a tool they love. It’s a low-pressure way to join in, and we welcome anyone who would like to sign up and participate.
+
+
+Our focus is primarily on in-person and hybrid events. While we have seen an explosion of online events after COVID-19, it’s important to uphold the Seattle community by providing opportunities for local participation. Generally, our events are held in person, with occasional hybrid events. However, we are also excited about organizing online events with Seattle residents in mind at a convenient time for the Pacific Time Zone. Our offering of in-person, hybrid, and online events provides a unique experience for our user group in Seattle.
+
+
+**_Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people who are unable to attend physical events in the future? _**
+
+
+One thing we implemented was to think of events that could generate high engagement. For example, with our Hex sticker, we organized a competition for all R-Ladies members to participate by submitting their designs, followed by a voting process. It was a lot of fun, both creatively and in terms of getting everyone involved. We strive to come up with similar engaging activities. Additionally, when appropriate, we reach out to other user groups in the area to explore collaboration opportunities, co-hosting events, or simply support each other’s promotions to foster a strong sense of community.
+
+
+One method we have tried for planning events is using GitHub discussions to log our ideas for events and determine which events are the most popular based on comments and upvotes. This helps guide our future event planning.
+
+
+**_What trends do you currently see in R language and your industry? Any trends you see developing shortly?_**
+
+
+Every year, we send out a survey to inquire about people’s interests and what they like to see. The responses are usually a mix of technical content, with many requests for intermediate-level information. There’s a lot of interest from people in Seattle who use R in some capacity or are members of R-Ladies Seattle. They are looking for opportunities to upskill based on their existing knowledge of R. Additionally, there are many requests for information about career advancement and available positions.
+
+
+There are various job titles related to data, such as data scientist and data engineer. Many people have questions about the career prospects in this field, including the potential for advancement and available options. These are common topics of discussion.
+
+
+**_Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in? _**
+
+
+I now work at [Posit](https://posit.co/),  formerly RStudio, in a marketing role. I still get to work with R a lot, which is great for creating dashboards to track various metrics. I’ve been focusing on defining metrics of success and similar tasks.
+
+
+Recently, I created a dashboard in [Shiny](https://shiny.posit.co/) that refreshes daily to compile the information I need for my to-do list. Every morning, I check my Shiny dashboard to see my daily tasks. It pulls information from my project management tool, so I only have to update one place to see an aggregated view of my month. It was fun to do this in R with Shiny. 
+
+
+Recently, I worked on creating a custom template in [Quarto](https://quarto.org/) for the upcoming [R Medicine Conference](https://www.r-consortium.org/events/2024/04/05/r-medicine-coming-june-10-14-2024) website. The [website](https://rconsortium.github.io/RMedicine_website/) is built entirely on Quarto, a new tool similar to R Markdown. My work specifically involved designing the events page to display previous events and provide links to the event page and YouTube playlist. It’s exciting to learn and work with new tools like Quarto.
+
+
+
+
+## **How do I Join?**
+
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+
+[Learn more](../../all-projects/rugsprogram.qmd)

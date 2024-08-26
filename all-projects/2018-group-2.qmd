@@ -1,0 +1,140 @@
+## Funded ISC Grants (2018-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Catalyzing R-hub adoption through R package developer advocacy](#catalyzing-r-hub-adoption-through-r-package-developer-advocacy)
+-   [Data-Driven Discovery and Tracking of R Consortium Activities](#data-driven-discovery-and-tracking-of-r-consortium-activities)
+-   [Editorial assistance for the R Journal](#editorial-assistance-for-the-r-journal)
+-   [Licensing R - Guidelines and tools](#licensing-r---guidelines-and-tools)
+-   [Next-generation text layout in grid and ggplot2](#next-generation-text-layout-in-grid-and-ggplot2)
+-   [Strengthening of R in support of spatial data infrastructures management : geometa and ows4R R packages](#strengthening-of-r-in-support-of-spatial-data-infrastructures-management-geometa-and-ows4r-r-packages)
+-   [Symbolic Formulae for Linear Mixed Models](#symbolic-formulae-for-linear-mixed-models)
+-   [serveRless](#serverless)
+
+___
+
+### Catalyzing R-hub adoption through R package developer advocacy
+
+**Funded:**  
+$46,050
+
+**Proposed by:**  
+Maëlle Salmon
+
+**Website:**  
+[https://blog.r-hub.io](https://blog.r-hub.io/)
+
+**Summary:**  
+After the continuing technical progress of R-hub over the last two years, this project aims at catalizing its adoption by R package developers of all levels through developer advocacy. Indeed, R-hub is currently a successful and very valuable project, but it is not documented thoroughly, which hinders its wider adoption by package developers. This project shall answer this concern by three main actions: improving R-hub documentation, making R-hub better known in the community and making the R-hub web site more attractive to, and easier to use by, R developers and users via the ingestion of METACRAN services and the creation of a R-hub blog.
+
+### Data-Driven Discovery and Tracking of R Consortium Activities
+
+**Funded:**  
+$5,250
+
+**Proposed by:**  
+Benaiah Chibuokem Ubah
+
+**Website:**  
+[https://benubah.github.io/r-community-explorer/rugs.html](https://benubah.github.io/r-community-explorer/rugs.html)
+
+**Summary:**  
+This project proposes an infrastructure that provides a data-driven approach to render the yearly activities of the R Consortium, by deploying web pages for discovering and tracking ISC Funded Projects, RUGS and Marketing activities. These pages are planned to appear like dashboards summarizing activities in interactive tables and charts, presenting several views, trends and insights to what R Consortium has achieved over time. The project hopes that presenting these achievements in a data-driven manner to the R community, the data science community and prospective R Consortium members will promote greater transparency, productivity and community inclusiveness around R Consortium activities.
+
+### Editorial assistance for the R Journal
+
+**Funded:**  
+$50,000
+
+**Proposed by:**  
+Dianne Cook
+
+**Website:**  
+[https://rjpilot.netlify.app/](https://rjpilot.netlify.app/)
+
+**Summary:**  
+This project supports the operation of the R Journal. There are two aspects, one is to fund an editorial assistant to send reminders about reviews, and assist with typesetting and copyediting issues. The second part is to explore updating the technical operations of the journal production.
+
+### Licensing R - Guidelines and tools
+
+**Funded:**  
+$6,000
+
+**Proposed by:**  
+Colin Fay
+
+**Website:**  
+[https://github.com/ThinkR-open/isc-proposal-licence/](https://github.com/ThinkR-open/isc-proposal-licence/) and [https://thinkr-open.github.io/licensing-r/intro.html#getting-a-more-global-idea](https://thinkr-open.github.io/licensing-r/intro.html#getting-a-more-global-idea) and [https://github.com/ThinkR-open/isc-proposal-licence/blob/master/proposal\_licence.md](https://github.com/ThinkR-open/isc-proposal-licence/blob/master/proposal_licence.md)
+
+**Summary:**  
+Licensing is a vital part of Open Source. It provides guidelines for interacting with a program, and for making code accessible and reusable (or not). It provides a way to make code open source, in a way one wants to share it, protecting how it will be used and reused. Licensing is also challenging and complex: there are a lot of available licenses, and the choice is influenced by how you import and interact with elements from other packages and/or programs.
+
+With this project, we propose to explore and document the current state of open source licenses in R, and to decipher compatibility and incompatibly elements inside these licenses, to help developers chose the best suited licence for their project.
+
+### Next-generation text layout in grid and ggplot2
+
+**Funded:**  
+$25,000
+
+**Proposed by:**  
+Claus Wilke
+
+**Website:**  
+[https://wilkelab.org/gridtext/](https://wilkelab.org/gridtext/)
+
+**Summary:**  
+Text is a key component of any data visualization. We need to label axes and legends, we need to annotate or highlight specific data points, and we need to provide plot titles and captions. The R graphics package ggplot2 provides numerous features to customize the labeling and annotation of plots, but ultimately it is limited by the current capabilities of the underlying graphics libary it uses, grid. Grid can draw simple text strings or mathematical expressions (via plotmath) in different colors, sizes, and fonts. However, it lacks functionality for changing formatting within a string (e.g., draw a single word in italics or in a different color), and it also cannot draw text boxes, where the text is enclosed in a box with defined margins, padding, or background color. This project will support the development of a new package, gridtext, that will alleviate these text formatting limitations. The project will also support efforts to make these new capabilities available from within ggplot2.
+
+### Strengthening of R in support of spatial data infrastructures management : geometa and ows4R R packages
+
+**Funded:**  
+$20,000
+
+**Proposed by:**  
+Emmanuel Blondel
+
+**Website:**  
+
+**Summary:**  
+The project aims to strengthen the role of R in support of Spatial Data Infrastructures (SDI) management, through major enhancements of the geometa R package which offers tools for reading and writing ISO/OGC geographic metadata, including ISO 19115, 19110, and 19119 through the ISO 19139 XML format. This also extends to the Geographic Markup Language (GML - ISO 19136) used for describing geographic data. The use of geometa in combination with publication tools such as ows4R ( https://cran.r-project.org/package=ows4R ) and geosapi (https://cran.r-project.org/package=geosapi) fosters the use of R software to ease the management and publication of metadata documents and related datasets in web catalogues, and then allows to move forward with a real R implementation of spatial data management plans based on FAIR (Findable, Accessible Interoperable and Reusable) principles.
+
+The workplan includes several activities such as working on the completeness of the ISO 19115 (ISO 19115-1 and 19115-2) data model in geometa, functions to read/write multilingual metadata documents, and an increased metadata validation capability with a validator targeting the EU INSPIRE directive. Finally, functions will be made available to convert between geometa ISO/OGC metadata objects and other known metadata objects such as NetCDF-CF and EML (Ecological Metadata Language) to foster metadata interoperability. By providing these R tools, we seek to facilitate the work of spatial data (GIS) managers, but also data scientists, whatever the thematic domain, whose daily tasks consist in handling data, describing them with metadata and publishing datasets.
+
+### Symbolic Formulae for Linear Mixed Models
+
+**Funded:**  
+$6,000
+
+**Proposed by:**  
+Emi Tanaka
+
+**Website:**  
+
+**Summary:**  
+Symbolic model formulae define the structural component of a statistical model in an easier and often more accessible terms for practitioners. The earlier instance of symbolic model formulae for linear models was applied in Genstat with further generalisation by Wilkinson and Rogers (1973). Chambers and Hastie (1993) describe the symbolic model formulae implementation for linear models in the S language which remains much the same in the R language (Venables et al. 2018).
+
+Linear mixed models (LMMs) are widely used across many disciplines (e.g. ecology, psychology, agriculture, finance etc) due to its flexibility to model complex, correlated structures in the data. While the symbolic formula of linear models generally have a consistent representation and evaluation rule as implemented in stats::formula, this is not the case for LMMs. The inconsistency of symbolic formulae arises mainly in the representation of random effects, with the additional need to specify the variance-covariance structure of the random effects as well as structure of the associated model matrix that governs how the random effects are mapped to (groups of) the observational units. The differences give rise to confusion of equivalent model specification in different R-packages.
+
+The lack of consistency in symbolic formula and model representation across mixed model software motivates the need to formulate a unified symbolic model formulae for LMMs with: (1) extension of the evaluation rules described in Wilkinson and Rogers (1973); and (2) ease of comprehension of the specified model for the user. This symbolic model formulae can be a basis for creating a common API to mixed models with wrappers to popular mixed model R-packages, thereby achieving a similar feat to parsnip R-package (Kuhn 2018) which implements a tidy unified interface to many predictive modelling functions (e.g. random forest, logistic regression, survival models etc).
+
+We would like to find out what are your experiences with fitting linear mixed model in R! Please fill out the survey below to help us understand your problems: https://docs.google.com/forms/d/e/1FAIpQLSeblEoPtDmPS-dH2dmsHjLxLuKl19UY1JdmTrZux-AUSq3N7Q/viewform?usp=sf\_link
+
+### serveRless
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Christoph Bodner, Florian Schwendinger, Thomas Laber
+
+**Website:**  
+[https://github.com/harlecin/serverless](https://github.com/harlecin/serverless)
+
+**Summary:**  
+R is a great language for rapid prototyping and experimentation, but putting an R model in production is still more complex and time-consuming than it needs to be. With the growing popularity of serverless computing frameworks such as AWS Lambda and Azure Functions we see a a huge chance to allow R developers to more easily deploy their code into production. We want to build an R package called 'serverless' to allow R users to easily deploy scripts and custom R packages to AWS Lambda and in a second step to Azure Functions. Our main goal is to build a user-friendly cloud agnostic wrapper that can be extended to include additional cloud providers later on. We want to build on the work already done for deploying R functions to AWS Lambda by Philipp Schirmer and on the work already done by Neal Fultz and Gergely Daróczi on a gRPC client/server for R, which is necessary for Azure Functions. If you like our idea and want to help us, feel free to reach out to us on Github at https://github.com/harlecin/serverless
+
+Best,
+
+Christoph, Florian and Thomas

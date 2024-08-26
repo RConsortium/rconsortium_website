@@ -1,0 +1,76 @@
+---
+title: "Ann Arbor R User Group: Harnessing the Power of R and GitHub"
+description: "The R Consortium talked to Barry Decicco, founder, and organizer of the Ann Arbor R User Group, based in Ann Arbor, Michigan. Barry shared his experience working with R as…"
+author: "R Consortium"
+date: "02/13/2024"
+---
+
+The R Consortium talked to [Barry Decicco](https://www.linkedin.com/in/barrydecicco/), founder, and organizer of the [Ann Arbor R User Group](https://www.meetup.com/ann-arbor-r-user-group/), based in Ann Arbor, Michigan. Barry shared his experience working with R as a statistician and highlighted the current trends in the R language in his industry. He also emphasized the significance of organizing regular events and effective communication for managing an R User Group (RUG).
+
+![](media.jpg)
+
+**Please share about your background and involvement with the RUGS group.**
+
+Throughout my professional career, I have gained extensive experience in various industries as a statistician. Statisticians are often thought of as either staying in one industry for their entire career or frequently transitioning between them. I have followed the latter path, having held positions at Ford Motor Company, their spinoff Visteon, the University of Michigan School of Nursing, the University of Michigan Health System, Nissan Motor Company, Volkswagen Credit (as a contractor), Michigan State University, and currently [Quality Insights](http://www.qualityinsights.org/).
+
+I have been using the R programming language consistently for several years now. I have extensively worked with R during my tenure at Michigan State University as a member of the Center for Statistical Training and Research ([CSTAT](https://cstat.msu.edu/)). CSTAT serves as the university’s statistical laboratory. Our team heavily relied on R as our preferred software for statistical analysis.
+
+Our reporting process involved using [R Markdown](https://rmarkdown.rstudio.com/) reports. [Steven Pierce](https://cstat.msu.edu/people/steven-pierce-phd-hehimhis), the assistant director, developed a highly complex and upgradeable system using R Markdown to process data. This system allowed us to initiate a report and then trigger the R Markdown file to process the data and generate the final datasets for each report. Another R Markdown file was then called to render the report. This streamlined process enabled us to produce about 40 PDF reports within 45 minutes. The process remained relatively straightforward when we needed to make modifications, such as changing the reporting period from fiscal years to calendar years or adding or subtracting individuals, units, or departments.
+
+I have recently started a new job primarily working with the SAS programming language. Initially, I will focus on gaining proficiency in this area. After that, I will transition to performing more in-depth analysis and ad hoc reporting, requiring me to use additional tools and resources. I have also moved to a new system where we use [Hive](https://hive.apache.org/) or [Hadoop](https://hadoop.apache.org/) through [Databricks](https://www.databricks.com/). As part of my role, I am responsible for taking over the current reporting system and identifying future reporting needs. This will require me to use R extensively.
+
+Before the COVID pandemic, the R users group met in Ann Arbor. However, the pandemic dealt a major blow to the group, and we are still recovering from its impact. In our efforts to revive the group, we continued with the same theme as before: a mix of programming and statistics. However, we have been focusing more on programming and simpler analysis to make it easier to get the group restarted. We have also introduced some new presenters covering topics such as machine learning pipelines in their presentations.
+
+**Can you share what the R community is like in Ann Arbor?**
+
+R has become a popular programming language in academia and will likely remain relevant in this field. However, general coding and applications are more prevalent in the industrial sector. [Python](https://www.python.org/) is gaining popularity because it attracts a broader range of programmers, including those who are not data or analytics specialists. Therefore, R will continue to be a significant but specialized tool.
+
+Currently, I have noticed a significant decrease in the usage of SAS. This trend is driven by the dislike of license fees among individual and corporate users. The matter is further complicated by corporate accounting practices, where different funding sources may have varying spending restrictions. As a result, organizations may end up incurring higher salary expenses because of the complexity of corporate accounting processes.
+
+If a company spends a fixed amount, say $10,000, on SAS licenses yearly, it might not like it. But then, it may hire additional staff to do the same work SAS did earlier. The salary of these people, and other associated costs, may come from a different funding source. As a result, the company may spend a significant amount of money, ranging from $120,000 to $150,000 annually, to replace a smaller amount of $10,000 to $20,000 annually. However, whether this arrangement is acceptable would depend on the funding source.
+
+**Do you have an upcoming meeting planned? What are your plans for the RUG for this year?**
+
+Our next presenter, [Brittany Buggs](https://www.linkedin.com/in/brittanybuggs/), Staff Data Analyst at Rocket Mortgage, will demonstrate the usage of the [GT package for generating tables](https://www.meetup.com/ann-arbor-r-user-group/events/298545435/). Additionally, we are striving to establish closer integration with the [Ann Arbor chapter of the American Statistical Association](https://community.amstat.org/annarbor/home) to foster mutual support and collaboration between the groups. We have been conducting hybrid meetings catering to in-person and virtual attendees. [Ann Arbor Spark](https://annarborusa.org/), a local startup business development organization, has generously provided us with a physical meeting space. Our meetings follow a hybrid format, recognizing the convenience and accessibility it offers to many individuals.
+
+This year, I aim to have more presenters as I have been doing all the presentations by myself. I plan to raise awareness about R, R Markdown, and Quarto and show people how these tools can be useful. I will promote these tools at the University of Michigan and other companies.
+
+**What trends do you currently see in the R language?**
+
+When it comes to data analysis, R has a clear advantage. The [tidyverse](https://www.tidyverse.org/) syntax is easy to understand, even for those unfamiliar with data tables or Pandas-like programming paradigms.
+
+When working with data tables, both base R and [Pandas](https://pandas.pydata.org/) use programming languages that differ significantly from English, which can make understanding them difficult. On the other hand, R Markdown has a notable advantage in that it makes it easy and quick to generate HTML documents. For instance, my former supervisor at C-STAT spent much time creating visually appealing PDF documents because his reports were highly customized. However, if your main goal is to produce polished reports relatively quickly, R Markdown is the better option.
+
+I understand that my main focus is the transition to [Quarto](https://quarto.org/). As someone who used to work with R Markdown, I have been learning more about Quarto and adjusting to its features. However, I am concerned about how new users may react to Quarto. I plan to give presentations throughout the year to gauge their responses and better understand any potential issues that may arise.
+
+Moreover, I’ve noticed that many people are unaware of R Markdown’s capabilities. To address this, I conducted an introductory session on R Markdown for a group at the University of Michigan. During my thirty-minute presentation, the participants were surprised by the diverse functionalities of R Markdown, as they were used to working with JavaScript and basic R. Although I had inferior knowledge compared to some of the individuals in the group, my ability to perform certain tasks using R Markdown impressed them.
+
+One of the benefits of R Markdown is its ability to run multiple languages, with each language being executed chunk by chunk. I hope Quarto will also support this feature.
+
+In the past, I have presented on calling R from SAS and SAS from R. During these presentations, I demonstrated how to run a SAS job within an R chunk. However, this approach has a limitation. For it to work, SAS must be accessible from the computer running the R code. This means the SAS installation must be on the computer or a network drive that the computer recognizes as a local drive. On a certain occasion, while using Enterprise Guide on a Linux machine, I faced a problem. I couldn’t locate the executable file (EXE) for SAS from my computer, which obstructed me from executing a SAS job.
+
+It is now possible for individuals to use R Markdown with their preferred programming languages. For instance, R Markdown can be used with Pandas for most cases, which can help individuals produce visually appealing reports quickly. With this approach, all the work can be done within Pandas, and users need only basic knowledge of R. Therefore, Quarto can be seen as a language for report writing only. I will keep an eye on this situation and evaluate its effectiveness.
+
+I want to highlight the smooth combination of Git and GitHub with R. I use GitHub frequently in my work, though I am not very skilled because RStudio IDE fulfills most of my requirements. I rarely face conflicts due to my carelessness; I must interact with Git and GitHub manually.
+
+I highly recommend the book “[Happy Git with R](https://happygitwithr.com/)” as an essential resource for beginners. This comprehensive guide provides a step-by-step approach to setting up and using Git and GitHub effectively in R.
+
+When using Git in conjunction with R, you can access a detailed transaction history that can be reviewed anytime. I have found this feature incredibly useful and have been able to recover important work using this method. As a data management instructor at MSU, I have also taught my students how to execute this process manually. However, having R Studio automatically handle this task is much more convenient.
+
+In fact, I used SPSS to conduct a project and leveraged GitHub as an experiment. I utilized the data management capabilities of RStudio and found the results satisfactory.
+
+**Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?**   
+
+I suggest that RUG organizers should arrange regular monthly meetings. It would be advantageous to fix these meetings on the same day and time every month, as it will help attendees get accustomed to the routine and know when to expect them.
+
+In my years of working with different groups, I have noticed that if we don’t consciously communicate regularly, our communication will become less effective over time. This can lead to a lack of new ideas and engagement, and we may unintentionally exclude potential participants.
+
+For almost 20 years, I have been part of a group that communicated through a university mailing list. However, we faced difficulties as the list was not easily discoverable through search engines like Google. This made it challenging for new individuals to find or contact us. We have taken steps to tackle this problem by introducing [Meetup](https://www.meetup.com/lp/how-to-group-start?utm_medium=SEM&utm_source=google&utm_campaign=mmrk_adwords_orgacq_global_branded&utm_term=group&utm_content=lp_grp_v2&gad_source=1&gclid=Cj0KCQiAqsitBhDlARIsAGMR1RhwhsyKxgCU4PIWHv50V7_SqKpdphQqP1WoiSA5a79-k2lq_5uK8bcaAlBkEALw_wcB) as a new tool that can be used alongside or instead of our traditional mailing list. The main benefit of Meetup is that it is easily searchable on Google, which makes it simple for anyone to locate and get in touch with our group.
+
+I want to emphasize the importance of effective communication. Neglecting communication efforts can cause a decline in communication quality. I have personally witnessed this happening in different groups, and I have seen others experiencing similar challenges.
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 65,000 members in 35 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](../../all-projects/rugsprogram.qmd)

@@ -1,0 +1,52 @@
+---
+title: "ISC-funded Grant: Secure TLS Connections in {nanonext} and {mirai} Facilitating High-Performance Computing in the Life Sciences"
+description: "Contributed by Charlie Gao, Director at Hibiki AI Limited {nanonext} is an R binding to the state of the art C messaging library NNG (Nanomsg Next Generation), created as a…"
+author: "R Consortium"
+image: "mirai.webp"
+date: "03/12/2024"
+format: html
+---
+<style>
+  .anchorjs-link {
+  display: none !important;
+}
+</style>
+
+_Contributed by Charlie Gao, Director at Hibiki AI Limited_
+
+
+
+
+<div style="text-align: center;">
+  <img src="mirai.webp" alt="Mirai Nano Next" >
+</div>
+
+
+{nanonext} is an R binding to the state of the art C messaging library NNG (Nanomsg Next Generation), created as a successor to ZeroMQ. It was originally developed as  a fast and reliable messaging interface for use in machine learning pipelines. With implementations readily available in languages including C++, Go, Python, and Rust, it allowed individual modules to be written in the most appropriate language and for them to be piped together in a single workflow.
+
+{mirai} is a package that enables asynchronous evaluation in R, built on top of {nanonext}. It was  initially created purely as a demonstration of the reliable RPC (remote procedure call) protocol from {nanonext}. However, open-sourcing this project greatly facilitated its discovery and dissemination, eventually leading to a long-term, cross-industry collaboration with Will Landau, a statistician in the life sciences industry, author of the {targets} package for reproducible pipelines. He ended up creating the {crew} package to extend {mirai} to handle the increasingly complex and demanding high-performance computing needs faced by his users.
+
+As this work was progressing, security was still a missing piece of the puzzle. The NNG library supported integration with Mbed TLS (a SSL/TLS library developed under the Trusted Firmware Project), however secure connections were not yet a part of the R landscape.
+
+The R Consortium, by way of an Infrastructure Steering Committee (ISC) grant, funded the work to implement this functionality from the underlying libraries and to also devise a means of configuring the required certificates in R. The stated intention was to provide a user-friendly interface for doing so. The end result somewhat exceeded these goals, with the default allowing for zero-configuration, single-use certificates to be generated on-the-fly. This affords an unparalleled level of usability, not requiring end users to have any knowledge of the intricacies of TLS.
+
+Will Landau talks about the impact TLS has had on his work:
+
+“I sought to extend {mirai} to a wide variety of computing environments through {crew}, from traditional clusters to Amazon Web Services. The integration of TLS into {nanonext} increases the confidence with which {mirai} can be deployed in these powerful environments, accelerating downstream applications and {targets} pipelines.”
+
+The project to extend {mirai} to high-performance computing environments was featured in a workshop on simulation workflows in the life sciences, given at R/Pharma in October 2023 (video and materials accessible from https://github.com/wlandau/rpharma2023).
+
+With the seed planted in {nanonext}, {mirai} and {crew} have grown to form an elegant and performant foundation for an emerging landscape of asynchronous and parallel programming tools. They already provide new back-ends for {parallel}, {promises}, {plumber}, {targets}, and Shiny, as well as high-level interfaces such as {crew.cluster} for traditional clusters and {crew.aws.batch} for the cloud.
+
+
+
+<div style="text-align: center;">
+  <img src="charlie.webp" alt="Charlie Gao" style="width:556px; height:423.516px; object-fit:contain;">
+  <p>Charlie Gao, Director at Hibiki AI Limited</p>
+</div>
+
+
+
+
+
+

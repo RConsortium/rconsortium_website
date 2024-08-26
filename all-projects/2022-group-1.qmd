@@ -1,0 +1,65 @@
+## Funded ISC Grants (2022-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Iterdatasampler: Expanding the lterdatasampler package](#iterdatasampler-expanding-the-lterdatasampler-package)
+-   [Femr: Finite Element Method for Solving PDEs in R](#femr-finite-element-method-for-solving-pdes-in-r)
+-   [Continuing to Improve R’s Ability to Visualise and Explore Missing Values](#continuing-to-improve-rs-ability-to-visualise-and-explore-missing-values)
+-   [Dengue Data Hub](#dengue-data-hub)
+
+___
+
+### Iterdatasampler: Expanding the lterdatasampler package
+
+**Funded:**  
+$15,000
+
+**Proposed by:**  
+Julien Brun and Allison Horst
+
+**Summary:**  
+Expanding the lterdatasampler Package addresses the need for accessible and relevant datasets in data science education. It aims to provide modern, curated, and approachable environmental data samples from the US Long Term Ecological Research Network (LTER) through the lterdatasampler R package. By offering datasets that save time for instructors, engage students with meaningful data, and foster discussions based on real-world questions.The package serves as a valuable resource for teaching introductory statistics and data science in R. The project seeks funding to expand the package to include data samples from all 28 LTER network sites, with the goal of modernizing course materials with real-world environmental datasets.
+
+### Femr: Finite Element Method for Solving PDEs in R
+
+**Funded:**  
+$20,000
+
+**Proposed by:**  
+Laura Sangalli
+
+**Summary:**  
+Femr: There is a need for implementing finite element methods (FEM) in R to solve partial differential equations (PDEs). PDEs are crucial mathematical tools used for modeling complex phenomena in various scientific and engineering fields. However, the absence of FEM implementations in R necessitates the reliance on external software, discouraging the statistical community from developing methods involving PDEs and hindering the learning of this essential mathematical tool. The goal of the project is to develop the femR package, which will provide a finite element basis for solving second-order linear elliptic PDEs on general two-dimensional spatial domains in R.
+
+This package will complement the existing deSolve package and enable users to employ finite elements instead of finite differences for solving PDEs on more diverse spatial domains. The development process will include providing comprehensive examples and a final vignette to guide users in utilizing the package's functionalities.
+
+### Continuing to Improve R’s Ability to Visualise and Explore Missing Values
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Nicholas Tierney
+
+**Summary:**  
+The proposal for “Continuing to Improve R’s Ability to Visualise and Explore Missing Values” addresses missing values in data analysis. Missing values are often dropped by default in data analysis in various stages. There is often not even a warning displayed to alert the user of missing values being dropped or discarded. This means values can be dropped without the user knowing, leading to issues such as potential bias, where missing values might be occurring in high numbers in particular groups.
+
+The proposal for the ISC-funded project addressed this problem in four parts:
+
+-   Part one: Initial evaluation of additional missing data visualizations
+-   Part two: Implementation of missing data visualizations
+-   Part three: Will provide tutorials and workflows.
+-   Part four: Future extensions and beyond
+
+### Dengue Data Hub
+
+**Funded:**  
+$2,000
+
+**Proposed by:**  
+Thiyanga Talagala
+
+**Summary:**  
+The Dengue Data Hub project helps addresses data packages related to Dengue. Dengue is a mosquito-borne viral disease that has spread fast throughout the world, primarily in urban and semi-urban regions. The goal of the Dengue Data Hub is to provide the research community with a unified dataset helpful for dengue research and reproducibility of research. The project proposes the creation of an R package for aggregating dengue data from several sources and the ability to share them in tidy format. Based on the proposal, there will also be tutorials and good documentation for using the “Dengue Data Hub” interface. This will motivate epidemiology researchers to utilize R to analyze their data.

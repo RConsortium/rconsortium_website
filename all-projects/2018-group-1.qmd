@@ -1,0 +1,117 @@
+## Funded ISC Grants (2018-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [A unified platform for missing values methods and workflows](#a-unified-platform-for-missing-values-methods-and-workflows)
+-   [Developing Tools and Templates for Teaching Materials](#developing-tools-and-templates-for-teaching-materials)
+-   [Maintaining DBI](#maintaining-dbi)
+-   [Ongoing infrastructural development for R on Windows and MacOS](#ongoing-infrastructural-development-for-r-on-windows-and-macos)
+-   [PSI application for collaboration to create online R package validation repository](#psi-application-for-collaboration-to-create-online-r-package-validation-repository)
+-   [Proposal to Create an R Consortium Working Group Focused on US Census Data](#proposal-to-create-an-r-consortium-working-group-focused-on-us-census-data)
+-   [histoRicalg -- Preserving and Transfering Algorithmic Knowledge](#historicalg-preserving-and-transfering-algorithmic-knowledge)
+
+___
+
+### A unified platform for missing values methods and workflows
+
+**Funded:**  
+$14,000
+
+**Proposed by:**  
+Julie Josse
+
+**Website:**  
+[https://cran.r-project.org/web/views/MissingData.html](https://cran.r-project.org/web/views/MissingData.html)
+
+**Summary:**  
+The objective is to create a reference platform on the theme of missing data management and to federate contributors. This platform will be the occasion to list the existing packages, the available literature as well as the tutorials that allow to analyze data with missing data. New work on the subject can be easily integrated and we will create examples of analysis workflows with missing data. Anyone who would like to contribute to this exciting project can contact us.
+
+### Developing Tools and Templates for Teaching Materials
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+François Michonneau
+
+**Website:**  
+[https://datacarpentry.org/R-ecology-lesson/](https://datacarpentry.org/R-ecology-lesson/) and [http://swcarpentry.github.io/r-novice-gapminder/](http://swcarpentry.github.io/r-novice-gapminder/)
+
+**Summary:**  
+The first-class implementation of literate programming in R is one of the reasons for its success. While the seamless integration of code and text made possible by Sweave, knitr, and rmarkdown was designed for writing reproducible reports and documentation, it has also enabled the creation of teaching materials that combine text, code examples, exercises and solutions. However, while people creating lessons in RMarkdown are familiar with R, they often do not have a background in education or UX design. Therefore, they must not only assemble curriculum, but also find a way to present the content effectively and accessibly to both learners and instructors. As the model of open source development is being adapted to the creation of open educational resources, the difficulty to share materials due to a lack of consistency in their construction hinders the collaborative development of these resources.
+
+This project will develop an R package that will facilitate the development of consistent teaching resources. It will encourage the use of tools and lesson structure that support and improve learning. By providing the technical framework for developing quality teaching materials, we seek to encourage collaborative lesson development by letting authors focus on the content rather than the formatting, while providing a more consistent experience for the learners.
+
+### Maintaining DBI
+
+**Funded:**  
+$26,500
+
+**Proposed by:**  
+Kirill Müller
+
+**Website:**  
+[https://dbi.r-dbi.org/](https://dbi.r-dbi.org/)
+
+**Summary:**  
+DBI, R's database interface, is a set of methods declared in the DBI R package. Communication with the database is implemented by DBI backends, packages that import DBI and implement its methods. A common interface is helpful for both users and backend implementers.
+
+The "Maintaining DBI" is a follow-up project to two previous projects supported by the R Consortium, and is mostly about providing ongoing maintenance and support for DBI, the DBItest test suite, and the three backends to open-source databases (RSQLite, RMariaDB and RPostgres) that have been implemented as part of the previous projects.
+
+### Ongoing infrastructural development for R on Windows and MacOS
+
+**Funded:**  
+$62,400
+
+**Proposed by:**  
+Jeroen Ooms
+
+**Website:**  
+[https://github.com/r-hub/homebrew-cran#how-to-use](https://github.com/r-hub/homebrew-cran#how-to-use)
+
+**Summary:**  
+The majority of R users rely on precompiled installers and binary packages for Windows and MacOS that are made available through CRAN. This project seeks to improve and maintain tools for providing such binaries, and relieve some of the dependence on CRAN maintainers and R-core members for doing so. On Windows we will upgrade the Rtools compiler toolchain, and provide up-to-date Windows builds for the many external C/C++ libraries used by CRAN packages. For MacOS we will expand the r-hub "homebrew-cran" tap with formulas that are needed by CRAN packages but not available from upstream homebrew-core. Eventually we want to lay the foundation for a reproducible build system that is low maintenance, automated as much as possible, and which could be used by CRAN and other R package repositories.
+
+### PSI application for collaboration to create online R package validation repository
+
+**Funded:**  
+$4,000
+
+**Proposed by:**  
+Lyn Taylor (on behalf of PSI AIMS SIG)
+
+**Website:**  
+[https://www.pharmar.org/](https://www.pharmar.org/)
+
+**Summary:**  
+The documentation available for R packages currently widely varies. The Statisticians in the Pharmaceutical Industry (PSI) Application and Implementation of Methodologies in Statistics (AIMS) Special Interest Group (SIG) will collaborate with the R-Consortium and representatives from pharmaceutical companies on the setting up of an online repository /web portal, where validation which is of regulatory standard for R packages can be submitted and stored for free use. Companies (or individual R users) would still be liable to make their own assessment on whether the validation is suitable for their own use, however the online repository would serve as a portal for sharing existing regulatory standard validation documentation.
+
+### Proposal to Create an R Consortium Working Group Focused on US Census Data
+
+**Funded:**  
+$4,000
+
+**Proposed by:**  
+Ari Lamstein
+
+**Website:**  
+[https://github.com/RConsortium/censusguide](https://github.com/RConsortium/censusguide)
+
+**Summary:**  
+The Proposal to Create an R Consortium Working Group Focused on US Census Data aims to make life easier for R programmers who work with data from the US Census Bureau. It will create a working group where R users working with census data can cooperate under the guidance of the Census Bureau. Additionally, it will publish a guide to working with Census data in R that aims to help R programmers a) select packages that meet their needs and b) navigate the various data sets that the Census Bureau publishes.
+
+### histoRicalg -- Preserving and Transfering Algorithmic Knowledge
+
+**Funded:**  
+$772
+
+**Proposed by:**  
+John C Nash
+
+**Website:**  
+[https://gitlab.com/nashjc/histoRicalg](https://gitlab.com/nashjc/histoRicalg)
+
+**Summary:**  
+Many of the algorithms making up the numerical building-blocks of R were developed several decades ago, particularly in Fortran. Some were translated into C for use by R. Only a modest proportion of R users today are fluent in these languages, and many original authors are no longer active. Yet some of these codes may have bugs or need adjustment for new system capabilities. The histoRicalg project aims to document and test such codes that are still part of R, possibly creating all-R reference codes, hopefully by teaming older and younger workers so knowledge can be shared for the future. Our initial task is to establish a \*\*\*Working Group on Algorithms Used in R\*\*\* and add material to a website/wiki currently at https://gitlab.com/nashjc/histoRicalg. Interested workers are invited to contact John Nash.

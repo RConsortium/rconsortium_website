@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2024-02-07">
+<meta name="description" content="The R Consortium connected with Kylie Bemis, assistant teaching professor at the Khoury College of Computer Sciences at Northeastern University. She has created matter, an R package that offers adaptable data structures suitable for in-memory computing on both dense and sparse arrays.">
+
+<title>Improving with R: Kylie Bemis Unveils Enhanced Signal Processing with Matter 2.4 Upgrade – R Consortium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../about/index.html">
+ <span class="dropdown-text">Mission Statement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/ISC-Charter-08-11-23.pdf">
+ <span class="dropdown-text">ISC Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/faq.html">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/privacy.html">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/thank-you.html">
+ <span class="dropdown-text">Thank You</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../../members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/join.html">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../../all-projects/index.html">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://blog.r-hub.io/2024/04/11/rhub2/">
+ <span class="dropdown-text">R-Hub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/">
+ <span class="dropdown-text">R/Medicine</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../webinars/webinars.html">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/events.html">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../../blog/index.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+ <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+ <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../codeofconduct.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/RConsortium"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Improving with R: Kylie Bemis Unveils Enhanced Signal Processing with Matter 2.4 Upgrade</h1>
+                  <div>
+        <div class="description">
+          The R Consortium connected with Kylie Bemis, assistant teaching professor at the Khoury College of Computer Sciences at Northeastern University. She has created matter, an R package that offers adaptable data structures suitable for in-memory computing on both dense and sparse arrays.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 7, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><img src="images/kylie-bemis-matter.png" class="img-fluid"></p>
+<p>The R Consortium recently connected with <a href="https://www.khoury.northeastern.edu/people/kylie-ariel-bemis/">Kylie Bemis</a>, assistant teaching professor at the Khoury College of Computer Sciences at Northeastern University. She has a keen interest in statistical computing frameworks and techniques for analyzing intricate data, particularly focusing on datasets with complex correlation patterns or those that amalgamate data from various origins.</p>
+<p>Kylie created <a href="https://www.bioconductor.org/packages/release/bioc/html/matter.html">matter</a>, an R package that offers adaptable data structures suitable for in-memory computing on both dense and sparse arrays, incorporating multiple features tailored for processing nonuniform signals, including mass spectra and various other types of spectral data. Recently, Kylie upgraded matter to version 2.4. <a href="https://www.r-consortium.org/blog/2023/05/24/matter-helps-solve-larger-than-memory-issues">Since our May 2023 discussion</a>, Kylie has enhanced its signal processing capabilities, focusing on analytical tools like principal component analysis and dimension reduction algorithms, which are crucial for imaging and spectral data. A grant from the R Consortium supports this project.</p>
+<p><strong>We talked with you about matter in May 2023. You were providing support for matter and looking to improve the handling of larger data sets and sparse non-uniform signals. matter has been updated to version 2.4. What’s new?</strong></p>
+<p><a href="https://www.r-consortium.org/blog/2023/05/24/matter-helps-solve-larger-than-memory-issues">Last time we spoke</a>, I had already rewritten most of the matter infrastructure in C++ for better maintainability. Since then, my focus has been on enhancing our signal processing capabilities. This summer, I’ve been adding essential signal processing functions and basic analytical tools, which are particularly useful in fields dealing with spectra or various types of signals.</p>
+<p>I’ve incorporated fundamental techniques like principal component analysis, non-negative matrix factorization, and partial least squares. I’ve also added several dimension reduction algorithms and a range of signal processing tools for both 1D and 2D signals. This includes smoothing algorithms for images and 1D signals and warping tools applicable to both.</p>
+<p>These enhancements are crucial for working with imaging and spectral data and include features like distance calculation and nearest neighbor search.</p>
+<p>My aim has been to augment matter with robust signal processing tools, particularly for sparse and non-uniform signals. This is inspired by my experience in augmented reality (AR) and my desire to integrate tools similar to <a href="https://www.mathworks.com/products/signal.html">MATLAB’s Signal Processing Toolbox</a> or <a href="https://scipy.org/">SciPy</a> in Python. As someone primarily analyzing mass spectrometry imaging data, I found these tools initially in my Cardinal package. I wanted to transfer them to a more appropriate platform, not specific to mass imaging, and reduce Cardinal’s reliance on compiled native code for easier version updates.</p>
+<p>Additionally, I’ve been building a more robust testing infrastructure for these tools and documenting them thoroughly, including citations for the algorithms I used for key picking and smoothing techniques. This documentation details the implementation of various algorithms, such as guided filtering and nonlinear diffusion smoothing, citing the sources of these algorithms.</p>
+<p><strong>By providing support for non-uniform signal data, matter provides a back end to mass spectrometry imaging data. But working with large files is applicable in a lot of domains. What are some examples?</strong></p>
+<p>I deal with large files and data sets across various fields. Matter can be particularly impactful in areas dealing with signal, spectral, or imaging data. One field that comes to mind is remote sensing, where the imaging tools I’ve incorporated would be highly beneficial. That’s one key application area.</p>
+<p>Another field is biomedical imaging, especially MRI data. For instance, a data format we often use for mass spectrometry imaging was originally developed for MRI – it’s called Analyze, and there’s a more recent variant known as <a href="https://nifti.nimh.nih.gov/">NIfTI</a>. This format is also supported in Cardinal for mass spec imaging data, but it’s primarily used in MRI and <a href="http://fmri.ucsd.edu/Research/whatisfmri.html">fMRI</a> data analysis. While matter doesn’t directly offer plug-and-play functionality for MRI data, with some modifications, it could certainly be adapted for importing and processing MRI data stored in these formats.</p>
+<p>We don’t have a specific function to read NIfTI files directly, but the structure of these files is quite similar to the mass imaging files we commonly work with. They consist of a binary file organized in a particular format, with a header that functions like a C or C++ struct, indicating where different image slices are stored. Understanding and interpreting this header, which is well-documented elsewhere, is key.</p>
+<p>So, with some effort to read and attach the header file correctly, it’s entirely feasible to build a function for reading and importing MRI data. We’ve already done something similar with the Analyze format. Someone could definitely examine our approach and develop a method to handle MRI data effectively.</p>
+<p><strong>Previously, you indicated you wanted to improve R data frames and string support. You have a prototype data frame in the package already? What’s the schedule for improvements?</strong></p>
+<p>I’m currently evaluating how far we’ll expand certain features in our project. One of these features is supporting strings, which is already implemented. Regarding data frames, I believe there might be better solutions out there, but it’s quite simple to integrate our data with them. For instance, taking a vector or an array, whether a matter matrix or a matter vector, and inserting it into a data frame column works well, particularly with Bioconductor data frames.</p>
+<p>I’m not entirely convinced that developing standalone, specialized data frame support in matter is necessary. It seems that other platforms, especially those like Bioconductor, are already making significant advancements in this area. For now, it seems sufficient that users can easily incorporate a matter vector or array into a data frame column. I’m hesitant to duplicate efforts or create overlapping functionalities with what’s already being done in this field.</p>
+<p><strong>What’s the best way for someone to try matter? How should someone get started?</strong></p>
+<p>Like any Bioconductor package, we offer <a href="https://bioconductor.org/packages/release/bioc/html/matter.html">a vignette on the Bioconductor website</a>. This vignette provides a basic guide on how to start using our package, including creating matrices and arrays. It shows how these can serve as building blocks to construct larger matrices, arrays, and vectors. This is a straightforward way for users to begin.</p>
+<p>Regarding the applicability of our package, it really depends on the specific data needs of the user. For instance, our package provides out-of-memory matrices and arrays. If that’s the primary requirement, then our package is certainly suitable. However, there are other packages, both in Bioconductor, like HDF5 array support, and on CRAN, such as big memory and FF, that also offer similar functionalities.</p>
+<p>The real advantage of our package becomes apparent when dealing with specific data types. If you’re working with data formats like MRI, where you have a binary file and a clear understanding of its format, our package can be very helpful. It simplifies attaching different parts of the file to an R data structure.</p>
+<p>Moreover, if your work involves signal data, particularly non-uniform signals like those in mass spectrometry or imaging data, our package becomes even more beneficial. Over the summer, I’ve added extensive support for preprocessing, dimension reduction, and other processes that are crucial for handling these types of data. So, in these scenarios, our package can be a valuable tool.</p>
+<p><strong>Anything else you would like to share about matter 2.0?</strong></p>
+<p>I’ve spent much of the summer working on improvements to the matter package, and it’s now in a good place, particularly regarding signal processing capabilities. These enhancements are largely aligned with the needs of mass spectrometry, an area I closely focus on. As new requirements emerge in mass spectrometry, I’ll look to add relevant features to matter, particularly in signal and image processing.</p>
+<p>However, my current priority is updating the Cardinal package to support all these recent changes in matter. Ensuring that Cardinal is fully compatible with the new functionalities in matter is my next major goal, and I’m eager to get started on this as soon as possible.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 65,000 members in 35 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2024 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

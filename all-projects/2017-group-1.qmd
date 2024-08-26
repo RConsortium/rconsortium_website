@@ -1,0 +1,134 @@
+## Funded ISC Grants (2017-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Adding Linux Binary Builders to CRAN](#adding-linux-binary-builders-to-cran)
+-   [An infrastructure for building R packages on MacOS Abstract with homebrew](#an-infrastructure-for-building-r-packages-on-macos-abstract-with-homebrew)
+-   [Conference Management System for R Consortium Supported Conferences](#conference-management-system-for-r-consortium-supported-conferences)
+-   [Continued Development of the R API for Distributed Computing](#continued-development-of-the-r-api-for-distributed-computing)
+-   [Establishing DBI](#establishing-dbi)
+-   [Forwards Workshops for Women and Girls](#forwards-workshops-for-women-and-girls)
+-   [Joint profiling of native and R code](#joint-profiling-of-native-and-r-code)
+-   [School of Data Material Development](#school-of-data-material-development)
+-   [stars: Scalable, spatiotemporal tidy arrays for R](#stars-scalable-spatiotemporal-tidy-arrays-for-r)
+
+___
+
+### Adding Linux Binary Builders to CRAN
+
+**Funded:**  
+$15,000
+
+**Proposed by:**  
+Dirk Eddelbuettel
+
+**Summary:**  
+This project proposes to take the creation of binary Linux packages to the next level by providing R-Hub and eventually CRAN with the ability to deliver directly installable binary packages with properly-resolved dependencies. This will allow large-scale automated use of CRAN packages anywhere: laptops, desktops, servers, cluster farms and cloud-based deployments. The project would like to hear from anyone who could possibly host a dedicated server in a rack for long term use.
+
+### An infrastructure for building R packages on MacOS Abstract with homebrew
+
+**Funded:**  
+$12,000
+
+**Proposed by:**  
+Jeroen Ooms
+
+**Summary:**  
+When installing CRAN packages, Windows and MacOS users often rely on binary packages that contain precompiled source code and any required external C/C++ libraries. By eliminating the need to setup a full compiler environment or manage external libraries this tremendously improves the usability of R on these platforms. Our project will improve the system by adapting the popular homebrew system to facilitate static linking of external libraries
+
+### Conference Management System for R Consortium Supported Conferences
+
+**Funded:**  
+$32,000
+
+**Proposed by:**  
+Heather Turner
+
+**Website:**  
+[https://github.com/satrdays](https://github.com/satrdays)
+
+**Summary:**  
+This project will evaluate a number of open source conference management systems to assess their suitability for use with useR! and satRdays. Test versions of these systems will be set up to test their functionality and ease of use for all roles (systems administrator, local organizer, program chair, reviewer, conference participant). A system will be selected and a production system set up, with a view to be ready for useR! 2018 and future satRdays events.
+
+### Continued Development of the R API for Distributed Computing
+
+**Funded:**  
+$15,000
+
+**Proposed by:**  
+Michael Lawrence
+
+**Website:**  
+[https://wiki.r-consortium.org/view/Distributed\_Computing\_Working\_Group](https://wiki.r-consortium.org/view/Distributed_Computing_Working_Group) and [https://github.com/vertica/ddR/wiki/Design](https://github.com/vertica/ddR/wiki/Design)
+
+**Summary:**  
+The ISC's Distributed Computing Working Group explores ways of enabling distributed computing in R. One of its outputs, the CRAN package ddR, defines an idiomatic API that abstracts different distributed computing engines, such as DistributedR and potentially Spark and TensorFlow. The goal of the project is to enable R users to interact with familiar data structures and write code that is portable across distributed systems. The working group will use this R Consortium grant to fund an internship to help improve ddR and implement support for one or more additional backends. Please contact Michael Lawrence to apply or request additional information.
+
+### Establishing DBI
+
+**Funded:**  
+$26,500
+
+**Proposed by:**  
+Kirill Müller
+
+**Website:**  
+[https://dbi.r-dbi.org/](https://dbi.r-dbi.org/)
+
+**Summary:**  
+Getting data in and out of R is an important part of a statistician's or data scientist's work. If the data reside in a database, this is best done with a backend to DBI, R's native DataBase Interface. The ongoing "Improving DBI" project supports the specification of DBI, both in prose and as an automated test, and also the adaptation of the \`RSQLite\` package to these specs. This follow-up project aims at implementing modern, fully spec-compliant DBI backends to two major open-source RDBMS, MySQL/MariaDB and PostgreSQL.
+
+### Forwards Workshops for Women and Girls
+
+**Funded:**  
+$25,000
+
+**Proposed by:**  
+Dianne Cook
+
+**Website:**  
+[https://forwards.github.io/edu/workshops/](https://forwards.github.io/edu/workshops/)
+
+**Summary:**  
+The proportion of female package authors and maintainers has remained persistently low, at best at 15%, despite 20 years of the R project's existence. This project will conduct a grassroots effort to increase the participation of women in the R community. One day package development workshops for women engaged in research will be held in Melbourne, Australia and Auckland, New Zealand in 2017, and at locations yet to be determined in the USA and Europe in 2018. Additionally, one day workshops for teenage girls focused on building Shiny apps will be developed to encourage an interest in programming. These will be rolled out in the same locations as the women's workshops. All materials developed will be made available under a Creative Commons share-alike license on the Forwards website (http://forwards.github.io).
+
+### Joint profiling of native and R code
+
+**Funded:**  
+$11,000
+
+**Proposed by:**  
+Kirill Müller
+
+**Website:**  
+[https://github.com/krlmlr/profile](https://github.com/krlmlr/profile) and [https://cran.r-project.org/web/packages/profile/index.html](https://cran.r-project.org/web/packages/profile/index.html)
+
+**Summary:**  
+R has excellent facilities for profiling R code: the main entry point is the \[\`Rprof()\`\](https://www.rdocumentation.org/packages/utils/versions/3.3.2/topics/Rprof) function that starts an execution mode where the R call stack is sampled periodically, optionally at source line level, and written to a file. Profiling results can be analyzed with \`summaryRprof()\`, or visualized using the \`profvis\`, \`aprof\`, or \`GUIProfiler\` packages. However, the execution time of native code is only available in bulk, without detailed source information. This project aims at bridging this gap with a drop-in replacement to \`Rprof()\` that records call stacks and memory usage information at both R and native levels, and later commingles them to present a unified view to the user.
+
+### School of Data Material Development
+
+**Funded:**  
+$11,200
+
+**Proposed by:**  
+Heidi Seibold
+
+**Summary:**  
+School of Data is a network of data literacy practitioners, both organizations and individuals, implementing training and other data literacy activities in their respective countries and regions. Members of School of Data work to empower civil society organizations (CSOs), journalists, civil servants and citizens with the skills they need to use data effectively in their efforts to create better, more equitable and more sustainable societies Our R consortium will develop learning materials about R for journalists, with a focus on making them accessible and relevant to journalists from various countries. As a consequence, our content will use country-relevant examples and will be translated in several languages (English, French, Spanish, German).
+
+### stars: Scalable, spatiotemporal tidy arrays for R
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Edzer Pebesma
+
+**Website:**  
+[https://cran.r-project.org/web/packages/stars/index.html](https://cran.r-project.org/web/packages/stars/index.html)
+
+**Summary:**  
+Spatiotemporal and raster data often come as dense, two-dimensional arrays while remote sensing and climate model data are often presented as higher dimensional arrays. Data sets of this kind often do not fit in main memory. This project will make it easier to handle such data with R by using dplyr-style, pipe-based workflows, and also consider the case where the data reside remotely, in a cloud environment. Questions and offers to support are welcome through issues at: https://github.com/edzer/stars

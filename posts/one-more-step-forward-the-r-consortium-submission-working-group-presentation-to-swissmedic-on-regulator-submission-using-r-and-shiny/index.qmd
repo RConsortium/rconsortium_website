@@ -1,0 +1,37 @@
+---
+title: "One More Step Forward: The R Consortium Submission Working Group’s Presentation to Swissmedic on Regulatory Submission using R and Shiny"
+description: "On January 30, 2024, the R Consortium Submission Working Group made a presentation to Swissmedic in Bern, Switzerland, with 10 attendees in person and 50 online."
+author: "Guest Authors"
+image: "Screen%20Shot%202024-05-27%20at%204.27.19%20PM.png"
+date: "05/29/2024"
+---
+
+
+_This post was authored by Gregory Chen, Biostatistics and Research Decision Sciences (BARDS), MSD, Switzerland, and Ning Leng, Product Development Data Sciences (PDD), F. Hoffmann-La Roche, USA_
+
+
+
+
+
+![](Screen%20Shot%202024-05-27%20at%204.27.19%20PM.png)
+
+
+On January 30, 2024, the R Consortium Submission Working Group made a presentation to Swissmedic in Bern, Switzerland, with 10 attendees in person and 50 online. It started with a motivation as to why to consider using open source and specifically R for regulatory submissions. The group then proceeded to show cases of the pilot 1 and 2 submission to FDA. 
+
+The conclusion was an insightful discussion for about 20 minutes with the participants on the lessons learned, key factors to sort in line for broader adoption of R and Shiny for regulatory submissions, and what would be most added value for a regulatory shiny app, namely
+
+
+
+1. How to deploy the submitted R package and Shiny App to guarantee the clinical outcomes can be smoothly reproduced on the regulatory side
+2. What would be the ultimate purpose of a regulatory shiny app, and what are value-added features? Should the app only focus on offering interactivities to facilitate the review of tables, figures, and listings in CSR, or should it also include designed features to enable exploratory, descriptive analysis (e.g., for subgroups) to certain degrees, which may greatly shorten back-and-forth inquiry between regulator and drug developer?
+3. Validation and version traceability of dependent open source R packages used in the submission package
+4. How to leverage existing and emerging cross-industrial initiatives (e.g. R consortium) in the open source space to support and ease the potential technical issue during the adoption of R for submission
+
+Accompanying this post, the full presentation slide deck is made publicly available [here](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/R_and_Shiny_in_Regulatory_Submission_to_Swissmedic_2024.pdf), inviting further exploration and discussion.
+
+The R Consortium’s presentation at Swissmedic represents a hopeful step toward more interactive, efficient, and transparent regulatory submissions. As the conversation between the R Consortium and regulatory bodies continues, our future collection of pilot projects hopefully will offer richer examples and templates to our growing R community within the pharmaceutical sector, spanning both regulatory and drug developer sides.
+
+To find out more about the R Consortium Submission Working Group, please see: [https://rconsortium.github.io/submissions-wg/](https://rconsortium.github.io/submissions-wg/) 
+
+
+

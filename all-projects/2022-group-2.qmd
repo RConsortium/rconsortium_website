@@ -1,0 +1,77 @@
+## Funded ISC Grants (2022-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [D3po: R Package for Easy Interactive D3 Visualization With Shiny](#d3po-r-package-for-easy-interactive-d3-visualization-with-shiny)
+-   [Tooling and Guidance for Translations of Markdown-Based R Content \ Quarto, R Markdown](#tooling-and-guidance-for-translations-of-markdown-based-r-content-quarto-r-markdown)
+-   [Online Submission and Review Infrastructure for the R Journal](#online-submission-and-review-infrastructure-for-the-r-journal)
+-   [Upgrading SatRdays Website Template](#upgrading-satrdays-website-template)
+-   [Building the “Spatial Data Science With R” Educational Materials and Pedagogical Infrastructure](#building-the-spatial-data-science-with-r-educational-materials-and-pedagogical-infrastructure)
+
+___
+
+### D3po: R Package for Easy Interactive D3 Visualization With Shiny
+
+**Funded:**  
+$8,000
+
+**Proposed by:**  
+Mauricio "Pacho" Vargas Sepulveda
+
+**Summary:**  
+The D3po: R Package for Easy Interactive D3 Visualization With Shiny project plans to finish a new version of d3po and include maps and other plot types available in highcharts. This project aims to provide out-of-the-box high-quality visualizations with minimum time and coding effort.
+
+The ultimate aim of the project is to produce a package that:
+
+-   Offers integration with Shiny
+-   Enables downloading the charts in different image formats (png, jpeg, svg)
+-   Enables downloading the data in different formats (json, csv, xlsx)
+-   Can produce high-quality results with a minimal number of lines of code
+
+“I figured out that d3po sounded like c3po from Star Wars, also a Chilean will read it as “dee three POH”, and “poh” is Chilean slang that reflects the “necessity is the mother of invention” spirit that Chileans have.” - Mauricio "Pacho" Vargas Sepulveda
+
+### Tooling and Guidance for Translations of Markdown-Based R Content (Quarto, R Markdown)
+
+**Funded:**  
+$8,000
+
+**Proposed by:**  
+Maëlle Salmon
+
+**Summary:**  
+Tooling and Guidance for Translations of Markdown-Based R Content (Quarto, R Markdown) focuses on the achievement of a first version of translated material, both technically (tooling to create an automatically translated document) and linguistically (glossary). With this proposal, the project will aim to share the rOpenSci workflow with others via the creation of an R package including extensive documentation.
+
+### Online Submission and Review Infrastructure for the R Journal
+
+**Funded:**  
+$22,000
+
+**Proposed by:**  
+Simon Urbanek
+
+**Summary:**  
+The Online Submission and Review Infrastructure for the R Journal ISC-funded project aims to address problems with the current all-manual revision infrastructure for submissions in the R Journal. The project proposes the development and deployment of an online, web-based system that ties into the existing status management infrastructure but allows for reviews and submission management to be performed online. The ISC funds will be used to assist with the development of an online front-end for the management of articles for the R Journal, including submission, checking, and peer-review tracking of articles. The system will leverage the existing rj and rjtools packages which provide the back-end, but will add a web interface to the process from submission to reviews and article management.
+
+### Upgrading SatRdays Website Template
+
+**Funded:**  
+$6,000
+
+**Proposed by:**  
+Ben Ubah
+
+**Summary:**  
+The Upgrading SatRdays Website Template project addresses the SatRdays event website templates, which are used by the R community looking to run a SatRday event. The goal of this project is to upgrade the SatRdays website template with a view to make it easy for R community organizers to spin up their own SatRday website without deep knowledge of technologies like Hugo (upon which the current template is based using an R package like blogdown. There will also be documentation of this development with easy-to-follow instructions that are beginner-friendly.
+
+### Building the “Spatial Data Science With R” Educational Materials and Pedagogical Infrastructure
+
+**Funded:**  
+$25,000
+
+**Proposed by:**  
+Orhun Aydin
+
+**Summary:**  
+The Building the “Spatial Data Science With R” Educational Materials and Pedagogical Infrastructure project proposes to deliver a set of self-contained online training modules on spatial and spatiotemporal data science with R. The modules will consist of focus-areas pertinent to topics frequently requested by the spatial R community using a large number of packages from CRAN Spatial Task View and Spatiotemporal Task View. The deliverable will provide the R Consortium and community with the materials needed to solicit more lessons from the community while ensuring uniformity across lessons.

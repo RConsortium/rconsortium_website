@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2024-04-18">
+<meta name="description" content="Kirill Müller is the author of the {DBI} package, which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages…">
+
+<title>Building Data Highways: Kirill Müller’s Journey in Enhancing R’s Database – R Consortium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../about/index.html">
+ <span class="dropdown-text">Mission Statement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/ISC-Charter-08-11-23.pdf">
+ <span class="dropdown-text">ISC Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/faq.html">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/privacy.html">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/thank-you.html">
+ <span class="dropdown-text">Thank You</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../../members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/join.html">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../../all-projects/index.html">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://blog.r-hub.io/2024/04/11/rhub2/">
+ <span class="dropdown-text">R-Hub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/">
+ <span class="dropdown-text">R/Medicine</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../webinars/webinars.html">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/events.html">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../../blog/index.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+ <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+ <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../codeofconduct.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/RConsortium"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Building Data Highways: Kirill Müller’s Journey in Enhancing R’s Database</h1>
+                  <div>
+        <div class="description">
+          Kirill Müller is the author of the {DBI} package, which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages…
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 18, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>Kirill Müller is the author of the <a href="https://dbi.r-dbi.org/">{DBI} package</a>, which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages that implement this interface, such as <a href="https://cran.r-project.org/web/packages/RPostgres/index.html">RPostgres</a>, <a href="https://cran.r-project.org/web/packages/RMariaDB/index.html">RMariaDB</a>, and <a href="https://cran.r-project.org/web/packages/RSQLite/index.html">RSQLite</a>. There’s more information <a href="https://r-dbi.org/blog/dbi-4-1/">here.</a> Most users who want to access a database do not need to install DBI directly. It will be installed automatically when one of the database backends is installed. If you are new to DBI, the <a href="https://dbi.r-dbi.org/articles/DBI.html">introductory tutorial</a> is an excellent starting point for familiarizing yourself with essential concepts.</p>
+<p>{DBI} supports about 30 DBMS, including:</p>
+<ul>
+<li>MariaDB and MySQL, using the R-package RMariaDB and RMySQL</li>
+<li>Postgres, using the R-package RPostgres</li>
+<li>SQLite, using the R-package RSQLite</li>
+</ul>
+<p><img src="Screenshot-2024-04-18-at-9.59.51 AM.webp" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Kirill Müller is passionate about building, applying, and teaching tools for working with data and has worked on the boundary between data and computer science for more than 25 years. He has been awarded five R consortium projects over the past 8 years to improve database connectivity and performance in R and another one to investigate profiling of R and native code. Kirill is a core contributor to several tidyverse packages, including <a href="https://dplyr.tidyverse.org/">dplyr</a> and <a href="https://tibble.tidyverse.org/">tibble</a>, and the maintainer of the <a href="https://r.duckdb.org/">duckdb</a> R package. He holds a Ph.D.&nbsp;in Civil Engineering from ETH Zurich and is a founder and partner at <a href="https://www.cynkra.com/">cynkra</a>, a Zurich-based data science consultancy with a heavy focus on R. Kirill enjoys playing badminton, cycling, and hiking.</p>
+</blockquote>
+<p><strong>Your latest work with the R Consortium was focused on the maintenance and support for {DBI}, the {DBItest} test suite, and the 3 backends to open source databases ({RSQLite}, {RMariaDB} and {RPostgres}). You stated that “Keeping compatibility with the evolving ecosystem (OS, databases, R itself, other packages) is vital for the long-term success of the project.” What’s the current status?</strong></p>
+<p>DBI and the other projects are available for use. Please try them!</p>
+<p>I always strive for a healthy, “green” build, prioritizing clean and efficient outcomes. However, given the complexity of the projects, with their many moving parts and the continuous influx of new developments, achieving perfection at all times can be challenging. My goal is to ensure that everything we build meets a standard of functionality, even if there are moments when the builds don’t meet every expectation.</p>
+<p>Fortunately, the generous funding provided by the R Consortium empowers us to address and rectify any issues as they emerge. This financial support is crucial, as it allows for the immediate tackling of problems, ensuring that our projects remain on the cutting edge and continue to serve the community effectively. Despite the occasional imperfections, my commitment is to promptly and efficiently solve these problems, maintaining the high quality and reliability of our builds.</p>
+<p>More information available <a href="https://r-dbi.org/blog/dbi-4-2/">here.</a></p>
+<p><strong>Is performance an issue with big data sets? Does R have performance advantages or disadvantages compared to other languages?</strong></p>
+<p>R has unique strengths as a powerful interface language. R treats data frames as first-class data structures. Functions and expressions are first-class objects, enabling easy parsing, computing, and emitting code, fostering robust programming practices. Moreover, R’s “pass by value” semantics (to be more accurate, “pass by reference and copy on write) ensure that functions do not inadvertently alter your data. This eliminates concerns over state management and makes data manipulation both predictable and secure.</p>
+<p>Despite performance considerations, R is adept at efficiently handling bulk data operations. For example, working with columnar data frames that contain anywhere from 100,000 to 3 million rows is smooth due to R’s vectorized approach, allowing for efficient column-wise addition or multiplication. However, the performance can decline if large data frames are processed cell by cell.</p>
+<p>And here’s the true power of R: As an interface language, R enables the use of external, high-speed engines—be it <a href="https://duckdb.org/">DuckDB</a>, <a href="https://arrow.apache.org/">Arrow</a>, traditional databases, or data processing tools like <a href="https://r-datatable.com/">data.table</a> and <a href="https://sebkrantz.github.io/collapse/">collapse</a>—for computation, while R itself is used to compose the commands for these engines. This integration showcases R’s versatility and efficiency by leveraging the strengths of these specialized engines for heavy lifting, thereby bypassing its performance limitations in certain areas.</p>
+<p>Therefore, the focus should not be just on performance in isolation but rather on what can be achieved through R’s integration with other systems. This flexibility allows R to extend its utility well beyond mere data processing, making it a potent tool not only for technical users but also accessible to those with less technical expertise. The intuitive syntax of R, especially with domain-specific languages like <a href="https://dplyr.tidyverse.org/">dplyr</a>, makes it exceptionally user-friendly, resembling plain English and facilitating a smoother workflow for a wide range of tasks.</p>
+<p><strong>Who uses databases and R most? Are they already using R and need to connect to different types of DBMS?</strong>&nbsp;</p>
+<p>As an interface language, R is remarkably versatile. It is designed to facilitate connections with a broad spectrum of tools and systems. This versatility positions R as a central hub for orchestrating a wide range of tasks, enabling users to maintain their workflow within the platform without wrestling with complex interfaces. Command-line interfaces are acceptable, offering a decent level of control and flexibility. File-based interfaces, on the other hand, can be cumbersome and inefficient, making them far from ideal for dynamic data management tasks.&nbsp;</p>
+<p>The spectrum of interfaces available for database interaction varies. The most effective solution is an R package that includes bindings to a library. This setup provides a direct conduit to the necessary functionality, streamlining the interaction process. Examples are DBI backends for PostgreSQL, SQLite, MySQL, and ODBC, or the new ADBC (Arrow Database Connectivity) standard (more on that later). These backends facilitate direct, low-friction access to databases from within R.</p>
+<p>Focusing on native solutions, I want to emphasize the potential of the <a href="https://dm.cynkra.com/">dm package</a>, which I see as offering substantial benefits beyond what the DBI backends might provide. The dm package closely integrates database concepts with R. It enables sophisticated operations, such as the management of data models with primary and foreign keys, execution of complex joins, and the transformation of data frames into a fully operational data warehouse within R. These capabilities extend and enhance the functionalities provided by dplyr, dbplyr, and DBI, offering a comprehensive toolkit for database management directly through R.</p>
+<p><strong>RMySQL is being phased out in favor of the new RMariaDB package. Why?</strong></p>
+<p>When I first got involved with the DBI Library, it was after being awarded my first contract, which focused on connecting R to SQLite, PostgreSQL, and MariaDB. It’s important to note that MariaDB and MySQL are essentially related; MariaDB is a fork of MySQL. Despite their independent evolution, they remain largely interchangeable, allowing connections to either MariaDB or MySQL databases without much trouble. This similarity can sometimes cause confusion.</p>
+<p>In terms of technical specifics, our MySQL package utilizes C to create bindings to its underlying library, while our <a href="https://www.r-dbi.org/backends/">DBI package</a> prefers C++, which I find more user-friendly for these tasks. When I took charge of the project, these packages were already separate, and I didn’t challenge that decision. Starting anew offers the benefit of not needing to maintain backward compatibility with existing our MySQL users, which has posed significant challenges, especially with the RSQLite package. That package’s widespread use across several hundred other packages meant we had to conduct reverse dependency checks, running tests from those packages against modifications in ours to ensure compatibility. This process, essentially an enhanced test suite, required considerable effort.</p>
+<p>Reflecting on it now, I would have preferred to initiate a project like RSQLite, to begin with a clean slate. Starting fresh allows for quicker progress without the constraints of backward compatibility or the expectation of maintaining behaviors that may no longer be relevant or supported. However, you also want to avoid alienating your user base. So, transitioning to C++ and starting from scratch was a strategic choice, and it was one that the maintainer of our MySQL and I agreed upon.</p>
+<p>I should mention the odbc <a href="https://odbc.r-dbi.org/">package</a>, which isn’t included in the scope of R Consortium projects but is essential to our work. We use the odbc package extensively to connect with a variety of commercial databases and specialized database systems, some of which might not offer a straightforward method for direct interaction. In our setup, the odbc package acts as a crucial database interface, bridging the gap between the database itself and DBI.</p>
+<p>There’s been a significant new development in this space, known as <a href="https://arrow.apache.org/adbc/">ADBC</a>, accompanied by an R package named <a href="https://adbi.r-dbi.org/">adbi</a>. This initiative, spearheaded by Voltron Data, represents a modern reimagining of ODBC, specifically designed to enhance analytical workflows. While traditional databases have been geared towards both reading and writing data, ADBC focuses on optimizing data reading and analysis, recognizing that data science and data analysis workflows predominantly require efficient data reading capabilities. This focus addresses a gap left by ODBC, which wasn’t originally designed with high-speed data analysis in mind.</p>
+<p>These developments are exciting, and I’m keen to see what the future holds for us in this evolving landscape.</p>
+<p><strong>What’s the difference between DBI and dbplyr?</strong></p>
+<p>I could describe it as a relationship between DBI and dbplyr, where dbplyr acts as a user of DBI. DBI supplies the essential functionality that enables dbplyr to operate effectively. This setup allows dbplyr to concentrate on constructing SQL queries, while other packages handle the responsibility of connecting to the individual databases.</p>
+<p><strong>What are the biggest issues with using R and databases moving forward?</strong></p>
+<p>The current DBI project faces <a href="https://github.com/r-dbi/dbi3/?tab=readme-ov-file#issues-and-solutions">challenges</a> that are tough to solve within its existing scope. These challenges could significantly impact many dependent components, which is why this repository has little code and serves mainly as a placeholder for ideas we think DBI is missing. However, these ideas have the potential to become significant enhancements.</p>
+<p>One major technical challenge I’ve faced is with query cancellation. If a query runs too long, the only option is to terminate the process, which stops our entire session. This issue is closely related to the concept of asynchronous processing, where a query is sent off, and other tasks are done in parallel until the query results are ready. This would be especially useful in applications like Shiny, allowing it to handle multiple user sessions simultaneously within the same R process. Finding a solution to this problem is crucial due to the current lack of effective alternatives in our infrastructure.</p>
+<p>While not every issue signifies a major problem, there are certainly areas that DBI does not address, some of which may be beyond its intended scope. Still, there are notable gaps that require attention.</p>
+<p>As for our original plan, we’re taking a different direction thanks to the introduction of the ADBC via the adbi package. ADBC offers a stronger foundation for achieving our goals. With ADBC, all data is funneled through the Arrow data format, which means we no longer need individual backends to translate data into R data frames separately, and at the same time other ecosystems can be integrated easier. In addition, a substantial part of the known challenges for DBI, including query cancellation and asynchronous processing, are already solved by ADBC. Using ADBC as a bridge between databases and ecosystems reduces the complexity from a many-to-many (n × m) problem to a more manageable one-to-one (n + m) problem. This reduces duplication of effort and makes it easy to support new databases or new ecosystems. More information <a href="https://r-dbi.org/blog/dbi-4-3/">here.</a></p>
+<p><strong>How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</strong></p>
+<p>This is an excellent opportunity for young professionals to secure funding for their ideas or explore areas that haven’t been fully addressed yet. R is a fantastic tool, but it constantly evolves with new technologies being introduced. I’m particularly impressed by how the consortium supports various projects, including <a href="https://rladies.org/">R-Ladies</a> and <a href="https://satrdays.org/">SatRdays</a>, which promote inclusivity within the community. I was approached with the idea of applying for a project, something I might not have considered alone. This makes me curious whether there’s a list of challenges similar to what the Google Summer of Code offers, where potential mentors submit project ideas for students to work on under their guidance. I haven’t looked into this possibility for the consortium in detail yet, but the thought of it excites me. I thoroughly enjoy being part of this process and am eager to see what long-term collaborations might emerge from it.</p>
+<section id="about-isc-funded-projects" class="level2">
+<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
+<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2024 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

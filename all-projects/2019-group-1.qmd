@@ -1,0 +1,74 @@
+## Funded ISC Grants (2019-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Enhancing usability of sample size calculations and power analyses in R with a Task View page and accompanying tutorials](#enhancing-usability-of-sample-size-calculations-and-power-analyses-in-r-with-a-task-view-page-and-accompanying-tutorials)
+-   [Expanding the ‘metaverse'; an R ecosystem for meta-research](#expanding-the-metaverse-an-r-ecosystem-for-meta-research)
+-   [R-global: analysing spatial data globally](#r-global-analysing-spatial-data-globally)
+-   [sftraj: A central class for tracking and movement data](#sftraj-a-central-class-for-tracking-and-movement-data)
+
+___
+
+### Enhancing usability of sample size calculations and power analyses in R with a Task View page and accompanying tutorials
+
+**Funded:**  
+$13,912
+
+**Proposed by:**  
+Richard Webster
+
+**Website:**  
+[https://cheori.org/samplesize/](https://cheori.org/samplesize/)
+
+**Summary:**  
+Sample size calculation and power analysis are fundamental for study design, yet they are challenging to do in the R programming language due to limited inter-package documentation. It is difficult to find the required functionality within the sea of open source packages. Indeed, there is no systematic R resource that allows users to search for whether a particular study design and corresponding statistical test has a power analysis implemented in R.
+
+Our aims are to improve usability of power analyses performed in R, to facilitate proper design and analysis of data, and promote reproducible research.
+
+Our duel approach is to create a Task View page for sample size calculations & power analyses, as well as a series of tutorials to reduce the R users' learning curve. Addressing the usability of sample size calculation / power analyses will benefit a broad spectrum of R users, as this is a vital component for study design, result interpretability and reproducibility.
+
+### Expanding the ‘metaverse'; an R ecosystem for meta-research
+
+**Funded:**  
+$20,171
+
+**Proposed by:**  
+Martin Westgate
+
+**Website:**  
+[https://rmetaverse.github.io](https://rmetaverse.github.io/)
+
+**Summary:**  
+Evidence synthesis is the process of identifying, collating and summarizing primary scientific research to provide reliable, transparent summaries such as systematic reviews and meta-analyses. Despite their importance for linking research with policy, however, evidence synthesis projects are often time-consuming, expensive, and difficult to update. Open and reproducible workflows would help address these problems, but these workflows are poorly supported by the current package environment, preventing access by new users and hindering uptake of the well-developed suite of statistical tools for meta-analysis in R. The metaverse project will integrate and expand tools to support evidence synthesis and meta-research in R; suggest flexible workflows to complete these projects in a straightforward and open manner; and provide a collector package allowing easy access to these developments for new and experienced users.
+
+### R-global: analysing spatial data globally
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Edzer Pebesma
+
+**Website:**  
+[http://s2geometry.io/](http://s2geometry.io/)
+
+**Summary:**  
+Currently, a number of R spatial functions assume that coordinates are two-dimensional, taken from a "flat" space, and may or may not work for geographical (long/lat) coordinates, depicting points on a globe. This project will try to make such functions more robust and helpful for the the case of geographical coordinates. It will reconsider the concept of a bounding box, and build an interface to the S2 geometry library (http://s2geometry.io/), which powers several modern systems that assume geographic coordinates.
+
+### sftraj: A central class for tracking and movement data
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Mathieu Basille
+
+**Website:**  
+[https://github.com/mablab/sftraj](https://github.com/mablab/sftraj)
+
+**Summary:**  
+Movement defined broadly plays a central and growing role in fields as diverse as transportation, sport, ecology, music, medicine, and data science. Sampling movements results in tracking data, in the form of geographic (x,y,z) and temporal coordinates (t). Despite this common nature, there is a critical lack of standard infrastructure to deal with movement. With a sharp increase of the use of R for movement studies (more than 70 % of movement studies used R in 2018), the Movement community in R is at the same time very dynamic and very fragmented; in 2018 there was 57 packages that process, visualize and analyze tracking data, one third of which worked in isolation, not being linked to any other tracking package. We aim to develop a central trajectory class to support all stages of movement studies (pre-processing, post-processing and analysis).
+
+We propose a sftraj package offering a generic and flexible approach. The only aim of the package will be to present a central class and basic functions to build, handle, summarize and plot movement data. Our project relies on three complementary pillars: a broad involvement of the movement community, a robust conceptual data model, and a sf-based implementation in R. The first stage of the work will specifically involve the Movement community in R. During this stage, we will open contributions of use cases for the package (using GitHub's issue system), which set practical goals for the development of the package. Use cases describe the workflow that is expected from both users' and developers' perspectives, and thus the capabilities that a trajectory package needs to offer. The package specifications and development will aim at addressing all use cases described, to make sure the solution provided is relevant for a wide array of users and package developers.

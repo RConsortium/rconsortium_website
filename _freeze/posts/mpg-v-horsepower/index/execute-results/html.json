@@ -1,0 +1,16 @@
+{
+  "hash": "b7e316f1987b1661061cb7065786e05e",
+  "result": {
+    "markdown": "---\ntitle: \"MPG v Horsepower EXAMPLE\"\nauthor: \"Jesse Casman\"\nsubtitle: \"Just an example of working with a .qmd file\"\ndate: \"2023-11-06\"\n---\n\n\n# MPG vs Horsepower\n\nI'm guessing MPG trends downward as the horsepower of engines goes up. Let's take a look:\n\n\n::: {.cell .column-margin}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nmtcars2 <- mtcars\nmtcars2$am <- factor(\n  mtcars$am, labels = c('automatic', 'manual')\n)\nggplot(mtcars2, aes(hp, mpg, color = am)) +\n  geom_point() + geom_smooth() +\n  theme(legend.position = 'bottom')\n```\n\n::: {.cell-output-display}\n![MPG vs horsepower, colored by transmission.](index_files/figure-html/fig-margin-1.png){#fig-margin width=672}\n:::\n:::\n\n\nShowing it bigger:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nmtcars2 <- mtcars\nmtcars2$am <- factor(\n  mtcars$am, labels = c('automatic', 'manual')\n)\nggplot(mtcars2, aes(hp, mpg, color = am)) +\n  geom_point() + geom_smooth() +\n  theme(legend.position = 'bottom')\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n```\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

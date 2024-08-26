@@ -1,0 +1,112 @@
+## Funded ISC Grants (2016-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [A unified framework for Distributed Computing in R](#a-unified-framework-for-distributed-computing-in-r)
+-   [Improving DBI](#improving-dbi)
+-   [R Implimentation Optimization Tooling (RIOT) Workshops](#r-implimentation-optimization-tooling-riot-workshops)
+-   [RL10N: R Localization Proposal](#rl10n-r-localization-proposal)
+-   [SatRDays](#satrdays)
+-   [Simple Features for R](#simple-features-for-r)
+-   [Software Carpentry R Instructor Training](#software-carpentry-r-instructor-training)
+
+___
+
+### A unified framework for Distributed Computing in R
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Michael Lawrence
+
+**Website:**  
+[https://github.com/RConsortium/Distributed-Computing-WG](https://github.com/RConsortium/Distributed-Computing-WG)
+
+**Summary:**  
+Many Big Data platforms expose R-based interfaces that lack standardization and are therefore difficult to learn. This project will develop a common framework to simplify and standardize how users program distributed applications in R, ultimately reducing duplication of effort.
+
+### Improving DBI
+
+**Funded:**  
+$26,500
+
+**Proposed by:**  
+Kirill Müller
+
+**Website:**  
+[https://dbi.r-dbi.org/](https://dbi.r-dbi.org/)
+
+**Summary:**  
+Database access is an important cornerstone of the R ecosystem, but today's specifications – data type transformation, return values, error conditions – remain vague and result in data analysis errors. This project aims to improve database access in R so that porting code is simplified and less prone to error.
+
+### R Implimentation Optimization Tooling (RIOT) Workshops
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Mark Hornick
+
+**Website:**  
+[https://riotworkshop.github.io/](https://riotworkshop.github.io/)
+
+**Summary:**  
+RIOT 2016 is a one-day workshop to unite R language developers, identify R language development and tooling opportunities, increase involvement of the R user community and more.
+
+### RL10N: R Localization Proposal
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Richard Cotton
+
+**Website:**  
+[https://github.com/RL10N/RL10N](https://github.com/RL10N/RL10N) and [https://libraries.io/github/RL10N](https://libraries.io/github/RL10N)
+
+**Summary:**  
+Although the R language is used globally, very few R packages are available in languages other than English. The RL10N project will make it easier for R developers to include translations in their own packages.
+
+### SatRDays
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Stephanie Locke
+
+**Website:**  
+[https://github.com/satrdays](https://github.com/satrdays)
+
+**Summary:**  
+“SatRDays” are community-led, regional conferences to support collaboration, networking and innovation within the R community. Initially three events will be hosted, with plans for additional meet-ups as the R user base grows.
+
+### Simple Features for R
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Edzer Pebesma
+
+**Website:**  
+[https://github.com/r-spatial/sf/](https://github.com/r-spatial/sf/)
+
+**Summary:**  
+Using the “Simple Features” standard supported by the Open Geospatial Consortium and the International Organization for Standardization, this tool will simplify analysis on modern geospatial data.
+
+### Software Carpentry R Instructor Training
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Laurent Gatto
+
+**Website:**  
+
+**Summary:**  
+This two-day in-person training course will introduce the basics of R programming and address the growing demand for training resources for the R language.

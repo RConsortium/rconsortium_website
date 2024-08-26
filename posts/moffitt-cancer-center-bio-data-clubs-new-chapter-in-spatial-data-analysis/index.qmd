@@ -1,0 +1,54 @@
+---
+title: "Moffitt Cancer Center Bio-Data Club’s New Chapter in Spatial Data Analysis and Enhanced Hackathon Collaboration"
+description: "The R Consortium recently reconnected with Paul Stewart, founder of Moffitt Cancer Center Bio-Data Club in Tampa, Florida. Since the last update on January 6th, 2023, the Moffitt Cancer Center…"
+author: "R Consortium"
+date: "02/27/2024"
+---
+
+The R Consortium recently reconnected with [Paul Stewart](https://www.linkedin.com/in/paulallenstewart), founder of [Moffitt Cancer Center Bio-Data Club](https://www.meetup.com/biodataclub/members/?op=leaders) in Tampa, Florida. Since the last update on [January 6th, 2023](https://www.r-consortium.org/blog/2023/01/06/inclusive-space-for-bio-data-and-medical-r-group-in-tampa-florida), the Moffitt Cancer Center Bio-Data Club has hosted special guest Dr. Josh Starmer of [StatQuest](https://statquest.org/), and it has welcomed new co-organizers Rodrigo Carvajal, Nathan Van Bibber and Dr. Alex Soupir. The club has maintained its momentum with monthly meetings that have featured enriching discussions, educational talks, and practical tutorials.
+
+One big change they have made this year is revamping their annual hackathon to broaden its scope and encourage greater participation from external academic institutions and industry partners. This expansion aims to enrich the event with diverse perspectives and innovative ideas, marking a significant step forward for the club and its contributions to bioinformatics and cancer research.
+
+![](https://lh7-us.googleusercontent.com/Rht_DkWPOwUzdFhfO3q06syrWyK8ZCH4jBX_SdRjcRs2waZT7R1V1zUYotMoTNqHEtR6k6vGQFqxWbm73_q4e9LIaUYV3J3HwZVDhyUoH7mVFNMQVzpWBGf2FMmil1HTeikeYNoP_WYQZ7symWKaW8M)
+
+**What is new with Moffitt Cancer Center Bio-Data Club since last we spoke on** [**Jan 6th, 2023**](https://www.r-consortium.org/blog/2023/01/06/inclusive-space-for-bio-data-and-medical-r-group-in-tampa-florida)**?**
+
+Something new is that we hosted sessions on spatial data analysis. Our work at Moffitt often involves big molecular data, delving into patients’ tumor samples or blood to uncover insights about genes, proteins, and metabolites. This exploration aims to unravel the intricacies of cancer, paving the way for new treatments or early detection methods. Traditionally, we analyze patient tumors in bulk, meaning the entire sample is processed at once, and molecules of interest are extracted and profiled. However, the resulting data are just numbers in a matrix, and we lack the ability to define what part of the tumor the numbers are coming from. New spatial technologies have recently revolutionized our understanding of cancer and other diseases. We can now spatially resolve where genes, proteins, and metabolites come from in the tumor and neighboring cells. This advancement adds a crucial spatial dimension to our research, necessitating novel methods for data processing, quality control, and interpretation. Not to mention, these approaches generate some cool pictures. For example, here is an image from a spatial assay run at Moffitt for a project that I lead (funded by the [Cancer Research Institute](https://www.cancerresearch.org/)):
+
+![](https://lh7-us.googleusercontent.com/m9SYkJJyxgXWd770X4Qc8k27U0-dbr5aVCX6un0z0VhLs7YsRjREZgbM4dwlXNoLMGzewj_rMQs7Xv2ql-iQ9WloYnoYy6uPBOZSTsG3Ls95dqV0z4VYVD_-kANFKiJzkp0IiD2KwtM3TDl1IROHQh4)
+
+I also want to touch on our hackathon. We’ve decided to broaden its scope this year, extending an open invitation to foster greater participation. Previously, attendance was mainly limited to the [Bio-Data Club Meetup](https://www.meetup.com/biodataclub/) and our immediate connections at Moffitt. This year, we’re reaching out more actively to other academic institutions like the [University of South Florida](https://www.usf.edu/) and industry partners. We are hoping to increase participation beyond last year’s 50 participants, and we are hoping to enrich the event with diverse perspectives and innovative ideas.
+
+**Please share about your background and your involvement in the R Community.** **What is your level of experience with the R language?**
+
+I helped initiate the Bio-Data Club at Moffitt back in 2018. It began as an internal group but soon gained interest from beyond Moffitt, leading us to secure funding from the R Consortium. Since then, I’ve been dedicated to leading the club. In addition to this, I mentor trainees at Moffitt, including Moffitt research staff and students from the University of South Florida.
+
+I’m actively engaged in the local data science community; I’ve delivered lectures at the [Tampa Bay R Users Group](https://tampausers.github.io/), the [Tampa Bay Data Science Meetup](https://www.meetup.com/data-scientists-tampa-bay/), and, notably, at the [2023 D4CON](https://d4con.io/) Data Science Conference in Tampa, organized by [Lander Analytics](https://www.landeranalytics.com/). (_Editor’s note: Lander Analytics is an R Consortium member._) While my talks aren’t exclusively about the R programming language, they are intended to cater to the Tampa data science community.
+
+My experience with R spans over a decade. As a Moffitt Cancer Center faculty member, I extensively leverage R in my research. I’d classify my proficiency as advanced, though I wouldn’t label myself an expert because I still learn new things about this great language daily.
+
+**Why do industry professionals come to your user group? What is the benefit of attending?**
+
+Being a part of Moffitt, located on the University of South Florida campus, our focus naturally gravitates toward biomedical academic research, and showcasing how data science operates within an academic research setting is beneficial. It offers a unique perspective and exposes attendees to cutting-edge techniques, like spatial omics analyses, which might not be part of the typical workload in a standard 9-to-5 job. However, our meetings must cater to a broad audience. Our meeting topics are applicable across many interests, one of which comes to mind was a presentation and demo by [ComplexHeatmap](https://bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html) author Dr. Zuguang Gu. We’re committed to broadening our discussions and introducing various topics and libraries relevant to R users and the broader data science community. My aim is to ensure that our meetings are inclusive, informative, and beneficial for everyone involved, irrespective of their field of work.
+
+**What trends do you currently see in R language and your industry? Any trends you see developing in the near future?**
+
+The realm of spatial omics and spatial data analysis, especially in the context of big biological data like genomics, proteomics, and metabolomics, is rapidly evolving. It’s fascinating to see the development of numerous packages, including [spatialGE](https://academic.oup.com/bioinformatics/article/38/9/2645/6544582) and [scSpatialSIM](https://www.biorxiv.org/content/10.1101/2024.02.08.579486v1), which are pioneered right here at Moffitt. These tools are a game-changer because they allow individuals who aren’t necessarily experts in imaging or spatial data analysis to engage in and benefit from this research.
+
+As a bioinformatics or biological data science researcher, my research focuses on mass spectrometry data, which involves comprehensive profiling of proteins, metabolites, and lipids in tumors or blood. This is a fairly specialized field, yet even here, there’s the [Cardinal R package](https://bioconductor.org/packages/release/bioc/html/Cardinal.html) tailored for spatial analyses. This progress is exciting and indicative of a significant trend in our field. This trajectory is not just a fleeting moment but a substantial shift that will persist and evolve, shaping the future of bioinformatics.
+
+**Please share any additional details you would like included in the blog.** 
+
+If you have a neat package or tool you would like to showcase, and please feel free to reach out at [paul.stewart@moffitt.org](mailto:paul.stewart@moffitt.org). This is a great way for trainees or junior data scientists to get a presentation on their CV.
+
+Moffitt is consistently looking for talent on the academic research side and the operational side. For anyone who is interested, I’d recommend visiting the [Moffitt website](https://www.moffitt.org/).
+
+I’m also excited to share that I’ll be presenting again at this year’s [D4 conference](https://d4con.io/) in Tampa, scheduled for June 5th and 6th and hosted by Lander Analytics. Additionally, I want to shout out to the [Tampa Bay Data Science Meetup](https://www.meetup.com/data-scientists-tampa-bay/) and the [Tampa Bay Data Engineering Meetup](https://www.meetup.com/tampa-bay-data-engineering-group/).
+
+Our annual hackathon is set for December 12th and 13th, 2024. Details about the hackathon are forthcoming, but for those eager to stay informed, the best approach is to join our [Bio-Data Club Meetup](https://www.meetup.com/biodataclub/). We consistently post all the relevant updates there, ensuring you’re well-informed and prepared for the event. Mark your calendars for December 12th and 13th – it’s shaping to be an enriching and exciting experience!
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](../../all-projects/rugsprogram.qmd)

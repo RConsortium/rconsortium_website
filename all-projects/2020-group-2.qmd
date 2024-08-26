@@ -1,0 +1,37 @@
+## Funded ISC Grants (2020-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Development and maintenance of the Windows build infrastructure (Top level project proposal)](#development-and-maintenance-of-the-windows-build-infrastructure-top-level-project-proposal)
+-   [Interactive visualisations in R via R-to-JavaScript-transpilation](#interactive-visualisations-in-r-via-r-to-javascript-transpilation)
+
+___
+
+### Development and maintenance of the Windows build infrastructure (Top level project proposal)
+
+**Funded:**  
+$46,800
+
+**Proposed by:**  
+Jeroen Ooms
+
+**Summary:**  
+As of R 4.0.0 (released April 2020), R for Windows uses a brand new toolchain bundle called rtools40. This version upgrades the mingw-gcc toolchains to version 8.3.0, and introduces a powerful new build system based on the widely used msys2 platform, which makes it easier to maintain R itself, as well as system libraries needed for developing R and R-packages.
+
+The current project seeks to build out this system to improve tooling for building and debugging on Windows, and move towards a scalable build infrastructure, which is transparent, extensible, and fully automated. Thereby we can empower development on Windows, and support further growth of the R ecosystem while relieving work for CRAN and R-core members.
+
+### Interactive visualisations in R via R-to-JavaScript-transpilation
+
+**Funded:**  
+$9,688
+
+**Proposed by:**  
+Chun Fung Kwok
+
+**Website:**  
+[https://github.com/kcf-jackson/sketch and https://cran.r-project.org/package=sketch](https://github.com/kcf-jackson/sketch%20and%20https://cran.r-project.org/package=sketch)
+
+**Summary:**  
+This project aims to make creating flexible interactive visualisation accessible to a wider R community. By implementing an R-to-JavaScript transpiler, i.e. a program that translates R code into JavaScript code, it lets R users develop JavaScript(JS) applications using solely the R syntax. This eliminates the need to pick up an entire new language, makes it easy for R users to learn and experiment with JS technologies and gives direct and full access to all existing JS libraries. The transpiler is distributed as a regular R package, and it can be used standalone or to complement existing packages, including Rmarkdown, shiny and V8.

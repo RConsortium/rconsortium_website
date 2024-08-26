@@ -1,0 +1,91 @@
+## Funded ISC Grants (2023-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Translating R to Nepali](#translating-r-to-nepali)
+-   [RStats Mastodon Server](#rstats-mastodon-server)
+-   [Tooling for internationalization of R help pages](#tooling-for-internationalization-of-r-help-pages)
+-   [Accessibility Enhancements for the R Journal](#accessibility-enhancements-for-the-r-journal)
+-   [Taking r-universe to the next level](#taking-r-universe-to-the-next-level)
+-   [R Kafka Client](#r-kafka-client)
+
+___
+
+### Translating R to Nepali
+
+**Funded:**  
+$1,000
+
+**Proposed by:**  
+Binod Jung Bogati, R User Group Nepal
+
+**Summary:**  
+This project aims to bridge language gaps within the R community by translating essential R resources into Nepali. This inclusivity will attract diverse talents and perspectives, fostering innovation and growth within the community. We are working with the R User Group Nepal community for a series of Translation hackathons and follow-up meetings. This initiative started before the R Project Sprint 2023 with the assistance of the R User Group Nepal.
+
+### RStats Mastodon Server
+
+**Funded:**  
+$1,306.80
+
+**Proposed by:**  
+Dan Wilson, The Data Collective Consulting Pty Ltd
+
+**Summary:**  
+To help create a place for social connection to the broad R community that isn’t focussed on any specific subgroup of r users, we’d like funding to help establish an RStats Mastodon server. The goal would be to be funded for the first year with a grant from the R Consortium and develop a pathway for user funding like other Mastodon servers.
+
+### Tooling for internationalization of R help pages
+
+**Funded:**  
+$20,800
+
+**Proposed by:**  
+Elio Campitelli
+
+**Summary:**  
+We propose a system in which either package maintainers or community members could create translation modules of specific packages. Users would then be able to install those translation modules and browse their documentation. By default, help() would display the documentation in the user’s preferred language if available, and fall-back to the canonical documentation otherwise. It would also include a link to the canonical documentation and warnings if translations are not up to date.
+
+### Causal Inference in a Box
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Malcolm Barrett
+
+**Summary:**  
+In response to a growing demand for accessible and comprehensive educational resources in causal inference within the R community, we propose the development of a Causal Inference In a Box course. Leveraging a “teach the teacher” model and building on the successful Data Science in a Box template, we will provide instructional materials, including slide decks, lab exercises, and assessments, all meticulously designed to facilitate effective learning. Additionally, we are committed to ensuring inclusivity by offering alternative formats for diverse learning preferences. This comprehensive course, supported by dedicated pedagogical software tools, will revolutionize how practitioners approach causal inference in the R environment, ultimately enhancing the quality and reliability of their research and analyses.
+
+### Accessibility Enhancements for the R Journal
+
+**Funded:**  
+$4,000
+
+**Proposed by:**  
+Dianne Cook
+
+**Summary:**  
+The plan for the use of this funding is to check and enhance the accessibility of published R Journal articles, and to develop tools to help authors and editors ensure that new R Journal articles are at the cutting edge of accessibility. Checking the published articles will involve manual work to read each article and add meaningful alt text to each image. Screen reader accessibility will be checked using available screen readers, with advice from team member Jonathan Godfrey. Jonathan has already used the screen reader JAWS to read a sample of articles converted from the legacy format and confirms that he can now access 90% of the R Journal content as opposed to 10% previously! We will also work closely with the current editors of the R Journal to assist with checking new submissions, especially those produced with the legacy template. This will also help ensure that new articles have accessible content, with appropriate alt text.
+
+### Taking r-universe to the next level
+
+**Funded:**  
+$40,000
+
+**Proposed by:**  
+Jeroen Ooms, rOpenSci
+
+**Summary:**  
+We are interested to collaborate with the R consortium to make R-universe a top-level ISC in order to get a variety of stakeholders involved, grow adoption and community ownership, and to be able to guarantee the continued availability of the service to the R community. R-universe has the potential to become the central place where one can find everything the R community has to offer, complementing CRAN with open infrastructure that can continuously be adapted to new needs. Moreover, existing r-hub containers for extra checks can be integrated to make these tools more accessible. We hope to become a flagship project for the consortium, and an example of a mutually beneficial collaboration between its members and the R community.
+
+### R Kafka Client
+
+**Funded:**  
+$24,000
+
+**Proposed by:**  
+Andreas Neudecker, INWT Statistics GmbH
+
+**Summary:**  
+The goal of this project is to create a robust and efficient Kafka client library for R that supports essential functionalities to communicate with a Kafka cluster. The proposed Kafka client for R will be built by creating a wrapper around the C++ librdkafka library, which is maintained and developed by Confluent which was founded by the original developers of Kafka. This approach is already common and produces reliable and stable releases in multiple other programming languages (Python, Rust, Go, ...). There are packages for the major linux package managers (Debian, RPM, Gentoo) and it also runs on MacOS X and Windows.

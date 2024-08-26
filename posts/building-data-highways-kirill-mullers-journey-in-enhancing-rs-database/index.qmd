@@ -1,0 +1,82 @@
+---
+title: "Building Data Highways: Kirill Müller’s Journey in Enhancing R’s Database"
+description: "Kirill Müller is the author of the {DBI} package, which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages…"
+author: "R Consortium"
+date: "04/18/2024"
+---
+
+Kirill Müller is the author of the [{DBI} package](https://dbi.r-dbi.org/), which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages that implement this interface, such as [RPostgres](https://cran.r-project.org/web/packages/RPostgres/index.html), [RMariaDB](https://cran.r-project.org/web/packages/RMariaDB/index.html), and [RSQLite](https://cran.r-project.org/web/packages/RSQLite/index.html). There’s more information [here.](https://r-dbi.org/blog/dbi-4-1/) Most users who want to access a database do not need to install DBI directly. It will be installed automatically when one of the database backends is installed. If you are new to DBI, the [introductory tutorial](https://dbi.r-dbi.org/articles/DBI.html) is an excellent starting point for familiarizing yourself with essential concepts.
+
+{DBI} supports about 30 DBMS, including:
+
+-   MariaDB and MySQL, using the R-package RMariaDB and RMySQL
+-   Postgres, using the R-package RPostgres
+-   SQLite, using the R-package RSQLite
+
+![](Screenshot-2024-04-18-at-9.59.51 AM.webp)
+
+> Kirill Müller is passionate about building, applying, and teaching tools for working with data and has worked on the boundary between data and computer science for more than 25 years. He has been awarded five R consortium projects over the past 8 years to improve database connectivity and performance in R and another one to investigate profiling of R and native code. Kirill is a core contributor to several tidyverse packages, including [dplyr](https://dplyr.tidyverse.org/) and [tibble](https://tibble.tidyverse.org/), and the maintainer of the [duckdb](https://r.duckdb.org/) R package. He holds a Ph.D. in Civil Engineering from ETH Zurich and is a founder and partner at [cynkra](https://www.cynkra.com/), a Zurich-based data science consultancy with a heavy focus on R. Kirill enjoys playing badminton, cycling, and hiking.
+
+**Your latest work with the R Consortium was focused on the maintenance and support for {DBI}, the {DBItest} test suite, and the 3 backends to open source databases ({RSQLite}, {RMariaDB} and {RPostgres}). You stated that “Keeping compatibility with the evolving ecosystem (OS, databases, R itself, other packages) is vital for the long-term success of the project.” What’s the current status?**
+
+DBI and the other projects are available for use. Please try them!
+
+I always strive for a healthy, “green” build, prioritizing clean and efficient outcomes. However, given the complexity of the projects, with their many moving parts and the continuous influx of new developments, achieving perfection at all times can be challenging. My goal is to ensure that everything we build meets a standard of functionality, even if there are moments when the builds don’t meet every expectation.
+
+Fortunately, the generous funding provided by the R Consortium empowers us to address and rectify any issues as they emerge. This financial support is crucial, as it allows for the immediate tackling of problems, ensuring that our projects remain on the cutting edge and continue to serve the community effectively. Despite the occasional imperfections, my commitment is to promptly and efficiently solve these problems, maintaining the high quality and reliability of our builds.
+
+More information available [here.](https://r-dbi.org/blog/dbi-4-2/)
+
+**Is performance an issue with big data sets? Does R have performance advantages or disadvantages compared to other languages?**
+
+R has unique strengths as a powerful interface language. R treats data frames as first-class data structures. Functions and expressions are first-class objects, enabling easy parsing, computing, and emitting code, fostering robust programming practices. Moreover, R’s “pass by value” semantics (to be more accurate, “pass by reference and copy on write) ensure that functions do not inadvertently alter your data. This eliminates concerns over state management and makes data manipulation both predictable and secure.
+
+Despite performance considerations, R is adept at efficiently handling bulk data operations. For example, working with columnar data frames that contain anywhere from 100,000 to 3 million rows is smooth due to R’s vectorized approach, allowing for efficient column-wise addition or multiplication. However, the performance can decline if large data frames are processed cell by cell.
+
+And here’s the true power of R: As an interface language, R enables the use of external, high-speed engines—be it [DuckDB](https://duckdb.org/), [Arrow](https://arrow.apache.org/), traditional databases, or data processing tools like [data.table](https://r-datatable.com/) and [collapse](https://sebkrantz.github.io/collapse/)—for computation, while R itself is used to compose the commands for these engines. This integration showcases R’s versatility and efficiency by leveraging the strengths of these specialized engines for heavy lifting, thereby bypassing its performance limitations in certain areas.
+
+Therefore, the focus should not be just on performance in isolation but rather on what can be achieved through R’s integration with other systems. This flexibility allows R to extend its utility well beyond mere data processing, making it a potent tool not only for technical users but also accessible to those with less technical expertise. The intuitive syntax of R, especially with domain-specific languages like [dplyr](https://dplyr.tidyverse.org/), makes it exceptionally user-friendly, resembling plain English and facilitating a smoother workflow for a wide range of tasks.
+
+**Who uses databases and R most? Are they already using R and need to connect to different types of DBMS?** 
+
+As an interface language, R is remarkably versatile. It is designed to facilitate connections with a broad spectrum of tools and systems. This versatility positions R as a central hub for orchestrating a wide range of tasks, enabling users to maintain their workflow within the platform without wrestling with complex interfaces. Command-line interfaces are acceptable, offering a decent level of control and flexibility. File-based interfaces, on the other hand, can be cumbersome and inefficient, making them far from ideal for dynamic data management tasks. 
+
+The spectrum of interfaces available for database interaction varies. The most effective solution is an R package that includes bindings to a library. This setup provides a direct conduit to the necessary functionality, streamlining the interaction process. Examples are DBI backends for PostgreSQL, SQLite, MySQL, and ODBC, or the new ADBC (Arrow Database Connectivity) standard (more on that later). These backends facilitate direct, low-friction access to databases from within R.
+
+Focusing on native solutions, I want to emphasize the potential of the [dm package](https://dm.cynkra.com/), which I see as offering substantial benefits beyond what the DBI backends might provide. The dm package closely integrates database concepts with R. It enables sophisticated operations, such as the management of data models with primary and foreign keys, execution of complex joins, and the transformation of data frames into a fully operational data warehouse within R. These capabilities extend and enhance the functionalities provided by dplyr, dbplyr, and DBI, offering a comprehensive toolkit for database management directly through R.
+
+**RMySQL is being phased out in favor of the new RMariaDB package. Why?**
+
+When I first got involved with the DBI Library, it was after being awarded my first contract, which focused on connecting R to SQLite, PostgreSQL, and MariaDB. It’s important to note that MariaDB and MySQL are essentially related; MariaDB is a fork of MySQL. Despite their independent evolution, they remain largely interchangeable, allowing connections to either MariaDB or MySQL databases without much trouble. This similarity can sometimes cause confusion.
+
+In terms of technical specifics, our MySQL package utilizes C to create bindings to its underlying library, while our [DBI package](https://www.r-dbi.org/backends/) prefers C++, which I find more user-friendly for these tasks. When I took charge of the project, these packages were already separate, and I didn’t challenge that decision. Starting anew offers the benefit of not needing to maintain backward compatibility with existing our MySQL users, which has posed significant challenges, especially with the RSQLite package. That package’s widespread use across several hundred other packages meant we had to conduct reverse dependency checks, running tests from those packages against modifications in ours to ensure compatibility. This process, essentially an enhanced test suite, required considerable effort.
+
+Reflecting on it now, I would have preferred to initiate a project like RSQLite, to begin with a clean slate. Starting fresh allows for quicker progress without the constraints of backward compatibility or the expectation of maintaining behaviors that may no longer be relevant or supported. However, you also want to avoid alienating your user base. So, transitioning to C++ and starting from scratch was a strategic choice, and it was one that the maintainer of our MySQL and I agreed upon.
+
+I should mention the odbc [package](https://odbc.r-dbi.org/), which isn’t included in the scope of R Consortium projects but is essential to our work. We use the odbc package extensively to connect with a variety of commercial databases and specialized database systems, some of which might not offer a straightforward method for direct interaction. In our setup, the odbc package acts as a crucial database interface, bridging the gap between the database itself and DBI.
+
+There’s been a significant new development in this space, known as [ADBC](https://arrow.apache.org/adbc/), accompanied by an R package named [adbi](https://adbi.r-dbi.org/). This initiative, spearheaded by Voltron Data, represents a modern reimagining of ODBC, specifically designed to enhance analytical workflows. While traditional databases have been geared towards both reading and writing data, ADBC focuses on optimizing data reading and analysis, recognizing that data science and data analysis workflows predominantly require efficient data reading capabilities. This focus addresses a gap left by ODBC, which wasn’t originally designed with high-speed data analysis in mind.
+
+These developments are exciting, and I’m keen to see what the future holds for us in this evolving landscape.
+
+**What’s the difference between DBI and dbplyr?**
+
+I could describe it as a relationship between DBI and dbplyr, where dbplyr acts as a user of DBI. DBI supplies the essential functionality that enables dbplyr to operate effectively. This setup allows dbplyr to concentrate on constructing SQL queries, while other packages handle the responsibility of connecting to the individual databases.
+
+**What are the biggest issues with using R and databases moving forward?**
+
+The current DBI project faces [challenges](https://github.com/r-dbi/dbi3/?tab=readme-ov-file#issues-and-solutions) that are tough to solve within its existing scope. These challenges could significantly impact many dependent components, which is why this repository has little code and serves mainly as a placeholder for ideas we think DBI is missing. However, these ideas have the potential to become significant enhancements.
+
+One major technical challenge I’ve faced is with query cancellation. If a query runs too long, the only option is to terminate the process, which stops our entire session. This issue is closely related to the concept of asynchronous processing, where a query is sent off, and other tasks are done in parallel until the query results are ready. This would be especially useful in applications like Shiny, allowing it to handle multiple user sessions simultaneously within the same R process. Finding a solution to this problem is crucial due to the current lack of effective alternatives in our infrastructure.
+
+While not every issue signifies a major problem, there are certainly areas that DBI does not address, some of which may be beyond its intended scope. Still, there are notable gaps that require attention.
+
+As for our original plan, we’re taking a different direction thanks to the introduction of the ADBC via the adbi package. ADBC offers a stronger foundation for achieving our goals. With ADBC, all data is funneled through the Arrow data format, which means we no longer need individual backends to translate data into R data frames separately, and at the same time other ecosystems can be integrated easier. In addition, a substantial part of the known challenges for DBI, including query cancellation and asynchronous processing, are already solved by ADBC. Using ADBC as a bridge between databases and ecosystems reduces the complexity from a many-to-many (n × m) problem to a more manageable one-to-one (n + m) problem. This reduces duplication of effort and makes it easy to support new databases or new ecosystems. More information [here.](https://r-dbi.org/blog/dbi-4-3/)
+
+**How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?**
+
+This is an excellent opportunity for young professionals to secure funding for their ideas or explore areas that haven’t been fully addressed yet. R is a fantastic tool, but it constantly evolves with new technologies being introduced. I’m particularly impressed by how the consortium supports various projects, including [R-Ladies](https://rladies.org/) and [SatRdays](https://satrdays.org/), which promote inclusivity within the community. I was approached with the idea of applying for a project, something I might not have considered alone. This makes me curious whether there’s a list of challenges similar to what the Google Summer of Code offers, where potential mentors submit project ideas for students to work on under their guidance. I haven’t looked into this possibility for the consortium in detail yet, but the thought of it excites me. I thoroughly enjoy being part of this process and am eager to see what long-term collaborations might emerge from it.
+
+## About ISC Funded Projects
+
+A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.

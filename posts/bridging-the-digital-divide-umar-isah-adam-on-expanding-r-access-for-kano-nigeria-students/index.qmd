@@ -1,0 +1,52 @@
+---
+title: "Bridging the Digital Divide: Umar Isah Adam on Expanding R Access for Kano, Nigeria Students"
+description: "Umar Isah Adam, the founder and organizer of the R User Group Kano, Nigeria, spoke with the R Consortium during the pandemic about his efforts to engage the next generation of students in the R community."
+author: "R Consortium"
+image: "unamed.jpg"
+date: "06/17/2024"
+---
+
+
+[Umar Isah Adam](https://www.linkedin.com/in/umar-isah-21b50074/), the founder and organizer of the [R User Group Kano](https://www.meetup.com/r-user-group-kano/), Nigeria, spoke with the R Consortium during the pandemic about his efforts to [engage the next generation of students in the R community](https://www.r-consortium.org/blog/2021/12/29/r-user-group-kano-nigeria-is-bringing-in-the-next-generation-of-students-to-the-r-community). Recently, the R Consortium followed up with Umar to discuss the group’s progress over the past few years. He discussed the increasing acceptance and interest in R within academia. The user group is working with various colleges in Kano state to introduce R to students and teach them the fundamentals. Umar also shared his experience using R for managerial tasks related to student data. He hopes to persuade college management to use R for data handling instead of the current manual processes.
+
+
+
+
+
+![](unnamed.jpg )
+
+
+**Please share your background and involvement with the RUGS group.**
+
+My name is Umar Isah Adam, and I’m from Kano State, Nigeria. I studied mathematics at the [Federal University Dutse](https://fud.edu.ng/), Jigawa State. During my studies, I became interested in statistics and technology. One of my lecturers mentioned R as a statistical analysis tool, which piqued my interest. I learned it by researching online and watching videos. Later, a friend introduced me to R User Groups. I found that I was interested in R and noticed there wasn’t a group in Kano State, so I applied to start a chapter there, and it was approved.
+
+**Can you share what the R community is like in Kano, Nigeria? **
+
+The use of R is relatively new in Kano State. Most academics in the area use [SPSS](https://www.ibm.com/products/spss-statistics) in their work. It makes it challenging for R to gain traction in this environment. Despite the challenges, we have been making progress with the support of our user group. Currently, I work as an assistant lecturer at a college in Kano State. I recently organized a well-attended seminar for lecturers and students at the Kano State College of Education and Preliminary Studies. I also posted a video of the workshop on YouTube and have received requests for more information.
+
+There’s room for improvement. We’ve received requests from academic institutions to host events or provide information about the power of R. However, we cannot do so now due to the nature of my work and inadequate funding. However, we plan to start a 10-week training session soon. It will likely be free, as we are collaborating with the Kano State College of Education and Preliminary Studies to organize it. R isn’t very popular here, and more than 70% of academicians need help understanding what it is and how to use it effectively. However, those introduced to it have shown a high interest in learning and utilizing it.
+
+We aim to introduce R to the academic community, and after this, we plan to move on to another college and launch a new program. In summary, R is not widely known in our society, but we are progressing. There has been an increase in the acceptance of R and a growing interest from different people in academia, particularly in R. Many are interested. Still, there needs to be more awareness about it. Most people need to learn what R is and how to use it. Therefore, most of our upcoming programs will focus on introducing the R language.
+
+Additionally, there is an issue with student access. Most of our students don’t have personal computers and can only access them on campus, usually at the ICT department. This lack of access also affects student engagement. However, among academics and lecturers in our colleges, there is growing interest in R.
+
+**Do you host in-person or online events? How do you make your events inclusive? **
+
+It’s important to remember that online events became essential during the pandemic. However, due to internet connectivity issues, we avoid online meetings or events most of the time. As a result, our sessions are usually held offline. We have been hosting events within colleges and other institutions to make them easily accessible to students and academics. It is also more cost-effective and popular than hosting in private locations. Advertising these events has proven effective, as interested individuals are usually willing to attend when they see the advertisement. 
+
+We attempted to transfer between colleges, such as those owned by the state government. The majority of the data and processes are research-based. Therefore, we strive to incorporate more R programming aligned with academic requirements. We aim to limit topics to the use of R in academia to ensure that attendees feel more connected and can see the practical applications of using R. For instance, compared to using SPSS, where one often needs to use code or convert data into another format, with R, one can easily import data into the working environment and manipulate it as needed.
+
+**Please share about a project you are currently working on or have worked on using the R language. What is the goal/reason, result, or anything interesting, especially related to your industry?**
+
+I usually demonstrate to people around me, including the school management, how easy it is to use R. For example, we need help with the examination office potentially losing some of their data. However, they have a backup on an external drive. I am importing the data from the old template to the new one in Excel format. I am also working on calculating the student results and offloading them into the new portal we have developed. Doing this job manually might take a month, but if I successfully create this program, it will complete the job in two to three days. It will demonstrate to the school management the importance and impact of using R.
+
+I am proposing to the college management to introduce a certified course of study on “Introduction to R” within the ICT department. Showcasing how this programming language can impact the working environment will help them understand the need for this course. Many students rely on fundamental analyses using questionnaires, frequency, and percentage without exploring visualization techniques. As a supervisor, I encourage using R for data analysis in student projects, as it provides a more comprehensive approach. However, many students need access to computers. Therefore, by offering this course, we can equip them with valuable skills and knowledge to benefit their future careers.
+
+
+## **How do I Join?**
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](https://www.r-consortium.org/all-projects/r-user-group-support-program)
+
+

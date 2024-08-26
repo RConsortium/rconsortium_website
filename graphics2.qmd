@@ -1,0 +1,167 @@
+---
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  max-items: 6
+page-layout: full
+format: html
+---
+<style>
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slideInFromLeft {
+  opacity: 0;
+  animation: slideInFromLeft 1s forwards;
+}
+.scroll-title {
+  background-color: rgb(30, 81, 164);
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.darkButton {
+  background-color: black; 
+  color: #fff; 
+  border: none; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.darkButton a {
+  color: inherit; 
+  text-decoration: none;
+}
+.darkButton:hover {
+  background-color: rgb(30, 81, 164); 
+  color: white;
+}
+.darkButton:hover a{
+  color: 
+}
+.joiningRButton {
+  background-color: black; 
+  color: #fff; 
+  border: 2px solid white; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.joiningRButton a {
+  color: inherit; 
+  text-decoration: none;
+}
+.joiningRButton:hover {
+  background-color: white; 
+  color: black;
+}
+.joiningRButton:hover a {
+  color: black;
+}
+.joining-r-section {
+  background-image: url('images/WaterManagement_v2.4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: white; 
+  
+}
+
+</style>
+
+<section id="hero1">
+    <h2>R Consortium</h2>
+    <p>Supporting the R community, the R Foundation and organizations developing, maintaining and distributing R software.</p>
+</section>
+
+<section class="what-is-r-section" id="what-is-r">
+  <div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 2; min-width: 300px; padding: 10px; align-items: center;">
+  <h2 class="scroll-title">WHAT IS THE R CONSORTIUM</h2>
+  <p>The central mission of the R Consortium is to work with and provide support to the R Foundation and to the key organizations developing, maintaining, distributing and using R software through the identification, development and implementation of infrastructure projects.</p>
+  <p>The R language is an open source environment for statistical computing and graphics, and runs on a wide variety of computing platforms. The R language has enjoyed significant growth, and now supports over 2 million users. A broad range of industries have adopted the R language, including biotech, finance, research and high technology industries. The R language is often integrated into third party analysis, visualization and reporting applications.</p>
+  </div>
+  <div style="flex: 1; min-width: 300px; padding: 20px; border; display: flex; justify-content: flex-end; align-items: end;">
+  <a class="video-popup" href="https://www.youtube.com/watch?v=XcBLEVknqvY" target="blank">
+  <img src="images/rcon_video_preview.png" alt="Video Preview" style="width: 90%; height: auto; cursor: pointer; margin-left: 1%">
+  </a>
+  </div>
+  </div>
+<button class="darkButton"><a href="about/index.qmd" style="text-decoration: none;">LEARN MORE</a></button>
+<button class="darkButton"><a href="rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" style="text-decoration: none;">READ OUR ANNUAL REPORT 2023 (PDF)</a></button>
+
+</section>
+
+<section class="joining-r-section" id="joining-r">
+<h2 class="scroll-title" style="border:none;">Joining R Consortium</h2>
+
+<p>
+Industry-leading organizations have joined the R Consortium to support an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
+</p>
+
+<button class="joiningRButton"><a href="about/join.qmd" style="text-decoration: none;">LEARN MORE ABOUT MEMBERSHIP</a></button>
+
+</section>
+
+<section class="need-help-section" id="need-help">
+<h2 class="scroll-title">Need Help?</h2>
+<p>
+If you need help such as with billing, mailing lists or other wise then please use this service desk for support
+</p>
+<button class="darkButton"><a href="https://members.r-consortium.org/" style="text-decoration: none;">GET HELP</a></button>
+</section>
+<section id="latest-news">
+<h2 class="scroll-title">Latest NEWS AND UPDATES</h2>
+<setion>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollTitles = document.querySelectorAll(".scroll-title");
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function checkAnimations() {
+    scrollTitles.forEach(el => {
+      if (isElementInViewport(el)) {
+        el.classList.add("animate-slideInFromLeft");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkAnimations);
+  checkAnimations(); 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollTitles = document.querySelectorAll(".scroll-title");
+
+  scrollTitles.forEach(el => {
+    el.addEventListener("click", function() {
+      const targetId = this.getAttribute("data-target");
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
+document.getElementById('scroll-to-hero1').addEventListener('click', function() {
+    document.getElementById('hero1').scrollIntoView({ behavior: 'smooth' });
+});
+</script>

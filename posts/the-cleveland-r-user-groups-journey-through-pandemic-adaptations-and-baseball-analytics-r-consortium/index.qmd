@@ -1,0 +1,78 @@
+---
+title: "The Cleveland R User Group’s Journey Through Pandemic Adaptations and Baseball Analytics"
+description: "Last year, R Consortium talked to John Blischak and Tim Hoolihan of the Cleveland R User Group about their regular structured and casual virtual meetups during the pandemic. Recently, Alec…"
+author: "R Consortium"
+image: "alec.jpg"
+date: "03/7/2024"
+format: html
+---
+<style>
+  .anchorjs-link {
+  display: none !important;
+}
+</style>
+
+
+Last year, R Consortium talked to John Blischak and Tim Hoolihan of the Cleveland R User Group about their [regular structured and casual virtual meetups](https://www.r-consortium.org/blog/2022/09/08/taking-on-virtual-events-cleveland-r) during the pandemic. Recently, [Alec Wong](https://www.linkedin.com/in/alec-wong-67966242/), another co-organizer of the [Cleveland R User Group](https://www.meetup.com/cleveland-user-group/events/?type=past), updated the R Consortium about how the group provides a networking platform for a small but vibrant local R community. Alec shared details of a recent event from the group regarding the use of R for analyzing baseball data. He also discussed some tools for keeping the group inclusive and improving communication among group members.
+
+
+
+
+<div style="text-align: center;">
+  <img src="alec.jpg" alt="Alec Wong" >
+</div>
+
+
+
+**Please share about your background and involvement with the RUGS group.**
+
+I completed my Bachelor of Science degree in Fisheries and Wildlife from the University of Nebraska-Lincoln in 2013, and my Master of Science degree in Statistical Ecology from Cornell University in late 2018. During my graduate program, I gained extensive experience using R, which is the _de facto_ language of the ecological sciences. I discovered a passion for the language, as it is extremely intuitive and pleasant to work with.
+
+After completing my program in 2018, I moved to Cleveland and immediately began attending the Cleveland R User Group in 2019, and have been a consistent member ever since. I eagerly look forward to each of our events. 
+
+After completing my graduate program, I started working at [Progressive Insurance](https://www.linkedin.com/company/progressive-insurance/). Working for a large organization like Progressive provides me with many diverse opportunities to make use of my extensive experience with R. I was happy to find a vibrant R community within the company, which allowed me to connect with other R users, share knowledge, and I enthusiastically offer one-on-one assistance to analysts from all over Progressive.
+
+Starting in 2022, I accepted the role of co-organizer of the Cleveland R User Group. As a co-organizer, I help with various tasks related to organizing events, such as the one we held last September. I am passionate about fostering the growth of these communities and helping to attract more individuals who enjoy using R.
+
+Our group events are currently being held in a hybrid format. When we manage to find space, we will meet in person, such as when we met to view the 2023 posit::conf in October–several members visited in person and watched and discussed videos from the conference. Most of our meetups continue to be virtual, including our Saturday morning coffee meetups, but we are actively searching for a more permanent physical space to accommodate our regular meetups. 
+
+I am only one of several co-organizers of the Cleveland R user group. The other co-organizers include [Tim Hoolihan](https://www.linkedin.com/in/timhoolihan/) from [Centric Consulting](https://www.linkedin.com/company/centric-consulting/), [John Blischak](https://www.linkedin.com/in/jdblischak/) who operates his consulting firm JDB Software Consulting, LLC, and [Jim Hester](https://www.linkedin.com/in/jim-hester/), currently a Senior Software Engineer at[ Netflix](https://netflix.com/). Their contributions are invaluable and the community benefits tremendously from their efforts.
+
+**Can you share what the R community is like in Cleveland? **
+
+I believe interest in R has been fairly steady over time in Cleveland since 2019. We have a handful of members who attend regularly, and typically each meeting one or two new attendees will introduce themselves. 
+
+I would venture to say that R continues to be used frequently in academic settings in Cleveland, though I am ‌unfamiliar with the standards at local universities. At least two of our members belong to local universities and they use R in their curricula. 
+
+As for industry usage, many local companies, including Progressive use R. At Progressive, we have a small, but solid R community; although it is not as large as the Python community, I believe that the R community is more vibrant. This seems characteristic of R communities in varying contexts, as far as I’ve seen. Another Cleveland company, the [Cleveland Guardians](https://www.mlb.com/guardians) baseball team, makes use of R for data science. In September 2023 we were fortunate to invite one of their principal data scientists to speak to us about their methods and analyses. (More details below.)
+
+Typically, our attendance is local to the greater Cleveland area, but with virtual meetups, we’ve been able to host speakers and attendees from across the country; this was a silver lining of the pandemic. We also hold regular Saturday morning coffee and informal chat sessions, and it’s great to see fresh faces from outside Cleveland joining in.
+
+**You had a Meetup titled “[How Major League Teams Use R to Analyze Baseball Data](https://www.meetup.com/cleveland-user-group/events/293749990/)”, can you share more on the topic covered? Why this topic?**
+
+On September 27th, 2023, we invited [Keith Woolner](https://www.linkedin.com/in/keith-woolner/), principal data scientist at the Cleveland Guardians baseball team, to give a presentation to our group. This was our first in-person meetup after the pandemic, and Progressive generously sponsored our event, affording us a large presentation space, food, and A/V support. We entertained a mixed audience from the public as well as Progressive employees.
+
+Keith spoke to us about “[How Major League Baseball Teams Use R to Analyze Baseball Data.](https://www.youtube.com/watch?v=1SR9C4td3TI)” In an engaging session, he showcased several statistical methods used in sports analytics, the code used to produce these analyses, and visualizations of the data and statistical methods. Of particular interest to me was his analysis using a generalized additive model (GAM) to evaluate the relative performance of catchers’ ability to “frame” a catch; in other words, their ability to convince the umpire a strike occurred. The presentation held some relevance for everyone, whether they were interested in Cleveland baseball, statistics, or R, making it a terrific option for our first in-person presentation since January 2020. His presentation drove a lot of engagement both during and after the session.
+
+
+
+<div style="text-align: center;">
+  <img src="workshop.jpg" alt="Alec Wong" style="height:503px; width:671.312" >
+</div>
+
+
+
+
+**Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?  **
+
+One of our co-organizers, John Blischak, has created a slick [website](https://clevelandrusergroup.github.io/) using [GitHub](https://github.com/ClevelandRUserGroup) Pages to showcase our group and used GitHub issue templates to create a process for speakers to submit talks. Additionally, the Cleveland R User group has posted recordings of our meetups to [YouTube](https://www.youtube.com/channel/UC7C4YZ-9itQW7Nl4RVKDflg) since 2017, increasing our visibility and accessibility. Many people at Progressive could not attend our September meetup and asked for the recording of our September 2023 meetup as soon as it was available.
+
+Recently, we have also created a Discord server, a platform similar to Slack. This was suggested by one of our members, [Ken Wong](https://www.linkedin.com/in/ken-koon-wong-1438a91b5/), and it has been a great addition to our community. We have been growing the server organically since October of last year by marketing it to attendees who visit our events, particularly on the Saturday morning meetups. This has opened up an additional space for us to collaborate and share content asynchronously. Ken has done an excellent job of organizing the server and has added some automated processes that post from R blogs, journal articles, and tweets from high-profile R users. Overall, we are pleased with our progress and look forward to continuing to improve our initiatives.
+
+
+# **How do I Join?**
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](https://www.r-consortium.org/all-projects/r-user-group-support-program)
+

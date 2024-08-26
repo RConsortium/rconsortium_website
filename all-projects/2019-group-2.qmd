@@ -1,0 +1,159 @@
+## Funded ISC Grants (2019-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [An External R Sampling Profiler](#an-external-r-sampling-profiler)
+-   [CVXR](#cvxr)
+-   [Flipbooks](#flipbooks)
+-   [R Package Risk Assessment Application](#r-package-risk-assessment-application)
+-   [RcppDeepState, a simple way to fuzz test compiled code in R packages](#rcppdeepstate-a-simple-way-to-fuzz-test-compiled-code-in-r-packages)
+-   [Symbolic mathematics in R with SymPy](#symbolic-mathematics-in-r-with-sympy)
+-   [Tidy spatial networks in R](#tidy-spatial-networks-in-r)
+-   [d3po: R package for easy interactive D3 visualization with Shiny](#d3po-r-package-for-easy-interactive-d3-visualization-with-shiny)
+-   [webchem: accessing chemical information from the web](#webchem-accessing-chemical-information-from-the-web)
+
+___
+
+### An External R Sampling Profiler
+
+**Funded:**  
+$8,500
+
+**Proposed by:**  
+Aaron Jacobs
+
+**Website:**  
+[https://github.com/atheriel/xrprof](https://github.com/atheriel/xrprof)
+
+**Summary:**  
+Many R users will be familiar with using the built-in sampling profiler 'Rprof()' to generate data on what their code is doing, and there are several excellent tools to facilitate understanding these samples (or serve as a front-end), including the 'profvis' package. However, the reach of these tools is limited: the profiler is “internal”, in the sense that it must be manually switched on to work, either during interactive work (for example, to profile an individual function), or perhaps by modifying the script to include 'Rprof()' calls before running it again. It cannot be used to understand R code that is already running, a capability that has proven extremely useful for diagnosing and fixing performance issues (or other bugs) in production environments.
+
+Several existing programming languages have one or more “external” profilers available, which can attach to a running process and read its memory contents to understand what is currently happening. This project aims to build such a tool for R.
+
+### CVXR
+
+**Funded:**  
+$9,500
+
+**Proposed by:**  
+David W Kang
+
+**Website:**  
+[https://github.com/cvxgrp/CVXR](https://github.com/cvxgrp/CVXR)
+
+**Summary:**  
+Optimization is at the core of statistical estimation and machine learning methodology. There are a number of R packages such as optimx, nloptr, ROI which either implement solvers for a wide variety of problems, or provide an interface to other solvers. The R package CVXR takes a different approach, implementing a Domain Specific Language (Fu, Narasimhan, and Boyd 2019) for formulating and solving convex optimization problems, just as cvxpy does for python. As shown in a number of examples on the CVXR website, the applications range from finance, machine learning, and to theoretical and applied statistics. Using a disciplined convex programming (DCP) approach, CVXR acts as a great tool for both prototyping and developing new methodologies as well as for quick, high-level, formulation and solution of statistical and machine learning problems.
+
+### Flipbooks
+
+**Funded:**  
+$6,699
+
+**Proposed by:**  
+Evangeline Reynolds
+
+**Website:**  
+[https://github.com/EvaMaeRey/flipbookr](https://github.com/EvaMaeRey/flipbookr)
+
+**Summary:**  
+Just as classic flip books allow their readers to observe changes in a scene, coding Flipbooks allow readers to progressively track the changes of code and its output by “flipping” through their digital pages. Flipbooks are useful tools for communicating and teaching because they break down code for incremental, stepwise presentation so that audiences can easily understand each step. Flipbook-building tools automate the deconstruction and reconstruction of coding pipelines which means that building a Flipbook from existing code poses little additional burden to creators. The next stage for this project is to develop the current Flipbook-building tools into a reliable and easy-to-use R package (development is ongoing at https://github.com/EvaMaeRey/flipbookr) and also to provide educational guidance for creating Flipbooks.
+
+### R Package Risk Assessment Application
+
+**Funded:**  
+$16,800
+
+**Proposed by:**  
+Andrew Nicholls
+
+**Website:**  
+[https://www.pharmar.org/](https://www.pharmar.org/)
+
+**Summary:**  
+The R Validation Hub is an active R Consortium Working Group. It is a cross-industry initiative whose mission is to enable the use of R by the Bio-Pharmaceutical Industry in a regulatory setting, where the output may be used in submissions to regulatory agencies. This project sits within phase 2 of the R Validation Hub's road map. During this phase the group will develop several tools that can be used by those wishing to use R packages within a bio-pharmaceutical regulatory setting. The aim of this specific project is to standardise and simplify the risk assessment of R packages, reducing the burden of package evaluation/testing that would otherwise fall on internal R programming experts. The project will deliver a Shiny application to aid in the assessment and documentation of package risk.
+
+### RcppDeepState, a simple way to fuzz test compiled code in R packages
+
+**Funded:**  
+$34,000
+
+**Proposed by:**  
+Toby Hocking
+
+**Website:**  
+[https://github.com/akhikolla/RcppDeepState](https://github.com/akhikolla/RcppDeepState)
+
+**Summary:**  
+Abstract: Fuzzers are computer programs that send other programs inputs that may fall outside the domain of expected values, thus revealing subtle bugs. DeepState is a testing framework that allows easy testing of C/C++ programs with sophisticated fuzzers, and supports multiple back-ends for testing. DeepState has been used to test critical C++ software, including Google's leveldb. R has some simple random testers, but no coverage-driven fuzzers that learn to produce problematic inputs. We propose to create the R packages RcppDeepState and RcppDeepStateTools which will provide easy-to-use functions for using DeepState with R packages that use C/C++ code via Rcpp. This project will thus provide the first easy-to-use solution for R programmers that want to fuzz test their C/C++ code with existing tools such as AFL, and it will provide a framework for interfacing future coverage-driven fuzzers or symbolic execution tools. We also propose to use these new tools on a wide range of R packages in order to identify bugs in their C/C++ code.
+
+One masters student will be recruited to implement this project during Jan-Dec 2020 at the School of Informatics, Computing, and Cyber Systems at Northern Arizona University. Interested students should apply by emailing a resume/CV along with a cover letter to project supervisors toby.hocking@nau.edu and alex.groce@nau.edu.
+
+### Symbolic mathematics in R with SymPy
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Mikkel Meyer Andersen
+
+**Website:**  
+[https://github.com/r-cas/caracas/](https://github.com/r-cas/caracas/)
+
+**Summary:**  
+R's ability to do symbolic mathematics is largely restricted to finding derivatives. There are many tasks involving symbolic math that are of interest to R users, e.g. inversion of symbolic matrices, limits and solving non-linear equations. Users must resort to other software for such tasks and many R users (especially outside of academia) do not readily have access to such software.
+
+The Python library SymPy is open source, has a stable group of developers and is powerful. As such, R users can just switch to Python and SymPy for symbolic math. However it is often very convenient to stay in the same environment to use familiar syntax and to utilise available libraries (e.g. to generate problems using symbolic math together with the exams package or to first handle symbolic computations and then afterwards move on to a numerical evaluations of the results). We will achieve this by making SymPy functionality available for R users via an R package.
+
+Currently only few R packages for doing symbolic mathematics are available: Two of these are Ryacas and rSymPy. Ryacas is built around Yacas, and although Yacas can solve many problems and is extensible, the community is relatively small and Yacas is not as powerful as SymPy for certain routine tasks (e.g. integration and solving equations). rSymPy on the other hand is based on technology that requires much technical work to install and use.
+
+The website of the project is:
+
+https://github.com/r-cas/caracas/
+
+Please contribute by testing, writing documentation, opening issues, submitting pull requests or something else!
+
+### Tidy spatial networks in R
+
+**Funded:**  
+$9,000
+
+**Proposed by:**  
+Lucas van der Meer, Robin Lovelace, Andrea Gilardi, Lorena Abad
+
+**Website:**  
+[https://luukvdmeer.github.io/sfnetworks/](https://luukvdmeer.github.io/sfnetworks/)
+
+**Summary:**  
+R is currently lacking a generally applicable, modern and easy-to-use way of handling all kinds of spatial networks. "Tidy spatial networks in R" aims to address this issue by developing and publishing the sfnetworks package. The package, and documentation around it, will provide a bridge between network analysis and spatial analysis communities. For this, an sfnetwork class that will work with both tidygraph and sf frameworks and functions. R-users will be encouraged to contribute and engage with the package development during a hackathon organized next to the eRum 2020.
+
+### d3po: R package for easy interactive D3 visualization with Shiny
+
+**Funded:**  
+$4,000
+
+**Proposed by:**  
+Mauricio Vargas Sepúlveda
+
+**Website:**  
+[https://github.com/pachamaltese/d3po](https://github.com/pachamaltese/d3po)
+
+**Summary:**  
+R already features excellent visualization libraries such as D3 (via the r2d3 package), plotly or highcharter. However, though those enable the creation of great looking visualisations they have very steep learning curves, require understanding of JavaScript or rely on non-free software that might be out of reach for governments and NGOs. Our intention is to solve those problems by releasing d3po. It shall be an intermediate layer between the user and D3 by providing “templates”, enabling high quality interactive visualizations oriented to and designed to be used with Shiny and Rmarkdown, and also proving easy internationalization. Please join us, this needs D3 and R skilled minds!
+
+### webchem: accessing chemical information from the web
+
+**Funded:**  
+$6,000
+
+**Proposed by:**  
+Eric Scott, Tamas Stirling
+
+**Website:**  
+[https://github.com/ropensci/webchem](https://github.com/ropensci/webchem)
+
+**Summary:**  
+webchem: accessing chemical information from the web
+
+A vast amount of chemical information is freely available on the internet. The data are used by millions of professionals around the world, for purposes like pharmaceutical research, chemical process design, or environmental impact assessment, to name a few. webchem is an R project that aims to help these professionals by providing a single point programmable access to all major chemical databases around the world. The project started in 2016 and currently supports more than 10 databases. If you are interested, join us and help us build the tool that biologists and chemists will absolutely love.

@@ -1,0 +1,389 @@
+/* css styles */
+body {
+    background-color: white;
+}
+
+section {
+    padding-bottom: 48px;
+}
+
+.title {
+    color: black;
+    width: 100%;
+}
+
+.navbar {
+    padding-right: 100px !important; /* Adjust the value to increase the space */
+}
+
+.navbar-logo {
+    min-height: 50px;
+}
+
+.linux-banner {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    top: 75px;
+    z-index: 100;
+}
+
+.banner-image {
+    width: 300px;
+}
+
+/* left align text */
+
+.left-align {
+    text-align: left;
+  }
+
+/* Media query for navbar logo image, mobile mode 1100px and smaller */
+
+@media only screen and (max-width: 1100px) {
+
+    .navbar-logo {
+        min-height: 0;
+    } 
+    
+}
+
+
+@media only screen and (max-width: 990px) {
+
+    .linux-banner {
+        top: 50px;
+    }
+
+    .nav-footer-center {
+        max-width: none !important;
+        min-width: 100%;
+        left: 0 !important;
+    }
+
+    .container1, .container2 {
+        grid-template-columns: 1fr !important; /* 1 column full width for mobile */
+    }
+
+
+}
+
+.hero img {
+    max-width: 50%; /* Adjust the percentage as needed */
+    height: auto;
+  }
+
+section#hero {
+    padding-top: 128px;
+    padding-bottom: 72px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('hero-picture.png');
+    /* Display 1 */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+section#hero > p {
+    font-size: 18px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */ 
+    max-width: 768px;
+    text-align: center; 
+    margin: 0 auto;
+    
+}
+
+/* creating a second hero section to show off different graphics */
+
+section#hero1 {
+    padding-top: 199px;
+    padding-bottom: 72px;
+    padding-left: 40px;
+    padding-right: 80px;
+    text-align: center;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/new_community_2.jpg');
+    /* Display 1 */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+section#hero1 > p {
+    font-size: 18px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */ 
+    max-width: 768px;
+    text-align: center; 
+    margin: 0 auto;
+    
+}
+
+/* creating a THIRD hero section to show off different graphics */
+
+section#hero2 {
+    padding-top: 199px;
+    padding-bottom: 72px;
+    padding-left: 40px;
+    padding-right: 80px;
+    text-align: center;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('images/Background_1.jpg');
+    /* Display 1 */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+section#hero2 > p {
+    font-size: 18px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */ 
+    max-width: 768px;
+    text-align: center; 
+    margin: 0 auto;
+    
+}
+
+/* aligning sections */
+
+/* .what-is-r-section {
+    margin: 20px;
+}*/
+
+.joining-r-section {
+    a:link {
+    }
+    a:visited {
+        color: white;
+    }
+    }
+    
+.what-is-r-section {
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    }
+    
+.need-help-section {
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    }
+
+.preview-picture {
+    max-width: 200px;
+}
+
+div.nav-footer {
+    color: white;
+}
+
+div.nav-footer a {
+    color: white !important;
+}
+
+div.nav-footer a:hover {
+    color: #2780e3 !important;
+}
+
+.dark-button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.dark-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.light-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.light-button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.platinum-img {
+    width: 200px;
+}
+
+.platinum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 100%;
+}
+
+.silver {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 100%;
+}
+
+.silver-img {
+    width: 140px;
+}
+
+
+
+.nav-footer-center {
+    max-width: 505px;
+    left: -310px;
+    position: relative;
+    text-align: left;
+  }
+  
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 20px; /* Space between columns */
+}
+
+.column1 {
+    text-align: left;
+}
+
+.column1 img {
+    max-width: 100%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two columns with equal width */
+    gap: 20px; /* Space between columns */
+}
+
+.column2 {
+    text-align: left;
+}
+
+.column2 img {
+    max-width: 100%;
+}
+
+iframe { 
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} 
+
+.scroll-title a {
+    display: none;
+}
+
+#hero h2 {
+    cursor: pointer;
+    
+}
+
+#hero a {
+    display:none;
+    vertical-align: middle !important;
+} 
+
+
+/* Element | /about/join.html */
+
+#platinum > a:nth-child(2) {
+    /* display: table-row-group; */
+    /* display: table-cell; */
+    display: none;
+  }
+
+#table-membership td {
+    text-align: center;
+}
+
+h2 {
+    cursor: default !important;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: 50%;
+    min-height: 70vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.swiper-container h2 {
+    color: white;
+    max-width: 70%;
+}
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FFFFFF'%2F%3E%3C%2Fsvg%3E") !important;
+}
+  
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23FFFFFF'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.blueButton {
+    background-color: rgb(30, 81, 164); /* Initial blue color */
+    color: #fff; 
+    border: none; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.blueButton a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.blueButton:hover {
+    background-color: rgb(21, 56, 112); /* Darker shade of blue */
+    color: white;
+}
+
+.blueButton:hover a {
+    color: inherit; /* Ensures the link color stays the same on hover */
+}
+
+.swiper-container h2 a {
+    display: none; /* Gets rid of icon */
+}

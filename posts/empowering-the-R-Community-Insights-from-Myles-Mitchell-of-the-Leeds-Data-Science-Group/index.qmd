@@ -1,0 +1,56 @@
+---
+title: "Empowering the R Community: Insights from Myles Mitchell of the Leeds Data Science Group"
+description: "The R Consortium recently interviewed Myles Mitchell, co-organizer of the Leeds Data Science group, to discuss the local R community and the group’s recent activities."
+author: R Consortium
+date: "07/22/2024"
+---
+
+The R Consortium recently interviewed [Myles Mitchell](https://www.linkedin.com/in/myles-mitchell-4009aa98/?originalSubdomain=uk), co-organizer of the [Leeds Data Science group](https://www.meetup.com/leeds-data-science-meetup/), to discuss the local R community and the group’s recent activities. Myles highlighted the group’s efforts to create an inclusive and welcoming environment for all participants. The group is dedicated to creating networking opportunities for students interested in pursuing a career in data science and sharing job openings.\
+\
+![](image_1.jpg)
+
+The Leeds Data Science group is hosting an in-person event titled “[***Improving the Fidelity and Stability of Large Language Models***](https://www.meetup.com/leeds-data-science-meetup/events/300758737/)” on the 23rd of July. 
+
+**Please share about your background and involvement with the RUGS group.**
+
+I am a data scientist at [Jumping Rivers](https://www.jumpingrivers.com/), a data science consultancy. We collaborate with various companies on data-related projects, such as data storage, modeling, developing data visualization dashboards, and offering data science training. Initially, I had a background in Python, but I learned R while working at Jumping Rivers, where many of our staff are proficient in R, and much of our infrastructure is written in R.
+
+At Jumping Rivers, we receive funding from the R Consortium. We organize the [Leeds Data Science Meetups](https://www.meetup.com/leeds-data-science-meetup/) every two months and the [North East Data Science Meetups](https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/) every three months. Additionally, we hold annual conferences, such as [Shiny in Production](https://shiny-in-production.jumpingrivers.com/) (October) and [SatRdays London](https://satrday-london-2024.jumpingrivers.com/) (April), which run once a year. I organize the North East and Leeds Data Science Meetups for Jumping Rivers.
+
+**Can you share what the local R Community is like?**
+
+![](image_2.jpg)
+
+I am located in Newcastle, in the northeast of England, where a large community is keenly interested in data science. Our community includes [Newcastle University](https://www.ncl.ac.uk/) and [Northumbria University](https://www.northumbria.ac.uk/) students, many of whom are studying data science or statistics. There are also professionals from various industries looking for data science jobs. Our meetups are attended by prospective data scientists and students eager to network and learn more about the field.
+
+Both universities teach R, and many industries in the area employ data science techniques, including [Northumbrian Water](https://www.nwl.co.uk/) and [Nissan](https://www.nissan.co.uk/). These companies use data science to solve everyday problems, such as detecting water leaks and optimizing manufacturing processes.
+
+Data science is relevant across almost all industries, and R, along with Python and other languages, is a crucial tool in solving data science problems. In the Northeast, consultancies like Jumping Rivers specialize in data science. In summary, we have a large community of students and industry professionals in the Northeast, and it’s a similar story in Leeds.
+
+**You have a Meetup on “[Improving the Fidelity and Stability of Large Language Models](https://www.meetup.com/leeds-data-science-meetup/events/300758737/)”, can you share more on the topic covered? Why this topic?**
+
+During our Meetup on “Improving the Fidelity and Stability of Large Language Models,” we will explore how to enhance software solutions with AI capabilities, focusing on improving the accuracy and reliability of these models. Drawing from real-world experiences, we will discuss successful strategies for development, tackle the challenge of model ‘hallucinations,’ and address other significant obstacles. This topic is essential as the AI sector continues to grow rapidly, and integrating AI effectively is crucial for developers to achieve robust performance and innovative functionality in their projects. The session is designed for developers of all skill levels interested in incorporating AI into their work, ensuring they can implement practical and effective methodologies for positive outcomes.
+
+[Ryan Mangan](https://www.linkedin.com/in/ryanmangan01/?originalSubdomain=uk) will be presenting this meetup. Ryan is a seasoned technologist with over 18 years of experience in cloud computing, AI, and virtualization. He founded [Efficient Ether Ltd](https://www.linkedin.com/company/efficientether/), a Microsoft startup specializing in AI, cloud optimization, and sustainability. Ryan is a recognized [Microsoft MVP](https://mvp.microsoft.com/), [VMware vExpert](https://vexpert.vmware.com/), and Chartered Fellow of the British Computer Society. He has authored several e-books and publications, including “[Mastering Azure Virtual Desktop](https://www.amazon.com/Mastering-Azure-Virtual-Desktop-implementation/dp/1801075026),” and is active in public speaking and blogging within the tech community. 
+
+**Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?**
+
+Regarding techniques, I’m currently reviewing how we organize our meetups. Our meetups are free to attend for all participants, and we aim to create a welcoming and accessible environment for everyone to network and meet like-minded individuals in the area. The meetups are held every two to three months on weekdays in the evenings, providing attendees with time to travel from their place of work to the venue. We offer refreshments at the start, including pizza and soft drinks, and we ensure that vegan, gluten-free, and halal options are included to cater to a wide range of dietary preferences. 
+
+![](image_3.jpg)
+
+We often run interactive workshops at the North East Data Science Meetups, including a recent [meetup](https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/events/300470386/) on the Apache Arrow interface for R, led by [Nic Crane](https://thisisnic.github.io/about/) on July 18th. To make our workshops as inclusive as possible, we provide attendees with all necessary materials and dependencies via a cloud environment created using [Posit Workbench](https://docs.posit.co/pwb/). It allows participants without prior installation of RStudio IDE to contribute and interact with the workshop materials. Our goal is to make our workshops accessible to a broad audience, including those from non-R backgrounds. In general, we aim to create an event where attendees can participate without the burden of installing multiple packages or downloading data.
+
+Most attendees attend our meetups to network and meet industry professionals, especially students exploring post-graduation career opportunities. With this in mind, we always reserve a part of the meetup for advertising similar meetups and conferences in the area and job opportunities in data science. Many attendees regard these meetups as a regular source of news, so we try to provide a central hub of information and a place to enjoy high-quality live talks and workshops.
+
+These are in-person meetups. We could attract more people if we recorded and live-streamed it on Zoom. However, managing a Zoom call and recording would create more work for the organizers, and an in-person event provides better networking opportunities than online. In saying that, we will continue to look at ways to make these accessible and appeal to a wide range of backgrounds, and we will always take feedback from the community seriously.
+
+**What trends do you currently see in R language and your industry? Any trends you see developing in the near future?**
+
+In the northeast and Leeds data science meetups, there is a significant interest in machine learning, training and deploying machine learning models, and productionizing these models (ML Ops). Attendees often expect talks on these topics and are particularly interested in chatGPT, generative AI, and other related issues. However, data science encompasses a broader range of areas, including visualizing data and creating dashboards, and we try to cover all of these areas in our talks and workshops. Despite our efforts, there is a clear trend toward machine learning-focused discussions, with many talk submissions focusing on ML Ops and deploying models on the cloud.
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](https://www.r-consortium.org/all-projects/r-user-group-support-program)

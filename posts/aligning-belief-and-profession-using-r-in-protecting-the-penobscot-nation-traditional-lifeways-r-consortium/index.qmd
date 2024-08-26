@@ -1,0 +1,117 @@
+---
+title: "Aligning Beliefs and Profession: Using R in Protecting the Penobscot Nation’s Traditional Lifeways"
+description: "Angie Reed sampling Chlorophyll on the Penobscot River where a dam was removed In a recent interview by the R Consortium, Angie Reed, Water Resources Planner for the Penobscot Indian…"
+author: "R Consortium"
+image: "angie.png"
+date: "03/27/2024"
+format:
+  html:
+    css: 
+      - https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+---
+
+<div style="text-align: center;">
+  <img src="angie.png" alt="Angie Reed" style="height:409px; width:467.984px; object-fit:contain;">
+  <p>Jan Paul, Water Quality Lab Coordinator at Penobscot Nation, sampling in field</p>
+</div>
+
+
+In a recent interview by the R Consortium, [Angie Reed](https://www.linkedin.com/in/angie-reed-a26b5635), Water Resources Planner for the [Penobscot Indian Nation](https://www.penobscotnation.org/), shared her experience learning and using R in river conservation and helping preserve a whole way of life. Educated in New Hampshire and Colorado, Angie began her career with the Houlton Band of Maliseet Indians, later joining the Penobscot Indian Nation. Her discovery of R transformed her approach to environmental statistics, leading to the development of an interactive R Shiny application for community engagement. 
+
+[pαnawάhpskewi](https://penobscot-dictionary.appspot.com/entry/4617620540096512/) (Penobscot people) derive their name from the [pαnawάhpskewtəkʷ](https://penobscot-dictionary.appspot.com/entry/5180570493517824/) (Penobscot River), and their [view of the Penobscot River as a relative](https://www.sunlightmediacollective.org/this-river-is-our-relative/) guides all of the Water Resources Program’s efforts. This perspective is also reflected in the [Penobscot Water Song](https://www.penobscotnation.org/departments/department-of-natural-resources/water-n%c9%99pi-resources/water-n%c9%99pi-song/), which thanks the water and expresses love and respect.  Angie has been honored to:
+
+
+
+* work for the Water Resources Program, 
+* contribute to the [Tribal Exchange Network Group,](https://www.tribalexchangenetwork.org/)
+* engage young students in environmental stewardship and R coding, blending traditional views with modern technology for effective environmental protection and community involvement, and
+* work with Posit to develop the [animated video about Penobscot Nation](https://www.youtube.com/watch?v=2PjOSBHRm74) and show it at the opening of posit:conf 2024
+
+**Please tell us about your background and how you came to use R as part of your work on the Penobscot Indian Nation.**
+
+I grew up in New Hampshire and completed my Bachelor of Science at the [University of New Hampshire](https://www.unh.edu/), followed by a Master of Science at [Colorado State University](https://csuglobal.edu/?utm_source=google&utm_medium=cpc&utm_campaign=nb_gen_gen_csu_sdi&utm_network=g&gad_source=1&gclid=Cj0KCQiA1rSsBhDHARIsANB4EJYbUk-dSDfzmeBjg3kRoE_qpguIKAvKjN2tVt3_wvIKcNLk7PFaKNcaAqu7EALw_wcB&gclsrc=aw.ds). After spending some time out west, I returned to the Northeast for work. I began by joining the [Houlton Band of Maliseet Indians](https://maliseets.net/) in Houlton, Maine, right after finishing my graduate studies in 1998. Then, in 2004, I started working with the [Penobscot Indian Nation](https://www.penobscotnation.org/). Currently, I work for both tribes, full-time with Penobscot and part-time with Maliseet.
+
+My first encounter with R was during an environmental statistics class taught by a former USGS employee, Dennis Helsel during a class he taught for his business [Practical Stats](https://cran.r-project.org/web/packages/Rcmdr/index.html). He introduced us to a package in R called [R Commander](https://cran.r-project.org/web/packages/Rcmdr/index.html). Initially, I only used it for statistics, but soon, I realized there was much more to R. I began teaching myself how to use [ggplot](https://ggplot2.tidyverse.org/) for graphing. I spent months searching and learning, often frustrated, but it paid off as I started creating more sophisticated graphs for our reports.
+
+We often collaborate with staff from the Environmental Protection Agency (EPA) in Region One (New England, including Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont and 10 Tribal Nations). One of their staff, Valerie Bataille, introduced us to R Carpentries classes. She organized a free class for tribal staff in our region. Taking that class was enlightening; I realized there was so much more I could have learned earlier, making my journey easier. This experience was foundational for me, marking the transition from seeing R as an environmental statistics tool to recognizing its broader applications. It’s a bit cliché, but this journey typifies how many people discover and learn new skills in this field.
+
+**The Penobscot Nation views the Penobscot River as a relative or family. How does that make water management for the Penobscot River different from other water resource management?**
+
+If you watch [The River is Our Relative](https://www.sunlightmediacollective.org/this-river-is-our-relative/), the video delves deeper into seeing the river from a relative, beautiful, and challenging perspective. This view fundamentally shifts how I perceive my work, imbuing it with a deeper meaning that transcends typical Western scientific approaches to river conservation. It’s a constant reminder that my job aligns with everything I believe in, reinforcing that there’s a profound reason behind my feelings.
+
+Working with the Penobscot Nation and other tribal nations to protect their waters and ways of life is an honor and has revealed the challenges of conveying the differences in perspective to others. Often, attempts to bridge the gap get lost in translation. Many see their work as just a job, but for the Penobscot people, it’s an integral part of their identity. It’s not merely about accomplishing tasks; it’s about their entire way of life. The river provides sustenance, acts as a transportation route, and is a living relative to whom they have a responsibility. 
+
+**How does using open source software allow better sharing of results with Penobscot Nation citizens?**
+
+My co-worker, Jan Paul, and I had the pleasure of attending and [presenting ](https://www.youtube.com/watch?v=2PjOSBHRm74)at posit::conf 2023   and working with Posit staff to create an [animated video that describes what we do and how opensource and Posit tools help us do it](https://youtu.be/8VCr_bohahw?si=9KyUjgd5hqza8D2u).  It was so heart-warming to watch the video shown to all attendees at the start of conf, and was a great introduction to my shameless ask for help during my presentation and through a table where I offered a [volunteer sign-up sheet/form](https://docs.google.com/forms/d/e/1FAIpQLSdHj47P0OAbPunyP6zbIihVeOOthiKsrCXWXoUQym_v9XdUog/viewform), I was humbled by the number of generous offers and am already  receiving some assistance on a project I’ve been eager to accomplish. Jasmine Kindness, [One World Analytics](https://oneworldanalytics.com/), is helping me recreate a [Tableau viz](https://public.tableau.com/app/profile/angie.reed/viz/EcoliViolations2019/Dashboard1) I made years ago as an interactive, map-based R Shiny tool. 
+
+
+
+
+
+![](water-map.png)
+
+
+I find that people connect more with maps, especially when it comes to visualizing data that is geographically referenced. For instance, if there’s an issue in the water, people can see exactly where it is on the map. This is particularly relevant as people in this area are very familiar with the Penobscot River watershed.  My aim is to create tools that are not only interactive but also intuitive, allowing users to zoom into familiar areas and understand what’s happening there. 
+
+This experience has really highlighted the value of the open source community. It’s not just about the tools; it’s also about the people and the generosity within this community. The Posit conference was a great reminder of this, andthe experience of working with someone so helpful and skilled has truly reinforced how amazing and generous the open source community is.
+
+**How has your use of R helped to achieve more stringent protections for the Penobscot River?**
+
+Before we started using open source tools, my team and I had been diligently working to centralize our data management system, which significantly improved our efficiency. A major shift occurred when we began using R and RStudio (currently Posit) to extract data from this system to create summaries. This has been particularly useful in a biennial process where the State of Maine requests data and proposals for upgrading water quality classifications.
+
+In Maine, water bodies are classified into four major categories: [AA, A, B, and C](https://www.mainelegislature.org/legis/statutes/38/title38sec465.html). If new data suggests that a water body, currently classified as a lower grade, could qualify for a higher classification, we can submit a proposal for this upgrade. In the past we have facilitated upgrades for hundreds of miles of streams, however it took much longer to compile the data.  For the first time in 2018 we used R and RStudio to prepare a proposal to the Maine Department of Environmental Protection (DEP) to upgrade the last segment of the Penobscot River from C to B.  Using open source tools, we were able to quickly summarize data and compile data into a format that could be used for this proposal, a task that previously took a significantly longer time.  DEP accepted our proposal because our data clearly supported the upgrade.  In 2019, the proposal was passed and we anticipate this process continuing to be easier in the future.
+
+**You are part of a larger network of tribal environmental professionals, working together to learn R and share data and insights. Can you share details about how that works?**
+
+
+
+<div style="text-align: center;">
+  <img src="Jan.png" alt="Jan Paul" style="height:537px; width:641.484px; object-fit:contain;">
+  <p>Jan Paul, Water Quality Lab Coordinator at Penobscot Nation, sampling in field</p>
+</div>
+
+
+I’m involved in the [Tribal Exchange Network Group (TXG](https://www.tribalexchangenetwork.org/)), which is a national group of tribal environmental professionals like myself and is funded by a cooperative agreement with the [Office of Information Management](https://www.epa.gov/aboutepa/about-office-information-management-oim) (OIM) at the [Environmental Protection Agency](https://www.epa.gov/) (EPA). We work in various fields, such as air, water, and fisheries, focusing on environmental protection. Our goal is to ensure that tribes are well-represented in EPA’s [Exchange Network](https://exchangenetwork.net/), and we also assist tribes individually with managing their data.
+
+Since attending a Carpentries class, I’ve been helping TXG organize and host many of them. We’ve held one every year since 2019, and we’re now moving towards more advanced topics. In addition to trainings, TXG provides a variety of activities and support, including small group discussions, 1-on-1 assistance and  conferences.  Although COVID-19 disrupted our schedule we are planning our next [conference ](https://www.tribalexchangenetwork.org/tenc)for this year.
+
+Our smaller, more conversational monthly data drop-in sessions always include the opportunity to have a  breakout room to work on R. People can come with their R-related questions, or the host might prepare a demo.
+
+Our 1-on-1  tribal assistance hours allows Tribes tosign up for help with issues related to their specific data. I work with individuals on R code for various tasks, such as managing temperature sensor data or generating annual assessment reports in R Markdown format. This personalized assistance has significantly improved skill building and confidence among participants and are particularly effective as they use real data and often result in a tangible product, like a table or graph, which is exciting for participants.  We’ve also seen great benefits, especially in terms of staff turnover. When staff members leave, the program still has well-documented code, making it easier for their successors to pick up where they left off. These one-on-one sessions.
+
+Additionally, I’ve been involved in forming a Pacific Northwest Tribal coding group, which still doesn’t have an official name as it is only a few months old. It began from discussions with staff from the [Northwest Indian Fisheries Commission](https://nwifc.org/) (NWIFC) and staff from member Tribes. And I am thrilled to say we’ve already attracted many new members from staff of the [Columbia River Inter-Tribal Fish Commission](https://critfc.org/) (CRITFC). This group is a direct offshoot of the TXG efforts with Marissa Pauling of NWIFC facilitating, and we’re excited about the learning opportunities it presents.
+
+Our work, including the tribal assistance hours, is funded through a grant that reimburses the Penobscot Nation for the time I spend on these activities. As we move forward with the coding group, planning to invite speakers and organize events, it’s clear there’s much to share with this audience, possibly in future blogs like this one. This work is all part of our broader effort to support tribes in their environmental data management endeavors.  If anyone would like to offer their time toward these kinds of assistance, they can use the [TXG google form](https://docs.google.com/forms/d/e/1FAIpQLSdHj47P0OAbPunyP6zbIihVeOOthiKsrCXWXoUQym_v9XdUog/viewform) to sign up.
+
+**How do you engage with young people?**
+
+I am deeply committed to engaging the younger generation, especially the students at Penobscot Nation’s Indian Island school (pre-K through 8th grade). In our [Water Resources Program](https://www.penobscotnation.org/departments/department-of-natural-resources/water-n%c9%99pi-resources/) at Penobscot Nation, we actively involve these students in our river conservation efforts. We see our role as not just their employees but as protectors of the river for their future.
+
+
+
+
+![](sampling-bacteria.png)
+<div style="text-align: center;">
+  <p>Sampling for Bacteria</p>
+</div>
+
+Our approach includes hands-on activities like taking students to the river for bacteria monitoring. They participate in collecting samples and processing them in our lab, gaining practical experience in environmental monitoring. This hands-on learning is now being enhanced with the development of the R Shiny app I’m working on with Jasmine, to make data interpretation more interactive and engaging for the students.
+
+Recognizing their budding interest in technology, I’m also exploring the possibility of starting a mini R coding group at the school. With students already exposed to basic coding through MIT’s ~~[Scratch](https://scratch.mit.edu/)~~, advancing to R seems a promising and exciting step.
+
+Beyond the Penobscot Nation school, we’re extending our reach to local high schools like Orono Middle School. We recently involved eighth graders, including two Penobscot Nation citizens, in our bacteria monitoring project. This collaboration has motivated me to consider establishing an R coding group in these high schools, allowing our students continuous access to these learning opportunities.
+
+
+
+
+
+![](processing-bacteria.png)
+<div style="text-align: center;">
+  <p>Processing bacteria sample</p>
+</div>
+My vision is to create a learning environment in local high schools where students can delve deeper into data analysis and coding. This initiative aims to extend our impact, ensuring students have continuous access to educational opportunities that merge environmental knowledge with tech skills and an appreciation of Penobscot people, culture and the work being done in our program.
+
+Over the years, witnessing the growth of students who participated in our programs has been immensely gratifying. . A particularly inspiring example is a young Penobscot woman, Shantel Neptune, who did an internship with us through the [Wabanaki Youth in Science](https://umaine.edu/nativeamericanprograms/wabanaki-youth-science-program/) (WaYS) Program a few years back , then a data internship through TXG and is now a full-time employee in the Water Resources Program.  Shantel is also now helping to teach another young Penobscot woman, Maddie Huerth, about data collection, management, analysis and visualization while she is our temporary employee.  We’re planning sessions this winter to further enhance their R coding skills, a critical aspect of their professional development. 
+
+It’s essential to me that these women, along with others, receive comprehensive training. Our program’s success hinges on it being led by individuals who are not only skilled but who also embody Penobscot Nation’s values and traditions. Empowering young Penobscot citizens to lead these initiatives is not just a goal but a necessity. Their growth and development are vital to the continuity and integrity of our work, and I am committed to nurturing their skills and confidence. This endeavor is more than just education; it’s about preserving identity  and ensuring our environmental efforts resonate with the Penobscot spirit and needs.

@@ -1,0 +1,16 @@
+{
+  "hash": "0b145519fd93541c6b40803920e9ebd8",
+  "result": {
+    "markdown": "---\ntitle: \"Food Graph\"\nauthor: \"Erik Rodriguez\"\nsubtitle: \"Just an example of working with a .qmd file\"\ndate: \"2023-11-08\"\n---\n\n\n# MPG vs Horsepower\n\nThis is a graph about food:\n\n\n::: {.cell .column-margin}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nmtcars2 <- mtcars\nmtcars2$am <- factor(\n  mtcars$am, labels = c('chocolate', 'vanilla')\n)\nggplot(mtcars2, aes(hp, mpg, color = am)) +\n  geom_point() + geom_smooth() +\n  theme(legend.position = 'bottom')\n```\n\n::: {.cell-output-display}\n![Different kinds of food.](index_files/figure-html/food-margin-1.png){width=672}\n:::\n:::\n\n\nShowing it bigger:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nmtcars2 <- mtcars\nmtcars2$am <- factor(\n  mtcars$am, labels = c('chocolate', 'vanilla')\n)\nggplot(mtcars2, aes(hp, mpg, color = am)) +\n  geom_point() + geom_smooth() +\n  theme(legend.position = 'bottom')\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n```\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

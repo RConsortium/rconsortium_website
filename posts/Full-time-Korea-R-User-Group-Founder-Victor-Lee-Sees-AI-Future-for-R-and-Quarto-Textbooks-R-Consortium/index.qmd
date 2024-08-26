@@ -1,0 +1,73 @@
+---
+title: "Full-time Korea R User Group Founder Victor Lee Sees AI Future for R and Quarto Textbooks"
+description: "The R Consortium recently interviewed Victor Lee, organizer of the Korea R User Group, about his role establishing and expanding the Korean R community."
+author: "R Consortium"
+date: "06/04/2024"
+---
+
+![](victor.png)
+
+The R Consortium recently interviewed Victor Lee, organizer of the [Korea R User Group](https://r2bit.com/), about his role establishing and expanding the Korean R community. Victor shared his journey, beginning with an introduction to R and open source programming languages while working at the Hyundai Motor Company, and later, his efforts in establishing the tidyverse community in Korea. He highlighted his extensive experience with R, including writing blog posts, publishing Quarto books, and building websites for the Korea R User Group. Victor will be a Software Carpentry instructor at the Software Carpentry Workshops at Sejong University. 
+
+**Please share about your background and your involvement in the R Community.**
+
+  
+My first introduction to our community was about 10 years ago, and it wasn’t a good experience. I used to work at the Hyundai Motor Company at that time and was intrigued by the [software carpentry](https://software-carpentry.org/scf/history/) led by Greg Wilson. I also delved into statistics and open-source programming languages, particularly S and R programming. I was heavily involved in posting about tidyverse, which was my entry point into the community environment. In Korea, I sought out the Korean community, which mainly focused on the basics. This made me realize the need for a community in Korea based on tidyverse principles, and that’s why I started the tidyverse community in Korea 10 years ago.
+
+I was first introduced to S-PLUS during my undergraduate years as a statistics major, and I was fascinated by its superior graphics compared to SAS/SPSS. After majoring in computer engineering and working at Hyundai Motor Company for 10 years, I obtained a Software Carpentry Instructor certification and translated “Python for Informatics” into a Korean book. I became captivated by the Hadleyverse, and Since 2016, I have been co-organizing the [Seoul R Meetup](https://r2bit.com/seoul-r/), sponsored by Kyobo DPLANEX (a continuous sponsor and is currently the largest sponsor of the Seoul R Meetup, representing one of South Korea’s leading insurance companies) alongside [Choonghyun Ryu](https://www.linkedin.com/in/choonghyun-ryu-10a95726/), the founder of the Korea R User Group. In 2021, we hosted [the Korea R Conference](https://use-r.kr/), and in 2021, we established [the Korea R User Group](https://r2bit.com/) as a non-profit organization, transitioning from a community to an official organization.
+
+**What is your level of experience with the R language?**
+
+With the support of the R community, ChatGPT, and Copilot AI, I now confidently tackle any data science problem using R. For about 10 years, I’ve consistently written blog posts using R Markdown and now Quarto. Upgrading my e-books with Bookdown led to the publication of five Quarto books on data science. Using the Quarto framework, I also built the [Korea R User Group](https://github.com/bit2r) and R Conference websites. As [a civic data journalist](https://www.ohmynews.com/NWS_Web/iRoom/index.aspx?MEM_CD=00785603), I’ve written around 100 articles utilizing R’s visualization capabilities. Reflecting on my journey, I see how effectively I’ve applied the R language in various fields.
+
+**What industry are you currently in? How do you use R in your work?**
+
+I originally set up the Korean R community 10 years ago and am a founding member of the nonprofit Korea R User Group, established three years ago. I left KPMG to dedicate my time to running the Korea R User Group. This year, I have been fully involved in managing the organization and leading several projects, including two major abandoned projects, focusing on them for the past few months.
+
+Currently, I am focusing on publishing and developing open statistical packages at a non-profit public interest corporation. In 2020, with good intentions, I started the “Open Statistical Package” project to independently develop statistical packages like SAS, SPSS, and Minitab. However, some Shiny developers without a strong background in statistics took the project in their direction, causing it to lose steam. It felt as though they had hijacked the project and the hard work the Korea R User Group put in, leaving us frustrated and disappointed. 
+
+To prevent this kind of thing from happening again, we’re beefing up our license policy, including trademark registration for BitStat\[1\]. We’re also switching up our development engines to webr and shinylive and are in the process of creating BitStat2\[2\].
+
+\[1\]: [https://github.com/bit2r/BitStat](https://github.com/bit2r/BitStat) \[2\]: [https://github.com/bit2r/BitStat2](https://github.com/bit2r/BitStat2)
+
+We also established a publishing company named “BitStat” as the Korea R User Group promoted [Quarto digital](https://github.com/bit2r/bitPublish) writing as a new open source project. Recently, we have published and released five data science books, expanding the base of R users. While writing the sixth book on probability and statistics, I restarted the development of open statistical packages using Web-R and Shinylive.
+
+R has evolved from a simple data analysis and statistical language to a tool that can replace office software. I now use Quarto to create almost all documents, and R is the first language I use in developing the open statistical package that I am currently working on.
+
+**Why do industry professionals come to your user group? What is the benefit for attending?**
+
+![](krusergroup.jpg)
+
+In Korea, about 20 to 30 years ago, R was the number one programming language for data science and statistics, particularly in areas like machine learning. However, with the rise of Python, many R users transitioned to Python due to its increasing popularity. Despite this shift, R remains significant in Korea, with many people continuing to use both R and Python.
+
+For my day-to-day work, I find R quite convenient and easy to use, especially for therapeutic data and open-source case studies. This year, I’ve noticed that users who join the Korea R User Group come from diverse backgrounds, including drug discovery, regulatory agency, and real estate.
+
+Over the past decade, many users joined the group to determine whether Python or R was better suited for their work. However, the recent trend clearly leans towards artificial intelligence development, such as LLM (Large Language Model) development. Participants from various industries with an interest in quantitative analysis are now attending the user group.
+
+Their motivation for attending, apart from AI fields represented by LLM, is to acquire the latest technology in other data science areas and to gain knowledge from diverse, in-depth analysis experiences and model development. Additionally, many people come to obtain information about Quarto, ggplot, gt, and shiny, seeking business opportunities related to these tools.
+
+**What trends do you currently see in R language and your industry? Any trends you see developing in the near future?**
+
+This year, our community in Korea is focusing on Quarto due to upcoming government policy changes. Analog methods are expected to disappear within five years, so the government is funding the development of AI digital textbooks. I believe Quarto technology, the next generation of R Markdown, is perfect for this purpose.
+
+As generative artificial intelligence (AI) has gained significant attention in Korea, there is growing interest in using R and Python together with generative AI to solve data science problems and increase productivity, rather than focusing on the languages themselves. When using generative AI with languages such as R, Python, and SQL, it becomes necessary to find tools that can automate and store the outputs, inevitably leading to increased interest in Quarto.
+
+This perspective has been reinforced by my experience using Quarto in various ways, starting from R Markdown. I have come to realize that Quarto is truly well-suited for generative AI and data science. If other countries are developing AI texts using Quarto or R Markdown, we could introduce this technology to the Korean market and the Korean government. 
+
+Having written five books – plus a sixth on probability and statistics – I’ve experimented with various features of Quarto books. I’ve realized we no longer need older statistical packages like SAS and SPSS. My current project involves implementing statistical software using WebAssembly (WASM) technology.
+
+**We would like to get to know you more personally. Can you please tell me about yourself? For example, your hobbies/interests or anything else you want to share.**  
+
+Initially, I wasn’t sure if I would succeed, but I became involved in election campaigns and grew passionate about analyzing political and election data. My interest lies in using data to uncover trends and insights from various social datasets.
+
+Next month, we will have a data journalism meetup, and I have friends who will join because of the articles I wrote. They will showcase some of their analyses on TV, including summaries of data related to election campaigns.
+
+I first developed a connection with data while majoring in statistics and then pursued computer engineering in graduate school. Although this combination of backgrounds is common now, it was unusual in Korea at the time, giving me a unique career path. My passion for open-source software and faith in the community have driven me to where I am today.
+
+I enjoy analyzing data, and whenever I come across interesting datasets, I analyze them and document my experiences on my blog. This hobby, along with the copyright-free nature of data, led me to develop an interest in predicting election winners using data from annual elections in South Korea. Since 2016, I have experienced three general elections, presidential elections, and local elections. Although there won’t be an election next year, I am very much looking forward to the next one.
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](../../all-projects/rugsprogram.html)

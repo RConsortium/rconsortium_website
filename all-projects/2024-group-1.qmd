@@ -1,0 +1,88 @@
+## Funded ISC Grants (2024-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+- [Modular, interoperable, and extensible topological data analysis in R](#modular-interoperable-and-extensible-topological-data-analysis-in-r)
+- [ISO 19115-3 standard implementation in geometa R package](#iso-19115-3-standard-implementation-in-geometa-r-package)
+- [R-multiverse for production](#r-multiverse-for-production)
+- [Critical Updates to Biostrings](#critical-updates-to-biostrings)
+- [Setting up igraph for success in the next decade](#setting-up-igraph-for-success-in-the-next-decade)
+- [{geotargets}: Enabling geospatial workflow management with {targets}](#geotargets-enabling-geospatial-workflow-management-with-targets)
+
+___
+
+### Modular, interoperable, and extensible topological data analysis in R
+
+**Funded:**  
+$18,000
+
+**Proposed by:**  
+Cory Brunson
+
+**Summary:**  
+The goal of this project is to seamlessly integrate popular techniques from topological data analysis (TDA) into common statistical workflows in R. The expected benefit is that these extensions will be more widely used by non-specialist researchers and analysts, which will create sufficient awareness and interest in the community to extend the individual packages and the collection.
+
+### ISO 19115-3 standard implementation in geometa R package
+
+**Funded:**  
+$13,750
+
+**Proposed by:**  
+Emmanuel Blondel
+
+**Summary:**  
+The present project enhances the geometa package for handling the new ISO 19115-3 geographic information standard as part of its object-oriented data model developed with R6. The user community, especially data managers working in research national institutes and international organizations, will take advantage of the features to start adopting the new standard for managing their geographic metadata, progressively promoted in Geographic information management web platforms, especially those from the OpenSource Geospatial Foundation (OSGeo) such as GeoNetwork, PyCSW or GeoNode.
+
+
+### R-multiverse for production
+
+**Funded:**  
+$20,000
+
+**Proposed by:**  
+Will Landau
+
+**Summary:**  
+The implementation of R-multiverse to date has been both straightforward and achievable. It builds directly upon the proven technologies of R-universe and GitHub Actions. By the end of the milestones, the entire project will be in a ready state to be launched to the public as a production solution for non-CRAN non-Bioconductor packages.
+
+
+### Critical Updates to Biostrings
+
+**Funded:**  
+$8,000
+
+**Proposed by:**  
+Aidan Lakshman, University of Pittsburgh
+
+
+**Summary:**  
+Biostrings is a core Bioconductor package providing efficient containers for storing, manipulating, and analyzing biological sequences. Biostrings is the method to access biological sequence data in R; nearly every analysis working with genomic data depends on the Biostrings package to handle sequencing data.
+
+This project proposes to clear out accumulated technical debt by addressing open issues, implementing robust tests for long-term sustainability, improving user experience, and adding features that will keep Biostrings relevant for modern sequencing technologies. For end-users, this will result in numerous bugfixes, a host of new features to support genomic analyses, and a variety of performance improvements to bolster R as one of the top programming languages for bioinformatics. For developers, this will make the Biostrings package more sustainable, allowing for more community contribution and faster bug resolution in the future.
+
+
+### Setting up igraph for success in the next decade
+
+**Funded:**  
+$16,000
+
+**Proposed by:**  
+Maëlle Salmon, cynkra
+
+
+**Summary:**  
+This project is aimed at improving the quality of igraph codebase itself and of the user interface (messages including error messages, documentation indicating the status of exported functions). It has the goal of improving the user-friendliness of the installation from source.
+
+
+### {geotargets}: Enabling geospatial workflow management with {targets}
+
+**Funded:**  
+$15,912
+
+**Proposed by:**  
+Eric Scott, University of Arizona
+
+**Summary:**  
+The goal of this project is to create a package that makes using targets for geospatial analysis in R as seamless as possible. To that end, geotargets will provide custom functions for defining geospatial targets that take care of translating and saving R objects for the user. In addition, the project will provide vignettes demonstrating how to use various geospatial R packages with targets. Where appropriate, the project will identify contributions to existing R packages to make them easier to use with targets and geotargets.

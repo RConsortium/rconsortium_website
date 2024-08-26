@@ -1,0 +1,117 @@
+## Funded ISC Grants (2020-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Consolidating R-Ladies Global organisational guidance and wisdom](#consolidating-r-ladies-global-organisational-guidance-and-wisdom)
+-   [Database interoperability for spatial objects in R](#database-interoperability-for-spatial-objects-in-r)
+-   [HTTP testing in R Book](#http-testing-in-r-book)
+-   [MATTER 2.0: larger-than-memory data for R](#matter-2.0-larger-than-memory-data-for-r)
+-   [Spatiotemporal Data and Analytics](#spatiotemporal-data-and-analytics)
+-   [The RECON COVID-19 challenge: leveraging the R community to improve COVID-19 analytics resources](#the-recon-covid-19-challenge-leveraging-the-r-community-to-improve-covid-19-analytics-resources)
+-   [sftrack v1.0: Stable API for a broad adoption](#sftrack-v1.0-stable-api-for-a-broad-adoption)
+
+___
+
+### Consolidating R-Ladies Global organisational guidance and wisdom
+
+**Funded:**  
+$4,000
+
+**Proposed by:**  
+Maëlle Salmon
+
+**Website:**  
+[https://github.com/rladies/starter-kit](https://github.com/rladies/starter-kit)
+
+**Summary:**  
+R-Ladies Global is a successful, growing organization aiming at increasing gender diversity in the R community. R-Ladies Global is a Top-Level Project of the ISC. R-Ladies Global guidance for starting and running a chapter, as well as overseeing chapters around the world, and for the rotating curator account, grew organically. The information is fragmented and exists in different formats: several Markdown and PDF Documents and wiki entries in a GitHub repository. This impedes the optimal finding of resources by those who need them, and also impedes contributions. This project aims to consolidate existing R-Ladies Global guidance into a well-structured and continuously deployed online book, with its source open on GitHub, as ( R ) Markdown documents woven together, and whose maintenance will be an R-Ladies major priority task.
+
+The project will create a web based manuscript containing all the necessary information to understand what the R-Ladies organization is about, its structure and how to contribute to its mission. Information will be collated and organized leveraging the experience of R-Ladies organizers and volunteers that, over the past 4 years, contributed to the establishment and growth of one of the most active and successful communities in the data science realm. This book will be a crucial resource for R-Ladies and other organizations that are looking to consolidate or create their own guidance.
+
+### Database interoperability for spatial objects in R
+
+**Funded:**  
+$6,000
+
+**Proposed by:**  
+Etienne Racine
+
+**Website:**  
+[https://github.com/r-spatial/sfdbi](https://github.com/r-spatial/sfdbi)
+
+**Summary:**  
+Manipulating spatial data in R sometimes requires interaction with a spatial database: the data doesn't fit in memory, or simply because this is where the data is. The \`sf\` package already supports the PostGIS spatial database, but this project will extend the compatibility and make it easier to integrate in the \`dplyr\` workflow (with \`dbplyr\`). We also want to make it easier to add support for new database backends. We'll create a new \`sfdbi\` package to centralize the interface between \`sf\` and databases and remove dependencies in \`sf\`. If you want to contribute, or if you'd like to suggest a database, make sure to join the \`sfdbi\` repo.
+
+### HTTP testing in R Book
+
+**Funded:**  
+$16,000
+
+**Proposed by:**  
+Maëlle Salmon
+
+**Website:**  
+[https://github.com/ropensci-books/http-testing](https://github.com/ropensci-books/http-testing)
+
+**Summary:**  
+More and more R packages access resources on the web, and play crucial roles in workflows: data access and updates for CRM reports (Hubspot APIs), for scientific publications (scientific web APIs, Open Science Framework). Like for all other packages, appropriate unit testing can make them more robust. Their unit testing brings special challenges: dependence of tests on a good internet connection, testing in the absence of authentication secrets, etc. Having tests fail due to resources being down or slow, during development or on CRAN, means a time loss for everyone involved (slower development, messages from CRAN). Although many packages accessing remote resources are well tested, there is a lack of resources around best practices for HTTP testing in packages using httr, crul, or curl. The best guidance to date about HTTP testing for R packages to our knowledge is a forum entry that pre-dates the development of relatively new packages for HTTP testing that have now been released on CRAN: vcr and webmockr by Scott Chamberlain, httptest by Neal Richardson, presser by Gábor Csárdi. This project aims at curating a free, central reference for developers of R packages accessing web resources, to help them have a faster and more robust development. We shall develop an useful guidance, in the form of a open-source web-based book.
+
+### MATTER 2.0: larger-than-memory data for R
+
+**Funded:**  
+$35,000
+
+**Proposed by:**  
+Olga Vitek
+
+**Website:**  
+[https://github.com/kuwisdelu/matter](https://github.com/kuwisdelu/matter)
+
+**Summary:**  
+The project develops the MATTER 2.0 package for computing with larger-than-memory data in R. It extends the functionality of the existing MATTER package to any disk data format and in-memory layout. It also extends MATTER's implementation with ALTREP to provide seamless interoperation with existing code, and various performance improvements critical for rapid prototyping of new statistical methods.
+
+### Spatiotemporal Data and Analytics
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Benedikt Gräler
+
+**Website:**  
+[https://github.com/BenGraeler/STDataAndAnalytics/](https://github.com/BenGraeler/STDataAndAnalytics/)
+
+**Summary:**  
+Many data sets are recorded irregular in space and time. Movement of people driving the spread of an disease, or the distribution of current and future cases are per se irregular spatiotemporal data and only two of many examples. Being able to easily visualise, aggregate and model irregular spatiotemporal data will help to better understand and forecast underlying processes. Filling the gap for irregular spatiotemporal data and providing direct interaction with analytical tools will ease the analysis for researchers. We will develop the sftime package to a mature state so that the suite of modern spatial and spatiotemporal data representations in R includes irregular spatiotemporal data. After doing this, we will modify the geostatistical modelling package gstat and the spatial copula modelling package spcopula to support the new data representation classes of sf, stars and sftime.
+
+### The RECON COVID-19 challenge: leveraging the R community to improve COVID-19 analytics resources
+
+**Funded:**  
+$23,300
+
+**Proposed by:**  
+Thibaut Jombart
+
+**Website:**  
+[https://www.repidemicsconsortium.org/2020-06-09-covid-challenge/](https://www.repidemicsconsortium.org/2020-06-09-covid-challenge/)
+
+**Summary:**  
+The RECON COVID-19 challenge aims to bring together the infectious disease modelling, epidemiology and R communities to improve analytics resources for the COVID-19 response via a website which will provide a platform to centralise, curate and update R development tasks relevant to the COVID-19 response. Similar to the Open Street Map Tasking Manager (tasks.hotosm.org), this platform will allow potential contributors to quickly identify outstanding tasks submitted by groups involved in the response to COVID-19 and ensure that developments follow the highest scientific and technical standards.
+
+While this project is aimed at leveraging R tools for helping to respond to COVID-19, we expect that it will lead to long-lasting developments of partnerships between the R and epidemiological communities, and that the resources developed will become key assets for supporting outbreak responses well beyond this pandemic.
+
+### sftrack v1.0: Stable API for a broad adoption
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Mathieu Basille
+
+**Website:**  
+[https://github.com/mablab/sftrack](https://github.com/mablab/sftrack)
+
+**Summary:**  
+sftrack' is a modern approach for tracking data in R. In response to the large diversity of ad-hoc solutions, in part outdated, we propose a generic and flexible approach that support all stages of movement studies (pre-processing, post-processing and analysis). 'sftrack' provides two central classes for tracking data (points) and movement data (steps), and basic functions to build, handle, summarize and plot them. Version 1.0 of 'sftrack' will be finalized and submitted to CRAN, and will already incorporate converters from/to classes of major existing tracking packages. We will further work with all tracking package developers willing to fully integrate the solution offered by 'sftrack' into their package data flow.

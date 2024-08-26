@@ -1,0 +1,45 @@
+---
+title: "R/Medicine: Quarto for Reproducible Medical Manuscripts"
+image: images/Screenshot-2024-02-20-at-10.47.50 AM-1024x573.webp
+---
+
+<hr>
+
+<div class="video-container">
+
+<iframe src="https://www.youtube.com/embed/NK1onTLcgY4?si=6-W-1Nzs3l164Bck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+**Slides available here:**
+
+[Quarto Manuscript](http://mine.quarto.pub/quarto-manuscripts-rmed)
+
+[Github – Quarto Manuscript](http://github.com/mine-cetinkaya-rundel/quarto-manuscripts-rmed)
+
+**Manuscript:**
+
+ mine-cetinkaya-rundel.github.io/indo-rct
+
+ github.com/mine-cetinkaya-rundel/indo-rct
+
+## Summary 
+
+In this talk, Mine Cetinkaya-Rundel, Professor of the Practice of Statistical Science at Duke University,  presents a new capability in Quarto that provides a straightforward and user-friendly approach to creating reproducible manuscripts that are publication-ready for submission to science journals. 
+
+This new feature, Quarto manuscripts, includes the ability to produce a bundled output containing a standardized journal format, source documents, source computations, referenced resources, and execution information into a single bundle that be ingested into journal review and production processes. 
+
+In this talk, we’ll demo how Quarto manuscripts work and how you can incorporate them into your current manuscript development process as well as touch on pain points in your current workflow that Quarto manuscripts help alleviate.
+
+## Speaker
+
+<div class="speaker">
+
+<figure>
+<img src="https://lh7-us.googleusercontent.com/_C6zFW_jwUjQLX6RYF6WQ0FMtnY04ZX2f4EFAxKoCRRo9_62BQvZv_qkjmUxiel_I79GXBUcSsD_0QYg3kINaYt3bT8FTHd6qdgRqOtMGyZwXPA_2NawIyhLbXQtuheiWfk1aCQtwi1tvvMHwrVgpW8" alt="Speaker" />
+</figure>
+
+<blockquote>
+Mine Çetinkaya-Rundelis, is Professor of the Practice of Statistical Science and the Director of Undergraduate Studies in the Department of Statistical Science, as well as an affiliated faculty member in the Computational Media, Arts, and Cultures program at Duke University. Her work is dedicated to advancing innovation in statistics and data science pedagogy, focusing particularly on computing, reproducible research, student-centered learning, and open-source education. She emphasizes integrating computation into the undergraduate statistics curriculum, employing reproducible research methodologies, and analyzing real and complex datasets. In Spring 2024, she will be teaching STA 199 – Introduction to Data Science and Statistical Thinking, along with STA 313 – Advanced Data Visualization. Further details about her work can be explored below, or she can be found on Mastodon and Bluesky.
+</blockquote>
+
+</div>

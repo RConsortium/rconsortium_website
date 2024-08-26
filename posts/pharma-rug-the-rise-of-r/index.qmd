@@ -1,0 +1,63 @@
+---
+title: "Pharma RUG: The Rise of R in China’s Pharmaceutical Industry"
+description: "PharmaRUG, China organizer Joe Zhu, spoke with the R Consortium about the growing R community and the increasing use of R in the pharmaceutical industry in China. The group has…"
+author: "R Consortium"
+image: "unnamed.jpg"
+date: "08/01/2024"
+---
+
+PharmaRUG, China organizer [Joe Zhu](https://shajoezhu.github.io/), spoke with the R Consortium about the growing R community and the increasing use of R in the pharmaceutical industry in China. The group has contributed to the pharmaceutical R community through several R packages. Since its establishment last year, the group has organized large-scale hybrid events. Joe also shared some tools and techniques for smoothly organizing and running hybrid events.
+
+![](unnamed.jpg)
+
+**_Please share about your background and involvement with the RUGS group._**
+
+I have a PhD in statistics and studied in New Zealand for my undergraduate and postgraduate degrees in statistics. My PhD work focused on theoretical coalescent theory and probabilistic modeling for phylogenetics models. I also completed a postdoc at Oxford, focusing on statistical genomics for the human genome and malaria parasite genome projects. During this time, I developed open source software tools for statistical genomics, primarily using R as a front end and developing C++ software.
+
+For the past four years, I’ve worked at [Roche](https://www.roche.com/innovation/structure/rnd-locations/pharma-shanghai), where I started leading a major collaboration initiative in pharma three years ago. I’ve created TLG (table, listing, and figures) for regulatory submissions to the [FDA](https://www.fda.gov/). Throughout this initiative, we have open sourced around 30 software packages, including \`[formatters](https://cran.r-project.org/web/packages/formatters/index.html)\`, \`[rtables](https://cran.r-project.org/web/packages/rtables/index.html)\`, \`[rlistings](https://cran.r-project.org/web/packages/rlistings/index.html)\` and \`[tern](https://cran.r-project.org/web/packages/tern/index.html)\`. Last year, we submitted these packages to CRAN.
+
+At first, we open sourced the project on GitHub and then submitted it to [CRAN](https://cran.r-project.org/). I’m heavily involved in one of China’s R user groups, PharmaRUG. We use the group to share posts about developments in the area, and we organize events and conferences. In March last year, we hosted the first [event](https://pharmarug.github.io/pharmarug-2023/) with over 100 people on-site and around 100 online. The event covered topics like R package usage in the pharma industry. Later that year, we organized another event called “[Open Source Clinical Reporting summeR](https://insightsengineering.github.io/nest-2023-summeR/)“. 
+
+![](unnamed2.png)
+
+Lately, I have been busy organizing several events. I recently gave a talk (about R package dependencies as directed in acyclic graphs) at a conference hosted by the R community in China. Early next month, on August 1st, I will attend a [pharma conference](https://pharmarug.github.io/pharmasug2024-r-workshop/) where I will conduct a workshop on good practices in software package development. The conference schedule is quite packed for me as I also have a session on how teams operate and collaborate within the Pharma industry to develop R packages. On the third day of the conference, I will organize a series of 11 data visualization talks, one of which is about Python. Most of the talks will focus on using R, except for one discussion on Python.
+
+**_Can you share what the R community is like in China?_** 
+
+![](unnamed3.png)
+
+We have opened up seats for students to join our events in the pharmaceutical industry. In the past, fewer than 20 students, mostly from academia, have joined us for these conferences. The events include big names like Roche, Johnson & Johnson, Novartis, Boehringer Ingelheim, and Sanofi and local companies such as Fosun, Hengrui, and Legend Biotech. There is a big R community in China across academia and industry. Our user group primarily focuses on the pharma industry. Our [WeChat](https://www.wechat.com/) channel has nearly a thousand subscribers, and our group chat has almost 500 members. It’s a very active community. 
+
+Later this year, we will collaborate with the “[R in Pharma](https://rinpharma.com/)” for the October conference. [Daniel Sabanes Bove](https://www.linkedin.com/in/danielsabanesbove/?originalSubdomain=ch) and I have contacted Harvey and Phil, and we will organize an APAC track, including India, China, Japan, Australia, Singapore, and Korea. 
+
+**_Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?_**
+
+We have created a GitHub account called [PharmaRUG](https://github.com/pharmarug). We use this platform to share websites, posts, slides, and videos related to our events. The [Pharma RUG 2024](https://pharmarug.github.io/pharmarug-2024/) conference was particularly successful this year, thanks to the support from the R Consortium. We also utilize WeChat groups to call for speakers and interact with others. In addition to GitHub and WeChat, we use [Tencent Docs](https://www.tencentcloud.com/document/product) to share documents. This is particularly useful in China, where using company-specific platforms like Google or Microsoft can be hindered by firewalls. Tencent Docs works perfectly in China, making sharing and synchronizing documents easy.
+
+**_Can you share some valuable tips for organizing succesful Hybrid events?_**
+
+![](unnamed4.jpg)
+
+We have a series of planning sessions where we actively communicate using WeChat. We meet at a community center where everyone is open, and we have preset meetings. We test the audio and everything beforehand. This is our second year organizing these events, so we have gained more experience. We are now familiar with the standards and know what needs to be done. For example, when two companies, like MNCs, use different systems, we find it better to use one shared system to ensure everything is synchronized.
+
+We’ve found that [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software) is easy to use for setting up meetings and scheduling them ahead of time. For live demos, we recommend pre-recording the demos and taking questions. In the case of hybrid sessions with multiple locations, we prioritize asking and answering questions based on the primary and secondary locations, as well as online participation. If we cannot answer questions quickly, we host Q&A sessions afterward and share them online.
+
+I believe that for the event to be successful, timing is crucial. We must stick to the schedule because it’s a hybrid event. However, we should also allow for some flexibility when unexpected things come up. We haven’t created a YouTube account yet because YouTube isn’t accessible in China. One alternative could be setting up a Bilibili web page and account to share the videos. All our files are currently on GitHub, which is convenient. We need to trim the videos to smaller sizes to fit GitHub’s file size limits, maybe at four and a half speeds or similar.
+
+**_What trends do you currently see in R language and your industry?_**
+
+So, [SAS](https://www.sas.com/en_us/home.html) has dominated the software space for the Pharma industry for decades. While it used to be used for exploratory and research purposes, there have been successes with using Office to support missions in recent years. Roche also has success stories in this area. There are several initiatives, with [PharmaVerse](https://pharmaverse.org/) being a significant player. Roche is part of PharmaVerse, taking inspiration from the [tidyverse](https://www.tidyverse.org/) multiverse concept. The end-to-end clinical reporting process is considered in this space, from data preparation to TLG generations. A lot has happened in the past three to four years, especially in China last year. There’s been significant development in China, and you can see a shift from SAS to R in the tools used. At the PharmaSUG meeting, which was previously dominated by SAS users, in the past few years, a quarter to one-third of the tools are using languages other than SAS. It’s clear that things are moving away from SAS towards software languages like R.
+
+This year, I don’t have the complete statistics with me right now, but you do see a lot of topics. In my session, I’m sharing, and you know, many talks use visualization because it’s much likable. So, the trend is that R is becoming more acceptable than before, from PLCs to things in production. There are very high standards for codes and validation.
+
+In the end, I would like to thank my dear friends and colleagues for their support and for making this happen
+
+-   [Yan Qiao](https://www.linkedin.com/in/yan-qiao-55877117/), Associate Director of Scientific Programming, Beigene, 
+-   [Baoqin Li](https://www.linkedin.com/in/baoqing-li-09a8b5167/), China Head Clinical & Statical Programming, Johnson & Johnson
+-   Dong Guo, China head of Stats Analyst, Eli-lilly&Company
+-   [Yun Ma](https://www.linkedin.com/in/yun-ma-79220629/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=cn), Director, clinical data Sciences, Boehringer Ingelheim (china) Investment Co.
+-   [Yanli Chang](https://www.linkedin.com/in/yanli-chang-00b765145/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=cn), Head of Data Operations China, Novartis
+
+**How do I Join?**
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.

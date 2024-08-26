@@ -1,0 +1,37 @@
+# Contact Us
+
+For general inquiries, membership inquiries, or requests for access to collaborative infrastructure, please feel free to visit our [service desk](https://members.r-consortium.org/).
+
+If you would like information on becoming a member of the R Consortium, please visit the [Join page](join.qmd) or submit an inquiry via the form below and you will be contacted soon.
+
+<form action="https://formspree.io/f/{your_form_id}" method="POST">
+  <label for="firstname">First Name</label><br>
+  <input type="text" id="firstname" name="name" required><br><br>
+  <label for="lastname">Last Name</label><br>
+  <input type="text" id="lastname" name="name" required><br><br>
+
+  <label for="email">Email*</label><br>
+  <input type="email" id="email" name="_replyto" required><br><br>
+  <label for="phonenumber">Phone number</label><br>
+  <input type="tel" id="phonenumber" name="_replyto" required><br><br>
+
+  <label for="inquiry">Inquiry Type:</label><br>
+  <select id="inquiry" name="inquiry">
+    <option value="membership">Membership</option>
+    <option value="sponsorship">Sponsorship</option>
+    <option value="press">Press & Media</option>
+    <option value="events">Events</option>
+    <option value="rugs">R User Groups</option>
+    <option value="iscgrants">ISC Grants</option>
+    <option value="speakers">Speakers Bureau</option>
+    <option value="webinars">Webinars</option>
+    <option value="websiteblog">Website & Blog</option>
+
+  </select><br><br>
+  <label for="message">Comments</label><br>
+  <textarea id="comments" name="message" rows="4" required></textarea><br><br>
+  <input type="submit" value="Send">
+</form>
+
+
+By submitting this form you are consenting to receive marketing emails about news, events, and training from R Consortium. You can unsubscribe at any time by following the “Subscription Center” link included within such communications. For information on our privacy practices and commitment to protecting your privacy, please review our [Privacy Policy](#). We do not sell your contact information to third parties.

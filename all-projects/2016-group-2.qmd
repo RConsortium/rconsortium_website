@@ -1,0 +1,38 @@
+## Funded ISC Grants (2016-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Interactive data manipulation in mapview](#interactive-data-manipulation-in-mapview)
+-   [R Documentation Task Force](#r-documentation-task-force)
+
+___
+
+### Interactive data manipulation in mapview
+
+**Funded:**  
+$9,100
+
+**Proposed by:**  
+Tim Appelhans
+
+**Website:**  
+[https://github.com/environmentalinformatics-marburg/mapview\_toolchain](https://github.com/environmentalinformatics-marburg/mapview_toolchain) and [https://cran.r-project.org/package=mapview](https://cran.r-project.org/package=mapview)
+
+**Summary:**  
+The ISC awarded $9,100 to Tim Appelhans, Florian Detsch and Christoph Reudenbach the authors of the Interactive data manipulation in mapview project which aims to extend the capabilities of R for visualizing geospatial data by implementing a two-way data exchange mechanism between R and JavaScript. The central idea is to extend the capabilities of existing tools to enhance the user experience of interactively working with geospatial data by implementing mechanisms for two way data transfer. For example, although htmlwidgets has proven itself to be a powerful framework for enabling interactive, JavaScript based data visualizations, data flow from R to Javascript runs on a one-way street. There is currently no way to pass manipulated data back into the user's R environment. This project aims to first develop a general framework to provide a bridge between htmlwidgets and R to enable a workflow of R -> htmlwidgets -> R and then to use this framework to implement standard interactive spatial data manipulation tools for packages mapview and leaflet. The plan section of the project proposal provides considerable detail on the steps required to achieve the project's goals.
+
+### R Documentation Task Force
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Andrew Redd
+
+**Website:**  
+[https://github.com/RDocTaskForce/documentation](https://github.com/RDocTaskForce/documentation)
+
+**Summary:**  
+Andrew Redd received $10,000 to lead a new ISC working group, The R Documentation Task Force, which has a mission to design and build the next generation R documentation system. The task force will identify issues with documentation that currently exist, abstract the current Rd system into an R compatible structure, and extend this structure to include new considerations that were not concerns when the Rd system was first implemented. The goal of the project is to create a system that allows for documentation to exist as objects that can be manipulated inside R. This will make the process of creating R documentation much more flexible enabling new capabilities such as porting documentation from other languages or creating inline comments. The new capabilities will add rigor to the documentation process and enable the the system to operate more efficiently than any current methods allow.

@@ -1,0 +1,86 @@
+---
+title: "R-Ladies Goiânia: Promoting Diversity and Inclusion in Local R Community"
+description: "Fernanda Kelly, founder and organizer of the R-Ladies Goiânia, recently talked to the R Consortium about the group’s efforts to provide a learning and networking platform to gender and ethnic…"
+author: "R Consortium"
+image: "fernanda.jpg"
+date: "03/13/2024"
+format: html
+---
+<style>
+  .anchorjs-link {
+  display: none !important;
+}
+</style>
+
+[Fernanda Kelly](https://www.fernandakellyrs.com/), founder and organizer of the [R-Ladies Goiânia](https://www.meetup.com/rladies-goiania/), recently talked to the R Consortium about the group’s efforts to provide a learning and networking platform to gender and ethnic minorities in the local R community. She discussed the group’s successful transition to virtual events, which has helped increase its visibility and reach. 
+
+
+
+
+<div style="text-align: center;">
+  <img src="fernanda.jpg" alt="Fernanda Kelly" >
+</div>
+
+
+**Please share about your experience and involvement with the RUGS group.**
+
+My name is Fernanda Kelly, and I’m 28 years old. I graduated from the Federal University of Goiás with a degree in statistics. During my studies, I became familiar with the R programming language. However, it wasn’t until 2019 that I realized how underrepresented women and black people are in this field. This led me to establish a new R-Ladies chapter that same year to promote diversity and inclusion in the industry.
+
+I worked as a statistician for 4 years at [Hospital Moinhos de Vento](https://www.hospitalmoinhos.org.br/), where I was involved in the [Pfizer](https://www.pfizer.com.br/) Project that analyzed the effectiveness of the COVID-19 vaccine in Brazil. After that, I worked as a Data Scientist at [Accenture Brasil](https://www.accenture.com/br-pt). I hold a degree in Machine Learning and an MBA from the University of São Paulo. Recently, I completed a specialization in project management, and I am currently pursuing a master’s degree in Intelligent Systems and their applications in the Healthcare sector.
+
+I have incorporated the R language extensively in my work and studies. Its versatility in interacting with other languages and its diverse range of tools for creating reports, such as [R Markdown](https://rmarkdown.rstudio.com/) and [Quarto](https://quarto.org/), provide users with multiple ways to develop high-quality models and reports. I have used R for various tasks, such as modeling, data processing, manipulation, and writing with [blogdown](https://bookdown.org/yihui/blogdown/) and R Markdown. R’s constant updates and information dissemination about its features have increased my usage of the language even more.
+
+I haven’t been involved with the RUGS community lately, but I found out about the initiative on LinkedIn and thought, ‘Why not apply?’ Sometimes we hold ourselves back and don’t even consider applying for opportunities, but I applied this time and succeeded.
+
+Our group is a chapter of the global R-Ladies community that strives to promote awareness of R programming language among individuals belonging to minority genders. We cover a broad range of topics helping facilitate individuals entering the job market. Some topics we cover include public speaking, mentoring on how to fill out LinkedIn, and occasionally Excel. We believe R programming goes beyond just coding and that is why we emphasize the development of soft skills as well. We view the community as a trainer of future professionals. To date, we have held over 40 meetings, and this year we plan to offer over 20 workshops. These workshops will cover an array of diverse topics, but our primary goal is to showcase the functionalities of the R programming language in comparison to other programming languages like Python.
+
+I want to emphasize that the work I have accomplished for the R community since 2019 with R-Ladies Goiânia was not a solo endeavor. I have great admiration for the exceptional women I have walked alongside, and currently, I am fortunate to have Jennifer Lopes (a remarkable black woman) by my side since 2023, who has been helping me with R-Ladies Goiânia.
+
+**Can you share what the R community is like in Goiânia?**
+
+
+
+
+<div style="text-align: center;">
+  <img src="rcommunity.jpg" alt="R Community" >
+</div>
+
+
+When I talk about community, I also refer to the city of Goiânia, located in the heart of Brazil, where the population is a mix of different ethnicities. The R community in Goiânia is huge, especially within the university. Many degree programs use R as their primary programming language. I fell in love with the power of the R during my undergraduate studies in statistics. However, during my master’s degree, I realized that there was a lack of representation for minority genders and ethnic groups. This led me to search for communities that catered to this audience. As a result, I discovered the R-Ladies community and founded the R-Ladies Goiânia chapter in mid-May 2019. Since then, the chapter has grown and reached out to many women, black people, and members of the LGBT community.
+
+R language is widely used in Brazil across various sectors, including health, agriculture, and financial institutions. The primary reason for its popularity is the vast range of packages it offers and the structured control offered by [CRAN](https://cran.r-project.org/), which enhances the language’s credibility and security.
+
+
+
+
+
+![](video-call.jpg)
+
+
+**Do you have an upcoming event planned? Can you share more about the topic covered? Why this topic?**
+
+We have an upcoming [event](https://www.meetup.com/rladies-goiania/events/299439521/) planned which will be presented by Julia Helen, who lives in Rio de Janeiro. She is a statistician by profession and works as a data scientist at a large television station in Brazil. The meetup will cover the connection between R and Python. This event will take place on March 16th, and everyone is invited to attend. The primary focus of the meeting will be to teach R programmers how to use Python within RStudio effectively. By leveraging both languages, programmers will take advantage of their combined functionalities. The choice of this topic is because of the high demand among R programmers to learn about the use of Python and how to make both languages work seamlessly within RStudio.
+
+**Any techniques you recommend using when planning or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive for people who may not be able to attend financial events in the future?**
+
+R-Ladies Goiânia is present on diverse networks, but we recommend using [GitHub](https://github.com/R-LadiesGYN) to access our course material. We have complete control over the material available on GitHub, and it helps participants gain knowledge on the platform, which is often required by companies in Brazil. We are currently using Zoom through the [Sympla](https://www.sympla.com.br/) platform, which is free and offers many control options over the event. The platform allows us to manage registration, accept the code of conduct, and send certificates to attendees.
+
+We have hosted our meetings online since 2020, and it has worked well for our group. In our meetings we have people from various states in Brazil and, sometimes, we have people from other countries participating. This is incredible and this way we can reach more people, making the chapter decentralized. We have already reached 100 people watching the Introduction to R meetup. All of our events are recorded, and this gives people who could not attend the live event and people in career transition the opportunity to access the content. Currently, our [YouTube channel](https://www.youtube.com/@rladiesgoiania?app=desktop) has more than twenty videos.
+
+For the future, we are planning more accessibility, but we know how poorly developed the accessibility of broadcasting platforms is. R-Ladies Goiânia aims to achieve real diversity in its meetings and has been working towards this with campaigns on [Instagram](https://www.instagram.com/rladiesgyn/), [LinkedIn](https://www.linkedin.com/company/r-ladies-gyn/) and [Twitter](https://twitter.com/rladiesgyn?lang=en). We are seeking innovation and managed to open a mentoring program, which is a big step for the chapter and we are extremely happy.
+
+**Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?**
+
+As I mentioned before, my most recent project involved using the R programming language to analyze the effectiveness of the Pfizer vaccine in Brazil. The project was conducted in collaboration with Pfizer, a large pharmaceutical company, and the results have been published in an article titled “[BNT162b2 mRNA COVID-19 against symptomatic Omicron infection following a mass vaccination campaign in southern Brazil: A prospective test-negative design study](https://pubmed.ncbi.nlm.nih.gov/37507274/)“. The code used for this project is available on my [GitHub](https://github.com/FernandaKelly/BNT162b2-Pfizer-BioNTech-mRNA-COVID-19).
+
+**What resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)**
+
+In this project, we utilized a range of techniques. R Markdown was the most frequently used tool for generating reports in both HTML and PDF formats. Apart from the [tidyverse](https://www.tidyverse.org/) package, we also employed a variety of packages for analyzing PDF data (such as [pdftools](https://cran.r-project.org/web/packages/pdftools/index.html)), data analysis (including [lme4](https://cran.r-project.org/web/packages/lme4/index.html) and [sampling](https://cran.r-project.org/web/packages/sampling/index.html)), and data tabulation (such as [reactable](https://cran.r-project.org/web/packages/reactable/index.html), [DT](https://cran.r-project.org/web/packages/DT/index.html), and [qwraps2](https://cran.r-project.org/web/packages/qwraps2/index.html)). We utilized GitHub solely to host the codes for the published article.
+
+
+# **How do I Join?**
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](https://www.r-consortium.org/all-projects/r-user-group-support-program)
+

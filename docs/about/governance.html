@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Governance – R Consortium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../about/index.html">
+ <span class="dropdown-text">Mission Statement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../rc-docs/ISC-Charter-08-11-23.pdf">
+ <span class="dropdown-text">ISC Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/faq.html">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/privacy.html">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/thank-you.html">
+ <span class="dropdown-text">Thank You</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/join.html">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../all-projects/index.html">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://blog.r-hub.io/2024/04/11/rhub2/">
+ <span class="dropdown-text">R-Hub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/">
+ <span class="dropdown-text">R/Medicine</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../webinars/webinars.html">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../news/events.html">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../blog/index.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../newsletters/newsletters.html">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+ <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+ <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../codeofconduct.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/RConsortium"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Governance</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 360px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  max-height:  550px;
+  overflow-y: scroll;
+}
+
+.profile-card .pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 30%;
+  margin-bottom: 10px;
+  object-fit: cover; /* This ensures the image covers the entire area without distortion */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 900px) {
+  .profile-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tmm_sociallink img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+}
+
+.profile-card h4 {
+  font-size: 16px;
+}
+
+.profile-card p {
+  font-size: 14px;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.profile-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.profile-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
+</style>
+<p>The primary mission of the R Consortium is to develop and implement infrastructure projects to support the R community. As a Linux Foundation Project, the R Community embraces principles of openness and collaboration as defined in the&nbsp;<a href="https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct">code of conduct</a>.</p>
+<section id="board-of-directors" class="level2">
+<h2 class="anchored" data-anchor-id="board-of-directors">Board of Directors</h2>
+<p>The business of the foundation is managed by its Board of Directors, composed of appointed Platinum members of the R Consortium, annually elected Silver members of the R Consortium, and the ISC appointed director as <a href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">defined in the ByLaws</a> (PDF).</p>
+<div class="profile-cards">
+<div class="profile-card">
+<img class="pic" src="./images/Mehar.webp" alt="Profile Image 1">
+<h2 class="anchored">
+Mehar Singh
+</h2>
+<h4 class="anchored">
+PROCOGIA (SILVER MEMBER REPRESENTATIVE)(R CONSORTIUM CHAIR)
+</h4>
+<p>
+Mehar founded ProCogia a decade ago to offer more value and better service to clients than traditional consulting firms. Mehar has a background in Electrical Engineering and has worked primarily in consulting, technology and telecom sectors. He has held board positions at R Consortium, University of Washington, Society of Punjabi Engineers &amp; Technologists to name a few. He is passionate about open-source technology, developing innovative products, skydiving and sea fishing.
+</p>
+<div class="social-links">
+<p><a target="_blank" class="tmm_sociallink" href="https://ca.linkedin.com/in/meharpratapsingh" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/David.webp" alt="Profile Image 2">
+<h2 class="anchored">
+David Smith
+</h2>
+<h4 class="anchored">
+MICROSOFT (PLATINUM MEMBER)(R CONSORTIUM TREASURER)
+</h4>
+<p>
+David Smith is a developer advocate at Microsoft, with a focus on data science and the R community. With a background in Statistics, he writes regularly about applications of R at the Revolutions blog (blog.revolutionanalytics.com), and is a co-author of “Introduction to R”, the R manual. Follow David on Twitter as <span class="citation" data-cites="revodavid">@revodavid</span>
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://twitter.com/revodavid" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/James.webp" alt="Profile Image 3">
+<h2 class="anchored">
+James Black
+</h2>
+<h4 class="anchored">
+ROCHE (PLATINUM MEMBER)
+</h4>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Michael.webp" alt="Profile Image 4">
+<h2 class="anchored">
+Michael Lawrence
+</h2>
+<h4 class="anchored">
+R FOUNDATION (R FOUNDATION REPRESENTATIVE)
+</h4>
+<p>
+Michael is a scientist in the Bioinformatics and Computational Biology department at Genentech Research and Early Development (gRED), based in South San Francisco, CA. There he leads the development of tools, applications and environments for analyzing genomic data using R and Bioconductor. His research interests are in visualization, software interfacing, and genomic data manipulation. Michael is a member of the Bioconductor Technical Advisory Board, the R Core team, and the R Foundation Board.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://twitter.com/lawremi" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Henrik.webp" alt="Profile Image 5">
+<h2 class="anchored">
+Henrik Bengtsson
+</h2>
+<h4 class="anchored">
+R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC CHAIRPERSON)
+</h4>
+<p>
+Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member of the R Foundation, with a background in Computer Science and Mathematical Statistics. He has used R since 2000 for applied research in statistics and bioinformatics. He develops statistical methods, scientific computational software, and programming tools. His work includes R packages for science (e.g.&nbsp;matrixStats, and PSCBS, aroma.affymetrix) and software development (e.g.&nbsp;future, profmem, startup, and R.rsp).
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a> <a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Hadley.webp" alt="Profile Image 6">
+<h2 class="anchored">
+Hadley Wickham
+</h2>
+<h4 class="anchored">
+POSIT (PLATINUM MEMBER)
+</h4>
+<p>
+Hadley is Chief Scientist at RStudio, a member of the R Foundation, and Adjunct Professor at Stanford University and the University of Auckland. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (the tidyverse: including ggplot2, dplyr, tidyr, purrr, and readr) and principled software development (roxygen2, testthat, devtools). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, http://hadley.nz.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hadleywickham" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a> <a target="_blank" class="tmm_sociallink" href="https://twitter.com/hadleywickham" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a> <a target="_blank" class="tmm_sociallink" href="http://hadley.nz/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a> <a target="_blank" class="tmm_sociallink" href="https://github.com/hadley" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Lander.webp" alt="Profile Image 7">
+<h2 class="anchored">
+Jared Lander
+</h2>
+<h4 class="anchored">
+LANDER ANALYTICS (SILVER MEMBER REPRESENTATIVE)
+</h4>
+<p>
+Jared P. Lander is Chief Data Scientist of Lander Analytics, the Organizer of the New York Open Statistical Programming Meetup and the New York R Conference and R in Government Conference, an Adjunct Professor at Columbia Business School, and a Visiting Lecturer at Princeton University. He is the author of R for Everyone (now in its second edition), a book about R Programming geared toward Data Scientists and Non-Statisticians alike. Jared is a frequent speaker at conferences, universities and meetups around the world.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a> <a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Ben.webp" alt="Profile Image 8">
+<h2 class="anchored">
+Benjamin Arancibia
+</h2>
+<h4 class="anchored">
+GSK (SILVER MEMBER REPRESENTATIVE)
+</h4>
+<p>
+Benjamin Arancibia, Director of Data Science, focuses on enabling the use of R in GSK Biostatistics. He builds tools to make data science fun, reproducible, and helps advocate for the use of R in the department. Ben is passionate about making sure that teams have the right support when using R in production analyses and helping teams learn while delivering. He is an advocate of R and open source technologies internally at GSK and externally speaking about lived experiences at various conferences.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bcarancibia/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a> <a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Mike.webp" alt="Profile Image 9">
+<h2 class="anchored">
+Mike K Smith
+</h2>
+<h4 class="anchored">
+PFIZER (SILVER MEMBER REPRESENTATIVE)
+</h4>
+<p>
+Mike K Smith, Lead, R Centre of Excellence and Senior Director Statistics at Pfizer. Mike is a professional geek, helping colleagues from the business lines understand the power of reproducibility, automation and writing good code and helping the IT department understand the needs of the business lines. He is passionate about driving business outcomes through primary research, data and alternative data solutions as well as statistical analysis.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/mikeksmith/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Uday.webp" alt="Profile Image 10">
+<h2 class="anchored">
+Uday Preetham Palukuru
+</h2>
+<h4 class="anchored">
+MERCK (SILVER MEMBER REPRESENTATIVE)
+</h4>
+<p>
+Uday Preetham Palukuru is a Standards lead at Merck &amp;Co., providing leadership to develop and maintain global standards for ADaM implementation, R package development, Open Source package qualification, Computing Platform enhancements and compliance management tools. He has contributed to various internal and external R packages and is a member of the R Validation Hub Executive committee. He actively promotes the use of open source software in clinical trial data analysis via forums and paper publications. He has a PhD in Bioengineering from Temple University.
+</p>
+<div class="social-links">
+<p><a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+</div>
+<div class="profile-card">
+<h2 class="anchored">
+Philip Brown
+</h2>
+<h4 class="anchored">
+BIOGEN (PLATINUM MEMBER)
+</h4>
+</div>
+</div>
+<div>
+<h2 class="anchored">
+<strong>Infrastructure Steering Committee</strong>
+</h2>
+<p>
+An Infrastructure Steering Committee (ISC) is responsible for the identification, selection, and oversight of <a href="#">infrastructure projects</a>, as well as directing best practices and community leadership within the R community. Voting representatives are appointed by the Platinum and Silver members of the R Consortium, as well as an elected member from the Silver membership class and the project leads for all <a href="https://wiki.r-consortium.org/view/Top_Level_Projects">top level projects</a> as directed in the <a href="#">ISC Charter</a>.
+</p>
+</div>
+<div class="profile-cards">
+<div class="profile-card">
+<img class="pic" src="./images/Henrik.webp" alt="Profile Image 11">
+<h2 class="anchored">
+Henrik Bengtsson
+</h2>
+<h4 class="anchored">
+R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC CHAIRPERSON)
+</h4>
+<p>
+Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member of the R Foundation, with a background in Computer Science and Mathematical Statistics.
+</p>
+<div class="social-links">
+<p><a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a> <a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Yanina.webp" alt="Profile Image 12">
+<h2 class="anchored">
+Yanina Bellini Saibene
+</h2>
+<h4 class="anchored">
+R-LADIES
+</h4>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/yabellini?miniProfileUrn=urnlifs_miniProfileACoAAAH31g8B4liq53DhzTsRVsft6OZXuLCUeOw&amp;lipi=urnlipaged_flagship3_search_srp_all91xi146nSyWPu5aJWjXPEg" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Mark.webp" alt="Profile Image 13">
+<h2 class="anchored">
+Mark Bynens
+</h2>
+<h4 class="anchored">
+JOHNSON &amp; JOHNSON (SILVER MEMBER)
+</h4>
+<p>
+Mark Bynens serves as the Director and Head of Scientific Computing Operations (SCO) within the Statistics &amp; Decision Sciences (SDS) sector of Global Development at Johnson &amp; Johnson R&amp;D. With a distinguished career spanning over 19 years in the industry, Mark joined Johnson &amp; Johnson as a full-time employee in 2016. In his pivotal role, he leads his team with dedication and expertise, holding responsibility and accountability for a broad range of critical operations. These include change management, project management, and the comprehensive management of software applications designed for statistical evaluation or business processes. Mark’s leadership extends to spearheading in-classroom and e-learning education initiatives, fostering knowledge sharing, overseeing software/application acquisition, and managing high-performance computing for in-depth data evaluation, simulations, and statistical research. His team is notably engaged in several R platforms, encompassing both non-HPC and HPC (high-performance computing) environments, where they deliver innovative solutions that significantly benefit the business. Previously, Mark was the business lead for the custom-built GxP SCE (statistical computing environment) for releases 1 and 2 at Johnson &amp; Johnson. This project involved a custom-built R-ecosystem, containerized to include Shiny publishing capabilities. His contributions to the field are recognized through his role as one of the main authors of the SCE White Paper, underlining his commitment to advancing statistical computing within the pharmaceutical industry. Through his visionary leadership and technical expertise, Mark Bynens continues to drive significant advancements in scientific computing operations at Johnson &amp; Johnson R&amp;D.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bynens-mark-8399685/" title="LinkedIn"><img decoding="async" alt="LinkedIn" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Gabor.webp" alt="Profile Image 14">
+<h2 class="anchored">
+Gábor Csárdi
+</h2>
+<h4 class="anchored">
+R-HUB PROJECT LEAD (VOTING MEMBER)
+</h4>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Michael-Helbraun.webp" alt="Profile Image 15">
+<h2 class="anchored">
+Michael Helbraun
+</h2>
+<h4 class="anchored">
+MICROSOFT (PLATINUM MEMBER)
+</h4>
+<p>
+Michael Helbraun is a Principal Architect for Data &amp; AI on Microsoft’s Digital Transformation Partnership team, where he works with strategic customers across Latin America. He holds a BS in Geological Engineering from the Colorado School of Mines and an MBA focused on Economics and Operations from the University of Colorado at Boulder.
+</p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Nicholas-Masel.webp" alt="Profile Image 16">
+<h2 class="anchored">
+Nicholas Masel
+</h2>
+<h4 class="anchored">
+JANSSEN R&amp;D (SILVER MEMBER)
+</h4>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nicholasmasel/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Eric.webp" alt="Profile Image 17">
+<h2 class="anchored">
+Eric Milliman
+</h2>
+<h4 class="anchored">
+BIOGEN (PLATINUM MEMBER)
+</h4>
+<p>
+Eric is a data scientist in the Global Analytics and Data Sciences department at Biogen, based in Cambridge, MA.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/ericmilliman/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Joseph.webp" alt="Profile Image 18">
+<h2 class="anchored">
+Joseph Rickert
+</h2>
+<h4 class="anchored">
+R USER GROUP SUPPORT PROJECT LEAD (VOTING MEMBER)
+</h4>
+<p>
+Joseph, RStudio’s “Ambassador at Large” to the R Community and editor of the R Views blog, has been focused on promoting the R language and supporting the R Community since he joined Revolution Analytics in 2009. In addition to serving on the R Consortium’s Board of Directors, he is a member of the ISC and administers the R User Group Support Program. In the past, Joseph held technical, marketing, and sales positions with several prominent Silicon Valley startups including, Sytek Inc., Alantec, Parallan Computer and Scotts Valley Instruments as well as with larger organizations including CSC, Agilent Technologies and Microsoft. Joseph is a member of the ASA, and a Life Member of the IEEE. He has experience working with standards committees including the IEEE 802.3 CSMA/CD Working Group and the IDEMA PRML technical committee. Joseph studied Classics and Mathematics as an undergraduate at Franklin &amp; Marshall College and earned an M.A.&nbsp;in Humanities and an M.S. in Computational Statistics from the California State University. You can follow him on Twitter as <span class="citation" data-cites="RStudioJoe">@RStudioJoe</span>.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<h2 class="anchored">
+Robert Müller
+</h2>
+<h4 class="anchored">
+ROCHE (PLATINUM MEMBER)
+</h4>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/robert-müller-b1b3a244" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Nan.webp" alt="Profile Image 20">
+<h2 class="anchored">
+Nan Xiao
+</h2>
+<h4 class="anchored">
+MERCK (SILVER MEMBER)
+</h4>
+<p>
+Nan is a statistician from Merck &amp; Co., Inc.&nbsp;working in the Methodology Research group in the Biostatistics and Research Decision Sciences (BARDS) department.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nanxstats/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Hannah.webp" alt="Profile Image 20">
+<h2 class="anchored">
+Hannah Frick
+</h2>
+<h4 class="anchored">
+POSIT (PLATINUM MEMBER)
+</h4>
+<p>
+Software engineer on the tidymodels team at Posit. Co-founder of R-Ladies Global and former co-organiser of the London chapter.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hannah-frick/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a> <a target="_blank" class="tmm_sociallink" href="https://www.frick.ws/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a> <a target="_blank" class="tmm_sociallink" href="https://github.com/hfrick" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a></p>
+</div>
+</div>
+</section>
+<section id="leadership" class="level2">
+<h2 class="anchored" data-anchor-id="leadership">Leadership</h2>
+As a <a href="http://collabprojects.linuxfoundation.org">project operating within the Linux Foundation</a>, the project staff from the Linux Foundation focuses on project growth and health, ensuring a vendor-neutral environment for collaboration.
+<div class="profile-cards">
+<div class="profile-card">
+<img class="pic" src="./images/Joseph.webp" alt="Profile Image 21">
+<h2 class="anchored">
+Joseph Rickert
+</h2>
+<h4 class="anchored">
+R USER GROUP SUPPORT PROJECT LEAD (VOTING MEMBER)
+</h4>
+<p>
+Joseph has been active in the R Community since he joined Revolution Analytics in 2009 and has held prominent, community-facing positions at both the R Consortium and RStudio (now renamed posit). He is deeply involved in multiple R Consortium technical working groups, is an organizer of the Bay Area useR Group (BARUG), and has been on the R/Medicine conference organizing committee since the first conference in 2018. Joseph served on the R Consortium Board of Directors from August 2016 to July 2023, serving as Chair from 2020.
+</p>
+<p><a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a></p>
+</div>
+<div class="profile-card">
+<img class="pic" src="./images/Amanda.webp" alt="Profile Image 22">
+<h2 class="anchored">
+Dr.&nbsp;Amanda Martin
+</h2>
+<h4 class="anchored">
+DIRECTOR OF PROGRAM MANAGEMENT
+</h4>
+<p>
+Dr.&nbsp;Amanda Martin is a Director of Program Management for the R Consortium. Amanda has taught and managed technical projects since 2005 with the single desire to improve the entire world.
+</p>
+<div class="social-links">
+<p><a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/dr-amanda-martin-69350067/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a> <a target="_blank" class="tmm_sociallink" href="https://github.com/hythloda" title="GitHub"><img decoding="async" alt="GitHub" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a></p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2024 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,68 @@
+## Funded ISC Grants (2023-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [The future of DBI (extension 1)](#the-future-of-dbi-extension-1)
+-   [Secure TLS Communications for R](#secure-tls-communications-for-r)
+-   [volcalc: Calculate predicted volatility of chemical compounds](#volcalc-calculate-predicted-volatility-of-chemical-compounds)
+-   [autotest: Automated testing of R packages](#autotest-automated-testing-of-r-packages)
+-   [api2r: An R Package for Auto-Generating R API Clients](#api2r-an-r-package-for-auto-generating-r-api-clients)
+
+___
+
+### The future of DBI (extension 1)
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Kirill Müller
+
+**Summary:**  
+This proposal mostly focuses on the maintenance and support for {DBI}, the {DBItest} test suite, and the three backends to open-source databases ({RSQLite}, {RMariaDB} and {RPostgres}). Keeping compatibility with the evolving ecosystem (OS, databases, R itself, other packages) is vital for the long-term success of the project.
+
+### Secure TLS Communications for R
+
+**Funded:**  
+$10,000
+
+**Proposed by:**  
+Charlie Gao
+
+**Summary:**  
+The project aims to implement secure connections with a TLS layer for encrypted communications in distributed systems used by statisticians and data scientists. The current lack of secure communication tools restricts the use of existing R packages for long-running tasks to trusted local networks, posing security risks in compromised or untrusted environments. The proposed solution addresses this gap by providing encryption and authentication of endpoints, ensuring data security in line with industry standards.
+
+### volcalc: Calculate predicted volatility of chemical compounds
+
+**Funded:**  
+$12,265
+
+**Proposed by:**  
+Kristina Riemer
+
+**Summary:**  
+This ISC funded project focuses on the development of the volcalc R package, which automates the estimation of compound volatility based on their chemical structure. The package streamlines the process by downloading chemical structure data, parsing it to identify functional groups, and utilizing the SIMPOL.1 algorithm to predict volatility using functional groups and molecular weight. The compounds are then assigned volatility categories based on a reference environment. This project aims to enhance the package by expanding its compatibility to work with any chemical compound with structural information from various databases. Additionally, improvements in testing and documentation will be implemented to enhance the reliability of the package.
+
+### autotest: Automated testing of R packages
+
+**Funded:**  
+$3,000
+
+**Proposed by:**  
+Mark Padgham
+
+**Summary:**  
+The project aims to develop an R package to automate property-based testing procedures in R, building upon the existing "typetracer" package. The new package will utilize "typetracer" to infer properties of function parameters and systematically mutate or randomize these properties to facilitate automated testing. The package will inherit the GPL-3 license from its predecessor and will be submitted to CRAN for wider dissemination. This initiative aligns with the goal of promoting efficient and reliable testing practices within the R community.
+
+### api2r: An R Package for Auto-Generating R API Clients
+
+**Funded:**  
+$15,750
+
+**Proposed by:**  
+Jon Harmon
+
+**Summary:**  
+This project aims to develop an R package called api2r, which will automate the creation of R package structures for APIs that adhere to the OpenAPI Specification (OAS). By leveraging the OAS as a foundation, api2r will significantly reduce the time and effort required to build API clients in R. This initiative hopes to have a widespread impact within the R community, benefiting data scientists, researchers, and developers who regularly interact with diverse APIs. To ensure its functionality and effectiveness, the development process will involve generating packages based on at least three authentic OpenAPI specifications.

@@ -1,0 +1,56 @@
+## Funded ISC Grants (2021-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Preparing CRAN for the Retirement of rgdal, rgeos and maptools](#preparing-cran-for-the-retirement-of-rgdal-rgeos-and-maptools)
+-   [R Package for the ICESat-2 Altimeter Data](#r-package-for-the-icesat-2-altimeter-data)
+-   [The Future of DBI](#the-future-of-dbi)
+-   [Data Science and Machine Learning Training Workshop Using R Programming Language](#data-science-and-machine-learning-training-workshop-using-r-programming-language)
+
+___
+
+### Preparing CRAN for the Retirement of rgdal, rgeos and maptools
+
+**Funded:**  
+$17,000
+
+**Proposed by:**  
+Edzer Pebesma
+
+**Summary:**  
+The retirement of rgdal, rgeos, and maptools presents a significant impact on the CRAN community, these packages are scheduled for retirement by the end of 2023. In response, a proposal for an ISC Funded project has been put forward to tackle this challenge. Preparing CRAN for the Retirement of rgdal, rgeos and maptools focuses on finding suitable alternatives for the functionalities offered by the retiring packages and providing guidance to package maintainers on necessary adjustments and migration steps. By doing so, it aims to minimize disruption to CRAN packages and existing R scripts, ensuring the overall stability and robustness of the CRAN ecosystem. The retirement process will simplify the maintenance of the "R Spatial stack" and contribute to the long-term health of the CRAN ecosystem.
+
+### R Package for the ICESat-2 Altimeter Data
+
+**Funded:**  
+$4,840
+
+**Proposed by:**  
+Lampros Mouselimis
+
+**Summary:**  
+R Package for the ICESat-2 Altimeter Data aims to create an R package specifically designed for accessing ICESat-2 satellite data through the OpenAltimetry API. Addressing the lack of existing R packages for downloading geospatial data in specific formats, the package will enable R users to download ICESat-2 data, list available data based on a bounding box or named location, create simple feature objects using the sf package, and visualize the output data using popular geospatial R packages such as leaflet or mapview. The proposed ISC-funded project will enhance the capabilities of R users working with geospatial datasets, facilitating data exploration, analysis, and visualization within the R environment for improved geospatial research and applications.
+
+### The Future of DBI
+
+**Funded:**  
+$17,000
+
+**Proposed by:**  
+Kirill Müller
+
+**Summary:**  
+The Future of DBI focuses on the advancements achieved with support from the ISC, including bringing the existing DBI backend, RSQLite, up to specification and implementing two new compliant backends, RMariaDB and RPostgres. This project mostly focuses on the maintenance and support for {DBI}, the {DBItest} test suite, and the three backends to open-source databases ({RSQLite}, {RMariaDB} and {RPostgres}). Ensuring compatibility with evolving elements such as OS, databases, R, and other packages is vital for long-term success. The proposal also includes modules for redesigning the database interface, efficient storage, and arithmetic for big integers, decimals with fixed width and precision, investigating Apache Arrow as an interface, and relational data models with R, with the option to adjust the scope as needed.
+
+### Data Science and Machine Learning Training Workshop Using R Programming Language
+
+**Funded:**  
+$5,200
+
+**Proposed by:**  
+Timothy A. Ogunleye
+
+**Summary:**  
+We want to conduct training workshops on data science and machine learning with R. Out of nearly 60 countries that form the continent, we carefully selected four countries – one from each of the North, South, West, and East Africa. Nigeria is considered for the West Africa, Kenya is chosen from the East Africa, Sudan from the North Africa, while Zimbabwe is selected from the South African countries. We have 2 volunteers each, who are experts in the field of data science and machine learning with R, from the selected countries. We have also recruited 2 tutors for each country, making a total of 8. These tutors would serve as training assistants to the coordinators. Training materials are to be prepared by the coordinators. Therefore, the coordinators are expected to teach the contents of the training materials.

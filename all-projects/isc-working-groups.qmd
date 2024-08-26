@@ -1,0 +1,143 @@
+# ISC Working Groups
+
+ISC working groups provide the mechanism through which the ISC can explore, fund, and manage large collaborative projects. There are primary two modes of collaboration that may make a proposal well suited to be a WG:
+
+
+
+1. The advice or collaboration of subject matter experts is required to decide the merit or feasibility of a project.
+2. The work required for the project requires the skills not possessed by a single individual, or the amount of work required is more than can be accomplished by a single person in a reasonable amount of time.
+
+## Benefits of Forming an ISC Working Group
+
+
+Your project will be:
+
+* Vetted by the relevant experts
+* Sanctioned by the R Consortium
+* Receive the attention of the R Foundation
+* Become visible to the greater R Community
+* Administrative support from the R Consortium
+
+## Active Working Groups
+
+[Census](https://github.com/RConsortium/censusguide): Is developing package recommendations, and other materials for working with census data.
+
+
+[Marshaling and Serialization in R](https://github.com/RConsortium/marshalling-wg):  Developing standard practices for marshalling and unmarshalling of R objects. Involve identifying current problems, raising awareness, coming up with technical solutions, which might require additions to base R.
+
+
+[Multilingual R Documentation:](https://github.com/RConsortium/multilingual-documentation-wg) Support multilingual documentation in R.
+
+
+[R7 Package](https://github.com/RConsortium/OOP-WG): Object-Oriented Programming. The R7 package is a new OOP system designed to be a successor to S3 and S4. It has been designed and implemented collaboratively by the R Consortium Object-Oriented Programming Working Group, which includes representatives from R-Core, BioConductor, RStudio/tidyverse, and the wider R community.
+
+
+[R Certification](https://github.com/RConsortium/R-Certification-WG): Is working to establish a common certification program for proficiency in R.
+
+
+[R Repositories:](https://github.com/RConsortium/r-repositories-wg) Collaboratively exploring how to support, maintain, and improve the tooling for R package distribution.
+
+
+[R Tables for Regulatory Submission (RTRS)](https://github.com/RConsortium/rtrs-wg): Develop standards for creating tables that meet the requirements of FDA submission documents.
+
+
+[R Validation Hub](https://www.pharmar.org/): Working to devise a standard for validating packages for the regulated Pharmaceutical industry and create a online repository that will be free to use.
+
+
+[Submissions](https://github.com/RConsortium/submissions-wg): Focus on IT and platform challenges that must be addressed in order to make “all R” regulatory submissions.
+
+
+#### 
+Active working groups have public [mailing lists](https://lists.r-consortium.org/g/Rconsortium-main/subgroups) to facilitate discussions.
+
+
+## Completed Working Groups
+
+
+[histoRicalg](https://gitlab.com/nashjc/histoRicalg): This project aims to document and test older Fortran and C and other code that is still essential to the R ecosystem, possibly creating all-R reference codes, hopefully by teaming older and younger workers so knowledge can be shared for the future.
+
+
+[Future-proof native APIs for R](https://wiki.r-consortium.org/view/R_Native_API): Is working to assess current native API usage, gather community input, and work towards an easy-to-understand, consistent and verifiable API that will drive R language adoption.
+
+
+[R IDEA](https://www.r-consortium.org/all-projects/r-community-diversity-and-inclusion): Now a Top Level Project. R Community Diversity and Inclusion is a group broadly considering how the R Consortium can best encourage and support diversity and inclusion in the R Community.
+
+
+[Unified Framework for Distributed Computing in R](https://github.com/RConsortium/Distributed-Computing-WG): Exploring the feasibility of developing a common framework to standardize the programming of distributed applications in R.
+
+
+[Distributed Computing](https://github.com/RConsortium/Distributed-Computing-WG): Endorse the design of a common abstraction for distributed data structures in R.
+
+
+## Inactive Working Groups
+
+
+[R / Business](https://github.com/RConsortium/RBusiness): R users from different areas of business and financial services collaborating on events and advocacy of R.
+
+
+[Code Coverage](https://github.com/RConsortium/Code-Coverage-WG): Develop a tool that addresses feature and platform limitations of existing tools. Helping to improve R software quality through the development of a code coverage tool and promoting the use of code coverage more systematically within the R ecosystem.
+
+
+## ISC REGULATIONS and GUIDELINES
+
+
+### Purpose
+
+
+The purpose of ISC working groups is to organize collaborative projects under governance of the ISC. Membership in ISC working groups is in principle open to anyone from the R Community who desires to participate. There is no requirement that membership in working groups be restricted to individuals who are employed by R Consortium member companies. Working groups are expected to undertake projects that will bring benefits to the R Community.
+
+
+### Working Group Charters
+
+
+R Consortium Working Groups are authorized by the Infrastructure Steering Committee and operate in accordance with the R Consortium By-Laws and the Charter of the ISC.
+
+
+The ISC may disband a working group at any time at its sole discretion.
+
+
+### Finances
+
+
+Working groups may or may not receive funding from the ISC according to the needs of the working group and the budget of the ISC. Budgeting periods are aligned with the R Consortium budgeting year, from January 1 to December 31.
+
+
+If a working group receives funding from the ISC members can manage this budget and dispose of available funds for purposes and projects that have been previously determined by the ISC to be in the scope of the working group’s charter. Spending that represents a significant part of the working group’s budget must be approved by the Executive Director.
+
+
+Working groups may not solicit funds from outside sources without permission of the ISC or the R Consortium’s Executive Director. This includes applying for grants organizations outside of the R Consortium.
+
+
+Working groups may supplement their budgets with income from conferences or other activities. Working groups may not spend in excess of their R Consortium budget grant plus income collected to date without authorization in the form of an additional budget grant from the R Consortium.
+
+
+Any income generated by working groups from conferences or activities in excess of the amount to cover the working group’s expenses will be returned to the R Consortium’s general fund at the end of the budgeting period. It is expected that working groups will request a budget each year that is commensurate with the expected income earned and the activities planned for that year.
+
+
+### Representing the R Consortium
+
+
+Working group members are expected to represent the best interests of the R Consortium at all times, being cognizant that their activities and behavior reflect directly on the reputation of the R Consortium.
+
+
+No member of a working group, including its leader, may enter into any financial relationship, or legal contract that pertains to their role as a working group member.
+
+
+When speaking at conferences or other venues about work accomplished by a working group, working group members must properly attribute the work to the working group and promote the R Consortium and working group brand when appropriate.
+
+
+### Operations
+
+
+Working groups are required to operate transparently in full public view to the greatest extent possible. This does not preclude holding smaller invitation-only working sessions or “executive” when privacy is warranted.
+
+
+Working groups must keep minutes for all substantial meetings and place the meeting minutes in an appropriate folder of the GitHub repository allocated to the working group. Exceptions to this practice require the approval of the ISC or the Executive Director.
+
+
+All working group activities must be in accordance with city, state and federal laws. Working group members should be regularly reminded that their activities must:
+
+1. comply with United States Antitrust laws
+2. be conducted according to the R Consortium Code of Conduct
+3. comply with appropriate international regulations such as the GDPR regulations of the European Union
+

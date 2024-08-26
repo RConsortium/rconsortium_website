@@ -1,0 +1,121 @@
+# Funded ISC Grants (2021-1)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+-   [Accounting/Auditing Gap-Analysis](#accountingauditing-gap-analysis)
+-   [Extendr - Rust extensions for R.](#extendr---rust-extensions-for-r.)
+-   [Google Earth Engine with R](#google-earth-engine-with-r)
+-   [Improving Translations in R](#improving-translations-in-r)
+-   [Minimizing wastage of blood products](#minimizing-wastage-of-blood-products)
+-   [R for Engineering Applications](#r-for-engineering-applications)
+-   [Setting up an R-Girls-Schools Network](#setting-up-an-r-girls-schools-network)
+-   [deposits: Deposit Research Data Anywhere](#deposits-deposit-research-data-anywhere)
+
+___
+
+### Accounting/Auditing Gap-Analysis
+
+**Funded:**  
+$7,000
+
+**Proposed by:**  
+Felix Schildorfer
+
+**Summary:**  
+There are more and more accountants and auditors who want to start using R and dig into data science. They usually have particular tasks on hand that they want to complete, facilitate, or automate. While they often have some basic stats skills and may be some coding basics, understanding the R landscape and relating tasks and processes to locate and use relevant R packages and tutorials is an extreme challenge. While other areas like finance or pharmaceuticals already have extensive infrastructure to support R newcomers (Working Groups, Courses, Task Views, etc.) accounting and auditing do not. This becomes an obstacle for such professionals - which find the “coding” part difficult on their own but doing so without any support or knowing the appropriate package becomes a nightmare.
+
+This is why R Business put together this project with the aim to gauge the landscape of what functionalities are available for Auditors in the R ecosystem and how the existing functionalities can be mapped to routine accounting/auditing tasks. We will complete a systematic survey of the CRAN-ecosystem for accounting/auditing tasks to establish a mapping and identify gaps. The project will contribute to the development of the R Business ISC working group by attracting interested accounting/auditing professionals, industry bodies and R community members. This will then in turn lead to increased use of R/RStudio, development new application domains for data science, and enhancement of the quality of accounting/auditing services.
+
+### Extendr - Rust extensions for R.
+
+**Funded:**  
+$15,000
+
+**Proposed by:**  
+Andy Thomason
+
+**Summary:**  
+Rust extension framework for R.
+
+### Google Earth Engine with R
+
+**Funded:**  
+$5,500
+
+**Proposed by:**  
+Cesar Luis Aybar Camacho
+
+**Summary:**  
+Google Earth Engine (GEE) is the most popular and advanced cloud platform designed for planetary-scale environmental data analysis. Its multi-petabyte data catalog and computation services are just accessed via Python and JavaScript client libraries. In order to facilitate its use within R, six months ago, rgee was released on CRAN using reticulate to wrap the GEE Python API. Although rgee provides a familiar interface and simple integration to other R packages (e.g., sf, raster, dplyr), the lack of tutorials and examples makes it difficult for new users to adopt.
+
+The main goal of this project is to leverage the documentation. For this purpose, three main tasks have been proposed: (1) create a new version of rgee with support for shiny and markdown, (2) create rgeeExtra, which extends the functionalities of rgee, and finally write (3) rgeebook, a reference book with best practices and examples of GEE API usage.
+
+### Improving Translations in R
+
+**Funded:**  
+$0
+
+**Proposed by:**  
+Michael Chirico
+
+**Summary:**  
+This project will provide a better formalization of translation procedures for R to be more sustainable and more scalable. In the process, it will broaden the inclusivity of R by growing the sub-community of R users comfortable producing translations and extending the reach of the R project to more non-English audiences.
+
+### Minimizing wastage of blood products
+
+**Funded:**  
+$11,200
+
+**Proposed by:**  
+Balasubramanian Narasimhan
+
+**Summary:**  
+Guan et al. 2017 (Proc Natl Acad Sci U S A 114 (43): 11368–73) used two years worth of data to formulate and solve an optimization problem to predict platelet usage and minimize waste. Two open-source R packages were developed for this purpose:
+
+\- Platelet Inventory Prediction or pip (https://github.com/bnaras/pip) a package that is the core ML prediction engine that uses a given set of features described in the above publication  
+\- Stanford Blood Center Platelet Inventory Prediction or SBCpip (https://github.com/bnaras/SBCpip) that was customized to the data workflow at SHC. SBCpip was meant to be site specific.
+
+There have been a number of requests from sites wishing to deploy the software locally. The current project will generalize the model, generalize it to address more blood products with different shelf lives, provide customizations for local use, and create easily deployable solutions.
+
+### R for Engineering Applications
+
+**Funded:**  
+$3,000
+
+**Proposed by:**  
+Benaiah Chibuokem Ubah
+
+**Summary:**  
+R for Engineering Applications is a proposed project with the aim to attract engineers and diversify the use of the R language to the broad engineering domain – electrical, electronic, communications, robotics, etc engineering. The idea is similar to such projects as R in Finance, R in Insurance, BioConductor (R in Bio-informatics), R in Environmental Statistics, etc.
+
+### Setting up an R-Girls-Schools Network
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Dr. Razia Ghani
+
+**Summary:**  
+Globally, women, especially from deprived socio-economic and diverse ethnic backgrounds, are under-represented in data science. A major factor is that data science does not feature in the school curriculum which means that teachers are unaware of the enhancements data science can bring to learning and development in and beyond the school. We propose an ongoing project, called R-Girls-School Network (short name R-Girls) to address this and are keen to link up with others.
+
+We are a multi-disciplinary team that includes an educationalist, subject teachers, a data scientist and administrator who will begin to develop and implement a data science curriculum using R in Green Oak Academy – an inner-city school in the UK serving girls from deprived, ethnically diverse backgrounds aged 11-16 years; independently rated as Good with Outstanding for Behaviour and Attitudes.
+
+Since GOA follows the UK national curriculum, which is used in 10,000+ schools and 160 countries, our work will have a broad appeal. In due course we will develop ready-to-use bite-sized learning materials (10-15 mins) for teachers of core subjects (maths, statistics, science, geography) to use via RStudio cloud. The lessons will be tested with teachers and pupils and then incorporated into the school timetable across all five-year groups (age 11-16 years), culminating in an R-Data Story project and in due course, an annual R-Girls virtual conference open to any girl and girls' school in the world.
+
+R-GS will be supported by a website for showcasing the work of pupils and sharing resources.
+
+### deposits: Deposit Research Data Anywhere
+
+**Funded:**  
+$16,000
+
+**Proposed by:**  
+Mark Padgham
+
+**Summary:**  
+Publicly depositing datasets associated with published research is becoming more common, partly due to journals increasingly requiring data sharing, and partly though more general and ongoing cultural changes in relation to data sharing. Yet data sharing is often seen as time consuming, particularly in order to meet the expectations of individual data repositories. While documentation and training can help get users familiar with processes of data sharing, browser-based data and metadata submission workflows can only be so fast, are not easily reproduced, and do not facilitate regular or automated updates of data and metadata. Better programmatic tools can transform data sharing from a mountainous climb into a pit of success.
+
+This project will develop a unified interface to many different research data repositories, and which will function along the lines of dplyr through "verbs" that work identically across many "backend" data repositories. The package will initially provide access to a few of the most common data repositories, yet will implement a modular/plugin system to enable users to contribute their own plugins to extend functionality to other repositories. Users will be able to authenticate, prepare data and metadata, and finally to submit, fetch, and browse data.
