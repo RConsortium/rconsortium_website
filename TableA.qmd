@@ -1,0 +1,19 @@
+---
+title: "Past R/Medicine Conferencess"
+listing:
+  id: events-listing
+  contents:
+    - "testingTablePhat/events-metadata.yml"
+  type: table
+  fields: [date, title, image]
+  sort: "date desc"
+  image-height: 100%
+  template: testingTablePhat/event-listing.ejs
+page-layout: full
+title-block-banner: "#330033"
+title-block-banner-color: "white"
+title-block-style: default
+---
+
+::: {#events-listing}
+:::
