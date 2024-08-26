@@ -33,6 +33,9 @@ website:
             href:  about/privacy.qmd
           - text: Thank You
             href:  about/thank-you.qmd
+          - text: Program
+            href: program.qmd
+
 
 
       - text: "Members"
