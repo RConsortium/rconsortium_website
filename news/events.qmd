@@ -208,28 +208,3 @@ Gabriel Becker, Scientist in the Bioinformatics and Computational Biology depart
 Gabe will present the rtables package in three contexts. First, he will briefly present the package itself and how it can be used to create reporting tables, including those suitable for regulatory submissions. He will then discuss where rtables fits in the larger process of filing-table creation within Roche. Finally, he will pivot to discussing what contributed to rtables’ success as a general framework intended to meet specific needs and what lessons those in Industry can draw from its development. 
 
 Register [here](https://hopin.com/events/the-r-adoption-series) or [see the webinar home page](https://www.r-consortium.org/webinars) for details.
-
-## Jesse's Test Table will go here
-
-Craig added test table here:
-
-| item | status | date |
-| --- | --- | ----- |
-| move to renv | half the staff using it | Aug 27, 2024 morning |
-
-test after modifying GitHub action workflow
-
-disabled repo override for renv.  8:15am approx
-
-```
-# env:
-#   RENV_CONFIG_REPOS_OVERRIDE: "https://packagemanager.rstudio.com/all/latest"
-```
-
-delete freeze from `_quarto.yml`
-
-```
-# execute:
-#   freeze: false
-# if we enable freeze, should likely be set to false
-```
