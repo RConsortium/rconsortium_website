@@ -26,8 +26,8 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 2
-        env:
-          RENV_CONFIG_REPOS_OVERRIDE: "https://packagemanager.rstudio.com/all/latest"
+        # env:
+        #   RENV_CONFIG_REPOS_OVERRIDE: "https://packagemanager.rstudio.com/all/latest"
       
       - name: Render and Publish 
         uses: quarto-dev/quarto-actions/publish@v2

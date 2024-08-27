@@ -216,3 +216,10 @@ Craig added test table here:
 | item | status | date |
 | --- | --- | ----- |
 | move to renv | half the staff using it | Aug 27, 2024 morning |
+
+test after modifying GitHub action workflow
+
+```
+# env:
+#   RENV_CONFIG_REPOS_OVERRIDE: "https://packagemanager.rstudio.com/all/latest"
+```
