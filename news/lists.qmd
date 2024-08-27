@@ -29,4 +29,14 @@ Caitlyn added test table here:
 | --- | --- | ----- |
 | 8/27/2024| 2| testing |
 
+Caitlyn added fruit table here:
+
+| fruit  | price  |
+|--------|--------|
+| apple  | 2.05   |
+| pear   | 1.37   |
+| orange | 3.09   |
+
+: {tbl-colwidths="[75,25]"}
+
 These sites provide a wide range of resources, from introductory tutorials to advanced techniques, making them invaluable for both beginners and experienced R programmers.
