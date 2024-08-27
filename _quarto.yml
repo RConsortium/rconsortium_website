@@ -109,8 +109,9 @@ format:
        - cosmo
        - cosmo.scss
     css: styles.css
-execute:
-  freeze: false
+# execute:
+#   freeze: false
+# if we enable freeze, should likely be set to false
 
 editor:
   render-on-save: true

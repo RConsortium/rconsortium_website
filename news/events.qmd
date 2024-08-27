@@ -219,7 +219,17 @@ Craig added test table here:
 
 test after modifying GitHub action workflow
 
+disabled repo override for renv.  8:15am approx
+
 ```
 # env:
 #   RENV_CONFIG_REPOS_OVERRIDE: "https://packagemanager.rstudio.com/all/latest"
+```
+
+delete freeze from `_quarto.yml`
+
+```
+# execute:
+#   freeze: false
+# if we enable freeze, should likely be set to false
 ```
