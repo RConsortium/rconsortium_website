@@ -102,6 +102,49 @@ The .gitignore of this project is setup to ignore `_site/` and `.quarto/`
 
 - `_site` was specified as netlify publish directory on the website 
 
+## Quarto Workflow Notes
+
+### R Studio Workflow
+Make sure you have R Studio installed
+
+Clone down this [Github repo](https://github.com/Oppkey/quarto-blog-dev/) (public repo). Make sure to pull down the new changes on main. 
+
+Open the quarto-blog-dev project in R Studio (File → Open Project). Ensure that you’ve switched to a new branch. `git checkout -b name_branch`
+
+Install renv with `install.packages(“renv”)` in console
+
+Run `renv::restore()` in console
+
+Open a file for testing. Make edits to the file and run `render`in R studio to view the updates.
+
+
+See **Final Steps**.
+
+### VSCode Workflow
+
+If you’re using VS Code, start R. 
+
+Install R `languageserver` when prompted 
+
+Install packages for R extension on Visual Studio Code
+
+Run `install.packages("renv")` and `renv::restore()` in the terminal
+
+Make edits to a file and run `quarto render` and `quarto preview` to see the changes. 
+
+See **Final Steps**.
+
+## Final Steps
+
+Once finished with editing, run git add, git commit, and git push to the branch.
+
+Make a pull request and assign a reviewer. The reviewer should test the request locally by switching to the test branch. Run`quarto render` and `quarto preview` to view the site locally.
+
+Once the pull request is accepted, view the workflow status run in GitHub actions. 
+
+Once the workflow status is completed, view the updated changes to the site on [Live Site](https://rconsortium.netlify.app)
+
+
 ## Notable findings
 
 - Only the freeze directory is needed when hosting on netlify using the [plugin](https://github.com/quarto-dev/netlify-plugin-quarto)
