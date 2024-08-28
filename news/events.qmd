@@ -19,11 +19,10 @@ library(gt)
 # For every day of the conference, have data laid out in this way
 Events <-
   dplyr::tribble(~title, ~start_date, ~end_date, ~location, ~type,
-                "EARL", "2024-09-04", "2024-09-05", "Brighton", "Conference",
-                "Shiny in Production", "2024-10-09", "2024-10-10",
-                "Newcastle upon Tyne", "Conference",
-                "IFoA Life Conference 2024", "2024-10-14", "2024-10-16", "Manchester", "Conference",
-                "Government & Public Sector R Conference", "2024-10-29", "2024-10-30", "Washington D.C.", "Conference")
+                '<a href="https://www.ascent.io/earl" target="_blank" rel="noreferrer noopener">EARL</a>', "2024-09-04", "2024-09-05", "Brighton", "Conference",
+                '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production</a>', "2024-10-09", "2024-10-10", "Newcastle upon Tyne", "Conference",
+                '<a href="https://actuaries.org.uk/LifeConference2024/" target="_blank" rel="noreferrer noopener">IFoA Life Conference 2024</a>', "2024-10-14", "2024-10-16", "Manchester", "Conference",
+                '<a href="https://www.rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government & Public Sector R Conference</a>', "2024-10-29", "2024-10-30", "Washington D.C.", "Conference")
 
 
 ```
