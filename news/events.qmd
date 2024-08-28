@@ -7,7 +7,7 @@ format:
     css: events.css   
 ---
 
-  ## Upcoming Events
+## Upcoming Events
 
 ```{r}
 #| echo: false
@@ -19,11 +19,11 @@ library(gt)
 # For every day of the conference, have data laid out in this way
 Events <-
   dplyr::tribble(~title, ~start_date, ~end_date, ~location, ~type,
-                 "EARL", "2024-09-04", "2024-09-05", "Brighton", "Conference",
-                 "Shiny in Production", "2024-10-09", "2024-10-10",
-                 "Newcastle upon Tyne", "Conference",
-                 "IFoA Life Conference 2024", "2024-10-14", "2024-10-16", "Manchester", "Conference",
-                 "Government & Public Sector R Conference", "2024-10-29", "2024-10-30", "Washington D.C.", "Conference")
+                "EARL", "2024-09-04", "2024-09-05", "Brighton", "Conference",
+                "Shiny in Production", "2024-10-09", "2024-10-10",
+                "Newcastle upon Tyne", "Conference",
+                "IFoA Life Conference 2024", "2024-10-14", "2024-10-16", "Manchester", "Conference",
+                "Government & Public Sector R Conference", "2024-10-29", "2024-10-30", "Washington D.C.", "Conference")
 
 
 ```
