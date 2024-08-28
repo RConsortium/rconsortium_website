@@ -9,16 +9,50 @@ format:
 
 ## Upcoming Events
 
-___
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(lubridate)
+library(gt)
+# For every day of the conference, have data laid out in this way
+Events <-
+  dplyr::tribble(~title, ~start_date, ~end_date, ~location, ~type,
+                "EARL", "2024-09-04", "2024-09-05", "Brighton", "Conference",
+                "Shiny in Production", "2024-10-09", "2024-10-10",
+                "Newcastle upon Tyne", "Conference",
+                "IFoA Life Conference 2024", "2024-10-14", "2024-10-16", "Manchester", "Conference",
+                "Government & Public Sector R Conference", "2024-10-29", "2024-10-30", "Washington D.C.", "Conference")
+
+
+```
 
 ```{r}
-df <- data.frame(Title = c('<a href="https://datacove.co.uk/earl-2024-tech-conference/" target="_blank" rel="noreferrer noopener">EARL 2024</a>', '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production 2024</a>', '<a href="https://actuaries.org.uk/call-for-speakers/#life-conference" target="_blank" rel="noreferrer noopener">IFoA Life Conference 2024</a>', '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">2024 Government &amp; Public Sector R Conference</a>'),
-    Dates = c('September 4-5, 2024', 'October 9-10, 2024', 'October 14-16, 2024', 'October 29-30, 2024'),
-    Location = c('Brighton, UK', 'Newcastle upon Tyne, UK', 'Manchester, UK', 'Washington D.C., USA'),
-    Type = c('Conference', 'Conference', 'Conference', 'Conference'))
+#| echo: false
+#| warning: false
+#| message: false
+# Create for events
+gt(Events) |>
+  cols_label(
+    title ~ "Title",
+    start_date ~ "Start Date",
+    end_date ~ "End Date",
+    location ~ "Location",
+    type ~ "Type"
+  ) |>
+  cols_align(align = "left") |>
+  cols_width(
+    c(title, location) ~ px(225),
+    c(start_date, end_date, type) ~ px(115),
+    everything() ~ px(1100)
+  ) |>
+  opt_align_table_header(align = "left") |>
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "lightblue"
+  )
 
-#view data frame
-knitr::kable(df[1:4, ], )
 ```
 
 
