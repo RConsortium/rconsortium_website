@@ -4,7 +4,6 @@ format:
   html:
     execute:
     echo: false
-    css: events.css   
 ---
 
 ## Upcoming Events
@@ -61,10 +60,13 @@ gt(Events) |>
     everything() ~ px(1100)
   ) |>
   opt_align_table_header(align = "left") |>
+  
   tab_options(
     heading.background.color = "lightblue",
-    column_labels.background.color = "lightblue"
-  )
+    column_labels.background.color = "lightblue",
+   
+  ) |>
+  tab_style( style = cell_fill(color="#d6cae3"), locations=cells_body(rows=c(1, 3)))
 
 ```
 
@@ -76,7 +78,7 @@ ___
 
 
 ```{r}
-df <- data.frame(Title = c(
+RecentEvents <- df <- data.frame(Title = c(
     '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>', 
     '<a href="https://posit.co/conference/" target="_blank" rel="noreferrer noopener">posit::conf 2024</a>', 
     'Henrick Bengtsson invited to speak at the Swiss Re Conference', 
