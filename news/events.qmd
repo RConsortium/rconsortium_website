@@ -16,16 +16,21 @@ format:
 
 library(lubridate)
 library(gt)
+library(tidyverse)
 # For every day of the conference, have data laid out in this way
-Events <-
-  dplyr::tribble(~title, ~start_date, ~end_date, ~location, ~type,
-                '<a href="https://www.ascent.io/earl" target="_blank" rel="noreferrer noopener">EARL</a>', "2024-09-04", "2024-09-05", "Brighton", "Conference",
-                '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production</a>', "2024-10-09", "2024-10-10", "Newcastle upon Tyne", "Conference",
-                '<a href="https://actuaries.org.uk/LifeConference2024/" target="_blank" rel="noreferrer noopener">IFoA Life Conference 2024</a>', "2024-10-14", "2024-10-16", "Manchester", "Conference",
-                '<a href="https://www.rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government & Public Sector R Conference</a>', "2024-10-29", "2024-10-30", "Washington D.C.", "Conference")
+
+Events <- df <- tibble(
+  title_link = c("https://www.ascent.io/earl", "https://shiny-in-production.jumpingrivers.com/", "https://actuaries.org.uk/LifeConference2024/", "https://www.rstats.ai/gov"),
+  title = c("EARL 2024", "Shiny in Production 2024", "IFoA Life Conference 2024", "2024 Government & Public Sector R Conference"),
+  start_date = c("2024-09-04", "2024-10-09", "2024-10-14", "2024-10-29"),
+  end_date = c("2024-09-05", "2024-10-10", "2024-10-16", "2024-10-30"),
+  location = c("Brighton", "Newcastle upon Tyne", "Manchester", "Washington D.C."),
+  type = c("Conference", "Conference", "Conference", "Conference"))
 
 
 ```
+
+
 
 ```{r}
 #| echo: false
@@ -40,6 +45,15 @@ gt(Events) |>
     location ~ "Location",
     type ~ "Type"
   ) |>
+   fmt_url(
+    columns = title_link,
+    label = "site",
+    show_underline = FALSE
+  ) |>
+  cols_merge(
+    columns = c(title, title_link),
+    pattern = "{1} ({2})"
+ ) |>
   cols_align(align = "left") |>
   cols_width(
     c(title, location) ~ px(225),
