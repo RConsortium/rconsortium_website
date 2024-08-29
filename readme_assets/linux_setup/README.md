@@ -86,3 +86,9 @@ At this point, the v8 installed.
 possible alternative
 
 <https://aur.archlinux.org/packages/v8-r>
+
+## everything works
+
+gt table now works.
+
+![gt_table](gt_table.png)
