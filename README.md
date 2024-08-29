@@ -2,7 +2,7 @@
 
 This is a new Quarto-based website which updates and supersedes the original website [here:](https://www.r-consortium.org/)
 
-R Consortium Blog - [How to upload your blog post to a quarto-based website](https://oppkeyquarto.netlify.app/blog/how_to_post.html)
+R Consortium Blog - [How to upload your blog post to a quarto-based website](https://rconsortium.netlify.app/blog/how_to_post.html)
 
 ## Contributing to this website
 
@@ -28,21 +28,21 @@ Do a pull request from your local copy to make sure branch is in sync with the w
 
 ## What is the R Consortium?
 
-The R Consortium, Inc. is a group organized under an open source governance and foundation model to support the worldwide community of users, maintainers and developers of R software. Its [members](https://oppkeyquarto.netlify.app/members) include leading institutions and companies dedicated to the use, development and growth of R.
+The R Consortium, Inc. is a group organized under an open source governance and foundation model to support the worldwide community of users, maintainers and developers of R software. Its [members](https://rconsortium.netlify.app/members) include leading institutions and companies dedicated to the use, development and growth of R.
 
 The R language is an open source environment for statistical computing and graphics. The R community has enjoyed significant growth, with more than 2 million users worldwide. A broad range of organizations have adopted the R language as a data science platform, including biotech, finance, research and high technology industries. The R language is often integrated into third-party analysis, visualization and reporting applications, and runs on a wide variety of computing platforms.
 
 The R Consortium’s mission is to promote the R language and to develop the technical and social infrastructure required to support the R ecosystem and the R Community. Its activities and programs include:
 
 Promoting the growth and development of R as a leading platform for data science and statistical computing.  
-[Members of the R Consortium](https://oppkeyquarto.netlify.app/members) are recognized as supporters of the R Project and the R community, and the R Consortium represents its members to the R community and to the media.  
+[Members of the R Consortium](https://rconsortium.netlify.app/members) are recognized as supporters of the R Project and the R community, and the R Consortium represents its members to the R community and to the media.  
 Supporting and collaborating with the [R Foundation](https://www.r-project.org/foundation/), the governing body of the R Project.
 
 The R Foundation maintains a permanent seat on the board of the R Consortium, as an open communication channel for R Consortium members.
 
 Funding projects to enhance R and support its users.
 
-Projects are proposed by the R community at large, and selected for funding by the Infrastructure Steering Committee. R Consortium members nominate the selection committee and provide funds for project grants with their membership dues. (Here is a list of [projects funded by the R Consortium](https://oppkeyquarto.netlify.app/all-projects/funded-projects) to date.)
+Projects are proposed by the R community at large, and selected for funding by the Infrastructure Steering Committee. R Consortium members nominate the selection committee and provide funds for project grants with their membership dues. (Here is a list of [projects funded by the R Consortium](https://rconsortium.netlify.app/all-projects/funded-projects) to date.)
 
 Fostering the continued growth of R community and the data science ecosystem.
 
@@ -69,7 +69,7 @@ Mastodon: [https://fosstodon.org/@RConsortium](https://fosstodon.org/@RConsortiu
 
 ## Quarto Project hosted with Netlify
 
-## Live site here: [https://oppkeyquarto.netlify.app/](https://oppkeyquarto.netlify.app/)
+## Live site here: <https://rconsortium.netlify.app/>
 
 ## Running locally
 
@@ -94,7 +94,7 @@ dygraphs installation : install.packages("dygraphs")
 
 ## Project Setup
 
-The .gitignore of this project is setup to ignore `_site/` and `.quarto/`
+The .gitignore of this project is setup to ignore `_site/`, `.quarto/` and `docs`
 
 ![gitignore](image.png)
 
@@ -102,12 +102,15 @@ The .gitignore of this project is setup to ignore `_site/` and `.quarto/`
 
 - `_site` was specified as netlify publish directory on the website 
 
+- `docs/` 
+
 ## Quarto Workflow Notes
 
 ### R Studio Workflow
+
 Make sure you have R Studio installed
 
-Clone down this [Github repo](https://github.com/Oppkey/quarto-blog-dev/) (public repo). Make sure to pull down the new changes on main. 
+Clone down this [Github repo](https://github.com/Oppkey/quarto-blog-dev/) (public repo). Make sure to pull down the new changes on main.
 
 Open the quarto-blog-dev project in R Studio (File → Open Project). Ensure that you’ve switched to a new branch. `git checkout -b name_branch`
 
@@ -117,14 +120,13 @@ Run `renv::restore()` in console
 
 Open a file for testing. Make edits to the file and run `render`in R studio to view the updates.
 
-
 See **Final Steps**.
 
 ### VSCode Workflow
 
-If you’re using VS Code, start R. 
+If you’re using VS Code, start R.
 
-Install R `languageserver` when prompted 
+Install R `languageserver` when prompted
 
 Install packages for R extension on Visual Studio Code
 
@@ -140,14 +142,16 @@ Once finished with editing, run git add, git commit, and git push to the branch.
 
 Make a pull request and assign a reviewer. The reviewer should test the request locally by switching to the test branch. Run`quarto render` and `quarto preview` to view the site locally.
 
-Once the pull request is accepted, view the workflow status run in GitHub actions. 
+Once the pull request is accepted, view the workflow status run in GitHub actions.
 
 Once the workflow status is completed, view the updated changes to the site on [Live Site](https://rconsortium.netlify.app)
-
 
 ## Notable findings
 
 - Only the freeze directory is needed when hosting on netlify using the [plugin](https://github.com/quarto-dev/netlify-plugin-quarto)
+
+_NOTE: August 28, 2024.  I believe we are not using the freeze directory in
+this repo and we're not using the netlify plugin.  Delete this?_
 
 - Can use the "local only" ignoring files strategy. Each person adds `_freeze/` to the exclude file and only have one person who is reponsible for rendering and uploading to netlify
 
@@ -158,6 +162,9 @@ Once the workflow status is completed, view the updated changes to the site on [
 ![modified](image-2.png)
 
 - Second time after initial setup these are the files that need to be added, my observation from this is that it's possible that only during initial setup  merge conflicts are a problem due to `site_libs/` directory. I think `site_libs/` is modified only when someone sets up quarto. I can try git_ignoring that directory and see if it causes a build failure or not on netlify. Maybe when someone is setting up R and the libraries on their computer it downloads and modifies this directory.
+
+_NOTE: August 28, 2024.  Should we delete the section above?  The `site_libs` directory
+should not be in GitHub._
 
 ![sitelibs](image-3.png)
 
