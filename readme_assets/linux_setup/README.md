@@ -32,3 +32,26 @@ Packages (12) java-environment-common-3-5  java-runtime-common-3-5
               boost-1.83.0-9  jdk8-openjdk-8.422.u05-1  patchelf-0.18.0-3
               wget-1.24.5-3  yarn-1.22.22-2
 ```
+
+Package completed.
+
+```text
+==> Creating package "rstudio-desktop"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: rstudio-desktop 2024.04.2.764-1 (Wed Aug 28 17:46:26 2024)
+[craig@archmini rstudio-desktop]$ 
+```
+
+Install
+
+```text
+sudo pacman -U rstudio-desktop-2024.04.2.764-1-x86_64.pkg.tar.zst 
+```
+
+![R Studio Start](r-studio-start.png)
+
+![install renv](install-renv.png)
