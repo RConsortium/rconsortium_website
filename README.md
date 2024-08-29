@@ -10,19 +10,19 @@ This website is being built members of the R Consortium, R-Ladies Gaborone and o
 
 ### Workflow for making contributions
 
-#### 1\. Clone this website
+#### 1. Clone this website
 
-#### 2\. Make a branch
+#### 2. Make a branch
 
 Make a branch and edit your branch locally.
 
 To preview the website locally you can execute this quarto command in your terminal:
 
-#### 3\. Commit your changes
+#### 3. Commit your changes
 
 Make your changes locally save them and commit them. Be sure to make your commit message descriptive of the work you did.
 
-#### 4\. Do a Pull Request
+#### 4. Do a Pull Request
 
 Do a pull request from your local copy to make sure branch is in sync with the website branch. We will review your Pull Request!
 
@@ -67,9 +67,9 @@ Mastodon: [https://fosstodon.org/@RConsortium](https://fosstodon.org/@RConsortiu
 
 ## Development Section
 
-## Quarto Project hosted with Netlify
+### R Consortium Quarto-based Web Site hosted with Netlify
 
-## Live site here: <https://rconsortium.netlify.app/>
+#### Live site here: <https://rconsortium.netlify.app/>
 
 ## Running locally
 
@@ -84,13 +84,13 @@ If you are attempting to preview a website or book use the quarto preview comman
 
 ## Setup for Contributors
 
-Install R using sudo apt-get install r-base and sudo apt-get install r-base-dev
+Install R using `sudo apt-get install r-base` and `sudo apt-get install r-base-dev`
 
-Install R packages on Linux; type R in console and then install.packages('rmarkdown')
+Install R packages on Linux; type R in console and then `install.packages('rmarkdown')`
 
-GGPLOT2 installation: install.packages("ggplot2")
+GGPLOT2 installation: `install.packages("ggplot2")`
 
-dygraphs installation : install.packages("dygraphs")
+dygraphs installation : `install.packages("dygraphs")`
 
 ## Project Setup
 
@@ -108,7 +108,7 @@ The .gitignore of this project is setup to ignore `_site/`, `.quarto/` and `docs
 
 ### R Studio Workflow
 
-Make sure you have R Studio installed
+Make sure you have R Studio installed.
 
 Clone down this [Github repo](https://github.com/Oppkey/quarto-blog-dev/) (public repo). Make sure to pull down the new changes on main.
 
@@ -120,52 +120,28 @@ Run `renv::restore()` in console
 
 Open a file for testing. Make edits to the file and run `render`in R studio to view the updates.
 
-See **Final Steps**.
+See **Final Steps** below.
 
 ### VSCode Workflow
 
 If you’re using VS Code, start R.
 
-Install R `languageserver` when prompted
+Install R `languageserver` when prompted.
 
-Install packages for R extension on Visual Studio Code
+Install packages for R extension on VS Code.
 
-Run `install.packages("renv")` and `renv::restore()` in the terminal
+Run `install.packages("renv")` and `renv::restore()` in the terminal.
 
-Make edits to a file and run `quarto render` and `quarto preview` to see the changes. 
+Make edits to a file and run `quarto render` and `quarto preview` to see the changes.
 
-See **Final Steps**.
+See **Final Steps** below.
 
 ## Final Steps
 
-Once finished with editing, run git add, git commit, and git push to the branch.
+Once finished with editing, run `git add`, `git commit`, and `git push` to the branch.
 
 Make a pull request and assign a reviewer. The reviewer should test the request locally by switching to the test branch. Run`quarto render` and `quarto preview` to view the site locally.
 
 Once the pull request is accepted, view the workflow status run in GitHub actions.
 
 Once the workflow status is completed, view the updated changes to the site on [Live Site](https://rconsortium.netlify.app)
-
-## Notable findings
-
-- Only the freeze directory is needed when hosting on netlify using the [plugin](https://github.com/quarto-dev/netlify-plugin-quarto)
-
-_NOTE: August 28, 2024.  I believe we are not using the freeze directory in
-this repo and we're not using the netlify plugin.  Delete this?_
-
-- Can use the "local only" ignoring files strategy. Each person adds `_freeze/` to the exclude file and only have one person who is reponsible for rendering and uploading to netlify
-
-![exclude](image-1.png)
-
-- When adding a new post these are the files that are added and the ones that are modified, I *manually* modified README.md and _quarto.yml
-
-![modified](image-2.png)
-
-- Second time after initial setup these are the files that need to be added, my observation from this is that it's possible that only during initial setup  merge conflicts are a problem due to `site_libs/` directory. I think `site_libs/` is modified only when someone sets up quarto. I can try git_ignoring that directory and see if it causes a build failure or not on netlify. Maybe when someone is setting up R and the libraries on their computer it downloads and modifies this directory.
-
-_NOTE: August 28, 2024.  Should we delete the section above?  The `site_libs` directory
-should not be in GitHub._
-
-![sitelibs](image-3.png)
-
-![sitelib2](image-4.png)
