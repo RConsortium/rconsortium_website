@@ -55,3 +55,34 @@ sudo pacman -U rstudio-desktop-2024.04.2.764-1-x86_64.pkg.tar.zst
 ![R Studio Start](r-studio-start.png)
 
 ![install renv](install-renv.png)
+
+restore package with renv
+
+```text
+
+> renv::restore()
+The following package(s) will be updated:
+
+# CRAN -----------------------------------------------------------------------
+- base64enc      [* -> 0.1-3]
+- bigD           [* -> 0.2.0]
+```
+
+![renv restore prompt](renv_restore_prompt.png)
+
+## v8 install
+
+![v8 error](v8_error.png)
+
+```text
+export DOWNLOAD_STATIC_LIBV8=1
+[craig@archmini quarto-blog-dev]$ rstudio .
+```
+
+At this point, the v8 installed.
+
+![v8 installed](v8_install.png)
+
+possible alternative
+
+<https://aur.archlinux.org/packages/v8-r>
