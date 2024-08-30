@@ -12,11 +12,10 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "<a href='https://www.ascent.io/earl'>EARL 2024</a>",
-    "<a href='https://shiny-in-production.jumpingrivers.com/'>Shiny in Production 2024</a>",
-    "<a href='https://actuaries.org.uk/LifeConference2024/'>IFoA Life Conference 2024</a>",
-    "<a href='https://www.rstats.ai/gov'>2024 Government & Public Sector R Conference</a>"
-
+    "[EARL 2024](https://www.ascent.io/earl)",
+    "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
+    "[IFoA Life Conference 2024](https://actuaries.org.uk/LifeConference2024/)",
+    "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)"
   ),
   StartDate = c("September 4, 2024", "October 9, 2024", "October 14, 2024", "October 29, 2024"),
   end_date = c("September 5, 2024", "October 10, 2024", "October 16, 2024", "October 30, 2024"),
