@@ -13,11 +13,15 @@ format:
 df <- data.frame(
   Title = c(
     "<a href='https://www.ascent.io/earl'>EARL 2024</a>",
-    "<a href='https://www.r-project.org'>R Project</a>",
-    "<a href='https://www.openai.com'>OpenAI</a>"
-  ),
-  StartDate = c("September 4, 2024", "R Project", "OpenAI"),
+    "<a href='https://shiny-in-production.jumpingrivers.com/'>Shiny in Production 2024</a>",
+    "<a href='https://actuaries.org.uk/LifeConference2024/'>IFoA Life Conference 2024</a>",
+    "<a href='https://www.rstats.ai/gov'>2024 Government & Public Sector R Conference</a>"
 
+  ),
+  StartDate = c("September 4, 2024", "October 9, 2024", "October 14, 2024", "October 29, 2024"),
+  end_date = c("September 5, 2024", "October 10, 2024", "October 16, 2024", "October 30, 2024"),
+    location = c("Brighton", "Newcastle upon Tyne", "Manchester", "Washington D.C."),
+  type = c("Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
 )
@@ -29,7 +33,10 @@ library(gt)
 gt_table <- gt(df) %>%
   cols_label(
     Title = "Title",
-    StartDate = "Start Date"
+    StartDate = "Start Date",
+    end_date = "End Date",
+    location = "Location",
+    type  = "Type",
 
   ) %>%
   # Render the 'Link' column as HTML using fmt_markdown()
