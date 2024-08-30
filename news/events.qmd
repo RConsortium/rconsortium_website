@@ -9,6 +9,45 @@ format:
 ## Upcoming Events
 
 ```{r}
+# Sample data frame with HTML links
+df <- data.frame(
+  Title = c(
+    "[EARL 2024](https://www.ascent.io/earl)",
+    "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
+    "[IFoA Life Conference 2024](https://actuaries.org.uk/LifeConference2024/)",
+    "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)"
+  ),
+  StartDate = c("September 4, 2024", "October 9, 2024", "October 14, 2024", "October 29, 2024"),
+  end_date = c("September 5, 2024", "October 10, 2024", "October 16, 2024", "October 30, 2024"),
+    location = c("Brighton", "Newcastle upon Tyne", "Manchester", "Washington D.C."),
+  type = c("Conference", "Conference", "Conference", "Conference"),
+  
+  stringsAsFactors = FALSE
+)
+
+# Load necessary libraries
+library(gt)
+
+# Create a gt table and use fmt_markdown() to render HTML links
+gt_table <- gt(df) %>%
+  cols_label(
+    Title = "Title",
+    StartDate = "Start Date",
+    end_date = "End Date",
+    location = "Location",
+    type  = "Type",
+
+  ) %>%
+  # Render the 'Link' column as HTML using fmt_markdown()
+  fmt_markdown(columns = c(Title))
+
+# Print the gt table
+gt_table
+
+```
+
+
+```{r}
 #| echo: false
 #| warning: false
 #| message: false
