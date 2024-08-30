@@ -9,6 +9,39 @@ format:
 ## Upcoming Events
 
 ```{r}
+# Sample data frame with HTML links
+df <- data.frame(
+  Name = c("Google", "R Project", "OpenAI"),
+  Link = c(
+    "<a href='https://www.google.com'>Google</a>",
+    "<a href='https://www.r-project.org'>R Project</a>",
+    "<a href='https://www.openai.com'>OpenAI</a>"
+  ),
+  
+  stringsAsFactors = FALSE
+)
+
+# Load necessary libraries
+library(gt)
+
+# Create a gt table and use fmt_markdown() to render HTML links
+gt_table <- gt(df) %>%
+  cols_label(
+    Name = "Website",
+    Link = "Link"
+  ) %>%
+  # Render the 'Link' column as HTML using fmt_markdown()
+  fmt_markdown(columns = c(Link))
+
+# Print the gt table
+gt_table
+
+
+
+```
+
+
+```{r}
 #| echo: false
 #| warning: false
 #| message: false
