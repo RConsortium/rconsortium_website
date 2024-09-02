@@ -96,7 +96,7 @@ dygraphs installation : `install.packages("dygraphs")`
 
 The .gitignore of this project is setup to ignore `_site/`, `.quarto/` and `docs`
 
-![gitignore](image.png)
+![gitignore](/images/gitignore.png)
 
 - `_site/` is also known as `docs/` in other quarto projects
 

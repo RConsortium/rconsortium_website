@@ -4,11 +4,11 @@ project:
 
 website:
   title: "R Consortium"
-  favicon: rc-favicon.svg
+  favicon: /images/rc-favicon.svg
   navbar:
     pinned: true
     background: light
-    logo: RConsortium_Horizontal_Pantone.webp
+    logo: /images/RConsortium_Horizontal_Pantone.webp
     title: false
     logo-alt: "R Consortium logo"
     right:
