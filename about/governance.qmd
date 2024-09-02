@@ -105,7 +105,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h2>David Smith</h2>
 <h4>MICROSOFT (PLATINUM MEMBER)(R CONSORTIUM TREASURER)</h4>
 <p>David Smith is a developer advocate at Microsoft, with a focus on data science and the R community. With a background in Statistics, he writes regularly about applications of R at the Revolutions blog (blog.revolutionanalytics.com), and is a co-author of “Introduction to R”, the R manual. Follow David on Twitter as @revodavid</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/revodavid" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/revodavid" title=""><img decoding="async" alt="" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
@@ -119,7 +119,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h2>Michael Lawrence</h2>
 <h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE)</h4>
 <p>Michael is a scientist in the Bioinformatics and Computational Biology department at Genentech Research and Early Development (gRED), based in South San Francisco, CA. There he leads the development of tools, applications and environments for analyzing genomic data using R and Bioconductor. His research interests are in visualization, software interfacing, and genomic data manipulation. Michael is a member of the Bioconductor Technical Advisory Board, the R Core team, and the R Foundation Board.</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/lawremi" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/lawremi" title=""><img decoding="async" alt="" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
@@ -128,7 +128,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC CHAIRPERSON)</h4>
 <p>Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member of the R Foundation, with a background in Computer Science and Mathematical Statistics. He has used R since 2000 for applied research in statistics and bioinformatics. He develops statistical methods, scientific computational software, and programming tools. His work includes R packages for science (e.g. matrixStats, and PSCBS, aroma.affymetrix) and software development (e.g. future, profmem, startup, and R.rsp).</p>
 <a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="./images/github.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
@@ -137,7 +137,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h4>POSIT (PLATINUM MEMBER)</h4>
 <p>Hadley is Chief Scientist at RStudio, a member of the R Foundation, and Adjunct Professor at Stanford University and the University of Auckland. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (the tidyverse: including ggplot2, dplyr, tidyr, purrr, and readr) and principled software development (roxygen2, testthat, devtools). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, http://hadley.nz.</p>
 <a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hadleywickham" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/hadleywickham" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/hadleywickham" title=""><img decoding="async" alt="" src="./images/x.png"></a>
 <a target="_blank" class="tmm_sociallink" href="http://hadley.nz/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a>
 <a target="_blank" class="tmm_sociallink" href="https://github.com/hadley" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 </div>
@@ -155,7 +155,6 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h4>GSK (SILVER MEMBER REPRESENTATIVE)</h4>
 <p>Benjamin Arancibia, Director of Data Science, focuses on enabling the use of R in GSK Biostatistics. He builds tools to make data science fun, reproducible, and helps advocate for the use of R in the department. Ben is passionate about making sure that teams have the right support when using R in production analyses and helping teams learn while delivering. He is an advocate of R and open source technologies internally at GSK and externally speaking about lived experiences at various conferences.</p>
 <a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bcarancibia/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
-<a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
 
 <div class="profile-card">
@@ -171,9 +170,6 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h2>Uday Preetham Palukuru</h2>
 <h4>MERCK (SILVER MEMBER REPRESENTATIVE)</h4>
 <p>Uday Preetham Palukuru is a Standards lead at Merck &Co., providing leadership to develop and maintain global standards for ADaM implementation, R package development, Open Source package qualification, Computing Platform enhancements and compliance management tools. He has contributed to various internal and external R packages and is a member of the R Validation Hub Executive committee. He actively promotes the use of open source software in clinical trial data analysis via forums and paper publications. He has a PhD in Bioengineering from Temple University.</p>
-<div class="social-links">
-<a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
-</div>
 </div>
 
 <div class="profile-card">
@@ -196,7 +192,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <p>Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member of the R Foundation, with a background in Computer Science and Mathematical Statistics.</p>
 <div class="social-links">
 <a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="./images/github.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="./images/x.png"></a>
 </div>
 
 </div>
@@ -248,7 +244,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h2>Joseph Rickert</h2>
 <h4>R USER GROUP SUPPORT PROJECT LEAD (VOTING MEMBER)</h4>
 <p>Joseph, RStudio’s “Ambassador at Large” to the R Community and editor of the R Views blog, has been focused on promoting the R language and supporting the R Community since he joined Revolution Analytics in 2009. In addition to serving on the R Consortium’s Board of Directors, he is a member of the ISC and administers the R User Group Support Program. In the past, Joseph held technical, marketing, and sales positions with several prominent Silicon Valley startups including, Sytek Inc., Alantec, Parallan Computer and Scotts Valley Instruments as well as with larger organizations including CSC, Agilent Technologies and Microsoft. Joseph is a member of the ASA, and a Life Member of the IEEE. He has experience working with standards committees including the IEEE 802.3 CSMA/CD Working Group and the IDEMA PRML technical committee. Joseph studied Classics and Mathematics as an undergraduate at Franklin & Marshall College and earned an M.A. in Humanities and an M.S. in Computational Statistics from the California State University. You can follow him  on Twitter as @RStudioJoe.</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
@@ -294,7 +290,7 @@ As a [project operating within the Linux Foundation](http://collabprojects.linux
 <h2>Joseph Rickert</h2>
 <h4>R USER GROUP SUPPORT PROJECT LEAD (VOTING MEMBER)</h4>
 <p>Joseph has been active in the R Community since he joined Revolution Analytics in 2009 and has held prominent, community-facing positions at both the R Consortium and RStudio (now renamed posit). He is deeply involved in multiple R Consortium technical working groups, is an organizer of the Bay Area useR Group (BARUG), and has been on the R/Medicine conference organizing committee since the first conference in 2018. Joseph served on the R Consortium Board of Directors from August 2016 to July 2023, serving as Chair from 2020.</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
