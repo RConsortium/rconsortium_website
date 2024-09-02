@@ -17,9 +17,9 @@ df <- data.frame(
     "[IFoA Life Conference 2024](https://actuaries.org.uk/LifeConference2024/)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)"
   ),
-  StartDate = c("September 4, 2024", "October 9, 2024", "October 14, 2024", "October 29, 2024"),
-  end_date = c("September 5, 2024", "October 10, 2024", "October 16, 2024", "October 30, 2024"),
-    location = c("Brighton", "Newcastle upon Tyne", "Manchester", "Washington D.C."),
+  StartDate = c("Sept 4, 2024", "Oct 9, 2024", "Oct 14, 2024", "Oct 29, 2024"),
+  end_date = c("Sept 5, 2024", "Oct 10, 2024", "Oct 16, 2024", "Oct 30, 2024"),
+    location = c("Brighton, UK", "Newcastle upon Tyne, UK", "Manchester, UK", "Washington D.C., USA"),
   type = c("Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
@@ -38,7 +38,7 @@ gt_table <- gt(df) %>%
     type  = "Type",
 
   ) %>%
-  # Render the 'Link' column as HTML using fmt_markdown()
+# Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
 
 # Print the gt table
@@ -192,7 +192,7 @@ knitr::kable(df[1:17,], )
 ```
 
 
-## Archived Webinars
+## Archived Events and Webinars
 
 ___
 
@@ -298,4 +298,4 @@ Gabriel Becker, Scientist in the Bioinformatics and Computational Biology depart
 
 Gabe will present the rtables package in three contexts. First, he will briefly present the package itself and how it can be used to create reporting tables, including those suitable for regulatory submissions. He will then discuss where rtables fits in the larger process of filing-table creation within Roche. Finally, he will pivot to discussing what contributed to rtables’ success as a general framework intended to meet specific needs and what lessons those in Industry can draw from its development. 
 
-Register [here](https://hopin.com/events/the-r-adoption-series) or [see the webinar home page](https://www.r-consortium.org/webinars) for details.
+Register [here](https://hopin.com/events/the-r-adoption-series) or [see the webinar home page](/webinars) for details.
