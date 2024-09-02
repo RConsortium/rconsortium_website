@@ -17,9 +17,9 @@ df <- data.frame(
     "[IFoA Life Conference 2024](https://actuaries.org.uk/LifeConference2024/)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)"
   ),
-  StartDate = c("September 4, 2024", "October 9, 2024", "October 14, 2024", "October 29, 2024"),
-  end_date = c("September 5, 2024", "October 10, 2024", "October 16, 2024", "October 30, 2024"),
-    location = c("Brighton", "Newcastle upon Tyne", "Manchester", "Washington D.C."),
+  StartDate = c("Sept 4, 2024", "Oct 9, 2024", "Oct 14, 2024", "Oct 29, 2024"),
+  end_date = c("Sept 5, 2024", "Oct 10, 2024", "Oct 16, 2024", "Oct 30, 2024"),
+    location = c("Brighton, UK", "Newcastle upon Tyne, UK", "Manchester, UK", "Washington D.C., USA"),
   type = c("Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
@@ -38,7 +38,7 @@ gt_table <- gt(df) %>%
     type  = "Type",
 
   ) %>%
-  # Render the 'Link' column as HTML using fmt_markdown()
+# Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
 
 # Print the gt table
@@ -47,74 +47,7 @@ gt_table
 ```
 
 
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-
-library(lubridate)
-library(gt)
-library(tidyverse)
-# For every day of the conference, have data laid out in this way
-
-Events <- df <- tibble(
-  title_link = c("https://www.ascent.io/earl", "https://shiny-in-production.jumpingrivers.com/", "https://actuaries.org.uk/LifeConference2024/", "https://www.rstats.ai/gov"),
-  title = c("EARL 2024", "Shiny in Production 2024", "IFoA Life Conference 2024", "2024 Government & Public Sector R Conference"),
-  start_date = c("September 4, 2024", "October 9, 2024", "October 14, 2024", "October 29, 2024"),
-  end_date = c("September 5, 2024", "October 10, 2024", "October 16, 2024", "October 30, 2024"),
-  location = c("Brighton", "Newcastle upon Tyne", "Manchester", "Washington D.C."),
-  type = c("Conference", "Conference", "Conference", "Conference"))
-
-
-```
-
-
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-# Create for events
-gt(Events) |>
-  cols_label(
-    title ~ "Title",
-    start_date ~ "Start Date",
-    end_date ~ "End Date",
-    location ~ "Location",
-    type ~ "Type"
-  ) |>
-   fmt_url(
-    columns = title_link,
-    label = "site",
-    show_underline = FALSE
-  ) |>
-  cols_merge(
-    columns = c(title, title_link),
-    pattern = "{1} ({2})"
- ) |>
-  cols_align(align = "left") |>
-  cols_width(
-    c(title, location) ~ px(225),
-    c(start_date, end_date, type) ~ px(115),
-    everything() ~ px(1100)
-  ) |>
-  opt_align_table_header(align = "left") |>
-  
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "lightblue",
-    column_labels.font.weight = "bold",
-    
-   
-  ) |>
-  tab_style( style = cell_fill(color="#d6cae3"), locations=cells_body(rows=c(1, 3))) |>
-  tab_style( style = cell_text(weight="bold"), locations=cells_body(column=title))
-
-```
-
-
-
-## Recently Completed Events
+## Recently Completed Events and Webinars
 
 ___
 
@@ -192,7 +125,7 @@ knitr::kable(df[1:17,], )
 ```
 
 
-## Archived Webinars
+## Archived Events and Webinars
 
 ___
 
@@ -298,4 +231,4 @@ Gabriel Becker, Scientist in the Bioinformatics and Computational Biology depart
 
 Gabe will present the rtables package in three contexts. First, he will briefly present the package itself and how it can be used to create reporting tables, including those suitable for regulatory submissions. He will then discuss where rtables fits in the larger process of filing-table creation within Roche. Finally, he will pivot to discussing what contributed to rtables’ success as a general framework intended to meet specific needs and what lessons those in Industry can draw from its development. 
 
-Register [here](https://hopin.com/events/the-r-adoption-series) or [see the webinar home page](https://www.r-consortium.org/webinars) for details.
+Register [here](https://hopin.com/events/the-r-adoption-series) or [see the webinar home page](/webinars) for details.
