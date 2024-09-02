@@ -138,7 +138,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <p>Hadley is Chief Scientist at RStudio, a member of the R Foundation, and Adjunct Professor at Stanford University and the University of Auckland. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (the tidyverse: including ggplot2, dplyr, tidyr, purrr, and readr) and principled software development (roxygen2, testthat, devtools). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, http://hadley.nz.</p>
 <a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hadleywickham" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/hadleywickham" title=""><img decoding="async" alt="" src="./images/x.png"></a>
-<a target="_blank" class="tmm_sociallink" href="http://hadley.nz/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a>
+<a target="_blank" class="tmm_sociallink" href="http://hadley.nz/" title=""><img decoding="async" alt="" src="./images/website.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://github.com/hadley" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
@@ -180,7 +180,12 @@ The business of the foundation is managed by its Board of Directors, composed of
 
 <div>
 <h2><strong>Infrastructure Steering Committee</strong></h2>
-<p>An Infrastructure Steering Committee (ISC) is responsible for the identification, selection, and oversight of <a href="#">infrastructure projects</a>, as well as directing best practices and community leadership within the R community. Voting representatives are appointed by the Platinum and Silver members of the R Consortium, as well as an elected member from the Silver membership class and the project leads for all <a href="https://wiki.r-consortium.org/view/Top_Level_Projects">top level projects</a> as directed in the <a href="#">ISC Charter</a>.</p>
+<p>An Infrastructure Steering Committee (ISC) is responsible for the identification, selection, 
+and oversight of <a href="/all-projects">infrastructure projects</a>, as well as directing best practices and 
+community leadership within the R community. Voting representatives are appointed by the Platinum 
+and Silver members of the R Consortium, as well as an elected member from the Silver membership 
+class and the project leads for all Top Level Projects as directed in 
+the <a href="/rc-docs/ISC-Charter-08-11-23.pdf">ISC Charter</a> (PDF).</p>
 </div>
 
 <div class="profile-cards">
@@ -274,7 +279,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h4>POSIT (PLATINUM MEMBER)</h4>
 <p>Software engineer on the tidymodels team at Posit. Co-founder of R-Ladies Global and former co-organiser of the London chapter. </p>
 <a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hannah-frick/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://www.frick.ws/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.frick.ws/" title=""><img decoding="async" alt="" src="./images/website.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://github.com/hfrick" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
