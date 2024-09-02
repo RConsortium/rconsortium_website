@@ -38,8 +38,21 @@ gt_table <- gt(df) %>%
     type  = "Type",
 
   ) %>%
-# Render the 'Link' column as HTML using fmt_markdown()
+# Render the 'Title' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
+
+# Add thick borders to the top and bottom of the table
+  tab_options(
+    table.border.top.width = px(4),
+    table.border.bottom.width = px(4),
+    table.border.top.color = "black",
+    table.border.bottom.color = "black",
+# Add borders to all sides of the table
+    table.border.left.width = px(4),
+    table.border.right.width = px(4),
+    table.border.left.color = "black",
+    table.border.right.color = "black"
+  )
 
 # Print the gt table
 gt_table
