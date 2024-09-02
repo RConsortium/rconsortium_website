@@ -89,15 +89,17 @@ The business of the foundation is managed by its Board of Directors, composed of
 
 
 <div class="profile-cards">
+
 <div class="profile-card">
 <img class="pic" src="./images/Mehar.webp" alt="Profile Image 1">
 <h2>Mehar Singh</h2>
 <h4>PROCOGIA (SILVER MEMBER REPRESENTATIVE)(R CONSORTIUM CHAIR)</h4>
 <p>Mehar founded ProCogia a decade ago to offer more value and better service to clients than traditional consulting firms. Mehar has a background in Electrical Engineering and has worked primarily in consulting, technology and telecom sectors. He has held board positions at R Consortium, University of Washington, Society of Punjabi Engineers & Technologists to name a few. He is passionate about open-source technology, developing innovative products, skydiving and sea fishing.</p>
 <div class="social-links">
-<a target="_blank" class="tmm_sociallink" href="https://ca.linkedin.com/in/meharpratapsingh" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://ca.linkedin.com/in/meharpratapsingh" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/David.webp" alt="Profile Image 2">
 <h2>David Smith</h2>
@@ -105,11 +107,13 @@ The business of the foundation is managed by its Board of Directors, composed of
 <p>David Smith is a developer advocate at Microsoft, with a focus on data science and the R community. With a background in Statistics, he writes regularly about applications of R at the Revolutions blog (blog.revolutionanalytics.com), and is a co-author of “Introduction to R”, the R manual. Follow David on Twitter as @revodavid</p>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/revodavid" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/James.webp" alt="Profile Image 3">
 <h2>James Black</h2>
 <h4>ROCHE (PLATINUM MEMBER)</h4>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Michael.webp" alt="Profile Image 4">
 <h2>Michael Lawrence</h2>
@@ -117,113 +121,128 @@ The business of the foundation is managed by its Board of Directors, composed of
 <p>Michael is a scientist in the Bioinformatics and Computational Biology department at Genentech Research and Early Development (gRED), based in South San Francisco, CA. There he leads the development of tools, applications and environments for analyzing genomic data using R and Bioconductor. His research interests are in visualization, software interfacing, and genomic data manipulation. Michael is a member of the Bioconductor Technical Advisory Board, the R Core team, and the R Foundation Board.</p>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/lawremi" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Henrik.webp" alt="Profile Image 5">
 <h2>Henrik Bengtsson</h2>
 <h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC CHAIRPERSON)</h4>
 <p>Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member of the R Foundation, with a background in Computer Science and Mathematical Statistics. He has used R since 2000 for applied research in statistics and bioinformatics. He develops statistical methods, scientific computational software, and programming tools. His work includes R packages for science (e.g. matrixStats, and PSCBS, aroma.affymetrix) and software development (e.g. future, profmem, startup, and R.rsp).</p>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Hadley.webp" alt="Profile Image 6">
 <h2>Hadley Wickham</h2>
 <h4>POSIT (PLATINUM MEMBER)</h4>
 <p>Hadley is Chief Scientist at RStudio, a member of the R Foundation, and Adjunct Professor at Stanford University and the University of Auckland. He builds tools (both computational and cognitive) to make data science easier, faster, and more fun. His work includes packages for data science (the tidyverse: including ggplot2, dplyr, tidyr, purrr, and readr) and principled software development (roxygen2, testthat, devtools). He is also a writer, educator, and speaker promoting the use of R for data science. Learn more on his website, http://hadley.nz.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hadleywickham" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hadleywickham" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/hadleywickham" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 <a target="_blank" class="tmm_sociallink" href="http://hadley.nz/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/hadley" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://github.com/hadley" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Lander.webp" alt="Profile Image 7">
 <h2>Jared Lander</h2>
 <h4>LANDER ANALYTICS (SILVER MEMBER REPRESENTATIVE)</h4>
 <p>Jared P. Lander is Chief Data Scientist of Lander Analytics, the Organizer of the New York Open Statistical Programming Meetup and the New York R Conference and R in Government Conference, an Adjunct Professor at Columbia Business School, and a Visiting Lecturer at Princeton University. He is the author of R for Everyone (now in its second edition), a book about R Programming geared toward Data Scientists and Non-Statisticians alike. Jared is a frequent speaker at conferences, universities and meetups around the world.</p>
-<a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a>
-<a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Ben.webp" alt="Profile Image 8">
 <h2>Benjamin Arancibia</h2>
 <h4>GSK (SILVER MEMBER REPRESENTATIVE)</h4>
 <p>Benjamin Arancibia, Director of Data Science, focuses on enabling the use of R in GSK Biostatistics. He builds tools to make data science fun, reproducible, and helps advocate for the use of R in the department. Ben is passionate about making sure that teams have the right support when using R in production analyses and helping teams learn while delivering. He is an advocate of R and open source technologies internally at GSK and externally speaking about lived experiences at various conferences.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bcarancibia/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bcarancibia/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 <a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Mike.webp" alt="Profile Image 9">
 <h2>Mike K Smith</h2>
 <h4>PFIZER (SILVER MEMBER REPRESENTATIVE)</h4>
 <p>Mike K Smith, Lead, R Centre of Excellence and Senior Director Statistics at Pfizer. Mike is a professional geek, helping colleagues from the business lines understand the power of reproducibility, automation and writing good code and helping the IT department understand the needs of the business lines. He is passionate about driving business outcomes through primary research, data and alternative data solutions as well as statistical analysis.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/mikeksmith/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/mikeksmith/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Uday.webp" alt="Profile Image 10">
 <h2>Uday Preetham Palukuru</h2>
 <h4>MERCK (SILVER MEMBER REPRESENTATIVE)</h4>
 <p>Uday Preetham Palukuru is a Standards lead at Merck &Co., providing leadership to develop and maintain global standards for ADaM implementation, R package development, Open Source package qualification, Computing Platform enhancements and compliance management tools. He has contributed to various internal and external R packages and is a member of the R Validation Hub Executive committee. He actively promotes the use of open source software in clinical trial data analysis via forums and paper publications. He has a PhD in Bioengineering from Temple University.</p>
 <div class="social-links">
-<a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 </div>
+
 <div class="profile-card">
 <h2>Philip Brown</h2>
 <h4>BIOGEN (PLATINUM MEMBER)</h4>
 </div>
 </div>
+
 <div>
 <h2><strong>Infrastructure Steering Committee</strong></h2>
 <p>An Infrastructure Steering Committee (ISC) is responsible for the identification, selection, and oversight of <a href="#">infrastructure projects</a>, as well as directing best practices and community leadership within the R community. Voting representatives are appointed by the Platinum and Silver members of the R Consortium, as well as an elected member from the Silver membership class and the project leads for all <a href="https://wiki.r-consortium.org/view/Top_Level_Projects">top level projects</a> as directed in the <a href="#">ISC Charter</a>.</p>
 </div>
+
 <div class="profile-cards">
+
 <div class="profile-card">
 <img class="pic" src="./images/Henrik.webp" alt="Profile Image 11">
 <h2>Henrik Bengtsson</h2>
 <h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC CHAIRPERSON)</h4>
 <p>Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member of the R Foundation, with a background in Computer Science and Mathematical Statistics.</p>
 <div class="social-links">
-<a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 </div>
 <div class="profile-card">
 <img class="pic" src="./images/Yanina.webp" alt="Profile Image 12">
 <h2>Yanina Bellini Saibene</h2>
 <h4>R-LADIES</h4>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/yabellini?miniProfileUrn=urnlifs_miniProfileACoAAAH31g8B4liq53DhzTsRVsft6OZXuLCUeOw&amp;lipi=urnlipaged_flagship3_search_srp_all91xi146nSyWPu5aJWjXPEg" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/yabellini/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Mark.webp" alt="Profile Image 13">
 <h2>Mark Bynens</h2>
 <h4>JOHNSON & JOHNSON (SILVER MEMBER)</h4>
 <p>Mark Bynens serves as the Director and Head of Scientific Computing Operations (SCO) within the Statistics & Decision Sciences (SDS) sector of Global Development at Johnson & Johnson R&D. With a distinguished career spanning over 19 years in the industry, Mark joined Johnson & Johnson as a full-time employee in 2016. In his pivotal role, he leads his team with dedication and expertise, holding responsibility and accountability for a broad range of critical operations. These include change management, project management, and the comprehensive management of software applications designed for statistical evaluation or business processes. Mark’s leadership extends to spearheading in-classroom and e-learning education initiatives, fostering knowledge sharing, overseeing software/application acquisition, and managing high-performance computing for in-depth data evaluation, simulations, and statistical research. His team is notably engaged in several R platforms, encompassing both non-HPC and HPC (high-performance computing) environments, where they deliver innovative solutions that significantly benefit the business. Previously, Mark was the business lead for the custom-built GxP SCE (statistical computing environment) for releases 1 and 2 at Johnson & Johnson. This project involved a custom-built R-ecosystem, containerized to include Shiny publishing capabilities. His contributions to the field are recognized through his role as one of the main authors of the SCE White Paper, underlining his commitment to advancing statistical computing within the pharmaceutical industry. Through his visionary leadership and technical expertise, Mark Bynens continues to drive significant advancements in scientific computing operations at Johnson & Johnson R&D.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bynens-mark-8399685/" title="LinkedIn"><img decoding="async" alt="LinkedIn" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bynens-mark-8399685/" title="LinkedIn"><img decoding="async" alt="LinkedIn" src="./images/linkedin.webp"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Gabor.webp" alt="Profile Image 14">
 <h2>Gábor Csárdi</h2>
 <h4>R-HUB PROJECT LEAD (VOTING MEMBER)</h4>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Michael-Helbraun.webp" alt="Profile Image 15">
 <h2>Michael Helbraun</h2>
 <h4>MICROSOFT (PLATINUM MEMBER)</h4>
 <p>Michael Helbraun is a Principal Architect for Data & AI on Microsoft's Digital Transformation Partnership team, where he works with strategic customers across Latin America. He holds a BS in Geological Engineering from the Colorado School of Mines and an MBA focused on Economics and Operations from the University of Colorado at Boulder.</p>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Nicholas-Masel.webp" alt="Profile Image 16">
 <h2>Nicholas Masel</h2>
 <h4>JANSSEN R&D (SILVER MEMBER)</h4>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nicholasmasel/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nicholasmasel/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Eric.webp" alt="Profile Image 17">
 <h2>Eric Milliman</h2>
 <h4>BIOGEN (PLATINUM MEMBER)</h4>
 <p>Eric is a data scientist in the Global Analytics and Data Sciences department at Biogen, based in Cambridge, MA.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/ericmilliman/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/ericmilliman/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Joseph.webp" alt="Profile Image 18">
 <h2>Joseph Rickert</h2>
@@ -231,6 +250,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <p>Joseph, RStudio’s “Ambassador at Large” to the R Community and editor of the R Views blog, has been focused on promoting the R language and supporting the R Community since he joined Revolution Analytics in 2009. In addition to serving on the R Consortium’s Board of Directors, he is a member of the ISC and administers the R User Group Support Program. In the past, Joseph held technical, marketing, and sales positions with several prominent Silicon Valley startups including, Sytek Inc., Alantec, Parallan Computer and Scotts Valley Instruments as well as with larger organizations including CSC, Agilent Technologies and Microsoft. Joseph is a member of the ASA, and a Life Member of the IEEE. He has experience working with standards committees including the IEEE 802.3 CSMA/CD Working Group and the IDEMA PRML technical committee. Joseph studied Classics and Mathematics as an undergraduate at Franklin & Marshall College and earned an M.A. in Humanities and an M.S. in Computational Statistics from the California State University. You can follow him  on Twitter as @RStudioJoe.</p>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/tobias-hofmann.png" alt="Profile Image 18">
 <h2>Tobias Hofmann</h2>
@@ -249,7 +269,7 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h2>Nan Xiao</h2>
 <h4>MERCK (SILVER MEMBER)</h4>
 <p>Nan is a statistician from Merck & Co., Inc. working in the Methodology Research group in the Biostatistics and Research Decision Sciences (BARDS) department.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nanxstats/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nanxstats/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 
 <div class="profile-card">
@@ -257,16 +277,18 @@ The business of the foundation is managed by its Board of Directors, composed of
 <h2>Hannah Frick</h2>
 <h4>POSIT (PLATINUM MEMBER)</h4>
 <p>Software engineer on the tidymodels team at Posit. Co-founder of R-Ladies Global and former co-organiser of the London chapter. </p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hannah-frick/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hannah-frick/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://www.frick.ws/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/website.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/hfrick" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a>
-
+<a target="_blank" class="tmm_sociallink" href="https://github.com/hfrick" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
 </div>
+
 ## Leadership
 As a [project operating within the Linux Foundation](http://collabprojects.linuxfoundation.org), the project staff from the Linux Foundation focuses on project growth and health, ensuring a vendor-neutral environment for collaboration.
+
 <div class="profile-cards">
+
 <div class="profile-card">
 <img class="pic" src="./images/Joseph.webp" alt="Profile Image 21">
 <h2>Joseph Rickert</h2>
@@ -274,14 +296,16 @@ As a [project operating within the Linux Foundation](http://collabprojects.linux
 <p>Joseph has been active in the R Community since he joined Revolution Analytics in 2009 and has held prominent, community-facing positions at both the R Consortium and RStudio (now renamed posit). He is deeply involved in multiple R Consortium technical working groups, is an organizer of the Bay Area useR Group (BARUG), and has been on the R/Medicine conference organizing committee since the first conference in 2018. Joseph served on the R Consortium Board of Directors from August 2016 to July 2023, serving as Chair from 2020.</p>
 <a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter"><img decoding="async" alt="Twitter" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/twitter.png"></a>
 </div>
+
 <div class="profile-card">
 <img class="pic" src="./images/Amanda.webp" alt="Profile Image 22">
 <h2>Dr. Amanda Martin</h2>
 <h4>DIRECTOR OF PROGRAM MANAGEMENT</h4>
 <p>Dr. Amanda Martin is a Director of Program Management for the R Consortium. Amanda has taught and managed technical projects since 2005 with the single desire to improve the entire world.</p>
 <div class="social-links">
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/dr-amanda-martin-69350067/" title=""><img decoding="async" alt="" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/linkedin.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/hythloda" title="GitHub"><img decoding="async" alt="GitHub" src="https://www.r-consortium.org/wp-content/plugins/team-members-pro/img/links/customlink.png"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/dr-amanda-martin-69350067/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
+<a target="_blank" class="tmm_sociallink" href="https://github.com/hythloda" title="GitHub"><img decoding="async" alt="GitHub" src="./images/github.png"></a>
 </div>
+
 </div>
 </div>
