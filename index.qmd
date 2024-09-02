@@ -67,7 +67,7 @@ format: html
   color: black;
 }
 .joining-r-section {
-  background-image: url('joining-r-consoritum-bg.webp');
+  background-image: url('/images/joining-r-consoritum-bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,20 +97,26 @@ format: html
 
 
 <div class="swiper-container">
+
 <!-- swiper slides -->
+
 <div class="swiper-wrapper">
+
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2>R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.</h2>
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
+
 <div class="swiper-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/3rq6Gzgz/IMG-5390-1024x716-1.webp');">
 <h2>Find your local R user group Network with fellow statisticians and learn from your peers. </h2>
 <button class="blueButton"><a href="https://www.meetup.com/pro/r-user-groups/" style="text-decoration: none;">FIND A USER GROUP</a></button>
 </div>
+
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/K8SHqLpN/rcon-slide-bg2.webp);">
 <h2>R Consortium: Supporting the R community, the R Foundation and organizations developing, maintaining and distributing R software.
 </h2>
 </div>
+
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/Sx6twsw-p/rcon-slide-bg2b.webp);">
 <h2>Find your local R user group Network with fellow statisticians and learn from your peers. </h2>
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
@@ -129,13 +135,16 @@ format: html
 </div>
 
 <!-- !swiper slides -->
+
 <!-- next / prev arrows -->
 <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>
 <!-- !next / prev arrows -->
+
 <!-- pagination dots -->
 <div class="swiper-pagination"></div>
 <!-- !pagination dots -->
+
 </div>
 
 

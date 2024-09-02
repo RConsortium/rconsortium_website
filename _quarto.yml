@@ -8,7 +8,7 @@ website:
   navbar:
     pinned: true
     background: light
-    logo: RConsortium_Horizontal_Pantone.webp
+    logo: /images/RConsortium_Horizontal_Pantone.webp
     title: false
     logo-alt: "R Consortium logo"
     right:
