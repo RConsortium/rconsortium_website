@@ -1,0 +1,35 @@
+---
+title: "Tidy Finance and Accessing Financial Data"
+---
+
+<iframe title="Tidy Finance and Accessing Financial Data" src="https://www.youtube.com/embed/7jtX9Li_Ua4?feature=oembed&amp;enablejsapi=1&amp;origin=https://www.r-consortium.org" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-aspectratio="0.562962962962963"></iframe>
+
+**Slide deck available:**
+
+[Tidy Finance and Accessing Financial Data](slides.pdf)
+
+## **Summary**
+
+This webinar focuses on Tidy Finance and accessing financial data. Tidy Finance is an opinionated approach to empirical research in financial economics. It provided a fully transparent, open source code base in R and Python. The website provides the tools for students to learn about empirical applications based on a fully transparent code base and for instructors the materials for teaching the importance of reproducible research using tidy principles.
+
+Christoph Scheuch introduces Tidy Finance and illustrates the underlying principles. The webinar then focuses on accessing and managing financial data using R. It shows how to import different open source and proprietary data sets and organize them in a database.
+
+## Agenda:
+
+-   Introduction to Tidy Finance
+-   Accessing and Managing Financial Data
+-   WRDS & Other Data Providers
+-   Q&A Session
+
+## **Speaker**
+
+![](images/pasted image 0.png)
+
+> Christoph Scheuch is the Head of Artificial Intelligence at the social trading platform wikifolio Financial Technologies AG. He is responsible for researching, designing, and prototyping of cutting-edge AI-driven products using R and Python. Before his focus on AI, he was responsible for product management and business intelligence at wikifolio Financial Technologies AG and an external lecturer at the Vienna University of Economics and Business, where he taught finance students how to manage empirical projects
+
+
+## The R Adoption Series
+
+This is a series of webinars focused on the adoption of R.  Each session will include a case study and often include panels or discussions to enable those starting their journey to ask questions.
+
+R Consortium will keep this page updated with information on future webinars in the R Adoption series. If there is some information that you are looking for specifically and you don’t see it here, feel free to email us at info@r-consortium.org.
