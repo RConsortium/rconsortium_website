@@ -1,0 +1,64 @@
+---
+title: "Tidy Finance Webinar Series"
+image: images/tiny-finance-main-image.png
+---
+
+[](images/tiny-finance-main-image.png)
+
+[Christoph Scheuch](https://www.linkedin.com/in/christophscheuch/?originalSubdomain=at) is an independent data science and business intelligence expert. He co-created and maintains the [Tidy Finance](https://www.tidy-finance.org/) project, a transparent, open source approach to research in financial economics. Alongside contributing to Tidy Finance, its maintainers have published in leading academic journals, including the Journal of Finance, Journal of Financial Economics, Review of Finance, and Journal of Econometrics. Christoph previously held the roles of Head of Artificial Intelligence, Director of Product, and Head of BI & Data Science at the social trading platform wikifolio.com. He was an external lecturer at the Vienna University of Economics and Business (WU), where he also obtained his PhD in finance as part of the Vienna Graduate School of Finance (VGSF).
+
+## Optimize Portfolios using the Markowitz Model
+
+Date: September 4th, 2024 at 12:00 pm ET
+
+### Register here: [https://zoom.us/webinar/register/WN_411RQvESQimTHWRY-k_ySA](https://zoom.us/webinar/register/WN_411RQvESQimTHWRY-k_ySA)
+
+This webinar introduces Modern Portfolio Theory and the importance of mean-variance analysis in finance. It covers the mathematics of portfolio optimization, expected returns, variances, and covariances. Participants will learn to construct efficient frontiers and implement the Markowitz model in R, from loading return data to optimizing portfolios and interpreting risk-return trade-offs.
+
+Agenda:
+
+* Introduction to modern portfolio theory
+* Understanding the mathematics of portfolio optimization
+* Implementing the Markowitz model in R
+
+## Evaluate Performance using the Capital Asset Pricing Model
+
+Date: October 9th, 2024 at 12:00 pm ET
+
+### Register here: [https://zoom.us/webinar/register/WN_5vg15jweT3u-46MGkgk6lw](https://zoom.us/webinar/register/WN_5vg15jweT3u-46MGkgk6lw)
+
+This webinar covers the Capital Asset Pricing Model (CAPM), starting with its intuitive derivation and its importance in finance. Participants will gain an understanding of Alpha and Beta and their roles in performance assessment. The webinar also includes an overview of popular CAPM extensions. Participants will learn to calculate Alpha and Beta in R with a step-by-step guide, from loading return data to estimating CAPM and interpreting the estimation results.
+
+Agenda:
+
+* Introduction to the CAPM
+* Understanding Alpha and Beta
+* Calculating Alpha and Beta in R
+
+## Analyze Companies using Financial Ratios
+
+Date: November 6th, 2024 at 12:00 pm ET
+
+### Register here: [https://zoom.us/webinar/register/WN_BjhdZbAjSVuZHZEGhTZb7g](https://zoom.us/webinar/register/WN_BjhdZbAjSVuZHZEGhTZb7g)
+
+This webinar provides an overview of financial ratios and their importance in financial analysis. It covers categories such as liquidity, profitability, leverage, and efficiency. Participants will learn about financial statements, including the balance sheet, income statement, statement of cash flows, and statement of shareholders’ equity, with real-world examples. The webinar includes a step-by-step guide on calculating and interpreting financial ratios in R, from loading financial statement data to computing and interpreting key ratios.
+
+Agenda:
+
+* Introduction to financial ratios
+* Understanding financial statements
+* Calculating and interpreting financial ratios in R
+
+## Value Companies using Discounted Cash Flow Analysis
+
+December 4th, 2024 at 12:00 pm ET
+
+### Register here: [https://zoom.us/webinar/register/WN_IgpNWpN0TRKgAkwvVWylww](https://zoom.us/webinar/register/WN_IgpNWpN0TRKgAkwvVWylww)
+
+Summary: This webinar provides an overview of company valuation methods with a focus on discounted cash flow (DFC) analysis. Participants will gain an understanding of DCF analysis and its components: forecasted cash flows, terminal value, and discount rate. The webinar includes steps to perform a DCF analysis and a guide to implementing DCF in R, from loading financial statement data to executing the analysis. The webinar concludes with interpreting the valuation results, offering practical insights into company valuation techniques.
+
+Agenda:
+
+* Introduction to company valuation
+* Understanding DCF
+* Implementing DCF in R
