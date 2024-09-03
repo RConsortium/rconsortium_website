@@ -21,36 +21,59 @@ df <- data.frame(
     "[LatinR 2024](https://latinr.org/en/)",
     "[Value Companies using Discounted Cash Flow Analysis](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#value-companies-using-discounted-cash-flow-analysis)"
   ),
-  StartDate = c("Sept 4, 2024", "Sept 4, 2024", "Oct 9, 2024", "Oct 9, 2024", "Oct 29, 2024", "Nov 6, 2024", "Nov 18, 2024", "Dec 4, 2024"),
-  end_date = c("Sept 4, 2024", "Sept 5, 2024", "Oct 9, 2024", "Oct 10, 2024", "Oct 30, 2024", "Nov 6, 2024", "Nov 22, 2024", "Dec 4, 2024"),
-    location = c("Virtual", "Brighton, UK", "Virtual", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual", "Virtual", "Virtual"),
-  type = c("Webinar", "Conference", "Webinar", "Conference", "Conference","Webinar", "Conference", "Webinar"),
+  dates = c("Sept 4, 2024", "Sept 4-5, 2024", "Oct 9, 2024", "Oct 9-10, 2024",
+            "Oct 29-30, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
+  location = c("Virtual", "Brighton, UK", "Virtual", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual", "Virtual", "Virtual"),
+  icon = c("Webinar", "Conference", "Webinar", "Conference", "Conference","Webinar", "Conference", "Webinar"),
+  Type = c("Webinar", "Conference", "Webinar",  "Conference", "Conference","Webinar", "Conference", "Webinar"),
   
   stringsAsFactors = FALSE
+  
 )
+
+df <- df |>
+  dplyr::filter(icon %in% c("Conference", "Webinar")) |>
+  dplyr::mutate(
+    icon = ifelse(icon == "Webinar", "chalkboard-user", "handshake")
+  ) 
+
+
 
 # Load necessary libraries
 library(gt)
 
 # Create a gt table and use fmt_markdown() to render HTML links
 gt_table <- gt(df) %>%
+  fmt_icon(columns = icon) %>%
+
   cols_label(
     Title = "Title",
-    StartDate = "Start Date",
-    end_date = "End Date",
+    dates = "Dates",
     location = "Location",
-    type  = "Type",
+    icon  = "Type",
 
   ) %>%
+  
+
   tab_options(
     heading.background.color = "lightblue",
     column_labels.background.color = "lightblue",
     column_labels.font.weight = "bold",
+    table.font.size = "14px",
+    column_labels.font.size = "16px"
     
    
   ) %>%
+  opt_horizontal_padding(scale = 3)  %>%
+  opt_vertical_padding(scale = 2) %>%
+
+#
+
+  cols_merge(columns = c(Type, icon), 
+             pattern="{2}    {1}") %>%
 # Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
+
 
 # Print the gt table
 gt_table
@@ -62,9 +85,10 @@ gt_table
 
 ___
 
-
 ```{r}
-RecentEvents <- df <- data.frame(Title = c(
+# Sample data frame with HTML links
+df <- data.frame(
+  Title = c(
     '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>', 
     '<a href="https://posit.co/conference/" target="_blank" rel="noreferrer noopener">posit::conf 2024</a>', 
     'Henrick Bengtsson invited to speak at the Swiss Re Conference', 
@@ -82,12 +106,8 @@ RecentEvents <- df <- data.frame(Title = c(
     '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">R/Insurance Series: From programming in R to putting R into production</a>',
     '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">R/Insurance Series:&nbsp;From Excel to Programming in R</a>',
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
-
-
-
-    ),
-
-    Dates = c(
+  ),
+  dates = c(
         'July 8-11, 2024', 
         'August 12-14, 2024', 
         'June 25, 2024 – 7:00 AM ET',
@@ -107,8 +127,7 @@ RecentEvents <- df <- data.frame(Title = c(
         'January 8, 2024'
       
         ),
-
-    Location = c(
+  location = c(
         'Salzburg, Austria',
         'Seattle, WA, USA', 
         'Virtual',
@@ -128,11 +147,57 @@ RecentEvents <- df <- data.frame(Title = c(
         'Virtual'
 
         ),
-    Type = c('Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
-    'Webinar', 'Webinar', 'Webinar'))
-#view data frame
-knitr::kable(df[1:17,], )
+    'Webinar', 'Webinar', 'Webinar'),
+  icon = c('Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+    'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
+    'Webinar', 'Webinar', 'Webinar'),
+  
+  stringsAsFactors = FALSE
+)
+
+
+df <- df |>
+  dplyr::filter(icon %in% c("Conference", "Webinar")) |>
+  dplyr::mutate(
+    icon = ifelse(icon == "Webinar", "chalkboard-user", "handshake")
+  ) 
+
+# Load necessary libraries
+library(gt)
+
+# Create a gt table and use fmt_markdown() to render HTML links
+gt_table <- gt(df) %>%
+  
+
+  cols_label(
+    Title = "Title",
+    dates = "Dates",
+    location = "Location",
+    Type  = "Type",
+
+  ) %>%
+  fmt_icon(columns =c(icon)) %>%
+  cols_merge(columns = c(Type, icon), 
+             pattern="{2}    {1}") %>%
+  tab_options(
+    heading.background.color = "grey",
+    column_labels.background.color = "grey",
+    column_labels.font.weight = "bold",
+    table.font.size = "14px",
+    column_labels.font.size = "16px"
+    
+   
+  ) %>%
+  opt_horizontal_padding(scale = 3)  %>%
+  opt_vertical_padding(scale = 2) %>%
+# Render the 'Link' column as HTML using fmt_markdown()
+  fmt_markdown(columns = c(Title))
+
+# Print the gt table
+gt_table
+
 ```
 
 
