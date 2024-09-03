@@ -42,6 +42,13 @@ gt_table <- gt(df) %>%
     type  = "Type",
 
   ) %>%
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "lightblue",
+    column_labels.font.weight = "bold",
+    
+   
+  ) %>%
 # Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
 
