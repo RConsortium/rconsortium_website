@@ -24,17 +24,18 @@ df <- data.frame(
   dates = c("Sept 4, 2024", "Sept 4-5, 2024", "Oct 9, 2024", "Oct 9-10, 2024",
             "Oct 29-30, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
   location = c("Virtual", "Brighton, UK", "Virtual", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual", "Virtual", "Virtual"),
-  type = c("Webinar", "Conference", "Webinar", "Conference", "Conference","Webinar", "Conference", "Webinar"),
+  icon = c("Webinar", "Conference", "Webinar", "Conference", "Conference","Webinar", "Conference", "Webinar"),
+  Type = c("Webinar", "Conference", "Webinar",  "Conference", "Conference","Webinar", "Conference", "Webinar"),
   
   stringsAsFactors = FALSE
   
 )
 
-#df <- df |>
- # dplyr::filter(type %in% c("Conference", "Webinar")) |>
- # dplyr::mutate(
-#    type = ifelse(type == "Webinar", "chalkboard-user", "handshake")
-#  ) 
+df <- df |>
+  dplyr::filter(icon %in% c("Conference", "Webinar")) |>
+  dplyr::mutate(
+    icon = ifelse(icon == "Webinar", "chalkboard-user", "handshake")
+  ) 
 
 
 
@@ -43,13 +44,13 @@ library(gt)
 
 # Create a gt table and use fmt_markdown() to render HTML links
 gt_table <- gt(df) %>%
- # fmt_icon(columns = type) %>%
+  fmt_icon(columns = icon) %>%
 
   cols_label(
     Title = "Title",
     dates = "Dates",
     location = "Location",
-    type  = "Type",
+    icon  = "Type",
 
   ) %>%
   
@@ -58,11 +59,21 @@ gt_table <- gt(df) %>%
     heading.background.color = "lightblue",
     column_labels.background.color = "lightblue",
     column_labels.font.weight = "bold",
+    table.font.size = "14px",
+    column_labels.font.size = "16px"
     
    
   ) %>%
+  opt_horizontal_padding(scale = 3)  %>%
+  opt_vertical_padding(scale = 2) %>%
+
+#
+
+  cols_merge(columns = c(Type, icon), 
+             pattern="{2}    {1}") %>%
 # Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
+
 
 # Print the gt table
 gt_table
@@ -136,12 +147,22 @@ df <- data.frame(
         'Virtual'
 
         ),
-  type = c('Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+    'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
+    'Webinar', 'Webinar', 'Webinar'),
+  icon = c('Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
   stringsAsFactors = FALSE
 )
+
+
+df <- df |>
+  dplyr::filter(icon %in% c("Conference", "Webinar")) |>
+  dplyr::mutate(
+    icon = ifelse(icon == "Webinar", "chalkboard-user", "handshake")
+  ) 
 
 # Load necessary libraries
 library(gt)
@@ -154,17 +175,23 @@ gt_table <- gt(df) %>%
     Title = "Title",
     dates = "Dates",
     location = "Location",
-    type  = "Type",
+    Type  = "Type",
 
   ) %>%
-
+  fmt_icon(columns =c(icon)) %>%
+  cols_merge(columns = c(Type, icon), 
+             pattern="{2}    {1}") %>%
   tab_options(
     heading.background.color = "grey",
     column_labels.background.color = "grey",
     column_labels.font.weight = "bold",
+    table.font.size = "14px",
+    column_labels.font.size = "16px"
     
    
   ) %>%
+  opt_horizontal_padding(scale = 3)  %>%
+  opt_vertical_padding(scale = 2) %>%
 # Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
 
