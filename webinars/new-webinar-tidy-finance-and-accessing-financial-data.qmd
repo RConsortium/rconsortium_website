@@ -4,11 +4,10 @@ title: "Tidy Finance and Accessing Financial Data"
 
 <iframe title="Tidy Finance and Accessing Financial Data" src="https://www.youtube.com/embed/7jtX9Li_Ua4?feature=oembed&amp;enablejsapi=1&amp;origin=https://www.r-consortium.org" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-aspectratio="0.562962962962963"></iframe>
 
-**Slide deck available:**
-
+## Slide deck available:
 [Tidy Finance and Accessing Financial Data](slides.pdf)
 
-## **Summary**
+## Summary
 
 This webinar focuses on Tidy Finance and accessing financial data. Tidy Finance is an opinionated approach to empirical research in financial economics. It provided a fully transparent, open source code base in R and Python. The website provides the tools for students to learn about empirical applications based on a fully transparent code base and for instructors the materials for teaching the importance of reproducible research using tidy principles.
 
@@ -21,9 +20,9 @@ Christoph Scheuch introduces Tidy Finance and illustrates the underlying princip
 -   WRDS & Other Data Providers
 -   Q&A Session
 
-## **Speaker**
+## Speaker
 
-![](images/pasted image 0.png)
+![](images/christoph-scheuch.png){width=50%}
 
 > Christoph Scheuch is the Head of Artificial Intelligence at the social trading platform wikifolio Financial Technologies AG. He is responsible for researching, designing, and prototyping of cutting-edge AI-driven products using R and Python. Before his focus on AI, he was responsible for product management and business intelligence at wikifolio Financial Technologies AG and an external lecturer at the Vienna University of Economics and Business, where he taught finance students how to manage empirical projects
 
