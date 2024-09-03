@@ -14,14 +14,17 @@ df <- data.frame(
   Title = c(
     "[Optimize Portfolios using the Markowitz Model](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#optimize-portfolios-using-the-markowitz-model)",
     "[EARL 2024](https://www.ascent.io/earl)",
+    "[Evaluate Performance using the Capital Asset Pricing Model](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#evaluate-performance-using-the-capital-asset-pricing-model)",
     "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
-    "[LatinR 2024](https://latinr.org/en/)"
+    "[Analyze Companies using Financial Ratios](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#analyze-companies-using-financial-ratios)",
+    "[LatinR 2024](https://latinr.org/en/)",
+    "[Value Companies using Discounted Cash Flow Analysis](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#value-companies-using-discounted-cash-flow-analysis)"
   ),
-  StartDate = c("Sept 4, 2024", "Sept 4, 2024", "Oct 9, 2024", "Oct 29, 2024", "Nov 18, 2024"),
-  end_date = c("Sept 4, 2024", "Sept 5, 2024", "Oct 10, 2024", "Oct 30, 2024", "Nov 22, 2024"),
-    location = c("Virtual", "Brighton, UK", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual"),
-  type = c("Webinar","Conference", "Conference", "Conference", "Conference"),
+  StartDate = c("Sept 4, 2024", "Sept 4, 2024", "Oct 9, 2024", "Oct 9, 2024", "Oct 29, 2024", "Nov 6, 2024", "Nov 18, 2024", "Dec 4, 2024"),
+  end_date = c("Sept 4, 2024", "Sept 5, 2024", "Oct 9, 2024", "Oct 10, 2024", "Oct 30, 2024", "Nov 6, 2024", "Nov 22, 2024", "Dec 4, 2024"),
+    location = c("Virtual", "Brighton, UK", "Virtual", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual", "Virtual", "Virtual"),
+  type = c("Webinar", "Conference", "Webinar", "Conference", "Conference","Webinar", "Conference", "Webinar"),
   
   stringsAsFactors = FALSE
 )
