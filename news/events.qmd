@@ -12,15 +12,16 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    "[Optimize Portfolios using the Markowitz Model](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#optimize-portfolios-using-the-markowitz-model)",
     "[EARL 2024](https://www.ascent.io/earl)",
     "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
     "[LatinR 2024](https://latinr.org/en/)"
   ),
-  StartDate = c("Sept 4, 2024", "Oct 9, 2024", "Oct 29, 2024", "Nov 18, 2024"),
-  end_date = c("Sept 5, 2024", "Oct 10, 2024", "Oct 30, 2024", "Nov 22, 2024"),
-    location = c("Brighton, UK", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual"),
-  type = c("Conference", "Conference", "Conference", "Conference"),
+  StartDate = c("Sept 4, 2024", "Sept 4, 2024", "Oct 9, 2024", "Oct 29, 2024", "Nov 18, 2024"),
+  end_date = c("Sept 4, 2024", "Sept 5, 2024", "Oct 10, 2024", "Oct 30, 2024", "Nov 22, 2024"),
+    location = c("Virtual", "Brighton, UK", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual"),
+  type = c("Webinar","Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
 )
