@@ -9,7 +9,7 @@ date: "09/06/2024"
 
 [Lina Moreno](https://www.linkedin.com/in/lina-moreno-azocar-81a5aa276/?originalSubdomain=ar), founder and organizer of the [R-Ladies Bariloche](https://www.meetup.com/es/rladies-bariloche/) chapter in Argentina, recently shared her journey with the R Consortium. A biologist focusing on evolutionary ecology, she discussed her experience building a local R community, the challenges of maintaining engagement post-pandemic, and her efforts to foster discussions on leadership and gender equity within academia. Through her work, she aims to create an inclusive space for women in data science and strengthen the R community in Bariloche.
 
-**_Please share your background and involvement with the RUGS group._**
+**Please share your background and involvement with the RUGS group.**
 
 I am a biologist working on evolutionary ecology, I did a bachelor in Sciences in another Argentinian province and then moved to Bariloche to start my PhD. (That was 16 years ago!) I spent a couple of years working in the field (I study reptiles, mainly lizards, and their adaptations to cold environments), and then I had to analyze the data. When I started my main analysis, I could only do it in R. At that time, my boss told me to start with R immediately, so I started searching online. I am doing this kind of work in my home country, so finding resources was complex. I had to work on a comparative analysis and phylogenies, which was difficult initially. However, I started studying and meeting people who taught me, which was awesome. 
 
@@ -17,7 +17,7 @@ After several years, I encountered a problem I couldn’t resolve. I turned to G
 
 ![](chapter.jpg)
 
-**_What are some challenges you have faced in organizing this group?_**
+**What are some challenges you have faced in organizing this group?**
 
 We are currently facing some difficulties as people seem unwilling to get involved. As a result, we are exploring new strategies such as combined meetups (online and in person), and together with other R-Ladies groups. We also plan to organize three or four meetups this year. Despite our efforts, we are getting discouraged by the lack of response, but we will see how it goes.
 
@@ -31,13 +31,13 @@ Last year we surveyed people on how they feel R-Ladies is contributing to their 
 
 However, we have enough data to write a paper about it. We’re also looking into the topic of leadership. We are opening our minds and exploring the possibilities of supporting the R community here in Bariloche, but it’s quite challenging at the moment.
 
-**_Can you share what the R community is like in Argentina?_** 
+**Can you share what the R community is like in Argentina?** 
 
 The field of artificial intelligence and machine learning is rapidly evolving, which greatly helps incorporate knowledge in R. The leading software used for this purpose is R and Python. R is more popular than Python, as it has been around longer and is more user-friendly. Many people from academia with expertise in machine learning are transitioning to private industries. Regarding statistical analysis in biology, tools such as the [Vegan](https://cran.r-project.org/web/packages/vegan/vegan.pdf) package and those incorporating [GAM (Generalized Additive Models)](https://m-clark.github.io/generalized-additive-models/application.html) are commonly used. Tools that can handle multiple effects simultaneously are in high demand in ecology.
 
 ![](community.jpg)
 
-**_Would you like to talk about any recent activity from the group?_**
+**Would you like to talk about any recent activity from the group?**
 
 It was exciting what happened after the conference we participated in. As women, we are trying to maintain an open community. Initially, the organizers needed to learn how to manage an open group without a leader or a head, where everyone is considered equal. The participants ranged from students to established researchers, which ignited discussions about leadership and how women and minority groups navigate the world. We are accustomed to a robust and assertive leadership style, often associated with being at the top. However, as women, we wanted a different kind of leadership. This led to discussions on creating a new type of leadership that doesn’t adhere to the traditional patriarchal model. The manuscript the group is working on currently revolves around creating a new style of leadership that focuses on nurturing individuals to become better persons, researchers, or workers. 
 
