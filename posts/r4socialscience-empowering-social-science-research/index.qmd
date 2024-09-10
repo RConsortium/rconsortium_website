@@ -1,0 +1,67 @@
+---
+title: "R4SocialScience: Empowering Social Science Research with R in India"
+description: "Dr. Mohit Garg, organizer of the R4SocialScience group in Delhi, India recently talked to the R Consortium about his experience of starting an R user group. "
+author: "R Consortium"
+image: "unnamed2.jpg"
+date: "08/27/2024"
+---
+
+[Dr. Mohit Garg](https://www.linkedin.com/in/drmohitgarg9/?trk=public_profile_browsemap&originalSubdomain=in), organizer of the [R4SocialScience](https://www.meetup.com/r4socialscience/) group in Delhi, India recently talked to the R Consortium about his experience of starting an R user group. The R4SocialScience group aims to bridge the gap between social science research and data analysis, offering support and training to academics, researchers, and industry professionals. Dr. Garg shares his experiences, the growth of the R community in India, and his plans for expanding R’s reach.
+
+![](unnamed.jpg)
+
+**Please share about your background and involvement with the RUGS group.**
+
+I’m currently working as an assistant librarian at the [Indian Institute of Technology, Delhi](https://home.iitd.ac.in/), one of the premier institutions in India.  My academic background includes a BTech in Information Technology from Guru Gobind Singh Indraprastha University followed by an MS in Librarian Information Science from the [Indian Statistical Institute](https://www.isical.ac.in/), an institution dedicated to statistics in India started by the late Professor P.C. Mahanobis. After that, I completed my PhD in Library and Information Science from IGNOU, New Delhi.
+
+My interest in R began in 2013 when I started my MS at the Indian Statistical Institute.  Since then, I have taken various courses as part of my MS program and some online courses. I became interested in R due to its open source nature and the free availability of packages for all kinds of analysis. Then, I started promoting R in the academic community. However, in 2013, there was little interest in R because the prevalent approach in India was more focused on using commercial software for data analysis.  However, in the past few years, there has been an increasing interest in R, with many workshops and government-funded events dedicated to it.
+
+I have been providing R training to professors, teachers, and research scholars, and I have also worked on web-based development using [Shiny](https://shiny.posit.co/) packages. Furthermore, we have developed a web dashboard to visualize real-time research productivity data obtained from sources like [Scopus](https://www.elsevier.com/products/scopus) through API. Recently, we completed a 12-week MOOC course on [NPTEL SWAYAM](https://swayam.gov.in/nc_details/NPTEL) platform with a focus solely on R. The course was quite popular, with 2584 learners from India joining, and 515 learners registering for the final examination. Although the course was free, participants had the option to pay for certification.
+
+**Can you share what the R community is like in India?** 
+
+I have been involved in the academic profession since 2016 and have been giving lectures and providing resource points at various institutions. I believe that there is a need to build a community focused on social sciences, especially for those who may have a limited understanding of mathematics, and statistics. The idea is to create a specific community related to social science, not just in India, but also in collaboration with other institutions. The community will cater to three main groups: those who are proficient in coding and development of R packages, those who are familiar with basic R but need further guidance, and those who are completely new to R.
+
+The community aims to provide support for those interested in social science and to make R more accessible by offering packages related to social science, basic R tutorials. One specific package gaining popularity in academia is “[biblo shiny bibliometrics](https://www.bibliometrix.org/home/),” which facilitates scientific productivity mapping using R. 
+
+![](unnamed2.jpg)
+
+We want to emphasize that R is not just a programming language, but a software for data analysis, to encourage more people to explore its potential. While both R and Python are interpreted languages, we aim to dispel the fear of programming and demonstrate how these languages can be used effectively. Although Python appears to be more widely used in the industry, there is still a growing interest in R.
+
+**What are your plans for the group going forward?**
+
+I have been teaching R for more than 10 years, and I found that researchers are interested in using R. I have identified three potential co-organizers from different regions in India to make a team of four people. We have already received a grant, and we plan to conduct training sessions in different locations across India.
+
+I am focusing on a “train the trainer” model, where I aim to train individuals who can then carry out training sessions in their respective regions. India has over 50,000 colleges and around 1,200 universities, all involved in significant research and analysis activities. We also aim to have dedicated R trainers in all districts in India by 2026.
+
+![](unnamed3.jpg)
+
+Our approach involves dividing the country into five zones, followed by state-wise and district-wise planning. We are not heavily reliant on industry support, as our activities are primarily related to academia and research. 
+
+We plan to charge a nominal registration fee, which would cover expenses such as food and refreshment. We are hoping to minimize travel expenses, as they can be quite costly. But we will explore some way to fund the travel and accommodation expenses. We have hosted a one day workshop on “[Doing Research using R](https://x.com/RConsortium/status/1808219594232156479)” at Galgotias University.  
+
+![](unnamed4.jpg)
+
+I am currently focusing on building a community and providing training sessions. I have noticed that online sessions may not be as effective as I had hoped, as participants seem to encounter many problems. Therefore, I am considering conducting more in-person workshops, which I believe will help popularize the training sessions. Additionally, I aim to develop specialized packages for social science and build a dedicated team. I am optimistic about these plans. During a recent workshop, I noticed that many participants preferred simple tools for data analysis. I intend to introduce such tools to make the training more accessible and user-friendly for participants. This is my vision for the community.
+
+![](unnamed5.jpg)
+
+**Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?**
+
+We have developed a platform utilizing the shiny and other text mining packages. This platform is still in the testing phase. The platform allows real-time data fetching from the Scopus API.
+
+For example, if I search for a faculty member, it will display the publication data such as the number of publications, H-index, citations, types of publications, sources of publication, and annual publication distribution. We can also download this data.
+
+![](unnamed6.jpg)
+
+We have also developed a word cloud based on the titles of the publications for each faculty member, processed using the TM package. This helps to infer the expertise of the professors. Furthermore, we have included a feature for identifying the H-classic, which is related to the H-index.  This platform is quite useful and efficient, especially for academic institutions. We now have the capability to download data from a specific date range as an Excel file. The data includes publication dates and the number of citations.
+
+![](unnamed7.jpg)
+
+We’re in the process of creating a full dashboard for universities or institutions. We’ve also conducted a pilot study for other institutions. We are also considering publishing this work as a research paper to increase its visibility. 
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[Learn more](../../all-projects/rugsprogram.qmd)
