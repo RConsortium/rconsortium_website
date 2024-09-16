@@ -65,6 +65,7 @@ gt(df) %>%
     
    
   ) %>%
+  cols_align(align="center", columns=c(Platinum, Silver)) %>%
   opt_horizontal_padding(scale = 3)  %>%
   opt_vertical_padding(scale = 2)
   
