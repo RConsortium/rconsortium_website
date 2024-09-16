@@ -310,7 +310,7 @@ Operations from the University of Colorado at Boulder.</p>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Nicholas-Masel.webp" alt="Profile Image 16">
+<img class="pic" src="./images/Nicholas-Masel.webp" alt="Profile Image 15">
 <h2>Nicholas Masel</h2>
 <h4>JANSSEN R&D (SILVER MEMBER)</h4>
 <a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nicholasmasel/" title="">
@@ -318,7 +318,7 @@ Operations from the University of Colorado at Boulder.</p>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Eric.webp" alt="Profile Image 17">
+<img class="pic" src="./images/Eric.webp" alt="Profile Image 16">
 <h2>Eric Milliman</h2>
 <h4>BIOGEN (PLATINUM MEMBER)</h4>
 <p>Eric is a data scientist in the Global Analytics and Data Sciences department at Biogen, 
@@ -328,27 +328,7 @@ based in Cambridge, MA.</p>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Joseph.webp" alt="Profile Image 18">
-<h2>Joseph Rickert</h2>
-<h4>R USER GROUP SUPPORT PROJECT LEAD (VOTING MEMBER)</h4>
-<p>Joseph, RStudio’s “Ambassador at Large” to the R Community and editor of the R Views blog, 
-has been focused on promoting the R language and supporting the R Community since he joined 
-Revolution Analytics in 2009. In addition to serving on the R Consortium’s Board of Directors, 
-he is a member of the ISC and administers the R User Group Support Program. In the past, Joseph 
-held technical, marketing, and sales positions with several prominent Silicon Valley startups 
-including, Sytek Inc., Alantec, Parallan Computer and Scotts Valley Instruments as well as 
-with larger organizations including CSC, Agilent Technologies and Microsoft. Joseph is a 
-member of the ASA, and a Life Member of the IEEE. He has experience working with standards 
-committees including the IEEE 802.3 CSMA/CD Working Group and the IDEMA PRML technical committee. 
-Joseph studied Classics and Mathematics as an undergraduate at Franklin & Marshall College 
-and earned an M.A. in Humanities and an M.S. in Computational Statistics from the California 
-State University. You can follow him  on Twitter as @RStudioJoe.</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter">
-<img decoding="async" alt="Twitter" src="./images/x.png"></a>
-</div>
-
-<div class="profile-card">
-<img class="pic" src="./images/tobias-hofmann.png" alt="Profile Image 18">
+<img class="pic" src="./images/tobias-hofmann.png" alt="Profile Image 17">
 <h2>Tobias Hofmann</h2>
 <h4>ROCHE (PLATINUM MEMBER)</h4>
 <p>Tobias is a mathematician in the Biostatistics & Data Science Core Lab & Near Patient Care 
@@ -364,7 +344,7 @@ department of Roche Diagnostics Gmbh, based in Mannheim, Germany.</p>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Nan.webp" alt="Profile Image 20">
+<img class="pic" src="./images/Nan.webp" alt="Profile Image 18">
 <h2>Nan Xiao</h2>
 <h4>MERCK (SILVER MEMBER)</h4>
 <p>Nan is a statistician from Merck & Co., Inc. working in the Methodology Research group in the 
@@ -374,7 +354,7 @@ Biostatistics and Research Decision Sciences (BARDS) department.</p>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Hannah.webp" alt="Profile Image 20">
+<img class="pic" src="./images/Hannah.webp" alt="Profile Image 19">
 <h2>Hannah Frick</h2>
 <h4>POSIT (PLATINUM MEMBER)</h4>
 <p>Software engineer on the tidymodels team at Posit. Co-founder of R-Ladies Global and former 
@@ -394,21 +374,23 @@ environment for collaboration.
 <div class="profile-cards">
 
 <div class="profile-card">
-<img class="pic" src="./images/Joseph.webp" alt="Profile Image 21">
-<h2>Joseph Rickert</h2>
-<h4>R USER GROUP SUPPORT PROJECT LEAD (VOTING MEMBER)</h4>
-<p>Joseph has been active in the R Community since he joined Revolution Analytics in 2009 and 
-has held prominent, community-facing positions at both the R Consortium and RStudio (now renamed posit). 
-He is deeply involved in multiple R Consortium technical working groups, is an organizer of the Bay 
-Area useR Group (BARUG), and has been on the R/Medicine conference organizing committee since the 
-first conference in 2018. Joseph served on the R Consortium Board of Directors from August 2016 to 
-July 2023, serving as Chair from 2020.</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/rstudiojoe" title="Twitter">
-<img decoding="async" alt="Twitter" src="./images/x.png"></a>
+<img class="pic" src="./images/Terry.jpg" alt="Profile Image 20">
+<h2>Terry Christiani</h2>
+<h4>EXECUTIVE DIRECTOR</h4>
+<p>30 years of building content strategies to help companies acquire and 
+support customers. Successfully rebranded and created content programs 
+to help build and sell 4 different companies. Built programs to identify 
+and remedy content management issues affecting content performance. 
+Managed outreach programs to open source communities through digital, 
+hybrid, and IRL events.</p>
+<div class="social-links">
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/terry-christiani-b949a1/" title="">
+<img decoding="async" alt="" src="./images/linkedin.webp"></a>
+</div>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Amanda.webp" alt="Profile Image 22">
+<img class="pic" src="./images/Amanda.webp" alt="Profile Image 21">
 <h2>Dr. Amanda Martin</h2>
 <h4>DIRECTOR OF PROGRAM MANAGEMENT</h4>
 <p>Dr. Amanda Martin is a Director of Program Management for the R Consortium. Amanda has taught 
