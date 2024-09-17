@@ -31,7 +31,7 @@ suppressPackageStartupMessages({
 })
 
 df <- data.frame(
-  Benefits = c("One seat on the Board of Directors with full voting rights", "One seat on the ISC with full voting rights", "Elect Silver representatives to the Board and ISC ( 1 Board seat per 3 Silver members, 1 ISC seat for all Silver members )", "Company logo on R Consortium website and collateral", "R Consortium logo on company website", "Membership dues ( annually )"),
+  Benefits = c("One seat on the Board of Directors with full voting rights", "One seat on the ISC with full voting rights", "Elect Silver representatives to the Board and ISC (1 Board seat per 3 Silver members, 1 ISC seat for all Silver members)", "Company logo on R Consortium website and collateral", "R Consortium logo on company website", "Membership dues (annually)"),
   Platinum = c("Check", "Check", "None", "Check", "Check", "US$100,000"),
   Silver = c("None", "None", "Check", "Check", "Check", "100+ FTE US $25,000 <100 FTE / non-profits, universities US $10,000"),
   stringsAsFactors = FALSE
