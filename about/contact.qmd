@@ -5,17 +5,17 @@ For general inquiries, membership inquiries, or requests for access to collabora
 If you would like information on becoming a member of the R Consortium, please visit the [Join page](join.qmd) or submit an inquiry via the form below and you will be contacted soon.
 
 <form action="https://formspree.io/f/{your_form_id}" method="POST">
-  <label for="firstname">First Name</label><br>
-  <input type="text" id="firstname" name="name" required><br><br>
-  <label for="lastname">Last Name</label><br>
-  <input type="text" id="lastname" name="name" required><br><br>
+  <label style="margin-right: 1em;" for="firstname">First Name</label>
+  <input style="margin-right: 2em; margin-bottom: 1em;" type="text" id="firstname" name="name" required>
+  <label style="margin-right: 1em;" for="lastname">Last Name</label>
+  <input style="" type="text" id="lastname" name="name" required><br><br>
 
-  <label for="email">Email*</label><br>
-  <input type="email" id="email" name="_replyto" required><br><br>
-  <label for="phonenumber">Phone number</label><br>
+  <label style="margin-right: 1em; margin-bottom: 1em;" for="email">Email*</label>
+  <input style="margin-right: 2em;" type="email" id="email" name="_replyto" required>
+  <label style="margin-right: 1em;" for="phonenumber">Phone number</label>
   <input type="tel" id="phonenumber" name="_replyto" required><br><br>
 
-  <label for="inquiry">Inquiry Type:</label><br>
+  <label style="margin-right: 1em;" for="inquiry">Inquiry Type:</label>
   <select id="inquiry" name="inquiry">
     <option value="membership">Membership</option>
     <option value="sponsorship">Sponsorship</option>
@@ -28,8 +28,8 @@ If you would like information on becoming a member of the R Consortium, please v
     <option value="websiteblog">Website & Blog</option>
 
   </select><br><br>
-  <label for="message">Comments</label><br>
-  <textarea id="comments" name="message" rows="4" required></textarea><br><br>
+  <label style="margin-right: 1em;" for="message">Comments</label>
+  <textarea style="" id="comments" name="message" rows="4" required></textarea><br><br>
   <input type="submit" value="Send">
 </form>
 
