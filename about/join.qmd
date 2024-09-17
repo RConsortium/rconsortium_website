@@ -1,3 +1,10 @@
+---
+format:
+  html:
+    execute:
+    echo: false
+---
+
 # Why Join the R Consortium?
 
 The R Consortium is the mechanism for corporate entities and other organizations to support  and engage with the R Community. Membership in the R Consortium signals community leadership, a long term viewpoint, and an appreciation for the efforts of R’s open source contributors. Membership shows commitment and a desire to contribute to the community, strengthening it for the benefit of all.
@@ -17,13 +24,53 @@ The R Consortium is the mechanism for corporate entities and other organizations
 
 ## How R Consortium membership helps support the R Community
 
--   Supports the operations of the critical infrastructure that sustains the R ecosystem, anticipating challenges and planning for contingencies.  
--   Funds open-source community-driven projects that widely impact the R Community
--   Provides opportunities to form working relationships that transcend company affiliations.
--   Enables better identification and recruitment of data scientists working in R.
--   Convenes thought leadership events, summits, and panels among subject matter experts to discuss technology, standards, specifications, best practices, and collaboration
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(gt)
+})
 
-<table id="table-membership"><tbody><tr><td><h5><strong>Benefits by member class</strong></h5></td><td><h5><strong>Platinum</strong></h5></td><td><h5><strong>Silver</strong></h5></td><td></td></tr><tr><td><span>One seat on the Board of Directors with full voting rights</span></td><td><pre><span>X</span></pre></td><td></td><td></td></tr><tr><td><span>One seat on the ISC with full voting rights &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td><pre><span>X</span></pre></td><td></td><td></td></tr><tr><td><span>Elect Silver representatives to the Board and ISC ( 1 Board seat per 3 Silver members, 1 ISC seat for all Silver members )</span></td><td></td><td><pre><span>X</span></pre></td><td></td></tr><tr><td><span>Company logo on R Consortium website and collateral</span></td><td><pre><span>X</span></pre></td><td><pre><span>X</span></pre></td><td></td></tr><tr><td><span>R Consortium logo on company website</span></td><td><pre><span>X</span></pre></td><td><pre><span>X</span></pre></td><td></td></tr><tr><td><span>Membership dues ( annually )</span></td><td><p><span>US$100,000</span></p></td><td><p><span>100+ FTE US $25,000</span></p><p><span>&lt;100 FTE / non-profits, universities US $10,000</span></p></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+df <- data.frame(
+  Benefits = c("One seat on the Board of Directors with full voting rights", "One seat on the ISC with full voting rights", "Elect Silver representatives to the Board and ISC ( 1 Board seat per 3 Silver members, 1 ISC seat for all Silver members )", "Company logo on R Consortium website and collateral", "R Consortium logo on company website", "Membership dues ( annually )"),
+  Platinum = c("Check", "Check", "None", "Check", "Check", "US$100,000"),
+  Silver = c("None", "None", "Check", "Check", "Check", "100+ FTE US $25,000 <100 FTE / non-profits, universities US $10,000"),
+  stringsAsFactors = FALSE
+)
+
+
+df <- df |>
+  dplyr::mutate(
+    Platinum = case_when(Platinum == "Check" ~ "check", Platinum == "None" ~ "xmark",TRUE ~ Platinum )
+  ) |>
+  dplyr::mutate(
+    Silver = case_when(Silver == "Check" ~ "check", Silver == "None" ~ "xmark",TRUE ~ Silver )
+  ) 
+
+
+
+gt(df) %>%
+  fmt_icon(columns = c(Platinum, Silver), rows = c(1:5), fill_color = c("check" = "green", "xmark" = "darkred")) %>%
+
+  cols_label(
+    Benefits = "Benefits by member class",
+    Platinum = "Platinum",
+    Silver = "Silver"
+  ) %>%
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "lightblue",
+    column_labels.font.weight = "bold",
+    table.font.size = "14px",
+    column_labels.font.size = "16px"
+    
+   
+  ) %>%
+  cols_align(align="center", columns=c(Platinum, Silver)) %>%
+  opt_horizontal_padding(scale = 3)  %>%
+  opt_vertical_padding(scale = 2)
+  
+```
+
 
 ### Joining the R Consortium is easy.
 
