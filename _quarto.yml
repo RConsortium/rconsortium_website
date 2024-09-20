@@ -76,6 +76,8 @@ website:
         menu:
           - text: Blog
             href: blog/index.qmd
+          - text: R Views Too
+            href: rviews-too/index.qmd
           - text: Newsletter
             href: newsletters/newsletters.qmd
           - text: Annual Report 2023 (PDF)
