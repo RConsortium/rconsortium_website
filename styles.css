@@ -387,3 +387,26 @@ h2 {
 .swiper-container h2 a {
     display: none; /* Gets rid of icon */
 }
+
+.listing-categories {
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+a.listing-categories {
+  color: #565A5F;
+  text-decoration: none;
+}
+
+.thumbnail-image.card-img {
+    width: 150px;
+    height: 150px;
+}
+
+div.quarto-post .thumbnail img {
+  margin-top: 0.5em;
+  width: 100%;
+  object-fit: contain;
+}
+
