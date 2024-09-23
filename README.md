@@ -2,8 +2,6 @@
 
 This is a new Quarto-based website which updates and supersedes the original website [here:](https://www.r-consortium.org/)
 
-R Consortium Blog - [How to upload your blog post to a quarto-based website](https://rconsortium.netlify.app/blog/how_to_post.html)
-
 ## Contributing to this website
 
 This website is being built members of the R Consortium, R-Ladies Gaborone and other volunteer contributors. Thank you! If you want to help contribute to the site, please use the following workflow.
@@ -28,21 +26,21 @@ Do a pull request from your local copy to make sure branch is in sync with the w
 
 ## What is the R Consortium?
 
-The R Consortium, Inc. is a group organized under an open source governance and foundation model to support the worldwide community of users, maintainers and developers of R software. Its [members](https://rconsortium.netlify.app/members) include leading institutions and companies dedicated to the use, development and growth of R.
+The R Consortium, Inc. is a group organized under an open source governance and foundation model to support the worldwide community of users, maintainers and developers of R software. Its [members](members) include leading institutions and companies dedicated to the use, development and growth of R.
 
 The R language is an open source environment for statistical computing and graphics. The R community has enjoyed significant growth, with more than 2 million users worldwide. A broad range of organizations have adopted the R language as a data science platform, including biotech, finance, research and high technology industries. The R language is often integrated into third-party analysis, visualization and reporting applications, and runs on a wide variety of computing platforms.
 
 The R Consortium’s mission is to promote the R language and to develop the technical and social infrastructure required to support the R ecosystem and the R Community. Its activities and programs include:
 
 Promoting the growth and development of R as a leading platform for data science and statistical computing.  
-[Members of the R Consortium](https://rconsortium.netlify.app/members) are recognized as supporters of the R Project and the R community, and the R Consortium represents its members to the R community and to the media.  
+[Members of the R Consortium](members) are recognized as supporters of the R Project and the R community, and the R Consortium represents its members to the R community and to the media.  
 Supporting and collaborating with the [R Foundation](https://www.r-project.org/foundation/), the governing body of the R Project.
 
 The R Foundation maintains a permanent seat on the board of the R Consortium, as an open communication channel for R Consortium members.
 
 Funding projects to enhance R and support its users.
 
-Projects are proposed by the R community at large, and selected for funding by the Infrastructure Steering Committee. R Consortium members nominate the selection committee and provide funds for project grants with their membership dues. (Here is a list of [projects funded by the R Consortium](https://rconsortium.netlify.app/all-projects/funded-projects) to date.)
+Projects are proposed by the R community at large, and selected for funding by the Infrastructure Steering Committee. R Consortium members nominate the selection committee and provide funds for project grants with their membership dues. (Here is a list of [projects funded by the R Consortium](all-projects/funded-projects) to date.)
 
 Fostering the continued growth of R community and the data science ecosystem.
 
@@ -66,10 +64,6 @@ Mastodon: [https://fosstodon.org/@RConsortium](https://fosstodon.org/@RConsortiu
 ---
 
 ## Development Section
-
-### R Consortium Quarto-based Web Site hosted with Netlify
-
-#### Live site here: <https://rconsortium.netlify.app/>
 
 ## Running locally
 
@@ -143,5 +137,3 @@ Once finished with editing, run `git add`, `git commit`, and `git push` to the b
 Make a pull request and assign a reviewer. The reviewer should test the request locally by switching to the test branch. Run`quarto render` and `quarto preview` to view the site locally.
 
 Once the pull request is accepted, view the workflow status run in GitHub actions.
-
-Once the workflow status is completed, view the updated changes to the site on [Live Site](https://rconsortium.netlify.app)
