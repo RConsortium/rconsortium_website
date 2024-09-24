@@ -35,7 +35,7 @@
 Definitely! The R Consortium’s explicit mission is to “advance the worldwide promotion of and support for the R open source language”, and all of its activities are in support of the Open Source R Project. It will support and promote the use of Open Source R in all contents, including in commercial and business settings.
 
 
-As defined in its ~~[charter](https://www.r-consortium.org/isc-charter.r-consortium.org)~~, the projects of the Infrastructure Steering Committee will focus on support of the user base, support of developers, and general advancement of Open Source R. In particular, a commercial fork of R isn’t compatible with that mission, and won’t be a project of the R Consortium.
+As defined in its [charter](/rc-docs/ISC-Charter-08-11-23.pdf) (PDF), the projects of the Infrastructure Steering Committee will focus on support of the user base, support of developers, and general advancement of Open Source R. In particular, a commercial fork of R isn’t compatible with that mission, and won’t be a project of the R Consortium.
 
 * [Back to Top](#top)
 
@@ -44,7 +44,7 @@ As defined in its ~~[charter](https://www.r-consortium.org/isc-charter.r-consort
 ### Do I have to be an employee of a member of the R Consortium to contribute to infrastructure projects?
 
 
-No. The R Consortium [welcomes contributions of time, effort and ideas](https://www.r-consortium.org/all-projects/call-for-proposals) for all passionate users and developers of the R language.
+No. The R Consortium [welcomes contributions of time, effort and ideas](/all-projects/call-for-proposals) for all passionate users and developers of the R language.
 
 * [Back to Top](#top)
 
@@ -53,7 +53,7 @@ No. The R Consortium [welcomes contributions of time, effort and ideas](https://
 ### Was the R community consulted about the projects considered by the R Consortium?
 
 
-Yes. R Consortium projects are [proposed by the community to the Infrastructure Steering Committee](https://www.r-consortium.org/all-projects).
+Yes. R Consortium projects are [proposed by the community to the Infrastructure Steering Committee](/all-projects).
 
 * [Back to Top](#top)
 
@@ -69,7 +69,7 @@ The R Consortium will coordinate and support projects that directly benefit stak
 * Helping to scale and build out R infrastructure.
 * Maintaining an enhanced website focused on the R user community.
 
-This is not an exhaustive list. Anyone may ~~[propose a project](https://www.r-consortium.org/all-projects/submit-proposal)~~ to the Infrastructure Steering Committee, which selects and executes projects.
+This is not an exhaustive list. Anyone may [propose a project](/all-projects/submit-proposal) to the Infrastructure Steering Committee, which selects and executes projects.
 
 * [Back to Top](#top)
 
@@ -78,7 +78,7 @@ This is not an exhaustive list. Anyone may ~~[propose a project](https://www.r-c
 ### How are R Consortium projects selected and managed?
 
 
-The technical projects undertaken by the R Consortium in support of the R Project and the R Community are overseen by the [Infrastructure Steering Committee](https://www.r-consortium.org/all-projects). The ~~[charter of the Infrastructure Steering Committee](https://www.r-consortium.org/isc-charter.r-consortium.org)~~ (ISC) describes its mission, which is to advance the worldwide promotion of and support for R, and to develop projects, technical and infrastructure collaboration initiatives, support specific initiatives related to R. The membership of the ISC is drawn from the Platinum Members, Silver Members and the R Foundation. As the ISC appoints top-level projects, it is expected that those project leads will join the ISC as voting members.
+The technical projects undertaken by the R Consortium in support of the R Project and the R Community are overseen by the [Infrastructure Steering Committee](/all-projects). The [charter of the Infrastructure Steering Committee](/rc-docs/ISC-Charter-08-11-23.pdf) (ISC) describes its mission, which is to advance the worldwide promotion of and support for R, and to develop projects, technical and infrastructure collaboration initiatives, support specific initiatives related to R. The membership of the ISC is drawn from the Platinum Members, Silver Members and the R Foundation. As the ISC appoints top-level projects, it is expected that those project leads will join the ISC as voting members.
 
 * [Back to Top](#top)
 
@@ -87,10 +87,10 @@ The technical projects undertaken by the R Consortium in support of the R Projec
 ### Are the leaders of the R Consortium R users?
 
 
-The Board Members (including the Chairperson) are appointed or elected by members (depending on the membership class). There is always one board member representing the R Foundation, to provide guidance to the R Consortium in its mission to support the R Project. The remaining Board members are drawn from the membership, and represent the organizations that have joined the R Consortium. All of the [current board members](https://www.r-consortium.org/about/governance) have extensive R experience.
+The Board Members (including the Chairperson) are appointed or elected by members (depending on the membership class). There is always one board member representing the R Foundation, to provide guidance to the R Consortium in its mission to support the R Project. The remaining Board members are drawn from the membership, and represent the organizations that have joined the R Consortium. All of the [current board members](/about/governance) have extensive R experience.
 
 
-The [members of the Infrastructure Steering Committee](https://www.r-consortium.org/all-projects) are appointed by the Platinum Members, Silver Members, and the R Foundation member, and includes representatives with significant technical experience, including R package developers, community leaders, and the individuals from the R Core Group.
+The [members of the Infrastructure Steering Committee](/all-projects) are appointed by the Platinum Members, Silver Members, and the R Foundation member, and includes representatives with significant technical experience, including R package developers, community leaders, and the individuals from the R Core Group.
 
 * [Back to Top](#top)
 
@@ -99,7 +99,7 @@ The [members of the Infrastructure Steering Committee](https://www.r-consortium.
 ### Can I review the governance documents for the R Consortium?
 
 
-Yes! You can review the [by-laws for the R Consortium, Inc.](https://www.r-consortium.org/wp-content/uploads/sites/13/2019/11/R-Consortium-Bylaws-1157174-v2-Approved-11.20.19.pdf) and the ~~[charter for the Infrastructure Steering Committee](https://www.r-consortium.org/isc-charter.r-consortium.org)~~.
+Yes! You can review the [by-laws for the R Consortium, Inc.](/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf) (PDF)and the [charter for the Infrastructure Steering Committee](/rc-docs/ISC-Charter-08-11-23.pdf) (PDF).
 
 * [Back to Top](#top)
 
@@ -108,10 +108,10 @@ Yes! You can review the [by-laws for the R Consortium, Inc.](https://www.r-conso
 ### How is the R Consortium governed?
 
 
-The R Consortium is governed by the R Consortium Board of Directors, which is made up of representatives determined by its members. (Members of the board are elected or appointed depending on membership levels; for details please see the [by-laws](https://www.r-consortium.org/wp-content/uploads/sites/13/2019/11/R-Consortium-Bylaws-1157174-v2-Approved-11.20.19.pdf).) The Board meets regularly to manage the business of the Consortium. Meetings are led by the Chairperson of the R Consortium, a rotating position held by a board member elected by the Board as a whole.
+The R Consortium is governed by the R Consortium Board of Directors, which is made up of representatives determined by its members. (Members of the board are elected or appointed depending on membership levels; for details please see the [by-laws](nt/uploads/sites/13/2019/11/R-Consortium-Bylaws-1157174-v2-Approved-11.20.19.pdf).) The Board meets regularly to manage the business of the Consortium. Meetings are led by the Chairperson of the R Consortium, a rotating position held by a board member elected by the Board as a whole.
 
 
-The technical projects undertaken by the R Consortium in support of the R Project and the R Community are overseen by the [Infrastructure Steering Committee](https://www.r-consortium.org/all-projects).
+The technical projects undertaken by the R Consortium in support of the R Project and the R Community are overseen by the [Infrastructure Steering Committee](/all-projects).
 
 * [Back to Top](#top)
 
@@ -120,7 +120,7 @@ The technical projects undertaken by the R Consortium in support of the R Projec
 ### Are membership dues tax-deductible?
 
 
-The R Consortium is a US-based 501(c)6 non-profit organization. Dues are not tax-deductible as charitable donations by individuals, but under [US IRS rules](https://www.r-consortium.org/bylaws.r-consortium.org) may be deductible as trade or business expenses.
+The R Consortium is a US-based 501(c)6 non-profit organization. Dues are not tax-deductible as charitable donations by individuals, but under [US IRS rules](rc-docs/R-Consortium-Bylaws-7-9-2024.pdf) (PDF) may be deductible as trade or business expenses.
 
 * ~~[Back to Top](#top)~~
 
@@ -129,7 +129,7 @@ The R Consortium is a US-based 501(c)6 non-profit organization. Dues are not tax
 ### Can an individual become a member of the R Consortium?
 
 
-Yes, individuals may support the R Consortium by joining as a non-voting associate member. You can also support the R project by [contributing to the R Foundation](https://www.r-consortium.org/about/join) directly.
+Yes, individuals may support the R Consortium by joining as a non-voting associate member. You can also support the R project by [contributing to the R Foundation](/about/join) directly.
 
 * [Back to Top](#top)
 
@@ -168,7 +168,7 @@ The R Consortium, as an independent entity, exists to support the R Community an
 ### Who are the members of the R Consortium?
 
 
-Members of the R Consortium include the [following types of organizations](https://www.r-consortium.org/bylaws.r-consortium.org): any association, partnership, organization, governmental agency, company, corporation, academic entity, or non-profit entity with an interest in supporting R. (Individuals may also join as associate members.) In addition, the [R Foundation](https://www.r-project.org/foundation/) is automatically a member and always has a seat on the Board and the Infrastructure Steering Committee. You can see a [current list of members here](https://www.r-consortium.org/about/governance).
+Members of the R Consortium include the [following types of organizations](/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf) (PDF): any association, partnership, organization, governmental agency, company, corporation, academic entity, or non-profit entity with an interest in supporting R. (Individuals may also join as associate members.) In addition, the [R Foundation](https://www.r-project.org/foundation/) is automatically a member and always has a seat on the Board and the Infrastructure Steering Committee. You can see a [current list of members here](/about/governance).
 
 * [Back to Top](#top)
 
@@ -177,7 +177,7 @@ Members of the R Consortium include the [following types of organizations](https
 ### Why an R Consortium?
 
 
-The R user community has experienced tremendous growth. With growth there is a greater need for cooperation and communication among R users and R stakeholders. R will continually benefit from improvements to its technical tools and resources. The [mission of the R Consortium](https://www.r-consortium.org/about) is to help with support and coordination of the important activities of the R Community, via projects selected and executed its [Infrastructure Steering Committee](https://www.r-consortium.org/all-projects).
+The R user community has experienced tremendous growth. With growth there is a greater need for cooperation and communication among R users and R stakeholders. R will continually benefit from improvements to its technical tools and resources. The [mission of the R Consortium](/about) is to help with support and coordination of the important activities of the R Community, via projects selected and executed its [Infrastructure Steering Committee](/all-projects).
 
 * [Back to Top](#top)
 
@@ -195,7 +195,7 @@ No! The R Consortium welcomes contributions of time, effort and ideas for all pa
 ### Can I review the governance documents for the R Consortium?
 
 
-Yes! You can find copies of the [by-laws](https://www.r-consortium.org/wp-content/uploads/sites/13/2019/11/R-Consortium-Bylaws-1157174-v2-Approved-11.20.19.pdf) for the R Consortium, Inc. and the charter for the infrastructure steering committee.
+Yes! You can find copies of the [by-laws](/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf) (PDF) for the R Consortium, Inc. and the charter for the infrastructure steering committee.
 
 * [Back to Top](#top)
 
