@@ -1,16 +1,8 @@
 [
   {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "listing": "/index.html",
     "items": [
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/webinars.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
+      "/posts/announcing-health-technology-assessment-HTA-working-group/index.html",
       "/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/index.html",
       "/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/index.html",
       "/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/index.html",
@@ -80,8 +72,9 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
+      "/posts/announcing-health-technology-assessment-HTA-working-group/index.html",
       "/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/index.html",
       "/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/index.html",
       "/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/index.html",
@@ -141,6 +134,15 @@
       "/posts/improving-with-r-kylie-bemis-unveils-enhanced-signal-processing-with-matter-2-4-upgrade/index.html",
       "/posts/join-our-upcoming-webinar-master-tidy-finance-access-financial-data-with-expert-christoph-scheuch/index.html",
       "/posts/natalia-andriychuk-on-rugs-pfizer-r-center-of-excellence-and-open-source-projects-fostering-r-communities-inside-and-out/index.html"
+    ]
+  },
+  {
+    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "items": [
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/webinars.html"
     ]
   }
 ]
