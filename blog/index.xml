@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>R Consortium</title>
+<link>https://r-consortium.org/blog/</link>
+<atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Tue, 01 Oct 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Announcing the Health Technology Assessment (HTA) Working Group</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/announcing-health-technology-assessment-HTA-working-group/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="announcing-the-health-technology-assessment-hta-working-group" class="level1">
+<h1>Announcing the Health Technology Assessment (HTA) Working Group</h1>
+<p>The R Consortium is pleased to announce a new Working Group (WG) focused on Health Technology Assessment (HTA). The HTA WG has a mission of promoting the use of R in all aspects of HTA analytics, including both clinical assessment and economic evaluation. It aims to build on the success of other R Consortium working groups in bringing together and promoting dialogue between the broadest range of stakeholders from the HTA ecosystem (industry, HTA bodies, academics and others) to identify needs and address challenges through practical tools and pilot exercises. Health Technology Assessment (HTA) helps decision-makers determine which medical technologies and treatments are effective and worth paying for. It can help ensure that the right treatments reach the right patients at the right time by assessing clinical evidence and economic evaluations to inform policy-making about reimbursement and market access.</p>
+<p>Recent policy changes, such as the EU HTA Regulation, require pharmaceutical companies to face stricter standards and shorter deadlines for submitting evidence. At the same time, HTA authorities must review an increasing number of complex analyses under the pressure for timely evidence-based decisions. Lastly, there is pressure on academia to provide easy-to-use HTA software and tools.</p>
+<p>Initially, the WG will focus on the following objectives.</p>
+<ul>
+<li>Foster Collaboration and Knowledge Sharing:
+<ul>
+<li>Understanding the needs of all stakeholders for HTA analytics, and where the use of R may best fit.</li>
+<li>Promote the common goal of delivering HTA analytics work that meets those needs and efficiently utilizes R.</li>
+<li>Become a central hub for connecting existing and new R initiatives in the HTA space, ensuring efficient and unified efforts.</li>
+</ul></li>
+<li>Develop and Document Best Practices:
+<ul>
+<li>Develop and disseminate best practices for using R in HTA analytics work for clinical and economic evaluation.</li>
+<li>Promote transparency and reproducibility in HTA analytics work.</li>
+</ul></li>
+<li>Explore Pilot Studies with HTA authorities
+<ul>
+<li>Explore pilot studies to test and refine open source R-based tools and frameworks for clinical and economic evaluation.</li>
+<li>Pursue collaborative efforts with HTA authorities to validate these tools, demonstrating their value in real-world HTA scenarios.</li>
+</ul></li>
+</ul>
+<p>If you think any of this is exciting and would like to become involved, please leave your name and email in <a href="https://github.com/RConsortium/HTA-wg/issues/1">issue number 1</a> at the HTA GitHub repository.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/announcing-health-technology-assessment-HTA-working-group/</guid>
+  <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/announcing-health-technology-assessment-HTA-working-group/hta-main-page.png" medium="image" type="image/png" height="50" width="144"/>
+</item>
+<item>
+  <title>Unlocking Chemical Volatility: How the volcalc R Package is Streamlining Scientific Research</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/volcalc.webp" class="img-fluid"></p>
+<p>The R Consortium recently interviewed <a href="https://datascience.cct.arizona.edu/person/kristina-riemer">Kristina Riemer</a>, director of <a href="https://datascience.cct.arizona.edu/">the CCT Data Science Team</a> at the University of Arizona, and <a href="https://datascience.cct.arizona.edu/person/eric-scott">Eric Scott</a>, Scientific Programmer and Educator in the CCT Data Science Team, the developers behind the <a href="https://github.com/Meredith-Lab/volcalc">volcalc package</a>, to discuss the motivation and development of this innovative tool designed to automate the calculation of chemical compound volatilities. volcalc streamlines the process by allowing users to input a compound and quickly receive its volatility information, eliminating the need for time-consuming manual calculations. Initially created to assist <a href="https://has.arizona.edu/person/laura-meredith">Dr.&nbsp;Laura Meredith</a> in managing a large database of volatile compounds, volcalc has since grown into a more versatile tool under Eric’s leadership, now supporting a wider range of researchers.</p>
+<p>Kristina and Eric share insights into the challenges they faced, including managing dependencies, integrating with CRAN and Bioconductor, and refining complex molecular identification methods. They also discuss future enhancements, such as incorporating temperature-specific volatility calculations and expanding the package’s functionality to estimate other compound characteristics. This project was funded by the R Consortium.</p>
+<p><strong>Could you share what motivated the development of the volcalc package and how it aligns with the broader goals of the R ecosystem, particularly in scientific computing?</strong></p>
+<p><strong>Kristina</strong>: I was heavily involved in the initial development of volcalc, and later on, Eric took over the project. We developed volcalc because we began collaborating with Dr.&nbsp;Laura Meredith, who was compiling a database of volatile chemical compounds. At the time, she had around 300 compounds, and her students manually gathered details for each one by examining their representations and calculating various associated values. This process was tedious and prone to errors, so we thought there must be a more efficient and automated way to handle it.</p>
+<p>That’s when we came up with the idea of creating a pipeline where someone could input a compound and quickly receive its volatility information, eliminating the need for all the manual labor. The purpose of volcalc was to transform the process from taking months to gather details for 300 compounds to obtaining information for thousands in a much shorter time.</p>
+<p><strong>Eric</strong>: volcalc was initially developed specifically for a project where the researchers were mainly interested in chemical compounds from the <a href="https://www.genome.jp/kegg/">KEGG database (Kyoto Encyclopedia of Genes and Genomes)</a>. When I joined the team and learned about the project, I was thrilled because, as a chemical ecologist, I saw its potential. However, I also recognized a limitation: the tool only worked with the KEGG database. This was a drawback because many researchers, including food scientists and others who work with similar compounds, might not find their compounds in that specific database.</p>
+<p>This realization inspired me to apply for the R Consortium grant. We saw a significant opportunity to expand volcalc, making it more flexible and applicable to a wider range of researchers. We also wanted to improve its integration within the R ecosystem by adding features like returning the file path of a molecule representation after downloading it, so it could be easily piped into subsequent steps. These enhancements aimed to make the tool more versatile and user-friendly for a broader audience.</p>
+<p><strong>What were the most significant challenges you faced during the development of the initial version of volcalc, and how did you overcome them?</strong></p>
+<p><strong>Kristina</strong>: One of the most challenging aspects of developing volcalc, which continues to be an issue, is managing dependencies. Specifically, we rely heavily on a command-line program to handle much of the processing. Early on, we struggled with how to enable users to run volcalc without needing to install this program on their own computers, as many of our users aren’t familiar with that kind of setup. I spent a lot of time trying to create a reproducible environment using <a href="https://mybinder.org/">Binder</a>, but I was never able to get it fully working. Even today, there are still issues related to managing these dependencies, which Eric can elaborate on further.</p>
+<p>It was incredibly important to have Eric on this project because I don’t have a strong background in chemistry. His ability to come in and figure out some of the intricate details that would have taken me much longer to grasp was a huge advantage. The more we can collaborate with domain experts, the better our results will be.</p>
+<p><strong>Eric</strong>: One thing that has helped with the dependency challenges is that we’ve started building volcalc on <a href="https://r-universe.dev/search">R-Universe</a>, which means binaries are available there. While it’s not on CRAN yet, having these binaries on R-Universe makes installation a bit easier. However, we’ve faced some challenges with dependencies, particularly because two of them are from Bioconductor. We didn’t originally aim to develop this package for Bioconductor, which uses S4 objects and has different standards than CRAN. Our goal was to get it on CRAN, but our first submission was rejected because the license field for the Bioconductor package wasn’t formatted to CRAN’s liking. These differences between Bioconductor and CRAN have created barriers, even though the authors of the Bioconductor package have been very responsive. Their package works fine on Bioconductor, but it doesn’t meet CRAN’s criteria, which has been a frustrating challenge.</p>
+<p>Another major challenge in developing volcalc relates to the method we use for estimating volatility. This method involves counting the numbers of different functional groups on molecules—such as hydroxyl groups or sulfur atoms—and assigning coefficients to them. To do this programmatically, we use something called SMARTS, which is essentially like regular expressions but for molecular structures. Regular expressions for text are already challenging, but SMARTS is even more complex because it deals with three-dimensional molecules.</p>
+<p>Before I joined the group, the first version of volcalc had most of these functional groups figured out, but not all. I spent a significant amount of time trying to develop SMARTS strings to match additional molecules. Moving forward, I hope that if we implement new versions, we can get help from the community to refine these SMARTS strings, as there are likely people out there who are more skilled at it than I am.</p>
+<p><strong>The original project proposal mentions expanding volcalc to work with any chemical compound with a known structure. What are the key technical challenges you anticipate in achieving this goal?</strong></p>
+<p><strong>Eric</strong>: This task turned out to be less difficult than I initially expected, but let me explain. In the original version of volcalc, before we received the R Consortium funding, the main function started with a KEGG ID—an identifier specific to the KEGG database. The function would download a MOL file, which is a text representation of a molecule corresponding to that ID. It would then identify and count the functional groups in the molecule, and finally, calculate the volatility based on those counts.</p>
+<p>The major change we needed to implement to make volcalc more versatile was to decouple these steps. In the current version of volcalc, the functionality to download a MOL file from KEGG is still available, but it’s now separate from the main function that calculates volatility. This means that the inputs for calculating volatility can now be any MOL file, not just ones from KEGG. The file can come from any database, be exported from other software, or even be downloaded manually. Additionally, the tool now supports SMILES, which is another, simpler text-based representation of molecules.</p>
+<p>There are various ways to represent chemicals in text, including another format called <a href="https://www.inchi-trust.org/">InChI.</a> The Bioconductor packages we use, ChemmineR and ChemmineOB, have the ability to translate from InChI and other types of chemical representations. However, that feature isn’t available on Windows. So, I decided to keep volcalc focused on SMILES and MOL files. I believe that chemists and other researchers should be able to obtain data in one of these two formats, or use another tool to translate their data into these formats. I didn’t want to overload volcalc with the responsibility of being a chemical representation translator, as that didn’t seem like its primary purpose.</p>
+<p><strong>Can you walk us through the process of implementing the SIMPOL algorithm within the volcalcc package?</strong></p>
+<p><strong>Kristina</strong>: The algorithm itself is fairly simple; it’s just basic math. You need to input some constants, the mass of the compound, and the counts of the functional groups we discussed earlier. Writing the code for this was straightforward and not particularly challenging.</p>
+<p><strong>Eric</strong>: Each functional group has a coefficient associated with it, which is multiplied by the number of times that group appears in the molecule. These values are then summed up, and the mass of the molecule is factored in as well. The challenging part wasn’t the algorithm itself, which is straightforward—just multiplying by coefficients and adding them up. The real difficulty was interpreting what the authors of the algorithm meant by each of the functional groups. Some were oddly specific, like how the hydroxyl group that is part of a nitrophenol group isn’t supposed to count toward the total number of hydroxyl groups. I spent a lot of time poring over the paper, particularly one table, to fully understand how they defined each group. That interpretation was the hardest part.</p>
+<p><strong>What future functionalities or expansions do you see as crucial for volcalc, especially in the context of evolving research needs in chemoinformatics?</strong></p>
+<p><strong>Eric</strong>: Right now, we’re working on allowing users to specify different temperatures. The paper that describes the SIMPOL.1 method includes equations for how the coefficients of each functional group change with temperature. These changes aren’t always linear, and the contributions of functional groups can shift in importance as the temperature varies. This is an important feature to include because the version of volcalc we currently have uses coefficients calculated at 20°C, based on a table from the original paper. To accommodate other temperatures, we need to integrate another table that provides equations for calculating these coefficients based on temperature, and that’s what we’re working on.</p>
+<p>Another key feature we want to leave room for in the future is the ability to add other methods for estimating volatility. SIMPOL.1 is just one type of group contribution method, but there are other approaches described in various papers that use different functional groups, equations, and coefficients. The basic idea remains the same: count the functional groups in a molecule, apply an equation, and estimate volatility. We’re trying to structure the code in a way that makes it easy to incorporate additional methods later, even if we don’t add them right away. I think these are the most important features we’re focusing on right now.</p>
+<p><strong>Kristina</strong>: We’re focused on the features I mentioned in the near future, but looking further ahead, I could see volcalc expanding to estimate other characteristics of compounds beyond just volatility. While I’m not a chemistry expert or a chemical ecologist, I imagine that those interested in volatility might also be interested in other compound characteristics that currently lack automated tools for estimation. So, it’s possible the package could evolve to include those features.</p>
+<p>That said, one of the things I appreciate about the R package ecosystem is that it allows for specialized tools. Since anyone can build what they need, we don’t end up with massive, overly complex packages that try to do everything and become difficult to maintain. It might be better to keep volcalc focused and leave room for separate packages to handle additional functionality. This way, the tools remain manageable and easier to maintain in the long run.</p>
+<p><strong>How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</strong></p>
+<p><strong>Kristina</strong>: The application process was straightforward, and I found the grant format to be very practical. It was focused on milestones and product development, which is refreshing compared to many academic research grants that tend to avoid specific deliverables. I highly recommend considering this grant. I believe people often overlook smaller funding sources, but even small amounts can make a big impact on the work you’re doing.</p>
+<p><strong>Eric</strong>: The first time I applied for an R Consortium grant was as a grad student, and I strongly encourage trainees to apply as well. It was a great experience for me because I could do it independently—my advisor wasn’t involved as one of the authors, and it wasn’t a complex process like applying for an NSF grant. It was straightforward and really rewarding. The only tricky part was figuring out the payment process, but that’s something people can work out.</p>
+<p>I’ve noticed there seem to be fewer projects in recent years, and I don’t think it’s due to a lack of funding. It seems like fewer people are applying, which is why I especially encourage others to give it a shot. From what I’ve seen, there’s a very good chance of getting funded if you apply right now.</p>
+<p>People should be creative and think broadly about how their project can benefit the broader R community. This doesn’t mean you need to develop the next big thing like R-Universe or CRAN. It can be something smaller, like a package that other R users will find helpful. For example, with our project, volcalc, our main goal was to encourage chemists—who usually use point-and-click software—to start using R. That was enough of a contribution to the R community to get funded. So, I really encourage people to think creatively about what “benefiting the R community” can mean.</p>
+<section id="about-isc-funded-projects" class="level2">
+<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
+<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
+<p><a href="../../all-projects/">Learn More!</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/</guid>
+  <pubDate>Mon, 23 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/volcalc.webp" medium="image" type="image/webp"/>
+</item>
+<item>
+  <title>Free Boba Tea and Technical R Topics Lure Young Learners to New Brunei R User Group</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/haziqjamil/">Haziq Jamil</a>, the founder and organizer of the <a href="https://www.meetup.com/bruneir/">Brunei R User Group</a>, recently spoke with the R Consortium. Haziq established the first R User Group in Brunei to promote R programming and create collaborative learning environments. Under his leadership, the group hosts monthly meetups and events to advance R skills across various sectors in Brunei. Through these efforts, Haziq aims to build a supportive and inclusive R community, encouraging both personal growth and data-driven innovation in the region.</p>
+<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/haziq-jamil.jpg" class="img-fluid"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>My name is Haziq Jamil, and I am an Assistant Professor in Statistics at Universiti Brunei Darussalam, the leading higher education institution in Brunei. I have used R for almost ten years during my studies and on many personal and professional projects.</p>
+<p>The Brunei R User Group was founded in February 2024, and I serve as its chair and founder. My role is to lead the group’s administration, oversee its overall direction and strategy, and ensure that its initiatives align with its mission of promoting R programming and fostering a supportive learning environment, focusing on community engagement and collaboration.</p>
+<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/smiles.jpg" class="img-fluid"></p>
+<p><strong>Can you share what the R community is like in Brunei? </strong></p>
+<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/brunei-rugs-logo.png" class="img-fluid" style="width:50.0%"></p>
+<p>The R community in Brunei may be small, but it is growing thanks to the efforts of the Brunei R User Group. The group organizes monthly meetups and events to promote learning and development in R programming and advance its use across various fields in Brunei. These gatherings provide opportunities to expand the community by enhancing participants’ skills, offering a platform for networking with like-minded individuals, and engaging in practical applications such as data analysis, visualization, and spatial data techniques. By creating an inclusive R community, the group aims to support individual growth in Brunei and foster collaboration on data-driven R projects. Whether for students, professionals, or hobbyists, the group strives to provide a supportive space for learning, sharing insights, and driving innovation within the local R community.</p>
+<p><strong>You hosted a Meetup, “<a href="https://www.meetup.com/bruneir/events/300000854/?eventOrigin=group_events_list">R&gt;aya with R</a>,” in April. Can you share more about the topic? Why this topic? </strong></p>
+<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/brunei-raya-meetup.jpg" class="img-fluid"></p>
+<p>The R User Group’s “<a href="https://bruneir.github.io/posts/bru-2/">R&gt;aya with R</a>” Meetup in Brunei was a lively event that combined Hari Raya Aidilfitri’s (Eid-ul-Fitr) festive spirit with the exploration of R programming. To engage younger audiences, we offered free boba tea as a beverage during the session. The event featured informative sessions led by expert community members, each focusing on advanced topics relevant to different fields.</p>
+<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/boba.jpg" class="img-fluid"></p>
+<p>One of the critical presentations was on “Survival Analysis” by <a href="https://www.linkedin.com/in/elvynna-leong-84b449190/?originalSubdomain=bn">Dr.&nbsp;Elvynna Leong</a>. She explained statistical techniques to predict the time until an event of interest, such as guests’ arrival at a Hari Raya open house. This topic is directly related to fields that depend on time-to-event data, such as healthcare or actuarial science.</p>
+<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/presentation.jpg" class="img-fluid"></p>
+<p>One of the highlights was <a href="https://www.linkedin.com/in/wafid-sophian-6b8073141/?originalSubdomain=bn">Wafid Sophian</a>’s session on “Simulation Methods for Economic Analysis.” In this presentation, Wafid demonstrated how R can be used to simulate and analyze complex economic scenarios. The topic focused on modeling outcomes and making data-driven predictions. It was chosen due to its significance in finance and business analytics.</p>
+<p><a href="https://www.linkedin.com/in/eden-ng-737504177/">Dr.&nbsp;Eden Ng</a> presented on “Mathematical Modeling of Evolutionary Biology,” showcasing how R can be used to model biological evolutionary processes. This session visualized the intersection of R programming and biology, thus emphasizing R’s utility in research areas such as genetics and evolutionary studies.</p>
+<p>The event covered three topics in the areas of mathematics, economics, and biology. It was open to all individuals interested in learning about the capabilities and usage of the R language, regardless of whether they were beginners or experts.</p>
+<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future? </strong></p>
+<p>For planning and executing events like the “<a href="https://www.meetup.com/bruneir/events/299246264/?eventOrigin=group_events_list">Analysing Spatial Data with R</a>” event, the R&gt;aya Meetup, and the “<a href="https://www.meetup.com/bruneir/events/301146476/?eventOrigin=group_events_list">Introduction to R</a>” sessions, we utilized <a href="https://github.com/bruneir">Github</a>. To host R scripts, datasets, and event materials. Our participants can access and review the code before and after the event. It also provides a platform for issue tracking and version control to facilitate feedback and group collaboration. It helps those who can’t attend in person to engage and contribute to our <a href="https://bruneir.github.io/">Quarto Blog</a>. To publish event summaries, key takeaways, and additional resources on the official Brunei R User Group blog. We hope to provide a centralized location for information and help remote participants catch up.</p>
+<p><strong>Please share any additional details you would like to include in the blog. </strong></p>
+<p>As the first R user group in Brunei, we are excited to promote the adoption and growth of R across various industries. Our mission goes beyond just hosting events—we are dedicated to creating and nurturing an inclusive R community and showcasing the power of R in numerous fields.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><strong><a href="../../all-projects/rugsprogram.html">Learn more</a>!!</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/</guid>
+  <pubDate>Fri, 20 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/smiles.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Empowering Data Science: How R is Transforming Research in Cameroon</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/nyavoratovo/?originalSubdomain=cm">NyAvo RATOVO-ANDRIANARISOA</a>, the co-founder of the <a href="https://www.meetup.com/r-community-cameroon/">R Community Cameroon</a>, recently spoke with the R Consortium about the rapid growth of the R community in Cameroon and the impact of R on local research and data analysis. NyAvo provided insights into the community’s activities, such as developing an R community website using Shiny and implementing innovative projects like a custom search application. He also discussed the challenges and strategies in building a robust R ecosystem in Central Africa.</p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/nyavo.jpg" class="img-fluid" style="width:50.0%"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>I am a statistical engineer from the Institute of Statistics of Central Africa in Cameroon, originally from Madagascar. Currently, I serve in a monitoring and evaluation role with the United Nations. My journey with R began about five years ago as a student. I started learning R during my studies and expanded my expertise by freelancing as a <a href="https://shiny.posit.co/">Shiny</a> developer. Over time, I’ve also gained experience with OCR technology, working with Tesseract and utilizing Google Cloud Colab’s API Amazon Web services for R and artificial intelligence models.</p>
+<p>With a solid statistical background, I specialize in data mining. In 2020, before learning about the R Consortium campaign, I had already envisioned creating an R community in Cameroon. After discussing the idea with some colleagues and discovering the potential support, it became the perfect opportunity to bring this vision to life. My colleagues and I officially launched the R Community Cameroon at the beginning of this year.</p>
+<p>I would like to mention my colleagues who have co-founded the group with me: <a href="https://www.linkedin.com/in/romain-tchakoute-916126170/">Romain TCHAKOUTE</a>, <a href="https://www.linkedin.com/in/idrissa-dabo-72a199118/">Idrissa DABO</a>, <a href="https://www.linkedin.com/in/aboubacar-sa%C3%AFdou-boureima-0aa918203/">Saidou BOUREIMA</a>, <a href="https://www.linkedin.com/in/mianala-anaelle-manambiravaka-8291aa260/">Mianala MANAMBIRAVAKA</a>, and <a href="https://www.linkedin.com/in/ndjiya-djeumen-luc-ronald-franck-8a5968221/">Ronald DJEUMEN.</a></p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/community.webp" class="img-fluid"></p>
+<p><strong>Can you share what the R community is like in Cameroon?</strong>&nbsp;</p>
+<p>Cameroon is home to one of Central Africa’s largest science schools. I am part of a vibrant academic community of 30 members from several nationalities. This environment brings together some of the brightest minds, and R is an integral part of our curriculum. However, our use of R goes beyond basic statistics and plotting; we focus on more sophisticated applications, such as Monte Carlo estimation, model development, and advanced R programming.</p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/school.jpg" class="img-fluid"></p>
+<p>Several professors in our school possess strong statistical backgrounds and rely on R for their research. Additionally, our alums who have transitioned into the industry continue to leverage R for data analysis. While Cameroon has a limited amount of data, we conduct numerous surveys. The initial step most of us take is data cleaning, predominantly using R. Once the data is clean, we employ Quarto to generate automatic reports, allowing us to summarize survey results quickly. Some of my colleagues also explore other functionalities of R, like creating applications with R Shiny.</p>
+<p>Another significant group is comprised of economics students or those working on their theses. They often seek our assistance to learn R for tasks such as descriptive statistics and building logistic models.</p>
+<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people unable to attend physical events in the future?</strong>&nbsp;&nbsp;</p>
+<p>Currently, we rely on <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint">PowerPoint</a> to create posters for our events and <a href="https://meet.google.com/landing">Google Meet</a> for online meetings before having the Meetup Pro account provided by R Consortium. Many of us, the co-founders of the community, are technicians, so we also use Word for various tasks. However, leadership skills have been crucial in convincing people to join our vision. To engage others, we often organize dinner or lunchtime meetings. We’ve invested significant effort into these initiatives, and through them, we’ve successfully negotiated several partnerships. Initially, I contacted colleagues at the National Institute of Statistics to rally support for our cause.</p>
+<p>Our community now includes students and academics, and some PhD doctors are still in the learning phase. I discussed creating a community in Cameroon, asking what value we could offer to encourage their participation. I proposed that they become co-founders of the community, a role they could highlight on their resumes. Seven people have already stepped up as leaders within our group.</p>
+<p>We’re active both online and in person. It’s important to note that we organize two types of meetings. The first is an internal meeting with our community leaders, typically attended by around seven people. We use a WhatsApp group for communication and usually meet monthly for lunch at a restaurant for these meetings. The second activity involves larger groups. For these, we first coordinate with the administration, such as the school mentioned earlier, who then communicate with the students. We also document and share these activities online to inform others, though most of our communication is direct and specific.</p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/meeting.webp" class="img-fluid"></p>
+<p>For example, after explaining our vision to a university contact, they were interested and agreed to offer a course at their institution. We then coordinated with the student body leader, planned a session, and shared the event online. We even hired a professional photographer to capture the event, sharing the photos with the school for further distribution. However, we haven’t yet posted about this activity on LinkedIn.</p>
+<p>Looking ahead, we’re planning a session with another school—the statistical school where I studied. We’re currently in discussions with their management. Once we’ve had our conversation, possibly next week, we’ll talk with the student leaders. After the session, we plan to share our activities online, including photos, to highlight what we’re accomplishing in Cameroon.</p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/students.jpg" class="img-fluid"></p>
+<p><strong>Do you have any upcoming events planned for the group?</strong></p>
+<p>We have an upcoming event that I consider one of the most important we’ve planned. It is our group’s quarterly meeting. The main objective of this meeting is to develop our R community website using Shiny. It will be a workshop where we’ll gather in one place and form small groups comprising beginners and experienced members. During the workshop, we’ll collaborate to code and discuss ideas, and ideally, by the end of the session, we will have the code for our community website ready for deployment.</p>
+<p>We’re currently facing some logistical challenges to organize this event. In Cameroon, when we organize events, we strive for perfection, ensuring everything from photography to visibility is top-notch. We’re searching for a suitable hotel venue to host our event.</p>
+<p><strong>What trends do you currently see in R language and your industry?</strong></p>
+<p>In Cameroon, <a href="https://quarto.org/">Quarto</a> is one of the most popular packages we promote during our R community sessions. Another widely used package is R Markdown. While I primarily use <a href="https://rmarkdown.rstudio.com/">R Markdown</a> to produce outputs for my job, I am also working on becoming more proficient with Quarto, as it is the future of reporting and documentation.</p>
+<p>I frequently use the <a href="https://www.tidyverse.org/">tidyverse</a>, <a href="https://tidyr.tidyverse.org/">tidyr</a>, <a href="https://cran.r-project.org/web/packages/labelled/index.html">labelled</a>, and <a href="https://haven.tidyverse.org/">haven</a> suite of packages for data cleaning and reporting. A significant part of my job involves data cleaning, and I rely on tidyverse in conjunction with Quarto for these tasks.</p>
+<p>We also utilize R for machine learning, though there is still potential for improvement in this area. We are focused on leveraging Shiny, Quarto, and tidyverse for our work.</p>
+<p><strong>Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting, primarily related to your industry?</strong></p>
+<p>We are currently working on an exciting project that is still in progress. The aim is to develop an application inspired by the functionality seen in the movie Fast and Furious, where users can search for information on the Internet. We are utilizing the <a href="https://cran.r-project.org/web/packages/httr/index.html">httr</a> package to collect data from online sources.&nbsp;</p>
+<p>The application will enable users to input a search term, such as “lion in Cameroon,” and receive a dataset with all relevant information. Our goal is to provide high-quality data for researchers and other users, which involves considerable effort to ensure the accuracy and usefulness of the data.&nbsp;</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://www.r-consortium.org/all-projects/r-user-group-support-program">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/</guid>
+  <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/school.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Thank You, Joseph Rickert: A Legacy of Leadership and Innovation in the R Community</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As we announce the end of Joseph (Joe) Rickert’s tenure as the Executive Director of the R Consortium, we reflect on his remarkable contributions that have significantly contributed to the R community. Joe’s leadership has been instrumental in fostering growth, innovation, and collaboration within the R ecosystem.</p>
+<p><strong>Founding the R Consortium</strong></p>
+<p>Joe has been with the R Consortium since its inception in 2014. He was initially appointed to be Microsoft’s representative to the Infrastructure Steering Committee (ISC) and was soon tasked with creating the R User Groups (RUGS) grants program. Joe also pioneered the formation of ISC working groups to foster industry-wide collaborative projects. In 2016, Joe was appointed to be RStudio’s representative to the Board of Directors. In 2018, he took on the role of Secretary, and by 2019, he was elected Chair of the Board. In 2023, Joe took on the role of Executive Director. Under his guidance, the R Consortium has grown into an inclusive organization supporting the R programming language and its community. Our new executive director, Terry Christiani, was affirmed by the board of directors in our August 2024 board meeting after a selection committee interviewed candidates and made recommendations.</p>
+<p><strong>Advancing User Groups</strong></p>
+<p>One of Joe’s notable achievements is his unwavering support for R user groups worldwide. He recognized the importance of grassroots movements in spreading the use of R and provided essential resources and funding to these groups. He was instrumental in funding the R-Ladies as a top-level ISC project that operates worldwide to provide safe places for women to come together and learn from each other in an otherwise male-dominated space. Joe was also directly involved with the Bay Area useR Group (BARUG), organizing events, speaking, or contributing to discussions around the R programming language, especially in the context of data science and statistical computing. This support has enabled countless R enthusiasts to connect, share knowledge, and collaborate on projects, thereby strengthening the global R community.</p>
+<p><strong>Industry Collaboration and Working Groups</strong></p>
+<p>Joe actively reached out to industry leaders to create unique working groups aimed at solving industry-wide problems. These collaborations have led to the development of working groups focused on R programming solutions that benefit not only the community but also industries that rely on data science and statistical computing.</p>
+<p><strong>A Legacy of Innovation</strong></p>
+<p>Throughout his tenure, Joe has been a driving force behind numerous initiatives that have propelled the R community forward. His efforts have ensured that the R Consortium remains a dynamic and inclusive organization, fostering a spirit of collaboration and innovation. His leadership has left an indelible mark on the R community, and his legacy will continue to inspire future generations of R users and developers.</p>
+<p>As we welcome new leadership, we extend our heartfelt gratitude to Joe Rickert for his dedication, vision, and tireless efforts in advancing the R community. Thank you, Joe, for your invaluable contributions and for paving the way for a brighter future for the R ecosystem.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/</guid>
+  <pubDate>Tue, 10 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/thank-you-main-page.png" medium="image" type="image/png" height="50" width="144"/>
+</item>
+<item>
+  <title>R-Ladies Bariloche in Argentina: Fostering a Different Approach to Leadership</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/lina.jpg" class="img-fluid"></p>
+<p><a href="https://www.linkedin.com/in/lina-moreno-azocar-81a5aa276/?originalSubdomain=ar">Lina Moreno</a>, founder and organizer of the <a href="https://www.meetup.com/es/rladies-bariloche/">R-Ladies Bariloche</a> chapter in Argentina, recently shared her journey with the R Consortium. A biologist focusing on evolutionary ecology, she discussed her experience building a local R community, the challenges of maintaining engagement post-pandemic, and her efforts to foster discussions on leadership and gender equity within academia. Through her work, she aims to create an inclusive space for women in data science and strengthen the R community in Bariloche.</p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>I am a biologist working on evolutionary ecology, I did a bachelor in Sciences in another Argentinian province and then moved to Bariloche to start my PhD. (That was 16 years ago!) I spent a couple of years working in the field (I study reptiles, mainly lizards, and their adaptations to cold environments), and then I had to analyze the data. When I started my main analysis, I could only do it in R. At that time, my boss told me to start with R immediately, so I started searching online. I am doing this kind of work in my home country, so finding resources was complex. I had to work on a comparative analysis and phylogenies, which was difficult initially. However, I started studying and meeting people who taught me, which was awesome.&nbsp;</p>
+<p>After several years, I encountered a problem I couldn’t resolve. I turned to Google and found a helpful community of ladies. They assisted me a lot and saved me from a tight spot. After some communication, they suggested starting an R-Ladies community in Bariloche. I met with them in person when I traveled to Buenos Aires. They convinced me to start a Bariloche chapter, and by the end of 2019, a few of my colleagues and I, mainly biologists working in the same area, created the Bariloche chapter.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/chapter.jpg" class="img-fluid"></p>
+<p><strong>What are some challenges you have faced in organizing this group?</strong></p>
+<p>We are currently facing some difficulties as people seem unwilling to get involved. As a result, we are exploring new strategies such as combined meetups (online and in person), and together with other R-Ladies groups. We also plan to organize three or four meetups this year. Despite our efforts, we are getting discouraged by the lack of response, but we will see how it goes.</p>
+<p>During the pandemic, there were five organizers, three of us with young children, so it was pretty difficult. We started a study group for the <a href="https://r4ds.hadley.nz/">R for Data Science</a> book, which had recently been translated into <a href="https://es.r4ds.hadley.nz/">Spanish</a>. We also organized meetups, mainly led by us. Surprisingly, there was good attendance during the pandemic, with around 40 people each time, similar to before the pandemic. However, after returning to in-person meetups, the attendance dropped significantly. The most crowded meetup had only 15 people, whereas before, we used to have two meetups on the same subject, both with 40 attendees.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/meetup.png" class="img-fluid"></p>
+<p>We are attempting to integrate virtual and in-person components, which has proven challenging. We aim to introduce a beginner’s course in R through a meetup to help attendees gain confidence for future meetups. Our meetups typically have a good turnout, but there is a lack of interest in specific topics, particularly those related to gender bias and women’s issues. Despite this, we are putting in a significant effort. Last year, we participated in a round table during a conference in Bariloche, focusing on gender bias and the difficulties of being a woman in Academia, and it received a lot of support, especially from women. The rest of the group is currently working on documenting our experience at that round table. I am not participating as I have been busy with other responsibilities.</p>
+<p>Last year we surveyed people on how they feel R-Ladies is contributing to their careers, its influence on leadership abilities, their reasons for abandoning our events, or why they were too busy to attend. We have received some responses, but not as many as we expected.</p>
+<p>However, we have enough data to write a paper about it. We’re also looking into the topic of leadership. We are opening our minds and exploring the possibilities of supporting the R community here in Bariloche, but it’s quite challenging at the moment.</p>
+<p><strong>Can you share what the R community is like in Argentina?</strong>&nbsp;</p>
+<p>The field of artificial intelligence and machine learning is rapidly evolving, which greatly helps incorporate knowledge in R. The leading software used for this purpose is R and Python. R is more popular than Python, as it has been around longer and is more user-friendly. Many people from academia with expertise in machine learning are transitioning to private industries. Regarding statistical analysis in biology, tools such as the <a href="https://cran.r-project.org/web/packages/vegan/vegan.pdf">Vegan</a> package and those incorporating <a href="https://m-clark.github.io/generalized-additive-models/application.html">GAM (Generalized Additive Models)</a> are commonly used. Tools that can handle multiple effects simultaneously are in high demand in ecology.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/community.jpg" class="img-fluid"></p>
+<p><strong>Would you like to talk about any recent activity from the group?</strong></p>
+<p>It was exciting what happened after the conference we participated in. As women, we are trying to maintain an open community. Initially, the organizers needed to learn how to manage an open group without a leader or a head, where everyone is considered equal. The participants ranged from students to established researchers, which ignited discussions about leadership and how women and minority groups navigate the world. We are accustomed to a robust and assertive leadership style, often associated with being at the top. However, as women, we wanted a different kind of leadership. This led to discussions on creating a new type of leadership that doesn’t adhere to the traditional patriarchal model. The manuscript the group is working on currently revolves around creating a new style of leadership that focuses on nurturing individuals to become better persons, researchers, or workers.&nbsp;</p>
+<p>The topics discussed in the manuscript revolve around how we can lead differently. These discussions were not limited to our group; we engaged with several groups from Argentina and Spain who also expressed a similar desire for a different kind of leadership. It is interesting to note that as women and minority groups, we want to be in positions to make meaningful decisions, especially given that our work as biologists primarily tackles environmental issues. Despite historically shying away from more traditional forms of leadership, we are now advocating for different styles. This shared sentiment has brought us closer to other minority groups, and we believe it’s an important topic that needs further discussion. It’s important to recognize that women have a different approach, and it doesn’t make us weaker than men; it simply signifies that we have a unique way of contributing.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/</guid>
+  <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The 2024 ISC Grant Program will begin Accepting Applications Soon!</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/the-2024-isc-grant-program-will-begin/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/the-2024-isc-grant-program-will-begin/isc-program.jpg" class="img-fluid"></p>
+<p>The R Consortium is excited to announce the second cycle of the 2024 Infrastructure Steering Committee (ISC) Grants Program. The <a href="https://www.r-consortium.org/all-projects/call-for-proposals">Call for Proposals will open soon</a>. This initiative aims to support projects that strengthen the R ecosystem’s technical and social infrastructure.&nbsp;</p>
+<p>Here is a <a href="https://www.r-consortium.org/all-projects/awarded-projects/2024-group-1">list of projects that received grants from the R Consortium in the First Cycle in 2024</a>.&nbsp;</p>
+<p>From the Call for Proposals page:</p>
+<p>The ISC is interested in projects that:</p>
+<ul>
+<li>Are likely to have a broad impact on the R community.</li>
+<li>Have a focused scope (a good example is the <a href="https://github.com/r-spatial/sf">Simple Features for R project</a>). If you have a larger project, consider breaking it up into smaller chunks (a good example of this done is with the <a href="http://dbi.r-dbi.org/">DBI/DBItest project</a> submission, where multiple proposals came in over time to address the various needs).</li>
+<li>Have a low-to-medium risk with a low-to-medium reward. The ISC tends not fund high-risk, high-reward projects.</li>
+</ul>
+<p>Whether you’re working on groundbreaking tools or organizing community-driven events, this is your chance to secure funding and make a significant impact on the R community!</p>
+<p><strong>Key Dates:</strong></p>
+<ul>
+<li><strong>September 1, 2024:</strong> Grant Application Period Opens</li>
+<li><strong>October 1, 2024:</strong> Grant Application Period Closes</li>
+<li><strong>November 1, 2024:</strong> Notification of Accepted Grantees</li>
+<li><strong>December 1:</strong>&nbsp; Deadline for acceptance of grant and contract. Public notification of grantees occurs shortly thereafter.</li>
+</ul>
+<p>Submit your proposal by October 1, 2024, and contribute to the ongoing growth of the R ecosystem. Visit the <a href="https://www.r-consortium.org/all-projects/call-for-proposals">R Consortium website</a> for detailed guidelines and submission instructions. Don’t miss this opportunity to bring your innovative ideas to life!</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/the-2024-isc-grant-program-will-begin/</guid>
+  <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>R4SocialScience: Empowering Social Science Research with R in India</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/drmohitgarg9/?trk=public_profile_browsemap&amp;originalSubdomain=in">Dr.&nbsp;Mohit Garg</a>, organizer of the <a href="https://www.meetup.com/r4socialscience/">R4SocialScience</a> group in Delhi, India recently talked to the R Consortium about his experience of starting an R user group. The R4SocialScience group aims to bridge the gap between social science research and data analysis, offering support and training to academics, researchers, and industry professionals. Dr.&nbsp;Garg shares his experiences, the growth of the R community in India, and his plans for expanding R’s reach.</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/drGarg.jpg" class="img-fluid"></p>
+<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
+<p>I’m currently working as an assistant librarian at the <a href="https://home.iitd.ac.in/">Indian Institute of Technology, Delhi</a>, one of the premier institutions in India.&nbsp; My academic background includes a BTech in Information Technology from Guru Gobind Singh Indraprastha University followed by an MS in Librarian Information Science from the <a href="https://www.isical.ac.in/">Indian Statistical Institute</a>, an institution dedicated to statistics in India started by the late Professor P.C. Mahanobis. After that, I completed my PhD in Library and Information Science from IGNOU, New Delhi.</p>
+<p>My interest in R began in 2013 when I started my MS at the Indian Statistical Institute.&nbsp; Since then, I have taken various courses as part of my MS program and some online courses. I became interested in R due to its open source nature and the free availability of packages for all kinds of analysis. Then, I started promoting R in the academic community. However, in 2013, there was little interest in R because the prevalent approach in India was more focused on using commercial software for data analysis.&nbsp; However, in the past few years, there has been an increasing interest in R, with many workshops and government-funded events dedicated to it.</p>
+<p>I have been providing R training to professors, teachers, and research scholars, and I have also worked on web-based development using <a href="https://shiny.posit.co/">Shiny</a> packages. Furthermore, we have developed a web dashboard to visualize real-time research productivity data obtained from sources like <a href="https://www.elsevier.com/products/scopus">Scopus</a> through API. Recently, we completed a 12-week MOOC course on <a href="https://swayam.gov.in/nc_details/NPTEL">NPTEL SWAYAM</a> platform with a focus solely on R. The course was quite popular, with 2584 learners from India joining, and 515 learners registering for the final examination. Although the course was free, participants had the option to pay for certification.</p>
+<p><strong>Can you share what the R community is like in India?</strong>&nbsp;</p>
+<p>I have been involved in the academic profession since 2016 and have been giving lectures and providing resource points at various institutions. I believe that there is a need to build a community focused on social sciences, especially for those who may have a limited understanding of mathematics, and statistics. The idea is to create a specific community related to social science, not just in India, but also in collaboration with other institutions. The community will cater to three main groups: those who are proficient in coding and development of R packages, those who are familiar with basic R but need further guidance, and those who are completely new to R.</p>
+<p>The community aims to provide support for those interested in social science and to make R more accessible by offering packages related to social science, basic R tutorials. One specific package gaining popularity in academia is “<a href="https://www.bibliometrix.org/home/">biblo shiny bibliometrics</a>,” which facilitates scientific productivity mapping using R.&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/rSocialScience.jpg" class="img-fluid"></p>
+<p>We want to emphasize that R is not just a programming language, but a software for data analysis, to encourage more people to explore its potential. While both R and Python are interpreted languages, we aim to dispel the fear of programming and demonstrate how these languages can be used effectively. Although Python appears to be more widely used in the industry, there is still a growing interest in R.</p>
+<p><strong>What are your plans for the group going forward?</strong></p>
+<p>I have been teaching R for more than 10 years, and I found that researchers are interested in using R. I have identified three potential co-organizers from different regions in India to make a team of four people. We have already received a grant, and we plan to conduct training sessions in different locations across India.</p>
+<p>I am focusing on a “train the trainer” model, where I aim to train individuals who can then carry out training sessions in their respective regions. India has over 50,000 colleges and around 1,200 universities, all involved in significant research and analysis activities. We also aim to have dedicated R trainers in all districts in India by 2026.</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/teaching.jpg" class="img-fluid"></p>
+<p>Our approach involves dividing the country into five zones, followed by state-wise and district-wise planning. We are not heavily reliant on industry support, as our activities are primarily related to academia and research.&nbsp;</p>
+<p>We plan to charge a nominal registration fee, which would cover expenses such as food and refreshment. We are hoping to minimize travel expenses, as they can be quite costly. But we will explore some way to fund the travel and accommodation expenses. We have hosted a one day workshop on “<a href="https://x.com/RConsortium/status/1808219594232156479">Doing Research using R</a>” at Galgotias University.&nbsp;&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/trainingSession.jpg" class="img-fluid"></p>
+<p>I am currently focusing on building a community and providing training sessions. I have noticed that online sessions may not be as effective as I had hoped, as participants seem to encounter many problems. Therefore, I am considering conducting more in-person workshops, which I believe will help popularize the training sessions. Additionally, I aim to develop specialized packages for social science and build a dedicated team. I am optimistic about these plans. During a recent workshop, I noticed that many participants preferred simple tools for data analysis. I intend to introduce such tools to make the training more accessible and user-friendly for participants. This is my vision for the community.</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/community.jpg" class="img-fluid"></p>
+<p><strong>Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</strong></p>
+<p>We have developed a platform utilizing the shiny and other text mining packages. This platform is still in the testing phase. The platform allows real-time data fetching from the Scopus API.</p>
+<p>For example, if I search for a faculty member, it will display the publication data such as the number of publications, H-index, citations, types of publications, sources of publication, and annual publication distribution. We can also download this data.</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/platform.jpg" class="img-fluid"></p>
+<p>We have also developed a word cloud based on the titles of the publications for each faculty member, processed using the TM package. This helps to infer the expertise of the professors. Furthermore, we have included a feature for identifying the H-classic, which is related to the H-index.&nbsp; This platform is quite useful and efficient, especially for academic institutions. We now have the capability to download data from a specific date range as an Excel file. The data includes publication dates and the number of citations.</p>
+<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/wordcloud.jpg" class="img-fluid"></p>
+<p>We’re in the process of creating a full dashboard for universities or institutions. We’ve also conducted a pilot study for other institutions. We are also considering publishing this work as a research paper to increase its visibility.&nbsp;</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/</guid>
+  <pubDate>Tue, 27 Aug 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/trainingSession.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>News from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>Blog contributed by Ning Leng, People and Product Leader, Roche-Genentech and Joel Laxamana, Principal Data Scientist, Roche-Genentech</em></p>
+<p>The R Consortium is pleased to announce the successful completion of the Pilot 3 Submission which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete <a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot3_Submission.pdf">FDA response letter</a> is available.&nbsp;&nbsp;</p>
+<p>The objective of the R Consortium R Submission Pilot 3 Project is to test the concept that an R-language based submission package for ADaMs and TLFs can meet the needs and the expectations of the FDA reviewers, including assessing code review and analyzing reproducibility. All submission materials and communications from this pilot are publicly available, with the aim of providing a working example for future R-language based FDA submissions. This is an FDA-industry collaboration through the non-profit organization R Consortium.</p>
+<p>All submission materials can be found at: <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda">submissions-pilot3-adam-to-fda</a>. This is the first publicly available R-based FDA submission package including R scripts to generate Analysis Data Models (ADaM) and Tables, Listings &amp; Figures (TLFs).</p>
+<p><img src="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/collaboration.png" class="img-fluid"></p>
+<p><em>Open-Source Collaboration in standardizing Clinical Trial analyses and Submissions. Broadening ways to bring treatments to Patients.</em></p>
+<section id="pilot-3-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3-timeline">Pilot 3 Timeline</h2>
+<p>The initial submission was submitted through the eCTD gateway on Aug 28, 2023. FDA verbal responses were received from Jan-July 2024 during R submission working group meetings. Documentation of this initial feedback and response can be found at <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda/blob/main/m1/us/response-FDA-IR-pilot3.pdf">response-FDA-IR-pilot3.pdf</a>. The updated submission package addressed reported issues and was re-submitted on Apr 19, 2024. The final response letter from FDA was received on Aug 8, 2024.</p>
+</section>
+<section id="pilot-3-scope" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3-scope">Pilot 3 Scope</h2>
+<p>The Pilot 3 test submission exemplifies an all-R submission package for ADaMs and TLFs, adhering to electronic Common Technical Document (eCTD) specifications. This comprehensive package not only includes ADaMs and TLGs, but it emulates a full study submission package including the source Study Data Tabulation Models (SDTMs) used to generate the Pilot 3 ADaMs. It also encompasses the installation and loading of the proprietary {pilot3utils} R package, various open-source R packages, R scripts for the Analysis Data Model (ADaM) datasets derived from Pilot 3, and Tables, Listings, and Figures (TLFs) from Pilot 1. In addition to other requisite eCTD components, the Pilot 3 package also includes the Analysis Data Reviewer’s Guide (ADRG) providing detailed steps leading to the execution of the analysis R scripts to re-produce the ADaMs and TLFs from a FDA reviewers perspective. These Pilot 3 submission materials are linked above.</p>
+<p>Pilot 3 serves as a complement to Pilots <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">1</a> and <a href="https://github.com/RConsortium/submissions-pilot2-to-fda">2</a>, which demonstrated the feasibility of submitting TLF R scripts and R Shiny code, respectively. Furthermore, Pilot 3 successfully validated the submission of proprietary R packages in compressed file formats, serving as another alternative to {pkglite} or installation directly from github.</p>
+<p>If you have any questions about this Pilot 3 submission, we would love to hear from you. Feel free to submit any questions you may have as a <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda/issues/new/choose">new issue</a> in our Pilot 3 github repository or you may find any of the Pilot 3 team members in <a href="https://pharmaverse.slack.com/archives/C030EB2M4GM">Pharmaverse slack</a>.</p>
+</section>
+<section id="learnings-from-pilots-1-through-3" class="level2">
+<h2 class="anchored" data-anchor-id="learnings-from-pilots-1-through-3">Learnings from Pilots 1 through 3</h2>
+<p>In the three pilots, for various TLFs, the working group members intentionally created different tables in different formats using various open-source R packages. The FDA staff successfully accepted and reproduced the results generated from these different open-source packages. However, though not in scope of these Pilots, we want to share awareness that sponsors are responsible for selecting open-source packages that demonstrate sufficient reliability. Further information on this can be found in the <a href="https://www.pharmar.org/">R Validation Hub</a>, formed in 2018 by the PSI AIMS Special Interest Group and supported by the R Consortium. It offers tools like <a href="https://www.pharmar.org/posts/news/updates-aug-2024/">{riskmetric}</a> to quantify the “risk” of R packages and a user-friendly R Shiny app, <a href="https://www.pharmar.org/riskassessment/">{riskassessment}</a>, to evaluate package reliability.</p>
+<p>The majority of FDA staff feedback falls under the following themes :</p>
+<ol type="1">
+<li>Clear ADRG documentation on computing environment, package dependencies, and expected warnings</li>
+<li>Clear documentation on data processing rules and statistical method implementation</li>
+<li>Good statistical practice in confirmatory trials, such as avoiding the possibility of “p-hacking”&nbsp;</li>
+</ol>
+<p>For future submissions using open-source languages, it is recommended to give special attention to recommendation theme 1. Recommendation themes 2 and 3 are language-agnostic and should always be followed, regardless of the programming language used. All of these themes fall in line with the FDA’s <a href="https://rconsortium.github.io/submissions-pilot3-adam/main/articles/statistical-software-clarifying-statement.html">Statistical Software Clarifying Statement</a>.</p>
+</section>
+<section id="upcoming-pilots" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-pilots">Upcoming Pilots</h2>
+<p>As a next step, the R Consortium R Submission Working Group initiated <a href="https://rconsortium.github.io/submissions-pilot4/">submission pilot 4</a>, to explore the use of novel technologies such as Linux containers and web assembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application.</p>
+</section>
+<section id="the-r-consortium-r-submission-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="the-r-consortium-r-submission-working-group">The R Consortium R Submission Working Group</h2>
+<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
+<p>To bring an experimental clinical product to market, electronic submission of data, computer programs, and relevant documentation is required by health authority agencies from different countries. In the past, submissions have been mainly based on the SAS language.&nbsp;</p>
+<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
+<p>Therefore, the R Submissions Working Group aims at providing R-based submission examples and identifying potential gaps during submission of these example packages. All materials, including submission examples and communications, are publicly available on the R consortium Github page: <a href="https://github.com/RConsortium">https://github.com/RConsortium</a> .</p>
+<p>The R consortium R submission working group includes members from more than 10 pharmaceutical companies, as well as regulatory agencies. More details of the working group can be found at: <a href="https://rconsortium.github.io/submissions-wg/">https://rconsortium.github.io/submissions-wg/</a> .</p>
+<p>The R consortium R submission working group is open to anyone who is interested in joining. If interested, please contact Joseph Rickert at director@r-consortium.org.&nbsp;</p>
+</section>
+<section id="pilot-3-fda-reviewers" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3-fda-reviewers">Pilot 3 FDA Reviewers</h2>
+<p>FDA reviewers included&nbsp;&nbsp;</p>
+<p><a href="https://www.linkedin.com/in/hye-soo-cho/">Hye Soo Cho</a>,&nbsp; <a href="https://www.linkedin.com/in/paul-schuette-40aa838/">Paul Schuette</a>, and <a href="https://www.linkedin.com/in/youn-kyeong-chang-885785159/">Youn Kyeong Chang</a>.</p>
+</section>
+<section id="pilot-3-developers" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3-developers">Pilot 3 Developers</h2>
+<p>The Pilot 3 development team included <a href="https://www.linkedin.com/in/jlaxamana/">Joel Laxamana</a> (Project Lead, Roche), <a href="https://www.linkedin.com/in/robert-devine-50b0b931/">Robert Devine</a> (J&amp;J) , <a href="https://www.linkedin.com/in/ben-straub/">Benjamin Straub</a> (GSK) , <a href="https://www.linkedin.com/in/kaz462/">Kangjie Zhang</a> (Bayer) , <a href="https://www.linkedin.com/in/thomas-neitmann/">Thomas Neitmann</a> (Roche), <a href="https://www.linkedin.com/in/tataphani/">Phanikumar Tata</a> (Syneos), <a href="https://www.linkedin.com/in/stevenhaesendonckx/">Steven Haesendonckx</a> (J&amp;J), <a href="https://www.linkedin.com/in/yutong-liu-a25b68a8/">Yutong Liu</a> (Moderna), Lei Zhao (Roche), <a href="https://www.linkedin.com/in/nicolekjonesmph/">Nicole Jones (Merck)</a>, <a href="https://www.linkedin.com/in/bingjun-wang-2b9783147/">Benjamin Wang (Merck),</a> <a href="https://www.linkedin.com/in/dadong-zhang-48b937201/">Dadong Zhang (Illumina)</a>, <a href="https://www.linkedin.com/in/declan-hodges/">Declan Hodges (GSK)</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/</guid>
+  <pubDate>Mon, 26 Aug 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Building Bridges in Haifa, Israel: How the New R User Group in Haifa is Establishing a Diverse R Community</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/building-bridges-in-haifa-israel/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed.jpg" class="img-fluid"></p>
+<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/elieydlin/?originalSubdomain=il">Eli Eydlin</a>, a dedicated member of the R community who has been instrumental in establishing an <a href="https://www.meetup.com/haifa-r-user-group/">R User Group in Haifa, Israel</a>. With a background in physics and a recent shift into the biotech industry, Eli was motivated to create the group after noticing the absence of a local R community in his new city. Despite Haifa’s relatively small size, it boasts a diverse R community, including professionals from high-tech companies, academia, and startups. Eli shared his experience organizing their first Meetup, which featured speakers from vastly different backgrounds, and his plans to make future events more inclusive. His story highlights the importance of community building and the impact of taking the initiative, offering inspiration for others looking to contribute to their local R communities.</p>
+<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
+<p>I’ve been working in a biotech startup for nearly two years. My background is more on the pharma side, but I decided to dive into this new field. When I moved, I noticed that there wasn’t an R User Group in the area, even though I knew of other groups in different cities and countries that were doing great things. I didn’t like the idea of not having one here, so I decided to start one myself. We just had our first event, and I’m really excited to be a part of this initiative.</p>
+<p><strong>Can you share what the R community is like in Haifa?</strong>&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed2.png" class="img-fluid"></p>
+<p>One of the reasons I started this was to meet new people who are also R programmers or users. I already know that the community is really diverse. My city isn’t huge—around 300,000 people—but has much to offer. There are big high-tech companies like Microsoft and Amazon here that support their R&amp;D departments, and I’m certain that some of our members are involved. Like in many places in Israel, there are hundreds of small startups. What I find interesting is that people come from all sorts of backgrounds—mostly from academia, as usual, but now also from government, traditional companies, and small businesses. I’m excited to see where this leads.</p>
+<p><strong>You had a</strong> <a href="https://www.meetup.com/haifa-r-user-group/events/302199640/"><strong>Meetup on August 6th, 2024</strong></a><strong>. Can you share more about the topic covered? Why this topic</strong>?&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed3.png" class="img-fluid"></p>
+<p>We have two completely different topics and two amazing speakers. <a href="https://www.linkedin.com/in/snazarova/?trk=public_profile_browsemap_mini-profile_title&amp;originalSubdomain=ru">Sofia Nazarova</a> is a marine biologist at <a href="https://www.ocean.org.il/en/">Israel Oceanographic &amp; Limnological</a>, who also organizes private guided tours. She teaches people about plants and animals, so she’s not a programmer. However, she co-authored the first-ever R textbook published in Russian, which makes her experience unique. Typically, I work with people who are programmers or data scientists, but she’s out there in the field, literally working with marine life.</p>
+<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed4.jpg" class="img-fluid"></p>
+<p>Our second speaker was <a href="https://www.linkedin.com/in/adi-sarid/?originalSubdomain=il">Adi Sarid</a>, the CEO of <a href="https://sarid-ins.com/">Sarid Institute LTD</a>, a data science company focusing on production and consumption. He’s also writing a book on R, this time in Hebrew. It’s a completely different experience—he’s a business leader working with governments and large firms, and he showcased some fantastic examples of practical applications in his talk.</p>
+<p>I deliberately chose speakers with very different backgrounds because that interests me. While organizing the group, I thought about what I wanted to learn and the connections I wanted to make.</p>
+<p><strong>Who was the target audience for attending this event?</strong>&nbsp;</p>
+<p>To be honest, there wasn’t a specific target audience for this event because I didn’t know anyone. I just tried to reach out to whoever might be interested in participating. After the first event, I noticed a big jump in interest, but only one woman attended. So, for the next event, I want to specifically target women and try to figure out what went wrong. It seems like many women are using R, but for some reason, they didn’t show up. We’ll address that and improve things moving forward.</p>
+<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong>&nbsp; &nbsp;</p>
+<p>We didn’t use anything for the first event, which we may do with the future in mind. We wanted to stay connected, especially since we’re in Israel, and it’s important to support each other under pressure. The event went well, but after it was over, I started receiving messages from people saying they couldn’t attend because they needed to spend time with their kids or were afraid of potential security issues.</p>
+<p>I realize how important it is to offer in-person meetings, but I now acknowledge that it’s not feasible for everyone. So, for the next event, we’ll make it easier for people to join remotely, perhaps through Zoom or a similar platform. We’ll also hold events in more secure locations. It’s clear that while in-person events are valuable, they aren’t always possible or suitable for everyone.</p>
+<p><strong>We would like to get to know you more personally. Can you please tell me about yourself? For example, hobbies/interests or anything you want to share about yourself.</strong></p>
+<p>First of all, I have a physics background and a master’s degree in it. I recently transitioned into the pharma and biotech industry, which has been a new and exciting challenge for me. My interests have always been diverse, and I’m particularly fascinated by this field, as well as by the natural beauty of Israel, especially its trees. On a different note, I’m also a harmonica player, which is another passion of mine.&nbsp;</p>
+<p><strong>Please share any additional details you would like included in the blog.</strong>&nbsp;</p>
+<p>I want to take the initiative with the R Consortium and contribute to its efforts. I see how cool and relatively easy it is to organize such a group. Focusing on developing countries is important, but it’s also relevant here in Israel, even though we’re relatively wealthy. What motivated me was seeing others take action, and I realized that I needed to step up and organize a group as well. The tools and support provided by the R Consortium are incredibly helpful for bringing people together. So, I just wanted to say thank you for that.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/building-bridges-in-haifa-israel/</guid>
+  <pubDate>Tue, 20 Aug 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed4.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>A New R Community in Ahmedabad, India, focused on Clinical Research and Pharmaceutical Industries</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/ssinojia/?originalSubdomain=in">Sanket Sinojia</a>, organizer of the <a href="https://www.meetup.com/ahmedabad-r-users-group/">Ahmedabad R User Group (ARUG).</a> With over 14 years of experience in statistical programming and data sciences in the clinical research industry, Sanket spearheaded the formation of ARUG to create a dedicated community focused on applying R in clinical research and pharmaceutical industries.&nbsp;</p>
+<p>Since its official setup in 2023, ARUG has rapidly grown into a vibrant group with over 100 active members. The community fosters collaboration, knowledge-sharing, and mentorship, contributing significantly to the broader R ecosystem. Sanket’s dedication to data science and community building is evident in his efforts to organize impactful events, mentor new members, and drive the group’s growth.</p>
+<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed.png" class="img-fluid"></p>
+<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
+<p>I’ve been working in statistical programming and data sciences in the clinical research industry for more than 14 years, which naturally led me to explore tools that enhance data analysis and visualization. My journey with the Ahmedabad R Users Group (ARUG) began when I recognized the growing need for a dedicated community focused on applying R in our field. I was sitting with my industry friends <a href="http://linkedin.com/in/paresh-parekh-16734817">Paresh Parekh</a>, <a href="http://linkedin.com/in/paresh-p-a2352825">Paresh Paghdar</a>, <a href="http://linkedin.com/in/parin-shah-98886928">Parin Shah</a>, and <a href="http://linkedin.com/in/rapandya">Rahul Pandya</a>, discussing what we could do to bring the Ahmedabad R community together. After a few days, when we met again, I proposed setting up the ARUG. They welcomed and fully supported the vision.&nbsp;</p>
+<p>While the group was initially formed in 2021, its formal setup was completed in 2023 with collaboration from the R Consortium. Since then, I’ve been organizing events, facilitating discussions, and contributing to the group’s growth. My passion for data science and community building drives my commitment to ARUG. Beyond organizing, I also mentor new members, helping them navigate the complexities of R. It’s incredibly rewarding to see the community thrive and to witness the impact of our collective efforts on advancing the field. ARUG is the first city-based group in India associated with R Consortium and the only R user group focused on Clinical Research &amp; Pharmaceutical Industries.</p>
+<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed2.png" class="img-fluid"></p>
+<p><strong>Can you share what the R community is like in Ahmedabad?</strong>&nbsp;</p>
+<p>Ahmedabad, a world heritage city known for its rich history and vibrant culture, is also known for its Pharma Industry. Ahmedabad is now emerging as a significant hub for clinical research, data sciences, and pharmaceutical innovation. The R community in Ahmedabad is vibrant and rapidly growing, especially within these sectors. With over 100 active members, our community is a diverse mix of seasoned professionals and enthusiastic newcomers. This diversity fosters a collaborative environment where knowledge-sharing and mentorship flourish. The enthusiasm and engagement at our events reflect the community’s dedication to advancing their skills and contributing to the broader R ecosystem. We’ve seen a significant increase in participation and interest, indicating the strong potential for R to drive innovation and efficiency in our industry. The city’s dynamic and innovative spirit resonates through our community, making it an exciting place for anyone passionate about data science and clinical research.</p>
+<p><strong>You had a</strong> <a href="https://www.meetup.com/ahmedabad-r-users-group/events/302239112/"><strong>meetup on July 21st, 2024</strong></a><strong>. Can you share more about the topic covered? Why this topic?</strong></p>
+<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed3.png" class="img-fluid"></p>
+<p>The meetup was a highly anticipated event entitled ‘R Evolution: Shaping the Future of Clinical Trials.’ We chose this topic because it aligns perfectly with the emerging demand for R in our industry and aims to make our attendees aware of the transformative potential R brings to clinical research. Here’s a quick recap:</p>
+<p>I started the event by taking attendees through the inspiring journey of the Ahmedabad R Users Group (ARUG). I shared key updates, our association with the R Consortium, and outlined ARUG’s long-term goals. The overwhelming response, with event registration filling up within 24 hours, highlighted the high expectations and enthusiasm of our attendees!</p>
+<p><a href="http://linkedin.com/in/sassavvy">Sunil Gupta</a>, a renowned industry expert, delivered an incredible presentation on ‘R Made Easier for SAS Programmers.’ His insights, tips, and tricks on transitioning to R were invaluable, offering a comprehensive learning experience.</p>
+<p>Following his session, we enjoyed a vibrant networking session, making new connections and reconnecting with old friends.</p>
+<p><a href="http://linkedin.com/in/chintan-patel-291a3553">Chintan Patel</a> captivated us with a simplified demonstration of creating Kaplan Meier Plots using R. His comprehensive topic coverage inspired many to delve deeper into graphing with R.</p>
+<p><a href="http://linkedin.com/in/miteshpatel5056">Mitesh Patel</a> then presented ‘R Shiny in Action,’ explaining the fundamentals and applications of R Shiny, complete with a live demonstration of three case studies. His session highlighted R Shiny’s potential as a game-changer in data visualization.</p>
+<p>I then hosted a dynamic round table discussion on conferences, joined by <a href="http://linkedin.com/in/parin-shah-98886928">Parin Shah</a>, <a href="https://www.linkedin.com/in/purvi-kalra-csm%C2%AE-8b506a14/?originalSubdomain=in">Purvi Kalra</a>, and <a href="https://www.linkedin.com/in/saumil-tripathi-40a90b65/">Saumil Tripathi</a>. They shared invaluable tips on conference preparation, R trends, and enhancing presentation confidence.</p>
+<p>Finally, <a href="http://linkedin.com/in/krupa-trivedi-a2517515a">Krupa Trivedi</a>, <a href="http://linkedin.com/in/nidhi-shah-73815715a">Nidhi Shah</a>, and <a href="https://www.linkedin.com/in/nikunj-kothari/?originalSubdomain=in">Nikunj Kothari</a> organized a thrilling ‘Test Your R Skills’ quiz. The live, time-bound quiz with an instant leaderboard brought a fun and competitive spirit to the hall.</p>
+<p>The event wrapped up with <a href="http://linkedin.com/in/rapandya">Rahul Pandya</a>’s vote of thanks, where we celebrated our presenters, the ARUG event team, and quiz winners.</p>
+<p>The ARUG Event Team – <a href="http://linkedin.com/in/ankit-vadodaria-b775a961">Ankit Vadodariya</a>, <a href="http://linkedin.com/in/dishant-parikh-6b893954">Dishant Parikh</a>, <a href="http://linkedin.com/in/krupali-prashant-0b94232a">Krupali Ladani</a>, <a href="http://linkedin.com/in/krupa-trivedi-a2517515a">Krupa Trivedi</a>, <a href="http://linkedin.com/in/nidhi-shah-73815715a">Nidhi Shah</a>, <a href="http://linkedin.com/in/nikunj-kothari">Nikunj Kothari</a>, <a href="http://linkedin.com/in/paresh-p-a2352825">Paresh Paghdar</a>, <a href="http://linkedin.com/in/paresh-parekh-16734817">Paresh Parekh</a>, <a href="http://linkedin.com/in/parin-shah-98886928">Parin Shah</a>, <a href="http://linkedin.com/in/purvi-kalra-csm%C2%AE-8b506a14">Purvi Kalra</a>, <a href="http://linkedin.com/in/rapandya">Rahul Pandya</a>, and <a href="http://linkedin.com/in/ssinojia">Sanket Sinojia</a> – successfully organized the entire event. Their hard work and dedication ensured a seamless and impactful experience for all attendees.</p>
+<p><strong>Who was the target audience for attending this event?</strong>&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed4.png" class="img-fluid"></p>
+<p>Our target audience primarily includes professionals and researchers from the clinical and pharmaceutical industries. This encompasses data scientists, statistical programmers, biostatisticians, clinical trial analysts, and anyone interested in leveraging R for data analysis and visualization in these fields. We also welcome newcomers who are eager to learn and contribute to this dynamic industry. By targeting this specific audience, we ensure our content is highly relevant and impactful, addressing real-world challenges and opportunities our members face. Additionally, our events offer networking opportunities that can lead to collaborations.</p>
+<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong>&nbsp;&nbsp;&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed5.png" class="img-fluid"></p>
+<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed6.png" class="img-fluid"></p>
+<p>For planning and executing our events, we rely on a combination of tools such as <a href="https://github.com/ssinojia/ARUG/tree/main">GitHub</a> for collaborative project management and repositories, Zoom for virtual sessions, and <a href="https://www.meetup.com/ahmedabad-r-users-group/">Meetup</a> and <a href="https://www.linkedin.com/company/arug/about/">LinkedIn ARUG</a> pages for continuous engagement and communication. These tools not only streamline our processes but also enhance accessibility. By utilizing these technologies, we can include members who cannot attend physical events, making our group more inclusive. We share our event summaries and slides on GitHub, ensuring that valuable information is accessible to all members. Additionally, we are considering recording sessions and sharing them on platforms like YouTube to further extend the reach of our events. Using these tools also allows us to gather feedback and improve future events, ensuring we meet the evolving needs of our community. This approach helps us maintain a vibrant and connected community, regardless of geographical limitations.</p>
+<p><strong>We would like to get to know you more personally. Can you please tell me about yourself? For example, hobbies/interests or anything you want to share about yourself.</strong></p>
+<p>Outside of my professional life, I have several passions that I pursue with great enthusiasm. I enjoy blogging and sharing my thoughts on data science, industry trends, and personal reflections. The mountains always call me, and I find peace and inspiration in hiking and exploring nature. Additionally, I write poetry in my local language, allowing me to express my creativity and connect with my cultural roots. These hobbies provide a balanced and enriching life, complementing my professional endeavors.</p>
+<p>Apart from ARUG, I volunteer with organizations like <a href="https://www.cdisc.org/">CDISC</a>, <a href="https://phuse.global/">PHUSE</a>, <a href="https://pharmaverse.org/">Pharmaverse</a>, and <a href="https://rinpharma.com/">RinPharma</a>, contributing to various projects such as <a href="https://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-4">SDTM IG v3.4 development</a>, <a href="https://www.cdisc.org/primer">CDISC Primer development</a>, and <a href="https://learn.rinpharma.com/shiny4submissions.html">Shiny for Submission</a>. These experiences offer me a unique perspective and a sense of tranquility that I bring into my work, enhancing my creativity and problem-solving abilities. Engaging in these activities helps me maintain a holistic approach to my professional and personal life.</p>
+<p>I cherish spending time with my family, especially with my adorable daughter Saanvi. My better half, Niza, always supports and encourages me in all aspects of life. She is dedicated to taking care of our family and provides unwavering support that allows me to pursue my passions and professional goals.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/</guid>
+  <pubDate>Mon, 12 Aug 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>R Consortium Grants Committee Announces New Chair</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/rconsortium-grants-comittee-announces-new-chair/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/rconsortium-grants-comittee-announces-new-chair/images/Katherine.png" class="img-fluid"></p>
+<p>The R Consortium is pleased to announce that Katherine Jeschke has been appointed Chair of the Grants Committee.</p>
+<p>She will oversee day-to-day grant processes for both pre- and post-awards, ensuring grants meet the R Consortium’s strategic objectives. Katherine will report to the Executive Director and work closely with the Infrastructure Steering Committee and the RUGS program to track grants and help improve the effectiveness of R Consortium grants in supporting the R Community.</p>
+<p>Katherine’s non-profit grants and administration skills were honed over more than 25 years of experience in marketing communications, and staff, budget, development, and grants management for non-profits and trade organizations, as well as corporate and public sector consulting organizations.</p>
+<p>She holds an MA degree in American History and Museum Administration from George Washington University and a BA degree in Fine Arts and Art History from the University of Maryland.</p>
+<p>“Getting acquainted with our various grants and procedures while evaluating the strategic effectiveness of R Consortium grants is a big undertaking, but her background and years of experience should ease her way,” said Joseph Rickert, Executive Director of the R Consortium.</p>
+<p>She may be reached at kj.jeschke@posit.co</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/rconsortium-grants-comittee-announces-new-chair/</guid>
+  <pubDate>Fri, 02 Aug 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/rconsortium-grants-comittee-announces-new-chair/images/Katherine-blog2.png" medium="image" type="image/png" height="58" width="144"/>
+</item>
+<item>
+  <title>Pharma RUG: The Rise of R in China’s Pharmaceutical Industry</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/pharma-rug-the-rise-of-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>PharmaRUG, China organizer <a href="https://shajoezhu.github.io/">Joe Zhu</a>, spoke with the R Consortium about the growing R community and the increasing use of R in the pharmaceutical industry in China. The group has contributed to the pharmaceutical R community through several R packages. Since its establishment last year, the group has organized large-scale hybrid events. Joe also shared some tools and techniques for smoothly organizing and running hybrid events.</p>
+<p><img src="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/unnamed.jpg" class="img-fluid"></p>
+<p><strong><em>Please share about your background and involvement with the RUGS group.</em></strong></p>
+<p>I have a PhD in statistics and studied in New Zealand for my undergraduate and postgraduate degrees in statistics. My PhD work focused on theoretical coalescent theory and probabilistic modeling for phylogenetics models. I also completed a postdoc at Oxford, focusing on statistical genomics for the human genome and malaria parasite genome projects. During this time, I developed open source software tools for statistical genomics, primarily using R as a front end and developing C++ software.</p>
+<p>For the past four years, I’ve worked at <a href="https://www.roche.com/innovation/structure/rnd-locations/pharma-shanghai">Roche</a>, where I started leading a major collaboration initiative in pharma three years ago. I’ve created TLG (table, listing, and figures) for regulatory submissions to the <a href="https://www.fda.gov/">FDA</a>. Throughout this initiative, we have open sourced around 30 software packages, including `<a href="https://cran.r-project.org/web/packages/formatters/index.html">formatters</a>`, `<a href="https://cran.r-project.org/web/packages/rtables/index.html">rtables</a>`, `<a href="https://cran.r-project.org/web/packages/rlistings/index.html">rlistings</a>` and `<a href="https://cran.r-project.org/web/packages/tern/index.html">tern</a>`. Last year, we submitted these packages to CRAN.</p>
+<p>At first, we open sourced the project on GitHub and then submitted it to <a href="https://cran.r-project.org/">CRAN</a>. I’m heavily involved in one of China’s R user groups, PharmaRUG. We use the group to share posts about developments in the area, and we organize events and conferences. In March last year, we hosted the first <a href="https://pharmarug.github.io/pharmarug-2023/">event</a> with over 100 people on-site and around 100 online. The event covered topics like R package usage in the pharma industry. Later that year, we organized another event called “<a href="https://insightsengineering.github.io/nest-2023-summeR/">Open Source Clinical Reporting summeR</a>“.&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/unnamed2.png" class="img-fluid"></p>
+<p>Lately, I have been busy organizing several events. I recently gave a talk (about R package dependencies as directed in acyclic graphs) at a conference hosted by the R community in China. Early next month, on August 1st, I will attend a <a href="https://pharmarug.github.io/pharmasug2024-r-workshop/">pharma conference</a> where I will conduct a workshop on good practices in software package development. The conference schedule is quite packed for me as I also have a session on how teams operate and collaborate within the Pharma industry to develop R packages. On the third day of the conference, I will organize a series of 11 data visualization talks, one of which is about Python. Most of the talks will focus on using R, except for one discussion on Python.</p>
+<p><strong><em>Can you share what the R community is like in China?</em></strong>&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/unnamed3.png" class="img-fluid"></p>
+<p>We have opened up seats for students to join our events in the pharmaceutical industry. In the past, fewer than 20 students, mostly from academia, have joined us for these conferences. The events include big names like Roche, Johnson &amp; Johnson, Novartis, Boehringer Ingelheim, and Sanofi and local companies such as Fosun, Hengrui, and Legend Biotech. There is a big R community in China across academia and industry. Our user group primarily focuses on the pharma industry. Our <a href="https://www.wechat.com/">WeChat</a> channel has nearly a thousand subscribers, and our group chat has almost 500 members. It’s a very active community.&nbsp;</p>
+<p>Later this year, we will collaborate with the “<a href="https://rinpharma.com/">R in Pharma</a>” for the October conference. <a href="https://www.linkedin.com/in/danielsabanesbove/?originalSubdomain=ch">Daniel Sabanes Bove</a> and I have contacted Harvey and Phil, and we will organize an APAC track, including India, China, Japan, Australia, Singapore, and Korea.&nbsp;</p>
+<p><strong><em>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</em></strong></p>
+<p>We have created a GitHub account called <a href="https://github.com/pharmarug">PharmaRUG</a>. We use this platform to share websites, posts, slides, and videos related to our events. The <a href="https://pharmarug.github.io/pharmarug-2024/">Pharma RUG 2024</a> conference was particularly successful this year, thanks to the support from the R Consortium. We also utilize WeChat groups to call for speakers and interact with others. In addition to GitHub and WeChat, we use <a href="https://www.tencentcloud.com/document/product">Tencent Docs</a> to share documents. This is particularly useful in China, where using company-specific platforms like Google or Microsoft can be hindered by firewalls. Tencent Docs works perfectly in China, making sharing and synchronizing documents easy.</p>
+<p><strong><em>Can you share some valuable tips for organizing succesful Hybrid events?</em></strong></p>
+<p><img src="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/unnamed4.jpg" class="img-fluid"></p>
+<p>We have a series of planning sessions where we actively communicate using WeChat. We meet at a community center where everyone is open, and we have preset meetings. We test the audio and everything beforehand. This is our second year organizing these events, so we have gained more experience. We are now familiar with the standards and know what needs to be done. For example, when two companies, like MNCs, use different systems, we find it better to use one shared system to ensure everything is synchronized.</p>
+<p>We’ve found that <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software">Microsoft Teams</a> is easy to use for setting up meetings and scheduling them ahead of time. For live demos, we recommend pre-recording the demos and taking questions. In the case of hybrid sessions with multiple locations, we prioritize asking and answering questions based on the primary and secondary locations, as well as online participation. If we cannot answer questions quickly, we host Q&amp;A sessions afterward and share them online.</p>
+<p>I believe that for the event to be successful, timing is crucial. We must stick to the schedule because it’s a hybrid event. However, we should also allow for some flexibility when unexpected things come up. We haven’t created a YouTube account yet because YouTube isn’t accessible in China. One alternative could be setting up a Bilibili web page and account to share the videos. All our files are currently on GitHub, which is convenient. We need to trim the videos to smaller sizes to fit GitHub’s file size limits, maybe at four and a half speeds or similar.</p>
+<p><strong><em>What trends do you currently see in R language and your industry?</em></strong></p>
+<p>So, <a href="https://www.sas.com/en_us/home.html">SAS</a> has dominated the software space for the Pharma industry for decades. While it used to be used for exploratory and research purposes, there have been successes with using Office to support missions in recent years. Roche also has success stories in this area. There are several initiatives, with <a href="https://pharmaverse.org/">PharmaVerse</a> being a significant player. Roche is part of PharmaVerse, taking inspiration from the <a href="https://www.tidyverse.org/">tidyverse</a> multiverse concept. The end-to-end clinical reporting process is considered in this space, from data preparation to TLG generations. A lot has happened in the past three to four years, especially in China last year. There’s been significant development in China, and you can see a shift from SAS to R in the tools used. At the PharmaSUG meeting, which was previously dominated by SAS users, in the past few years, a quarter to one-third of the tools are using languages other than SAS. It’s clear that things are moving away from SAS towards software languages like R.</p>
+<p>This year, I don’t have the complete statistics with me right now, but you do see a lot of topics. In my session, I’m sharing, and you know, many talks use visualization because it’s much likable. So, the trend is that R is becoming more acceptable than before, from PLCs to things in production. There are very high standards for codes and validation.</p>
+<p>In the end, I would like to thank my dear friends and colleagues for their support and for making this happen</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/yan-qiao-55877117/">Yan Qiao</a>, Associate Director of Scientific Programming, Beigene,&nbsp;</li>
+<li><a href="https://www.linkedin.com/in/baoqing-li-09a8b5167/">Baoqin Li</a>, China Head Clinical &amp; Statical Programming, Johnson &amp; Johnson</li>
+<li>Dong Guo, China head of Stats Analyst, Eli-lilly&amp;Company</li>
+<li><a href="https://www.linkedin.com/in/yun-ma-79220629/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&amp;originalSubdomain=cn">Yun Ma</a>, Director, clinical data Sciences, Boehringer Ingelheim (china) Investment Co.</li>
+<li><a href="https://www.linkedin.com/in/yanli-chang-00b765145/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&amp;originalSubdomain=cn">Yanli Chang</a>, Head of Data Operations China, Novartis</li>
+</ul>
+<p><strong>How do I Join?</strong></p>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/pharma-rug-the-rise-of-r/</guid>
+  <pubDate>Thu, 01 Aug 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/unnamed.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>R-Ladies Rome: Empowering Women in Data Science Through Collaboration and Innovation</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://federicagazzelloni.com/">Federica Gazzelloni</a>, co-organizer of <a href="https://www.meetup.com/rladies-rome/">R-Ladies Rome</a>, recently spoke with the R Consortium about the fast-growing R community in Rome. The group collaborates with R user groups worldwide and has successfully attracted a diverse audience to its events. Federica also contributes to the R community through package development and is currently working on a book about using R for health metrics and tracking the spread of infectious diseases.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/federica.png" class="img-fluid"></p>
+<p>The group is hosting an online event titled <a href="https://www.meetup.com/rladies-rome/events/302078600/">“Building Reproducible Pipelines with R, Docker, and Nix”</a> on the 29th of July. R users from around the world are invited to attend this event.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/bruno.jpg" class="img-fluid"></p>
+<p><strong><em>Please share about your background and involvement with the RUGS group.</em></strong></p>
+<p>I am Federica Gazzelloni, an actuary and statistician interested in health studies. I am writing a book about health metrics and the spread of infectious diseases. As the lead organizer of R-Ladies Rome, one of the R user groups sponsored by the R Consortium, I am grateful for the support that enables us to organize monthly talks, tutorials, and workshops. Our events provide an inclusive and accessible learning environment free of charge, featuring exciting speakers and various engagement opportunities. Additionally, we have held events in partnership with <a href="https://www.r-consortium.org/blog/2023/07/24/use-of-r-in-non-profit-social-policy-research-in-new-york">R-Ladies New York</a>, <a href="https://www.r-consortium.org/blog/2023/11/16/highlights-from-r-ladies-paris-hybrid-meetup-empowering-community-outreach">R-Ladies Paris</a>, and <a href="https://www.r-consortium.org/blog/2024/04/26/bridging-gaps-tunis-r-user-groups-journey-in-democratizing-r-in-bioinformatics">Tunis R User Group</a> and created a branded website: <a href="https://rladiesrome.org/">rladiesrome.org</a>!</p>
+<p>R-Ladies Rome started in 2023 and has grown significantly since then. Our events consistently reach a substantial audience. For instance, our latest event with <a href="https://www.r-consortium.org/blog/2024/07/03/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle">Isabella Velasquez</a> garnered over 100 RSVPs. During Data Viz Month, we received unexpected attention from the open tech community of learners. Our followers on Meetup have reached over 1.1k, and our social media presence is steadily growing.</p>
+<p><strong><em>Can you share what the R community is like in Rome? </em></strong></p>
+<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/r-ladies.png" class="img-fluid"></p>
+<p>Since the kick-off of the chapter in 2023, R-Ladies Rome has played a pivotal role in fostering a dynamic community. We have successfully brought together an international group of R enthusiasts, ranging from beginners to experienced data scientists, creating a supportive and engaging environment for all. The popularity of the R language within the open source community, particularly for statistical analysis and medical research, is evident in Rome. R offers a wide range of libraries that can be easily applied to various topics, making it very convenient for users. Although Python is gaining attention in research and providing another accessible option for statistical analysis, the medical statistical community seems to prefer R over Python due to its extensive capabilities and strong community support.</p>
+<p>Our events have consistently attracted significant attention and participation. For example, our latest event with Isabella Velasquez garnered over 100 RSVPs. We have also received unexpected attention during Data Viz Month from the open tech community of learners. Our Meetup followers have reached over 1.1k, and our social media presence is steadily growing.</p>
+<p>The R community in Rome is expected to grow, with R-Ladies Rome at its heart, driving engagement and promoting the use of R for various applications. We are excited to continue growing and evolving, providing valuable learning opportunities and fostering connections within the community.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed.png" class="img-fluid"></p>
+<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed (1).png" class="img-fluid"></p>
+<p><strong><em>What trends do you currently see in R language?</em></strong></p>
+<p>We have reviewed all the events that R-Ladies’ groups have organized in the past years and, after considering the rebranding of RStudio to <a href="https://posit.co/">Posit</a> PBC and <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> to <a href="https://quarto.org/">Quarto</a>, realized that several exciting trends in the R language are shaping its usage and development within the data science community. Analyzing event titles, attendee numbers, and activity on past recordings, we found that events containing “Introduction” or “Tutorials” impact learners most, highlighting the growing interest in learning R for data analytics, reproducible research, and dynamic reporting.</p>
+<p>Moreover, integrating R with other programming languages and platforms is gaining significant attention. The interoperability between R and languages like Python, HTML, or Java allows users to enhance their skills across multiple tools within a single environment. This has expanded R’s capabilities, making it a versatile choice for a diverse range of users.</p>
+<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed (2).png" class="img-fluid"></p>
+<p><strong><em>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</em></strong></p>
+<p>We’ve been using <del><a href="https://www.canva.com/">Canva</a></del> extensively for various tasks and found <del><a href="https://openai.com/index/chatgpt/">ChatGPT</a></del> very helpful in crafting storytelling content. To enhance the planning and execution of events, <a href="https://github.com/features/copilot">Copilot</a> assists with its excellent collaborative typing, saving time. Additionally, having a Meetup pro-account is valuable, mainly as <a href="https://www.meetup.com/rladies-rome/">R-Ladies Rome</a> is part of the broader R Ladies group. It helps us connect with a wider audience while using Google Forms aids communication and prevents missing information. We also use <a href="https://www.youtube.com/@rladiesrome">YouTube</a> and have our channel, which is very useful for sharing past events recordings and making them available online to ensure accessibility for those unable to attend live events.</p>
+<p><strong><em>You have a Meetup on <em>“<a href="https://www.meetup.com/rladies-rome/events/302078600/">Building reproducible pipelines with R, Docker and Nix</a>”</em>, can you share more on the topic covered? Why this topic? </em></strong></p>
+<p>We have an upcoming Meetup titled “Building reproducible pipelines with R, Docker and Nix” , featuring speaker <a href="https://www.linkedin.com/in/brodriguesco/">Bruno Rodrigues</a>. This topic was chosen based on feedback from our organizers, <a href="https://www.linkedin.com/in/silacos/">Silvana Acosta</a> and <a href="https://www.linkedin.com/in/rafaelagrlucas/">Rafael Ribeiro</a>, who polled our audience to identify a favorite speaker. Bruno Rodrigues emerged as a popular choice, highlighting the growing interest in robust and reproducible data science workflows.</p>
+<p>In this session, Bruno Rodrigues will guide us through setting up reproducible data pipelines using R, <a href="https://www.docker.com/">Docker</a>, and <a href="https://nixos.org/">Nix</a>. These tools ensure that data analyses are consistent and can be easily shared and replicated across different environments. By learning to use Docker and Nix alongside R, our community members will gain valuable skills to enhance the reliability and reproducibility of their data science projects. This event aligns with our mission to provide practical and impactful learning opportunities that meet the evolving needs of the data science community.</p>
+<p><strong><em>Please share about a project you are currently working on or have worked on using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</em></strong></p>
+<p>One of the key projects I am currently working on involves a quarto-book titled “<em>Health Metrics and the Spread of Infectious Diseases with R”</em>, which CRC Press will publish at the end of this year. This book aims to provide comprehensive insights into the intersection of health metrics, such as DALYs and infectious disease dynamics, using advanced statistical methods and machine learning techniques in R. The goal is to equip readers with the knowledge and tools to analyze and interpret health data effectively, thereby contributing to the broader field of public health.</p>
+<p>In addition to the book, I have developed a couple of R data packages to aid in data analysis and visualization. One is “<a href="https://github.com/Fgazzelloni/oregonfrogs">oregonfrogs</a>,” which is expected to go on CRAN very soon. This package focuses on classification modeling for detecting frog habitats, utilizing spatial techniques. It provides a valuable function, <a href="https://fgazzelloni.github.io/oregonfrogs/reference/longlat_to_utm.html">longlat_to_utm()</a>. The development of these packages showcases R’s versatility in handling complex ecological data and emphasizes the importance of open source tools in advancing scientific research. Through these projects, I aim to demonstrate the practical applications of R in public health and environmental science, fostering a deeper understanding and appreciation of data-driven methodologies.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join"><strong>How do I Join?</strong></h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<!-- watermark -->
+<div style="background-color:#FFFFFF">
+<p style="color:#FFFFFF; font-size: 1px">
+gd2md-html: xyzzy Mon Jul 29 2024
+</p>
+</div>
+<p><a href="https://www.r-consortium.org/all-projects/r-user-group-support-program">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/</guid>
+  <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed%20(2).png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Empowering the R Community: Insights from Myles Mitchell of the Leeds Data Science Group</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/myles-mitchell-4009aa98/?originalSubdomain=uk">Myles Mitchell</a>, co-organizer of the&nbsp;<a href="https://www.meetup.com/leeds-data-science-meetup/">Leeds Data Science group</a>, to discuss the local R community and the group’s recent activities. Myles highlighted the group’s efforts to create an inclusive and welcoming environment for all participants. The group is dedicated to creating networking opportunities for students interested in pursuing a career in data science and sharing job openings.<br>
+<br>
+<img src="https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/image_1.jpg" class="img-fluid"></p>
+<p>The Leeds Data Science group is hosting an in-person event titled “<a href="https://www.meetup.com/leeds-data-science-meetup/events/300758737/"><strong><em>Improving the Fidelity and Stability of Large Language Models</em></strong></a>” on the 23rd of July.&nbsp;</p>
+<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
+<p>I am a data scientist at <a href="https://www.jumpingrivers.com/">Jumping Rivers</a>, a data science consultancy. We collaborate with various companies on data-related projects, such as data storage, modeling, developing data visualization dashboards, and offering data science training. Initially, I had a background in Python, but I learned R while working at Jumping Rivers, where many of our staff are proficient in R, and much of our infrastructure is written in R.</p>
+<p>At Jumping Rivers, we receive funding from the R Consortium. We organize the <a href="https://www.meetup.com/leeds-data-science-meetup/">Leeds Data Science Meetups</a> every two months and the <a href="https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/">North East Data Science Meetups</a> every three months. Additionally, we hold annual conferences, such as <a href="https://shiny-in-production.jumpingrivers.com/">Shiny in Production</a> (October) and <a href="https://satrday-london-2024.jumpingrivers.com/">SatRdays London</a> (April), which run once a year. I organize the North East and Leeds Data Science Meetups for Jumping Rivers.</p>
+<p><strong>Can you share what the local R Community is like?</strong></p>
+<p><img src="https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/image_2.jpg" class="img-fluid"></p>
+<p>I am located in Newcastle, in the northeast of England, where a large community is keenly interested in data science. Our community includes <a href="https://www.ncl.ac.uk/">Newcastle University</a> and <a href="https://www.northumbria.ac.uk/">Northumbria University</a> students, many of whom are studying data science or statistics. There are also professionals from various industries looking for data science jobs. Our meetups are attended by prospective data scientists and students eager to network and learn more about the field.</p>
+<p>Both universities teach R, and many industries in the area employ data science techniques, including <a href="https://www.nwl.co.uk/">Northumbrian Water</a> and <a href="https://www.nissan.co.uk/">Nissan</a>. These companies use data science to solve everyday problems, such as detecting water leaks and optimizing manufacturing processes.</p>
+<p>Data science is relevant across almost all industries, and R, along with Python and other languages, is a crucial tool in solving data science problems. In the Northeast, consultancies like Jumping Rivers specialize in data science. In summary, we have a large community of students and industry professionals in the Northeast, and it’s a similar story in Leeds.</p>
+<p><strong>You have a Meetup on “<a href="https://www.meetup.com/leeds-data-science-meetup/events/300758737/">Improving the Fidelity and Stability of Large Language Models</a>”, can you share more on the topic covered? Why this topic?</strong></p>
+<p>During our Meetup on “Improving the Fidelity and Stability of Large Language Models,” we will explore how to enhance software solutions with AI capabilities, focusing on improving the accuracy and reliability of these models. Drawing from real-world experiences, we will discuss successful strategies for development, tackle the challenge of model ‘hallucinations,’ and address other significant obstacles. This topic is essential as the AI sector continues to grow rapidly, and integrating AI effectively is crucial for developers to achieve robust performance and innovative functionality in their projects. The session is designed for developers of all skill levels interested in incorporating AI into their work, ensuring they can implement practical and effective methodologies for positive outcomes.</p>
+<p><a href="https://www.linkedin.com/in/ryanmangan01/?originalSubdomain=uk">Ryan Mangan</a> will be presenting this meetup. Ryan is a seasoned technologist with over 18 years of experience in cloud computing, AI, and virtualization. He founded <a href="https://www.linkedin.com/company/efficientether/">Efficient Ether Ltd</a>, a Microsoft startup specializing in AI, cloud optimization, and sustainability. Ryan is a recognized <a href="https://mvp.microsoft.com/">Microsoft MVP</a>, <a href="https://vexpert.vmware.com/">VMware vExpert</a>, and Chartered Fellow of the British Computer Society. He has authored several e-books and publications, including “<a href="https://www.amazon.com/Mastering-Azure-Virtual-Desktop-implementation/dp/1801075026">Mastering Azure Virtual Desktop</a>,” and is active in public speaking and blogging within the tech community.&nbsp;</p>
+<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong></p>
+<p>Regarding techniques, I’m currently reviewing how we organize our meetups. Our meetups are free to attend for all participants, and we aim to create a welcoming and accessible environment for everyone to network and meet like-minded individuals in the area. The meetups are held every two to three months on weekdays in the evenings, providing attendees with time to travel from their place of work to the venue. We offer refreshments at the start, including pizza and soft drinks, and we ensure that vegan, gluten-free, and halal options are included to cater to a wide range of dietary preferences.&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/image_3.jpg" class="img-fluid"></p>
+<p>We often run interactive workshops at the North East Data Science Meetups, including a recent <a href="https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/events/300470386/">meetup</a> on the Apache Arrow interface for R, led by <a href="https://thisisnic.github.io/about/">Nic Crane</a> on July 18th. To make our workshops as inclusive as possible, we provide attendees with all necessary materials and dependencies via a cloud environment created using <a href="https://docs.posit.co/pwb/">Posit Workbench</a>. It allows participants without prior installation of RStudio IDE to contribute and interact with the workshop materials. Our goal is to make our workshops accessible to a broad audience, including those from non-R backgrounds. In general, we aim to create an event where attendees can participate without the burden of installing multiple packages or downloading data.</p>
+<p>Most attendees attend our meetups to network and meet industry professionals, especially students exploring post-graduation career opportunities. With this in mind, we always reserve a part of the meetup for advertising similar meetups and conferences in the area and job opportunities in data science. Many attendees regard these meetups as a regular source of news, so we try to provide a central hub of information and a place to enjoy high-quality live talks and workshops.</p>
+<p>These are in-person meetups. We could attract more people if we recorded and live-streamed it on Zoom. However, managing a Zoom call and recording would create more work for the organizers, and an in-person event provides better networking opportunities than online. In saying that, we will continue to look at ways to make these accessible and appeal to a wide range of backgrounds, and we will always take feedback from the community seriously.</p>
+<p><strong>What trends do you currently see in R language and your industry? Any trends you see developing in the near future?</strong></p>
+<p>In the northeast and Leeds data science meetups, there is a significant interest in machine learning, training and deploying machine learning models, and productionizing these models (ML Ops). Attendees often expect talks on these topics and are particularly interested in chatGPT, generative AI, and other related issues. However, data science encompasses a broader range of areas, including visualizing data and creating dashboards, and we try to cover all of these areas in our talks and workshops. Despite our efforts, there is a clear trend toward machine learning-focused discussions, with many talk submissions focusing on ML Ops and deploying models on the cloud.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://www.r-consortium.org/all-projects/r-user-group-support-program">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/</guid>
+  <pubDate>Mon, 22 Jul 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Kolkata R User Group: A Rich History with Statistics</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The R Consortium recently spoke with <a href="https://samrit.quarto.pub/">Samrit Pramanik</a> of the <a href="https://www.meetup.com/kolkata-r-user-group/">Kolkata R User Group</a> about his experience starting a new R User Group in India. Samrit highlighted Kolkata’s rich history with statistics and talked about the diverse local R community.</p>
+<p><img src="https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/Samrit.jpg" class="img-fluid" style="width:50.0%"></p>
+<p>The Kolkata R User group is organizing its second online event titled “<a href="https://www.meetup.com/kolkata-r-user-group/events/301528636/">A New Approach for Teaching Data Analytics with R</a>” on July 13th. R users from around the world are invited to join this event.</p>
+<p><img src="https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/Announcement.jpg" class="img-fluid"></p>
+<p><strong><em>Please share your background and involvement with the RUGS group.</em></strong></p>
+<p>My name is Samrit Pramanik. I work as a data scientist at a US-based private firm and have a post-graduate degree in statistics from the University of Calcutta. I have been using R since my post-graduate days in 2018 and used it extensively in various projects during my studies. Since 2022, I have also been an R instructor for a non-profit organization. Additionally, I have been involved in several short projects working with R. Since April 2024, I have managed the Kolkata R User group.</p>
+<p>This is the third city-based R user group in India that is affiliated with the R Consortium. I plan to arrange virtual meetups monthly and in-person meetups annually. I enjoy helping and teaching people from diverse backgrounds, not only in statistics, mathematics, and data science but also in other areas. I want to teach them to use R language to add value to their professional and personal projects.</p>
+<p><strong><em>Can you share what the R community is like in Kolkata?</em></strong></p>
+<p><img src="https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/KolkotaLogo.jpg" class="img-fluid" style="width:50.0%"></p>
+<p>The Kolkata User Group has been formed with a broader perspective that I would like to share with you. Kolkata is known for its reputation in statistical research and education. The city is recognized as the birthplace of modern statistics in India, with the establishment of the <a href="https://www.isical.ac.in/">Indian Statistical Institute</a> (ISI) in 1931 by a prominent figure in statistics. The University of Calcutta, where I graduated, was the first in Asia to offer a post-graduate degree in statistics in 1941. This rich history made the formation of the Kolkata R User Group inevitable. Our community consists of academics and professionals from diverse fields such as life sciences, healthcare, the public sector, physics, astrophysics, and other industries. This diverse background facilitates robust exchanges of ideas and techniques related to R and data, making our R community in Kolkata truly unique.</p>
+<p><strong><em>Please tell us about your recent and upcoming events?</em></strong></p>
+<p>I would like to highlight a recent event. Last month, in June, we had our inaugural session where we introduced <a href="https://quarto.org/">Quarto</a>, a recently released reporting tool by Posit. Our goal was to make the participants aware of this tool and its outstanding features, such as website building, ebook writing, creating thesis papers, manuscripts, and blogging sites. We aimed to show participants, including early graduate students, professionals in the industry, and researchers from academia, that they can use Quarto in their projects and studies for reporting. This was our first organized session.</p>
+<p>The upcoming session is scheduled for July 13th. It will focus on a new approach to teaching R to students with non-technical backgrounds such as business students. <a href="https://www.linkedin.com/in/abhimanyu-gupta/">Dr.&nbsp;Abhimanyu Gupta</a> from Saint Louis University will be the speaker at this event.</p>
+<p>We have received very positive feedback and responses from the participants who are showing interest in the upcoming events. They want us to organize such events frequently. People are very much aware of these events and this community. They are very responsive, and we have received positive responses. Two esteemed Economics professors have expressed interest in joining our organizing team and working with us.</p>
+<p><strong><em>Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</em></strong></p>
+<p>Currently, I am working on two projects. The first project involves cricket analytics, where I extensively use R for cleaning up messy raw data and conducting exploratory data analysis at both the team and individual player levels and published a <a href="https://samritpramanik.shinyapps.io/T20PerformAnalysis/">shiny dashboard</a> on performance analysis of T20I players. I’m also building a statistical model to predict the total score of an innings, the winner of the match, and the tournament. Lastly, I aim to compile all the findings into an ebook format.</p>
+<p><img src="https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/Dashboard.png" class="img-fluid"></p>
+<p>Cricket Performance Analysis Shiny Dashboard</p>
+<p>The second project revolves around converting the functions and features of <a href="https://www.astropy.org/">AstroPy</a>, an open source software package for astronomy and astrophysics, into R. Our goal is to enhance its popularity among researchers and scientists in the astronomy, astrophysics, and cosmology domains. I am collaborating with another individual from a physics background on this open source project, and we plan to publish it on GitHub soon for public access.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join"><strong>How do I Join?</strong></h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/</guid>
+  <pubDate>Fri, 12 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/Samrit-main.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Diving into R with Isabella Velasquez: Perspectives from R-Ladies Seattle</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/ivelasq/">Isabella Velasquez</a>, co-organizer of <a href="https://www.meetup.com/rladies-seattle/">R-Ladies Seattle</a>, recently spoke with the R Consortium about her journey with R and the group’s recent activities. Isabella started as a beginner but has become a key figure in the R community thanks to the supportive and collaborative learning environment. R-Ladies Seattle regularly hosts in-person, hybrid, and online events, such as casual happy hours, lightning talks, and collaborations with other user groups. The group engages its members through creative activities and uses tools like GitHub for event planning. Their commitment to inclusivity and continuous learning helps maintain a dynamic and supportive community for R users in Seattle.</p>
+<p><img src="https://r-consortium.org/posts/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle/Isabella.jpg" class="img-fluid"></p>
+<p>R-Ladies Seattle is seeking speakers for an upcoming lightning talks session. If you are interested in presenting, please contact Isabella.</p>
+<p><a href="https://ivelasq.rbind.io/">Personal website</a> | <a href="https://x.com/ivelasq3">Twitter</a> | <a href="https://fosstodon.org/deck/@ivelasq3">Mastodon</a></p>
+<p><strong><em>Please share your background and involvement with the RUGS group.</em></strong></p>
+<p>I first encountered R when I started my graduate program in 2014. I was pursuing a Master’s in Analytics in Chicago. The program mainly revolved around using R. At that time, I was a complete beginner and had to start from the basics, like installing R. Since the program was fairly new, there wasn’t a well-structured curriculum for introducing R. It was assumed that students would either pick it up or already have some knowledge. The coursework focused on R from there.</p>
+<p>My older brother <a href="https://github.com/gvelasq/">Gustavo</a> was a great resource when I started learning R and picking up the necessary skills. He is a highly proficient R user, so I asked him for help. He introduced me to many tools that made it much easier for a beginner to work in RStudio and pick up the tidyverse syntax. The main course curriculum was open to different approaches to using R, which provided flexibility in learning the tools and skills that interested me the most.</p>
+<p>After completing my program in 2016, I landed my first job as a data analyst. I began using R and regularly working with data. Back then, Twitter was buzzing with activity. I stayed enthusiastic and continued learning from the community. My brother and I collaborated to solve problems and acquire new skills. At work, my team had diverse tool proficiency; some were adept in Excel, while others had data expertise. Eventually, we formed a learning community and collectively mastered R. We utilized R to generate presentations, reports, visualizations, and clean up data. It was fantastic to have a small community at work and a larger one outside through social media.</p>
+<p>One of my colleagues, Chaya Jones, at my previous workplace, where I worked as a data analyst, was one of the original co-organizers for <a href="https://rladiesseattle.org/">R-Ladies Seattle</a>. The R user group had just started in 2018, and she invited me to join and give one of the earliest presentations for R-Ladies Seattle. Over time, the membership grew, and eventually, I became one of the co-organizers. My role involved coordinating events, finding speakers, and other related tasks. <img src="https://r-consortium.org/posts/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle/Isabella2.jpg" class="img-fluid"></p>
+<p>I am very fortunate because I got into R in a friendly and collaborative environment. During graduate school, I collaborated with classmates and gained valuable knowledge from my brother. Later, I landed a new data analyst job and had a whole team of people who were interested in learning and using R. It has truly been a joy, and I feel appreciative for how well things have worked out and for the length of time that I’ve been able to use R.</p>
+<p><strong><em>Can you share what the R community is like in Seattle?</em></strong></p>
+<p>As I mentioned, my workplace involved various programming languages, but there were quite a few R users. We used to have these small study groups where we discussed creating an R Markdown template for our company and shared Shiny apps and other similar things. The field I worked in was education, but in Seattle, you see a lot of R being used in bioinformatics and scientific research related to diseases. It’s very popular among those groups, and they have solid user groups where they grow and learn together. Many members of R Ladies Seattle are from organizations like <a href="https://www.fredhutch.org/en.html">Fred Hutch</a>, where the emphasis on using R is very strong, which is pretty great.</p>
+<p><img src="https://r-consortium.org/posts/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle/R-LadiesSeattle.jpg" class="img-fluid"></p>
+<p>Every month, R-Ladies Seattle <a href="https://www.meetup.com/rladies-seattle/">hosts a casual happy hour</a>. We have good chips and salsa, and it’s a great opportunity for members to join, chat, and have a good time. Additionally, after the <a href="https://cascadiarconf.com/">Cascadia R Conference</a> in June, we will have a social hour where people can keep the conversation going in a relaxed setting. We will also host a social hour at the end of <a href="https://posit.co/conference/">posit::conf</a> in August, and R-Ladies who didn’t attend the conference are more than welcome to join and hang out. We organize many social events, so there are plenty of opportunities to connect with us.</p>
+<p>We have some exciting events related to R coming up. We are currently looking for speakers for a lightning talk session, where individuals can quickly share the projects they are working on or a tool they love. It’s a low-pressure way to join in, and we welcome anyone who would like to sign up and participate.</p>
+<p>Our focus is primarily on in-person and hybrid events. While we have seen an explosion of online events after COVID-19, it’s important to uphold the Seattle community by providing opportunities for local participation. Generally, our events are held in person, with occasional hybrid events. However, we are also excited about organizing online events with Seattle residents in mind at a convenient time for the Pacific Time Zone. Our offering of in-person, hybrid, and online events provides a unique experience for our user group in Seattle.</p>
+<p><strong><em>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people who are unable to attend physical events in the future? </em></strong></p>
+<p>One thing we implemented was to think of events that could generate high engagement. For example, with our Hex sticker, we organized a competition for all R-Ladies members to participate by submitting their designs, followed by a voting process. It was a lot of fun, both creatively and in terms of getting everyone involved. We strive to come up with similar engaging activities. Additionally, when appropriate, we reach out to other user groups in the area to explore collaboration opportunities, co-hosting events, or simply support each other’s promotions to foster a strong sense of community.</p>
+<p>One method we have tried for planning events is using GitHub discussions to log our ideas for events and determine which events are the most popular based on comments and upvotes. This helps guide our future event planning.</p>
+<p><strong><em>What trends do you currently see in R language and your industry? Any trends you see developing shortly?</em></strong></p>
+<p>Every year, we send out a survey to inquire about people’s interests and what they like to see. The responses are usually a mix of technical content, with many requests for intermediate-level information. There’s a lot of interest from people in Seattle who use R in some capacity or are members of R-Ladies Seattle. They are looking for opportunities to upskill based on their existing knowledge of R. Additionally, there are many requests for information about career advancement and available positions.</p>
+<p>There are various job titles related to data, such as data scientist and data engineer. Many people have questions about the career prospects in this field, including the potential for advancement and available options. These are common topics of discussion.</p>
+<p><strong><em>Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in? </em></strong></p>
+<p>I now work at <a href="https://posit.co/">Posit</a>, formerly RStudio, in a marketing role. I still get to work with R a lot, which is great for creating dashboards to track various metrics. I’ve been focusing on defining metrics of success and similar tasks.</p>
+<p>Recently, I created a dashboard in <a href="https://shiny.posit.co/">Shiny</a> that refreshes daily to compile the information I need for my to-do list. Every morning, I check my Shiny dashboard to see my daily tasks. It pulls information from my project management tool, so I only have to update one place to see an aggregated view of my month. It was fun to do this in R with Shiny.</p>
+<p>Recently, I worked on creating a custom template in <a href="https://quarto.org/">Quarto</a> for the upcoming <a href="https://www.r-consortium.org/events/2024/04/05/r-medicine-coming-june-10-14-2024">R Medicine Conference</a> website. The <a href="https://rconsortium.github.io/RMedicine_website/">website</a> is built entirely on Quarto, a new tool similar to R Markdown. My work specifically involved designing the events page to display previous events and provide links to the event page and YouTube playlist. It’s exciting to learn and work with new tools like Quarto.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join"><strong>How do I Join?</strong></h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle/</guid>
+  <pubDate>Wed, 03 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle/Isabella-main.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>R Consortium’s Submission Working Group: Advancing R for Regulatory Success at PharmaSUG 2024</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortiums-submission-working-group-advancing-r-for-regulatory-success-at-pharmasug-2024/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/r-consortiums-submission-working-group-advancing-r-for-regulatory-success-at-pharmasug-2024/psug2024.jpg" class="img-fluid figure-img"></p>
+<figcaption>PSUg 2024</figcaption>
+</figure>
+</div>
+<p>The R Submission Working Group is making significant strides in promoting the use of R for regulatory submissions in the pharmaceutical industry. At <a href="https://www.pharmasug.org/2024-proceedings.html">PharmaSUG 2024</a>, held from May 19-22 in Baltimore, MD, the group’s impact was evident through various insightful presentations and discussions.</p>
+<p>One highlight was Ben Straub’s presentation, “<a href="https://www.pharmasug.org/proceedings/2024/SS/PharmaSUG-2024-SS-344.pdf">Piloting into the Future: Publicly available R-based Submissions to the FDA,</a>” which showcased the growing adoption of R in both industry and regulatory settings. Straub emphasized the vibrant R community and its diverse packages that enhance statistical analysis and data visualization, highlighting R’s role in facilitating efficient and transparent FDA submissions.</p>
+<p>Additionally, André Veríssimo and Ismael Rodriguez’s presentation, “<a href="https://www.pharmasug.org/proceedings/2024/SS/PharmaSUG-2024-SS-376.pdf">Automating SDTM Using R: A Practical Guide,</a>” demonstrated the advantages of using R for automating the creation of Study Data Tabulation Model (SDTM) datasets. They provided a detailed guide on implementing automation techniques and sharing best practices and real-world applications to improve data management workflows with R.</p>
+<p>These presentations underscored the R Submission Working Group’s contributions to advancing the use of R in regulatory processes promoting greater efficiency, reproducibility, and transparency in pharmaceutical data management.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-consortiums-submission-working-group-advancing-r-for-regulatory-success-at-pharmasug-2024/</guid>
+  <pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortiums-submission-working-group-advancing-r-for-regulatory-success-at-pharmasug-2024/psug2024-main3.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>R Addicts Paris: Promoting Diversity in R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-addicts-paris-promoting-diversity-in-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/vincentguyader/">Vincent Guyader</a>, organizer of the <a href="https://www.meetup.com/fr-FR/rparis/">R Addicts Paris</a> and president of <a href="https://thinkr.fr/">ThinkR</a>, recently updated the R Consortium on the group’s activities. Last year, Vincent discussed the <a href="https://www.r-consortium.org/blog/2023/04/20/using-r-to-develop-solutions-for-industrial-problems">application of R in developing solutions for industrial problems</a>. He emphasized the importance of helping people become fluent in R and leveraging the language to add value to their work. ThinkR is dedicated to enhancing R proficiency in various industries. The R Addicts Paris, one of France’s oldest and largest R user groups with 1,800 members, continues to foster a strong R community under Vincent’s leadership.</p>
+<p><img src="https://r-consortium.org/posts/r-addicts-paris-promoting-diversity-in-r/guyader.jpg" class="img-fluid" style="width:50.0%"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>My name is Vincent, and I have been using R since my student days. During my studies, I took on freelance R projects for various companies. Currently, I head a company called ThinkR, where we have a team of over 10 experts specializing in everything related to R. Our services include training, consulting, developing <a href="https://shiny.posit.co/">Shiny</a> applications, creating R packages, and more. We also collaborate with Posit and handle hardware installations for clients, primarily in France but also in Switzerland, Belgium, and other parts of Europe.</p>
+<p>Since 2018, I have been managing the R user group in Paris, known as the R Addicts Paris. It’s one of the oldest and possibly the largest R user groups, with 1,800 members. I aimed to organize meetups every three months, but the next one has been delayed due to internal organizational issues. I genuinely enjoy helping people become fluent in R and use the language to add value to their work.</p>
+<p><strong><em>What challenges do you face in organizing the R Addict Paris group and how do you overcome those challenges?</em></strong></p>
+<p>One of the main challenges is that our users are not professional programmers or developers; they are specialists in fields like biology and finance. They have to shift their mindset to use programming languages. My daily job involves helping these individuals embrace software development. Coming from a genetics and biochemistry background, I understand how challenging this can be for non-developers. However, I love doing this, and I have a dedicated, competent team to assist.</p>
+<p><strong><em>Based on your work with ThinkR, which industries in France do you see using R?</em></strong></p>
+<p>We have clients in various fields across France, including finance, retail, and research. The health sector is particularly prominent. For instance, a company that used <a href="https://www.sas.com/en_us/home.html">SAS</a> a few years ago now uses R &amp; <a href="https://www.python.org/">Python</a>. About half of our clients currently use Python. While we provide Python installation on hardware, we don’t offer Python training yet.</p>
+<p>We are committed to being the sole organization in France that can certify R users and developers. The French government has authorized us to issue an official certification akin to a diploma. Our goal is to elevate R proficiency across various fields in France. Our clients include businesses and individuals, with many investing their resources to learn proper software and programming skills.</p>
+<p><strong><em>Do you host online or in-person events?</em></strong></p>
+<p>I chose not to host online events. It’s a very opinionated choice because most meetups switched to online formats during the pandemic. At ThinkR, we are a fully remote company, and I spend my day on Zoom. While remote training is effective, I’ve found that in-person events work better for our user group.</p>
+<p><strong><em>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people who are unable to attend physical events in the future? </em></strong></p>
+<p>One of the main challenges we face as a group is finding female speakers. I try to avoid having only male speakers, but I only get female speakers every fifth or sixth event, which is not enough. I encourage other R user group organizers to recognize our power to give a voice to different kinds of people. I push myself to include more female speakers. Sometimes, I encounter highly qualified women who hesitate to speak, while less experienced men are more willing. It’s challenging, but I strive to maintain a balanced representation.</p>
+<p>I consciously avoid engaging with speakers who lack substance, ensuring I have time to encourage qualified women to share their knowledge. Despite my efforts, female representation remains below 20%. A few years ago, my colleague Diane and I tried to connect with the <a href="https://www.meetup.com/rladies-paris/">R-Ladies Paris</a> group. Many men are actively engaged there, and I wonder why that is.</p>
+<p>There are many skilled women in the R community, which includes biologists and geneticists. There’s no excuse for the lack of female representation. We must remember our influence and endorse individuals who truly represent our values.</p>
+<p><strong><em>What are some trending topics in R in your R User Group?</em></strong></p>
+<p>I’ve noticed a decline in interest in statistics over the past two to five years. During meetups, we rarely discuss statistics. The machine learning and AI fields aren’t well-represented in R, possibly because most people in these fields use Python. It could also be due to regional differences or my network.</p>
+<p><em>You had a Meetup “<a href="https://www.meetup.com/rparis/events/301151555/">Raddicts x RTE – {webr} – Shinyproxy and return of the Reconteres 2024</a>” on 19th June, can you share more on the topic covered? Why this topic?</em></p>
+<p>For this event, we had two male speakers. <a href="https://colinfay.me/">Colin Fay</a> discussed {<a href="https://docs.r-wasm.org/webr/latest/">webr</a>}, a new JavaScript capability for launching user insights in the browser. This is powerful for deploying Shiny applications. <a href="https://www.linkedin.com/in/valentincadoret/?originalSubdomain=fr">Valentin Cadoret</a> talked about new <a href="https://www.shinyproxy.io/">Shinyproxy</a> functionalities, and tools that enhance the deployment of Shiny applications. So we focused heavily on Shiny once again.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join"><strong>How do I Join?</strong></h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-addicts-paris-promoting-diversity-in-r/</guid>
+  <pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-addicts-paris-promoting-diversity-in-r/guyader-main.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The Crucial Role of Release Control in R for Healthcare Organizations</title>
+  <dc:creator>Guest Blog Post</dc:creator>
+  <link>https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>Guest blog contributed by Ning Leng, People and Product Leader, Roche-Genentech; Eric Nantz, Director, Eli Lilly and Company; Ben Straub, Principal Programmer, GSK; Sam Parmar, Statistical Data Scientist, Pfizer</em></p>
+<p>Supporting the science of drug development requires computational tools with careful implementations of core statistical functions and data structures. The R programming language, a general purpose language developed by statisticians that grows dynamically through the contributions of a worldwide community of developers, is a common choice for serious statistical work. However, managing new versions of the core R language and the hundreds of specialized libraries (called packages in R) necessary to support multiple development groups in a way that ensures the consistency, reproducibility, and reliability of results poses many practical challenges</p>
+<p>The FDA, for example, requires that the software and tools supporting a clinical trial submission are capable of producing reproducible results for an extended period of time. This means submitting code based on a version of R that is sufficiently tested and stable yet new enough to support the critical R packages over the required FDA time horizon.</p>
+<p>So, how is the R environment release managed across different healthcare organizations? We interviewed individuals from different pharma companies to learn their internal approaches to keep their R environment up-to-date and secure.</p>
+<ul>
+<li><p><strong><em>Roche</em></strong>’s Scientific Computing Environment is container based, with clinical reporting done from managed qualified images being released twice per year – roughly timed to capture the last update to an R major version (April release) and a 6 month later update (September release). For each image, R packages undergo a mostly automated risk assessment to document package quality. Automated indicators of package quality include test coverage, thoroughness of documentation, test coverage of exported objects (using <a href="https://github.com/Genentech/covtracer">covtracer</a>), and may be supplemented with package adoption measured using download counts, author reputation or other peripheral knowledge of the package’s history. Prior to internal publication, a representative sample of reverse dependencies are re-evaluated to safeguard against breaking changes. If the package meets our quality criteria it is published to a continuously updated repository of validated packages corresponding to the image’s R minor version (e.g.&nbsp;x.x). This allows flexibility for teams to roll forward to newer releases of packages within a managed release by moving their renv snapshot to a later date, easing the transition between bi-annual image releases. A generalized version of Roche’s automated process has been open sourced as ’<a href="https://github.com/marketplace/actions/r-package-validation-report">theValidator</a>’, and more details on the Roche process was shared within the <a href="https://github.com/pharmaR/case_studies/blob/main/Roche_Rpkg_validation_2022.pdf">R Validation case studies series</a>.</p></li>
+<li><p><strong><em>Eli Lilly</em></strong> currently updates its qualified R environment only after a new major release of R is available and the corresponding release of Bioconductor (utilizing that version of R) is also available. In a new release, all packages currently installed from the CRAN and Bioconductor repositories are refreshed to their latest versions at the time of the release. Once the new R version is deployed, all packages are frozen for that particular release to ensure stability and reproducibility. Lilly maintains multiple R versions for backward compatibility. Only packages available on CRAN or Bioconductor are permitted for installation in the central package library. Lilly uses a hybrid approach of automation and risk-based assessment when a new package is requested for installation. In the event that a new version of a package is necessary for a project (such as a new Shiny application), the users are encouraged to leverage the <a href="https://cran.r-project.org/package=renv">renv</a> package created by Posit to create a project-based environment which will not impact the central package library. As technology evolves and the R language becomes more prominent in clinical data analysis, Lilly continues to assess the current and future possibilities of a robust clinical computing environment primed for innovation while adhering to the foundational principles of reproducibility and transparency.</p></li>
+<li><p><strong><em>GSK</em></strong> releases “frozen R environments” for clinical reporting work on a 6-12 month cycle. The choice of R version is the latest stable release with at least one patch release of R, e.g.&nbsp;4.3.1 rather than 4.3.0. As R itself is stable with decades of use, we prefer to focus on package assessment for building of our “frozen R environments.” Packages for this environment can be from external sources (CRAN, Bioconductor) or internally built at GSK, regardless of origin we assess the same way. We pay close attention to author qualification and institutional backing, types and breadth of testing, documentation and examples, and the practice of software development life cycle practices. Once a package is approved in this process it will be included in the frozen environment. Packages change over time, if substantial changes are implemented in the packages, then we re-assess with a focus on those changes for allowing up-versioning of the package in the frozen environment. These frozen environments ensure that clinical reporting can be easily reproduced if needed as all packages versions and the version of R used during the analysis are contained in the frozen environment.</p></li>
+<li><p><strong><em>Pfizer</em></strong> releases one new R version every year. We typically target R-x.y.1 releases to pick up patches – so we might consider this a “stable” release. The process of testing, documenting, and deploying R into validated containers is performed every 6 months, with a new release of R once per year, e.g.&nbsp;R-4.3.1, and an update to package set and package versions 6 months later (for the same R version). We take a snapshot date of CRAN to form the basis of our package set for the container build. We try to balance competing priorities of getting latest versions of packages and newest package releases, while maintaining a snapshot and version-controlled release to ensure reproducibility and stability.</p></li>
+</ul>
+<p>Here is what we have: four companies and four somewhat complex bespoke solutions. It seems likely that if we interviewed a hundred representatives from a hundred different companies we would get at least a hundred different solutions. It is also not difficult to imagine that multiple protocols for managing R and package versions imposed a fairly complex project management solution on the FDA as it simultaneously deals with submissions from multiple sponsors.</p>
+<p>In the <em>R Consortium’s R Submissions Work Group</em> meeting we have been discussing whether there might be a simple solution for at least dealing with the R versioning problem that might serve as a <em>de facto</em> standard for the industry. One suggestion that has gained some traction is that sponsors use the previous minor and latest patched R version for a submission. For example, if R version 4.4.0 is currently available then it is suggested that a sponsor uses the latest patch version (4.3.z). If R version 4.5.0 becomes available, then it is suggested that a sponsor uses the latest patch version (4.4.z). This ensures that the minor version is stable and most likely available to all stakeholders. Of course, if a version change eliminates a security problem, that might be preferred. (Note that R versions are organized <a href="https://semver.org/">R x.y.z</a> where, x is the major version, y is the minor version, and z is the patch version.)</p>
+<p>We would love to hear what you think. Please, go to <a href="https://github.com/RConsortium/submissions-wg/issues/117">Issue number 117 on the GitHub repository</a> of our working group and leave a comment.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/</guid>
+  <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/r-submissions-main.png" medium="image" type="image/png" height="54" width="144"/>
+</item>
+</channel>
+</rss>
