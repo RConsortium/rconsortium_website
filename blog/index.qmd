@@ -3,6 +3,7 @@ listing:
   contents: "../posts/*/index.qmd"
   sort: "date desc"
   type: table
+  feed: true
 
 page-layout: full
 ---

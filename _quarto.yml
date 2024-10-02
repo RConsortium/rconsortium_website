@@ -5,6 +5,7 @@ project:
 website:
   title: "R Consortium"
   favicon: /images/rc-favicon.svg
+  site-url: "https://r-consortium.org"
   navbar:
     pinned: true
     background: light
