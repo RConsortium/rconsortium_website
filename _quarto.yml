@@ -6,6 +6,7 @@ website:
   title: "R Consortium"
   favicon: /images/rc-favicon.svg
   site-url: "https://r-consortium.org"
+  google-analytics: "G-B697SX1BNN"
   navbar:
     pinned: true
     background: light
