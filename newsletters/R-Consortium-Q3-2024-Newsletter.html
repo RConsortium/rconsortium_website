@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-10-31">
 
-<title>webinars-auto-not-being-used – R Consortium</title>
+<title>r-consortium-q3-2024-newsletter – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -107,40 +77,11 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -331,133 +272,221 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 31, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="r-consortium-q3-2024-newsletter" class="level1">
+<h1>R Consortium Q3 2024 Newsletter</h1>
+<p>Welcome to the R Consortium’s Q3 2024 Newsletter!</p>
+<p>This quarter has been packed with exciting updates, innovative projects, and global community initiatives that are shaping the future of R.</p>
+<p>Big news! The R Submissions Working Group successfully completed the “Pilot 3 Submission” which is testing the concept that an R-language based submission package for ADaMs and TLFs can meet the needs and the expectations of the FDA reviewers, including assessing code review and analyzing reproducibility. This is great progress! See the Submissions Working Group section below for more details.</p>
+<p>And there’s more! From the appointment of our new Executive Director, Terry Christiani, to the launch of our new Quarto website there’s a lot to dive into!</p>
+<p>We’ve also seen impressive progress in our technical working groups, and we continue to support R User Groups across the globe.</p>
+<p>Whether you’re interested in the latest package developments, upcoming webinars, or community stories, there’s something here for everyone.</p>
+<p>Let’s explore what’s new in the R world!</p>
+<section id="main-sections-at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="main-sections-at-a-glance">Main Sections At-a-Glance</h2>
+<ul>
+<li>New Executive Director</li>
+<li>New Quarto Website</li>
+<li>Building Extended R Packages to Improve R Infrastructure</li>
+<li>Technical Projects and Working Groups</li>
+<li>R Consortium Webinars</li>
+<li>R Consortium Supports R User Groups Around the World!</li>
+</ul>
+</section>
+<section id="new-executive-director" class="level2">
+<h2 class="anchored" data-anchor-id="new-executive-director">New Executive Director</h2>
+<p>We are excited to announce that Terry Christiani has been appointed as the new Executive Director of the R Consortium! The board of directors affirmed Terry’s selection during our August 2024 board meeting, following a thorough process in which a dedicated selection committee interviewed candidates and provided recommendations. We look forward to Terry’s leadership in guiding the R Consortium’s initiatives and supporting the global R community.</p>
+<p>“I have been involved in supporting the R language and its users for many years and am so excited to have the opportunity to work with the R Consortium. The consortium is supporting important work across multiple industries. I hope to ensure that we continue to build on past successes and create more opportunities for R users to deliver valuable insights and analyses for their organizations.”</p>
+<p>—Terry Christiani, Executive Director, R Consortium</p>
+</section>
+<section id="new-r-consortium-quarto-website" class="level2">
+<h2 class="anchored" data-anchor-id="new-r-consortium-quarto-website">New R Consortium Quarto Website</h2>
+<p>The R Consortium has a new website based on Quarto, the open source technical publishing system. Quarto allows easy embedding of R code examples as well as R-based interactive charts. Most of the R community already publishes documents in Quarto, making it easier to <a href="https://r-consortium.org/blog/guidelines.html">accept community contributions</a> for blogs and technical documents.</p>
+<p>The URL is the same: www.r-consortium.org. The older site is archived at archive.r-consortium.org.</p>
+</section>
+<section id="building-extended-r-packages-to-improve-r-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="building-extended-r-packages-to-improve-r-infrastructure">Building Extended R Packages to Improve R Infrastructure</h2>
+<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R ecosystem. We seek to accomplish this by funding projects that will improve the technical infrastructure of R.</p>
+<p>There are <a href="https://r-consortium.org/all-projects/callforproposals.html">two open application grant cycles each year</a>. The latest round of the R Consortium’s Call for Proposals officially ended on October 1st, 2024.</p>
+<p>We want to extend a huge thank you to everyone who submitted proposals. Each submission plays a pivotal role in strengthening the R ecosystem, and we are thrilled to see such innovative ideas pour in.</p>
+<p>As we eagerly anticipate the announcement of the newly funded projects, we reflect on our mission to support and enhance the technical infrastructure behind R. Past initiatives have made significant contributions, including:</p>
+<ul>
+<li><a href="https://github.com/rstats-db/DBItest">Testing DBI</a> and improving key open-source database backends</li>
+<li>Enhancements to critical packages such as <a href="https://github.com/r-spatial/mapview">mapview</a> and <a href="https://github.com/r-spatial/sf">sf</a></li>
+<li>Improving R translations to expand accessibility</li>
+<li>Continued infrastructure development for R on Windows and macOS</li>
+</ul>
+<p>Stay tuned for the upcoming announcement of the new projects that will continue to drive the evolution of R’s technical foundation!</p>
+<section id="some-recent-projects-include" class="level3">
+<h3 class="anchored" data-anchor-id="some-recent-projects-include">Some recent projects include:</h3>
+<p><a href="https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/">Unlocking Chemical Volatility: How the volcalc R Package is Streamlining Scientific Research</a></p>
+<p><img src="../posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/volcalc.webp" class="img-fluid"></p>
+<p><a href="https://r-consortium.org/posts/enhancing-clinical-trial-data-sharing-with-r-consortiums-r-submissions-working-group/">Enhancing R: The Vision and Impact of Jan Vitek’s MaintainR Initiative</a></p>
+<p><img src="../posts/enhancing-r-the-vision-and-impact-of-jan-viteks-maintainr-initiative/Untitled.jpg" class="img-fluid" style="width:75.0%"></p>
+<p><a href="https://r-consortium.org/posts/ics-funded-grant-secure-tls-connections-in-%7Bnanotext%7D-and-%7Bmirai%7D-facilitating-high-performance-computing-in-the-life-sciences/">Secure TLS Connections in {nanonext} and {mirai} Facilitating High-Performance Computing in the Life Sciences</a></p>
+<p><img src="../posts/ics-funded-grant-secure-tls-connections-in-{nanotext}-and-{mirai}-facilitating-high-performance-computing-in-the-life-sciences/charlie.webp" class="img-fluid" style="width:75.0%"></p>
+<p><a href="https://r-consortium.org/posts/building-data-highways-kirill-mullers-journey-in-enhancing-rs-database/">Building Data Highways: Kirill Müller’s Journey in Enhancing R’s Database</a></p>
+<p><img src="../posts/building-data-highways-kirill-mullers-journey-in-enhancing-rs-database/kirill.webp" class="img-fluid" style="width:75.0%"></p>
+</section>
+</section>
+</section>
+<section id="technical-projects-and-working-groups" class="level1">
+<h1>Technical Projects and Working Groups</h1>
+<p>ISC working groups provide the mechanism through which the ISC can explore, fund, and manage large collaborative projects. Working groups are vetted by R Consortium experts and sanctioned by the R Consortium. They become visible to the greater R Community, and in many cases are an excellent vehicle for industry to connect directly to R development.</p>
+<p>Here are some updates from our current Working Groups.</p>
+<section id="submissions-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="submissions-working-group">Submissions Working Group</h2>
+<section id="pilot-3-complete" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3-complete">Pilot 3 complete!</h3>
+<p>The R Consortium is pleased to announce <a href="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/">the successful completion of the Pilot 3 Submission</a> which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete <a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot3_Submission.pdf">FDA response letter</a> is available here.</p>
+<p>The objective of the R Consortium R Submission Pilot 3 Project is to test the concept that an R-language based submission package for ADaMs and TLFs can meet the needs and the expectations of the FDA reviewers, including assessing code review and analyzing reproducibility. All submission materials and communications from this pilot are publicly available, with the aim of providing a working example for future R-language based FDA submissions. This is an FDA-industry collaboration through the non-profit organization R Consortium.</p>
+<p>A pilot 3 overview presentation during the 2024 R/medicine conference is available on <a href="https://www.youtube.com/watch?v=Krcy3gSfDzs">YouTube</a>.</p>
+</section>
+<section id="pilot-4-submission-on-sept-20" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4-submission-on-sept-20">Pilot 4 submission on Sept 20</h3>
+<p>As a next step, the R Consortium R Submission Working Group initiated <a href="https://rconsortium.github.io/submissions-pilot4/">submission pilot 4</a>, to explore the use of novel technologies such as Linux containers and web assembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application.</p>
+<p>Pilot 4 is being cited in a recent <a href="https://www.nature.com/articles/d41586-024-00725-1">Nature paper</a> (paywall).</p>
+</section>
+</section>
+<section id="census-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="census-working-group">Census Working Group</h2>
+<p>The <a href="https://census.gov/en.html">U.S. Census Bureau</a> is the premier source of data about America’s people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:</p>
+<ol type="1">
+<li>Understanding what data the Census Bureau publishes.</li>
+<li>Understanding what packages on <a href="https://cran.r-project.org/">CRAN</a> are available to help with their project.</li>
+</ol>
+<p>The Census working group released a second version of their guide “A Guide to Working with Census Data in R.” The guide aims to help R programmers who are confronted with these problems. Check out the full guide here: <a href="https://github.com/RConsortium/censusguide">https://github.com/RConsortium/censusguide</a>.</p>
+<p>Key updates include:</p>
+<ul>
+<li>Revamped the section on Data Dissemination to remove reference to the (now deprecated) American Fact Finder and instead point people to the (new) <a href="https://data.census.gov/">data.census.gov</a>.</li>
+<li>New to working with the Census API? Check out the tutorials and resources linked in the API section to learn more and get started.</li>
+<li>Updated the list of R packages listed in the guide to reflect not just new download stats but also new packages published since the initial version.</li>
+<li>Expanded the list of programs and datasets Census provides, including links to learn more about them.</li>
+</ul>
+<p>Our working group welcomes feedback! We are still working on adding tutorials and other package/training related resources to the guide, so readers have more to look forward to with the next update.</p>
+</section>
+<section id="marshaling-and-serialization-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="marshaling-and-serialization-in-r">Marshaling and Serialization in R</h2>
+<p>The R Consortium ISC Working Group on Marshaling and Serialization in R started in May 2024. This working group aims at developing standard practices for marshaling and unmarshaling of R objects.</p>
+<p>This will involve identifying current problems, raising awareness, and coming up with technical solutions. This may require additions to base R. For example, one solution <em>might</em> be to introduce support for <code>serialize()</code> and <code>unserialize()</code> to call registered hook functions whenever certain types of objects are encountered, which then could marshall and unmarshall those objects.</p>
+<p>More information can be found here: <a href="https://github.com/RConsortium/marshalling-wg">https://github.com/RConsortium/marshalling-wg</a></p>
+</section>
+<section id="multilingual-r-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="multilingual-r-documentation">Multilingual R Documentation</h2>
+<p>The Multilingual R Documentation working group started in June 2024. There was a virtual meeting to set the stage, and in person meetings during <a href="https://contributor.r-project.org/r-dev-day-plus-2024/">R Dev Day @ PLUS</a>. Its lead presented the project at useR! 2024.</p>
+<p>We have a working package and ideas for improvement. There’s a few PRs from collaborators under review and even an example of real world use of the package: a <a href="https://github.com/cregouby/torchvision.fr">French translation of the torchvision documentation</a>. We have <a href="https://github.com/RConsortium/multilingual-documentation-wg?tab=readme-ov-file">this repository</a> and a channel in the <a href="https://rconsortium.slack.com/?redir=%2Farchives%2FC075V1SUKT9%3Fname%3DC075V1SUKT9">R Consortium Slack</a> that anyone is welcome to join to participate.</p>
+</section>
+<section id="r7-package---design-refining" class="level2">
+<h2 class="anchored" data-anchor-id="r7-package---design-refining">R7 Package - Design refining</h2>
+<p>The Object-Oriented Programming (OOP) working group continues to refine the design and functionality of the package through active discussions within the group and the community at large.</p>
+<p>The long-term goal of this project is to merge S7 in to base R. For now, you can experiment by installing it from CRAN:</p>
+<pre><code>install.packages("S7")</code></pre>
+</section>
+<section id="r-validation-hub" class="level2">
+<h2 class="anchored" data-anchor-id="r-validation-hub">R Validation Hub</h2>
+<p>The R Validation Hub is a collaboration to support the adoption of R within a biopharmaceutical regulatory setting.</p>
+<p>The R Validation Hub enhanced their website this summer to improve navigation. Please take some time to check it out and send feedback: <a href="https://www.pharmar.org/">https://www.pharmar.org/</a></p>
+<p>The R Validation solutions for the validation of R packages quantify the “risk” of R packages with several metrics {riskmetric} and provide a user-friendly, full-fledged R Shiny app as a central hub to gauge the “risk” of packages {riskassessment}.</p>
+<p>For {riskassessment} the R Validation Hub is announcing the release of two new features:</p>
+<ul>
+<li>Automate “risk decisions” based on {riskmetric} quality assessment values.</li>
+<li>New module called the “Function Explorer” which allows users to explore any function exported from a package in one easy-to-use interface.</li>
+</ul>
+<p>Special thanks to Glaxo-Smith Kline (GSK) contributors for donating this code!</p>
+<p>For more details about our new features, read our blog post: <a href="https://www.pharmar.org/posts/news/updates-aug-2024/">https://www.pharmar.org/posts/news/updates-aug-2024/</a></p>
+<p>From the R Validation Hub:</p>
+<p>“Our roadmap for the app is going scoreless. Most organizations don’t really make actionable decisions from {riskmetric}’s overall package score. It can sometimes deter our attention from the more meaningful quality metrics or even lead to unnecessary confusion or bias. As such, we want Admin users to make the decision whether they want this quantitative metric to be displayed in the app at all. Stay tuned!”</p>
+<section id="collecting-regulatory-package-lists" class="level3">
+<h3 class="anchored" data-anchor-id="collecting-regulatory-package-lists">Collecting regulatory package lists</h3>
+<p>We’ve asked a few pharmaceutical organizations what R Packages have qualified for late stage analysis. We were encouraged by the transparent effort companies like Roche made: <a href="https://insightsengineering.github.io/rvalidationhub-packages/">https://insightsengineering.github.io/rvalidationhub-packages/</a></p>
+</section>
+<section id="reg-r-repo-first-pilot-released" class="level3">
+<h3 class="anchored" data-anchor-id="reg-r-repo-first-pilot-released">Reg R Repo: first pilot released</h3>
+<p>The <a href="https://github.com/pharmaR/regulatory-r-repo-wg">Regulatory R Repository</a> working group released its first pilot this summer, a repository of R packages with pre-calculated risk metrics: <a href="https://github.com/pharmaR/pharmapkgs">https://github.com/pharmaR/pharmapkgs</a></p>
+<p>We are working on a second release with more advanced features: risk metrics calculated on a container image and the generation of a validation report for each R package on the repository.</p>
+</section>
+</section>
+</section>
+<section id="r-consortium-webinars" class="level1">
+<h1>R Consortium Webinars</h1>
+<p>The R Consortium hosts a wide variety of free technology and industry webinars from experts who use R to help solve problems in many different industries. A full list of our webinars <a href="https://r-consortium.org/webinars/webinars.html">is available here</a>.</p>
+<p>Here are just a few of the most recent R Consortium webinars. (Click on the image to get more details and a full webinar recording.)</p>
+<p><a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html">Tidy Finance Webinar Series</a></p>
+<p><img src="../webinars/images/tiny-finance-main-image.png" class="img-fluid"></p>
+<p><a href="https://r-consortium.org/webinars/unlocking-insights-from-latinr.html">Unlocked Insights from LatinR: Collaboration and Innovation in Data Science Webinar</a></p>
+<p><img src="../webinars/images/latinr-webinar-main-page.png" class="img-fluid" style="width:75.0%"></p>
+</section>
+<section id="empowering-r-user-groups-globally-with-r-consortiums-support" class="level1">
+<h1>Empowering R User Groups Globally with R Consortium’s Support!</h1>
+<p>The R Consortium R User Groups (RUGS) Program is the primary vehicle for the R Consortium to award Social Infrastructure Grants. Social Infrastructure includes meetings, events, conferences, and other activities to strengthen the R Community. Find out how you can support your local R User Group <a href="https://r-consortium.org/all-projects/rugsprogram.html">here.</a></p>
+<p>Here are a few recent examples of great R User Groups around the world that we support:</p>
+<p><a href="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/">Free Boba Tea and Technical R Topics Lure Young Learners to New Brunei R User Group</a></p>
+<p><img src="images/brunei-rugs.png" class="img-fluid"></p>
+<p>“Our mission goes beyond just hosting events—we are dedicated to creating and nurturing an inclusive R community and showcasing the power of R in numerous fields.” —<a href="https://www.linkedin.com/in/haziqjamil/">Haziq Jamil</a>, the founder and organizer of the <a href="https://www.meetup.com/bruneir/">Brunei R User Group</a></p>
+<p><a href="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/">Empowering Data Science: How R is Transforming Research in Cameroon</a></p>
+<p><img src="images/camaroon-rugs.png" class="img-fluid"></p>
+<p>“Our use of R goes beyond basic statistics and plotting; we focus on sophisticated applications like Monte Carlo estimation and advanced R programming.” —<a href="https://www.linkedin.com/in/nyavoratovo/?originalSubdomain=cm">NyAvo RATOVO-ANDRIANARISOA</a>, the co-founder of the <a href="https://www.meetup.com/r-community-cameroon/">R Community Cameroon</a></p>
+<p><a href="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/">R-Ladies Rome: Empowering Women in Data Science Through Collaboration and Innovation</a></p>
+<p><img src="../posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/collage.png" class="img-fluid" style="width:85.0%"></p>
+<p>“As the lead organizer of R-Ladies Rome, one of the R user groups sponsored by the R Consortium, I am grateful for the support that enables us to organize monthly talks, tutorials, and workshops. Our events provide an inclusive and accessible learning environment free of charge, featuring exciting speakers and various engagement opportunities.” —<a href="https://www.linkedin.com/in/federicagazzelloni/">Federica Gazzelloni</a>, co-organizer of <a href="https://www.meetup.com/rladies-rome/">R-Ladies Rome</a></p>
+<p><a href="https://r-consortium.org/posts/building-bridges-in-haifa-israel/">Building Bridges in Haifa, Israel: How the New R User Group in Haifa is Establishing a Diverse R Community</a></p>
+<p><img src="images/haifa-rugs.png" class="img-fluid"></p>
+<p>“Like in many places in Israel, there are hundreds of small startups. What I find interesting is that people come from all sorts of backgrounds—mostly from academia, as usual, but now also from government, traditional companies, and small businesses. I’m excited to see where this leads.” —Eli Eydlin, organizer of the R User Group in Haifa, Israel</p>
+<p><a href="https://r-consortium.org/posts/bridging-the-digital-divide-umar-isah-adam-on-expanding-r-access-for-kano-nigeria-students/">Bridging the Digital Divide: Umar Isah Adam on Expanding R Access for Kano, Nigeria Students</a></p>
+<p><img src="images/kano-rugs.png" class="img-fluid"></p>
+<p>“We aim to introduce R to the academic community, and after this, we plan to move on to another college and launch a new program…There has been an increase in the acceptance of R and a growing interest from different people in academia, particularly in R.” —<a href="https://www.linkedin.com/in/umar-isah-21b50074/">Umar Isah Adam</a>, the founder and organizer of the <a href="https://www.meetup.com/r-user-group-kano/">R User Group Kano</a>, Nigeria</p>
+<p><a href="https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/">Kolkata R User Group: A Rich History with Statistics</a></p>
+<p><img src="images/kolkata-rugs.png" class="img-fluid"></p>
+<p>“This is the third city-based R user group in India that is affiliated with the R Consortium. I plan to arrange virtual meetups monthly and in-person meetups annually. I enjoy helping and teaching people from diverse backgrounds, not only in statistics, mathematics, and data science but also in other areas. I want to teach them to use R language to add value to their professional and personal projects.” —<a href="https://samrit.quarto.pub/">Samrit Pramanik</a> of the <a href="https://www.meetup.com/kolkata-r-user-group/">Kolkata R User Group</a></p>
+<p><a href="https://r-consortium.org/posts/keith-karani-wachira-leading-the-dekut-r-community-in-kenya-and-innovating-with-r/">Keith Karani Wachira: Leading the Dekut R Community in Kenya and Innovating with R&nbsp;</a></p>
+<p><img src="images/dekut-kenya-rugs.png" class="img-fluid"></p>
+<p>“I love seeing people learn and apply the concepts and then go on to teach others. One of my students from his first year has now taken over as a lead in our community, which is incredibly encouraging. He even competed in hackathons and finished fourth, showing how much he has grown.”<br>
+—Keith Karani Wachira, the <a href="https://www.meetup.com/dekutrcommunity/">Dekut R Community</a> organizer</p>
+<p><a href="https://r-consortium.org/posts/Full-time-Korea-R-User-Group-Founder-Victor-Lee-Sees-AI-Future-for-R-and-Quarto-Textbooks-R-Consortium/">Full-time Korea R User Group Founder Victor Lee Sees AI Future for R and Quarto Textbooks</a></p>
+<p><img src="images/korea-rugs.png" class="img-fluid"></p>
+<p>“My passion for open source software and faith in the community has driven me to where I am today.” —Victor Lee, organizer of the <a href="https://www.facebook.com/groups/KoreaRUsers/">Korea R User Group</a></p>
+<p><a href="https://r-consortium.org/posts/gergely-daroczis-journey-empowering-r-users-in-hungary/">Gergely Daróczi’s Journey: Empowering R Users in Hungary</a></p>
+<p><img src="images/hungary-rugs.png" class="img-fluid"></p>
+<p>“…In a university room, it felt like there were only a dozen R users from academia. However, a lot has changed since then, as we now have almost 2,000 members in the local R User group, which exceeded my original expectations for such a small country like Hungary. It has been an interesting and great experience.” —Gergely Daróczi, the founder and organizer of the <a href="https://www.meetup.com/budapest-users-of-r-network/">Budapest Users of R Network</a>.</p>
+<section id="get-in-touch-with-the-r-consortium" class="level2">
+<h2 class="anchored" data-anchor-id="get-in-touch-with-the-r-consortium">Get in Touch with the R Consortium!</h2>
+<p>Follow us on social media or contact us here: <a href="https://r-consortium.org/about/contact.html">https://r-consortium.org/about/contact.html</a></p>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1728306784037" data-listing-reading-time-sort="2" data-listing-word-count-sort="310">
-<a href="../webinars/new-webinar-tidy-finance-and-accessing-financial-data.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="images/christoph-scheuch.png" style="height: 573px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tidy Finance and Accessing Financial Data
-</h5>
-<div class="card-text listing-description">
-Tidy Finance and Accessing Financial Data (PDF)
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1728306784037" data-listing-reading-time-sort="2" data-listing-word-count-sort="264">
-<a href="../webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../webinars/images/Screenshot-2024-02-20-at-10.47.50 AM-1024x573.webp" class="thumbnail-image card-img" style="height: 573px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R/Medicine: Quarto for Reproducible Medical Manuscripts
-</h5>
-<div class="card-text listing-description">
-<strong>Slides available here:</strong>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+</section>
+</section>
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1728306784037" data-listing-reading-time-sort="3" data-listing-word-count-sort="499">
-<a href="../webinars/tidy-finance-webinar-series.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../webinars/images/tiny-finance-main-image.png" class="thumbnail-image card-img" style="height: 573px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tidy Finance Webinar Series
-</h5>
-<div class="card-text listing-description">
-Christoph Scheuch is an independent data science and business intelligence expert. He co-created and maintains the Tidy Finance project, a transparent, open source approach…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1728306784037" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
-<a href="../webinars/unlocking-insights-from-latinr.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../webinars/latinr-webinar-main-page.png" class="thumbnail-image card-img" style="height: 573px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Unlocking Insights from LatinR: Collaboration and Innovation in Data Science Webinar
-</h5>
-<div class="card-text listing-description">
-Join us for an exciting webinar featuring the co-founders anGraphd co-chair of <strong>LatinR</strong>, as they share insights into the vibrant R community in Latin America and the evolution…<strong></strong><strong></strong>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1728306784049" data-listing-reading-time-sort="4" data-listing-word-count-sort="672">
-<a href="../webinars/webinars.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="images/R-Validation-Mini-Series.webp" style="height: 573px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Webinars
-</h5>
-<div class="card-text listing-description">
-This is a series of webinars focused on the adoption of R.&nbsp; Each session will include a case study and often include panels or discussions to enable those starting their…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
