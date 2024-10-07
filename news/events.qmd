@@ -12,13 +12,13 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[Evaluate Performance using the Capital Asset Pricing Model](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#evaluate-performance-using-the-capital-asset-pricing-model)",
+    "[Evaluate Performance using the Capital Asset Pricing Model](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model)",
     "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
     "[R/Pharma 2024](https://rinpharma.com/)",
-    "[Analyze Companies using Financial Ratios](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#analyze-companies-using-financial-ratios)",
+    "[Analyze Companies using Financial Ratios](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios)",
     "[LatinR 2024](https://latinr.org/en/)",
-    "[Value Companies using Discounted Cash Flow Analysis](https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#value-companies-using-discounted-cash-flow-analysis)"
+    "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
   ),
   dates = c("Oct 9, 2024", "Oct 9-10, 2024",
             "Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
@@ -89,7 +89,7 @@ ___
 df <- data.frame(
   Title = c(
     '<a href="https://www.ascent.io/earl" target="_blank" rel="noreferrer noopener">EARL 2024</a>', 
-    '<a href="https://rconsortium.netlify.app/webinars/tidy-finance-webinar-series#optimize-portfolios-using-the-markowitz-model" target="_blank" rel="noreferrer noopener">Optimize Portfolios using the Markowitz Model</a>', 
+    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#optimize-portfolios-using-the-markowitz-model" target="_blank" rel="noreferrer noopener">Optimize Portfolios using the Markowitz Model</a>', 
     '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>', 
     '<a href="https://posit.co/conference/" target="_blank" rel="noreferrer noopener">posit::conf 2024</a>', 
     '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
