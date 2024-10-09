@@ -1,0 +1,99 @@
+---
+title: "R/Insurance Series: For Everyone in Insurance or Actuarial Science"
+format: html
+---
+
+------------------------------------------------------------------------
+
+![](R Validation Mini-Series Part I & II Youtube.png)
+
+# **Summary**
+
+These four webinars focused on insurance and actuarial science. The webinars were led by two experts in the field, Georgios Bakoloukas, Head Model Development and Analytics at Swiss Re, and Benedikt Schamberger, Head Atelier Technology & AI Consulting at Swiss Re.
+
+These sessions offered a hands-on exploration of the transition from Excel to basic R, highlighting the benefits of working with R and one possible way to straddle across Excel and R. The subsequent webinars then moved to production-level R, and ultimately to high-performance R applications.
+
+The webinars were tailored to be accessible to all, requiring no previous experience with the R programming language or specialized knowledge in insurance or actuarial science. Anyone with basic spreadsheet experience or who is considering applying for a bank loan has the necessary background to benefit from these webinars.
+
+# **All of the webinar recordings are now available!**
+
+## First Webinar 
+
+*From Excel to Programming in R*
+
+Speaker: Georgios Bakoloukas, Head Model Development & Analytics, Group Risk Management, Swiss Re
+
+{{< video https://www.youtube.com/watch?v=whE6DHMr0AY >}}
+
+**Quick summary:**
+
+This video provided an in-depth exploration into the enduring relevance of Excel in the workplace while also emphasizing the benefits of learning to code for increased flexibility and resilience. It highlighted the common working patterns shared between Excel and R, demonstrating how transitioning from traditional spreadsheet computing to best-practice programming can be highly beneficial.
+
+The webinar featured a straightforward, specific example from the insurance industry to illustrate the advantages of using the R programming language. It also presented a practical approach for integrating the thought processes and methodologies of both Excel and R, showcasing how professionals can effectively straddle these two powerful tools in their work.
+
+------------------------------------------------------------------------
+
+## Second Webinar 
+
+*From programming in R to putting R into production*
+
+Speaker: Georgios Bakoloukas, Head Model Development & Analytics, Group Risk Management, Swiss Re
+
+{{< video https://www.youtube.com/watch?v=UzpeG20eA8o >}}
+
+**Quick summary:** \
+We could solve problems using coding, but how could we help others solve the same problem in the future? Sharing data and solutions was critical for real-world insurance professionals and actuarial scientists.
+
+Continuing the example from the first webinar, Georgios illustrated ways to document and test the solution and made it available to others using R’s frameworks for packaging, Web API creation, and graphical user interface generation (Shiny).
+
+------------------------------------------------------------------------
+
+## Third Webinar
+
+*R performance culture*
+
+Speaker: Benedikt Schamberger, Head Atelier Technology & AI Consulting, Swiss Re
+
+{{< video https://www.youtube.com/watch?v=1mGZRHoS62A >}}
+
+**Quick summary:**
+
+Premature optimization was the root of all evil. But there were occasions when we needed to improve the performance of critical code. Benedikt covered how performance fit into R’s design, what tools were available to tune it, and examples of what other aspects should be considered beyond pure runtime.
+
+------------------------------------------------------------------------
+
+## Fourth Webinar
+
+*High performance programming in R*
+
+Speaker: Benedikt Schamberger, Head Atelier Technology & AI Consulting, Swiss Re
+
+{{< video https://www.youtube.com/watch?v=oDBAlLHPgrM >}}
+
+**Quick summary:**
+
+In this webinar, Benedikt discussed how comma-separated values (CSV) files were commonly used when working with data files, as they were easy to read for humans and supported by tools like Excel or R. However, these files had a downside in terms of performance and file size. To address this, the industry developed binary formats that were more efficient. Benedikt focused on the Arrow R package and the Parquet file format and how they could help save time and disk space.
+
+------------------------------------------------------------------------
+
+# **Speakers** 
+
+![](georgios.png){width="300"}
+
+> **Georgios Bakoloukas**, Head Model Development & Analytics, Group Risk Management, Swiss Re
+>
+> Georgios’ team enables actuarial teams across the group to adopt best-practice programming and data science skills in daily work. Georgios is a Fellow of the Institute of Actuaries (IFoA) and Chair of IFoAs’ Programming for Actuarial Work Working Party.
+
+![](benedickt.jpg){width="300"}
+
+> **Benedikt Schamberger**, Head Atelier Technology & AI Consulting, Swiss Re
+>
+> Benedikt recently joined the Model Development & Analytics team as a Senior Data Science Actuary. Previously, he worked for several years in Swiss Re’s Quantitative Financial Risk Management, validating financial models and risk aggregation methodologies. He supports the Atelier and R programming communities with questions surrounding infrastructure and other everyday challenges. He has an academic background in financial and actuarial mathematics.
+
+------------------------------------------------------------------------
+
+# **The R Adoption Series**
+
+This is a series of webinars focused on the adoption of R.  Each session will include a case study and often include panels or discussions to enable those starting their journey to ask questions.
+
+R Consortium will keep this page updated with information on future webinars in the R Adoption series. If there is some information that you are looking for specifically and you don’t see it here, feel free to email us at info\@r-consortium.org.
