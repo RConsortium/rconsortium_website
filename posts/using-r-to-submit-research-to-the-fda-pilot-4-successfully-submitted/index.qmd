@@ -1,0 +1,62 @@
+---
+title: "Using R to Submit Research to the FDA: Pilot 4 Successfully Submitted to FDA Center for Drug Evaluation and Research"
+description: "The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted its latest test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document (eCTD) gateway."
+author: "R Consortium"
+image: "webR-shiny.png"
+date: "10/09/2024"
+---
+
+# Using R to Submit Research to the FDA: Pilot 4 Successfully Submitted to FDA Center for Drug Evaluation and Research 
+
+![](webR-shiny.png)
+
+
+The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted 
+its latest test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document 
+(eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially 
+received the submission package. 
+
+Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will 
+minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”
+
+The complete set of submission materials is available publicly on GitHub: 
+[R Consortium Submissions Pilot 4.](https://github.com/RConsortium/submissions-pilot4-webR-to-fda)
+
+
+## About the Pilot 4 Project 
+
+The objective of the R Consortium R submission *Pilot 4 *Project is to explore the use of novel technologies such as Linux 
+containers and WebAssembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of 
+both transferring and executing the application. The application was built using the source data sets and analyses contained 
+in the R submission *Pilot 1-3*. To our knowledge, this is the first publicly available submission package that includes a 
+WebAssembly component. We hope this submission package and what we have learned can serve as a good reference for future 
+regulatory submission efforts. The WebAssembly technology compiles applications into a portable, consistent environment 
+driven by a web browser, allowing agency reviewers to easily run and evaluate software without complex setups. The second 
+half of the Pilot 4 Project (leveraging container technology to package a Shiny application) will be submitted as an 
+additional package later this year. Additional agency feedback will be shared in future communications.
+
+
+## About the R Submissions Working Group
+
+The [R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/) is focused on improving 
+practices for R-based clinical trial regulatory submissions.
+
+Health authority agencies from different countries require electronic submission of data, computer programs, and relevant 
+documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on 
+the SAS language. 
+
+In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical 
+industry and research institutions. Although the health authorities accept submissions based on open source programming 
+languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.
+
+Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps 
+while submitting these example packages. All materials, including submission examples and communications, are 
+publicly available on the [R consortium GitHub page.](https://github.com/RConsortium)
+
+
+## Join the R Submissions Working Group
+
+The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. 
+We are a collaborative community open to anyone interested in contributing to this important work. For more information, 
+or to get involved, visit[ our website](https://rconsortium.github.io/submissions-wg) or contact us directly at 
+director@r-consortium.org.
