@@ -87,6 +87,7 @@ ___
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model" target="_blank" rel="noreferrer noopener">Evaluate Performance using the Capital Asset Pricing Model</a>', 
     '<a href="https://www.ascent.io/earl" target="_blank" rel="noreferrer noopener">EARL 2024</a>', 
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#optimize-portfolios-using-the-markowitz-model" target="_blank" rel="noreferrer noopener">Optimize Portfolios using the Markowitz Model</a>', 
     '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>', 
@@ -107,6 +108,7 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'October 9, 2024',
         'September 4-5, 2024', 
         'September 4, 2024', 
         'July 8-11, 2024', 
@@ -128,6 +130,7 @@ df <- data.frame(
       
         ),
   location = c(
+        'Virtual',
         'Brighton, UK',
         'Virtual',
         'Salzburg, Austria',
@@ -148,10 +151,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
