@@ -10,7 +10,15 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/newsletters/newsletters.html",
+    "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
     "items": [
       "/posts/cakes-code-and-community-reviving-the-copenhagenr-user-group/index.html",
       "/posts/announcing-health-technology-assessment-HTA-working-group/index.html",
@@ -76,15 +84,7 @@
     ]
   },
   {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
       "/posts/cakes-code-and-community-reviving-the-copenhagenr-user-group/index.html",
       "/posts/announcing-health-technology-assessment-HTA-working-group/index.html",
