@@ -13,6 +13,7 @@ format:
 df <- data.frame(
   Title = c(
     "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
+    "[Unlocking Insights from LatinR: Collaboration and Innovation in Data Science](https://r-consortium.org/webinars/unlocking-insights-from-latinr.html)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
     "[R/Pharma 2024](https://rinpharma.com/)",
     "[Analyze Companies using Financial Ratios](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios)",
@@ -20,10 +21,10 @@ df <- data.frame(
     "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
   ),
   dates = c("Oct 9-10, 2024",
-            "Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
-  location = c("Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual"),
-  icon = c("Conference", "Conference", "Conference", "Webinar", "Conference", "Webinar"),
-  Type = c("Conference", "Conference", "Conference", "Webinar", "Conference", "Webinar"),
+            "Oct 29-30, 2024", "Oct 22, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
+  location = c("Newcastle upon Tyne, UK", "Virtual", "Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual"),
+  icon = c("Conference", "Webinar", "Conference", "Conference", "Webinar", "Conference", "Webinar"),
+  Type = c("Conference", "Webinar", "Conference", "Conference", "Webinar", "Conference", "Webinar"),
   
   stringsAsFactors = FALSE
   
