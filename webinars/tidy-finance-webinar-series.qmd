@@ -35,8 +35,6 @@ Agenda:
 
 October 9th, 2024 at 12:00 pm ET
 
-### Register here: [https://zoom.us/webinar/register/WN_5vg15jweT3u-46MGkgk6lw](https://zoom.us/webinar/register/WN_5vg15jweT3u-46MGkgk6lw)
-
 This webinar covers the Capital Asset Pricing Model (CAPM), starting with its intuitive derivation and its importance in finance. Participants will gain an understanding of Alpha and Beta and their roles in performance assessment. The webinar also includes an overview of popular CAPM extensions. Participants will learn to calculate Alpha and Beta in R with a step-by-step guide, from loading return data to estimating CAPM and interpreting the estimation results.
 
 Agenda:
@@ -44,6 +42,8 @@ Agenda:
 * Introduction to the CAPM
 * Understanding Alpha and Beta
 * Calculating Alpha and Beta in R
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9DdCSpuhkt4?si=C05p2Qaw1ml0kHk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Analyze Companies using Financial Ratios
 
