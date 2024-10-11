@@ -14,7 +14,7 @@ df <- data.frame(
   Title = c(
     "[Unlocking Insights from LatinR: Collaboration and Innovation in Data Science](https://r-consortium.org/webinars/unlocking-insights-from-latinr.html)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
-    "[R/Pharma 2024](https://rinpharma.com/)",
+    "[R/Pharma 2024 (with new APAC Track)](https://rinpharma.com/)",
     "[Analyze Companies using Financial Ratios](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios)",
     "[LatinR 2024](https://latinr.org/en/)",
     "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
