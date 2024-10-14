@@ -1,6 +1,6 @@
 ---
 title: "R Consortium Infrastructure Steering Committee Charter"
-date: 2023-08-11
+date: 2024-08-13
 number-sections: false
 ---
 
@@ -34,7 +34,9 @@ a.  one appointed representative from each Platinum Member;
 
 b.  one appointed representative from the R Foundation Member;
 
-c.  three elected representative, selected by the Silver Members as a class; and
+c.  a number of elected representative, selected by the Silver Members as a class
+    that is equal to the number in the R Consortium Board of Directors elected
+    Silver Representative; and
 
 d.  the project lead from each top-level project, subject to section 3.g.
     below.
