@@ -4,6 +4,7 @@ listing:
   sort: "date desc"
   type: table
   feed: true
+  categories: true
 
 page-layout: full
 ---

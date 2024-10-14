@@ -4,6 +4,10 @@ description: "R/Pharma 2024 is coming up Oct 29-Nov 1, 2024. This is a free even
 author: "R Consortium"
 image: "rpharma-apac-main-image.png"
 date: "10/14/2024"
+categories:
+  - Features
+  - Authoring
+  - Quarto 1.3
 ---
 
 ![](rpharma-apac-main-image.png)
