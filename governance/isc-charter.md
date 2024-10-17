@@ -34,7 +34,7 @@ a.  one appointed representative from each Platinum Member;
 
 b.  one appointed representative from the R Foundation Member;
 
-c.  a number of elected representative, selected by the Silver Members as a class
+c.  a number of elected representatives, selected by the Silver Members as a class
     that is equal to the number in the R Consortium Board of Directors elected
     Silver Representative; and
 
