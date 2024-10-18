@@ -500,8 +500,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
 
 
 
-<section id="using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted-to-fda-center-for-drug-evaluation-and-research" class="level1">
-<h1>Using R to Submit Research to the FDA: Pilot 4 Successfully Submitted to FDA Center for Drug Evaluation and Research</h1>
 <p><img src="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/webR-shiny.png" class="img-fluid"></p>
 <p>The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted its latest test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document (eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially received the submission package.</p>
 <p>Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”</p>
@@ -522,7 +520,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
 <p>The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. We are a collaborative community open to anyone interested in contributing to this important work. For more information, or to get involved, visit<a href="https://rconsortium.github.io/submissions-wg">our website</a> or contact us directly at director@r-consortium.org.</p>
 
 
-</section>
 </section>
 
  ]]></description>
