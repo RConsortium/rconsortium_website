@@ -10,7 +10,51 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 16 Oct 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 18 Oct 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Endophytes, Oaks, and R: How R-Ladies Morelia is Cultivating Science and Community in Morelia, Mexico</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/goretty-mendoza-785004322/">Goretty Mendoza</a>, the organizer of the <a href="https://www.meetup.com/es-ES/rladies-morelia/">R-Ladies Morelia</a>, recently spoke to the R Consortium about her experience with the group and her work using R in molecular biology. Under her guidance, the group has grown into a supportive space for women from diverse fields, focusing on building R skills, sharing knowledge, and fostering collaboration. Goretty is committed to empowering the local R community through online and physical events that encourage learning and networking.</p>
+<p><img src="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/Goretty.png" class="img-fluid" style="width:50.0%"></p>
+<p><strong><em>Please share about your background and involvement with the RUGS group.</em></strong></p>
+<p>I am a PhD student specializing in molecular biology, focusing on endophytic fungi. My work involves high-throughput sequencing, particularly amplicon sequencing, to study microbiomes.</p>
+<p>I started using R during my PhD. Initially, I practiced independently through online courses, but then I discovered an R-Ladies community. The group was just starting in my city, so I took the opportunity to join. Attending the meetings helped me overcome my fear of working with R and allowed me to improve my skills. Gradually, I became more involved, and a few months ago, we had the opportunity to hold a face-to-face meeting with some members of our R-Ladies community who live in other cities, thanks to the R Consortium’s grant. I’m sure we returned home more motivated, knowing we all aim to improve our R skills.</p>
+<p><img src="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/RLadiesMorelia.png" class="img-fluid"></p>
+<p><strong>Can you share what the local R community is like? </strong></p>
+<p>Our local R community is a group of enthusiastic women from various fields. Most of us come from science, mainly mathematics or biology, but we also have members from areas like finance or economics interested in learning R. At the start of each semester, we meet to share our interests and goals for the upcoming months. During our face-to-face meetings, we enjoy coffee and cookies, which create a welcoming atmosphere. A key focus of our group is ensuring that those with more experience in R share their knowledge with new members who are just starting. It creates an environment where everyone can learn and grow together. Our R-community is a great opportunity to get involved, collaborate with other women, and make new friends as we learn.</p>
+<p><img src="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/r-ladies-morelia-zoom.png" class="img-fluid"></p>
+<p><strong>Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?</strong></p>
+<p>I’m pursuing my PhD, and R is a tool I use almost daily. For example, I use R for a project involving the study of endophytic associations in different temperate oak species of Mexico. To this end, we initially explored the functional leaf traits of these oak species, and I had to learn different R packages for this project, such as data manipulation and visualization (e.g., <a href="https://dplyr.tidyverse.org/">dplyr</a> and <a href="https://ggplot2.tidyverse.org/">ggplot2</a>). Additionally, I used specialized packages like ‘<a href="https://cran.r-project.org/web/packages/TPD/index.html">TPD</a>’ to calculate metrics related to functional diversity studies and ‘hypervolume’ to calculate climatic niches.</p>
+<p>Our study aimed to determine if a functional niche partitioning between two evolutionary groups of oaks allowed them to coexist. We conducted a functional niche analysis and graphical visualization using R and the packages above. An interesting finding was that the analysis suggested differences in functional similarity among the groups, indicating evidence of functional niche partitioning and resource gradients.</p>
+<p>These studies are crucial for conservation efforts and guide the development of management practices supporting temperate forests’ long-term health and resilience.</p>
+<p><strong>What resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)</strong></p>
+<p><strong>Is this an ongoing project? Please share any details or CTA for who should get involved!</strong></p>
+<p>Among the various R packages I used, some are for data manipulation and visualization, such as dplyr and ggplot2, and others more specialized, like TPD for calculating metrics used in functional diversity studies, <a href="https://cran.r-project.org/web/packages/hypervolume/index.html">hypervolume</a> for constructing functional niches, and <a href="https://cran.r-project.org/web/packages/ecospat/index.html">ecospat</a> to calculate climatic niche overlap indices.</p>
+<p>We extensively utilized GitHub repositories, ensuring that all the scripts were well-documented to allow others to reproduce the analyses easily. Our ongoing project on endophytic fungi associated with oaks is crucial as a first approximation for understanding the complex interactions between fungi and their host plants.</p>
+<p>The concept of hidden diversity is a novel and intriguing area that we are just beginning to explore. For those interested in diving deeper into this field, there are several ways to get involved. You can join professional networks in microbial ecology or engage with the field of computational biology through organizations and online communities. Additionally, participating in conferences, workshops, and collaborations with researchers and professionals in the field offers valuable opportunities to contribute to current research.</p>
+<p><strong>What trends do you currently see in R language and your industry? Are there any trends you see developing in the near future?</strong></p>
+<p>In metagenomics, one of the key trends is the development of massive datasets generated by next-generation sequencing (NGS). It has enabled a deeper and more detailed analysis of microbial communities and their diversity and functions. In this context, R remains an essential tool for statistical analysis and data visualization with specialized libraries like <a href="https://joey711.github.io/phyloseq/">phyloseq</a> and <a href="https://cran.r-project.org/web/packages/vegan/index.html">vegan</a>.</p>
+<p>However, given the complexity of metagenomic data, other programming languages like Python and <a href="https://www.gnu.org/software/bash/">Bash</a> are becoming indispensable. In the near future, the use of interdisciplinary workflows that combine R, Python and Bash will continue to grow, along with the development of more integrated tools to manage large datasets. Additionally, we can expect an increased use of artificial intelligence and machine learning to analyze these data.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/</guid>
+  <pubDate>Fri, 18 Oct 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/RLadiesMorelia-main-image.png" medium="image" type="image/png" height="62" width="144"/>
+</item>
 <item>
   <title>The U.S. Federal Reserve quarterly model in R</title>
   <dc:creator>Guest Blog Post</dc:creator>
@@ -496,8 +540,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
 
 
 
-<section id="cakes-code-and-community-rasmus-bååths-secret-to-reviving-the-copenhagenr-user-group" class="level1">
-<h1>Cakes, Code, and Community: Rasmus Bååth’s Secret to Reviving the CopenhagenR UseR Group</h1>
 <p><a href="https://www.linkedin.com/in/rasmus-baath/">Rasmus Bååth</a>, the organizer of the <a href="https://www.meetup.com/copenhagenr-user-group/">CopenhagenR UseR Group</a>, recently spoke to the R Consortium about his experience in organizing the group. After joining the Copenhagen R User Group in 2013, he took the lead in reviving the group in 2023 after a period of inactivity. Under his guidance, the group now focuses on industry-related topics, personal projects, and emerging tools like Quarto. Rasmus is dedicated to fostering a vibrant local R community through in-person meetups that encourage learning and collaboration.</p>
 <p><img src="https://r-consortium.org/posts/cakes-code-and-community-reviving-the-copenhagenr-user-group/rasmus-baath.png" class="img-fluid"></p>
 <p>The CopenhagenR UseR Group is hosting an exciting “<a href="https://www.meetup.com/copenhagenr-user-group/events/303309816/">Two Tools for Report Generation in R</a>” event on October 3, 2024. The event will feature two presentations on using Sweave and Quarto for report generation, followed by discussions and networking at <a href="https://www.prosa.dk/">PROSA</a>, København, Denmark.</p>
@@ -528,7 +570,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
 
 
 </section>
-</section>
 
  ]]></description>
   <guid>https://r-consortium.org/posts/cakes-code-and-community-reviving-the-copenhagenr-user-group/</guid>
@@ -545,8 +586,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
 
 
 
-<section id="announcing-the-health-technology-assessment-hta-working-group" class="level1">
-<h1>Announcing the Health Technology Assessment (HTA) Working Group</h1>
 <p>The R Consortium is pleased to announce a new Working Group (WG) focused on Health Technology Assessment (HTA). The HTA WG has a mission of promoting the use of R in all aspects of HTA analytics, including both clinical assessment and economic evaluation. It aims to build on the success of other R Consortium working groups in bringing together and promoting dialogue between the broadest range of stakeholders from the HTA ecosystem (industry, HTA bodies, academics and others) to identify needs and address challenges through practical tools and pilot exercises. Health Technology Assessment (HTA) helps decision-makers determine which medical technologies and treatments are effective and worth paying for. It can help ensure that the right treatments reach the right patients at the right time by assessing clinical evidence and economic evaluations to inform policy-making about reimbursement and market access.</p>
 <p>Recent policy changes, such as the EU HTA Regulation, require pharmaceutical companies to face stricter standards and shorter deadlines for submitting evidence. At the same time, HTA authorities must review an increasing number of complex analyses under the pressure for timely evidence-based decisions. Lastly, there is pressure on academia to provide easy-to-use HTA software and tools.</p>
 <p>Initially, the WG will focus on the following objectives.</p>
@@ -571,7 +610,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
 <p>If you think any of this is exciting and would like to become involved, please leave your name and email in <a href="https://github.com/RConsortium/HTA-wg/issues/1">issue number 1</a> at the HTA GitHub repository.</p>
 
 
-</section>
 
  ]]></description>
   <guid>https://r-consortium.org/posts/announcing-health-technology-assessment-HTA-working-group/</guid>
@@ -1178,51 +1216,6 @@ gd2md-html: xyzzy Mon Jul 29 2024
   <guid>https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/</guid>
   <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed%20(2).png" medium="image" type="image/png"/>
-</item>
-<item>
-  <title>Empowering the R Community: Insights from Myles Mitchell of the Leeds Data Science Group</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/myles-mitchell-4009aa98/?originalSubdomain=uk">Myles Mitchell</a>, co-organizer of the&nbsp;<a href="https://www.meetup.com/leeds-data-science-meetup/">Leeds Data Science group</a>, to discuss the local R community and the group’s recent activities. Myles highlighted the group’s efforts to create an inclusive and welcoming environment for all participants. The group is dedicated to creating networking opportunities for students interested in pursuing a career in data science and sharing job openings.<br>
-<br>
-<img src="https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/image_1.jpg" class="img-fluid"></p>
-<p>The Leeds Data Science group is hosting an in-person event titled “<a href="https://www.meetup.com/leeds-data-science-meetup/events/300758737/"><strong><em>Improving the Fidelity and Stability of Large Language Models</em></strong></a>” on the 23rd of July.&nbsp;</p>
-<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
-<p>I am a data scientist at <a href="https://www.jumpingrivers.com/">Jumping Rivers</a>, a data science consultancy. We collaborate with various companies on data-related projects, such as data storage, modeling, developing data visualization dashboards, and offering data science training. Initially, I had a background in Python, but I learned R while working at Jumping Rivers, where many of our staff are proficient in R, and much of our infrastructure is written in R.</p>
-<p>At Jumping Rivers, we receive funding from the R Consortium. We organize the <a href="https://www.meetup.com/leeds-data-science-meetup/">Leeds Data Science Meetups</a> every two months and the <a href="https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/">North East Data Science Meetups</a> every three months. Additionally, we hold annual conferences, such as <a href="https://shiny-in-production.jumpingrivers.com/">Shiny in Production</a> (October) and <a href="https://satrday-london-2024.jumpingrivers.com/">SatRdays London</a> (April), which run once a year. I organize the North East and Leeds Data Science Meetups for Jumping Rivers.</p>
-<p><strong>Can you share what the local R Community is like?</strong></p>
-<p><img src="https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/image_2.jpg" class="img-fluid"></p>
-<p>I am located in Newcastle, in the northeast of England, where a large community is keenly interested in data science. Our community includes <a href="https://www.ncl.ac.uk/">Newcastle University</a> and <a href="https://www.northumbria.ac.uk/">Northumbria University</a> students, many of whom are studying data science or statistics. There are also professionals from various industries looking for data science jobs. Our meetups are attended by prospective data scientists and students eager to network and learn more about the field.</p>
-<p>Both universities teach R, and many industries in the area employ data science techniques, including <a href="https://www.nwl.co.uk/">Northumbrian Water</a> and <a href="https://www.nissan.co.uk/">Nissan</a>. These companies use data science to solve everyday problems, such as detecting water leaks and optimizing manufacturing processes.</p>
-<p>Data science is relevant across almost all industries, and R, along with Python and other languages, is a crucial tool in solving data science problems. In the Northeast, consultancies like Jumping Rivers specialize in data science. In summary, we have a large community of students and industry professionals in the Northeast, and it’s a similar story in Leeds.</p>
-<p><strong>You have a Meetup on “<a href="https://www.meetup.com/leeds-data-science-meetup/events/300758737/">Improving the Fidelity and Stability of Large Language Models</a>”, can you share more on the topic covered? Why this topic?</strong></p>
-<p>During our Meetup on “Improving the Fidelity and Stability of Large Language Models,” we will explore how to enhance software solutions with AI capabilities, focusing on improving the accuracy and reliability of these models. Drawing from real-world experiences, we will discuss successful strategies for development, tackle the challenge of model ‘hallucinations,’ and address other significant obstacles. This topic is essential as the AI sector continues to grow rapidly, and integrating AI effectively is crucial for developers to achieve robust performance and innovative functionality in their projects. The session is designed for developers of all skill levels interested in incorporating AI into their work, ensuring they can implement practical and effective methodologies for positive outcomes.</p>
-<p><a href="https://www.linkedin.com/in/ryanmangan01/?originalSubdomain=uk">Ryan Mangan</a> will be presenting this meetup. Ryan is a seasoned technologist with over 18 years of experience in cloud computing, AI, and virtualization. He founded <a href="https://www.linkedin.com/company/efficientether/">Efficient Ether Ltd</a>, a Microsoft startup specializing in AI, cloud optimization, and sustainability. Ryan is a recognized <a href="https://mvp.microsoft.com/">Microsoft MVP</a>, <a href="https://vexpert.vmware.com/">VMware vExpert</a>, and Chartered Fellow of the British Computer Society. He has authored several e-books and publications, including “<a href="https://www.amazon.com/Mastering-Azure-Virtual-Desktop-implementation/dp/1801075026">Mastering Azure Virtual Desktop</a>,” and is active in public speaking and blogging within the tech community.&nbsp;</p>
-<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong></p>
-<p>Regarding techniques, I’m currently reviewing how we organize our meetups. Our meetups are free to attend for all participants, and we aim to create a welcoming and accessible environment for everyone to network and meet like-minded individuals in the area. The meetups are held every two to three months on weekdays in the evenings, providing attendees with time to travel from their place of work to the venue. We offer refreshments at the start, including pizza and soft drinks, and we ensure that vegan, gluten-free, and halal options are included to cater to a wide range of dietary preferences.&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/image_3.jpg" class="img-fluid"></p>
-<p>We often run interactive workshops at the North East Data Science Meetups, including a recent <a href="https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/events/300470386/">meetup</a> on the Apache Arrow interface for R, led by <a href="https://thisisnic.github.io/about/">Nic Crane</a> on July 18th. To make our workshops as inclusive as possible, we provide attendees with all necessary materials and dependencies via a cloud environment created using <a href="https://docs.posit.co/pwb/">Posit Workbench</a>. It allows participants without prior installation of RStudio IDE to contribute and interact with the workshop materials. Our goal is to make our workshops accessible to a broad audience, including those from non-R backgrounds. In general, we aim to create an event where attendees can participate without the burden of installing multiple packages or downloading data.</p>
-<p>Most attendees attend our meetups to network and meet industry professionals, especially students exploring post-graduation career opportunities. With this in mind, we always reserve a part of the meetup for advertising similar meetups and conferences in the area and job opportunities in data science. Many attendees regard these meetups as a regular source of news, so we try to provide a central hub of information and a place to enjoy high-quality live talks and workshops.</p>
-<p>These are in-person meetups. We could attract more people if we recorded and live-streamed it on Zoom. However, managing a Zoom call and recording would create more work for the organizers, and an in-person event provides better networking opportunities than online. In saying that, we will continue to look at ways to make these accessible and appeal to a wide range of backgrounds, and we will always take feedback from the community seriously.</p>
-<p><strong>What trends do you currently see in R language and your industry? Any trends you see developing in the near future?</strong></p>
-<p>In the northeast and Leeds data science meetups, there is a significant interest in machine learning, training and deploying machine learning models, and productionizing these models (ML Ops). Attendees often expect talks on these topics and are particularly interested in chatGPT, generative AI, and other related issues. However, data science encompasses a broader range of areas, including visualizing data and creating dashboards, and we try to cover all of these areas in our talks and workshops. Despite our efforts, there is a clear trend toward machine learning-focused discussions, with many talk submissions focusing on ML Ops and deploying models on the cloud.</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://www.r-consortium.org/all-projects/r-user-group-support-program">Learn more</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-Myles-Mitchell-of-the-Leeds-Data-Science-Group/</guid>
-  <pubDate>Mon, 22 Jul 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

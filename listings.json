@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
+      "/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/index.html",
       "/posts/us-federal-reserve-quarterly-model-in-r/index.html",
       "/posts/empowering-dengue-research-through-the-dengue-data-hub/index.html",
       "/posts/rpharma-2024-virtual-oct29-nov1-apac-track/index.html",
@@ -70,14 +71,6 @@
     ]
   },
   {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
-    ]
-  },
-  {
     "listing": "/webinars/webinars-auto-not-being-used.html",
     "items": [
       "/webinars/escape-the-data-dungeon.html",
@@ -91,8 +84,17 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/newsletters/newsletters.html",
     "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/index.html",
       "/posts/us-federal-reserve-quarterly-model-in-r/index.html",
       "/posts/empowering-dengue-research-through-the-dengue-data-hub/index.html",
       "/posts/rpharma-2024-virtual-oct29-nov1-apac-track/index.html",
