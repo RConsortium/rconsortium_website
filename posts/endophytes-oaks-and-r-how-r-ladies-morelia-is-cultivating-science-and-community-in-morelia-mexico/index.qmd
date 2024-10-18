@@ -1,0 +1,107 @@
+---
+title: "Endophytes, Oaks, and R: How R-Ladies Morelia is Cultivating Science and Community in Morelia, Mexico"
+description: "Goretty Mendoza, the organizer of the R-Ladies Morelia, recently spoke to the R Consortium about her 
+experience with the group and her work using R in molecular biology."
+author: "R Consortium"
+image: "RLadiesMorelia-main-image.png"
+date: "10/18/2024"
+---
+
+[Goretty Mendoza](https://www.linkedin.com/in/goretty-mendoza-785004322/), the organizer of the 
+[R-Ladies Morelia](https://www.meetup.com/es-ES/rladies-morelia/), recently spoke to the R Consortium about her experience 
+with the group and her work using R in molecular biology. Under her guidance, the group has grown into a supportive 
+space for women from diverse fields, focusing on building R skills, sharing knowledge, and fostering collaboration. 
+Goretty is committed to empowering the local R community through online and physical events that encourage learning 
+and networking. 
+
+
+![](Goretty.png){width=50%}
+
+
+***Please share about your background and involvement with the RUGS group.***
+
+I am a PhD student specializing in molecular biology, focusing on endophytic fungi. My work involves high-throughput sequencing, 
+particularly amplicon sequencing, to study microbiomes. 
+
+I started using R during my PhD. Initially, I practiced independently through online courses, but then I discovered an 
+R-Ladies community. The group was just starting in my city, so I took the opportunity to join. Attending the meetings 
+helped me overcome my fear of working with R and allowed me to improve my skills. Gradually, I became more involved, 
+and a few months ago, we had the opportunity to hold a face-to-face meeting with some members of our R-Ladies community 
+who live in other cities, thanks to the R Consortium’s grant. I'm sure we returned home more motivated, knowing we all 
+aim to improve our R skills.
+
+
+![](RLadiesMorelia.png)
+
+
+**Can you share what the local R community is like? **
+
+Our local R community is a group of enthusiastic women from various fields. Most of us come from science, mainly mathematics 
+or biology, but we also have members from areas like finance or economics interested in learning R. At the start of each 
+semester, we meet to share our interests and goals for the upcoming months. During our face-to-face meetings, we enjoy 
+coffee and cookies, which create a welcoming atmosphere. A key focus of our group is ensuring that those with more 
+experience in R share their knowledge with new members who are just starting. It creates an environment where everyone 
+can learn and grow together. Our R-community is a great opportunity to get involved, collaborate with other women, 
+and make new friends as we learn. 
+
+![](r-ladies-morelia-zoom.png)
+
+
+**Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, 
+or anything interesting related to your industry?**
+
+I'm pursuing my PhD, and R is a tool I use almost daily. For example, I use R for a project involving the study of endophytic 
+associations in different temperate oak species of Mexico. To this end, we initially explored the functional leaf traits of 
+these oak species, and I had to learn different R packages for this project, such as data manipulation and visualization 
+(e.g., [dplyr](https://dplyr.tidyverse.org/) and [ggplot2](https://ggplot2.tidyverse.org/)). Additionally, I used specialized 
+packages like '[TPD](https://cran.r-project.org/web/packages/TPD/index.html)' to calculate metrics related to functional 
+diversity studies and 'hypervolume' to calculate climatic niches. 
+
+Our study aimed to determine if a functional niche partitioning between two evolutionary groups of oaks allowed them to 
+coexist. We conducted a functional niche analysis and graphical visualization using R and the packages above. An interesting 
+finding was that the analysis suggested differences in functional similarity among the groups, indicating evidence of 
+functional niche partitioning and resource gradients. 
+
+These studies are crucial for conservation efforts and guide the development of management practices supporting temperate 
+forests' long-term health and resilience.
+
+**What resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)**
+
+**Is this an ongoing project? Please share any details or CTA for who should get involved!**
+
+Among the various R packages I used, some are for data manipulation and visualization, such as dplyr and ggplot2, and others 
+more specialized, like TPD for calculating metrics used in functional diversity studies, 
+[hypervolume](https://cran.r-project.org/web/packages/hypervolume/index.html) for constructing functional niches, and 
+[ecospat](https://cran.r-project.org/web/packages/ecospat/index.html) to calculate climatic niche overlap indices. 
+
+We extensively utilized GitHub repositories, ensuring that all the scripts were well-documented to allow others to reproduce 
+the analyses easily. Our ongoing project on endophytic fungi associated with oaks is crucial as a first approximation for 
+understanding the complex interactions between fungi and their host plants. 
+
+The concept of hidden diversity is a novel and intriguing area that we are just beginning to explore. For those interested in 
+diving deeper into this field, there are several ways to get involved. You can join professional networks in microbial ecology 
+or engage with the field of computational biology through organizations and online communities. Additionally, participating in 
+conferences, workshops, and collaborations with researchers and professionals in the field offers valuable opportunities to 
+contribute to current research. 
+
+**What trends do you currently see in R language and your industry? Are there any trends you see developing in the near future?**
+
+In metagenomics, one of the key trends is the development of massive datasets generated by next-generation sequencing (NGS). It 
+has enabled a deeper and more detailed analysis of microbial communities and their diversity and functions. In this context, R 
+remains an essential tool for statistical analysis and data visualization with specialized libraries like [phyloseq](https://joey711.github.io/phyloseq/) 
+and [vegan](https://cran.r-project.org/web/packages/vegan/index.html). 
+
+However, given the complexity of metagenomic data, other programming languages like Python and [Bash](https://www.gnu.org/software/bash/) 
+are becoming indispensable. In the near future, the use of interdisciplinary workflows that combine R, Python and Bash will continue to 
+grow, along with the development of more integrated tools to manage large datasets. Additionally, we can expect an increased use of 
+artificial intelligence and machine learning to analyze these data. 
+
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, 
+and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. 
+We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount 
+of money available to distribute.
+
+[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html) 
