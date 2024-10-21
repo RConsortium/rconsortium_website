@@ -71,27 +71,6 @@
     ]
   },
   {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
-    "items": [
-      "/webinars/escape-the-data-dungeon.html",
-      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/r-insurance-series.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/unlocking-insights-from-latinr.html",
-      "/webinars/webinars.html"
-    ]
-  },
-  {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
-    ]
-  },
-  {
     "listing": "/blog/index.html",
     "items": [
       "/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/index.html",
@@ -160,6 +139,27 @@
       "/posts/improving-with-r-kylie-bemis-unveils-enhanced-signal-processing-with-matter-2-4-upgrade/index.html",
       "/posts/join-our-upcoming-webinar-master-tidy-finance-access-financial-data-with-expert-christoph-scheuch/index.html",
       "/posts/natalia-andriychuk-on-rugs-pfizer-r-center-of-excellence-and-open-source-projects-fostering-r-communities-inside-and-out/index.html"
+    ]
+  },
+  {
+    "listing": "/newsletters/newsletters.html",
+    "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+    ]
+  },
+  {
+    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "items": [
+      "/webinars/escape-the-data-dungeon.html",
+      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/r-insurance-series.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-insights-from-latinr.html",
+      "/webinars/webinars.html"
     ]
   }
 ]
