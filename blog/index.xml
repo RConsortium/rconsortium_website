@@ -10,7 +10,54 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 18 Oct 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 23 Oct 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>ConectaR, Podcasts, and Datathons: How the San Carlos R User Group in Costa Rica is Connecting Latin America’s Data Lovers</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/fransvandunne/">Frans van Dunné</a>, the organizer of the <a href="https://www.meetup.com/san-carlos-r-user-group/">San Carlos R User Group</a>, recently discussed with the R Consortium the development of the R community in Costa Rica and the broader Latin American (LATAM) region. He also talked about the growth of events such as the ConectaR conference and the success of the <a href="https://www.datalatam.com/">Data Latam podcast</a>, which he co-hosts to delve into data science in Latin America. Additionally, Frans highlighted the challenges of building a data-driven community in a rural area and the creative methods they’ve employed to connect people through R.</p>
+<p><img src="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/FransvanDunne.png" class="img-fluid"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>I have a background in biology, and during my PhD in tropical ecology, I encountered some statistical questions that I needed to solve through programming. That’s when I started learning to program, initially with Perl. Eventually, I discovered that I enjoyed solving data-related problems through programming, and that led me to R. It was around 2001 when I first started programming in R.</p>
+<p>Eventually, I married and emigrated to Costa Rica (my wife is Tica). Knowing no one in the area, I started an R User Group to connect with people and navigate the area.</p>
+<p>Very soon after arriving in Costa Rica, I established my town’s San Carlos R user group. Initially, we held our meetings in-person, but I soon discovered that some attendees traveled for hours by bus to reach San Carlos. Realizing the impracticality, I decided to move our meetings online, and to my surprise, it worked out well. This change occurred even before the pandemic, and we began to see people from Peru and other distant locations joining our group. San Carlos is a small rural area with a population of around 50,000, so having individuals from different parts of Latin America join us was truly amazing.</p>
+<p><img src="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/SanCarlosRUGsmeeting.png" class="img-fluid"> <em>One of the first San Carlos R User Group meetings - February 2016, Ciudad Quesada, Costa Rica</em></p>
+<p>We had to stop our online meetings because Meetup informed us that, according to their policy before the pandemic, we wouldn’t be able to use their platform if we didn’t hold physical meetings. The world is different now, but that was the situation back then.</p>
+<p><strong>Can you share what the local R community is like in San Carlos? </strong></p>
+<p><img src="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/ConectaR2019.png" class="img-fluid"> <em>Participants of ConectaR 2019 - January 2019, San José Costa Rica</em></p>
+<p>We collaborated with the University of Costa Rica to organize an event that brought together industry, academia, and citizen science professionals for a conference focused on R. The event is called <a href="https://journal.r-project.org/news/RJ-2019-2-conectaR/">Conecta R</a>. We started in 2019 and held the latest edition this year, <a href="https://www.meetup.com/san-carlos-r-user-group/events/299265414/?eventOrigin=group_events_list">Conecta R 2024</a>. When we started, we wanted to understand R’s current status and usage in the LATAM region. It only confirmed that R is widely used in academia. Most statistics courses have transitioned from licensed software to R. R is also used widely in industry.</p>
+<p><img src="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/ConectaR2024.png" class="img-fluid"> <em>Participants of the Tidymodels workshop during ConectaR 2024, March 2024, San José, Costa Rica</em></p>
+<p>At <a href="https://www.ixpantia.com/en/">ixpantia</a>, the company I co-founded, we work with clients in various industries, such as consumer packaged goods, retail, oil and gas, and energy production. Additionally, a significant number of clients utilize our financial services.</p>
+<p><strong>Would you like to tell us about your recent events?</strong></p>
+<p>We’ve resumed our monthly online meetings for the San Carlos R user group. The meetings now take place on the first Saturday of the month in the morning, and anyone is welcome to join through Meetup.com. Our last meeting was held recently, and it was great to see familiar faces returning.</p>
+<p>Additionally, we have a podcast called <a href="https://www.datalatam.com/">Data Latam</a>, which covers topics related to data science, not just R. We aim to release a new episode every month. We run this podcast in parallel with meetings, serving a similar purpose. It’s about providing examples and even role models of professionals working with data to show that you don’t need to be an IT professional or a programmer to work with data.</p>
+<p><strong>Please share more about the Data Latam podcast. How did you come up with the idea of starting it? Would you like to highlight a few of your favorite podcasts from this series?</strong></p>
+<p>The story behind the Data Latam podcast is funny. The co-host, <a href="https://www.linkedin.com/in/diegohmay/">Diego May</a>, and I met through an R Package I wrote to access data from an open-data platform he had developed. We shared an interest in using data and data science to help the development of LATAM and agreed to start a podcast to get to know each other better. Within two months, we had the first opportunity to start a project, and that is when we founded ixpantia, which brings best practices in data science, data engineering, and data strategy to LATAM.</p>
+<p>We have done 110 podcasts to date! It seems like a lot, but we learn so much from every conversation that it hardly feels like an effort. Some of my personal favorites that are related to R include Episode 109 with <a href="https://www.linkedin.com/in/noamross/">Noam Ross</a>, where we talked about <a href="https://ropensci.org/">rOpenSci</a>, episode 98 with <a href="https://www.linkedin.com/in/sherlytarazonatocto/?originalSubdomain=pe">Sherly Tarazona</a> about her work and <a href="https://www.meetup.com/es/rladies-lima/">R-Ladies Lima</a>, episode 85 with <a href="https://www.linkedin.com/in/tareefk/">Tareef Kawaf</a> from Posit and episode 75 with <a href="https://www.linkedin.com/in/jaahumada/">Jorge Ahumada</a> about the work they do at <a href="https://www.wildlifeinsights.org/">Wildlife Insights</a>. I could go on, but pointing to the complete list at <a href="http://www.datalatam.com">www.datalatam.com</a> makes more sense. I’m sure there is something for everyone interested in data there.</p>
+<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future? </strong></p>
+<p>Online events are great. I live in a rural area, and attending a physical event, even here in Costa Rica, requires a long three-hour drive to the capital. We have done that and will do it again, but having the option to go online is much more practical and has a broader reach.</p>
+<p>When we started our first online meetings, we used Google Hangouts, which would fry my laptop after one hour. These tools have improved so much over the last few years, largely pushed by the boom in remote work during the pandemic. We still like <a href="https://www.zoom.com/">Zoom</a> and its functionality for setting up and executing events, including registration.</p>
+<p><img src="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/ConectaR2024.png" class="img-fluid"> <em>Participants of the Datathon 2019 in San Carlos, August 2019, Santa Clara, Costa Rica</em></p>
+<p>We have organized two datathons (similar to a hackathon but focused on data) that were incredibly enjoyable and well-attended. The key to their success was our partnerships. One datathon was organized in collaboration with the Costa Rican government, and the other involved two local universities: The University of Costa Rica (UCR) and the Costa Rica Institute of Technology (TEC). I still meet people who attended these events and have fond memories of them.</p>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/</guid>
+  <pubDate>Wed, 23 Oct 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/![FransvanDunne](FransvanDunne.png)" medium="image"/>
+</item>
 <item>
   <title>Endophytes, Oaks, and R: How R-Ladies Morelia is Cultivating Science and Community in Morelia, Mexico</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1158,61 +1205,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/pharma-rug-the-rise-of-r/</guid>
   <pubDate>Thu, 01 Aug 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/unnamed.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>R-Ladies Rome: Empowering Women in Data Science Through Collaboration and Innovation</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://federicagazzelloni.com/">Federica Gazzelloni</a>, co-organizer of <a href="https://www.meetup.com/rladies-rome/">R-Ladies Rome</a>, recently spoke with the R Consortium about the fast-growing R community in Rome. The group collaborates with R user groups worldwide and has successfully attracted a diverse audience to its events. Federica also contributes to the R community through package development and is currently working on a book about using R for health metrics and tracking the spread of infectious diseases.</p>
-<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/federica.png" class="img-fluid"></p>
-<p>The group is hosting an online event titled <a href="https://www.meetup.com/rladies-rome/events/302078600/">“Building Reproducible Pipelines with R, Docker, and Nix”</a> on the 29th of July. R users from around the world are invited to attend this event.</p>
-<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/bruno.jpg" class="img-fluid"></p>
-<p><strong><em>Please share about your background and involvement with the RUGS group.</em></strong></p>
-<p>I am Federica Gazzelloni, an actuary and statistician interested in health studies. I am writing a book about health metrics and the spread of infectious diseases. As the lead organizer of R-Ladies Rome, one of the R user groups sponsored by the R Consortium, I am grateful for the support that enables us to organize monthly talks, tutorials, and workshops. Our events provide an inclusive and accessible learning environment free of charge, featuring exciting speakers and various engagement opportunities. Additionally, we have held events in partnership with <a href="https://www.r-consortium.org/blog/2023/07/24/use-of-r-in-non-profit-social-policy-research-in-new-york">R-Ladies New York</a>, <a href="https://www.r-consortium.org/blog/2023/11/16/highlights-from-r-ladies-paris-hybrid-meetup-empowering-community-outreach">R-Ladies Paris</a>, and <a href="https://www.r-consortium.org/blog/2024/04/26/bridging-gaps-tunis-r-user-groups-journey-in-democratizing-r-in-bioinformatics">Tunis R User Group</a> and created a branded website: <a href="https://rladiesrome.org/">rladiesrome.org</a>!</p>
-<p>R-Ladies Rome started in 2023 and has grown significantly since then. Our events consistently reach a substantial audience. For instance, our latest event with <a href="https://www.r-consortium.org/blog/2024/07/03/diving-into-r-with-isabella-velasquez-perspectives-from-r-ladies-seattle">Isabella Velasquez</a> garnered over 100 RSVPs. During Data Viz Month, we received unexpected attention from the open tech community of learners. Our followers on Meetup have reached over 1.1k, and our social media presence is steadily growing.</p>
-<p><strong><em>Can you share what the R community is like in Rome? </em></strong></p>
-<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/r-ladies.png" class="img-fluid"></p>
-<p>Since the kick-off of the chapter in 2023, R-Ladies Rome has played a pivotal role in fostering a dynamic community. We have successfully brought together an international group of R enthusiasts, ranging from beginners to experienced data scientists, creating a supportive and engaging environment for all. The popularity of the R language within the open source community, particularly for statistical analysis and medical research, is evident in Rome. R offers a wide range of libraries that can be easily applied to various topics, making it very convenient for users. Although Python is gaining attention in research and providing another accessible option for statistical analysis, the medical statistical community seems to prefer R over Python due to its extensive capabilities and strong community support.</p>
-<p>Our events have consistently attracted significant attention and participation. For example, our latest event with Isabella Velasquez garnered over 100 RSVPs. We have also received unexpected attention during Data Viz Month from the open tech community of learners. Our Meetup followers have reached over 1.1k, and our social media presence is steadily growing.</p>
-<p>The R community in Rome is expected to grow, with R-Ladies Rome at its heart, driving engagement and promoting the use of R for various applications. We are excited to continue growing and evolving, providing valuable learning opportunities and fostering connections within the community.</p>
-<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed.png" class="img-fluid"></p>
-<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed (1).png" class="img-fluid"></p>
-<p><strong><em>What trends do you currently see in R language?</em></strong></p>
-<p>We have reviewed all the events that R-Ladies’ groups have organized in the past years and, after considering the rebranding of RStudio to <a href="https://posit.co/">Posit</a> PBC and <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> to <a href="https://quarto.org/">Quarto</a>, realized that several exciting trends in the R language are shaping its usage and development within the data science community. Analyzing event titles, attendee numbers, and activity on past recordings, we found that events containing “Introduction” or “Tutorials” impact learners most, highlighting the growing interest in learning R for data analytics, reproducible research, and dynamic reporting.</p>
-<p>Moreover, integrating R with other programming languages and platforms is gaining significant attention. The interoperability between R and languages like Python, HTML, or Java allows users to enhance their skills across multiple tools within a single environment. This has expanded R’s capabilities, making it a versatile choice for a diverse range of users.</p>
-<p><img src="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/collage.png" class="img-fluid"></p>
-<p><strong><em>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</em></strong></p>
-<p>We’ve been using <del><a href="https://www.canva.com/">Canva</a></del> extensively for various tasks and found <del><a href="https://openai.com/index/chatgpt/">ChatGPT</a></del> very helpful in crafting storytelling content. To enhance the planning and execution of events, <a href="https://github.com/features/copilot">Copilot</a> assists with its excellent collaborative typing, saving time. Additionally, having a Meetup pro-account is valuable, mainly as <a href="https://www.meetup.com/rladies-rome/">R-Ladies Rome</a> is part of the broader R Ladies group. It helps us connect with a wider audience while using Google Forms aids communication and prevents missing information. We also use <a href="https://www.youtube.com/@rladiesrome">YouTube</a> and have our channel, which is very useful for sharing past events recordings and making them available online to ensure accessibility for those unable to attend live events.</p>
-<p><strong><em>You have a Meetup on <em>“<a href="https://www.meetup.com/rladies-rome/events/302078600/">Building reproducible pipelines with R, Docker and Nix</a>”</em>, can you share more on the topic covered? Why this topic? </em></strong></p>
-<p>We have an upcoming Meetup titled “Building reproducible pipelines with R, Docker and Nix” , featuring speaker <a href="https://www.linkedin.com/in/brodriguesco/">Bruno Rodrigues</a>. This topic was chosen based on feedback from our organizers, <a href="https://www.linkedin.com/in/silacos/">Silvana Acosta</a> and <a href="https://www.linkedin.com/in/rafaelagrlucas/">Rafael Ribeiro</a>, who polled our audience to identify a favorite speaker. Bruno Rodrigues emerged as a popular choice, highlighting the growing interest in robust and reproducible data science workflows.</p>
-<p>In this session, Bruno Rodrigues will guide us through setting up reproducible data pipelines using R, <a href="https://www.docker.com/">Docker</a>, and <a href="https://nixos.org/">Nix</a>. These tools ensure that data analyses are consistent and can be easily shared and replicated across different environments. By learning to use Docker and Nix alongside R, our community members will gain valuable skills to enhance the reliability and reproducibility of their data science projects. This event aligns with our mission to provide practical and impactful learning opportunities that meet the evolving needs of the data science community.</p>
-<p><strong><em>Please share about a project you are currently working on or have worked on using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</em></strong></p>
-<p>One of the key projects I am currently working on involves a quarto-book titled “<em>Health Metrics and the Spread of Infectious Diseases with R”</em>, which CRC Press will publish at the end of this year. This book aims to provide comprehensive insights into the intersection of health metrics, such as DALYs and infectious disease dynamics, using advanced statistical methods and machine learning techniques in R. The goal is to equip readers with the knowledge and tools to analyze and interpret health data effectively, thereby contributing to the broader field of public health.</p>
-<p>In addition to the book, I have developed a couple of R data packages to aid in data analysis and visualization. One is “<a href="https://github.com/Fgazzelloni/oregonfrogs">oregonfrogs</a>,” which is expected to go on CRAN very soon. This package focuses on classification modeling for detecting frog habitats, utilizing spatial techniques. It provides a valuable function, <a href="https://fgazzelloni.github.io/oregonfrogs/reference/longlat_to_utm.html">longlat_to_utm()</a>. The development of these packages showcases R’s versatility in handling complex ecological data and emphasizes the importance of open source tools in advancing scientific research. Through these projects, I aim to demonstrate the practical applications of R in public health and environmental science, fostering a deeper understanding and appreciation of data-driven methodologies.</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join"><strong>How do I Join?</strong></h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<!-- watermark -->
-<div style="background-color:#FFFFFF">
-<p style="color:#FFFFFF; font-size: 1px">
-gd2md-html: xyzzy Mon Jul 29 2024
-</p>
-</div>
-<p><a href="https://www.r-consortium.org/all-projects/r-user-group-support-program">Learn more</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/</guid>
-  <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/unnamed%20(2).png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>
