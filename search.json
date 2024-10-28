@@ -802,7 +802,7 @@
     "href": "webinars/webinars-auto-not-being-used.html",
     "title": "R Consortium",
     "section": "",
-    "text": "Containerization and R for Reproducibility and More Webinar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape the Data Dungeon: Unlock Scalable R Analytics and ML\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Vision to Action: The R Pfizer R Center of Excellence-led Journey to R Adoption\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTidy Finance and Accessing Financial Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR/Insurance Series: For Everyone in Insurance or Actuarial Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR/Medicine: Quarto for Reproducible Medical Manuscripts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTidy Finance Webinar Series\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnlocking Insights from LatinR: Collaboration and Innovation in Data Science Webinar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebinars\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Containerization and R for Reproducibility and More\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscape the Data Dungeon: Unlock Scalable R Analytics and ML\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Vision to Action: The R Pfizer R Center of Excellence-led Journey to R Adoption\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTidy Finance and Accessing Financial Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR/Insurance Series: For Everyone in Insurance or Actuarial Science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR/Medicine: Quarto for Reproducible Medical Manuscripts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTidy Finance Webinar Series\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnlocking Insights from LatinR: Collaboration and Innovation in Data Science Webinar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebinars\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "webinars/webinars.html",
@@ -1304,14 +1304,14 @@
   {
     "objectID": "webinars/containerization-and-r-for-reproducibility.html#abstract",
     "href": "webinars/containerization-and-r-for-reproducibility.html#abstract",
-    "title": "Containerization and R for Reproducibility and More Webinar",
+    "title": "Containerization and R for Reproducibility and More",
     "section": "Abstract",
     "text": "Abstract\nContainerization has become a dominant computing paradigm for computing in the past decade due to its many advantages: isolation and security, scalability and efficiency with lightweight containers sharing an operating kernel and resources, and portability across cloud computing providers. For the researcher, analyst, or R user, containers have applications ranging from reproducible analytical environments to packaging statistical code to use in web applications. I will discuss how biomedical researchers can make use of containerization technology, particularly the tools provided by the Rocker Project, which publishes powerful standardized containers for the R language.\n\nRegister here: https://zoom.us/webinar/register/WN_aWMKlQngTUqgp4G_qkkD_g"
   },
   {
     "objectID": "webinars/containerization-and-r-for-reproducibility.html#speaker",
     "href": "webinars/containerization-and-r-for-reproducibility.html#speaker",
-    "title": "Containerization and R for Reproducibility and More Webinar",
+    "title": "Containerization and R for Reproducibility and More",
     "section": "Speaker",
     "text": "Speaker\n\nNoam Ross is a computational disease ecologist and Executive Director of rOpenSci, a nonprofit dedicated to promoting open science and validating data science and computational methods. He is a core member of the Rocker Project, which maintains standardized containers for the R computer language. Noam’s work includes spearheading rOpenSci’s work in software peer review, developing a widely emulated system for leveraging the academic peer-review process coupled with state-of-the art automated code analysis to improve code quality in the scientific software in ecosystem, as well as using review as a mechanism for community building and training. His research interests and contributions span a wide range of topics, including disease ecology, zoonotic spillover, mechanistic modeling of disease dynamics, and non-parametric data science methods. His applied work includes creating early outbreak assessment models for the U.S. Defense Threat Reduction Agency, and modeling and forecasting for New York State’s COVID-19 emergency response. Noam holds a Ph.D. in theoretical ecology from the University of California-Davis and a B.Sc. from Brown University."
   },
