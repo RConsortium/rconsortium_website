@@ -47,7 +47,7 @@ The R Consortium sponsors R-related conferences (including useR!), meetings (inc
 Enabling the use of R in commercial environments, and fostering collaboration between companies investing in R.  
 R Consortium committees are developing programs for R language certification and training, consulting, and employment.
 
-The mission of the R Consortium is formally defined in the [R Consortium bylaws](https://www.r-consortium.org/rc-docs/Bylaws-GU-Draft-7-9-2024.docx.pdf) (PDF) and the [Infrastructure Steering Committee charter](https://www.r-consortium.org/rc-docs/ISC-Charter-08-11-23.pdf) (PDF).
+The mission of the R Consortium is formally defined in the [R Consortium bylaws](https://www.r-consortium.org/rc-docs/Bylaws-GU-Draft-7-9-2024.docx.pdf) (PDF) and the [Infrastructure Steering Committee charter](https://www.r-consortium.org/rc-docs/ISC-Charter-08-13-24.pdf) (PDF).
 
 ## Main Links
 

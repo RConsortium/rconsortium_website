@@ -12,19 +12,16 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[Evaluate Performance using the Capital Asset Pricing Model](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model)",
-    "[Shiny in Production 2024](https://shiny-in-production.jumpingrivers.com/)",
     "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
-    "[R/Pharma 2024](https://rinpharma.com/)",
+    "[R/Pharma 2024 (with new APAC Track)](https://rinpharma.com/)",
     "[Analyze Companies using Financial Ratios](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios)",
     "[LatinR 2024](https://latinr.org/en/)",
     "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
   ),
-  dates = c("Oct 9, 2024", "Oct 9-10, 2024",
-            "Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
-  location = c("Virtual", "Newcastle upon Tyne, UK", "Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual"),
-  icon = c("Webinar", "Conference", "Conference", "Conference", "Webinar", "Conference", "Webinar"),
-  Type = c("Webinar",  "Conference", "Conference", "Conference", "Webinar", "Conference", "Webinar"),
+  dates = c("Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
+  location = c("Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual"),
+  icon = c("Conference", "Conference", "Webinar", "Conference", "Webinar"),
+  Type = c("Conference", "Conference", "Webinar", "Conference", "Webinar"),
   
   stringsAsFactors = FALSE
   
@@ -88,6 +85,9 @@ ___
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/unlocking-insights-from-latinr.html" target="_blank" rel="noreferrer noopener">Unlocking Insights from LatinR: Collaboration and Innovation in Data Science</a>', 
+    '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production 2024</a>', 
+    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model" target="_blank" rel="noreferrer noopener">Evaluate Performance using the Capital Asset Pricing Model</a>', 
     '<a href="https://www.ascent.io/earl" target="_blank" rel="noreferrer noopener">EARL 2024</a>', 
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#optimize-portfolios-using-the-markowitz-model" target="_blank" rel="noreferrer noopener">Optimize Portfolios using the Markowitz Model</a>', 
     '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>', 
@@ -108,6 +108,9 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'October 22, 2024',
+        'October 9-10, 2024',
+        'October 9, 2024',
         'September 4-5, 2024', 
         'September 4, 2024', 
         'July 8-11, 2024', 
@@ -129,6 +132,9 @@ df <- data.frame(
       
         ),
   location = c(
+        'Virtual',
+        'Newcastle upon Tyne, UK',
+        'Virtual',
         'Brighton, UK',
         'Virtual',
         'Salzburg, Austria',
@@ -149,10 +155,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   

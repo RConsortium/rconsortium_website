@@ -3,17 +3,25 @@ title: "Tidy Finance Webinar Series"
 image: images/tiny-finance-main-image.png
 ---
 
-![Tiny Finance Webinar Series](images/tiny-finance-main-image.png)
+![](images/tiny-finance-main-image.jpg)
 
-[Christoph Scheuch](https://www.linkedin.com/in/christophscheuch/?originalSubdomain=at) is an independent data science and business intelligence expert. He co-created and maintains the [Tidy Finance](https://www.tidy-finance.org/) project, a transparent, open source approach to research in financial economics. Alongside contributing to Tidy Finance, its maintainers have published in leading academic journals, including the Journal of Finance, Journal of Financial Economics, Review of Finance, and Journal of Econometrics. Christoph previously held the roles of Head of Artificial Intelligence, Director of Product, and Head of BI & Data Science at the social trading platform wikifolio.com. He was an external lecturer at the Vienna University of Economics and Business (WU), where he also obtained his PhD in finance as part of the Vienna Graduate School of Finance (VGSF).
+[Christoph Scheuch](https://www.linkedin.com/in/christophscheuch/?originalSubdomain=at) is an independent 
+data science and business intelligence expert. He co-created and maintains the [Tidy Finance](https://www.tidy-finance.org/) 
+project, a transparent, open source approach to research in financial economics. Alongside contributing to Tidy Finance, 
+its maintainers have published in leading academic journals, including the Journal of Finance, Journal of Financial Economics, 
+Review of Finance, and Journal of Econometrics. Christoph previously held the roles of Head of Artificial Intelligence, 
+Director of Product, and Head of BI & Data Science at the social trading platform wikifolio.com. He was an external 
+lecturer at the Vienna University of Economics and Business (WU), where he also obtained his PhD in finance as part 
+of the Vienna Graduate School of Finance (VGSF).
 
 ## Optimize Portfolios using the Markowitz Model
 
 September 4th, 2024 at 12:00 pm ET
 
-### Register here: [https://zoom.us/webinar/register/WN_411RQvESQimTHWRY-k_ySA](https://zoom.us/webinar/register/WN_411RQvESQimTHWRY-k_ySA)
-
-This webinar introduces Modern Portfolio Theory and the importance of mean-variance analysis in finance. It covers the mathematics of portfolio optimization, expected returns, variances, and covariances. Participants will learn to construct efficient frontiers and implement the Markowitz model in R, from loading return data to optimizing portfolios and interpreting risk-return trade-offs.
+This webinar introduces Modern Portfolio Theory and the importance of mean-variance analysis in finance. It covers the 
+mathematics of portfolio optimization, expected returns, variances, and covariances. Participants will learn to construct 
+efficient frontiers and implement the Markowitz model in R, from loading return data to optimizing portfolios and interpreting 
+risk-return trade-offs.
 
 Agenda:
 
@@ -21,11 +29,11 @@ Agenda:
 * Understanding the mathematics of portfolio optimization
 * Implementing the Markowitz model in R
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jsdOy0ftZiI?si=LalMYJ088cGFncHi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Evaluate Performance using the Capital Asset Pricing Model
 
 October 9th, 2024 at 12:00 pm ET
-
-### Register here: [https://zoom.us/webinar/register/WN_5vg15jweT3u-46MGkgk6lw](https://zoom.us/webinar/register/WN_5vg15jweT3u-46MGkgk6lw)
 
 This webinar covers the Capital Asset Pricing Model (CAPM), starting with its intuitive derivation and its importance in finance. Participants will gain an understanding of Alpha and Beta and their roles in performance assessment. The webinar also includes an overview of popular CAPM extensions. Participants will learn to calculate Alpha and Beta in R with a step-by-step guide, from loading return data to estimating CAPM and interpreting the estimation results.
 
@@ -34,6 +42,8 @@ Agenda:
 * Introduction to the CAPM
 * Understanding Alpha and Beta
 * Calculating Alpha and Beta in R
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9DdCSpuhkt4?si=C05p2Qaw1ml0kHk2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Analyze Companies using Financial Ratios
 

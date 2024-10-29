@@ -12,6 +12,10 @@ section {
     width: 100%;
 }
 
+h1.title {
+    display: block;
+  }
+
 .navbar {
     padding-right: 100px !important; /* Adjust the value to increase the space */
 }

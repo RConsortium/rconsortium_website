@@ -1,0 +1,26 @@
+---
+format: html
+page-layout: full
+---
+# Previous Top Level Projects
+
+## R Inclusion, Diversity, Equity, and Accessibility (IDEA)
+
+R Inclusion, Diversity, Equity and Accessibility (IDEA) was a group broadly considering 
+how the R Consortium could best encourage and support diversity and inclusion in the R 
+Community. 
+
+[https://github.com/RConsortium/RCDI-WG/tree/master](https://github.com/RConsortium/RCDI-WG/tree/master)
+
+## R-Hub
+
+![](images/r-hub-logo.png)
+
+R-Hub was a platform for simplifying and improving the R package development process.
+
+R-Hub assisted R package developers by providing facilities to test packages across multiple 
+architectures, build binaries, and publish, distribute and maintain their packages. Developed by 
+[Gábor Csárdi](https://gaborcsardi.org/), it was being leveraged by R package developers to improve the quality of their packages 
+and to enable support for their packages across multiple architectures.
+
+[https://github.com/r-hub](https://github.com/r-hub).

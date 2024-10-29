@@ -14,23 +14,22 @@ website:
     title: false
     logo-alt: "R Consortium logo"
     right:
-
       - text: "About"
         menu:
           - text: Governance
-            href:  about/governance.qmd
+            href: about/governance.qmd
           - text: Bylaws (PDF)
-            href:  rc-docs/R-Consortium-Bylaws-7-9-2024.pdf
-          - text: ISC Charter (PDF)
-            href:  rc-docs/ISC-Charter-08-11-23.pdf
+            href: rc-docs/R-Consortium-Bylaws-7-9-2024.pdf
+          - text: ISC Charter
+            href: governance/isc-charter.html
           - text: Marketing Committee Charter (PDF)
-            href:  rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf
+            href: rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf
           - text: FAQ
-            href:  about/faq.qmd
+            href: about/faq.qmd
           - text: Contact
-            href:  about/contact.qmd
+            href: about/contact.qmd
           - text: Privacy Policy
-            href:  about/privacy.qmd
+            href: about/privacy.qmd
 
       - text: "Members"
         menu:
@@ -39,38 +38,40 @@ website:
           - text: Join
             href: about/join.qmd
           - text: Membership Agreement (PDF)
-            href:  rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf
+            href: rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf
 
       - text: "Grants"
         menu:
           - text: Goal of ISC Grants Program
-            href:  all-projects/index.qmd
+            href: all-projects/index.qmd
           - text: Recipients of ISC Grants
-            href:  all-projects/funded-projects.qmd
-          - text: Call for Proposals 
-            href:  all-projects/callforproposals.qmd
+            href: all-projects/funded-projects.qmd
+          - text: Call for Proposals
+            href: all-projects/callforproposals.qmd
           - text: RUGS Program
-            href:  all-projects/rugsprogram.qmd
+            href: all-projects/rugsprogram.qmd
           - text: Submitting for payment
-            href:  all-projects/submittingforpayment.qmd
+            href: all-projects/submittingforpayment.qmd
 
       - text: "Projects"
         menu:
           - text: R-Ladies
-            href:   https://rladies.org/
+            href: https://rladies.org/
           - text: DBI
-            href:   https://r-dbi.org/
+            href: https://r-dbi.org/
           - text: Working Groups
-            href:  all-projects/isc-working-groups.qmd
+            href: all-projects/isc-working-groups.qmd
 
       - text: "Events"
         menu:
           - text: R/Medicine
-            href:  https://rconsortium.github.io/RMedicine_website/
+            href: https://rconsortium.github.io/RMedicine_website/
           - text: Webinars
-            href:  webinars/webinars.qmd
+            href: webinars/webinars.qmd
           - text: Events
             href: news/events.qmd
+          - text: WG Calendar
+            href: news/cal.qmd
 
       - text: "News"
         menu:
@@ -81,7 +82,7 @@ website:
           - text: Annual Report 2023 (PDF)
             href: rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf
           - text: Annual Report 2021 (PDF)
-            href:  rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf
+            href: rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf
 
       - codeofconduct.qmd
       - icon: github
@@ -94,12 +95,12 @@ website:
         href: https://x.com/RConsortium
   page-footer:
     background: dark
-    center: © 2024 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code. 
+    center: © 2024 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.
 format:
   html:
     theme:
-       - cosmo
-       - cosmo.scss
+      - cosmo
+      - cosmo.scss
     css: styles.css
 # execute:
 #   freeze: false
