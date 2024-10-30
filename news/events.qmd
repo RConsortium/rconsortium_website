@@ -16,12 +16,13 @@ df <- data.frame(
     "[R/Pharma 2024 (with new APAC Track)](https://rinpharma.com/)",
     "[Analyze Companies using Financial Ratios](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios)",
     "[LatinR 2024](https://latinr.org/en/)",
+    "[R/Medicine Webinar: Containerization and R for Reproducibility and More](https://r-consortium.org/webinars/containerization-and-r-for-reproducibility.html)",
     "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
   ),
-  dates = c("Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
-  location = c("Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual"),
-  icon = c("Conference", "Conference", "Webinar", "Conference", "Webinar"),
-  Type = c("Conference", "Conference", "Webinar", "Conference", "Webinar"),
+  dates = c("Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Nov 19, 2024", "Dec 4, 2024"),
+  location = c("Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual", "Virtual"),
+  icon = c("Conference", "Conference", "Webinar", "Conference", "Webinar", "Webinar"),
+  Type = c("Conference", "Conference", "Webinar", "Conference", "Webinar", "Webinar"),
   
   stringsAsFactors = FALSE
   
