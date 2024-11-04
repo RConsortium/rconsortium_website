@@ -10,7 +10,51 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 01 Nov 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 04 Nov 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Health Technology Assessment (HTA) Working Group Kickoff: Building a Collaborative Vision in R for HTA</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>On October 31, 2024, the Health Technology Assessment (HTA) Working Group convened for its first general meeting, marking the beginning of an exciting industry-wide initiative to elevate the role of R within the HTA community. The gathering featured 35 members, including co-chairs and founding members Gregory Chen, <a href="https://www.linkedin.com/in/anders-gorst-rasmussen-50bb732/?originalSubdomain=dk">Anders Gorst-Rasmussen</a>, <a href="https://www.linkedin.com/in/dominic-muston-a897517/">Dominic Muston</a>, and <a href="https://www.linkedin.com/in/joseph-rickert-a45a96?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAo_1UB1mlPH37Q6CKV1o0BVHibrVBgYsA&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B9Qho7amVQtCu8OfJFebhwA%3D%3D">Joseph Rickert</a>, with participants bringing varied expertise from across the HTA landscape. Hosted on video, the kickoff set the stage for collaboration, innovation, and tangible impacts on the development and application of R tools in health technology assessments. You can watch the recording <a href="https://zoom.us/rec/play/IGEvwwmmIZ_BVHB5wqMkdDpTcjC1VsEcEU4RcBJPkpZSR_zMOow3nCQH7FMTbiQk27bq0MBPABOgpHMe.LH2M4thN5AqgI3sY?canPlayFromShare=true&amp;from=share_recording_detail&amp;continueMode=true&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2F9NTj9ZtSKBFz3Ij0rf0x3gTSoOcx99MCdvJCzUEUz3XEboB-EhilI4mMQ-Bw8bYe.0IKFWabamQjvIRdS">here.</a></p>
+<section id="opening-remarks-and-vision" class="level2">
+<h2 class="anchored" data-anchor-id="opening-remarks-and-vision">Opening Remarks and Vision</h2>
+<p><img src="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/OpeningRemarksandVision.png" class="img-fluid"> Gregory Chen and Anders Gorst-Rasmussen opened the meeting with a vision of collaboration, emphasizing the importance of a shared, flexible structure within the HTA Working Group. The co-chairs highlighted two initial workstreams designed to channel the group’s efforts without restricting the scope of potential projects. This framework underscores the group’s commitment to evolve in response to member feedback and industry needs.</p>
+</section>
+<section id="workstream-1-building-connections-across-the-hta-ecosystem" class="level2">
+<h2 class="anchored" data-anchor-id="workstream-1-building-connections-across-the-hta-ecosystem">Workstream 1: Building Connections Across the HTA Ecosystem</h2>
+<p><img src="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/Workstream1.png" class="img-fluid"> Anders Gorst-Rasmussen and Dominic Muston introduced the first workstream, focusing on building connections across diverse stakeholders within HTA. This foundational effort aims to foster a common perspective and identify relevant challenges and opportunities. By bridging gaps between different sectors within HTA, Workstream 1 seeks to create a solid framework for addressing complex issues in health technology evaluation and supporting innovation across the industry.</p>
+</section>
+<section id="workstream-2-r-tools-for-hta-identification-curation-and-education" class="level2">
+<h2 class="anchored" data-anchor-id="workstream-2-r-tools-for-hta-identification-curation-and-education">Workstream 2: R Tools for HTA – Identification, Curation, and Education</h2>
+<p><img src="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/MappingofHTA.png" class="img-fluid"> Gregory Chen and Joseph Rickert presented Workstream 2, which takes a hands-on approach toward bolstering R’s role in HTA. Key goals include identifying relevant R packages, curating high-quality, production-ready tools, and proactively enhancing documentation and user resources. The working group will also promote these tools through blogs, webinars, and other educational efforts to foster a culture of learning and improvement around R for HTA. The ultimate aim is to ensure that the HTA community has access to well-documented, robust R tools and resources that meet industry needs.</p>
+</section>
+<section id="next-steps-how-members-can-contribute" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps-how-members-can-contribute">Next Steps: How Members Can Contribute</h2>
+<p>The HTA Working Group’s GitHub repository serves as the central hub for collaboration, providing access to meeting materials, discussion threads, and project updates. Members are encouraged to engage actively by commenting on<a href="https://github.com/RConsortium/HTA-wg">Issue #1</a> with a brief statement about their backgrounds, opening new issues to propose ideas, and suggesting solutions to emerging challenges. This repository promises to be a lively and evolving resource as the working group’s projects advance.</p>
+</section>
+<section id="group-discussion-setting-the-foundation-for-future-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="group-discussion-setting-the-foundation-for-future-initiatives">Group Discussion: Setting the Foundation for Future Initiatives</h2>
+<p>The group discussion allowed members to share insights, generate new ideas, and identify priorities for the working group’s next steps. The discussion was lively and constructive, underscoring the potential of this initiative to drive meaningful contributions to the HTA field.</p>
+</section>
+<section id="upcoming-meeting" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-meeting">Upcoming Meeting</h2>
+<p>The next meeting of the HTA Working Group is scheduled for Wednesday, November 27, 2024, from 17:00 to 18:00 CET. Members are encouraged to join, contribute to ongoing discussions, and help shape the next steps of this impactful initiative. If you have not received an invitation, please reach out to <a href="mailto:joseph.rickert@gmail.com">Joseph Rickert via email</a>.</p>
+<p>The HTA Working Group has set forth on a promising path, and this first meeting demonstrated the collaborative spirit and commitment to progress that will drive its success. Stay tuned for more updates as the group’s efforts take shape and begin to impact the HTA community.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/</guid>
+  <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/OpeningRemarksandVision.png" medium="image" type="image/png" height="68" width="144"/>
+</item>
 <item>
   <title>Reviving Sheffield R User Group and Building Tools for Thyroid Cancer Prediction</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1184,60 +1228,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/building-bridges-in-haifa-israel/</guid>
   <pubDate>Tue, 20 Aug 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed4.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>A New R Community in Ahmedabad, India, focused on Clinical Research and Pharmaceutical Industries</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/ssinojia/?originalSubdomain=in">Sanket Sinojia</a>, organizer of the <a href="https://www.meetup.com/ahmedabad-r-users-group/">Ahmedabad R User Group (ARUG).</a> With over 14 years of experience in statistical programming and data sciences in the clinical research industry, Sanket spearheaded the formation of ARUG to create a dedicated community focused on applying R in clinical research and pharmaceutical industries.&nbsp;</p>
-<p>Since its official setup in 2023, ARUG has rapidly grown into a vibrant group with over 100 active members. The community fosters collaboration, knowledge-sharing, and mentorship, contributing significantly to the broader R ecosystem. Sanket’s dedication to data science and community building is evident in his efforts to organize impactful events, mentor new members, and drive the group’s growth.</p>
-<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed.png" class="img-fluid"></p>
-<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
-<p>I’ve been working in statistical programming and data sciences in the clinical research industry for more than 14 years, which naturally led me to explore tools that enhance data analysis and visualization. My journey with the Ahmedabad R Users Group (ARUG) began when I recognized the growing need for a dedicated community focused on applying R in our field. I was sitting with my industry friends <a href="http://linkedin.com/in/paresh-parekh-16734817">Paresh Parekh</a>, <a href="http://linkedin.com/in/paresh-p-a2352825">Paresh Paghdar</a>, <a href="http://linkedin.com/in/parin-shah-98886928">Parin Shah</a>, and <a href="http://linkedin.com/in/rapandya">Rahul Pandya</a>, discussing what we could do to bring the Ahmedabad R community together. After a few days, when we met again, I proposed setting up the ARUG. They welcomed and fully supported the vision.&nbsp;</p>
-<p>While the group was initially formed in 2021, its formal setup was completed in 2023 with collaboration from the R Consortium. Since then, I’ve been organizing events, facilitating discussions, and contributing to the group’s growth. My passion for data science and community building drives my commitment to ARUG. Beyond organizing, I also mentor new members, helping them navigate the complexities of R. It’s incredibly rewarding to see the community thrive and to witness the impact of our collective efforts on advancing the field. ARUG is the first city-based group in India associated with R Consortium and the only R user group focused on Clinical Research &amp; Pharmaceutical Industries.</p>
-<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed2.png" class="img-fluid"></p>
-<p><strong>Can you share what the R community is like in Ahmedabad?</strong>&nbsp;</p>
-<p>Ahmedabad, a world heritage city known for its rich history and vibrant culture, is also known for its Pharma Industry. Ahmedabad is now emerging as a significant hub for clinical research, data sciences, and pharmaceutical innovation. The R community in Ahmedabad is vibrant and rapidly growing, especially within these sectors. With over 100 active members, our community is a diverse mix of seasoned professionals and enthusiastic newcomers. This diversity fosters a collaborative environment where knowledge-sharing and mentorship flourish. The enthusiasm and engagement at our events reflect the community’s dedication to advancing their skills and contributing to the broader R ecosystem. We’ve seen a significant increase in participation and interest, indicating the strong potential for R to drive innovation and efficiency in our industry. The city’s dynamic and innovative spirit resonates through our community, making it an exciting place for anyone passionate about data science and clinical research.</p>
-<p><strong>You had a</strong> <a href="https://www.meetup.com/ahmedabad-r-users-group/events/302239112/"><strong>meetup on July 21st, 2024</strong></a><strong>. Can you share more about the topic covered? Why this topic?</strong></p>
-<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed3.png" class="img-fluid"></p>
-<p>The meetup was a highly anticipated event entitled ‘R Evolution: Shaping the Future of Clinical Trials.’ We chose this topic because it aligns perfectly with the emerging demand for R in our industry and aims to make our attendees aware of the transformative potential R brings to clinical research. Here’s a quick recap:</p>
-<p>I started the event by taking attendees through the inspiring journey of the Ahmedabad R Users Group (ARUG). I shared key updates, our association with the R Consortium, and outlined ARUG’s long-term goals. The overwhelming response, with event registration filling up within 24 hours, highlighted the high expectations and enthusiasm of our attendees!</p>
-<p><a href="http://linkedin.com/in/sassavvy">Sunil Gupta</a>, a renowned industry expert, delivered an incredible presentation on ‘R Made Easier for SAS Programmers.’ His insights, tips, and tricks on transitioning to R were invaluable, offering a comprehensive learning experience.</p>
-<p>Following his session, we enjoyed a vibrant networking session, making new connections and reconnecting with old friends.</p>
-<p><a href="http://linkedin.com/in/chintan-patel-291a3553">Chintan Patel</a> captivated us with a simplified demonstration of creating Kaplan Meier Plots using R. His comprehensive topic coverage inspired many to delve deeper into graphing with R.</p>
-<p><a href="http://linkedin.com/in/miteshpatel5056">Mitesh Patel</a> then presented ‘R Shiny in Action,’ explaining the fundamentals and applications of R Shiny, complete with a live demonstration of three case studies. His session highlighted R Shiny’s potential as a game-changer in data visualization.</p>
-<p>I then hosted a dynamic round table discussion on conferences, joined by <a href="http://linkedin.com/in/parin-shah-98886928">Parin Shah</a>, <a href="https://www.linkedin.com/in/purvi-kalra-csm%C2%AE-8b506a14/?originalSubdomain=in">Purvi Kalra</a>, and <a href="https://www.linkedin.com/in/saumil-tripathi-40a90b65/">Saumil Tripathi</a>. They shared invaluable tips on conference preparation, R trends, and enhancing presentation confidence.</p>
-<p>Finally, <a href="http://linkedin.com/in/krupa-trivedi-a2517515a">Krupa Trivedi</a>, <a href="http://linkedin.com/in/nidhi-shah-73815715a">Nidhi Shah</a>, and <a href="https://www.linkedin.com/in/nikunj-kothari/?originalSubdomain=in">Nikunj Kothari</a> organized a thrilling ‘Test Your R Skills’ quiz. The live, time-bound quiz with an instant leaderboard brought a fun and competitive spirit to the hall.</p>
-<p>The event wrapped up with <a href="http://linkedin.com/in/rapandya">Rahul Pandya</a>’s vote of thanks, where we celebrated our presenters, the ARUG event team, and quiz winners.</p>
-<p>The ARUG Event Team – <a href="http://linkedin.com/in/ankit-vadodaria-b775a961">Ankit Vadodariya</a>, <a href="http://linkedin.com/in/dishant-parikh-6b893954">Dishant Parikh</a>, <a href="http://linkedin.com/in/krupali-prashant-0b94232a">Krupali Ladani</a>, <a href="http://linkedin.com/in/krupa-trivedi-a2517515a">Krupa Trivedi</a>, <a href="http://linkedin.com/in/nidhi-shah-73815715a">Nidhi Shah</a>, <a href="http://linkedin.com/in/nikunj-kothari">Nikunj Kothari</a>, <a href="http://linkedin.com/in/paresh-p-a2352825">Paresh Paghdar</a>, <a href="http://linkedin.com/in/paresh-parekh-16734817">Paresh Parekh</a>, <a href="http://linkedin.com/in/parin-shah-98886928">Parin Shah</a>, <a href="http://linkedin.com/in/purvi-kalra-csm%C2%AE-8b506a14">Purvi Kalra</a>, <a href="http://linkedin.com/in/rapandya">Rahul Pandya</a>, and <a href="http://linkedin.com/in/ssinojia">Sanket Sinojia</a> – successfully organized the entire event. Their hard work and dedication ensured a seamless and impactful experience for all attendees.</p>
-<p><strong>Who was the target audience for attending this event?</strong>&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed4.png" class="img-fluid"></p>
-<p>Our target audience primarily includes professionals and researchers from the clinical and pharmaceutical industries. This encompasses data scientists, statistical programmers, biostatisticians, clinical trial analysts, and anyone interested in leveraging R for data analysis and visualization in these fields. We also welcome newcomers who are eager to learn and contribute to this dynamic industry. By targeting this specific audience, we ensure our content is highly relevant and impactful, addressing real-world challenges and opportunities our members face. Additionally, our events offer networking opportunities that can lead to collaborations.</p>
-<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong>&nbsp;&nbsp;&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed5.png" class="img-fluid"></p>
-<p><img src="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed6.png" class="img-fluid"></p>
-<p>For planning and executing our events, we rely on a combination of tools such as <a href="https://github.com/ssinojia/ARUG/tree/main">GitHub</a> for collaborative project management and repositories, Zoom for virtual sessions, and <a href="https://www.meetup.com/ahmedabad-r-users-group/">Meetup</a> and <a href="https://www.linkedin.com/company/arug/about/">LinkedIn ARUG</a> pages for continuous engagement and communication. These tools not only streamline our processes but also enhance accessibility. By utilizing these technologies, we can include members who cannot attend physical events, making our group more inclusive. We share our event summaries and slides on GitHub, ensuring that valuable information is accessible to all members. Additionally, we are considering recording sessions and sharing them on platforms like YouTube to further extend the reach of our events. Using these tools also allows us to gather feedback and improve future events, ensuring we meet the evolving needs of our community. This approach helps us maintain a vibrant and connected community, regardless of geographical limitations.</p>
-<p><strong>We would like to get to know you more personally. Can you please tell me about yourself? For example, hobbies/interests or anything you want to share about yourself.</strong></p>
-<p>Outside of my professional life, I have several passions that I pursue with great enthusiasm. I enjoy blogging and sharing my thoughts on data science, industry trends, and personal reflections. The mountains always call me, and I find peace and inspiration in hiking and exploring nature. Additionally, I write poetry in my local language, allowing me to express my creativity and connect with my cultural roots. These hobbies provide a balanced and enriching life, complementing my professional endeavors.</p>
-<p>Apart from ARUG, I volunteer with organizations like <a href="https://www.cdisc.org/">CDISC</a>, <a href="https://phuse.global/">PHUSE</a>, <a href="https://pharmaverse.org/">Pharmaverse</a>, and <a href="https://rinpharma.com/">RinPharma</a>, contributing to various projects such as <a href="https://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-4">SDTM IG v3.4 development</a>, <a href="https://www.cdisc.org/primer">CDISC Primer development</a>, and <a href="https://learn.rinpharma.com/shiny4submissions.html">Shiny for Submission</a>. These experiences offer me a unique perspective and a sense of tranquility that I bring into my work, enhancing my creativity and problem-solving abilities. Engaging in these activities helps me maintain a holistic approach to my professional and personal life.</p>
-<p>I cherish spending time with my family, especially with my adorable daughter Saanvi. My better half, Niza, always supports and encourages me in all aspects of life. She is dedicated to taking care of our family and provides unwavering support that allows me to pursue my passions and professional goals.</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/</guid>
-  <pubDate>Mon, 12 Aug 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/unnamed.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
