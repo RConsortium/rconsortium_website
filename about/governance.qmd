@@ -124,8 +124,16 @@ alt="" src="./images/x.png"></a>
 <div class="profile-card">
 <img class="pic" src="./images/Kiernan.jpg" alt="Profile Image 3">
 <h2>Kieran Martin</h2>
+<p>Kieran works in the Data Sciences Department in Product Development at Roche. There he has been heavily
+involved in the creation of OCEAN, the new data science platform which is enabling the use of R in clinical 
+reporting. He led R Enablement from 2020-2024, helping spearhead the transition to using R in this context.
+In 2024 he co-chaired the program committe for UseR!
+</p>
 <h4>ROCHE (PLATINUM MEMBER)</h4>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/kieran-martin-2b298742/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/kieran-martin-2b298742"
+title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
+<a target="_blank" class="tmm_sociallink" href="https://github.com/kieranjmartin" title="">
+<img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
 <div class="profile-card">
