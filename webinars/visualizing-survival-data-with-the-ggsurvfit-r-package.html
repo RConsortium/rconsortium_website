@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Consortium</title>
+<title>R/Medicine Webinar Visualizing Survival Data with the {ggsurvfit} R Package – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,36 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -108,48 +76,19 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -164,31 +103,31 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./about/governance.html">
+    <a class="dropdown-item" href="../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./governance/isc-charter.html">
+    <a class="dropdown-item" href="../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/faq.html">
+    <a class="dropdown-item" href="../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/contact.html">
+    <a class="dropdown-item" href="../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/privacy.html">
+    <a class="dropdown-item" href="../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -199,15 +138,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="./members.html">
+    <a class="dropdown-item" href="../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/join.html">
+    <a class="dropdown-item" href="../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -218,23 +157,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="./all-projects/index.html">
+    <a class="dropdown-item" href="../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -253,7 +192,7 @@ window.Quarto = {
  <span class="dropdown-text">DBI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -268,15 +207,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./webinars/webinars.html">
+    <a class="dropdown-item" href="../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./news/events.html">
+    <a class="dropdown-item" href="../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./news/cal.html">
+    <a class="dropdown-item" href="../news/cal.html">
  <span class="dropdown-text">WG Calendar</span></a>
   </li>  
     </ul>
@@ -287,25 +226,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="./blog/index.html">
+    <a class="dropdown-item" href="../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./newsletters/newsletters.html">
+    <a class="dropdown-item" href="../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./codeofconduct.html"> 
+    <a class="nav-link" href="../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -336,438 +275,55 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">R/Medicine Webinar Visualizing Survival Data with the {ggsurvfit} R Package</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"></p>
-<style>
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.animate-slideInFromLeft {
-  opacity: 0;
-  animation: slideInFromLeft 1s forwards;
-}
-.scroll-title {
-  background-color: rgb(30, 81, 164);
-  color: white;
-  display: inline-block;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.darkButton {
-  background-color: black; 
-  color: #fff; 
-  border: none; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-.darkButton a {
-  color: inherit; 
-  text-decoration: none;
-}
-.darkButton:hover {
-  background-color: rgb(30, 81, 164); 
-  color: white;
-}
-.darkButton:hover a{
-  color: 
-}
-.joiningRButton {
-  background-color: black; 
-  color: #fff; 
-  border: 2px solid white; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-.joiningRButton a {
-  color: inherit; 
-  text-decoration: none;
-}
-.joiningRButton:hover {
-  background-color: white; 
-  color: black;
-}
-.joiningRButton:hover a {
-  color: black;
-}
-.joining-r-section {
-  background-image: url('./images/joining-r-consoritum-bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  color: white; 
+    
   
-}
-
-.video-popup{
-  position: relative;
-}
-
-.play {
-  border-radius: 50%;
-  padding: 10px;
-  background-color: rgb(30, 81, 164);
-  max-width: 50px;
-  max-height: 50px;
-  position: absolute;
-  right: 47%;
-  top: 40%;
-}
+    
+  </div>
+  
 
 
+</header>
 
-</style>
-<div class="swiper-container">
-<!-- swiper slides -->
-<div class="swiper-wrapper">
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
-<h2 class="anchored">
-R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.
-</h2>
-<button class="blueButton">
-<a href="./all-projects/rugsprogram.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div class="swiper-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/3rq6Gzgz/IMG-5390-1024x716-1.webp');">
-<h2 class="anchored">
-Find your local R user group Network with fellow statisticians and learn from your peers.
-</h2>
-<button class="blueButton">
-<a href="https://www.meetup.com/pro/r-user-groups/" style="text-decoration: none;">FIND A USER GROUP</a>
-</button>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/K8SHqLpN/rcon-slide-bg2.webp);">
-<h2 class="anchored">
-R Consortium: Supporting the R community, the R Foundation and organizations developing, maintaining and distributing R software.
-</h2>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/Sx6twsw-p/rcon-slide-bg2b.webp);">
-<h2 class="anchored">
-Find your local R user group Network with fellow statisticians and learn from your peers.
-</h2>
-<button class="blueButton">
-<a href="./all-projects/rugsprogram.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div id="survival-slide" class="swiper-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/0NQNwKmH/survival-analysis2.png');">
-<h2 class="anchored">
-R/Medicine Webinar: Visualizing Survival Data with the {ggsurvfit} R Package
-</h2>
-<button class="blueButton">
-<a href="https://youtu.be/F-N_Pz2sPlg?si=0pTd4innRGY2k54a" style="text-decoration: none;">Webinar Recording</a>
-</button>
-</div>
-<div id="tidy-slide" class="swiper-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/Wpxx6vVN/optimize-portfolios.png');">
-<h2 class="anchored">
-Tidy Finance Webinar Series
-</h2>
-<button class="blueButton">
-<a href="./webinars/tidy-finance-webinar-series.html" style="text-decoration: none;">Webinar Information</a>
-</button>
-</div>
-</div>
-<!-- !swiper slides -->
-<!-- next / prev arrows -->
-<div class="swiper-button-next">
 
-</div>
-<div class="swiper-button-prev">
-
-</div>
-<!-- !next / prev arrows -->
-<!-- pagination dots -->
-<div class="swiper-pagination">
-
-</div>
-<!-- !pagination dots -->
-</div>
-<section class="what-is-r-section" id="what-is-r">
-<div style="display: flex; flex-wrap: wrap;">
-<div style="flex: 2; min-width: 300px; padding: 10px; align-items: center;">
-<h2 class="scroll-title anchored">
-WHAT IS THE R CONSORTIUM
-</h2>
-<p>
-The central mission of the R Consortium is to work with and provide support to the R Foundation and to the key organizations developing, maintaining, distributing and using R software through the identification, development and implementation of infrastructure projects.
-</p>
-<p>
-The R language is an open source environment for statistical computing and graphics, and runs on a wide variety of computing platforms. The R language has enjoyed significant growth, and now supports over 2 million users. A broad range of industries have adopted the R language, including biotech, finance, research and high technology industries. The R language is often integrated into third party analysis, visualization and reporting applications.
-</p>
-</div>
-<div style="flex: 1; min-width: 300px; padding: 20px; border; display: flex; justify-content: flex-end; align-items: end; position: relative;">
-<a class="video-popup" href="https://www.youtube.com/watch?v=XcBLEVknqvY" target="blank"> <img src="images/rcon_video_preview.png" alt="Video Preview" style="width: 90%; height: auto; cursor: pointer; margin-left: 1%"> <img src="images/play-button-svgrepo-com.svg" alt="Play Button" class="play"> </a>
-</div>
-</div>
-<button class="darkButton">
-<a href="about/index.qmd" style="text-decoration: none;">LEARN MORE</a>
-</button>
-<button class="darkButton">
-<a href="rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" style="text-decoration: none;">READ OUR ANNUAL REPORT 2023</a>
-</button>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/F-N_Pz2sPlg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>This webinar focused on the {ggsurvfit} R package, a tool designed to simplify the creation of time-to-event or survival analysis summary figures using {ggplot2}. It emphasized the package’s capability to produce high-quality, publication-ready Kaplan-Meier plots and other survival analysis figures with ease and efficiency. Overall, the webinar promised to be an informative session for statisticians, data analysts, and researchers interested in survival analysis, offering insights into how {ggsurvfit} could enhance their data visualization capabilities in R.</p>
+<section id="main-sections" class="level3">
+<h3 class="anchored" data-anchor-id="main-sections">Main Sections</h3>
+<p><a href="https://www.youtube.com/watch?v=F-N_Pz2sPlg&amp;t=1s">00:00</a> Introduction</p>
+<p><a href="https://www.youtube.com/watch?v=F-N_Pz2sPlg&amp;t=166s">02:46</a> what is survival analysis?</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=449">07:29</a> why {ggsurvfit}?</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=851">14:11</a> Visualizing Kaplan-Meier</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=1247">20:47</a> Additional examples</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=1809">30:09</a> Quantiles</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=2260">37:40</a> KMunicate and themes</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=2608">43:28</a> Competing Risks</p>
+<p><a href="https://youtu.be/F-N_Pz2sPlg?t=3054">50:54</a> {ggsurvfit} wrap up</p>
 </section>
-<section class="joining-r-section" id="joining-r">
-<h2 class="scroll-title anchored" style="border:none;">
-Joining R Consortium
-</h2>
-<p>
-Industry-leading organizations have joined the R Consortium to support an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
-</p>
-<button class="joiningRButton">
-<a href="./about/join.html" style="text-decoration: none;">LEARN MORE ABOUT MEMBERSHIP</a>
-</button>
+<section id="speaker" class="level2">
+<h2 class="anchored" data-anchor-id="speaker">Speaker</h2>
+<p><img src="images/danielsjoberg.png" class="img-fluid" style="width:50.0%"></p>
+<p><a href="https://www.danieldsjoberg.com/">Daniel D. Sjoberg</a> (he/him) is a Software Engineer at Genentech. Previously, he was a Lead Data Science Manager at the Prostate Cancer Clinical Trials Consortium and a Senior Biostatistician at Memorial Sloan Kettering Cancer Center in New York City. He enjoys R package development, creating many packages available on <a href="https://cran.r-project.org/web/packages/">CRAN</a>, <a href="https://ddsjoberg.r-universe.dev/ui#packages">R-Universe</a>, and <a href="https://github.com/ddsjoberg">GitHub</a>. His research interests include adaptive methods in clinical trials, precision medicine, and predictive modeling. Daniel is the winner of the 2021 American Statistical Association (ASA) Innovation in Statistical Programming and Analytics award.</p>
+
+
 </section>
-<section class="need-help-section" id="need-help">
-<h2 class="scroll-title anchored">
-Need Help?
-</h2>
-<p>
-If you need help such as with billing, mailing lists or other wise then please use this service desk for support.
-</p>
-<button class="darkButton">
-<a href="https://members.r-consortium.org/" style="text-decoration: none;">GET HELP</a>
-</button>
-</section>
-<section id="latest-news">
-<h2 class="scroll-title anchored">
-BLOG
-</h2>
-</section>
-<script>
 
-document.addEventListener("DOMContentLoaded", function() {
-  const scrollTitles = document.querySelectorAll(".scroll-title");
-
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function checkAnimations() {
-    scrollTitles.forEach(el => {
-      if (isElementInViewport(el)) {
-        el.classList.add("animate-slideInFromLeft");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", checkAnimations);
-  checkAnimations(); 
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const scrollTitles = document.querySelectorAll(".scroll-title");
-
-  scrollTitles.forEach(el => {
-    el.addEventListener("click", function() {
-      const targetId = this.getAttribute("data-target");
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  });
-});
-document.getElementById('scroll-to-hero').addEventListener('click', function() {
-    document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-<script>
-var Swipes = new Swiper('.swiper-container', {
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-});
-</script>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1730678400000" data-listing-file-modified-sort="1731028979161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
-<a href="./posts/health-technology-assessment-hta-working-group-kickoff-meeting/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/health-technology-assessment-hta-working-group-kickoff-meeting/OpeningRemarksandVision.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Health Technology Assessment (HTA) Working Group Kickoff: Building a Collaborative Vision in R for HTA
-</h5>
-<div class="card-text listing-description">
-On October 31, 2024, the Health Technology Assessment (HTA) Working Group convened for its first general meeting, marking the beginning of an exciting industry-wide…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Nov 4, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1731028979249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2290">
-<a href="./posts/reviving-sheffield-r-user-group-and-building-tools-for-thyroid-cancer-prediction/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/reviving-sheffield-r-user-group-and-building-tools-for-thyroid-cancer-prediction/SheffieldRUGs.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Reviving Sheffield R User Group and Building Tools for Thyroid Cancer Prediction
-</h5>
-<div class="card-text listing-description">
-Neil Shephard, co-organizer of the Sheffield R User Group in Sheffield, United Kingdom (also on fosstodon), recently spoke to the R Consortium about his journey from Genetic…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Nov 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1730246400000" data-listing-file-modified-sort="1731028979257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1444">
-<a href="./posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/api2r-main-image.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Streamlining API Integration: Jon Harmon’s Journey with the <em>api2r</em> Package
-</h5>
-<div class="card-text listing-description">
-The R package <em>api2r</em> simplifies the process of wrapping APIs in R. The R Consortium interviewed Jon Harmon, Principal Data Solutions Engineer at Atorus, about this R…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Oct 30, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1729641600000" data-listing-file-modified-sort="1731028979121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175">
-<a href="./posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/ConectaR2024.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-ConectaR, Podcasts, and Datathons: How the San Carlos R User Group in Costa Rica is Connecting Latin America’s Data Lovers
-</h5>
-<div class="card-text listing-description">
-Frans van Dunné, the organizer of the San Carlos R User Group, recently discussed with the R Consortium the development of the R community in Costa Rica and the broader…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Oct 23, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1729209600000" data-listing-file-modified-sort="1731028979141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="954">
-<a href="./posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/RLadiesMorelia-main-image.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Endophytes, Oaks, and R: How R-Ladies Morelia is Cultivating Science and Community in Morelia, Mexico
-</h5>
-<div class="card-text listing-description">
-Goretty Mendoza, the organizer of the R-Ladies Morelia, recently spoke to the R Consortium about her experience with the group and her work using R in molecular biology.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Oct 18, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1729036800000" data-listing-file-modified-sort="1731028979269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="896">
-<a href="./posts/us-federal-reserve-quarterly-model-in-r/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/us-federal-reserve-quarterly-model-in-r/FRB_R_1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The U.S. Federal Reserve quarterly model in R
-</h5>
-<div class="card-text listing-description">
-<em>Guest Post contributed by Andrea Luciani, Bank of Italy, Directorate General for Economics, Statistics and Research, maintainer of the bimets package (Time Series and…</em>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Guest Blog Post
-</div>
-<div class="listing-date">
-Oct 16, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
