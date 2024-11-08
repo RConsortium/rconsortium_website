@@ -1,0 +1,33 @@
+---
+title: "R/Medicine Webinar Visualizing Survival Data with the {ggsurvfit} R Package"
+---
+
+{{< video https://www.youtube.com/watch?v=F-N_Pz2sPlg  >}}
+
+This webinar focused on the {ggsurvfit} R package, a tool designed to simplify the creation of time-to-event or survival analysis summary figures using {ggplot2}. It emphasized the package’s capability to produce high-quality, publication-ready Kaplan-Meier plots and other survival analysis figures with ease and efficiency. Overall, the webinar promised to be an informative session for statisticians, data analysts, and researchers interested in survival analysis, offering insights into how {ggsurvfit} could enhance their data visualization capabilities in R.
+
+### Main Sections
+
+[00:00](https://www.youtube.com/watch?v=F-N_Pz2sPlg&t=1s) Introduction
+
+[02:46](https://www.youtube.com/watch?v=F-N_Pz2sPlg&t=166s) what is survival analysis?
+
+[07:29](https://youtu.be/F-N_Pz2sPlg?t=449) why {ggsurvfit}?
+
+[14:11](https://youtu.be/F-N_Pz2sPlg?t=851) Visualizing Kaplan-Meier
+
+[20:47](https://youtu.be/F-N_Pz2sPlg?t=1247) Additional examples
+
+[30:09](https://youtu.be/F-N_Pz2sPlg?t=1809) Quantiles
+
+[37:40](https://youtu.be/F-N_Pz2sPlg?t=2260) KMunicate and themes
+
+[43:28](https://youtu.be/F-N_Pz2sPlg?t=2608) Competing Risks
+
+[50:54](https://youtu.be/F-N_Pz2sPlg?t=3054) {ggsurvfit} wrap up
+
+## Speaker 
+
+![](images/danielsjoberg.png){width=50%}
+
+[Daniel D. Sjoberg](https://www.danieldsjoberg.com/) (he/him) is a Software Engineer at Genentech. Previously, he was a Lead Data Science Manager at the Prostate Cancer Clinical Trials Consortium and a Senior Biostatistician at Memorial Sloan Kettering Cancer Center in New York City. He enjoys R package development, creating many packages available on [CRAN](https://cran.r-project.org/web/packages/), [R-Universe](https://ddsjoberg.r-universe.dev/ui#packages), and [GitHub](https://github.com/ddsjoberg). His research interests include adaptive methods in clinical trials, precision medicine, and predictive modeling. Daniel is the winner of the 2021 American Statistical Association (ASA) Innovation in Statistical Programming and Analytics award.
