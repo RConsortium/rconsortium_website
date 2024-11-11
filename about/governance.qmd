@@ -122,9 +122,18 @@ alt="" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/James.webp" alt="Profile Image 3">
-<h2>James Black</h2>
+<img class="pic" src="./images/Kiernan.jpg" alt="Profile Image 3">
+<h2>Kieran Martin</h2>
+<p>Kieran works in the Data Sciences Department in Product Development at Roche. There he has been heavily
+involved in the creation of OCEAN, the new data science platform which is enabling the use of R in clinical 
+reporting. He led R Enablement from 2020-2024, helping spearhead the transition to using R in this context.
+In 2024 he co-chaired the program committe for UseR!
+</p>
 <h4>ROCHE (PLATINUM MEMBER)</h4>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/kieran-martin-2b298742"
+title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
+<a target="_blank" class="tmm_sociallink" href="https://github.com/kieranjmartin" title="">
+<img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
 <div class="profile-card">
@@ -372,6 +381,14 @@ co-organiser of the London chapter. </p>
 <a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hannah-frick/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://www.frick.ws/" title=""><img decoding="async" alt="" src="./images/website.webp"></a>
 <a target="_blank" class="tmm_sociallink" href="https://github.com/hfrick" title=""><img decoding="async" alt="" src="./images/github.png"></a>
+</div>
+
+<div class="profile-card">
+<img class="pic" src="/posts/building-data-highways-kirill-mullers-journey-in-enhancing-rs-database/kirill.webp" alt="Profile Image 22">
+<h2>Kirill Müller</h2>
+<h4>cynkra (SILVER MEMBER)</h4>
+<p>"Kirill runs the DBI project, a top-level project at the R Consortium, has previously been awarded five other projects, and is a core contributor to several tidyverse packages, including duckplyr, dplyr, and tibble. He is a founder and partner at cynkra, a data science consultancy based in Zurich.</p>
+<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/kirill-m%C3%BCller/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 
 </div>

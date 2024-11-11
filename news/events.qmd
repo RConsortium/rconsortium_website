@@ -12,16 +12,14 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[2024 Government & Public Sector R Conference](https://www.rstats.ai/gov)",
-    "[R/Pharma 2024 (with new APAC Track)](https://rinpharma.com/)",
-    "[Analyze Companies using Financial Ratios](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios)",
     "[LatinR 2024](https://latinr.org/en/)",
+    "[R/Medicine Webinar: Containerization and R for Reproducibility and More](https://r-consortium.org/webinars/containerization-and-r-for-reproducibility.html)",
     "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
   ),
-  dates = c("Oct 29-30, 2024", "Oct 29-31, 2024", "Nov 6, 2024", "Nov 18-22, 2024", "Dec 4, 2024"),
-  location = c("Washington D.C., USA", "Virtual", "Virtual", "Virtual", "Virtual"),
-  icon = c("Conference", "Conference", "Webinar", "Conference", "Webinar"),
-  Type = c("Conference", "Conference", "Webinar", "Conference", "Webinar"),
+  dates = c("Nov 18-22, 2024", "Nov 19, 2024", "Dec 4, 2024"),
+  location = c("Virtual", "Virtual", "Virtual"),
+  icon = c("Conference", "Webinar", "Webinar"),
+  Type = c("Conference", "Webinar", "Webinar"),
   
   stringsAsFactors = FALSE
   
@@ -85,6 +83,9 @@ ___
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios" target="_blank" rel="noreferrer noopener">Analyze Companies using Financial Ratios</a>',
+    '<a href="https://www.rstats.ai/gov" target="_blank" rel="noreferrer noopener">2024 Government & Public Sector R Conference</a>',
+    '<a href="https://rinpharma.com/" target="_blank" rel="noreferrer noopener">R/Pharma 2024 with new APAC Track</a>',
     '<a href="https://r-consortium.org/webinars/unlocking-insights-from-latinr.html" target="_blank" rel="noreferrer noopener">Unlocking Insights from LatinR: Collaboration and Innovation in Data Science</a>', 
     '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production 2024</a>', 
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model" target="_blank" rel="noreferrer noopener">Evaluate Performance using the Capital Asset Pricing Model</a>', 
@@ -108,6 +109,9 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'November 6, 2024',
+        'October 29-30, 2024',
+        'October 29-31, 2024',
         'October 22, 2024',
         'October 9-10, 2024',
         'October 9, 2024',
@@ -133,6 +137,9 @@ df <- data.frame(
         ),
   location = c(
         'Virtual',
+        'Washington, DC, USA', 
+        'Virtual',
+        'Virtual',
         'Newcastle upon Tyne, UK',
         'Virtual',
         'Brighton, UK',
@@ -155,10 +162,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
