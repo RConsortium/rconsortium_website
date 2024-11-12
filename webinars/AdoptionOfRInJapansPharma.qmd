@@ -1,0 +1,43 @@
+---
+title: "R/Adoption Series:The Adoption Of R in Japan’s Pharma Industry Confirmation"
+format: html
+editor: visual
+---
+
+{{< video https://www.youtube.com/watch?v=S8hdJjU3qsQ >}}
+
+## **Summary** 
+
+The Adoption of R in Japan’s Pharma Industry talk and panel discussion was led by key industry experts from the JPMA R Task Force Team. The webinar explored the usage and adoption of R in the pharmaceutical industry, specifically focusing on the findings of the JPMA Drug Evaluation Committee, R Task Force Team, and the JPMA Report. The report referenced various open source works and publications, including those from the R Consortium pilot submissions, Package Validation Hub, and webinar training.
+
+## **Agenda**
+
+-   General Background by Rikimaru Nishimura
+
+    -   PMDA: Highlighting the intricacies of submissions with R.
+
+    -   JPMA R Task Force: Delving into past activities and shedding light on future initiatives.
+
+-   JPMA Survey Report by Rikimaru and Yuki Matsunaga
+
+    -   Background: Understanding the rationale and motivation behind the JPMA survey.
+
+    -   Results: Discuss key findings and their implications for the industry.
+
+-   Q&A Session
+
+## **Speakers**
+
+![](RikimaruNishimura_Janssen.jpg)
+
+**Rikimaru Nishimura** has worked as a Statistical Programmer for Janssen Pharmaceutical K.K. since February 2015. He is responsible for statistical analysis in clinical trials and e-Data submission to PMDA. Before working in the pharmaceutical industry, he has experience developing bank accounting and customer management systems in Japanese technology company. Also, he is a start-up member of the open-source software task force in Japan Pharmaceutical Manufacturers Association.
+
+![](Yuki.png)
+
+**Yuki Matsunaga** has worked as a Statistical Programmer, a Medical Scientific Expert, and a Medical Science Liaison for Novartis Pharma K.K. since April 2017. Recently, he works on new drug development and retrospective studies using medical real-world data such as electronic healthcare record and health claims data. Also, He is a member of the {admiralophtha} development team, and a start-up member of the open-source software task force in Japan Pharmaceutical Manufacturers Association.
+
+## **The R Adoption Series**
+
+This is a new series of webinars focused on the adoption of R.  Each session will include a case study and often include panels or discussions to enable those starting their journey to ask questions.
+
+R Consortium will keep this page updated with information on future webinars in the R Adoption series. If there is some information that you are looking for specifically and you don’t see it here, feel free to email us at info\@r-consortium.org.
