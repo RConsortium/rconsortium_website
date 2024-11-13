@@ -10,7 +10,54 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Mon, 04 Nov 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 12 Nov 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Bridging the Real-Time Gap: How INWT is Bringing Apache Kafka to the R Ecosystem</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/Andreas.png" class="img-fluid"></p>
+<p>In a recent interview with the R Consortium, <a href="https://www.linkedin.com/in/andreas-neudecker-457946208/">Andreas Neudecker</a>, solution architect at INWT, a data and analytics company located in Berlin, Germany, shared insights into the motivation behind developing an Apache Kafka client for R and the challenges it aims to address within the R ecosystem. His company frequently builds models in both R and Python, often encountering the need for real-time data analytics from Kafka clusters. When a real-time fraud detection project required connecting to a Kafka cluster, the lack of a stable Kafka client for R forced them to switch to Python despite having an R-based model ready to go. This experience highlighted the gap in R’s real-time data processing capabilities. It inspired Andreas to develop a Kafka client for R, making it easier to access real-time data sources and potentially leveling the playing field with Python.</p>
+<p>GitHub repository: <a href="https://github.com/INWTlab/r-kafka">https://github.com/INWTlab/r-kafka</a></p>
+<p>Installation from GitHub:</p>
+<pre><code>remotes::install_github("inwtlab/r-kafka")</code></pre>
+<p>This ISC project was funded by the R Consortium.</p>
+<p><strong>What motivated you to develop a Kafka client for R, and what specific challenges in the R ecosystem are you aiming to address with this project?</strong></p>
+<p>We typically build models in both R and Python, depending on our customers’ needs and preferences. Each language has different types of models available, so the choice between R and Python depends on the specific requirements. We handle both traditional batch processing and real-time analytics for our clients.</p>
+<p>Many of our customers use Kafka clusters for their real-time data. At one point, we faced a challenge where we needed to perform real-time analytics, but the data was stored in a Kafka cluster. The question became: how do we connect to the Kafka cluster?</p>
+<p>To be more specific, we had a real-time fraud detection project where we needed to identify fraudulent patterns in a stream of transactions. We already had a model in R, and our initial plan was to continue using it to keep costs down. However, we realized there was no stable Kafka client available for R at the time. So, we were essentially forced to switch to Python to consume the data from Kafka, which wasn’t our preferred choice.</p>
+<p>In the end, we developed a solution by having a Python consumer write data into an in-memory cache database, which allowed us to continue using our existing R model. The R process accessed the data from this cache database. This experience made it clear to us that having a Kafka client for R would have made the process much smoother. We’ve also heard from other companies who made the same choice—they opted for Python over R simply because Python had a Kafka client, and R didn’t.</p>
+<p><strong>Could you explain how the R Kafka client will enhance real-time data analysis and processing capabilities within the R environment?</strong></p>
+<p>In many cases, there are solid reasons to train models in R. For example, some specific models are available in R that haven’t been developed in Python yet. Personally, I also find that I can develop much faster in R—it typically takes me less time to get a running prototype compared to Python.</p>
+<p>What I’ve noticed is that R is often used more for traditional batch processing or modeling, but there’s no real reason why it shouldn’t also be used for real-time applications. I believe that having a Kafka client for R could be a missing piece of the puzzle, making it easier to access real-time data sources.</p>
+<p><strong>How does the proposed solution compare to existing alternatives, such as using Python for Kafka communication in data pipelines?</strong></p>
+<p>It should essentially work the same way as it does in Python, since we’re using the same underlying C library. While we’re still in the early stages and don’t have all the capabilities of the Python client yet, the experience should feel pretty similar because of this shared foundation.</p>
+<p><strong>What were the key insights from your initial benchmarking of the prototype, and how do they inform the project’s development goals?</strong></p>
+<p>First, we created a proof of concept (PoC), which showed us that it’s definitely possible to write a proper Kafka client for R using the C library. As we moved on to building the first minimum viable product (MVP), we also did some basic benchmarking. The results showed that we were a bit slower than the Python client. To give you some numbers, we could consume or produce 1 million messages in about 20 seconds, while Python handled it in 10 seconds, so Python was faster in this case.</p>
+<p>However, I believe we could improve this with a better interface or some optimizations. That said, even with these numbers, the speed difference shouldn’t have a major impact in most real-world applications, because it’s not just about reading the data—it also involves processing, which takes additional time. So, even though the client isn’t quite as fast as Python’s, it’s still sufficient for most use cases.</p>
+<p><strong>What is the significance of the Admin Client functionalities in managing Kafka infrastructure, and how do you plan to implement these within the R package?</strong></p>
+<p>Right now, our client can handle the essential tasks of sending and receiving data. However, it would be great to add the ability to create and delete topics directly within R, as well as manage consumer group offsets. These are likely the most important additional features we need.</p>
+<p>We plan to implement this in a way similar to how the Python Confluent package does it—by creating a separate class for admin tasks. Since the underlying functionality already exists in the C++ package, the process should be straightforward. We just need to create wrapper functions using <a href="https://cran.r-project.org/web/packages/Rcpp/index.html">Rcpp</a>, write the documentation, and run the necessary tests, and then it should work as expected.</p>
+<p><strong>How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</strong></p>
+<p>It was a very straightforward and smooth process, with no unnecessary bureaucracy. Overall, it was a great experience, and we had a friendly and helpful contact person throughout. I would definitely recommend it if you have an idea—it’s a really good way to secure funding.</p>
+<section id="about-isc-funded-projects" class="level2">
+<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
+<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
+<p><a href="https://r-consortium.org/all-projects/">https://r-consortium.org/all-projects/</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/</guid>
+  <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/Andreas.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Health Technology Assessment (HTA) Working Group Kickoff: Building a Collaborative Vision in R for HTA</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1184,50 +1231,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
  ]]></description>
   <guid>https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/</guid>
   <pubDate>Mon, 26 Aug 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Building Bridges in Haifa, Israel: How the New R User Group in Haifa is Establishing a Diverse R Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/building-bridges-in-haifa-israel/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed.jpg" class="img-fluid"></p>
-<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/elieydlin/?originalSubdomain=il">Eli Eydlin</a>, a dedicated member of the R community who has been instrumental in establishing an <a href="https://www.meetup.com/haifa-r-user-group/">R User Group in Haifa, Israel</a>. With a background in physics and a recent shift into the biotech industry, Eli was motivated to create the group after noticing the absence of a local R community in his new city. Despite Haifa’s relatively small size, it boasts a diverse R community, including professionals from high-tech companies, academia, and startups. Eli shared his experience organizing their first Meetup, which featured speakers from vastly different backgrounds, and his plans to make future events more inclusive. His story highlights the importance of community building and the impact of taking the initiative, offering inspiration for others looking to contribute to their local R communities.</p>
-<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
-<p>I’ve been working in a biotech startup for nearly two years. My background is more on the pharma side, but I decided to dive into this new field. When I moved, I noticed that there wasn’t an R User Group in the area, even though I knew of other groups in different cities and countries that were doing great things. I didn’t like the idea of not having one here, so I decided to start one myself. We just had our first event, and I’m really excited to be a part of this initiative.</p>
-<p><strong>Can you share what the R community is like in Haifa?</strong>&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed2.png" class="img-fluid"></p>
-<p>One of the reasons I started this was to meet new people who are also R programmers or users. I already know that the community is really diverse. My city isn’t huge—around 300,000 people—but has much to offer. There are big high-tech companies like Microsoft and Amazon here that support their R&amp;D departments, and I’m certain that some of our members are involved. Like in many places in Israel, there are hundreds of small startups. What I find interesting is that people come from all sorts of backgrounds—mostly from academia, as usual, but now also from government, traditional companies, and small businesses. I’m excited to see where this leads.</p>
-<p><strong>You had a</strong> <a href="https://www.meetup.com/haifa-r-user-group/events/302199640/"><strong>Meetup on August 6th, 2024</strong></a><strong>. Can you share more about the topic covered? Why this topic</strong>?&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed3.png" class="img-fluid"></p>
-<p>We have two completely different topics and two amazing speakers. <a href="https://www.linkedin.com/in/snazarova/?trk=public_profile_browsemap_mini-profile_title&amp;originalSubdomain=ru">Sofia Nazarova</a> is a marine biologist at <a href="https://www.ocean.org.il/en/">Israel Oceanographic &amp; Limnological</a>, who also organizes private guided tours. She teaches people about plants and animals, so she’s not a programmer. However, she co-authored the first-ever R textbook published in Russian, which makes her experience unique. Typically, I work with people who are programmers or data scientists, but she’s out there in the field, literally working with marine life.</p>
-<p><img src="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed4.jpg" class="img-fluid"></p>
-<p>Our second speaker was <a href="https://www.linkedin.com/in/adi-sarid/?originalSubdomain=il">Adi Sarid</a>, the CEO of <a href="https://sarid-ins.com/">Sarid Institute LTD</a>, a data science company focusing on production and consumption. He’s also writing a book on R, this time in Hebrew. It’s a completely different experience—he’s a business leader working with governments and large firms, and he showcased some fantastic examples of practical applications in his talk.</p>
-<p>I deliberately chose speakers with very different backgrounds because that interests me. While organizing the group, I thought about what I wanted to learn and the connections I wanted to make.</p>
-<p><strong>Who was the target audience for attending this event?</strong>&nbsp;</p>
-<p>To be honest, there wasn’t a specific target audience for this event because I didn’t know anyone. I just tried to reach out to whoever might be interested in participating. After the first event, I noticed a big jump in interest, but only one woman attended. So, for the next event, I want to specifically target women and try to figure out what went wrong. It seems like many women are using R, but for some reason, they didn’t show up. We’ll address that and improve things moving forward.</p>
-<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong>&nbsp; &nbsp;</p>
-<p>We didn’t use anything for the first event, which we may do with the future in mind. We wanted to stay connected, especially since we’re in Israel, and it’s important to support each other under pressure. The event went well, but after it was over, I started receiving messages from people saying they couldn’t attend because they needed to spend time with their kids or were afraid of potential security issues.</p>
-<p>I realize how important it is to offer in-person meetings, but I now acknowledge that it’s not feasible for everyone. So, for the next event, we’ll make it easier for people to join remotely, perhaps through Zoom or a similar platform. We’ll also hold events in more secure locations. It’s clear that while in-person events are valuable, they aren’t always possible or suitable for everyone.</p>
-<p><strong>We would like to get to know you more personally. Can you please tell me about yourself? For example, hobbies/interests or anything you want to share about yourself.</strong></p>
-<p>First of all, I have a physics background and a master’s degree in it. I recently transitioned into the pharma and biotech industry, which has been a new and exciting challenge for me. My interests have always been diverse, and I’m particularly fascinated by this field, as well as by the natural beauty of Israel, especially its trees. On a different note, I’m also a harmonica player, which is another passion of mine.&nbsp;</p>
-<p><strong>Please share any additional details you would like included in the blog.</strong>&nbsp;</p>
-<p>I want to take the initiative with the R Consortium and contribute to its efforts. I see how cool and relatively easy it is to organize such a group. Focusing on developing countries is important, but it’s also relevant here in Israel, even though we’re relatively wealthy. What motivated me was seeing others take action, and I realized that I needed to step up and organize a group as well. The tools and support provided by the R Consortium are incredibly helpful for bringing people together. So, I just wanted to say thank you for that.</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/building-bridges-in-haifa-israel/</guid>
-  <pubDate>Tue, 20 Aug 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/building-bridges-in-haifa-israel/unnamed4.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
