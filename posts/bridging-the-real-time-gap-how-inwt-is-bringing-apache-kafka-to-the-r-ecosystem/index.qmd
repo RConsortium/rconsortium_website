@@ -1,0 +1,64 @@
+---
+title: "Bridging the Real-Time Gap: How INWT is Bringing Apache Kafka to the R Ecosystem"
+description: "In a recent interview with the R Consortium, Andreas Neudecker, solution architect at INWT, a data and analytics company located in Berlin, Germany, shared insights into the motivation behind developing an Apache Kafka client for R and the challenges it aims to address within the R ecosystem."
+author: "R Consortium"
+image: "Andreas.png"
+date: "11/12/2024"
+---
+
+![](Andreas.png)
+
+In a recent interview with the R Consortium, [Andreas Neudecker](https://www.linkedin.com/in/andreas-neudecker-457946208/), solution architect at INWT, a data and analytics company located in Berlin, Germany, shared insights into the motivation behind developing an Apache Kafka client for R and the challenges it aims to address within the R ecosystem. His company frequently builds models in both R and Python, often encountering the need for real-time data analytics from Kafka clusters. When a real-time fraud detection project required connecting to a Kafka cluster, the lack of a stable Kafka client for R forced them to switch to Python despite having an R-based model ready to go. This experience highlighted the gap in R's real-time data processing capabilities. It inspired Andreas to develop a Kafka client for R, making it easier to access real-time data sources and potentially leveling the playing field with Python. 
+
+GitHub repository: [https://github.com/INWTlab/r-kafka](https://github.com/INWTlab/r-kafka)
+
+Installation from GitHub:
+
+```
+remotes::install_github("inwtlab/r-kafka")
+```
+
+This ISC project was funded by the R Consortium. 
+
+**What motivated you to develop a Kafka client for R, and what specific challenges in the R ecosystem are you aiming to address with this project?**
+
+We typically build models in both R and Python, depending on our customers' needs and preferences. Each language has different types of models available, so the choice between R and Python depends on the specific requirements. We handle both traditional batch processing and real-time analytics for our clients.
+
+Many of our customers use Kafka clusters for their real-time data. At one point, we faced a challenge where we needed to perform real-time analytics, but the data was stored in a Kafka cluster. The question became: how do we connect to the Kafka cluster?
+
+To be more specific, we had a real-time fraud detection project where we needed to identify fraudulent patterns in a stream of transactions. We already had a model in R, and our initial plan was to continue using it to keep costs down. However, we realized there was no stable Kafka client available for R at the time. So, we were essentially forced to switch to Python to consume the data from Kafka, which wasn’t our preferred choice.
+
+In the end, we developed a solution by having a Python consumer write data into an in-memory cache database, which allowed us to continue using our existing R model. The R process accessed the data from this cache database. This experience made it clear to us that having a Kafka client for R would have made the process much smoother. We’ve also heard from other companies who made the same choice—they opted for Python over R simply because Python had a Kafka client, and R didn’t.
+
+**Could you explain how the R Kafka client will enhance real-time data analysis and processing capabilities within the R environment?**
+
+In many cases, there are solid reasons to train models in R. For example, some specific models are available in R that haven’t been developed in Python yet. Personally, I also find that I can develop much faster in R—it typically takes me less time to get a running prototype compared to Python.
+
+What I’ve noticed is that R is often used more for traditional batch processing or modeling, but there’s no real reason why it shouldn’t also be used for real-time applications. I believe that having a Kafka client for R could be a missing piece of the puzzle, making it easier to access real-time data sources.
+
+**How does the proposed solution compare to existing alternatives, such as using Python for Kafka communication in data pipelines?**
+
+It should essentially work the same way as it does in Python, since we’re using the same underlying C library. While we’re still in the early stages and don’t have all the capabilities of the Python client yet, the experience should feel pretty similar because of this shared foundation.
+
+**What were the key insights from your initial benchmarking of the prototype, and how do they inform the project's development goals?**
+
+First, we created a proof of concept (PoC), which showed us that it’s definitely possible to write a proper Kafka client for R using the C library. As we moved on to building the first minimum viable product (MVP), we also did some basic benchmarking. The results showed that we were a bit slower than the Python client. To give you some numbers, we could consume or produce 1 million messages in about 20 seconds, while Python handled it in 10 seconds, so Python was faster in this case.
+
+However, I believe we could improve this with a better interface or some optimizations. That said, even with these numbers, the speed difference shouldn’t have a major impact in most real-world applications, because it’s not just about reading the data—it also involves processing, which takes additional time. So, even though the client isn’t quite as fast as Python’s, it’s still sufficient for most use cases.
+
+**What is the significance of the Admin Client functionalities in managing Kafka infrastructure, and how do you plan to implement these within the R package?**
+
+Right now, our client can handle the essential tasks of sending and receiving data. However, it would be great to add the ability to create and delete topics directly within R, as well as manage consumer group offsets. These are likely the most important additional features we need.
+
+We plan to implement this in a way similar to how the Python Confluent package does it—by creating a separate class for admin tasks. Since the underlying functionality already exists in the C++ package, the process should be straightforward. We just need to create wrapper functions using [Rcpp](https://cran.r-project.org/web/packages/Rcpp/index.html), write the documentation, and run the necessary tests, and then it should work as expected.
+
+**How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?**
+
+It was a very straightforward and smooth process, with no unnecessary bureaucracy. Overall, it was a great experience, and we had a friendly and helpful contact person throughout. I would definitely recommend it if you have an idea—it's a really good way to secure funding.
+
+
+## About ISC Funded Projects
+
+A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.
+
+[https://r-consortium.org/all-projects/](https://r-consortium.org/all-projects/) 
