@@ -14,12 +14,13 @@ df <- data.frame(
   Title = c(
     "[LatinR 2024](https://latinr.org/en/)",
     "[R/Medicine Webinar: Containerization and R for Reproducibility and More](https://r-consortium.org/webinars/containerization-and-r-for-reproducibility.html)",
-    "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)"
+    "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)",
+    "[Quantification of Participation Risk using R and RShiny](https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html)"
   ),
-  dates = c("Nov 18-22, 2024", "Nov 19, 2024", "Dec 4, 2024"),
-  location = c("Virtual", "Virtual", "Virtual"),
-  icon = c("Conference", "Webinar", "Webinar"),
-  Type = c("Conference", "Webinar", "Webinar"),
+  dates = c("Nov 18-22, 2024", "Nov 19, 2024", "Dec 4, 2024", "Dec 12, 2024"),
+  location = c("Virtual", "Virtual", "Virtual", "Virtual"),
+  icon = c("Conference", "Webinar", "Webinar", "Webinar"),
+  Type = c("Conference", "Webinar", "Webinar", "Webinar"),
   
   stringsAsFactors = FALSE
   
