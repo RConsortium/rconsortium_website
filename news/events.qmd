@@ -13,14 +13,13 @@ format:
 df <- data.frame(
   Title = c(
     "[LatinR 2024](https://latinr.org/en/)",
-    "[R/Medicine Webinar: Containerization and R for Reproducibility and More](https://r-consortium.org/webinars/containerization-and-r-for-reproducibility.html)",
     "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)",
     "[Quantification of Participation Risk using R and RShiny](https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html)"
   ),
-  dates = c("Nov 18-22, 2024", "Nov 19, 2024", "Dec 4, 2024", "Dec 12, 2024"),
-  location = c("Virtual", "Virtual", "Virtual", "Virtual"),
-  icon = c("Conference", "Webinar", "Webinar", "Webinar"),
-  Type = c("Conference", "Webinar", "Webinar", "Webinar"),
+  dates = c("Nov 18-22, 2024", "Dec 4, 2024", "Dec 12, 2024"),
+  location = c("Virtual", "Virtual", "Virtual"),
+  icon = c("Conference", "Webinar", "Webinar"),
+  Type = c("Conference", "Webinar", "Webinar"),
   
   stringsAsFactors = FALSE
   
@@ -84,6 +83,7 @@ ___
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/containerization-and-r-for-reproducibility.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: Containerization and R for Reproducibility and More</a>',
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios" target="_blank" rel="noreferrer noopener">Analyze Companies using Financial Ratios</a>',
     '<a href="https://www.rstats.ai/gov" target="_blank" rel="noreferrer noopener">2024 Government & Public Sector R Conference</a>',
     '<a href="https://rinpharma.com/" target="_blank" rel="noreferrer noopener">R/Pharma 2024 with new APAC Track</a>',
@@ -110,6 +110,7 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'November 19, 2024',
         'November 6, 2024',
         'October 29-30, 2024',
         'October 29-31, 2024',
@@ -138,6 +139,7 @@ df <- data.frame(
         ),
   location = c(
         'Virtual',
+        'Virtual',
         'Washington, DC, USA', 
         'Virtual',
         'Virtual',
@@ -163,10 +165,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
