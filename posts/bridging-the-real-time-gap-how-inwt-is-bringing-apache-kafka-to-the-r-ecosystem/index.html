@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-05a16b653833d5761fb97487a5684aef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -322,8 +322,9 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 
 
 
-<p><img src="Andreas.png" class="img-fluid"></p>
+<p><img src="Andreas.png" class="img-fluid" style="width:50.0%"></p>
 <p>In a recent interview with the R Consortium, <a href="https://www.linkedin.com/in/andreas-neudecker-457946208/">Andreas Neudecker</a>, solution architect at INWT, a data and analytics company located in Berlin, Germany, shared insights into the motivation behind developing an Apache Kafka client for R and the challenges it aims to address within the R ecosystem. His company frequently builds models in both R and Python, often encountering the need for real-time data analytics from Kafka clusters. When a real-time fraud detection project required connecting to a Kafka cluster, the lack of a stable Kafka client for R forced them to switch to Python despite having an R-based model ready to go. This experience highlighted the gap in R’s real-time data processing capabilities. It inspired Andreas to develop a Kafka client for R, making it easier to access real-time data sources and potentially leveling the playing field with Python.</p>
+<p>To get started using kafka right away, please reference this article by Andreas titled “<a href="https://www.inwt-statistics.com/blog/r-package-kafka">Introducing the kafka R Package</a>,” which covers an example to demonstrate how kafka works.</p>
 <p>GitHub repository: <a href="https://github.com/INWTlab/r-kafka">https://github.com/INWTlab/r-kafka</a></p>
 <p>Installation from GitHub:</p>
 <pre><code>remotes::install_github("inwtlab/r-kafka")</code></pre>
@@ -437,8 +438,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -549,7 +548,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
