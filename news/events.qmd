@@ -12,8 +12,8 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)",
-    "[Quantification of Participation Risk using R and RShiny](https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html)"
+    "[Finance webinar: Value Companies using Discounted Cash Flow Analysis](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis)",
+    "[Finance webinar: Quantification of Participation Risk using R and RShiny](https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html)"
   ),
   dates = c("Dec 4, 2024", "Dec 12, 2024"),
   location = c("Virtual", "Virtual"),
