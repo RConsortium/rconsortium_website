@@ -1,0 +1,69 @@
+---
+title: "Empowering Data Science in Mexico: R-Ladies Querétaro on Inclusivity and Growth"
+description: "Driselda Sánchez-Aguirre, co-founder and organizer of R-Ladies Querétaro, recently spoke with the R Consortium about her journey in building a welcoming, diverse R community in Querétaro, Mexico."
+author: "R Consortium"
+image: "RladiesQueretaroGroupPhoto2.png"
+date: "12/02/2024"
+---
+
+![](DriseldaSánchez-Aguirre.png){width=40%}
+
+Driselda Sánchez-Aguirre, co-founder and organizer of [R-Ladies Querétaro](https://www.meetup.com/es/rladies-queretaro/), recently spoke with the R Consortium about her journey in building a welcoming, diverse R community in Querétaro, Mexico. She shared insights on the chapter's hybrid events, collaborative partnerships with other R-Ladies chapters, and upcoming workshops focused on accessible R training. Driselda highlighted the challenges and rewards of growing a supportive space for women in data science in Querétaro and beyond. Querétaro is located in central Mexico, about 4 hours north of Mexico City.
+
+**Please share your background and involvement with the RUGS group.**
+
+I co-founded the R-Ladies Querétaro chapter as a PhD student in economics. It was fascinating to connect with women from various disciplines who shared an interest in creating the group together. One of the members was also a PhD student, but she specialized in genomics, while another was a postdoctoral researcher in psychology. We all shared a passion for using R, although I initially found it challenging because economics primarily focuses on business-related disciplines.
+
+We have access to many software options for statistics that are easier to use but are often proprietary. Initially, I was just looking for a simple button to click to find results. However, I discovered that R offers much more, including beautiful graphs and visuals. Each time you use it for a new task, it presents a challenge, but it is incredibly rewarding to uncover the answers. Since 2019, we have organized sessions and workshops to continue developing this chapter.
+
+**Can you share what the R community is like in Mexico?**
+
+![](RLadiesQueretarologo.png)
+
+From my experience, R is primarily used in academia and the industry. Specifically, the R-Ladies Querétaro chapter is quite diverse, with a mix of professionals. For instance, I am an economist, [Azalea](https://www.linkedin.com/in/azalea-reyes-aguilar-5a328b70/) works in psychology, [Ana Betty](https://comunidadbioinfo.github.io/authors/anabva/) and [Karen](https://www.linkedin.com/in/karen-nu%C3%B1ez-reza) study genomics, and [Elizabeth](https://www.linkedin.com/in/elizabeth-valles-053b4815a/?originalSubdomain=mx) is in neuroscience. One of our main focuses is inclusivity, ensuring that individuals from all backgrounds and skill levels feel welcome. All genders are welcome, but meetings and workshops are always organized and hosted by women.
+
+![](RladiesQueretaroMeeting.png)
+
+I remember our first meeting in 2019; it was a truly memorable occasion. We discovered that women from various industries attended the workshop, marking the inaugural chapter meeting in Querétaro. It was inspiring to see women working as programmers in the pharmaceutical industry and as engineers coming together. It was an incredible experience to have such a variety of backgrounds represented.
+
+![](RladiesQueretaroGroupPhoto1.png)
+
+When the pandemic began, managing the various profiles we maintained became challenging. Since then, the focus has shifted towards academic users, particularly women interested in workshops. While we still connect with women from industry through social networks and email, our primary target group is academia in Querétaro.
+
+Since last year, we have collaborated with [R-Ladies Morelia](https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/), another chapter in Mexico. We discovered that a significant group of women use R for bioinformatics, a fascinating area of interest. I enjoy discussing social and economic topics, especially those related to tourism, political stories, and inclusivity. However, most discussions focus more on bioinformatics and similar subjects.
+
+**Please tell us about upcoming events from your group.**
+
+During the COVID pandemic, we transitioned to online events, and since 2022, we have been working towards a hybrid format. Now, we're excited to return to in-person gatherings.
+
+I would like to highlight a recent event from our group. On September 28th, we participated in the [R-Ladies Mexico Annual Meeting](https://www.youtube.com/watch?v=Ql9pXSPPQOU), which brings together all R ladies' chapters nationwide. The event is open to everyone who speaks Spanish, making it a fantastic opportunity to connect, share knowledge, and foster collaborative partnerships.
+
+
+Additionally, thanks to a grant from the R Consortium, we plan to host four more workshops yearly. The first one was face-to-face on [how to make maps with R](https://www.meetup.com/rladies-queretaro/events/304128867/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link), open to the general public but emphasizing students and researchers in earth sciences and geography. It was on November 21st, 2024, we had about 20 attendees, there was pizza and popcorn to share with each other. 
+
+
+The other three workshops will cover basic R concepts using [ggplot](https://ggplot2.tidyverse.org/) and open science practices incorporating R. While we don’t have exact dates for all the workshops, we have already begun planning and are excited to offer these opportunities to our community.
+
+**Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?**
+
+![](RladiesQueretaroGroupPhoto2.png)
+
+We use a variety of tools to ensure smooth planning for our events. [GitHub](https://github.com/) is essential for sharing our resources. For example, when we're hosting a workshop, it's easier to share the GitHub link so that participants can access the materials we'll be using.
+
+[Zoom](https://www.zoom.com/) also enables remote participation, making our events accessible to a wider audience. It includes reaction features that help gauge participant engagement. For instance, attendees can click a green button if they understand the task or a red button if they feel lost. This feedback allows us to tailor the learning experience to meet their needs better.
+
+We use social media to promote our events, primarily [X](https://x.com/RLadies_Qro) and Facebook. Additionally, we believe that collaborating with other R Ladies chapters enhances our outreach. We have partnered with chapters in [Colombia](https://x.com/RLadiesBquilla) and other locations in Mexico, which allows us to expand the topics we cover, as they also use their media channels to promote our events.
+
+We have also found WhatsApp to be a useful communication tool. WhatsApp provides a real-time platform for organizers to communicate and coordinate. These tools help make the group more inclusive, accessible, and efficient, ensuring that tasks are completed on time.
+
+**What challenges have you faced in organizing the R Ladies Querétaro Chapter? How have you overcome these challenges?**
+
+I believe it’s crucial to emphasize the importance of collaboration and community support. As a nonprofit group, we often face challenges, especially when managing time due to other responsibilities, such as family obligations. To maintain consistent participation, we need to balance our personal and professional lives while continuing to advance our chapter.
+
+Maintaining the chapter is rewarding, but finding the time is also a constant challenge. We love what we do because we want to share all the good things it offers to different disciplines and areas of focus. However, this challenge to find time can be overwhelming. I believe we can overcome it through collaboration and community support. It's important to emphasize the role of the community in helping us achieve our goals.
+
+**How do I Join?**
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html)
