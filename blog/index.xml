@@ -10,7 +10,55 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Tue, 12 Nov 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 02 Dec 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Empowering Data Science in Mexico: R-Ladies Querétaro on Inclusivity and Growth</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/DriseldaSánchez-Aguirre.png" class="img-fluid" style="width:40.0%"></p>
+<p>Driselda Sánchez-Aguirre, co-founder and organizer of <a href="https://www.meetup.com/es/rladies-queretaro/">R-Ladies Querétaro</a>, recently spoke with the R Consortium about her journey in building a welcoming, diverse R community in Querétaro, Mexico. She shared insights on the chapter’s hybrid events, collaborative partnerships with other R-Ladies chapters, and upcoming workshops focused on accessible R training. Driselda highlighted the challenges and rewards of growing a supportive space for women in data science in Querétaro and beyond. Querétaro is located in central Mexico, about 4 hours north of Mexico City.</p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>I co-founded the R-Ladies Querétaro chapter as a PhD student in economics. It was fascinating to connect with women from various disciplines who shared an interest in creating the group together. One of the members was also a PhD student, but she specialized in genomics, while another was a postdoctoral researcher in psychology. We all shared a passion for using R, although I initially found it challenging because economics primarily focuses on business-related disciplines.</p>
+<p>We have access to many software options for statistics that are easier to use but are often proprietary. Initially, I was just looking for a simple button to click to find results. However, I discovered that R offers much more, including beautiful graphs and visuals. Each time you use it for a new task, it presents a challenge, but it is incredibly rewarding to uncover the answers. Since 2019, we have organized sessions and workshops to continue developing this chapter.</p>
+<p><strong>Can you share what the R community is like in Mexico?</strong></p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RLadiesQueretarologo.png" class="img-fluid"></p>
+<p>From my experience, R is primarily used in academia and the industry. Specifically, the R-Ladies Querétaro chapter is quite diverse, with a mix of professionals. For instance, I am an economist, <a href="https://www.linkedin.com/in/azalea-reyes-aguilar-5a328b70/">Azalea</a> works in psychology, <a href="https://comunidadbioinfo.github.io/authors/anabva/">Ana Betty</a> and <a href="https://www.linkedin.com/in/karen-nu%C3%B1ez-reza">Karen</a> study genomics, and <a href="https://www.linkedin.com/in/elizabeth-valles-053b4815a/?originalSubdomain=mx">Elizabeth</a> is in neuroscience. One of our main focuses is inclusivity, ensuring that individuals from all backgrounds and skill levels feel welcome. All genders are welcome, but meetings and workshops are always organized and hosted by women.</p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroMeeting.png" class="img-fluid"></p>
+<p>I remember our first meeting in 2019; it was a truly memorable occasion. We discovered that women from various industries attended the workshop, marking the inaugural chapter meeting in Querétaro. It was inspiring to see women working as programmers in the pharmaceutical industry and as engineers coming together. It was an incredible experience to have such a variety of backgrounds represented.</p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto1.png" class="img-fluid"></p>
+<p>When the pandemic began, managing the various profiles we maintained became challenging. Since then, the focus has shifted towards academic users, particularly women interested in workshops. While we still connect with women from industry through social networks and email, our primary target group is academia in Querétaro.</p>
+<p>Since last year, we have collaborated with <a href="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/">R-Ladies Morelia</a>, another chapter in Mexico. We discovered that a significant group of women use R for bioinformatics, a fascinating area of interest. I enjoy discussing social and economic topics, especially those related to tourism, political stories, and inclusivity. However, most discussions focus more on bioinformatics and similar subjects.</p>
+<p><strong>Please tell us about upcoming events from your group.</strong></p>
+<p>During the COVID pandemic, we transitioned to online events, and since 2022, we have been working towards a hybrid format. Now, we’re excited to return to in-person gatherings.</p>
+<p>I would like to highlight a recent event from our group. On September 28th, we participated in the <a href="https://www.youtube.com/watch?v=Ql9pXSPPQOU">R-Ladies Mexico Annual Meeting</a>, which brings together all R ladies’ chapters nationwide. The event is open to everyone who speaks Spanish, making it a fantastic opportunity to connect, share knowledge, and foster collaborative partnerships.</p>
+<p>Additionally, thanks to a grant from the R Consortium, we plan to host four more workshops yearly. The first one was face-to-face on <a href="https://www.meetup.com/rladies-queretaro/events/304128867/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link">how to make maps with R</a>, open to the general public but emphasizing students and researchers in earth sciences and geography. It was on November 21st, 2024, we had about 20 attendees, there was pizza and popcorn to share with each other.</p>
+<p>The other three workshops will cover basic R concepts using <a href="https://ggplot2.tidyverse.org/">ggplot</a> and open science practices incorporating R. While we don’t have exact dates for all the workshops, we have already begun planning and are excited to offer these opportunities to our community.</p>
+<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?</strong></p>
+<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto2.png" class="img-fluid"></p>
+<p>We use a variety of tools to ensure smooth planning for our events. <a href="https://github.com/">GitHub</a> is essential for sharing our resources. For example, when we’re hosting a workshop, it’s easier to share the GitHub link so that participants can access the materials we’ll be using.</p>
+<p><a href="https://www.zoom.com/">Zoom</a> also enables remote participation, making our events accessible to a wider audience. It includes reaction features that help gauge participant engagement. For instance, attendees can click a green button if they understand the task or a red button if they feel lost. This feedback allows us to tailor the learning experience to meet their needs better.</p>
+<p>We use social media to promote our events, primarily <a href="https://x.com/RLadies_Qro">X</a> and Facebook. Additionally, we believe that collaborating with other R Ladies chapters enhances our outreach. We have partnered with chapters in <a href="https://x.com/RLadiesBquilla">Colombia</a> and other locations in Mexico, which allows us to expand the topics we cover, as they also use their media channels to promote our events.</p>
+<p>We have also found WhatsApp to be a useful communication tool. WhatsApp provides a real-time platform for organizers to communicate and coordinate. These tools help make the group more inclusive, accessible, and efficient, ensuring that tasks are completed on time.</p>
+<p><strong>What challenges have you faced in organizing the R Ladies Querétaro Chapter? How have you overcome these challenges?</strong></p>
+<p>I believe it’s crucial to emphasize the importance of collaboration and community support. As a nonprofit group, we often face challenges, especially when managing time due to other responsibilities, such as family obligations. To maintain consistent participation, we need to balance our personal and professional lives while continuing to advance our chapter.</p>
+<p>Maintaining the chapter is rewarding, but finding the time is also a constant challenge. We love what we do because we want to share all the good things it offers to different disciplines and areas of focus. However, this challenge to find time can be overwhelming. I believe we can overcome it through collaboration and community support. It’s important to emphasize the role of the community in helping us achieve our goals.</p>
+<p><strong>How do I Join?</strong></p>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/</guid>
+  <pubDate>Mon, 02 Dec 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto2.png" medium="image" type="image/png" height="71" width="144"/>
+</item>
 <item>
   <title>Bridging the Real-Time Gap: How INWT is Bringing Apache Kafka to the R Ecosystem</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1166,72 +1214,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/</guid>
   <pubDate>Tue, 27 Aug 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/trainingSession.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>News from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><em>Blog contributed by Ning Leng, People and Product Leader, Roche-Genentech and Joel Laxamana, Principal Data Scientist, Roche-Genentech</em></p>
-<p>The R Consortium is pleased to announce the successful completion of the Pilot 3 Submission which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete <a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot3_Submission.pdf">FDA response letter</a> is available.&nbsp;&nbsp;</p>
-<p>The objective of the R Consortium R Submission Pilot 3 Project is to test the concept that an R-language based submission package for ADaMs and TLFs can meet the needs and the expectations of the FDA reviewers, including assessing code review and analyzing reproducibility. All submission materials and communications from this pilot are publicly available, with the aim of providing a working example for future R-language based FDA submissions. This is an FDA-industry collaboration through the non-profit organization R Consortium.</p>
-<p>All submission materials can be found at: <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda">submissions-pilot3-adam-to-fda</a>. This is the first publicly available R-based FDA submission package including R scripts to generate Analysis Data Models (ADaM) and Tables, Listings &amp; Figures (TLFs).</p>
-<p><img src="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/collaboration.png" class="img-fluid"></p>
-<p><em>Open-Source Collaboration in standardizing Clinical Trial analyses and Submissions. Broadening ways to bring treatments to Patients.</em></p>
-<section id="pilot-3-timeline" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-timeline">Pilot 3 Timeline</h2>
-<p>The initial submission was submitted through the eCTD gateway on Aug 28, 2023. FDA verbal responses were received from Jan-July 2024 during R submission working group meetings. Documentation of this initial feedback and response can be found at <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda/blob/main/m1/us/response-FDA-IR-pilot3.pdf">response-FDA-IR-pilot3.pdf</a>. The updated submission package addressed reported issues and was re-submitted on Apr 19, 2024. The final response letter from FDA was received on Aug 8, 2024.</p>
-</section>
-<section id="pilot-3-scope" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-scope">Pilot 3 Scope</h2>
-<p>The Pilot 3 test submission exemplifies an all-R submission package for ADaMs and TLFs, adhering to electronic Common Technical Document (eCTD) specifications. This comprehensive package not only includes ADaMs and TLGs, but it emulates a full study submission package including the source Study Data Tabulation Models (SDTMs) used to generate the Pilot 3 ADaMs. It also encompasses the installation and loading of the proprietary {pilot3utils} R package, various open-source R packages, R scripts for the Analysis Data Model (ADaM) datasets derived from Pilot 3, and Tables, Listings, and Figures (TLFs) from Pilot 1. In addition to other requisite eCTD components, the Pilot 3 package also includes the Analysis Data Reviewer’s Guide (ADRG) providing detailed steps leading to the execution of the analysis R scripts to re-produce the ADaMs and TLFs from a FDA reviewers perspective. These Pilot 3 submission materials are linked above.</p>
-<p>Pilot 3 serves as a complement to Pilots <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">1</a> and <a href="https://github.com/RConsortium/submissions-pilot2-to-fda">2</a>, which demonstrated the feasibility of submitting TLF R scripts and R Shiny code, respectively. Furthermore, Pilot 3 successfully validated the submission of proprietary R packages in compressed file formats, serving as another alternative to {pkglite} or installation directly from github.</p>
-<p>If you have any questions about this Pilot 3 submission, we would love to hear from you. Feel free to submit any questions you may have as a <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda/issues/new/choose">new issue</a> in our Pilot 3 github repository or you may find any of the Pilot 3 team members in <a href="https://pharmaverse.slack.com/archives/C030EB2M4GM">Pharmaverse slack</a>.</p>
-</section>
-<section id="learnings-from-pilots-1-through-3" class="level2">
-<h2 class="anchored" data-anchor-id="learnings-from-pilots-1-through-3">Learnings from Pilots 1 through 3</h2>
-<p>In the three pilots, for various TLFs, the working group members intentionally created different tables in different formats using various open-source R packages. The FDA staff successfully accepted and reproduced the results generated from these different open-source packages. However, though not in scope of these Pilots, we want to share awareness that sponsors are responsible for selecting open-source packages that demonstrate sufficient reliability. Further information on this can be found in the <a href="https://www.pharmar.org/">R Validation Hub</a>, formed in 2018 by the PSI AIMS Special Interest Group and supported by the R Consortium. It offers tools like <a href="https://www.pharmar.org/posts/news/updates-aug-2024/">{riskmetric}</a> to quantify the “risk” of R packages and a user-friendly R Shiny app, <a href="https://www.pharmar.org/riskassessment/">{riskassessment}</a>, to evaluate package reliability.</p>
-<p>The majority of FDA staff feedback falls under the following themes :</p>
-<ol type="1">
-<li>Clear ADRG documentation on computing environment, package dependencies, and expected warnings</li>
-<li>Clear documentation on data processing rules and statistical method implementation</li>
-<li>Good statistical practice in confirmatory trials, such as avoiding the possibility of “p-hacking”&nbsp;</li>
-</ol>
-<p>For future submissions using open-source languages, it is recommended to give special attention to recommendation theme 1. Recommendation themes 2 and 3 are language-agnostic and should always be followed, regardless of the programming language used. All of these themes fall in line with the FDA’s <a href="https://rconsortium.github.io/submissions-pilot3-adam/main/articles/statistical-software-clarifying-statement.html">Statistical Software Clarifying Statement</a>.</p>
-</section>
-<section id="upcoming-pilots" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-pilots">Upcoming Pilots</h2>
-<p>As a next step, the R Consortium R Submission Working Group initiated <a href="https://rconsortium.github.io/submissions-pilot4/">submission pilot 4</a>, to explore the use of novel technologies such as Linux containers and web assembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application.</p>
-</section>
-<section id="the-r-consortium-r-submission-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="the-r-consortium-r-submission-working-group">The R Consortium R Submission Working Group</h2>
-<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
-<p>To bring an experimental clinical product to market, electronic submission of data, computer programs, and relevant documentation is required by health authority agencies from different countries. In the past, submissions have been mainly based on the SAS language.&nbsp;</p>
-<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
-<p>Therefore, the R Submissions Working Group aims at providing R-based submission examples and identifying potential gaps during submission of these example packages. All materials, including submission examples and communications, are publicly available on the R consortium Github page: <a href="https://github.com/RConsortium">https://github.com/RConsortium</a> .</p>
-<p>The R consortium R submission working group includes members from more than 10 pharmaceutical companies, as well as regulatory agencies. More details of the working group can be found at: <a href="https://rconsortium.github.io/submissions-wg/">https://rconsortium.github.io/submissions-wg/</a> .</p>
-<p>The R consortium R submission working group is open to anyone who is interested in joining. If interested, please contact Joseph Rickert at director@r-consortium.org.&nbsp;</p>
-</section>
-<section id="pilot-3-fda-reviewers" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-fda-reviewers">Pilot 3 FDA Reviewers</h2>
-<p>FDA reviewers included&nbsp;&nbsp;</p>
-<p><a href="https://www.linkedin.com/in/hye-soo-cho/">Hye Soo Cho</a>,&nbsp; <a href="https://www.linkedin.com/in/paul-schuette-40aa838/">Paul Schuette</a>, and <a href="https://www.linkedin.com/in/youn-kyeong-chang-885785159/">Youn Kyeong Chang</a>.</p>
-</section>
-<section id="pilot-3-developers" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-developers">Pilot 3 Developers</h2>
-<p>The Pilot 3 development team included <a href="https://www.linkedin.com/in/jlaxamana/">Joel Laxamana</a> (Project Lead, Roche), <a href="https://www.linkedin.com/in/robert-devine-50b0b931/">Robert Devine</a> (J&amp;J) , <a href="https://www.linkedin.com/in/ben-straub/">Benjamin Straub</a> (GSK) , <a href="https://www.linkedin.com/in/kaz462/">Kangjie Zhang</a> (Bayer) , <a href="https://www.linkedin.com/in/thomas-neitmann/">Thomas Neitmann</a> (Roche), <a href="https://www.linkedin.com/in/tataphani/">Phanikumar Tata</a> (Syneos), <a href="https://www.linkedin.com/in/stevenhaesendonckx/">Steven Haesendonckx</a> (J&amp;J), <a href="https://www.linkedin.com/in/yutong-liu-a25b68a8/">Yutong Liu</a> (Moderna), Lei Zhao (Roche), <a href="https://www.linkedin.com/in/nicolekjonesmph/">Nicole Jones (Merck)</a>, <a href="https://www.linkedin.com/in/bingjun-wang-2b9783147/">Benjamin Wang (Merck),</a> <a href="https://www.linkedin.com/in/dadong-zhang-48b937201/">Dadong Zhang (Illumina)</a>, <a href="https://www.linkedin.com/in/declan-hodges/">Declan Hodges (GSK)</a>.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/</guid>
-  <pubDate>Mon, 26 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
