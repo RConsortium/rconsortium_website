@@ -10,7 +10,43 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Mon, 02 Dec 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 03 Dec 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R-Universe Named R Consortium’s Newest Top Level Project</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://r-universe.dev/search"><img src="https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/r-universe-search.png" class="img-fluid"></a></p>
+<p>The R Consortium is proud to announce our newest top level project, <a href="https://r-universe.dev/search">R-Universe</a>. R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci.</p>
+<p>Critical R community projects that need support over a longer time period are evaluated by the Infrastructure Steering Committee (ISC) for long-term status. Being designated Top Level gives a project guaranteed funding for 3 years, along with a voting seat on the ISC.</p>
+<p>“The ability to find and evaluate high quality R packages is important to the R community, and the R Consortium is pleased to support the R-Universe project with a long-term commitment to help strengthen the foundation of the R package ecosystem,” said Terry Christiani, R Consortium executive director. “We are pleased to be working more closely together with rOpenSci on this effort.”</p>
+<p>R-Universe will be joining R Consortium’s three current Top Level Projects:</p>
+<ul>
+<li><a href="https://r-dbi.org/">DBI</a> - R’s interface to databases</li>
+<li><a href="https://rladies.org/">R-Ladies</a> - Promoting diversity in the R community with 200+ groups worldwide</li>
+<li><a href="https://r-consortium.org/all-projects/rugsprogram.html">R User Group Support Program (RUGS)</a> - facilitating person-to-person exchange of knowledge in small group settings on a global scale</li>
+</ul>
+<p>“R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem, and it is an open platform for running CRAN-like package repositories ranging from personal to lab to industry-scale production to make your work visible and accessible to a big audience, with or without CRAN,” said Noam Ross, rOpenSci executive director. “We are very excited to continue to strengthen R infrastructure and work closely with the R Consortium.”</p>
+<p>R-universe allows users and developers of R packages to:</p>
+<ul>
+<li><strong>Discover:</strong> R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem. It is indexed and ranked using R specific features.</li>
+<li><strong>Learn:</strong> R-universe serves rendered material and extensive background information to learn about a package and get started using it.</li>
+<li><strong>Publish:</strong> R-universe is an open platform for running personal CRAN-like package repositories to make work public and accessible to a big audience, with or without CRAN.</li>
+<li><strong>Develop:</strong> R-universe provides a zero-config development environment for continuous integration (identify upcoming breakage before release), experimental R features, new platforms such as WebAssembly, and more.</li>
+</ul>
+<p>For more information about the R Consortium’s Top Level Projects, please visit: <a href="https://r-consortium.org/all-projects/">https://r-consortium.org/all-projects/</a></p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/</guid>
+  <pubDate>Tue, 03 Dec 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Empowering Data Science in Mexico: R-Ladies Querétaro on Inclusivity and Growth</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1164,56 +1200,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
  ]]></description>
   <guid>https://r-consortium.org/posts/the-2024-isc-grant-program-will-begin/</guid>
   <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>R4SocialScience: Empowering Social Science Research with R in India</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/drmohitgarg9/?trk=public_profile_browsemap&amp;originalSubdomain=in">Dr.&nbsp;Mohit Garg</a>, organizer of the <a href="https://www.meetup.com/r4socialscience/">R4SocialScience</a> group in Delhi, India recently talked to the R Consortium about his experience of starting an R user group. The R4SocialScience group aims to bridge the gap between social science research and data analysis, offering support and training to academics, researchers, and industry professionals. Dr.&nbsp;Garg shares his experiences, the growth of the R community in India, and his plans for expanding R’s reach.</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/drGarg.jpg" class="img-fluid"></p>
-<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
-<p>I’m currently working as an assistant librarian at the <a href="https://home.iitd.ac.in/">Indian Institute of Technology, Delhi</a>, one of the premier institutions in India.&nbsp; My academic background includes a BTech in Information Technology from Guru Gobind Singh Indraprastha University followed by an MS in Librarian Information Science from the <a href="https://www.isical.ac.in/">Indian Statistical Institute</a>, an institution dedicated to statistics in India started by the late Professor P.C. Mahanobis. After that, I completed my PhD in Library and Information Science from IGNOU, New Delhi.</p>
-<p>My interest in R began in 2013 when I started my MS at the Indian Statistical Institute.&nbsp; Since then, I have taken various courses as part of my MS program and some online courses. I became interested in R due to its open source nature and the free availability of packages for all kinds of analysis. Then, I started promoting R in the academic community. However, in 2013, there was little interest in R because the prevalent approach in India was more focused on using commercial software for data analysis.&nbsp; However, in the past few years, there has been an increasing interest in R, with many workshops and government-funded events dedicated to it.</p>
-<p>I have been providing R training to professors, teachers, and research scholars, and I have also worked on web-based development using <a href="https://shiny.posit.co/">Shiny</a> packages. Furthermore, we have developed a web dashboard to visualize real-time research productivity data obtained from sources like <a href="https://www.elsevier.com/products/scopus">Scopus</a> through API. Recently, we completed a 12-week MOOC course on <a href="https://swayam.gov.in/nc_details/NPTEL">NPTEL SWAYAM</a> platform with a focus solely on R. The course was quite popular, with 2584 learners from India joining, and 515 learners registering for the final examination. Although the course was free, participants had the option to pay for certification.</p>
-<p><strong>Can you share what the R community is like in India?</strong>&nbsp;</p>
-<p>I have been involved in the academic profession since 2016 and have been giving lectures and providing resource points at various institutions. I believe that there is a need to build a community focused on social sciences, especially for those who may have a limited understanding of mathematics, and statistics. The idea is to create a specific community related to social science, not just in India, but also in collaboration with other institutions. The community will cater to three main groups: those who are proficient in coding and development of R packages, those who are familiar with basic R but need further guidance, and those who are completely new to R.</p>
-<p>The community aims to provide support for those interested in social science and to make R more accessible by offering packages related to social science, basic R tutorials. One specific package gaining popularity in academia is “<a href="https://www.bibliometrix.org/home/">biblo shiny bibliometrics</a>,” which facilitates scientific productivity mapping using R.&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/rSocialScience.jpg" class="img-fluid"></p>
-<p>We want to emphasize that R is not just a programming language, but a software for data analysis, to encourage more people to explore its potential. While both R and Python are interpreted languages, we aim to dispel the fear of programming and demonstrate how these languages can be used effectively. Although Python appears to be more widely used in the industry, there is still a growing interest in R.</p>
-<p><strong>What are your plans for the group going forward?</strong></p>
-<p>I have been teaching R for more than 10 years, and I found that researchers are interested in using R. I have identified three potential co-organizers from different regions in India to make a team of four people. We have already received a grant, and we plan to conduct training sessions in different locations across India.</p>
-<p>I am focusing on a “train the trainer” model, where I aim to train individuals who can then carry out training sessions in their respective regions. India has over 50,000 colleges and around 1,200 universities, all involved in significant research and analysis activities. We also aim to have dedicated R trainers in all districts in India by 2026.</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/teaching.jpg" class="img-fluid"></p>
-<p>Our approach involves dividing the country into five zones, followed by state-wise and district-wise planning. We are not heavily reliant on industry support, as our activities are primarily related to academia and research.&nbsp;</p>
-<p>We plan to charge a nominal registration fee, which would cover expenses such as food and refreshment. We are hoping to minimize travel expenses, as they can be quite costly. But we will explore some way to fund the travel and accommodation expenses. We have hosted a one day workshop on “<a href="https://x.com/RConsortium/status/1808219594232156479">Doing Research using R</a>” at Galgotias University.&nbsp;&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/trainingSession.jpg" class="img-fluid"></p>
-<p>I am currently focusing on building a community and providing training sessions. I have noticed that online sessions may not be as effective as I had hoped, as participants seem to encounter many problems. Therefore, I am considering conducting more in-person workshops, which I believe will help popularize the training sessions. Additionally, I aim to develop specialized packages for social science and build a dedicated team. I am optimistic about these plans. During a recent workshop, I noticed that many participants preferred simple tools for data analysis. I intend to introduce such tools to make the training more accessible and user-friendly for participants. This is my vision for the community.</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/community.jpg" class="img-fluid"></p>
-<p><strong>Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</strong></p>
-<p>We have developed a platform utilizing the shiny and other text mining packages. This platform is still in the testing phase. The platform allows real-time data fetching from the Scopus API.</p>
-<p>For example, if I search for a faculty member, it will display the publication data such as the number of publications, H-index, citations, types of publications, sources of publication, and annual publication distribution. We can also download this data.</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/platform.jpg" class="img-fluid"></p>
-<p>We have also developed a word cloud based on the titles of the publications for each faculty member, processed using the TM package. This helps to infer the expertise of the professors. Furthermore, we have included a feature for identifying the H-classic, which is related to the H-index.&nbsp; This platform is quite useful and efficient, especially for academic institutions. We now have the capability to download data from a specific date range as an Excel file. The data includes publication dates and the number of citations.</p>
-<p><img src="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/wordcloud.jpg" class="img-fluid"></p>
-<p>We’re in the process of creating a full dashboard for universities or institutions. We’ve also conducted a pilot study for other institutions. We are also considering publishing this work as a research paper to increase its visibility.&nbsp;</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="../../all-projects/rugsprogram.html">Learn more</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/</guid>
-  <pubDate>Tue, 27 Aug 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r4socialscience-empowering-social-science-research/trainingSession.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
