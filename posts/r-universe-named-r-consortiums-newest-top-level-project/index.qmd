@@ -1,0 +1,31 @@
+---
+title: "R-Universe Named R Consortium’s Newest Top Level Project"
+description: "R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci."
+author: "R Consortium"
+date: "12/03/2024"
+---
+
+[![](r-universe-search.png)](https://r-universe.dev/search)
+
+The R Consortium is proud to announce our newest top level project, [R-Universe](https://r-universe.dev/search). R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci.
+
+Critical R community projects that need support over a longer time period are evaluated by the Infrastructure Steering Committee (ISC) for long-term status. Being designated Top Level gives a project guaranteed funding for 3 years, along with a voting seat on the ISC. 
+
+“The ability to find and evaluate high quality R packages is important to the R community, and the R Consortium is pleased to support the R-Universe project with a long-term commitment to help strengthen the foundation of the R package ecosystem,” said Terry Christiani, R Consortium executive director. “We are pleased to be working more closely together with rOpenSci on this effort.”
+
+R-Universe will be joining R Consortium’s three current Top Level Projects:
+
+* [DBI](https://r-dbi.org/) - R’s interface to databases
+* [R-Ladies](https://rladies.org/) - Promoting diversity in the R community with 200+ groups worldwide
+* [R User Group Support Program (RUGS)](https://r-consortium.org/all-projects/rugsprogram.html) - facilitating person-to-person exchange of knowledge in small group settings on a global scale
+
+“R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem, and it is an open platform for running CRAN-like package repositories ranging from personal to lab to industry-scale production to make your work visible and accessible to a big audience, with or without CRAN,” said Noam Ross, rOpenSci executive director. “We are very excited to continue to strengthen R infrastructure and work closely with the R Consortium.”
+
+R-universe allows users and developers of R packages to:
+
+* **Discover:** R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem. It is indexed and ranked using R specific features.
+* **Learn:** R-universe serves rendered material and extensive background information to learn about a package and get started using it.
+* **Publish:** R-universe is an open platform for running personal CRAN-like package repositories to make work public and accessible to a big audience, with or without CRAN.
+* **Develop:** R-universe provides a zero-config development environment for continuous integration (identify upcoming breakage before release), experimental R features, new platforms such as WebAssembly, and more.
+
+For more information about the R Consortium’s Top Level Projects, please visit: [https://r-consortium.org/all-projects/](https://r-consortium.org/all-projects/)
