@@ -16,6 +16,8 @@ website:
     right:
       - text: "About"
         menu:
+          - text: Mission
+            href: about/index.qmd
           - text: Governance
             href: about/governance.qmd
           - text: Bylaws (PDF)
