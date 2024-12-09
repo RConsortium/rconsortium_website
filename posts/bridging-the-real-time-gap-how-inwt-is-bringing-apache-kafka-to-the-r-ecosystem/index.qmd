@@ -6,9 +6,11 @@ image: "Andreas.png"
 date: "11/12/2024"
 ---
 
-![](Andreas.png)
+![](Andreas.png){width=50%}
 
 In a recent interview with the R Consortium, [Andreas Neudecker](https://www.linkedin.com/in/andreas-neudecker-457946208/), solution architect at INWT, a data and analytics company located in Berlin, Germany, shared insights into the motivation behind developing an Apache Kafka client for R and the challenges it aims to address within the R ecosystem. His company frequently builds models in both R and Python, often encountering the need for real-time data analytics from Kafka clusters. When a real-time fraud detection project required connecting to a Kafka cluster, the lack of a stable Kafka client for R forced them to switch to Python despite having an R-based model ready to go. This experience highlighted the gap in R's real-time data processing capabilities. It inspired Andreas to develop a Kafka client for R, making it easier to access real-time data sources and potentially leveling the playing field with Python. 
+
+To get started using kafka right away, please reference this article by Andreas titled "[Introducing the kafka R Package](https://www.inwt-statistics.com/blog/r-package-kafka)," which covers an example to demonstrate how kafka works.
 
 GitHub repository: [https://github.com/INWTlab/r-kafka](https://github.com/INWTlab/r-kafka)
 

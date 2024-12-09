@@ -16,6 +16,8 @@ website:
     right:
       - text: "About"
         menu:
+          - text: Mission
+            href: about/index.qmd
           - text: Governance
             href: about/governance.qmd
           - text: Bylaws (PDF)
@@ -59,6 +61,8 @@ website:
             href: https://rladies.org/
           - text: DBI
             href: https://r-dbi.org/
+          - text: R-Universe
+            href: https://r-universe.dev/search
           - text: Working Groups
             href: all-projects/isc-working-groups.qmd
 
