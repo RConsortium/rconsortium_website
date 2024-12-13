@@ -1,18 +1,20 @@
 ---
-title: "Quantification of Participation Risk using R and RShiny"
+title: "Quantification of Participation Risk using R and R Shiny"
 ---
 
-![](images/quantification-of-participation-risk-main-image.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fb5x_6mVME4?si=nnIXp2yDRh1aDAC6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Join us on December 12th, 2024, at 12:00 pm ET for an insightful webinar on *Quantification of Participation Risk Using R and RShiny*. Presented by Raiffeisenlandesbank Oberösterreich (RLB OÖ), this session will delve into the bank's advanced risk management practices, highlighting how they leverage R and RShiny for effective data visualization and risk assessment.
+Webinar held on December 12th, 2024, on *Quantification of Participation Risk Using R and R Shiny*. Presented by Raiffeisenlandesbank Oberösterreich (RLB OÖ), this session delved into the bank's advanced risk management practices, highlighting how they leverage R and R Shiny for effective data visualization and risk assessment.
 
-Register here: [https://zoom.us/webinar/register/WN_NevKO5YeQEuDH-To5qMeLA](https://zoom.us/webinar/register/WN_NevKO5YeQEuDH-To5qMeLA)
+[Slides](Quantification-of-Participation-Risk-Dec2024.pdf)
+
+[Repo](https://github.com/GoranLovric/RiskWebinar2024)
 
 **Agenda Highlights:**
 
 1. **Introduction to RLB OÖ**: Overview of Austria’s leading regional bank, its strategic business fields, and its regional and international network.
 2. **Risk Quantification Framework**: Insight into the risk quantification process using R, focusing on participation risk and its challenges.
-3. **Application of R and RShiny**: Practical demonstration of RShiny’s capabilities in visualizing and managing risk data, streamlining operations, and supporting decision-making.
+3. **Application of R and R Shiny**: Practical demonstration of R Shiny’s capabilities in visualizing and managing risk data, streamlining operations, and supporting decision-making.
 4. **Case Study**: Real-life applications in managing participation risk within a complex financial ecosystem.
 
 **Presenters:**
@@ -25,4 +27,4 @@ Register here: [https://zoom.us/webinar/register/WN_NevKO5YeQEuDH-To5qMeLA](http
 
 **Simon Aigner**, MSc, an Economic and Business Analytics professional at RLB OÖ, specializes in automating internal risk management processes using R, enhancing operational efficiency and minimizing risk exposure.
 
-This webinar is a unique opportunity for finance professionals, data analysts, and R enthusiasts to gain hands-on insights into using R and RShiny for sophisticated risk assessment. Don’t miss this chance to learn from industry experts about harnessing open-source tools in the financial sector!
+This webinar is a unique opportunity for finance professionals, data analysts, and R enthusiasts to gain hands-on insights into using R and R Shiny for sophisticated risk assessment. Don’t miss this chance to learn from industry experts about harnessing open-source tools in the financial sector!
