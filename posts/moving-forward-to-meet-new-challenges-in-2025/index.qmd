@@ -1,0 +1,117 @@
+---
+title: "Moving forward to meet new challenges in 2025"
+description: "We have dispersed technical grants totaling almost $1.5 million since our founding, including 13 new projects in 2024."
+author: "Terry Christiani"
+image: "RUGS-nov-2024.png"
+date: "12/13/2024"
+---
+
+It has been a momentous year for the R Consortium, and we are very
+grateful for the engagement and support we have received from our member
+sponsors and all the members of the R community.
+
+## 76,048 members, 91 R User Groups, 39 countries, 6 continents
+
+![](RUGS-nov-2024.png)
+
+Our [R User Groups program](https://r-consortium.org/all-projects/rugsprogram.html) is better than
+ever! We helped to support a lot of you out there learning and sharing
+the R language. It is exciting to see this type of activity and we hope
+that in 2025, these groups will continue to grow and that we can sponsor
+new groups, too. We are always looking for more and better ways to
+support the community. We hope that you will let us know your
+suggestions for helping to grow the R community in your area.
+
+## Working Groups and Top-Level Projects delivering progress and access
+
+Many of our working groups and projects had solid wins this year in
+pushing forward on their projects.
+
+-   Our Submissions working group achieved its [fourth successful
+    submission with the
+    FDA](https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/)
+    -- the first to feature WebAssembly to bundle a Shiny application
+    into a self-contained package.
+
+-   We kicked off our [Health Technology Assessment (HTA) working
+    group](https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/)
+    with two workstreams (1. Stakeholder and landscape mapping and
+    opportunity assessment & 2. R Tools for HTA -- Identification,
+    Curation, and Education) addressing issues in health technology
+    evaluation and building a well-documented resource for robust R
+    tools in HTA.
+
+-   Multilingual R Documentation has published its first package
+    [rhelpi18n](https://github.com/eliocamp/rhelpi18n) adding
+    multilingual documentation support. This effort is a [co-sponsored
+    project](https://ropensci.org/multilingual-publishing/) with
+    [rOpenSci](https://www.ropensci.org) and the [Chan-Zuckerberg
+    Initiative's Open Science Program](https://czi.co/OpenScience),
+
+-   We have added [R-universe as a new Top-Level
+    Project](https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/).
+    R-universe provides a searchable catalog for R software, articles,
+    datasets, anywhere in the ecosystem, and it is an open platform for
+    running CRAN-like package repositories. We are thrilled to be
+    working with rOpenSci on this important infrastructure project for
+    the R community.
+
+## Quarto powered website
+
+We must brag about our beautiful new Quarto-based website that we
+launched this year. Performance was increased by 65% faster overall, with homepage load times going from 2.3 seconds to 0.8 seconds on average in testing. The
+team did a wonderful job, and we invite the community to [join us in
+contributing to the
+site.](https://github.com/RConsortium/rconsortium_website#contributing-to-this-website)
+This is a great opportunity for first time contributors and for others
+to get a chance to work with a Quarto site.
+
+## Expanding support for the R language and infrastructure
+
+The Infrastructure Steering Committee (ISC) funds two grant cycles per
+year for projects that support the development of the R language and the
+maintenance of its infrastructure. We funded [13 new projects in
+2024](https://r-consortium.org/all-projects/funded-projects.html). We
+have dispersed technical grants totaling almost \$1.5 million since our
+founding. Our next grant cycle will re-open March 1, 2025, and now is a
+great time to [contact the ISC to start the
+process](https://r-consortium.org/all-projects/callforproposals.html).
+
+## Events IRL and digital were huge wins for all of us!
+
+Live events are a great way to share new developments and raise
+awareness of what our community needs or wants. The R Consortium
+sponsored 12 events this year, and we are looking forward to seeing a
+lot of you next year at [R/Medicine June
+10-13](https://rconsortium.github.io/RMedicine_website/) and useR!
+August 8-10. To access all the digital events and webinar content we
+produce, please subscribe to our YouTube channel so you are sure to get
+new videos as we post them.
+
+## New year, new opportunities and challenges
+
+I encourage you to register for [R/Medicine June
+10-13](https://rconsortium.github.io/RMedicine_website/) and **SAVE THE
+DATE for useR!** at Duke University August 8-10. We are looking forward
+to all the great programming in 2025 and [would love to hear from the
+community any
+requests/ideas](https://r-consortium.org/about/contact.html) for content
+you would like to see.
+
+Finally, [our mission in support of the R language and its
+community](https://r-consortium.org/about/) is at the core of everything
+we do. This means we need to answer new challenges that face both. The
+recently passed [Cyber Resilience
+Act](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act)
+will require CRAN and all community repositories to make changes to meet
+its requirements for distribution of packages in the EU. To our current
+members, we thank you for your support and ask you to consider renewing
+your support at the next level. 
+
+If you\'re considering becoming a
+member-sponsor of the R Consortium, feel free to reach out to me
+([director at r-consortium dot
+org](mailto:director@r-consrtium.org?subject=R%20Consortium%20Membership))
+or [view the materials on our
+website](https://r-consortium.org/about/join.html#joining-the-r-consortium-is-easy.).
+
