@@ -10,7 +10,66 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 13 Dec 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Dec 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Books, Beginners, and Big Ideas: Beatriz Milz on Fostering R-Ladies São Paulo’s Vibrant Community</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://beamilz.com/about">Beatriz Milz</a>, a co-organizer of <a href="https://www.meetup.com/rladies-sao-paulo/?eventOrigin=event_home_page">R-Ladies São Paulo</a>, recently spoke with the R Consortium about the vibrant growth of the R community in São Paulo and its commitment to inclusivity and accessible learning. Beatriz shared insights into the group’s activities, from organizing popular in-person and online events to coordinating a book club focused on the newly translated R for Data Science in Portuguese. She also discussed the unique needs of R users in Brazil and how R-Ladies São Paulo supports beginners and advanced users through collaborative events and community-driven resources.</p>
+<p><img src="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/BeatrizMilz.jpg" class="img-fluid"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>My background includes a bachelor’s degree in environmental management, a master’s in environmental analysis, and a PhD in environmental sciences. During my master’s program, my supervisor mentioned that I needed to learn R to analyze the data we were collecting. However, no one in the lab was familiar with R or able to assist me. I attempted to learn it independently, but that didn’t work well.</p>
+<p>Eventually, my supervisor connected me with another professor, and a postdoc in his lab helped me with the analysis for my master’s dissertation. While that assistance was beneficial, I felt uncomfortable relying on others to conduct the analysis. After finishing my master’s and before starting my doctorate, I decided that I wanted to learn how to program so I wouldn’t have to depend so heavily on fellow researchers for data analysis.</p>
+<p>I started trying to learn R again after a friend mentioned the R-Ladies group. In 2018, I discovered that a new group was starting in São Paulo. I attended their first event, which was an incredible experience. Around that time, I began to learn R.</p>
+<p>In São Paulo, we don’t just organize events; we also have a group on <a href="https://telegram.org/">Telegram</a> where we can communicate between events. It allowed me to ask for recommendations on learning materials, pose questions, and receive help from others in the group. This support was invaluable to my learning process.</p>
+<p>Two months after getting involved, I began helping in the group. Initially, the group was relatively new, and one person mainly did most of the organizing tasks: <a href="https://www.linkedin.com/in/hsvab/?originalSubdomain=br">Haydee Svab</a>. She expressed a need for assistance, not just with R-related tasks but also with organizing events. So, I started to help, and I am still one of the co-organizers today, while Haydee remains the lead co-organizer.</p>
+<p>It’s been six years since I began participating in the group, and I’m currently a postdoc involved in much work with R.</p>
+<p><strong>Can you share what the R community is like in São Paulo?</strong></p>
+<p>Our group consists of researchers from various fields who want to learn R or have already used it. Many journalists started using R a few years ago and joined our group. Now, these journalists often invite other journalists. We have many journalists who need to learn R to analyze public data from the government for their journalistic work in newspapers.</p>
+<p>We also have many members with a background in Statistics. Since most university courses typically use R, students joining our group already have experience with it from their undergraduate studies. Additionally, many individuals from the industry use R for consultancy in various fields. I am currently doing a postdoc, but I also worked with consultants for two years, during which time I used R extensively.</p>
+<p><strong>In R-Ladies São Paulo, how many events are typically held each year?</strong></p>
+<p>It varies. This year, we hosted two in-person and many more online events—11. We held an average of 6.5 events per year. However, this year, we focused more on online events and had fewer in-person ones, mostly because booking venues for in-person events has been more difficult.</p>
+<p><img src="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPauloEvents.png" class="img-fluid"></p>
+<p><strong>Regarding your experience, are people more interested in online or in-person events?</strong></p>
+<p>People engage more in in-person events. They look forward to attending these events because we usually have limited seats, which fill up quickly. We often have a waiting list for those who want to attend. If someone cancels, we can soon offer their spot to someone on the waiting list.</p>
+<p>On the other hand, online events tend to have a different pattern of participation. Fewer people attend in real-time, but many engage later by watching the recorded sessions and leaving comments. This flexibility allows those who cannot participate live to catch up afterwards.</p>
+<p>While online events can have a broader impact on reaching a larger audience, in-person events typically draw more attendees at once. For instance, we have a <a href="https://www.youtube.com/c/RLadiesS%C3%A3oPaulo">YouTube</a> channel where we post recordings of our online events. One particular event we held during the pandemic garnered 13,000 views, demonstrating significant engagement after the event. However, only some online events achieve that level of viewership; the median for recorded events is 330 views. Nevertheless, I see value in these recordings, as they provide material for those who want to engage later. Sometimes, people are simply not available to attend live.</p>
+<p><strong>Please provide us with an update on your group’s recent activities.</strong></p>
+<p><img src="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPaulo.png" class="img-fluid"></p>
+<p>I wanted to discuss a series of events related to the book club we’re hosting. In Brazil, we speak Brazilian Portuguese. An editorial group published the highly regarded book <a href="https://r4ds.hadley.nz/">R for Data Science</a> in Portuguese. The first edition is available only through purchase, but the English version is free online.</p>
+<p>Some communities have done volunteer translations; for instance, there is a <a href="https://es.r4ds.hadley.nz/">Spanish</a> version. When I learned that a second edition of the book was being written, I contacted the authors to ask if we could translate it into Portuguese with the community’s help. It took some time because the authors needed approval from O’Reilly, the publishing company producing the book.</p>
+<p>We received confirmation that we could begin the translation. The book’s second edition has <a href="https://cienciadedatos.github.io/pt-r4ds/">been translated and is now available in Portuguese</a>! The translation team is not limited to the R Ladies community; it includes contributions from more than 20 people from different backgrounds.</p>
+<p>This book club focuses on discussing the translated Portuguese version of the book. Since February, we have held online meetings to discuss the book chapters. Members from the R Ladies community present these discussions, allowing participants to ask questions and engage in dialogue. These events have been working well.</p>
+<p>I have been referencing this book whenever someone asks for material. Many people will already be familiar with it as we continue to promote it. We have also been using and sharing this resource extensively.</p>
+<p>Now, the book’s second edition is available in Portuguese <a href="https://cienciadedatos.github.io/pt-r4ds/">online</a> and for free, so anyone with an internet connection can access it. It is an excellent way to share knowledge for those who can afford to buy the book and for anyone with internet access, making it a valuable study resource.</p>
+<p><strong>What are some trending topics from the group?</strong></p>
+<p>Our events with introductory content attract more participants. It is likely because many attendees are either new to the subject or at an intermediate level, where they feel comfortable studying independently. The most popular topics are introductory sessions.</p>
+<p>However, when we asked participants about their interests in different topics, many wanted to learn about machine learning and other trending subjects like deep learning and artificial intelligence. The challenge is that we need more experienced individuals to teach these advanced topics. While many people are interested in these areas, organizing events around them can be more difficult due to the complexity involved.</p>
+<p><strong>What techniques do you recommend for planning or conducting the event? (e.g., GitHub, Zoom, etc.) Can these techniques help make your group more inclusive for people unable to attend in-person events in the future?</strong></p>
+<p>We use <a href="https://streamyard.com/">StreamYard</a> for our online events. The free version has proven helpful. Previously, when we hosted events on Zoom, we needed to edit recordings and upload them afterwards. This process often took a while, mainly because everyone was busy, and it delayed recording the events online. StreamYard has made the process easier for us, although it does offer less space for participant interaction.</p>
+<p>We have a chat feature with StreamYard, but participants can also share their screens on Zoom. Therefore, the platform we choose depends on the kind of event we want to conduct. Participants must share their screens for some events, so we opt for Google Meet or Zoom.</p>
+<p>One significant improvement has been our use of <a href="https://github.com/R-Ladies-Sao-Paulo">GitHub</a>. We created issue templates as a to-do list for organizing our upcoming events. This system helps us remember everything we need to do.</p>
+<p>Additionally, we have a <a href="https://rladies-sp.org/">blog</a> that invites community members to contribute articles. It allows individuals to write about interesting topics regardless of expertise. Some people hesitate to present at events but feel comfortable writing blog posts. It serves as their first contribution or participation in our community, shifting them from just participants to active contributors.</p>
+<p>Overall, the blog is an excellent way to encourage people to make their first contributions.</p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/</guid>
+  <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPaulo.png" medium="image" type="image/png" height="60" width="144"/>
+</item>
 <item>
   <title>Moving forward to meet new challenges in 2025</title>
   <dc:creator>Terry Christiani</dc:creator>
@@ -1243,34 +1302,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/</guid>
   <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/school.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Thank You, Joseph Rickert: A Legacy of Leadership and Innovation in the R Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>As we announce the end of Joseph (Joe) Rickert’s tenure as the Executive Director of the R Consortium, we reflect on his remarkable contributions that have significantly contributed to the R community. Joe’s leadership has been instrumental in fostering growth, innovation, and collaboration within the R ecosystem.</p>
-<p><strong>Founding the R Consortium</strong></p>
-<p>Joe has been with the R Consortium since its inception in 2014. He was initially appointed to be Microsoft’s representative to the Infrastructure Steering Committee (ISC) and was soon tasked with creating the R User Groups (RUGS) grants program. Joe also pioneered the formation of ISC working groups to foster industry-wide collaborative projects. In 2016, Joe was appointed to be RStudio’s representative to the Board of Directors. In 2018, he took on the role of Secretary, and by 2019, he was elected Chair of the Board. In 2023, Joe took on the role of Executive Director. Under his guidance, the R Consortium has grown into an inclusive organization supporting the R programming language and its community. Our new executive director, Terry Christiani, was affirmed by the board of directors in our August 2024 board meeting after a selection committee interviewed candidates and made recommendations.</p>
-<p><strong>Advancing User Groups</strong></p>
-<p>One of Joe’s notable achievements is his unwavering support for R user groups worldwide. He recognized the importance of grassroots movements in spreading the use of R and provided essential resources and funding to these groups. He was instrumental in funding the R-Ladies as a top-level ISC project that operates worldwide to provide safe places for women to come together and learn from each other in an otherwise male-dominated space. Joe was also directly involved with the Bay Area useR Group (BARUG), organizing events, speaking, or contributing to discussions around the R programming language, especially in the context of data science and statistical computing. This support has enabled countless R enthusiasts to connect, share knowledge, and collaborate on projects, thereby strengthening the global R community.</p>
-<p><strong>Industry Collaboration and Working Groups</strong></p>
-<p>Joe actively reached out to industry leaders to create unique working groups aimed at solving industry-wide problems. These collaborations have led to the development of working groups focused on R programming solutions that benefit not only the community but also industries that rely on data science and statistical computing.</p>
-<p><strong>A Legacy of Innovation</strong></p>
-<p>Throughout his tenure, Joe has been a driving force behind numerous initiatives that have propelled the R community forward. His efforts have ensured that the R Consortium remains a dynamic and inclusive organization, fostering a spirit of collaboration and innovation. His leadership has left an indelible mark on the R community, and his legacy will continue to inspire future generations of R users and developers.</p>
-<p>As we welcome new leadership, we extend our heartfelt gratitude to Joe Rickert for his dedication, vision, and tireless efforts in advancing the R community. Thank you, Joe, for your invaluable contributions and for paving the way for a brighter future for the R ecosystem.</p>
-
-
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/</guid>
-  <pubDate>Tue, 10 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/thank-you-main-page.png" medium="image" type="image/png" height="50" width="144"/>
 </item>
 </channel>
 </rss>
