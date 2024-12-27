@@ -1,0 +1,91 @@
+---
+title: "Navigating Economic Challenges Through Community: The Journey of R-Ladies Buenos Aires"
+description: "Betsabe Cohen, organizer of R-Ladies Buenos Aires, recently spoke with the R Consortium about the growth and diversity of the R community in Argentina and its role in navigating the country’s economic challenges."
+author: "R Consortium"
+image: "R-LadiesBuenosAiresGroupPhoto2.png"
+date: "12/27/2024"
+---
+
+[Betsabe Cohen](https://www.linkedin.com/in/betsabe1984/), organizer of [R-Ladies Buenos Aires](https://www.meetup.com/rladies-buenos-aires/), recently spoke with the R Consortium about the growth and diversity of the R community in Argentina and its role in navigating the country’s economic challenges. Betsy shared insights into the group’s activities, including hosting workshops on tools like Quarto and plans to launch a Shiny-focused reading club. She also highlighted the importance of fostering inclusion and collaboration within the community locally and across Latin America.
+
+![](BetsabeCohen.png){width=60%}
+
+**Please share your background and involvement with the RUGS group.**
+
+My background is in sociology. I'm originally from Buenos Aires and have worked in the field for about 15 years. I became involved with the R community through some colleagues and a bit by chance. I discovered R when a friend, who was starting to use it, introduced me to it. She was already connected with the R community, specifically R-Ladies. A few years later, I became an organizer for the group.
+
+**Can you share what the R community is like in Buenos Aires?** 
+
+R is primarily used in academia but is also prevalent in industry. The R community is very diverse, consisting of people from various backgrounds. We have industry professionals, researchers, and individuals from the government and non-profit sectors. I started using R in a non-profit environment. Our community includes a wide range of skill levels, from beginners to intermediate and advanced users, which adds to its diversity.
+
+Data analysis has become a valuable skill in the job market. Argentina is experiencing a job crisis, making it crucial for people to access information. However, because much of this information is often in English, we aim to generate materials in Spanish and share them with our community, as linguistic barriers can be restrictive.
+
+Communities like our group here in Buenos Aires are essential for people to access this information. However, it can be challenging for us as organizers, especially since we also navigate this crisis ourselves. Many of us juggle multiple jobs, making it challenging to find the time to teach and share information with others. 
+
+Balancing these responsibilities can feel like double work, and that's what we're currently facing.
+
+![](R-LadiesBuenosAiresGroupPhoto1.png) 
+
+**You had a Meetup on “[Turn your data into visual stories with Quarto](https://www.meetup.com/rladies-buenos-aires/events/304386918/?eventOrigin=group_past_events).” Can you share more about the topic covered? Why this topic?**
+
+We chose a topic beneficial for people searching for jobs related to data communication, visualization, and scientific reporting. [Quarto](https://quarto.org/) is an excellent tool for this purpose. The R community and the RUGS have embraced tools that enhance communication, making it more manageable within the scientific community and the business environment. Quarto allows individuals to continue using R while also adapting to various workplaces.
+
+By sharing Quarto with others and demonstrating its capabilities, we aim to help people communicate effectively. Since R is primarily taught in universities but needs a proper communication tool, this was a significant factor in our decision to support and assist others.
+
+Additionally, I have some exciting news: we are planning to start a reading club focused on mastering [Shiny](https://shiny.posit.co/) for next year.
+
+We are still preparing it. Shiny is widely used to make data accessible to users, which is part of our decision-making to support people during this challenging time. Reading this book alone is not the same as sharing the experience with others. There is significant value in sharing information and being part of a network, as it fosters community and support among us.
+
+![](R-LadiesBuenosAiresGroupPhoto2.png)
+
+**Do you host your events in person or online? What kind of response do you get for each type of event?** 
+
+We host both in-person and online events. Sometimes, we can hold events in both formats, but other times, we can only offer them online because the conditions are not ideal for a physical gathering. We record the live events and upload them to our [YouTube](https://www.youtube.com/c/RLadiesBuenosAires) channel. 
+
+For example, we organized a large event last year that attracted 80 university students. The venue was so full that no one else could enter, and the event generated significant engagement and views on YouTube afterwards.
+
+Some subjects are particularly appealing. Our goal is to reach as many people as possible, but I think a key point here is that inclusion is tied not only to gender but also to the economic dimensions of the issue.
+
+The demand for the recordings we upload to YouTube and access to our meetings is influenced by the employment and economic crises we face. This challenge concerns the material aspects, such as accessing high-speed internet or owning a computer, and the time required to participate in these events. For instance, many people may work night shifts, making it difficult for them to attend events.
+
+We typically schedule our meetings outside of working hours. The standard work schedule in Argentina runs from 9 AM to 6 PM, so we aim to hold our events around 7 PM to accommodate everyone. However, some individuals still need help to attend because they may have two jobs, leading them to plan to watch the YouTube recordings over the weekend.
+
+This situation illustrates our understanding of inclusion; it is not solely about gender—thankfully, our country is making strides in that area—but also about addressing economic challenges.
+
+**Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people unable to attend physical events in the future?** 
+
+We encourage working in pairs when conducting activities in a live classroom, mainly because only some have a computer. It creates an excellent dynamic for us, especially when participants have different skill levels. In our recent sessions, most people had their computers, but that was only sometimes the case. We use Post-it notes to address problems on individual computers. When everything is running smoothly, we engage in live coding, and participants can simply post their notes when they encounter issues.
+
+We organize our roles carefully to ensure efficiency. One of us may demonstrate the general code while live coding, while other organizers take on different responsibilities. Dividing the roles helps us focus on smaller tasks and work together effectively. 
+
+This approach applies not only in-person but also during our Zoom meetings. However, people seem less open to sharing their stories virtually. There’s something unique about face-to-face interactions compared to being online. After COVID-19, many people grew weary of Zoom meetings, but there were still benefits to being connected virtually. I participated in events I would never have had the chance to join otherwise.
+
+There’s something unique about sharing space. I think the Post-it notes work well for us, along with consistently sharing information and being well-prepared for the day. 
+
+When someone is going to present live coding, they feel more comfortable knowing that they don’t have to worry about other tasks. We always make it a point to take care of everything by dividing responsibilities and staying organized beforehand. 
+
+We prepare everything we need for the day, from coffee and cookies to all the necessary materials. Someone is clearly assigned to each task, and I believe that’s the best approach. At least it works great for us!
+
+**Can you share more about the journey of R-Ladies Buenos Aires?**
+
+It has been a long journey for us in Buenos Aires. Buenos Aires was Argentina's first chapter, and many other chapters of our Slack account opened up. We still share the same main Slack, R Ladies Buenos Aires, along with the other provinces that are very important to us.
+
+I had the opportunity to travel to the country's south to meet some of the organizers of [R Ladies Bariloche](https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/), where we have another chapter. I also participated in events like [LatinR](https://latinr.org/), bringing chapters across Latin America together. That experience was amazing!
+
+I went to Uruguay last year, and it was fantastic to see so many R users from diverse backgrounds. It’s very exciting! The R User Groups are a great way to connect, and I always recommend them to others. People tend to respond very positively, and I am so proud to be part of this community.
+
+You can reach out to R-Ladies Buenos Aires through the following:
+
+Instagram:[https://www.instagram.com/rladiesba/?hl=en](https://www.instagram.com/rladiesba/?hl=en)
+
+Facebook: [https://www.facebook.com/RladiesBA/](https://www.facebook.com/RladiesBA/)
+
+Website: [https://rladiesba.netlify.app/](https://rladiesba.netlify.app/)
+
+X: [https://twitter.com/rladiesba?lang=en](https://twitter.com/rladiesba?lang=en)
+
+## How do I Build an R User Group?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html) 
