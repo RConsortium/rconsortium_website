@@ -10,7 +10,69 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Mon, 23 Dec 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 27 Dec 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Navigating Economic Challenges Through Community: The Journey of R-Ladies Buenos Aires</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/betsabe1984/">Betsabe Cohen</a>, organizer of <a href="https://www.meetup.com/rladies-buenos-aires/">R-Ladies Buenos Aires</a>, recently spoke with the R Consortium about the growth and diversity of the R community in Argentina and its role in navigating the country’s economic challenges. Betsy shared insights into the group’s activities, including hosting workshops on tools like Quarto and plans to launch a Shiny-focused reading club. She also highlighted the importance of fostering inclusion and collaboration within the community locally and across Latin America.</p>
+<p><img src="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/BetsabeCohen.png" class="img-fluid" style="width:60.0%"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>My background is in sociology. I’m originally from Buenos Aires and have worked in the field for about 15 years. I became involved with the R community through some colleagues and a bit by chance. I discovered R when a friend, who was starting to use it, introduced me to it. She was already connected with the R community, specifically R-Ladies. A few years later, I became an organizer for the group.</p>
+<p><strong>Can you share what the R community is like in Buenos Aires?</strong></p>
+<p>R is primarily used in academia but is also prevalent in industry. The R community is very diverse, consisting of people from various backgrounds. We have industry professionals, researchers, and individuals from the government and non-profit sectors. I started using R in a non-profit environment. Our community includes a wide range of skill levels, from beginners to intermediate and advanced users, which adds to its diversity.</p>
+<p>Data analysis has become a valuable skill in the job market. Argentina is experiencing a job crisis, making it crucial for people to access information. However, because much of this information is often in English, we aim to generate materials in Spanish and share them with our community, as linguistic barriers can be restrictive.</p>
+<p>Communities like our group here in Buenos Aires are essential for people to access this information. However, it can be challenging for us as organizers, especially since we also navigate this crisis ourselves. Many of us juggle multiple jobs, making it challenging to find the time to teach and share information with others.</p>
+<p>Balancing these responsibilities can feel like double work, and that’s what we’re currently facing.</p>
+<p><img src="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto1.png" class="img-fluid"></p>
+<p><strong>You had a Meetup on “<a href="https://www.meetup.com/rladies-buenos-aires/events/304386918/?eventOrigin=group_past_events">Turn your data into visual stories with Quarto</a>.” Can you share more about the topic covered? Why this topic?</strong></p>
+<p>We chose a topic beneficial for people searching for jobs related to data communication, visualization, and scientific reporting. <a href="https://quarto.org/">Quarto</a> is an excellent tool for this purpose. The R community and the RUGS have embraced tools that enhance communication, making it more manageable within the scientific community and the business environment. Quarto allows individuals to continue using R while also adapting to various workplaces.</p>
+<p>By sharing Quarto with others and demonstrating its capabilities, we aim to help people communicate effectively. Since R is primarily taught in universities but needs a proper communication tool, this was a significant factor in our decision to support and assist others.</p>
+<p>Additionally, I have some exciting news: we are planning to start a reading club focused on mastering <a href="https://shiny.posit.co/">Shiny</a> for next year.</p>
+<p>We are still preparing it. Shiny is widely used to make data accessible to users, which is part of our decision-making to support people during this challenging time. Reading this book alone is not the same as sharing the experience with others. There is significant value in sharing information and being part of a network, as it fosters community and support among us.</p>
+<p><img src="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto2.png" class="img-fluid"></p>
+<p><strong>Do you host your events in person or online? What kind of response do you get for each type of event?</strong></p>
+<p>We host both in-person and online events. Sometimes, we can hold events in both formats, but other times, we can only offer them online because the conditions are not ideal for a physical gathering. We record the live events and upload them to our <a href="https://www.youtube.com/c/RLadiesBuenosAires">YouTube</a> channel.</p>
+<p>For example, we organized a large event last year that attracted 80 university students. The venue was so full that no one else could enter, and the event generated significant engagement and views on YouTube afterwards.</p>
+<p>Some subjects are particularly appealing. Our goal is to reach as many people as possible, but I think a key point here is that inclusion is tied not only to gender but also to the economic dimensions of the issue.</p>
+<p>The demand for the recordings we upload to YouTube and access to our meetings is influenced by the employment and economic crises we face. This challenge concerns the material aspects, such as accessing high-speed internet or owning a computer, and the time required to participate in these events. For instance, many people may work night shifts, making it difficult for them to attend events.</p>
+<p>We typically schedule our meetings outside of working hours. The standard work schedule in Argentina runs from 9 AM to 6 PM, so we aim to hold our events around 7 PM to accommodate everyone. However, some individuals still need help to attend because they may have two jobs, leading them to plan to watch the YouTube recordings over the weekend.</p>
+<p>This situation illustrates our understanding of inclusion; it is not solely about gender—thankfully, our country is making strides in that area—but also about addressing economic challenges.</p>
+<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people unable to attend physical events in the future?</strong></p>
+<p>We encourage working in pairs when conducting activities in a live classroom, mainly because only some have a computer. It creates an excellent dynamic for us, especially when participants have different skill levels. In our recent sessions, most people had their computers, but that was only sometimes the case. We use Post-it notes to address problems on individual computers. When everything is running smoothly, we engage in live coding, and participants can simply post their notes when they encounter issues.</p>
+<p>We organize our roles carefully to ensure efficiency. One of us may demonstrate the general code while live coding, while other organizers take on different responsibilities. Dividing the roles helps us focus on smaller tasks and work together effectively.</p>
+<p>This approach applies not only in-person but also during our Zoom meetings. However, people seem less open to sharing their stories virtually. There’s something unique about face-to-face interactions compared to being online. After COVID-19, many people grew weary of Zoom meetings, but there were still benefits to being connected virtually. I participated in events I would never have had the chance to join otherwise.</p>
+<p>There’s something unique about sharing space. I think the Post-it notes work well for us, along with consistently sharing information and being well-prepared for the day.</p>
+<p>When someone is going to present live coding, they feel more comfortable knowing that they don’t have to worry about other tasks. We always make it a point to take care of everything by dividing responsibilities and staying organized beforehand.</p>
+<p>We prepare everything we need for the day, from coffee and cookies to all the necessary materials. Someone is clearly assigned to each task, and I believe that’s the best approach. At least it works great for us!</p>
+<p><strong>Can you share more about the journey of R-Ladies Buenos Aires?</strong></p>
+<p>It has been a long journey for us in Buenos Aires. Buenos Aires was Argentina’s first chapter, and many other chapters of our Slack account opened up. We still share the same main Slack, R Ladies Buenos Aires, along with the other provinces that are very important to us.</p>
+<p>I had the opportunity to travel to the country’s south to meet some of the organizers of <a href="https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/">R Ladies Bariloche</a>, where we have another chapter. I also participated in events like <a href="https://latinr.org/">LatinR</a>, bringing chapters across Latin America together. That experience was amazing!</p>
+<p>I went to Uruguay last year, and it was fantastic to see so many R users from diverse backgrounds. It’s very exciting! The R User Groups are a great way to connect, and I always recommend them to others. People tend to respond very positively, and I am so proud to be part of this community.</p>
+<p>You can reach out to R-Ladies Buenos Aires through the following:</p>
+<p>Instagram:<a href="https://www.instagram.com/rladiesba/?hl=en">https://www.instagram.com/rladiesba/?hl=en</a></p>
+<p>Facebook: <a href="https://www.facebook.com/RladiesBA/">https://www.facebook.com/RladiesBA/</a></p>
+<p>Website: <a href="https://rladiesba.netlify.app/">https://rladiesba.netlify.app/</a></p>
+<p>X: <a href="https://twitter.com/rladiesba?lang=en">https://twitter.com/rladiesba?lang=en</a></p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/</guid>
+  <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto2.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Books, Beginners, and Big Ideas: Beatriz Milz on Fostering R-Ladies São Paulo’s Vibrant Community</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1249,59 +1311,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/</guid>
   <pubDate>Fri, 20 Sep 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/smiles.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Empowering Data Science: How R is Transforming Research in Cameroon</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/nyavoratovo/?originalSubdomain=cm">NyAvo RATOVO-ANDRIANARISOA</a>, the co-founder of the <a href="https://www.meetup.com/r-community-cameroon/">R Community Cameroon</a>, recently spoke with the R Consortium about the rapid growth of the R community in Cameroon and the impact of R on local research and data analysis. NyAvo provided insights into the community’s activities, such as developing an R community website using Shiny and implementing innovative projects like a custom search application. He also discussed the challenges and strategies in building a robust R ecosystem in Central Africa.</p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/nyavo.jpg" class="img-fluid" style="width:50.0%"></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>I am a statistical engineer from the Institute of Statistics of Central Africa in Cameroon, originally from Madagascar. Currently, I serve in a monitoring and evaluation role with the United Nations. My journey with R began about five years ago as a student. I started learning R during my studies and expanded my expertise by freelancing as a <a href="https://shiny.posit.co/">Shiny</a> developer. Over time, I’ve also gained experience with OCR technology, working with Tesseract and utilizing Google Cloud Colab’s API Amazon Web services for R and artificial intelligence models.</p>
-<p>With a solid statistical background, I specialize in data mining. In 2020, before learning about the R Consortium campaign, I had already envisioned creating an R community in Cameroon. After discussing the idea with some colleagues and discovering the potential support, it became the perfect opportunity to bring this vision to life. My colleagues and I officially launched the R Community Cameroon at the beginning of this year.</p>
-<p>I would like to mention my colleagues who have co-founded the group with me: <a href="https://www.linkedin.com/in/romain-tchakoute-916126170/">Romain TCHAKOUTE</a>, <a href="https://www.linkedin.com/in/idrissa-dabo-72a199118/">Idrissa DABO</a>, <a href="https://www.linkedin.com/in/aboubacar-sa%C3%AFdou-boureima-0aa918203/">Saidou BOUREIMA</a>, <a href="https://www.linkedin.com/in/mianala-anaelle-manambiravaka-8291aa260/">Mianala MANAMBIRAVAKA</a>, and <a href="https://www.linkedin.com/in/ndjiya-djeumen-luc-ronald-franck-8a5968221/">Ronald DJEUMEN.</a></p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/community.webp" class="img-fluid"></p>
-<p><strong>Can you share what the R community is like in Cameroon?</strong>&nbsp;</p>
-<p>Cameroon is home to one of Central Africa’s largest science schools. I am part of a vibrant academic community of 30 members from several nationalities. This environment brings together some of the brightest minds, and R is an integral part of our curriculum. However, our use of R goes beyond basic statistics and plotting; we focus on more sophisticated applications, such as Monte Carlo estimation, model development, and advanced R programming.</p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/school.jpg" class="img-fluid"></p>
-<p>Several professors in our school possess strong statistical backgrounds and rely on R for their research. Additionally, our alums who have transitioned into the industry continue to leverage R for data analysis. While Cameroon has a limited amount of data, we conduct numerous surveys. The initial step most of us take is data cleaning, predominantly using R. Once the data is clean, we employ Quarto to generate automatic reports, allowing us to summarize survey results quickly. Some of my colleagues also explore other functionalities of R, like creating applications with R Shiny.</p>
-<p>Another significant group is comprised of economics students or those working on their theses. They often seek our assistance to learn R for tasks such as descriptive statistics and building logistic models.</p>
-<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people unable to attend physical events in the future?</strong>&nbsp;&nbsp;</p>
-<p>Currently, we rely on <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint">PowerPoint</a> to create posters for our events and <a href="https://meet.google.com/landing">Google Meet</a> for online meetings before having the Meetup Pro account provided by R Consortium. Many of us, the co-founders of the community, are technicians, so we also use Word for various tasks. However, leadership skills have been crucial in convincing people to join our vision. To engage others, we often organize dinner or lunchtime meetings. We’ve invested significant effort into these initiatives, and through them, we’ve successfully negotiated several partnerships. Initially, I contacted colleagues at the National Institute of Statistics to rally support for our cause.</p>
-<p>Our community now includes students and academics, and some PhD doctors are still in the learning phase. I discussed creating a community in Cameroon, asking what value we could offer to encourage their participation. I proposed that they become co-founders of the community, a role they could highlight on their resumes. Seven people have already stepped up as leaders within our group.</p>
-<p>We’re active both online and in person. It’s important to note that we organize two types of meetings. The first is an internal meeting with our community leaders, typically attended by around seven people. We use a WhatsApp group for communication and usually meet monthly for lunch at a restaurant for these meetings. The second activity involves larger groups. For these, we first coordinate with the administration, such as the school mentioned earlier, who then communicate with the students. We also document and share these activities online to inform others, though most of our communication is direct and specific.</p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/meeting.webp" class="img-fluid"></p>
-<p>For example, after explaining our vision to a university contact, they were interested and agreed to offer a course at their institution. We then coordinated with the student body leader, planned a session, and shared the event online. We even hired a professional photographer to capture the event, sharing the photos with the school for further distribution. However, we haven’t yet posted about this activity on LinkedIn.</p>
-<p>Looking ahead, we’re planning a session with another school—the statistical school where I studied. We’re currently in discussions with their management. Once we’ve had our conversation, possibly next week, we’ll talk with the student leaders. After the session, we plan to share our activities online, including photos, to highlight what we’re accomplishing in Cameroon.</p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/students.jpg" class="img-fluid"></p>
-<p><strong>Do you have any upcoming events planned for the group?</strong></p>
-<p>We have an upcoming event that I consider one of the most important we’ve planned. It is our group’s quarterly meeting. The main objective of this meeting is to develop our R community website using Shiny. It will be a workshop where we’ll gather in one place and form small groups comprising beginners and experienced members. During the workshop, we’ll collaborate to code and discuss ideas, and ideally, by the end of the session, we will have the code for our community website ready for deployment.</p>
-<p>We’re currently facing some logistical challenges to organize this event. In Cameroon, when we organize events, we strive for perfection, ensuring everything from photography to visibility is top-notch. We’re searching for a suitable hotel venue to host our event.</p>
-<p><strong>What trends do you currently see in R language and your industry?</strong></p>
-<p>In Cameroon, <a href="https://quarto.org/">Quarto</a> is one of the most popular packages we promote during our R community sessions. Another widely used package is R Markdown. While I primarily use <a href="https://rmarkdown.rstudio.com/">R Markdown</a> to produce outputs for my job, I am also working on becoming more proficient with Quarto, as it is the future of reporting and documentation.</p>
-<p>I frequently use the <a href="https://www.tidyverse.org/">tidyverse</a>, <a href="https://tidyr.tidyverse.org/">tidyr</a>, <a href="https://cran.r-project.org/web/packages/labelled/index.html">labelled</a>, and <a href="https://haven.tidyverse.org/">haven</a> suite of packages for data cleaning and reporting. A significant part of my job involves data cleaning, and I rely on tidyverse in conjunction with Quarto for these tasks.</p>
-<p>We also utilize R for machine learning, though there is still potential for improvement in this area. We are focused on leveraging Shiny, Quarto, and tidyverse for our work.</p>
-<p><strong>Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting, primarily related to your industry?</strong></p>
-<p>We are currently working on an exciting project that is still in progress. The aim is to develop an application inspired by the functionality seen in the movie Fast and Furious, where users can search for information on the Internet. We are utilizing the <a href="https://cran.r-project.org/web/packages/httr/index.html">httr</a> package to collect data from online sources.&nbsp;</p>
-<p>The application will enable users to input a search term, such as “lion in Cameroon,” and receive a dataset with all relevant information. Our goal is to provide high-quality data for researchers and other users, which involves considerable effort to ensure the accuracy and usefulness of the data.&nbsp;</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://www.r-consortium.org/all-projects/r-user-group-support-program">Learn more</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/</guid>
-  <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/empowering-data-science-how-r-is-transforming-research-in-cameroon/school.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
