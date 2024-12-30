@@ -10,7 +10,48 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 27 Dec 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 30 Dec 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Introducing R to Malawi: A Community in the Making</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>David Mwale, the <a href="https://www.meetup.com/r-users-malawi/">R Users Malawi</a> group organizer, recently spoke with the R Consortium about his efforts to establish and grow the R community in Malawi. David shared insights into the group’s inaugural meeting, the excitement surrounding R among researchers and students, and his plans to engage academic institutions through online and in-person events. He also discussed the challenges of introducing R in a region where other tools like Stata and SPSS dominate and his vision for fostering a vibrant and supportive R ecosystem in Malawi.</p>
+<p><img src="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/DavidMwale.png" class="img-fluid" style="width:50.0%"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>I hold a bachelor’s degree in agricultural economics and a diploma in monitoring and evaluation. I have experience working with various data software, including Stata and SPSS. Last year (2023), I enrolled in a master’s program in data science at the <a href="https://www.ed.ac.uk/">University of Edinburgh</a>, where I was introduced to the R programming language. I’ve used R a few times at work for school assessments and participated in several training sessions on LinkedIn Learning.</p>
+<p>Recently, I discovered user groups for R in neighboring countries, such as <a href="https://r-consortium.org/posts/collaborative-growth-the-botswana-r-user-group-and-regional-partnerships/index.html">Botswana</a>. I contacted the R user group in <a href="https://www.meetup.com/joburg-r-users-group/">Johannesburg</a> and learned about another community group on LinkedIn. I inquired about how they established their groups so we could create our own R user group. Following the steps they provided and the information I found on the R Consortium website, I applied to set up our group. I’m happy to report that we had our first meeting just last month.</p>
+<p><strong>Can you share what the R community is like in Malawi?</strong></p>
+<p>The use of R in Malawi is still in its infancy and is not widely adopted. For instance, at one academic institution, master’s students are still being taught Stata and SPSS. While these tools are not wrong, R is a programming language growing in popularity. It has a large community and significant support.</p>
+<p>One issue may be that academic institution lecturers themselves still need to become familiar with R. They tend to teach what they already know, which might limit students’ exposure to more modern tools. A colleague of mine, pursuing his studies at an institution in Malawi, mentioned that they still use Stata for their master’s dissertation. Again, while this is acceptable, R offers more advantages.</p>
+<p><img src="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/RUsersMalawi.png" class="img-fluid" style="width:50.0%"></p>
+<p><strong>How was the response to your first event? How did you promote the event?</strong></p>
+<p>I created a <a href="https://www.linkedin.com/company/r-users-malawi/posts/?feedView=all">LinkedIn</a> account and designed a poster for the event. I posted the poster on LinkedIn, X (formerly Twitter), and my WhatsApp status. Many people registered for the event; however, since this was our first event, I needed to figure out how to manage the registration link. We encountered an issue with the registration link for which platform to use.</p>
+<p>I switched from Zoom to Google Meet because Zoom has associated costs. Although many people registered for the meeting, the turnout was significantly lower than expected. There might have been confusion regarding the links I shared. We used one link on the advertising poster, but I sent a different link closer to the meeting time through the R user group. Some people did not notice the latest email I sent.</p>
+<p><strong>What are your plans for the group going forward? Do you plan on hosting online or in-person events?</strong></p>
+<p>I have two plans. I intend to continue hosting meetings online and in person, particularly at universities, where I can engage with fellow students.</p>
+<p>In summary, I aim to organize a meeting around January or February in 2025. I would like to connect with either a student leader or a department head, such as a lecturer interested in data science so that we can hold an R user session for the students on their campus.</p>
+<p>Regarding the group’s organization, I am currently looking for co-organizers. I reached out to one person, but they are too busy. I also contacted another individual currently in Germany but originally from Malawi, and he is interested in participating as an organizer.</p>
+<p>When I advertised the R User Group, there was a positive response because R is not widely used here in Malawi. Despite its limited usage, there was significant excitement among people working in research, data monitoring, evaluation, and academic students. Although the turnout at our first meeting was lower than expected, the enthusiasm will grow as we continue. Many people are eager to learn how to use R.</p>
+<p>Since this is just the beginning, it can be challenging to get started and engage people, but over time, we will likely attract more members and find co-organizers to assist with event planning. We are optimistic about promoting the use of R in Malawi.</p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/</guid>
+  <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/RUsersMalawi-main.png" medium="image" type="image/png" height="109" width="144"/>
+</item>
 <item>
   <title>Navigating Economic Challenges Through Community: The Journey of R-Ladies Buenos Aires</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1266,51 +1307,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/</guid>
   <pubDate>Mon, 23 Sep 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/volcalc.webp" medium="image" type="image/webp"/>
-</item>
-<item>
-  <title>Free Boba Tea and Technical R Topics Lure Young Learners to New Brunei R User Group</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/haziqjamil/">Haziq Jamil</a>, the founder and organizer of the <a href="https://www.meetup.com/bruneir/">Brunei R User Group</a>, recently spoke with the R Consortium. Haziq established the first R User Group in Brunei to promote R programming and create collaborative learning environments. Under his leadership, the group hosts monthly meetups and events to advance R skills across various sectors in Brunei. Through these efforts, Haziq aims to build a supportive and inclusive R community, encouraging both personal growth and data-driven innovation in the region.</p>
-<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/haziq-jamil.jpg" class="img-fluid"></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>My name is Haziq Jamil, and I am an Assistant Professor in Statistics at Universiti Brunei Darussalam, the leading higher education institution in Brunei. I have used R for almost ten years during my studies and on many personal and professional projects.</p>
-<p>The Brunei R User Group was founded in February 2024, and I serve as its chair and founder. My role is to lead the group’s administration, oversee its overall direction and strategy, and ensure that its initiatives align with its mission of promoting R programming and fostering a supportive learning environment, focusing on community engagement and collaboration.</p>
-<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/smiles.jpg" class="img-fluid"></p>
-<p><strong>Can you share what the R community is like in Brunei? </strong></p>
-<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/brunei-rugs-logo.png" class="img-fluid" style="width:50.0%"></p>
-<p>The R community in Brunei may be small, but it is growing thanks to the efforts of the Brunei R User Group. The group organizes monthly meetups and events to promote learning and development in R programming and advance its use across various fields in Brunei. These gatherings provide opportunities to expand the community by enhancing participants’ skills, offering a platform for networking with like-minded individuals, and engaging in practical applications such as data analysis, visualization, and spatial data techniques. By creating an inclusive R community, the group aims to support individual growth in Brunei and foster collaboration on data-driven R projects. Whether for students, professionals, or hobbyists, the group strives to provide a supportive space for learning, sharing insights, and driving innovation within the local R community.</p>
-<p><strong>You hosted a Meetup, “<a href="https://www.meetup.com/bruneir/events/300000854/?eventOrigin=group_events_list">R&gt;aya with R</a>,” in April. Can you share more about the topic? Why this topic? </strong></p>
-<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/brunei-raya-meetup.jpg" class="img-fluid"></p>
-<p>The R User Group’s “<a href="https://bruneir.github.io/posts/bru-2/">R&gt;aya with R</a>” Meetup in Brunei was a lively event that combined Hari Raya Aidilfitri’s (Eid-ul-Fitr) festive spirit with the exploration of R programming. To engage younger audiences, we offered free boba tea as a beverage during the session. The event featured informative sessions led by expert community members, each focusing on advanced topics relevant to different fields.</p>
-<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/boba.jpg" class="img-fluid"></p>
-<p>One of the critical presentations was on “Survival Analysis” by <a href="https://www.linkedin.com/in/elvynna-leong-84b449190/?originalSubdomain=bn">Dr.&nbsp;Elvynna Leong</a>. She explained statistical techniques to predict the time until an event of interest, such as guests’ arrival at a Hari Raya open house. This topic is directly related to fields that depend on time-to-event data, such as healthcare or actuarial science.</p>
-<p><img src="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/presentation.jpg" class="img-fluid"></p>
-<p>One of the highlights was <a href="https://www.linkedin.com/in/wafid-sophian-6b8073141/?originalSubdomain=bn">Wafid Sophian</a>’s session on “Simulation Methods for Economic Analysis.” In this presentation, Wafid demonstrated how R can be used to simulate and analyze complex economic scenarios. The topic focused on modeling outcomes and making data-driven predictions. It was chosen due to its significance in finance and business analytics.</p>
-<p><a href="https://www.linkedin.com/in/eden-ng-737504177/">Dr.&nbsp;Eden Ng</a> presented on “Mathematical Modeling of Evolutionary Biology,” showcasing how R can be used to model biological evolutionary processes. This session visualized the intersection of R programming and biology, thus emphasizing R’s utility in research areas such as genetics and evolutionary studies.</p>
-<p>The event covered three topics in the areas of mathematics, economics, and biology. It was open to all individuals interested in learning about the capabilities and usage of the R language, regardless of whether they were beginners or experts.</p>
-<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future? </strong></p>
-<p>For planning and executing events like the “<a href="https://www.meetup.com/bruneir/events/299246264/?eventOrigin=group_events_list">Analysing Spatial Data with R</a>” event, the R&gt;aya Meetup, and the “<a href="https://www.meetup.com/bruneir/events/301146476/?eventOrigin=group_events_list">Introduction to R</a>” sessions, we utilized <a href="https://github.com/bruneir">Github</a>. To host R scripts, datasets, and event materials. Our participants can access and review the code before and after the event. It also provides a platform for issue tracking and version control to facilitate feedback and group collaboration. It helps those who can’t attend in person to engage and contribute to our <a href="https://bruneir.github.io/">Quarto Blog</a>. To publish event summaries, key takeaways, and additional resources on the official Brunei R User Group blog. We hope to provide a centralized location for information and help remote participants catch up.</p>
-<p><strong>Please share any additional details you would like to include in the blog. </strong></p>
-<p>As the first R user group in Brunei, we are excited to promote the adoption and growth of R across various industries. Our mission goes beyond just hosting events—we are dedicated to creating and nurturing an inclusive R community and showcasing the power of R in numerous fields.</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><strong><a href="../../all-projects/rugsprogram.html">Learn more</a>!!</strong></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/</guid>
-  <pubDate>Fri, 20 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/smiles.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
