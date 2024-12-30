@@ -1,0 +1,49 @@
+---
+title: "Introducing R to Malawi: A Community in the Making"
+description: "David Mwale, the R Users Malawi group organizer, recently spoke with the R Consortium about his efforts to establish and grow the R community in Malawi."
+author: "R Consortium"
+image: "RUsersMalawi-main.png"
+date: "12/30/2024"
+---
+
+David Mwale, the [R Users Malawi](https://www.meetup.com/r-users-malawi/) group organizer, recently spoke with the R Consortium about his efforts to establish and grow the R community in Malawi. David shared insights into the group's inaugural meeting, the excitement surrounding R among researchers and students, and his plans to engage academic institutions through online and in-person events. He also discussed the challenges of introducing R in a region where other tools like Stata and SPSS dominate and his vision for fostering a vibrant and supportive R ecosystem in Malawi.
+
+![](DavidMwale.png){width=50%}
+
+**Please share your background and involvement with the RUGS group.**
+
+I hold a bachelor's degree in agricultural economics and a diploma in monitoring and evaluation. I have experience working with various data software, including Stata and SPSS. Last year (2023), I enrolled in a master's program in data science at the [University of Edinburgh](https://www.ed.ac.uk/), where I was introduced to the R programming language. I've used R a few times at work for school assessments and participated in several training sessions on LinkedIn Learning.
+
+Recently, I discovered user groups for R in neighboring countries, such as [Botswana](https://r-consortium.org/posts/collaborative-growth-the-botswana-r-user-group-and-regional-partnerships/index.html). I contacted the R user group in [Johannesburg](https://www.meetup.com/joburg-r-users-group/) and learned about another community group on LinkedIn. I inquired about how they established their groups so we could create our own R user group. Following the steps they provided and the information I found on the R Consortium website, I applied to set up our group. I’m happy to report that we had our first meeting just last month. 
+
+**Can you share what the R community is like in Malawi?** 
+
+The use of R in Malawi is still in its infancy and is not widely adopted. For instance, at one academic institution, master's students are still being taught Stata and SPSS. While these tools are not wrong, R is a programming language growing in popularity. It has a large community and significant support.
+
+One issue may be that academic institution lecturers themselves still need to become familiar with R. They tend to teach what they already know, which might limit students' exposure to more modern tools. A colleague of mine, pursuing his studies at an institution in Malawi, mentioned that they still use Stata for their master's dissertation. Again, while this is acceptable, R offers more advantages.
+
+![](RUsersMalawi.png){width=50%}
+
+**How was the response to your first event? How did you promote the event?** 
+
+I created a [LinkedIn](https://www.linkedin.com/company/r-users-malawi/posts/?feedView=all) account and designed a poster for the event. I posted the poster on LinkedIn, X (formerly Twitter), and my WhatsApp status. Many people registered for the event; however, since this was our first event, I needed to figure out how to manage the registration link. We encountered an issue with the registration link for which platform to use.
+
+I switched from Zoom to Google Meet because Zoom has associated costs. Although many people registered for the meeting, the turnout was significantly lower than expected. There might have been confusion regarding the links I shared. We used one link on the advertising poster, but I sent a different link closer to the meeting time through the R user group. Some people did not notice the latest email I sent.
+
+**What are your plans for the group going forward? Do you plan on hosting online or in-person events?**
+
+I have two plans. I intend to continue hosting meetings online and in person, particularly at universities, where I can engage with fellow students.
+
+In summary, I aim to organize a meeting around January or February in 2025. I would like to connect with either a student leader or a department head, such as a lecturer interested in data science so that we can hold an R user session for the students on their campus.
+
+Regarding the group's organization, I am currently looking for co-organizers. I reached out to one person, but they are too busy. I also contacted another individual currently in Germany but originally from Malawi, and he is interested in participating as an organizer. 
+
+When I advertised the R User Group, there was a positive response because R is not widely used here in Malawi. Despite its limited usage, there was significant excitement among people working in research, data monitoring, evaluation, and academic students. Although the turnout at our first meeting was lower than expected, the enthusiasm will grow as we continue. Many people are eager to learn how to use R.
+
+Since this is just the beginning, it can be challenging to get started and engage people, but over time, we will likely attract more members and find co-organizers to assist with event planning. We are optimistic about promoting the use of R in Malawi.
+
+## How do I Build an R User Group?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html) 
