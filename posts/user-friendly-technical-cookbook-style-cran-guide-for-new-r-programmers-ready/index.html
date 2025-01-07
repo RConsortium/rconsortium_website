@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-13">
+<meta name="author" content="Jasmine Daly, Beni Altmann">
+<meta name="dcterms.date" content="2025-01-07">
+<meta name="description" content="The CRAN Cookbook is creating a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process">
 
-<title>R Consortium Infrastructure Steering Committee Charter – R Consortium</title>
+<title>User-Friendly Technical Cookbook-Style CRAN Guide for New R Programmers Ready – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,22 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3eee4d7f0aa6e9203bbb9ac8a53833ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3eee4d7f0aa6e9203bbb9ac8a53833ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,18 +80,18 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -104,35 +106,35 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -143,15 +145,15 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -162,23 +164,23 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="../all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -201,7 +203,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -216,15 +218,15 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
  <span class="dropdown-text">R/Medicine</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">WG Calendar</span></a>
   </li>  
     </ul>
@@ -235,25 +237,25 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -284,121 +286,93 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">User-Friendly Technical Cookbook-Style CRAN Guide for New R Programmers Ready</h1>
+                  <div>
+        <div class="description">
+          The CRAN Cookbook is creating a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Jasmine Daly, Beni Altmann </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 7, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">R Consortium Infrastructure Steering Committee Charter</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 13, 2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="r-consortium-infrastructure-steering-committee-charter" class="level1">
-<h1>R Consortium Infrastructure Steering Committee Charter</h1>
-<section id="mission-of-the-infrastructure-steering-committee" class="level2">
-<h2 class="anchored" data-anchor-id="mission-of-the-infrastructure-steering-committee">1. Mission of the Infrastructure Steering Committee</h2>
-<p>The mission and goals of the Infrastructure Steering Committee include the following activities:</p>
-<ol type="a">
-<li><p>advance the worldwide promotion of and support for the R open source language and environment as the preferred language for statistical computing and graphics (the “Environment”);</p></li>
-<li><p>create, organize, establish, maintain and develop infrastructure projects, technical and infrastructure collaboration initiatives, support specific initiatives related to the Environment and within the budget approved, and as provided by, the Board, and such other initiatives (collectively, “Projects”) as the Infrastructure Steering Committee deems appropriate to support, enable and promote the Environment;</p></li>
-<li><p>encourage and increase user adoption, involvement with, and contribution to, the Environment;</p></li>
-<li><p>facilitate communication and collaboration among users and developers of the Environment, the R Consortium and the R Foundation;</p></li>
-<li><p>serve as the primary point of contact among the R Consortium and its user and developer base and act as a liaison to open source communities;</p></li>
-<li><p>operate within budgets approved by the Board;</p></li>
-<li><p>support and maintain policies set by the Board; and</p></li>
-<li><p>undertake such other activities as may from time to time be appropriate to further the purposes and achieve the goals set forth above.</p></li>
-</ol>
+<p><em>Guest blog post contributed by Jasmine Daly, Principal Consultant &amp; Founder of <a href="https://www.dalyanalytics.com/">Daly Analytics</a>, maintainer of 2 CRAN packages, and Beni Altmann, Student, assistant member of the CRAN Team working on CRAN submissions</em></p>
+<section id="making-the-cran-submission-process-easy" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-cran-submission-process-easy">Making the CRAN Submission Process Easy</h2>
+<p>As we close out the first phase of the project - Improving the Skills of R Package Maintainers, also known as <a href="https://contributor.r-project.org/cran-cookbook/">The CRAN Cookbook</a> - we’re reflecting on its journey and impact. This initiative began with an ambitious but focused goal: to create a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process. The ultimate vision was to streamline this process, reduce common frustrations, and elevate the quality of open-source contributions to the R ecosystem.</p>
+<p>The CRAN Cookbook aimed to provide clear, explainable solutions for frequent errors while supporting maintainers in producing high-quality software.</p>
+<p>We’ve come a long way in a short time. We’re excited to share what we’ve accomplished!</p>
+<p>If you want to help contribute, please see: <a href="https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide">https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide</a></p>
 </section>
-<section id="membership-on-the-infrastructure-steering-committee" class="level2">
-<h2 class="anchored" data-anchor-id="membership-on-the-infrastructure-steering-committee">2. Membership on the Infrastructure Steering Committee</h2>
-<p>The voting membership of the Infrastructure Steering Committee shall consist of:</p>
-<ol type="a">
-<li><p>one appointed representative from each Platinum Member;</p></li>
-<li><p>one appointed representative from the R Foundation Member;</p></li>
-<li><p>a number of elected representatives, selected by the Silver Members as a class that is equal to the number in the R Consortium Board of Directors elected Silver Representative; and</p></li>
-<li><p>the project lead from each top-level project, subject to section 3.g. below.</p></li>
-</ol>
+<section id="overview-of-what-we-have-currently-published" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-what-we-have-currently-published">Overview of what we have currently published</h2>
+<p>After nearly 6 months of collaboration, we’ve published a comprehensive cookbook addressing the most common issues encountered during the CRAN submissions. Our work benefited greatly from Beni Altmann’s deep experience as a member of the CRAN team, where he has spent a lot of time interfacing with maintainers.</p>
+<p>The CRAN Cookbook includes:</p>
+<ul>
+<li><strong>General Issues</strong>: Best practices and tips guidance for CRAN submissions.</li>
+<li><strong>Manuals &amp; Documentation Issues</strong>: Tips on creating clear, accurate, and compliant help documentation files, using roxygen2, and creating examples, vignettes, and tests..</li>
+<li><strong>Code Issues</strong>: Addressing common challenges in writing functions, managing file and directory operations, and handling installation and compute resources.</li>
+<li><strong>DESCRIPTION File Issues</strong>: Essential guidance for crafting a compliant and informative DESCRIPTION file.</li>
+</ul>
 </section>
-<section id="operation-of-the-infrastructure-steering-committee" class="level2">
-<h2 class="anchored" data-anchor-id="operation-of-the-infrastructure-steering-committee">3. Operation of the Infrastructure Steering Committee</h2>
-<ol type="a">
-<li><p>The Infrastructure Steering Committee shall elect a Chair and an ISC Director (as defined in Section 4.3(d) of the R Consortium By-laws).</p></li>
-<li><p>The Chair and ISC Director may be (but are not required to be) the same person.</p></li>
-<li><p>The Infrastructure Steering Committee shall be under the leadership of the Chair, with the advice and consent of the Board, who shall serve at the pleasure of the Infrastructure Steering Committee and the Board.</p></li>
-<li><p>Each of the Infrastructure Steering Committee Chair and ISC Director shall be elected annually with no term limits.</p></li>
-<li><p>Any collaborator, user or developer of the Environment (collectively a “Collaborator”), can suggest, submit or otherwise propose a Project for consideration by the Infrastructure Steering Committee. The Infrastructure Steering Committee may implement such rules concerning format and minimum proposal requirements as it reasonably sees fit (“Proposal Requirements”).</p></li>
-<li><p>The Infrastructure Steering Committee may approve a process for the creation of and organization of Projects and the appointment of top-level projects as the Infrastructure Steering Committee deems necessary.</p></li>
-<li><p>The Infrastructure Steering Committee may from time to time designate particular Projects as top-level projects and specify an individual as the project lead for the top-level project (who will then become a voting member of the Infrastructure Steering Committee if the project lead’s employer is not otherwise represented on the Infrastructure Steering Committee, until such time as they are replaced as project lead or the Project ceases by Infrastructure Steering Committee action to be a top-level project).</p></li>
-<li><p>Any Project can be concluded, archived or otherwise terminated, and any top-level project can lose its status as a top-level project, by action of the Infrastructure Steering Committee.</p></li>
-<li><p>Any Project that involves code dependencies with the R language will require collaboration with the R Foundation or other maintainer of R code and permission from the relevant team.</p></li>
-</ol>
+<section id="how-its-getting-used-by-the-cran-team" class="level2">
+<h2 class="anchored" data-anchor-id="how-its-getting-used-by-the-cran-team">How it’s getting used by the CRAN Team</h2>
+<p>The CRAN team has already integrated the cookbook into their workflows. When encountering these common issues during package reviews, they refer maintainers to specific sections of the cookbook in their email correspondence. This approach not only expedites resolution but also empowers maintainers to tackle future challenges independently. It’s been gratifying to see the cookbook become a practical tool for fostering a more efficient submission process.</p>
 </section>
-<section id="voting" class="level2">
-<h2 class="anchored" data-anchor-id="voting">4. Voting</h2>
-<ol type="a">
-<li><p>Actions of the Infrastructure Steering Committee can be taken by meeting at which a quorum of voting representatives is present or by written action. Meetings can be held in person or via any electronic, telecommunication or other medium through which the meeting participants can clearly speak and hear each other. In the case of action by meeting, a quorum shall consist of a majority of the voting representatives of the Infrastructure Steering Committee.</p></li>
-<li><p>While it is the goal of the R Consortium to operate as a consensus based community, if any decision requires a vote to move forward, votes shall be based on a majority vote of the Infrastructure Steering Committee voting representatives then in attendance, or, in the case of written action, a vote of the majority of the voting members. In the event of a tied vote, the Chair shall be entitled to submit a tie-breaking vote.</p></li>
-</ol>
+<section id="what-we-learned-or-impressions-of-working-on-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-learned-or-impressions-of-working-on-this-project">What we learned or impressions of working on this project</h2>
+<p>Jasmine: “I’m grateful for the opportunity to contribute a valuable resource to the R community in the form of new, user-friendly technical documentation. I deeply valued the experience of collaborating with my co-writer, Beni and working together to hopefully improve the CRAN submission process.”</p>
+<p>Beni: “We, the CRAN team, see the same kind of issues for most packages. The cookbook style resource fitted perfectly for this project. It allowed for a jigsaw-like approach, writing piece after piece and setting it all together in the end. I think we created a great resource for future CRAN package maintainers.”</p>
 </section>
-<section id="policy" class="level2">
-<h2 class="anchored" data-anchor-id="policy">5. Policy</h2>
-<p>The Infrastructure Steering Committee will, to the best of its ability, adhere to the policies set forth below. In cases where the Infrastructure Steering Committee makes a judgment that the goals of R Consortium are better served by making exceptions to these policies, it is expected that the Infrastructure Steering Committee will communicate these exceptions and indicate their reasons to the Board at the next Board meeting.</p>
-<ol type="a">
-<li><p>The scope of projects chosen by the Infrastructure Steering Committee will focus on outreach, development and support of the user base, support of developers, support of the R Foundation, and general advancement of the Environment as defined in the R Consortium By-laws. R Consortium will support projects focused on the following:</p>
-<ol type="i">
-<li><p>The advancement of user adoption, involvement with, and contribution to, the Environment;</p></li>
-<li><p>Increasing communication and collaboration among users and developers of the Environment, the R Consortium and the R Foundation;</p></li>
-<li><p>Serving as the primary point of contact among the R Consortium and its user and developer base;</p></li>
-<li><p>Collaboration with external and industry projects;</p></li>
-<li><p>Funding of specific initiatives related to the Environment, within the parameters and budget set by the Board; and</p></li>
-<li><p>Other projects that the Infrastructure Steering Committee determines will improve the Environment.</p></li>
-</ol></li>
-<li><p>To the extent possible, there should be no overlap between the significant functions of top-level projects, and top-level projects should not interfere with their respective operations, purpose or goals.</p></li>
-<li><p>The following relate to the operation of the Infrastructure Steering Committee.</p>
-<ol type="i">
-<li><p><strong>Communication</strong>: All communication between and within the Infrastructure Steering Committee and projects will be in a fair, open and consistent fashion.</p></li>
-<li><p><strong>Openness</strong>: The Infrastructure Steering Committee should ensure that all decisions are made in an open and transparent fashion.</p></li>
-<li><p><strong>Responsive to Collaborators, Users and Developers</strong>: The Infrastructure Steering Committee should ensure issues and needs of Collaborators are being addressed in a timely fashion and that Collaborators can submit input and suggestions to the Infrastructure Steering Committee.</p></li>
-</ol></li>
-</ol>
+<section id="plausible-analytics-and-measuring-success-of-the-cran-cookbook" class="level2">
+<h2 class="anchored" data-anchor-id="plausible-analytics-and-measuring-success-of-the-cran-cookbook">Plausible analytics and measuring success of the CRAN Cookbook</h2>
+<p>We’ve implemented <a href="https://plausible.io/contributor.r-project.org%2Fcran-cookbook/">Plausible Analytics</a> to track engagement with the cookbook. By monitoring usage and feedback, we’ll continue refining the resource to better serve the R community.</p>
+<p><img src="analytics.png" class="img-fluid"></p>
 </section>
-<section id="amendments" class="level2">
-<h2 class="anchored" data-anchor-id="amendments">6. Amendments</h2>
-<ol type="a">
-<li>This charter may be amended by action of the Board of Directors of the R Consortium.</li>
-</ol>
+<section id="thank-yous" class="level2">
+<h2 class="anchored" data-anchor-id="thank-yous">Thank yous</h2>
+<p>To everyone who supported this project, thank you for helping us bring this vision to life. Whether you’re a new maintainer, a seasoned contributor, or part of the CRAN team, we hope the CRAN Cookbook proves to be an indispensable resource. Here’s to smoother submissions and stronger software in the R ecosystem!</p>
+<p>A heartfelt thank you to our community contributors, the steering committee, and the R Repositories Working Group. Your insights and feedback have been invaluable in shaping the CRAN Cookbook. This project would not have been possible without your support and collaboration!</p>
 </section>
-<section id="intellectual-property-policy" class="level2">
-<h2 class="anchored" data-anchor-id="intellectual-property-policy">7. Intellectual Property Policy</h2>
-<ol type="a">
-<li>In the case of all Projects involving the deriving or generation of code or documentation, the commitment and contribution of such code or documentation shall comply with, and be under, any applicable licensing requirements (outbound and inbound), and where no such licensing requirements exist, the commitment and contribution of such code or documentation shall be done under a license and pursuant to such other requirements, such as the submission of a developer’s certificate of origin, as may be approved by the Infrastructure Steering Committee. As part of the approval process of any license by the Infrastructure Steering Committee pursuant to this Section 7, the Infrastructure Steering Committee shall notify the Board of its intended license selection and provide the Board with an opportunity to comment on such license selection.</li>
-</ol>
+<section id="community-contributions-process" class="level2">
+<h2 class="anchored" data-anchor-id="community-contributions-process">Community contributions process</h2>
+<p>We can use your help! We also developed a <a href="https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide">contributors guide</a> to encourage community members to expand and improve the cookbook with their insights and experiences for often seen submission errors.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

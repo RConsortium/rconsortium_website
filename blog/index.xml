@@ -9,8 +9,68 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.39</generator>
-<lastBuildDate>Mon, 30 Dec 2024 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.40</generator>
+<lastBuildDate>Tue, 07 Jan 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>User-Friendly Technical Cookbook-Style CRAN Guide for New R Programmers Ready</title>
+  <dc:creator>Jasmine Daly, Beni Altmann</dc:creator>
+  <link>https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>Guest blog post contributed by Jasmine Daly, Principal Consultant &amp; Founder of <a href="https://www.dalyanalytics.com/">Daly Analytics</a>, maintainer of 2 CRAN packages, and Beni Altmann, Student, assistant member of the CRAN Team working on CRAN submissions</em></p>
+<section id="making-the-cran-submission-process-easy" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-cran-submission-process-easy">Making the CRAN Submission Process Easy</h2>
+<p>As we close out the first phase of the project - Improving the Skills of R Package Maintainers, also known as <a href="https://contributor.r-project.org/cran-cookbook/">The CRAN Cookbook</a> - we’re reflecting on its journey and impact. This initiative began with an ambitious but focused goal: to create a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process. The ultimate vision was to streamline this process, reduce common frustrations, and elevate the quality of open-source contributions to the R ecosystem.</p>
+<p>The CRAN Cookbook aimed to provide clear, explainable solutions for frequent errors while supporting maintainers in producing high-quality software.</p>
+<p>We’ve come a long way in a short time. We’re excited to share what we’ve accomplished!</p>
+<p>If you want to help contribute, please see: <a href="https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide">https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide</a></p>
+</section>
+<section id="overview-of-what-we-have-currently-published" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-what-we-have-currently-published">Overview of what we have currently published</h2>
+<p>After nearly 6 months of collaboration, we’ve published a comprehensive cookbook addressing the most common issues encountered during the CRAN submissions. Our work benefited greatly from Beni Altmann’s deep experience as a member of the CRAN team, where he has spent a lot of time interfacing with maintainers.</p>
+<p>The CRAN Cookbook includes:</p>
+<ul>
+<li><strong>General Issues</strong>: Best practices and tips guidance for CRAN submissions.</li>
+<li><strong>Manuals &amp; Documentation Issues</strong>: Tips on creating clear, accurate, and compliant help documentation files, using roxygen2, and creating examples, vignettes, and tests..</li>
+<li><strong>Code Issues</strong>: Addressing common challenges in writing functions, managing file and directory operations, and handling installation and compute resources.</li>
+<li><strong>DESCRIPTION File Issues</strong>: Essential guidance for crafting a compliant and informative DESCRIPTION file.</li>
+</ul>
+</section>
+<section id="how-its-getting-used-by-the-cran-team" class="level2">
+<h2 class="anchored" data-anchor-id="how-its-getting-used-by-the-cran-team">How it’s getting used by the CRAN Team</h2>
+<p>The CRAN team has already integrated the cookbook into their workflows. When encountering these common issues during package reviews, they refer maintainers to specific sections of the cookbook in their email correspondence. This approach not only expedites resolution but also empowers maintainers to tackle future challenges independently. It’s been gratifying to see the cookbook become a practical tool for fostering a more efficient submission process.</p>
+</section>
+<section id="what-we-learned-or-impressions-of-working-on-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-learned-or-impressions-of-working-on-this-project">What we learned or impressions of working on this project</h2>
+<p>Jasmine: “I’m grateful for the opportunity to contribute a valuable resource to the R community in the form of new, user-friendly technical documentation. I deeply valued the experience of collaborating with my co-writer, Beni and working together to hopefully improve the CRAN submission process.”</p>
+<p>Beni: “We, the CRAN team, see the same kind of issues for most packages. The cookbook style resource fitted perfectly for this project. It allowed for a jigsaw-like approach, writing piece after piece and setting it all together in the end. I think we created a great resource for future CRAN package maintainers.”</p>
+</section>
+<section id="plausible-analytics-and-measuring-success-of-the-cran-cookbook" class="level2">
+<h2 class="anchored" data-anchor-id="plausible-analytics-and-measuring-success-of-the-cran-cookbook">Plausible analytics and measuring success of the CRAN Cookbook</h2>
+<p>We’ve implemented <a href="https://plausible.io/contributor.r-project.org%2Fcran-cookbook/">Plausible Analytics</a> to track engagement with the cookbook. By monitoring usage and feedback, we’ll continue refining the resource to better serve the R community.</p>
+<p><img src="https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/analytics.png" class="img-fluid"></p>
+</section>
+<section id="thank-yous" class="level2">
+<h2 class="anchored" data-anchor-id="thank-yous">Thank yous</h2>
+<p>To everyone who supported this project, thank you for helping us bring this vision to life. Whether you’re a new maintainer, a seasoned contributor, or part of the CRAN team, we hope the CRAN Cookbook proves to be an indispensable resource. Here’s to smoother submissions and stronger software in the R ecosystem!</p>
+<p>A heartfelt thank you to our community contributors, the steering committee, and the R Repositories Working Group. Your insights and feedback have been invaluable in shaping the CRAN Cookbook. This project would not have been possible without your support and collaboration!</p>
+</section>
+<section id="community-contributions-process" class="level2">
+<h2 class="anchored" data-anchor-id="community-contributions-process">Community contributions process</h2>
+<p>We can use your help! We also developed a <a href="https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide">contributors guide</a> to encourage community members to expand and improve the cookbook with their insights and experiences for often seen submission errors.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/</guid>
+  <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/analytics.png" medium="image" type="image/png" height="66" width="144"/>
+</item>
 <item>
   <title>Introducing R to Malawi: A Community in the Making</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1253,60 +1313,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/announcing-health-technology-assessment-HTA-working-group/</guid>
   <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/announcing-health-technology-assessment-HTA-working-group/hta-main-page.png" medium="image" type="image/png" height="50" width="144"/>
-</item>
-<item>
-  <title>Unlocking Chemical Volatility: How the volcalc R Package is Streamlining Scientific Research</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/volcalc.webp" class="img-fluid"></p>
-<p>The R Consortium recently interviewed <a href="https://datascience.cct.arizona.edu/person/kristina-riemer">Kristina Riemer</a>, director of <a href="https://datascience.cct.arizona.edu/">the CCT Data Science Team</a> at the University of Arizona, and <a href="https://datascience.cct.arizona.edu/person/eric-scott">Eric Scott</a>, Scientific Programmer and Educator in the CCT Data Science Team, the developers behind the <a href="https://github.com/Meredith-Lab/volcalc">volcalc package</a>, to discuss the motivation and development of this innovative tool designed to automate the calculation of chemical compound volatilities. volcalc streamlines the process by allowing users to input a compound and quickly receive its volatility information, eliminating the need for time-consuming manual calculations. Initially created to assist <a href="https://has.arizona.edu/person/laura-meredith">Dr.&nbsp;Laura Meredith</a> in managing a large database of volatile compounds, volcalc has since grown into a more versatile tool under Eric’s leadership, now supporting a wider range of researchers.</p>
-<p>Kristina and Eric share insights into the challenges they faced, including managing dependencies, integrating with CRAN and Bioconductor, and refining complex molecular identification methods. They also discuss future enhancements, such as incorporating temperature-specific volatility calculations and expanding the package’s functionality to estimate other compound characteristics. This project was funded by the R Consortium.</p>
-<p><strong>Could you share what motivated the development of the volcalc package and how it aligns with the broader goals of the R ecosystem, particularly in scientific computing?</strong></p>
-<p><strong>Kristina</strong>: I was heavily involved in the initial development of volcalc, and later on, Eric took over the project. We developed volcalc because we began collaborating with Dr.&nbsp;Laura Meredith, who was compiling a database of volatile chemical compounds. At the time, she had around 300 compounds, and her students manually gathered details for each one by examining their representations and calculating various associated values. This process was tedious and prone to errors, so we thought there must be a more efficient and automated way to handle it.</p>
-<p>That’s when we came up with the idea of creating a pipeline where someone could input a compound and quickly receive its volatility information, eliminating the need for all the manual labor. The purpose of volcalc was to transform the process from taking months to gather details for 300 compounds to obtaining information for thousands in a much shorter time.</p>
-<p><strong>Eric</strong>: volcalc was initially developed specifically for a project where the researchers were mainly interested in chemical compounds from the <a href="https://www.genome.jp/kegg/">KEGG database (Kyoto Encyclopedia of Genes and Genomes)</a>. When I joined the team and learned about the project, I was thrilled because, as a chemical ecologist, I saw its potential. However, I also recognized a limitation: the tool only worked with the KEGG database. This was a drawback because many researchers, including food scientists and others who work with similar compounds, might not find their compounds in that specific database.</p>
-<p>This realization inspired me to apply for the R Consortium grant. We saw a significant opportunity to expand volcalc, making it more flexible and applicable to a wider range of researchers. We also wanted to improve its integration within the R ecosystem by adding features like returning the file path of a molecule representation after downloading it, so it could be easily piped into subsequent steps. These enhancements aimed to make the tool more versatile and user-friendly for a broader audience.</p>
-<p><strong>What were the most significant challenges you faced during the development of the initial version of volcalc, and how did you overcome them?</strong></p>
-<p><strong>Kristina</strong>: One of the most challenging aspects of developing volcalc, which continues to be an issue, is managing dependencies. Specifically, we rely heavily on a command-line program to handle much of the processing. Early on, we struggled with how to enable users to run volcalc without needing to install this program on their own computers, as many of our users aren’t familiar with that kind of setup. I spent a lot of time trying to create a reproducible environment using <a href="https://mybinder.org/">Binder</a>, but I was never able to get it fully working. Even today, there are still issues related to managing these dependencies, which Eric can elaborate on further.</p>
-<p>It was incredibly important to have Eric on this project because I don’t have a strong background in chemistry. His ability to come in and figure out some of the intricate details that would have taken me much longer to grasp was a huge advantage. The more we can collaborate with domain experts, the better our results will be.</p>
-<p><strong>Eric</strong>: One thing that has helped with the dependency challenges is that we’ve started building volcalc on <a href="https://r-universe.dev/search">R-Universe</a>, which means binaries are available there. While it’s not on CRAN yet, having these binaries on R-Universe makes installation a bit easier. However, we’ve faced some challenges with dependencies, particularly because two of them are from Bioconductor. We didn’t originally aim to develop this package for Bioconductor, which uses S4 objects and has different standards than CRAN. Our goal was to get it on CRAN, but our first submission was rejected because the license field for the Bioconductor package wasn’t formatted to CRAN’s liking. These differences between Bioconductor and CRAN have created barriers, even though the authors of the Bioconductor package have been very responsive. Their package works fine on Bioconductor, but it doesn’t meet CRAN’s criteria, which has been a frustrating challenge.</p>
-<p>Another major challenge in developing volcalc relates to the method we use for estimating volatility. This method involves counting the numbers of different functional groups on molecules—such as hydroxyl groups or sulfur atoms—and assigning coefficients to them. To do this programmatically, we use something called SMARTS, which is essentially like regular expressions but for molecular structures. Regular expressions for text are already challenging, but SMARTS is even more complex because it deals with three-dimensional molecules.</p>
-<p>Before I joined the group, the first version of volcalc had most of these functional groups figured out, but not all. I spent a significant amount of time trying to develop SMARTS strings to match additional molecules. Moving forward, I hope that if we implement new versions, we can get help from the community to refine these SMARTS strings, as there are likely people out there who are more skilled at it than I am.</p>
-<p><strong>The original project proposal mentions expanding volcalc to work with any chemical compound with a known structure. What are the key technical challenges you anticipate in achieving this goal?</strong></p>
-<p><strong>Eric</strong>: This task turned out to be less difficult than I initially expected, but let me explain. In the original version of volcalc, before we received the R Consortium funding, the main function started with a KEGG ID—an identifier specific to the KEGG database. The function would download a MOL file, which is a text representation of a molecule corresponding to that ID. It would then identify and count the functional groups in the molecule, and finally, calculate the volatility based on those counts.</p>
-<p>The major change we needed to implement to make volcalc more versatile was to decouple these steps. In the current version of volcalc, the functionality to download a MOL file from KEGG is still available, but it’s now separate from the main function that calculates volatility. This means that the inputs for calculating volatility can now be any MOL file, not just ones from KEGG. The file can come from any database, be exported from other software, or even be downloaded manually. Additionally, the tool now supports SMILES, which is another, simpler text-based representation of molecules.</p>
-<p>There are various ways to represent chemicals in text, including another format called <a href="https://www.inchi-trust.org/">InChI.</a> The Bioconductor packages we use, ChemmineR and ChemmineOB, have the ability to translate from InChI and other types of chemical representations. However, that feature isn’t available on Windows. So, I decided to keep volcalc focused on SMILES and MOL files. I believe that chemists and other researchers should be able to obtain data in one of these two formats, or use another tool to translate their data into these formats. I didn’t want to overload volcalc with the responsibility of being a chemical representation translator, as that didn’t seem like its primary purpose.</p>
-<p><strong>Can you walk us through the process of implementing the SIMPOL algorithm within the volcalcc package?</strong></p>
-<p><strong>Kristina</strong>: The algorithm itself is fairly simple; it’s just basic math. You need to input some constants, the mass of the compound, and the counts of the functional groups we discussed earlier. Writing the code for this was straightforward and not particularly challenging.</p>
-<p><strong>Eric</strong>: Each functional group has a coefficient associated with it, which is multiplied by the number of times that group appears in the molecule. These values are then summed up, and the mass of the molecule is factored in as well. The challenging part wasn’t the algorithm itself, which is straightforward—just multiplying by coefficients and adding them up. The real difficulty was interpreting what the authors of the algorithm meant by each of the functional groups. Some were oddly specific, like how the hydroxyl group that is part of a nitrophenol group isn’t supposed to count toward the total number of hydroxyl groups. I spent a lot of time poring over the paper, particularly one table, to fully understand how they defined each group. That interpretation was the hardest part.</p>
-<p><strong>What future functionalities or expansions do you see as crucial for volcalc, especially in the context of evolving research needs in chemoinformatics?</strong></p>
-<p><strong>Eric</strong>: Right now, we’re working on allowing users to specify different temperatures. The paper that describes the SIMPOL.1 method includes equations for how the coefficients of each functional group change with temperature. These changes aren’t always linear, and the contributions of functional groups can shift in importance as the temperature varies. This is an important feature to include because the version of volcalc we currently have uses coefficients calculated at 20°C, based on a table from the original paper. To accommodate other temperatures, we need to integrate another table that provides equations for calculating these coefficients based on temperature, and that’s what we’re working on.</p>
-<p>Another key feature we want to leave room for in the future is the ability to add other methods for estimating volatility. SIMPOL.1 is just one type of group contribution method, but there are other approaches described in various papers that use different functional groups, equations, and coefficients. The basic idea remains the same: count the functional groups in a molecule, apply an equation, and estimate volatility. We’re trying to structure the code in a way that makes it easy to incorporate additional methods later, even if we don’t add them right away. I think these are the most important features we’re focusing on right now.</p>
-<p><strong>Kristina</strong>: We’re focused on the features I mentioned in the near future, but looking further ahead, I could see volcalc expanding to estimate other characteristics of compounds beyond just volatility. While I’m not a chemistry expert or a chemical ecologist, I imagine that those interested in volatility might also be interested in other compound characteristics that currently lack automated tools for estimation. So, it’s possible the package could evolve to include those features.</p>
-<p>That said, one of the things I appreciate about the R package ecosystem is that it allows for specialized tools. Since anyone can build what they need, we don’t end up with massive, overly complex packages that try to do everything and become difficult to maintain. It might be better to keep volcalc focused and leave room for separate packages to handle additional functionality. This way, the tools remain manageable and easier to maintain in the long run.</p>
-<p><strong>How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</strong></p>
-<p><strong>Kristina</strong>: The application process was straightforward, and I found the grant format to be very practical. It was focused on milestones and product development, which is refreshing compared to many academic research grants that tend to avoid specific deliverables. I highly recommend considering this grant. I believe people often overlook smaller funding sources, but even small amounts can make a big impact on the work you’re doing.</p>
-<p><strong>Eric</strong>: The first time I applied for an R Consortium grant was as a grad student, and I strongly encourage trainees to apply as well. It was a great experience for me because I could do it independently—my advisor wasn’t involved as one of the authors, and it wasn’t a complex process like applying for an NSF grant. It was straightforward and really rewarding. The only tricky part was figuring out the payment process, but that’s something people can work out.</p>
-<p>I’ve noticed there seem to be fewer projects in recent years, and I don’t think it’s due to a lack of funding. It seems like fewer people are applying, which is why I especially encourage others to give it a shot. From what I’ve seen, there’s a very good chance of getting funded if you apply right now.</p>
-<p>People should be creative and think broadly about how their project can benefit the broader R community. This doesn’t mean you need to develop the next big thing like R-Universe or CRAN. It can be something smaller, like a package that other R users will find helpful. For example, with our project, volcalc, our main goal was to encourage chemists—who usually use point-and-click software—to start using R. That was enough of a contribution to the R community to get funded. So, I really encourage people to think creatively about what “benefiting the R community” can mean.</p>
-<section id="about-isc-funded-projects" class="level2">
-<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
-<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
-<p><a href="../../all-projects/">Learn More!</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/</guid>
-  <pubDate>Mon, 23 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research/volcalc.webp" medium="image" type="image/webp"/>
 </item>
 </channel>
 </rss>
