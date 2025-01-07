@@ -1,0 +1,56 @@
+---
+title: "User-Friendly Technical Cookbook-Style CRAN Guide for New R Programmers Ready"
+description: "The CRAN Cookbook is creating a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process"
+author: "Jasmine Daly, Beni Altmann"
+image: "analytics.png"
+date: "01/07/2025"
+---
+
+_Guest blog post contributed by Jasmine Daly, Principal Consultant & Founder of [Daly Analytics](https://www.dalyanalytics.com/), maintainer of 2 CRAN packages, and Beni Altmann, Student, assistant member of the CRAN Team working on CRAN submissions_
+
+## Making the CRAN Submission Process Easy
+
+As we close out the first phase of the project - Improving the Skills of R Package Maintainers, also known as [The CRAN Cookbook](https://contributor.r-project.org/cran-cookbook/) - we’re reflecting on its journey and impact. This initiative began with an ambitious but focused goal: to create a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process. The ultimate vision was to streamline this process, reduce common frustrations, and elevate the quality of open-source contributions to the R ecosystem.
+
+The CRAN Cookbook aimed to provide clear, explainable solutions for frequent errors while supporting maintainers in producing high-quality software. 
+
+We’ve come a long way in a short time. We're excited to share what we’ve accomplished!
+
+If you want to help contribute, please see: [https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide](https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide) 
+
+## Overview of what we have currently published 
+
+After nearly 6 months of collaboration, we’ve published a comprehensive cookbook addressing the most common issues encountered during the CRAN submissions. Our work benefited greatly from Beni Altmann’s deep experience as a member of the CRAN team, where he has spent a lot of time interfacing with maintainers.
+
+The CRAN Cookbook includes:
+
+* **General Issues**: Best practices and tips guidance for CRAN submissions.
+* **Manuals & Documentation Issues**: Tips on creating clear, accurate, and compliant help documentation files, using roxygen2, and creating examples, vignettes, and tests..
+* **Code Issues**: Addressing common challenges in writing functions, managing file and directory operations, and handling installation and compute resources.
+* **DESCRIPTION File Issues**: Essential guidance for crafting a compliant and informative DESCRIPTION file.
+
+## How it’s getting used by the CRAN Team
+
+The CRAN team has already integrated the cookbook into their workflows. When encountering these common issues during package reviews, they refer maintainers to specific sections of the cookbook in their email correspondence. This approach not only expedites resolution but also empowers maintainers to tackle future challenges independently. It’s been gratifying to see the cookbook become a practical tool for fostering a more efficient submission process.
+
+## What we learned or impressions of working on this project
+
+Jasmine: “I’m grateful for the opportunity to contribute a valuable resource to the R community in the form of new, user-friendly technical documentation. I deeply valued the experience of collaborating with my co-writer, Beni and working together to hopefully improve the CRAN submission process.”
+
+Beni: “We, the CRAN team, see the same kind of issues for most packages. The cookbook style resource fitted perfectly for this project. It allowed for a jigsaw-like approach, writing piece after piece and setting it all together in the end. I think we created a great resource for future CRAN package maintainers.”
+
+## Plausible analytics and measuring success of the CRAN Cookbook
+
+We’ve implemented [Plausible Analytics](https://plausible.io/contributor.r-project.org%2Fcran-cookbook/) to track engagement with the cookbook. By monitoring usage and feedback, we’ll continue refining the resource to better serve the R community.
+
+![](analytics.png)
+
+## Thank yous
+
+To everyone who supported this project, thank you for helping us bring this vision to life. Whether you’re a new maintainer, a seasoned contributor, or part of the CRAN team, we hope the CRAN Cookbook proves to be an indispensable resource. Here’s to smoother submissions and stronger software in the R ecosystem!
+
+A heartfelt thank you to our community contributors, the steering committee, and the R Repositories Working Group. Your insights and  feedback have been invaluable in shaping the CRAN Cookbook. This project would not have been possible without your support and collaboration!
+
+## Community contributions process
+
+We can use your help! We also developed a [contributors guide](https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide) to encourage community members to expand and improve the cookbook with their insights and experiences for often seen submission errors.
