@@ -1,0 +1,68 @@
+---
+title: "A Clinical Reporting Collaborative Triumph: Roche’s NEST and Admiral Teams"
+description: "Details on Roche's NEST and admiral teams' open source R packages and their partnership building reusable functions and utilities, testing documentation, and more."
+author: "Joe Zhu, Leena Khatri, Emily de la Rua, Edoardo Mancini, Kangjie Zhang, Daphne Grasselly"
+image: "nest-admiral.png"
+date: "01/15/2025"
+---
+
+_Guest Post contributed by Joe Zhu, Leena Khatri, Emily de la Rua, Edoardo Mancini, Kangjie Zhang, Daphne Grasselly_
+
+## Introduction
+
+In the dynamic world of clinical research, innovation and collaboration are key drivers of success. The NEST and admiral teams exemplify this through their groundbreaking partnership. By leveraging open-source tools and fostering a community-driven approach, they have significantly advanced data integration and reporting methodologies in the clinical research setting. This story celebrates their journey and achievements.
+
+![](nest-admiral.png)
+
+## The NEST Team
+
+The NEST team, an acronym for [Next-Generation Exploratory and Standardized Tools](https://insightsengineering.github.io/nest/), has pioneered a collection of open-sourced R packages designed to expedite insight generation under clinical research settings. Originating at Roche, NEST has attracted a diverse array of collaborators from academia, the pharmaceutical industry, and clinical research institutes, largely due to efforts like [pharmaverse](https://pharmaverse.org/). Their mission is to accelerate clinical reporting and welcome contributions from the broader scientific community.
+
+## The Admiral Team
+
+Focused on a complementary goal, the admiral team is dedicated to providing an [open-source, modularized toolbox for creating ADaM datasets in R](https://pharmaverse.github.io/admiral/). Their approach is transparent and collaborative, empowering users to co-create and refine a harmonized methodology for ADaM development across the pharmaceutical industry. The admiral team designs their tools to be user-friendly and versatile, capable of addressing a wide range of data requirements.
+
+## Setting the Stage for Collaboration
+
+Recognizing the potential for synergies, the NEST and Admiral teams embarked on a collaborative journey to enhance their respective toolsets.
+
+Their shared objectives included:
+
+
+
+* Developing a robust toolbox of reusable functions and utilities for ADaM dataset creation and Tables/Listings/Graphs creation.
+* Ensuring comprehensive documentation and testing of these functions.
+* Creating detailed vignettes to guide users in generating and manipulating various datasets, and for subsequent tabulation.
+* Encouraging contributions from the pharmaceutical community to foster a unified and robust development environment.
+
+## Overcoming Initial Challenges
+
+Initially, the NEST team relied on simulated data for integration testing, which often lacked realism and failed to cover corner cases or expose software limitations. The opportunity arose to address these challenges by switching to using the more realistic test data offered by the [{pharmaverseadam} package](https://cran.r-project.org/web/packages/pharmaverseadam/index.html), whose original source is real SDTM data published through the CDISC Test Data pilot. This pivot allowed the NEST team to achieve more realistic and comprehensive testing, thus enhancing the robustness of their development work, and the {pharmaverseadam}/{admiral} team to improve the quality of their templates and test data through the constructive feedback that was received during the implementation phase.
+
+## Key Milestones Achieved:
+
+**Realistic Data Integration:** Transitioning from simulated to more realistic data provided the NEST team with more accurate and relevant testing conditions. This change was crucial in identifying and rectifying potential software limitations.
+
+**Scope and Dependency Management:** Both teams agreed to avoid creating strong interdependencies that could extend release cycles. NEST packages maintained minimal data for documentation purposes, while admiral preserved extensive datasets separately.
+
+**CI Integration and Automation:** New CI integration tests ensured that template updates were automatically verified against stored pharmaverseadam datasets. This maintained consistency and allowed users to identify intended changes promptly.
+
+**Strategic Pipelines:** An automated pipeline was established to update pharmaverseadam ADaMs for each new release, reflecting any template changes Accurately.
+
+## Recent Developments
+
+The collaboration bore fruit as the teams uncovered critical insights and improvements:
+
+Using pharmaverseadam data in the scda.test package helped the NEST team identify and correct issues in their table template development, specifically in calculating denominator values.
+
+The realistic test data also revealed minor inconsistencies in the derivation of ECG data within the admiral framework, which were promptly addressed, enhancing data accuracy.
+
+## Conclusion
+
+The collaboration between the NEST and admiral teams showcases the power of open-source initiatives and community-driven efforts such as the pharmaverse in advancing clinical research. By integrating realistic data and refining their testing processes, they have significantly enhanced the robustness and reliability of their tools. This partnership not only accelerates insight generation but also cultivates a culture of collaboration and innovation, benefiting the broader pharmaverse community.
+
+The success of this collaboration highlights the profound impact of shared goals and collective innovation, paving the way for future advancements in clinical research methodologies and outcomes.
+
+### Acknowledgement
+
+We would like to thank Ben Straub, Jeff Dickinson, Stefan Bundfuss, Ross Farrugia, Zelos Zhu’s valuable contributions to this collaborative work.
