@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="R Consortium">
-<meta name="dcterms.date" content="2024-08-26">
-<meta name="description" content="The R Consortium is pleased to announce the successful completion of the Pilot 3 Submission which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete FDA response letter is available.">
+<meta name="author" content="Joe Zhu, Leena Khatri, Emily de la Rua, Edoardo Mancini, Kangjie Zhang, Daphne Grasselly">
+<meta name="dcterms.date" content="2025-01-15">
+<meta name="description" content="Details on Roche’s NEST and admiral teams’ open source R packages and their partnership building reusable functions and utilities, testing documentation, and more.">
 
-<title>News from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA – R Consortium</title>
+<title>A Clinical Reporting Collaborative Triumph: Roche’s NEST and Admiral Teams – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -289,10 +289,10 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">News from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA</h1>
+      <h1 class="title">A Clinical Reporting Collaborative Triumph: Roche’s NEST and Admiral Teams</h1>
                   <div>
         <div class="description">
-          The R Consortium is pleased to announce the successful completion of the Pilot 3 Submission which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete FDA response letter is available.
+          Details on Roche’s NEST and admiral teams’ open source R packages and their partnership building reusable functions and utilities, testing documentation, and more.
         </div>
       </div>
                 </div>
@@ -304,14 +304,14 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>R Consortium </p>
+               <p>Joe Zhu, Leena Khatri, Emily de la Rua, Edoardo Mancini, Kangjie Zhang, Daphne Grasselly </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 26, 2024</p>
+        <p class="date">January 15, 2025</p>
       </div>
     </div>
     
@@ -330,56 +330,58 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 
 
 
-<p><em>Blog contributed by Ning Leng, People and Product Leader, Roche-Genentech and Joel Laxamana, Principal Data Scientist, Roche-Genentech</em></p>
-<p>The R Consortium is pleased to announce the successful completion of the Pilot 3 Submission which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete <a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot3_Submission.pdf">FDA response letter</a> is available.&nbsp;&nbsp;</p>
-<p>The objective of the R Consortium R Submission Pilot 3 Project is to test the concept that an R-language based submission package for ADaMs and TLFs can meet the needs and the expectations of the FDA reviewers, including assessing code review and analyzing reproducibility. All submission materials and communications from this pilot are publicly available, with the aim of providing a working example for future R-language based FDA submissions. This is an FDA-industry collaboration through the non-profit organization R Consortium.</p>
-<p>All submission materials can be found at: <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda">submissions-pilot3-adam-to-fda</a>. This is the first publicly available R-based FDA submission package including R scripts to generate Analysis Data Models (ADaM) and Tables, Listings &amp; Figures (TLFs).</p>
-<p><img src="collaboration.png" class="img-fluid"></p>
-<p><em>Open-Source Collaboration in standardizing Clinical Trial analyses and Submissions. Broadening ways to bring treatments to Patients.</em></p>
-<section id="pilot-3-timeline" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-timeline">Pilot 3 Timeline</h2>
-<p>The initial submission was submitted through the eCTD gateway on Aug 28, 2023. FDA verbal responses were received from Jan-July 2024 during R submission working group meetings. Documentation of this initial feedback and response can be found at <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda/blob/main/m1/us/response-FDA-IR-pilot3.pdf">response-FDA-IR-pilot3.pdf</a>. The updated submission package addressed reported issues and was re-submitted on Apr 19, 2024. The final response letter from FDA was received on Aug 8, 2024.</p>
+<p><em>Guest Post contributed by Joe Zhu, Leena Khatri, Emily de la Rua, Edoardo Mancini, Kangjie Zhang, Daphne Grasselly</em></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In the dynamic world of clinical research, innovation and collaboration are key drivers of success. The NEST and admiral teams exemplify this through their groundbreaking partnership. By leveraging open-source tools and fostering a community-driven approach, they have significantly advanced data integration and reporting methodologies in the clinical research setting. This story celebrates their journey and achievements.</p>
+<p><img src="nest-admiral.png" class="img-fluid"></p>
 </section>
-<section id="pilot-3-scope" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-scope">Pilot 3 Scope</h2>
-<p>The Pilot 3 test submission exemplifies an all-R submission package for ADaMs and TLFs, adhering to electronic Common Technical Document (eCTD) specifications. This comprehensive package not only includes ADaMs and TLGs, but it emulates a full study submission package including the source Study Data Tabulation Models (SDTMs) used to generate the Pilot 3 ADaMs. It also encompasses the installation and loading of the proprietary {pilot3utils} R package, various open-source R packages, R scripts for the Analysis Data Model (ADaM) datasets derived from Pilot 3, and Tables, Listings, and Figures (TLFs) from Pilot 1. In addition to other requisite eCTD components, the Pilot 3 package also includes the Analysis Data Reviewer’s Guide (ADRG) providing detailed steps leading to the execution of the analysis R scripts to re-produce the ADaMs and TLFs from a FDA reviewers perspective. These Pilot 3 submission materials are linked above.</p>
-<p>Pilot 3 serves as a complement to Pilots <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">1</a> and <a href="https://github.com/RConsortium/submissions-pilot2-to-fda">2</a>, which demonstrated the feasibility of submitting TLF R scripts and R Shiny code, respectively. Furthermore, Pilot 3 successfully validated the submission of proprietary R packages in compressed file formats, serving as another alternative to {pkglite} or installation directly from github.</p>
-<p>If you have any questions about this Pilot 3 submission, we would love to hear from you. Feel free to submit any questions you may have as a <a href="https://github.com/RConsortium/submissions-pilot3-adam-to-fda/issues/new/choose">new issue</a> in our Pilot 3 github repository or you may find any of the Pilot 3 team members in <a href="https://pharmaverse.slack.com/archives/C030EB2M4GM">Pharmaverse slack</a>.</p>
+<section id="the-nest-team" class="level2">
+<h2 class="anchored" data-anchor-id="the-nest-team">The NEST Team</h2>
+<p>The NEST team, an acronym for <a href="https://insightsengineering.github.io/nest/">Next-Generation Exploratory and Standardized Tools</a>, has pioneered a collection of open-sourced R packages designed to expedite insight generation under clinical research settings. Originating at Roche, NEST has attracted a diverse array of collaborators from academia, the pharmaceutical industry, and clinical research institutes, largely due to efforts like <a href="https://pharmaverse.org/">pharmaverse</a>. Their mission is to accelerate clinical reporting and welcome contributions from the broader scientific community.</p>
 </section>
-<section id="learnings-from-pilots-1-through-3" class="level2">
-<h2 class="anchored" data-anchor-id="learnings-from-pilots-1-through-3">Learnings from Pilots 1 through 3</h2>
-<p>In the three pilots, for various TLFs, the working group members intentionally created different tables in different formats using various open-source R packages. The FDA staff successfully accepted and reproduced the results generated from these different open-source packages. However, though not in scope of these Pilots, we want to share awareness that sponsors are responsible for selecting open-source packages that demonstrate sufficient reliability. Further information on this can be found in the <a href="https://www.pharmar.org/">R Validation Hub</a>, formed in 2018 by the PSI AIMS Special Interest Group and supported by the R Consortium. It offers tools like <a href="https://www.pharmar.org/posts/news/updates-aug-2024/">{riskmetric}</a> to quantify the “risk” of R packages and a user-friendly R Shiny app, <a href="https://www.pharmar.org/riskassessment/">{riskassessment}</a>, to evaluate package reliability.</p>
-<p>The majority of FDA staff feedback falls under the following themes :</p>
-<ol type="1">
-<li>Clear ADRG documentation on computing environment, package dependencies, and expected warnings</li>
-<li>Clear documentation on data processing rules and statistical method implementation</li>
-<li>Good statistical practice in confirmatory trials, such as avoiding the possibility of “p-hacking”&nbsp;</li>
-</ol>
-<p>For future submissions using open-source languages, it is recommended to give special attention to recommendation theme 1. Recommendation themes 2 and 3 are language-agnostic and should always be followed, regardless of the programming language used. All of these themes fall in line with the FDA’s <a href="https://rconsortium.github.io/submissions-pilot3-adam/main/articles/statistical-software-clarifying-statement.html">Statistical Software Clarifying Statement</a>.</p>
+<section id="the-admiral-team" class="level2">
+<h2 class="anchored" data-anchor-id="the-admiral-team">The Admiral Team</h2>
+<p>Focused on a complementary goal, the admiral team is dedicated to providing an <a href="https://pharmaverse.github.io/admiral/">open-source, modularized toolbox for creating ADaM datasets in R</a>. Their approach is transparent and collaborative, empowering users to co-create and refine a harmonized methodology for ADaM development across the pharmaceutical industry. The admiral team designs their tools to be user-friendly and versatile, capable of addressing a wide range of data requirements.</p>
 </section>
-<section id="upcoming-pilots" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-pilots">Upcoming Pilots</h2>
-<p>As a next step, the R Consortium R Submission Working Group initiated <a href="https://rconsortium.github.io/submissions-pilot4/">submission pilot 4</a>, to explore the use of novel technologies such as Linux containers and web assembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application.</p>
+<section id="setting-the-stage-for-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="setting-the-stage-for-collaboration">Setting the Stage for Collaboration</h2>
+<p>Recognizing the potential for synergies, the NEST and Admiral teams embarked on a collaborative journey to enhance their respective toolsets.</p>
+<p>Their shared objectives included:</p>
+<ul>
+<li>Developing a robust toolbox of reusable functions and utilities for ADaM dataset creation and Tables/Listings/Graphs creation.</li>
+<li>Ensuring comprehensive documentation and testing of these functions.</li>
+<li>Creating detailed vignettes to guide users in generating and manipulating various datasets, and for subsequent tabulation.</li>
+<li>Encouraging contributions from the pharmaceutical community to foster a unified and robust development environment.</li>
+</ul>
 </section>
-<section id="the-r-consortium-r-submission-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="the-r-consortium-r-submission-working-group">The R Consortium R Submission Working Group</h2>
-<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
-<p>To bring an experimental clinical product to market, electronic submission of data, computer programs, and relevant documentation is required by health authority agencies from different countries. In the past, submissions have been mainly based on the SAS language.&nbsp;</p>
-<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
-<p>Therefore, the R Submissions Working Group aims at providing R-based submission examples and identifying potential gaps during submission of these example packages. All materials, including submission examples and communications, are publicly available on the R consortium Github page: <a href="https://github.com/RConsortium">https://github.com/RConsortium</a> .</p>
-<p>The R consortium R submission working group includes members from more than 10 pharmaceutical companies, as well as regulatory agencies. More details of the working group can be found at: <a href="https://rconsortium.github.io/submissions-wg/">https://rconsortium.github.io/submissions-wg/</a> .</p>
-<p>The R consortium R submission working group is open to anyone who is interested in joining. If interested, please contact Joseph Rickert at director@r-consortium.org.&nbsp;</p>
+<section id="overcoming-initial-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="overcoming-initial-challenges">Overcoming Initial Challenges</h2>
+<p>Initially, the NEST team relied on simulated data for integration testing, which often lacked realism and failed to cover corner cases or expose software limitations. The opportunity arose to address these challenges by switching to using the more realistic test data offered by the <a href="https://cran.r-project.org/web/packages/pharmaverseadam/index.html">{pharmaverseadam} package</a>, whose original source is real SDTM data published through the CDISC Test Data pilot. This pivot allowed the NEST team to achieve more realistic and comprehensive testing, thus enhancing the robustness of their development work, and the {pharmaverseadam}/{admiral} team to improve the quality of their templates and test data through the constructive feedback that was received during the implementation phase.</p>
 </section>
-<section id="pilot-3-fda-reviewers" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-fda-reviewers">Pilot 3 FDA Reviewers</h2>
-<p>FDA reviewers included&nbsp;&nbsp;</p>
-<p><a href="https://www.linkedin.com/in/hye-soo-cho/">Hye Soo Cho</a>,&nbsp; <a href="https://www.linkedin.com/in/paul-schuette-40aa838/">Paul Schuette</a>, and <a href="https://www.linkedin.com/in/youn-kyeong-chang-885785159/">Youn Kyeong Chang</a>.</p>
+<section id="key-milestones-achieved" class="level2">
+<h2 class="anchored" data-anchor-id="key-milestones-achieved">Key Milestones Achieved:</h2>
+<p><strong>Realistic Data Integration:</strong> Transitioning from simulated to more realistic data provided the NEST team with more accurate and relevant testing conditions. This change was crucial in identifying and rectifying potential software limitations.</p>
+<p><strong>Scope and Dependency Management:</strong> Both teams agreed to avoid creating strong interdependencies that could extend release cycles. NEST packages maintained minimal data for documentation purposes, while admiral preserved extensive datasets separately.</p>
+<p><strong>CI Integration and Automation:</strong> New CI integration tests ensured that template updates were automatically verified against stored pharmaverseadam datasets. This maintained consistency and allowed users to identify intended changes promptly.</p>
+<p><strong>Strategic Pipelines:</strong> An automated pipeline was established to update pharmaverseadam ADaMs for each new release, reflecting any template changes Accurately.</p>
 </section>
-<section id="pilot-3-developers" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-developers">Pilot 3 Developers</h2>
-<p>The Pilot 3 development team included <a href="https://www.linkedin.com/in/jlaxamana/">Joel Laxamana</a> (Project Lead, Roche), <a href="https://www.linkedin.com/in/robert-devine-50b0b931/">Robert Devine</a> (J&amp;J) , <a href="https://www.linkedin.com/in/ben-straub/">Benjamin Straub</a> (GSK) , <a href="https://www.linkedin.com/in/kaz462/">Kangjie Zhang</a> (Bayer) , <a href="https://www.linkedin.com/in/thomas-neitmann/">Thomas Neitmann</a> (Roche), <a href="https://www.linkedin.com/in/tataphani/">Phanikumar Tata</a> (Syneos), <a href="https://www.linkedin.com/in/stevenhaesendonckx/">Steven Haesendonckx</a> (J&amp;J), <a href="https://www.linkedin.com/in/yutong-liu-a25b68a8/">Yutong Liu</a> (Moderna), Lei Zhao (Roche), <a href="https://www.linkedin.com/in/nicolekjonesmph/">Nicole Jones (Merck)</a>, <a href="https://www.linkedin.com/in/bingjun-wang-2b9783147/">Benjamin Wang (Merck),</a> <a href="https://www.linkedin.com/in/dadong-zhang-48b937201/">Dadong Zhang (Illumina)</a>, <a href="https://www.linkedin.com/in/declan-hodges/">Declan Hodges (GSK)</a>.</p>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">Recent Developments</h2>
+<p>The collaboration bore fruit as the teams uncovered critical insights and improvements:</p>
+<p>Using pharmaverseadam data in the scda.test package helped the NEST team identify and correct issues in their table template development, specifically in calculating denominator values.</p>
+<p>The realistic test data also revealed minor inconsistencies in the derivation of ECG data within the admiral framework, which were promptly addressed, enhancing data accuracy.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The collaboration between the NEST and admiral teams showcases the power of open-source initiatives and community-driven efforts such as the pharmaverse in advancing clinical research. By integrating realistic data and refining their testing processes, they have significantly enhanced the robustness and reliability of their tools. This partnership not only accelerates insight generation but also cultivates a culture of collaboration and innovation, benefiting the broader pharmaverse community.</p>
+<p>The success of this collaboration highlights the profound impact of shared goals and collective innovation, paving the way for future advancements in clinical research methodologies and outcomes.</p>
+<section id="acknowledgement" class="level3">
+<h3 class="anchored" data-anchor-id="acknowledgement">Acknowledgement</h3>
+<p>We would like to thank Ben Straub, Jeff Dickinson, Stefan Bundfuss, Ross Farrugia, Zelos Zhu’s valuable contributions to this collaborative work.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
