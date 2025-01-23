@@ -10,7 +10,105 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Fri, 17 Jan 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jan 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R en Buenos Aires: New Generations Working to Strengthen the Community</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="r-en-buenos-aires-new-generations-working-to-strengthen-the-community" class="level1">
+<h1>R en Buenos Aires: New Generations Working to Strengthen the Community</h1>
+<p><br> <br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/andrea-gomez-vargas.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:65%;">
+<p>The R Consortium recently interviewed Andrea Gomez Vargas to find out about the <a href="https://www.meetup.com/en-AU/renbaires/">R in Buenos Aires</a> User Group. Andrea has a degree in sociology. Currently, she works as an analyst of population statistics at the National Institute of Statistics and Census - INDEC Argentina. She also teaches at universities in social science and data science.</p>
+<p>Andrea has been an active member of the R community in Argentina and Latin America since 2018. She has been part of <a href="https://r-consortium.org/posts/transforming-academic-research-with-r-in-santa-rosa-argentina/">R-Ladies Buenos Aires</a> and is currently part of the R-Ladies global team and the LatinR organizing committee.</p>
+</div>
+</div>
+<p>Andrea was part of the 2023-2024 cohort of the rOpenSci champions program, and in 2024 she decided to take over the leadership of R en Buenos Aires.</p>
+<section id="why-did-you-decide-to-take-the-lead-of-the-chapter" class="level3">
+<h3 class="anchored" data-anchor-id="why-did-you-decide-to-take-the-lead-of-the-chapter">Why did you decide to take the lead of the chapter?</h3>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><br> I decided to take on the leadership of the chapter to actively contribute to the local impact of the R user community. Most of my knowledge has come from these communities - the trust and selfless support I’ve received has helped me grow as a professional and inspired me to take on projects I never thought I could. For this reason, I believe it is essential to reengage in activities to invite new generations to participate, explore new tools and opportunities, and collaborate in a space that welcomes all levels of experience and diverse professional backgrounds.</p>
+</div><div class="column" style="width:30%;">
+<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="what-motivates-you-to-continue-promoting-r-learning" class="level3">
+<h3 class="anchored" data-anchor-id="what-motivates-you-to-continue-promoting-r-learning">What motivates you to continue promoting R learning?</h3>
+<p>Communities are essential spaces for breaking down barriers to access information and knowledge, especially when it comes to free and open-source software. When these resources are paid or only reach a small percentage of people, it creates inequities. As a public university teacher, I am driven by the belief that everyone, regardless of background, should have the opportunity to learn and grow in a collaborative, open environment. That’s what keeps me motivated to continue spreading R knowledge and ensuring it remains accessible for all.</p>
+<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-2.jpg" class="img-fluid"> <em>Participants from the December 20th, 2024, meetup</em></p>
+</section>
+<section id="what-are-your-main-objectives-for-the-r-chapter-in-buenos-aires-and-what-challenges-do-you-anticipate-in-achieving-them" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-your-main-objectives-for-the-r-chapter-in-buenos-aires-and-what-challenges-do-you-anticipate-in-achieving-them">What are your main objectives for the R chapter in Buenos Aires, and what challenges do you anticipate in achieving them?</h3>
+<p>The main objectives at this moment for the R chapter in Buenos Aires are to have more events to disseminate relevant topics in the community, such as the use of Quarto, Shiny, R packages, Git, and GitHub. A key challenge is ensuring that volunteer work doesn’t overwhelm us or lead to burnout, as organizing these events requires a lot of behind-the-scenes work. Currently, in addition to myself, Emanuel and Ariana are part of the local team coordinating activities—and although teamwork is essential, we must find a balance between collective effort and the well-being of the chapter members.</p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level3">
+<h3 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h3>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><br> <br> I’m working on the development of the <code>arcenso</code> package, a package with census data from Argentina, now in its first version on Github, but we are looking to reach CRAN.</p>
+<p><code>arcenso</code> is a project supported by the rOpenSci Champions Program cohort 2023-2024, with me as lead developer, Emanuel Ciardullo as co-developer and Luis D. Verde as mentor. It is a very important project because it makes census data accessible and homogenized in a way that any user can work with it in R.</p>
+</div><div class="column" style="width:30%;">
+<p><br> <br> <img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/arcenso.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Details from the arcenso page:</p>
+<p>arcenso is a package under development that will allow access to the official data of the national population censuses in Argentina from the National Institute of Statistics and Census - INDEC. Currently, the results of the historical censuses of 1970, 1980, 1991, 2001, 2010 and 2022 are available in different formats through physical books, PDFs, Excel files or in REDATAM, without having a unified system or format that allows working with the data of these six census periods as a database. In addition, the presentation of the data is not homogeneous between the periods, making it difficult to make historical or serial comparisons of the available information.</p>
+<p>This package aims to make census data available, homogenized and ready to use. It will include the census data from 1970 to 2022. Having a package of census information will allow the public and private sectors, citizens and other actors in society to access current and historical information on Argentina’s population, households and housing in a more accessible way.</p>
+<blockquote class="blockquote">
+<p>For more information, see <a href="https://soyandrea.github.io/arcenso/">soyandrea.github.io/arcenso</a></p>
+</blockquote>
+</section>
+<section id="what-r-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc." class="level3">
+<h3 class="anchored" data-anchor-id="what-r-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc.">What R resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)</h3>
+<p>I use R on a daily basis to teach, work and collaborate in the community. Part of my work requires processing and combining various data sources (censuses, surveys and administrative records) to produce socio-demographic indicators for the country. I also design and develop digital statistical products, such as a Shiny app or dashboards. For all this I rely on several R packages for ETL and visualisation <em>(gt, tidyverse, expss, plotly, quarto, and many more).</em> And this is what I try to teach my students or the people who attend the workshops.</p>
+<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-5.jpg" class="img-fluid"> <em>Photo of Betsy, Ariana, and Andrea, organizers of the October 29, 2024, meetup, from left to right</em></p>
+</section>
+<section id="you-had-a-meetup-on-october-29th-2024.-can-you-share-more-about-the-topic-covered" class="level3">
+<h3 class="anchored" data-anchor-id="you-had-a-meetup-on-october-29th-2024.-can-you-share-more-about-the-topic-covered">You had a Meetup on October 29th, 2024. Can you share more about the topic covered?</h3>
+<p><em>[Editor’s note: There were two more events held by R en Buenos Aires at the end of 2024. Please see the <a href="https://www.meetup.com/en-AU/renbaires/events/?type=past">meetup page</a> for more information (in Spanish).]</em></p>
+<p>The topic of the workshop was socio-demographic analysis in R using data from the Argentine Labour Force Survey. We learned about the R packages needed to calculate the indicators and how to present the results in graphs and tables.</p>
+<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-3.png" class="img-fluid"></p>
+<p>The workshop was aimed at university students who are taking their first steps in R and who would like to do real-life practice guided by people from the community with experience in the field.</p>
+<p>After the workshop a specific website <a href="https://r-unlam.netlify.app/">r-unlam.netlify.app</a> was created. We believe it is a good practice for people who cannot attend physically to have access to all the materials and to have the activities documented.</p>
+<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-4.jpg" class="img-fluid"> <em>Participants from the October 29th, 2024, meetup</em></p>
+</section>
+<section id="you-can-reach-out-to-r-in-buenos-aires-through-the-following" class="level3">
+<h3 class="anchored" data-anchor-id="you-can-reach-out-to-r-in-buenos-aires-through-the-following">You can reach out to R in Buenos Aires through the following:</h3>
+<ul>
+<li>Linkedin: <a href="https://www.linkedin.com/company/r-en-buenos-aires/" class="uri">https://www.linkedin.com/company/r-en-buenos-aires/</a></li>
+<li>Github: <a href="https://github.com/renbaires" class="uri">https://github.com/renbaires</a></li>
+<li>X: <a href="https://github.com/renbaires">https://x.com/renbaires</a><br>
+</li>
+<li>Instagram: <a href="https://github.com/renbaires">https://www.instagram.com/renbuenosaires</a></li>
+</ul>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h3>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html" class="uri">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/</guid>
+  <pubDate>Thu, 23 Jan 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-4.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Transforming Academic Research with R in Santa Rosa, Argentina</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1310,43 +1408,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/</guid>
   <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/rpharma-apac-main-image.png" medium="image" type="image/png" height="71" width="144"/>
-</item>
-<item>
-  <title>Using R to Submit Research to the FDA: Pilot 4 Successfully Submitted to FDA Center for Drug Evaluation and Research</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/webR-shiny.png" class="img-fluid"></p>
-<p>The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted its latest test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document (eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially received the submission package.</p>
-<p>Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”</p>
-<p>The complete set of submission materials is available publicly on GitHub: <a href="https://github.com/RConsortium/submissions-pilot4-webR-to-fda">R Consortium Submissions Pilot 4.</a></p>
-<section id="about-the-pilot-4-project" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-pilot-4-project">About the Pilot 4 Project</h2>
-<p>The objective of the R Consortium R submission <em>Pilot 4 </em>Project is to explore the use of novel technologies such as Linux containers and WebAssembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application. The application was built using the source data sets and analyses contained in the R submission <em>Pilot 1-3</em>. To our knowledge, this is the first publicly available submission package that includes a WebAssembly component. We hope this submission package and what we have learned can serve as a good reference for future regulatory submission efforts. The WebAssembly technology compiles applications into a portable, consistent environment driven by a web browser, allowing agency reviewers to easily run and evaluate software without complex setups. The second half of the Pilot 4 Project (leveraging container technology to package a Shiny application) will be submitted as an additional package later this year. Additional agency feedback will be shared in future communications.</p>
-</section>
-<section id="about-the-r-submissions-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-r-submissions-working-group">About the R Submissions Working Group</h2>
-<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
-<p>Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.</p>
-<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
-<p>Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the <a href="https://github.com/RConsortium">R consortium GitHub page.</a></p>
-</section>
-<section id="join-the-r-submissions-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="join-the-r-submissions-working-group">Join the R Submissions Working Group</h2>
-<p>The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. We are a collaborative community open to anyone interested in contributing to this important work. For more information, or to get involved, visit<a href="https://rconsortium.github.io/submissions-wg">our website</a> or contact us directly at director@r-consortium.org.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/</guid>
-  <pubDate>Wed, 09 Oct 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/webR-shiny.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>
