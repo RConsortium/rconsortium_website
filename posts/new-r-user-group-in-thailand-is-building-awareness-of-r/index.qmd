@@ -1,0 +1,87 @@
+---
+title: "New R User Group in Thailand is Building Awareness of R"
+description: "Dr. Nathakhun Wiroonsri and the RxTH User Group are aiming to make R more accessible and appealing across industries, especially among the younger generation."
+author: "R Consortium"
+image: "event-participants.jpeg"
+date: "01/29/2025"
+---
+![](logo_final-05.png){width=30%}
+
+[Dr. Nathakhun Wiroonsri](https://sites.google.com/view/nwiroonsri/) is an academic at the Department of Mathematics, Faculty of Science, King Mongkut's University of Technology Thonburi in Thailand. With a strong foundation in applied mathematics, Dr. Wiroonsri’s expertise lies in theoretical probability, machine learning, and statistical analysis. His research aims to bridge these areas to develop innovative methodologies for solving real-world problems, particularly in clustering and healthcare applications.
+
+![](nathakhun1.jpeg){width=40%}
+
+Beyond his academic pursuits, Dr. Wiroonsri is deeply involved in promoting the use of R in Thailand. He founded [R x TH, Thailand's R user group supported by the R Consortium](https://www.meetup.com/rxthailand/), to foster collaboration and build a vibrant community for R enthusiasts. His efforts include organizing workshops for beginners, experienced users, and professionals, aiming to make R more accessible and appealing across industries, especially among the younger generation.
+
+### Please share your background and involvement with R x TH.
+
+I’d like to share a bit about my personal background and my journey with R. I completed my PhD in applied mathematics at USC, focusing on theoretical probability. During that time, I didn’t use R extensively, but I was familiar with it and occasionally relied on it for simple simulations to validate my research results. 
+
+After graduating, I taught a statistical consulting course at USC, assisting my advisor, who used R in his teaching. That experience provided me with additional exposure to the language.
+
+When I returned to Thailand, I was assigned to teach a statistics and data science program, which marked the beginning of my regular use of R. I also began conducting research in machine learning, where R became an integral tool in my work. 
+
+This year, I had the opportunity to attend the useR! conference in Salzburg, which was a fantastic experience.
+
+Inspired by that event and recognizing a gap in Thailand, my students and I decided to establish R x TH, a user group for R enthusiasts in Thailand. At the time, there weren’t any Thai groups officially supported by the R Consortium, so we started this initiative to organize workshops for both beginners and experienced users. We also aim to foster research collaboration within the group.
+
+To clarify, I’m based in Bangkok and work at the King Mongkut’s University of Technology under a government contract, which initially sent me to study in the U.S.
+
+### Can you share what the R community is like in Bangkok and more broadly in Thailand?
+
+I’d say R isn’t very popular in Thailand, especially compared to Python, which dominates industry environments. However, there are some R users, particularly in sectors like insurance and also healthcare.
+
+Before starting the R x TH user group, there were already a few R communities in Thailand, but they were mostly small and centered within universities. Many R users here work in academia, using it in traditional ways—primarily for teaching and data analysis in their fields.
+
+A funny story: I recently met an old friend who graduated from UC San Diego and works in pure mathematics. He had never coded before and started learning Python to assist his new research. When I mentioned R, he thought it was some kind of instant software where you just input data, click a few times, and get results! I explained what R is, and he was intrigued, so I invited him to one of our workshops. Stories like this highlight how much awareness we still need to build around R.
+
+### Your group recently held its very first event. How did it go? Can you share more about the topics covered? 
+
+Our first event focused on providing a solid introduction to R. We covered foundational topics such as basic syntax, coding practices, and essential packages like ggplot2. The session was hands-on, starting with how to install R and the key packages, so participants could follow along easily.
+
+![](event-participants.jpeg)
+
+The event was a success, thanks in large part to my master's students: Onthada and Noppanon, who played a key role in organizing and leading the workshop. It even sparked interest among younger students—several approached me afterward, eager to take my data science course next semester, even though it’s typically designed for junior students.
+
+![](speaker.jpeg)
+
+As for the course itself, I initiated it about four years ago as a special topic, and after receiving positive feedback, it became a core part of the program. For the workshop, we prepared tutorial materials that participants could follow step by step. Right now, those materials are only shared within the group, but we may consider making them public in the future.
+
+![](speaker2.jpeg)
+
+
+### Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?
+
+I’m currently wrapping up my grant, during which I published several papers related to cluster validity indices. My research focuses on cluster validation techniques, which are used to detect optimal clusters hidden in datasets. My team and I have also contributed to the R community by developing two R packages, *[UniversalCVI](https://cran.r-project.org/web/packages/UniversalCVI/index.html)* and *[BayesCVI](https://cran.r-project.org/web/packages/BayesCVI/index.html)*, both available on CRAN. These packages are specifically designed for those working with cluster analysis.
+
+In addition, I’m collaborating with a medical doctor to develop a new methodology for classifying diabetes patients. Once this project is complete, we plan to create an R package based on our methodology. We also aim to organize a workshop for healthcare professionals who use R in their work.
+
+Interestingly, R is still widely used in the healthcare sector in Thailand, particularly by doctors and researchers. However, I’ve noticed a shift among younger generations toward Python, but R remains prevalent in this field.
+
+Any techniques you recommend using for planning for or during the event? (Github, Zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?
+
+We had a great turnout at the event, but the level of interest varied among participants. Some attendees were genuinely enthusiastic, while others seemed to come along with friends or just to check things out. That was a bit of a challenge because we wanted everyone to feel engaged.
+
+To address this, we reviewed the participant list and adjusted our approach. For those who seemed less familiar with the material, we made the content more beginner-friendly and interactive to capture their interest. We also added activities to make the event more fun and engaging, especially since many attendees were young and appreciated a lively atmosphere.
+
+For example, we incorporated Q&A sessions where participants could answer questions, and we gave out small prizes to encourage participation. This approach resulted in better engagement and made the event more enjoyable for everyone.
+
+### Which [ISC project](https://r-consortium.org/all-projects/funded-projects.html)(s) have you used? If none, which one(s) look like something you might look into (and why)?
+
+To be honest, I only recently realized that the R Consortium funds ISE projects after you sent me the question. I looked into them briefly, and they all seem quite interesting. One that caught my attention is [autotest](https://r-consortium.org/all-projects/2023-group-1.html#autotest-automated-testing-of-r-packages).
+
+As someone with experience publishing R packages, I know how challenging it is to catch every error. Despite double- and triple-checking for issues, once a package is released and used by real users, unexpected errors often surface. A tool like *autotest*, which helps identify potential issues before publishing, would be incredibly helpful. Being able to ensure the package is as close to error-free as possible before release would make a big difference. I’m definitely planning to use *autotest* in the future.
+
+### What trends do you see around the R language?
+
+In Thailand, there’s a clear trend among the younger generation toward learning Python. Even students in our statistics and data science program express interest in Python. However, we still focus on using R in our curriculum. The challenge is that many R users in Thailand, particularly in academia, tend to use it in traditional ways—relying on existing packages for data analysis. This makes it harder to attract younger users to R.
+
+When I attended the useR! conference this past year, I discovered many modern techniques and packages in R that could appeal to younger users, such as tools for creating content, slides, and publications—like Quarto. I tried Quarto myself recently and found it very promising. I believe introducing these modern tools through workshops could resonate with younger users and professionals in industry, showing them that R can be just as innovative and versatile as other tools.
+
+Our user group is based at a university, so it naturally draws students. However, we’re also planning workshops tailored to professionals, starting with healthcare. Since we’re currently working on a project related to diabetes classification, we plan to hold a workshop for healthcare professionals once the project is complete. This will give us a chance to share our new methodology, demonstrate its applications in healthcare, and encourage attendees to explore R further. I think this approach will help us reach new audiences and grow interest in R.
+
+## How do I Build an R User Group?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
+
+[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html) 
