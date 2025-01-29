@@ -10,7 +10,79 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 23 Jan 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 29 Jan 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>New R User Group in Thailand is Building Awareness of R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/logo_final-05.png" class="img-fluid" style="width:30.0%"></p>
+<p><a href="https://sites.google.com/view/nwiroonsri/">Dr.&nbsp;Nathakhun Wiroonsri</a> is an academic at the Department of Mathematics, Faculty of Science, King Mongkut’s University of Technology Thonburi in Thailand. With a strong foundation in applied mathematics, Dr.&nbsp;Wiroonsri’s expertise lies in theoretical probability, machine learning, and statistical analysis. His research aims to bridge these areas to develop innovative methodologies for solving real-world problems, particularly in clustering and healthcare applications.</p>
+<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/nathakhun1.jpeg" class="img-fluid" style="width:40.0%"></p>
+<p>Beyond his academic pursuits, Dr.&nbsp;Wiroonsri is deeply involved in promoting the use of R in Thailand. He founded <a href="https://www.meetup.com/rxthailand/">R x TH, Thailand’s R user group supported by the R Consortium</a>, to foster collaboration and build a vibrant community for R enthusiasts. His efforts include organizing workshops for beginners, experienced users, and professionals, aiming to make R more accessible and appealing across industries, especially among the younger generation.</p>
+<section id="please-share-your-background-and-involvement-with-r-x-th." class="level3">
+<h3 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-r-x-th.">Please share your background and involvement with R x TH.</h3>
+<p>I’d like to share a bit about my personal background and my journey with R. I completed my PhD in applied mathematics at USC, focusing on theoretical probability. During that time, I didn’t use R extensively, but I was familiar with it and occasionally relied on it for simple simulations to validate my research results.</p>
+<p>After graduating, I taught a statistical consulting course at USC, assisting my advisor, who used R in his teaching. That experience provided me with additional exposure to the language.</p>
+<p>When I returned to Thailand, I was assigned to teach a statistics and data science program, which marked the beginning of my regular use of R. I also began conducting research in machine learning, where R became an integral tool in my work.</p>
+<p>This year, I had the opportunity to attend the useR! conference in Salzburg, which was a fantastic experience.</p>
+<p>Inspired by that event and recognizing a gap in Thailand, my students and I decided to establish R x TH, a user group for R enthusiasts in Thailand. At the time, there weren’t any Thai groups officially supported by the R Consortium, so we started this initiative to organize workshops for both beginners and experienced users. We also aim to foster research collaboration within the group.</p>
+<p>To clarify, I’m based in Bangkok and work at the King Mongkut’s University of Technology under a government contract, which initially sent me to study in the U.S.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-bangkok-and-more-broadly-in-thailand" class="level3">
+<h3 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-bangkok-and-more-broadly-in-thailand">Can you share what the R community is like in Bangkok and more broadly in Thailand?</h3>
+<p>I’d say R isn’t very popular in Thailand, especially compared to Python, which dominates industry environments. However, there are some R users, particularly in sectors like insurance and also healthcare.</p>
+<p>Before starting the R x TH user group, there were already a few R communities in Thailand, but they were mostly small and centered within universities. Many R users here work in academia, using it in traditional ways—primarily for teaching and data analysis in their fields.</p>
+<p>A funny story: I recently met an old friend who graduated from UC San Diego and works in pure mathematics. He had never coded before and started learning Python to assist his new research. When I mentioned R, he thought it was some kind of instant software where you just input data, click a few times, and get results! I explained what R is, and he was intrigued, so I invited him to one of our workshops. Stories like this highlight how much awareness we still need to build around R.</p>
+</section>
+<section id="your-group-recently-held-its-very-first-event.-how-did-it-go-can-you-share-more-about-the-topics-covered" class="level3">
+<h3 class="anchored" data-anchor-id="your-group-recently-held-its-very-first-event.-how-did-it-go-can-you-share-more-about-the-topics-covered">Your group recently held its very first event. How did it go? Can you share more about the topics covered?</h3>
+<p>Our first event focused on providing a solid introduction to R. We covered foundational topics such as basic syntax, coding practices, and essential packages like ggplot2. The session was hands-on, starting with how to install R and the key packages, so participants could follow along easily.</p>
+<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/event-participants.jpeg" class="img-fluid"></p>
+<p>The event was a success, thanks in large part to my master’s students: Onthada and Noppanon, who played a key role in organizing and leading the workshop. It even sparked interest among younger students—several approached me afterward, eager to take my data science course next semester, even though it’s typically designed for junior students.</p>
+<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/speaker.jpeg" class="img-fluid"></p>
+<p>As for the course itself, I initiated it about four years ago as a special topic, and after receiving positive feedback, it became a core part of the program. For the workshop, we prepared tutorial materials that participants could follow step by step. Right now, those materials are only shared within the group, but we may consider making them public in the future.</p>
+<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/speaker2.jpeg" class="img-fluid"></p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level3">
+<h3 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h3>
+<p>I’m currently wrapping up my grant, during which I published several papers related to cluster validity indices. My research focuses on cluster validation techniques, which are used to detect optimal clusters hidden in datasets. My team and I have also contributed to the R community by developing two R packages, <em><a href="https://cran.r-project.org/web/packages/UniversalCVI/index.html">UniversalCVI</a></em> and <em><a href="https://cran.r-project.org/web/packages/BayesCVI/index.html">BayesCVI</a></em>, both available on CRAN. These packages are specifically designed for those working with cluster analysis.</p>
+<p>In addition, I’m collaborating with a medical doctor to develop a new methodology for classifying diabetes patients. Once this project is complete, we plan to create an R package based on our methodology. We also aim to organize a workshop for healthcare professionals who use R in their work.</p>
+<p>Interestingly, R is still widely used in the healthcare sector in Thailand, particularly by doctors and researchers. However, I’ve noticed a shift among younger generations toward Python, but R remains prevalent in this field.</p>
+<p>Any techniques you recommend using for planning for or during the event? (Github, Zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</p>
+<p>We had a great turnout at the event, but the level of interest varied among participants. Some attendees were genuinely enthusiastic, while others seemed to come along with friends or just to check things out. That was a bit of a challenge because we wanted everyone to feel engaged.</p>
+<p>To address this, we reviewed the participant list and adjusted our approach. For those who seemed less familiar with the material, we made the content more beginner-friendly and interactive to capture their interest. We also added activities to make the event more fun and engaging, especially since many attendees were young and appreciated a lively atmosphere.</p>
+<p>For example, we incorporated Q&amp;A sessions where participants could answer questions, and we gave out small prizes to encourage participation. This approach resulted in better engagement and made the event more enjoyable for everyone.</p>
+</section>
+<section id="which-isc-projects-have-you-used-if-none-which-ones-look-like-something-you-might-look-into-and-why" class="level3">
+<h3 class="anchored" data-anchor-id="which-isc-projects-have-you-used-if-none-which-ones-look-like-something-you-might-look-into-and-why">Which <a href="https://r-consortium.org/all-projects/funded-projects.html">ISC project</a>(s) have you used? If none, which one(s) look like something you might look into (and why)?</h3>
+<p>To be honest, I only recently realized that the R Consortium funds ISE projects after you sent me the question. I looked into them briefly, and they all seem quite interesting. One that caught my attention is <a href="https://r-consortium.org/all-projects/2023-group-1.html#autotest-automated-testing-of-r-packages">autotest</a>.</p>
+<p>As someone with experience publishing R packages, I know how challenging it is to catch every error. Despite double- and triple-checking for issues, once a package is released and used by real users, unexpected errors often surface. A tool like <em>autotest</em>, which helps identify potential issues before publishing, would be incredibly helpful. Being able to ensure the package is as close to error-free as possible before release would make a big difference. I’m definitely planning to use <em>autotest</em> in the future.</p>
+</section>
+<section id="what-trends-do-you-see-around-the-r-language" class="level3">
+<h3 class="anchored" data-anchor-id="what-trends-do-you-see-around-the-r-language">What trends do you see around the R language?</h3>
+<p>In Thailand, there’s a clear trend among the younger generation toward learning Python. Even students in our statistics and data science program express interest in Python. However, we still focus on using R in our curriculum. The challenge is that many R users in Thailand, particularly in academia, tend to use it in traditional ways—relying on existing packages for data analysis. This makes it harder to attract younger users to R.</p>
+<p>When I attended the useR! conference this past year, I discovered many modern techniques and packages in R that could appeal to younger users, such as tools for creating content, slides, and publications—like Quarto. I tried Quarto myself recently and found it very promising. I believe introducing these modern tools through workshops could resonate with younger users and professionals in industry, showing them that R can be just as innovative and versatile as other tools.</p>
+<p>Our user group is based at a university, so it naturally draws students. However, we’re also planning workshops tailored to professionals, starting with healthcare. Since we’re currently working on a project related to diabetes classification, we plan to hold a workshop for healthcare professionals once the project is complete. This will give us a chance to share our new methodology, demonstrate its applications in healthcare, and encourage attendees to explore R further. I think this approach will help us reach new audiences and grow interest in R.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/</guid>
+  <pubDate>Wed, 29 Jan 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/event-participants.jpeg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>R en Buenos Aires: New Generations Working to Strengthen the Community</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1339,75 +1411,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
   <guid>https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/</guid>
   <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/DengueDataHub.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>R/Pharma 2024, Virtual, October 29-November 1, Includes New Dedicated Asia-Pacific (APAC) Track</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/rpharma-apac-main-image.png" class="img-fluid"></p>
-<p>R/Pharma 2024 is coming up Oct 29-Nov 1, 2024. This is a free event, fully virtual. R users in Pharma around the world are encouraged to attend, ask questions, and contribute their opinions!</p>
-<section id="register-now-for-free" class="level2">
-<h2 class="anchored" data-anchor-id="register-now-for-free"><a href="https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg">Register now for free!</a></h2>
-<p>For the first time, R/Pharma will be including a dedicated Asia-Pacific (APAC) track which better aligns with Asian time zones and includes 2 pre-conference workshops, 3 keynotes that will be recorded from the global track and then streamed with live discussion sessions thereafter, and 2 live panels, one focusing on Japan, and one on China. In addition, there are 20 contributed talks.</p>
-<p><img src="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/rpharma-china-panel.png" class="img-fluid"></p>
-<p><img src="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/rpharma-japan-panel.png" class="img-fluid"></p>
-<p>The R Consortium talked with Daniel Sabanés Bové, R/Pharma organizer, co-chair of openstatsware.org, co-founder of RCONIS, a biostatistics consulting and software engineering firm, (co-)author of multiple R packages published on CRAN and Bioconductor, and author of the book “Likelihood and Bayesian Inference: With Applications in Biology and Medicine.” Daniel is giving a 3-hour workshop on October 27 with Joe Zhu (Roche) on “Good Software Engineering Practice for R Packages,” and introducing openstatsware in a talk on 31 October.</p>
-<p>We talked to Daniel to find out more about the new APAC track.</p>
-<p><img src="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/daniel.png" class="img-fluid"></p>
-<section id="why-is-rpharma-adding-an-apac-track-now" class="level3">
-<h3 class="anchored" data-anchor-id="why-is-rpharma-adding-an-apac-track-now">Why is R/Pharma adding an APAC track now?</h3>
-<p>Last year, I was on an extended business trip for Roche for 6 weeks in Shanghai. I was fortunate to attend the first China Pharma R User Group (RUG) Meeting in March 2023, so I have seen how active the community is. I also found out how tough it can be to be based in Asia - you just don’t get enough sleep working with colleagues in Europe and North America!</p>
-<p>So when the R/Pharma program committee reported that they have been approached by colleagues in Asia about organizing events in their time zone or region, I used the opportunity of my upcoming move to Taipei mid 2024 to propose organizing a dedicated track in the Asia-Pacific timezones.</p>
-<p>The R/Pharma APAC track is designed specifically to help avoid time zone burnout, as well as to foster the APAC regional community.</p>
-</section>
-<section id="how-does-adoption-of-r-in-pharma-in-apac-differ-from-other-parts-of-the-world" class="level3">
-<h3 class="anchored" data-anchor-id="how-does-adoption-of-r-in-pharma-in-apac-differ-from-other-parts-of-the-world">How does adoption of R in Pharma in APAC differ from other parts of the world?</h3>
-<p>This is not based on robust data, but from a personal perspective I have noticed one key feature is that biotech and Pharma companies in Asia are concentrated in a few hubs, there is Shanghai, Tokyo, and not too many more. Having said that, I have noticed the rise of Contract Research Organizations (CROs) e.g.&nbsp;in India that are starting to use R - the CROs are catching up. Compare that to Europe and the United States, with a wide range of Pharma companies and organizations spread around many different locations. This also influences the adoption of R and open source technologies in general.</p>
-</section>
-<section id="what-are-some-of-the-key-topics-being-covered-in-the-apac-track" class="level3">
-<h3 class="anchored" data-anchor-id="what-are-some-of-the-key-topics-being-covered-in-the-apac-track">What are some of the key topics being covered in the APAC track?</h3>
-<p>I was pleasantly surprised at the amount and variety of proposals submitted. We have organized the APAC track’s topics into 6 types of sessions:</p>
-<ul>
-<li>Change management (moving from proprietary software to R)</li>
-<li>Sessional clinical reporting (producing tables and reports)</li>
-<li>Shiny</li>
-<li>Best practices</li>
-<li>AI/ML</li>
-<li>High dimensional data</li>
-</ul>
-<p>We have quite an exciting APAC Track program that includes:</p>
-<ul>
-<li>2 pre conference workshops</li>
-<li>3 keynote streams, which are recorded keynotes that are slightly delayed to stream during convenient APAC times, plus we have added some discussion after</li>
-<li>2 live panel discussion (China, Japan)</li>
-<li>20 contributed talks in total</li>
-</ul>
-</section>
-<section id="full-agenda" class="level3">
-<h3 class="anchored" data-anchor-id="full-agenda">Full Agenda</h3>
-<p>A full list of workshops, keynotes, talks and panels is available <a href="https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg">here</a>.</p>
-<p>If you use the filter button you can get just the APAC Track information.</p>
-<p><img src="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/filter.png" class="img-fluid"></p>
-<p><img src="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/filter-apac.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="register-now-for-free-1" class="level2">
-<h2 class="anchored" data-anchor-id="register-now-for-free-1"><a href="https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg">Register now for free!</a></h2>
-<p>If you, or your organization, would like to support R/Pharma you can do so following <a href="https://www.pledge.to/r-pharma">this link</a>. Be sure to follow the R/Pharma <a href="https://rinpharma.com/post/">blog</a>, <a href="https://www.linkedin.com/company/open-source-in-pharma">LinkedIn</a> and <a href="https://x.com/rinpharma">Twitter/X</a>.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/</guid>
-  <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/rpharma-apac-main-image.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 </channel>
 </rss>
