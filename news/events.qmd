@@ -12,7 +12,7 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[useR!2025](https://www.r-project.org/conferences/)",
+    "[useR!2025](https://user2025.r-project.org/)",
     "[R/Medicine 2025](https://rconsortium.github.io/RMedicine_website/)"
   ),
 
