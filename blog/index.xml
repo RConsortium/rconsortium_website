@@ -10,7 +10,86 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Wed, 29 Jan 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 06 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Connecting Nebraska Through R: Jeffrey Stevens’ Journey of Community Building</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/jeffreyrstevens/">Jeffrey Stevens</a>, organizer of the <a href="https://www.meetup.com/nebraskarusergroup/">Nebraska R User Group</a>, recently spoke with the R Consortium about his efforts to establish a vibrant R community across Nebraska. Jeffrey shared insights into the group’s activities, including fostering connections between academics, industry professionals, and nonprofits, and creating a hybrid model to engage participants from across the state. He also discussed his passion for package development, open science initiatives like the Many Dogs Project, and the challenges of building an inclusive R ecosystem in a geographically dispersed region.</p>
+<p><img src="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/JeffreyStevens.png" class="img-fluid"></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
+<p>I am a professor of psychology at the University of Nebraska-Lincoln, where I lead the <a href="https://dogcog.unl.edu/">Canine Cognition and Human Interaction Lab</a>. My research focuses on animals, comparative psychology, and animal cognition, a field I have been involved in since the mid-1990s.</p>
+<p>I have been using R for over 15 years, but I initially worked with S-Plus during my graduate studies in the late 1990s. For the past 15 years, R has been my primary tool for data analysis.</p>
+<p>In the last three years, I have also ventured into package development. To date, I have published three packages on <a href="https://cran.r-project.org/">CRAN</a>. One package <a href="https://cran.r-project.org/web//packages/excluder/index.html">excluder</a> is designed for data wrangling specifically tailored for survey data that psychologists often encounter. Another package <a href="https://cran.r-project.org/web//packages/flashr/index.html">flashr</a> creates flashcard slide decks to assist learners in mastering R; it includes R functions and descriptions, allowing students to familiarize themselves with terms and functionalities. My most recent package <a href="https://cran.r-project.org/web//packages/cocoon/index.html">cocoon</a> takes statistical objects. It generates <a href="https://rmarkdown.rstudio.com/">R Markdown</a> or <a href="https://www.latex-project.org/">LaTeX</a> text that can be easily inserted into documents, making extracting and presenting the statistics you need simpler.</p>
+<p>I teach R to diverse learners, including undergraduates, graduate students, postdocs, lab managers, and some faculty members. Additionally, I serve as a data science mentor for <a href="https://posit.co/">Posit</a>, guiding corporate individuals through data science training programs. In this role, I lead cohorts of employees seeking to enhance their R and data science skills. I have participated in several of these mentoring sessions, and my extensive experience with R has made it an essential part of my daily work.</p>
+<p><img src="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/NebraskaRUGlogo.png" class="img-fluid"></p>
+</section>
+<section id="what-was-your-motivation-behind-starting-this-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-your-motivation-behind-starting-this-r-user-group">What was your motivation behind starting this R User group?</h2>
+<p>I know a few people at my university who use R, but there are just a handful here and there—not many. Most of them were using it for their projects. Then, about two years ago, I discovered that there was a faculty member in the Statistics Department named <a href="https://www.linkedin.com/in/srvanderplas/">Susan VanderPlas</a>. She had joined the department a bit earlier, but that was when I first learned about her. I found out that she shared my passion for R; she is also an R user and an educator enthusiastic about building websites and engaging with the community. She was the first person at my university with whom I connected over our shared interest in R.</p>
+<p>I proposed starting an R user group, but she initially suggested we take a different approach. Last year, instead of forming a formal user group, we contacted everyone on campus who used R. The goal was to gather and have informal monthly chats about R-related topics. During our meetings, we discussed various subjects. The first gathering occurred right after <a href="https://posit.co/conference/">Posit::Conf</a>, where we shared our experiences from that conference.</p>
+<p>As we continued meeting, I realised that my original vision was establishing a dedicated user group for R enthusiasts. Susan and I started a user group after talking with others on board with the idea. I took the initiative to move forward with it, and the R consortium grant was the primary motivation that pushed us to get serious about this project. Preparing the grant proposal was what got things started. Without that grant, I’m not sure we would have progressed as far as we have.</p>
+<p>While I’m leading this initiative, Susan is also helping out. It’s important to me that we extend our reach beyond the university. While most of my connections are within the university, I want to engage with other universities, government, and industry groups. That’s why we aim to connect with the broader community in Nebraska.</p>
+<p>I learned there was a group in Omaha, about an hour from my location in Lincoln, Nebraska, but it has become inactive. We invited anyone from Omaha, Lincoln, and surrounding areas to join us.</p>
+<p>Nebraska is not a very populous state. Most of the population is concentrated in Lincoln and Omaha, leaving many smaller towns with fewer residents. However, we wanted to ensure that people from these smaller areas also had the opportunity to participate, so we decided to make our initiative statewide rather than city-specific.</p>
+<p>Traditionally, many of our user groups have focused on urban areas. Still, given Nebraska’s vast land area, creating a welcoming environment for those outside the major cities was important. Several hundred miles separate some of the smaller towns, and we want to ensure everyone feels included.</p>
+<p>Our goal is to make as many of our meetings hybrid as possible. This way, we can include individuals in western Nebraska and other towns beyond Lincoln and Omaha. We want them to feel connected and engaged. Our first kickoff meeting was in person, but after that, we have implemented the hybrid model so that participants from all around Nebraska can join our discussions as well. It’s important to us to involve those outside the main urban centres.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-nebraska" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-nebraska">Can you share what the R community is like in Nebraska?</h2>
+<p>Although I have little experience with industry connections, I want to involve more industry professionals in our group. I have sent out an email summarising our discussions. I encouraged industry professionals to reach out, as one of our kickoff meeting discussions focused on the topics people want to hear about in future talks.</p>
+<p>All attendees at the kickoff meeting were from academia or involved in nonprofit or government roles, such as parks and recreation or public media. However, no one from a corporate background was present. A graduate student expressed a strong interest in moving from academia to industry and asked how a graduate student with academic skills can transition into an industry job.</p>
+<p>I highlighted this topic in my email, emphasizing the desire for industry partners to participate and share their insights. The academic participants are significantly interested in how to transition to industry positions, an area I feel more comfortable discussing.</p>
+<p><img src="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/NebRUGCollinBerke.png" class="img-fluid"> Nebraska R User Group Kickoff Meeting: <a href="https://www.collinberke.com/">Collin Berke</a></p>
+</section>
+<section id="please-provide-details-about-the-kick-off-meeting-for-your-group.-what-topics-were-discussed-and-how-did-participants-respond" class="level2">
+<h2 class="anchored" data-anchor-id="please-provide-details-about-the-kick-off-meeting-for-your-group.-what-topics-were-discussed-and-how-did-participants-respond">Please provide details about the kick-off meeting for your group. What topics were discussed, and how did participants respond?</h2>
+<p>The kickoff meeting was fantastic. As I mentioned last year, the original group consisted of about five or six people from the university. Typically, only four of us met each month, which was relatively small. However, we had 20 people in attendance for the kickoff meeting, which was great! It was mostly folks from Lincoln; unfortunately, no one from Omaha could make it since the meeting was in person.</p>
+<p><img src="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/NebRUGRachelRogers.png" class="img-fluid"> Nebraska R User Group Kickoff Meeting: <a href="https://www.linkedin.com/in/rachelesrogers/">Rachel Rogers</a></p>
+<p>I was excited about the turnout, mainly because most attendees were academics I already knew. Still, I also met a few new people from the university. Additionally, we had representatives from <a href="https://nebraskapublicmedia.org/en/watch/live/?gad_source=1&amp;gclid=Cj0KCQiAqL28BhCrARIsACYJvkc0RJUmqAJrWTGT1J6o9P0anRam3rJyxk4FKHEJHotsnaxDMe_AClUaApW9EALw_wcB">Nebraska Public Media</a> and <a href="https://members.grownebraska.org/list/member/nebraska-game-and-parks-164?utm_source=google&amp;gad_source=1&amp;gclid=Cj0KCQiAqL28BhCrARIsACYJvkdMY_i--W_KWOLTzLpze8Izpcet2qEWRrFwRpTk0UPC00QdMMI9Nd4aAkCIEALw_wcB">Nebraska Game and Parks</a>, which was exciting because it included some nonprofit and governmental groups.</p>
+<p>We did not have a specific topic to discuss, as the main goal was to spend most of the time networking. I wanted everyone to talk, make connections, and meet new people.</p>
+<p>My main goal for the kickoff meeting was facilitating communication among the attendees. We dedicated a significant portion of time to this at the beginning and end of the meeting to ensure everyone had ample opportunity to chat. I also made introductory announcements and introduced myself, outlining what we hoped to achieve with the group.</p>
+<p>We included a couple of lightning talks in the agenda. These were short, five-minute presentations showcasing the various projects participants had been working on. The aim was to help everyone build connections and gain insight into their peers’ work.</p>
+<p><img src="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/NebRUGParticipants.png" class="img-fluid"> Nebraska R User Group Kickoff Meeting: Participants</p>
+<p>One graduate student discussed a package they developed based on their research, while a faculty member presented an R course they created along with its accompanying website. A representative from Nebraska Public Media shared how they utilize R in their daily operations. Lastly, I provided a brief overview of my flashcard package.</p>
+<p>The goal was to provide a brief insight into what various people are doing from different perspectives. The event was very successful. The attendees enjoyed it; they were excited to learn about what others were doing and to get involved. Overall, I was pleased with how the kickoff meeting turned out.</p>
+</section>
+<section id="do-you-have-a-plan-for-this-year-what-is-the-frequency-of-the-events-you-plan-to-host-and-what-topics-will-you-cover" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-have-a-plan-for-this-year-what-is-the-frequency-of-the-events-you-plan-to-host-and-what-topics-will-you-cover">Do you have a plan for this year? What is the frequency of the events you plan to host, and what topics will you cover?</h2>
+<p>I’m still working on that piece. I plan to hold these events roughly once a month during the academic year. So, starting in February, I envision having sessions in February, March, April, and May. Over the summer, we could get creative and consider doing something different instead of just talking. An in-person event could be a good option.</p>
+<p>As mentioned, I want to involve some industry professionals. They would like to discuss the role of R in the industry and explore how people learning R can leverage their skills to seek job opportunities.</p>
+<p>I recently attended our second meeting, which was our initial discussion. I asked the group if they wanted to share topics, ideas, or presentations. One suggestion was to have a “beginner’s night” for those with little exposure to the subject. This would help newcomers by introducing them to the basics.</p>
+<p>User groups often contain members with varying experience levels, and it is essential to have a sense of how to cater to everyone. Our last meeting featured an advanced talk on extensions to <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, specifically building geoms, which is quite complex. We want to ensure that we also engage those new to R. It’s essential that they feel included, have the opportunity to ask questions, and learn something valuable by attending the group.</p>
+<p>I don’t have a fully developed plan yet, but I have two initial ideas I’m still working on. I aim to be as inclusive as possible, engaging participants from various experience levels and backgrounds—from the industry, academia, government, or non-profits. I want to involve everyone and see what we can achieve together.</p>
+</section>
+<section id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-primarily-related-to-your-industry" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-primarily-related-to-your-industry">Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting, primarily related to your industry?</h2>
+<p>My work involves running the Canine Cognition and Human Interaction Lab with two main focuses. One focus is studying dog cognition. We invite pet dog owners to bring their dogs to our lab on campus, where we play games involving treats. We hide food in specific locations or provide choices, measuring the dogs’ decisions. These activities aim to understand how dogs think and process information.</p>
+<p>One project I’m particularly excited about is called the <a href="https://manydogsproject.github.io/">Many Dogs Project</a>. This initiative is a consortium of dog labs from around the world. Several labs participate in a collaborative study, each conducting the same experiment in their respective locations. Ultimately, we aggregate all the data, allowing us to analyze a large sample size. For our first study, 20 labs tested 700 dogs, which provided us with a remarkable dataset for our behavioral research. I’m looking forward to the insights we can gain from these projects!</p>
+<p>It’s a fantastic project because it brings together a diverse group. It’s collaborative and collegial, strongly emphasising open source and open science. We use R for our analyses; everything we do is made public, allowing everyone access to the data and scripts. I’m excited to be a part of this project. In fact, after my initial involvement, I ran to become the co-director of the Many Dogs Project, which I am now. I truly enjoy contributing to such initiatives.</p>
+<p>I recently had the chance to work with Shiny for the first time. I developed my first <a href="https://manydogs.shinyapps.io/ManyDogs1/">Shiny app</a>, which allows users to explore some of the data collected from the Many Dogs Project. We gathered substantial information about the dogs, including their aggression, fearfulness, and training history. This app allows users to examine correlations, such as the relationship between a dog’s aggression and trainability.</p>
+<p>I haven’t publicized the app yet because I want to get feedback from my colleagues in the Many Dogs Project before making it fully available. It’s been a fun experience. Initially, I hadn’t worked much with Shiny because it seemed different from R, and I was unsure if I could manage it. However, I attended a workshop on Shiny designed for data science mentors, and I decided to use it to build the Many Dogs Project app as my project for that workshop.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/</guid>
+  <pubDate>Thu, 06 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/NebraskaRUGlogo.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
 <item>
   <title>New R User Group in Thailand is Building Awareness of R</title>
   <dc:creator>R Consortium</dc:creator>
@@ -192,7 +271,8 @@
 
 
 <p><a href="https://www.linkedin.com/in/marina-cock-49b1b5171/">Marina Cock</a>, co-organizer of <a href="https://www.meetup.com/rladies-santa-rosa/">R-Ladies Santa Rosa</a>, recently spoke with the R Consortium about the growth of the R community in La Pampa and the transformative role of R in local academic research. Marina shared insights into the community’s activities, including introducing students to R, organizing meetups, and encouraging advanced statistical techniques like generalized linear mixed models. She also highlighted the challenges of promoting R in her university setting and her efforts to foster a supportive environment for learning and collaboration.</p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level3">
+<h3 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h3>
 <p><img src="https://r-consortium.org/posts/transforming-academic-research-with-r-in-santa-rosa-argentina/MarinaCock.png" class="img-fluid"></p>
 <p><em>Marina Cock at first R ladies meet up in Santa Rosa, La Pampa</em></p>
 <p>I am a natural resources engineer from the National University of La Pampa. I completed my PhD in plant ecology at the University of Buenos Aires. Currently, I work as both a teaching assistant and a research assistant at the National University of La Pampa.</p>
@@ -202,12 +282,16 @@
 <p>Since then, I have shared knowledge and learned much about R from these communities. My journey with R started with a free online course, and after learning the basics, I began asking questions and learning from the global community.</p>
 <p><img src="https://r-consortium.org/posts/transforming-academic-research-with-r-in-santa-rosa-argentina/YaninaBellini.png" class="img-fluid"></p>
 <p><em>Yanina Bellini at the Latin R conference</em></p>
-<p><strong>Can you share what the R community is like in La Pampa?</strong></p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-la-pampa" class="level3">
+<h3 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-la-pampa">Can you share what the R community is like in La Pampa?</h3>
 <p>I can speak from my experience in academia, as this is where I primarily use R. I’ve noticed that R has become increasingly popular over the years. For instance, we didn’t use any software when I was studying for my degree. Now, I am a teaching assistant for statistics, and we teach R and its applications for research to our students.</p>
 <p>While pursuing my PhD, only some people were using R, making me question my decision regarding data analysis. After I collected my data, I considered whether to analyze it using traditional software. At that time, it felt daunting because, in my location, there were few users of R. However, I decided to dedicate a summer to learning the R language. I applied what I learned to analyze my data, and it was a great experience. It opened up numerous possibilities for analysis and helped me develop valuable skills in data wrangling, such as organizing and cleaning the data.</p>
 <p>Although I’m not an expert—just someone who has learned the basics—I found many helpful resources that have significantly enhanced my statistical skills.</p>
 <p>That’s why I believe Yanina and I should spread the word about R. In my case, I tell the students that using R isn’t something to be afraid of. Many people think it’s impossible to learn, but that’s not true. Once you start using it, you’ll see that it’s manageable. There’s plenty of help available online and at the university, making it an excellent tool for our work. However, I still think we have much to do to alleviate the fear surrounding R. Many university students are still intimidated by it, and we should continue supporting each other in learning it.</p>
-<p><strong>Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?</strong></p>
+</section>
+<section id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-related-to-your-industry" class="level3">
+<h3 class="anchored" data-anchor-id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-related-to-your-industry">Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?</h3>
 <p>R became essential for me after I completed my PhD, mainly for data wrangling. During the last year of my PhD, I received a scholarship to spend three months in the US. Because it was a short-term stay, I could not take my research samples. Instead, I proposed carrying out a data analysis project. At that point, I needed to improve my data analysis skills, and my experience with R was limited. While in the US, I worked on a research question related to plant ecology, focusing mainly on plant-plant interactions, particularly positive plant facilitation. We were investigating whether plants that grow in association with others show different traits or strategies than those that grow in isolation.</p>
 <p>There is already a significant amount of knowledge regarding how facilitation and positive interactions vary in stressful environments. However, we aimed to understand more about the types of plants that depend on being close to other plants for survival and reproduction.</p>
 <p>I was provided with two large databases for my analysis. One database contained information on plants in alpine systems, including the richness and biodiversity of plants living close to each other versus those more isolated. Another included a big worldwide database about plant traits. Initially, I struggled to interpret the databases and sought help downloading their data. Once I obtained it, I began the process of data wrangling and tidying it up using the <a href="https://www.tidyverse.org/">tidyverse</a> and reshaping packages in R.</p>
@@ -219,6 +303,7 @@
 <p>I organize all the data needed to perform analyses, and I often tell people here that I strive to incorporate more R into our statistics courses. We encourage students to integrate more R into learning and embrace modern tools and techniques. Other universities might use R more extensively than we do, but we have been growing in our use of R over the past few years.</p>
 <p>If you have any questions, ideas, or suggestions, my email is <a href="marinacock@gmail.com">marinacock@gmail.com</a>.</p>
 <p>You can also contact <a href="mailto:yabellini@gmail.com">Yanina Bellini Saibene</a>.</p>
+</section>
 <section id="how-do-i-build-an-r-user-group" class="level2">
 <h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
 <p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
@@ -1355,62 +1440,6 @@ font-style: inherit;">TRUE</span>)</span></code></pre></div>
  ]]></description>
   <guid>https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/</guid>
   <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Empowering Dengue Research Through the Dengue Data Hub: R Consortium Funded Initiative</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/DengueDataHub.png" class="img-fluid"></p>
-<p>The <a href="https://github.com/thiyangt/denguedatahub">Dengue Data Hub</a>, an ambitious initiative funded by the R Consortium ISC, transforms how researchers access and utilize dengue-related data. At its core, the Dengue Data Hub aims to provide a centralized repository for dengue incidence, mortality, and risk-related data, streamlining the research process and empowering scientific inquiry into this global health issue. The platform offers easy access through the denguedatahub R package, a Shiny app, and an informative website, making data analysis more efficient and accessible.</p>
-<p>Please note: <a href="https://cran.r-project.org/web/packages/denguedatahub/index.html">denguedatahub version 2.1.1</a> was published on CRAN on Sep 22, 2024.</p>
-<p><a href="https://www.linkedin.com/in/thiyanga-talagala-24bb63134/">Dr.&nbsp;Thiyanga Talagala</a>, a Senior Lecturer at the University of Sri Jayewardenepura in Sri Lanka, spearheads this initiative. With a PhD from Monash University, where she honed her skills in R programming and data science, Dr.&nbsp;Talagala is deeply passionate about leveraging her expertise to address Sri Lanka’s public health challenges, particularly dengue. Together with her sister, Dr.&nbsp;Priyanga Talagala, she co-founded the <a href="https://www.meetup.com/rladies-colombo/">R-Ladies Colombo group</a> and has been instrumental in bringing innovative solutions to the scientific community. Dr.&nbsp;Talagala’s commitment to enhancing dengue research through accessible data resources is central to her ongoing work, making the Dengue Data Hub a vital tool for researchers worldwide.</p>
-<p><strong>Tell us about your background and how it connects to the Dengue Data Hub project</strong></p>
-<p>Currently, I am working as a Senior Lecturer, Department of Statistics, Faculty of Applied Sciences, University of Sri Jayewardenepura, Sri Lanka. I earned my PhD from Monash University, Australia. During my time at Monash University in Australia, I was part of the NUMBAT research group, where I developed a deep interest in the R programming language and discovered its incredible potential for data analysis and research. I also had the opportunity to meet and collaborate with leading experts in the field, which further fueled my passion for R and data science. I also got to know about the R Ladies community, and I attended events organized by R-Ladies Melbourne.</p>
-<p>Once I returned to Sri Lanka after completing my PhD, I felt a strong desire to contribute to my country using the knowledge I had gained. I, along with my Sister, Dr Priyanga Dilini Talagala (we both did our PhDs together at Monash University), established the R Ladies Colombo meetup group.</p>
-<p>Dengue is a major public health issue in Sri Lanka. As a data scientist, I can contribute to its mitigation by establishing a centralized repository for dengue data for data analysis and modeling, which empowers dengue research. This project was funded by <a href="https://r-consortium.org/all-projects/2022-group-1.html#dengue-data-hub">R Consortium ISC 2022 - 1 Grant</a> and I have been working on it since 2022.</p>
-<p><strong>What is the Dengue Data Hub?</strong></p>
-<p>The Dengue Data Hub is a centralized repository that provides access to a variety of data sets related to dengue incidence and other relevant factors. This includes data on dengue deaths, reported cases, indigenous cases, local cases, dengue serotypes, breeding sites, and country-wise levels of risk. I have data related to annual dengue incidence for 195 countries around the world.</p>
-<p><strong>Why is this project important for the research community?</strong></p>
-<p>Dengue researchers often spend their valuable time searching for datasets, web scraping and cleaning data. The publication of data in a centralized repository helps to prevent duplicate efforts. The dengue data hub enables the community to focus on analysis and modeling rather than data collection and cleaning. Additionally, it enhances research sustainability by allowing researchers to utilize data for their studies while preserving it for future researchers.</p>
-<p><strong>How do researchers use the Dengue Data Hub?</strong></p>
-<p>There are three straightforward ways for anyone to participate. Use the denguedatahub R software package, use the Dengue Data Hub Shiny app (for non-programmers), or use our website which provides tutorials and examples.</p>
-<ol type="1">
-<li>Use the denguedatahub R software package.</li>
-</ol>
-<p><img src="https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/denguedatahub-package.png" class="img-fluid"></p>
-<p>The denguedatahub R package allows researchers to download dengue-related data easily. For Sri Lanka, it includes web scraping functions that directly retrieve weekly epidemiological reports published by the Epidemiology Unit, Ministry of Health, Sri Lanka. This functionality also cleans the data into a tidy format. Additionally, the package offers various data manipulation functions tailored for dengue data visualization and modeling. You can find the package on GitHub at <a href="https://github.com/thiyangt/denguedatahub">https://github.com/thiyangt/denguedatahub</a>.</p>
-<ol start="2" type="1">
-<li>Dengue Data Hub Shiny app</li>
-</ol>
-<p>The Shiny app provides an interface for non-programmers to access dengue data. It is available at: <a href="https://denguedatahub.shinyapps.io/denguedatahub/">https://denguedatahub.shinyapps.io/denguedatahub/</a></p>
-<ol start="3" type="1">
-<li>Website (<a href="https://denguedatahub.netlify.app/">https://denguedatahub.netlify.app/</a>)</li>
-</ol>
-<p>This website is the home for the projects. It provides tutorials and examples. The site was developed using Quarto.</p>
-<p><strong>What impact do you hope the Dengue Data Hub will have?</strong></p>
-<p>My hope is that the Dengue Data Hub will become a go-to resource for dengue researchers globally. I believe the hub will accelerate dengue research and discoveries which will help in developing effective strategies to combat dengue. The dengue data hub also serves as a</p>
-<p>teaching tool for data science and statistics, as it includes comprehensive data sets.</p>
-<p><strong>Do you have any final thoughts or messages you’d like to share with the research community?</strong></p>
-<p>I invite dengue researchers worldwide to collaborate on this project. I do not have access to clinical trial data, so contributions in that area would be especially valuable. We are looking to expand the datasets available, as comprehensive data sharing is essential for advancing our collective understanding of dengue epidemiology. Additionally, we welcome contributions of data, analytical tools, and insights that can help strengthen the hub’s capacity to serve as a central resource for researchers globally.</p>
-<p>You can learn more about how to collaborate <a href="https://denguedatahub.netlify.app/collaborate.html">here.</a> We can build a stronger network to enhance dengue research and response efforts worldwide.</p>
-<section id="about-isc-funded-projects" class="level2">
-<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
-<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
-<p><a href="https://r-consortium.org/all-projects/callforproposals.html">https://r-consortium.org/all-projects/callforproposals.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/</guid>
-  <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/empowering-dengue-research-through-the-dengue-data-hub/DengueDataHub.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
