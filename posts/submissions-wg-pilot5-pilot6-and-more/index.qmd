@@ -1,6 +1,6 @@
 ---
 title: "R Submissions Working Group: Pilot 5 Launch and more!"
-description: "The R Consortium Submission Working Group is excited to announce a new Pilot 5 that aims to deliver an R-based Submission to the FDA using datasetjson. We also are cooking up Pilots and collaborations for 2025! "
+description: "The R Consortium Submission Working Group is excited to announce a new Pilot 5 that aims to deliver an R-based Submission to the FDA using datasetjson. Also in this post are our plans for additional launches for 2025, some news on Pilot 4 and a few other goodies! "
 author: "R Consortium"
 image: "pilot5.png"
 date: "15/01/2025"
@@ -10,36 +10,34 @@ date: "15/01/2025"
 
 ## Pilot 5
 
+Last year the [submission working group](https://rconsortium.github.io/submissions-wg/) was able to successfuly deliver its third R-based submission to the FDA through the eCTD portal on September 20, 2024. Using R for submission work? You got that right!
+
+A quick recap of previous Pilots:
+
+  * Pilot 1 delivered Tables and Figures to the FDA using R.
+  * Pilot 2 delivered the same Tables and Figrues using a Shiny App using R
+  * Pilot 3 delivered the Tables and Figures using R as well as the ADaMs...you guessed it using R
+  * Pilot 4 is in the process of delivering the Shiny App from Pilot 2 using webassembly and containers (almost completed!)
+  
+Pilot 5 is no differnt! We will be using R, but instead of delivering all the datasets as `xpt` files we will make use of the new `datasetjson` formt via the eponymously named R package  [datasetjson](https://atorus-research.github.io/datasetjson/) and hope to deliver two submissions for 2025.
+
 ## Pilot 5 - Part 1
+
+Part 1 is going to replicate [Pilot 3](https://github.com/RConsortium/submissions-pilot3-adam). We will reuse the ADaM and TF programs that were written in R. However, the Pilot 3 datasets were written out as `xpt` files and we will instead use `datasetjson`!  Yay!
+
+Pilot 5 Part 1 will also submit all the other files you find in the Pilot 3 submission. If you have a passion for submission work, R and `datasetjson` or just want to see what all the fuss is about come join us!
 
 ## Pilot 5 - Part 2
 
+The Pilots are small! 5 ADaMs, 3 Tables and 1 Figure is not a typical submission package for a drug! The Pilots have always been about testing out and advocating that R can keep up with the best. For Part 2, we want to build up this body of work and develop several more ADaMs and more Tables and Figures.  As in Part 1, we will devilver everything using `datasetjson` that would of been an `xpt` file.
+
+We plan on kicking Part 2 off mid-summer, but planning will probably start soon!  Come join in on the fun and help us build a larger body of work around drug submissions using R.
+
 ## Pilot 6
 
-## A re-envisioned ADRG
+Simulation of the data!!  Can we make it better!!
 
-I just wanted to follow up on the PHUSE Version Metadata for Open-Source Languages working group links to share in the upcoming RCRSWG Pilot blog post.
-
-As mentioned, the PHUSE WG will collaborate with future Pilot team to support ADRG enhancements for open-source submissions. Feel free to reference these : 
-
-1. https://advance.hub.phuse.global/wiki/x/UzOZAQ
-2. https://phuse-org.github.io/OSDocuMeta/ & https://phuse-org.github.io/OSDocuMeta/references/problem_statement.html 
-
-## Check for Placeholder Text
-
-The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted 
-its latest test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document 
-(eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially 
-received the submission package. 
-
-Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will 
-minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”
-
-The complete set of submission materials is available publicly on GitHub: 
-[R Consortium Submissions Pilot 4.](https://github.com/RConsortium/submissions-pilot4-webR-to-fda)
-
-
-## About the Pilot 4 Project 
+## Progress Report on Pilot 4
 
 The objective of the R Consortium R submission *Pilot 4 *Project is to explore the use of novel technologies such as Linux 
 containers and WebAssembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of 
@@ -51,15 +49,28 @@ driven by a web browser, allowing agency reviewers to easily run and evaluate so
 half of the Pilot 4 Project (leveraging container technology to package a Shiny application) will be submitted as an 
 additional package later this year. Additional agency feedback will be shared in future communications.
 
+The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted 
+its latest test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document 
+(eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially 
+received the submission package. 
+
+Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will 
+minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”
+
+## A re-envisioned ADRG
+
+I just wanted to follow up on the PHUSE Version Metadata for Open-Source Languages working group links to share in the upcoming RCRSWG Pilot blog post.
+
+As mentioned, the PHUSE WG will collaborate with future Pilot team to support ADRG enhancements for open-source submissions. Feel free to reference these : 
+
+1. https://advance.hub.phuse.global/wiki/x/UzOZAQ
+2. https://phuse-org.github.io/OSDocuMeta/ & https://phuse-org.github.io/OSDocuMeta/references/problem_statement.html 
 
 ## About the R Submissions Working Group
 
-The [R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/) is focused on improving 
-practices for R-based clinical trial regulatory submissions.
+The [R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/) is focused on improving practices for R-based clinical trial regulatory submissions.
 
-Health authority agencies from different countries require electronic submission of data, computer programs, and relevant 
-documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on 
-the SAS language. 
+Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language. 
 
 In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical 
 industry and research institutions. Although the health authorities accept submissions based on open source programming 
@@ -68,7 +79,6 @@ languages, sponsors may be hesitant to conduct submissions using open source lan
 Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps 
 while submitting these example packages. All materials, including submission examples and communications, are 
 publicly available on the [R consortium GitHub page.](https://github.com/RConsortium)
-
 
 ## Join the R Submissions Working Group
 
