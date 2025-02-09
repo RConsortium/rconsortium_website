@@ -1,0 +1,111 @@
+## Funded ISC Grants (2024-2)
+
+The R Consortium Infrastructure Steering Committee periodically solicits proposals from the worldwide R community for projects which will help advance the state of the R ecosystem. Developers and organizations may apply to participate in the program and receive funding to help further a project or initiative.
+
+Grants funded in this group:
+
+- [R-Universe: towards a unifying infrastructure and global catalog for the wider R ecosystem](#r-universe-towards-a-unifying-infrastructure-and-global-catalog-for-the-wider-r-ecosystem)
+- [Ambiorix - A web framework for R](#ambiorix-a-web-framework-for-r)
+- [DeepRHealth – A Deep Learning Toolkit for Healthcare Predictive Modeling](#deeprhealth-a-deep-learning-toolkit-for-healthcare-predictive-modeling)
+- [Cpp11armadillo: An 'Armadillo' Interface (C++)](#cpp11armadillo-an-armadillo-interface-c)
+- [aggreCAT: An R package for mathematical aggregation of expert elicitation data](#aggrecat-an-r-package-for-mathematical-aggregation-of-expert-elicitation-data)
+- [COVID-19 Data Hub](#covid-19-data-hub)
+- [Launching the Probaverse](#launching-the-probaverse)
+
+___
+
+### R-Universe: towards a unifying infrastructure and global catalog for the wider R ecosystem
+
+**Funded:**  
+$40,950
+
+**Proposed by:**  
+Jeremy Ooms, Noam Ross
+
+**Summary:**  
+R-Universe is a rapidly evolving platform that fills a need for modern, scalable, user-friendly publishing in the R ecosystem. At first glance, it serves as a global catalog of software, articles, and datasets found on CRAN, BioConductor, as well as self-published repositories. It aids discovery through a powerful search engine that indexes and ranks all content using
+
+R specific criteria, and by cross referencing related projects based on authorship and topics. For each package, extensive information is made available through attractive webpages and APIs that include rendered documentation, health and activity metrics, binaries and installation instructions, and a wealth of other material to learn about a project and get started using it. 
+
+For developers, R-universe serves as a publication platform providing a fully automated pipelinemfor testing, building, and publishing R packages. In this sense R-universe can be seen as a meta-repository and common infrastructure for both individuals or organizations to manage custom R package repositories using their own approach to curation, release management, and quality control. The build system is based on the inherently scalable GitHub Actions infrastructure, making it easy to maintain and extend. This way R-Universe enhances R’s promise as a multi-repository-by-design ecosystem, reducing the barrier to entry for groups of all scales.
+
+### Ambiorix - A web framework for R
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Kennedy Mwavu
+
+**Summary:**  
+This proposal seeks funding to advance the ambiorix R web framework, addressing the critical gap in the R ecosystem for a robust, feature-rich, and production-ready web application framework.
+
+### DeepRHealth – A Deep Learning Toolkit for Healthcare Predictive Modeling
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Junyi Gao
+
+**Summary:**  
+DeepRHealth is a deep learning library specifically designed for healthcare applications in R. Based on the common healthcare data analytics pipelines and modelling benchmarks, the toolkit will have four main modules: EHR database module, prediction task module, healthcare DL core module, and EHR code mapping module.
+
+### Cpp11armadillo: An 'Armadillo' Interface (C++)
+
+**Funded:**  
+$8,830
+
+**Proposed by:**  
+Mauricio Vargas Sepulveda
+
+
+**Summary:**  
+cpp11armadillo was initiated by Mauricio Vargas while needing an integration between R and Armadillo (C++) compatible with the header-only package cpp11. For the first cpp11armadillo version, we focused on the correctness and safety of templates that facilitate sending data from R to C++ and vice versa. The plan is to finish a new cpp11armadillo version focus on speed optimization and maintaining the goal of a lower coding effort from the final user.
+
+We aim to provide a high quality package oriented to user that require to use linear algebra operations.
+
+The ultimate aim of the project is to produce a package that provides speed and helps to address some bottlenecks in R without compromising safety.
+
+### aggreCAT: An R package for mathematical aggregation of expert elicitation data
+
+**Funded:**  
+$1,000
+
+**Proposed by:**  
+David Wilkinson
+
+
+**Summary:**  
+We are developing the aggreCAT R package as an accessible, user-friendly, open source mathematical aggregation software for elicited expert judgements. Initially developed for purpose as part of the repliCATS (Collaborative Assessment of Trustworthy Science) project within the international DARPA-SCORE program, we are currently in the process of updating the package to be a more general and widely-applicable aggregation package. The aggreCAT package provides a suite of 29 aggregation methods, including those available in existing software, that explore different approaches to mathematical aggregation from straight-forward arithmetic calculations to Bayesian statistical models. In addition we provide extra functionality such as plotting and performance evaluation against known outcomes. The aggreCAT package fills a large
+void in open software for aggregating elicited judgements, providing enormous benefit to researchers and decision makers across any field of research.
+
+### COVID-19 Data Hub
+
+**Funded:**  
+$1,000
+
+**Proposed by:**  
+Emanuele Guidotti
+
+**Summary:**  
+In March 2020, I started “COVID-19 Data Hub” – a project to provide the research community with a unified dataset by collecting worldwide fine-grained case data merged with exogenous variables to better understand COVID-19.
+
+The project was initiated via the R package COVID19, designed to harmonize data from several sources. In April 2020, the project was funded by the Canadian Institute for Data Valorization IVADO. The project won the CovidR contest in May, it was presented at the European R Users Meeting in June, and has been supported by the R Consortium since 2021.
+
+To date, the database provides the daily time series of COVID-19 cases, deaths, recovered people, tests, vaccinations, and hospitalizations for more than 230 countries, 760 regions, and 12,000 lower-level administrative divisions. The geographical entities are associated with identifiers to match with hydrometeorological, geospatial, and mobility data, among others. By unifying the access to the data, this work makes it possible to study the pandemic on its global scale with high resolution, taking into account within-country variations, nonpharmaceutical interventions, and environmental and exogenous variables.
+
+Overall, the R package COVID19 is one of the most downloaded packages related to the pandemic and the corresponding data have been downloaded over 6 million times. 
+
+### Launching the Probaverse
+
+**Funded:**  
+$5,000
+
+**Proposed by:**  
+Vincenzo Coia
+
+**Summary:**  
+The probaverse is a free, open source, and permissive suite of packages in R whose mission is to facilitate the exploration of the full space of possible outcomes in an analysis. It elevates probability distributions as tangible objects that realistically represent data / systems, workable through a principled grammar. It is inspired by the tidyverse, but for distributions.
+
+This project is about refactoring the distribution object in distionary, the foundation of the probaverse, which defines the distribution object and its evaluation, and to submit the package to CRAN, due to its importance in the overall probaverse workflow.
