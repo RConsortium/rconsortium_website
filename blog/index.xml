@@ -10,7 +10,61 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 06 Feb 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 13 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Seville R Users Group: R’s Role in Optimization Research and Stroke Prevention</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/alberto-torrej%C3%B3n-valenzuela/?locale=en_US">Alberto Torrejon Valenzuela</a>, organizer of the <a href="https://www.meetup.com/sevilla-r-users/">Seville R Users Group</a>, recently spoke with the R Consortium about the dynamic growth of the R community in Seville and the group’s role in fostering collaboration across academia and industry. Alberto shared highlights from hosting the Third Spanish R Conference, which brought together local and international participants. He discussed the group’s initiatives, including monthly workshops and online outreach through platforms like YouTube. He also reflected on his research in optimization and a collaborative project analyzing stroke prevention, showcasing how R drives innovation in scientific research and community development.</p>
+<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/AlbertoValenzuela.png" class="img-fluid" style="width:60.0%"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>My name is Alberto Torrejon Valenzuela. I am from Los Barrios, a town in Cádiz, southern Spain. I have moved to Seville, which is a bit further north, where I studied for a double degree in Mathematics and Statistics. During my studies, one of my professors introduced me to R. Although I was learning several programming languages, I realized that I could accomplish everything I needed with just R. Since then, I have continued to use it throughout my studies.</p>
+<p>I also joined the R group in Sevilla, which I discovered through Meetup. It was another motivation to enhance my R skills. The Sevilla R Users Group meets at the University of Sevilla’s facilities every one to two months. During these meetings, we discuss our work and share our experiences. Our group includes many users from academia and industry, making our discussions very diverse. We enjoy discussing our various implementation packages and applications; hearing from both perspectives is always interesting.</p>
+<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SevilleRUGOrganizers.png" class="img-fluid" style="width:60.0%"></p>
+<p><strong>Your Group recently hosted the <a href="https://www.imus.us.es/congresos/IIIRqueR/">Third Spanish R Conference</a>. Please share some details about the event.</strong></p>
+<p>The Third Spanish R Conference took place from November 6 to 8 in Seville, co-organized by the <a href="https://www.imus.us.es/www/">Institute of Mathematics at the University of Seville</a> and Sevilla R group, with support from the R Consortium and several other organizations.</p>
+<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SpanishRConference1.png" class="img-fluid" style="width:60.0%"></p>
+<p>We used a catchy slogan for the conference: “R tiene un color especial” (R has a special color). This is a modification of the lyrics of a famous song about Seville that everyone in Spain knows. It became a hit!</p>
+<p>The conference featured a wide range of activities from both scientific and social perspectives. We had four plenary speakers: <a href="https://jakubnowosad.com/">Jakub Nowosad</a>, from University of Münster, and <a href="https://www.frick.ws/">Hannah Frick</a> from POSIT, along with national speakers <a href="https://www.linkedin.com/in/rosanaferrero/?originalSubdomain=es">Rosana Ferrero</a>, who is very active in social networking, and <a href="https://www.linkedin.com/in/javier-tejedor-aguilera/?originalSubdomain=es">Javier Tejedor Aguilera</a> from <a href="https://www.endesa.com/en">Endesa</a>, who represents the industry.</p>
+<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SpanishRConference2.png" class="img-fluid" style="width:60.0%"></p>
+<p>Additionally, it’s important to mention that the group recognized the contributions of two founding members, <a href="https://frodriguezsanchez.net/">Francisco Rodriguez-Sanchez</a> and <a href="https://jeronimocarranza.github.io/">Jerónimo Carranza</a>, during the conference. We honored them with a gift to acknowledge their hard work.</p>
+<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SpanishRConference3.png" class="img-fluid" style="width:60.0%"></p>
+<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong></p>
+<p>Organizing a conference, like the one in Spain, is quite a significant undertaking. In addition to the conference, the group hosts monthly meetings called “TalleR”, the Spanish word for workshop. We typically emphasize the “R” at the end of the word. We exchange knowledge about our packages and various other topics during these meetings.</p>
+<p>We primarily use social networks to connect with the local community, including the former <a href="https://x.com/_SevillaR">Twitter</a> (now known as X), <a href="https://bsky.app/profile/sevillar.bsky.social">BlueSky</a>, and <a href="https://www.linkedin.com/in/gruposevillar/">LinkedIn</a>. We rely on our Meetup page to organise the event, where we post details about our seminars or talleres. People can indicate whether they will attend in person or online, making this a helpful tool. Additionally, since some members are researchers and professors in the University of Seville, we have support from Microsoft Teams to stream and record these meetings, as many participants come from South American and Spanish-speaking countries. For example, in our last meeting, we had attendees from Panama and Colombia.</p>
+<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SevilleRUGMeeting.png" class="img-fluid" style="width:60.0%"></p>
+<p>After the meeting, we usually post our recordings on our <a href="https://www.youtube.com/channel/UC4_SN0le5WFMu_LFaIufLbA">YouTube</a> channel. Every session is recorded there. We also have a <a href="https://sevillarusers.netlify.app/">website</a> and a <a href="https://t.me/+HE3IBL13swTfZwYI">Telegram</a> group where we engage in more active discussions. This is mainly for our meetings.</p>
+<p>However, as you mentioned, organizing a large conference like the Spanish R Conference requires additional support. We received this support from the Institute of Mathematics at the University of Seville, which provided significant assistance regarding the location and logistics of our conference. Since our successful collaboration with the Institute of Mathematics, our local group has been keen to maintain and expand this partnership to enhance our meetings held at the Institute.</p>
+<p>Additionally, a significant portion of our support came from the Spanish Association known as <a href="https://r-es.org/">R-Hispano</a>. They provided valuable tools and assistance when co-organizing our events, which has been incredibly helpful. We’re also thankful for financial support from the R Consortium.</p>
+<p><strong>How do you use R for your work?</strong></p>
+<p>I use both R and Python for my <a href="https://www.researchgate.net/profile/Alberto-Torrejon-Valenzuela">research</a>. I have two distinct lives: a professional and a personal one. In my free time, I enjoy programming, and I also need to program in my professional life. My research focuses on optimization.</p>
+<p>Optimization models aim to find the best solution to a given problem. I work in a lab run by <a href="https://scholar.google.es/citations?user=koF66usAAAAJ&amp;hl=es">Justo Puerto</a>, a full professor in the Department of Statistics and Operations. One of the primary areas I’m involved in is ordered optimization, which involves sorting procedures to identify the best solutions to various combinatorial and decision optimization problems.</p>
+<p>We study numerous problems, ranging from logistics issues, such as resource or facility location problems, to statistical issues like linear regression or efficient statistics computation. The framework of ordered optimization allows us to generalize these problems to include abstract concepts such as equity or minimizing envy among clients. For instance, we can optimize the location of a supermarket, hospital, voting center, or bus and train lines, ensuring equitable access so that no one feels envious of their neighbors.</p>
+<p>Additionally, we apply these algorithms to statistical problems to improve the computation or estimators. The optimization community is familiar with Python algorithms and packages, but the R community is catching up. I use several R packages, including <a href="https://cran.r-project.org/web/packages/ROI/index.html">ROI</a> and <a href="https://cran.r-project.org/web/packages/ompr/index.html">OMPR</a>, allowing comprehensive data analysis.</p>
+<p><strong>Please share about a project you are working on or have worked on using the R language. Goal/reason, result, anything interesting, primarily related to your industry?</strong></p>
+<p>I am discussing a topic that highlights one of R’s best uses in boosting and supporting community initiatives. Since I work at the Institute of Mathematics, a research team from Hospital Universitario Virgen Macarena contacted us for statistical support. I was the first to volunteer, and we signed a collaboration contract to begin our work.</p>
+<p>The project I’m currently involved in focuses on<a href="https://www.ibis-sevilla.es/es/investigacion/neurociencias/neurovascular/">studying and preventing strokes through analyzing large databases</a>. Stroke is one of the worst medical conditions from the point of view of rapid care for the affected person because when it occurs, there is usually a very short period of time until brain death is reached. Timely care is essential for improving outcomes.</p>
+<p>This research is crucial for the team led by <a href="https://www.linkedin.com/in/joanmanelmontaner/?originalSubdomain=es">Joan Montaner</a>, which is focused on finding the best combination of drugs for stroke prevention. They aim to provide effective medications to individuals diagnosed with a stroke to improve their chances of survival, especially within the critical first 24 hours.</p>
+<p>The team has access to a historical dataset of more than 100,000 patients, and I am analyzing this data using our software tools. We are uncovering some interesting insights, and we hope this information will assist them in testing these drug combinations. Ultimately, we aim to help develop more extensive protocols for administering these medications to patients.</p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.htm">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/</guid>
+  <pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SevilleRUGOrganizers.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Connecting Nebraska Through R: Jeffrey Stevens’ Journey of Community Building</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1130,316 +1184,6 @@
   <guid>https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/</guid>
   <pubDate>Fri, 18 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/RLadiesMorelia-main-image.png" medium="image" type="image/png" height="62" width="144"/>
-</item>
-<item>
-  <title>The U.S. Federal Reserve quarterly model in R</title>
-  <dc:creator>Guest Blog Post</dc:creator>
-  <link>https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><em>Guest Post contributed by Andrea Luciani, Bank of Italy, Directorate General for Economics, Statistics and Research, maintainer of the <a href="https://CRAN.R-project.org/package=bimets">bimets</a> package (Time Series and Econometric Modeling) in CRAN</em></p>
-<p>The US Federal Reserve’s econometric model for the US economy (i.e., FRB/US) is publicly available at <a href="https://www.federalreserve.gov/econres/us-models-about.htm">federalreserve.gov</a>. The website states, <em>“FRB/US is a large-scale estimated general equilibrium model of the US economy that was developed at the Federal Reserve Board, where it has been in use since 1996 for forecasting, analysis of policy options, and research projects.”</em></p>
-<p>FRB/US is a quarterly model with hundreds of equations and variables. The model definition and time series data are available for download on the Federal Reserve website, as is the source code, which allows users to perform several econometric exercises. However, the Federal Reserve publicly distributes source codes only for EViews™ and python.</p>
-<p>In this post, we show how to load the FRB/US model, and perform in R the same econometric exercises provided by the Federal Reserve.</p>
-<section id="the-frbus-model" class="level2">
-<h2 class="anchored" data-anchor-id="the-frbus-model">The FRB/US model</h2>
-<p>The Federal Reserve website also states, <em>“Compared with DSGE models, however, FRB/US applies optimization theory more flexibly, which permits its equations to better capture patterns in historical data and facilitates modeling the economy in greater detail… A distinctive feature of FRB/US is its ability to switch between alternative assumptions about how economic agents form expectations. Under the VAR-based option, expectations are derived from the average historical dynamics of the economy as manifested in the predictions of estimated VAR models. Under model-consistent (MC), agents are assumed to form accurate expectations of future outcomes as generated by simulations of FRB/US itself.”</em></p>
-<p>FRB/US is a quarterly model, and counts 284 equations and 365 variables (Feb.&nbsp;2024 version). The XML model definition is available for download on the Federal Reserve website, and contains, for each endogenous variable, the following information: the variable name, the variable definition with a short description, the economic sector the variable belongs to, the related equation in both EViews™ and python format, coefficients and exogenous variables involved in the equation.</p>
-<p>64 endogenous variables are marked as stochastic and, during the stochastic simulation exercise, will be transformed by applying sequences of shocks as drawn randomly from their historical residuals.</p>
-<p>14 endogenous variables belong to the MCE group (i.e., Model-Consistent Expectations) and have an alternative equation that contains forward-looking references.</p>
-<p>Finally, at the end of the XML model definition, users can find additional information on economic sectors and exogenous variables involved in the model definition.</p>
-</section>
-<section id="moving-towards-r" class="level2">
-<h2 class="anchored" data-anchor-id="moving-towards-r">Moving towards R</h2>
-<p>FRB/US model definition is available to R users in the <code>FRB__MODEL</code> dataset of the <a href="https://CRAN.R-project.org/package=bimets">bimets</a> package (bimets ver. 4.0.2, a software framework for time series analysis and econometric modeling):</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#load bimets</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(bimets)</span></code></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#load FRB/US MDL definition</span></span>
-<span id="cb2-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">data</span>(FRB__MODEL)</span>
-<span id="cb2-3"></span>
-<span id="cb2-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#print first 4 equations in model definition</span></span>
-<span id="cb2-5"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">cat</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">substring</span>(FRB__MODEL,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1615</span>))</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>MODEL
-
-$DOWNLOADED FROM federalreserve.gov AND CONVERTED TO BIMETS MDL IN Feb, 2024
-
-$FRB/US is a large-scale estimated general equilibrium model of the U.S. economy 
-$that was developed at the Federal Reserve Board, where it has been in use since 1996 
-$for forecasting, analysis of policy options, and research projects. 
-
-$--------------------------------------------------------------------------
-
-$ ENDOGENOUS SECTION
-
-$-----------------------------------------------
-$Financial Sector
-$Monetary policy indicator for both thresholds
-$DMPTMAX equals one when either the unemployment threshold or
-$the inflation threshold is breached.
-IDENTITY&gt; dmptmax
-IF&gt; dmptlur&gt;=dmptpi
-EQ&gt; dmptmax=
-dmptlur
-IDENTITY&gt; dmptmax
-IF&gt; dmptlur&lt;dmptpi
-EQ&gt; dmptmax=
-dmptpi
-
-$-----------------------------------------------
-$Federal funds rate, first diff
-IDENTITY&gt; delrff
-EQ&gt; delrff=
-TSDELTA(rff)
-
-$-----------------------------------------------
-$Financial Sector
-$Monetary policy indicator for unemployment threshold
-$DMPTLUR equals zero when the unemployment rate is above its
-$threshold (LURTRSH) one when it is below. A logistic function
-$smoothes the transition, improving solution convergence properties.
-IDENTITY&gt; dmptlur
-EQ&gt; dmptlur=
-1/(1+EXP(25*(lur-lurtrsh)))
-
-$-----------------------------------------------
-$Financial Sector
-$Monetary policy indicator for inflation threshold
-$DMPTPI equals zero when expected inflation is below its threshold
-$and one when it is above. A logistic function smoothes the
-$transition, improving solution convergence properties.
-IDENTITY&gt; dmptpi
-EQ&gt; dmptpi=
-1/(1+EXP(-25*(zpic58-pitrsh)))</code></pre>
-</div>
-</div>
-</section>
-<section id="dynamic-simulation-in-a-monetary-policy-shock" class="level2">
-<h2 class="anchored" data-anchor-id="dynamic-simulation-in-a-monetary-policy-shock">Dynamic simulation in a monetary policy shock</h2>
-<p>The first econometric exercise proposed by the Federal Reserve is a dynamic simulation of the FRB/US model under a monetary policy shock. The simulation is operated from 2040-Q1 to 2045-Q4, after the <code>rffintay</code> time series, defined as <em>“Value of eff. federal funds rate given by the inertial Taylor rule”</em>, is shocked by 100 base points in 2040-Q1.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Load data</span></span>
-<span id="cb4-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">data</span>(LONGBASE)</span>
-<span id="cb4-3"></span>
-<span id="cb4-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Load model</span></span>
-<span id="cb4-5"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">data</span>(FRB__MODEL)</span>
-<span id="cb4-6">model <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">LOAD_MODEL</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">modelText =</span> FRB__MODEL)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Analyzing behaviorals...
-Analyzing identities...
-Optimizing...
-Loaded model "FRB__MODEL":
-    0 behaviorals
-  284 identities
-    0 coefficients
-...LOAD MODEL OK</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Load data into model</span></span>
-<span id="cb6-2">model <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">LOAD_MODEL_DATA</span>(model, LONGBASE, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">quietly=</span><span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>)</span>
-<span id="cb6-3"></span>
-<span id="cb6-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Specify dates</span></span>
-<span id="cb6-5">start <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2040</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb6-6">end <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">normalizeYP</span>(start<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">23</span>),<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>)</span>
-<span id="cb6-7"></span>
-<span id="cb6-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Standard configuration, use surplus ratio targeting</span></span>
-<span id="cb6-9">model<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>modelData<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>dfpdbt[[start,end]] <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb6-10">model<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>modelData<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>dfpsrp[[start,end]] <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb6-11"></span>
-<span id="cb6-12"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Solve to baseline with adds</span></span>
-<span id="cb6-13">model <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">SIMULATE</span>(model,</span>
-<span id="cb6-14">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">simType=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'RESCHECK'</span>,</span>
-<span id="cb6-15">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">TSRANGE=</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(start,end),</span>
-<span id="cb6-16">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">ZeroErrorAC =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>,</span>
-<span id="cb6-17">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">quietly=</span><span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>)</span>
-<span id="cb6-18"></span>
-<span id="cb6-19"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 100 bp monetary policy shock</span></span>
-<span id="cb6-20">trac <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> model<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>ConstantAdjustmentRESCHECK</span>
-<span id="cb6-21">trac<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>rffintay[[start]] <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> trac<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>rffintay[[start]]<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb6-22"></span>
-<span id="cb6-23"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Solve</span></span>
-<span id="cb6-24">model <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">SIMULATE</span>(model,</span>
-<span id="cb6-25">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">simAlgo =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'NEWTON'</span>,</span>
-<span id="cb6-26">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">TSRANGE =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(start,end),</span>
-<span id="cb6-27">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">ConstantAdjustment =</span> trac,</span>
-<span id="cb6-28">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">BackFill =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">12</span>,</span>
-<span id="cb6-29">                  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">quietly=</span><span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>)</span></code></pre></div>
-</div>
-<p>R code produces the following charts:</p>
-<p><img src="https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/FRB_R_1.png" class="img-fluid"></p>
-<p>On the other hand, the python code provided by the US Federal Reserve produces very similar results:</p>
-<p><img src="https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/FRB_python_1.png" class="img-fluid"></p>
-</section>
-<section id="stochastic-simulation" class="level2">
-<h2 class="anchored" data-anchor-id="stochastic-simulation">Stochastic simulation</h2>
-<p>Another econometric exercise proposed by the Federal Reserve is a stochastic simulation of the FRB/US model. The <code>stochsim</code> procedure in the <code>pyfrbus</code> python package (available on the Federal Reserve web site) performs a stochastic simulation by applying sequences of shocks to 64 endogneous variables of the model, as drawn randomly from historical residuals. In a similar way in R, the <code>STOCHSIMULATE</code> procedure allows users to shock the same endogenous variables with randomly sampled historical residuals.</p>
-<p>R code, omitted for brevity, produces the following charts:</p>
-<p><img src="https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/FRB_R_5.png" class="img-fluid"></p>
-<p>On the other hand, the python code provided by the US Federal Reserve produces very similar results, despite the random numbers generator being different between R and python:</p>
-<p><img src="https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/FRB_python_5.png" class="img-fluid"></p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">________________</h2>
-<p>Additional exercises, e.g., rational expectations, endogenous targeting, etc., and computational details are available in the package vignette <a href="https://cran.r-project.org/package=bimets/vignettes/frb2bimets.pdf">The U.S. Federal Reserve quarterly model in R with bimets</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/</guid>
-  <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
