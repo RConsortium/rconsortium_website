@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/newsletters/newsletters.html",
+    "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/index.html",
@@ -103,8 +111,8 @@
       "/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/index.html",
       "/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/index.html",
       "/posts/moving-forward-to-meet-new-challenges-in-2025/index.html",
-      "/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/index.html",
       "/posts/r-universe-named-r-consortiums-newest-top-level-project/index.html",
+      "/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/index.html",
       "/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/index.html",
       "/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/index.html",
       "/posts/health-technology-assessment-hta-working-group-kickoff-meeting/index.html",
@@ -196,14 +204,6 @@
       "/webinars/unlocking-insights-from-latinr.html",
       "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
       "/webinars/webinars.html"
-    ]
-  },
-  {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
     ]
   }
 ]
