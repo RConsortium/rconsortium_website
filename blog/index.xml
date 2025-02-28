@@ -10,7 +10,69 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Thu, 13 Feb 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 28 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Submissions Working Group: Pilot 5 Launch and more!</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/pilot5.png" class="img-fluid"></p>
+<section id="pilot-5" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-5">Pilot 5</h3>
+<p>Last year the <a href="https://rconsortium.github.io/submissions-wg/">submission working group</a> was able to successfully deliver its third R-based submission to the FDA through the <a href="https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd">eCTD portal</a> on September 20, 2024. We are excited to share news the Pilot 5 launch as we continue to demonstrate R’s capablities to deliver a high-quality drug submission.</p>
+<p>A quick recap of previous Pilots:</p>
+<ul>
+<li><a href="https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">Pilot 1</a> delivered Tables and Figures to the FDA using R.</li>
+<li><a href="https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda">Pilot 2</a> delivered the same Tables and Figures using a Shiny App using R. <a href="https://archive.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2">Pilot 2 Announcement 2</a></li>
+<li><a href="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/">Pilot 3</a> delivered the Tables and Figures using R as well as the ADaMs…you guessed it using R.</li>
+<li><a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">Pilot 4</a> is in the process of delivering the Shiny App from Pilot 2 using webassembly and containers (almost completed!).</li>
+</ul>
+<p>For information on these Pilots navigate to our <a href="https://rconsortium.github.io/submissions-wg/pilot_background.html">Pilot’s background page on submission working group</a></p>
+<p>Now in 2025, we are launching Pilot 5!! We will be using R again, but instead of delivering all the datasets as <code>xpt</code> files we will make use of the new <code>datasetjson</code> format via the eponymously named R package <a href="https://atorus-research.github.io/datasetjson/">datasetjson</a> and hope to deliver two submissions for 2025 split into Part 1 and Part 2.</p>
+<p><strong>Pilot 5 - Part 1</strong></p>
+<p>Part 1 is going to replicate <a href="https://github.com/RConsortium/submissions-pilot3-adam">Pilot 3</a>. We will reuse the ADaMs, Tables and Figure programs that were written in R. However, the Pilot 3 ADaMs were written out as <code>xpt</code> files and we will instead use <code>datasetjson</code>! Hence Pilot 5 is really focused on using the new transport file type <code>datasetjson</code>.</p>
+<p>Pilot 5 Part 1 will also submit all the other files you find in the Pilot 3 submission as part of our package. If you have a passion for submission work, R and <code>datasetjson</code> or just want to see what all the fuss is about then come and <a href="https://join.slack.com/t/rconsortium/shared_invite/zt-2w4t2jd38-Z7BYYse9tIlCZEmqHvHnbA">join us</a>!</p>
+<p><strong>Pilot 5 - Part 2</strong></p>
+<p>The Pilots are small! 5 ADaMs, 3 Tables and 1 Figure is not a typical submission package for a drug that can impact a patient’s health and well-being! The Pilots have always been about testing out and advocating that R can keep up with the best of the best. For Part 2, we want to build up this body of work and develop several more ADaMs and more Tables and Figures. As in Part 1, we will deliver everything using <code>datasetjson</code> that would of been delivered as an <code>xpt</code> file.</p>
+<p>We plan on kicking Part 2 off mid-summer, but planning will probably start soon! Come <a href="https://join.slack.com/t/rconsortium/shared_invite/zt-2w4t2jd38-Z7BYYse9tIlCZEmqHvHnbA">join</a> in on the fun and help us build a larger body of work around drug submissions using R.</p>
+</section>
+<section id="progress-reports-and-future-plans" class="level2">
+<h2 class="anchored" data-anchor-id="progress-reports-and-future-plans">Progress Reports and Future Plans</h2>
+<p><strong>Updates on Pilot 4</strong></p>
+<p>The objective of the R Consortium R submission <em>Pilot 4 </em>Project is to explore the use of novel technologies such as Linux containers and WebAssembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application. The application was built using the source data sets and analyses contained in the R submission <em>Pilot 1-3</em>. To our knowledge, this is the first publicly available submission package that includes a WebAssembly component. We hope this submission package and what we have learned can serve as a good reference for future regulatory submission efforts. The WebAssembly technology compiles applications into a portable, consistent environment driven by a web browser, allowing agency reviewers to easily run and evaluate software without complex setups. The second half of the Pilot 4 Project (leveraging container technology to package a Shiny application) will be submitted as an additional package later this year. Additional agency feedback will be shared in future communications.</p>
+<p>The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted its test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document (eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially received the submission package.</p>
+<p>Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”</p>
+<p><strong>Potential Pilot 6</strong></p>
+<p>The Pilots have been making use of the original CDISC Pilot data from around 2008-2010 that were used as PoC for the FDA for CDISC standards. This data has been reused for many other projects across the industry as there is a severe lack of publicly available CDISC data. You can read about my quest to find some more data <a href="https://pharmaverse.github.io/blog/posts/2025-02-17_data__packages/data__packages.html">here</a>. The submissions working group would like to create new simulated data from raw, SDTM and ADaMs that could be used to test new techniques, ways of working, etc all brought up to modern standards. If interested get in touch!</p>
+<p><strong>A re-envisioned ADRG</strong></p>
+<p>The Analysis Data Reviewer’s Guide (ADRG) has been focused on the proprietary language SAS for delivering submissions over the many years. As open-source languages such as R are accepted as valid mechanisms to deliver a submission the ADRG needs to “re-envisioned” to accommodate these languages. The pilots have had questions on how document certain technical aspects in the ADRG of the R-based submission package, e.g.&nbsp;packages used and versions, R versions and layouts of the file folders.</p>
+<p>Well we are in luck. Former Pilot members are working with the PHUSE Version Metadata for Open-Source Languages to support ADRG enhancements for open-source submissions and are sharing their recommendations to the Pilots. You can find out more at the below links:</p>
+<ol type="1">
+<li><a href="https://advance.hub.phuse.global/wiki/x/UzOZAQ">Communication of Version Metadata for Open-Source Languages</a></li>
+<li><a href="https://phuse-org.github.io/OSDocuMeta/">Welcome to the PHUSE Open-Source Metadata Documentation Working Group Site</a></li>
+<li><a href="https://phuse-org.github.io/OSDocuMeta/references/problem_statement.html">Problem Statement</a></li>
+</ol>
+<p><strong>More about the R Submissions Working Group</strong></p>
+<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
+<p>Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.</p>
+<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
+<p>Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the <a href="https://github.com/RConsortium">R consortium GitHub page.</a></p>
+<p><strong>Join the R Submissions Working Group</strong></p>
+<p>The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. We are a collaborative community open to anyone interested in contributing to this important work. For more information, or to get involved, visit <a href="https://rconsortium.github.io/submissions-wg">our website</a> or contact us directly at director@r-consortium.org.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/</guid>
+  <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/pilot5.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Seville R Users Group: R’s Role in Optimization Research and Stroke Prevention</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1140,50 +1202,6 @@
   <guid>https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/</guid>
   <pubDate>Wed, 23 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/ConectaR2024.png" medium="image" type="image/png" height="61" width="144"/>
-</item>
-<item>
-  <title>Endophytes, Oaks, and R: How R-Ladies Morelia is Cultivating Science and Community in Morelia, Mexico</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/goretty-mendoza-785004322/">Goretty Mendoza</a>, the organizer of the <a href="https://www.meetup.com/es-ES/rladies-morelia/">R-Ladies Morelia</a>, recently spoke to the R Consortium about her experience with the group and her work using R in molecular biology. Under her guidance, the group has grown into a supportive space for women from diverse fields, focusing on building R skills, sharing knowledge, and fostering collaboration. Goretty is committed to empowering the local R community through online and physical events that encourage learning and networking.</p>
-<p><img src="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/Goretty.png" class="img-fluid" style="width:50.0%"></p>
-<p><strong><em>Please share about your background and involvement with the RUGS group.</em></strong></p>
-<p>I am a PhD student specializing in molecular biology, focusing on endophytic fungi. My work involves high-throughput sequencing, particularly amplicon sequencing, to study microbiomes.</p>
-<p>I started using R during my PhD. Initially, I practiced independently through online courses, but then I discovered an R-Ladies community. The group was just starting in my city, so I took the opportunity to join. Attending the meetings helped me overcome my fear of working with R and allowed me to improve my skills. Gradually, I became more involved, and a few months ago, we had the opportunity to hold a face-to-face meeting with some members of our R-Ladies community who live in other cities, thanks to the R Consortium’s grant. I’m sure we returned home more motivated, knowing we all aim to improve our R skills.</p>
-<p><img src="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/RLadiesMorelia.png" class="img-fluid"></p>
-<p><strong>Can you share what the local R community is like? </strong></p>
-<p>Our local R community is a group of enthusiastic women from various fields. Most of us come from science, mainly mathematics or biology, but we also have members from areas like finance or economics interested in learning R. At the start of each semester, we meet to share our interests and goals for the upcoming months. During our face-to-face meetings, we enjoy coffee and cookies, which create a welcoming atmosphere. A key focus of our group is ensuring that those with more experience in R share their knowledge with new members who are just starting. It creates an environment where everyone can learn and grow together. Our R-community is a great opportunity to get involved, collaborate with other women, and make new friends as we learn.</p>
-<p><img src="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/r-ladies-morelia-zoom.png" class="img-fluid"></p>
-<p><strong>Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?</strong></p>
-<p>I’m pursuing my PhD, and R is a tool I use almost daily. For example, I use R for a project involving the study of endophytic associations in different temperate oak species of Mexico. To this end, we initially explored the functional leaf traits of these oak species, and I had to learn different R packages for this project, such as data manipulation and visualization (e.g., <a href="https://dplyr.tidyverse.org/">dplyr</a> and <a href="https://ggplot2.tidyverse.org/">ggplot2</a>). Additionally, I used specialized packages like ‘<a href="https://cran.r-project.org/web/packages/TPD/index.html">TPD</a>’ to calculate metrics related to functional diversity studies and ‘hypervolume’ to calculate climatic niches.</p>
-<p>Our study aimed to determine if a functional niche partitioning between two evolutionary groups of oaks allowed them to coexist. We conducted a functional niche analysis and graphical visualization using R and the packages above. An interesting finding was that the analysis suggested differences in functional similarity among the groups, indicating evidence of functional niche partitioning and resource gradients.</p>
-<p>These studies are crucial for conservation efforts and guide the development of management practices supporting temperate forests’ long-term health and resilience.</p>
-<p><strong>What resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)</strong></p>
-<p><strong>Is this an ongoing project? Please share any details or CTA for who should get involved!</strong></p>
-<p>Among the various R packages I used, some are for data manipulation and visualization, such as dplyr and ggplot2, and others more specialized, like TPD for calculating metrics used in functional diversity studies, <a href="https://cran.r-project.org/web/packages/hypervolume/index.html">hypervolume</a> for constructing functional niches, and <a href="https://cran.r-project.org/web/packages/ecospat/index.html">ecospat</a> to calculate climatic niche overlap indices.</p>
-<p>We extensively utilized GitHub repositories, ensuring that all the scripts were well-documented to allow others to reproduce the analyses easily. Our ongoing project on endophytic fungi associated with oaks is crucial as a first approximation for understanding the complex interactions between fungi and their host plants.</p>
-<p>The concept of hidden diversity is a novel and intriguing area that we are just beginning to explore. For those interested in diving deeper into this field, there are several ways to get involved. You can join professional networks in microbial ecology or engage with the field of computational biology through organizations and online communities. Additionally, participating in conferences, workshops, and collaborations with researchers and professionals in the field offers valuable opportunities to contribute to current research.</p>
-<p><strong>What trends do you currently see in R language and your industry? Are there any trends you see developing in the near future?</strong></p>
-<p>In metagenomics, one of the key trends is the development of massive datasets generated by next-generation sequencing (NGS). It has enabled a deeper and more detailed analysis of microbial communities and their diversity and functions. In this context, R remains an essential tool for statistical analysis and data visualization with specialized libraries like <a href="https://joey711.github.io/phyloseq/">phyloseq</a> and <a href="https://cran.r-project.org/web/packages/vegan/index.html">vegan</a>.</p>
-<p>However, given the complexity of metagenomic data, other programming languages like Python and <a href="https://www.gnu.org/software/bash/">Bash</a> are becoming indispensable. In the near future, the use of interdisciplinary workflows that combine R, Python and Bash will continue to grow, along with the development of more integrated tools to manage large datasets. Additionally, we can expect an increased use of artificial intelligence and machine learning to analyze these data.</p>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 68,000 members in 33 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/</guid>
-  <pubDate>Fri, 18 Oct 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/RLadiesMorelia-main-image.png" medium="image" type="image/png" height="62" width="144"/>
 </item>
 </channel>
 </rss>

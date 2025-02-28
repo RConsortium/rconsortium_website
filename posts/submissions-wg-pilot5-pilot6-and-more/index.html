@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2025-02-28">
+<meta name="description" content="The R Consortium Submission Working Group is excited to announce a new Pilot 5 that aims to deliver an R-based Submission to the FDA using datasetjson. This post also includes plans for additional launches for 2025/2026, some news on Pilot 4 (containers and webassembly) and a few other goodies!">
 
-<title>join – R Consortium</title>
+<title>R Submissions Working Group: Pilot 5 Launch and more! – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5578fed3b6ea086f23b563b1175cf55d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5578fed3b6ea086f23b563b1175cf55d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,18 +80,18 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -103,35 +106,35 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -142,15 +145,15 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -161,23 +164,23 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="../all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -200,7 +203,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -215,15 +218,15 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
  <span class="dropdown-text">R/Medicine</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">WG Calendar</span></a>
   </li>  
     </ul>
@@ -234,25 +237,25 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -283,635 +286,95 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">R Submissions Working Group: Pilot 5 Launch and more!</h1>
+                  <div>
+        <div class="description">
+          The R Consortium Submission Working Group is excited to announce a new Pilot 5 that aims to deliver an R-based Submission to the FDA using datasetjson. This post also includes plans for additional launches for 2025/2026, some news on Pilot 4 (containers and webassembly) and a few other goodies!
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 28, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="why-join-the-r-consortium" class="level1">
-<h1>Why Join the R Consortium?</h1>
-<p>The R Consortium is the mechanism for corporate entities and other organizations to support &nbsp;and engage with the R Community. Membership in the R Consortium signals community leadership, a long term viewpoint, and an appreciation for the efforts of R’s open source contributors. Membership shows commitment and a desire to contribute to the community, strengthening it for the benefit of all.</p>
-<section id="membership-in-the-r-consortium" class="level2">
-<h2 class="anchored" data-anchor-id="membership-in-the-r-consortium">Membership in the R Consortium</h2>
+
+<p><img src="pilot5.png" class="img-fluid"></p>
+<section id="pilot-5" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-5">Pilot 5</h3>
+<p>Last year the <a href="https://rconsortium.github.io/submissions-wg/">submission working group</a> was able to successfully deliver its third R-based submission to the FDA through the <a href="https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd">eCTD portal</a> on September 20, 2024. We are excited to share news the Pilot 5 launch as we continue to demonstrate R’s capablities to deliver a high-quality drug submission.</p>
+<p>A quick recap of previous Pilots:</p>
 <ul>
-<li>Helps fund key R infrastructure such as the R-Hub build system, database interfaces, distributed computing architecture, regional conferences, local R user groups and more.</li>
-<li>Provides a way for companies to generate industry-wide support for projects that they see as valuable.
-<ul>
-<li>The bulk of the R Consortium budget goes directly to funding key community projects.</li>
-</ul></li>
-<li>Through participation in the R Consortium Infrastructure Steering Committee (ISC), members have a voice in the process of selecting projects and the opportunity to guide their development.</li>
-<li>Gives companies direct access to the R Foundation:
-<ul>
-<li>Board members interact with the R Foundation’s representative on the R Consortium Board of Directors.</li>
-<li>ISC members:
-<ul>
-<li>Work side-by-side with R Foundation members engaged in technical projects,</li>
-<li>Participate in regular meetings with R Foundation members.</li>
-</ul></li>
-</ul></li>
-<li>Provides insight and access to accurate and up-to-date knowledge about important developments in the the R Community and the extended R ecosystem.</li>
+<li><a href="https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">Pilot 1</a> delivered Tables and Figures to the FDA using R.</li>
+<li><a href="https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda">Pilot 2</a> delivered the same Tables and Figures using a Shiny App using R. <a href="https://archive.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2">Pilot 2 Announcement 2</a></li>
+<li><a href="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/">Pilot 3</a> delivered the Tables and Figures using R as well as the ADaMs…you guessed it using R.</li>
+<li><a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">Pilot 4</a> is in the process of delivering the Shiny App from Pilot 2 using webassembly and containers (almost completed!).</li>
 </ul>
+<p>For information on these Pilots navigate to our <a href="https://rconsortium.github.io/submissions-wg/pilot_background.html">Pilot’s background page on submission working group</a></p>
+<p>Now in 2025, we are launching Pilot 5!! We will be using R again, but instead of delivering all the datasets as <code>xpt</code> files we will make use of the new <code>datasetjson</code> format via the eponymously named R package <a href="https://atorus-research.github.io/datasetjson/">datasetjson</a> and hope to deliver two submissions for 2025 split into Part 1 and Part 2.</p>
+<p><strong>Pilot 5 - Part 1</strong></p>
+<p>Part 1 is going to replicate <a href="https://github.com/RConsortium/submissions-pilot3-adam">Pilot 3</a>. We will reuse the ADaMs, Tables and Figure programs that were written in R. However, the Pilot 3 ADaMs were written out as <code>xpt</code> files and we will instead use <code>datasetjson</code>! Hence Pilot 5 is really focused on using the new transport file type <code>datasetjson</code>.</p>
+<p>Pilot 5 Part 1 will also submit all the other files you find in the Pilot 3 submission as part of our package. If you have a passion for submission work, R and <code>datasetjson</code> or just want to see what all the fuss is about then come and <a href="https://join.slack.com/t/rconsortium/shared_invite/zt-2w4t2jd38-Z7BYYse9tIlCZEmqHvHnbA">join us</a>!</p>
+<p><strong>Pilot 5 - Part 2</strong></p>
+<p>The Pilots are small! 5 ADaMs, 3 Tables and 1 Figure is not a typical submission package for a drug that can impact a patient’s health and well-being! The Pilots have always been about testing out and advocating that R can keep up with the best of the best. For Part 2, we want to build up this body of work and develop several more ADaMs and more Tables and Figures. As in Part 1, we will deliver everything using <code>datasetjson</code> that would of been delivered as an <code>xpt</code> file.</p>
+<p>We plan on kicking Part 2 off mid-summer, but planning will probably start soon! Come <a href="https://join.slack.com/t/rconsortium/shared_invite/zt-2w4t2jd38-Z7BYYse9tIlCZEmqHvHnbA">join</a> in on the fun and help us build a larger body of work around drug submissions using R.</p>
 </section>
-<section id="how-r-consortium-membership-helps-support-the-r-community" class="level2">
-<h2 class="anchored" data-anchor-id="how-r-consortium-membership-helps-support-the-r-community">How R Consortium membership helps support the R Community</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="vvfazzedpi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vvfazzedpi table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#vvfazzedpi thead, #vvfazzedpi tbody, #vvfazzedpi tfoot, #vvfazzedpi tr, #vvfazzedpi td, #vvfazzedpi th {
-  border-style: none;
-}
-
-#vvfazzedpi p {
-  margin: 0;
-  padding: 0;
-}
-
-#vvfazzedpi .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#vvfazzedpi .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#vvfazzedpi .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 7px;
-  padding-bottom: 9px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#vvfazzedpi .gt_heading {
-  background-color: #ADD8E6;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_col_heading {
-  color: #333333;
-  background-color: #ADD8E6;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 10px;
-  padding-bottom: 11px;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow-x: hidden;
-}
-
-#vvfazzedpi .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #ADD8E6;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#vvfazzedpi .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#vvfazzedpi .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#vvfazzedpi .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#vvfazzedpi .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#vvfazzedpi .gt_group_heading {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#vvfazzedpi .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#vvfazzedpi .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#vvfazzedpi .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#vvfazzedpi .gt_row {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#vvfazzedpi .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#vvfazzedpi .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 15px;
-  padding-right: 15px;
-  vertical-align: top;
-}
-
-#vvfazzedpi .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#vvfazzedpi .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#vvfazzedpi .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#vvfazzedpi .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#vvfazzedpi .gt_last_summary_row {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#vvfazzedpi .gt_first_grand_summary_row {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_last_grand_summary_row_top {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#vvfazzedpi .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#vvfazzedpi .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#vvfazzedpi .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#vvfazzedpi .gt_left {
-  text-align: left;
-}
-
-#vvfazzedpi .gt_center {
-  text-align: center;
-}
-
-#vvfazzedpi .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#vvfazzedpi .gt_font_normal {
-  font-weight: normal;
-}
-
-#vvfazzedpi .gt_font_bold {
-  font-weight: bold;
-}
-
-#vvfazzedpi .gt_font_italic {
-  font-style: italic;
-}
-
-#vvfazzedpi .gt_super {
-  font-size: 65%;
-}
-
-#vvfazzedpi .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#vvfazzedpi .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#vvfazzedpi .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#vvfazzedpi .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#vvfazzedpi .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#vvfazzedpi .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#vvfazzedpi .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#vvfazzedpi .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#vvfazzedpi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="gt_col_headings header">
-<th id="Benefits by member class" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Benefits by member class</th>
-<th id="Platinum" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Platinum</th>
-<th id="Silver" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Silver</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Benefits">One seat on the Board of Directors with full voting rights</td>
-<td class="gt_row gt_center" headers="Platinum"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-<td class="gt_row gt_center" headers="Silver"><span style="white-space:nowrap;">
-<svg aria-label="Xmark" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkred;overflow:visible;position:relative;">
-<title>
-Xmark
-</title>
-<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Benefits">One seat on the ISC with full voting rights</td>
-<td class="gt_row gt_center" headers="Platinum"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-<td class="gt_row gt_center" headers="Silver"><span style="white-space:nowrap;">
-<svg aria-label="Xmark" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkred;overflow:visible;position:relative;">
-<title>
-Xmark
-</title>
-<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Benefits">Elect Silver representatives to the Board and ISC (1 Board seat per 3 Silver members, 1 ISC seat for all Silver members)</td>
-<td class="gt_row gt_center" headers="Platinum"><span style="white-space:nowrap;">
-<svg aria-label="Xmark" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkred;overflow:visible;position:relative;">
-<title>
-Xmark
-</title>
-<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
-</svg>
-</span></td>
-<td class="gt_row gt_center" headers="Silver"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Benefits">Company logo on R Consortium website and collateral</td>
-<td class="gt_row gt_center" headers="Platinum"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-<td class="gt_row gt_center" headers="Silver"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Benefits">R Consortium logo on company website</td>
-<td class="gt_row gt_center" headers="Platinum"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-<td class="gt_row gt_center" headers="Silver"><span style="white-space:nowrap;">
-<svg aria-label="Check" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;">
-<title>
-Check
-</title>
-<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-</svg>
-</span></td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Benefits">Membership dues (annually)</td>
-<td class="gt_row gt_center" headers="Platinum">US$100,000</td>
-<td class="gt_row gt_center" headers="Silver">100+ FTE US $25,000 &lt;100 FTE / non-profits, universities US $10,000</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<section id="joining-the-r-consortium-is-easy." class="level3">
-<h3 class="anchored" data-anchor-id="joining-the-r-consortium-is-easy.">Joining the R Consortium is easy.</h3>
+<section id="progress-reports-and-future-plans" class="level2">
+<h2 class="anchored" data-anchor-id="progress-reports-and-future-plans">Progress Reports and Future Plans</h2>
+<p><strong>Updates on Pilot 4</strong></p>
+<p>The objective of the R Consortium R submission <em>Pilot 4 </em>Project is to explore the use of novel technologies such as Linux containers and WebAssembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application. The application was built using the source data sets and analyses contained in the R submission <em>Pilot 1-3</em>. To our knowledge, this is the first publicly available submission package that includes a WebAssembly component. We hope this submission package and what we have learned can serve as a good reference for future regulatory submission efforts. The WebAssembly technology compiles applications into a portable, consistent environment driven by a web browser, allowing agency reviewers to easily run and evaluate software without complex setups. The second half of the Pilot 4 Project (leveraging container technology to package a Shiny application) will be submitted as an additional package later this year. Additional agency feedback will be shared in future communications.</p>
+<p>The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted its test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document (eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially received the submission package.</p>
+<p>Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”</p>
+<p><strong>Potential Pilot 6</strong></p>
+<p>The Pilots have been making use of the original CDISC Pilot data from around 2008-2010 that were used as PoC for the FDA for CDISC standards. This data has been reused for many other projects across the industry as there is a severe lack of publicly available CDISC data. You can read about my quest to find some more data <a href="https://pharmaverse.github.io/blog/posts/2025-02-17_data__packages/data__packages.html">here</a>. The submissions working group would like to create new simulated data from raw, SDTM and ADaMs that could be used to test new techniques, ways of working, etc all brought up to modern standards. If interested get in touch!</p>
+<p><strong>A re-envisioned ADRG</strong></p>
+<p>The Analysis Data Reviewer’s Guide (ADRG) has been focused on the proprietary language SAS for delivering submissions over the many years. As open-source languages such as R are accepted as valid mechanisms to deliver a submission the ADRG needs to “re-envisioned” to accommodate these languages. The pilots have had questions on how document certain technical aspects in the ADRG of the R-based submission package, e.g.&nbsp;packages used and versions, R versions and layouts of the file folders.</p>
+<p>Well we are in luck. Former Pilot members are working with the PHUSE Version Metadata for Open-Source Languages to support ADRG enhancements for open-source submissions and are sharing their recommendations to the Pilots. You can find out more at the below links:</p>
 <ol type="1">
-<li>Review the Membership Documents.</li>
+<li><a href="https://advance.hub.phuse.global/wiki/x/UzOZAQ">Communication of Version Metadata for Open-Source Languages</a></li>
+<li><a href="https://phuse-org.github.io/OSDocuMeta/">Welcome to the PHUSE Open-Source Metadata Documentation Working Group Site</a></li>
+<li><a href="https://phuse-org.github.io/OSDocuMeta/references/problem_statement.html">Problem Statement</a></li>
 </ol>
-<ul>
-<li><a href="../rc-docs/r_consortium_datasheet.pdf">R Consortium Membership Datasheet</a> (PDF)</li>
-<li><a href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">R Consortium Bylaws</a> (PDF)</li>
-<li><a href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">R Consortium Membership Agreement</a> (PDF)</li>
-<li><a href="../rc-docs/R-Consortium-Certificate-of-Incorporation.pdf">R Consortium – Certificate of Incorporation</a> (PDF)</li>
-</ul>
-<ol start="2" type="1">
-<li><p>Fill out our online <a href="https://join.r-consortium.org/">membership application form</a>.</p></li>
-<li><p>Remit the annual dues payment that is applicable for your membership level.</p></li>
-<li><p>Begin participating in Events, Discussions, Projects and working Groups.</p></li>
-</ol>
-<p>If you have questions about membership or joining the R Consortium, please contact our <a href="https://members.r-consortium.org/">member support desk</a> and you will be contacted as soon as possible. Thank you.</p>
+<p><strong>More about the R Submissions Working Group</strong></p>
+<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
+<p>Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.</p>
+<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
+<p>Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the <a href="https://github.com/RConsortium">R consortium GitHub page.</a></p>
+<p><strong>Join the R Submissions Working Group</strong></p>
+<p>The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. We are a collaborative community open to anyone interested in contributing to this important work. For more information, or to get involved, visit <a href="https://rconsortium.github.io/submissions-wg">our website</a> or contact us directly at director@r-consortium.org.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
