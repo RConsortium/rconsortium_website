@@ -51,7 +51,7 @@ The Pilots have been making use of the original CDISC Pilot data from around 200
 
 **A re-envisioned ADRG**
 
-The Analysis Data Reviewer's Guide (ADRG) has been focused on the proprietary language SAS for delivering submissions over the many years. As open-source languages such as R are accepted as valid mechanisms to deliver a submission the ADRG needs to "re-envisioned" to accommodate these languages. The pilots have had questions on how document certain technical aspects in the ADRG of the R-based submission package, e.g. packages used and versions, R versions and layouts of the file folders.  
+The Analysis Data Reviewer's Guide (ADRG) has been focused on the proprietary language SAS for delivering submissions over many years. As open-source languages such as R are accepted as valid mechanisms to deliver a submission the ADRG needs to "re-envisioned" to accommodate these languages. The pilots have had questions on how document certain technical aspects in the ADRG of the R-based submission package, e.g. packages used and versions, R versions and layouts of the file folders.  
 
 Well we are in luck.  Former Pilot members are working with the PHUSE Version Metadata for Open-Source Languages 
 to support ADRG enhancements for open-source submissions and are sharing their recommendations to the Pilots. You can find out more at the below links:
