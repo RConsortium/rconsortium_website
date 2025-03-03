@@ -13,12 +13,12 @@ format:
 df <- data.frame(
   Title = c(
     "[R/Medicine Webinar - Rix: reproducible data science environments with Nix](https://zoom.us/webinar/register/WN_uwdQizJkRfC66ggTuisxbA)",
-    "[useR!2025](https://user2025.r-project.org/)",
-    "[R/Medicine 2025](https://rconsortium.github.io/RMedicine_website/)"
+    "[R/Medicine 2025](https://rconsortium.github.io/RMedicine_website/)",
+    "[useR!2025](https://user2025.r-project.org/)"
   ),
 
   dates = c("Mar 13, 2025", "Jun 10-13, 2025", "Aug 8-10, 2025"),
-  location = c("Virtual", "Durham, NC - Duke University", "Virtual"),
+  location = c("Virtual", "Virtual", "Durham, NC - Duke University"),
   icon = c("Webinar", "Conference", "Conference"),
   Type = c("Webinar", "Conference", "Conference"),
   
