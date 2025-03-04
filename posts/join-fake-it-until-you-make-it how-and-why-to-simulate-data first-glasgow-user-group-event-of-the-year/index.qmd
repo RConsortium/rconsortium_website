@@ -1,0 +1,90 @@
+---
+title: "Join “Fake it Until You Make it: How and Why to Simulate Data” – First Glasgow User Group Event of the Year"
+description: "Last year, Antonio Hegar of the R Glasgow user group shared the challenges of organizing an R user group in Glasgow. The group now regularly hosts events, attracting local R users and experts."
+author: "R Consortium"
+date: "01/10/2024"
+---
+[Last year](https://www.r-consortium.org/blog/2023/04/25/r-applied-to-epidemiology-and-infectious-disease-in-glasgow), [Antonio Hegar](https://www.linkedin.com/in/antoniohegar/?originalSubdomain=uk) of the [R Glasgow](https://www.meetup.com/rglasgow/) user group shared the challenges of organizing an R user group in Glasgow. The group now regularly hosts events, attracting local R users and experts. Antonio shared with the R Consortium the group’s journey and anecdotes that have helped it to build momentum. He also shared his hopes for maintaining this momentum, with speakers lined up for the next three events.
+
+R Glasgow will be hosting their first event this year titled “[Fake it Until You Make it: How and Why to Simulate Data](https://www.meetup.com/rglasgow/events/298435580/)” on January 25, 2024. 
+
+Antonio also discussed his work with R for his PhD research in data analysis for healthcare. He spoke about the ever-evolving nature of R and some of the new developments that have been useful for his research. 
+
+_What’s new with the Glasgow R User Group since we last talked?_
+
+As we discussed the last time, one of the most pressing issues we faced as a local R user group was our lack of engagement with the community. This is particularly interesting given that both Glasgow and Edinburgh have their own R user groups. Both cities are only an hour apart, yet we weren’t seeing the same level of engagement as other groups in the UK.
+
+To address this issue, we have been strategizing and holding several meetings. To summarize, we discussed improving our marketing and engagement with our audience. We also decided to hold one final meeting at the end of the year.
+
+Besides our internal meetings, we also hosted two R events. One of the group’s founders, [Andrew Baxter,](https://uk.linkedin.com/in/andrew-james-baxter) a postgraduate researcher at the [University of Glasgow](https://www.gla.ac.uk/), has been instrumental in organizing these events. Because he works at the University of Glasgow, he has access to many resources, including physical venues and fellow academics, and this has been a major plus in facilitating our engagement.
+
+Previously, I had been trying to do what other groups have done: finding random venues and hosting events there. However, this was not as effective as we had hoped.
+
+From the discussions that we had, as well as listening to our audience, we learned that people who are interested in working with R have very specific wants and needs. If these needs are not being met, then it is unlikely that people will be attracted to the group, and as such, we had to reframe our approach to attracting people.
+
+We recognized it is key to have a specific venue. We now hold the vast majority of our meetings at the University of Glasgow. This seems to be very appealing to people, as they enjoy the academic setting. Furthermore, the [University of Glasgow](https://www.gla.ac.uk/) is well known and respected, not just in Scotland but across the world, and this adds weight to the appeal, and the reputation helps to draw people in. 
+
+The second thing that proved essential was consistency. Having a meeting for one month and then having a gap breaks the flow, and sends the wrong message to your audience. When people see that you are committed to what you want to do, they respond to that and are more likely to be engaged in the community.
+
+We had a final meeting in December, and Andrew Baxter contacted [Mike Smith](https://www.linkedin.com/in/mikeksmith/?originalSubdomain=uk), one of the local R Consortium representatives. He is based in Dublin, Ireland, but frequently travels back and forth to Scotland. He leveraged this network to recommend speakers and topics for the conference. This was particularly helpful in attracting people from industry, who are often interested in the latest developments in R. Mike has been a tremendous asset to the group since our meeting in December.
+
+A venue, people on the inside of the industry, and a consistent schedule have been the three key components. Three speakers have been lined up for early 2024: one for January, February, and March.
+
+We will not have much difficulty finding additional speakers based on the academic and industrial contacts. At most, we must determine who will speak on which topic and when they will be available, which is not difficult. Based on the current situation, it does not appear that we will have any trouble maintaining momentum and keeping the meetings going. 
+
+_What industry are you currently in?_
+
+I am a PhD student at Glasgow Caledonian University. My PhD research focuses on data science applied to health, specifically using machine learning to predict disease outcomes.
+
+I am interested in understanding why some people who experience an acute illness, such as COVID-19, develop long-term health problems. In some countries, up to 10% of people who contract COVID-19 never fully recover. These individuals may experience permanent shortness of breath, headaches, brain fog, joint pain, and other symptoms.
+
+I am currently researching how data science can be used to answer questions such as these, using large data sets from, for example, the [NHS](https://cran.r-project.org/web/packages/NHSRdatasets/index.html). R is the primary tool used for this research.
+
+When we last spoke, I was in the second year of my PhD. I am now in my third and final year. I should be submitting my dissertation before the end of this year. Balancing my commitments to R, my PhD work, and other activities is challenging, but I managed to pull it off.
+
+_How do you use R for your work?_
+
+I extensively use R. One of R’s most beneficial aspects is that it’s constantly evolving and expanding. As a result, it is impossible to master everything. You do not master R; rather, you master certain R areas relevant to your research or area of expertise. In my research, I found several medical statistics and biostatistics packages extremely useful. I was aware of a few of them but unaware of how many there were.
+
+For instance, consider the following brief instance of a task that I began working on yesterday. In the context of medical data, particularly when analyzing health conditions, it is common for individuals to have multiple health conditions that are often linked. This often makes it more difficult for doctors to treat and for individuals to recover fully. 
+
+If I were to apply classical statistics using base R, this would be very time-consuming. However, I recently discovered that there are also medical statistical packages specifically designed for analyzing data for individuals with comorbidities. For example, if I wanted to analyze individuals suffering from diabetes, hypertension, cancer, obesity, or a combination of different diseases, I could do so using these packages.
+
+In addition, it is possible to create a score that can be used to estimate the likelihood of a person who becomes ill and goes to the hospital, stays for a long time, or dies. It is possible to perform this task using regular statistics and programming in R, but it would be very tedious. In my case, I am working on a tight deadline and need to submit my work by a specific date. I believe the package I am speaking of is the [comorbidity](https://cran.r-project.org/web/packages/comorbidity/index.html) package in R. It was developed recently by researchers at the [London School of Hygiene & Tropical Medicine](https://www.lshtm.ac.uk/) and is an invaluable tool.
+
+I work with NHS data through a third-party organization that controls it and allows me access to it. Last year in December, they provided me with brief training and taught me how to access their data on a DBS [SQL server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) using SQL queries embedded in R code. 
+
+Learning about very niche packages, which are very content-specific or topic-specific, is very useful for researchers like myself. Integrating different programming languages is also useful because they are all merging into one. [Python](https://www.python.org/), [Julia](https://julialang.org/), R, and [Java](https://www.java.com/en/) have a lot of cross-fertilization and use between the different programming and software development packages. If R continues to streamline its services to integrate other packages, it will be a win-win situation for everyone.
+
+_What is the R Community like in Glasgow? What efforts are you putting in to keep your group inclusive for all participants?_
+
+We are not trying to cater to one specific level of expertise. The last meeting had a good mix of participants, including PhD students, undergraduates, people who have worked in finance and tech, software developers, and an individual from the R Consortium in Dublin, Ireland.
+
+The group is open to everyone, and we are trying to mix participants with different needs, wants, and interests. It is understood that attendees will choose which events they would like to attend. Certain events will focus more on entry-level individuals beginning their R learning journey. For example, they are interested in learning what they can do with [ggplot](https://ggplot2.tidyverse.org/) and the [tidyverse](https://www.tidyverse.org/).
+
+Mid-level individuals, including graduate students, will also be targeted. A portion of these students are novices, but many are more experienced. They have a strong foundation in R and RStudio or [Posit](https://posit.co/). However, they are now seeking to learn more advanced techniques, such as how to perform specific calculations. For instance, they may be working with quantitative or qualitative data and are now at the analysis stage of their research and wonder what to do next.
+
+Finally, there are a small number of highly experienced programmers who are interested in learning more about integrating specific features into a package. They may want to know how to create their packages and launch them. They are also interested in learning about Shiny and Quarto and how they can use these tools for their businesses or companies. 
+
+Most individuals fall into the beginner or intermediate levels, but there are a few who are highly advanced and still interested in attending. As a result, most of the talks will be geared toward individuals with intermediate-level experience. This will ensure that the material is not too advanced for beginners but also not too basic for advanced learners.
+
+_Can you tell us about a recent event that received a good response from the audience? _
+
+Of the recent events that were particularly successful, I would like to highlight the one held in November last year. It was titled “[Flex Dashboard: Displaying data with high impact using minimal code](https://www.meetup.com/rglasgow/events/297335777/).” [Erik Igelström](https://www.erikigelstrom.com/), a researcher from the University of Glasgow, presented his use of R Shiny to display data from the Scottish government. The presentation was highly informative and demonstrated the potential of Shiny to present data in a user-friendly manner. 
+
+The meeting was attended by a representative from R Software in Ireland, who provided us with a wealth of information about industry developments, including the latest trends and upcoming projects. As a result of this meeting, 2023 was the most productive year for our R meetup.
+
+The preceding meetups were not entirely unproductive, but the most recent one, held in November last year, laid the groundwork for the current initiatives.
+
+_You have a Meetup titled “[Fake it Until You Make it: How and Why to Simulate Data](https://www.meetup.com/rglasgow/events/298435580/)” on 25th January 2024.  Can you share more on the topic covered? Why this topic? _
+
+[Professor Lisa DeBruine](https://www.linkedin.com/in/lisa-debruine-4b2b93158/?originalSubdomain=uk) will be presenting at this Meetup. She is a professor of psychology at the University of Glasgow in the School of Psychology and Neuroscience. She is a member of the [UK Reproducibility Network](https://www.ukrn.org/) and works in [PsyTeachR](https://psyteachr.github.io/). She has used the [psych](https://cran.r-project.org/web/packages/psych/index.html) package extensively and many other good packages in R to conduct her psychological research. Her presentation will be on how to simulate data to prepare analyses for pre-registration.
+
+As those who work with data know, it is sometimes counterproductive to work directly with the data itself. For example, if one is building a model, it is not advisable to use all of the data to build the model, especially if the data set is small. This is because there is a risk of over-fitting.
+
+Generating dummy data for quantitative data is a well-known technique. However, generating dummy data for qualitative data is rare. This is because qualitative data is often unstructured and difficult to quantify. Professor Lisa DeBruine is an expert in generating dummy data for qualitative data.
+
+[SPSS](https://www.ibm.com/spss) is a popular statistical software package used by sociologists, anthropologists, and psychologists. However, R is a more powerful and flexible tool that can perform a wider range of analyses. Learning to use R and the psych package can greatly simplify the process of conducting factor analysis. Additionally, R can be used to perform calculations and analyses that are impossible in SPSS.
+
+Our team is highly capable, and we have another team member who is particularly skilled in generating graphics and designing flyers. He has been responsible for creating the promotional material and has done an excellent job.
+
