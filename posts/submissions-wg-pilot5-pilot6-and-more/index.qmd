@@ -49,7 +49,7 @@ Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, In
 
 The Pilots have been making use of the original CDISC Pilot data from around 2008-2010 that were used as PoC for the FDA for CDISC standards. This data has been reused for many other projects across the industry as there is a severe lack of publicly available CDISC data. You can read about my quest to find some more data [here](https://pharmaverse.github.io/blog/posts/2025-02-17_data__packages/data__packages.html). The submissions working group would like to create new simulated data from raw, SDTM and ADaMs that could be used to test new techniques, ways of working, etc all brought up to modern standards. If interested get in touch!
 
-**A re-envisioned ADRG**
+**A Re-Envisioned ADRG**
 
 The Analysis Data Reviewer's Guide (ADRG) has been focused on the proprietary language SAS for delivering submissions over many years. As open-source languages such as R are accepted as valid mechanisms to deliver a submission the ADRG needs to "re-envisioned" to accommodate these languages. The pilots have had questions on how to document certain technical aspects in the ADRG of the R-based submission package, e.g. packages used and versions, R versions and layouts of the file folders.  
 
