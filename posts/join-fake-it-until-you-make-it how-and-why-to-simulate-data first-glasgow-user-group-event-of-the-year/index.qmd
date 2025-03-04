@@ -4,13 +4,13 @@ description: "Last year, Antonio Hegar of the R Glasgow user group shared the ch
 author: "R Consortium"
 date: "01/10/2024"
 ---
-[Last year](https://www.r-consortium.org/blog/2023/04/25/r-applied-to-epidemiology-and-infectious-disease-in-glasgow), [Antonio Hegar](https://www.linkedin.com/in/antoniohegar/?originalSubdomain=uk) of the [R Glasgow](https://www.meetup.com/rglasgow/) user group shared the challenges of organizing an R user group in Glasgow. The group now regularly hosts events, attracting local R users and experts. Antonio shared with the R Consortium the group’s journey and anecdotes that have helped it to build momentum. He also shared his hopes for maintaining this momentum, with speakers lined up for the next three events.
+[Last year](https://archive.r-consortium.org/blog/2023/04/25/r-applied-to-epidemiology-and-infectious-disease-in-glasgow), [Antonio Hegar](https://www.linkedin.com/in/antoniohegar/?originalSubdomain=uk) of the [R Glasgow](https://www.meetup.com/rglasgow/) user group shared the challenges of organizing an R user group in Glasgow. The group now regularly hosts events, attracting local R users and experts. Antonio shared with the R Consortium the group’s journey and anecdotes that have helped it to build momentum. He also shared his hopes for maintaining this momentum, with speakers lined up for the next three events.
 
-R Glasgow will be hosting their first event this year titled “[Fake it Until You Make it: How and Why to Simulate Data](https://www.meetup.com/rglasgow/events/298435580/)” on January 25, 2024. 
+R Glasgow will be hosting their first event this year titled "[Fake it Until You Make it: How and Why to Simulate Data](https://www.meetup.com/rglasgow/events/298435580/)" on January 25, 2024. 
 
 Antonio also discussed his work with R for his PhD research in data analysis for healthcare. He spoke about the ever-evolving nature of R and some of the new developments that have been useful for his research. 
 
-_What’s new with the Glasgow R User Group since we last talked?_
+## What’s new with the Glasgow R User Group since we last talked?
 
 As we discussed the last time, one of the most pressing issues we faced as a local R user group was our lack of engagement with the community. This is particularly interesting given that both Glasgow and Edinburgh have their own R user groups. Both cities are only an hour apart, yet we weren’t seeing the same level of engagement as other groups in the UK.
 
@@ -32,7 +32,7 @@ A venue, people on the inside of the industry, and a consistent schedule have be
 
 We will not have much difficulty finding additional speakers based on the academic and industrial contacts. At most, we must determine who will speak on which topic and when they will be available, which is not difficult. Based on the current situation, it does not appear that we will have any trouble maintaining momentum and keeping the meetings going. 
 
-_What industry are you currently in?_
+## What industry are you currently in?
 
 I am a PhD student at Glasgow Caledonian University. My PhD research focuses on data science applied to health, specifically using machine learning to predict disease outcomes.
 
@@ -42,7 +42,7 @@ I am currently researching how data science can be used to answer questions such
 
 When we last spoke, I was in the second year of my PhD. I am now in my third and final year. I should be submitting my dissertation before the end of this year. Balancing my commitments to R, my PhD work, and other activities is challenging, but I managed to pull it off.
 
-_How do you use R for your work?_
+## How do you use R for your work?
 
 I extensively use R. One of R’s most beneficial aspects is that it’s constantly evolving and expanding. As a result, it is impossible to master everything. You do not master R; rather, you master certain R areas relevant to your research or area of expertise. In my research, I found several medical statistics and biostatistics packages extremely useful. I was aware of a few of them but unaware of how many there were.
 
@@ -56,7 +56,7 @@ I work with NHS data through a third-party organization that controls it and all
 
 Learning about very niche packages, which are very content-specific or topic-specific, is very useful for researchers like myself. Integrating different programming languages is also useful because they are all merging into one. [Python](https://www.python.org/), [Julia](https://julialang.org/), R, and [Java](https://www.java.com/en/) have a lot of cross-fertilization and use between the different programming and software development packages. If R continues to streamline its services to integrate other packages, it will be a win-win situation for everyone.
 
-_What is the R Community like in Glasgow? What efforts are you putting in to keep your group inclusive for all participants?_
+## What is the R Community like in Glasgow? What efforts are you putting in to keep your group inclusive for all participants?
 
 We are not trying to cater to one specific level of expertise. The last meeting had a good mix of participants, including PhD students, undergraduates, people who have worked in finance and tech, software developers, and an individual from the R Consortium in Dublin, Ireland.
 
@@ -68,15 +68,15 @@ Finally, there are a small number of highly experienced programmers who are inte
 
 Most individuals fall into the beginner or intermediate levels, but there are a few who are highly advanced and still interested in attending. As a result, most of the talks will be geared toward individuals with intermediate-level experience. This will ensure that the material is not too advanced for beginners but also not too basic for advanced learners.
 
-_Can you tell us about a recent event that received a good response from the audience? _
+## Can you tell us about a recent event that received a good response from the audience?
 
-Of the recent events that were particularly successful, I would like to highlight the one held in November last year. It was titled “[Flex Dashboard: Displaying data with high impact using minimal code](https://www.meetup.com/rglasgow/events/297335777/).” [Erik Igelström](https://www.erikigelstrom.com/), a researcher from the University of Glasgow, presented his use of R Shiny to display data from the Scottish government. The presentation was highly informative and demonstrated the potential of Shiny to present data in a user-friendly manner. 
+Of the recent events that were particularly successful, I would like to highlight the one held in November last year. It was titled "[Flex Dashboard: Displaying data with high impact using minimal code](https://www.meetup.com/rglasgow/events/297335777/)." [Erik Igelström](https://www.erikigelstrom.com/), a researcher from the University of Glasgow, presented his use of R Shiny to display data from the Scottish government. The presentation was highly informative and demonstrated the potential of Shiny to present data in a user-friendly manner. 
 
 The meeting was attended by a representative from R Software in Ireland, who provided us with a wealth of information about industry developments, including the latest trends and upcoming projects. As a result of this meeting, 2023 was the most productive year for our R meetup.
 
 The preceding meetups were not entirely unproductive, but the most recent one, held in November last year, laid the groundwork for the current initiatives.
 
-_You have a Meetup titled “[Fake it Until You Make it: How and Why to Simulate Data](https://www.meetup.com/rglasgow/events/298435580/)” on 25th January 2024.  Can you share more on the topic covered? Why this topic? _
+## You have a Meetup titled "[Fake it Until You Make it: How and Why to Simulate Data](https://www.meetup.com/rglasgow/events/298435580/)" on 25th January 2024.  Can you share more on the topic covered? Why this topic?
 
 [Professor Lisa DeBruine](https://www.linkedin.com/in/lisa-debruine-4b2b93158/?originalSubdomain=uk) will be presenting at this Meetup. She is a professor of psychology at the University of Glasgow in the School of Psychology and Neuroscience. She is a member of the [UK Reproducibility Network](https://www.ukrn.org/) and works in [PsyTeachR](https://psyteachr.github.io/). She has used the [psych](https://cran.r-project.org/web/packages/psych/index.html) package extensively and many other good packages in R to conduct her psychological research. Her presentation will be on how to simulate data to prepare analyses for pre-registration.
 
