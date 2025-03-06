@@ -10,7 +10,31 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Mon, 03 Mar 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 06 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A new year and the same, unwavering commitment</title>
+  <dc:creator>Terry Christiani</dc:creator>
+  <link>https://r-consortium.org/posts/new-year-same-unwavering-committment/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As we open our first round for <a href="https://r-consortium.org/all-projects/callforproposals.html">Infrastructure Steering Committee call for proposals</a> and <a href="https://r-consortium.org/all-projects/rugsprogram.html">R User Groups’ submissions</a>, we want to take a moment to reiterate our mission as the R Consortium.</p>
+<p>The R Consortium promotes the growth and development of the R language and its ecosystem by supporting technical and social infrastructure, fostering community engagement, and driving industry adoption.</p>
+<p>We work to ensure a thriving, diverse global R community by providing resources, facilitating collaboration, and advocating for the use of R in multiple industry sectors. We provide funding for technical infrastructure through grants and working groups. We provide funding for social infrastructure through grants for R user groups and events around the world.</p>
+<p>We provide a neutral space where industry, academia, and government can collaborate on mission critical processes and standards.</p>
+<p>Our efforts in support of the R language and the community that keeps it growing and relevant are a privilege and we are committed to ensuring that our actions are in compliance with our code of conduct.</p>
+<p>We hope that you and your organization will join us in support of the R language and our community. We have a lot of work to do and we are excited to see the new and familiar faces come together for another fantastic year.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/new-year-same-unwavering-committment/</guid>
+  <pubDate>Thu, 06 Mar 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/new-year-same-unwavering-committment/commitment.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Promoting R in Nigeria: How Unilorin R User Group is Making an Impact</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1155,59 +1179,6 @@
   <guid>https://r-consortium.org/posts/reviving-sheffield-r-user-group-and-building-tools-for-thyroid-cancer-prediction/</guid>
   <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/reviving-sheffield-r-user-group-and-building-tools-for-thyroid-cancer-prediction/SheffieldRUGs.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Streamlining API Integration: Jon Harmon’s Journey with the api2r Package</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>The R Consortium recently interviewed <a href="https://www.linkedin.com/in/jonthegeek/">Jon Harmon</a>, Principal Data Solutions Engineer at Atorus, about his ISC-funded project, <em>api2r</em>. Jon’s extensive experience working with APIs from platforms like Slack, YouTube, and LinkedIn, along with his leadership of the Data Science Learning Community (DSLC.io), inspired him to develop <em>api2r</em> to simplify the process of wrapping APIs in R. The package streamlines the creation of R packages for various APIs by leveraging the OpenAPI standard, making it easier for developers to integrate external services into their R workflows.</p>
-<p><img src="https://r-consortium.org/posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/JonHarmon.png" class="img-fluid" style="width:50.0%"></p>
-<p>Jon discusses the challenges he faced during the package’s development, particularly around authentication and endpoint setup, and how <em>api2r</em> differs from other tools like {httr2} and {paws}.</p>
-<p>The R Consortium funded this project.</p>
-<p><strong>What inspired you to create the api2r package, and how do you envision benefiting the R community?</strong></p>
-<p>I run the <a href="dslc.io">Data Science Learning Community (DSLC) at dslc.io</a>, and through that, as well as some paid work, I frequently work with various APIs like Slack, YouTube, Zoom, LinkedIn, and different task management systems. I noticed that most of these are documented using the <a href="https://www.openapis.org/">OpenAPI Specification</a> or an older variant, which made it easier for me to read and write R code for them.</p>
-<p>However, I found myself repeatedly looking up how I had done similar tasks before, which made me realize it would be much easier if I created a tool to streamline this process. Since I love writing R packages, it felt natural to pursue this idea.</p>
-<p>In terms of how the R community could benefit, I want to make it easier for others to wrap APIs in R so people can create packages for whatever tasks they might need.</p>
-<p><strong>Can you elaborate on the challenges you foresee in implementing authentication and endpoint calls in the initial milestone (version 0.1.0)?</strong></p>
-<p>I’ve actually moved past the initial milestone of setting up authentication, but it definitely presented—and continues to present—challenges. First, I ended up splitting the package into three parts. There’s <em><a href="https://rapid.api2r.org/">rapid</a></em>, which parses API descriptions into a standard object, <em><a href="https://nectar.api2r.org/">nectar</a></em>, which wraps the <code>httr2</code> package to handle common tasks, and <em><a href="https://beekeeper.api2r.org/">beekeeper</a></em>, which is the main package. <em>Nectar</em> was particularly helpful because I was able to abstract the standard types of authentication into just a few simple wrappers. While <code>httr2</code> handles much of the heavy lifting, it doesn’t guide you through what you need to find in the documentation. That’s where <em>Nectar</em> steps in, helping streamline the setup process.</p>
-<p><img src="https://r-consortium.org/posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/beekeeperlogo.png" class="img-fluid" style="width:50.0%"></p>
-<p>That said, there are still ongoing challenges. Many sites don’t fully or correctly implement the OpenAPI Specification, making it difficult to find the necessary information. Even when they do, details on how to obtain an API key can be tricky to track down. I spent a lot of time trying to address this issue, although there’s no perfect solution. Fortunately, after I wrote my grant application, a new version of <code>httr2</code> was released that simplifies a lot of these processes, which has been a big help.</p>
-<p><strong>How does the api2r package aim to address the inconsistencies and inefficiencies in the current process of wrapping APIs into R packages?</strong></p>
-<p>One thing I really wanted to focus on is the challenge of testing packages that wrap APIs. I’ve helped many people navigate this issue, as it’s easy for your package to get rejected from CRAN if the tests are not set up correctly or if they require an internet connection. To address this, I made sure that part of the automatic package building process includes generating a test suite that follows best practices for API testing.</p>
-<p>With the <em>Nectar</em> package I mentioned earlier, it simplifies things by abstracting common setups—normally done with something like <code>httr2</code>—down to just what’s necessary, based on the API documentation. This creates a straightforward, one-to-one correspondence between what the API specifies and what you need to do, automatically generating a version of the package that handles this process smoothly.</p>
-<p><strong>What are the key differences between the api2r package and other API-related tools like {httr}, {httr2}, and {paws}?</strong></p>
-<p><em>Paws</em> is actually a family of packages designed specifically for working with Amazon Web Services (AWS) APIs, which is just one use case. The goal of the <em>API to R</em> family of packages I created is to make it easier to write packages like <em>Paws</em>. Essentially, <em>Paws</em> could be a package you’d create using my tools.</p>
-<p>I extensively use <code><em>httr2</em></code> (the updated version of <code><em>httr</em></code>), which helps simplify writing API calls.</p>
-<p>However, with <code><em>httr2</em></code>, you still have to manually piece everything together. The idea behind <em>API to R</em> is to take the API documentation and automatically build the <code><em>httr2</em></code> calls for you, eliminating the need to manually complete all the intermediate steps.</p>
-<p><strong>How do you plan to engage the R community in the development and testing of the api2r package, and what role do you see for collaboration?</strong></p>
-<p>I engage with many members of the R community on social media, primarily through <a href="https://fosstodon.org/@jonthegeek">Mastodon</a> and <a href="https://www.linkedin.com/in/jonthegeek/">LinkedIn</a>, where I share updates about the packages I’m working on, like <em>API to R</em>. I also maintain websites for these packages, and you can visit <a href="beekeeper.api2r.org">beekeeper.api2r.org</a> to find links to all of them. I keep everything up to date there.</p>
-<p>As I mentioned earlier, I run the Data Science Learning Community at dslc.io, which now has over 19,000 members, with 400-500 active weekly. Most of our members are R users, and I regularly keep the group updated. We also host a monthly project club where members present their work, and I’ve presented about this project a few times. I’m also active on other R platforms like the ROpenSci Slack team and various Discord channels.</p>
-<p>That being said, I’ve reached a point where I could use some help. I’d love for people to check out the GitHub repositories for these packages and share how they’re using them. If you encounter any bugs or have feedback, let me know. Just last week, I had an interaction on Mastodon where someone was working with a new API and asked if I could help. While we haven’t fully connected yet, I was able to send them the documentation to get started on creating the package and exploring what works and what doesn’t. It’s exciting to see where this could lead!</p>
-<p><strong>What are your long-term goals for maintaining and expanding api2r, and how do you plan to ensure its sustainability in the R ecosystem?</strong></p>
-<p>I strongly believe in developing everything openly, so the project is available on <a href="https://github.com/jonthegeek/beekeeper/tree/main">GitHub</a> for anyone to explore. You can access it from the website. Since it’s public, people are free to use it however they like. If I don’t take the project in the direction they prefer, they can fork it and work on their own version.</p>
-<p>I also work closely with <a href="https://ropensci.org/">rOpenSci</a> and other package developers to ensure that there’s a supportive community to keep things running. That said, if anyone is particularly interested in this package and its goals, I would really welcome an active collaborator or two to help manage and advance it. The standard we’re using—like the object version of the OpenAPI Specification—does evolve, and as APIs update, the package will need to adapt as well. My aim is to keep this project going long-term, and I don’t want it to rely entirely on me. Collaboration would be key to ensuring it grows and stays up to date.</p>
-<p><strong>How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</strong></p>
-<p>The R Consortium has been fantastic to work with—completely reasonable, transparent, and supportive at every step. The challenge for me, however, was that I seriously underestimated how much work this project would require. It wasn’t just about the difficulty; I also ended up going off on tangents that weren’t part of the original plan. Since the grant was milestone-based, there are still some milestones I haven’t reached, and that’s been tough to manage.</p>
-<p>I definitely recommend applying for an ISC grant if you’re working on something, but I would advise being very careful with how you structure your proposal. I got a bit stuck in my details, and now I’m at a point where I have to find extra time to work on it. There’s still some grant money left, but not enough to fully cover the remaining work. So, I tend to work on the project when I have a specific use for it and can justify the time.</p>
-<p>Overall, having the grant was incredibly helpful in giving me the time and space to explore this package, but it’s something to approach with caution regarding planning and execution.</p>
-<section id="about-isc-funded-projects" class="level2">
-<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
-<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
-<p><a href="https://r-consortium.org/all-projects/">https://r-consortium.org/all-projects/</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/</guid>
-  <pubDate>Wed, 30 Oct 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/api2r-main-image.png" medium="image" type="image/png" height="55" width="144"/>
 </item>
 </channel>
 </rss>
