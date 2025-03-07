@@ -1,0 +1,60 @@
+---
+title: "R for Public Health Data Analysis in Karachi, Pakistana"
+description: "The Karachi R User Group, Pakistan, hosted its second event, 'Unveiling the Power of R Shiny Dashboards,' on December 30, 2023. The R Consortium spoke with Uzair Aslam, the group’s founder, about the challenges of starting an R User Group in a budding R community."
+author: "R Consortium"
+date: "01/10/2024"
+---
+
+The [Karachi R User Group](https://www.meetup.com/karachi-r-user-group/), Pakistan, hosted its second event, “[Unveiling the Power of R Shiny Dashboards](https://www.meetup.com/karachi-r-user-group/events/297961376/),” on December 30, 2023. The R Consortium spoke with [Uzair Aslam](https://www.linkedin.com/in/uzairdatascientist/?originalSubdomain=pk), the group’s founder, about the challenges of starting an R User Group in a budding R community. He also discussed his data analysis project for studying the health deficiencies experienced by the Pakistani population.
+
+## Please share about your background and your involvement in the R Community.
+
+My name is Uzair Aslam, and I did my BSc in Economics and Mathematics from the Institute of Business Administration (IBA), Karachi. I have a keen interest in data science, statistics, and econometrics. After graduating, I co-founded a consulting firm called [StatDevs](https://statdevs.com/). I work with two developers to develop R and Shiny applications for our clients.
+
+At StatDevs, we solve complex problems using data science solutions and data analytics. R is a core language for us, and we’re experienced in Python, too. However, we are focused on R because of its strengths in data analysis, data visualization, and the development of Shiny applications.
+
+My motivation for starting this group came from watching online events of R user groups in the USA and Europe. I attended the presentations and listened to what R is capable of and how they are bringing R to their communities. I noticed much R activity on that side of the world, but nothing was happening on the Asian side. That is when I wanted to make people realize that they could use R for their data analysis in academia and industry so they can solve more problems.
+
+[R User Group Distribution](https://benubah.github.io/r-community-explorer/rugs.html) Around the World, from Ben Ubah’s R Community Explorer repo using the meetupr package to query Meetup API
+
+Currently, regarding R users, there is a lack of community concept in Pakistan. Tech communities are not nurtured properly, not built properly, and they are not contained properly.
+
+I contacted the R consortium and shared my story of wanting to establish an R user group as the organizer to promote the language.
+
+## Can you share what the R community is like in Pakistan?
+
+I have observed that R is used in academia, but not to the extent it should be. I have seen a couple of professors at IBA and some in Islamabad who use R but also use Stata and Excel for their academic purposes and data analysis. In terms of industry, [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi) and [Excel](https://www.microsoft.com/en-us/microsoft-365/excel) are used extensively. This is because not many people know R’s data analysis and analytics capabilities. The acceptance of R is not realized due to the lack of awareness. Some academic researchers use R but may need more training to get the most out of what R offers them. Karachi R User Group aims to narrow down this gap.
+
+## Are there any particular challenges you have faced in organizing this RUG?
+
+Indeed, getting people to participate in this R user group has been a challenge. I held our first meetup myself last month in November, and only 4 or 5 people attended. I prepared for the meetup for about two weeks because I wanted an excellent introduction and everything, but fewer people showed up. Of those five people, one was my co-founder, and two were participating from the US and Brazil sides. There was only one person from Pakistan. This happens when you introduce something new in a place people are unaware of. My job is to continue this effort and tell people about the possibilities and opportunities of data analysis and consulting using R.
+
+As we approach our second meetup, more people are showing interest, and the number is growing daily. I am not active on Instagram and very less active on Twitter. However, I use LinkedIn as my platform to reach people and Facebook. On Facebook, I have joined multiple groups, so I share information about the meetups in these groups. Lately, I have been realizing that I should use Twitter as well because I have seen more people promoting their R events on Twitter.
+
+## You have a Meetup on “[Unveiling the Power of R Shiny Dashboards](https://www.meetup.com/karachi-r-user-group/events/297961376/),” can you share more on the topic covered? Why this topic?
+
+Currently, we have 100 members in our user group, and the upcoming meetup is titled “Unveiling the Power of R Shiny Dashboards.” [Jehangeer Aswani](https://www.linkedin.com/in/aswanijehangeer/?originalSubdomain=pk) is the speaker for this event. Jehangeer is a professional freelancer on Upwork and is based in Islamabad. Due to his motivation and my idea, we started this R user group. He is one of the people I look to for motivation. He has a bachelor’s degree in Statistics and provides [R Shiny](https://shiny.posit.co/) consulting services.
+
+This meetup is about the fundamental concepts of R Shiny. One may wonder why R Shiny is relevant when we have [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi) and [Excel](https://www.microsoft.com/en-us/microsoft-365/excel). Jehangeer will provide a hands-on experience with R Shiny applications. This will help participants understand why R Shiny is a better tool. In addition, this meetup will unlock the potential to transform data into captivating visualizations. Participants will also learn how to build R Shiny dashboards. They will get hands-on experience with a real-world application that can be used to solve a business case.
+
+## Please share about a project you are working on or have worked on using the R language. Goal/reason, result, anything interesting, especially related to your industry?
+
+I used R for micro-analysis of the Public Health domain. I collaborated with a consultant in Karachi, Pakistan, named [Jaweid Ishaque](https://www.linkedin.com/in/jaweid-ishaque-21a10613/?originalSubdomain=pk). We worked on a data analysis project for [Indus Hospital and Health Networks](https://indushospital.org.pk/), a large network of hospitals. The problem statement of the project was to create a broader understanding of the health deficiencies experienced by the Pakistani population, particularly in Punjab, Sindh, and Balochistan. This was a funded study that we conducted.
+
+I utilized a variety of data sets in this study. One of the data sets was the [2017 census data](https://www.pbs.gov.pk/content/final-results-census-2017). Another data set was the [Pakistan Social Living Measurement (SLM) 2019-2020 data set](https://www.pbs.gov.pk/content/pakistan-social-and-living-standards-measurement#:~:text=PSLM%20Survey%20(2019%2D20),modules%20%22Migration%2C%20Disability%2C%20Information). I also used data from the [Pakistan Maternal Mortality Survey](https://microdata.worldbank.org/index.php/catalog/3824) (PMMS) and the [Pakistan Demographic and Health Survey](https://dhsprogram.com/data/dataset/Pakistan_Standard-DHS_2017.cfm?flag=1) (PDHS). I obtained these data sets from the [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/) and open sources. I analyzed and explored the exact status of public health delivery and public health care at the country and provincial levels.
+
+I worked as a data analyst on this project. The consultant guided me throughout the study. I summarized and presented the current status of health parameters in terms of mortality, disease, incidence, and prevalence. We also compared these parameters to those of other countries, such as Bangladesh, India, Sri Lanka, and Nepal. With the help of R and its packages, I could extract, process, and clean the data sets from multiple sources using dplyr. I used ggplot to visualize the data. Finally, out of the 141 total districts, I identified the most disadvantaged districts in Pakistan in terms of Public Healthcare Delivery (PHC), Social Living Measurements (SLM), and Incidence Of Diseases (IOD). Our rigorous analysis narrowed the list of disadvantaged districts to around 35 districts in Pakistan. There were eighteen districts in lower Balochistan, ten in Sindh, and seven in Punjab. This study helped Indus Hospital And Health Networks deploy mobile health clinics to remote areas of Pakistan.
+
+I wrote and executed all of the analytical scripts for the data cleaning and analysis of the provided surveys in R. This allowed me to gain an overview and insights into the data, which I then reported to the stakeholders. I presented Indus Hospital Health Networks with a comprehensive overview of our seven to eight months of research. I generated Pakistan’s population parameters in these analyses, including birthplaces, provincial distributions, mortality rates, and stillbirth rates by provinces and districts.
+
+In addition to the above, I have also started offering R training. I delivered an online course on R one year ago titled “R for Economics and Finance.” I instructed over 15 students from IBA and all over Pakistan in this online training course, which was solely based on R.
+
+Students were delighted to learn about the practical applications of their economic and financial models, as they had previously only been taught theoretical courses in Universities. I conducted this training last year and will now conduct several R trainings in industry and academia.
+
+I will be conducting one of these trainings in February. This training will be titled “R for Data Science,” and students and industry professionals will attend it. I have begun working on this training to promote R as much as possible through our efforts.
+
+As my commitment to advancing the use of R in data analysis and data science grows, I express gratitude to the R Consortium for their support on this transformative journey. Envisioning a significant impact on Pakistan, I am dedicated to constructing a vibrant open source community. The fruits of my efforts will manifest as I realize my vision: fostering open source data analytics and collaboration throughout Pakistan.
+
+## How do I Join?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 65,000 members in 35 countries. [We would like to include you!](https://r-consortium.org/all-projects/rugsprogram.html) Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
