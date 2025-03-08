@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2024-01-15">
+<meta name="description" content="Recently, Kamil Sijko of the Warsaw R User Group discussed with the R Consortium his transition from academia to leading data science in the business sector.He noted the current dormancy of Warsaw’s R community and the eagerness to revive its dynamic, pre-COVID meetups.">
 
-<title>newsletters – R Consortium</title>
+<title>Rebooting the Warsaw R Community in 2024: Insights from Kamil Sijko’s Journey and Future Aspirations – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5578fed3b6ea086f23b563b1175cf55d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5578fed3b6ea086f23b563b1175cf55d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -107,48 +79,19 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -163,35 +106,35 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -202,15 +145,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -221,23 +164,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="../all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -260,7 +203,7 @@ window.Quarto = {
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -275,15 +218,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">WG Calendar</span></a>
   </li>  
     </ul>
@@ -294,25 +237,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -343,109 +286,102 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Rebooting the Warsaw R Community in 2024: Insights from Kamil Sijko’s Journey and Future Aspirations</h1>
+                  <div>
+        <div class="description">
+          Recently, Kamil Sijko of the Warsaw R User Group discussed with the R Consortium his transition from academia to leading data science in the business sector.He noted the current dormancy of Warsaw’s R community and the eagerness to revive its dynamic, pre-COVID meetups.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 15, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="newsletters" class="level1">
-<h1>Newsletters</h1>
-<section id="whats-happening-in-the-r-consortium" class="level2">
-<h2 class="anchored" data-anchor-id="whats-happening-in-the-r-consortium">What’s happening in the R Consortium?<a href="https://oppkeyquarto.netlify.app/newsletters/newsletters#whats-happening-in-the-r-consortium"></a></h2>
-<p>Check out our previous Newsletters and stay tuned for future ones!</p>
 
+<p>Recently, <a href="https://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup/">Kamil Sijko</a> of the <a href="https://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup/">Warsaw R User Group</a>discussed with the R Consortium his transition from academia to leading data science in the business sector. He noted the current dormancy of Warsaw’s R community and the eagerness to revive its dynamic, pre-COVID meetups. The group’s latest meeting explored new, interactive formats to engage its diverse membership better.</p>
+<section id="please-share-about-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-your-background-and-involvement-with-the-rugs-group.">Please share about your background and involvement with the RUGS group.</h2>
+<p>During my early academic years at the University of Social Sciences in Warsaw, we explored several interesting projects, one of which was ‘webiR’ in 2009. This project was an attempt to blend R’s capabilities with web application development, which was not very common at the time. We developed webiR a few years before the advent of Shiny in 2012 with the idea of making R more accessible to non-technical users.</p>
+<p>While webiR might not be widely remembered today, unlike the widely successful Shiny, it represented our early efforts to simplify data analysis. The application allowed users to choose survey questions they were interested in, and then it would automatically select suitable analyses through a set of heuristics. This approach aimed to eliminate the need for users to understand the underlying R functions, making data analysis more approachable.</p>
+<p>Although webiR wasn’t a major success, it was a valuable learning experience and a stepping stone in exploring how R could be used innovatively, especially in web development. These kinds of exploratory projects contribute to the ongoing evolution and versatility of R, which we continue to see today.</p>
+<p>Later, I transitioned to working at research institutes, including a government-funded Polish Educational Research Institute. Now, I’m in the business sector. I serve as the Head of Data Science at <a href="https://ttsi.com.pl/en/">Transition Technologies Science</a>, a company that operates in the medical industry. We collaborate with pharmaceutical companies, universities, and medical scientists. My role involves leveraging data science in various aspects of the medical field.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-warsaw-poland" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-warsaw-poland">Can you share what the R community is like in Warsaw, Poland?</h2>
+<p>The situation is dormant, but it’s good timing for a reboot. There have been no revised activities since the pandemic ended. Before COVID, though, this was a hot topic of discussion. There were frequent meetups, including Python and data science gatherings. These meetups were unique, and I found them slightly unconventional in a good way. For example, Python meetups often focused on deep learning and applications in risk management or insurance.</p>
+<p>But with R meetups, there was a broader spectrum of topics, often venturing far beyond conventional subjects. I found this diversity particularly refreshing, especially as many academics were involved, exploring a wide range of innovative applications.</p>
+<p>One of the things that stood out was the involvement of women from the <a href="https://www.pw.edu.pl/">Warsaw University of Technology</a>, who ran the <a href="https://www.facebook.com/RLadiesWarsaw/">‘R Ladies’ in Warsaw</a>. They organized numerous workshops, which were quite popular. These workshops offered an accessible entry point into data science for those looking to change careers. One interesting observation made was that R is often seen as more approachable as a first language for newcomers from different backgrounds.</p>
+<p>We also have a strong scientific group in Warsaw led by <a href="https://www.linkedin.com/in/pbiecek/">Professor Biecek</a>, a fervent advocate of R and leader of <a href="https://www.mi2.ai/index.html">MI2.AI</a>. His work in Explainable AI is cutting-edge, making us feel connected to a vibrant local scene. Another point raised was the curiosity about local technological developments, not just the global cutting-edge advancements.</p>
+<p>I recall an initiative named ‘PoweR’ – a three-week crash course in data science that attracted about 500 participants. I didn’t participate myself, but it was impressive. Also, the fields of science like medicine, statistics, econometrics, spatial sciences, and humanities were highlighted. R is extremely popular in these areas, allowing for exploration of unique and diverse topics.</p>
+<p>It’s clear there’s a strong desire to revive these meetups and initiatives, as they foster a unique learning environment and community spirit.</p>
+</section>
+<section id="you-had-a-meetup-on-december-11th-2023.-can-you-share-more-on-the-topic-covered-why-this-topic" class="level2">
+<h2 class="anchored" data-anchor-id="you-had-a-meetup-on-december-11th-2023.-can-you-share-more-on-the-topic-covered-why-this-topic">You had a Meetup on <a href="https://www.meetup.com/spotkania-entuzjastow-r-warsaw-r-users-group-meetup/events/297754253/">December 11th, 2023</a>. Can you share more on the topic covered? Why this topic?</h2>
+<p>In our recent meeting, we deviated from the usual format of workshops and lectures, opting for a more unique approach that we may not repeat. Instead, we engaged in a peer-to-peer discussion, which was feasible due to the small number of attendees. We focused on two main topics. The first was understanding what people miss most about our meetings, as I aim to incorporate these elements when I reboot them. The second topic was exploring future directions for our meetings.</p>
+<p>We delved into the different types of participants attending our meetings. One group comprises those familiar with R and eager to learn about advanced techniques, for whom lectures are ideal. Another group includes individuals transitioning from other fields to data science. We also considered students, particularly those favoring Python over R, and I believe it’s important to dispel any misconceptions about career prospects in R.</p>
+<p>Additionally, we discussed members of the open source community around Warsaw, recognizing their contributions during events like hackathons. Another interesting aspect was the companies’ involvement, not just in recruitment but also in sharing their work with the community.</p>
+<p>An unaddressed yet intriguing aspect was attendees transitioning within the data science field, seeking insights into new companies and trends. I also want to focus more on social interactions beyond just having pizza and experiment with ideas like speed dating or extended interactions with lecture presenters.</p>
+<p>Lastly, we considered the language of our meetings. Operating in Poland, we debated whether to conduct some sessions in English, stream them, or post them on YouTube to reach a broader audience. I’m excited to experiment with these ideas, which could significantly enhance our meetings.</p>
+</section>
+<section id="who-is-the-target-audience-for-attending-this-event" class="level2">
+<h2 class="anchored" data-anchor-id="who-is-the-target-audience-for-attending-this-event">Who is the target audience for attending this event?</h2>
+<p>Up to this point, our focus has primarily been on individuals who are already interested in R and seeking to deepen their knowledge with expert insights. That’s been our main audience. The other significant group consists of those completely new to the field who are looking to be introduced to data science through R. These are the two main types of participants we usually have.</p>
+<p>We aim to be more inclusive; of course, there’s the ‘R Ladies’ initiative. The ‘R Ladies’ essentially engage in the same activities as the rest of our groups, but they cater to a different audience. The content and structure of their sessions are similar to what we offer to other participants. Still, they focus on creating an inclusive environment for women interested in data science and R.</p>
+</section>
+<section id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future" class="level2">
+<h2 class="anchored" data-anchor-id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future">Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</h2>
+<p>There were various opinions, but one perspective really resonated with me. COVID took away our in-person meetups, and although there was an attempt to transition them to a virtual environment, it wasn’t the same. We miss face-to-face interactions and being in the same physical space together. That’s something special.</p>
+<p>There were instances where, despite people already gathering in the room, we had to announce that the expert wouldn’t be able to come and would instead join via Zoom. This often led to disappointment, with some attendees leaving the room immediately, as they weren’t interested in a virtual presentation. After all, there’s plenty of similar material available online.</p>
+<p>One comment struck me: even though we could have experts from <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> (now posit) or other places speak to us from across the ocean about their latest developments, this information is already accessible on platforms like YouTube. The experience is likely to be similar. In terms of using Zoom or similar virtual platforms, we’re leaning towards not pursuing that path for future meetups.</p>
+</section>
+<section id="we-would-like-to-get-to-know-you-more-on-the-personal-side.-can-you-please-tell-me-about-yourself-for-example-hobbiesinterests-or-anything-you-want-to-share-about-yourself." class="level2">
+<h2 class="anchored" data-anchor-id="we-would-like-to-get-to-know-you-more-on-the-personal-side.-can-you-please-tell-me-about-yourself-for-example-hobbiesinterests-or-anything-you-want-to-share-about-yourself.">We would like to get to know you more on the personal side. Can you please tell me about yourself? For example, hobbies/interests or anything you want to share about yourself.</h2>
+<p><img src="VolunteerCodingDojo.png" class="img-fluid"></p>
+<p>A fun fact about me is my deep involvement in an initiative focused on teaching children creative computer skills. I’ve found it incredibly rewarding to help kids learn how to use technology creatively. It’s a lot of fun, both for me and the children. For instance, I recently prepared workshops on creating Electronic Dance Music (EDM). These workshops cover aspects like sampling and looping. I find this work enjoyable and immensely fulfilling, as it combines my passion for technology with the joy of teaching and engaging with children.</p>
+<p>Additionally, in my work with <a href="https://coderdojo.com/en">CoderDojo</a>, I’ve had the opportunity to engage children in programming projects, including a special focus on encouraging a group of girls. We utilized ’<a href="https://www.kodugamelab.com/">Kodu Game Lab</a>‘ for these sessions, a platform that offers a more immersive, video game-like environment for coding. This platform enabled the children to learn programming concepts in a playful manner, such as coding a robot to follow or avoid objects and even creating their own simple games.</p>
+<p>A key moment came when the girls highlighted a significant limitation: the lack of relatable characters in the games, noting the predominance of robots and other figures but a conspicuous absence of princesses or characters they could identify with. This feedback was invaluable and led us to adapt our approach. We creatively worked around this limitation by incorporating an object—a ‘tag’—which we collectively imagined as a princess needing rescue. This improvisation turned into a unique game by the end of the day.</p>
+<p>This experience was not just fun but also enlightening, underscoring the importance of CoderDojo’s approach in offering unique insights into how different groups perceive technology. It highlighted the need to understand and address diverse perspectives and requirements in technology, especially when introducing young minds to the world of programming.</p>
+</section>
+<section id="how-do-i-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 65,000 members in 35 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
 
 
 </section>
-</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1728259200000" data-listing-file-modified-sort="1741397904782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2451">
-<a href="../newsletters/R-Consortium-Q3-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q3-2024-NEWSLETTER-main-image.png" class="thumbnail-image card-img" style="height: 450px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2024 Newsletter
-</h5>
-<div class="card-text listing-description">
-Welcome to the R Consortium’s Q3 2024 Newsletter!
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 7, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1719705600000" data-listing-file-modified-sort="1741397904781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1546">
-<a href="../newsletters/R-Consortium-Q2-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1-1024x576.webp" class="thumbnail-image card-img" style="height: 450px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q2 2024 Newsletter
-</h5>
-<div class="card-text listing-description">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jun 30, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1741397904781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1491">
-<a href="../newsletters/R-Consortium-Q3-2023-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1.webp" class="thumbnail-image card-img" style="height: 450px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2023 Newsletter
-</h5>
-<div class="card-text listing-description">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 31, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
