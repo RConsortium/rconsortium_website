@@ -10,7 +10,88 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Fri, 14 Mar 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 20 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Exploring geometa: An R Package for Managing Geographic Metadata</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><strong>geometa</strong> provides an essential object-oriented data model in R, enabling users to efficiently manage geographic metadata. The package facilitates handling of ISO and OGC standard geographic metadata and their dissemination on the web, ensuring that spatial data and maps are available in an open, internationally recognized format. As a widely adopted tool within the geospatial community, geometa plays a crucial role in standardizing metadata workflows.</p>
+<p>Since 2018, the <strong>R Consortium</strong> has supported the development of geometa, recognizing its value in bridging metadata standards with R’s data science ecosystem. You can try geometa yourself here: <a href="https://cran.r-project.org/package=geometa">CRAN – geometa</a>.</p>
+<p>In this interview, we speak with <strong>Emmanuel Blondel</strong>, the author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management. With a background in <strong>Agronomic Sciences and Environmental &amp; Natural Resources Management</strong> from the French National Polytechnical Institute (<strong>INP-ENSAT</strong>), Emmanuel specializes in <strong>Geographic Information Systems (GIS)</strong> applied to fields such as agronomy, environment, fisheries, and aquatic sciences. As an active open-source developer, he shares insights into the evolution of geometa, the challenges of metadata standardization, and the future of geospatial data management in R.</p>
+<p><img src="https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/emmanuel.png" class="img-fluid"></p>
+<section id="what-is-the-significance-of-geometa-including-support-for-iso-19115-3-getting-published-on-cran-is-this-about-incorporating-new-standards" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-significance-of-geometa-including-support-for-iso-19115-3-getting-published-on-cran-is-this-about-incorporating-new-standards">What is the significance of geometa including support for ISO 19115-3 getting published on CRAN? Is this about incorporating new standards?</h2>
+<p>Yes, it’s all about metadata standards. ISO standards can have a lifecycle from around five to ten years, and it takes time for institutions, governments, and software providers to adopt and implement them. The primary standard for geographic metadata has been ISO 19115 developed by the ISO/TC 211 (Technical Committee on Geographic Information/Geomatics). It defines the structure for describing geographic information. It is initially composed by the main geographic metadata standard (ISO 19115-1) and an extension to describe gridded and imagery datasets, called ISO 19115-2. To facilitate XML encoding, ISO 19139 provides the corresponding XML schema for implementing ISO 19115-compliant metadata.</p>
+<p>ISO 19115 has been widely used in geographic information systems, software providers, and legal frameworks such as the INSPIRE directive in Europe or the Geospatial Data Act in the U.S.. Countries and international organizations have gradually adopted ISO 19115. Meanwhile a new version of the ISO 19115, called ISO 19115-3, was developed by ISO experts to refactor and consolidate the standard. However, adoption takes time.</p>
+<p>The idea behind the latest <strong>geometa</strong> project funded by the R Consortium was to support this transition by implementing the newer version of ISO 19115. That’s why I’ve been pushing for this update. Since standardization work is a continuous process, there are already other prospects for improvements, such as the management of the JSON encoding format, targeted by the next ISO 19115-4 standard under development.</p>
+<hr>
+</section>
+<section id="how-has-the-object-oriented-data-model-developed-with-r6-been-improved-and-what-are-the-main-advantages" class="level2">
+<h2 class="anchored" data-anchor-id="how-has-the-object-oriented-data-model-developed-with-r6-been-improved-and-what-are-the-main-advantages">How has the object-oriented data model developed with R6 been improved? And what are the main advantages?</h2>
+<p>ISO 19115 and related standards, such as GML (Geographic Markup Language), are built on large object-oriented information models. It made sense to use an object-oriented data model in R to align with these standards.</p>
+<p>I chose <strong>R6</strong> because it was the most convenient and practical way to model objects. I had previously explored other approaches, but R6 offered flexibility and efficiency.</p>
+<p>Now, I’m also keeping an eye on <strong>S7</strong>, an initiative from the R Consortium. In the future, I might explore new approaches for object modeling such as S7, and possibly adopt them in packages such as geometa.</p>
+<hr>
+</section>
+<section id="how-important-is-r-for-multidisciplinary-projects-involving-data-managers-analysts-statisticians-and-researchers-across-different-teams-what-are-its-main-advantages" class="level2">
+<h2 class="anchored" data-anchor-id="how-important-is-r-for-multidisciplinary-projects-involving-data-managers-analysts-statisticians-and-researchers-across-different-teams-what-are-its-main-advantages">How important is R for multidisciplinary projects involving data managers, analysts, statisticians, and researchers across different teams? What are its main advantages?</h2>
+<p>R’s main advantage is its broad accessibility across various roles—data managers, scientists, statisticians—who all understand and use it.</p>
+<p>This was a key reason why I developed <strong>geometa</strong> in R. In the past, I worked with Java for similar projects, but my colleagues struggled with it because they weren’t Java developers, and the programming language was a barrier. R served as a common language among them, enabling better collaboration.</p>
+<p>There are two main challenges:</p>
+<ol type="1">
+<li><strong>The technology constraint</strong> (R itself).</li>
+<li><strong>The complexity of metadata standards</strong>, which are exhaustive and highly specialized.</li>
+</ol>
+<p><strong>geometa</strong> provides fine-grained control, fully aligning with the standards. However, I’ve also developed tools to simplify metadata creation, making it easier for non-developers to generate metadata efficiently.</p>
+<p>Seeing my colleagues—who previously couldn’t produce metadata—now able to generate metadata and enable services has been rewarding. This is particularly valuable in data science, where the volume of data continues to grow. Instead of struggling with metadata formats, they can focus on improving data quality and descriptions.</p>
+<hr>
+</section>
+<section id="geometa-is-used-in-r-packages-such-as-ows4r-r-interface-to-ogc-web-services-geonapi-r-interface-to-geonetwork-api-and-geoflow-r-engine-for-geospatial-metadata-workflows.-whats-the-best-way-to-get-started" class="level2">
+<h2 class="anchored" data-anchor-id="geometa-is-used-in-r-packages-such-as-ows4r-r-interface-to-ogc-web-services-geonapi-r-interface-to-geonetwork-api-and-geoflow-r-engine-for-geospatial-metadata-workflows.-whats-the-best-way-to-get-started">geometa is used in R packages such as ows4R (R Interface to OGC Web Services), geonapi (R Interface to GeoNetwork API), and geoflow (R engine for geospatial metadata workflows). What’s the best way to get started?</h2>
+<p>All these packages are open-source and available on GitHub. The best way to start is by checking the documentation and vignettes—<strong>ows4R</strong>, for example, has detailed vignettes.</p>
+<p>On GitHub, I’ve also enabled the <strong>Discussions</strong> panel, which acts as a forum where users can ask questions. I make an effort to answer questions in my spare time, and the discussions often help improve documentation and package functionality.</p>
+<p>Some key differences between the packages:</p>
+<ul>
+<li><strong><a href="https://cran.r-project.org/package=ows4R">ows4R</a></strong> standards for OGC Web-Services for R and includes tools to interact with these services including metadata services (Catalogue Service for the Web - CSW) but also data services (with the well-known Web Feature Service - WFS and Web Coverage Service - WCS). With this package, metadata produced with geometa can be published within standard metadata catalogues, and metadata fetched from there. Users interested in using standard protocols instead of software-specific APIs may prefer this package.</li>
+<li><strong><a href="https://cran.r-project.org/package=geonapi">Geonapi</a></strong> is API-specific. It provides tools to manage metadata but with the <a href="https://geonetwork-opensource.org/">Geonetwork</a> API.</li>
+<li><strong><a href="https://github.com/r-geoflow/geoflow">Geoflow</a></strong> serves as an orchestrator, integrating metadata, data, and tasks to publish them into web catalogs, including non-geographic ones.</li>
+</ul>
+<p>For beginners, <strong>geoflow</strong> might be the best entry point.</p>
+<hr>
+</section>
+<section id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers" class="level2">
+<h2 class="anchored" data-anchor-id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers">How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</h2>
+<p>My experience with the R Consortium has been positive. My <a href="https://r-consortium.org/all-projects/2018-group-2.html#strengthening-of-r-in-support-of-spatial-data-infrastructures-management-geometa-and-ows4r-r-packages">first project</a> on geometa was funded in 2018, and it was a significant boost for the package.</p>
+<p>Since then, I had submitted another project twice, for enhancing the ows4R package, though it was not selected because maybe considered too specific. The R Consortium deals with a broad range of domains covered by the R community, so they have to prioritize. However, the interaction with them has always been great—both administratively and with the <strong>Infrastructure Steering Committee (ISC)</strong>.</p>
+<p>Before submitting my first application, I reached out to the ISC for advice on proposal structuring, approval processes, and whether partial funding was an option. Their feedback was helpful, and I’d definitely recommend other developers consider applying. It’s a great opportunity for funding and support.</p>
+<p>Get started with geometa now! <a href="https://cran.r-project.org/web/packages/geometa/index.html">CRAN – geometa</a></p>
+</section>
+<section id="what-projects-does-the-r-foundation-fund" class="level2">
+<h2 class="anchored" data-anchor-id="what-projects-does-the-r-foundation-fund">What Projects Does the R Foundation Fund?</h2>
+<p>Our grants target projects that make a difference in the R community, focusing on:</p>
+<p>Technical Infrastructure: Enhancements in key R packages, development tools like R-hub, and improvements for R on various operating systems.</p>
+<p>Social Infrastructure: Projects like SatRDays that promote local engagement and initiatives for better tracking of R Consortium activities.</p>
+<p>We’re eager to see your innovative ideas and how they can propel the R ecosystem forward. This is a call to action for all who wish to contribute to the growth and enhancement of R. Let’s build a stronger R community together!</p>
+<p>Submit your proposal now and be a part of shaping the future of the R Ecosystem. Learn more about how to apply <a href="https://www.r-consortium.org/all-projects/call-for-proposals">here</a>.</p>
+<p>We look forward to your submissions and furthering the R community’s advancement together!</p>
+<section id="apply-now" class="level3">
+<h3 class="anchored" data-anchor-id="apply-now"><a href="https://r-consortium.org/all-projects/callforproposals.html">Apply now!</a></h3>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/emmanuel-main.png" medium="image" type="image/png" height="70" width="144"/>
+</item>
 <item>
   <title>Looking forward to seeing you at useR! 2025 this year!</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1124,50 +1205,6 @@
   <guid>https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/</guid>
   <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/Andreas.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Health Technology Assessment (HTA) Working Group Kickoff: Building a Collaborative Vision in R for HTA</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>On October 31, 2024, the Health Technology Assessment (HTA) Working Group convened for its first general meeting, marking the beginning of an exciting industry-wide initiative to elevate the role of R within the HTA community. The gathering featured 35 members, including co-chairs and founding members Gregory Chen, <a href="https://www.linkedin.com/in/anders-gorst-rasmussen-50bb732/?originalSubdomain=dk">Anders Gorst-Rasmussen</a>, <a href="https://www.linkedin.com/in/dominic-muston-a897517/">Dominic Muston</a>, and <a href="https://www.linkedin.com/in/joseph-rickert-a45a96?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAo_1UB1mlPH37Q6CKV1o0BVHibrVBgYsA&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B9Qho7amVQtCu8OfJFebhwA%3D%3D">Joseph Rickert</a>, with participants bringing varied expertise from across the HTA landscape. Hosted on video, the kickoff set the stage for collaboration, innovation, and tangible impacts on the development and application of R tools in health technology assessments. You can watch the recording <a href="https://zoom.us/rec/play/IGEvwwmmIZ_BVHB5wqMkdDpTcjC1VsEcEU4RcBJPkpZSR_zMOow3nCQH7FMTbiQk27bq0MBPABOgpHMe.LH2M4thN5AqgI3sY?canPlayFromShare=true&amp;from=share_recording_detail&amp;continueMode=true&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2F9NTj9ZtSKBFz3Ij0rf0x3gTSoOcx99MCdvJCzUEUz3XEboB-EhilI4mMQ-Bw8bYe.0IKFWabamQjvIRdS">here.</a></p>
-<section id="opening-remarks-and-vision" class="level2">
-<h2 class="anchored" data-anchor-id="opening-remarks-and-vision">Opening Remarks and Vision</h2>
-<p><img src="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/OpeningRemarksandVision.png" class="img-fluid"> Gregory Chen and Anders Gorst-Rasmussen opened the meeting with a vision of collaboration, emphasizing the importance of a shared, flexible structure within the HTA Working Group. The co-chairs highlighted two initial workstreams designed to channel the group’s efforts without restricting the scope of potential projects. This framework underscores the group’s commitment to evolve in response to member feedback and industry needs.</p>
-</section>
-<section id="workstream-1-building-connections-across-the-hta-ecosystem" class="level2">
-<h2 class="anchored" data-anchor-id="workstream-1-building-connections-across-the-hta-ecosystem">Workstream 1: Building Connections Across the HTA Ecosystem</h2>
-<p><img src="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/Workstream1.png" class="img-fluid"> Anders Gorst-Rasmussen and Dominic Muston introduced the first workstream, focusing on building connections across diverse stakeholders within HTA. This foundational effort aims to foster a common perspective and identify relevant challenges and opportunities. By bridging gaps between different sectors within HTA, Workstream 1 seeks to create a solid framework for addressing complex issues in health technology evaluation and supporting innovation across the industry.</p>
-</section>
-<section id="workstream-2-r-tools-for-hta-identification-curation-and-education" class="level2">
-<h2 class="anchored" data-anchor-id="workstream-2-r-tools-for-hta-identification-curation-and-education">Workstream 2: R Tools for HTA – Identification, Curation, and Education</h2>
-<p><img src="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/MappingofHTA.png" class="img-fluid"> Gregory Chen and Joseph Rickert presented Workstream 2, which takes a hands-on approach toward bolstering R’s role in HTA. Key goals include identifying relevant R packages, curating high-quality, production-ready tools, and proactively enhancing documentation and user resources. The working group will also promote these tools through blogs, webinars, and other educational efforts to foster a culture of learning and improvement around R for HTA. The ultimate aim is to ensure that the HTA community has access to well-documented, robust R tools and resources that meet industry needs.</p>
-</section>
-<section id="next-steps-how-members-can-contribute" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps-how-members-can-contribute">Next Steps: How Members Can Contribute</h2>
-<p>The HTA Working Group’s GitHub repository serves as the central hub for collaboration, providing access to meeting materials, discussion threads, and project updates. Members are encouraged to engage actively by commenting on<a href="https://github.com/RConsortium/HTA-wg">Issue #1</a> with a brief statement about their backgrounds, opening new issues to propose ideas, and suggesting solutions to emerging challenges. This repository promises to be a lively and evolving resource as the working group’s projects advance.</p>
-</section>
-<section id="group-discussion-setting-the-foundation-for-future-initiatives" class="level2">
-<h2 class="anchored" data-anchor-id="group-discussion-setting-the-foundation-for-future-initiatives">Group Discussion: Setting the Foundation for Future Initiatives</h2>
-<p>The group discussion allowed members to share insights, generate new ideas, and identify priorities for the working group’s next steps. The discussion was lively and constructive, underscoring the potential of this initiative to drive meaningful contributions to the HTA field.</p>
-</section>
-<section id="upcoming-meeting" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-meeting">Upcoming Meeting</h2>
-<p>The next meeting of the HTA Working Group is scheduled for Wednesday, November 27, 2024, from 17:00 to 18:00 CET. Members are encouraged to join, contribute to ongoing discussions, and help shape the next steps of this impactful initiative. If you have not received an invitation, please reach out to <a href="mailto:joseph.rickert@gmail.com">Joseph Rickert via email</a>.</p>
-<p>The HTA Working Group has set forth on a promising path, and this first meeting demonstrated the collaborative spirit and commitment to progress that will drive its success. Stay tuned for more updates as the group’s efforts take shape and begin to impact the HTA community.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/</guid>
-  <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/OpeningRemarksandVision.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 </channel>
 </rss>
