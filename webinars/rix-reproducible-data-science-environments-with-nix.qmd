@@ -1,13 +1,16 @@
 ---
 title: "Rix: reproducible data science environments with Nix"
 ---
-![](images/R-Medicine-Webinar-2025-Bruno-Rodrigues-1110-x-564px.png)
 
-## Date and time: March 13, 2025, 1pm Eastern time
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jhiRNQHbEXo?si=xVCaA2MxmrzPsvQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## [Register here!](https://zoom.us/webinar/register/WN_uwdQizJkRfC66ggTuisxbA)
+Reproducibility is critical for modern research, ensuring that results can be consistently replicated and verified. In this one-hour presentation, Bruno Rodrigues introduces Nix, a package manager designed for reproducible builds. 
 
-Reproducibility is critical for modern research, ensuring that results can be consistently replicated and verified. In this one-hour presentation, Bruno Rodrigues introduces Nix, a package manager designed for reproducible builds. Unlike other solutions, Nix ensures that R packages, R itself, and system-level dependencies are all correctly versioned. It can even replace containerization tools like Docker, working seamlessly on any operating system and CI/CD platform. To help beginners get started, Bruno developed an R package called {rix}, which he will demonstrate.
+Unlike other solutions, Nix ensures that R packages, R itself, and system-level dependencies are all correctly versioned. It can even replace containerization tools like Docker, working seamlessly on any operating system and CI/CD platform. 
+
+To help beginners get started, Bruno developed an R package called {rix}, which he  demonstrates.
+
+There is an extensive Q&A session after the presentation and demo.
 
 ## Speaker 
 
