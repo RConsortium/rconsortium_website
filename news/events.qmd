@@ -12,15 +12,21 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[R/Medicine Webinar - Rix: reproducible data science environments with Nix](https://zoom.us/webinar/register/WN_uwdQizJkRfC66ggTuisxbA)",
+    "[Rencontres 2025](https://rr2025.sciencesconf.org/)",
     "[R/Medicine 2025](https://rconsortium.github.io/RMedicine_website/)",
-    "[useR!2025](https://user2025.r-project.org/)"
+    "[Ghana R Conference 2025](https://ghana-rusers.org/forms/rconf2025/)",
+    "[Cascadia R Conference](https://cascadiarconf.com/)",
+    "[Galaxy and Bioconductor Community Conference 2025](https://gbcc2025.bioconductor.org/)",
+    "Change Management for Moving to R/Open Source",
+    "[useR! 2025](https://user2025.r-project.org/)",
+    "[European Bioconductor Conference (EuroBioC2025)](https://eurobioc2025.bioconductor.org/)",
+    "[EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)](https://earl-conference.com/)"
   ),
 
-  dates = c("Mar 13, 2025", "Jun 10-13, 2025", "Aug 8-10, 2025"),
-  location = c("Virtual", "Virtual", "Durham, NC - Duke University"),
-  icon = c("Webinar", "Conference", "Conference"),
-  Type = c("Webinar", "Conference", "Conference"),
+  dates = c("May 19-21, 2025", "Jun 10-13, 2025", "Jun 19-20, 2025", "Jun 20-21, 2025", "Jun 23-26, 2025", "July 3, 2025", "Aug 8-10, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
+  location = c("Mons, Belgium", "Virtual", "Accra, Ghana", "Portland, Oregon, USA", "Cold Spring Harbor Laboratory (CSHL), New York", "Cambridge, UK", "Durham, NC - Duke University", "Barcelona, Spain", "Brighton, UK"),
+  icon = c("Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
+  Type = c("Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
@@ -84,6 +90,8 @@ ___
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    'PharmaRUG 2025',
+    '<a href="https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html" target="_blank" rel="noreferrer noopener">Rix: reproducible data science environments with Nix</a>',
     '<a href="https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html" target="_blank" rel="noreferrer noopener">Quantification of Participation Risk using R and R Shiny</a>',
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis" target="_blank" rel="noreferrer noopener">Value Companies using Discounted Cash Flow Analysis</a>',
     '<a href="https://latinr.org/en/" target="_blank" rel="noreferrer noopener">LatinR 2024</a>',
@@ -114,6 +122,8 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'March 28, 2025', 
+        'March 13, 2025',
         'December 12, 2024',
         'December 4, 2024',
         'November 18-22, 2024', 
@@ -145,6 +155,8 @@ df <- data.frame(
       
         ),
   location = c(
+        'Shanghai, Bejing',
+        'Virtual',
         'Virtual',
         'Virtual',
         'Virtual',
@@ -175,10 +187,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
