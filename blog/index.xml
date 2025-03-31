@@ -10,7 +10,61 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Thu, 20 Mar 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 31 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Revitalizing the Melbourne Users of R Network: Hybrid Events, Collaboration, and the Future of R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/l-p-cruz-phd/">Lito P. Cruz</a>, organizer of the <a href="https://www.meetup.com/melburn-melbourne-users-of-r-network/">Melbourne Users of R Network</a> (MELBURN), recently spoke with the R Consortium about the evolving R community in Melbourne and the group’s efforts to engage data professionals across government, academia, and industry. Lito shared insights into the group’s history, the impact of the pandemic on community engagement, and his ongoing efforts to revitalize in-person and hybrid events. He discussed new initiatives, including collaborations with the Statistical Society of Australia and interactive event formats featuring hands-on tutorials.</p>
+<p><img src="https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/LitoPCruz.png" class="img-fluid" style="width:50.0%"></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>I’ve had a long career in IT here in Melbourne, Australia, where I worked as a contract software developer and engineer. I focused primarily on mathematics during my university years, including my graduate studies and doctoral work. I took several graduate courses in statistics before switching to computer science. In my postgraduate studies, I concentrated more on discrete mathematics.</p>
+<p>Around 2013, I noticed a growing interest in statistics among executives and managers. Many were introduced to statistics during their MBA programs and were now eager to apply it in their roles. This shift prompted me to think about the increasing relevance of statistics in decision-making processes.</p>
+<p>In 2012, I noticed an opportunity as more people began to engage with statistics. This was exciting because I have a passion for modeling and statistics-related work. I started learning R in 2013 and took several online courses, including <a href="https://www.coursera.org/instructor/rdpeng">Roger D. Peng</a>’s data science courses on Coursera. Through this, I learned more about R and its history, realizing that it originated from the S programming language inspired by functional languages like Lisp and <a href="https://www.scheme.org/">Scheme</a>. As a fan of functional programming, I appreciated that R supports this style.</p>
+<p>As I delved deeper into R, I quickly fell in love with it. I believe it’s an excellent language, especially for data science work. I have successfully delivered many data pipelines in the industry using R and haven’t encountered any significant issues. My desire to gain more knowledge about the language only grew.</p>
+<p>I particularly admire R’s functional style, which allows me to write concise code. This brevity makes debugging more manageable, and I’ve experienced significant success with it. Given the choice, I will always opt for R.</p>
+<p><strong>Can you share what the R community is like in Melbourne?</strong></p>
+<p><img src="https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/MELBURNlogo.png" class="img-fluid"></p>
+<p>R programming is prominent in various sectors, including government, healthcare, finance, insurance, banking, and academia.</p>
+<p>Within the federal government, R is widely relied on. Many agencies use R as a substitute for SAS due to licensing costs; R is a cost-effective alternative.</p>
+<p>R is also widely utilized in healthcare, especially in hospitals where numerous statisticians are engaged in biostatistics. This makes R a valuable tool in that sector.</p>
+<p>Additionally, actuaries in the finance and insurance industries frequently use R, favoring it for its analytical capabilities.</p>
+<p>In the banking sector, certain divisions still employ R. In Australia, banks operate as conglomerates with separate business units that often have the autonomy to choose their technical tools. If a specific application requires it, R might be selected based on the recommendations of technical experts.</p>
+<p>Academia also remains loyal to R, although there is a current trend leaning toward Python for its ease of use. Students studying statistics, econometrics, actuarial sciences, or life sciences will likely be taught R as part of their coursework. Fields such as biology and economics frequently incorporate R in their curriculum. The continued support for R in educational programs ensures its relevance and viability as a programming option.</p>
+<p><strong>Can you tell us about the history of the Melbourne R User Group and how it has evolved over the years?</strong></p>
+<p>The initial founder of an R User Group in 2010, <a href="https://www.linkedin.com/in/eugene-dubossarsky-09208a1/?originalSubdomain=au">Dr.&nbsp;Eugene Dubossarsky</a>, was quite influential in the field of analytics, which, back then, was simply referred to as “analytics” before the term “data scientist” became popular.</p>
+<p><img src="https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/MELBURNMeetup.png" class="img-fluid"></p>
+<p>Today, our database has grown to 2,900 members associated with the Melbourne R-Users group. I’ve actually asked our members to remove their names if they’re no longer interested in R, as we want to clean up the list. However, I haven’t had much success; many still want to remain in the community.</p>
+<p>Since late 2020, we have conducted our meetings in a hybrid format, allowing in-person attendance and Zoom participation. Our member base includes individuals from all over the world—Canada, the US, the Middle East, and Africa—interested in our activities.</p>
+<p>Historically, before the pandemic, our meetings consistently drew between 70 and 120 attendees. However, when COVID-19 hit, it felt like throwing water on a fire; attendance dropped significantly as people became concerned about their health and the health of their loved ones.</p>
+<p>I have been working on reviving the group since last year, and our first in-person meeting took place in September 2024. We’re gradually getting back on track, little by little.</p>
+<p><strong>Can you tell us about the recent activities of the Melbourne R User Group?</strong></p>
+<p>We currently have the usual activities planned, and these are our current ideas. First, we always enjoy informal talks and fellowship at a restaurant, which allows us to network and build connections. We’re still trying to grow this group and have about a dozen regular attendees.</p>
+<p>I want to make this group more interactive by reminding everyone that this is their user group and that we can shape its activities. I opened the floor for suggestions and asked what everyone would like to do this year. One idea was a barbecue, so we’ll be planning that. The group enjoys fellowship, interaction, and the opportunity to make new friends with similar interests.</p>
+<p>Additionally, we’ve decided to split our talks into two segments. The main talk will last about 45 minutes, and we will introduce a new 15-minute tutorial segment. This segment will cover topics such as “How R can do X,” where we can showcase various R capabilities, like interfacing with JavaScript or generating Shiny code using AI.</p>
+<p>We are also collaborating with the Victoria branch of the <a href="https://www.meetup.com/statistical-society-of-australia-victorian-branch/">Statistical Society of Australia</a>. They are interested in cross-pollinating with us, meaning they want to attend our meetings and invite us to theirs since many statisticians in that group use R.</p>
+<p><img src="https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/MELBURNBBQ.png" class="img-fluid"></p>
+<p>Another idea was to have a portion where someone could present how to utilize R for various tasks. R can be applied in many areas. I emphasized that the R Consortium webpage, run by Quattro, is powered by R. This is a fantastic showcase for R’s capabilities.</p>
+<p><strong>What tools and techniques do you use to collaborate with other organizations and engage the community?</strong></p>
+<p>In the past, I have observed how active members sometimes received support from companies that wanted to contribute positively to the R community and the industry.</p>
+<p>In December 2024, a company sponsored one of our meetups by covering the venue costs. We are now looking to reopen this opportunity, as some companies have expressed interest in hosting our meetings at their corporate locations. We’re eager to facilitate this.</p>
+<p>We utilize LinkedIn and Meetup to keep our community informed. I regularly communicate with attendees, sending them at least two messages before each event on the first Tuesday of every month.</p>
+<p>Before each monthly event, I send a hello to our members as a reminder. I do this in hopes of getting them to return and participate. If you look at our pictures, you can see that historically, we have around 120 people attending our user group in Melbourne. We haven’t fully kick-started our relationship with the Statistical Society of Australia, Victoria branch. Still, I plan to improve our representation when we meet with them next month.</p>
+<p>Coordinating with them can be challenging since their organizer is based in Sydney. However, I’ve noticed that some of our members are also members of the Statistical Society. We will have more activities planned as the months progress.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/</guid>
+  <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/MELBURNlogo.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
 <item>
   <title>Exploring geometa: An R Package for Managing Geographic Metadata</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1157,54 +1211,6 @@
   <guid>https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/</guid>
   <pubDate>Mon, 02 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto2.png" medium="image" type="image/png" height="71" width="144"/>
-</item>
-<item>
-  <title>Bridging the Real-Time Gap: How INWT is Bringing Apache Kafka to the R Ecosystem</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/Andreas.png" class="img-fluid" style="width:50.0%"></p>
-<p>In a recent interview with the R Consortium, <a href="https://www.linkedin.com/in/andreas-neudecker-457946208/">Andreas Neudecker</a>, solution architect at INWT, a data and analytics company located in Berlin, Germany, shared insights into the motivation behind developing an Apache Kafka client for R and the challenges it aims to address within the R ecosystem. His company frequently builds models in both R and Python, often encountering the need for real-time data analytics from Kafka clusters. When a real-time fraud detection project required connecting to a Kafka cluster, the lack of a stable Kafka client for R forced them to switch to Python despite having an R-based model ready to go. This experience highlighted the gap in R’s real-time data processing capabilities. It inspired Andreas to develop a Kafka client for R, making it easier to access real-time data sources and potentially leveling the playing field with Python.</p>
-<p>To get started using kafka right away, please reference this article by Andreas titled “<a href="https://www.inwt-statistics.com/blog/r-package-kafka">Introducing the kafka R Package</a>,” which covers an example to demonstrate how kafka works.</p>
-<p>GitHub repository: <a href="https://github.com/INWTlab/r-kafka">https://github.com/INWTlab/r-kafka</a></p>
-<p>Installation from GitHub:</p>
-<pre><code>remotes::install_github("inwtlab/r-kafka")</code></pre>
-<p>This ISC project was funded by the R Consortium.</p>
-<p><strong>What motivated you to develop a Kafka client for R, and what specific challenges in the R ecosystem are you aiming to address with this project?</strong></p>
-<p>We typically build models in both R and Python, depending on our customers’ needs and preferences. Each language has different types of models available, so the choice between R and Python depends on the specific requirements. We handle both traditional batch processing and real-time analytics for our clients.</p>
-<p>Many of our customers use Kafka clusters for their real-time data. At one point, we faced a challenge where we needed to perform real-time analytics, but the data was stored in a Kafka cluster. The question became: how do we connect to the Kafka cluster?</p>
-<p>To be more specific, we had a real-time fraud detection project where we needed to identify fraudulent patterns in a stream of transactions. We already had a model in R, and our initial plan was to continue using it to keep costs down. However, we realized there was no stable Kafka client available for R at the time. So, we were essentially forced to switch to Python to consume the data from Kafka, which wasn’t our preferred choice.</p>
-<p>In the end, we developed a solution by having a Python consumer write data into an in-memory cache database, which allowed us to continue using our existing R model. The R process accessed the data from this cache database. This experience made it clear to us that having a Kafka client for R would have made the process much smoother. We’ve also heard from other companies who made the same choice—they opted for Python over R simply because Python had a Kafka client, and R didn’t.</p>
-<p><strong>Could you explain how the R Kafka client will enhance real-time data analysis and processing capabilities within the R environment?</strong></p>
-<p>In many cases, there are solid reasons to train models in R. For example, some specific models are available in R that haven’t been developed in Python yet. Personally, I also find that I can develop much faster in R—it typically takes me less time to get a running prototype compared to Python.</p>
-<p>What I’ve noticed is that R is often used more for traditional batch processing or modeling, but there’s no real reason why it shouldn’t also be used for real-time applications. I believe that having a Kafka client for R could be a missing piece of the puzzle, making it easier to access real-time data sources.</p>
-<p><strong>How does the proposed solution compare to existing alternatives, such as using Python for Kafka communication in data pipelines?</strong></p>
-<p>It should essentially work the same way as it does in Python, since we’re using the same underlying C library. While we’re still in the early stages and don’t have all the capabilities of the Python client yet, the experience should feel pretty similar because of this shared foundation.</p>
-<p><strong>What were the key insights from your initial benchmarking of the prototype, and how do they inform the project’s development goals?</strong></p>
-<p>First, we created a proof of concept (PoC), which showed us that it’s definitely possible to write a proper Kafka client for R using the C library. As we moved on to building the first minimum viable product (MVP), we also did some basic benchmarking. The results showed that we were a bit slower than the Python client. To give you some numbers, we could consume or produce 1 million messages in about 20 seconds, while Python handled it in 10 seconds, so Python was faster in this case.</p>
-<p>However, I believe we could improve this with a better interface or some optimizations. That said, even with these numbers, the speed difference shouldn’t have a major impact in most real-world applications, because it’s not just about reading the data—it also involves processing, which takes additional time. So, even though the client isn’t quite as fast as Python’s, it’s still sufficient for most use cases.</p>
-<p><strong>What is the significance of the Admin Client functionalities in managing Kafka infrastructure, and how do you plan to implement these within the R package?</strong></p>
-<p>Right now, our client can handle the essential tasks of sending and receiving data. However, it would be great to add the ability to create and delete topics directly within R, as well as manage consumer group offsets. These are likely the most important additional features we need.</p>
-<p>We plan to implement this in a way similar to how the Python Confluent package does it—by creating a separate class for admin tasks. Since the underlying functionality already exists in the C++ package, the process should be straightforward. We just need to create wrapper functions using <a href="https://cran.r-project.org/web/packages/Rcpp/index.html">Rcpp</a>, write the documentation, and run the necessary tests, and then it should work as expected.</p>
-<p><strong>How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</strong></p>
-<p>It was a very straightforward and smooth process, with no unnecessary bureaucracy. Overall, it was a great experience, and we had a friendly and helpful contact person throughout. I would definitely recommend it if you have an idea—it’s a really good way to secure funding.</p>
-<section id="about-isc-funded-projects" class="level2">
-<h2 class="anchored" data-anchor-id="about-isc-funded-projects">About ISC Funded Projects</h2>
-<p>A major goal of the R Consortium is to strengthen and improve the infrastructure supporting the R Ecosystem. We seek to accomplish this by funding projects that will improve both technical infrastructure and social infrastructure.</p>
-<p><a href="https://r-consortium.org/all-projects/">https://r-consortium.org/all-projects/</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/</guid>
-  <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/Andreas.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
