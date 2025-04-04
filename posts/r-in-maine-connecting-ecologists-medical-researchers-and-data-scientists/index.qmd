@@ -1,0 +1,79 @@
+---
+title: "R in Maine: Connecting Ecologists, Medical Researchers, and Data Scientists"
+description: "Donald Szlosek, the MaineR Users Group organizer, recently spoke with the R Consortium about the group’s transition from a city-based meetup to a statewide community and its efforts to engage a diverse audience."
+author: "R Consortium"
+image: "MaineRUGlogo1.png"
+date: "04/04/2025"
+---
+
+
+
+[Donald Szlosek](https://szlo.ai/), the [MaineR Users Group](https://www.meetup.com/maine-r-users-group/?eventOrigin=event_home_page) organizer, recently spoke with the R Consortium about the group’s transition from a city-based meetup to a statewide community and its efforts to engage a diverse audience. Donald shared insights into organizing events, the challenges of hybrid formats, and the shift toward virtual workshops based on community feedback. He also highlighted his work in real-world evidence studies, where R is critical in causal inference and machine learning validation.
+
+![](DonaldSzlosek.png){width=50%}
+
+_Donald Szlosek presenting on exploring nature through {rvest}_
+
+**Please share your background and involvement with the RUGS group.**
+
+My name is Donald Szlosek, and I am a senior staff research biostatistician at [IDEXX](https://www.idexx.com/en/) Laboratories. I got involved in the local R community when a small group in Portland, Maine, began its user group through [Maine Medical Center](https://www.mainehealth.org/maine-medical-center). I collaborated with one of the leads, [Adam Black](https://www.linkedin.com/in/adam-black-7904a26b/), who sought to unite the community. He aimed to involve various groups, not just those focused on research but also from other industries, as there wasn't much available back in 2015. 
+
+During the pandemic, our activities slowed down for about a year and a half, but I’m pleased to say we are starting to regain momentum. Over the past couple of years, we have become more active again.
+
+**Please tell us what events you are currently hosting. Are they online, in-person, or hybrid? What kind of response do you receive for your events?**
+
+![](MaineRUGlogo.png)
+
+Last year, we primarily held online workshops, which proved immensely beneficial. One of our user group members, a fantastic professor, [Dr. Laurie Baker](https://lauriebaker.rbind.io/), received a community data science grant. She offered to run some workshops and asked if we could help promote them within our user group. We gladly agreed, and the workshops turned out to be fantastic. Her work was truly impressive, and we were thrilled to be a part of it.
+
+Last year, we conducted a start-of-the-year survey to gather feedback from our community. We asked, "What do you want?" and compiled the responses using Google Sheets. We were surprised to learn that people wanted more virtual events, mainly since we had primarily focused on in-person gatherings. Additionally, many requested workshops, which we had never offered before. As a result, we shifted our focus last year. While we didn't hold as many events as I would have liked—organizing them can be challenging—the ones we did hold turned out well.
+
+![](MaineRUGOrganizersPosit2023.png)
+
+Left to right: Adam Black, Jaclyn Janis, Allison Hinton, and Donald Szlosek at the 2023 Posit Conference
+
+However, the turnout at these events has been relatively small. We have a core group of about 12 people interested in attending, but typically, only two to three from that group show up at any event. Given this small number, it's unrealistic to expect large turnouts. This situation was one of the reasons we transitioned from the Portland R User Group to a statewide R User Group in hopes of attracting more participants. 
+
+That said, when you shift from focusing on a city to an entire state, reaching everyone becomes much more challenging unless you host virtual events. This realization significantly influenced our decision to adopt a virtual event format.
+
+On [February 11th, we hosted a virtual kickoff event](https://www.meetup.com/maine-r-users-group/events/306012911/?eventOrigin=group_past_events) to start the year. During this event, we asked our community what they wanted to see from us this year. Our goal was to gather feedback on their interests and preferences. This event was less formal than a workshop or presentation, but we hope it will set us on the right path to better serve our community. We also hope to have a workshop on creating publication-ready tables with {gt} in March.
+
+**Please share a bit about your experience in organizing the group. Over the years, have you discovered any techniques or tools that have helped organize the group and the events you host?**
+
+My biggest lesson is that hybrid events are challenging to manage alone. I've essentially stopped organizing them unless I can get someone to assist me—either with the online component or by handling the hosting while I take care of the online side. It’s just tough to juggle both aspects simultaneously. 
+
+Additionally, I try to maintain a positive mindset by reminding myself that I’ll be excited even if just one person shows up. I aim to keep that energy level because these events often attract small groups, and people are busy. I want to be respectful and kind and genuinely appreciate having a single participant join.
+
+![](MaineRUGHikingTrip.png)
+
+**What industry are you currently in? How do you use R in your work?**
+
+I'm in the pharmaceutical medical device industry and utilize various methods in three main areas of my job. First, I conduct typical clinical trials, which involve the design and analysis in partnership with forty different universities worldwide. This process requires extensive data analysis, preparation, and statistical methodology. We utilize R Markdown documents for this purpose, and I've found them highly effective.
+
+Another key focus of my work is real-world evidence studies, which have gained substantial traction over the past decade by leveraging large-scale electronic medical record data. In this area, we apply causal inference techniques to understand better the relationship between real-world clinical practice and medical data.
+
+We engage in various activities, such as propensity score matching and targeted maximum likelihood estimation, which are fundamental to real-world evidence studies. This is a significant part of our work. 
+
+The last aspect we focus on is machine learning validation for regulatory bodies. We develop models that function as new medical devices, which need to be validated before they can be used in practice. While it's great that a data science team has built a reliable model and performed internal validations, we must ensure it won't negatively impact clinicians when they use it. Our goal is to prevent any additional concerns for them while they work.
+
+Moreover, confirming that the model is effective within the specific population it is intended for is crucial. This is where the validation component plays a vital role. In this process, R programming is essential for matching datasets and pulling information from clinics' relevant data sources. This allows us to analyze the model's accuracy from a statistical perspective.
+
+**Which Industries do you see using R in Maine?**
+
+Surprisingly, most of our events in Maine attendees come from the ecology field rather than the medical side. However, this might change as new medical facilities are in the area. Boston, being only a couple of hours away, has many medical-related resources.
+
+The [Gulf of Maine Research Institute](https://www.gmri.org/) conducts significant work in marine biology, further emphasizing the focus on ecology, forest biology, and marine conservation among the people in our group. Seeing their perspective is refreshing since I come from a very different background. 
+
+Although our work might seem different on the surface, there's a lot of common ground; for example, a statistician in one field is quite similar to a statistician in another. Learning about their data collection processes, such as collecting water samples, analyzing the data, and managing the information, is fascinating. Their approach to data gathering is quite distinct and presents different challenges. Hearing about their methods compared to ours is genuinely intriguing.
+
+**Please tell us about the recent or current project you are working on using R.**
+
+I am working on real-world evidence studies focusing on inverse propensity score weighting. These studies often involve imbalanced populations, requiring robust causal inference techniques to address disparities in treatment groups. By applying inverse propensity score weighting, I aim to balance treatment groups and covariates, enhancing comparability and making the analysis more comparable to a randomized controlled trial.
+
+There is still considerable debate about whether techniques like inverse propensity score weighting offer more value than traditional multivariable regression. This remains an area of active discussion, and I am continuously working to deepen my understanding of the limitations of weighting. While propensity score methods help address confounding and improve balance in observational studies, their advantages over regression approaches depend on the specific context and assumptions of the analysis. My next step is to ensure that I am not overlooking any crucial aspects or limitations of these methodologies, especially considering their popularity based on my current understanding.
+
+##  How do I Build an R User Group? 
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[https://r-consortium.org/all-projects/rugsprogram.htm](https://r-consortium.org/all-projects/rugsprogram.html)
