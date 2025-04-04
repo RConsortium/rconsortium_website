@@ -9,8 +9,63 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Mon, 31 Mar 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.43</generator>
+<lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R in Maine: Connecting Ecologists, Medical Researchers, and Data Scientists</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://szlo.ai/">Donald Szlosek</a>, the <a href="https://www.meetup.com/maine-r-users-group/?eventOrigin=event_home_page">MaineR Users Group</a> organizer, recently spoke with the R Consortium about the group’s transition from a city-based meetup to a statewide community and its efforts to engage a diverse audience. Donald shared insights into organizing events, the challenges of hybrid formats, and the shift toward virtual workshops based on community feedback. He also highlighted his work in real-world evidence studies, where R is critical in causal inference and machine learning validation.</p>
+<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/DonaldSzlosek.png" class="img-fluid" style="width:50.0%"></p>
+<p><em>Donald Szlosek presenting on exploring nature through {rvest}</em></p>
+<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
+<p>My name is Donald Szlosek, and I am a senior staff research biostatistician at <a href="https://www.idexx.com/en/">IDEXX</a> Laboratories. I got involved in the local R community when a small group in Portland, Maine, began its user group through <a href="https://www.mainehealth.org/maine-medical-center">Maine Medical Center</a>. I collaborated with one of the leads, <a href="https://www.linkedin.com/in/adam-black-7904a26b/">Adam Black</a>, who sought to unite the community. He aimed to involve various groups, not just those focused on research but also from other industries, as there wasn’t much available back in 2015.</p>
+<p>During the pandemic, our activities slowed down for about a year and a half, but I’m pleased to say we are starting to regain momentum. Over the past couple of years, we have become more active again.</p>
+<p><strong>Please tell us what events you are currently hosting. Are they online, in-person, or hybrid? What kind of response do you receive for your events?</strong></p>
+<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGlogo.png" class="img-fluid"></p>
+<p>Last year, we primarily held online workshops, which proved immensely beneficial. One of our user group members, a fantastic professor, <a href="https://lauriebaker.rbind.io/">Dr.&nbsp;Laurie Baker</a>, received a community data science grant. She offered to run some workshops and asked if we could help promote them within our user group. We gladly agreed, and the workshops turned out to be fantastic. Her work was truly impressive, and we were thrilled to be a part of it.</p>
+<p>Last year, we conducted a start-of-the-year survey to gather feedback from our community. We asked, “What do you want?” and compiled the responses using Google Sheets. We were surprised to learn that people wanted more virtual events, mainly since we had primarily focused on in-person gatherings. Additionally, many requested workshops, which we had never offered before. As a result, we shifted our focus last year. While we didn’t hold as many events as I would have liked—organizing them can be challenging—the ones we did hold turned out well.</p>
+<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGOrganizersPosit2023.png" class="img-fluid"></p>
+<p>Left to right: Adam Black, Jaclyn Janis, Allison Hinton, and Donald Szlosek at the 2023 Posit Conference</p>
+<p>However, the turnout at these events has been relatively small. We have a core group of about 12 people interested in attending, but typically, only two to three from that group show up at any event. Given this small number, it’s unrealistic to expect large turnouts. This situation was one of the reasons we transitioned from the Portland R User Group to a statewide R User Group in hopes of attracting more participants.</p>
+<p>That said, when you shift from focusing on a city to an entire state, reaching everyone becomes much more challenging unless you host virtual events. This realization significantly influenced our decision to adopt a virtual event format.</p>
+<p>On <a href="https://www.meetup.com/maine-r-users-group/events/306012911/?eventOrigin=group_past_events">February 11th, we hosted a virtual kickoff event</a> to start the year. During this event, we asked our community what they wanted to see from us this year. Our goal was to gather feedback on their interests and preferences. This event was less formal than a workshop or presentation, but we hope it will set us on the right path to better serve our community. We also hope to have a workshop on creating publication-ready tables with {gt} in March.</p>
+<p><strong>Please share a bit about your experience in organizing the group. Over the years, have you discovered any techniques or tools that have helped organize the group and the events you host?</strong></p>
+<p>My biggest lesson is that hybrid events are challenging to manage alone. I’ve essentially stopped organizing them unless I can get someone to assist me—either with the online component or by handling the hosting while I take care of the online side. It’s just tough to juggle both aspects simultaneously.</p>
+<p>Additionally, I try to maintain a positive mindset by reminding myself that I’ll be excited even if just one person shows up. I aim to keep that energy level because these events often attract small groups, and people are busy. I want to be respectful and kind and genuinely appreciate having a single participant join.</p>
+<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGHikingTrip.png" class="img-fluid"></p>
+<p><strong>What industry are you currently in? How do you use R in your work?</strong></p>
+<p>I’m in the pharmaceutical medical device industry and utilize various methods in three main areas of my job. First, I conduct typical clinical trials, which involve the design and analysis in partnership with forty different universities worldwide. This process requires extensive data analysis, preparation, and statistical methodology. We utilize R Markdown documents for this purpose, and I’ve found them highly effective.</p>
+<p>Another key focus of my work is real-world evidence studies, which have gained substantial traction over the past decade by leveraging large-scale electronic medical record data. In this area, we apply causal inference techniques to understand better the relationship between real-world clinical practice and medical data.</p>
+<p>We engage in various activities, such as propensity score matching and targeted maximum likelihood estimation, which are fundamental to real-world evidence studies. This is a significant part of our work.</p>
+<p>The last aspect we focus on is machine learning validation for regulatory bodies. We develop models that function as new medical devices, which need to be validated before they can be used in practice. While it’s great that a data science team has built a reliable model and performed internal validations, we must ensure it won’t negatively impact clinicians when they use it. Our goal is to prevent any additional concerns for them while they work.</p>
+<p>Moreover, confirming that the model is effective within the specific population it is intended for is crucial. This is where the validation component plays a vital role. In this process, R programming is essential for matching datasets and pulling information from clinics’ relevant data sources. This allows us to analyze the model’s accuracy from a statistical perspective.</p>
+<p><strong>Which Industries do you see using R in Maine?</strong></p>
+<p>Surprisingly, most of our events in Maine attendees come from the ecology field rather than the medical side. However, this might change as new medical facilities are in the area. Boston, being only a couple of hours away, has many medical-related resources.</p>
+<p>The <a href="https://www.gmri.org/">Gulf of Maine Research Institute</a> conducts significant work in marine biology, further emphasizing the focus on ecology, forest biology, and marine conservation among the people in our group. Seeing their perspective is refreshing since I come from a very different background.</p>
+<p>Although our work might seem different on the surface, there’s a lot of common ground; for example, a statistician in one field is quite similar to a statistician in another. Learning about their data collection processes, such as collecting water samples, analyzing the data, and managing the information, is fascinating. Their approach to data gathering is quite distinct and presents different challenges. Hearing about their methods compared to ours is genuinely intriguing.</p>
+<p><strong>Please tell us about the recent or current project you are working on using R.</strong></p>
+<p>I am working on real-world evidence studies focusing on inverse propensity score weighting. These studies often involve imbalanced populations, requiring robust causal inference techniques to address disparities in treatment groups. By applying inverse propensity score weighting, I aim to balance treatment groups and covariates, enhancing comparability and making the analysis more comparable to a randomized controlled trial.</p>
+<p>There is still considerable debate about whether techniques like inverse propensity score weighting offer more value than traditional multivariable regression. This remains an area of active discussion, and I am continuously working to deepen my understanding of the limitations of weighting. While propensity score methods help address confounding and improve balance in observational studies, their advantages over regression approaches depend on the specific context and assumptions of the analysis. My next step is to ensure that I am not overlooking any crucial aspects or limitations of these methodologies, especially considering their popularity based on my current understanding.</p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/</guid>
+  <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGlogo1.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
 <item>
   <title>Revitalizing the Melbourne Users of R Network: Hybrid Events, Collaboration, and the Future of R</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1163,54 +1218,6 @@
  ]]></description>
   <guid>https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/</guid>
   <pubDate>Tue, 03 Dec 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Empowering Data Science in Mexico: R-Ladies Querétaro on Inclusivity and Growth</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/DriseldaSánchez-Aguirre.png" class="img-fluid" style="width:40.0%"></p>
-<p>Driselda Sánchez-Aguirre, co-founder and organizer of <a href="https://www.meetup.com/es/rladies-queretaro/">R-Ladies Querétaro</a>, recently spoke with the R Consortium about her journey in building a welcoming, diverse R community in Querétaro, Mexico. She shared insights on the chapter’s hybrid events, collaborative partnerships with other R-Ladies chapters, and upcoming workshops focused on accessible R training. Driselda highlighted the challenges and rewards of growing a supportive space for women in data science in Querétaro and beyond. Querétaro is located in central Mexico, about 4 hours north of Mexico City.</p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>I co-founded the R-Ladies Querétaro chapter as a PhD student in economics. It was fascinating to connect with women from various disciplines who shared an interest in creating the group together. One of the members was also a PhD student, but she specialized in genomics, while another was a postdoctoral researcher in psychology. We all shared a passion for using R, although I initially found it challenging because economics primarily focuses on business-related disciplines.</p>
-<p>We have access to many software options for statistics that are easier to use but are often proprietary. Initially, I was just looking for a simple button to click to find results. However, I discovered that R offers much more, including beautiful graphs and visuals. Each time you use it for a new task, it presents a challenge, but it is incredibly rewarding to uncover the answers. Since 2019, we have organized sessions and workshops to continue developing this chapter.</p>
-<p><strong>Can you share what the R community is like in Mexico?</strong></p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RLadiesQueretarologo.png" class="img-fluid"></p>
-<p>From my experience, R is primarily used in academia and the industry. Specifically, the R-Ladies Querétaro chapter is quite diverse, with a mix of professionals. For instance, I am an economist, <a href="https://www.linkedin.com/in/azalea-reyes-aguilar-5a328b70/">Azalea</a> works in psychology, <a href="https://comunidadbioinfo.github.io/authors/anabva/">Ana Betty</a> and <a href="https://www.linkedin.com/in/karen-nu%C3%B1ez-reza">Karen</a> study genomics, and <a href="https://www.linkedin.com/in/elizabeth-valles-053b4815a/?originalSubdomain=mx">Elizabeth</a> is in neuroscience. One of our main focuses is inclusivity, ensuring that individuals from all backgrounds and skill levels feel welcome. All genders are welcome, but meetings and workshops are always organized and hosted by women.</p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroMeeting.png" class="img-fluid"></p>
-<p>I remember our first meeting in 2019; it was a truly memorable occasion. We discovered that women from various industries attended the workshop, marking the inaugural chapter meeting in Querétaro. It was inspiring to see women working as programmers in the pharmaceutical industry and as engineers coming together. It was an incredible experience to have such a variety of backgrounds represented.</p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto1.png" class="img-fluid"></p>
-<p>When the pandemic began, managing the various profiles we maintained became challenging. Since then, the focus has shifted towards academic users, particularly women interested in workshops. While we still connect with women from industry through social networks and email, our primary target group is academia in Querétaro.</p>
-<p>Since last year, we have collaborated with <a href="https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/">R-Ladies Morelia</a>, another chapter in Mexico. We discovered that a significant group of women use R for bioinformatics, a fascinating area of interest. I enjoy discussing social and economic topics, especially those related to tourism, political stories, and inclusivity. However, most discussions focus more on bioinformatics and similar subjects.</p>
-<p><strong>Please tell us about upcoming events from your group.</strong></p>
-<p>During the COVID pandemic, we transitioned to online events, and since 2022, we have been working towards a hybrid format. Now, we’re excited to return to in-person gatherings.</p>
-<p>I would like to highlight a recent event from our group. On September 28th, we participated in the <a href="https://www.youtube.com/watch?v=Ql9pXSPPQOU">R-Ladies Mexico Annual Meeting</a>, which brings together all R ladies’ chapters nationwide. The event is open to everyone who speaks Spanish, making it a fantastic opportunity to connect, share knowledge, and foster collaborative partnerships.</p>
-<p>Additionally, thanks to a grant from the R Consortium, we plan to host four more workshops yearly. The first one was face-to-face on <a href="https://www.meetup.com/rladies-queretaro/events/304128867/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link">how to make maps with R</a>, open to the general public but emphasizing students and researchers in earth sciences and geography. It was on November 21st, 2024, we had about 20 attendees, there was pizza and popcorn to share with each other.</p>
-<p>The other three workshops will cover basic R concepts using <a href="https://ggplot2.tidyverse.org/">ggplot</a> and open science practices incorporating R. While we don’t have exact dates for all the workshops, we have already begun planning and are excited to offer these opportunities to our community.</p>
-<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?</strong></p>
-<p><img src="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto2.png" class="img-fluid"></p>
-<p>We use a variety of tools to ensure smooth planning for our events. <a href="https://github.com/">GitHub</a> is essential for sharing our resources. For example, when we’re hosting a workshop, it’s easier to share the GitHub link so that participants can access the materials we’ll be using.</p>
-<p><a href="https://www.zoom.com/">Zoom</a> also enables remote participation, making our events accessible to a wider audience. It includes reaction features that help gauge participant engagement. For instance, attendees can click a green button if they understand the task or a red button if they feel lost. This feedback allows us to tailor the learning experience to meet their needs better.</p>
-<p>We use social media to promote our events, primarily <a href="https://x.com/RLadies_Qro">X</a> and Facebook. Additionally, we believe that collaborating with other R Ladies chapters enhances our outreach. We have partnered with chapters in <a href="https://x.com/RLadiesBquilla">Colombia</a> and other locations in Mexico, which allows us to expand the topics we cover, as they also use their media channels to promote our events.</p>
-<p>We have also found WhatsApp to be a useful communication tool. WhatsApp provides a real-time platform for organizers to communicate and coordinate. These tools help make the group more inclusive, accessible, and efficient, ensuring that tasks are completed on time.</p>
-<p><strong>What challenges have you faced in organizing the R Ladies Querétaro Chapter? How have you overcome these challenges?</strong></p>
-<p>I believe it’s crucial to emphasize the importance of collaboration and community support. As a nonprofit group, we often face challenges, especially when managing time due to other responsibilities, such as family obligations. To maintain consistent participation, we need to balance our personal and professional lives while continuing to advance our chapter.</p>
-<p>Maintaining the chapter is rewarding, but finding the time is also a constant challenge. We love what we do because we want to share all the good things it offers to different disciplines and areas of focus. However, this challenge to find time can be overwhelming. I believe we can overcome it through collaboration and community support. It’s important to emphasize the role of the community in helping us achieve our goals.</p>
-<p><strong>How do I Join?</strong></p>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/</guid>
-  <pubDate>Mon, 02 Dec 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/RladiesQueretaroGroupPhoto2.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 </channel>
 </rss>
