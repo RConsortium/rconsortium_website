@@ -10,7 +10,57 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.43</generator>
-<lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 16 Apr 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Strengthening R Communities Across Borders: Ozan Evkaya on Organizing the Edinburgh R User Group</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/ozanevkaya/">Ozan Evkaya</a>, one of the local organizers of the <a href="http://edinbr.org/">Edinburgh R User group</a>, recently spoke with the R Consortium about his journey in the R community and his efforts to strengthen R adoption in Edinburgh. He discussed his experiences hosting R events in Turkey during the pandemic, the importance of online engagement, and his vision for expanding collaborations with neighboring user groups. He also reflected on his research in dependence modeling and contributions to open-source R packages, highlighting how R continues to shape his work in academia and community building.</p>
+<p><img src="https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/Ozan_Evkaya.png" class="img-fluid"></p>
+<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
+<p>During my PhD program in statistics from 2012 to 2018, I took several courses in the field. I began engaging with programming languages relevant to my dissertation and applied work throughout that period. I started learning and using the R programming language, particularly after attending one academic workshop event in France.</p>
+<p>Many of my colleagues, especially those from the statistics field, innovatively and effectively used these languages. This inspired me to invest more time in developing my skills in this area during my PhD studies. In addition to my postdoc research, I began participating in and organizing small online webinars during the pandemic and continued to do so afterward.</p>
+<p>During that time, I met a couple of Turkish colleagues who were key in organizing some R-based events. It was my first experience with the official community-related groups associated with the R Consortium. With their support, we received a budget to help organize online events in Turkey during 2021 and 2022 called <a href="https://whyr.pl/2022/turkey/en/#:~:text=WhyR%20%3F,users%20from%20academia%20and%20industry.">Why R Turkiye</a>.</p>
+<p>Initially, we started with simple online setups, but in 2022, we organized the event with paper submissions, an improved version of the previous year. The event was well-received, and everyone appreciated our efforts. In our first year, we had a group of six main organizers (including two undergraduate keen students from different universities). By 2022, our team had grown to eight members to foster gender diversity.</p>
+<p>This experience taught me what can happen when people are passionate about organizing events online. It was also the first time I truly learned about the community and how others are working to expand their knowledge by sharing and collaborating.</p>
+<p>When I joined the University of Edinburgh in March 2022, I began to explore the local R groups available in the area. I discovered the <a href="https://www.meetup.com/edinbr/">Edinburgh R user group (EdinbR)</a>, a local community, and promptly contacted the main organizer to express my interest in joining.</p>
+<p>Since then, we have started organizing various local events. However, the group was not very active during 2022 because the lead organizer was busy with personal matters. Another colleague and I stepped in to revitalize the group.</p>
+<p>Our organizing team currently consists of three members: myself, Alessia Calafiore (a colleague from the university), and the lead organizer, Mike Spencer, a PhD alumnus of the university who now works as a data scientist for a company based in Edinburgh. These shared connections help create a close-knit and collaborative community, especially since we use one of the university’s buildings for our activities. The team brings together one industry representative (Mike) and two university lecturers—myself from the School of Mathematics, and Alessia, who lectures in Sustainability and Urban Data Science at the Edinburgh School of Architecture and Landscape Architecture. We benefit from excellent group dynamics and a strong foundation of familiarity.</p>
+<p><strong>How do you see the balance between industry and academia in the Edinburgh R community? Which industries are actively using R?</strong></p>
+<p>In my experience, there is a balance between academics and industry in their use of programming languages. While Python is quite popular in specific fields, especially for certain packages tailored to research and data visualization, R is still preferred for many tasks.</p>
+<p>Based on my interactions with members of the Edinburgh R Group and the<a href="https://rss.org.uk/">Royal Statistical Society</a>’s (RSS) local user groups, I see both industrial professionals and academics actively using R. For example, I can share the experience of one of our MSc students who recently started working at a company in the biostatistics field. They rely on R for data manipulation, and many similar examples are emerging here in Edinburgh.</p>
+<p><img src="https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/EdinburghRUG_Meetup.png" class="img-fluid"></p>
+<p>Edinburgh R User Group Event: “<a href="https://www.meetup.com/edinbr/events/306226785/?eventOrigin=group_events_list">No likelihood? No problem! — Bayesian Statistics in R</a>”</p>
+<p><strong>What are your plans for the coming months? What topics do you want to cover?</strong></p>
+<p>We are currently organizing monthly events based on feedback gathered from our audience. These events occur on Thursday evenings, allowing participants from academia and industry to join after traditional working hours.</p>
+<p>We currently hold these events once a month, featuring two speakers in each session. We connect their topics meaningfully to create a cohesive experience for the audience. We aim to accommodate various levels of expertise, including beginner, intermediate, and advanced users of our language. Last month, we successfully organized a joint event with the RSS local group in Edinburgh. We may consider collaborating with other communities for similar joint events.</p>
+<p>This platform allows us to share and spread ideas, potentially creating new event styles. One of my dreams is to organize a more significant event, something we haven’t had enough time to pursue yet. There are local groups nearby, such as the one in Glasgow, that could be involved. I hope to organize a significant event once a year, and while we haven’t discussed it much with those groups yet, I look forward to collaborating with them on this idea.</p>
+<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?</strong></p>
+<p>We primarily use the <a href="https://www.meetup.com/edinbr/">Meetup</a> group, which our main organizer, Mike, established several years ago. We are still active, and people are eager to join and register as local group members. Currently, we have 928 members, which is a significant number, I believe. Many of them are enthusiastic about attending our events, and it’s terrific to see so many familiar faces from various organizations at each gathering. The leading platforms we are currently using for the circulation of our events are <a href="https://bsky.app/profile/EdinbR.fosstodon.org.ap.brid.gy">BlueSky</a> and LinkedIn personal pages.</p>
+<p>We want to promote our events through existing channels where our natural audience and contacts are already engaged. This is a fitting space for our outreach. Additionally, our speakers sometimes share their slides on GitHub, mainly when using R to create their presentations. This allows them to easily share their slides and the GitHub repository, enabling everyone to contribute to the open-source community. Aside from the above-mentioned ones, we don’t have any specific technical tools currently in use.</p>
+<p><strong>How do you use R for your work?</strong></p>
+<p>I rely heavily on R and the various packages for research/teaching and am also trying to contribute to those packages. This dependency started during my PhD, when I focused on dependence modeling with certain available R-based computational packages. A talented group of people who created these open-source packages has already developed many techniques related to dependence modeling in R. While some packages are now available in Python more recently, I still primarily depend on R for these topics.</p>
+<p>During my first postdoctoral period, working with colleagues at KU Leuven, I worked on two packages and integrated them for my research project. I’m currently polishing this work before creating a more formal package or sharing it on GitHub—this is still one of my goals. In addition to my original research, I contributed to a Shiny-based research project initiated by a colleague at Boğaziçi University in 2021/2022 to create an R package version of their studies.</p>
+<p>Overall, I want to explore various areas beyond my primary research. I’m also using R extensively for teaching purposes, particularly in the data science course I co-teach and the statistics and data visualization courses I run remotely. My reliance on R is significant for these courses, and I am regularly learning new tips or packages from the community that I have been part of.</p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/</guid>
+  <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/Ozan_Evkaya-main.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
 <item>
   <title>R in Maine: Connecting Ecologists, Medical Researchers, and Data Scientists</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1182,42 +1232,6 @@
   <guid>https://r-consortium.org/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/</guid>
   <pubDate>Tue, 03 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/drghani-main-image.png" medium="image" type="image/png" height="69" width="144"/>
-</item>
-<item>
-  <title>R-Universe Named R Consortium’s Newest Top Level Project</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://r-universe.dev/search"><img src="https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/r-universe-search.png" class="img-fluid"></a></p>
-<p>The R Consortium is proud to announce our newest top level project, <a href="https://r-universe.dev/search">R-Universe</a>. R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci.</p>
-<p>Critical R community projects that need support over a longer time period are evaluated by the Infrastructure Steering Committee (ISC) for long-term status. Being designated Top Level gives a project guaranteed funding for 3 years, along with a voting seat on the ISC.</p>
-<p>“The ability to find and evaluate high quality R packages is important to the R community, and the R Consortium is pleased to support the R-Universe project with a long-term commitment to help strengthen the foundation of the R package ecosystem,” said Terry Christiani, R Consortium executive director. “We are pleased to be working more closely together with rOpenSci on this effort.”</p>
-<p>R-Universe will be joining R Consortium’s three current Top Level Projects:</p>
-<ul>
-<li><a href="https://r-dbi.org/">DBI</a> - R’s interface to databases</li>
-<li><a href="https://rladies.org/">R-Ladies</a> - Promoting diversity in the R community with 200+ groups worldwide</li>
-<li><a href="https://r-consortium.org/all-projects/rugsprogram.html">R User Group Support Program (RUGS)</a> - facilitating person-to-person exchange of knowledge in small group settings on a global scale</li>
-</ul>
-<p>“R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem, and it is an open platform for running CRAN-like package repositories ranging from personal to lab to industry-scale production to make your work visible and accessible to a big audience, with or without CRAN,” said Noam Ross, rOpenSci executive director. “We are very excited to continue to strengthen R infrastructure and work closely with the R Consortium.”</p>
-<p>R-universe allows users and developers of R packages to:</p>
-<ul>
-<li><strong>Discover:</strong> R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem. It is indexed and ranked using R specific features.</li>
-<li><strong>Learn:</strong> R-universe serves rendered material and extensive background information to learn about a package and get started using it.</li>
-<li><strong>Publish:</strong> R-universe is an open platform for running personal CRAN-like package repositories to make work public and accessible to a big audience, with or without CRAN.</li>
-<li><strong>Develop:</strong> R-universe provides a zero-config development environment for continuous integration (identify upcoming breakage before release), experimental R features, new platforms such as WebAssembly, and more.</li>
-</ul>
-<p>For more information about the R Consortium’s Top Level Projects, please visit: <a href="https://r-consortium.org/all-projects/">https://r-consortium.org/all-projects/</a></p>
-
-
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/</guid>
-  <pubDate>Tue, 03 Dec 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
