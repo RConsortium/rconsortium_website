@@ -1,0 +1,68 @@
+---
+title: "Quarterly Round Up from the R Consortium"
+description: "Executive Director Terry Christiani highlights upcoming events like R/Medicine 2025 and useR! 2025, opportunities for non-members to join Working Groups, and tons more!"
+author: "Terry Christiani"
+image: "calendar-icon-apr-2025-main.png"
+date: "04/23/2025"
+---
+![](calendar-icon-apr-2025.png){width=20%}
+
+It is April already! OK, a lot has been happening, and a lot is planned so, let’s get to it.
+
+
+## Events
+
+
+### R/Medicine
+
+Have you [registered for R/Medicine](https://rconsortium.github.io/RMedicine_website/Register.html) yet? It’s happening on June 10-13. This jam-packed, 3-day virtual event is back and better than ever. We are so thrilled to have Ziad Obermeyer delivering a keynote, “Reinventing Medicine with AI” and Erin LeDell delivering our second keynote, “Model Evaluation: From Machine Learning to Generative AI.” There are 9 different workshops and demonstrations, plus talks and panels.
+
+Don’t forget to enter the [Data Challenge: How are vaccination rates and case rates changing for measles in 2025](https://rconsortium.github.io/RMedicine_website/Competition.html)? Two $200 prizes (student and pro) will be awarded to the best analyses of the public datasets we have highlighted. Submissions due on May 20, 2025.
+
+A huge thank you to our sponsor, Genentech, for supporting this popular and high value event.
+
+
+### useR!
+
+[This year’s useR!](https://user2025.r-project.org/) is coming up fast – August 8-10 at Duke University in Durham, North Carolina. The R Consortium is a platinum sponsor for this event, and we are very excited for the program the organizers are putting together. Be sure to register soon and maybe talk to your company about sponsoring and sending a bunch of you, together.
+
+If you can’t make it to Durham to be with us in person, you can still get yourself a front row seat to the virtual event on August 1<sup>st</sup>. You can find more information [here](https://www.linkedin.com/events/7313635592217518081/).
+
+
+## More 3<sup>rd</sup> Party Events we are sponsoring:
+
+Every year the R Consortium tries to sponsor events around the world in support of the R language and our amazing community. Here are some that we hope you will consider attending and supporting:
+
+ | Title | Dates | Location | Type |
+|-------|-------|----------|------|
+| [Rencontres 2025](https://rr2025.sciencesconf.org/) | May 19-21 | Mons, Belgium | Conference |
+| [Ghana R Conference 2025](https://ghana-rusers.org/forms/rconf2025/) | Jun 19-20 | Accra, Ghana | Conference |
+| [Cascadia R Conference](https://cascadiarconf.com/) | Jun 20-21 | Portland, Oregon | Conference |
+| [Galaxy and Bioconductor Community Conference 2025](https://gbcc2025.bioconductor.org/) | Jun 23-26 | Cold Spring Harbor Laboratory, NY | Conference |
+| [European Bioconductor Conference (EuroBioC2025)](https://eurobioc2025.bioconductor.org/) | Sept 17-19 | Barcelona, Spain | Conference |
+| [EARL (Enterprise Applications of the R Language) Tech Conference 2025](https://earl-conference.com/) | Oct 14-16 | Brighton, UK | Conference |
+
+
+
+## Working Groups
+
+Our volunteers are super busy driving progress across our working groups and we are so grateful for their efforts. The impact they are creating is being felt and recognized. If you want to “do more” with your R skills but don’t know where to start, our Working Groups do not require membership. It is an excellent opportunity to learn, collaborate and help steer the future of the open source R language with industry colleagues.
+
+#### Take a look and get involved with one of our existing working groups by [joining their mailing list](https://lists.r-consortium.org/g/Rconsortium-main/subgroups) or [submit an idea for your own working group](https://r-consortium.org/all-projects/isc-working-groups.html) by reaching out to us!
+
+
+### Submissions
+
+This team continues to engage with the FDA to finish up the WebAssembly work from Pilot 4 and Pilot 5 pushing R and Dataset-JSON forward for drug submissions. There’s a rumor that hex stickers are coming soon. Want to check out the work and get involved? Check out [the GitHub repo](https://github.com/RConsortium/submissions-pilot5-datasetjson) and reach out.
+
+
+### Validation Hub
+
+Coming off another successful developers’ day event the group is gearing up to provide an updated roadmap by May 2025. Fundraising is beginning to enable work on the Validation Repository to start. The team continues to focus on delivering meaningful ways for regulated industries to manage the risk associated with using open-source packages to each organization’s unique risk profile. To get involved and/or to contribute funding to the project, [please get in touch](https://www.pharmar.org/contact/)!
+
+
+## It’s time to step up for open-source technologies
+
+We have seen a lot of changes in these past months and as an industry sponsored 501(c)6 organization in support of the R statistical programming language, we want to encourage everyone to get involved and lend their talents and resources to open-source communities. Of course, we would love it if y’all joined us and [here is the information for your organization to do exactly that](https://r-consortium.org/about/join.html#joining-the-r-consortium-is-easy.). Whether your company sponsors the R Consortium or not, your talents are vital to the work we do. We are so grateful for the continuing support and enthusiasm of our volunteers and the financial support of our industry members.
+
+We’re working hard to bring you great content about R and opportunities to connect with the community. I’ll be back next quarter with more news. In the meantime, if you have suggestions or questions for the R Consortium, [please contact us](https://r-consortium.org/about/contact.html). We’d love to hear from you.
