@@ -10,7 +10,65 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.43</generator>
-<lastBuildDate>Wed, 23 Apr 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 24 Apr 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Data Engineering, Scientific Applications and AI - Inside R User Group Philippines’ Growth</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/joebrillantes/">Joe Brillantes</a>, organizer of the <a href="https://www.meetup.com/r-user-group-philippines/">R User Group Philippines</a> (RUG-PH), shares how the group has evolved with new interests emerging among its members. From a growing presence of data engineers exploring R to an increasing focus on scientific applications, the group continues to expand its reach. He discussed their upcoming plans for AI-focused meetups, the importance of ethical considerations in predictive modeling, and their efforts to support members in software engineering and analytics.</p>
+<p><img src="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/RUG-PHAnniversary.png" class="img-fluid"></p>
+<p><em>RUG-PH 11th Anniversary Celebration 14th August 2024</em></p>
+<p><strong>Since we last spoke, how has the R User Group Philippines evolved?</strong></p>
+<p>Overall, we’re doing well. Since we last spoke, several themes have emerged that I’d like to highlight.</p>
+<p>First, there’s a renewed interest in R, but this time, it’s coming from data engineers and individuals interested in data more broadly. Our meetups typically see one to three first-time attendees who are members of Data Engineering Filipinas. Their interest in R often stems from a desire to explore data professions.</p>
+<p>Another theme is that we’ve had several speakers focused on scientific applications of R. For instance, our last speaker, who presented last month, discussed <a href="https://www.meetup.com/r-user-group-philippines/events/305760876/?eventOrigin=group_events_list">mycology</a> and how R is used to analyze the colors of fungi, which was quite fascinating. We also had an online presentation from <a href="https://www.meetup.com/r-user-group-philippines/events/296013229/?eventOrigin=group_events_list">Jayson V. Pagaduan</a>, a director at a hospital in the U.S. He talked about how R produces efficient test results and research and which tests could be modified, eliminated, or made more efficient to ensure consistent outcomes.</p>
+<p>Another speaker, <a href="https://www.meetup.com/r-user-group-philippines/events/296013233/?eventOrigin=group_events_list">Dr.&nbsp;Pauline Del Mundo</a>, was also involved in public health research and discussed how R is applied in her work. This shift toward scientific topics is interesting because many of our previous speakers had backgrounds more aligned with the industry’s business side.</p>
+<p>Lastly, we recorded all our meetups last year, which are now available for those who couldn’t attend due to time differences. While we haven’t made these recordings public on YouTube yet, we’ve shared them with attendees who missed the sessions. We also hosted a co-meetup with the <a href="https://ghana-rusers.org/">Ghana R Users Community</a>, where I co-hosted with <a href="https://www.linkedin.com/in/francis-mensah-23b3262b5/?originalSubdomain=gh">Francis Mensah</a> and <a href="https://www.linkedin.com/in/samueltandoh/">Samuel Tandoh</a>, and we spoke about the swirl package.</p>
+<p>These themes reflect the developments we’ve observed since our last conversation.</p>
+<p><strong>What topics do you plan to cover in the upcoming months?</strong></p>
+<p>This year, we have some exciting plans for the forthcoming months, mainly focusing on artificial intelligence (AI) and large language models. We’ve received numerous questions on implementing generative AI, not limited to large language models. Therefore, we aim to hold discussions over the next three months.</p>
+<p>We have a Dynamic Programming in R planned for April. However, we will introduce a speaker each month in May and June, covering various aspects of AI. In May, a speaker will provide insights into the current state of AI research in the Philippines. In June, another speaker will discuss what it means when people claim that large language models can reason. Lastly, we plan to host a panel discussion in July featuring speakers from previous months and additional guests.</p>
+<p>The July meetup will culminate the discussions on ethics and governance in AI. We want to address questions about how to critically evaluate claims made by AI companies and understand their significance. This discussion will not be limited to large language models but will also encompass generative AI and analytics.</p>
+<p><strong>Your group has planned multiple meetups on artificial intelligence (AI) and ethics in the coming months. What inspired this focus, and what can attendees expect?</strong></p>
+<p>I’ve had conversations with a beginner in our group working on fraud detection. While he’s enthusiastic about transitioning into his new career, I’ve noticed some questionable methodologies in his approach. It’s crucial to emphasize that while predictive models can indicate possible fraud, it is a significant difference to outright accuse someone of committing fraud based on those predictions. We must highlight the ethical implications of building models and their potential impact on people’s lives.</p>
+<p>In our upcoming virtual meetups, we will also explore how the Philippines can advance the AI conversation within the country. Although not directly related to R programming, this dialogue will benefit our members by helping them become more informed and discerning about AI.</p>
+<p>After this series, we plan to return to topics related to software engineering practices, as many of our members have expressed concerns about coding practices. Though I am not a programmer, my background is more analytical, and this focus will benefit our community. We aim to present a series of talks addressing these software engineering challenges and providing valuable insights.</p>
+<p>My goal is not just to have very clean code. I’m also interested in how different groups can collaborate to make our code easier for software engineers to deploy and more scalable.</p>
+<p>One insight I’ve gained during these discussions is that, given R’s versatility, we could cover an entire year of software engineering topics in R. However, focusing solely on software engineering might become monotonous for others.</p>
+<p>We usually discuss analytics for the remaining topics. Earlier this year, I gave a presentation on <a href="https://www.meetup.com/r-user-group-philippines/events/303153606/?eventOrigin=group_events_list">creating maps in R</a>. Looking ahead, the later sessions will likely focus more on analytics topics, including predictive analytics and a talk on unsupervised learning.</p>
+<p><strong>Your group maintains a well-structured lineup of topics for the entire year. How do you plan and organize these meetups?</strong></p>
+<p>We begin each year by discussing the topics we want our speakers to cover. Once we have a list, we search for speakers relevant to those subjects. My role typically involves handling administration and finding speakers for analytics-related topics like data science. We also have a team member specialising in software engineering and another who is focusing on AI. They are responsible for contacting their networks to find suitable speakers for our user group.</p>
+<p>We maintain a calendar with topics that we plan to discuss throughout the year. However, we aren’t as meticulously organized as some other groups might be. We may have to change the topic if we struggle to find a speaker for a meeting. We aim to have a consistent lineup of subjects for our monthly meetups, totaling 12 topics for the year.</p>
+<p>We believe it’s essential to be reliable and consistent for our members. Even if attendance is low—say, just two or three people—we still hold the meetup as promised. This reliability fosters trust within the community.</p>
+<p><strong>Who are some key collaborators and supporters that help keep the R User Group Philippines running smoothly?</strong></p>
+<p><img src="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/RUG-PH-Organizers.png" class="img-fluid"></p>
+<p><em>Left to Right, Joma Miñoza, Joe Brillantes, Michelle Alarcon, and Rad Basa</em></p>
+<p><a href="https://www.linkedin.com/in/michelle-alarcon-91477513/?originalSubdomain=ph">Michelle Alarcon</a> is still with us to provide support, although she has taken a more hands-off approach since she’s now managing the AI and Analytics Association of the Philippines. She remains a valuable resource, and I can often count on her assistance when needed.</p>
+<p>We also utilize other connections. For instance, I often contact <a href="https://www.linkedin.com/in/jomaminoza/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&amp;originalSubdomain=ph">Joma Miñoza</a>, who works at the Center for AI Research in the Philippines, when we need expertise on AI topics. Additionally, we have Rad Basa involved in our efforts.</p>
+<p>Rad Basa is a software engineer who works for <a href="https://www.appsilon.com/">Appsilon</a>. When we discuss software engineering practices, I typically consult him. We are also good friends with <a href="https://dataengineering.ph/">Data Engineering Pilipinas</a>. The founder of that group, <a href="https://www.linkedin.com/in/ogbinar/?originalSubdomain=hk">Myk Ogbinar</a>, is very supportive and assists me when I need help finding speakers for events.</p>
+<p><img src="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/MykOgbinar.png" class="img-fluid" style="width:50.0%"></p>
+<p><em>Myk Ogbinar</em></p>
+<p>These are the key people I usually bounce ideas off when planning activities and selecting speakers. I ask for their perspectives regarding the needs of the R Users Group members. We also have many dedicated R users in academia. While we invite them to participate, we usually don’t involve them in planning since we understand they are swamped. However, if we have a specific topic in mind, we can reach out, and they often suggest that one of their professors speak on the subject.</p>
+<p>Overall, many individuals contribute to the organization of the R Users Group in the Philippines, and their support is greatly appreciated.</p>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/</guid>
+  <pubDate>Thu, 24 Apr 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/RUG-PHAnniversary.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Quarterly Round Up from the R Consortium</title>
   <dc:creator>Terry Christiani</dc:creator>
@@ -1190,59 +1248,6 @@
   <guid>https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/</guid>
   <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPaulo.png" medium="image" type="image/png" height="60" width="144"/>
-</item>
-<item>
-  <title>Moving forward to meet new challenges in 2025</title>
-  <dc:creator>Terry Christiani</dc:creator>
-  <link>https://r-consortium.org/posts/moving-forward-to-meet-new-challenges-in-2025/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>It has been a momentous year for the R Consortium, and we are very grateful for the engagement and support we have received from our member sponsors and all the members of the R community.</p>
-<section id="members-91-r-user-groups-39-countries-6-continents" class="level2">
-<h2 class="anchored" data-anchor-id="members-91-r-user-groups-39-countries-6-continents">76,048 members, 91 R User Groups, 39 countries, 6 continents</h2>
-<p><img src="https://r-consortium.org/posts/moving-forward-to-meet-new-challenges-in-2025/RUGS-nov-2024.png" class="img-fluid"></p>
-<p>Our <a href="https://r-consortium.org/all-projects/rugsprogram.html">R User Groups program</a> is better than ever! We helped to support a lot of you out there learning and sharing the R language. It is exciting to see this type of activity and we hope that in 2025, these groups will continue to grow and that we can sponsor new groups, too. We are always looking for more and better ways to support the community. We hope that you will let us know your suggestions for helping to grow the R community in your area.</p>
-</section>
-<section id="working-groups-and-top-level-projects-delivering-progress-and-access" class="level2">
-<h2 class="anchored" data-anchor-id="working-groups-and-top-level-projects-delivering-progress-and-access">Working Groups and Top-Level Projects delivering progress and access</h2>
-<p>Many of our working groups and projects had solid wins this year in pushing forward on their projects.</p>
-<ul>
-<li><p>Our Submissions working group achieved its <a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">fourth successful submission with the FDA</a> – the first to feature WebAssembly to bundle a Shiny application into a self-contained package.</p></li>
-<li><p>We kicked off our <a href="https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/">Health Technology Assessment (HTA) working group</a> with two workstreams (1. Stakeholder and landscape mapping and opportunity assessment &amp; 2. R Tools for HTA – Identification, Curation, and Education) addressing issues in health technology evaluation and building a well-documented resource for robust R tools in HTA.</p></li>
-<li><p>Multilingual R Documentation has published its first package <a href="https://github.com/eliocamp/rhelpi18n">rhelpi18n</a> adding multilingual documentation support. This effort is a <a href="https://ropensci.org/multilingual-publishing/">co-sponsored project</a> with <a href="https://www.ropensci.org">rOpenSci</a> and the <a href="https://czi.co/OpenScience">Chan-Zuckerberg Initiative’s Open Science Program</a>,</p></li>
-<li><p>We have added <a href="https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-level-project/">R-universe as a new Top-Level Project</a>. R-universe provides a searchable catalog for R software, articles, datasets, anywhere in the ecosystem, and it is an open platform for running CRAN-like package repositories.&nbsp;We are thrilled to be working with rOpenSci on this important infrastructure project for the R community.</p></li>
-</ul>
-</section>
-<section id="quarto-powered-website" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-powered-website">Quarto powered website</h2>
-<p>We must brag about our beautiful new Quarto-based website that we launched this year. Performance was increased by 65% faster overall, with homepage load times going from 2.3 seconds to 0.8 seconds on average in testing. The team did a wonderful job, and we invite the community to <a href="https://github.com/RConsortium/rconsortium_website#contributing-to-this-website">join us in contributing to the site.</a> This is a great opportunity for first time contributors and for others to get a chance to work with a Quarto site.</p>
-</section>
-<section id="expanding-support-for-the-r-language-and-infrastructure" class="level2">
-<h2 class="anchored" data-anchor-id="expanding-support-for-the-r-language-and-infrastructure">Expanding support for the R language and infrastructure</h2>
-<p>The Infrastructure Steering Committee (ISC) funds two grant cycles per year for projects that support the development of the R language and the maintenance of its infrastructure. We funded <a href="https://r-consortium.org/all-projects/funded-projects.html">13 new projects in 2024</a>. We have dispersed technical grants totaling almost $1.5 million since our founding. Our next grant cycle will re-open March 1, 2025, and now is a great time to <a href="https://r-consortium.org/all-projects/callforproposals.html">contact the ISC to start the process</a>.</p>
-</section>
-<section id="events-irl-and-digital-were-huge-wins-for-all-of-us" class="level2">
-<h2 class="anchored" data-anchor-id="events-irl-and-digital-were-huge-wins-for-all-of-us">Events IRL and digital were huge wins for all of us!</h2>
-<p>Live events are a great way to share new developments and raise awareness of what our community needs or wants. The R Consortium sponsored 12 events this year, and we are looking forward to seeing a lot of you next year at <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine June 10-13</a> and useR! August 8-10. To access all the digital events and webinar content we produce, please <a href="https://www.youtube.com/@RConsortium">subscribe to our YouTube channel</a> so you are sure to get new videos as we post them.</p>
-</section>
-<section id="new-year-new-opportunities-and-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="new-year-new-opportunities-and-challenges">New year, new opportunities and challenges</h2>
-<p>I encourage you to register for <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine June 10-13</a> and <strong>SAVE THE DATE for useR!</strong> at Duke University August 8-10. We are looking forward to all the great programming in 2025 and <a href="https://r-consortium.org/about/contact.html">would love to hear from the community any requests/ideas</a> for content you would like to see.</p>
-<p>Finally, <a href="https://r-consortium.org/about/">our mission in support of the R language and its community</a> is at the core of everything we do. This means we need to answer new challenges that face both. The recently passed <a href="https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act">Cyber Resilience Act</a> will require CRAN and all community repositories to make changes to meet its requirements for distribution of packages in the EU. We are asking now for financial support to ensure that we, in coordination with the Linux Foundation, can assist all our repository maintainers to plan and work toward compliance by October of 2027.</p>
-<p>To our current members, we thank you for your support and ask you to consider renewing your support at the next level.</p>
-<p>If you're considering becoming a member-sponsor of the R Consortium, feel free to reach out to me (<a href="mailto:director@r-consrtium.org?subject=R%20Consortium%20Membership">director at r-consortium dot org</a>) or <a href="https://r-consortium.org/about/join.html#joining-the-r-consortium-is-easy.">view the materials on our website</a>.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/moving-forward-to-meet-new-challenges-in-2025/</guid>
-  <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/moving-forward-to-meet-new-challenges-in-2025/RUGS-nov-2024.png" medium="image" type="image/png" height="76" width="144"/>
 </item>
 </channel>
 </rss>
