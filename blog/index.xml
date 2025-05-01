@@ -9,8 +9,64 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.43</generator>
-<lastBuildDate>Thu, 24 Apr 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.29</generator>
+<lastBuildDate>Thu, 01 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Microservices, Randomization APIs, and R in the Medical Sector – Warsaw’s Data Community in Focus</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/kamilsijko/">Kamil Sijko</a>, organizer of both the <a href="https://www.meetup.com/spotkania-entuzjastow-r-warsaw-r-users-group-meetup/">R Users and R-Ladies Warsaw groups</a>, recently spoke with the R Consortium about the evolving R community in Poland and the group’s efforts to connect users across academia, industry, and open-source development. Kamil shared his journey from discovering R as a student to taking over the leadership of the Warsaw R community in 2024. He discussed the group’s hybrid meetups, industry collaborations with companies like AstraZeneca and Appsilon, and the importance of making R accessible through recorded sessions and international outreach. He also highlighted a recent open-source project on patient randomization, demonstrating how R can be effectively integrated into modern software ecosystems, particularly in medical applications.</p>
+<p><img src="https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/KamilSijko.png" class="img-fluid" style="width:50.0%"></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
+<p>I first encountered R during my studies, around the time of version 2, well before RStudio existed. I found it an interesting alternative to SPSS, which was widely used at my university. A key figure in my early experience with R was Professor <a href="https://www.linkedin.com/in/pbiecek/">Przemyslaw Biecek</a>, whose 2008 book on the language marked my first serious engagement with the software. Since then, I have been using it more extensively across different industries.</p>
+<p>Initially, I worked in academia, then moved to government institutions, and now I am in the business sector, all while continuing to use R.</p>
+<p>Interestingly, Professor Biecek, who authored the book, later initiated the first meetups for our R community in Warsaw. In 2024, he stepped back from organizing these events and handed over the responsibilities to me—a passing of the torch that felt especially meaningful, given how I had started.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-poland" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-poland">Can you share what the R community is like in Poland?</h2>
+<p>Poland is not fundamentally different from any other country in its use of programming languages. R is particularly relevant in academia and specific industries, especially the financial and medical sectors. In the medical field, the <a href="https://www.bioconductor.org/">Bioconductor</a> project plays a significant role, with researchers and pharmaceutical companies heavily relying on it and actively contributing to its development and broader open-source ecosystem.</p>
+<p>Additionally, R is strong in geography and geographic computations. Its primary applications are within academia and specific niches outside it, such as the highly regulated medical sector. In this context, R is preferred for regulatory work because it allows rigorous validation to meet industry standards.</p>
+<p>In my company, which operates in the medical field, using R is a natural choice. Many algorithms are already implemented in R that are not available in Python, making it logical to utilize R in such cases.</p>
+</section>
+<section id="so-now-that-youve-taken-over-the-r-user-group-what-are-your-plans-for-the-upcoming-months-what-topics-are-you-hoping-to-cover-are-your-meetings-in-person-online-or-a-hybrid" class="level2">
+<h2 class="anchored" data-anchor-id="so-now-that-youve-taken-over-the-r-user-group-what-are-your-plans-for-the-upcoming-months-what-topics-are-you-hoping-to-cover-are-your-meetings-in-person-online-or-a-hybrid">So, now that you’ve taken over the R user group, what are your plans for the upcoming months? What topics are you hoping to cover? Are your meetings in-person, online, or a hybrid?</h2>
+<p>Initially, I planned to host meetings exclusively in person and in Polish, without an online streaming option. However, people expressed interest in re-watching the meetings if they couldn’t attend. We have a relatively international community of users in Warsaw, so conducting the sessions in English made sense. Consequently, we changed our approach, and now the meetings are hybrid. They are recorded and stored on our <a href="https://www.youtube.com/channel/UCq1v6SmgtmJeWDUtIKr0nVw">YouTube</a> channel, allowing anyone to rewatch them if they find them interesting.</p>
+<p>We have some significant companies engaged in R development that present fascinating projects. At our last meeting, we hosted representatives from <a href="https://www.astrazeneca.pl/">AstraZeneca</a>, who discussed a large-scale project involving central data validation that utilized R. AstraZeneca also hosted our meetup at their office in Warsaw.</p>
+<p>Additionally, we have <a href="https://www.appsilon.com">Appsilon</a>, an active open-source contributor. Though primarily an online organization, many of their team members are based in Warsaw. They have numerous projects to discuss and can provide instruction on various open-source initiatives.</p>
+<p>My company, <a href="https://ttsi.com.pl/en/">Transition Technology Science</a>, also works with R and contributes to open-source projects, so there is plenty to discuss. Furthermore, we have a vibrant academic community. The <a href="https://www.mi2.ai/mi2redteam.html">MI2 RedTeam</a> is exploring explainable artificial intelligence, which is both fascinating and crucial right now; others work on packages related to econometrics. This local production and usage create intriguing topics of discussion.</p>
+<p>Moreover, we touch upon subjects that address the current state of our community and its prospects, including relevant and active new tools. For example, at the last meetup, <a href="https://www.linkedin.com/in/tymoteusz-makowski/">Tymoteusz</a> discussed recent updates to R, including changes to the documentation and the introduction of <a href="https://positron.posit.co/">Positron</a>, the new IDE. These topics are all pertinent and vital.</p>
+<p>It’s also worth mentioning that R has a distinctive characteristic of being highly relevant in academia, where many projects prioritize exploration and theory over immediate practical applications. However, it offers valuable insights and often sparks meaningful discussions. In one of the first meetings I organized, a participant presented a project that involved network analysis of conspiracy theories using R. This type of work might not align with typical grant criteria. Still, it offered a rich and engaging topic for discussion.</p>
+<p>Overall, during these meetings, R often serves as a gateway to deeper and more intriguing areas of science and beyond.</p>
+</section>
+<section id="please-share-a-project-youre-currently-working-on-or-have-worked-on-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-your-industry" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-a-project-youre-currently-working-on-or-have-worked-on-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-your-industry">Please share a project you’re currently working on or have worked on using the R language. Goal/reason, result, anything interesting, especially related to your industry?</h2>
+<p>I’d like to briefly preview one of the topics I covered in our last meetup, as I was one of the speakers. I discussed a project we completed at my company, which we have <a href="https://ttscience.github.io/unbiased/">open-sourced</a>. This project involves an API for randomization, a perfect example of why R is relevant.</p>
+<p>Substantial work has been done in R on advanced randomization methods for clinical trials, including adaptive randomization — the kind of functionality that’s often hard to find elsewhere in such a mature and tested form. So why not use it? At the same time, it’s unrealistic to expect developers building electronic Case Report Forms (eCRFs) in Python or Java to learn R and integrate it natively into their systems suddenly.</p>
+<p>To address this challenge, we developed an R package along with a Dockerized API for patient randomization. It runs R in the background, but from the developers’ perspective, integration is straightforward — with a decent connection, the whole setup (from ‘docker pull’ to ‘docker compose up’) takes less than a minute. There’s no need to work directly with R; they simply treat it like any other service in their stack.</p>
+<p>This approach represents a promising way forward for many services available in R that can be integrated with other software, making them even more relevant. Modern software architecture often relies on microservices, and there’s no reason we can’t use R to build these microservices.</p>
+<p>It makes logical sense to position R this way, especially since there is often a lack of tooling for building large-scale applications in R. We have encountered this limitation in other projects. Nevertheless, utilizing R as a microservice provider is a sensible direction.</p>
+<p>I see the future of R not only in academic analysis but as a robust backend tool, especially for specific algorithms and statistical procedures that are mature and peer-reviewed. By wrapping R in services that are easy to use from other environments, we make its strengths more accessible to a broader audience without requiring a steep learning curve for engineers or product teams.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/</guid>
+  <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/KamilSijko-main.png" medium="image" type="image/png" height="92" width="144"/>
+</item>
 <item>
   <title>Data Engineering, Scientific Applications and AI - Inside R User Group Philippines’ Growth</title>
   <dc:creator>R Consortium</dc:creator>
@@ -352,8 +408,9 @@
 <h2 class="anchored" data-anchor-id="what-is-the-significance-of-geometa-including-support-for-iso-19115-3-getting-published-on-cran-is-this-about-incorporating-new-standards">What is the significance of geometa including support for ISO 19115-3 getting published on CRAN? Is this about incorporating new standards?</h2>
 <p>Yes, it’s all about metadata standards. ISO standards can have a lifecycle from around five to ten years, and it takes time for institutions, governments, and software providers to adopt and implement them. The primary standard for geographic metadata has been ISO 19115 developed by the ISO/TC 211 (Technical Committee on Geographic Information/Geomatics). It defines the structure for describing geographic information. It is initially composed by the main geographic metadata standard (ISO 19115-1) and an extension to describe gridded and imagery datasets, called ISO 19115-2. To facilitate XML encoding, ISO 19139 provides the corresponding XML schema for implementing ISO 19115-compliant metadata.</p>
 <p>ISO 19115 has been widely used in geographic information systems, software providers, and legal frameworks such as the INSPIRE directive in Europe or the Geospatial Data Act in the U.S.. Countries and international organizations have gradually adopted ISO 19115. Meanwhile a new version of the ISO 19115, called ISO 19115-3, was developed by ISO experts to refactor and consolidate the standard. However, adoption takes time.</p>
-<p>The idea behind the latest <strong>geometa</strong> project funded by the R Consortium was to support this transition by implementing the newer version of ISO 19115. That’s why I’ve been pushing for this update. Since standardization work is a continuous process, there are already other prospects for improvements, such as the management of the JSON encoding format, targeted by the next ISO 19115-4 standard under development.</p>
-<hr>
+</section>
+<section id="the-idea-behind-the-latest-geometa-project-funded-by-the-r-consortium-was-to-support-this-transition-by-implementing-the-newer-version-of-iso-19115.-thats-why-ive-been-pushing-for-this-update.-since-standardization-work-is-a-continuous-process-there-are-already-other-prospects-for-improvements-such-as-the-management-of-the-json-encoding-format-targeted-by-the-next-iso-19115-4-standard-under-development." class="level2">
+<h2 class="anchored" data-anchor-id="the-idea-behind-the-latest-geometa-project-funded-by-the-r-consortium-was-to-support-this-transition-by-implementing-the-newer-version-of-iso-19115.-thats-why-ive-been-pushing-for-this-update.-since-standardization-work-is-a-continuous-process-there-are-already-other-prospects-for-improvements-such-as-the-management-of-the-json-encoding-format-targeted-by-the-next-iso-19115-4-standard-under-development.">The idea behind the latest <strong>geometa</strong> project funded by the R Consortium was to support this transition by implementing the newer version of ISO 19115. That’s why I’ve been pushing for this update. Since standardization work is a continuous process, there are already other prospects for improvements, such as the management of the JSON encoding format, targeted by the next ISO 19115-4 standard under development.</h2>
 </section>
 <section id="how-has-the-object-oriented-data-model-developed-with-r6-been-improved-and-what-are-the-main-advantages" class="level2">
 <h2 class="anchored" data-anchor-id="how-has-the-object-oriented-data-model-developed-with-r6-been-improved-and-what-are-the-main-advantages">How has the object-oriented data model developed with R6 been improved? And what are the main advantages?</h2>
@@ -372,8 +429,9 @@
 <li><strong>The complexity of metadata standards</strong>, which are exhaustive and highly specialized.</li>
 </ol>
 <p><strong>geometa</strong> provides fine-grained control, fully aligning with the standards. However, I’ve also developed tools to simplify metadata creation, making it easier for non-developers to generate metadata efficiently.</p>
-<p>Seeing my colleagues—who previously couldn’t produce metadata—now able to generate metadata and enable services has been rewarding. This is particularly valuable in data science, where the volume of data continues to grow. Instead of struggling with metadata formats, they can focus on improving data quality and descriptions.</p>
-<hr>
+</section>
+<section id="seeing-my-colleagueswho-previously-couldnt-produce-metadatanow-able-to-generate-metadata-and-enable-services-has-been-rewarding.-this-is-particularly-valuable-in-data-science-where-the-volume-of-data-continues-to-grow.-instead-of-struggling-with-metadata-formats-they-can-focus-on-improving-data-quality-and-descriptions." class="level2">
+<h2 class="anchored" data-anchor-id="seeing-my-colleagueswho-previously-couldnt-produce-metadatanow-able-to-generate-metadata-and-enable-services-has-been-rewarding.-this-is-particularly-valuable-in-data-science-where-the-volume-of-data-continues-to-grow.-instead-of-struggling-with-metadata-formats-they-can-focus-on-improving-data-quality-and-descriptions.">Seeing my colleagues—who previously couldn’t produce metadata—now able to generate metadata and enable services has been rewarding. This is particularly valuable in data science, where the volume of data continues to grow. Instead of struggling with metadata formats, they can focus on improving data quality and descriptions.</h2>
 </section>
 <section id="geometa-is-used-in-r-packages-such-as-ows4r-r-interface-to-ogc-web-services-geonapi-r-interface-to-geonetwork-api-and-geoflow-r-engine-for-geospatial-metadata-workflows.-whats-the-best-way-to-get-started" class="level2">
 <h2 class="anchored" data-anchor-id="geometa-is-used-in-r-packages-such-as-ows4r-r-interface-to-ogc-web-services-geonapi-r-interface-to-geonetwork-api-and-geoflow-r-engine-for-geospatial-metadata-workflows.-whats-the-best-way-to-get-started">geometa is used in R packages such as ows4R (R Interface to OGC Web Services), geonapi (R Interface to GeoNetwork API), and geoflow (R engine for geospatial metadata workflows). What’s the best way to get started?</h2>
@@ -385,8 +443,9 @@
 <li><strong><a href="https://cran.r-project.org/package=geonapi">Geonapi</a></strong> is API-specific. It provides tools to manage metadata but with the <a href="https://geonetwork-opensource.org/">Geonetwork</a> API.</li>
 <li><strong><a href="https://github.com/r-geoflow/geoflow">Geoflow</a></strong> serves as an orchestrator, integrating metadata, data, and tasks to publish them into web catalogs, including non-geographic ones.</li>
 </ul>
-<p>For beginners, <strong>geoflow</strong> might be the best entry point.</p>
-<hr>
+</section>
+<section id="for-beginners-geoflow-might-be-the-best-entry-point." class="level2">
+<h2 class="anchored" data-anchor-id="for-beginners-geoflow-might-be-the-best-entry-point.">For beginners, <strong>geoflow</strong> might be the best entry point.</h2>
 </section>
 <section id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers" class="level2">
 <h2 class="anchored" data-anchor-id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers">How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</h2>
@@ -1189,65 +1248,6 @@
   <guid>https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/</guid>
   <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto2.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>Books, Beginners, and Big Ideas: Beatriz Milz on Fostering R-Ladies São Paulo’s Vibrant Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://beamilz.com/about">Beatriz Milz</a>, a co-organizer of <a href="https://www.meetup.com/rladies-sao-paulo/?eventOrigin=event_home_page">R-Ladies São Paulo</a>, recently spoke with the R Consortium about the vibrant growth of the R community in São Paulo and its commitment to inclusivity and accessible learning. Beatriz shared insights into the group’s activities, from organizing popular in-person and online events to coordinating a book club focused on the newly translated R for Data Science in Portuguese. She also discussed the unique needs of R users in Brazil and how R-Ladies São Paulo supports beginners and advanced users through collaborative events and community-driven resources.</p>
-<p><img src="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/BeatrizMilz.jpg" class="img-fluid"></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>My background includes a bachelor’s degree in environmental management, a master’s in environmental analysis, and a PhD in environmental sciences. During my master’s program, my supervisor mentioned that I needed to learn R to analyze the data we were collecting. However, no one in the lab was familiar with R or able to assist me. I attempted to learn it independently, but that didn’t work well.</p>
-<p>Eventually, my supervisor connected me with another professor, and a postdoc in his lab helped me with the analysis for my master’s dissertation. While that assistance was beneficial, I felt uncomfortable relying on others to conduct the analysis. After finishing my master’s and before starting my doctorate, I decided that I wanted to learn how to program so I wouldn’t have to depend so heavily on fellow researchers for data analysis.</p>
-<p>I started trying to learn R again after a friend mentioned the R-Ladies group. In 2018, I discovered that a new group was starting in São Paulo. I attended their first event, which was an incredible experience. Around that time, I began to learn R.</p>
-<p>In São Paulo, we don’t just organize events; we also have a group on <a href="https://telegram.org/">Telegram</a> where we can communicate between events. It allowed me to ask for recommendations on learning materials, pose questions, and receive help from others in the group. This support was invaluable to my learning process.</p>
-<p>Two months after getting involved, I began helping in the group. Initially, the group was relatively new, and one person mainly did most of the organizing tasks: <a href="https://www.linkedin.com/in/hsvab/?originalSubdomain=br">Haydee Svab</a>. She expressed a need for assistance, not just with R-related tasks but also with organizing events. So, I started to help, and I am still one of the co-organizers today, while Haydee remains the lead co-organizer.</p>
-<p>It’s been six years since I began participating in the group, and I’m currently a postdoc involved in much work with R.</p>
-<p><strong>Can you share what the R community is like in São Paulo?</strong></p>
-<p>Our group consists of researchers from various fields who want to learn R or have already used it. Many journalists started using R a few years ago and joined our group. Now, these journalists often invite other journalists. We have many journalists who need to learn R to analyze public data from the government for their journalistic work in newspapers.</p>
-<p>We also have many members with a background in Statistics. Since most university courses typically use R, students joining our group already have experience with it from their undergraduate studies. Additionally, many individuals from the industry use R for consultancy in various fields. I am currently doing a postdoc, but I also worked with consultants for two years, during which time I used R extensively.</p>
-<p><strong>In R-Ladies São Paulo, how many events are typically held each year?</strong></p>
-<p>It varies. This year, we hosted two in-person and many more online events—11. We held an average of 6.5 events per year. However, this year, we focused more on online events and had fewer in-person ones, mostly because booking venues for in-person events has been more difficult.</p>
-<p><img src="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPauloEvents.png" class="img-fluid"></p>
-<p><strong>Regarding your experience, are people more interested in online or in-person events?</strong></p>
-<p>People engage more in in-person events. They look forward to attending these events because we usually have limited seats, which fill up quickly. We often have a waiting list for those who want to attend. If someone cancels, we can soon offer their spot to someone on the waiting list.</p>
-<p>On the other hand, online events tend to have a different pattern of participation. Fewer people attend in real-time, but many engage later by watching the recorded sessions and leaving comments. This flexibility allows those who cannot participate live to catch up afterwards.</p>
-<p>While online events can have a broader impact on reaching a larger audience, in-person events typically draw more attendees at once. For instance, we have a <a href="https://www.youtube.com/c/RLadiesS%C3%A3oPaulo">YouTube</a> channel where we post recordings of our online events. One particular event we held during the pandemic garnered 13,000 views, demonstrating significant engagement after the event. However, only some online events achieve that level of viewership; the median for recorded events is 330 views. Nevertheless, I see value in these recordings, as they provide material for those who want to engage later. Sometimes, people are simply not available to attend live.</p>
-<p><strong>Please provide us with an update on your group’s recent activities.</strong></p>
-<p><img src="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPaulo.png" class="img-fluid"></p>
-<p>I wanted to discuss a series of events related to the book club we’re hosting. In Brazil, we speak Brazilian Portuguese. An editorial group published the highly regarded book <a href="https://r4ds.hadley.nz/">R for Data Science</a> in Portuguese. The first edition is available only through purchase, but the English version is free online.</p>
-<p>Some communities have done volunteer translations; for instance, there is a <a href="https://es.r4ds.hadley.nz/">Spanish</a> version. When I learned that a second edition of the book was being written, I contacted the authors to ask if we could translate it into Portuguese with the community’s help. It took some time because the authors needed approval from O’Reilly, the publishing company producing the book.</p>
-<p>We received confirmation that we could begin the translation. The book’s second edition has <a href="https://cienciadedatos.github.io/pt-r4ds/">been translated and is now available in Portuguese</a>! The translation team is not limited to the R Ladies community; it includes contributions from more than 20 people from different backgrounds.</p>
-<p>This book club focuses on discussing the translated Portuguese version of the book. Since February, we have held online meetings to discuss the book chapters. Members from the R Ladies community present these discussions, allowing participants to ask questions and engage in dialogue. These events have been working well.</p>
-<p>I have been referencing this book whenever someone asks for material. Many people will already be familiar with it as we continue to promote it. We have also been using and sharing this resource extensively.</p>
-<p>Now, the book’s second edition is available in Portuguese <a href="https://cienciadedatos.github.io/pt-r4ds/">online</a> and for free, so anyone with an internet connection can access it. It is an excellent way to share knowledge for those who can afford to buy the book and for anyone with internet access, making it a valuable study resource.</p>
-<p><strong>What are some trending topics from the group?</strong></p>
-<p>Our events with introductory content attract more participants. It is likely because many attendees are either new to the subject or at an intermediate level, where they feel comfortable studying independently. The most popular topics are introductory sessions.</p>
-<p>However, when we asked participants about their interests in different topics, many wanted to learn about machine learning and other trending subjects like deep learning and artificial intelligence. The challenge is that we need more experienced individuals to teach these advanced topics. While many people are interested in these areas, organizing events around them can be more difficult due to the complexity involved.</p>
-<p><strong>What techniques do you recommend for planning or conducting the event? (e.g., GitHub, Zoom, etc.) Can these techniques help make your group more inclusive for people unable to attend in-person events in the future?</strong></p>
-<p>We use <a href="https://streamyard.com/">StreamYard</a> for our online events. The free version has proven helpful. Previously, when we hosted events on Zoom, we needed to edit recordings and upload them afterwards. This process often took a while, mainly because everyone was busy, and it delayed recording the events online. StreamYard has made the process easier for us, although it does offer less space for participant interaction.</p>
-<p>We have a chat feature with StreamYard, but participants can also share their screens on Zoom. Therefore, the platform we choose depends on the kind of event we want to conduct. Participants must share their screens for some events, so we opt for Google Meet or Zoom.</p>
-<p>One significant improvement has been our use of <a href="https://github.com/R-Ladies-Sao-Paulo">GitHub</a>. We created issue templates as a to-do list for organizing our upcoming events. This system helps us remember everything we need to do.</p>
-<p>Additionally, we have a <a href="https://rladies-sp.org/">blog</a> that invites community members to contribute articles. It allows individuals to write about interesting topics regardless of expertise. Some people hesitate to present at events but feel comfortable writing blog posts. It serves as their first contribution or participation in our community, shifting them from just participants to active contributors.</p>
-<p>Overall, the blog is an excellent way to encourage people to make their first contributions.</p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/</guid>
-  <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/R-LadiesSaoPaulo.png" medium="image" type="image/png" height="60" width="144"/>
 </item>
 </channel>
 </rss>
