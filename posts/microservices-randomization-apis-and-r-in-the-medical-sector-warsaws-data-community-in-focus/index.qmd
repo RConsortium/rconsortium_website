@@ -1,0 +1,65 @@
+---
+title: "Microservices, Randomization APIs, and R in the Medical Sector – Warsaw’s Data Community in Focus"
+description: "Joe Brillantes, organizer of the R User Group Philippines, shares how the group has evolved with new interests emerging among its members."
+author: "R Consortium"
+image: "KamilSijko-main.png"
+date: "05/01/2025"
+---
+
+[Kamil Sijko](https://www.linkedin.com/in/kamilsijko/), organizer of both the [R Users and R-Ladies Warsaw groups](https://www.meetup.com/spotkania-entuzjastow-r-warsaw-r-users-group-meetup/), recently spoke with the R Consortium about the evolving R community in Poland and the group's efforts to connect users across academia, industry, and open-source development. Kamil shared his journey from discovering R as a student to taking over the leadership of the Warsaw R community in 2024. He discussed the group’s hybrid meetups, industry collaborations with companies like AstraZeneca and Appsilon, and the importance of making R accessible through recorded sessions and international outreach. He also highlighted a recent open-source project on patient randomization, demonstrating how R can be effectively integrated into modern software ecosystems, particularly in medical applications.
+
+![](KamilSijko.png){width=50%}
+
+##  Please share your background and involvement with the RUGS group.
+
+I first encountered R during my studies, around the time of version 2, well before RStudio existed. I found it an interesting alternative to SPSS, which was widely used at my university. A key figure in my early experience with R was Professor [Przemyslaw Biecek](https://www.linkedin.com/in/pbiecek/), whose 2008 book on the language marked my first serious engagement with the software. Since then, I have been using it more extensively across different industries.
+
+Initially, I worked in academia, then moved to government institutions, and now I am in the business sector, all while continuing to use R. 
+
+Interestingly, Professor Biecek, who authored the book, later initiated the first meetups for our R community in Warsaw. In 2024, he stepped back from organizing these events and handed over the responsibilities to me—a passing of the torch that felt especially meaningful, given how I had started.
+
+## Can you share what the R community is like in Poland?
+
+Poland is not fundamentally different from any other country in its use of programming languages. R is particularly relevant in academia and specific industries, especially the financial and medical sectors. In the medical field, the [Bioconductor](https://www.bioconductor.org/) project plays a significant role, with researchers and pharmaceutical companies heavily relying on it and actively contributing to its development and broader open-source ecosystem.
+
+Additionally, R is strong in geography and geographic computations. Its primary applications are within academia and specific niches outside it, such as the highly regulated medical sector. In this context, R is preferred for regulatory work because it allows rigorous validation to meet industry standards. 
+
+In my company, which operates in the medical field, using R is a natural choice. Many algorithms are already implemented in R that are not available in Python, making it logical to utilize R in such cases.
+
+## So, now that you've taken over the R user group, what are your plans for the upcoming months? What topics are you hoping to cover? Are your meetings in-person, online, or a hybrid?
+
+Initially, I planned to host meetings exclusively in person and in Polish, without an online streaming option. However, people expressed interest in re-watching the meetings if they couldn’t attend. We have a relatively international community of users in Warsaw, so conducting the sessions in English made sense. Consequently, we changed our approach, and now the meetings are hybrid. They are recorded and stored on our [YouTube](https://www.youtube.com/channel/UCq1v6SmgtmJeWDUtIKr0nVw) channel, allowing anyone to rewatch them if they find them interesting.
+
+We have some significant companies engaged in R development that present fascinating projects. At our last meeting, we hosted representatives from [AstraZeneca](https://www.astrazeneca.pl/), who discussed a large-scale project involving central data validation that utilized R. AstraZeneca also hosted our meetup at their office in Warsaw.
+
+Additionally, we have [Appsilon](https://www.appsilon.com), an active open-source contributor. Though primarily an online organization, many of their team members are based in Warsaw. They have numerous projects to discuss and can provide instruction on various open-source initiatives.
+
+My company, [Transition Technology Science](https://ttsi.com.pl/en/), also works with R and contributes to open-source projects, so there is plenty to discuss. Furthermore, we have a vibrant academic community. The [MI2 RedTeam](https://www.mi2.ai/mi2redteam.html) is exploring explainable artificial intelligence, which is both fascinating and crucial right now; others work on packages related to econometrics. This local production and usage create intriguing topics of discussion.
+
+Moreover, we touch upon subjects that address the current state of our community and its prospects, including relevant and active new tools. For example, at the last meetup, [Tymoteusz](https://www.linkedin.com/in/tymoteusz-makowski/) discussed recent updates to R, including changes to the documentation and the introduction of [Positron](https://positron.posit.co/), the new IDE. These topics are all pertinent and vital.
+
+It’s also worth mentioning that R has a distinctive characteristic of being highly relevant in academia, where many projects prioritize exploration and theory over immediate practical applications. However, it offers valuable insights and often sparks meaningful discussions. In one of the first meetings I organized, a participant presented a project that involved network analysis of conspiracy theories using R. This type of work might not align with typical grant criteria. Still, it offered a rich and engaging topic for discussion.
+
+Overall, during these meetings, R often serves as a gateway to deeper and more intriguing areas of science and beyond.
+
+## Please share a project you're currently working on or have worked on using the R language. Goal/reason, result, anything interesting, especially related to your industry?
+
+
+
+I’d like to briefly preview one of the topics I covered in our last meetup, as I was one of the speakers. I discussed a project we completed at my company, which we have [open-sourced](https://ttscience.github.io/unbiased/). This project involves an API for randomization, a perfect example of why R is relevant.
+
+Substantial work has been done in R on advanced randomization methods for clinical trials, including adaptive randomization — the kind of functionality that’s often hard to find elsewhere in such a mature and tested form. So why not use it? At the same time, it’s unrealistic to expect developers building electronic Case Report Forms (eCRFs) in Python or Java to learn R and integrate it natively into their systems suddenly.
+
+To address this challenge, we developed an R package along with a Dockerized API for patient randomization. It runs R in the background, but from the developers’ perspective, integration is straightforward — with a decent connection, the whole setup (from 'docker pull' to 'docker compose up') takes less than a minute. There’s no need to work directly with R; they simply treat it like any other service in their stack.
+
+This approach represents a promising way forward for many services available in R that can be integrated with other software, making them even more relevant. Modern software architecture often relies on microservices, and there's no reason we can't use R to build these microservices. 
+
+It makes logical sense to position R this way, especially since there is often a lack of tooling for building large-scale applications in R. We have encountered this limitation in other projects. Nevertheless, utilizing R as a microservice provider is a sensible direction.
+
+I see the future of R not only in academic analysis but as a robust backend tool, especially for specific algorithms and statistical procedures that are mature and peer-reviewed. By wrapping R in services that are easy to use from other environments, we make its strengths more accessible to a broader audience without requiring a steep learning curve for engineers or product teams.
+
+##  How do I Build an R User Group? 
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
+
+[https://r-consortium.org/all-projects/rugsprogram.htm](https://r-consortium.org/all-projects/rugsprogram.html)
