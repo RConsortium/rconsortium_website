@@ -1,0 +1,91 @@
+---
+title: "Disease Outbreak Mapping, Open Source, and Outreach - Unijos R Users Group in Nigeria Leads the Way"
+description: "Iko Musa, founder of the Unijos R Users Group at the University of Jos (UNIJOS), Nigeria, spoke with the R Consortium about how the group built an inclusive and cross-disciplinary R community in northern Nigeria."
+author: "R Consortium"
+image: "UnijosRUGlogo.png"
+date: "05/09/2025"
+---
+
+
+[Iko Musa](https://www.linkedin.com/in/iko-musa-a17a24114/), founder of the [Unijos R Users Group](https://www.meetup.com/unijos-r-users/) at the University of Jos (UNIJOS), Nigeria, spoke with the R Consortium about how the group built an inclusive and cross-disciplinary R community in northern Nigeria. Iko explained how the group supported students and professionals in transitioning from proprietary tools like SPSS to R. He highlighted their efforts to improve accessibility through online sessions, providing internet support for undergraduates, and hosting practical events like a recent Meetup on outbreak mapping in R.
+
+![](IkoMusa.png){width=50%}
+
+
+
+
+
+## Please share your background and involvement with the RUGS group.
+
+I founded the Unijos R Users Group at Unijos whilst completing my MSc in Field Epidemiology at the University of Jos. The concept emerged from my experience as both a student and a professional Epidemiologist and Data Analyst Activity Manager with [Médecins Sans Frontières](https://www.msf.org/) (MSF). I recognised the critical need for an inclusive community that extended beyond my department of Community Medicine to serve students across all faculties at Unijos. My vision was to create a supportive environment where both undergraduates and postgraduates could develop practical R programming skills applicable to their diverse research interests, regardless of their academic discipline.
+
+Our group initially focused on postgraduate students, but my main goal has been to encourage undergraduates to adopt R for their undergraduate research projects. During my studies, both as an undergraduate and during my MSc in Field Epidemiology, we primarily used IBM SPSS Statistics, which has significant costs. In contrast, R is a free platform, which makes it much more accessible, especially for students in low-income regions like northern Nigeria. Switching from SPSS or other paid software to R would be more cost-effective and sustainable for us.
+
+One of my key initiatives in founding this group is to engage undergraduate students after each session by providing a small incentive, not money, but support for internet access. Many of our members are from various universities across northern Nigeria, and this incentive encourages them to participate in learning R and expand their skills actively.
+
+In my role with MSF, I also encourage my data entry teams and medical data supervisors to use R. Since joining MSF, we’ve started sessions on R, and it's been rewarding to see team members learn, create visualisations, and gain insights from the data.
+
+
+
+
+## Can you share what the R community is like in Unijos?
+
+Our university, the University of Jos, is commonly known as UNIJOS. Since founding this group, I've noticed that many who join our community are my MSc colleagues. Initially, there were just seven of us in the MSc Epidemiology program. At that time, we were using software like EpiInfo and SPSS for data analysis and outbreak investigations. Still, I realized the trend was shifting toward R. So, we formed a small group at UNIJOS to learn it together.
+
+![](UnijosRUGlogo.png)
+
+Our community quickly expanded to include students from other programmes, such as MSc Clinical Epidemiology, MSc Chemistry, and MPH (Master of Public Health), who joined us because we offered free and accessible learning sessions. We hold online sessions every two weeks and also organise in-person sessions within our department. Sometimes, after classes, we gather for a session on R. Currently, our focus is on undergraduate students, although we also include postgraduates. We encourage participation across departments and post information on Meetup, WhatsApp, Facebook, and bulletin boards to invite anyone interested. It’s a free community open to anyone who wants to learn.
+
+Our reach has grown beyond UNIJOS. In our recent online session, I noticed participants from other universities in northern Nigeria, such as Ahmadu Bello University, the Federal University of Health Sciences, Azare, National Open University of Nigeria-Maiduguri Study Centre, and the University of Maiduguri, with many undergraduates joining.
+
+At MSF, I also encourage my team to use R for data analysis and other tasks. This integration has been beneficial, and I’m thrilled to see more people embracing R both within and outside UNIJOS.
+
+![](UnijosRUGMeeting.png)
+
+Unijos R User Group First Meeting
+
+## You had a Meetup on [Outbreak Mapping in R](https://www.meetup.com/unijos-r-users/events/306206070/?eventOrigin=group_events_list) on March 22, 2025. Can you share more about the topic covered? Why this topic? 
+
+During our March 22nd Meetup on Outbreak Mapping in R, we explored the essential role of spatial data visualisation in epidemiological investigations. We covered the workflow from data preparation to creating effective choropleth and spot maps using ggplot2 and the [sf](https://cran.r-project.org/web/packages/sf/index.html) packages. We chose this topic because mapping is crucial but often underutilised in outbreak response, helping investigators identify disease clusters and transmission patterns more efficiently. The event targeted public health professionals, residents in community medicine, epidemiologists, and data analysts with basic R knowledge who wanted practical skills for visualising outbreak data in their daily work.
+
+
+
+
+## Who was the target audience for attending this event? 
+
+Our sessions were designed to be inclusive of all skill levels, from undergraduate students to professionals interested in learning R. We kept it very basic so that anyone, whether new to R or with some experience, could participate comfortably. I felt that starting with the basics would encourage more people to join and help grow our community, making it accessible and welcoming for everyone. We also hold more advanced R sessions periodically to encourage broader participation.
+
+
+
+
+## Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?   
+
+We primarily use Microsoft Teams for our online sessions, especially to reach participants in remote areas. As I mentioned, our last session included many participants from other universities and locations beyond the University of Jos and Plateau State. Microsoft Teams has been effective for these online sessions due to its ease of use.
+
+![](UnijosRUGOnlineMeeting.png)
+
+Unijos R User Group First Online Meeting Using Microsoft Teams
+
+Looking ahead, once we’ve grown and conducted more sessions, we’re planning to introduce advanced topics like using [Shiny](https://shiny.posit.co/), which I enjoy, and predictive modeling, possibly starting next year. At that point, we’ll also begin using GitHub to manage our data and resources, adding another layer of engagement for the community.
+
+After each online session, we offer participants, especially undergraduates, a small internet token to help with connectivity costs. The program is free, and R Consortium has helped us make it accessible, so we want to keep it that way. Occasionally, if the network on Teams isn’t reliable, we switch to Google Meet. Additionally, we plan physical sessions for those nearby to foster in-person connections and learning opportunities.
+
+
+
+
+## We'd like to get to know you better. Please tell me a little about yourself, such as your hobbies/interests or anything else you want to share.
+
+I’m a medical doctor by training, having graduated from Ahmadu Bello University. My transition from clinical practice to working with data began immediately after my internship, when I developed a strong interest in learning R. Previously, I had been using SPSS. I had even created a platform in Borno State called MTJ Data Analytics to offer free online sessions for SPSS. However, I found that many people struggled with SPSS due to the need for a paid license, and it required a lot of computer resources, making it difficult for those with older or less powerful devices.
+
+Recognising these limitations, I saw the need to shift from SPSS to R, which is free and offers many powerful packages. My love for R grew as I explored its tools, like Shiny for interactive dashboards and the ‘[sf](https://cran.r-project.org/web/packages/sf/index.html)’ package for mapping. These allow for flexible, detailed visualisations in outbreak investigations—something Epi Info and SPSS couldn’t fully support. R has become my go-to tool, offering a one-stop solution for analysis, mapping, and sampling without needing to switch between different software.
+
+When I applied for my current role at MSF, I was pleasantly surprised to find that all the technical requirements were based on R. Looking back, if I hadn’t learned R, I wouldn’t have been able to secure this position. Recently, the Head of Epidemiology, Dr Franck Ale, from our headquarters even complimented my code, which was an incredibly proud moment and solidified my commitment to R.
+
+I’m genuinely grateful for the support of the R Consortium, which has enabled us to build and expand this community in northern Nigeria, particularly at the University of Jos. Looking ahead, I plan to expand this platform further to the University of Maiduguri in the Northeast, where there is a need for R communities and support. Thank you for all you do to empower people with these resources and help grow this community—I’m excited to see where it goes.
+
+
+## How do I Build an R User Group?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
+
+[https://r-consortium.org/all-projects/rugsprogram.htm](https://r-consortium.org/all-projects/rugsprogram.html)
