@@ -9,8 +9,73 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.29</generator>
-<lastBuildDate>Thu, 01 May 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.30</generator>
+<lastBuildDate>Fri, 09 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Disease Outbreak Mapping, Open Source, and Outreach - Unijos R Users Group in Nigeria Leads the Way</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/iko-musa-a17a24114/">Iko Musa</a>, founder of the <a href="https://www.meetup.com/unijos-r-users/">Unijos R Users Group</a> at the University of Jos (UNIJOS), Nigeria, spoke with the R Consortium about how the group built an inclusive and cross-disciplinary R community in northern Nigeria. Iko explained how the group supported students and professionals in transitioning from proprietary tools like SPSS to R. He highlighted their efforts to improve accessibility through online sessions, providing internet support for undergraduates, and hosting practical events like a recent Meetup on outbreak mapping in R.</p>
+<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/IkoMusa.png" class="img-fluid" style="width:50.0%"></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
+<p>I founded the Unijos R Users Group at Unijos whilst completing my MSc in Field Epidemiology at the University of Jos. The concept emerged from my experience as both a student and a professional Epidemiologist and Data Analyst Activity Manager with <a href="https://www.msf.org/">Médecins Sans Frontières</a> (MSF). I recognised the critical need for an inclusive community that extended beyond my department of Community Medicine to serve students across all faculties at Unijos. My vision was to create a supportive environment where both undergraduates and postgraduates could develop practical R programming skills applicable to their diverse research interests, regardless of their academic discipline.</p>
+<p>Our group initially focused on postgraduate students, but my main goal has been to encourage undergraduates to adopt R for their undergraduate research projects. During my studies, both as an undergraduate and during my MSc in Field Epidemiology, we primarily used IBM SPSS Statistics, which has significant costs. In contrast, R is a free platform, which makes it much more accessible, especially for students in low-income regions like northern Nigeria. Switching from SPSS or other paid software to R would be more cost-effective and sustainable for us.</p>
+<p>One of my key initiatives in founding this group is to engage undergraduate students after each session by providing a small incentive, not money, but support for internet access. Many of our members are from various universities across northern Nigeria, and this incentive encourages them to participate in learning R and expand their skills actively.</p>
+<p>In my role with MSF, I also encourage my data entry teams and medical data supervisors to use R. Since joining MSF, we’ve started sessions on R, and it’s been rewarding to see team members learn, create visualisations, and gain insights from the data.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-unijos" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-unijos">Can you share what the R community is like in Unijos?</h2>
+<p>Our university, the University of Jos, is commonly known as UNIJOS. Since founding this group, I’ve noticed that many who join our community are my MSc colleagues. Initially, there were just seven of us in the MSc Epidemiology program. At that time, we were using software like EpiInfo and SPSS for data analysis and outbreak investigations. Still, I realized the trend was shifting toward R. So, we formed a small group at UNIJOS to learn it together.</p>
+<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGlogo.png" class="img-fluid"></p>
+<p>Our community quickly expanded to include students from other programmes, such as MSc Clinical Epidemiology, MSc Chemistry, and MPH (Master of Public Health), who joined us because we offered free and accessible learning sessions. We hold online sessions every two weeks and also organise in-person sessions within our department. Sometimes, after classes, we gather for a session on R. Currently, our focus is on undergraduate students, although we also include postgraduates. We encourage participation across departments and post information on Meetup, WhatsApp, Facebook, and bulletin boards to invite anyone interested. It’s a free community open to anyone who wants to learn.</p>
+<p>Our reach has grown beyond UNIJOS. In our recent online session, I noticed participants from other universities in northern Nigeria, such as Ahmadu Bello University, the Federal University of Health Sciences, Azare, National Open University of Nigeria-Maiduguri Study Centre, and the University of Maiduguri, with many undergraduates joining.</p>
+<p>At MSF, I also encourage my team to use R for data analysis and other tasks. This integration has been beneficial, and I’m thrilled to see more people embracing R both within and outside UNIJOS.</p>
+<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGMeeting.png" class="img-fluid"></p>
+<p>Unijos R User Group First Meeting</p>
+</section>
+<section id="you-had-a-meetup-on-outbreak-mapping-in-r-on-march-22-2025.-can-you-share-more-about-the-topic-covered-why-this-topic" class="level2">
+<h2 class="anchored" data-anchor-id="you-had-a-meetup-on-outbreak-mapping-in-r-on-march-22-2025.-can-you-share-more-about-the-topic-covered-why-this-topic">You had a Meetup on <a href="https://www.meetup.com/unijos-r-users/events/306206070/?eventOrigin=group_events_list">Outbreak Mapping in R</a> on March 22, 2025. Can you share more about the topic covered? Why this topic?</h2>
+<p>During our March 22nd Meetup on Outbreak Mapping in R, we explored the essential role of spatial data visualisation in epidemiological investigations. We covered the workflow from data preparation to creating effective choropleth and spot maps using ggplot2 and the <a href="https://cran.r-project.org/web/packages/sf/index.html">sf</a> packages. We chose this topic because mapping is crucial but often underutilised in outbreak response, helping investigators identify disease clusters and transmission patterns more efficiently. The event targeted public health professionals, residents in community medicine, epidemiologists, and data analysts with basic R knowledge who wanted practical skills for visualising outbreak data in their daily work.</p>
+</section>
+<section id="who-was-the-target-audience-for-attending-this-event" class="level2">
+<h2 class="anchored" data-anchor-id="who-was-the-target-audience-for-attending-this-event">Who was the target audience for attending this event?</h2>
+<p>Our sessions were designed to be inclusive of all skill levels, from undergraduate students to professionals interested in learning R. We kept it very basic so that anyone, whether new to R or with some experience, could participate comfortably. I felt that starting with the basics would encourage more people to join and help grow our community, making it accessible and welcoming for everyone. We also hold more advanced R sessions periodically to encourage broader participation.</p>
+</section>
+<section id="do-you-recommend-any-techniques-for-planning-for-or-during-the-event-github-zoom-other.-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-who-cannot-attend-physical-events-in-the-future" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-recommend-any-techniques-for-planning-for-or-during-the-event-github-zoom-other.-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-who-cannot-attend-physical-events-in-the-future">Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?</h2>
+<p>We primarily use Microsoft Teams for our online sessions, especially to reach participants in remote areas. As I mentioned, our last session included many participants from other universities and locations beyond the University of Jos and Plateau State. Microsoft Teams has been effective for these online sessions due to its ease of use.</p>
+<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGOnlineMeeting.png" class="img-fluid"></p>
+<p>Unijos R User Group First Online Meeting Using Microsoft Teams</p>
+<p>Looking ahead, once we’ve grown and conducted more sessions, we’re planning to introduce advanced topics like using <a href="https://shiny.posit.co/">Shiny</a>, which I enjoy, and predictive modeling, possibly starting next year. At that point, we’ll also begin using GitHub to manage our data and resources, adding another layer of engagement for the community.</p>
+<p>After each online session, we offer participants, especially undergraduates, a small internet token to help with connectivity costs. The program is free, and R Consortium has helped us make it accessible, so we want to keep it that way. Occasionally, if the network on Teams isn’t reliable, we switch to Google Meet. Additionally, we plan physical sessions for those nearby to foster in-person connections and learning opportunities.</p>
+</section>
+<section id="wed-like-to-get-to-know-you-better.-please-tell-me-a-little-about-yourself-such-as-your-hobbiesinterests-or-anything-else-you-want-to-share." class="level2">
+<h2 class="anchored" data-anchor-id="wed-like-to-get-to-know-you-better.-please-tell-me-a-little-about-yourself-such-as-your-hobbiesinterests-or-anything-else-you-want-to-share.">We’d like to get to know you better. Please tell me a little about yourself, such as your hobbies/interests or anything else you want to share.</h2>
+<p>I’m a medical doctor by training, having graduated from Ahmadu Bello University. My transition from clinical practice to working with data began immediately after my internship, when I developed a strong interest in learning R. Previously, I had been using SPSS. I had even created a platform in Borno State called MTJ Data Analytics to offer free online sessions for SPSS. However, I found that many people struggled with SPSS due to the need for a paid license, and it required a lot of computer resources, making it difficult for those with older or less powerful devices.</p>
+<p>Recognising these limitations, I saw the need to shift from SPSS to R, which is free and offers many powerful packages. My love for R grew as I explored its tools, like Shiny for interactive dashboards and the ‘<a href="https://cran.r-project.org/web/packages/sf/index.html">sf</a>’ package for mapping. These allow for flexible, detailed visualisations in outbreak investigations—something Epi Info and SPSS couldn’t fully support. R has become my go-to tool, offering a one-stop solution for analysis, mapping, and sampling without needing to switch between different software.</p>
+<p>When I applied for my current role at MSF, I was pleasantly surprised to find that all the technical requirements were based on R. Looking back, if I hadn’t learned R, I wouldn’t have been able to secure this position. Recently, the Head of Epidemiology, Dr Franck Ale, from our headquarters even complimented my code, which was an incredibly proud moment and solidified my commitment to R.</p>
+<p>I’m genuinely grateful for the support of the R Consortium, which has enabled us to build and expand this community in northern Nigeria, particularly at the University of Jos. Looking ahead, I plan to expand this platform further to the University of Maiduguri in the Northeast, where there is a need for R communities and support. Thank you for all you do to empower people with these resources and help grow this community—I’m excited to see where it goes.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/</guid>
+  <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGlogo.png" medium="image" type="image/png" height="63" width="144"/>
+</item>
 <item>
   <title>Microservices, Randomization APIs, and R in the Medical Sector – Warsaw’s Data Community in Focus</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1186,68 +1251,6 @@
   <guid>https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/</guid>
   <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/RUsersMalawi-main.png" medium="image" type="image/png" height="109" width="144"/>
-</item>
-<item>
-  <title>Navigating Economic Challenges Through Community: The Journey of R-Ladies Buenos Aires</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/betsabe1984/">Betsabe Cohen</a>, organizer of <a href="https://www.meetup.com/rladies-buenos-aires/">R-Ladies Buenos Aires</a>, recently spoke with the R Consortium about the growth and diversity of the R community in Argentina and its role in navigating the country’s economic challenges. Betsy shared insights into the group’s activities, including hosting workshops on tools like Quarto and plans to launch a Shiny-focused reading club. She also highlighted the importance of fostering inclusion and collaboration within the community locally and across Latin America.</p>
-<p><img src="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/BetsabeCohen.png" class="img-fluid" style="width:60.0%"></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>My background is in sociology. I’m originally from Buenos Aires and have worked in the field for about 15 years. I became involved with the R community through some colleagues and a bit by chance. I discovered R when a friend, who was starting to use it, introduced me to it. She was already connected with the R community, specifically R-Ladies. A few years later, I became an organizer for the group.</p>
-<p><strong>Can you share what the R community is like in Buenos Aires?</strong></p>
-<p>R is primarily used in academia but is also prevalent in industry. The R community is very diverse, consisting of people from various backgrounds. We have industry professionals, researchers, and individuals from the government and non-profit sectors. I started using R in a non-profit environment. Our community includes a wide range of skill levels, from beginners to intermediate and advanced users, which adds to its diversity.</p>
-<p>Data analysis has become a valuable skill in the job market. Argentina is experiencing a job crisis, making it crucial for people to access information. However, because much of this information is often in English, we aim to generate materials in Spanish and share them with our community, as linguistic barriers can be restrictive.</p>
-<p>Communities like our group here in Buenos Aires are essential for people to access this information. However, it can be challenging for us as organizers, especially since we also navigate this crisis ourselves. Many of us juggle multiple jobs, making it challenging to find the time to teach and share information with others.</p>
-<p>Balancing these responsibilities can feel like double work, and that’s what we’re currently facing.</p>
-<p><img src="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto1.png" class="img-fluid"></p>
-<p><strong>You had a Meetup on “<a href="https://www.meetup.com/rladies-buenos-aires/events/304386918/?eventOrigin=group_past_events">Turn your data into visual stories with Quarto</a>.” Can you share more about the topic covered? Why this topic?</strong></p>
-<p>We chose a topic beneficial for people searching for jobs related to data communication, visualization, and scientific reporting. <a href="https://quarto.org/">Quarto</a> is an excellent tool for this purpose. The R community and the RUGS have embraced tools that enhance communication, making it more manageable within the scientific community and the business environment. Quarto allows individuals to continue using R while also adapting to various workplaces.</p>
-<p>By sharing Quarto with others and demonstrating its capabilities, we aim to help people communicate effectively. Since R is primarily taught in universities but needs a proper communication tool, this was a significant factor in our decision to support and assist others.</p>
-<p>Additionally, I have some exciting news: we are planning to start a reading club focused on mastering <a href="https://shiny.posit.co/">Shiny</a> for next year.</p>
-<p>We are still preparing it. Shiny is widely used to make data accessible to users, which is part of our decision-making to support people during this challenging time. Reading this book alone is not the same as sharing the experience with others. There is significant value in sharing information and being part of a network, as it fosters community and support among us.</p>
-<p><img src="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto2.png" class="img-fluid"></p>
-<p><strong>Do you host your events in person or online? What kind of response do you get for each type of event?</strong></p>
-<p>We host both in-person and online events. Sometimes, we can hold events in both formats, but other times, we can only offer them online because the conditions are not ideal for a physical gathering. We record the live events and upload them to our <a href="https://www.youtube.com/c/RLadiesBuenosAires">YouTube</a> channel.</p>
-<p>For example, we organized a large event last year that attracted 80 university students. The venue was so full that no one else could enter, and the event generated significant engagement and views on YouTube afterwards.</p>
-<p>Some subjects are particularly appealing. Our goal is to reach as many people as possible, but I think a key point here is that inclusion is tied not only to gender but also to the economic dimensions of the issue.</p>
-<p>The demand for the recordings we upload to YouTube and access to our meetings is influenced by the employment and economic crises we face. This challenge concerns the material aspects, such as accessing high-speed internet or owning a computer, and the time required to participate in these events. For instance, many people may work night shifts, making it difficult for them to attend events.</p>
-<p>We typically schedule our meetings outside of working hours. The standard work schedule in Argentina runs from 9 AM to 6 PM, so we aim to hold our events around 7 PM to accommodate everyone. However, some individuals still need help to attend because they may have two jobs, leading them to plan to watch the YouTube recordings over the weekend.</p>
-<p>This situation illustrates our understanding of inclusion; it is not solely about gender—thankfully, our country is making strides in that area—but also about addressing economic challenges.</p>
-<p><strong>Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people unable to attend physical events in the future?</strong></p>
-<p>We encourage working in pairs when conducting activities in a live classroom, mainly because only some have a computer. It creates an excellent dynamic for us, especially when participants have different skill levels. In our recent sessions, most people had their computers, but that was only sometimes the case. We use Post-it notes to address problems on individual computers. When everything is running smoothly, we engage in live coding, and participants can simply post their notes when they encounter issues.</p>
-<p>We organize our roles carefully to ensure efficiency. One of us may demonstrate the general code while live coding, while other organizers take on different responsibilities. Dividing the roles helps us focus on smaller tasks and work together effectively.</p>
-<p>This approach applies not only in-person but also during our Zoom meetings. However, people seem less open to sharing their stories virtually. There’s something unique about face-to-face interactions compared to being online. After COVID-19, many people grew weary of Zoom meetings, but there were still benefits to being connected virtually. I participated in events I would never have had the chance to join otherwise.</p>
-<p>There’s something unique about sharing space. I think the Post-it notes work well for us, along with consistently sharing information and being well-prepared for the day.</p>
-<p>When someone is going to present live coding, they feel more comfortable knowing that they don’t have to worry about other tasks. We always make it a point to take care of everything by dividing responsibilities and staying organized beforehand.</p>
-<p>We prepare everything we need for the day, from coffee and cookies to all the necessary materials. Someone is clearly assigned to each task, and I believe that’s the best approach. At least it works great for us!</p>
-<p><strong>Can you share more about the journey of R-Ladies Buenos Aires?</strong></p>
-<p>It has been a long journey for us in Buenos Aires. Buenos Aires was Argentina’s first chapter, and many other chapters of our Slack account opened up. We still share the same main Slack, R Ladies Buenos Aires, along with the other provinces that are very important to us.</p>
-<p>I had the opportunity to travel to the country’s south to meet some of the organizers of <a href="https://r-consortium.org/posts/r-ladies-bariloche-in-argentina-fostering-a-different-approach/">R Ladies Bariloche</a>, where we have another chapter. I also participated in events like <a href="https://latinr.org/">LatinR</a>, bringing chapters across Latin America together. That experience was amazing!</p>
-<p>I went to Uruguay last year, and it was fantastic to see so many R users from diverse backgrounds. It’s very exciting! The R User Groups are a great way to connect, and I always recommend them to others. People tend to respond very positively, and I am so proud to be part of this community.</p>
-<p>You can reach out to R-Ladies Buenos Aires through the following:</p>
-<p>Instagram:<a href="https://www.instagram.com/rladiesba/?hl=en">https://www.instagram.com/rladiesba/?hl=en</a></p>
-<p>Facebook: <a href="https://www.facebook.com/RladiesBA/">https://www.facebook.com/RladiesBA/</a></p>
-<p>Website: <a href="https://rladiesba.netlify.app/">https://rladiesba.netlify.app/</a></p>
-<p>X: <a href="https://twitter.com/rladiesba?lang=en">https://twitter.com/rladiesba?lang=en</a></p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/</guid>
-  <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/R-LadiesBuenosAiresGroupPhoto2.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
