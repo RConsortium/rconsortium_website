@@ -10,7 +10,264 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Fri, 09 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 16 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A unifying toolbox for handling persistence data</title>
+  <dc:creator>Aymeric Stamm, Jason Cory Brunson</dc:creator>
+  <link>https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="topological-data-analysis-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="topological-data-analysis-in-r">Topological data analysis in R</h2>
+<p>Topological data analysis (TDA) is a rapidly growing field that uses techniques from algebraic topology to analyze the shape and structure of data. At its core, TDA provides tools to understand the geometric and topological features of datasets across multiple scales, with persistent homology (PH) being one of its fundamental techniques.</p>
+<p>Several R packages have emerged to provide TDA capabilities to the R community, including:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=TDA">{TDA}</a> which focuses on statistical analysis of PH and density clustering by providing an R interface for the efficient algorithms of the C++ libraries <a href="https://project.inria.fr/gudhi/software/">GUDHI</a>, <a href="https://www.mrzv.org/software/dionysus/">Dionysus</a> and <a href="https://bitbucket.org/phat-code/phat/">PHAT</a>. This package also implements methods from <span class="citation" data-cites="fasy2014confidence">Fasy et al. (2014)</span> and <span class="citation" data-cites="chazal2014stochastic">Chazal et al. (2014)</span> for analyzing the statistical significance of PH features.</li>
+<li><a href="https://cran.r-project.org/package=TDAstats">{TDAstats}</a> which provides a comprehensive toolset for conducting TDA, specifically via the calculation of PH in a Vietoris-Rips complex <span class="citation" data-cites="wadhwa2018tdastats">(Wadhwa et al. 2018)</span>.</li>
+<li><a href="https://cran.r-project.org/package=ripserr">{ripserr}</a> which provides an R interface to the <a href="https://github.com/Ripser/ripser">Ripser</a> and <a href="https://github.com/CubicalRipser">Cubical Ripser</a> C++ libraries <span class="citation" data-cites="bauer2021ripser kaji2020cubical">(Bauer 2021; Kaji, Sudo, and Ahara 2020)</span>.</li>
+<li><a href="https://cran.r-project.org/package=TDAkit">{TDAkit}</a> which provides a variety of algorithms to learn with PH of the data based on functional summaries for clustering, hypothesis testing, and visualization <span class="citation" data-cites="wasserman2018topological">(Wasserman 2018)</span>.</li>
+<li>Other packages that have been archived due to lack of maintenance (e.g. <a href="https://cran.r-project.org/package=kernelTDA">{kernelTDA}</a>).</li>
+</ul>
+<p>While these packages have made TDA more accessible, they’ve also introduced different data structures for representing persistence data, creating challenges for interoperability and workflow consistency. Moreover, workflows using tools from different packages will rely on some of the same low-level operations, like computing PH and calculating distances between persistence diagrams. When each package is built for purpose, this will lead to either duplication or cascading dependencies.</p>
+<p>The <a href="https://tdaverse.github.io/phutil/">{phutil}</a> package addresses such fragmentation by providing a unified toolbox for handling persistence data. It offers consistent data structures and methods that work seamlessly with outputs from various TDA packages. As part of the <a href="https://github.com/tdaverse">TDAverse</a> initiative, {phutil} contributes to creating a coherent ecosystem for topological data analysis in R.</p>
+</section>
+<section id="minimal-mathematical-background" class="level2">
+<h2 class="anchored" data-anchor-id="minimal-mathematical-background">Minimal mathematical background</h2>
+<section id="persistent-homology" class="level3">
+<h3 class="anchored" data-anchor-id="persistent-homology">Persistent homology</h3>
+<p>The {phutil} <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html#definitions">documentation</a> provides an overview of persistent homology. For now, know that the result of this procedure is a <strong>persistence diagram</strong>: a multiset (set with multiplicity) of points in the plane—usually the upper-half plane and most often the first quadrant. Persistence diagrams encode topological features of different dimensions, and a single diagram may encode features of one or all dimensions. By <strong>persistence data</strong>, we mean a data structure that encodes diagrams of all dimensions, and possibly many diagrams coming from data sets of a common type.</p>
+</section>
+<section id="distances-between-persistence-diagrams" class="level3">
+<h3 class="anchored" data-anchor-id="distances-between-persistence-diagrams">Distances between persistence diagrams</h3>
+<p>Two persistence diagrams <img src="https://latex.codecogs.com/png.latex?X"> and <img src="https://latex.codecogs.com/png.latex?Y"> are canonically compared using <strong>Wasserstein distances</strong>. These are a family of metrics determined by a <img src="https://latex.codecogs.com/png.latex?q">-Minkowski distance on the plane and a <img src="https://latex.codecogs.com/png.latex?p">-norm on the distances between pairs of points matched via some <img src="https://latex.codecogs.com/png.latex?%5Cvarphi%20:%20X%20%5Cto%20Y">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Cleft(%20%5Csum_%7Bx%20%5Cin%20X%7D%7B%7B%5ClVert%0Ax-%5Cvarphi(x)%20%5CrVert_q%7D%5Ep%7D%20%5Cright)%5E%7B1/p%7D%20"></p>
+<p>The distance <img src="https://latex.codecogs.com/png.latex?W_p%5Eq(X,Y)"> is defined to be the infimum of this expression over all possible matchings. See the <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html">vignette</a> on distances for more detail, or <span class="citation" data-cites="cohen2010lipschitz">Cohen-Steiner et al. (2010)</span> and <span class="citation" data-cites="bubenik2023exact">Bubenik, Scott, and Stanley (2023)</span> for detailed treatments and stability results on these families of metrics.</p>
+</section>
+</section>
+<section id="implementations-in-phutil" class="level2">
+<h2 class="anchored" data-anchor-id="implementations-in-phutil">Implementations in {phutil}</h2>
+<p>The {phutil} package aims at serving as a low-level package that defines a unifying toolbox for handling persistence data. This section describes the class that has been implemented to handle a single persistence diagram as well as the distances between persistence diagrams. The package also provides a class of persistence data that can be used to store multiple diagrams, which is simply a list of persistence diagrams. This class is not described here, but will be the backbone of the forthcoming {inphr} package for making inference on persistence diagrams.</p>
+<section id="the-persistence-class" class="level3">
+<h3 class="anchored" data-anchor-id="the-persistence-class">The <a href="https://tdaverse.github.io/phutil/reference/persistence.html"><code>persistence</code></a> class</h3>
+<p>The ‘persistence’ class is a list with the following components:</p>
+<ul>
+<li><p><code>pairs</code>: A list of 2-column matrices containing birth-death pairs. The <img src="https://latex.codecogs.com/png.latex?i">-<em>th</em> element of the list corresponds to the <img src="https://latex.codecogs.com/png.latex?(i-1)">-<em>th</em> homology dimension. If there is no pairs for a given dimension but there are pairs in higher dimensions, the corresponding element(s) is/are filled with a <img src="https://latex.codecogs.com/png.latex?0%20%5Ctimes%202"> numeric matrix.</p></li>
+<li><p><code>metadata</code>: A list of length 6 containing information about how the data was computed:</p>
+<ul>
+<li><code>orderered_pairs</code>: A boolean indicating whether the pairs in the <code>pairs</code> list are ordered (i.e.&nbsp;the first column is strictly less than the second column).</li>
+<li><code>data</code>: The name of the object containing the original data on which the persistence data was computed.</li>
+<li><code>engine</code>: The name of the package and the function of this package that computed the persistence data in the form <code>"package_name::package_function"</code>.</li>
+<li><code>filtration</code>: The filtration used in the computation in a human-readable format (i.e.&nbsp;full names, capitals where need, etc.).</li>
+<li><code>parameters</code>: A list of parameters used in the computation.</li>
+<li><code>call</code>: The exact call that generated the persistence data.</li>
+</ul></li>
+</ul>
+<p>Currently, the following <code>S3</code> methods for objects of class <code>persistence</code> have been implemented:</p>
+<ul>
+<li>coercers from matrix, data.frame, objects of class ‘diagram’ as produced by <code>TDA::*Diag()</code> functions, objects of class ‘PHom’ as produced by <code>ripserr::vietoris_rips()</code> and objects of class ‘hclust’ as produced by <code>stats::hclust()</code>;</li>
+<li><code>format()</code> and <code>print()</code> which use the MIT-licensed <a href="https://cli.r-lib.org">{cli}</a> package behind the scene for printing out to the console a nice colourful but brief summary of the persistence data;</li>
+<li><code>get_pairs()</code> to extract homological features from a specific dimension;</li>
+<li>reverse coercers to go back to either matrix or data.frame representations.</li>
+</ul>
+<p>Some more details about how these coercers work can be found in the dedicated <a href="https://tdaverse.github.io/phutil/articles/persistence-class.html">vignette</a> on the website of the package.</p>
+<p>For instance, one can start by some simulated point cloud using the <a href="https://tdaverse.github.io/tdaunif/">{tdaunif}</a> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">point_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> tdaunif<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample_ellipse</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>L, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">ar =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span></code></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-point-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-point-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/index_files/figure-html/fig-point-data-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-point-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A sample of 100 points drawn uniformly on the contour of an ellispe.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A typical workflow would be to compute the persistence data from the point cloud shown in Figure&nbsp;1 using the <a href="https://cran.r-project.org/web/packages/TDA/index.html">{TDA}</a> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">ph_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> TDA<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ripsDiag</span>(</span>
+<span id="cb2-2">    point_data,</span>
+<span id="cb2-3">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">maxdimension =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>L,</span>
+<span id="cb2-4">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">maxscale =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.5</span></span>
+<span id="cb2-5">)</span></code></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-ph-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ph-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/index_files/figure-html/fig-ph-data-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ph-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Persistence data computed from the point cloud shown in Figure&nbsp;1.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The output that is displayed in Figure&nbsp;2 is a list with a component <code>diagram</code> that contains the persistence data in the form of an aobject of class ‘diagram’. The latter is a 3-column matrix with the first column containing the dimension of the homological feature, the second column containing the birth time and the third column containing the death time. The column names</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colnames</span>(ph_data<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>diagram)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "dimension" "Birth"     "Death"    </code></pre>
+</div>
+</div>
+<p>mix lower and upper cases. Finally the object also has attributes:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">names</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">attributes</span>(ph_data<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>diagram))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "dim"          "dimnames"     "class"        "maxdimension" "scale"       
+[6] "call"        </code></pre>
+</div>
+</div>
+<p>that store information about how the diagram has been computed. The <code>persistence</code> class can coerce the ‘diagram’ object into a ‘persistence’ object:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(phutil)</span>
+<span id="cb7-2">ph_data_pers <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as_persistence</span>(ph_data<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>diagram)</span>
+<span id="cb7-3">ph_data_pers</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+── Persistence Data ────────────────────────────────────────────────────────────
+ℹ There are 100 and 1 pairs in dimensions 0 and 1 respectively.
+ℹ Computed from a Vietoris-Rips filtration using `TDA::ripsDiag()`.
+ℹ With the following parameters: maxdimension = 1 and maxscale = 1.5.</code></pre>
+</div>
+</div>
+</section>
+<section id="distance-computations-using-hera" class="level3">
+<h3 class="anchored" data-anchor-id="distance-computations-using-hera">Distance computations using <a href="https://github.com/anigmetov/hera">Hera</a></h3>
+<p>The {phutil} package inlcudes functions to compute bottleneck and Wasserstein distances either between two persistence diagrams or in a pairwise fashion from a set of persistence diagrams. The underlying computation is actually performed via the BSD-licensed <a href="https://github.com/anigmetov/hera"><em>Hera</em></a> C++ library. The latter library is bundled within {phutil} which required a <code>LinkingTo</code> dependency on <a href="https://dirk.eddelbuettel.com/code/bh.html">{BH}</a> for providing access to the <a href="https://www.boost.org"><em>Boost</em></a> headers for Hera compilation. To this end, the required Boost licensing terms have been copied over with the MIT license terms which {phutil} depends on. Specifically, the following functions are available:</p>
+<ul>
+<li><code>bottleneck_distance()</code> and <code>wasserstein_distance()</code> compute the eponymous distance between two diagrams;</li>
+<li><code>bottleneck_pairwise_distances()</code> and <code>wasserstein_pairwise_distances()</code> compute pairwise distances among a sample of persistence diagrams; these functions have their C++ code parallelized via <a href="https://www.openmp.org">OpenMP</a>; to that end, they gain an optional <code>ncores</code> argument which is <code>1L</code> by default.</li>
+</ul>
+<p>For example, {phutil} has a built-in set of 100 persistence diagrams computed on 100 noisy versions of points on the 2-sphere. The diagrams are stored in the object <a href="https://tdaverse.github.io/phutil/reference/persistence_sample.html"><code>persistence_sample</code></a>. The following code computes the pairwise bottleneck distances between the first 7 diagrams in the set:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bottleneck_pairwise_distances</span>(</span>
+<span id="cb9-2">    persistence_sample[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>L<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>L],</span>
+<span id="cb9-3">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">ncores =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>L</span>
+<span id="cb9-4">)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           1          2          3          4          5          6
+2 0.06197453                                                       
+3 0.06182617 0.03393206                                            
+4 0.08125193 0.05359485 0.04198256                                 
+5 0.04190589 0.06276444 0.06261608 0.08065585                      
+6 0.02829251 0.05512256 0.05588969 0.09325840 0.03326582           
+7 0.11170465 0.07960792 0.06338179 0.06507459 0.11249456 0.11927148</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="a-stable-modular-extensible-package-collection" class="level2">
+<h2 class="anchored" data-anchor-id="a-stable-modular-extensible-package-collection">A stable, modular, extensible package collection</h2>
+<p>We are part of a loose-knit team of R developers interested in fostering a more sustainable and convenient package collection for TDA, which we’ve come to call the <a href="https://github.com/tdaverse">TDAverse</a>. The collection ranges from low-level, general-purpose packages like {tdaunif} and now {phutil}, through purpose-fit but interoperable packages like {ripserr} and {plt}, to Tidyverse extensions like {ggtda} and the forthcoming {tdarec}.</p>
+<p>Development of {phutil} was directly funded by an Infrastructure Steering Committee grant from the R Consortium, together with several other packages that will be presented in upcoming blog posts. While we hope to secure funding for other specific projects in future, we also invite interested developers or users to reach out with their issues or ideas.</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-bauer2021ripser" class="csl-entry">
+Bauer, Ulrich. 2021. <span>“Ripser: Efficient Computation of Vietoris–Rips Persistence Barcodes.”</span> <em>Journal of Applied and Computational Topology</em> 5 (3): 391–423.
+</div>
+<div id="ref-bubenik2023exact" class="csl-entry">
+Bubenik, Peter, Jonathan Scott, and Donald Stanley. 2023. <span>“Exact Weights, Path Metrics, and Algebraic Wasserstein Distances.”</span> <em>Journal of Applied and Computational Topology</em> 7 (2): 185–219.
+</div>
+<div id="ref-chazal2014stochastic" class="csl-entry">
+Chazal, Frédéric, Brittany Terese Fasy, Fabrizio Lecci, Alessandro Rinaldo, and Larry Wasserman. 2014. <span>“Stochastic Convergence of Persistence Landscapes and Silhouettes.”</span> In <em>Proceedings of the Thirtieth Annual Symposium on Computational Geometry</em>, 474–83.
+</div>
+<div id="ref-cohen2010lipschitz" class="csl-entry">
+Cohen-Steiner, David, Herbert Edelsbrunner, John Harer, and Yuriy Mileyko. 2010. <span>“Lipschitz Functions Have l p-Stable Persistence.”</span> <em>Foundations of Computational Mathematics</em> 10 (2): 127–39.
+</div>
+<div id="ref-fasy2014confidence" class="csl-entry">
+Fasy, Brittany Terese, Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman, Sivaraman Balakrishnan, and Aarti Singh. 2014. <span>“Confidence Sets for Persistence Diagrams.”</span>
+</div>
+<div id="ref-kaji2020cubical" class="csl-entry">
+Kaji, Shizuo, Takeki Sudo, and Kazushi Ahara. 2020. <span>“Cubical Ripser: Software for Computing Persistent Homology of Image and Volume Data.”</span> <em>arXiv Preprint arXiv:2005.12692</em>.
+</div>
+<div id="ref-wadhwa2018tdastats" class="csl-entry">
+Wadhwa, Raoul R, Drew FK Williamson, Andrew Dhawan, and Jacob G Scott. 2018. <span>“TDAstats: R Pipeline for Computing Persistent Homology in Topological Data Analysis.”</span> <em>Journal of Open Source Software</em> 3 (28): 860.
+</div>
+<div id="ref-wasserman2018topological" class="csl-entry">
+Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual Review of Statistics and Its Application</em> 5 (2018): 501–32.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/</guid>
+  <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/phutil-main-image.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Disease Outbreak Mapping, Open Source, and Outreach - Unijos R Users Group in Nigeria Leads the Way</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1210,47 +1467,6 @@
   <guid>https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/</guid>
   <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/analytics.png" medium="image" type="image/png" height="66" width="144"/>
-</item>
-<item>
-  <title>Introducing R to Malawi: A Community in the Making</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>David Mwale, the <a href="https://www.meetup.com/r-users-malawi/">R Users Malawi</a> group organizer, recently spoke with the R Consortium about his efforts to establish and grow the R community in Malawi. David shared insights into the group’s inaugural meeting, the excitement surrounding R among researchers and students, and his plans to engage academic institutions through online and in-person events. He also discussed the challenges of introducing R in a region where other tools like Stata and SPSS dominate and his vision for fostering a vibrant and supportive R ecosystem in Malawi.</p>
-<p><img src="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/DavidMwale.png" class="img-fluid" style="width:50.0%"></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>I hold a bachelor’s degree in agricultural economics and a diploma in monitoring and evaluation. I have experience working with various data software, including Stata and SPSS. Last year (2023), I enrolled in a master’s program in data science at the <a href="https://www.ed.ac.uk/">University of Edinburgh</a>, where I was introduced to the R programming language. I’ve used R a few times at work for school assessments and participated in several training sessions on LinkedIn Learning.</p>
-<p>Recently, I discovered user groups for R in neighboring countries, such as <a href="https://r-consortium.org/posts/collaborative-growth-the-botswana-r-user-group-and-regional-partnerships/index.html">Botswana</a>. I contacted the R user group in <a href="https://www.meetup.com/joburg-r-users-group/">Johannesburg</a> and learned about another community group on LinkedIn. I inquired about how they established their groups so we could create our own R user group. Following the steps they provided and the information I found on the R Consortium website, I applied to set up our group. I’m happy to report that we had our first meeting just last month.</p>
-<p><strong>Can you share what the R community is like in Malawi?</strong></p>
-<p>The use of R in Malawi is still in its infancy and is not widely adopted. For instance, at one academic institution, master’s students are still being taught Stata and SPSS. While these tools are not wrong, R is a programming language growing in popularity. It has a large community and significant support.</p>
-<p>One issue may be that academic institution lecturers themselves still need to become familiar with R. They tend to teach what they already know, which might limit students’ exposure to more modern tools. A colleague of mine, pursuing his studies at an institution in Malawi, mentioned that they still use Stata for their master’s dissertation. Again, while this is acceptable, R offers more advantages.</p>
-<p><img src="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/RUsersMalawi.png" class="img-fluid" style="width:50.0%"></p>
-<p><strong>How was the response to your first event? How did you promote the event?</strong></p>
-<p>I created a <a href="https://www.linkedin.com/company/r-users-malawi/posts/?feedView=all">LinkedIn</a> account and designed a poster for the event. I posted the poster on LinkedIn, X (formerly Twitter), and my WhatsApp status. Many people registered for the event; however, since this was our first event, I needed to figure out how to manage the registration link. We encountered an issue with the registration link for which platform to use.</p>
-<p>I switched from Zoom to Google Meet because Zoom has associated costs. Although many people registered for the meeting, the turnout was significantly lower than expected. There might have been confusion regarding the links I shared. We used one link on the advertising poster, but I sent a different link closer to the meeting time through the R user group. Some people did not notice the latest email I sent.</p>
-<p><strong>What are your plans for the group going forward? Do you plan on hosting online or in-person events?</strong></p>
-<p>I have two plans. I intend to continue hosting meetings online and in person, particularly at universities, where I can engage with fellow students.</p>
-<p>In summary, I aim to organize a meeting around January or February in 2025. I would like to connect with either a student leader or a department head, such as a lecturer interested in data science so that we can hold an R user session for the students on their campus.</p>
-<p>Regarding the group’s organization, I am currently looking for co-organizers. I reached out to one person, but they are too busy. I also contacted another individual currently in Germany but originally from Malawi, and he is interested in participating as an organizer.</p>
-<p>When I advertised the R User Group, there was a positive response because R is not widely used here in Malawi. Despite its limited usage, there was significant excitement among people working in research, data monitoring, evaluation, and academic students. Although the turnout at our first meeting was lower than expected, the enthusiasm will grow as we continue. Many people are eager to learn how to use R.</p>
-<p>Since this is just the beginning, it can be challenging to get started and engage people, but over time, we will likely attract more members and find co-organizers to assist with event planning. We are optimistic about promoting the use of R in Malawi.</p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/</guid>
-  <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/RUsersMalawi-main.png" medium="image" type="image/png" height="109" width="144"/>
 </item>
 </channel>
 </rss>
