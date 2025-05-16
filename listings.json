@@ -1,6 +1,27 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "items": [
+      "/webinars/AdoptionOfRInJapansPharma.html",
+      "/webinars/RMedicineWebinar.html",
+      "/webinars/containerization-and-r-for-reproducibility.html",
+      "/webinars/escape-the-data-dungeon.html",
+      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
+      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
+      "/webinars/r-insurance-series.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
+      "/webinars/super-charging-r-with-oracle-database.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-insights-from-latinr.html",
+      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
+      "/webinars/webinars.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
     "items": [
       "/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/index.html",
       "/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/index.html",
@@ -117,8 +138,9 @@
     ]
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
+      "/posts/unifying-toolbox-for-handling-persistence-data/phutil-blog.html",
       "/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/index.html",
       "/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/index.html",
       "/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/index.html",
@@ -223,27 +245,6 @@
       "/posts/pfizer-r-adoption-webinar-february-8-2024/index.html",
       "/posts/join-fake-it-until-you-make-it how-and-why-to-simulate-data first-glasgow-user-group-event-of-the-year/index.html",
       "/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html"
-    ]
-  },
-  {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
-    "items": [
-      "/webinars/AdoptionOfRInJapansPharma.html",
-      "/webinars/RMedicineWebinar.html",
-      "/webinars/containerization-and-r-for-reproducibility.html",
-      "/webinars/escape-the-data-dungeon.html",
-      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
-      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
-      "/webinars/r-insurance-series.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
-      "/webinars/super-charging-r-with-oracle-database.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/unlocking-insights-from-latinr.html",
-      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
-      "/webinars/webinars.html"
     ]
   }
 ]

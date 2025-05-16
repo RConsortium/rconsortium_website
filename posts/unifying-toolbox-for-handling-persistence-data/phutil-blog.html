@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Aymeric Stamm, Jason Cory Brunson">
+<meta name="dcterms.date" content="2025-05-16">
+
+<title>A unifying toolbox for handling persistence data – R Consortium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f68d48b15c60fac921f4922b2abb42c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../about/index.html">
+ <span class="dropdown-text">Mission</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
+ <span class="dropdown-text">ISC Charter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/faq.html">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/privacy.html">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../../members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/join.html">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../../all-projects/index.html">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-universe.dev/search">
+ <span class="dropdown-text">R-Universe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/">
+ <span class="dropdown-text">R/Medicine</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../webinars/webinars.html">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/events.html">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/cal.html">
+ <span class="dropdown-text">WG Calendar</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../../blog/index.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+ <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+ <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../codeofconduct.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/RConsortium"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">A unifying toolbox for handling persistence data</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Aymeric Stamm, Jason Cory Brunson </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 16, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="topological-data-analysis-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="topological-data-analysis-in-r">Topological data analysis in R</h2>
+<p>Topological data analysis (TDA) is a rapidly growing field that uses techniques from algebraic topology to analyze the shape and structure of data. At its core, TDA provides tools to understand the geometric and topological features of datasets across multiple scales, with persistent homology (PH) being one of its fundamental techniques.</p>
+<p>Several R packages have emerged to provide TDA capabilities to the R community, including:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=TDA">{TDA}</a> which focuses on statistical analysis of PH and density clustering by providing an R interface for the efficient algorithms of the C++ libraries <a href="https://project.inria.fr/gudhi/software/">GUDHI</a>, <a href="https://www.mrzv.org/software/dionysus/">Dionysus</a> and <a href="https://bitbucket.org/phat-code/phat/">PHAT</a>. This package also implements methods from <span class="citation" data-cites="fasy2014confidence">Fasy et al. (<a href="#ref-fasy2014confidence" role="doc-biblioref">2014</a>)</span> and <span class="citation" data-cites="chazal2014stochastic">Chazal et al. (<a href="#ref-chazal2014stochastic" role="doc-biblioref">2014</a>)</span> for analyzing the statistical significance of PH features.</li>
+<li><a href="https://cran.r-project.org/package=TDAstats">{TDAstats}</a> which provides a comprehensive toolset for conducting TDA, specifically via the calculation of PH in a Vietoris-Rips complex <span class="citation" data-cites="wadhwa2018tdastats">(<a href="#ref-wadhwa2018tdastats" role="doc-biblioref">Wadhwa et al. 2018</a>)</span>.</li>
+<li><a href="https://cran.r-project.org/package=ripserr">{ripserr}</a> which provides an R interface to the <a href="https://github.com/Ripser/ripser">Ripser</a> and <a href="https://github.com/CubicalRipser">Cubical Ripser</a> C++ libraries <span class="citation" data-cites="bauer2021ripser kaji2020cubical">(<a href="#ref-bauer2021ripser" role="doc-biblioref">Bauer 2021</a>; <a href="#ref-kaji2020cubical" role="doc-biblioref">Kaji, Sudo, and Ahara 2020</a>)</span>.</li>
+<li><a href="https://cran.r-project.org/package=TDAkit">{TDAkit}</a> which provides a variety of algorithms to learn with PH of the data based on functional summaries for clustering, hypothesis testing, and visualization <span class="citation" data-cites="wasserman2018topological">(<a href="#ref-wasserman2018topological" role="doc-biblioref">Wasserman 2018</a>)</span>.</li>
+<li>Other packages that have been archived due to lack of maintenance (e.g. <a href="https://cran.r-project.org/package=kernelTDA">{kernelTDA}</a>).</li>
+</ul>
+<p>While these packages have made TDA more accessible, they’ve also introduced different data structures for representing persistence data, creating challenges for interoperability and workflow consistency. Moreover, workflows using tools from different packages will rely on some of the same low-level operations, like computing PH and calculating distances between persistence diagrams. When each package is built for purpose, this will lead to either duplication or cascading dependencies.</p>
+<p>The <a href="https://tdaverse.github.io/phutil/">{phutil}</a> package addresses such fragmentation by providing a unified toolbox for handling persistence data. It offers consistent data structures and methods that work seamlessly with outputs from various TDA packages. As part of the <a href="https://github.com/tdaverse">TDAverse</a> initiative, {phutil} contributes to creating a coherent ecosystem for topological data analysis in R.</p>
+</section>
+<section id="minimal-mathematical-background" class="level2">
+<h2 class="anchored" data-anchor-id="minimal-mathematical-background">Minimal mathematical background</h2>
+<section id="persistent-homology" class="level3">
+<h3 class="anchored" data-anchor-id="persistent-homology">Persistent homology</h3>
+<p>The {phutil} <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html#definitions">documentation</a> provides an overview of persistent homology. For now, know that the result of this procedure is a <strong>persistence diagram</strong>: a multiset (set with multiplicity) of points in the plane—usually the upper-half plane and most often the first quadrant. Persistence diagrams encode topological features of different dimensions, and a single diagram may encode features of one or all dimensions. By <strong>persistence data</strong>, we mean a data structure that encodes diagrams of all dimensions, and possibly many diagrams coming from data sets of a common type.</p>
+</section>
+<section id="distances-between-persistence-diagrams" class="level3">
+<h3 class="anchored" data-anchor-id="distances-between-persistence-diagrams">Distances between persistence diagrams</h3>
+<p>Two persistence diagrams <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are canonically compared using <strong>Wasserstein distances</strong>. These are a family of metrics determined by a <span class="math inline">\(q\)</span>-Minkowski distance on the plane and a <span class="math inline">\(p\)</span>-norm on the distances between pairs of points matched via some <span class="math inline">\(\varphi : X \to Y\)</span>:</p>
+<p><span class="math display">\[ \left( \sum_{x \in X}{{\lVert
+x-\varphi(x) \rVert_q}^p} \right)^{1/p} \]</span></p>
+<p>The distance <span class="math inline">\(W_p^q(X,Y)\)</span> is defined to be the infimum of this expression over all possible matchings. See the <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html">vignette</a> on distances for more detail, or <span class="citation" data-cites="cohen2010lipschitz">Cohen-Steiner et al. (<a href="#ref-cohen2010lipschitz" role="doc-biblioref">2010</a>)</span> and <span class="citation" data-cites="bubenik2023exact">Bubenik, Scott, and Stanley (<a href="#ref-bubenik2023exact" role="doc-biblioref">2023</a>)</span> for detailed treatments and stability results on these families of metrics.</p>
+</section>
+</section>
+<section id="implementations-in-phutil" class="level2">
+<h2 class="anchored" data-anchor-id="implementations-in-phutil">Implementations in {phutil}</h2>
+<p>The {phutil} package aims at serving as a low-level package that defines a unifying toolbox for handling persistence data. This section describes the class that has been implemented to handle a single persistence diagram as well as the distances between persistence diagrams. The package also provides a class of persistence data that can be used to store multiple diagrams, which is simply a list of persistence diagrams. This class is not described here, but will be the backbone of the forthcoming {inphr} package for making inference on persistence diagrams.</p>
+<section id="the-persistence-class" class="level3">
+<h3 class="anchored" data-anchor-id="the-persistence-class">The <a href="https://tdaverse.github.io/phutil/reference/persistence.html"><code>persistence</code></a> class</h3>
+<p>The ‘persistence’ class is a list with the following components:</p>
+<ul>
+<li><p><code>pairs</code>: A list of 2-column matrices containing birth-death pairs. The <span class="math inline">\(i\)</span>-<em>th</em> element of the list corresponds to the <span class="math inline">\((i-1)\)</span>-<em>th</em> homology dimension. If there is no pairs for a given dimension but there are pairs in higher dimensions, the corresponding element(s) is/are filled with a <span class="math inline">\(0 \times 2\)</span> numeric matrix.</p></li>
+<li><p><code>metadata</code>: A list of length 6 containing information about how the data was computed:</p>
+<ul>
+<li><code>orderered_pairs</code>: A boolean indicating whether the pairs in the <code>pairs</code> list are ordered (i.e.&nbsp;the first column is strictly less than the second column).</li>
+<li><code>data</code>: The name of the object containing the original data on which the persistence data was computed.</li>
+<li><code>engine</code>: The name of the package and the function of this package that computed the persistence data in the form <code>"package_name::package_function"</code>.</li>
+<li><code>filtration</code>: The filtration used in the computation in a human-readable format (i.e.&nbsp;full names, capitals where need, etc.).</li>
+<li><code>parameters</code>: A list of parameters used in the computation.</li>
+<li><code>call</code>: The exact call that generated the persistence data.</li>
+</ul></li>
+</ul>
+<p>Currently, the following <code>S3</code> methods for objects of class <code>persistence</code> have been implemented:</p>
+<ul>
+<li>coercers from matrix, data.frame, objects of class ‘diagram’ as produced by <code>TDA::*Diag()</code> functions, objects of class ‘PHom’ as produced by <code>ripserr::vietoris_rips()</code> and objects of class ‘hclust’ as produced by <code>stats::hclust()</code>;</li>
+<li><code>format()</code> and <code>print()</code> which use the MIT-licensed <a href="https://cli.r-lib.org">{cli}</a> package behind the scene for printing out to the console a nice colourful but brief summary of the persistence data;</li>
+<li><code>get_pairs()</code> to extract homological features from a specific dimension;</li>
+<li>reverse coercers to go back to either matrix or data.frame representations.</li>
+</ul>
+<p>Some more details about how these coercers work can be found in the dedicated <a href="https://tdaverse.github.io/phutil/articles/persistence-class.html">vignette</a> on the website of the package.</p>
+<p>For instance, one can start by some simulated point cloud using the <a href="https://tdaverse.github.io/tdaunif/">{tdaunif}</a> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>point_data <span class="ot">&lt;-</span> tdaunif<span class="sc">::</span><span class="fu">sample_ellipse</span>(<span class="at">n =</span> <span class="dv">100</span>L, <span class="at">ar =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-point-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-point-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phutil-blog_files/figure-html/fig-point-data-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-point-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A sample of 100 points drawn uniformly on the contour of an ellispe.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A typical workflow would be to compute the persistence data from the point cloud shown in <a href="#fig-point-data" class="quarto-xref">Figure&nbsp;1</a> using the <a href="https://cran.r-project.org/web/packages/TDA/index.html">{TDA}</a> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ph_data <span class="ot">&lt;-</span> TDA<span class="sc">::</span><span class="fu">ripsDiag</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    point_data,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">maxdimension =</span> <span class="dv">1</span>L,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">maxscale =</span> <span class="fl">1.5</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-ph-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ph-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phutil-blog_files/figure-html/fig-ph-data-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ph-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Persistence data computed from the point cloud shown in <a href="#fig-point-data" class="quarto-xref">Figure&nbsp;1</a>.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The output that is displayed in <a href="#fig-ph-data" class="quarto-xref">Figure&nbsp;2</a> is a list with a component <code>diagram</code> that contains the persistence data in the form of an aobject of class ‘diagram’. The latter is a 3-column matrix with the first column containing the dimension of the homological feature, the second column containing the birth time and the third column containing the death time. The column names</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(ph_data<span class="sc">$</span>diagram)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "dimension" "Birth"     "Death"    </code></pre>
+</div>
+</div>
+<p>mix lower and upper cases. Finally the object also has attributes:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(<span class="fu">attributes</span>(ph_data<span class="sc">$</span>diagram))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "dim"          "dimnames"     "class"        "maxdimension" "scale"       
+[6] "call"        </code></pre>
+</div>
+</div>
+<p>that store information about how the diagram has been computed. The <code>persistence</code> class can coerce the ‘diagram’ object into a ‘persistence’ object:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phutil)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ph_data_pers <span class="ot">&lt;-</span> <span class="fu">as_persistence</span>(ph_data<span class="sc">$</span>diagram)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ph_data_pers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+── Persistence Data ────────────────────────────────────────────────────────────
+ℹ There are 100 and 1 pairs in dimensions 0 and 1 respectively.
+ℹ Computed from a Vietoris-Rips filtration using `TDA::ripsDiag()`.
+ℹ With the following parameters: maxdimension = 1 and maxscale = 1.5.</code></pre>
+</div>
+</div>
+</section>
+<section id="distance-computations-using-hera" class="level3">
+<h3 class="anchored" data-anchor-id="distance-computations-using-hera">Distance computations using <a href="https://github.com/anigmetov/hera">Hera</a></h3>
+<p>The {phutil} package inlcudes functions to compute bottleneck and Wasserstein distances either between two persistence diagrams or in a pairwise fashion from a set of persistence diagrams. The underlying computation is actually performed via the BSD-licensed <a href="https://github.com/anigmetov/hera"><em>Hera</em></a> C++ library. The latter library is bundled within {phutil} which required a <code>LinkingTo</code> dependency on <a href="https://dirk.eddelbuettel.com/code/bh.html">{BH}</a> for providing access to the <a href="https://www.boost.org"><em>Boost</em></a> headers for Hera compilation. To this end, the required Boost licensing terms have been copied over with the MIT license terms which {phutil} depends on. Specifically, the following functions are available:</p>
+<ul>
+<li><code>bottleneck_distance()</code> and <code>wasserstein_distance()</code> compute the eponymous distance between two diagrams;</li>
+<li><code>bottleneck_pairwise_distances()</code> and <code>wasserstein_pairwise_distances()</code> compute pairwise distances among a sample of persistence diagrams; these functions have their C++ code parallelized via <a href="https://www.openmp.org">OpenMP</a>; to that end, they gain an optional <code>ncores</code> argument which is <code>1L</code> by default.</li>
+</ul>
+<p>For example, {phutil} has a built-in set of 100 persistence diagrams computed on 100 noisy versions of points on the 2-sphere. The diagrams are stored in the object <a href="https://tdaverse.github.io/phutil/reference/persistence_sample.html"><code>persistence_sample</code></a>. The following code computes the pairwise bottleneck distances between the first 7 diagrams in the set:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bottleneck_pairwise_distances</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    persistence_sample[<span class="dv">1</span>L<span class="sc">:</span><span class="dv">7</span>L],</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">ncores =</span> <span class="dv">2</span>L</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           1          2          3          4          5          6
+2 0.06197453                                                       
+3 0.06182617 0.03393206                                            
+4 0.08125193 0.05359485 0.04198256                                 
+5 0.04190589 0.06276444 0.06261608 0.08065585                      
+6 0.02829251 0.05512256 0.05588969 0.09325840 0.03326582           
+7 0.11170465 0.07960792 0.06338179 0.06507459 0.11249456 0.11927148</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="a-stable-modular-extensible-package-collection" class="level2">
+<h2 class="anchored" data-anchor-id="a-stable-modular-extensible-package-collection">A stable, modular, extensible package collection</h2>
+<p>We are part of a loose-knit team of R developers interested in fostering a more sustainable and convenient package collection for TDA, which we’ve come to call the <a href="https://github.com/tdaverse">TDAverse</a>. The collection ranges from low-level, general-purpose packages like {tdaunif} and now {phutil}, through purpose-fit but interoperable packages like {ripserr} and {plt}, to Tidyverse extensions like {ggtda} and the forthcoming {tdarec}.</p>
+<p>Development of {phutil} was directly funded by an Infrastructure Steering Committee grant from the R Consortium, together with several other packages that will be presented in upcoming blog posts. While we hope to secure funding for other specific projects in future, we also invite interested developers or users to reach out with their issues or ideas.</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bauer2021ripser" class="csl-entry" role="listitem">
+Bauer, Ulrich. 2021. <span>“Ripser: Efficient Computation of Vietoris–Rips Persistence Barcodes.”</span> <em>Journal of Applied and Computational Topology</em> 5 (3): 391–423.
+</div>
+<div id="ref-bubenik2023exact" class="csl-entry" role="listitem">
+Bubenik, Peter, Jonathan Scott, and Donald Stanley. 2023. <span>“Exact Weights, Path Metrics, and Algebraic Wasserstein Distances.”</span> <em>Journal of Applied and Computational Topology</em> 7 (2): 185–219.
+</div>
+<div id="ref-chazal2014stochastic" class="csl-entry" role="listitem">
+Chazal, Frédéric, Brittany Terese Fasy, Fabrizio Lecci, Alessandro Rinaldo, and Larry Wasserman. 2014. <span>“Stochastic Convergence of Persistence Landscapes and Silhouettes.”</span> In <em>Proceedings of the Thirtieth Annual Symposium on Computational Geometry</em>, 474–83.
+</div>
+<div id="ref-cohen2010lipschitz" class="csl-entry" role="listitem">
+Cohen-Steiner, David, Herbert Edelsbrunner, John Harer, and Yuriy Mileyko. 2010. <span>“Lipschitz Functions Have l p-Stable Persistence.”</span> <em>Foundations of Computational Mathematics</em> 10 (2): 127–39.
+</div>
+<div id="ref-fasy2014confidence" class="csl-entry" role="listitem">
+Fasy, Brittany Terese, Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman, Sivaraman Balakrishnan, and Aarti Singh. 2014. <span>“Confidence Sets for Persistence Diagrams.”</span>
+</div>
+<div id="ref-kaji2020cubical" class="csl-entry" role="listitem">
+Kaji, Shizuo, Takeki Sudo, and Kazushi Ahara. 2020. <span>“Cubical Ripser: Software for Computing Persistent Homology of Image and Volume Data.”</span> <em>arXiv Preprint arXiv:2005.12692</em>.
+</div>
+<div id="ref-wadhwa2018tdastats" class="csl-entry" role="listitem">
+Wadhwa, Raoul R, Drew FK Williamson, Andrew Dhawan, and Jacob G Scott. 2018. <span>“TDAstats: R Pipeline for Computing Persistent Homology in Topological Data Analysis.”</span> <em>Journal of Open Source Software</em> 3 (28): 860.
+</div>
+<div id="ref-wasserman2018topological" class="csl-entry" role="listitem">
+Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual Review of Statistics and Its Application</em> 5 (2018): 501–32.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/r-consortium\.org");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
