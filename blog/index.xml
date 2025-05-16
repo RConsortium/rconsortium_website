@@ -229,7 +229,7 @@ font-style: inherit;">2</span>L</span>
 <section id="a-stable-modular-extensible-package-collection" class="level2">
 <h2 class="anchored" data-anchor-id="a-stable-modular-extensible-package-collection">A stable, modular, extensible package collection</h2>
 <p>We are part of a loose-knit team of R developers interested in fostering a more sustainable and convenient package collection for TDA, which we’ve come to call the <a href="https://github.com/tdaverse">TDAverse</a>. The collection ranges from low-level, general-purpose packages like {tdaunif} and now {phutil}, through purpose-fit but interoperable packages like {ripserr} and {plt}, to Tidyverse extensions like {ggtda} and the forthcoming {tdarec}.</p>
-<p><img src="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/aymeric.jpg" class="img-fluid" style="width:42.0%"> <img src="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/dewey.jpg" class="img-fluid" style="width:40.0%"></p>
+<p><img src="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/aymeric.jpg" class="img-fluid" style="width:40.0%"> <img src="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/Jason_Cory_Brunson.jpg" class="img-fluid" style="width:42.0%"></p>
 <p>Development of {phutil} was directly funded by an Infrastructure Steering Committee grant from the R Consortium, together with several other packages that will be presented in upcoming blog posts. While we hope to secure funding for other specific projects in future, we also invite interested developers or users to reach out with their issues or ideas.</p>
 </section>
 <section id="references" class="level2">
