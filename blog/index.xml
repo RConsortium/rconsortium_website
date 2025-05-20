@@ -10,7 +10,110 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Fri, 16 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Reproducibility Without Containers: Bruno Rodrigues Introduces Nix and the {rix} R Package</title>
+  <dc:creator>R Consortium Community Assistant, Caitlyn Oda</dc:creator>
+  <link>https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/brunoheadshot.jpeg" class="img-fluid" style="width:30.0%"></p>
+<p>At a <a href="https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html">recent R Medicine webinar hosted by the R Consortium</a>, Bruno Rodrigues, Head of the Statistics and Data Strategy Departments at Luxembourg’s Ministry of Research and Higher Education, presented an innovative approach to reproducibility in R: one that eliminates the complexity of containerization, works seamlessly across systems, and offers analysis reproducibility for years into the future.</p>
+<hr>
+<section id="the-challenge-of-reproducibility-in-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="the-challenge-of-reproducibility-in-data-science">The Challenge of Reproducibility in Data Science</h3>
+<p>Reproducibility is a cornerstone of scientific research, yet achieving it in data science remains challenging. Rodrigues explains that reproducibility is on a continuum and depends on 4 factors: the version of R, package versions, operating systems, and hardware. Traditional tools like <code>{renv}</code> capture R package dependencies but fall short in tracking system-level libraries or the R interpreter itself. In my own work, I’ve utilized <code>{renv}</code>to import packages for implementing tables for R-powered websites. Containerization tools like Docker offer more comprehensive encapsulation but come with their own complexities and do not guarantee deterministic builds.</p>
+<p>Rodrigues emphasized that true reproducibility requires capturing the entire computational environment, including system libraries, compilers, and the operating system. This holistic approach ensures that analyses can be rerun with identical results, regardless of changes in the software ecosystem.</p>
+<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/continuum.png" class="img-fluid" style="width:70.0%"></p>
+<hr>
+</section>
+<section id="nix-a-functional-package-manager-for-reproducible-builds" class="level3">
+<h3 class="anchored" data-anchor-id="nix-a-functional-package-manager-for-reproducible-builds">Nix: A Functional Package Manager for Reproducible Builds</h3>
+<p>Nix is a cross-platform package manager designed for reproducibility. It allows users to define environments declaratively, ensuring that builds are deterministic and environments can be recreated identically across different systems and over time. Nix manages not just R packages but also system dependencies, making it a comprehensive solution for reproducible research.</p>
+<p>Rodrigues highlighted that Nix’s approach to package management eliminates issues related to hidden dependencies and environment drift, common pitfalls in data science workflows.</p>
+<p>“Nix really makes it possible to reach this gold standard of reproducibility.”</p>
+<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/nix.png" class="img-fluid" style="width:40.0%"></p>
+<hr>
+</section>
+<section id="introducing-rix-bridging-r-and-nix" class="level3">
+<h3 class="anchored" data-anchor-id="introducing-rix-bridging-r-and-nix">Introducing <code>{rix}</code>: Bridging R and Nix</h3>
+<p>To make Nix more accessible to R users, Rodrigues developed <code>{rix}</code>, an R package that simplifies the creation of reproducible environments using Nix. With <code>{rix}</code>, users can generate Nix expressions directly from R, specifying the R version, required packages, system dependencies, and preferred IDEs.</p>
+<p>The core function, <code>rix()</code>, generates a <code>default.nix</code> file, which Nix uses to build the environment. This process ensures that the entire software stack, from the R interpreter to system libraries, is captured and can be reproduced reliably.</p>
+<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/rix.jpeg" class="img-fluid" style="width:40.0%"></p>
+<hr>
+</section>
+<section id="the-magic-of-rix" class="level3">
+<h3 class="anchored" data-anchor-id="the-magic-of-rix">The “Magic” of <code>{rix}</code></h3>
+<p>One of the standout features of <code>{rix}</code> is its ability to “freeze” environments in time. By specifying a particular date, users can recreate the exact state of CRAN and Bioconductor repositories as they existed on that day. This temporal pinning ensures that analyses remain reproducible, even as packages evolve.</p>
+<p>Rodrigues described this capability as the “magic” of <code>{rix}</code>, allowing researchers to maintain consistent environments without manual intervention.</p>
+<hr>
+</section>
+<section id="key-advantages-of-rix" class="level3">
+<h3 class="anchored" data-anchor-id="key-advantages-of-rix">Key Advantages of <code>{rix}</code></h3>
+<p>Rodrigues highlighted two critical benefits of using <code>{rix}</code>:</p>
+<ol type="1">
+<li><p><strong>No Need for Pre-installed R</strong>: Once the Nix expression is generated, the environment can be built using Nix alone, eliminating the need for R to be pre-installed on the system. This feature is particularly useful for deploying environments on CI/CD systems or sharing with collaborators.</p></li>
+<li><p><strong>Seamless Integration with Docker</strong>: While Nix ensures reproducibility, Docker offers portability. <code>{rix}</code> allows users to wrap Nix-built environments into Docker containers, combining the strengths of both tools for long-term preservation and distribution.</p></li>
+</ol>
+<hr>
+</section>
+<section id="real-world-applications-and-future-developments" class="level3">
+<h3 class="anchored" data-anchor-id="real-world-applications-and-future-developments">Real-world Applications and Future Developments</h3>
+<p>Rodrigues demonstrated how <code>{rix}</code> can be used to create environments that include IDEs like RStudio or VS Code, as well as additional languages like Python and Rust. One example where <code>{rix}</code> could come into play is the R Consortium website, which is published using Quarto, and uses RStudio and <code>{renv}</code> as a main part of the workflow. The content is pushed to GitHub where it’s published using GitHub Actions. These environments can be deployed across various platforms, including CI/CD pipelines, ensuring consistent and reproducible workflows.</p>
+<p>Looking ahead, Rodrigues is developing <code>{rixpress}</code>, a companion package inspired by <code>{targets}</code>. <code>{rixpress}</code> aims to facilitate the creation of reproducible analytical pipelines, further enhancing the capabilities of <code>{rix}</code> and Nix in data science projects.</p>
+<hr>
+</section>
+<section id="getting-started-with-rix" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-rix">Getting Started with <code>{rix}</code></h3>
+<p>To begin using <code>{rix}</code>, install the package from CRAN:</p>
+<p>R<br>
+Copy code<br>
+<code>install.packages("rix")</code></p>
+<p>Then, generate a Nix expression for your project:</p>
+<p>R<br>
+Copy code<br>
+<code>library(rix)</code></p>
+<p><code>rix(</code><br>
+<code>date = "2024-12-14",</code><br>
+<code>r_pkgs = c("dplyr", "ggplot2"),</code><br>
+<code>system_pkgs = NULL,</code><br>
+<code>git_pkgs = NULL,</code><br>
+<code>ide = "code",</code><br>
+<code>project_path = ".",</code><br>
+<code>overwrite = TRUE,</code><br>
+<code>print = TRUE</code><br>
+<code>)</code></p>
+<p>This command creates a <code>default.nix</code> file and an <code>.Rprofile</code>, setting up a reproducible environment tailored to your project’s needs.</p>
+<hr>
+</section>
+<section id="resources" class="level3">
+<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<ul>
+<li><strong>Bruno Rodrigues’s Slides</strong>: <a href="https://b-rodrigues.github.io/r-medicine-rix/#/title-slide\">https://b-rodrigues.github.io/r-medicine-rix/#/title-slide</a><br>
+</li>
+<li><strong>GitHub Repository</strong>: <a href="https://github.com/ropensci/rix">https://github.com/ropensci/rix</a><br>
+</li>
+<li><strong>CRAN Package</strong>: <a href="https://cran.r-project.org/package=rix">https://cran.r-project.org/package=rix</a><br>
+</li>
+<li><strong>Documentation</strong>: <a href="https://docs.ropensci.org/rix">https://docs.ropensci.org/rix</a><br>
+</li>
+<li><strong>Webinar Recording</strong>: <a href="https://www.youtube.com/watch?v=jhiRNQHbEXo">R/Medicine YouTube Channel</a><br>
+</li>
+<li><strong>Bruno Rodrigues’s Blog</strong>: <a href="https://brodrigues.co">https://brodrigues.co</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/</guid>
+  <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/rix-main-image.png" medium="image" type="image/png" height="78" width="144"/>
+</item>
 <item>
   <title>A unifying toolbox for handling persistence data</title>
   <dc:creator>Aymeric Stamm, Jason Cory Brunson</dc:creator>
@@ -1408,66 +1511,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/clinical-reporting-roches-nest-and-admiral-teams/</guid>
   <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/clinical-reporting-roches-nest-and-admiral-teams/nest-admiral.png" medium="image" type="image/png" height="79" width="144"/>
-</item>
-<item>
-  <title>User-Friendly Technical Cookbook-Style CRAN Guide for New R Programmers Ready</title>
-  <dc:creator>Jasmine Daly, Beni Altmann</dc:creator>
-  <link>https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><em>Guest blog post contributed by Jasmine Daly, Principal Consultant &amp; Founder of <a href="https://www.dalyanalytics.com/">Daly Analytics</a>, maintainer of 2 CRAN packages, and Beni Altmann, Student, assistant member of the CRAN Team working on CRAN submissions</em></p>
-<section id="making-the-cran-submission-process-easy" class="level2">
-<h2 class="anchored" data-anchor-id="making-the-cran-submission-process-easy">Making the CRAN Submission Process Easy</h2>
-<p>As we close out the first phase of the project - Improving the Skills of R Package Maintainers, also known as <a href="https://contributor.r-project.org/cran-cookbook/">The CRAN Cookbook</a> - we’re reflecting on its journey and impact. This initiative began with an ambitious but focused goal: to create a user-friendly, technical cookbook-style guide to help new R programmers and package maintainers navigate the CRAN submission process. The ultimate vision was to streamline this process, reduce common frustrations, and elevate the quality of open-source contributions to the R ecosystem.</p>
-<p>The CRAN Cookbook aimed to provide clear, explainable solutions for frequent errors while supporting maintainers in producing high-quality software.</p>
-<p>We’ve come a long way in a short time. We’re excited to share what we’ve accomplished!</p>
-<p>If you want to help contribute, please see: <a href="https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide">https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide</a></p>
-</section>
-<section id="overview-of-what-we-have-currently-published" class="level2">
-<h2 class="anchored" data-anchor-id="overview-of-what-we-have-currently-published">Overview of what we have currently published</h2>
-<p>After nearly 6 months of collaboration, we’ve published a comprehensive cookbook addressing the most common issues encountered during the CRAN submissions. Our work benefited greatly from Beni Altmann’s deep experience as a member of the CRAN team, where he has spent a lot of time interfacing with maintainers.</p>
-<p>The CRAN Cookbook includes:</p>
-<ul>
-<li><strong>General Issues</strong>: Best practices and tips guidance for CRAN submissions.</li>
-<li><strong>Manuals &amp; Documentation Issues</strong>: Tips on creating clear, accurate, and compliant help documentation files, using roxygen2, and creating examples, vignettes, and tests..</li>
-<li><strong>Code Issues</strong>: Addressing common challenges in writing functions, managing file and directory operations, and handling installation and compute resources.</li>
-<li><strong>DESCRIPTION File Issues</strong>: Essential guidance for crafting a compliant and informative DESCRIPTION file.</li>
-</ul>
-</section>
-<section id="how-its-getting-used-by-the-cran-team" class="level2">
-<h2 class="anchored" data-anchor-id="how-its-getting-used-by-the-cran-team">How it’s getting used by the CRAN Team</h2>
-<p>The CRAN team has already integrated the cookbook into their workflows. When encountering these common issues during package reviews, they refer maintainers to specific sections of the cookbook in their email correspondence. This approach not only expedites resolution but also empowers maintainers to tackle future challenges independently. It’s been gratifying to see the cookbook become a practical tool for fostering a more efficient submission process.</p>
-</section>
-<section id="what-we-learned-or-impressions-of-working-on-this-project" class="level2">
-<h2 class="anchored" data-anchor-id="what-we-learned-or-impressions-of-working-on-this-project">What we learned or impressions of working on this project</h2>
-<p>Jasmine: “I’m grateful for the opportunity to contribute a valuable resource to the R community in the form of new, user-friendly technical documentation. I deeply valued the experience of collaborating with my co-writer, Beni and working together to hopefully improve the CRAN submission process.”</p>
-<p>Beni: “We, the CRAN team, see the same kind of issues for most packages. The cookbook style resource fitted perfectly for this project. It allowed for a jigsaw-like approach, writing piece after piece and setting it all together in the end. I think we created a great resource for future CRAN package maintainers.”</p>
-</section>
-<section id="plausible-analytics-and-measuring-success-of-the-cran-cookbook" class="level2">
-<h2 class="anchored" data-anchor-id="plausible-analytics-and-measuring-success-of-the-cran-cookbook">Plausible analytics and measuring success of the CRAN Cookbook</h2>
-<p>We’ve implemented <a href="https://plausible.io/contributor.r-project.org%2Fcran-cookbook/">Plausible Analytics</a> to track engagement with the cookbook. By monitoring usage and feedback, we’ll continue refining the resource to better serve the R community.</p>
-<p><img src="https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/analytics.png" class="img-fluid"></p>
-</section>
-<section id="thank-yous" class="level2">
-<h2 class="anchored" data-anchor-id="thank-yous">Thank yous</h2>
-<p>To everyone who supported this project, thank you for helping us bring this vision to life. Whether you’re a new maintainer, a seasoned contributor, or part of the CRAN team, we hope the CRAN Cookbook proves to be an indispensable resource. Here’s to smoother submissions and stronger software in the R ecosystem!</p>
-<p>A heartfelt thank you to our community contributors, the steering committee, and the R Repositories Working Group. Your insights and feedback have been invaluable in shaping the CRAN Cookbook. This project would not have been possible without your support and collaboration!</p>
-</section>
-<section id="community-contributions-process" class="level2">
-<h2 class="anchored" data-anchor-id="community-contributions-process">Community contributions process</h2>
-<p>We can use your help! We also developed a <a href="https://github.com/r-devel/cran-cookbook/wiki/Contributors-Guide">contributors guide</a> to encourage community members to expand and improve the cookbook with their insights and experiences for often seen submission errors.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/</guid>
-  <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/user-friendly-technical-cookbook-style-cran-guide-for-new-r-programmers-ready/analytics.png" medium="image" type="image/png" height="66" width="144"/>
 </item>
 </channel>
 </rss>
