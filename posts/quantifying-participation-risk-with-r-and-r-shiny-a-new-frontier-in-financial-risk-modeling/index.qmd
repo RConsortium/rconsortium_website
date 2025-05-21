@@ -1,20 +1,17 @@
 ---
 title: "Quantifying Participation Risk with R and R Shiny: A New Frontier in Financial Risk Modeling"
-description: "RLB OÖ’s Goran Lovric and Simon Aigner Demonstrate Innovative Use of R for Modeling Participation Risk"
+description: "Goran Lovric and Simon Aigner, from Raiffeisenlandesbank Oberösterreich (Raiffeisen State Bank of Upper Austria), demonstrate innovative uses of R for modeling participation risk."
 author: "R Consortium Community Assistant, Caitlyn Oda"
 image: "demo.png"
 date: "05/21/2025"
 ---
 
-<!-- # **Quantifying Participation Risk with R and R Shiny: A New Frontier in Financial Risk Modeling**
 
-**RLB OÖ’s Goran Lovric and Simon Aigner Demonstrate Innovative Use of R for Modeling Participation Risk** -->
+Financial institutions are increasingly looking beyond traditional market risk to quantify and manage more complex forms of risk. [In a recent R Consortium webinar](https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html), Goran Lovric, LL.M., and Simon Aigner, MSc, from Raiffeisenlandesbank Oberösterreich (RLB OÖ) unveiled a novel approach to modeling *participation risk* using R and R Shiny, empowering banks to analyze value fluctuations in corporate holdings with a reproducible, open-source solution.
 
-![](goran.jpeg){width=50%}![](simon.jpeg)
+![](goran.jpeg){width=40%}![](simon.jpeg){width=40%}
 
-Financial institutions are increasingly looking beyond traditional market risk to quantify and manage more complex forms of risk. In a recent R Consortium webinar, Goran Lovric, LL.M., and Simon Aigner, MSc, from Raiffeisenlandesbank Oberösterreich (RLB OÖ) unveiled a novel approach to modeling *participation risk* using R and R Shiny, empowering banks to analyze value fluctuations in corporate holdings with a reproducible, open-source solution.
-
-## **From Market Price to Participation Value**
+## From Market Price to Participation Value
 
 “Participation risk,” explained Lovric, a seasoned expert with over 18 years in international financial risk management, “is the risk of changes in *value*, not price. That’s the key difference between market risk and participation risk.”
 
@@ -30,7 +27,7 @@ These datasets form the foundation for estimating future cash flows and cost of 
 
 ![](data.png)
 
-## **The R and Shiny App: Simulation, Reporting, and Deployment**
+## The R and Shiny App: Simulation, Reporting, and Deployment
 
 Lovric emphasized the importance of simulating volatilities and correlations across sectors using peer data. “Once you have the right inputs—cash flow volatility, cost of capital, sector correlations—you can generate both diversified and non-diversified risk measures,” he said.
 
@@ -40,11 +37,11 @@ One striking example from the presentation illustrated the power of diversificat
 
 The tool includes a database-backed architecture for scalability, and Lovric detailed how it can be deployed on an internal server with a few additional scripts. This ensures compliance with banking regulations while preserving accessibility for teams across departments.![](demo.png)
 
-## **A Launchpad for Future Collaboration**
+## A Launchpad for Future Collaboration
 
 By combining reproducibility, open data, and advanced modeling, the work of Lovric and Aigner illustrates the transformative potential of R in the finance sector. As Lovric noted, “This is not a black-box model. Everything—from the scraping scripts to the simulation logic—is transparent and modifiable.”
 
-The full source code and Shiny app are available via the R Consortium’s webinar repository. From finance to development, the Quantification of Participation Risk project offers a compelling blueprint for modern risk infrastructure.
+The full source code and Shiny app are available via Goran’s webinar repository (linked below). From finance to development, the Quantification of Participation Risk project offers a compelling blueprint for modern risk infrastructure.
 
 ### Resources
 
