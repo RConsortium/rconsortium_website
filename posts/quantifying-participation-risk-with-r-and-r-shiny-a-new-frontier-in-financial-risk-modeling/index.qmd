@@ -1,0 +1,53 @@
+---
+title: "Quantifying Participation Risk with R and R Shiny: A New Frontier in Financial Risk Modeling"
+description: "RLB OÖ’s Goran Lovric and Simon Aigner Demonstrate Innovative Use of R for Modeling Participation Risk"
+author: "R Consortium Community Assistant, Caitlyn Oda"
+image: "demo.png"
+date: "05/21/2025"
+---
+
+<!-- # **Quantifying Participation Risk with R and R Shiny: A New Frontier in Financial Risk Modeling**
+
+**RLB OÖ’s Goran Lovric and Simon Aigner Demonstrate Innovative Use of R for Modeling Participation Risk** -->
+
+![](goran.jpeg){width=50%}![](simon.jpeg)
+
+Financial institutions are increasingly looking beyond traditional market risk to quantify and manage more complex forms of risk. In a recent R Consortium webinar, Goran Lovric, LL.M., and Simon Aigner, MSc, from Raiffeisenlandesbank Oberösterreich (RLB OÖ) unveiled a novel approach to modeling *participation risk* using R and R Shiny, empowering banks to analyze value fluctuations in corporate holdings with a reproducible, open-source solution.
+
+## **From Market Price to Participation Value**
+
+“Participation risk,” explained Lovric, a seasoned expert with over 18 years in international financial risk management, “is the risk of changes in *value*, not price. That’s the key difference between market risk and participation risk.”
+
+While traditional market risk models focus on short-term price movements of listed assets, participation risk pertains to long-term value changes in equity participations—often in non-listed or strategic holdings. 
+
+**An End-to-End Framework Using R**
+
+The webinar provided an in-depth look at a full-stack modeling approach—from data sourcing to Shiny dashboard deployment. Aigner, an economic and business analytics professional at RLB OÖ, walked attendees through the process of acquiring live financial data using R packages and web scraping techniques.
+
+Using the `ecb` R package, participants saw how to fetch interest rate curves directly from the European Central Bank. Then, leveraging web scraping with packages like `rvest`, `stringr`, and `xml2`, Aigner demonstrated how to extract key financial statements—such as cash flow data—from sources like Google Finance and Yahoo Finance.
+
+These datasets form the foundation for estimating future cash flows and cost of equity, key components in the discounted cash flow model used to simulate value at risk (VaR) for participations.
+
+![](data.png)
+
+## **The R and Shiny App: Simulation, Reporting, and Deployment**
+
+Lovric emphasized the importance of simulating volatilities and correlations across sectors using peer data. “Once you have the right inputs—cash flow volatility, cost of capital, sector correlations—you can generate both diversified and non-diversified risk measures,” he said.
+
+All of these capabilities are built into a custom R Shiny app that the speakers have generously made available under an MIT open license. Users can upload structured input files containing valuations, cash flow data, and cost of equity estimates, and the app runs Monte Carlo simulations to quantify value at risk (VaR) under different correlation scenarios.
+
+One striking example from the presentation illustrated the power of diversification. “Let’s say a portfolio is worth €1.7 billion. If you ignore sector correlations, you’d get a risk of €9.9 billion—58%,” Lovric explained. “But if you incorporate actual correlations across different sectors, that drops to about €750 million, or 44.5%, over a one-year, 99.9% confidence interval.”
+
+The tool includes a database-backed architecture for scalability, and Lovric detailed how it can be deployed on an internal server with a few additional scripts. This ensures compliance with banking regulations while preserving accessibility for teams across departments.![](demo.png)
+
+## **A Launchpad for Future Collaboration**
+
+By combining reproducibility, open data, and advanced modeling, the work of Lovric and Aigner illustrates the transformative potential of R in the finance sector. As Lovric noted, “This is not a black-box model. Everything—from the scraping scripts to the simulation logic—is transparent and modifiable.”
+
+The full source code and Shiny app are available via the R Consortium’s webinar repository. From finance to development, the Quantification of Participation Risk project offers a compelling blueprint for modern risk infrastructure.
+
+### Resources
+
+* **Webinar Replay**: [https://www.youtube.com/watch?v=fb5x_6mVME4&t=2s](https://www.youtube.com/watch?v=fb5x_6mVME4&t=2s)  
+* **GitHub Repository**: [https://github.com/GoranLovric/RiskWebinar2024](https://github.com/GoranLovric/RiskWebinar2024)
+* **Link To Slides**: [https://r-consortium.org/webinars/Quantification-of-Participation-Risk-Dec2024.pdf](https://r-consortium.org/webinars/Quantification-of-Participation-Risk-Dec2024.pdf)
