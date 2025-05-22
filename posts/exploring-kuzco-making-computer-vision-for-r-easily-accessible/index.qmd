@@ -1,0 +1,52 @@
+---
+title: "Exploring `{kuzco}`: Making Computer Vision for R Easily Accessible"
+description: "Interview with Frank Hull, data scientist, open source contributor, and developer of `{kuzco}`"
+author: "R Consortium"
+image: "frankthull.png"
+date: 05/22/2025
+---
+
+**Frank Hull** is a director of data science & analytics, leading a data science team in the energy sector, an open source contributor, and a developer of [`{kuzco}`](https://github.com/frankiethull/kuzco), an R package that reimagines how image classification and computer vision can be approached using large language models (LLMs). With a passion for building tools that make advanced technology accessible to non-specialists, Frank has also contributed to the R ecosystem through multiple projects, and actively maintains his work on [GitHub](https://github.com/frankiethull) and his [personal site](https://frankiethull.github.io/about.html). 
+
+In this interview, we explore the ideas behind `{kuzco}`, its use of LLMs, and how it differs from conventional deep learning frameworks like `{keras}` and `{torch}` in R. `{kuzco}` is open source and Frank states in the interview that the project is actively looking for contributions, both technical and non-technical. Feel free to contact him directly (frankiethull@proton.me for open source connections) to ask questions and find out more.
+
+![](frankthull.png){width=60%}
+
+
+## 1. What problem does {kuzco} solve that existing R tools like {keras} or {torch} don’t?
+
+`{keras}` and `{torch}` are fantastic tools, but they're still rooted in the deep learning mindset. Essentially, they're designed to make TensorFlow and PyTorch more accessible—but they still expect you to think like a machine learning engineer.
+
+When you're doing computer vision with these frameworks, you're either building a model from scratch or adapting a pre-trained model by converting your image to a tensor and fitting it into that mold.
+
+With `{kuzco}`, I wanted to break out of that paradigm entirely. This isn't about training models or tuning hyperparameters. `{kuzco}` is for people—technical or not—who want to *understand* an image, not build a deep learning pipeline. Maybe your boss wants to drop in an image and ask a question about the image without writing code. That’s the power of combining LLMs with a simple interface.
+
+The goal is to **citizenize** computer vision—turn it into something that’s driven by prompts and natural language instead of tensors and training loops.
+
+## 2. How does {kuzco} leverage large language models (LLMs) differently from traditional image classification methods?
+
+LLMs *are* neural networks, just like `{keras}` or `{torch}` models—but they’re trained on vastly more data and built to understand context and nuance in language and vision.
+
+Instead of building a model from the ground up, `{kuzco}` lets you treat the LLM as an overtrained expert. You provide an image and a system prompt that tells the model to behave like a vision assistant. It doesn’t need re-training or manual feature engineering—you just ask it what you want to know.
+
+That completely flips the usual process. You’re not staging images, defining tensors, or writing your own classifiers. You’re just describing your intent and letting the LLM take care of the rest.
+
+## 3. What are some example use cases where {kuzco} shines—especially in areas like sentiment or text extraction?
+
+A friend once asked me how to tell whether a tow truck driving past a traffic camera had a car on its bed—and if so, what kind of car. That’s incredibly hard to do with traditional computer vision. You’d need a specialized model, tons of labeled images, and lots of training.
+
+With `{kuzco}` and an LLM, you can just hand over the image and ask, “Is there a car on this truck? What kind is it?” The model can return nuanced answers: “It looks like a silver Toyota Camry.”
+
+And you can go even further—ask how many eyes are in the image, or where the eyes are located. You get image classification, object recognition, sentiment, and even spatial reasoning—all without traditional ML pipelines.
+
+## 4. How easy is it to get started with {kuzco} if I already have Ollama and an R environment set up?
+
+Pretty easy. If you have Ollama and R installed, you can use either `{pak}` or `{devtools}` to install `{kuzco}` from GitHub or R-universe. It’s not on CRAN yet, but everything else you need is in the README.
+
+## 5. Can {kuzco} be used in production or is it mainly a prototyping and exploration tool?
+
+Right now, I’d say it’s experimental—but promising. I built it as an open-source side project over the holidays, and it unexpectedly caught a lot of attention.
+
+I’d love to see others contribute. There’s definitely room to grow: better error handling, output validation, more robust documentation. I’ve only focused on local LLMs through `{ellmer}` and `{ollamar}`, but it’d be pretty simple to add support for OpenAI, Claude, Perplexity, or other hosted LLMs.
+
+If someone wants to help build out those back ends, or even help write better docs, I’d be thrilled to collaborate. That’s why I open-sourced it in the first place—to make something useful and invite others in.
