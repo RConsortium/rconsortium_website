@@ -10,7 +10,94 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Thu, 22 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 29 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Consortium Awards First Round of 2025 ISC Grants</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-awards-first-round-of-2025-isc-grants/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The R Consortium’s Infrastructure Steering Committee (ISC) is proud to announce the first round of 2025 grant recipients. These projects represent a dynamic cross-section of innovation in R infrastructure—ranging from economic policy tools and ecological data pipelines to foundational software engineering improvements. Selected from a competitive pool of proposals, the following seven initiatives will receive support to enhance and expand the capabilities of the R ecosystem.</p>
+<section id="econdataverse" class="level3">
+<h3 class="anchored" data-anchor-id="econdataverse">econdataverse</h3>
+<p>Lead: Christoph Scheuch, Christopher C. Smith, and Teal Emery<br>
+Grant: $10,000</p>
+<p>The econdataverse initiative was conceived as a unified ecosystem of packages for economic data access and analysis from sources like the IMF, World Bank, and OECD. By enforcing consistent function naming, tidy data formats, and cross-source compatibility, the project will work to significantly reduce the time spent on data acquisition and preparation and facilitate the creation of reproducible workflows. This work will support economic policy development through reproducible data workflows.</p>
+</section>
+<section id="maimer-unifying-camera-trap-data-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="maimer-unifying-camera-trap-data-in-r">Maimer – Unifying Camera Trap Data in R</h3>
+<p>Leads: Stanislas Mahussi Gandaho, Marcus Rowcliffe, and Damiano Oldoni<br>
+Grant: $12,000</p>
+<p>An integrated R ecosystem for camera trap data analysis in ecology; the project aims to develop standardized interfaces to connect maimer with key packages (activity, camtrapDensity, camtraptor) and ensure compatibility with common data standards like Camera Trap Metadata Standard (CTMS). The project combines visualization, data transformation, and deep-learning-based animal detection in a tidyverse-friendly package.</p>
+</section>
+<section id="bridging-worlds-enhancing-r-igraph-with-c-core-innovations" class="level3">
+<h3 class="anchored" data-anchor-id="bridging-worlds-enhancing-r-igraph-with-c-core-innovations">Bridging Worlds: Enhancing R igraph with C Core Innovations</h3>
+<p>Lead: David Schoch, Kirill Müller, Maëlle Salmon<br>
+Grant: $16,000</p>
+<p>The ISC has previously granted funds in support of the igraph package. This round will support upgrades to igraph to include improved C core integration and improved documentation. You can contribute to the igraph package which is approaching its 1.0 release.</p>
+</section>
+<section id="r-package-binaries-for-linux-community-edition" class="level3">
+<h3 class="anchored" data-anchor-id="r-package-binaries-for-linux-community-edition">R Package Binaries for Linux – Community Edition</h3>
+<p>Lead: Dr.&nbsp;Patrick Schratz<br>
+Grant: $10,000</p>
+<p>Establish an R-based, open-source build system for R package binaries including the build processes (running in CI) of the publicly running service building CRAN package binaries. The build system is expected to be able to build packages for (common) Linux distributions and multiple architectures (for the start x86 and arm64, riscv64). The goal of the project is to increase installation speed and improve accessibility across Linux environments.</p>
+</section>
+<section id="fast-linter-for-r" class="level3">
+<h3 class="anchored" data-anchor-id="fast-linter-for-r">Fast Linter for R</h3>
+<p>Lead: Etienne Bacher<br>
+Grant: $4,000</p>
+<p>The project proposes to write a new linter for the R language that is fast and can apply automatic fixes. Eventually, this new linter would be integrated in air, a fast formatter for R code written entirely in Rust and created by Posit PBC.</p>
+</section>
+<section id="reviving-redoc" class="level3">
+<h3 class="anchored" data-anchor-id="reviving-redoc">Reviving redoc</h3>
+<p>Lead: Noam Ross in partnership with The Tribal Exchange Network Group (TXG)<br>
+Grant: $10,000</p>
+<p>This project will revive and enhance the R package <strong>redoc</strong>, designed to bridge the critical gap between reproducible R reporting workflows (R Markdown, Quarto) and the collaborative editing environment of Microsoft Word. Currently, generating Word documents from R is largely a one-way process, creating friction when collaborating with colleagues who use Word’s Track Changes features for feedback. <strong>redoc</strong> enables a unique <em>two-way</em> synchronization, allowing R users to incorporate edits made in Word back into their source R Markdown documents.</p>
+</section>
+<section id="enhancing-webchem" class="level3">
+<h3 class="anchored" data-anchor-id="enhancing-webchem">Enhancing webchem</h3>
+<p>Lead: Tamás Stirling, Eric Scott (contributor), Eduard Szöcs (original package author)<br>
+Grant: $8,500</p>
+<p>The project proposes enabling offline access to chemical databases, empowering chemistry professionals with faster, more reliable, and reproducible access to chemical data. They propose to develop functions that provide access to more data to strengthen the core purpose of that package – to provide easy access to chemical data.</p>
+</section>
+<section id="updates-on-our-top-level-projects" class="level2">
+<h2 class="anchored" data-anchor-id="updates-on-our-top-level-projects">Updates on our Top-Level Projects</h2>
+<p>Every so often, the ISC awards a project the status of Top-Level Project. This is a 3-year commitment to support the project. We do this when we believe that a project is fundamentally necessary to support the infrastructure of the language – how it is developed or distributed – or the project is fundamentally necessary to support the community – to help it grow and engage new audiences.</p>
+<section id="r-ladies" class="level3">
+<h3 class="anchored" data-anchor-id="r-ladies">R-Ladies+</h3>
+<p>R-Ladies is a global organization that promotes gender diversity in the R programming community. It supports and empowers individuals of underrepresented genders through events, training, mentorship, and community-building initiatives. In 2025, R-Ladies will continue the core mission of supporting and growing a diverse R community while embarking on several exciting new initiatives. We will rebrand as R-Ladies+, updating our logo and visual identity across all platforms. To support this transition, we’ll develop a branding kit for chapters to easily apply the new look locally.</p>
+<p>In May 2025 R-Ladies supports 244 chapters in 68 countries with 108,205 members. The organization is run 100% by volunteer effort. <a href="https://rladies.org/">The website</a> will continue featuring R-Ladies, chapters, news and blog posts, and we’ll begin translating key content into Spanish, French, and Portuguese. We’ll <a href="https://guide.rladies.org">keep improving our internal processes</a> by automating routine tasks, freeing up volunteer time for activities that help our members thrive.</p>
+<p>The Chapter Mentoring Program and Code of Conduct will be updated and reworked and we will continue running the recently revamped <a href="https://rladies.org/directory/">R-Ladies Directory</a>, <a href="https://rladies.org/news/abstract-review-relaunch-2025/">Abstract Review Program</a> and <a href="https://rladies.org/news/rocur-relaunch-2025/">WeAreRLadies rotating curator</a>.</p>
+</section>
+<section id="r-universe" class="level3">
+<h3 class="anchored" data-anchor-id="r-universe">R-Universe</h3>
+<p><a href="https://r-universe.dev/search">The R-universe platform</a> continues to grow at a healthy pace to balance stability, new features, and maintainability of the project. Here are some of the most recent updates:</p>
+<ul>
+<li>Completed ARM64 support on Linux: R-universe now builds and checks MacOS/Linux binaries for packages with compiled code on both Intel and Arm hardware. Later this year we also plan to start testing with the experimental ARM64 R for Windows.<br>
+</li>
+<li>The build workflows have been refactored to better decouple the steps of preparing, building and checking a package, and automatically extract warnings and errors as annotations. This makes it easier to see what the problem is when a package fails to build and enables the front-end to deep-link directly to the relevant parts of the build logs on GitHub actions.<br>
+</li>
+<li>All R-universe infrastructure code under <a href="http://github.com/r-universe-org/">http://github.com/r-universe-org/</a> (workflows, actions, containers, scripts, server code), has been cleaned up, allowing anyone to see how everything works and suggest improvements.</li>
+</ul>
+</section>
+</section>
+<section id="supporting-our-community-through-our-core-mission" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-our-community-through-our-core-mission">Supporting our community through our core mission</h2>
+<p>The R Consortium’s ISC is pleased to support these initiatives, which represent the community’s commitment to robust, open, and accessible tools for science, policy, and technology. We look forward to tracking their progress and welcome community feedback and participation as these projects evolve.</p>
+<p>For updates, <a href="https://r-consortium.org/news">follow the R Consortium blog</a> and join our mailing list <a href="https://lists.r-consortium.org/g/Rconsortium-main">https://lists.r-consortium.org/g/Rconsortium-main</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-consortium-awards-first-round-of-2025-isc-grants/</guid>
+  <pubDate>Thu, 29 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-awards-first-round-of-2025-isc-grants/isc-grantees-2025-1.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Exploring {kuzco}: Making Computer Vision for R Easily Accessible</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1388,104 +1475,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/</guid>
   <pubDate>Wed, 29 Jan 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/event-participants.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>R en Buenos Aires: New Generations Working to Strengthen the Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="r-en-buenos-aires-new-generations-working-to-strengthen-the-community" class="level1">
-<h1>R en Buenos Aires: New Generations Working to Strengthen the Community</h1>
-<p><br> <br></p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/andrea-gomez-vargas.jpg" class="img-fluid"></p>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:65%;">
-<p>The R Consortium recently interviewed Andrea Gomez Vargas to find out about the <a href="https://www.meetup.com/en-AU/renbaires/">R in Buenos Aires</a> User Group. Andrea has a degree in sociology. Currently, she works as an analyst of population statistics at the National Institute of Statistics and Census - INDEC Argentina. She also teaches at universities in social science and data science.</p>
-<p>Andrea has been an active member of the R community in Argentina and Latin America since 2018. She has been part of <a href="https://r-consortium.org/posts/transforming-academic-research-with-r-in-santa-rosa-argentina/">R-Ladies Buenos Aires</a> and is currently part of the R-Ladies global team and the LatinR organizing committee.</p>
-</div>
-</div>
-<p>Andrea was part of the 2023-2024 cohort of the rOpenSci champions program, and in 2024 she decided to take over the leadership of R en Buenos Aires.</p>
-<section id="why-did-you-decide-to-take-the-lead-of-the-chapter" class="level3">
-<h3 class="anchored" data-anchor-id="why-did-you-decide-to-take-the-lead-of-the-chapter">Why did you decide to take the lead of the chapter?</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><br> I decided to take on the leadership of the chapter to actively contribute to the local impact of the R user community. Most of my knowledge has come from these communities - the trust and selfless support I’ve received has helped me grow as a professional and inspired me to take on projects I never thought I could. For this reason, I believe it is essential to reengage in activities to invite new generations to participate, explore new tools and opportunities, and collaborate in a space that welcomes all levels of experience and diverse professional backgrounds.</p>
-</div><div class="column" style="width:30%;">
-<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA.png" class="img-fluid"></p>
-</div>
-</div>
-</section>
-<section id="what-motivates-you-to-continue-promoting-r-learning" class="level3">
-<h3 class="anchored" data-anchor-id="what-motivates-you-to-continue-promoting-r-learning">What motivates you to continue promoting R learning?</h3>
-<p>Communities are essential spaces for breaking down barriers to access information and knowledge, especially when it comes to free and open-source software. When these resources are paid or only reach a small percentage of people, it creates inequities. As a public university teacher, I am driven by the belief that everyone, regardless of background, should have the opportunity to learn and grow in a collaborative, open environment. That’s what keeps me motivated to continue spreading R knowledge and ensuring it remains accessible for all.</p>
-<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-2.jpg" class="img-fluid"> <em>Participants from the December 20th, 2024, meetup</em></p>
-</section>
-<section id="what-are-your-main-objectives-for-the-r-chapter-in-buenos-aires-and-what-challenges-do-you-anticipate-in-achieving-them" class="level3">
-<h3 class="anchored" data-anchor-id="what-are-your-main-objectives-for-the-r-chapter-in-buenos-aires-and-what-challenges-do-you-anticipate-in-achieving-them">What are your main objectives for the R chapter in Buenos Aires, and what challenges do you anticipate in achieving them?</h3>
-<p>The main objectives at this moment for the R chapter in Buenos Aires are to have more events to disseminate relevant topics in the community, such as the use of Quarto, Shiny, R packages, Git, and GitHub. A key challenge is ensuring that volunteer work doesn’t overwhelm us or lead to burnout, as organizing these events requires a lot of behind-the-scenes work. Currently, in addition to myself, Emanuel and Ariana are part of the local team coordinating activities—and although teamwork is essential, we must find a balance between collective effort and the well-being of the chapter members.</p>
-</section>
-<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level3">
-<h3 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><br> <br> I’m working on the development of the <code>arcenso</code> package, a package with census data from Argentina, now in its first version on Github, but we are looking to reach CRAN.</p>
-<p><code>arcenso</code> is a project supported by the rOpenSci Champions Program cohort 2023-2024, with me as lead developer, Emanuel Ciardullo as co-developer and Luis D. Verde as mentor. It is a very important project because it makes census data accessible and homogenized in a way that any user can work with it in R.</p>
-</div><div class="column" style="width:30%;">
-<p><br> <br> <img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/arcenso.png" class="img-fluid"></p>
-</div>
-</div>
-<p>Details from the arcenso page:</p>
-<p>arcenso is a package under development that will allow access to the official data of the national population censuses in Argentina from the National Institute of Statistics and Census - INDEC. Currently, the results of the historical censuses of 1970, 1980, 1991, 2001, 2010 and 2022 are available in different formats through physical books, PDFs, Excel files or in REDATAM, without having a unified system or format that allows working with the data of these six census periods as a database. In addition, the presentation of the data is not homogeneous between the periods, making it difficult to make historical or serial comparisons of the available information.</p>
-<p>This package aims to make census data available, homogenized and ready to use. It will include the census data from 1970 to 2022. Having a package of census information will allow the public and private sectors, citizens and other actors in society to access current and historical information on Argentina’s population, households and housing in a more accessible way.</p>
-<blockquote class="blockquote">
-<p>For more information, see <a href="https://soyandrea.github.io/arcenso/">soyandrea.github.io/arcenso</a></p>
-</blockquote>
-</section>
-<section id="what-r-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc." class="level3">
-<h3 class="anchored" data-anchor-id="what-r-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc.">What R resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)</h3>
-<p>I use R on a daily basis to teach, work and collaborate in the community. Part of my work requires processing and combining various data sources (censuses, surveys and administrative records) to produce socio-demographic indicators for the country. I also design and develop digital statistical products, such as a Shiny app or dashboards. For all this I rely on several R packages for ETL and visualisation <em>(gt, tidyverse, expss, plotly, quarto, and many more).</em> And this is what I try to teach my students or the people who attend the workshops.</p>
-<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-5.jpg" class="img-fluid"> <em>Photo of Betsy, Ariana, and Andrea, organizers of the October 29, 2024, meetup, from left to right</em></p>
-</section>
-<section id="you-had-a-meetup-on-october-29th-2024.-can-you-share-more-about-the-topic-covered" class="level3">
-<h3 class="anchored" data-anchor-id="you-had-a-meetup-on-october-29th-2024.-can-you-share-more-about-the-topic-covered">You had a Meetup on October 29th, 2024. Can you share more about the topic covered?</h3>
-<p><em>[Editor’s note: There were two more events held by R en Buenos Aires at the end of 2024. Please see the <a href="https://www.meetup.com/en-AU/renbaires/events/?type=past">meetup page</a> for more information (in Spanish).]</em></p>
-<p>The topic of the workshop was socio-demographic analysis in R using data from the Argentine Labour Force Survey. We learned about the R packages needed to calculate the indicators and how to present the results in graphs and tables.</p>
-<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-3.png" class="img-fluid"></p>
-<p>The workshop was aimed at university students who are taking their first steps in R and who would like to do real-life practice guided by people from the community with experience in the field.</p>
-<p>After the workshop a specific website <a href="https://r-unlam.netlify.app/">r-unlam.netlify.app</a> was created. We believe it is a good practice for people who cannot attend physically to have access to all the materials and to have the activities documented.</p>
-<p><img src="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-4.jpg" class="img-fluid"> <em>Participants from the October 29th, 2024, meetup</em></p>
-</section>
-<section id="you-can-reach-out-to-r-in-buenos-aires-through-the-following" class="level3">
-<h3 class="anchored" data-anchor-id="you-can-reach-out-to-r-in-buenos-aires-through-the-following">You can reach out to R in Buenos Aires through the following:</h3>
-<ul>
-<li>Linkedin: <a href="https://www.linkedin.com/company/r-en-buenos-aires/" class="uri">https://www.linkedin.com/company/r-en-buenos-aires/</a></li>
-<li>Github: <a href="https://github.com/renbaires" class="uri">https://github.com/renbaires</a></li>
-<li>X: <a href="https://x.com/renbaires">https://x.com/renbaires</a><br>
-</li>
-<li>Instagram: <a href="https://www.instagram.com/renbuenosaires">https://www.instagram.com/renbuenosaires</a></li>
-</ul>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level3">
-<h3 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h3>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html" class="uri">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/</guid>
-  <pubDate>Thu, 23 Jan 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/renBA-4.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
