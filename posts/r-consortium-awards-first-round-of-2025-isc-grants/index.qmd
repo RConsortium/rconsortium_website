@@ -1,0 +1,85 @@
+---
+title: "R Consortium Awards First Round of 2025 ISC Grants"
+description: "The R Consortium’s Infrastructure Steering Committee (ISC) is proud to announce the first round of 2025 grant recipients. These seven projects are receiving support to enhance and expand the capabilities of the R ecosystem."
+author: "R Consortium"
+image: "isc-grantees-2025-1.png"
+date: "05/29/2025"
+---
+
+The R Consortium’s Infrastructure Steering Committee (ISC) is proud to announce the first round of 2025 grant recipients. These projects represent a dynamic cross-section of innovation in R infrastructure—ranging from economic policy tools and ecological data pipelines to foundational software engineering improvements. Selected from a competitive pool of proposals, the following seven initiatives will receive support to enhance and expand the capabilities of the R ecosystem.
+
+### econdataverse
+
+Lead: Christoph Scheuch, Christopher C. Smith, and Teal Emery  
+Grant: $10,000
+
+The econdataverse initiative was conceived as a unified ecosystem of packages for economic data access and analysis from sources like the IMF, World Bank, and OECD. By enforcing consistent function naming, tidy data formats, and cross-source compatibility, the project will work to significantly reduce the time spent on data acquisition and preparation and facilitate the creation of reproducible workflows. This work will support economic policy development through reproducible data workflows.
+
+### Maimer – Unifying Camera Trap Data in R
+
+Leads: Stanislas Mahussi Gandaho, Marcus Rowcliffe, and Damiano Oldoni  
+Grant: $12,000
+
+An integrated R ecosystem for camera trap data analysis in ecology; the project aims to develop standardized interfaces to connect maimer with key packages (activity, camtrapDensity, camtraptor) and ensure compatibility with common data standards like Camera Trap Metadata Standard (CTMS). The project combines visualization, data transformation, and deep-learning-based animal detection in a tidyverse-friendly package.
+
+### Bridging Worlds: Enhancing R igraph with C Core Innovations
+
+Lead: David Schoch, Kirill Müller, Maëlle Salmon  
+Grant: $16,000
+
+The ISC has previously granted funds in support of the igraph package. This round will support upgrades to igraph to include improved C core integration and improved documentation. You can contribute to the igraph package which is approaching its 1.0 release.
+
+### R Package Binaries for Linux – Community Edition
+
+Lead: Dr. Patrick Schratz  
+Grant: $10,000
+
+Establish an R-based, open-source build system for R package binaries including the build processes (running in CI) of the publicly running service building CRAN package binaries. The build system is expected to be able to build packages for (common) Linux distributions and multiple architectures (for the start x86 and arm64, riscv64). The goal of the project is to increase installation speed and improve accessibility across Linux environments.
+
+### Fast Linter for R
+
+Lead: Etienne Bacher  
+Grant: $4,000
+
+The project proposes to write a new linter for the R language that is fast and can apply automatic fixes. Eventually, this new linter would be integrated in air, a fast formatter for R code written entirely in Rust and created by Posit PBC.
+
+### Reviving redoc
+
+Lead: Noam Ross in partnership with The Tribal Exchange Network Group (TXG)  
+Grant: $10,000
+
+This project will revive and enhance the R package **redoc**, designed to bridge the critical gap between reproducible R reporting workflows (R Markdown, Quarto) and the collaborative editing environment of Microsoft Word. Currently, generating Word documents from R is largely a one-way process, creating friction when collaborating with colleagues who use Word’s Track Changes features for feedback. **redoc** enables a unique *two-way* synchronization, allowing R users to incorporate edits made in Word back into their source R Markdown documents.
+
+### Enhancing webchem
+
+Lead: Tamás Stirling, Eric Scott (contributor), Eduard Szöcs (original package author)  
+Grant: $8,500
+
+The project proposes enabling offline access to chemical databases, empowering chemistry professionals with faster, more reliable, and reproducible access to chemical data. They propose to develop functions that provide access to more data to strengthen the core purpose of that package – to provide easy access to chemical data.
+
+## Updates on our Top-Level Projects
+
+Every so often, the ISC awards a project the status of Top-Level Project. This is a 3-year commitment to support the project. We do this when we believe that a project is fundamentally necessary to support the infrastructure of the language – how it is developed or distributed – or the project is fundamentally necessary to support the community – to help it grow and engage new audiences.
+
+### R-Ladies+
+
+R-Ladies is a global organization that promotes gender diversity in the R programming community. It supports and empowers individuals of underrepresented genders through events, training, mentorship, and community-building initiatives. In 2025, R-Ladies will continue the core mission of supporting and growing a diverse R community while embarking on several exciting new initiatives. We will rebrand as R-Ladies+, updating our logo and visual identity across all platforms. To support this transition, we’ll develop a branding kit for chapters to easily apply the new look locally.
+
+In May 2025 R-Ladies supports 244 chapters in 68 countries with 108,205 members. The organization is run 100% by volunteer effort. [The website](https://rladies.org/) will continue featuring R-Ladies, chapters, news and blog posts, and we’ll begin translating key content into Spanish, French, and Portuguese. We’ll [keep improving our internal processes](https://guide.rladies.org) by automating routine tasks, freeing up volunteer time for activities that help our members thrive.
+
+The Chapter Mentoring Program and Code of Conduct will be updated and reworked and we will continue running the recently revamped [R-Ladies Directory](https://rladies.org/directory/), [Abstract Review Program](https://rladies.org/news/abstract-review-relaunch-2025/) and [WeAreRLadies rotating curator](https://rladies.org/news/rocur-relaunch-2025/).
+
+### R-Universe
+
+[The R-universe platform](https://r-universe.dev/search) continues to grow at a healthy pace to balance stability, new features, and maintainability of the project. Here are some of the most recent updates:
+
+* Completed ARM64 support on Linux: R-universe now builds and checks MacOS/Linux binaries for packages with compiled code on both Intel and Arm hardware. Later this year we also plan to start testing with the experimental ARM64 R for Windows.  
+* The build workflows have been refactored to better decouple the steps of preparing, building and checking a package, and automatically extract warnings and errors as annotations. This makes it easier to see what the problem is when a package fails to build and enables the front-end to deep-link directly to the relevant parts of the build logs on GitHub actions.  
+* All R-universe infrastructure code under [http://github.com/r-universe-org/](http://github.com/r-universe-org/) (workflows, actions, containers, scripts, server code), has been cleaned up, allowing anyone to see how everything works and suggest improvements.
+
+## Supporting our community through our core mission
+
+The R Consortium’s ISC is pleased to support these initiatives, which represent the community’s commitment to robust, open, and accessible tools for science, policy, and technology. We look forward to tracking their progress and welcome community feedback and participation as these projects evolve.
+
+For updates, [follow the R Consortium blog](https://r-consortium.org/news) and join our mailing list [https://lists.r-consortium.org/g/Rconsortium-main](https://lists.r-consortium.org/g/Rconsortium-main) 
+
