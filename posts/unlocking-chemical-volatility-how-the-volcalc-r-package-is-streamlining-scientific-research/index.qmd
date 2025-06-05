@@ -13,7 +13,7 @@ image-alt: "banner for unlocking chemical volatility with volcalc"
 date: "09/23/2024"
 ---
 
-![volcalc article banner](volcalc.webp)
+[![](volcalc.webp){fig-alt="banner for unlocking chemical volatility with volcalc"}]
 
 The R Consortium recently interviewed [Kristina Riemer](https://datascience.cct.arizona.edu/person/kristina-riemer), director of [the CCT Data Science Team](https://datascience.cct.arizona.edu/) at the University of Arizona, and [Eric Scott](https://datascience.cct.arizona.edu/person/eric-scott), Scientific Programmer and Educator in the CCT Data Science Team, the developers behind the [volcalc package](https://github.com/Meredith-Lab/volcalc), to discuss the motivation and development of this innovative tool designed to automate the calculation of chemical compound volatilities. volcalc streamlines the process by allowing users to input a compound and quickly receive its volatility information, eliminating the need for time-consuming manual calculations. Initially created to assist [Dr. Laura Meredith](https://has.arizona.edu/person/laura-meredith) in managing a large database of volatile compounds, volcalc has since grown into a more versatile tool under Eric’s leadership, now supporting a wider range of researchers. 
 
