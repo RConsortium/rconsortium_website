@@ -10,7 +10,291 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Thu, 29 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 04 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Tidy topological machine learning with TDAvec and tdarec</title>
+  <dc:creator>Jason Cory Brunson, Alexsei Luchinsky, Umar Islambekov</dc:creator>
+  <link>https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-pitch" class="level2">
+<h2 class="anchored" data-anchor-id="the-pitch">The Pitch</h2>
+<p>Topological data analysis (TDA) is a pretty mature discipline at this point, but in the last several years its assimilation into machine learning (ML) has really taken off. Based on our experience, the plurality of experimental TDA tools are written in Python, and naturally Python is home to most of these applications.</p>
+<p>That’s not to say that there are no R packages for TDA-ML. <a href="https://github.com/kisungyou/TDAkit">{TDAkit}</a>, <a href="https://github.com/shaelebrown/TDApplied">{TDApplied}</a>, and others provide tools for specific self-contained analyses and could be used together in larger projects. As with the broader R ecosystem, though, their integration can require some additional work. The combination of several low-level libraries and compounding package dependencies has also made this toolkit fragile, with several packages temporarily or permanently archived.</p>
+<p>Meanwhile, the <a href="https://www.tidymodels.org/">Tidymodels</a> package collection has enabled a new generation of users, myself (JCB) included, to build familiarity and proficiency with conventional ML. By harmonizing syntax and smoothing pipelines, Tidymodels makes it quick and easy to adapt usable code to new data types, pre-processing steps, and model families. By using wrappers and extractors, it also allows seasoned users to extend their work beyond its sphere of convenience.</p>
+<p>We therefore think that Tidymodels is an ideal starting point for a more sustained and interoperable collection for TDA-ML in R. Since much of the role of TDA in ML has been to extract and vectorize features from spatial, image, and other high-dimensional data, we present an extension to <a href="https://recipes.tidymodels.org/">{recipes}</a> for just this purpose. Assembling a comprehensive, general-purpose toolkit is a long-term project. Our contribution is meant to spur that project on.</p>
+</section>
+<section id="the-packages" class="level2">
+<h2 class="anchored" data-anchor-id="the-packages">The Packages</h2>
+<p>We present two packages: {TDAvec}, an interface to several efficient feature vectorizations, and {tdarec}, a {recipes} + <a href="https://dials.tidymodels.org/">{dials}</a> extension that integrates these vectorizations into Tidymodels. First, though, we need to introduce persistent homology and how it can be computed with R.</p>
+<section id="computations-of-persistent-homology" class="level3">
+<h3 class="anchored" data-anchor-id="computations-of-persistent-homology">Computations of persistent homology</h3>
+<p>In predictive modeling, <a href="https://en.wikipedia.org/wiki/Persistent_homology"><strong>persistent homology</strong></a> (PH) is the workhorse of TDA.<sup>1</sup> In a nutshell, it measures topological patterns in data—most commonly clusters and enclosures—by the range of resolutions through which they persist. Several packages interface to lower-level libraries that compute PH for various data structures—all accept point clouds and distance matrices, but other structures are accepted where noted:</p>
+<ul>
+<li><a href="https://doi.org/10.48550/arXiv.1411.1830">{TDA}</a> <span class="citation" data-cites="Fasy2022">(Fasy et al. 2022)</span> interfaces to the Dionysus, PHAT, and GUDHI libraries and also accepts functions and rasters;</li>
+<li><a href="https://tdaverse.github.io/ripserr/">{ripserr}</a> <span class="citation" data-cites="Wadhwa2025">(Wadhwa et al. 2025)</span>, a spinoff from <a href="https://joss.theoj.org/papers/10.21105/joss.00860">{TDAstats}</a>, interfaces to the Ripser and Cubical Ripser C++ libraries and also accepts rasters;</li>
+<li><a href="https://joss.theoj.org/papers/10.21105/joss.06321">{TDApplied}</a> <span class="citation" data-cites="Brown2024">(Brown and Farivar 2024)</span> calls {TDA} and {TDAstats} but also interfaces with Python Ripser; and</li>
+<li><a href="https://lmjl-alea.github.io/rgudhi/">{rgudhi}</a> <span class="citation" data-cites="Stamm2023">(Stamm 2023)</span> interfaces to Python GUDHI.</li>
+</ul>
+<p>Here is an example using the most mature package, {TDA}, to compute the PH for an alpha filtration of a sample from a torus:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> TDA<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">torusUnif</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">a =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">c =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span>
+<span id="cb1-2">pd <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> TDA<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">alphaComplexDiag</span>(x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">maxdimension =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(pd<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>diagram, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">asp =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/index_files/figure-html/TDA-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We rely for now on {ripserr} to compute PH, but a near-term upgrade will incorporate {TDA} as well.</p>
+</section>
+<section id="vectorizations-of-persistent-homology" class="level3">
+<h3 class="anchored" data-anchor-id="vectorizations-of-persistent-homology">Vectorizations of persistent homology</h3>
+<p>Vectorization is a crucial step to bridge TDA and ML. Numerous methods have been proposed, and research shows that ML performance on a specific task can depend strongly on the chosen method. Therefore, it is highly desirable to compare several approaches to a given problem and select the one found to be best-suited to it.</p>
+<p>Although most proposed vectorization methods are available in free software, they are scattered across various R and Python packages. This complicates the comparison process, as researchers must search for available methods and adapt their code to the interface of each specific implementation. The goal of <a href="https://cran.r-project.org/package=TDAvec">{TDAvec}</a> <span class="citation" data-cites="Luchinsky2025">(Luchinsky and Islambekov 2025)</span> is to address this issue.</p>
+<p>We (AL and UI) have consolidated all currently available vectorizations (of which we are aware) and implemented them in a single R library. Some of these vectorizations are parameter-free, but others rely on one or several hyperparameters. For ease of comparison, we also use a consistent interface, with a common camelcase naming convention, e.g.&nbsp;<code>computePersistenceLandscape()</code>. Additionally, several new vectorization methods developed by our group are also available within the TDAvec framework.</p>
+<p>Here, for example, is how to compute the tropical coordinates proposed by <span class="citation" data-cites="Kalisnik2019">Kališnik (2019)</span> and a coarse vectorization of our own persistence block transformation <span class="citation" data-cites="Chan2022">(Chan et al. 2022)</span> for the degree-1 layer of the persistence diagram above:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(TDAvec)</span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">computeTropicalCoordinates</span>(pd<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>diagram, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">homDim =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         F1          F2          F3          F4          F5          F6 
+  0.9002432   1.7581514   2.2581712   2.7461524  10.5310812   7.1723908 
+         F7 
+213.1582173 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">xy_seq <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">seq</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.5</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span>
+<span id="cb4-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">computePersistenceBlock</span>(</span>
+<span id="cb4-3">  pd<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>diagram, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">homDim =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,</span>
+<span id="cb4-4">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xSeq =</span> xy_seq, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">ySeq =</span> xy_seq</span>
+<span id="cb4-5">)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  0.2747732  0.1730585  0.0000000  0.3671412 57.9835691 67.7773024  0.3227574
+[8] 72.5928726 89.8681884</code></pre>
+</div>
+</div>
+<p>Notably, all vectorizations are written in C++ and exposed to R using {Rcpp}. We also utilize the Armadillo package for various matrix operations, which makes all computations extremely fast and efficient.</p>
+</section>
+<section id="tidy-machine-learning-with-persistent-homology" class="level3">
+<h3 class="anchored" data-anchor-id="tidy-machine-learning-with-persistent-homology">Tidy machine learning with persistent homology</h3>
+<p>{recipes} is the pre-processing arm of Tidymodels; mostly it provides <code>step_*()</code> functions that pipe together as recipe specifications, to later be applied directly to data or built into workflows. {dials} provides tuning functions for these steps as well as for model families provided by {parsnip}.</p>
+<p><a href="https://tdaverse.github.io/tdarec/">{tdarec}</a> provides two primary families of steps:</p>
+<ol type="1">
+<li>Steps to <em>calculate persistent homology from data</em>, which share the naming pattern <code>step_pd_*()</code> for <strong>p</strong>ersistence <strong>d</strong>iagram. These steps rely on the engines above and are scoped according to the underlying mathematical object encoded in the data: Currently the {ripserr} engine handles point clouds (encoded as coordinate matrices or distance matrices) and rasters (encoded as numerical arrays). These steps accept list-columns of data sets and return list-columns of persistence diagrams.</li>
+<li>Steps to <em>transform and vectorize persistence diagrams</em>, which share the naming pattern <code>step_vpd_*()</code> for <strong>v</strong>ectorized <strong>p</strong>ersistence <strong>d</strong>iagram. These steps rely on {TDAvec} and are scoped as there by transformation. They accept list-columns of persistence diagrams and return numeric columns (sometimes flattened from matrix output, e.g.&nbsp;multi-level persistence landscapes) that can be used by most predictive model families.</li>
+</ol>
+<p>Here is how to incorporate PH (using the default Vietoris–Rips filtration) and the persistence block transformation above into a pre-processing recipe:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">suppressMessages</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tdarec))</span>
+<span id="cb6-2">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tibble</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">source =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"torus"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sample =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(x))</span>
+<span id="cb6-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">recipe</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> sample, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> dat) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">step_pd_point_cloud</span>(sample, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">max_hom_degree =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">step_pd_degree</span>(sample_pd, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hom_degrees =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">step_vpd_persistence_block</span>(</span>
+<span id="cb6-7">    sample_pd_2,</span>
+<span id="cb6-8">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hom_degree =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xseq =</span> xy_seq</span>
+<span id="cb6-9">  ) <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">-&gt;</span> rec</span>
+<span id="cb6-10">rec <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">prep</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">training =</span> dat) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-12">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bake</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">new_data =</span> dat)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 299
+  sample          sample_pd_2 sample_pd_2_pb_1 sample_pd_2_pb_2 sample_pd_2_pb_3
+  &lt;list&gt;          &lt;list&gt;                 &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+1 &lt;dbl [200 × 3]&gt; &lt;PHom&gt;                     0                0             40.8
+# ℹ 294 more variables: sample_pd_2_pb_4 &lt;dbl&gt;, sample_pd_2_pb_5 &lt;dbl&gt;,
+#   sample_pd_2_pb_6 &lt;dbl&gt;, sample_pd_2_pb_7 &lt;dbl&gt;, sample_pd_2_pb_8 &lt;dbl&gt;,
+#   sample_pd_2_pb_9 &lt;dbl&gt;, sample_pd_2_pb_10 &lt;dbl&gt;, sample_pd_2_pb_11 &lt;dbl&gt;,
+#   sample_pd_2_pb_12 &lt;dbl&gt;, sample_pd_2_pb_13 &lt;dbl&gt;, sample_pd_2_pb_14 &lt;dbl&gt;,
+#   sample_pd_2_pb_15 &lt;dbl&gt;, sample_pd_2_pb_16 &lt;dbl&gt;, sample_pd_2_pb_17 &lt;dbl&gt;,
+#   sample_pd_2_pb_18 &lt;dbl&gt;, sample_pd_2_pb_19 &lt;dbl&gt;, sample_pd_2_pb_20 &lt;dbl&gt;,
+#   sample_pd_2_pb_21 &lt;dbl&gt;, sample_pd_2_pb_22 &lt;dbl&gt;, …</code></pre>
+</div>
+</div>
+<p>The code chunk uses the additional step <code>step_pd_degree()</code> to extract degree-specific layers from multi-degree persistence diagrams; in this case, we are interested in vectorizing only 2-dimensional features. Despite this, we must also specify the degree of the features we want in the persistence block step.</p>
+</section>
+</section>
+<section id="the-potential" class="level2">
+<h2 class="anchored" data-anchor-id="the-potential">The Potential</h2>
+<p>Many methods remain to be built into these tools, which will only reach their full potential through user feedback. Two issues in particular, <a href="https://github.com/uislambekov/TDAvec/issues/3">additional vectorizations</a> for {TDAvec} and <a href="https://github.com/tdaverse/tdarec/issues/2">additional engines</a> for {tdarec}, may remain open—or, ahem, persist—into the foreseeable future. We welcome bug reports, feature requests, and code contributions from the community!</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-Brown2024" class="csl-entry">
+Brown, Shael, and Reza Farivar. 2024. <span>“<span>TDApplied</span>: <span>Machine Learning</span> and <span>Inference</span> for <span>Topological Data Analysis</span>.”</span> <a href="https://cran.r-project.org/package=TDApplied">https://cran.r-project.org/package=TDApplied</a>.
+</div>
+<div id="ref-Chan2022" class="csl-entry">
+Chan, Kit C., Umar Islambekov, Alexey Luchinsky, and Rebecca Sanders. 2022. <span>“A <span>Computationally Efficient Framework</span> for <span>Vector Representation</span> of <span>Persistence Diagrams</span>.”</span> <em>Journal of Machine Learning Research</em> 23 (268): 1–33. <a href="http://jmlr.org/papers/v23/21-1129.html">http://jmlr.org/papers/v23/21-1129.html</a>.
+</div>
+<div id="ref-Fasy2022" class="csl-entry">
+Fasy, Brittany T., Jisu Kim, Fabrizio Lecci, Clement Maria, David L. Millman, and Vincent Rouvreau. 2022. <span>“<span>TDA</span>: <span>Statistical Tools</span> for <span>Topological Data Analysis</span>.”</span> <a href="https://CRAN.R-project.org/package=TDA">https://CRAN.R-project.org/package=TDA</a>.
+</div>
+<div id="ref-Kalisnik2019" class="csl-entry">
+Kališnik, Sara. 2019. <span>“Tropical <span>Coordinates</span> on the <span>Space</span> of <span>Persistence Barcodes</span>.”</span> <em>Foundations of Computational Mathematics</em> 19 (1): 101–29. <a href="https://doi.org/10.1007/s10208-018-9379-y">https://doi.org/10.1007/s10208-018-9379-y</a>.
+</div>
+<div id="ref-Luchinsky2025" class="csl-entry">
+Luchinsky, Aleksei, and Umar Islambekov. 2025. <span>“<span>TDAvec</span>: <span>Computing Vector Summaries</span> of <span>Persistence Diagrams</span> for <span>Topological Data Analysis</span> in <span>R</span> and <span>Python</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2411.17340">https://doi.org/10.48550/arXiv.2411.17340</a>.
+</div>
+<div id="ref-Stamm2023" class="csl-entry">
+Stamm, Aymeric. 2023. <span>“<span class="nocase">rgudhi</span>: <span>An Interface</span> to the <span>GUDHI Library</span> for <span>Topological Data Analysis</span>.”</span> <a href="https://lmjl-alea.github.io/rgudhi/">https://lmjl-alea.github.io/rgudhi/</a>.
+</div>
+<div id="ref-Wadhwa2025" class="csl-entry">
+Wadhwa, Raoul, Matt Piekenbrock, Jacob Scott, Jason Cory Brunson, Emily Noble, and Xinyi Zhang. 2025. <span>“<span class="nocase">ripserr</span>: <span>Calculate Persistent Homology</span> with <span>Ripser-Based Engines</span>.”</span> <a href="https://cran.r-project.org/package=ripserr">https://cran.r-project.org/package=ripserr</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Exploratory modeling is another story.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/</guid>
+  <pubDate>Wed, 04 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/front-image.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>R Consortium Awards First Round of 2025 ISC Grants</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1403,78 +1687,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/</guid>
   <pubDate>Thu, 06 Feb 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/connecting-nebraska-through-r-jeffrey-stevens-journey-of-community-building/NebraskaRUGlogo.png" medium="image" type="image/png" height="75" width="144"/>
-</item>
-<item>
-  <title>New R User Group in Thailand is Building Awareness of R</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/logo_final-05.png" class="img-fluid" style="width:30.0%"></p>
-<p><a href="https://sites.google.com/view/nwiroonsri/">Dr.&nbsp;Nathakhun Wiroonsri</a> is an academic at the Department of Mathematics, Faculty of Science, King Mongkut’s University of Technology Thonburi in Thailand. With a strong foundation in applied mathematics, Dr.&nbsp;Wiroonsri’s expertise lies in theoretical probability, machine learning, and statistical analysis. His research aims to bridge these areas to develop innovative methodologies for solving real-world problems, particularly in clustering and healthcare applications.</p>
-<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/nathakhun1.jpeg" class="img-fluid" style="width:40.0%"></p>
-<p>Beyond his academic pursuits, Dr.&nbsp;Wiroonsri is deeply involved in promoting the use of R in Thailand. He founded <a href="https://www.meetup.com/rxthailand/">R x TH, Thailand’s R user group supported by the R Consortium</a>, to foster collaboration and build a vibrant community for R enthusiasts. His efforts include organizing workshops for beginners, experienced users, and professionals, aiming to make R more accessible and appealing across industries, especially among the younger generation.</p>
-<section id="please-share-your-background-and-involvement-with-r-x-th." class="level3">
-<h3 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-r-x-th.">Please share your background and involvement with R x TH.</h3>
-<p>I’d like to share a bit about my personal background and my journey with R. I completed my PhD in applied mathematics at USC, focusing on theoretical probability. During that time, I didn’t use R extensively, but I was familiar with it and occasionally relied on it for simple simulations to validate my research results.</p>
-<p>After graduating, I taught a statistical consulting course at USC, assisting my advisor, who used R in his teaching. That experience provided me with additional exposure to the language.</p>
-<p>When I returned to Thailand, I was assigned to teach a statistics and data science program, which marked the beginning of my regular use of R. I also began conducting research in machine learning, where R became an integral tool in my work.</p>
-<p>This year, I had the opportunity to attend the useR! conference in Salzburg, which was a fantastic experience.</p>
-<p>Inspired by that event and recognizing a gap in Thailand, my students and I decided to establish R x TH, a user group for R enthusiasts in Thailand. At the time, there weren’t any Thai groups officially supported by the R Consortium, so we started this initiative to organize workshops for both beginners and experienced users. We also aim to foster research collaboration within the group.</p>
-<p>To clarify, I’m based in Bangkok and work at the King Mongkut’s University of Technology under a government contract, which initially sent me to study in the U.S.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-bangkok-and-more-broadly-in-thailand" class="level3">
-<h3 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-bangkok-and-more-broadly-in-thailand">Can you share what the R community is like in Bangkok and more broadly in Thailand?</h3>
-<p>I’d say R isn’t very popular in Thailand, especially compared to Python, which dominates industry environments. However, there are some R users, particularly in sectors like insurance and also healthcare.</p>
-<p>Before starting the R x TH user group, there were already a few R communities in Thailand, but they were mostly small and centered within universities. Many R users here work in academia, using it in traditional ways—primarily for teaching and data analysis in their fields.</p>
-<p>A funny story: I recently met an old friend who graduated from UC San Diego and works in pure mathematics. He had never coded before and started learning Python to assist his new research. When I mentioned R, he thought it was some kind of instant software where you just input data, click a few times, and get results! I explained what R is, and he was intrigued, so I invited him to one of our workshops. Stories like this highlight how much awareness we still need to build around R.</p>
-</section>
-<section id="your-group-recently-held-its-very-first-event.-how-did-it-go-can-you-share-more-about-the-topics-covered" class="level3">
-<h3 class="anchored" data-anchor-id="your-group-recently-held-its-very-first-event.-how-did-it-go-can-you-share-more-about-the-topics-covered">Your group recently held its very first event. How did it go? Can you share more about the topics covered?</h3>
-<p>Our first event focused on providing a solid introduction to R. We covered foundational topics such as basic syntax, coding practices, and essential packages like ggplot2. The session was hands-on, starting with how to install R and the key packages, so participants could follow along easily.</p>
-<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/event-participants.jpeg" class="img-fluid"></p>
-<p>The event was a success, thanks in large part to my master’s students: Onthada and Noppanon, who played a key role in organizing and leading the workshop. It even sparked interest among younger students—several approached me afterward, eager to take my data science course next semester, even though it’s typically designed for junior students.</p>
-<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/speaker.jpeg" class="img-fluid"></p>
-<p>As for the course itself, I initiated it about four years ago as a special topic, and after receiving positive feedback, it became a core part of the program. For the workshop, we prepared tutorial materials that participants could follow step by step. Right now, those materials are only shared within the group, but we may consider making them public in the future.</p>
-<p><img src="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/speaker2.jpeg" class="img-fluid"></p>
-</section>
-<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level3">
-<h3 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h3>
-<p>I’m currently wrapping up my grant, during which I published several papers related to cluster validity indices. My research focuses on cluster validation techniques, which are used to detect optimal clusters hidden in datasets. My team and I have also contributed to the R community by developing two R packages, <em><a href="https://cran.r-project.org/web/packages/UniversalCVI/index.html">UniversalCVI</a></em> and <em><a href="https://cran.r-project.org/web/packages/BayesCVI/index.html">BayesCVI</a></em>, both available on CRAN. These packages are specifically designed for those working with cluster analysis.</p>
-<p>In addition, I’m collaborating with a medical doctor to develop a new methodology for classifying diabetes patients. Once this project is complete, we plan to create an R package based on our methodology. We also aim to organize a workshop for healthcare professionals who use R in their work.</p>
-<p>Interestingly, R is still widely used in the healthcare sector in Thailand, particularly by doctors and researchers. However, I’ve noticed a shift among younger generations toward Python, but R remains prevalent in this field.</p>
-<p>Any techniques you recommend using for planning for or during the event? (Github, Zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</p>
-<p>We had a great turnout at the event, but the level of interest varied among participants. Some attendees were genuinely enthusiastic, while others seemed to come along with friends or just to check things out. That was a bit of a challenge because we wanted everyone to feel engaged.</p>
-<p>To address this, we reviewed the participant list and adjusted our approach. For those who seemed less familiar with the material, we made the content more beginner-friendly and interactive to capture their interest. We also added activities to make the event more fun and engaging, especially since many attendees were young and appreciated a lively atmosphere.</p>
-<p>For example, we incorporated Q&amp;A sessions where participants could answer questions, and we gave out small prizes to encourage participation. This approach resulted in better engagement and made the event more enjoyable for everyone.</p>
-</section>
-<section id="which-isc-projects-have-you-used-if-none-which-ones-look-like-something-you-might-look-into-and-why" class="level3">
-<h3 class="anchored" data-anchor-id="which-isc-projects-have-you-used-if-none-which-ones-look-like-something-you-might-look-into-and-why">Which <a href="https://r-consortium.org/all-projects/funded-projects.html">ISC project</a>(s) have you used? If none, which one(s) look like something you might look into (and why)?</h3>
-<p>To be honest, I only recently realized that the R Consortium funds ISE projects after you sent me the question. I looked into them briefly, and they all seem quite interesting. One that caught my attention is <a href="https://r-consortium.org/all-projects/2023-group-1.html#autotest-automated-testing-of-r-packages">autotest</a>.</p>
-<p>As someone with experience publishing R packages, I know how challenging it is to catch every error. Despite double- and triple-checking for issues, once a package is released and used by real users, unexpected errors often surface. A tool like <em>autotest</em>, which helps identify potential issues before publishing, would be incredibly helpful. Being able to ensure the package is as close to error-free as possible before release would make a big difference. I’m definitely planning to use <em>autotest</em> in the future.</p>
-</section>
-<section id="what-trends-do-you-see-around-the-r-language" class="level3">
-<h3 class="anchored" data-anchor-id="what-trends-do-you-see-around-the-r-language">What trends do you see around the R language?</h3>
-<p>In Thailand, there’s a clear trend among the younger generation toward learning Python. Even students in our statistics and data science program express interest in Python. However, we still focus on using R in our curriculum. The challenge is that many R users in Thailand, particularly in academia, tend to use it in traditional ways—relying on existing packages for data analysis. This makes it harder to attract younger users to R.</p>
-<p>When I attended the useR! conference this past year, I discovered many modern techniques and packages in R that could appeal to younger users, such as tools for creating content, slides, and publications—like Quarto. I tried Quarto myself recently and found it very promising. I believe introducing these modern tools through workshops could resonate with younger users and professionals in industry, showing them that R can be just as innovative and versatile as other tools.</p>
-<p>Our user group is based at a university, so it naturally draws students. However, we’re also planning workshops tailored to professionals, starting with healthcare. Since we’re currently working on a project related to diabetes classification, we plan to hold a workshop for healthcare professionals once the project is complete. This will give us a chance to share our new methodology, demonstrate its applications in healthcare, and encourage attendees to explore R further. I think this approach will help us reach new audiences and grow interest in R.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/</guid>
-  <pubDate>Wed, 29 Jan 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/new-r-user-group-in-thailand-is-building-awareness-of-r/event-participants.jpeg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
