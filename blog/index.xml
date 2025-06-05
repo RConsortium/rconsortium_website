@@ -112,9 +112,9 @@ background-color: null;
 font-style: inherit;">1</span>)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>         F1          F2          F3          F4          F5          F6 
-  0.9002432   1.7581514   2.2581712   2.7461524  10.5310812   7.1723908 
+  0.8987598   1.7797686   2.5091666   3.0530793  10.7252984   7.0662302 
          F7 
-213.1582173 </code></pre>
+203.4354508 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">xy_seq <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -144,8 +144,8 @@ background-color: null;
 font-style: inherit;">ySeq =</span> xy_seq</span>
 <span id="cb4-5">)</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  0.2747732  0.1730585  0.0000000  0.3671412 57.9835691 67.7773024  0.3227574
-[8] 72.5928726 89.8681884</code></pre>
+<pre><code>[1]  0.27083738  0.05783655  0.00000000  0.06415559 51.71506769 61.90406177
+[7]  0.00000000 66.67952887 81.25624373</code></pre>
 </div>
 </div>
 <p>Notably, all vectorizations are written in C++ and exposed to R using {Rcpp}. We also utilize the Armadillo package for various matrix operations, which makes all computations extremely fast and efficient.</p>
@@ -238,7 +238,7 @@ font-style: inherit;">new_data =</span> dat)</span></code></pre></div>
 <pre><code># A tibble: 1 × 299
   sample          sample_pd_2 sample_pd_2_pb_1 sample_pd_2_pb_2 sample_pd_2_pb_3
   &lt;list&gt;          &lt;list&gt;                 &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
-1 &lt;dbl [200 × 3]&gt; &lt;PHom&gt;                     0                0             40.8
+1 &lt;dbl [200 × 3]&gt; &lt;PHom&gt;                     0                0             37.4
 # ℹ 294 more variables: sample_pd_2_pb_4 &lt;dbl&gt;, sample_pd_2_pb_5 &lt;dbl&gt;,
 #   sample_pd_2_pb_6 &lt;dbl&gt;, sample_pd_2_pb_7 &lt;dbl&gt;, sample_pd_2_pb_8 &lt;dbl&gt;,
 #   sample_pd_2_pb_9 &lt;dbl&gt;, sample_pd_2_pb_10 &lt;dbl&gt;, sample_pd_2_pb_11 &lt;dbl&gt;,
