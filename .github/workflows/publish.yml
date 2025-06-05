@@ -39,6 +39,11 @@ jobs:
         # env:
         #   RENV_CONFIG_REPOS_OVERRIDE: "https://packagemanager.rstudio.com/all/latest"
       
+      # ripserr is needed for tdarec blog post  
+      - name: Install missing R packages (e.g., ripserr)
+        run: |
+          Rscript -e 'install.packages("ripserr", repos = "https://cran.r-project.org")'
+
       - name: Render and Publish 
         uses: quarto-dev/quarto-actions/publish@v2
         with:
