@@ -2,10 +2,11 @@
 title: "Unlocking Chemical Volatility: How the volcalc R Package is Streamlining Scientific Research"
 aliases: 
   - "/blog/2024/09/23/unlocking-chemical-volatility-how-the-volcalc-r-package-is-streamlining-scientific-research"
-description:"Kristina Riemer, director of the CCT Data Science Team at the University 
-of Arizona, and Eric Scott, Scientific Programmer and Educator in the CCT Data Science Team, 
-the developers behind the volcalc package, discuss the motivation and development of this 
-innovative tool designed to automate the calculation of chemical compound volatilities. "
+description: > 
+  "Kristina Riemer, director of the CCT Data Science Team at the University 
+  of Arizona, and Eric Scott, Scientific Programmer and Educator in the CCT Data Science Team, 
+  the developers behind the volcalc package, discuss the motivation and development of this 
+  innovative tool designed to automate the calculation of chemical compound volatilities. "
 author: "R Consortium"
 image: "volcalc.webp"
 image-alt: "banner for unlocking chemical volatility with volcalc"
