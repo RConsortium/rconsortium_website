@@ -1,0 +1,4 @@
+CXX = clang++
+CXX14 = clang++
+CXX14FLAGS = -std=gnu++20
+
