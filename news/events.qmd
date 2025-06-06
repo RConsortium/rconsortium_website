@@ -12,7 +12,8 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[Rencontres 2025](https://rr2025.sciencesconf.org/)",
+    "R Consortium Webinar: From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration",
+    "R Consortium Webinar: Scaling the r-spatial ecosystem for the modern composable data pipeline",
     "[R/Medicine 2025](https://rconsortium.github.io/RMedicine_website/)",
     "[Ghana R Conference 2025](https://ghana-rusers.org/forms/rconf2025/)",
     "[Cascadia R Conference](https://cascadiarconf.com/)",
@@ -23,10 +24,10 @@ df <- data.frame(
     "[EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)](https://earl-conference.com/)"
   ),
 
-  dates = c("May 19-21, 2025", "Jun 10-13, 2025", "Jun 19-20, 2025", "Jun 20-21, 2025", "Jun 23-26, 2025", "July 3, 2025", "Aug 8-10, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
-  location = c("Mons, Belgium", "Virtual", "Accra, Ghana", "Portland, Oregon, USA", "Cold Spring Harbor Laboratory (CSHL), New York", "Cambridge, UK", "Durham, NC - Duke University", "Barcelona, Spain", "Brighton, UK"),
-  icon = c("Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
-  Type = c("Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
+  dates = c("June 27, 2025, 1pm ET", "June 24, 2025, 1pm ET", "Jun 9-13, 2025", "Jun 19-20, 2025", "Jun 20-21, 2025", "Jun 23-26, 2025", "July 3, 2025", "Aug 8-10, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
+  location = c("Virtual", "Virtual", "Virtual", "Accra, Ghana", "Portland, Oregon, USA", "Cold Spring Harbor Laboratory (CSHL), New York", "Cambridge, UK", "Durham, NC - Duke University", "Barcelona, Spain", "Brighton, UK"),
+  icon = c("Webinar", "Webinar", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
+  Type = c("Webinar", "Webinar", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
@@ -81,15 +82,15 @@ gt_table
 
 ```
 
-
 ## Recently Completed Events and Webinars
 
-___
+------------------------------------------------------------------------
 
 ```{r}
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://rr2025.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2025</a>',
     'PharmaRUG 2025',
     '<a href="https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html" target="_blank" rel="noreferrer noopener">Rix: reproducible data science environments with Nix</a>',
     '<a href="https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html" target="_blank" rel="noreferrer noopener">Quantification of Participation Risk using R and R Shiny</a>',
@@ -122,6 +123,7 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'May 19-21, 2025', 
         'March 28, 2025', 
         'March 13, 2025',
         'December 12, 2024',
@@ -155,6 +157,7 @@ df <- data.frame(
       
         ),
   location = c(
+        'Mons, Belgium',
         'Shanghai, Bejing',
         'Virtual',
         'Virtual',
@@ -187,10 +190,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
@@ -240,12 +243,11 @@ gt_table
 
 ```
 
-
 ## Archived Events and Webinars
 
-___
+------------------------------------------------------------------------
 
-[**R and shiny in regulatory submissi**](https://www.r-consortium.org/r-adoption-series-r-and-shiny-in-regulatory-submissions-webinar)[**on**](https://www.r-consortium.org/r-adoption-series-r-and-shiny-in-regulatory-submissions-webinar) – December, 11 2023 • Virtual
+[**R and shiny in regulatory submission**](https://www.r-consortium.org/r-adoption-series-r-and-shiny-in-regulatory-submissions-webinar) – December, 11 2023 • Virtual
 
 This series was a collaborative effort by the R consortium, PhUSE, and PSI. The FDA and industry speakers shared their unique experiences with R-based and shiny-based submissions.
 
@@ -277,7 +279,7 @@ The European Bioconductor Conference 2023 is centered on new developments in the
 
 Posit::conf (2023) was two days of workshops and two days of conference keynotes and talks, with endless opportunities to connect with the data science community.
 
-**[R Validation Hub Community Meeting](https://www.r-consortium.org/blog/2023/06/14/learnings-and-reflection-from-case-studies-what-is-next-for-the-r-validation-hub)** – June 27, 2023 • Virtual
+[**R Validation Hub Community Meeting**](https://www.r-consortium.org/blog/2023/06/14/learnings-and-reflection-from-case-studies-what-is-next-for-the-r-validation-hub) – June 27, 2023 • Virtual
 
 Last year, the R validation hub initiated a three-part presentation series on “case studies.” Eight pharma companies presented their implementation of the risk assessment framework. We briefly summarize common themes and differences in the approaches. For the majority of the meeting, we want to discuss common challenges and brainstorm ideas for possible future projects by the R Validation Hub.
 
@@ -289,15 +291,15 @@ The R/Medicine conference provides a forum for sharing R based tools and approac
 
 Hosted at King’s College, UK, this one-day event will feature talks on all things R! SatRdays events are for everyone with an interest in R, whether you’re a seasoned pro or just getting started. [Learn More](https://satrday-london-2023.jumpingrivers.com/)
 
-**[R/Adoption Series: Learnings and Reflection from R Validation Case Studies](https://www.r-consortium.org/r-adoption-series-learnings-and-reflection-from-r-validation-case-studies)** – March 30, 2023 • Virtual
+[**R/Adoption Series: Learnings and Reflection from R Validation Case Studies**](https://www.r-consortium.org/r-adoption-series-learnings-and-reflection-from-r-validation-case-studies) – March 30, 2023 • Virtual
 
 The R Validation Hub will review the implementation of risk-based approaches to assess R package accuracy within a validated infrastructure and present our learnings from applied case studies. The discussion reflects the thinking of the R Validation Hub working group, which is a cross-industry initiative funded by the R Consortium.
 
-**[Teal: An R-Shiny Framework to Unlock the Power of Interactive Data Exploration](https://www.r-consortium.org/r-adoption-series-teal-an-r-shiny-framework-interactive-data-exploration)** – Feb 23, 2023 • Virtual
+[**Teal: An R-Shiny Framework to Unlock the Power of Interactive Data Exploration**](https://www.r-consortium.org/r-adoption-series-teal-an-r-shiny-framework-interactive-data-exploration) – Feb 23, 2023 • Virtual
 
 Teal is an open-source framework for building interactive data exploration applications in R. Developed at Roche, Teal allows users to quickly and easily create dynamic visualizations and tabulations of their data. It provides a range of pre-built, customizable modules and enables users to interact with their data in real time. This allows users to quickly and easily explore their data, thus enabling fast insights generation.
 
-**[{MMRM} and Software Engineering Working Group](https://www.r-consortium.org/r-adoption-series-introducing-the-software-engineering-working-group-and-mmrm)** – Jan 26, 2023 • Virtual
+[**{MMRM} and Software Engineering Working Group**](https://www.r-consortium.org/r-adoption-series-introducing-the-software-engineering-working-group-and-mmrm) – Jan 26, 2023 • Virtual
 
 In this R Adoption Series Webinar, the R Consortium invites the ASA Software Engineering Working Group ASA BIOP SWE to share their experience of how the group formed and the types of problems they are trying to solve in the Open Source for the Pharmaceutical industry.
 
@@ -305,27 +307,27 @@ In this R Adoption Series Webinar, the R Consortium invites the ASA Software Eng
 
 In this webinar, Mark and Sherry present on how to increase overall solution performance with R tightly integrated with Oracle databases.
 
-**[A Survey of Changes around the Tidyverse Package in R](https://www.r-consortium.org/blog/2022/10/24/a-survey-of-changes-around-the-tidyverse-package-in-r)** – October 28, 2022 • Virtual
+[**A Survey of Changes around the Tidyverse Package in R**](https://www.r-consortium.org/blog/2022/10/24/a-survey-of-changes-around-the-tidyverse-package-in-r) – October 28, 2022 • Virtual
 
 The Osun RUG, Nigeria hosts “A Survey of Changes around the Tidyverse Package in R” with special guest, Chief Scientist at RStudio, Hadley Wickham. The core tidyverse includes the packages that is likely used in everyday data analyses.
 
-**[Upskilling on Data Handling and Communication at Swiss Re](https://hopin.com/events/r-insurance-webinar-78ebfbb8-e585-4e25-94dd-00ef94fe27a3)** – October 27, 2022 • Virtual
+[**Upskilling on Data Handling and Communication at Swiss Re**](https://hopin.com/events/r-insurance-webinar-78ebfbb8-e585-4e25-94dd-00ef94fe27a3) – October 27, 2022 • Virtual
 
 In this session, Swiss Re team members shared their approach to upskilling for data analytics before diving into an example of how to create automated (and stunning) actuarial reports. [More Information](https://www.r-consortium.org/webinars)
 
-**[Using Metadata for Speedy Delivery](http://hopin.com/events/using-metadata-for-speedy-delivery-c2a8b27e-ba3e-47dc-aeb3-b80550fb105d)** – September 29, 2022 • Virtual
+[**Using Metadata for Speedy Delivery**](http://hopin.com/events/using-metadata-for-speedy-delivery-c2a8b27e-ba3e-47dc-aeb3-b80550fb105d) – September 29, 2022 • Virtual
 
 In this R Adoption Series Webinar, the R Consortium invited two Pharmaceutical organizations to share their experience in leveraging metadata for automation pieces of the clinical delivery workflow. [More Information](https://www.r-consortium.org/webinars)
 
-**[R/Medicine Conference 2022!](https://events.linuxfoundation.org/r-medicine/)** – August 23 – 26, 2022 • Virtual
+[**R/Medicine Conference 2022!**](https://events.linuxfoundation.org/r-medicine/) – August 23 – 26, 2022 • Virtual
 
 Announcing [R/Medicine 2022](https://events.linuxfoundation.org/r-medicine/)! The conference was fully virtual from August 23 through 26 and featured two days of workshops (included with the low registration fee!) and two days of keynotes featuring JJ Allaire and Frank Harrell. Check out the [R Consortium Youtube](https://www.youtube.com/r-consortium) to view the talks!
 
-**[Rstudio::conf 2022](https://www.rstudio.com/conference/)** – July 25-28, 2022 • Washington DC
+[**Rstudio::conf 2022**](https://www.rstudio.com/conference/) – July 25-28, 2022 • Washington DC
 
 A conference to connect, learn and celebrate all things R and RStudio! Sharpen your skills and celebrate the R Community together with an array of workshops and an inspiring lineup of speakers.
 
-**[userR! 2022](https://user2022.r-project.org/)**  – June 20 – 23, 2022 • Virtual
+[**userR! 2022**](https://user2022.r-project.org/)  – June 20 – 23, 2022 • Virtual
 
 Now in its 18th year is the official conference of the R Project for Statistical Computing. Keynotes include Sebastian Meyer, Amanda Cox, Julia Silge, Mine Dogucu and will showcase the [afrimapr](https://afrimapr.github.io/afrimapr.website/) project supports the development of a community of practice in Africa around map-making in R
 
