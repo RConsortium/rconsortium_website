@@ -116,11 +116,25 @@
     ]
   },
   {
-    "listing": "/newsletters/newsletters.html",
+    "listing": "/webinars/webinars-auto-not-being-used.html",
     "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+      "/webinars/AdoptionOfRInJapansPharma.html",
+      "/webinars/RMedicineWebinar.html",
+      "/webinars/containerization-and-r-for-reproducibility.html",
+      "/webinars/escape-the-data-dungeon.html",
+      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
+      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
+      "/webinars/r-insurance-series.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
+      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
+      "/webinars/super-charging-r-with-oracle-database.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-insights-from-latinr.html",
+      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
+      "/webinars/webinars.html"
     ]
   },
   {
@@ -240,24 +254,11 @@
     ]
   },
   {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "listing": "/newsletters/newsletters.html",
     "items": [
-      "/webinars/AdoptionOfRInJapansPharma.html",
-      "/webinars/RMedicineWebinar.html",
-      "/webinars/containerization-and-r-for-reproducibility.html",
-      "/webinars/escape-the-data-dungeon.html",
-      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
-      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
-      "/webinars/r-insurance-series.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
-      "/webinars/super-charging-r-with-oracle-database.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/unlocking-insights-from-latinr.html",
-      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
-      "/webinars/webinars.html"
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
     ]
   }
 ]
