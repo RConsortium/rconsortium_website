@@ -32,11 +32,11 @@ and strategy, and ensure that its initiatives align with its mission of promotin
 programming and fostering a supportive learning environment, focusing on community 
 engagement and collaboration.
 
-![](smiles.jpg)
+![](smiles.jpg){fig-alt="Brunei R User Group members"}
 
 **Can you share what the R community is like in Brunei? **
 
-![](brunei-rugs-logo.png){width=50%}
+![](brunei-rugs-logo.png){width=50% fig-alt="Brunei R users group logo"}
 
 The R community in Brunei may be small, but it is growing thanks to the efforts of 
 the Brunei R User Group. The group organizes monthly meetups and events to promote 
@@ -53,7 +53,7 @@ local R community.
 **You hosted a Meetup, “[R>aya with R](https://www.meetup.com/bruneir/events/300000854/?eventOrigin=group_events_list),” 
 in April. Can you share more about the topic? Why this topic? **
 
-![](brunei-raya-meetup.jpg)
+![](brunei-raya-meetup.jpg){fig-alt="Brunei R User Group Raya Meetup"}
 
 The R User Group’s “[R>aya with R](https://bruneir.github.io/posts/bru-2/)” Meetup in 
 Brunei was a lively event that combined Hari Raya Aidilfitri’s (Eid-ul-Fitr) festive 
@@ -61,7 +61,7 @@ spirit with the exploration of R programming. To engage younger audiences, we of
 free boba tea as a beverage during the session. The event featured informative sessions 
 led by expert community members, each focusing on advanced topics relevant to different fields.
 
-![](boba.jpg)
+![](boba.jpg){fig-alt="Boba tea at Brunei R Users Group Meetup}
 
 One of the critical presentations was on “Survival Analysis” 
 by [Dr. Elvynna Leong](https://www.linkedin.com/in/elvynna-leong-84b449190/?originalSubdomain=bn). She 
@@ -69,7 +69,7 @@ explained statistical techniques to predict the time until an event of interest,
 guests’ arrival at a Hari Raya open house. This topic is directly related to fields 
 that depend on time-to-event data, such as healthcare or actuarial science.
 
-![](presentation.jpg)
+![](presentation.jpg){fig-alt="presentation Survival Analysis by Dr. Elvynna Leong"}
 
 One of the highlights was [Wafid Sophian](https://www.linkedin.com/in/wafid-sophian-6b8073141/?originalSubdomain=bn)’s session 
 on “Simulation Methods for Economic Analysis.” In this presentation, Wafid demonstrated how R can be 
