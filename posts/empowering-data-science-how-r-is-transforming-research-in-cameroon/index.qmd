@@ -1,14 +1,20 @@
 ---
 title: "Empowering Data Science: How R is Transforming Research in Cameroon"
-description: "NyAvo RATOVO-ANDRIANARISOA, the co-founder of the R Community Cameroon, recently spoke with the R Consortium about the rapid growth of the R community in Cameroon and the impact of R…"
+aliases: 
+  - "/blog/2024/09/12/empowering-data-science-how-r-is-transforming-research-in-cameroon"
+description: > 
+  "NyAvo RATOVO-ANDRIANARISOA, the co-founder of the R Community Cameroon, recently 
+  spoke with the R Consortium about the rapid growth of the R community in Cameroon 
+  and the impact of R…"
 author: "R Consortium"
 image: "school.jpg"
+image-alt: "Large group of R enthusiasts at a school in Cameroon"
 date: "09/12/2024"
 ---
 
 [NyAvo RATOVO-ANDRIANARISOA](https://www.linkedin.com/in/nyavoratovo/?originalSubdomain=cm), the co-founder of the [R Community Cameroon](https://www.meetup.com/r-community-cameroon/), recently spoke with the R Consortium about the rapid growth of the R community in Cameroon and the impact of R on local research and data analysis. NyAvo provided insights into the community’s activities, such as developing an R community website using Shiny and implementing innovative projects like a custom search application. He also discussed the challenges and strategies in building a robust R ecosystem in Central Africa.
 
-![](nyavo.jpg){width=50%}
+![](nyavo.jpg){width=50% fig-alt="NyAvo RATOVO-ANDRIANARISOA, co-founder of R Community Cameroon"}
 
 **Please share your background and involvement with the RUGS group.**
 
@@ -18,13 +24,13 @@ With a solid statistical background, I specialize in data mining. In 2020, befor
 
 I would like to mention my colleagues who have co-founded the group with me: [Romain TCHAKOUTE](https://www.linkedin.com/in/romain-tchakoute-916126170/), [Idrissa DABO](https://www.linkedin.com/in/idrissa-dabo-72a199118/), [Saidou BOUREIMA](https://www.linkedin.com/in/aboubacar-sa%C3%AFdou-boureima-0aa918203/), [Mianala MANAMBIRAVAKA](https://www.linkedin.com/in/mianala-anaelle-manambiravaka-8291aa260/), and [Ronald DJEUMEN.](https://www.linkedin.com/in/ndjiya-djeumen-luc-ronald-franck-8a5968221/)
 
-![](community.webp)
+![](community.webp){fig-alt="R Commmunity Cameroon  co-founders Romain TCHAKOUTE, Idrissa DABO, Saidou BOUREIMA, Mianala MANAMBIRAVAKA, and Ronald DJEUMEN next to tall sign"}
 
 **Can you share what the R community is like in Cameroon?** 
 
 Cameroon is home to one of Central Africa’s largest science schools. I am part of a vibrant academic community of 30 members from several nationalities. This environment brings together some of the brightest minds, and R is an integral part of our curriculum. However, our use of R goes beyond basic statistics and plotting; we focus on more sophisticated applications, such as Monte Carlo estimation, model development, and advanced R programming.
 
-![](school.jpg)
+![](school.jpg){fig-alt="large gathering of R Community Cameroon at a school"}
 
 Several professors in our school possess strong statistical backgrounds and rely on R for their research. Additionally, our alums who have transitioned into the industry continue to leverage R for data analysis. While Cameroon has a limited amount of data, we conduct numerous surveys. The initial step most of us take is data cleaning, predominantly using R. Once the data is clean, we employ Quarto to generate automatic reports, allowing us to summarize survey results quickly. Some of my colleagues also explore other functionalities of R, like creating applications with R Shiny.
 
@@ -38,13 +44,13 @@ Our community now includes students and academics, and some PhD doctors are stil
 
 We’re active both online and in person. It’s important to note that we organize two types of meetings. The first is an internal meeting with our community leaders, typically attended by around seven people. We use a WhatsApp group for communication and usually meet monthly for lunch at a restaurant for these meetings. The second activity involves larger groups. For these, we first coordinate with the administration, such as the school mentioned earlier, who then communicate with the students. We also document and share these activities online to inform others, though most of our communication is direct and specific.
 
-![](meeting.webp)
+![](meeting.webp){fig-alt="R Community Cameroon small internal meeting"}
 
 For example, after explaining our vision to a university contact, they were interested and agreed to offer a course at their institution. We then coordinated with the student body leader, planned a session, and shared the event online. We even hired a professional photographer to capture the event, sharing the photos with the school for further distribution. However, we haven’t yet posted about this activity on LinkedIn.
 
 Looking ahead, we’re planning a session with another school—the statistical school where I studied. We’re currently in discussions with their management. Once we’ve had our conversation, possibly next week, we’ll talk with the student leaders. After the session, we plan to share our activities online, including photos, to highlight what we’re accomplishing in Cameroon.
 
-![](students.jpg)
+![](students.jpg){fig-alt="R Community Cameroon picture at school"}
 
 **Do you have any upcoming events planned for the group?**
 
