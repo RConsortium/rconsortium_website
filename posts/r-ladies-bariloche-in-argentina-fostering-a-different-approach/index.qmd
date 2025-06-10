@@ -1,11 +1,17 @@
 ---
 title: "R-Ladies Bariloche in Argentina: Fostering a Different Approach to  Leadership"
-description: "Lina Moreno, founder and organizer of the R-Ladies Bariloche chapter in Argentina, recently shared her journey with the R Consortium."
+aliases: 
+  - "/blog/2024/09/06/r-ladies-bariloche-in-argentina-fostering-a-different-approach-to-leadership"
+description: > 
+  "Lina Moreno, founder and organizer of the R-Ladies Bariloche chapter in Argentina, 
+  recently shared her journey with the R Consortium."
 author: "R Consortium"
+image: "meetup.png"
+image-alt: "Meetup of R-Ladies Bariloche chapter in Argentina"
 date: "09/06/2024"
 ---
 
-![](lina.jpg)
+![](lina.jpg){fig-alt="Lina Morena, founder and organizer of R-Ladies Bariloche chapter"}
 
 [Lina Moreno](https://www.linkedin.com/in/lina-moreno-azocar-81a5aa276/?originalSubdomain=ar), founder and organizer of the [R-Ladies Bariloche](https://www.meetup.com/es/rladies-bariloche/) chapter in Argentina, recently shared her journey with the R Consortium. A biologist focusing on evolutionary ecology, she discussed her experience building a local R community, the challenges of maintaining engagement post-pandemic, and her efforts to foster discussions on leadership and gender equity within academia. Through her work, she aims to create an inclusive space for women in data science and strengthen the R community in Bariloche.
 
@@ -15,7 +21,7 @@ I am a biologist working on evolutionary ecology, I did a bachelor in Sciences i
 
 After several years, I encountered a problem I couldn’t resolve. I turned to Google and found a helpful community of ladies. They assisted me a lot and saved me from a tight spot. After some communication, they suggested starting an R-Ladies community in Bariloche. I met with them in person when I traveled to Buenos Aires. They convinced me to start a Bariloche chapter, and by the end of 2019, a few of my colleagues and I, mainly biologists working in the same area, created the Bariloche chapter.
 
-![](chapter.jpg)
+![](chapter.jpg){fig-alt="early meeting of R-Ladies Bariloche"}
 
 **What are some challenges you have faced in organizing this group?**
 
@@ -23,7 +29,7 @@ We are currently facing some difficulties as people seem unwilling to get involv
 
 During the pandemic, there were five organizers, three of us with young children, so it was pretty difficult. We started a study group for the [R for Data Science](https://r4ds.hadley.nz/) book, which had recently been translated into [Spanish](https://es.r4ds.hadley.nz/). We also organized meetups, mainly led by us. Surprisingly, there was good attendance during the pandemic, with around 40 people each time, similar to before the pandemic. However, after returning to in-person meetups, the attendance dropped significantly. The most crowded meetup had only 15 people, whereas before, we used to have two meetups on the same subject, both with 40 attendees.
 
-![](meetup.png)
+![](meetup.png){fig-alt="meetup of R Ladies"}
 
 We are attempting to integrate virtual and in-person components, which has proven challenging. We aim to introduce a beginner’s course in R through a meetup to help attendees gain confidence for future meetups. Our meetups typically have a good turnout, but there is a lack of interest in specific topics, particularly those related to gender bias and women’s issues. Despite this, we are putting in a significant effort. Last year, we participated in a round table during a conference in Bariloche, focusing on gender bias and the difficulties of being a woman in Academia, and it received a lot of support, especially from women. The rest of the group is currently working on documenting our experience at that round table. I am not participating as I have been busy with other responsibilities.
 
@@ -35,7 +41,7 @@ However, we have enough data to write a paper about it. We’re also looking int
 
 The field of artificial intelligence and machine learning is rapidly evolving, which greatly helps incorporate knowledge in R. The leading software used for this purpose is R and Python. R is more popular than Python, as it has been around longer and is more user-friendly. Many people from academia with expertise in machine learning are transitioning to private industries. Regarding statistical analysis in biology, tools such as the [Vegan](https://cran.r-project.org/web/packages/vegan/vegan.pdf) package and those incorporating [GAM (Generalized Additive Models)](https://m-clark.github.io/generalized-additive-models/application.html) are commonly used. Tools that can handle multiple effects simultaneously are in high demand in ecology.
 
-![](community.jpg)
+![](community.jpg){fig-alt="R Ladies meetup with food"}
 
 **Would you like to talk about any recent activity from the group?**
 
