@@ -10,7 +10,60 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Mon, 09 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 10 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="a-community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign" class="level1">
+<h1>A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign</h1>
+<p>As many of you may have seen, we’ve officially launched a fundraising campaign for the <strong>Regulatory R Repository</strong> — a critical initiative built to support the safe, efficient, and confident use of R packages in regulated environments.</p>
+<p>The <strong>Regulatory R Repository</strong> will provide a robust, <em>validation-ready collection of package metadata</em> using the R Validation Hub’s open-source <code>{riskmetric}</code> framework. Our goal is simple yet powerful: enable organizations to use R in their regulatory submissions.</p>
+<section id="why-a-fundraising" class="level3">
+<h3 class="anchored" data-anchor-id="why-a-fundraising">Why a fundraising?</h3>
+<p>Until now, the project has been built entirely on volunteer contributions. This has helped us build momentum — but to <strong>scale delivery and ensure consistency</strong>, we need dedicated funding. Importantly, this project is <strong>company-agnostic</strong> by design. It lives under the umbrella of the <strong>R Consortium</strong>, not any single corporation like Roche or others, to ensure transparency, neutrality, and broad utility.</p>
+</section>
+<section id="is-it-just-for-pharma" class="level3">
+<h3 class="anchored" data-anchor-id="is-it-just-for-pharma">Is it just for Pharma?</h3>
+<p>While the pharmaceutical industry has been a key driver of this effort, our scope extends far beyond pharma. This repository will benefit <strong>any organization that must meet regulatory standards while using R</strong>. This includes universities, NGOs, and regulated industries such as <strong>agriculture, finance, insurance, and biotech</strong>. Wherever R is used in regulated or quality-sensitive contexts, the repository can provide assurance and clarity.</p>
+</section>
+<section id="what-will-we-deliver" class="level3">
+<h3 class="anchored" data-anchor-id="what-will-we-deliver">What Will We Deliver?</h3>
+<ul>
+<li><p><strong>Tools for periodic assessment</strong> of public R packages</p></li>
+<li><p><strong>Template projects for in-house deployments</strong>, for organizations managing private packages</p></li>
+<li><p>A <strong>supplementary repository of metadata</strong> that supports the risk-assessment and governance of R environments in regulated settings</p></li>
+</ul>
+<p>We’re deeply grateful to everyone who has contributed so far — your work has laid the foundation for what’s next.</p>
+</section>
+<section id="why-open-source" class="level3">
+<h3 class="anchored" data-anchor-id="why-open-source">Why Open Source?</h3>
+<p>You might wonder: <em>“If some industries have the resources to build software, why do open-source projects still rely on funding and volunteer contributions?”</em></p>
+<p>Open Source thrives on collaboration rooted in <strong>transparency and trust</strong>. The solutions created in this space aren’t owned by any one company—they belong to the <strong>global community</strong>. That’s what makes them so powerful.</p>
+<p>Across all industries, there are countless <strong>smaller companies, research institutes, non-profits, and independent teams</strong> with brilliant ideas but limited budgets. Without access to costly, proprietary tools, their growth and potential impact are often restricted. Open Source breaks down these barriers—enabling them to move faster, innovate, and build on <strong>trusted, freely available technologies</strong>.</p>
+<p>While large enterprises do support Open Source—by funding organizations like the <strong>R Consortium</strong>, sponsoring events, or encouraging their employees to contribute—these efforts are often <strong>indirect</strong>. Open Source may not be owned, but it still needs to be built, maintained, and evolved. And that takes real resources.</p>
+<p>That’s where <strong>non-profit organizations and community fundraising</strong> play a vital role. They help fuel projects that are developed in parallel by volunteers around the world. Open Source isn’t free to create—it’s just <strong>freely shared</strong>. Ongoing support from both the community and companies that benefit from it is essential to keep it growing.</p>
+</section>
+<section id="contribute-now-to-support-open-source-software" class="level3">
+<h3 class="anchored" data-anchor-id="contribute-now-to-support-open-source-software">Contribute now to support Open Source Software</h3>
+<p>Fundraising initiatives help direct resources to high-impact projects—<strong>accelerating innovation, expanding access, and ensuring that open collaboration remains a driving force for progress</strong>.</p>
+<p>Let’s build this resource together — for the benefit of the entire R community and every organization that relies on it to meet regulatory standards. 👉 <a href="https://pharmar.org/repository">https://pharmar.org/repository</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/</guid>
+  <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/r-regulatory-repo-main-image.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Brewing Success with R.U.M.: How Inclusivity Fuels Manchester’s Thriving R Community</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1646,60 +1699,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/</guid>
   <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/pilot5.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Seville R Users Group: R’s Role in Optimization Research and Stroke Prevention</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/alberto-torrej%C3%B3n-valenzuela/?locale=en_US">Alberto Torrejon Valenzuela</a>, organizer of the <a href="https://www.meetup.com/sevilla-r-users/">Seville R Users Group</a>, recently spoke with the R Consortium about the dynamic growth of the R community in Seville and the group’s role in fostering collaboration across academia and industry. Alberto shared highlights from hosting the Third Spanish R Conference, which brought together local and international participants. He discussed the group’s initiatives, including monthly workshops and online outreach through platforms like YouTube. He also reflected on his research in optimization and a collaborative project analyzing stroke prevention, showcasing how R drives innovation in scientific research and community development.</p>
-<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/AlbertoValenzuela.png" class="img-fluid" style="width:60.0%"></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>My name is Alberto Torrejon Valenzuela. I am from Los Barrios, a town in Cádiz, southern Spain. I have moved to Seville, which is a bit further north, where I studied for a double degree in Mathematics and Statistics. During my studies, one of my professors introduced me to R. Although I was learning several programming languages, I realized that I could accomplish everything I needed with just R. Since then, I have continued to use it throughout my studies.</p>
-<p>I also joined the R group in Sevilla, which I discovered through Meetup. It was another motivation to enhance my R skills. The Sevilla R Users Group meets at the University of Sevilla’s facilities every one to two months. During these meetings, we discuss our work and share our experiences. Our group includes many users from academia and industry, making our discussions very diverse. We enjoy discussing our various implementation packages and applications; hearing from both perspectives is always interesting.</p>
-<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SevilleRUGOrganizers.png" class="img-fluid" style="width:60.0%"></p>
-<p><strong>Your Group recently hosted the <a href="https://www.imus.us.es/congresos/IIIRqueR/">Third Spanish R Conference</a>. Please share some details about the event.</strong></p>
-<p>The Third Spanish R Conference took place from November 6 to 8 in Seville, co-organized by the <a href="https://www.imus.us.es/www/">Institute of Mathematics at the University of Seville</a> and Sevilla R group, with support from the R Consortium and several other organizations.</p>
-<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SpanishRConference1.png" class="img-fluid" style="width:60.0%"></p>
-<p>We used a catchy slogan for the conference: “R tiene un color especial” (R has a special color). This is a modification of the lyrics of a famous song about Seville that everyone in Spain knows. It became a hit!</p>
-<p>The conference featured a wide range of activities from both scientific and social perspectives. We had four plenary speakers: <a href="https://jakubnowosad.com/">Jakub Nowosad</a>, from University of Münster, and <a href="https://www.frick.ws/">Hannah Frick</a> from POSIT, along with national speakers <a href="https://www.linkedin.com/in/rosanaferrero/?originalSubdomain=es">Rosana Ferrero</a>, who is very active in social networking, and <a href="https://www.linkedin.com/in/javier-tejedor-aguilera/?originalSubdomain=es">Javier Tejedor Aguilera</a> from <a href="https://www.endesa.com/en">Endesa</a>, who represents the industry.</p>
-<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SpanishRConference2.png" class="img-fluid" style="width:60.0%"></p>
-<p>Additionally, it’s important to mention that the group recognized the contributions of two founding members, <a href="https://frodriguezsanchez.net/">Francisco Rodriguez-Sanchez</a> and <a href="https://jeronimocarranza.github.io/">Jerónimo Carranza</a>, during the conference. We honored them with a gift to acknowledge their hard work.</p>
-<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SpanishRConference3.png" class="img-fluid" style="width:60.0%"></p>
-<p><strong>Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</strong></p>
-<p>Organizing a conference, like the one in Spain, is quite a significant undertaking. In addition to the conference, the group hosts monthly meetings called “TalleR”, the Spanish word for workshop. We typically emphasize the “R” at the end of the word. We exchange knowledge about our packages and various other topics during these meetings.</p>
-<p>We primarily use social networks to connect with the local community, including the former <a href="https://x.com/_SevillaR">Twitter</a> (now known as X), <a href="https://bsky.app/profile/sevillar.bsky.social">BlueSky</a>, and <a href="https://www.linkedin.com/in/gruposevillar/">LinkedIn</a>. We rely on our Meetup page to organise the event, where we post details about our seminars or talleres. People can indicate whether they will attend in person or online, making this a helpful tool. Additionally, since some members are researchers and professors in the University of Seville, we have support from Microsoft Teams to stream and record these meetings, as many participants come from South American and Spanish-speaking countries. For example, in our last meeting, we had attendees from Panama and Colombia.</p>
-<p><img src="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SevilleRUGMeeting.png" class="img-fluid" style="width:60.0%"></p>
-<p>After the meeting, we usually post our recordings on our <a href="https://www.youtube.com/channel/UC4_SN0le5WFMu_LFaIufLbA">YouTube</a> channel. Every session is recorded there. We also have a <a href="https://sevillarusers.netlify.app/">website</a> and a <a href="https://t.me/+HE3IBL13swTfZwYI">Telegram</a> group where we engage in more active discussions. This is mainly for our meetings.</p>
-<p>However, as you mentioned, organizing a large conference like the Spanish R Conference requires additional support. We received this support from the Institute of Mathematics at the University of Seville, which provided significant assistance regarding the location and logistics of our conference. Since our successful collaboration with the Institute of Mathematics, our local group has been keen to maintain and expand this partnership to enhance our meetings held at the Institute.</p>
-<p>Additionally, a significant portion of our support came from the Spanish Association known as <a href="https://r-es.org/">R-Hispano</a>. They provided valuable tools and assistance when co-organizing our events, which has been incredibly helpful. We’re also thankful for financial support from the R Consortium.</p>
-<p><strong>How do you use R for your work?</strong></p>
-<p>I use both R and Python for my <a href="https://www.researchgate.net/profile/Alberto-Torrejon-Valenzuela">research</a>. I have two distinct lives: a professional and a personal one. In my free time, I enjoy programming, and I also need to program in my professional life. My research focuses on optimization.</p>
-<p>Optimization models aim to find the best solution to a given problem. I work in a lab run by <a href="https://scholar.google.es/citations?user=koF66usAAAAJ&amp;hl=es">Justo Puerto</a>, a full professor in the Department of Statistics and Operations. One of the primary areas I’m involved in is ordered optimization, which involves sorting procedures to identify the best solutions to various combinatorial and decision optimization problems.</p>
-<p>We study numerous problems, ranging from logistics issues, such as resource or facility location problems, to statistical issues like linear regression or efficient statistics computation. The framework of ordered optimization allows us to generalize these problems to include abstract concepts such as equity or minimizing envy among clients. For instance, we can optimize the location of a supermarket, hospital, voting center, or bus and train lines, ensuring equitable access so that no one feels envious of their neighbors.</p>
-<p>Additionally, we apply these algorithms to statistical problems to improve the computation or estimators. The optimization community is familiar with Python algorithms and packages, but the R community is catching up. I use several R packages, including <a href="https://cran.r-project.org/web/packages/ROI/index.html">ROI</a> and <a href="https://cran.r-project.org/web/packages/ompr/index.html">OMPR</a>, allowing comprehensive data analysis.</p>
-<p><strong>Please share about a project you are working on or have worked on using the R language. Goal/reason, result, anything interesting, primarily related to your industry?</strong></p>
-<p>I am discussing a topic that highlights one of R’s best uses in boosting and supporting community initiatives. Since I work at the Institute of Mathematics, a research team from Hospital Universitario Virgen Macarena contacted us for statistical support. I was the first to volunteer, and we signed a collaboration contract to begin our work.</p>
-<p>The project I’m currently involved in focuses on<a href="https://www.ibis-sevilla.es/es/investigacion/neurociencias/neurovascular/">studying and preventing strokes through analyzing large databases</a>. Stroke is one of the worst medical conditions from the point of view of rapid care for the affected person because when it occurs, there is usually a very short period of time until brain death is reached. Timely care is essential for improving outcomes.</p>
-<p>This research is crucial for the team led by <a href="https://www.linkedin.com/in/joanmanelmontaner/?originalSubdomain=es">Joan Montaner</a>, which is focused on finding the best combination of drugs for stroke prevention. They aim to provide effective medications to individuals diagnosed with a stroke to improve their chances of survival, especially within the critical first 24 hours.</p>
-<p>The team has access to a historical dataset of more than 100,000 patients, and I am analyzing this data using our software tools. We are uncovering some interesting insights, and we hope this information will assist them in testing these drug combinations. Ultimately, we aim to help develop more extensive protocols for administering these medications to patients.</p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.htm">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/</guid>
-  <pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/SevilleRUGOrganizers.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
