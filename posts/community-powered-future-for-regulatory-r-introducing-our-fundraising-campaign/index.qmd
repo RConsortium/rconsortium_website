@@ -1,0 +1,52 @@
+---
+title: "A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign"
+description: > 
+  "We've officially launched a fundraising campaign for the **Regulatory R Repository** — a critical initiative built to support the safe, efficient, and confident use of R packages in regulated environments."
+author: "R Consortium"
+image: "r-regulatory-repo-main-image.png"
+image-alt: "Regulatory R Repository Fund Raising Campaign"
+date: "06/10/2025"
+---
+
+# A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign
+
+As many of you may have seen, we've officially launched a fundraising campaign for the **Regulatory R Repository** — a critical initiative built to support the safe, efficient, and confident use of R packages in regulated environments.
+
+The **Regulatory R Repository** will provide a robust, *validation-ready collection of package metadata* using the R Validation Hub’s open-source `{riskmetric}` framework. Our goal is simple yet powerful: enable organizations to use R in their regulatory submissions.
+
+### Why a fundraising?
+
+Until now, the project has been built entirely on volunteer contributions. This has helped us build momentum — but to **scale delivery and ensure consistency**, we need dedicated funding. Importantly, this project is **company-agnostic** by design. It lives under the umbrella of the **R Consortium**, not any single corporation like Roche or others, to ensure transparency, neutrality, and broad utility.
+
+### Is it just for Pharma?
+
+While the pharmaceutical industry has been a key driver of this effort, our scope extends far beyond pharma. This repository will benefit **any organization that must meet regulatory standards while using R**. This includes universities, NGOs, and regulated industries such as **agriculture, finance, insurance, and biotech**. Wherever R is used in regulated or quality-sensitive contexts, the repository can provide assurance and clarity.
+
+### What Will We Deliver?
+
+* **Tools for periodic assessment** of public R packages
+
+* **Template projects for in-house deployments**, for organizations managing private packages
+
+* A **supplementary repository of metadata** that supports the risk-assessment and governance of R environments in regulated settings
+
+We’re deeply grateful to everyone who has contributed so far — your work has laid the foundation for what’s next.
+
+### Why Open Source?
+
+You might wonder: *“If some industries have the resources to build software, why do open-source projects still rely on funding and volunteer contributions?”*
+
+Open Source thrives on collaboration rooted in **transparency and trust**. The solutions created in this space aren’t owned by any one company—they belong to the **global community**. That’s what makes them so powerful.
+
+Across all industries, there are countless **smaller companies, research institutes, non-profits, and independent teams** with brilliant ideas but limited budgets. Without access to costly, proprietary tools, their growth and potential impact are often restricted. Open Source breaks down these barriers—enabling them to move faster, innovate, and build on **trusted, freely available technologies**.
+
+While large enterprises do support Open Source—by funding organizations like the **R Consortium**, sponsoring events, or encouraging their employees to contribute—these efforts are often **indirect**. Open Source may not be owned, but it still needs to be built, maintained, and evolved. And that takes real resources.
+
+That’s where **non-profit organizations and community fundraising** play a vital role. They help fuel projects that are developed in parallel by volunteers around the world. Open Source isn’t free to create—it’s just **freely shared**. Ongoing support from both the community and companies that benefit from it is essential to keep it growing.
+
+### Contribute now to support Open Source Software
+
+Fundraising initiatives help direct resources to high-impact projects—**accelerating innovation, expanding access, and ensuring that open collaboration remains a driving force for progress**.
+
+Let’s build this resource together — for the benefit of the entire R community and every organization that relies on it to meet regulatory standards. 👉 [https://pharmar.org/repository](https://pharmar.org/repository)
+
