@@ -1,10 +1,25 @@
 [
   {
-    "listing": "/newsletters/newsletters.html",
+    "listing": "/webinars/webinars-auto-not-being-used.html",
     "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+      "/webinars/AdoptionOfRInJapansPharma.html",
+      "/webinars/RMedicineWebinar.html",
+      "/webinars/containerization-and-r-for-reproducibility.html",
+      "/webinars/escape-the-data-dungeon.html",
+      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
+      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
+      "/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html",
+      "/webinars/r-insurance-series.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
+      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
+      "/webinars/super-charging-r-with-oracle-database.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-insights-from-latinr.html",
+      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
+      "/webinars/webinars.html"
     ]
   },
   {
@@ -125,25 +140,11 @@
     ]
   },
   {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "listing": "/newsletters/newsletters.html",
     "items": [
-      "/webinars/AdoptionOfRInJapansPharma.html",
-      "/webinars/RMedicineWebinar.html",
-      "/webinars/containerization-and-r-for-reproducibility.html",
-      "/webinars/escape-the-data-dungeon.html",
-      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
-      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
-      "/webinars/r-insurance-series.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
-      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
-      "/webinars/super-charging-r-with-oracle-database.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/unlocking-insights-from-latinr.html",
-      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
-      "/webinars/webinars.html"
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
     ]
   },
   {
@@ -180,8 +181,8 @@
       "/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/index.html",
       "/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/index.html",
       "/posts/moving-forward-to-meet-new-challenges-in-2025/index.html",
-      "/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/index.html",
       "/posts/r-universe-named-r-consortiums-newest-top-level-project/index.html",
+      "/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/index.html",
       "/posts/empowering-data-science-in-mexico-r-ladies-queretaro-on-inclusivity-and-growth/index.html",
       "/posts/bridging-the-real-time-gap-how-inwt-is-bringing-apache-kafka-to-the-r-ecosystem/index.html",
       "/posts/health-technology-assessment-hta-working-group-kickoff-meeting/index.html",
@@ -218,8 +219,8 @@
       "/posts/keith-karani-wachira-leading-the-dekut-r-community-in-kenya-and-innovating-with-r/index.html",
       "/posts/Full-time-Korea-R-User-Group-Founder-Victor-Lee-Sees-AI-Future-for-R-and-Quarto-Textbooks-R-Consortium/index.html",
       "/posts/r4hr-in-buenos-aires-leveraging-r-for-dynamic-hr-solution/index.html",
-      "/posts/enhancing-clinical-trial-data-sharing-with-r-consortiums-r-submissions-working-group/index.html",
       "/posts/one-more-step-forward-the-r-consortium-submission-working-group-presentation-to-swissmedic-on-regulator-submission-using-r-and-shiny/index.html",
+      "/posts/enhancing-clinical-trial-data-sharing-with-r-consortiums-r-submissions-working-group/index.html",
       "/posts/collaborative-growth-the-botswana-r-user-group-and-regional-partnerships/index.html",
       "/posts/gergely-daroczis-journey-empowering-r-users-in-hungary/index.html",
       "/posts/enhancing-r-the-vision-and-impact-of-jan-viteks-maintainr-initiative/index.html",
