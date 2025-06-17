@@ -10,16 +10,18 @@ image-alt: Organizers of the R User Group at the University of Manchester
 date: "06/09/2025"
 ---
 
-| ![](anthony-evans3.jpg) | ![](martin-herrerias-azcue.jpg) | ![](rowan-green.jpg) | ![](sian-bladon.jpg) | ![](stavrina-dimosthenous.jpg) |
-| ----- | :---: | :---: | :---: | :---: |
++------------------+---------------------------+----------------+----------------+---------------------------+
+|                  |                           |                |                |                           |
++==================+:=========================:+:==============:+:==============:+:=========================:+
 | **AnthonyEvans** | **MartinHerrerias Azcue** | **RowanGreen** | **SianBladon** | **Stavrina Dimosthenous** |
++------------------+---------------------------+----------------+----------------+---------------------------+
 
 The R Consortium recently had the opportunity to interview Anthony Evans, [Martin Herrerias Azcue](https://www.linkedin.com/in/martinherrerias/), [Rowan Green](https://www.linkedin.com/in/rowan-green-microbes/?originalSubdomain=uk), [Sian Bladon](https://www.linkedin.com/in/sian-bladon-2b324a61/), and Stavrina Dimosthenous, organizers of the [R User Group at the University of Manchester (R.U.M.)](https://www.meetup.com/r-users-group-uni-manchester/). These leaders bring together a diverse community of students, researchers, and staff dedicated to advancing their skills in R programming. Their shared goal is to create an inclusive environment for learning and collaboration, which has driven the growth and success of the R.U.M. community.
 
 ### Related Links
 
-* [RUM website](https://rumgroup.github.io/allaboutrum/)
-* [CaDiR](https://research-it.manchester.ac.uk/building-communities/)
+-   [RUM website](https://rumgroup.github.io/allaboutrum/)
+-   [CaDiR](https://research-it.manchester.ac.uk/building-communities/)
 
 ## Please share about your background and involvement with the RUGS group.
 
@@ -33,15 +35,15 @@ When I first joined, my main goal was to improve my own R skills. Before that, I
 
 **Stavrina:** As a Data Scientist and Data Visualization enthusiast, I used to run our Data Visualisation Club monthly meetups. I have taken a step back, but I was involved in the group's initial creation and help a bit with organizing and strategizing now.
 
-## Can you share what the local R Community is like? 
+## Can you share what the local R Community is like?
 
 **Tony:** The university's local community is mostly composed of postgraduates, along with some researchers who are starting to use R in their work. Everyone in the community is very enthusiastic, eager to learn, and focused on improving their skills. It's a highly motivated and self-sustaining group. Everyone in the R community is very friendly and welcoming. It's a great, supportive environment.
 
 **Martin:** Most people in our R community come from humanities backgrounds. There’s a group in health economics that uses R extensively, as well as some in psychology and language studies. We also have a large group in genomics. It feels like there's a wide range of experience—some researchers have been working with R for a long time, while many postgraduates are just starting to learn. As a group, it can be challenging to support both experienced users and beginners, but we do our best to meet everyone's needs.
 
-**Rowan:** The local R community exists at multiple levels. It is often most active at a small scale within research groups, where members share advice. At the university level, R.U.M. brings together people from a broader variety of backgrounds. There is also a city-wide R community in Manchester, where quarterly talks are organized by [Datacove](https://datacove.co.uk/). These events bring together people from industry, public health, academia, and more. 
+**Rowan:** The local R community exists at multiple levels. It is often most active at a small scale within research groups, where members share advice. At the university level, R.U.M. brings together people from a broader variety of backgrounds. There is also a city-wide R community in Manchester, where quarterly talks are organized by [Datacove](https://datacove.co.uk/). These events bring together people from industry, public health, academia, and more.
 
-## You had a Meetup on “[R Functions \[for visualization\]](https://www.meetup.com/r-users-group-uni-manchester/events/303918144/?eventOrigin=group_upcoming_events).” Can you share more about the topic covered? Why this topic? 
+## You had a Meetup on “[R Functions \[for visualization\]](https://www.meetup.com/r-users-group-uni-manchester/events/303918144/?eventOrigin=group_upcoming_events).” Can you share more about the topic covered? Why this topic?
 
 **Martin:** Our previous event hadn’t gone as well as we hoped. We tried to cover a pretty complex topic—reproducible science using R on a Docker container with renv—but it wasn’t very well attended. So, we decided to shift our focus to beginner users and cover some basics that every R user should know but that we’ve noticed many beginners struggle with. The event covered the basics of function syntax and organizing code with functions. We also had a second talk that was a bit more advanced, focusing on using functions with the [purrr map function](https://purrr.tidyverse.org/reference/map.html) to automate plot production. The goal was to attract a broader range of users, as our previous events have mainly catered to advanced users.
 
@@ -49,7 +51,7 @@ When I first joined, my main goal was to improve my own R skills. Before that, I
 
 **Stavrina:** A barrier to entry in any programming language or tool is sometimes seeing demonstrable evidence of how it can be useful to an individual, especially at undergraduate and early postgraduate level. Working within a University and Research environment, we all have to make plots and advanced visualizations. Sometimes, though, the extra step is standardizing and making that reproducible for high-throughput plotting. Combining visualizations with functions achieves just that and can serve as a practical and aspirational demonstration for our community.
 
-## Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future? 
+## Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?
 
 **Tony:** One technique we started using since COVID is hybrid teaching. We initially used Zoom, but then switched to Teams. This approach has been very inclusive because it allows people in distant locations, even in other countries, or those with long commutes to participate in our talks. In the past, everyone had to be physically on campus, which excluded those who lived further away. Now, with hybrid teaching, more people can join in, regardless of their location.
 
@@ -65,12 +67,12 @@ The second reason for the shift towards R is that it’s free from licensing res
 
 **Martin:** I completely agree. I couldn’t have put it better myself, but as Tony pointed out, R is becoming more and more popular. It's gaining broader appeal and is now appreciated as a general scientific programming language rather than just a niche statistical tool. There's a clear trend, as Tony described, toward open science and open source software, and R is becoming a significant part of that movement.
 
-**Rowan:** One big trend is the use of LLMs/AI both for writing code in R, and as a tool executed through R. We were really lucky to have a former R users group member, [Kamilla Kopec-Harding](https://www.birmingham.ac.uk/research/arc/rsg/staff/kamilla-kopec-harding), return to give a talk on both of these perspectives earlier this year. 
+**Rowan:** One big trend is the use of LLMs/AI both for writing code in R, and as a tool executed through R. We were really lucky to have a former R users group member, [Kamilla Kopec-Harding](https://www.birmingham.ac.uk/research/arc/rsg/staff/kamilla-kopec-harding), return to give a talk on both of these perspectives earlier this year.
 
-**Sian:** R remains relatively niche and widely recognized in bioinformatics, clinical trials, fintech, and marketing. However, [Hadley Wickham](https://www.linkedin.com/in/hadleywickham/) and others' contributions \- through the [tidyverse](https://www.tidyverse.org/) and packages like [dplyr,](https://dplyr.tidyverse.org/) [ggplot2](https://ggplot2.tidyverse.org/), and [roxygen2](https://roxygen2.r-lib.org/) \- have significantly broadened R's appeal and impact in recent years. From an anecdotal perspective, about a decade ago, it was rare to see job postings requiring R skills. Today, although R may not have the same reach as languages like Python, job searches for R roles now yield far more opportunities than before.
+**Sian:** R remains relatively niche and widely recognized in bioinformatics, clinical trials, fintech, and marketing. However, [Hadley Wickham](https://www.linkedin.com/in/hadleywickham/) and others' contributions - through the [tidyverse](https://www.tidyverse.org/) and packages like [dplyr,](https://dplyr.tidyverse.org/) [ggplot2](https://ggplot2.tidyverse.org/), and [roxygen2](https://roxygen2.r-lib.org/) - have significantly broadened R's appeal and impact in recent years. From an anecdotal perspective, about a decade ago, it was rare to see job postings requiring R skills. Today, although R may not have the same reach as languages like Python, job searches for R roles now yield far more opportunities than before.
 
 ## How do I Join?
 
-R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you\! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
 
-[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html)
+<https://r-consortium.org/all-projects/rugsprogram.html>
