@@ -13,7 +13,7 @@ format:
 df <- data.frame(
   Title = c(
     "[R Consortium Webinar: Scaling the r-spatial ecosystem for the modern composable data pipeline](https://r-consortium.org/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html)",
-    "R Consortium Webinar: From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration",
+    "[R Consortium Webinar: From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration](https://r-consortium.org/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html)",
     "[R Consortium Working Group Webinar: R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, and Building Bridges](https://r-consortium.org/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html)",
     "[Ghana R Conference 2025](https://ghana-rusers.org/forms/rconf2025/)",
     "[Cascadia R Conference](https://cascadiarconf.com/)",
