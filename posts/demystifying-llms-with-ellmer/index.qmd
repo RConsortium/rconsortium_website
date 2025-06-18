@@ -1,0 +1,37 @@
+---
+title: "Demystifying LLMs with Ellmer"
+unpublished: true
+description: "Accessing LLMs programmatically opens up a whole new world of possibilities, letting you integrate LLMs into your own apps, scripts, and workflows."
+author: "R Consortium"
+image: "thumbnail-cheng-demystifying-llms-with-ellmer.png"
+image-alt: "Demystifying LLMs with Ellmer - Joe Chenge, CTO, Posit"
+date: "06/18/2025"
+---
+
+{{< video https://youtu.be/skLmOuNjqEU?feature=shared >}}
+
+# Unlocking the Power of LLMs with R: A Practical Guide
+
+In the rapidly evolving landscape of Large Language Models (LLMs), the capabilities extend far beyond the familiar confines of ChatGPT or programming assistants like Copilot. The real magic begins when you access these models programmatically, integrating their vast knowledge and adaptability into your own applications, scripts, and workflows. At the heart of this exploration into the next frontier of LLM utility is the R language, facilitated by tools like the `ellmer` package and the innovative web framework, Shiny.
+
+## Speaker: Joe Cheng
+
+Joe Cheng, the CTO of Posit, PBC, stands at the forefront of this exploration. As the original creator of the Shiny web framework and co-creator of `ellmer`, Joe's workshop at R/Medicine 2025 offered attendees a deep dive into the practical aspects of integrating LLMs with R. His journey from skepticism to embracing the potential of LLMs underscores a broader narrative within the data science community about the transformative power of these models when approached with curiosity and innovative tools.
+
+### From Skepticism to Innovation
+
+A year and a half ago, the consensus at Posit leaned towards skepticism regarding the hype surrounding AI and LLMs. The concern centered around the models' black box nature and their apparent incompatibility with the principles of reproducible research and transparent methodologies. However, the turning point for Joe and his team came with the realization that the capabilities of LLMs defied their initial understanding and skepticism. This led to a series of internal hackathons aimed at demystifying LLMs for Posit employees, fostering a profound appreciation for the models' potential when accessed programmatically.
+
+### The Workshop: A Practical Introduction to LLM APIs
+
+Joe's workshop provided a comprehensive introduction to utilizing LLM APIs within the R ecosystem, leveraging the `ellmer` package. Attendees learned how to configure R to interact with LLMs, customize model behavior through system prompts, integrate chatbots into Shiny applications, and employ LLMs for advanced natural language processing tasks. This hands-on approach equipped participants with the knowledge to embark on their own experiments with LLMs, pushing the boundaries of what's possible in data analysis and application development.
+
+### Key Takeaways
+
+- **Programmatic Access to LLMs:** The workshop emphasized the untapped potential of LLMs when accessed programmatically, allowing for more complex and tailored interactions than what standard interfaces like ChatGPT offer.
+- **Integration with R:** By showcasing the integration of LLMs with R, particularly through the `ellmer` package, Joe highlighted the seamless bridge between cutting-edge AI models and the robust analytical capabilities of R.
+- **Empowering the R Community:** The workshop not only showcased the technical possibilities but also served as a call to action for the R community to explore and innovate with LLMs, fostering a culture of experimentation and learning.
+
+### Conclusion
+
+The journey from skepticism to embracing LLMs underscores a larger narrative within the tech community about the potential of these models to revolutionize data analysis, application development, and beyond. Joe Cheng's workshop at R/Medicine 2025 stands as a beacon for R enthusiasts eager to explore this new frontier, armed with the knowledge and tools to unlock the full capabilities of LLMs.
