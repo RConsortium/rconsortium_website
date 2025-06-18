@@ -12,6 +12,36 @@
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Wed, 18 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>Bridging the Gap: Introducing RHealth for Healthcare Predictive Modeling in R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kGcq2YQVWcc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Bridging the Gap: Introducing RHealth for Healthcare Predictive Modeling in R In an era where healthcare is rapidly evolving with the integration of artificial intelligence, the disparity between traditional clinical research and cutting-edge AI tools poses a significant challenge. The R language, long trusted by clinicians and statisticians for its robust analytics capabilities, finds itself at a crossroads with the burgeoning field of deep learning predominantly led by Python. With Python boasting over 7,800 healthcare projects on GitHub compared to just 700 in R, there’s a clear gap in tool development focus. This divide hampers the ability of clinical researchers to leverage the latest AI advancements directly within the R ecosystem they are familiar with.</p>
+<p>Enter RHealth, a revolutionary toolkit designed to empower the R community with the tools needed for advanced healthcare predictive modeling using deep learning. Spearheaded by Junyi Gao, a PhD candidate at the University of Edinburgh, in collaboration with notable researchers like Zhixia Ren, Ji Song, Liantao Ma, and Ewen M. Harrison, RHealth is a testament to interdisciplinary collaboration and innovation. This initiative, funded by the ISC grant from the R Consortium, aims to dismantle the barriers preventing R users from accessing state-of-the-art AI tools.</p>
+<p>Why RHealth? The primary mission of RHealth is to bridge the gap between R and the Python-based AI world. RHealth offers an open-source R package that mirrors the capabilities of PyHealth, a highly successful healthcare AI package in the Python ecosystem. PyHealth has set a precedent by garnering over 11,000 stars and 144,000 downloads on GitHub, signaling its widespread acceptance and utility. By replicating such a successful blueprint in R, RHealth aspires to bring similar capabilities to the R community.</p>
+<p>Core Modules of RHealth The development of RHealth focuses on four core modules that create a seamless pipeline from data to prediction:</p>
+<p>EHR Database Module: This module provides a standardized framework to ingest, process, and manage diverse EHR datasets. It supports major public datasets like MIMIC-III, MIMIC-IV, and eICU, and facilitates user-specific data formats (OMOP-CDM), ensuring data consistency for downstream modeling.</p>
+<p>EHR Code Mapping Module: One of the most critical aspects of healthcare data integration is harmonizing different medical coding systems. This module tackles the immense challenge of mapping between various coding systems such as ICD, CPT, and NDC. It simplifies the critical task of aligning terminology across datasets, thereby enhancing data interoperability.</p>
+<p>Prediction Task Module: This module provides a framework for defining clinical prediction tasks. It supports patient-level tasks for long-term predictions, inter-visit level tasks for predictions during specific encounters, and intra-visit level tasks for predictions across encounters.</p>
+<p>Healthcare Deep Learning Core Module: As the engine of the toolkit, this module offers a comprehensive suite of predictive models, including traditional machine learning methods and cutting-edge deep learning models optimized for healthcare. Models like RETAIN, Transformers, and graph neural networks are accessible natively within R, empowering R users with advanced analytical capabilities.</p>
+<p>Empowering Clinical Researchers RHealth is not just about providing tools but about empowering the healthcare community to innovate and contribute to improved healthcare outcomes. By lowering the technical barrier, RHealth enables rapid prototyping and validation of clinical risks and decision support tools directly within the trusted R environment. This democratization of AI tools in healthcare allows clinicians and statisticians to leverage their deep clinical knowledge alongside advanced AI techniques, thus enhancing the translation of research into practice.</p>
+<p>Future Directions The journey of RHealth is just beginning. The team is actively developing additional modules and seeking further funding to expand its capabilities. Future enhancements include support for multi-modal data integration, clinical trial applications, and large language model enhancements. The goal is to continually refine and expand RHealth to meet the evolving needs of the healthcare community.</p>
+<p>In conclusion, RHealth represents a significant milestone in the integration of R and AI for healthcare. It is a call to action for the R community to embrace and contribute to this open-source project, ensuring that the latest advancements in AI are accessible and usable by those who are at the forefront of healthcare research. By fostering a collaborative environment, RHealth aims to revolutionize healthcare predictive modeling and ultimately contribute to better patient outcomes.</p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/</guid>
+  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/thumb.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Demystifying LLMs with Ellmer</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/demystifying-llms-with-ellmer/</link>
@@ -1647,30 +1677,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/looking-forward-to-seeing-you-at-useR2025-this-year/</guid>
   <pubDate>Fri, 14 Mar 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/looking-forward-to-seeing-you-at-useR2025-this-year/user2025_conf_logo.png" medium="image" type="image/png" height="72" width="144"/>
-</item>
-<item>
-  <title>A new year and the same, unwavering commitment</title>
-  <dc:creator>Terry Christiani</dc:creator>
-  <link>https://r-consortium.org/posts/new-year-same-unwavering-committment/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>As we open our first round for <a href="https://r-consortium.org/all-projects/callforproposals.html">Infrastructure Steering Committee call for proposals</a> and <a href="https://r-consortium.org/all-projects/rugsprogram.html">R User Groups’ submissions</a>, we want to take a moment to reiterate our mission as the R Consortium.</p>
-<p>The R Consortium promotes the growth and development of the R language and its ecosystem by supporting technical and social infrastructure, fostering community engagement, and driving industry adoption.</p>
-<p>We work to ensure a thriving, diverse global R community by providing resources, facilitating collaboration, and advocating for the use of R in multiple industry sectors. We provide funding for technical infrastructure through grants and working groups. We provide funding for social infrastructure through grants for R user groups and events around the world.</p>
-<p>We provide a neutral space where industry, academia, and government can collaborate on mission critical processes and standards.</p>
-<p>Our efforts in support of the R language and the community that keeps it growing and relevant are a privilege and we are committed to ensuring that our actions are in compliance with our code of conduct.</p>
-<p>We hope that you and your organization will join us in support of the R language and our community. We have a lot of work to do and we are excited to see the new and familiar faces come together for another fantastic year.</p>
-
-
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/new-year-same-unwavering-committment/</guid>
-  <pubDate>Thu, 06 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/new-year-same-unwavering-committment/commitment.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
