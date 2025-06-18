@@ -1,6 +1,8 @@
 ---
 listing:
   contents: posts
+  exclude: 
+    unpublished: true
   sort: "date desc"
   type: grid
   max-items: 6
