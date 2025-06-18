@@ -12,6 +12,53 @@
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Wed, 18 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>Demystifying LLMs with Ellmer</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/demystifying-llms-with-ellmer/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/skLmOuNjqEU?feature=shared" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="unlocking-the-power-of-llms-with-r-a-practical-guide" class="level1">
+<h1>Unlocking the Power of LLMs with R: A Practical Guide</h1>
+<p>In the rapidly evolving landscape of Large Language Models (LLMs), the capabilities extend far beyond the familiar confines of ChatGPT or programming assistants like Copilot. The real magic begins when you access these models programmatically, integrating their vast knowledge and adaptability into your own applications, scripts, and workflows. At the heart of this exploration into the next frontier of LLM utility is the R language, facilitated by tools like the <code>ellmer</code> package and the innovative web framework, Shiny.</p>
+<section id="speaker-joe-cheng" class="level2">
+<h2 class="anchored" data-anchor-id="speaker-joe-cheng">Speaker: Joe Cheng</h2>
+<p>Joe Cheng, the CTO of Posit, PBC, stands at the forefront of this exploration. As the original creator of the Shiny web framework and co-creator of <code>ellmer</code>, Joe’s workshop at R/Medicine 2025 offered attendees a deep dive into the practical aspects of integrating LLMs with R. His journey from skepticism to embracing the potential of LLMs underscores a broader narrative within the data science community about the transformative power of these models when approached with curiosity and innovative tools.</p>
+<section id="from-skepticism-to-innovation" class="level3">
+<h3 class="anchored" data-anchor-id="from-skepticism-to-innovation">From Skepticism to Innovation</h3>
+<p>A year and a half ago, the consensus at Posit leaned towards skepticism regarding the hype surrounding AI and LLMs. The concern centered around the models’ black box nature and their apparent incompatibility with the principles of reproducible research and transparent methodologies. However, the turning point for Joe and his team came with the realization that the capabilities of LLMs defied their initial understanding and skepticism. This led to a series of internal hackathons aimed at demystifying LLMs for Posit employees, fostering a profound appreciation for the models’ potential when accessed programmatically.</p>
+</section>
+<section id="the-workshop-a-practical-introduction-to-llm-apis" class="level3">
+<h3 class="anchored" data-anchor-id="the-workshop-a-practical-introduction-to-llm-apis">The Workshop: A Practical Introduction to LLM APIs</h3>
+<p>Joe’s workshop provided a comprehensive introduction to utilizing LLM APIs within the R ecosystem, leveraging the <code>ellmer</code> package. Attendees learned how to configure R to interact with LLMs, customize model behavior through system prompts, integrate chatbots into Shiny applications, and employ LLMs for advanced natural language processing tasks. This hands-on approach equipped participants with the knowledge to embark on their own experiments with LLMs, pushing the boundaries of what’s possible in data analysis and application development.</p>
+</section>
+<section id="key-takeaways" class="level3">
+<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li><strong>Programmatic Access to LLMs:</strong> The workshop emphasized the untapped potential of LLMs when accessed programmatically, allowing for more complex and tailored interactions than what standard interfaces like ChatGPT offer.</li>
+<li><strong>Integration with R:</strong> By showcasing the integration of LLMs with R, particularly through the <code>ellmer</code> package, Joe highlighted the seamless bridge between cutting-edge AI models and the robust analytical capabilities of R.</li>
+<li><strong>Empowering the R Community:</strong> The workshop not only showcased the technical possibilities but also served as a call to action for the R community to explore and innovate with LLMs, fostering a culture of experimentation and learning.</li>
+</ul>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>The journey from skepticism to embracing LLMs underscores a larger narrative within the tech community about the potential of these models to revolutionize data analysis, application development, and beyond. Joe Cheng’s workshop at R/Medicine 2025 stands as a beacon for R enthusiasts eager to explore this new frontier, armed with the knowledge and tools to unlock the full capabilities of LLMs.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/demystifying-llms-with-ellmer/</guid>
+  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/demystifying-llms-with-ellmer/thumbnail-cheng-demystifying-llms-with-ellmer.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Simplifying R Package Documentation with pkgdown and GitHub Pages</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/</link>
@@ -125,21 +172,19 @@
 
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 25%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2">================== <strong>AnthonyEvans</strong></td>
-<td rowspan="2">:=========================: <strong>MartinHerrerias Azcue</strong></td>
-<td rowspan="2">:==============: <strong>RowanGreen</strong></td>
-<td rowspan="2">:==============: <strong>SianBladon</strong></td>
-<td rowspan="2">:=========================: <strong>Stavrina Dimosthenous</strong></td>
-</tr>
-<tr class="even">
+<td>================== <strong>AnthonyEvans</strong></td>
+<td>:=========================: <strong>MartinHerrerias Azcue</strong></td>
+<td>:==============: <strong>RowanGreen</strong></td>
+<td>:==============: <strong>SianBladon</strong></td>
+<td>:=========================: <strong>Stavrina Dimosthenous</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1626,59 +1671,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/new-year-same-unwavering-committment/</guid>
   <pubDate>Thu, 06 Mar 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/new-year-same-unwavering-committment/commitment.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>Promoting R in Nigeria: How Unilorin R User Group is Making an Impact</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/mohammed-kabir-garba-46795823/?originalSubdomain=ng">Dr.&nbsp;M.K. Garba</a> and <a href="https://gbganalyst.github.io/">Ezekiel Ogundepo</a>, organizers of the University of Ilorin, shortened to <a href="https://www.meetup.com/unilorin-r-user-group/">Unilorin R User Group</a>, recently spoke with the R Consortium about their efforts to promote R programming in Nigeria and foster a thriving local R community. They discussed the group’s origins, their experiences teaching R across academia and industry, and the impact of their inaugural event. Dr.&nbsp;Garba and Ezekiel also shared their plans for future workshops and highlighted their outreach strategies to engage learners and expand R’s reach in Nigeria. Ilorin is the capital city of Kwara State and is located in the western region of Nigeria.</p>
-<p><img src="https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/MKGarba.png" class="img-fluid" style="width:40.0%"></p>
-<p>Dr.&nbsp;M. K. Garba</p>
-<p><img src="https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/EzekielOgundepo.png" class="img-fluid" style="width:40.0%"></p>
-<p>Ezekiel Ogundepo</p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>Dr.&nbsp;Garba: I am Dr.&nbsp;M.K. Garba, a lecturer in the Department of Statistics at the <a href="https://www.unilorin.edu.ng/">University of Ilorin</a>. I organize the University of Ilorin R User Group, and my co-organizer and fellow instructor is Ezekiel.</p>
-<p>I was introduced to R programming by a senior colleague in my department around 2011 or 2012, and I have been using R personally since then. During my PhD, I utilized R programming continuously from start to finish. In 2015 or 2016, I taught R programming as a course to a group of senior-level students just a year before graduation. I continued teaching it for several years before the course was handed over to another instructor.</p>
-<p>Although I am no longer assigned as the lecturer for this course, I am motivated to share my knowledge and experiences with students. This desire led to the establishment of the R User Group. The group is not just for students in the Statistics department; it welcomes participants from other departments as long as they are interested in learning R programming.</p>
-<p>Ezekiel: I am a statistician consultant with Data Science Nigeria. Additionally, I help Dr.&nbsp;Garba in teaching R programming. Dr.&nbsp;Garba was my lecturer at the University of Ilorin, where he served as my co-supervisor during my training. He introduced me to R programming in 2014, and we focused on statistical computing using this language. Since then, I have been using R programming across various industries.</p>
-<p>In 2018, I became a <a href="https://education.rstudio.com/trainers/people/ogundepo+ezekiel_adebayo/">Tidyverse instructor</a> for R Studio and developed several R packages, including <a href="https://gbganalyst.github.io/bulkreadr/">bulkreadr</a> and <a href="https://gbganalyst.github.io/forstringr/">forstringr</a> packages. I am also a member of <a href="https://ropensci.org/champions/">R Champion</a>, an organization dedicated to promoting R programming in Nigeria and abroad.</p>
-<p><strong>What is the local R community like in Nigeria? Is R being used in Academia and Industry?</strong></p>
-<p><img src="https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/UnilorinRUGlogo.png" class="img-fluid" style="width:50.0%"></p>
-<p>Dr.&nbsp;Garba: I’ll focus on academia and leave the industry to Ezekiel. While I am a tenured staff member at the University of Ilorin, I also serve as a visiting professor at several universities in my state. In any course I teach, I introduce my students to R programming. I am pleased to share that one or two of these institutions have adopted R as the programming language for their statistical computing courses.</p>
-<p>Every university typically offers at least one statistical computing course, and many institutions have embraced R. Some may not use R exclusively; instead, they combine it with other software like <a href="https://www.stata.com/">Stata</a>, <a href="https://vsni.co.uk/software/genstat/">GenSTAT</a>, or <a href="https://www.sas.com/en_us/home.html">SAS</a>. However, due to my introduction of R, it has gained traction in their programs. While some students hesitated to abandon their previous software, they embraced using R easily.</p>
-<p>Ezekiel: We actively promote R programming across various industries in Nigeria. For example, we implement R programming solutions at <a href="https://datasciencenigeria.org/">Data Science Nigeria</a>, where I work as a consultant. Two months ago, we organized a boot camp that invited numerous instructors and trainers to teach attendees about programming languages such as Python, R, data science, machine learning, and AI. I had the opportunity to teach R to those participants. Additionally, we collaborate with several biotechnology companies in Nigeria, both in industry and academia.</p>
-<p><strong>Please tell us about the first event from your R User Group. What topics were covered, and what kind of response did you receive for the event?</strong></p>
-<p>Dr.&nbsp;Garba: The first meetup took place after a two-week delay primarily because our targeted audience, the students at the University of Ilorin, were on break. Once they returned, we allowed them to settle in a few weeks before organizing our meeting. It was held virtually, and we were pleased with both the attendance and the feedback we received.</p>
-<p>I was thrilled with the responses, especially since the participants were selected from various departments, not just those related to statistics or mathematics. We began the session with the basics, and those with intermediate knowledge could also learn and engage with the material effectively.</p>
-<p>Ezekiel served as the instructor for this first meetup. We have a calendar in place and assigned roles for upcoming sessions. I invited him to share insights about what we taught during the meeting, which mainly focused on introductory concepts.</p>
-<p>Ezekiel: We introduced the participants to an introductory level of programming, teaching them how to install the software and use the essential components of the R programming language. We covered various concepts, including data types and structures, to prepare them for more advanced topics in future meetings. While there were some issues due to the large number of attendees, everyone enjoyed the event.</p>
-<p><strong>What are your plans for the group in the coming year? How many events are you hoping to host, and what topics do you plan to cover?</strong></p>
-<p>Dr.&nbsp;Garba: Based on our schedule, I want to cover numerous topics, and I plan to invite many instructors, both national and international. We will discuss reproducibility in research, specifically using RStudio Project and version control for this purpose. Additionally, we want to focus on data visualization using the <a href="https://ggplot2.tidyverse.org/">ggplot2</a> package.</p>
-<p>We have a range of interesting topics on data analysis, various tidyverse libraries, and different aspects of geostatistics. These subjects will be valuable for participants from both academia and industry. R programming applications extend to areas of statistics, including econometrics, which are included in our calendar. Additionally, we will have a session on building a personal portfolio using Quarto.</p>
-<p><strong>Do you plan to host your events in person or online?</strong></p>
-<p>Dr.&nbsp;Garba: We will have in-person sessions. As I mentioned, our primary focus is the students who were just getting settled then. That is why we initially opted for online sessions. However, there is no way we won’t conduct in-person classes, especially when it comes to practical demonstrations of what we are teaching. The students need to showcase their learning in person.</p>
-<p><strong>What tools and techniques do you plan to use to promote your events?</strong></p>
-<p>Dr.&nbsp;Garba: We use the Meetup platform where students can register to participate in discussions about our training sessions. When participants have questions, they can raise them, and we respond accordingly. We also encourage other participants to answer questions if they have the expertise; if no one else can answer, we step in. This platform is where we share information about our meetup schedules.</p>
-<p>Additionally, we have individual Twitter handles and LinkedIn profiles that we use to disseminate information. On the day of our training sessions, we stream the events live on Facebook. Although we also have a YouTube account, we encountered an issue and could not stream on that platform that day. However, the event was successfully streamed live on Facebook.</p>
-<p>We promoted the initiative using hashtags like #rstats #DataScience #LearnR, which we knew would help retrieve any other relevant information related to R. We contacted the entire R ecosystem, including groups like<a href="https://ropensci.org/">R OpenSci</a>and other organizations. In Nigeria, we have numerous R user groups and we shared our message with them. They were also instrumental in helping us promote it. Overall, this strategy worked perfectly.</p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/</guid>
-  <pubDate>Mon, 03 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/UnilorinRUGlogo.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
