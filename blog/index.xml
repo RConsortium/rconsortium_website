@@ -10,7 +10,56 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Tue, 10 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 18 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Simplifying R Package Documentation with pkgdown and GitHub Pages</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/r-pkgdown.jpg" class="img-fluid" alt="R Package Development with pkgdown - Melissa Van Bussel"></p>
+<p>Welcome to the world of R package development! If you’ve ever created an R package, you know that one of the most crucial aspects is its documentation. Good documentation not only makes your package more accessible to others but also enhances its usability. However, creating and maintaining a neat documentation website can be a daunting task. This is where <code>pkgdown</code> and GitHub Pages come into play, simplifying the process significantly.</p>
+<section id="why-use-pkgdown" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-pkgdown">Why Use pkgdown?</h2>
+<p><code>pkgdown</code> is designed to make it straightforward to turn your R package into a beautiful website. It automatically converts your R documentation into user-friendly, HTML formats, making it easier for users to navigate and understand the package’s functionalities.</p>
+</section>
+<section id="integrating-pkgdown-with-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="integrating-pkgdown-with-github-pages">Integrating pkgdown with GitHub Pages</h2>
+<p>GitHub Pages offers a seamless way to host your package’s documentation directly from your GitHub repository. Here’s a simplified workflow on how to deploy your <code>pkgdown</code> site using GitHub Pages:</p>
+<ol type="1">
+<li><p><strong>Create Your pkgdown Website</strong>: First, use <code>pkgdown</code> to automatically generate a website for your R package. This involves setting up configuration files that dictate how your documentation is built and structured.</p></li>
+<li><p><strong>Set Up GitHub Pages</strong>: Configure GitHub Pages in your repository settings to point to the docs folder where <code>pkgdown</code> generates the website files.</p></li>
+<li><p><strong>Customize Your Website</strong>: <code>pkgdown</code> provides various customization options, allowing you to tailor the aesthetics and functionality of your site. You can modify themes, layout, and even add custom CSS or JavaScript.</p></li>
+<li><p><strong>Automate with GitHub Actions</strong>: To keep your documentation automatically updated with every push to your repository, you can use GitHub Actions. This CI/CD tool can be configured to rebuild your <code>pkgdown</code> site automatically whenever changes are made to the relevant parts of your codebase.</p></li>
+<li><p><strong>Access Your Site</strong>: Once everything is set up, your package documentation will be accessible via a straightforward URL provided by GitHub Pages (typically <code>username.github.io/repository</code>).</p></li>
+</ol>
+</section>
+<section id="benefits-of-using-pkgdown-and-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-of-using-pkgdown-and-github-pages">Benefits of Using pkgdown and GitHub Pages</h2>
+<ul>
+<li><strong>Ease of Use</strong>: Both tools are designed with simplicity in mind, making it easy for R developers to get their documentation up and running without extensive web development experience.</li>
+<li><strong>Automation</strong>: Integration with GitHub Actions means that any updates to your package are automatically reflected in the documentation, reducing manual maintenance efforts.</li>
+<li><strong>Customization</strong>: While <code>pkgdown</code> provides sensible defaults, it also offers extensive customization options to match the look and feel of your project or personal branding.</li>
+<li><strong>Visibility</strong>: Hosting on GitHub Pages enhances the visibility of your package, making it more accessible to potential users and contributors through search engines and direct links.</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Creating an effective documentation website for your R package doesn’t have to be complicated. With tools like <code>pkgdown</code> and GitHub Pages, coupled with automation through GitHub Actions, you can ensure that your package is as user-friendly as possible. This not only helps in increasing its adoption but also in building a community around it.</p>
+<p>By streamlining the process of building and deploying documentation websites, these tools allow you more time to focus on developing the core functionalities of your R packages.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/</guid>
+  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/r-pkgdown.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1630,68 +1679,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/</guid>
   <pubDate>Mon, 03 Mar 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/UnilorinRUGlogo.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>R Submissions Working Group: Pilot 5 Launch and more!</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/pilot5.png" class="img-fluid"></p>
-<section id="pilot-5" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-5">Pilot 5</h3>
-<p>Last year the <a href="https://rconsortium.github.io/submissions-wg/">submission working group</a> was able to successfully deliver its third R-based submission to the FDA through the <a href="https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd">eCTD portal</a> on September 20, 2024. We are excited to share news the Pilot 5 launch as we continue to demonstrate R’s capablities to deliver a high-quality drug submission.</p>
-<p>A quick recap of previous Pilots:</p>
-<ul>
-<li><a href="https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">Pilot 1</a> delivered Tables and Figures to the FDA using R.</li>
-<li><a href="https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda">Pilot 2</a> delivered the same Tables and Figures using a Shiny App using R. <a href="https://archive.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2">Pilot 2 Announcement 2</a></li>
-<li><a href="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/">Pilot 3</a> delivered the Tables and Figures using R as well as the ADaMs…you guessed it using R.</li>
-<li><a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">Pilot 4</a> is in the process of delivering the Shiny App from Pilot 2 using webassembly and containers (almost completed!).</li>
-</ul>
-<p>For information on these Pilots navigate to our <a href="https://rconsortium.github.io/submissions-wg/pilot_background.html">Pilot’s background page on submission working group</a></p>
-<p>Now in 2025, we are launching Pilot 5!! We will be using R again, but instead of delivering all the datasets as <code>xpt</code> files we will make use of the new <code>datasetjson</code> format via the eponymously named R package <a href="https://atorus-research.github.io/datasetjson/">datasetjson</a> and hope to deliver two submissions for 2025 split into Part 1 and Part 2.</p>
-<p><strong>Pilot 5 - Part 1</strong></p>
-<p>Part 1 is going to replicate <a href="https://github.com/RConsortium/submissions-pilot3-adam">Pilot 3</a>. We will reuse the ADaMs, Tables and Figure programs that were written in R. However, the Pilot 3 ADaMs were written out as <code>xpt</code> files and we will instead use <code>datasetjson</code>! Hence Pilot 5 is really focused on using the new transport file type <code>datasetjson</code>.</p>
-<p>Pilot 5 Part 1 will also submit all the other files you find in the Pilot 3 submission as part of our package. If you have a passion for submission work, R and <code>datasetjson</code> or just want to see what all the fuss is about then come and <a href="https://join.slack.com/t/rconsortium/shared_invite/zt-2w4t2jd38-Z7BYYse9tIlCZEmqHvHnbA">join us</a>!</p>
-<p><strong>Pilot 5 - Part 2</strong></p>
-<p>The Pilots are small! 5 ADaMs, 3 Tables and 1 Figure is not a typical submission package for a drug that can impact a patient’s health and well-being! The Pilots have always been about testing out and advocating that R can keep up with the best of the best. For Part 2, we want to build up this body of work and develop several more ADaMs and more Tables and Figures. As in Part 1, we will deliver everything using <code>datasetjson</code> that would of been delivered as an <code>xpt</code> file.</p>
-<p>We plan on kicking Part 2 off mid-summer, but planning will probably start soon! Come <a href="https://join.slack.com/t/rconsortium/shared_invite/zt-2w4t2jd38-Z7BYYse9tIlCZEmqHvHnbA">join</a> in on the fun and help us build a larger body of work around drug submissions using R.</p>
-</section>
-<section id="progress-reports-and-future-plans" class="level2">
-<h2 class="anchored" data-anchor-id="progress-reports-and-future-plans">Progress Reports and Future Plans</h2>
-<p><strong>Updates on Pilot 4</strong></p>
-<p>The objective of the R Consortium R submission <em>Pilot 4 </em>Project is to explore the use of novel technologies such as Linux containers and WebAssembly to bundle a Shiny application into a self-contained package, facilitating a smoother process of both transferring and executing the application. The application was built using the source data sets and analyses contained in the R submission <em>Pilot 1-3</em>. To our knowledge, this is the first publicly available submission package that includes a WebAssembly component. We hope this submission package and what we have learned can serve as a good reference for future regulatory submission efforts. The WebAssembly technology compiles applications into a portable, consistent environment driven by a web browser, allowing agency reviewers to easily run and evaluate software without complex setups. The second half of the Pilot 4 Project (leveraging container technology to package a Shiny application) will be submitted as an additional package later this year. Additional agency feedback will be shared in future communications.</p>
-<p>The R Consortium is excited to announce that, on September 20, 2024, the R Submissions Working Group successfully submitted its test submission package—featuring a WebAssembly component—through the FDA’s Electronic Common Technical Document (eCTD) gateway! This marks a significant milestone as the FDA Center for Drug Evaluation and Research (CDER) staff has officially received the submission package.</p>
-<p>Statistician Eric Nantz at pharmaceuticals company Eli Lilly in Indianapolis, Indiana, says that using WebAssembly “will minimize, from the reviewer’s perspective, many of the steps that they had to take to get the application running on their machines.”</p>
-<p><strong>Potential Pilot 6</strong></p>
-<p>The Pilots have been making use of the original CDISC Pilot data from around 2008-2010 that were used as PoC for the FDA for CDISC standards. This data has been reused for many other projects across the industry as there is a severe lack of publicly available CDISC data. You can read about my quest to find some more data <a href="https://pharmaverse.github.io/blog/posts/2025-02-17_data__packages/data__packages.html">here</a>. The submissions working group would like to create new simulated data from raw, SDTM and ADaMs that could be used to test new techniques, ways of working, etc all brought up to modern standards. If interested get in touch!</p>
-<p><strong>A Re-Envisioned ADRG</strong></p>
-<p>The Analysis Data Reviewer’s Guide (ADRG) has been focused on the proprietary language SAS for delivering submissions over many years. As open-source languages such as R are accepted as valid mechanisms to deliver a submission the ADRG needs to “re-envisioned” to accommodate these languages. The pilots have had questions on how to document certain technical aspects in the ADRG of the R-based submission package, e.g.&nbsp;packages used and versions, R versions and layouts of the file folders.</p>
-<p>Well we are in luck. Former Pilot members are working with the PHUSE Version Metadata for Open-Source Languages to support ADRG enhancements for open-source submissions and are sharing their recommendations to the Pilots. You can find out more at the below links:</p>
-<ol type="1">
-<li><a href="https://advance.hub.phuse.global/wiki/x/UzOZAQ">Communication of Version Metadata for Open-Source Languages</a></li>
-<li><a href="https://phuse-org.github.io/OSDocuMeta/">Welcome to the PHUSE Open-Source Metadata Documentation Working Group Site</a></li>
-<li><a href="https://phuse-org.github.io/OSDocuMeta/references/problem_statement.html">Problem Statement</a></li>
-</ol>
-<p><strong>More about the R Submissions Working Group</strong></p>
-<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
-<p>Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.</p>
-<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
-<p>Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the <a href="https://github.com/RConsortium">R consortium GitHub page.</a></p>
-<p><strong>Join the R Submissions Working Group</strong></p>
-<p>The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. We are a collaborative community open to anyone interested in contributing to this important work. For more information, or to get involved, visit <a href="https://rconsortium.github.io/submissions-wg">our website</a> or contact us directly at director@r-consortium.org.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/</guid>
-  <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/pilot5.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
