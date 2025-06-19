@@ -12,6 +12,63 @@
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Thu, 19 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>How are Vaccination Rates and Case Rates Changing for Measles in 2025?</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Yk7jGc-E0Ys" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="celebrating-analytical-excellence-rmedicine-2025-professional-category-winners" class="level1">
+<h1>Celebrating Analytical Excellence: R/Medicine 2025 Professional Category Winners</h1>
+<p>The R/Medicine 2025 conference was marked by a remarkable array of data-driven insights, with the Professional Category of the data challenge spotlighting innovative work in the field. Harrison Plate and Shonushka Sawant from RSC Statistical Consulting delved into the dynamics of measles vaccination rates and case numbers across the United States and globally. Their entry not only earned them the top spot in the competition but also shed light on critical public health challenges and opportunities for intervention.</p>
+<section id="an-overview-of-the-rmedicine-data-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="an-overview-of-the-rmedicine-data-challenge">An Overview of the R/Medicine Data Challenge</h2>
+<p>The data challenge was an open invitation to participants to explore the evolving landscape of measles vaccination and case rates, using a diverse set of public datasets. The competition sought to evaluate the quality of analyses presented through Quarto documents, with a keen focus on tables and visualizations that tell a comprehensive data story.</p>
+</section>
+<section id="a-deep-dive-into-measles-vaccination-trends" class="level2">
+<h2 class="anchored" data-anchor-id="a-deep-dive-into-measles-vaccination-trends">A Deep Dive into Measles Vaccination Trends</h2>
+<p>Harrison and Shonushka’s presentation began by framing the current measles outbreak in the United States, which originated in an undervaccinated community in Texas and has since spread to multiple states and even neighboring countries. Despite measles being declared eliminated in the U.S. in 2000, recent years have seen its resurgence, largely attributable to declining vaccination rates.</p>
+<p>Through meticulous data analysis, they highlighted a worrying trend: since 2020, median MMR (measles, mumps, and rubella) coverage across U.S. states has fallen below the 95% threshold required for herd immunity. This decline corresponds with the onset of the COVID-19 pandemic, an event that significantly disrupted healthcare access and vaccination routines.</p>
+</section>
+<section id="illustrating-change-visualizing-vaccination-data" class="level2">
+<h2 class="anchored" data-anchor-id="illustrating-change-visualizing-vaccination-data">Illustrating Change: Visualizing Vaccination Data</h2>
+<p>One of the strengths of their work was the effective use of visualizations to illustrate changes over time. Maps displaying MMR coverage across different years clearly showed the transition of states from meeting herd immunity thresholds to falling below critical levels. In 2023, a notable number of states reported coverage below 90%, underscoring the urgency of addressing vaccination gaps.</p>
+<p>The analysis also delved into the factors contributing to these declines, such as healthcare worker shortages, increased poverty, and familial instability—all exacerbated by the pandemic. Their insights into socio-economic factors provided a comprehensive backdrop for understanding the broader implications of vaccination trends.</p>
+</section>
+<section id="global-perspective-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="global-perspective-and-future-directions">Global Perspective and Future Directions</h2>
+<p>Beyond the U.S., Harrison and Shonushka extended their analysis to a global context, examining measles case trends in regions like Africa. By fitting statistical models to historical data, they offered forecasts that capture both seasonal patterns and recent fluctuations. Their work demonstrated the complex interplay between vaccination coverage and case rates, revealing that even small declines in coverage can lead to significant increases in measles cases.</p>
+<p>In closing, their presentation emphasized three key takeaways:</p>
+<ol type="1">
+<li>The persistent decline in U.S. MMR coverage and its public health implications.</li>
+<li>The disparity between absolute case counts and relative growth rates in different regions.</li>
+<li>The inverse correlation between vaccination coverage and measles incidence, highlighting the critical need for maintaining high vaccination rates.</li>
+</ol>
+</section>
+<section id="looking-forward-plans-for-further-research" class="level2">
+<h2 class="anchored" data-anchor-id="looking-forward-plans-for-further-research">Looking Forward: Plans for Further Research</h2>
+<p>Harrison and Shonushka expressed plans to investigate substate data and explore international comparisons between countries with different healthcare systems. Their commitment to continuing this line of inquiry underscores the importance of data-driven approaches in addressing public health challenges.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Harrison Plate and Shonushka Sawant’s innovative analysis and thoughtful presentation has provided a roadmap for future research and intervention strategies. As the R community continues to grow and evolve, research like theirs highlight the profound impact of collaborative, data-driven exploration.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Epidemiology</category>
+  <guid>https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/</guid>
+  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/thumbnail-professional-competition-winner.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/</link>
@@ -1640,61 +1697,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/</guid>
   <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/Ozan_Evkaya-main.png" medium="image" type="image/png" height="75" width="144"/>
-</item>
-<item>
-  <title>R in Maine: Connecting Ecologists, Medical Researchers, and Data Scientists</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://szlo.ai/">Donald Szlosek</a>, the <a href="https://www.meetup.com/maine-r-users-group/?eventOrigin=event_home_page">MaineR Users Group</a> organizer, recently spoke with the R Consortium about the group’s transition from a city-based meetup to a statewide community and its efforts to engage a diverse audience. Donald shared insights into organizing events, the challenges of hybrid formats, and the shift toward virtual workshops based on community feedback. He also highlighted his work in real-world evidence studies, where R is critical in causal inference and machine learning validation.</p>
-<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/DonaldSzlosek.png" class="img-fluid" style="width:50.0%"></p>
-<p><em>Donald Szlosek presenting on exploring nature through {rvest}</em></p>
-<p><strong>Please share your background and involvement with the RUGS group.</strong></p>
-<p>My name is Donald Szlosek, and I am a senior staff research biostatistician at <a href="https://www.idexx.com/en/">IDEXX</a> Laboratories. I got involved in the local R community when a small group in Portland, Maine, began its user group through <a href="https://www.mainehealth.org/maine-medical-center">Maine Medical Center</a>. I collaborated with one of the leads, <a href="https://www.linkedin.com/in/adam-black-7904a26b/">Adam Black</a>, who sought to unite the community. He aimed to involve various groups, not just those focused on research but also from other industries, as there wasn’t much available back in 2015.</p>
-<p>During the pandemic, our activities slowed down for about a year and a half, but I’m pleased to say we are starting to regain momentum. Over the past couple of years, we have become more active again.</p>
-<p><strong>Please tell us what events you are currently hosting. Are they online, in-person, or hybrid? What kind of response do you receive for your events?</strong></p>
-<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGlogo.png" class="img-fluid"></p>
-<p>Last year, we primarily held online workshops, which proved immensely beneficial. One of our user group members, a fantastic professor, <a href="https://lauriebaker.rbind.io/">Dr.&nbsp;Laurie Baker</a>, received a community data science grant. She offered to run some workshops and asked if we could help promote them within our user group. We gladly agreed, and the workshops turned out to be fantastic. Her work was truly impressive, and we were thrilled to be a part of it.</p>
-<p>Last year, we conducted a start-of-the-year survey to gather feedback from our community. We asked, “What do you want?” and compiled the responses using Google Sheets. We were surprised to learn that people wanted more virtual events, mainly since we had primarily focused on in-person gatherings. Additionally, many requested workshops, which we had never offered before. As a result, we shifted our focus last year. While we didn’t hold as many events as I would have liked—organizing them can be challenging—the ones we did hold turned out well.</p>
-<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGOrganizersPosit2023.png" class="img-fluid"></p>
-<p>Left to right: Adam Black, Jaclyn Janis, Allison Hinton, and Donald Szlosek at the 2023 Posit Conference</p>
-<p>However, the turnout at these events has been relatively small. We have a core group of about 12 people interested in attending, but typically, only two to three from that group show up at any event. Given this small number, it’s unrealistic to expect large turnouts. This situation was one of the reasons we transitioned from the Portland R User Group to a statewide R User Group in hopes of attracting more participants.</p>
-<p>That said, when you shift from focusing on a city to an entire state, reaching everyone becomes much more challenging unless you host virtual events. This realization significantly influenced our decision to adopt a virtual event format.</p>
-<p>On <a href="https://www.meetup.com/maine-r-users-group/events/306012911/?eventOrigin=group_past_events">February 11th, we hosted a virtual kickoff event</a> to start the year. During this event, we asked our community what they wanted to see from us this year. Our goal was to gather feedback on their interests and preferences. This event was less formal than a workshop or presentation, but we hope it will set us on the right path to better serve our community. We also hope to have a workshop on creating publication-ready tables with {gt} in March.</p>
-<p><strong>Please share a bit about your experience in organizing the group. Over the years, have you discovered any techniques or tools that have helped organize the group and the events you host?</strong></p>
-<p>My biggest lesson is that hybrid events are challenging to manage alone. I’ve essentially stopped organizing them unless I can get someone to assist me—either with the online component or by handling the hosting while I take care of the online side. It’s just tough to juggle both aspects simultaneously.</p>
-<p>Additionally, I try to maintain a positive mindset by reminding myself that I’ll be excited even if just one person shows up. I aim to keep that energy level because these events often attract small groups, and people are busy. I want to be respectful and kind and genuinely appreciate having a single participant join.</p>
-<p><img src="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGHikingTrip.png" class="img-fluid"></p>
-<p><strong>What industry are you currently in? How do you use R in your work?</strong></p>
-<p>I’m in the pharmaceutical medical device industry and utilize various methods in three main areas of my job. First, I conduct typical clinical trials, which involve the design and analysis in partnership with forty different universities worldwide. This process requires extensive data analysis, preparation, and statistical methodology. We utilize R Markdown documents for this purpose, and I’ve found them highly effective.</p>
-<p>Another key focus of my work is real-world evidence studies, which have gained substantial traction over the past decade by leveraging large-scale electronic medical record data. In this area, we apply causal inference techniques to understand better the relationship between real-world clinical practice and medical data.</p>
-<p>We engage in various activities, such as propensity score matching and targeted maximum likelihood estimation, which are fundamental to real-world evidence studies. This is a significant part of our work.</p>
-<p>The last aspect we focus on is machine learning validation for regulatory bodies. We develop models that function as new medical devices, which need to be validated before they can be used in practice. While it’s great that a data science team has built a reliable model and performed internal validations, we must ensure it won’t negatively impact clinicians when they use it. Our goal is to prevent any additional concerns for them while they work.</p>
-<p>Moreover, confirming that the model is effective within the specific population it is intended for is crucial. This is where the validation component plays a vital role. In this process, R programming is essential for matching datasets and pulling information from clinics’ relevant data sources. This allows us to analyze the model’s accuracy from a statistical perspective.</p>
-<p><strong>Which Industries do you see using R in Maine?</strong></p>
-<p>Surprisingly, most of our events in Maine attendees come from the ecology field rather than the medical side. However, this might change as new medical facilities are in the area. Boston, being only a couple of hours away, has many medical-related resources.</p>
-<p>The <a href="https://www.gmri.org/">Gulf of Maine Research Institute</a> conducts significant work in marine biology, further emphasizing the focus on ecology, forest biology, and marine conservation among the people in our group. Seeing their perspective is refreshing since I come from a very different background.</p>
-<p>Although our work might seem different on the surface, there’s a lot of common ground; for example, a statistician in one field is quite similar to a statistician in another. Learning about their data collection processes, such as collecting water samples, analyzing the data, and managing the information, is fascinating. Their approach to data gathering is quite distinct and presents different challenges. Hearing about their methods compared to ours is genuinely intriguing.</p>
-<p><strong>Please tell us about the recent or current project you are working on using R.</strong></p>
-<p>I am working on real-world evidence studies focusing on inverse propensity score weighting. These studies often involve imbalanced populations, requiring robust causal inference techniques to address disparities in treatment groups. By applying inverse propensity score weighting, I aim to balance treatment groups and covariates, enhancing comparability and making the analysis more comparable to a randomized controlled trial.</p>
-<p>There is still considerable debate about whether techniques like inverse propensity score weighting offer more value than traditional multivariable regression. This remains an area of active discussion, and I am continuously working to deepen my understanding of the limitations of weighting. While propensity score methods help address confounding and improve balance in observational studies, their advantages over regression approaches depend on the specific context and assumptions of the analysis. My next step is to ensure that I am not overlooking any crucial aspects or limitations of these methodologies, especially considering their popularity based on my current understanding.</p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/</guid>
-  <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r-in-maine-connecting-ecologists-medical-researchers-and-data-scientists/MaineRUGlogo1.png" medium="image" type="image/png" height="86" width="144"/>
 </item>
 </channel>
 </rss>
