@@ -1,0 +1,51 @@
+--- 
+title: "How are Vaccination Rates and Case Rates Changing for Measles in 2025?" 
+unpublished: true 
+url: "https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/"
+description: " " 
+categories: [R/Medicine 2025, Epidemiology]
+author: "R Consortium" 
+image: "thumbnail-professional-competition-winner.jpeg" 
+image-alt: "Profession Competition Winner at R/Medicine 2025 - Harrison Plate and Shonushka Sawant" 
+date: "06/19/2025" 
+---
+
+{{< video https://www.youtube.com/embed/Yk7jGc-E0Ys >}}
+
+# Celebrating Analytical Excellence: R/Medicine 2025 Professional Category Winners
+
+The R/Medicine 2025 conference was marked by a remarkable array of data-driven insights, with the Professional Category of the data challenge spotlighting innovative work in the field. Harrison Plate and Shonushka Sawant from RSC Statistical Consulting delved into the dynamics of measles vaccination rates and case numbers across the United States and globally. Their entry not only earned them the top spot in the competition but also shed light on critical public health challenges and opportunities for intervention.
+
+## An Overview of the R/Medicine Data Challenge
+
+The data challenge was an open invitation to participants to explore the evolving landscape of measles vaccination and case rates, using a diverse set of public datasets. The competition sought to evaluate the quality of analyses presented through Quarto documents, with a keen focus on tables and visualizations that tell a comprehensive data story. 
+
+## A Deep Dive into Measles Vaccination Trends
+
+Harrison and Shonushka's presentation began by framing the current measles outbreak in the United States, which originated in an undervaccinated community in Texas and has since spread to multiple states and even neighboring countries. Despite measles being declared eliminated in the U.S. in 2000, recent years have seen its resurgence, largely attributable to declining vaccination rates.
+
+Through meticulous data analysis, they highlighted a worrying trend: since 2020, median MMR (measles, mumps, and rubella) coverage across U.S. states has fallen below the 95% threshold required for herd immunity. This decline corresponds with the onset of the COVID-19 pandemic, an event that significantly disrupted healthcare access and vaccination routines.
+
+## Illustrating Change: Visualizing Vaccination Data
+
+One of the strengths of their work was the effective use of visualizations to illustrate changes over time. Maps displaying MMR coverage across different years clearly showed the transition of states from meeting herd immunity thresholds to falling below critical levels. In 2023, a notable number of states reported coverage below 90%, underscoring the urgency of addressing vaccination gaps.
+
+The analysis also delved into the factors contributing to these declines, such as healthcare worker shortages, increased poverty, and familial instability—all exacerbated by the pandemic. Their insights into socio-economic factors provided a comprehensive backdrop for understanding the broader implications of vaccination trends.
+
+## Global Perspective and Future Directions
+
+Beyond the U.S., Harrison and Shonushka extended their analysis to a global context, examining measles case trends in regions like Africa. By fitting statistical models to historical data, they offered forecasts that capture both seasonal patterns and recent fluctuations. Their work demonstrated the complex interplay between vaccination coverage and case rates, revealing that even small declines in coverage can lead to significant increases in measles cases.
+
+In closing, their presentation emphasized three key takeaways:
+
+1. The persistent decline in U.S. MMR coverage and its public health implications.
+2. The disparity between absolute case counts and relative growth rates in different regions.
+3. The inverse correlation between vaccination coverage and measles incidence, highlighting the critical need for maintaining high vaccination rates.
+
+## Looking Forward: Plans for Further Research
+
+Harrison and Shonushka expressed plans to investigate substate data and explore international comparisons between countries with different healthcare systems. Their commitment to continuing this line of inquiry underscores the importance of data-driven approaches in addressing public health challenges.
+
+## Conclusion
+
+Harrison Plate and Shonushka Sawant's innovative analysis and thoughtful presentation has provided a roadmap for future research and intervention strategies. As the R community continues to grow and evolve, research like theirs highlight the profound impact of collaborative, data-driven exploration.
