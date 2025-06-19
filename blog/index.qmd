@@ -1,8 +1,9 @@
 ---
 listing:
   contents: "../posts/*/index.qmd"
+  categories: true
   sort: "date desc"
-  type: table
+  type: grid
   feed: true
 
 page-layout: full
