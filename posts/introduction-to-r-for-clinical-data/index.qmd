@@ -1,0 +1,72 @@
+--- 
+title: "Introduction to R for Clinical Data" 
+unpublished: true 
+url: "https://r-consortium.org/posts/introduction-to-r-for-clinical-data/"
+description: "This workshop is designed to bridge the gap between healthcare and data science by providing a comprehensive introduction to R and its application in clinical research." 
+categories: [R/Medicine 2025, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-introduction-to-r-for clinical-data.png" 
+image-alt: "Introduction to R for Clinical Data - Stephan Kadauke and Rich Hanna" 
+date: "06/19/2025" 
+---
+
+{{< video https://www.youtube.com/embed/2-xbe46EUTw >}}
+
+# A Gentle Introduction to R for Healthcare Professionals and Researchers at R/Medicine 2025
+
+Welcome to the world of R programming tailored specifically for healthcare professionals and clinical researchers! As part of the R/Medicine 2025 conference, Stephan Kadauke and Rich Hanna curated an insightful pre-conference workshop titled "Introduction to R for Clinical Data." This workshop is designed to bridge the gap between healthcare and data science by providing a comprehensive introduction to R and its application in clinical research.
+
+## Meet Your Instructors
+
+### Stephan Kadauke
+Stephan is the Associate Director of the Cell Based Therapy Laboratory in the Department of Pathology at the Children’s Hospital of Philadelphia. He also serves as the Medical Director of the Cell and Gene Therapy Informatics Team. Stephan is passionate about using data to improve pediatric care, specifically for children undergoing bone marrow transplants and other cell therapies. He has developed curricula focused on Reproducible Clinical Data Analysis, demonstrating his commitment to improving healthcare through data-driven approaches.
+
+### Rich Hanna
+Rich is a Data Scientist with the Cell and Gene Therapy Informatics Team at the Children’s Hospital of Philadelphia. With a background in biomedical and mechanical engineering, Rich specializes in automating clinical research workflows through advanced analytics and machine learning. His work is pivotal in supporting cell therapy research and enhancing patient care in pediatric medicine.
+
+## Course Resources
+
+- **Course GitHub Repo**: [Introduction to R for Clinical Data](https://github.com/skadauke/intro-to-r-for-clinical-data-rmed2025)
+- **Course Website**: [Introduction to R for Clinical Data](https://stephan-kadauke.quarto.pub/intro-to-r-for-clinical-data-rmed2025/)
+
+## Workshop Overview
+
+### Setting the Stage
+The workshop commenced with a warm welcome and an interactive session to acquaint participants with the course's objectives. Designed for healthcare professionals with minimal programming background, the workshop aims to demystify data analysis using R. Stephan and Rich have structured the course with interactive exercises, ensuring participants gain hands-on experience.
+
+### Importance of Reproducibility
+A key highlight was the emphasis on reproducibility in clinical data analysis. Stephan shared a compelling case study from Duke University, where errors in data analysis led to significant repercussions. This case underscores the necessity of robust, reproducible workflows to prevent errors and improve patient outcomes.
+
+### Introduction to R, R Studio, and Quarto
+Participants were introduced to the essential tools of the trade:
+
+- **R**: A powerful programming language for data analysis.
+- **R Studio**: An integrated development environment for R, enhancing the user experience with features that aid coding and debugging.
+- **Quarto**: A computational document format that integrates code, narrative, and visualizations, supporting reproducible research.
+
+### Interactive Exercises
+The workshop featured a series of interactive exercises, allowing participants to:
+
+- Create and manipulate data frames.
+- Visualize data using ggplot2, a grammar of graphics for R.
+- Transform and tidy data using the dplyr package.
+- Develop reproducible workflows by integrating Quarto documents.
+
+### Data Visualization and Transformation
+Rich led a session on data transformation, focusing on the dplyr package. Participants learned to:
+
+- Select specific columns using the `select` function.
+- Filter rows based on logical conditions with `filter`.
+- Create new variables with `mutate`.
+- Group data and summarize it with `group_by` and `summarize`.
+
+### Dashboards and Interactive Visualization
+While time constraints limited a deep dive into dashboards, participants were introduced to the concept of interactive dashboards using Flex Dashboard and Plotly. These tools enable users to create dynamic, on-demand data visualizations, empowering healthcare professionals to make data-driven decisions efficiently.
+
+## Conclusion and Further Learning
+
+The workshop wrapped up with resources for continued learning. Participants were encouraged to explore the "R for Data Science" book by Garrett Grolemund and Hadley Wickham, available for free online. Additionally, generative AI tools like ChatGPT were recommended for troubleshooting and enhancing coding skills, with a caution to avoid entering sensitive information.
+
+The course materials, including the GitHub repository and course website, remain accessible for further exploration and practice.
+
+As the R community continues to grow, workshops like this play a pivotal role in equipping healthcare professionals with the skills to leverage data science for better patient care. We look forward to seeing how participants will apply their newfound knowledge to make a tangible impact in the healthcare sector.
