@@ -10,7 +10,65 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Wed, 18 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="identifying-measles-immunity-gaps-in-the-us-a-comprehensive-analysis-by-iko-musa" class="level1">
+<h1>Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa</h1>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LKNOEayXstU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>In the realm of public health, understanding and managing infectious diseases is crucial. This is particularly true for measles, a highly contagious virus that can lead to severe health complications. The recent R/Medicine 2025 conference shone a spotlight on an exemplary study conducted by Iko Musa, a master’s student from the University of Jos, Nigeria. His research, titled “Identifying Measles Immunity Gaps in the US: Analysis of Vaccination Coverage, Geographic Risk, and Future Outbreak Projections,” provides critical insights into the current state of measles immunity and vaccination in the United States.</p>
+<section id="the-changing-landscape-of-vaccination" class="level2">
+<h2 class="anchored" data-anchor-id="the-changing-landscape-of-vaccination">The Changing Landscape of Vaccination</h2>
+<p>Iko’s study addresses a timely issue: the declining measles vaccination rates in the U.S., which have dropped below the 95% threshold recommended for herd immunity. This decline poses a significant risk of outbreaks, making it imperative to understand where and why these gaps in immunity are occurring.</p>
+</section>
+<section id="research-objectives-and-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="research-objectives-and-methodology">Research Objectives and Methodology</h2>
+<p>To tackle this issue, Iko formulated several research objectives: 1. Analyze the temporal trends of measles cases in the U.S. from 1990 to 2025. 2. Identify geographic areas at high risk. 3. Assess the influence of geographical factors on measles outbreaks. 4. Compare U.S. measles data with global trends. 5. Project future measles case trajectories and their potential health impacts. 6. Pinpoint immunity gaps where vaccination coverage falls below 95%.</p>
+<p>Iko employed a variety of analytical tools to achieve these objectives: - <strong>Temporal trend analysis</strong> using <code>ggplot2</code> for visualization. - <strong>Geospatial mapping</strong> with <code>ggplot2</code> maps and other tools to identify high-risk areas. - <strong>Comparative analysis</strong> to juxtapose U.S. data against global trends. - <strong>Time series forecasting</strong> to predict future outbreaks.</p>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p><strong>Temporal Trends</strong> - The analysis revealed significant fluctuations in measles cases over the years, with notable outbreaks occurring periodically since 1989. A worrying trend is the recent increase in cases from 2020 through 2025.</p>
+<p><strong>Geographical Risk</strong> - High-risk areas predominantly lie in the Mountainous regions and southern parts of the U.S., with states like Texas showing particularly high numbers of cases.</p>
+<p><strong>Age Distribution</strong> - Most cases occur in individuals under 20 years old, emphasizing sustained transmission among children and teenagers.</p>
+<p><strong>Global Comparison</strong> - The proportion of peak quarterly cases shows that U.S. trends are generally consistent with global patterns, though some differences exist in seasonal peaks.</p>
+<section id="vaccination-rates-and-projections" class="level3">
+<h3 class="anchored" data-anchor-id="vaccination-rates-and-projections">Vaccination Rates and Projections</h3>
+<p>Current vaccination rates are alarmingly below the necessary threshold for herd immunity (95%). Forecasting models indicate that a decrease in vaccination rates could lead to significantly higher numbers of measles cases under various scenarios.</p>
+</section>
+</section>
+<section id="implications-and-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="implications-and-recommendations">Implications and Recommendations</h2>
+<p>The study underscores a critical need for targeted vaccination campaigns, especially focusing on school-aged children in high-risk states. Improving vaccination coverage by even 5% could prevent numerous cases and help restore herd immunity.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Iko Musa’s research not only highlights the challenges posed by declining measles vaccination rates but also provides a roadmap for intervention. His methodical approach and effective use of data visualization techniques make a compelling case for immediate public health action to close immunity gaps and protect communities across the United States.</p>
+</section>
+<section id="about-iko-musa" class="level2">
+<h2 class="anchored" data-anchor-id="about-iko-musa">About Iko Musa</h2>
+<p>Iko Musa is currently pursuing his Master’s degree in Field Epidemiology at the University of Jos, Nigeria. His academic focus is on community medicine, aiming to enhance public health through rigorous research and effective implementation of health policies. His work on measles immunity gaps has been recognized at R/Medicine 2025, reflecting his commitment to addressing critical global health issues through data-driven analysis.</p>
+<p>For more information on R/Medicine and competition rules, please visit: - <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine</a> - <a href="https://rconsortium.github.io/RMedicine_website/Competition.html#congratulations-to-our-winners">Competition Rules</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Epidemiology</category>
+  <guid>https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/</guid>
+  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/thumbnail-iko-musa-student-competition-winner.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Bridging the Gap: Introducing RHealth for Healthcare Predictive Modeling in R</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1625,90 +1683,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/</guid>
   <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/MELBURNlogo.png" medium="image" type="image/png" height="86" width="144"/>
-</item>
-<item>
-  <title>Exploring geometa: An R Package for Managing Geographic Metadata</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><strong>geometa</strong> provides an essential object-oriented data model in R, enabling users to efficiently manage geographic metadata. The package facilitates handling of ISO and OGC standard geographic metadata and their dissemination on the web, ensuring that spatial data and maps are available in an open, internationally recognized format. As a widely adopted tool within the geospatial community, geometa plays a crucial role in standardizing metadata workflows.</p>
-<p>Since 2018, the <strong>R Consortium</strong> has supported the development of geometa, recognizing its value in bridging metadata standards with R’s data science ecosystem. You can try geometa yourself here: <a href="https://cran.r-project.org/package=geometa">CRAN – geometa</a>.</p>
-<p>In this interview, we speak with <strong>Emmanuel Blondel</strong>, the author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management. With a background in <strong>Agronomic Sciences and Environmental &amp; Natural Resources Management</strong> from the French National Polytechnical Institute (<strong>INP-ENSAT</strong>), Emmanuel specializes in <strong>Geographic Information Systems (GIS)</strong> applied to fields such as agronomy, environment, fisheries, and aquatic sciences. As an active open-source developer, he shares insights into the evolution of geometa, the challenges of metadata standardization, and the future of geospatial data management in R.</p>
-<p><img src="https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/emmanuel.png" class="img-fluid"></p>
-<section id="what-is-the-significance-of-geometa-including-support-for-iso-19115-3-getting-published-on-cran-is-this-about-incorporating-new-standards" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-the-significance-of-geometa-including-support-for-iso-19115-3-getting-published-on-cran-is-this-about-incorporating-new-standards">What is the significance of geometa including support for ISO 19115-3 getting published on CRAN? Is this about incorporating new standards?</h2>
-<p>Yes, it’s all about metadata standards. ISO standards can have a lifecycle from around five to ten years, and it takes time for institutions, governments, and software providers to adopt and implement them. The primary standard for geographic metadata has been ISO 19115 developed by the ISO/TC 211 (Technical Committee on Geographic Information/Geomatics). It defines the structure for describing geographic information. It is initially composed by the main geographic metadata standard (ISO 19115-1) and an extension to describe gridded and imagery datasets, called ISO 19115-2. To facilitate XML encoding, ISO 19139 provides the corresponding XML schema for implementing ISO 19115-compliant metadata.</p>
-<p>ISO 19115 has been widely used in geographic information systems, software providers, and legal frameworks such as the INSPIRE directive in Europe or the Geospatial Data Act in the U.S.. Countries and international organizations have gradually adopted ISO 19115. Meanwhile a new version of the ISO 19115, called ISO 19115-3, was developed by ISO experts to refactor and consolidate the standard. However, adoption takes time.</p>
-</section>
-<section id="the-idea-behind-the-latest-geometa-project-funded-by-the-r-consortium-was-to-support-this-transition-by-implementing-the-newer-version-of-iso-19115.-thats-why-ive-been-pushing-for-this-update.-since-standardization-work-is-a-continuous-process-there-are-already-other-prospects-for-improvements-such-as-the-management-of-the-json-encoding-format-targeted-by-the-next-iso-19115-4-standard-under-development." class="level2">
-<h2 class="anchored" data-anchor-id="the-idea-behind-the-latest-geometa-project-funded-by-the-r-consortium-was-to-support-this-transition-by-implementing-the-newer-version-of-iso-19115.-thats-why-ive-been-pushing-for-this-update.-since-standardization-work-is-a-continuous-process-there-are-already-other-prospects-for-improvements-such-as-the-management-of-the-json-encoding-format-targeted-by-the-next-iso-19115-4-standard-under-development.">The idea behind the latest <strong>geometa</strong> project funded by the R Consortium was to support this transition by implementing the newer version of ISO 19115. That’s why I’ve been pushing for this update. Since standardization work is a continuous process, there are already other prospects for improvements, such as the management of the JSON encoding format, targeted by the next ISO 19115-4 standard under development.</h2>
-</section>
-<section id="how-has-the-object-oriented-data-model-developed-with-r6-been-improved-and-what-are-the-main-advantages" class="level2">
-<h2 class="anchored" data-anchor-id="how-has-the-object-oriented-data-model-developed-with-r6-been-improved-and-what-are-the-main-advantages">How has the object-oriented data model developed with R6 been improved? And what are the main advantages?</h2>
-<p>ISO 19115 and related standards, such as GML (Geographic Markup Language), are built on large object-oriented information models. It made sense to use an object-oriented data model in R to align with these standards.</p>
-<p>I chose <strong>R6</strong> because it was the most convenient and practical way to model objects. I had previously explored other approaches, but R6 offered flexibility and efficiency.</p>
-<p>Now, I’m also keeping an eye on <strong>S7</strong>, an initiative from the R Consortium. In the future, I might explore new approaches for object modeling such as S7, and possibly adopt them in packages such as geometa.</p>
-<hr>
-</section>
-<section id="how-important-is-r-for-multidisciplinary-projects-involving-data-managers-analysts-statisticians-and-researchers-across-different-teams-what-are-its-main-advantages" class="level2">
-<h2 class="anchored" data-anchor-id="how-important-is-r-for-multidisciplinary-projects-involving-data-managers-analysts-statisticians-and-researchers-across-different-teams-what-are-its-main-advantages">How important is R for multidisciplinary projects involving data managers, analysts, statisticians, and researchers across different teams? What are its main advantages?</h2>
-<p>R’s main advantage is its broad accessibility across various roles—data managers, scientists, statisticians—who all understand and use it.</p>
-<p>This was a key reason why I developed <strong>geometa</strong> in R. In the past, I worked with Java for similar projects, but my colleagues struggled with it because they weren’t Java developers, and the programming language was a barrier. R served as a common language among them, enabling better collaboration.</p>
-<p>There are two main challenges:</p>
-<ol type="1">
-<li><strong>The technology constraint</strong> (R itself).</li>
-<li><strong>The complexity of metadata standards</strong>, which are exhaustive and highly specialized.</li>
-</ol>
-<p><strong>geometa</strong> provides fine-grained control, fully aligning with the standards. However, I’ve also developed tools to simplify metadata creation, making it easier for non-developers to generate metadata efficiently.</p>
-</section>
-<section id="seeing-my-colleagueswho-previously-couldnt-produce-metadatanow-able-to-generate-metadata-and-enable-services-has-been-rewarding.-this-is-particularly-valuable-in-data-science-where-the-volume-of-data-continues-to-grow.-instead-of-struggling-with-metadata-formats-they-can-focus-on-improving-data-quality-and-descriptions." class="level2">
-<h2 class="anchored" data-anchor-id="seeing-my-colleagueswho-previously-couldnt-produce-metadatanow-able-to-generate-metadata-and-enable-services-has-been-rewarding.-this-is-particularly-valuable-in-data-science-where-the-volume-of-data-continues-to-grow.-instead-of-struggling-with-metadata-formats-they-can-focus-on-improving-data-quality-and-descriptions.">Seeing my colleagues—who previously couldn’t produce metadata—now able to generate metadata and enable services has been rewarding. This is particularly valuable in data science, where the volume of data continues to grow. Instead of struggling with metadata formats, they can focus on improving data quality and descriptions.</h2>
-</section>
-<section id="geometa-is-used-in-r-packages-such-as-ows4r-r-interface-to-ogc-web-services-geonapi-r-interface-to-geonetwork-api-and-geoflow-r-engine-for-geospatial-metadata-workflows.-whats-the-best-way-to-get-started" class="level2">
-<h2 class="anchored" data-anchor-id="geometa-is-used-in-r-packages-such-as-ows4r-r-interface-to-ogc-web-services-geonapi-r-interface-to-geonetwork-api-and-geoflow-r-engine-for-geospatial-metadata-workflows.-whats-the-best-way-to-get-started">geometa is used in R packages such as ows4R (R Interface to OGC Web Services), geonapi (R Interface to GeoNetwork API), and geoflow (R engine for geospatial metadata workflows). What’s the best way to get started?</h2>
-<p>All these packages are open-source and available on GitHub. The best way to start is by checking the documentation and vignettes—<strong>ows4R</strong>, for example, has detailed vignettes.</p>
-<p>On GitHub, I’ve also enabled the <strong>Discussions</strong> panel, which acts as a forum where users can ask questions. I make an effort to answer questions in my spare time, and the discussions often help improve documentation and package functionality.</p>
-<p>Some key differences between the packages:</p>
-<ul>
-<li><strong><a href="https://cran.r-project.org/package=ows4R">ows4R</a></strong> standards for OGC Web-Services for R and includes tools to interact with these services including metadata services (Catalogue Service for the Web - CSW) but also data services (with the well-known Web Feature Service - WFS and Web Coverage Service - WCS). With this package, metadata produced with geometa can be published within standard metadata catalogues, and metadata fetched from there. Users interested in using standard protocols instead of software-specific APIs may prefer this package.</li>
-<li><strong><a href="https://cran.r-project.org/package=geonapi">Geonapi</a></strong> is API-specific. It provides tools to manage metadata but with the <a href="https://geonetwork-opensource.org/">Geonetwork</a> API.</li>
-<li><strong><a href="https://github.com/r-geoflow/geoflow">Geoflow</a></strong> serves as an orchestrator, integrating metadata, data, and tasks to publish them into web catalogs, including non-geographic ones.</li>
-</ul>
-</section>
-<section id="for-beginners-geoflow-might-be-the-best-entry-point." class="level2">
-<h2 class="anchored" data-anchor-id="for-beginners-geoflow-might-be-the-best-entry-point.">For beginners, <strong>geoflow</strong> might be the best entry point.</h2>
-</section>
-<section id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers" class="level2">
-<h2 class="anchored" data-anchor-id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers">How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</h2>
-<p>My experience with the R Consortium has been positive. My <a href="https://r-consortium.org/all-projects/2018-group-2.html#strengthening-of-r-in-support-of-spatial-data-infrastructures-management-geometa-and-ows4r-r-packages">first project</a> on geometa was funded in 2018, and it was a significant boost for the package.</p>
-<p>Since then, I had submitted another project twice, for enhancing the ows4R package, though it was not selected because maybe considered too specific. The R Consortium deals with a broad range of domains covered by the R community, so they have to prioritize. However, the interaction with them has always been great—both administratively and with the <strong>Infrastructure Steering Committee (ISC)</strong>.</p>
-<p>Before submitting my first application, I reached out to the ISC for advice on proposal structuring, approval processes, and whether partial funding was an option. Their feedback was helpful, and I’d definitely recommend other developers consider applying. It’s a great opportunity for funding and support.</p>
-<p>Get started with geometa now! <a href="https://cran.r-project.org/web/packages/geometa/index.html">CRAN – geometa</a></p>
-</section>
-<section id="what-projects-does-the-r-foundation-fund" class="level2">
-<h2 class="anchored" data-anchor-id="what-projects-does-the-r-foundation-fund">What Projects Does the R Foundation Fund?</h2>
-<p>Our grants target projects that make a difference in the R community, focusing on:</p>
-<p>Technical Infrastructure: Enhancements in key R packages, development tools like R-hub, and improvements for R on various operating systems.</p>
-<p>Social Infrastructure: Projects like SatRDays that promote local engagement and initiatives for better tracking of R Consortium activities.</p>
-<p>We’re eager to see your innovative ideas and how they can propel the R ecosystem forward. This is a call to action for all who wish to contribute to the growth and enhancement of R. Let’s build a stronger R community together!</p>
-<p>Submit your proposal now and be a part of shaping the future of the R Ecosystem. Learn more about how to apply <a href="https://www.r-consortium.org/all-projects/call-for-proposals">here</a>.</p>
-<p>We look forward to your submissions and furthering the R community’s advancement together!</p>
-<section id="apply-now" class="level3">
-<h3 class="anchored" data-anchor-id="apply-now"><a href="https://r-consortium.org/all-projects/callforproposals.html">Apply now!</a></h3>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/</guid>
-  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/emmanuel-main.png" medium="image" type="image/png" height="70" width="144"/>
 </item>
 </channel>
 </rss>
