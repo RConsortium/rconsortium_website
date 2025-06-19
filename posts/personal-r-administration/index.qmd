@@ -1,0 +1,60 @@
+--- 
+title: "Personal R Administration" 
+unpublished: true 
+description: "Learn how to streamline your R workflow, manage packages efficiently, and secure your projects with insights from the R/Medicine 2025 workshop." 
+author: "R Consortium" 
+categories: [R/Medicine 2025, Software Development]
+image: "thumbnail-personal-r-administration.jpg" 
+image-alt: "Personal R Administration - David Aja and Shannon Pileggi" 
+date: "06/19/2025" 
+---
+
+{{< video https://www.youtube.com/embed/m2eihAhl8so >}}
+
+# Personal R Administration: Streamlining Your R Workflow
+
+In the ever-evolving landscape of data science and software development, R remains a cornerstone for researchers, analysts, and programmers alike. However, managing R environments, handling package installations, and ensuring reproducibility can often feel like daunting tasks. At the R/Medicine 2025 conference, E. David Aja and Shannon Pileggi unveiled their workshop titled "Personal R Administration," offering the R community invaluable insights into simplifying these processes, ensuring secure and efficient workflows, and fostering a more robust engagement with R projects.
+
+## Speakers
+
+**E. David Aja**  
+Software Engineer at Posit. Before his current role, he ventured through the realms of data science in the public sector, amassing a wealth of experience in deploying R across diverse computational landscapes.
+
+**Shannon Pileggi**  
+With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium, Shannon brings her expertise to the fore. A frequent blogger and a pivotal member of the R-Ladies Global leadership team, she excels in automating data wrangling, crafting digestible data insights, and demystifying the learning curve for new material.
+
+## Key Takeaways
+
+The workshop began with an open acknowledgment of the common pitfalls many R users face: fear of updating R versions, insecurely storing secrets, and the mystification surrounding package installations. Aja and Pileggi, through a blend of technical prowess and personal anecdotes, offered a roadmap to navigate these challenges.
+
+### Embracing Project-Based Workflows
+
+The speakers underscored the importance of project-based workflows in R, highlighting strategies for maintaining a clean slate with each new session. This approach not only aids in minimizing clutter but also ensures that projects remain insulated from each other, reducing dependency conflicts and enhancing reproducibility.
+
+### Navigating Package Management with `renv`
+
+A significant portion of the workshop was dedicated to `renv`, a package that revolutionizes how R users manage dependencies within projects. By isolating project environments and leveraging a global cache, `renv` allows for seamless package installations and version management, mitigating the risk of disrupting existing projects when making updates.
+
+### Version Control and Environment Management
+
+The discussion ventured into the realm of version control and the management of R versions across different projects. Tools like `rig` were introduced, offering a streamlined method to switch between R versions without the hassle, thereby fostering an environment where projects can be easily shared and reproduced across teams.
+
+### Security Practices and Workflow Optimization
+
+Security practices, particularly around the handling of sensitive information within R scripts, were addressed. The speakers advocated for the use of environment variables and secure storage solutions to mitigate risks. Additionally, they provided insights into optimizing workflows through the use of RStudio addins and other productivity-enhancing tools.
+
+### Community and Resources
+
+Aja and Pileggi emphasized the value of the R community, encouraging attendees to engage with forums, contribute to open-source projects, and leverage the wealth of resources available, including blogs, webinars, and comprehensive guides like the `R Packages` book.
+
+### **Looking Ahead**
+
+As R continues to evolve, so too do the tools and practices surrounding its use. This workshop served as a vital resource for R users seeking to refine their administration skills, promising a future where managing R environments is less about troubleshooting and more about innovation.
+
+In closing, "Personal R Administration" was not just a workshop but a testament to the R community's dedication to fostering a culture of continuous learning and improvement. For those looking to dive deeper into the topics covered, the speakers provided a wealth of resources, including links to the `renv` documentation, `rig` installation guides, and their own contributions to R package development.
+
+## **Conclusion**
+
+Whether you're a seasoned R veteran or a newcomer to the language, the "Personal R Administration" workshop offered a treasure trove of knowledge designed to streamline workflows, enhance project reproducibility, and secure your R coding practices. As we move forward, the insights shared by Aja and Pileggi will undoubtedly serve as a beacon for the R community, guiding us toward more efficient and enjoyable data science experiences.
+
+For those interested in further exploring the themes of the workshop, the R/Medicine and R Consortium websites provide a gateway to a broader exploration of R's capabilities within the medical field and beyond.
