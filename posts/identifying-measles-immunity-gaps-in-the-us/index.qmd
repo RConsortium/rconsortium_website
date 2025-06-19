@@ -1,0 +1,65 @@
+---
+title: "Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa"
+unpublished: true
+description: "Explore Iko Musa's student competition-winning analysis on US measles immunity gaps using R tools at R/Medicine 2025!"
+author: "R Consortium"
+categories: [R/Medicine 2025, Epidemiology]
+image: "thumbnail-iko-musa-student-competition-winner.png"
+image-alt: "Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa"
+date: "06/19/2025"
+---
+
+# Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa
+
+{{< video https://www.youtube.com/embed/LKNOEayXstU >}}
+
+In the realm of public health, understanding and managing infectious diseases is crucial. This is particularly true for measles, a highly contagious virus that can lead to severe health complications. The recent R/Medicine 2025 conference shone a spotlight on an exemplary study conducted by Iko Musa, a master's student from the University of Jos, Nigeria. His research, titled "Identifying Measles Immunity Gaps in the US: Analysis of Vaccination Coverage, Geographic Risk, and Future Outbreak Projections," provides critical insights into the current state of measles immunity and vaccination in the United States.
+
+## The Changing Landscape of Vaccination
+
+Iko's study addresses a timely issue: the declining measles vaccination rates in the U.S., which have dropped below the 95% threshold recommended for herd immunity. This decline poses a significant risk of outbreaks, making it imperative to understand where and why these gaps in immunity are occurring.
+
+## Research Objectives and Methodology
+
+To tackle this issue, Iko formulated several research objectives:
+1. Analyze the temporal trends of measles cases in the U.S. from 1990 to 2025.
+2. Identify geographic areas at high risk.
+3. Assess the influence of geographical factors on measles outbreaks.
+4. Compare U.S. measles data with global trends.
+5. Project future measles case trajectories and their potential health impacts.
+6. Pinpoint immunity gaps where vaccination coverage falls below 95%.
+
+Iko employed a variety of analytical tools to achieve these objectives:
+- **Temporal trend analysis** using `ggplot2` for visualization.
+- **Geospatial mapping** with `ggplot2` maps and other tools to identify high-risk areas.
+- **Comparative analysis** to juxtapose U.S. data against global trends.
+- **Time series forecasting** to predict future outbreaks.
+
+## Key Findings
+
+**Temporal Trends** - The analysis revealed significant fluctuations in measles cases over the years, with notable outbreaks occurring periodically since 1989. A worrying trend is the recent increase in cases from 2020 through 2025.
+
+**Geographical Risk** - High-risk areas predominantly lie in the Mountainous regions and southern parts of the U.S., with states like Texas showing particularly high numbers of cases.
+
+**Age Distribution** - Most cases occur in individuals under 20 years old, emphasizing sustained transmission among children and teenagers.
+
+**Global Comparison** - The proportion of peak quarterly cases shows that U.S. trends are generally consistent with global patterns, though some differences exist in seasonal peaks.
+
+### Vaccination Rates and Projections
+Current vaccination rates are alarmingly below the necessary threshold for herd immunity (95%). Forecasting models indicate that a decrease in vaccination rates could lead to significantly higher numbers of measles cases under various scenarios.
+
+## Implications and Recommendations
+
+The study underscores a critical need for targeted vaccination campaigns, especially focusing on school-aged children in high-risk states. Improving vaccination coverage by even 5% could prevent numerous cases and help restore herd immunity.
+
+## Conclusion
+
+Iko Musa's research not only highlights the challenges posed by declining measles vaccination rates but also provides a roadmap for intervention. His methodical approach and effective use of data visualization techniques make a compelling case for immediate public health action to close immunity gaps and protect communities across the United States.
+
+## About Iko Musa
+
+Iko Musa is currently pursuing his Master’s degree in Field Epidemiology at the University of Jos, Nigeria. His academic focus is on community medicine, aiming to enhance public health through rigorous research and effective implementation of health policies. His work on measles immunity gaps has been recognized at R/Medicine 2025, reflecting his commitment to addressing critical global health issues through data-driven analysis.
+
+For more information on R/Medicine and competition rules, please visit:
+- [R/Medicine](https://rconsortium.github.io/RMedicine_website/)
+- [Competition Rules](https://rconsortium.github.io/RMedicine_website/Competition.html#congratulations-to-our-winners)
