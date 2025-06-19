@@ -1,0 +1,51 @@
+--- 
+title: "pretestcad: An R package to calculate PreTest Probability (PTP) for Coronary Artery Disease (CAD)" 
+unpublished: true 
+url: "https://r-consortium.org/posts/pretestcad-an-r-package-to-calculate-pretest-probability-ptp-for-coronary-artery-disease-cad/"
+description: "Automating CAD pretest probability calculations with the pretestcad R package for improved patient care." 
+categories: [R/Medicine 2025, Insurance/Risk]
+author: "R Consortium" 
+image: "thumbnail-pretestcad-jeremy-selva.png" 
+image-alt: "pretestcad - Jeremy Selva" 
+date: "06/19/2025" 
+---
+
+{{< video https://www.youtube.com/embed/5hpTlmKvRU8 >}}
+
+# Automating Pretest Probability Calculations for Coronary Artery Disease with the `pretestcad` R Package
+
+In the ever-evolving field of cardiology, clinicians face the constant challenge of keeping up with the latest risk assessment models for coronary artery disease (CAD). Traditionally, tools like HeartScore have been used to calculate a patient’s risk of cardiovascular events. However, these tools are limited by their one-patient-at-a-time approach. Enter the realm of R packages—powerful tools that can automate and streamline these calculations for multiple patients simultaneously. Among them, the `pretestcad` R package emerges as a novel solution, specifically designed to address the gap in pretest risk assessment for obstructive CAD.
+
+## Understanding Coronary Artery Disease and Pretest Probability
+
+Coronary artery disease occurs when the coronary arteries become narrowed or blocked by fatty deposits known as plaques. This can result in chest pain, shortness of breath, or even heart attacks. Diagnosing CAD often involves invasive tests like coronary angiography or less invasive options such as CT scans. The concept of pretest probability comes into play here, providing an estimated likelihood that a patient has CAD before any diagnostic tests are performed. This estimation helps clinicians decide which diagnostic path to pursue, especially when certain tests are expensive or invasive.
+
+## The Evolution of Pretest Probability Models
+
+As our understanding of CAD has grown, so too have the models for estimating pretest probability. The European Society of Cardiology (ESC) guidelines have evolved from simple models with three risk factors to more sophisticated ones that include family history, smoking, cholesterol levels, hypertension, and diabetes. This increased complexity makes manual calculations tedious and prone to error.
+
+Jeremy, a research officer from the National Heart Center Singapore, recognized this challenge and sought to address it by developing the `pretestcad` R package. This package automates the calculation of pretest probability scores for CAD, drawing on a comprehensive collection of models from past to present. The package is designed to be flexible and user-friendly, accommodating missing data and providing clear error messages.
+
+## Key Features of the `pretestcad` R Package
+
+The `pretestcad` package includes several pretest probability scores, such as the 2012 CAD Consortium 2 (CAD2) PTP scores, the 2017 PROMISE Minimal-Risk Score, and the 2020 Winther et al. Risk-Factor-weighted Clinical Likelihood (RF-CL) and Coronary Artery Calcium Score-Weighted Clinical Likelihood (CACS-CL) PTP. These scores are integral to the 2024 ESC Guidelines, and the package allows users to calculate them efficiently for multiple patients.
+
+### Handling Missing Data
+
+One of the standout features of the `pretestcad` package is its ability to handle missing data. In real-world scenarios, patient data may be incomplete. The package includes a parameter called `max_na` that specifies the number of missing risk factors tolerated in calculations. This flexibility ensures that clinicians can still obtain useful probability estimates even when some data points are missing.
+
+### Integration with R Ecosystem
+
+The package leverages the `purrr` package to perform calculations over patient datasets, demonstrating its seamless integration with the broader R ecosystem. This compatibility allows users to incorporate `pretestcad` into their existing R workflows without significant overhead.
+
+## Future Directions and Community Engagement
+
+Jeremy's presentation at the R/Medicine 2025 conference was not just an introduction to the `pretestcad` package but also a call to action for collaboration and feedback from the R community. While he has successfully submitted the package to CRAN, he recognizes the importance of user feedback, particularly from clinicians who will be the primary users of the tool.
+
+Going forward, Jeremy plans to conduct user testing with clinicians to refine the package's usability and error messaging. While he is cautious about overextending the project's scope, potential future enhancements could include integration with platforms like Shiny or Jamovi, making the tool even more accessible to a wider audience.
+
+## Conclusion
+
+The development of the `pretestcad` R package exemplifies how the R community can contribute to medical advancements by providing tools that streamline and automate complex calculations. By addressing the gap in pretest probability assessment for CAD, the package empowers clinicians to make informed decisions more efficiently, ultimately improving patient care.
+
+As the package garners feedback and evolves, it promises to become an indispensable tool in the toolkit of cardiologists worldwide. Jeremy’s work is a testament to the power of the R language in transforming healthcare practices, and it highlights the potential for further innovations in the field.
