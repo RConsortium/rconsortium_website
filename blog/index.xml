@@ -10,7 +10,69 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Thu, 19 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 20 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>AOUSDOHtools: R Package for Social Determinants of Health Survey data in All of Us Research Program</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/nQum-dWBM3I" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="unraveling-the-aousdohtools-package-empowering-research-in-social-determinants-of-health" class="level1">
+<h1>Unraveling the AOUSDOHtools Package: Empowering Research in Social Determinants of Health</h1>
+<p>Hello, R community! Today we dive into the innovative R package, AOUSDOHtools, designed to streamline the analysis of Social Determinants of Health (SDOH) data. This package, presented by Zhirui Deng, a biostatistician from the University of Pittsburgh School of Nursing, is a game-changer for researchers working within the All of Us Research Program. Let’s explore how this tool enhances research efforts in health equity.</p>
+<section id="understanding-the-all-of-us-research-program" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-all-of-us-research-program">Understanding the All of Us Research Program</h2>
+<p>The All of Us Research Program, an initiative by the National Institutes of Health (NIH), aims to gather comprehensive data from over a million participants across the United States. This vast data collection includes health records, lab results, and survey responses, focusing significantly on health equity by enrolling participants traditionally underrepresented in research. The diversity and complexity of this data present unique challenges, particularly when it comes to analyzing SDOH data.</p>
+</section>
+<section id="challenges-with-sdoh-data" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-with-sdoh-data">Challenges with SDOH Data</h2>
+<p>SDOH surveys collect detailed information on non-clinical factors impacting health, such as housing, education, stress, and social support. While invaluable, this data often comes in a raw, messy format, spread across multiple rows per participant, and lacking a built-in scoring system. Researchers face the daunting task of manually cleaning and computing these variables for analysis, a process fraught with potential inconsistencies.</p>
+</section>
+<section id="introducing-aousdohtools-the-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-aousdohtools-the-r-package">Introducing AOUSDOHtools: The R Package</h2>
+<p>To address these challenges, Dre Dong and the team developed the AOUSDOHtools R package. This tool automates the entire process of recoding, scoring, and outputting clean, personal variables ready for analysis. Based on a user guide by Dr.&nbsp;Koleck and colleagues (2024), the package standardizes scoring logic across 14 SDOH constructs, such as Neighborhood Cohesion, Social Support, and Perceived Stress.</p>
+<p>The package operates seamlessly within the All of Us Researcher Workbench, a secure cloud-based platform. It supports both RStudio and Jupyter environments, ensuring flexibility and ease of use for researchers. The package’s vibrant hex sticker, featuring symbols of housing, education, food, and income, embodies key SDOH components and adds a touch of whimsy for sticker enthusiasts.</p>
+</section>
+<section id="how-aousdohtools-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-aousdohtools-works">How AOUSDOHtools Works</h2>
+<p>The package includes 30 functions for scoring 14 constructs across various SDOH domains, such as Neighborhood Cohesion, Neighborhood Disorder, Food Insecurity, Housing Insecurity, and Housing Quality. Each construct is thoughtfully organized, with some offering sub-scores for more granular analysis.</p>
+<p>The workflow is simple: load the package and your SDOH survey data, and call one of the scoring functions like <code>calculate_cohesion</code> or <code>calculate_disorder</code>. The function outputs a tidy dataset—one row per person with the computed score. This straightforward process eliminates the need for manual data wrangling, allowing researchers to focus on analysis.</p>
+</section>
+<section id="a-peek-inside-the-scoring-functions" class="level2">
+<h2 class="anchored" data-anchor-id="a-peek-inside-the-scoring-functions">A Peek Inside the Scoring Functions</h2>
+<p>Take, for instance, the <code>calculate_cohesion</code> function. It extracts neighborhood-related questions, maps responses from “strongly agree” to “strongly disagree,” averages them, and returns a clean cohesion score for each participant. This automation relieves researchers from the burden of writing complex scoring algorithms, promoting consistency and reproducibility.</p>
+</section>
+<section id="staying-current-and-collaborative" class="level2">
+<h2 class="anchored" data-anchor-id="staying-current-and-collaborative">Staying Current and Collaborative</h2>
+<p>Released on March 26 and available on CRAN and GitHub, AOUSDOHtools is continuously updated to reflect changes in the All of Us platform. The development team welcomes feedback, feature requests, and collaboration ideas via email or GitHub issues. This open development approach fosters a thriving research community.</p>
+</section>
+<section id="why-aousdohtools-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-aousdohtools-matters">Why AOUSDOHtools Matters</h2>
+<p>By making SDOH data easier to use, share, and reproduce, AOUSDOHtools lays the groundwork for robust research in health equity. The package empowers researchers to explore how social factors like living conditions and social support influence health outcomes, aligning with the All of Us program’s mission.</p>
+<p>Researchers can become registered All of Us researchers, access the survey data via the Researcher Workbench, and install the package from CRAN or GitHub. This accessibility encourages diverse research efforts and collaborations within the R community.</p>
+</section>
+<section id="engage-with-aousdohtools" class="level2">
+<h2 class="anchored" data-anchor-id="engage-with-aousdohtools">Engage with AOUSDOHtools</h2>
+<p>For those eager to contribute, the development team appreciates input via GitHub issues or direct email communication. They are open to feedback and committed to refining the package to meet the evolving needs of the research community.</p>
+<p>In conclusion, AOUSDOHtools is a testament to the power of R in advancing research on social determinants of health. It simplifies complex data processes, enabling researchers to focus on impactful analyses and contribute to the broader goal of health equity. Thanks to Dre Dong and the development team for their dedication to this vital work.</p>
+<p>For more information and to explore the package, visit the <a href="https://github.com/zhd52/AOUSDOHtools">GitHub repository</a> or <a href="https://cran.r-project.org/package=AOUSDOHtools">CRAN page</a>.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Clinical Research</category>
+  <guid>https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/</guid>
+  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/thumbnail-AOUSDOHtools-deng.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>How are Vaccination Rates and Case Rates Changing for Measles in 2025?</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1632,64 +1694,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/</guid>
   <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/KamilSijko-main.png" medium="image" type="image/png" height="92" width="144"/>
-</item>
-<item>
-  <title>Data Engineering, Scientific Applications and AI - Inside R User Group Philippines’ Growth</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/joebrillantes/">Joe Brillantes</a>, organizer of the <a href="https://www.meetup.com/r-user-group-philippines/">R User Group Philippines</a> (RUG-PH), shares how the group has evolved with new interests emerging among its members. From a growing presence of data engineers exploring R to an increasing focus on scientific applications, the group continues to expand its reach. He discussed their upcoming plans for AI-focused meetups, the importance of ethical considerations in predictive modeling, and their efforts to support members in software engineering and analytics.</p>
-<p><img src="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/RUG-PHAnniversary.png" class="img-fluid"></p>
-<p><em>RUG-PH 11th Anniversary Celebration 14th August 2024</em></p>
-<p><strong>Since we last spoke, how has the R User Group Philippines evolved?</strong></p>
-<p>Overall, we’re doing well. Since we last spoke, several themes have emerged that I’d like to highlight.</p>
-<p>First, there’s a renewed interest in R, but this time, it’s coming from data engineers and individuals interested in data more broadly. Our meetups typically see one to three first-time attendees who are members of Data Engineering Filipinas. Their interest in R often stems from a desire to explore data professions.</p>
-<p>Another theme is that we’ve had several speakers focused on scientific applications of R. For instance, our last speaker, who presented last month, discussed <a href="https://www.meetup.com/r-user-group-philippines/events/305760876/?eventOrigin=group_events_list">mycology</a> and how R is used to analyze the colors of fungi, which was quite fascinating. We also had an online presentation from <a href="https://www.meetup.com/r-user-group-philippines/events/296013229/?eventOrigin=group_events_list">Jayson V. Pagaduan</a>, a director at a hospital in the U.S. He talked about how R produces efficient test results and research and which tests could be modified, eliminated, or made more efficient to ensure consistent outcomes.</p>
-<p>Another speaker, <a href="https://www.meetup.com/r-user-group-philippines/events/296013233/?eventOrigin=group_events_list">Dr.&nbsp;Pauline Del Mundo</a>, was also involved in public health research and discussed how R is applied in her work. This shift toward scientific topics is interesting because many of our previous speakers had backgrounds more aligned with the industry’s business side.</p>
-<p>Lastly, we recorded all our meetups last year, which are now available for those who couldn’t attend due to time differences. While we haven’t made these recordings public on YouTube yet, we’ve shared them with attendees who missed the sessions. We also hosted a co-meetup with the <a href="https://ghana-rusers.org/">Ghana R Users Community</a>, where I co-hosted with <a href="https://www.linkedin.com/in/francis-mensah-23b3262b5/?originalSubdomain=gh">Francis Mensah</a> and <a href="https://www.linkedin.com/in/samueltandoh/">Samuel Tandoh</a>, and we spoke about the swirl package.</p>
-<p>These themes reflect the developments we’ve observed since our last conversation.</p>
-<p><strong>What topics do you plan to cover in the upcoming months?</strong></p>
-<p>This year, we have some exciting plans for the forthcoming months, mainly focusing on artificial intelligence (AI) and large language models. We’ve received numerous questions on implementing generative AI, not limited to large language models. Therefore, we aim to hold discussions over the next three months.</p>
-<p>We have a Dynamic Programming in R planned for April. However, we will introduce a speaker each month in May and June, covering various aspects of AI. In May, a speaker will provide insights into the current state of AI research in the Philippines. In June, another speaker will discuss what it means when people claim that large language models can reason. Lastly, we plan to host a panel discussion in July featuring speakers from previous months and additional guests.</p>
-<p>The July meetup will culminate the discussions on ethics and governance in AI. We want to address questions about how to critically evaluate claims made by AI companies and understand their significance. This discussion will not be limited to large language models but will also encompass generative AI and analytics.</p>
-<p><strong>Your group has planned multiple meetups on artificial intelligence (AI) and ethics in the coming months. What inspired this focus, and what can attendees expect?</strong></p>
-<p>I’ve had conversations with a beginner in our group working on fraud detection. While he’s enthusiastic about transitioning into his new career, I’ve noticed some questionable methodologies in his approach. It’s crucial to emphasize that while predictive models can indicate possible fraud, it is a significant difference to outright accuse someone of committing fraud based on those predictions. We must highlight the ethical implications of building models and their potential impact on people’s lives.</p>
-<p>In our upcoming virtual meetups, we will also explore how the Philippines can advance the AI conversation within the country. Although not directly related to R programming, this dialogue will benefit our members by helping them become more informed and discerning about AI.</p>
-<p>After this series, we plan to return to topics related to software engineering practices, as many of our members have expressed concerns about coding practices. Though I am not a programmer, my background is more analytical, and this focus will benefit our community. We aim to present a series of talks addressing these software engineering challenges and providing valuable insights.</p>
-<p>My goal is not just to have very clean code. I’m also interested in how different groups can collaborate to make our code easier for software engineers to deploy and more scalable.</p>
-<p>One insight I’ve gained during these discussions is that, given R’s versatility, we could cover an entire year of software engineering topics in R. However, focusing solely on software engineering might become monotonous for others.</p>
-<p>We usually discuss analytics for the remaining topics. Earlier this year, I gave a presentation on <a href="https://www.meetup.com/r-user-group-philippines/events/303153606/?eventOrigin=group_events_list">creating maps in R</a>. Looking ahead, the later sessions will likely focus more on analytics topics, including predictive analytics and a talk on unsupervised learning.</p>
-<p><strong>Your group maintains a well-structured lineup of topics for the entire year. How do you plan and organize these meetups?</strong></p>
-<p>We begin each year by discussing the topics we want our speakers to cover. Once we have a list, we search for speakers relevant to those subjects. My role typically involves handling administration and finding speakers for analytics-related topics like data science. We also have a team member specialising in software engineering and another who is focusing on AI. They are responsible for contacting their networks to find suitable speakers for our user group.</p>
-<p>We maintain a calendar with topics that we plan to discuss throughout the year. However, we aren’t as meticulously organized as some other groups might be. We may have to change the topic if we struggle to find a speaker for a meeting. We aim to have a consistent lineup of subjects for our monthly meetups, totaling 12 topics for the year.</p>
-<p>We believe it’s essential to be reliable and consistent for our members. Even if attendance is low—say, just two or three people—we still hold the meetup as promised. This reliability fosters trust within the community.</p>
-<p><strong>Who are some key collaborators and supporters that help keep the R User Group Philippines running smoothly?</strong></p>
-<p><img src="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/RUG-PH-Organizers.png" class="img-fluid"></p>
-<p><em>Left to Right, Joma Miñoza, Joe Brillantes, Michelle Alarcon, and Rad Basa</em></p>
-<p><a href="https://www.linkedin.com/in/michelle-alarcon-91477513/?originalSubdomain=ph">Michelle Alarcon</a> is still with us to provide support, although she has taken a more hands-off approach since she’s now managing the AI and Analytics Association of the Philippines. She remains a valuable resource, and I can often count on her assistance when needed.</p>
-<p>We also utilize other connections. For instance, I often contact <a href="https://www.linkedin.com/in/jomaminoza/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&amp;originalSubdomain=ph">Joma Miñoza</a>, who works at the Center for AI Research in the Philippines, when we need expertise on AI topics. Additionally, we have Rad Basa involved in our efforts.</p>
-<p>Rad Basa is a software engineer who works for <a href="https://www.appsilon.com/">Appsilon</a>. When we discuss software engineering practices, I typically consult him. We are also good friends with <a href="https://dataengineering.ph/">Data Engineering Pilipinas</a>. The founder of that group, <a href="https://www.linkedin.com/in/ogbinar/?originalSubdomain=hk">Myk Ogbinar</a>, is very supportive and assists me when I need help finding speakers for events.</p>
-<p><img src="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/MykOgbinar.png" class="img-fluid" style="width:50.0%"></p>
-<p><em>Myk Ogbinar</em></p>
-<p>These are the key people I usually bounce ideas off when planning activities and selecting speakers. I ask for their perspectives regarding the needs of the R Users Group members. We also have many dedicated R users in academia. While we invite them to participate, we usually don’t involve them in planning since we understand they are swamped. However, if we have a specific topic in mind, we can reach out, and they often suggest that one of their professors speak on the subject.</p>
-<p>Overall, many individuals contribute to the organization of the R Users Group in the Philippines, and their support is greatly appreciated.</p>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/</guid>
-  <pubDate>Thu, 24 Apr 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/data-engineering-scientific-applications-and-ai-inside-r-user-group-philippines-growth/RUG-PHAnniversary-main.png" medium="image" type="image/png" height="88" width="144"/>
 </item>
 </channel>
 </rss>
