@@ -1,0 +1,49 @@
+--- 
+title: "kidney.epi R Package for Facilitating Research in Diabetes, Kidney, Heart, and Other Diseases" 
+unpublished: true 
+url: "https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/"
+description: "Discover the `kidney.epi` R package for advancing chronic kidney disease research and analysis." 
+categories: [R/Medicine 2025, Healthcare, Epidemiology]
+author: "R Consortium" 
+image: "thumbnail-kidney-boris.png" 
+image-alt: "the `kidney.epi` R package for advancing chronic kidney disease research and analysis - Boris Bibkov" 
+date: "06/20/2025" 
+---
+
+{{< video https://www.youtube.com/embed/pE3iZBegdr0 >}}
+
+# Empowering Chronic Kidney Disease Research with the `kidney.epi` R Package: An Insight from R/Medicine 2025
+
+Chronic Kidney Disease (CKD) is an escalating global health issue, affecting approximately 700 million individuals worldwide and leading to 3.2 million deaths annually. Despite its prevalence, CKD is often overlooked in health prevention programs and clinical trials, resulting in a significant awareness gap. Alarmingly, only 10-20% of those with CKD know they have the condition. Early detection and management are crucial to mitigate the progression to end-stage renal disease and prevent further complications. 
+
+## The Growing CKD Challenge
+
+The prevalence of CKD has surged nearly twofold over the past three decades, now affecting nearly 10% of the global population. CKD is more common than cardiovascular diseases, diabetes, and chronic respiratory conditions. Age-standardized rates for CKD have increased, unlike many other non-communicable diseases where rates have declined. This trend suggests a future increase in CKD cases. High-risk groups, such as individuals with diabetes, hypertension, and rheumatoid arthritis, show CKD prevalence rates ranging from 20% to 60%. Moreover, about 40% of those aged 65 and older live with CKD, underscoring its significance in geriatric care.
+
+CKD's impact extends to pharmacotherapy, as kidneys play a pivotal role in drug elimination. Reduced kidney function necessitates dosage adjustments or contraindications for certain medications. Despite CKD's high prevalence, patients with the condition are often excluded from clinical trials. A staggering 80% of cardiovascular medication trials exclude CKD patients, including 40% that exclude early-stage CKD patients.
+
+## World Health Organization's Response
+
+The World Health Organization recently adopted a kidney health resolution to enhance prevention and control strategies for kidney diseases. This development is promising, highlighting the growing recognition of CKD's global health burden.
+
+## Introducing the `kidney.epi` R Package
+
+To address the research gap in CKD, the `kidney.epi` R package, developed by [Boris Bibkov](https://scientific-tools.org), offers a comprehensive toolkit for kidney-related data analysis. This package is a boon for researchers and data scientists, providing functions to calculate estimated glomerular filtration rate (eGFR) using multiple validated equations, categorize urine analysis results, and assign risk categories based on the KDIGO classification.
+
+### Key Features of the `kidney.epi` Package
+
+1. **eGFR Calculation**: The package supports over 15 equations for calculating eGFR, including the widely used CKD-EPI equation, accommodating both serum creatinine and cystatin C markers for adults and children.
+
+2. **Kidney Transplantation Functions**: It includes functions to calculate the Kidney Donor Profile Index (KDPI) and the Kidney Donor Risk Index (KDRI), crucial for transplantation research.
+
+3. **User-Friendly Design**: The package offers flexible label handling, allowing researchers to use datasets without reformatting variables like sex or ethnicity. Functions accept user-defined labels and measurement units, making it adaptable to various datasets.
+
+4. **Automated Data Analysis**: With the package, researchers can automate kidney-related calculations in screening programs, clinical trials, and observational studies, enhancing research accessibility and reproducibility.
+
+### Applications Beyond CKD
+
+While the package is tailored for CKD research, its applications extend to other fields like diabetology, cardiology, and gerontology. Knowing eGFR is vital for monitoring medication appropriateness, particularly in high-risk groups.
+
+## Conclusion
+
+The `kidney.epi` R package is a valuable tool for CKD research and beyond, facilitating early detection and management strategies. Its flexible design and comprehensive functions empower researchers to contribute to the global effort in reducing the CKD burden. As the research community embraces this package, it stands to enhance awareness, improve patient outcomes, and drive innovation in kidney health research.
