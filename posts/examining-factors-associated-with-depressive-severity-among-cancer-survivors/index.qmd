@@ -1,0 +1,56 @@
+--- 
+title: "Examining Factors Associated with Depressive Severity Among Cancer Survivors" 
+unpublished: true 
+url: "https://r-consortium.org/posts/examining-factors-associated-with-depressive-severity-among-cancer-survivors/"
+description: "Examining factors linked to depressive symptoms in cancer survivors using NHIS data" 
+categories: [R/Medicine 2025, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-examining-factors-williams.png" 
+image-alt: "Examining factors linked to depressive symptoms in cancer survivors using NHIS data - Andre Williams" 
+date: "06/20/2025" 
+---
+
+{{< video https://www.youtube.com/embed/4vQJghIanQg >}}
+
+# Understanding the Psychological Burden of Cancer: Insights into Depressive Symptoms Among Survivors
+
+Cancer, a formidable adversary in the realm of health, extends its profound impact beyond the physical, creeping into the psychological well-being of those it touches. The study presented by Andre Williams from the Christine E. Lynn College of Nursing at Florida Atlantic University, at R/Medicine 2025, dives deeply into this often overshadowed aspect of cancer survivorship—depression. This comprehensive analysis offers invaluable insights into the mental health challenges faced by cancer patients and survivors and underscores the need for integrated care models that address both physical and mental health.
+
+## The Psychological Toll of Cancer
+
+Cancer survivors face a multitude of challenges that encompass the physical, emotional, and financial spectrums. While advancements in detection and treatment have increased survival rates, they have also prolonged the duration of living with the disease and its psychological ramifications. Among these, depression stands out as a significant concern, affecting not just the quality of life but also treatment adherence, physical health outcomes, and mortality rates. Cancer patients are particularly susceptible to depression due to a complex interplay of physiological and psychological factors.
+
+## Exploring the Correlates of Depression in Cancer Survivors
+
+Despite the established link between cancer and depression, there remains a critical need to explore the specific demographic, socioeconomic, and health-related factors contributing to this mental health burden. Previous research, often limited by smaller sample sizes, has struggled to generalize findings across the broader U.S. cancer survivor population. Addressing this gap, Williams and his team leveraged the National Health Interview Survey (NHIS) data, a robust, nationally representative resource, to examine these factors.
+
+### Research Methodology
+
+The study utilized NHIS data from 2022, focusing on individuals who reported a cancer diagnosis. The primary research question aimed to uncover the demographic, socioeconomic, and health-related factors associated with increased depressive symptomatology among these individuals. Depressive symptomatology was measured using the Patient Health Questionnaire-8 (PHQ-8), with a score of 10 or higher indicating moderate or greater depressive symptoms.
+
+For the analysis, various R packages, including `survey`, `tidyverse`, `modelsummary`, and `data.table`, were employed. The team conducted survey logistic regression to evaluate the associations between depressive symptoms and various independent variables.
+
+### Key Findings
+
+The analysis revealed several significant associations with moderate or greater depressive symptoms among cancer survivors:
+
+- **Socioeconomic Factors**: Poverty, lower levels of education, and lack of private health insurance were significantly associated with increased depressive symptoms, highlighting the impact of financial and educational disparities on mental health.
+- **Demographic Factors**: Female gender, younger age, and living alone were demographic variables linked to heightened depressive symptoms, suggesting a greater vulnerability among certain groups.
+- **Healthcare Access and Utilization**: Delays in care, unmet care needs due to cost, frequent emergency visits, and overnight hospitalizations were associated with increased depressive symptoms. These findings underscore the importance of accessible and affordable healthcare in addressing mental health issues.
+- **Co-occurring Conditions**: Mild or greater anxiety symptomatology was significantly associated with increased depressive symptoms, emphasizing the interconnectedness of mental health conditions.
+
+## Implications for Healthcare Practice
+
+The study's findings have crucial implications for healthcare practice:
+
+1. **Targeted Screening and Intervention**: Routine use of validated tools like PHQ-8 or PHQ-9 for assessing depression is vital, alongside considering broader social determinants of health in patient evaluations.
+
+2. **Holistic Support**: Interventions should address not only psychological needs but also socioeconomic factors and healthcare access issues, advocating for a comprehensive approach to patient support.
+
+3. **Integrated Care Models**: Incorporating mental health support into oncology care is essential to ensure mental health is recognized and addressed as a vital component of cancer treatment and survivorship.
+
+## Looking Ahead
+
+As the discussion concluded, the need for further research was highlighted, including the potential to extend the study to pediatric cancer patients and include a control group for comparison. Such future endeavors would enrich the understanding of depressive symptoms in cancer survivors and inform targeted interventions.
+
+This study, leveraging the power of R for data analysis, exemplifies the critical role of large-scale public health datasets in understanding the psychosocial challenges faced by cancer survivors. By integrating mental health considerations into cancer care, we can guide clinical decision-making and develop precision mental health interventions within oncology settings.
