@@ -74,6 +74,67 @@
   <media:content url="https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/thumbnail-AOUSDOHtools-deng.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>MIIPW: An R package for Generalized Estimating Equations with missing data integration</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4OslUevy6AQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="tackling-missing-data-in-longitudinal-studies-with-the-miipw-r-package" class="level1">
+<h1>Tackling Missing Data in Longitudinal Studies with the MIIPW R Package</h1>
+<section id="introduction-to-longitudinal-data" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-longitudinal-data">Introduction to Longitudinal Data</h2>
+<p>Longitudinal data, a cornerstone of numerous scientific fields, captures repeated measurements from the same subjects over time. This approach allows researchers to delve into changes within subjects, uncover trends, and identify temporal patterns. Such data is pivotal in biomedical, social, and behavioral sciences, enabling insights into patient biomarker levels, treatment responses, and disease progression. However, longitudinal data often presents challenges related to correlated measurements, rendering standard statistical methods insufficient.</p>
+</section>
+<section id="addressing-missing-data-in-longitudinal-studies" class="level2">
+<h2 class="anchored" data-anchor-id="addressing-missing-data-in-longitudinal-studies">Addressing Missing Data in Longitudinal Studies</h2>
+<p>Missing data is a pervasive issue in longitudinal studies, often resulting from dropouts, loss to follow-up, or nonresponse. Traditional methods in R’s generalized estimating equations (GEE) packages tend to ignore or exclude these missing cases, potentially biasing results and diminishing statistical power. This is where the MIIPW package steps in, offering a robust solution for handling missing data through a combination of multiple imputation and inverse probability weighting techniques.</p>
+</section>
+<section id="the-miipw-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="the-miipw-r-package">The MIIPW R Package</h2>
+<p>The MIIPW (Multiple Imputation and Inverse Probability Weighting) package is specifically designed to address missing data in marginal models used in longitudinal studies. Developed by Bhrigu Rajbongshi and his team at the Indian Institute of Technology (Indian School of Mines) Dhanbad, this package integrates advanced statistical techniques to provide accurate parameter estimation in the presence of incomplete data.</p>
+<section id="key-features-of-miipw" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-miipw">Key Features of MIIPW</h3>
+<ul>
+<li><p><strong>Multiple Imputation and Inverse Probability Weighting</strong>: MIIPW combines these two techniques to correct biases and provide reliable estimates. The package supports five different methods for parameter estimation: mean score, SIPW, AIPW, miSIPW, and miAIPW.</p></li>
+<li><p><strong>Covariance Structures</strong>: The package accommodates four covariance structures: AR-1, Exchangeable, Unstructured, and Independent, allowing users to model data appropriately.</p></li>
+<li><p><strong>Model Selection using QIC</strong>: For model selection, MIIPW employs the Quasi-Information Criterion (QIC), helping researchers identify the best-fitting model for their data.</p></li>
+<li><p><strong>Comprehensive Documentation and CRAN Availability</strong>: MIIPW is available on CRAN, complete with detailed documentation to assist users in effectively implementing its features.</p></li>
+</ul>
+</section>
+</section>
+<section id="practical-application-of-miipw" class="level2">
+<h2 class="anchored" data-anchor-id="practical-application-of-miipw">Practical Application of MIIPW</h2>
+<p>Using the MIIPW package involves several steps, from data preparation to model fitting and comparison. Here’s a brief overview of how to implement MIIPW in a real-world scenario:</p>
+<ol type="1">
+<li><p><strong>Data Preparation</strong>: Load the MIIPW package and your dataset. Define the longitudinal model formula and predictor matrix using the <code>make.predictorMatrix</code> function from the <code>mice</code> package.</p></li>
+<li><p><strong>Model Fitting</strong>: Use functions like <code>mean_score</code>, <code>SIPW</code>, and <code>AIPW</code> to fit your model. Specify the number of imputations and the desired covariance structure.</p></li>
+<li><p><strong>Model Comparison</strong>: Utilize the <code>QICw</code> function to compare models based on different covariance structures, selecting the one with the lowest QIC value as the best fit.</p></li>
+</ol>
+<p>The package’s integration with the <code>mice</code> package ensures flexibility and ease of use, making MIIPW a valuable tool for researchers dealing with complex longitudinal data.</p>
+</section>
+<section id="conclusion-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-future-directions">Conclusion and Future Directions</h2>
+<p>The MIIPW package is a significant advancement in handling missing data within longitudinal studies. While it currently focuses on generalized estimating equations, there is potential for extending these methods to mixed-effect models, which would further enhance its applicability. The ongoing development aims to address computational challenges associated with random effects in mixed models, promising even greater utility for the research community.</p>
+<p>The MIIPW package is a testament to the innovative work being done in the R community, providing researchers with robust tools to tackle the intricacies of longitudinal data analysis. By integrating state-of-the-art statistical techniques, MIIPW empowers researchers to derive meaningful insights from their data, ultimately advancing knowledge across various scientific domains.</p>
+<p>For more information and to download the MIIPW package, visit <a href="https://CRAN.R-project.org/package=MIIPW">CRAN</a>.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Clinical Research</category>
+  <guid>https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/</guid>
+  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/thumbnail-MIIPW-bhrigu.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>How are Vaccination Rates and Case Rates Changing for Measles in 2025?</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/</link>
@@ -1638,62 +1699,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/</guid>
   <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGlogo.png" medium="image" type="image/png" height="63" width="144"/>
-</item>
-<item>
-  <title>Microservices, Randomization APIs, and R in the Medical Sector – Warsaw’s Data Community in Focus</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/kamilsijko/">Kamil Sijko</a>, organizer of both the <a href="https://www.meetup.com/spotkania-entuzjastow-r-warsaw-r-users-group-meetup/">R Users and R-Ladies Warsaw groups</a>, recently spoke with the R Consortium about the evolving R community in Poland and the group’s efforts to connect users across academia, industry, and open-source development. Kamil shared his journey from discovering R as a student to taking over the leadership of the Warsaw R community in 2024. He discussed the group’s hybrid meetups, industry collaborations with companies like AstraZeneca and Appsilon, and the importance of making R accessible through recorded sessions and international outreach. He also highlighted a recent open-source project on patient randomization, demonstrating how R can be effectively integrated into modern software ecosystems, particularly in medical applications.</p>
-<p><img src="https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/KamilSijko.png" class="img-fluid" style="width:50.0%"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>I first encountered R during my studies, around the time of version 2, well before RStudio existed. I found it an interesting alternative to SPSS, which was widely used at my university. A key figure in my early experience with R was Professor <a href="https://www.linkedin.com/in/pbiecek/">Przemyslaw Biecek</a>, whose 2008 book on the language marked my first serious engagement with the software. Since then, I have been using it more extensively across different industries.</p>
-<p>Initially, I worked in academia, then moved to government institutions, and now I am in the business sector, all while continuing to use R.</p>
-<p>Interestingly, Professor Biecek, who authored the book, later initiated the first meetups for our R community in Warsaw. In 2024, he stepped back from organizing these events and handed over the responsibilities to me—a passing of the torch that felt especially meaningful, given how I had started.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-poland" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-poland">Can you share what the R community is like in Poland?</h2>
-<p>Poland is not fundamentally different from any other country in its use of programming languages. R is particularly relevant in academia and specific industries, especially the financial and medical sectors. In the medical field, the <a href="https://www.bioconductor.org/">Bioconductor</a> project plays a significant role, with researchers and pharmaceutical companies heavily relying on it and actively contributing to its development and broader open-source ecosystem.</p>
-<p>Additionally, R is strong in geography and geographic computations. Its primary applications are within academia and specific niches outside it, such as the highly regulated medical sector. In this context, R is preferred for regulatory work because it allows rigorous validation to meet industry standards.</p>
-<p>In my company, which operates in the medical field, using R is a natural choice. Many algorithms are already implemented in R that are not available in Python, making it logical to utilize R in such cases.</p>
-</section>
-<section id="so-now-that-youve-taken-over-the-r-user-group-what-are-your-plans-for-the-upcoming-months-what-topics-are-you-hoping-to-cover-are-your-meetings-in-person-online-or-a-hybrid" class="level2">
-<h2 class="anchored" data-anchor-id="so-now-that-youve-taken-over-the-r-user-group-what-are-your-plans-for-the-upcoming-months-what-topics-are-you-hoping-to-cover-are-your-meetings-in-person-online-or-a-hybrid">So, now that you’ve taken over the R user group, what are your plans for the upcoming months? What topics are you hoping to cover? Are your meetings in-person, online, or a hybrid?</h2>
-<p>Initially, I planned to host meetings exclusively in person and in Polish, without an online streaming option. However, people expressed interest in re-watching the meetings if they couldn’t attend. We have a relatively international community of users in Warsaw, so conducting the sessions in English made sense. Consequently, we changed our approach, and now the meetings are hybrid. They are recorded and stored on our <a href="https://www.youtube.com/channel/UCq1v6SmgtmJeWDUtIKr0nVw">YouTube</a> channel, allowing anyone to rewatch them if they find them interesting.</p>
-<p>We have some significant companies engaged in R development that present fascinating projects. At our last meeting, we hosted representatives from <a href="https://www.astrazeneca.pl/">AstraZeneca</a>, who discussed a large-scale project involving central data validation that utilized R. AstraZeneca also hosted our meetup at their office in Warsaw.</p>
-<p>Additionally, we have <a href="https://www.appsilon.com">Appsilon</a>, an active open-source contributor. Though primarily an online organization, many of their team members are based in Warsaw. They have numerous projects to discuss and can provide instruction on various open-source initiatives.</p>
-<p>My company, <a href="https://ttsi.com.pl/en/">Transition Technology Science</a>, also works with R and contributes to open-source projects, so there is plenty to discuss. Furthermore, we have a vibrant academic community. The <a href="https://www.mi2.ai/mi2redteam.html">MI2 RedTeam</a> is exploring explainable artificial intelligence, which is both fascinating and crucial right now; others work on packages related to econometrics. This local production and usage create intriguing topics of discussion.</p>
-<p>Moreover, we touch upon subjects that address the current state of our community and its prospects, including relevant and active new tools. For example, at the last meetup, <a href="https://www.linkedin.com/in/tymoteusz-makowski/">Tymoteusz</a> discussed recent updates to R, including changes to the documentation and the introduction of <a href="https://positron.posit.co/">Positron</a>, the new IDE. These topics are all pertinent and vital.</p>
-<p>It’s also worth mentioning that R has a distinctive characteristic of being highly relevant in academia, where many projects prioritize exploration and theory over immediate practical applications. However, it offers valuable insights and often sparks meaningful discussions. In one of the first meetings I organized, a participant presented a project that involved network analysis of conspiracy theories using R. This type of work might not align with typical grant criteria. Still, it offered a rich and engaging topic for discussion.</p>
-<p>Overall, during these meetings, R often serves as a gateway to deeper and more intriguing areas of science and beyond.</p>
-</section>
-<section id="please-share-a-project-youre-currently-working-on-or-have-worked-on-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-your-industry" class="level2">
-<h2 class="anchored" data-anchor-id="please-share-a-project-youre-currently-working-on-or-have-worked-on-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-your-industry">Please share a project you’re currently working on or have worked on using the R language. Goal/reason, result, anything interesting, especially related to your industry?</h2>
-<p>I’d like to briefly preview one of the topics I covered in our last meetup, as I was one of the speakers. I discussed a project we completed at my company, which we have <a href="https://ttscience.github.io/unbiased/">open-sourced</a>. This project involves an API for randomization, a perfect example of why R is relevant.</p>
-<p>Substantial work has been done in R on advanced randomization methods for clinical trials, including adaptive randomization — the kind of functionality that’s often hard to find elsewhere in such a mature and tested form. So why not use it? At the same time, it’s unrealistic to expect developers building electronic Case Report Forms (eCRFs) in Python or Java to learn R and integrate it natively into their systems suddenly.</p>
-<p>To address this challenge, we developed an R package along with a Dockerized API for patient randomization. It runs R in the background, but from the developers’ perspective, integration is straightforward — with a decent connection, the whole setup (from ‘docker pull’ to ‘docker compose up’) takes less than a minute. There’s no need to work directly with R; they simply treat it like any other service in their stack.</p>
-<p>This approach represents a promising way forward for many services available in R that can be integrated with other software, making them even more relevant. Modern software architecture often relies on microservices, and there’s no reason we can’t use R to build these microservices.</p>
-<p>It makes logical sense to position R this way, especially since there is often a lack of tooling for building large-scale applications in R. We have encountered this limitation in other projects. Nevertheless, utilizing R as a microservice provider is a sensible direction.</p>
-<p>I see the future of R not only in academic analysis but as a robust backend tool, especially for specific algorithms and statistical procedures that are mature and peer-reviewed. By wrapping R in services that are easy to use from other environments, we make its strengths more accessible to a broader audience without requiring a steep learning curve for engineers or product teams.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/</guid>
-  <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/KamilSijko-main.png" medium="image" type="image/png" height="92" width="144"/>
 </item>
 </channel>
 </rss>
