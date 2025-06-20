@@ -13,10 +13,6 @@ page-layout: full
 
 <div class="platinum">
 
-  <a href="https://www.biogen.com">
-    <img class="platinum-img" alt="Biogen corporate logo" src="/images/members/Biogen.svg" />
-  </a>
-
   <a href="https://www.gene.com">
     <img class="platinum-img" alt="Genentech corporate logo" src="/images/members/genentech-300x184.webp" />
   </a>
@@ -37,6 +33,10 @@ page-layout: full
 
   <a href="https://www.amstat.org/">
     <img class="silver-img" alt="American Statistical Association logo" src="/images/members/american-statistical-association.svg" />
+  </a>
+
+  <a href="https://www.biogen.com">
+    <img class="platinum-img" alt="Biogen corporate logo" src="/images/members/Biogen.svg" />
   </a>
 
   <a href="https://www.esri.com/">
