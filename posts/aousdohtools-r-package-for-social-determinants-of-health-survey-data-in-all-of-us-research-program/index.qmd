@@ -1,0 +1,59 @@
+--- 
+title: "AOUSDOHtools: R Package for Social Determinants of Health Survey data in All of Us Research Program" 
+unpublished: true 
+url: "https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/"
+description: "Discover AOUSDOHtools, an R package simplifying Social Determinants of Health data analysis." 
+categories: [R/Medicine 2025, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-AOUSDOHtools-deng.png" 
+image-alt: "AOUSDOHtools: R Package for Social Determinants of Health Survey data in All of Us Research Program - Zhirui Deng" 
+date: "06/20/2025" 
+---
+
+{{< video https://www.youtube.com/embed/nQum-dWBM3I >}}
+
+# Unraveling the AOUSDOHtools Package: Empowering Research in Social Determinants of Health
+
+Hello, R community! Today we dive into the innovative R package, AOUSDOHtools, designed to streamline the analysis of Social Determinants of Health (SDOH) data. This package, presented by Zhirui Deng, a biostatistician from the University of Pittsburgh School of Nursing, is a game-changer for researchers working within the All of Us Research Program. Let's explore how this tool enhances research efforts in health equity.
+
+## Understanding the All of Us Research Program
+
+The All of Us Research Program, an initiative by the National Institutes of Health (NIH), aims to gather comprehensive data from over a million participants across the United States. This vast data collection includes health records, lab results, and survey responses, focusing significantly on health equity by enrolling participants traditionally underrepresented in research. The diversity and complexity of this data present unique challenges, particularly when it comes to analyzing SDOH data.
+
+## Challenges with SDOH Data
+
+SDOH surveys collect detailed information on non-clinical factors impacting health, such as housing, education, stress, and social support. While invaluable, this data often comes in a raw, messy format, spread across multiple rows per participant, and lacking a built-in scoring system. Researchers face the daunting task of manually cleaning and computing these variables for analysis, a process fraught with potential inconsistencies.
+
+## Introducing AOUSDOHtools: The R Package
+
+To address these challenges, Dre Dong and the team developed the AOUSDOHtools R package. This tool automates the entire process of recoding, scoring, and outputting clean, personal variables ready for analysis. Based on a user guide by Dr. Koleck and colleagues (2024), the package standardizes scoring logic across 14 SDOH constructs, such as Neighborhood Cohesion, Social Support, and Perceived Stress.
+
+The package operates seamlessly within the All of Us Researcher Workbench, a secure cloud-based platform. It supports both RStudio and Jupyter environments, ensuring flexibility and ease of use for researchers. The package's vibrant hex sticker, featuring symbols of housing, education, food, and income, embodies key SDOH components and adds a touch of whimsy for sticker enthusiasts.
+
+## How AOUSDOHtools Works
+
+The package includes 30 functions for scoring 14 constructs across various SDOH domains, such as Neighborhood Cohesion, Neighborhood Disorder, Food Insecurity, Housing Insecurity, and Housing Quality. Each construct is thoughtfully organized, with some offering sub-scores for more granular analysis.
+
+The workflow is simple: load the package and your SDOH survey data, and call one of the scoring functions like `calculate_cohesion` or `calculate_disorder`. The function outputs a tidy dataset—one row per person with the computed score. This straightforward process eliminates the need for manual data wrangling, allowing researchers to focus on analysis.
+
+## A Peek Inside the Scoring Functions
+
+Take, for instance, the `calculate_cohesion` function. It extracts neighborhood-related questions, maps responses from "strongly agree" to "strongly disagree," averages them, and returns a clean cohesion score for each participant. This automation relieves researchers from the burden of writing complex scoring algorithms, promoting consistency and reproducibility.
+
+## Staying Current and Collaborative
+
+Released on March 26 and available on CRAN and GitHub, AOUSDOHtools is continuously updated to reflect changes in the All of Us platform. The development team welcomes feedback, feature requests, and collaboration ideas via email or GitHub issues. This open development approach fosters a thriving research community.
+
+## Why AOUSDOHtools Matters
+
+By making SDOH data easier to use, share, and reproduce, AOUSDOHtools lays the groundwork for robust research in health equity. The package empowers researchers to explore how social factors like living conditions and social support influence health outcomes, aligning with the All of Us program's mission.
+
+Researchers can become registered All of Us researchers, access the survey data via the Researcher Workbench, and install the package from CRAN or GitHub. This accessibility encourages diverse research efforts and collaborations within the R community.
+
+## Engage with AOUSDOHtools
+
+For those eager to contribute, the development team appreciates input via GitHub issues or direct email communication. They are open to feedback and committed to refining the package to meet the evolving needs of the research community.
+
+In conclusion, AOUSDOHtools is a testament to the power of R in advancing research on social determinants of health. It simplifies complex data processes, enabling researchers to focus on impactful analyses and contribute to the broader goal of health equity. Thanks to Dre Dong and the development team for their dedication to this vital work.
+
+For more information and to explore the package, visit the [GitHub repository](https://github.com/zhd52/AOUSDOHtools) or [CRAN page](https://cran.r-project.org/package=AOUSDOHtools).
