@@ -74,6 +74,62 @@
   <media:content url="https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/thumbnail-AOUSDOHtools-deng.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>kidney.epi R Package for Facilitating Research in Diabetes, Kidney, Heart, and Other Diseases</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pE3iZBegdr0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="empowering-chronic-kidney-disease-research-with-the-kidney.epi-r-package-an-insight-from-rmedicine-2025" class="level1">
+<h1>Empowering Chronic Kidney Disease Research with the <code>kidney.epi</code> R Package: An Insight from R/Medicine 2025</h1>
+<p>Chronic Kidney Disease (CKD) is an escalating global health issue, affecting approximately 700 million individuals worldwide and leading to 3.2 million deaths annually. Despite its prevalence, CKD is often overlooked in health prevention programs and clinical trials, resulting in a significant awareness gap. Alarmingly, only 10-20% of those with CKD know they have the condition. Early detection and management are crucial to mitigate the progression to end-stage renal disease and prevent further complications.</p>
+<section id="the-growing-ckd-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="the-growing-ckd-challenge">The Growing CKD Challenge</h2>
+<p>The prevalence of CKD has surged nearly twofold over the past three decades, now affecting nearly 10% of the global population. CKD is more common than cardiovascular diseases, diabetes, and chronic respiratory conditions. Age-standardized rates for CKD have increased, unlike many other non-communicable diseases where rates have declined. This trend suggests a future increase in CKD cases. High-risk groups, such as individuals with diabetes, hypertension, and rheumatoid arthritis, show CKD prevalence rates ranging from 20% to 60%. Moreover, about 40% of those aged 65 and older live with CKD, underscoring its significance in geriatric care.</p>
+<p>CKD’s impact extends to pharmacotherapy, as kidneys play a pivotal role in drug elimination. Reduced kidney function necessitates dosage adjustments or contraindications for certain medications. Despite CKD’s high prevalence, patients with the condition are often excluded from clinical trials. A staggering 80% of cardiovascular medication trials exclude CKD patients, including 40% that exclude early-stage CKD patients.</p>
+</section>
+<section id="world-health-organizations-response" class="level2">
+<h2 class="anchored" data-anchor-id="world-health-organizations-response">World Health Organization’s Response</h2>
+<p>The World Health Organization recently adopted a kidney health resolution to enhance prevention and control strategies for kidney diseases. This development is promising, highlighting the growing recognition of CKD’s global health burden.</p>
+</section>
+<section id="introducing-the-kidney.epi-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-the-kidney.epi-r-package">Introducing the <code>kidney.epi</code> R Package</h2>
+<p>To address the research gap in CKD, the <code>kidney.epi</code> R package, developed by <a href="https://scientific-tools.org">Boris Bibkov</a>, offers a comprehensive toolkit for kidney-related data analysis. This package is a boon for researchers and data scientists, providing functions to calculate estimated glomerular filtration rate (eGFR) using multiple validated equations, categorize urine analysis results, and assign risk categories based on the KDIGO classification.</p>
+<section id="key-features-of-the-kidney.epi-package" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-the-kidney.epi-package">Key Features of the <code>kidney.epi</code> Package</h3>
+<ol type="1">
+<li><p><strong>eGFR Calculation</strong>: The package supports over 15 equations for calculating eGFR, including the widely used CKD-EPI equation, accommodating both serum creatinine and cystatin C markers for adults and children.</p></li>
+<li><p><strong>Kidney Transplantation Functions</strong>: It includes functions to calculate the Kidney Donor Profile Index (KDPI) and the Kidney Donor Risk Index (KDRI), crucial for transplantation research.</p></li>
+<li><p><strong>User-Friendly Design</strong>: The package offers flexible label handling, allowing researchers to use datasets without reformatting variables like sex or ethnicity. Functions accept user-defined labels and measurement units, making it adaptable to various datasets.</p></li>
+<li><p><strong>Automated Data Analysis</strong>: With the package, researchers can automate kidney-related calculations in screening programs, clinical trials, and observational studies, enhancing research accessibility and reproducibility.</p></li>
+</ol>
+</section>
+<section id="applications-beyond-ckd" class="level3">
+<h3 class="anchored" data-anchor-id="applications-beyond-ckd">Applications Beyond CKD</h3>
+<p>While the package is tailored for CKD research, its applications extend to other fields like diabetology, cardiology, and gerontology. Knowing eGFR is vital for monitoring medication appropriateness, particularly in high-risk groups.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The <code>kidney.epi</code> R package is a valuable tool for CKD research and beyond, facilitating early detection and management strategies. Its flexible design and comprehensive functions empower researchers to contribute to the global effort in reducing the CKD burden. As the research community embraces this package, it stands to enhance awareness, improve patient outcomes, and drive innovation in kidney health research.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <category>Epidemiology</category>
+  <guid>https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/</guid>
+  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/thumbnail-kidney-boris.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>MIIPW: An R package for Generalized Estimating Equations with missing data integration</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/</link>
@@ -1634,71 +1690,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/</guid>
   <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/phutil-main-image.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>Disease Outbreak Mapping, Open Source, and Outreach - Unijos R Users Group in Nigeria Leads the Way</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/iko-musa-a17a24114/">Iko Musa</a>, founder of the <a href="https://www.meetup.com/unijos-r-users/">Unijos R Users Group</a> at the University of Jos (UNIJOS), Nigeria, spoke with the R Consortium about how the group built an inclusive and cross-disciplinary R community in northern Nigeria. Iko explained how the group supported students and professionals in transitioning from proprietary tools like SPSS to R. He highlighted their efforts to improve accessibility through online sessions, providing internet support for undergraduates, and hosting practical events like a recent Meetup on outbreak mapping in R.</p>
-<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/IkoMusa.png" class="img-fluid" style="width:50.0%"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>I founded the Unijos R Users Group at Unijos whilst completing my MSc in Field Epidemiology at the University of Jos. The concept emerged from my experience as both a student and a professional Epidemiologist and Data Analyst Activity Manager with <a href="https://www.msf.org/">Médecins Sans Frontières</a> (MSF). I recognised the critical need for an inclusive community that extended beyond my department of Community Medicine to serve students across all faculties at Unijos. My vision was to create a supportive environment where both undergraduates and postgraduates could develop practical R programming skills applicable to their diverse research interests, regardless of their academic discipline.</p>
-<p>Our group initially focused on postgraduate students, but my main goal has been to encourage undergraduates to adopt R for their undergraduate research projects. During my studies, both as an undergraduate and during my MSc in Field Epidemiology, we primarily used IBM SPSS Statistics, which has significant costs. In contrast, R is a free platform, which makes it much more accessible, especially for students in low-income regions like northern Nigeria. Switching from SPSS or other paid software to R would be more cost-effective and sustainable for us.</p>
-<p>One of my key initiatives in founding this group is to engage undergraduate students after each session by providing a small incentive, not money, but support for internet access. Many of our members are from various universities across northern Nigeria, and this incentive encourages them to participate in learning R and expand their skills actively.</p>
-<p>In my role with MSF, I also encourage my data entry teams and medical data supervisors to use R. Since joining MSF, we’ve started sessions on R, and it’s been rewarding to see team members learn, create visualisations, and gain insights from the data.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-unijos" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-unijos">Can you share what the R community is like in Unijos?</h2>
-<p>Our university, the University of Jos, is commonly known as UNIJOS. Since founding this group, I’ve noticed that many who join our community are my MSc colleagues. Initially, there were just seven of us in the MSc Epidemiology program. At that time, we were using software like EpiInfo and SPSS for data analysis and outbreak investigations. Still, I realized the trend was shifting toward R. So, we formed a small group at UNIJOS to learn it together.</p>
-<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGlogo.png" class="img-fluid"></p>
-<p>Our community quickly expanded to include students from other programmes, such as MSc Clinical Epidemiology, MSc Chemistry, and MPH (Master of Public Health), who joined us because we offered free and accessible learning sessions. We hold online sessions every two weeks and also organise in-person sessions within our department. Sometimes, after classes, we gather for a session on R. Currently, our focus is on undergraduate students, although we also include postgraduates. We encourage participation across departments and post information on Meetup, WhatsApp, Facebook, and bulletin boards to invite anyone interested. It’s a free community open to anyone who wants to learn.</p>
-<p>Our reach has grown beyond UNIJOS. In our recent online session, I noticed participants from other universities in northern Nigeria, such as Ahmadu Bello University, the Federal University of Health Sciences, Azare, National Open University of Nigeria-Maiduguri Study Centre, and the University of Maiduguri, with many undergraduates joining.</p>
-<p>At MSF, I also encourage my team to use R for data analysis and other tasks. This integration has been beneficial, and I’m thrilled to see more people embracing R both within and outside UNIJOS.</p>
-<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGMeeting.png" class="img-fluid"></p>
-<p>Unijos R User Group First Meeting</p>
-</section>
-<section id="you-had-a-meetup-on-outbreak-mapping-in-r-on-march-22-2025.-can-you-share-more-about-the-topic-covered-why-this-topic" class="level2">
-<h2 class="anchored" data-anchor-id="you-had-a-meetup-on-outbreak-mapping-in-r-on-march-22-2025.-can-you-share-more-about-the-topic-covered-why-this-topic">You had a Meetup on <a href="https://www.meetup.com/unijos-r-users/events/306206070/?eventOrigin=group_events_list">Outbreak Mapping in R</a> on March 22, 2025. Can you share more about the topic covered? Why this topic?</h2>
-<p>During our March 22nd Meetup on Outbreak Mapping in R, we explored the essential role of spatial data visualisation in epidemiological investigations. We covered the workflow from data preparation to creating effective choropleth and spot maps using ggplot2 and the <a href="https://cran.r-project.org/web/packages/sf/index.html">sf</a> packages. We chose this topic because mapping is crucial but often underutilised in outbreak response, helping investigators identify disease clusters and transmission patterns more efficiently. The event targeted public health professionals, residents in community medicine, epidemiologists, and data analysts with basic R knowledge who wanted practical skills for visualising outbreak data in their daily work.</p>
-</section>
-<section id="who-was-the-target-audience-for-attending-this-event" class="level2">
-<h2 class="anchored" data-anchor-id="who-was-the-target-audience-for-attending-this-event">Who was the target audience for attending this event?</h2>
-<p>Our sessions were designed to be inclusive of all skill levels, from undergraduate students to professionals interested in learning R. We kept it very basic so that anyone, whether new to R or with some experience, could participate comfortably. I felt that starting with the basics would encourage more people to join and help grow our community, making it accessible and welcoming for everyone. We also hold more advanced R sessions periodically to encourage broader participation.</p>
-</section>
-<section id="do-you-recommend-any-techniques-for-planning-for-or-during-the-event-github-zoom-other.-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-who-cannot-attend-physical-events-in-the-future" class="level2">
-<h2 class="anchored" data-anchor-id="do-you-recommend-any-techniques-for-planning-for-or-during-the-event-github-zoom-other.-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-who-cannot-attend-physical-events-in-the-future">Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?</h2>
-<p>We primarily use Microsoft Teams for our online sessions, especially to reach participants in remote areas. As I mentioned, our last session included many participants from other universities and locations beyond the University of Jos and Plateau State. Microsoft Teams has been effective for these online sessions due to its ease of use.</p>
-<p><img src="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGOnlineMeeting.png" class="img-fluid"></p>
-<p>Unijos R User Group First Online Meeting Using Microsoft Teams</p>
-<p>Looking ahead, once we’ve grown and conducted more sessions, we’re planning to introduce advanced topics like using <a href="https://shiny.posit.co/">Shiny</a>, which I enjoy, and predictive modeling, possibly starting next year. At that point, we’ll also begin using GitHub to manage our data and resources, adding another layer of engagement for the community.</p>
-<p>After each online session, we offer participants, especially undergraduates, a small internet token to help with connectivity costs. The program is free, and R Consortium has helped us make it accessible, so we want to keep it that way. Occasionally, if the network on Teams isn’t reliable, we switch to Google Meet. Additionally, we plan physical sessions for those nearby to foster in-person connections and learning opportunities.</p>
-</section>
-<section id="wed-like-to-get-to-know-you-better.-please-tell-me-a-little-about-yourself-such-as-your-hobbiesinterests-or-anything-else-you-want-to-share." class="level2">
-<h2 class="anchored" data-anchor-id="wed-like-to-get-to-know-you-better.-please-tell-me-a-little-about-yourself-such-as-your-hobbiesinterests-or-anything-else-you-want-to-share.">We’d like to get to know you better. Please tell me a little about yourself, such as your hobbies/interests or anything else you want to share.</h2>
-<p>I’m a medical doctor by training, having graduated from Ahmadu Bello University. My transition from clinical practice to working with data began immediately after my internship, when I developed a strong interest in learning R. Previously, I had been using SPSS. I had even created a platform in Borno State called MTJ Data Analytics to offer free online sessions for SPSS. However, I found that many people struggled with SPSS due to the need for a paid license, and it required a lot of computer resources, making it difficult for those with older or less powerful devices.</p>
-<p>Recognising these limitations, I saw the need to shift from SPSS to R, which is free and offers many powerful packages. My love for R grew as I explored its tools, like Shiny for interactive dashboards and the ‘<a href="https://cran.r-project.org/web/packages/sf/index.html">sf</a>’ package for mapping. These allow for flexible, detailed visualisations in outbreak investigations—something Epi Info and SPSS couldn’t fully support. R has become my go-to tool, offering a one-stop solution for analysis, mapping, and sampling without needing to switch between different software.</p>
-<p>When I applied for my current role at MSF, I was pleasantly surprised to find that all the technical requirements were based on R. Looking back, if I hadn’t learned R, I wouldn’t have been able to secure this position. Recently, the Head of Epidemiology, Dr Franck Ale, from our headquarters even complimented my code, which was an incredibly proud moment and solidified my commitment to R.</p>
-<p>I’m genuinely grateful for the support of the R Consortium, which has enabled us to build and expand this community in northern Nigeria, particularly at the University of Jos. Looking ahead, I plan to expand this platform further to the University of Maiduguri in the Northeast, where there is a need for R communities and support. Thank you for all you do to empower people with these resources and help grow this community—I’m excited to see where it goes.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/</guid>
-  <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/UnijosRUGlogo.png" medium="image" type="image/png" height="63" width="144"/>
 </item>
 </channel>
 </rss>
