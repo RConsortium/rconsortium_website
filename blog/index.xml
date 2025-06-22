@@ -10,7 +10,64 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Fri, 20 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 21 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/PWLRL0R7s3Y" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="breaking-through-memory-limitations-in-redcap-introducing-the-redquack-package" class="level1">
+<h1>Breaking Through Memory Limitations in REDCap: Introducing the {redquack} Package</h1>
+<p>In today’s data-driven healthcare environment, managing large datasets efficiently is crucial. The REDCap platform, a free electronic health record software, is widely used by over 7,000 institutions across the globe. Its ability to handle complex, longitudinal data and support multiple instruments or assessments makes it a favored choice for clinical research. However, with the exponential growth of data, researchers often encounter memory constraints when trying to extract and analyze vast amounts of information.</p>
+<p>Dylan Pieper from the University of Pittsburgh addressed this challenge head-on at the R/Medicine 2025 conference. His innovative solution, the {redquack} package, is designed to optimize data workflows between REDCap and DuckDB, providing a memory-efficient alternative for processing large datasets.</p>
+<section id="the-challenge-of-handling-large-datasets-in-redcap" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-of-handling-large-datasets-in-redcap">The Challenge of Handling Large Datasets in REDCap</h2>
+<p>At the School of Pharmacy, University of Pittsburgh, data scientists manage a REDCap database containing clinical data from over 200 outpatient treatment centers. This database is extensive, with nearly 3 million rows across 400 columns. Such large datasets pose a significant challenge when using traditional methods like the {REDCapR} package, which attempts to load all data into memory, often resulting in failures due to hardware limitations.</p>
+<p>REDCap stores its data using a MySQL backend, which is typically managed by an institution’s IT department. Direct interfacing with this database is not recommended, pushing researchers to rely on APIs and packages to access the data. However, as datasets grow, these methods become inefficient and sometimes infeasible.</p>
+</section>
+<section id="the-redquack-package-a-solution-for-seamless-data-extraction" class="level2">
+<h2 class="anchored" data-anchor-id="the-redquack-package-a-solution-for-seamless-data-extraction">The {redquack} Package: A Solution for Seamless Data Extraction</h2>
+<p>The {redquack} package emerged as a solution to these memory constraints by leveraging the power of DuckDB, a fast and portable SQL database management system. DuckDB’s columnar storage format makes it particularly suited for large-scale data processing, allowing data to be stored outside of R’s memory.</p>
+<p>The package introduces a novel batch processing approach to data extraction. By breaking down data into manageable chunks, researchers can efficiently process portions of the dataset without ever exceeding memory limits. This method involves:</p>
+<ol type="1">
+<li><strong>Batch Processing</strong>: Data is extracted in configurable batches of record IDs, minimizing memory usage.</li>
+<li><strong>Column Optimization</strong>: The package automatically optimizes column types across batches, enhancing query performance.</li>
+<li><strong>Detailed Logging</strong>: Users can track extraction progress through comprehensive logs, aiding in debugging and process monitoring.</li>
+<li><strong>Integration with Tidyverse</strong>: The resulting DuckDB connection can be seamlessly integrated with tidyverse workflows, allowing analysts to use familiar dplyr syntax for data manipulation.</li>
+</ol>
+</section>
+<section id="practical-implementation-and-benefits" class="level2">
+<h2 class="anchored" data-anchor-id="practical-implementation-and-benefits">Practical Implementation and Benefits</h2>
+<p>Using {redquack} is straightforward. Researchers need to provide their REDCap API credentials and configuration preferences to the <code>redcap_to_duckdb()</code> function. This function handles the extraction process, and the resulting DuckDB connection can be immediately utilized for data analysis.</p>
+<p>The package includes several quality-of-life features, such as sound notifications (a “quack” on success) for long-running operations. This user-friendly approach empowers researchers to work with datasets that exceed memory constraints without compromising their existing workflows.</p>
+</section>
+<section id="real-world-applications-at-the-university-of-pittsburgh" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-applications-at-the-university-of-pittsburgh">Real-World Applications at the University of Pittsburgh</h2>
+<p>Dylan Pieper’s presentation showcased practical examples from the School of Pharmacy, where the {redquack} package has streamlined the data pipeline from REDCap to analysis. By eliminating memory constraints, the package has enabled clinical researchers, data scientists, and analysts to work more efficiently with large datasets. This is particularly beneficial for those handling complex, multi-form projects or longitudinal studies where traditional extraction methods fall short.</p>
+<p>The package is designed to be scalable and consistent, ensuring reliable data exports as projects grow in size. While it currently focuses on data reading, there is potential for future enhancements, such as supporting additional database drivers and expanding its capabilities.</p>
+</section>
+<section id="a-collaborative-future" class="level2">
+<h2 class="anchored" data-anchor-id="a-collaborative-future">A Collaborative Future</h2>
+<p>The development of {redquack} highlights the importance of collaboration within the R community. By sharing insights and innovations, researchers can collectively overcome the challenges posed by large-scale data management. The package is available on CRAN and GitHub, inviting contributions and feedback from the wider community.</p>
+<p>As REDCap continues to evolve, tools like {redquack} will play a pivotal role in ensuring that researchers can harness the full potential of their data without being hindered by technical limitations. Dylan Pieper’s work is a testament to the power of open-source collaboration and the continuous drive for innovation within the R ecosystem.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/</guid>
+  <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/thumbnail-redquack.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>AOUSDOHtools: R Package for Social Determinants of Health Survey data in All of Us Research Program</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1391,109 +1448,6 @@ Grant: $8,500</p>
   <guid>https://r-consortium.org/posts/quantifying-participation-risk-with-r-and-r-shiny-a-new-frontier-in-financial-risk-modeling/</guid>
   <pubDate>Wed, 21 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/quantifying-participation-risk-with-r-and-r-shiny-a-new-frontier-in-financial-risk-modeling/demo.png" medium="image" type="image/png" height="74" width="144"/>
-</item>
-<item>
-  <title>Reproducibility Without Containers: Bruno Rodrigues Introduces Nix and the {rix} R Package</title>
-  <dc:creator>R Consortium Community Assistant, Caitlyn Oda</dc:creator>
-  <link>https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/brunoheadshot.jpeg" class="img-fluid" style="width:30.0%"></p>
-<p>At a <a href="https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html">recent R Medicine webinar hosted by the R Consortium</a>, Bruno Rodrigues, Head of the Statistics and Data Strategy Departments at Luxembourg’s Ministry of Research and Higher Education, presented an innovative approach to reproducibility in R: one that eliminates the complexity of containerization, works seamlessly across systems, and offers analysis reproducibility for years into the future.</p>
-<hr>
-<section id="the-challenge-of-reproducibility-in-data-science" class="level3">
-<h3 class="anchored" data-anchor-id="the-challenge-of-reproducibility-in-data-science">The Challenge of Reproducibility in Data Science</h3>
-<p>Reproducibility is a cornerstone of scientific research, yet achieving it in data science remains challenging. Rodrigues explains that reproducibility is on a continuum and depends on 4 factors: the version of R, package versions, operating systems, and hardware. Traditional tools like <code>{renv}</code> capture R package dependencies but fall short in tracking system-level libraries or the R interpreter itself. In my own work, I’ve utilized <code>{renv}</code>to import packages for implementing tables for R-powered websites. Containerization tools like Docker offer more comprehensive encapsulation but come with their own complexities and do not guarantee deterministic builds.</p>
-<p>Rodrigues emphasized that true reproducibility requires capturing the entire computational environment, including system libraries, compilers, and the operating system. This holistic approach ensures that analyses can be rerun with identical results, regardless of changes in the software ecosystem.</p>
-<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/continuum.png" class="img-fluid" style="width:70.0%"></p>
-<hr>
-</section>
-<section id="nix-a-functional-package-manager-for-reproducible-builds" class="level3">
-<h3 class="anchored" data-anchor-id="nix-a-functional-package-manager-for-reproducible-builds">Nix: A Functional Package Manager for Reproducible Builds</h3>
-<p>Nix is a cross-platform package manager designed for reproducibility. It allows users to define environments declaratively, ensuring that builds are deterministic and environments can be recreated identically across different systems and over time. Nix manages not just R packages but also system dependencies, making it a comprehensive solution for reproducible research.</p>
-<p>Rodrigues highlighted that Nix’s approach to package management eliminates issues related to hidden dependencies and environment drift, common pitfalls in data science workflows.</p>
-<p>“Nix really makes it possible to reach this gold standard of reproducibility.”</p>
-<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/nix.png" class="img-fluid" style="width:40.0%"></p>
-<hr>
-</section>
-<section id="introducing-rix-bridging-r-and-nix" class="level3">
-<h3 class="anchored" data-anchor-id="introducing-rix-bridging-r-and-nix">Introducing <code>{rix}</code>: Bridging R and Nix</h3>
-<p>To make Nix more accessible to R users, Rodrigues developed <code>{rix}</code>, an R package that simplifies the creation of reproducible environments using Nix. With <code>{rix}</code>, users can generate Nix expressions directly from R, specifying the R version, required packages, system dependencies, and preferred IDEs.</p>
-<p>The core function, <code>rix()</code>, generates a <code>default.nix</code> file, which Nix uses to build the environment. This process ensures that the entire software stack, from the R interpreter to system libraries, is captured and can be reproduced reliably.</p>
-<p><img src="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/rix.jpeg" class="img-fluid" style="width:40.0%"></p>
-<hr>
-</section>
-<section id="the-magic-of-rix" class="level3">
-<h3 class="anchored" data-anchor-id="the-magic-of-rix">The “Magic” of <code>{rix}</code></h3>
-<p>One of the standout features of <code>{rix}</code> is its ability to “freeze” environments in time. By specifying a particular date, users can recreate the exact state of CRAN and Bioconductor repositories as they existed on that day. This temporal pinning ensures that analyses remain reproducible, even as packages evolve.</p>
-<p>Rodrigues described this capability as the “magic” of <code>{rix}</code>, allowing researchers to maintain consistent environments without manual intervention.</p>
-<hr>
-</section>
-<section id="key-advantages-of-rix" class="level3">
-<h3 class="anchored" data-anchor-id="key-advantages-of-rix">Key Advantages of <code>{rix}</code></h3>
-<p>Rodrigues highlighted two critical benefits of using <code>{rix}</code>:</p>
-<ol type="1">
-<li><p><strong>No Need for Pre-installed R</strong>: Once the Nix expression is generated, the environment can be built using Nix alone, eliminating the need for R to be pre-installed on the system. This feature is particularly useful for deploying environments on CI/CD systems or sharing with collaborators.</p></li>
-<li><p><strong>Seamless Integration with Docker</strong>: While Nix ensures reproducibility, Docker offers portability. <code>{rix}</code> allows users to wrap Nix-built environments into Docker containers, combining the strengths of both tools for long-term preservation and distribution.</p></li>
-</ol>
-<hr>
-</section>
-<section id="real-world-applications-and-future-developments" class="level3">
-<h3 class="anchored" data-anchor-id="real-world-applications-and-future-developments">Real-world Applications and Future Developments</h3>
-<p>Rodrigues demonstrated how <code>{rix}</code> can be used to create environments that include IDEs like RStudio or VS Code, as well as additional languages like Python and Rust. One example where <code>{rix}</code> could come into play is the R Consortium website, which is published using Quarto, and uses RStudio and <code>{renv}</code> as a main part of the workflow. The content is pushed to GitHub where it’s published using GitHub Actions. These environments can be deployed across various platforms, including CI/CD pipelines, ensuring consistent and reproducible workflows.</p>
-<p>Looking ahead, Rodrigues is developing <code>{rixpress}</code>, a companion package inspired by <code>{targets}</code>. <code>{rixpress}</code> aims to facilitate the creation of reproducible analytical pipelines, further enhancing the capabilities of <code>{rix}</code> and Nix in data science projects.</p>
-<hr>
-</section>
-<section id="getting-started-with-rix" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started-with-rix">Getting Started with <code>{rix}</code></h3>
-<p>To begin using <code>{rix}</code>, install the package from CRAN:</p>
-<p>R<br>
-Copy code<br>
-<code>install.packages("rix")</code></p>
-<p>Then, generate a Nix expression for your project:</p>
-<p>R<br>
-Copy code<br>
-<code>library(rix)</code></p>
-<p><code>rix(</code><br>
-<code>date = "2024-12-14",</code><br>
-<code>r_pkgs = c("dplyr", "ggplot2"),</code><br>
-<code>system_pkgs = NULL,</code><br>
-<code>git_pkgs = NULL,</code><br>
-<code>ide = "code",</code><br>
-<code>project_path = ".",</code><br>
-<code>overwrite = TRUE,</code><br>
-<code>print = TRUE</code><br>
-<code>)</code></p>
-<p>This command creates a <code>default.nix</code> file and an <code>.Rprofile</code>, setting up a reproducible environment tailored to your project’s needs.</p>
-<hr>
-</section>
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
-<ul>
-<li><strong>Bruno Rodrigues’s Slides</strong>: <a href="https://b-rodrigues.github.io/r-medicine-rix/#/title-slide\">https://b-rodrigues.github.io/r-medicine-rix/#/title-slide</a><br>
-</li>
-<li><strong>GitHub Repository</strong>: <a href="https://github.com/ropensci/rix">https://github.com/ropensci/rix</a><br>
-</li>
-<li><strong>CRAN Package</strong>: <a href="https://cran.r-project.org/package=rix">https://cran.r-project.org/package=rix</a><br>
-</li>
-<li><strong>Documentation</strong>: <a href="https://docs.ropensci.org/rix">https://docs.ropensci.org/rix</a><br>
-</li>
-<li><strong>Webinar Recording</strong>: <a href="https://www.youtube.com/watch?v=jhiRNQHbEXo">R/Medicine YouTube Channel</a><br>
-</li>
-<li><strong>Bruno Rodrigues’s Blog</strong>: <a href="https://brodrigues.co">https://brodrigues.co</a></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/</guid>
-  <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/rix-main-image.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 </channel>
 </rss>
