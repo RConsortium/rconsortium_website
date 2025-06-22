@@ -1,0 +1,63 @@
+--- 
+title: "Refactor or Preserve? Challenging ‘If It Ain’t Broken, Don’t Fix It’ Mindset in Shiny App Lifecycle" 
+unpublished: true 
+url: "https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/"
+description: "Explore the balance between refactoring and preserving in Shiny app lifecycle with Dror Berel's insights." 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium" 
+image: "thumbnail-refactoring-dror.jpg" 
+image-alt: "Refactor or Preserve with Shiny apps - Dror Berel" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/9agO0o2gP68 >}}
+
+# Refactor or Preserve: Challenging the "If It Ain't Broken, Don't Fix It" Mindset in Shiny App Lifecycle
+
+In the ever-evolving landscape of technology, even well-crafted software solutions eventually face obsolescence. This reality brings forth a critical question for developers: to refactor or not? Dror Berel, an independent consultant with a diverse background in statistics, R, and the pharmaceutical industry, delves into this conundrum using the Pharmaverse/Teal framework as a case study. His insights shed light on the benefits and risks of transitioning a functional Shiny application to a modern framework.
+
+## The Lifecycle of Software and the Scope Creep Phenomenon
+
+Throughout his career, Dror Berel has navigated through various programming environments—from SAS and S+ to R, becoming an early adopter of R web applications. His journey has led him through the intricate process of managing messy data and transforming it into meaningful insights. A recurring challenge in this process is the phenomenon of "scope creep," where the project's scope gradually expands beyond its original intent. This often results in unwieldy, spaghetti-like code that demands constant patching.
+
+Dror defines scope creep as the uncontrolled or gradual expansion of project scope, adding features or requirements without corresponding adjustments in resources. This incremental approach can lead to inefficiencies and the need for a complete overhaul. Dror argues that instead of perpetually patching code, building a better solution from scratch can be a more sustainable approach.
+
+## The Innovation Adoption Curve in R Frameworks
+
+Dror introduces the concept of the product adoption lifecycle, also known as the innovation adoption curve, to illustrate the evolution of R frameworks. Initially, solutions like R Base were created to address specific pain points. Over time, as these solutions gained popularity, they attracted early adopters, eventually reaching a broader audience. However, with the emergence of new challenges, frameworks like Tidyverse and Shiny were developed to address these issues.
+
+Dror highlights the current landscape where modern frameworks, such as Teal and Rhino, are gaining traction, offering more advanced solutions for complex Shiny applications. He emphasizes the importance of understanding when to embrace these new frameworks and when to preserve existing solutions.
+
+## The Case for Refactoring: When and Why?
+
+Refactoring is an integral part of the software lifecycle, but it requires careful consideration. Dror outlines scenarios when refactoring is justified:
+
+1. **Deprecated Dependencies**: When existing dependencies become outdated or unsupported, refactoring becomes necessary to ensure continued functionality.
+
+2. **Scope Creep**: If the current scope of the project exceeds its original limitations, refactoring can provide a more efficient and sustainable solution.
+
+3. **Critical Pain Points**: When the existing framework cannot adequately address a critical issue, adopting a new solution may be warranted.
+
+4. **Trust in New Solutions**: Refactoring should be pursued when there is confidence in the new solution's longevity and support.
+
+## The Role of Modern Frameworks in Shiny Applications
+
+Dror delves into specific frameworks that have emerged to address the complexities of Shiny applications. He highlights the Pharmaverse open-source community's ecosystem, particularly the Teal framework, which simplifies the development of Shiny apps by leveraging modules. This modular approach allows developers to focus on high-level objectives rather than getting bogged down in low-level details.
+
+In addition to Teal, Dror mentions the Rhino framework, which provides recommendations for organizing files within an app, enhancing maintainability. Together with the Box package, these frameworks offer clear code quality, automation, and more, empowering developers to create robust Shiny applications.
+
+## When Not to Refactor: Preserving Stability
+
+While refactoring offers numerous benefits, there are scenarios where it may not be necessary or advisable:
+
+1. **Legacy Methodology**: If replicating legacy methodologies is challenging and not well-understood, preservation may be the safer option.
+
+2. **Overkill Features**: Introducing features that do not significantly enhance functionality may lead to unnecessary complexity.
+
+3. **Heavy Dependencies**: Modern frameworks can introduce dependencies that may not align with project objectives, warranting a cautious approach.
+
+## Conclusion: Balancing Innovation and Stability
+
+In conclusion, the decision to refactor or preserve an existing solution hinges on a variety of factors, including the project's scope, the availability of modern frameworks, and the specific challenges faced. Dror Berel emphasizes the importance of being strategic and intentional in these decisions, weighing the risks and benefits to ensure long-term success.
+
+For the R community, embracing new frameworks and technologies is essential for staying at the forefront of innovation. However, it is equally important to recognize when stability and preservation are the most prudent paths forward. By striking this balance, developers can ensure the longevity and effectiveness of their Shiny applications, ultimately delivering greater value to users and stakeholders.
