@@ -1,0 +1,49 @@
+--- 
+title: "An Accelerometry Biomarker Framework with Application in Vigilance in UK Biobank Data" 
+unpublished: true 
+url: "https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/"
+description: "This R/Medicine 2025 talk looks into using accelerometry as a biomarker for assessing vigilance." 
+categories: [R/Medicine 2025, Clinical Research]
+author: "R Consortium, Healthcare" 
+image: "thumbnail-kane-accelerometry.png" 
+image-alt: "Accelerometry Biomarker Framework - Michael Kane" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/KiQAySB2rF4 >}}
+
+# Exploring Vigilance with Accelerometry: Insights from the UK Biobank
+
+Accelerometry data from wearable devices have opened new horizons in non-invasive health monitoring, providing a continuous and objective measure of physical activity. Michael Kane, MD Anderson Cancer Center, alongside Dmitri Wolson and Francesco Onarati at Takeda Pharmaceuticals, delves into using accelerometry as a biomarker for assessing vigilance, focusing on the potential to identify non-vigilant states such as excessive daytime sleepiness or narcolepsy-like symptoms. This analysis is rooted in data from the UK Biobank, a rich resource encompassing accelerometry, demographic, and lifestyle data of approximately 78,500 participants.
+
+## Understanding the Data and Its Challenges
+
+The UK Biobank's accelerometry data provides a wealth of information, with measurements taken at 100 Hz over a week for each participant. These data offer a high-resolution view of daily activity patterns, recorded across three axes (X, Y, Z) in milligravities. However, this study's foundational challenge lies in its observational nature and reliance on self-reported outcomes to define vigilance states.
+
+Vigilance and non-vigilance were distinguished using self-reported symptoms of narcolepsy and frequency of daytime naps. Non-vigilant participants reported narcolepsy symptoms often or always and took frequent naps, while vigilant participants did not report these symptoms or behaviors. Despite a robust overall dataset, the non-vigilant group comprised only 679 individuals, necessitating a careful matching process to ensure comparable analysis groups.
+
+## Propensity Score Matching for Balanced Analysis
+
+To address imbalances and potential confounders in the observational data, propensity score matching was employed. This method allowed for the creation of matched pairs of vigilant and non-vigilant participants based on physical and lifestyle characteristics, including age, sex, ethnicity, BMI, smoking habits, alcohol use, and more. This rigorous matching resulted in 95 well-matched pairs, setting the stage for a focused exploration of accelerometry's potential in assessing vigilance.
+
+## Transforming Accelerometry Data into Spectral Images
+
+A critical step in the analysis involved transforming raw accelerometry data into a structured format conducive to machine learning. The data were downsampled to 33 Hz to focus on relevant daily movement frequencies. Subsequently, the data were segmented into five-minute blocks, and a Discrete Fourier Transform was applied to each block. This transformation yielded sorted spectral images, representing the energy expended at different frequencies without capturing the precise timing of activities within a day.
+
+## Convolutional Neural Network for Classification
+
+Inspired by the architecture of AlexNet, a simplified convolutional neural network (CNN) was developed to classify participants as vigilant or non-vigilant based on the spectral images. The CNN architecture included convolutional layers, max pooling, and dense layers with dropout to prevent overfitting. Training involved 20-fold cross-validation at the subject level, ensuring that predictions were genuinely out-of-sample.
+
+The CNN yielded an out-of-sample F1 score of 0.576 and an AUC of 0.539 at the sample level for participants aged 65 or younger. At the subject level, the F1 score was 0.539, and the AUC was 0.564. While these results indicate a weak association between accelerometry-derived biomarkers and vigilance states, they underscore the potential for further refinement and application in broader contexts.
+
+## Potential Applications and Future Directions
+
+The study highlights accelerometry's promise as a non-invasive tool for assessing cognitive states and movement-related disorders. The association between accelerometry and vigilance, albeit modest, opens avenues for monitoring conditions where non-vigilance is a co-morbidity, such as sleep disorders, neurological conditions, and psychiatric disorders.
+
+The findings also suggest potential applications in monitoring the effectiveness of treatments for conditions like narcolepsy, where stimulant medications may influence accelerometry patterns. Furthermore, the study indicates that stratifying by age could enhance the model's predictive accuracy, given that younger participants tend to exhibit more movement.
+
+## Conclusion
+
+Kane's exploration into accelerometry as a biomarker for vigilance represents an exciting step forward in leveraging wearable technology for health monitoring. While the association between accelerometry and vigilance is currently weak, the study underscores the potential for accelerometry-derived insights to inform interventions across a range of conditions. The use of R for analysis and presentation further demonstrates the language's versatility in handling complex datasets and machine learning models.
+
+As the R community continues to evolve and embrace cutting-edge methodologies, studies like this exemplify the innovative applications of R in advancing healthcare research. The integration of accelerometry data into clinical and research settings promises to enhance our understanding of human physiology and behavior, paving the way for more personalized and effective health interventions.
