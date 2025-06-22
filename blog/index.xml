@@ -1147,44 +1147,56 @@
   <media:content url="https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/thumbnail-closing-remarks-day2-finalday-michael-kane.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>R/Medicine Day 1 Closing Remarks</title>
+  <title>R/Medicine 2025 Opening Remarks - Thursday</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rmedicine-closing-remarks/</link>
+  <link>https://r-consortium.org/posts/rmedicine-2025-opening-remarks-thursday/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tF2Vej2mTKQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="wrapping-up-day-one-of-rmedicine-2025-with-peter-higgins" class="level1">
-<h1>Wrapping Up Day One of R/Medicine 2025 with Peter Higgins</h1>
-<p>As we draw the curtains on Day 1 - after 3 days of Demos and Workshops, the events shifted to Keynotes, Talks and Lightning Talks - of the R/Medicine 2025 conference, Peter Higgins from the University of Michigan delivered the closing remarks, emphasizing the wealth of knowledge shared throughout the day and the excitement building up for what’s to come.</p>
-<p>The event has showcased the immense potential of the R language in revolutionizing medicine and healthcare.</p>
-<section id="highlights-of-day-one" class="level2">
-<h2 class="anchored" data-anchor-id="highlights-of-day-one">Highlights of Day One</h2>
-<p>The day was packed with a myriad of topics that span across different facets of medicine and technology. From the integration of artificial intelligence in medicine to ensuring data consistency through harmonization and controlled vocabularies, the sessions were nothing short of enlightening. Participants had the opportunity to delve into statistical consistency with CIS ARS and the validation of Shiny apps, alongside discussions on Shiny lifecycle management.</p>
-<p>One of the standout aspects of the day was the focus on reproducibility, emphasized through talks on the <code>rum</code> package. This package is pivotal for ensuring that medical research and practices are backed by reproducible and verifiable data. Furthermore, R’s capabilities in handling deep learning were highlighted, with particularly engaging discussions on applications in health, including asthma and other medical conditions.</p>
-<p>The day also featured presentations from the winners of the R/Medicine data challenge. These individuals and teams showcased innovative solutions that have the potential to transform healthcare practices. The challenge not only sparked creativity but also encouraged collaboration among R enthusiasts, setting the stage for future competitions.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0Qv_rFgoULA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="rmedicine-2025-opening-remarks-by-emily-zabor" class="level1">
+<h1>R/Medicine 2025: Opening Remarks by Emily Zabor</h1>
+<p>Welcome to R/Medicine 2025! With the conference officially underway, attendees are in for an exciting lineup of sessions and discussions over the coming days.</p>
+<p>The opening remarks were delivered by Emily Zabor, an Associate Staff Biostatistician at the Cleveland Clinic and an enthusiastic R user. Her roles span from the Department of Quantitative Health Sciences to the Taussig Cancer Institute and an academic appointment at the Cleveland Clinic Lerner College of Medicine. With a strong background in early phase clinical trial design, statistical methods for observational studies, prediction models, and survival analysis, Emily brings a wealth of expertise to her role as Chair of the organizing committee for this year’s conference.</p>
+<section id="gratitude-and-recognition" class="level2">
+<h2 class="anchored" data-anchor-id="gratitude-and-recognition">Gratitude and Recognition</h2>
+<p>Emily expressed heartfelt gratitude to the R Consortium for hosting the R/Medicine 2025 conference. The R Consortium continues to play a crucial role in supporting the R community with events, webinars, and support for various R groups, including R-Ladies. Their efforts not only facilitate the current conference but also bolster the R ecosystem throughout the year.</p>
+<p>A special thanks was also extended to financial sponsors, Genentech and Posit, whose generous contributions have kept registration fees relatively low, enabling the inclusion of workshops and demos at a flat rate. Scholarships based on financial need are also made possible by these sponsors, ensuring a diverse set of participants can join the conference.</p>
+<p>The organizing committee, chaired by Emily herself, received commendations for their dedication and creativity in bringing the conference to life. Some members have been involved since the conference’s inception in 2018, showcasing their commitment and knowledge. Attendees are encouraged to thank them for their efforts.</p>
 </section>
-<section id="looking-forward-to-day-two" class="level2">
-<h2 class="anchored" data-anchor-id="looking-forward-to-day-two">Looking Forward to Day Two</h2>
-<p>As the conference gears up for Day Two of talks and its final day, anticipation is high. The keynote will focus on model evaluation, a critical aspect of healthcare analytics that ensures the accuracy and reliability of predictive models. Attendees can also look forward to sessions on risk calculators and talks addressing nonprobability surveys, which are crucial in understanding population health dynamics.</p>
-<p>The conference will also celebrate diversity and inclusivity with the rainbowR Community session, bringing to light the importance of diverse perspectives in the R community. Furthermore, the role of accelerometry as a biomarker will be explored, presenting new avenues for health monitoring and diagnosis.</p>
-<p>The excitement doesn’t stop there. The introduction of a new package, <code>redquack</code>, which combines REDCap and DuckDB, is set to be a game-changer for data management in healthcare research. Additional sessions will cover a variety of packages, including <code>ggswim</code>, <code>kidney.epi</code>, <code>nix</code>, and <code>distanceHD</code>.</p>
-<p>In the lightning talks, topics will range from bootstrapping to NHIS data, culminating in a deep dive into survival analysis with computation through deep learning. These sessions promise to be a treasure trove of insights and innovations.</p>
+<section id="a-global-and-accessible-gathering" class="level2">
+<h2 class="anchored" data-anchor-id="a-global-and-accessible-gathering">A Global and Accessible Gathering</h2>
+<p>R/Medicine 2025 continues its tradition of being a global and accessible event, running virtually to accommodate participants from around the world. This format, adopted during the pandemic, has allowed the conference to reach a diverse international audience. With greetings extended from Emily to all time zones, the virtual format enables knowledge sharing and networking across borders.</p>
 </section>
-<section id="community-engagement-and-interactivity" class="level2">
-<h2 class="anchored" data-anchor-id="community-engagement-and-interactivity">Community Engagement and Interactivity</h2>
-<p>An exciting update for Day One is the activation of chat sessions during presentations. This feature is expected to enhance interactivity, allowing participants to engage in discussions, ask questions, and share their experiences in real-time.</p>
-<p>This type of collaborative environment is one of the hallmarks of the R/Medicine conference, fostering a sense of community among attendees.</p>
+<section id="conference-overview-and-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="conference-overview-and-highlights">Conference Overview and Highlights</h2>
+<p>The conference kicked off with three days of engaging workshops, demos, and panels. These days were structured into two tracks, making it impossible to attend every session. However, participants can look forward to <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">accessing video recordings on the R Consortium’s YouTube channel</a> after the conference concludes. This provides a great opportunity to revisit sessions or catch those that were missed.</p>
+<p>Workshop highlights included:</p>
+<ul>
+<li>Introduction to R workshops in both English and Spanish</li>
+<li>R package development with GitHub pages and package down</li>
+<li>Survival analysis with tidy models</li>
+<li>Data visualization using parameterization</li>
+<li>Reproducibility with Ricks and Nix</li>
+<li>Personal R administration</li>
+<li>LLMs using Elmer</li>
+<li>Teal Mastery</li>
+</ul>
+<p>The structure also featured panels of R educators and sessions focused on reproducibility and more.</p>
 </section>
-<section id="closing-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="closing-thoughts">Closing Thoughts</h2>
-<p>Peter Higgins’ closing remarks for Day One encapsulated the essence of the R/Medicine 2025 conference — a celebration of knowledge, innovation, and community. The event has provided a platform for sharing groundbreaking ideas and tools that have the potential to redefine medicine and healthcare practices.</p>
-<p>As the conference concludes, it is hoped that participants are inspired to continue exploring and leveraging the power of R in their work. Whether through participating in future data challenges or developing new packages and tools, the possibilities are endless.</p>
-<p>In case you missed any of the sessions, fear not! Almost all the content is recorded and will be available on the <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">R Consortium’s YouTube channel</a>. This ensures that the learning and inspiration derived from R/Medicine 2025 can continue to reach a wider audience, fostering growth and development within the R community.</p>
-<p>For more information on the event and to access resources, visit the official <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine website</a> and the <a href="https://www.r-consortium.org/">R Consortium site</a>.</p>
+<section id="looking-forward" class="level2">
+<h2 class="anchored" data-anchor-id="looking-forward">Looking Forward</h2>
+<p>Opening the first day is a keynote by Zead Obermeyer, focusing on “Reinventing Medicine with AI.” The day will continue with 9 regular talks and 2 lightning talks covering topics such as reproducibility, compliance, workflow automation, and clinical and epidemiological applications.</p>
+<p>Attendees will also hear from winners of the data analysis competition on measles vaccination and case rates in 2025 in both professional and student categories.</p>
+<p>Participants are encouraged to engage actively in the conference by joining Zoom sessions, participating in the chat, asking questions, and connecting with fellow attendees. Before the keynote kicks off, attendees were invited to introduce themselves in the chat and share their locations, fostering a sense of community.</p>
+</section>
+<section id="stay-tuned" class="level2">
+<h2 class="anchored" data-anchor-id="stay-tuned">Stay Tuned</h2>
+<p>In addition to the conference, R/Medicine hosts mid-year webinars, and participants are encouraged to keep an eye out for these events. The webinars focus on topics such as reproducible data science environments with Nix and containerization in R. <a href="https://r-consortium.org/webinars/webinars.html">For more information on webinars, attendees can visit the R Consortium’s website.</a></p>
+<p>With an exciting program ahead, the R/Medicine 2025 conference promises to be a dynamic and enriching experience for the R community. Enjoy the conference, engage with peers, and make the most of the sessions and opportunities to learn and connect.</p>
 
 
 </section>
@@ -1193,9 +1205,9 @@
  ]]></description>
   <category>R/Medicine 2025</category>
   <category>Events</category>
-  <guid>https://r-consortium.org/posts/rmedicine-closing-remarks/</guid>
+  <guid>https://r-consortium.org/posts/rmedicine-2025-opening-remarks-thursday/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rmedicine-closing-remarks/thumbnail-closing-remarks-day1-higgins.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://r-consortium.org/posts/rmedicine-2025-opening-remarks-thursday/thumbnail-opening-remarks-day-one-emily.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
