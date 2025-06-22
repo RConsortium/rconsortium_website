@@ -1,0 +1,58 @@
+--- 
+title: "nonprobsvy -- An R package for modern methods for non-probability survey" 
+unpublished: true 
+url: "https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/"
+description: "Discover `nonprobsvy`, an R package for non-probability sample inference, enhancing survey analysis." 
+categories: [R/Medicine 2025, Clinical Research, Software Development]
+author: "R Consortium" 
+image: "thumbnail-nonprobsvy.png" 
+image-alt: "`nonprobsvy`, an R package for non-probability sample inference - Maciej Beręsewicz" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/MnEZlFcpmCE >}}
+
+# Unveiling the `nonprobsvy` Package: A Leap in Non-Probability Sample Inference in R
+
+Greetings R community! Today, we're thrilled to delve into the details of `nonprobsvy`, an R package crafted for inference based on non-probability samples. Presented by Maciej Beręsewicz from the Poznań University of Economics and Business and the Statistical Office in Poznań, this package is a tool for statisticians dealing with the challenges of non-probability samples in various research domains.
+
+## Addressing Non-Probability Sample Challenges
+
+The core motivation behind the development of `nonprobsvy` stems from the limitations often encountered in official statistics due to declining response rates and the growing reliance on non-probability surveys for population inference. Such surveys, including big data, opt-in web panels, and social media data, often introduce selection bias, complicating accurate population characteristic estimations.
+
+Beręsewicz, deeply rooted in survey sampling and methodology, recognized these challenges through his work at the university and the Statistical Office in Poznań. This package is a testament to his commitment to providing robust statistical methods that correct selection bias, making it a resource for researchers worldwide.
+
+## The Power of `nonprobsvy`
+
+`nonprobsvy` integrates with the popular `survey` package in R, offering a toolkit for addressing non-probability sample biases. It categorizes its approaches into three main groups: prediction-based approach, inverse probability weighting, and doubly robust approach. Here's a closer look at what it provides:
+
+1. **Inverse Probability Weighting (IPW):** Allows for correction of selection bias using known population totals or survey designs.
+2. **Mass Imputation Estimators:** Employs methods such as regression imputation and nearest neighbors to estimate missing data.
+3. **Doubly Robust Estimators:** Combines the strengths of both IPW and outcome modeling for improved estimations.
+4. **High-Dimensional Data Handling:** Features variable selection using techniques like SCAD, LASSO, or MCP, crucial for handling administrative data or surveys with extensive questionnaires.
+
+## A User-Friendly Package
+
+The `nonprobsvy` package is designed with user-friendliness in mind. Its main function, `nonprop()`, mimics existing R functions by utilizing formulas, ensuring a smooth transition for users familiar with R's ecosystem. The package supports both analytical and bootstrap variance estimators, providing flexibility and robustness in variance estimation.
+
+### Unique Features
+
+- **Full Integration with the Survey Package:** Ensures compatibility and extends the capabilities of existing survey methods.
+- **Advanced Estimators:** Implements state-of-the-art methods, including those recently accepted for publication, ensuring users have access to the latest developments in survey sampling.
+- **Extensive Documentation:** Provides detailed explanations, equations, and use cases, guiding users through implementation and interpretation.
+
+## Looking Ahead: Future Developments
+
+Beręsewicz and his team have ambitious plans for the future of `nonprobsvy`. They aim to incorporate overlapping samples, replicate weights, and expand mass imputation methods beyond parametric approaches. There is also a focus on developing inference methods for quantiles and integrating mixed-mode data handling, reflecting the dynamic needs of contemporary research.
+
+### Community Involvement
+
+The development team encourages feedback and suggestions from the community. By engaging with users on GitHub, they aim to continuously refine and enhance the package. If you have innovative ideas or encounter challenges, they're eager to hear from you.
+
+## Call to Action
+
+`nonprobsvy` is available on CRAN, and its development version is hosted on GitHub. We invite you to explore this powerful package, test its capabilities, and contribute to its evolution. Your insights and experiences are invaluable in shaping its future.
+
+For researchers, statisticians, and R enthusiasts, `nonprobsvy` offers a robust solution to the complexities of non-probability samples. Whether you're tackling big data, social media analytics, or opt-in web panels, this package equips you with the tools needed to derive accurate, reliable inferences.
+
+To learn more about the package, visit the [CRAN page](https://cran.r-project.org/package=nonprobsvy) or [GitHub repository](http://github.com/ncn-foreigners/nonprobsvy). Let's work together in advancing statistical methodologies and making impactful contributions to the R community.
