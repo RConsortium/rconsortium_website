@@ -297,6 +297,61 @@
   <media:content url="https://r-consortium.org/posts/swimmer-plots-with-ggswim/thumbnail-swimmer-plogs-ggswim-hanna.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Unified Deep Learning Survival Analysis for Competing Risk Modeling with Functional Covariates</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/unified-deep-learning-survival-analysis-for-competing-risk-modeling-with-functional-covariates/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/aUtnSYosT2s" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="advancing-icu-patient-care-with-deep-learning-a-unified-approach-to-competing-risk-modeling" class="level1">
+<h1>Advancing ICU Patient Care with Deep Learning: A Unified Approach to Competing Risk Modeling</h1>
+<p>Discharging patients from the intensive care unit (ICU) is a critical step in their journey towards recovery. Yet, this transition does not eliminate the risks they continue to face, including the potential for ICU readmission or in-hospital death. These adverse outcomes not only prolong recovery but also increase healthcare costs and significantly affect the quality of life for patients. To transform post-ICU care, accurate predictive models are needed to identify at-risk patients early and customize their care to improve outcomes.</p>
+<section id="the-challenge-of-icu-data" class="level3">
+<h3 class="anchored" data-anchor-id="the-challenge-of-icu-data">The Challenge of ICU Data</h3>
+<p>ICU data is inherently complex and multidimensional, encompassing demographic details, clinical information, and continuous waveform covariates such as blood pressure and respiratory rate. It also includes multiple competing risks like septic shock, ICU readmission, and mortality, with frequent instances of missing data complicating the scenario further. Traditional statistical models struggle to adequately manage these complexities, necessitating more advanced methodologies.</p>
+</section>
+<section id="a-new-deep-learning-framework" class="level3">
+<h3 class="anchored" data-anchor-id="a-new-deep-learning-framework">A New Deep Learning Framework</h3>
+<p>Yan Zou from Cleveland Clinic’s Cognitive Health Science Department presented a groundbreaking approach at R/Medicine 2025. Their research introduces a unified deep-learning framework specifically designed for competing risk analysis in ICU settings. This innovative model is built on discrete-time competing risk analysis techniques and integrates adaptive data-driven basis layers with micro neural networks for functional variables. Additionally, it employs an advanced Imputation-Regularized Optimization (IRO) method to efficiently handle missing data.</p>
+<p>Unlike traditional basis representation methods that use Fourier or spline bases without leveraging outcome information during dimension reduction, this framework fully integrates outcome data, improving predictive capabilities.</p>
+</section>
+<section id="validating-the-model" class="level3">
+<h3 class="anchored" data-anchor-id="validating-the-model">Validating the Model</h3>
+<p>The model was validated using simulations and real-world ICU data from the MIMIC-4 database (over 12,000 patients) and Cleveland Clinic’s ICU records (over 25,000 patients). The results were impressive, with the deep-learning framework outperforming traditional methods in most clinical scenarios. The metrics used for validation, including the integrated Brier score and concordance index, confirmed the model’s superior predictive accuracy.</p>
+</section>
+<section id="key-innovations-of-the-framework" class="level3">
+<h3 class="anchored" data-anchor-id="key-innovations-of-the-framework">Key Innovations of the Framework</h3>
+<ol type="1">
+<li><p><strong>Adaptive Basis Layer</strong>: This layer learns basis functions jointly with the survival network, tuning each basis to carry the most signal for readmission or death, rather than merely reconstructing the waveform curves.</p></li>
+<li><p><strong>Imputation-Regularized Optimization (IRO)</strong>: This method treats missing data as latent parameters optimized jointly with network weights. It ensures that imputed values are both statistically sensible and clinically meaningful, enhancing predictive accuracy without relying on potentially biased imputed datasets.</p></li>
+</ol>
+<p>These innovations enable the model to handle complex, high-dimensional, and heterogeneous data effectively, offering robust predictions even in the presence of substantial missing data.</p>
+</section>
+<section id="real-world-applications-and-future-directions" class="level3">
+<h3 class="anchored" data-anchor-id="real-world-applications-and-future-directions">Real-World Applications and Future Directions</h3>
+<p>The research team successfully demonstrated the model’s applicability across different datasets, including synthetic cohorts and real-world ICU data. Their framework showed consistent superiority in predicting ICU readmission and post-discharge deaths, proving its potential for real-world deployment.</p>
+<p>Looking ahead, the team plans to expand their model’s validation across multi-center cohorts and incorporate real-time data streams for bedside risk updates. They also intend to conduct user-centered studies to enhance interpretability and facilitate clinician adoption.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>This unified deep-learning framework represents a significant advancement in ICU patient care. By enabling more precise and timely clinical decisions, it holds the promise of transforming post-ICU care and improving patient outcomes. The integration of sophisticated data analysis and machine learning techniques underscores the potential of technology to address complex healthcare challenges, paving the way for more personalized and effective patient care.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/unified-deep-learning-survival-analysis-for-competing-risk-modeling-with-functional-covariates/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/unified-deep-learning-survival-analysis-for-competing-risk-modeling-with-functional-covariates/thumbnail-unified-deep-learning-Zou.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>What to Do When Shiny Packages Don’t Fully Support Your Idea</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/</link>
@@ -1155,57 +1210,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/rainbow-r-inclusive-space-LGBTQ-coders/</guid>
   <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rainbow-r-inclusive-space-LGBTQ-coders/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Simplifying R Package Documentation with pkgdown and GitHub Pages</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/r-pkgdown.jpg" class="img-fluid" alt="R Package Development with pkgdown - Melissa Van Bussel"></p>
-<p>Welcome to the world of R package development! If you’ve ever created an R package, you know that one of the most crucial aspects is its documentation. Good documentation not only makes your package more accessible to others but also enhances its usability. However, creating and maintaining a neat documentation website can be a daunting task. This is where <code>pkgdown</code> and GitHub Pages come into play, simplifying the process significantly.</p>
-<section id="why-use-pkgdown" class="level2">
-<h2 class="anchored" data-anchor-id="why-use-pkgdown">Why Use pkgdown?</h2>
-<p><code>pkgdown</code> is designed to make it straightforward to turn your R package into a beautiful website. It automatically converts your R documentation into user-friendly, HTML formats, making it easier for users to navigate and understand the package’s functionalities.</p>
-</section>
-<section id="integrating-pkgdown-with-github-pages" class="level2">
-<h2 class="anchored" data-anchor-id="integrating-pkgdown-with-github-pages">Integrating pkgdown with GitHub Pages</h2>
-<p>GitHub Pages offers a seamless way to host your package’s documentation directly from your GitHub repository. Here’s a simplified workflow on how to deploy your <code>pkgdown</code> site using GitHub Pages:</p>
-<ol type="1">
-<li><p><strong>Create Your pkgdown Website</strong>: First, use <code>pkgdown</code> to automatically generate a website for your R package. This involves setting up configuration files that dictate how your documentation is built and structured.</p></li>
-<li><p><strong>Set Up GitHub Pages</strong>: Configure GitHub Pages in your repository settings to point to the docs folder where <code>pkgdown</code> generates the website files.</p></li>
-<li><p><strong>Customize Your Website</strong>: <code>pkgdown</code> provides various customization options, allowing you to tailor the aesthetics and functionality of your site. You can modify themes, layout, and even add custom CSS or JavaScript.</p></li>
-<li><p><strong>Automate with GitHub Actions</strong>: To keep your documentation automatically updated with every push to your repository, you can use GitHub Actions. This CI/CD tool can be configured to rebuild your <code>pkgdown</code> site automatically whenever changes are made to the relevant parts of your codebase.</p></li>
-<li><p><strong>Access Your Site</strong>: Once everything is set up, your package documentation will be accessible via a straightforward URL provided by GitHub Pages (typically <code>username.github.io/repository</code>).</p></li>
-</ol>
-</section>
-<section id="benefits-of-using-pkgdown-and-github-pages" class="level2">
-<h2 class="anchored" data-anchor-id="benefits-of-using-pkgdown-and-github-pages">Benefits of Using pkgdown and GitHub Pages</h2>
-<ul>
-<li><strong>Ease of Use</strong>: Both tools are designed with simplicity in mind, making it easy for R developers to get their documentation up and running without extensive web development experience.</li>
-<li><strong>Automation</strong>: Integration with GitHub Actions means that any updates to your package are automatically reflected in the documentation, reducing manual maintenance efforts.</li>
-<li><strong>Customization</strong>: While <code>pkgdown</code> provides sensible defaults, it also offers extensive customization options to match the look and feel of your project or personal branding.</li>
-<li><strong>Visibility</strong>: Hosting on GitHub Pages enhances the visibility of your package, making it more accessible to potential users and contributors through search engines and direct links.</li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Creating an effective documentation website for your R package doesn’t have to be complicated. With tools like <code>pkgdown</code> and GitHub Pages, coupled with automation through GitHub Actions, you can ensure that your package is as user-friendly as possible. This not only helps in increasing its adoption but also in building a community around it.</p>
-<p>By streamlining the process of building and deploying documentation websites, these tools allow you more time to focus on developing the core functionalities of your R packages.</p>
-
-
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/</guid>
-  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/r-pkgdown.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
