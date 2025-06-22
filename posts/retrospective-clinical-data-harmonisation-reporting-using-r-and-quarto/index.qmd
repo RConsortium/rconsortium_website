@@ -1,0 +1,69 @@
+--- 
+title: "Retrospective clinical data harmonisation reporting using R and Quarto" 
+unpublished: true 
+url: "https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/"
+description: "Explore Jeremy Selva's approach to clinical data harmonization using R and Quarto, enhancing transparency and efficiency in reporting." 
+categories: [R/Medicine 2025, Software Development, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-harmonisation-selva.jpg" 
+image-alt: "Retrospective clinical data harmonisation reporting - Jeremy Selva" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/0rUcKR4fylw >}}
+
+# Enhancing Clinical Data Harmonization with R and Quarto
+
+Data harmonization has emerged as a crucial component in ensuring the integrity and utility of pooled data sets in clinical research. Jeremy Selva, a Research Officer at the National Heart Center Singapore, delivered a talk at R/Medicine 2025 on "Retrospective Clinical Data Harmonization Reporting." His presentation delved into data harmonization, offering practical solutions and workflows for creating comprehensive reports using R and Quarto.
+
+## The Challenge of Data Harmonization
+
+Data harmonization is an indispensable part of the data cleaning process. It involves identifying similar variables across diverse data sets, grouping them based on generalized concepts, and transforming them into unified, harmonized variables for analysis. This process is particularly vital in clinical research, where data pooling from multiple sources can dramatically increase the statistical power to analyze rare outcomes.
+
+However, as Jeremy highlighted, the path to effective data harmonization is fraught with challenges. Collaborators often send data in varying formats, making it difficult to match them against provided data dictionaries and input templates. This lack of uniformity necessitates a robust process to document and report the harmonization steps, serving as a bridge between data collaborators and the analysis team.
+
+## The Importance of Harmonization Reports
+
+Jeremy emphasized the importance of transparency and accountability in data harmonization. A well-documented harmonization report can serve as a safeguard, providing clarity to collaborators and preempting potential issues that might arise from data mismanagement. 
+
+Despite the critical role of such reports, there is a dearth of resources providing detailed guidance on creating them, particularly using programming languages like R.
+
+## Leveraging R for Data Harmonization
+
+In his quest to streamline the data harmonization process, Jeremy explored various R packages. Although packages like `retroharmonize`, `Rmonize` and `psHarmonize` offer some functionality, they come with limitations, such as handling categorical data better than continuous data or presenting complex harmonization processes in Excel, which can be cumbersome.
+
+To address these gaps, Jeremy developed his own R project template for creating harmonization reports. This template draws inspiration from the `ourpackage` and `ourcompanion` packages, providing a structured layout for data storage, code management, and report generation.
+
+### Common Issues and Solutions
+
+Jeremy shared some common pitfalls encountered during data harmonization and how they can be mitigated using R:
+
+1. **Data Versioning Issues**: Collaborators may send multiple versions of the same data set. Using the `readr` package and functions like `problems`, Jeremy demonstrated how to catch and address issues early in the data import process.
+
+2. **Automating Checks**: By employing packages like `testthat` and `pointblank`, Jeremy automated the validation of data inputs, ensuring robustness against changes in data versions.
+
+3. **Variable Mapping and Validation**: Jeremy outlined a workflow for mapping variables, validating mappings, and preparing data for merging. This included creating interactive tables for collaborators to review and using validation functions to ensure data integrity.
+
+## Automating Report Generation with Quarto
+
+To tackle the challenge of generating extensive harmonization reports, Jeremy turned to Quarto, a publishing system that allows for dynamic report generation. By creating a Quarto book project, he automated the creation of harmonization reports for each cohort, ensuring consistency and efficiency.
+
+### Creating Harmonization Reports
+
+The process involves:
+
+- **Index and Quarto Files**: Setting up essential files like `index.qmd` and `quarto.yml` to control the book's content and structure.
+- **Automating Scripts**: Developing an R script to render Quarto documents for each cohort, facilitating the creation of both reference and how-to guide documents.
+
+## Visualizing Harmonization Outcomes
+
+Jeremy also explored various visualization techniques to convey harmonization outcomes to collaborators and management. While traditional methods like Venn diagrams and Upset plots proved complex, he developed a heat map approach. This visualization provided a clear overview of cohort attributes, patient numbers, and variable availability—categorized by different colors and accompanied by legends for clarity.
+
+## Conclusion and Future Directions
+
+Jeremy's presentation underscored the critical role of data harmonization in clinical research and the power of R and Quarto in streamlining this process. By creating a robust documentation and reporting framework, researchers can enhance transparency, accountability, and efficiency in their data harmonization efforts.
+
+As Jeremy noted, while the current template offers a solid foundation, there is always room for improvement, such as unit testing and clearer documentation. His work serves as a valuable starting point for researchers facing similar challenges, fostering a more seamless integration of data across diverse clinical studies.
+
+* [Slides](https://jauntyjjs.github.io/RMedicine2025_harmonisation/#/title-slide)
+* [Repo](https://github.com/JauntyJJS/harmonisation/)
