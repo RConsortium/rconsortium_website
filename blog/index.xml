@@ -279,6 +279,67 @@
   <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Improving Reproducibility of Medical Research with Controlled Vocabularies</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/bf8NZTnz6NA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="enhancing-reproducibility-in-medical-research-with-controlled-vocabularies" class="level1">
+<h1>Enhancing Reproducibility in Medical Research with Controlled Vocabularies</h1>
+<p>Hello R community! Today, let’s delve into an intriguing topic presented by Jonathan Pearce, a Senior Analyst at the Analysis Group, at the R/Medicine 2025 conference. Jonathan’s insightful presentation focused on improving the reproducibility of medical research through the use of controlled vocabularies for variable naming. Reproducibility in medical research is crucial, and Jonathan’s approach offers a structured methodology to enhance clarity and efficiency in data analysis.</p>
+<section id="the-need-for-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="the-need-for-reproducibility">The Need for Reproducibility</h2>
+<p>The reproducibility of medical research has been a growing concern. Successful replication of studies depends on various factors such as code correctness, thorough documentation, and clear communication of the methods used. While much emphasis is often placed on technical aspects like coding environments and data access, the crux of reproducibility lies in the precise and consistent implementation of the original work.</p>
+</section>
+<section id="introducing-controlled-vocabularies" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-controlled-vocabularies">Introducing Controlled Vocabularies</h2>
+<p>Jonathan introduced the concept of controlled vocabularies for variable naming as a means to bolster reproducibility. This involves using a schema to label variables in a dataset consistently. This systematic approach encodes metadata directly into variable names, providing immediate context and enhancing the clarity of the data.</p>
+<section id="example-of-controlled-vocabulary" class="level3">
+<h3 class="anchored" data-anchor-id="example-of-controlled-vocabulary">Example of Controlled Vocabulary</h3>
+<p>Consider a scenario where you have a dataset with multiple tables, each containing various types of data. For instance, if you’re tracking whether patients had an eGFR lab test during a baseline period, a variable name following a controlled vocabulary might be <code>labs_eGFR_baseline_ind</code>, where <code>ind</code> stands for indicator. This descriptive naming convention helps users instantly understand the data stored in the column.</p>
+</section>
+<section id="structured-naming-and-its-advantages" class="level3">
+<h3 class="anchored" data-anchor-id="structured-naming-and-its-advantages">Structured Naming and Its Advantages</h3>
+<p>Controlled vocabularies mandate a consistent format across the project, which can be crucial for downstream analyses. For example, a variable capturing the median value of an eGFR test might be named <code>labs_eGFR_baseline_median_value</code>, providing additional clarity such as the unit of measurement and the calculation method.</p>
+<p>The benefits of controlled vocabularies extend to various facets of data analysis:</p>
+<ul>
+<li><strong>Regular Expressions:</strong> With consistently named variables, regular expressions can efficiently query subsets of data, facilitating tasks like data validation and report generation.</li>
+<li><strong>Data Validation:</strong> By defining expected data types and constraints (e.g., numeric values for duration variables should be non-negative), controlled vocabularies simplify the validation process.</li>
+<li><strong>Streamlined Workflows:</strong> Tasks such as creating summary tables, modeling, sensitivity analysis, and generating data dictionaries become more straightforward and reproducible.</li>
+</ul>
+</section>
+</section>
+<section id="practical-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="practical-considerations">Practical Considerations</h2>
+<p>While controlled vocabularies offer significant advantages, there are practical considerations to keep in mind:</p>
+<ul>
+<li><strong>Balancing Detail and Brevity:</strong> It’s essential to avoid overly long variable names by using abbreviations judiciously.</li>
+<li><strong>Initial Setup Effort:</strong> Defining a controlled vocabulary requires upfront work, but the long-term benefits often outweigh the initial investment.</li>
+<li><strong>Avoiding Conflicts:</strong> Care must be taken with underscores and keywords to prevent conflicts during keyword searches in variable names.</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Jonathan Pearce’s presentation highlighted the transformative potential of controlled vocabularies in enhancing the reproducibility of medical research. By embedding metadata directly within variable names, researchers can achieve greater clarity and consistency, ultimately leading to more reliable and efficient data analysis.</p>
+<p>As we strive to make our work more sustainable and transparent, adopting practices like controlled vocabularies can help ensure that our research remains accessible and understandable, even months or years later.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/thumbnail-reproducibility-pearce.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Mix, Pour, Share: The rUM Cocktail for Biomedical Project Packaging</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/</link>
@@ -1122,87 +1183,6 @@
   <guid>https://r-consortium.org/posts/unified-deep-learning-survival-analysis-for-competing-risk-modeling-with-functional-covariates/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/unified-deep-learning-survival-analysis-for-competing-risk-modeling-with-functional-covariates/thumbnail-unified-deep-learning-Zou.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>What to Do When Shiny Packages Don’t Fully Support Your Idea</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/qXa0eDy315M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="breaking-the-limits-of-shiny-with-react.js-a-deep-dive-into-esqapp" class="level1">
-<h1>Breaking the Limits of Shiny with React.js: A Deep Dive into ESQapp</h1>
-<p>Anastasiia Kostiv from ESQlabs, who recently shared her insights at R/Medicine 2025 on how using React.js you can extend what Shiny apps are capable of. Her talk, “Shiny is great, but what if you need more flexibility and performance?” provides a roadmap for R developers who are looking to push the boundaries of what Shiny can offer by leveraging the power of modern web technologies.</p>
-<section id="shiny-a-quick-overview" class="level2">
-<h2 class="anchored" data-anchor-id="shiny-a-quick-overview">Shiny: A Quick Overview</h2>
-<p>Shiny is a popular tool among R developers for building data-driven web applications. It excels in its simplicity and ability to quickly transform R scripts into interactive web apps. However, as applications grow in complexity, developers can bump into certain limitations. These include challenges with custom UI implementations, performance degradation with multiple reactive components, and a lack of support for highly interactive interfaces like spreadsheets or model editors.</p>
-</section>
-<section id="a-hybrid-approach-using-shiny-and-react.js-together" class="level2">
-<h2 class="anchored" data-anchor-id="a-hybrid-approach-using-shiny-and-react.js-together">A Hybrid Approach: Using Shiny and React.js Together</h2>
-<p>Anastasiia faced these exact challenges as she developed ESQapp, a highly interactive and scalable application. React.js is a widely used JavaScript library for building user interfaces. By utilizing the <code>reactR</code> package, Anastasiia was able to integrate React components into Shiny, combining Shiny’s robust data backend with React’s advanced UI capabilities. This hybrid approach opened up a new realm of possibilities for creating modern, responsive, and customizable web applications.</p>
-<section id="why-react.js" class="level3">
-<h3 class="anchored" data-anchor-id="why-react.js">Why React.js?</h3>
-<p>React.js is known for its flexibility, performance, and ability to handle complex UIs. It allows developers to create reusable components, manage state efficiently, and ensure applications remain fast and responsive. By integrating React with Shiny, developers can sidestep the limitations of HTML widgets and avoid the reliance on jQuery plugins, which often require cumbersome workarounds.</p>
-</section>
-</section>
-<section id="building-esqapp-a-case-study" class="level2">
-<h2 class="anchored" data-anchor-id="building-esqapp-a-case-study">Building ESQapp: A Case Study</h2>
-<p>Let’s take a closer look at how Anastasiia and her team at ESQlabs utilized React to expand Shiny’s capabilities.</p>
-<section id="the-challenges" class="level3">
-<h3 class="anchored" data-anchor-id="the-challenges">The Challenges</h3>
-<p>As the ESQapp project grew, the team encountered several hurdles:</p>
-<ul>
-<li><strong>Custom UI Components</strong>: Shiny’s default components were not sufficient for the complex user interfaces required.</li>
-<li><strong>Performance</strong>: The app’s performance suffered with the addition of multiple reactive components.</li>
-<li><strong>Interactivity</strong>: The need for interactive features like editable tables, models, and visual editors was not supported out of the box by Shiny.</li>
-</ul>
-</section>
-<section id="the-solution" class="level3">
-<h3 class="anchored" data-anchor-id="the-solution">The Solution</h3>
-<p>By integrating React.js via the <code>reactR</code> package, Anastasiia’s team was able to:</p>
-<ul>
-<li><strong>Create Custom Components</strong>: Develop lightweight React components, such as editable tables and model editors, that seamlessly integrate with Shiny’s reactive system.</li>
-<li><strong>Improve Performance</strong>: React’s efficient rendering and state management improved the application’s responsiveness.</li>
-<li><strong>Enhance Interactivity</strong>: Implement features like filterable selectors and validation logic that were previously unattainable with Shiny alone.</li>
-</ul>
-</section>
-<section id="hands-on-table-editor-example" class="level3">
-<h3 class="anchored" data-anchor-id="hands-on-table-editor-example">Hands-on Table Editor Example</h3>
-<p>One of the standout components in ESQapp is the hands-on table editor. This component synchronizes with Shiny’s state using React, offering a fully reactive, fast, and customizable experience. It allows users to interact with data in a spreadsheet-like interface, delivering a modern and intuitive user experience.</p>
-</section>
-</section>
-<section id="the-technical-setup" class="level2">
-<h2 class="anchored" data-anchor-id="the-technical-setup">The Technical Setup</h2>
-<p>The integration of React into Shiny involves a few key steps:</p>
-<ol type="1">
-<li><strong>Using Webpack</strong>: To bundle the React code efficiently.</li>
-<li><strong>ReactR Package</strong>: This package wraps the compiled React output and exposes it to Shiny, allowing it to behave like any native Shiny input or output component.</li>
-<li><strong>Fully Reactive System</strong>: Ensures that all components remain in sync with Shiny’s reactive data flow.</li>
-</ol>
-</section>
-<section id="is-this-approach-right-for-your-project" class="level2">
-<h2 class="anchored" data-anchor-id="is-this-approach-right-for-your-project">Is This Approach Right for Your Project?</h2>
-<p>While extending Shiny with React.js offers tremendous benefits, it may not be suitable for every project. If your application requires advanced UI features, improved performance, and your team possesses React or front-end experience, this approach could be useful. However, for simpler applications, Shiny alone might suffice.</p>
-</section>
-<section id="final-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h2>
-<p>Anastasiia’s talk at R/Medicine 2025 underscores the potential of combining Shiny with modern web technologies like React.js. By thinking outside the box and embracing the flexibility of React, developers can extend Shiny to build powerful, beautiful, and responsive applications.</p>
-<p>For those interested in exploring this approach, Anastasiia encourages you to check out a real-life example of ESQapp and see the integration in action. There is a QR code in the session video or the repo is available here: <a href="https://esqlabs.github.io/ESQapp/">https://esqlabs.github.io/ESQapp/</a></p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/thumbnail-shiny-packages-kostiv.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
