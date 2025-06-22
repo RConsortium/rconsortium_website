@@ -1,0 +1,43 @@
+--- 
+title: "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity" 
+unpublished: true 
+url: "https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/"
+description: "Explore how coding choices in R impact healthcare equity, focusing on ethical implications in regression analysis." 
+categories: [R/Medicine 2025, Healthcare]
+author: "R Consortium" 
+image: "thumbnail-ethical-considerations.png" 
+image-alt: "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity - Dwight Barry and Nicole Chicoine" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/pAx92roI3VE >}}
+
+## Ethical Choices in Regression Analysis: A Case Study from Seattle Children's Hospital
+
+In the world of statistical modeling, the choice of coding schemes for categorical variables is not merely a technical consideration but a decision laden with ethical implications. This was the focus of a recent presentation during the R/Medicine 2025 conference by Dwight Barry, Principal Data Scientist at Seattle Children's Hospital, and Nicole Chicoine, DO, MPH, also at Seattle Children's Hospital. The talk revolved around how these choices can influence the inferences drawn from regression analyses and ultimately impact healthcare delivery and research.
+
+### The Hospital's Language Diversity
+
+Seattle Children's Hospital is a bustling 400-bed facility that handles over half a million patient visits annually. With such a diverse patient base, the hospital encounters more than 130 languages, with Spanish being the most common after English. To accommodate this linguistic diversity, the hospital has initiated its first all-Spanish speaking operating room, ensuring equitable care for non-English speaking patients. This commitment to inclusivity is mirrored in their research methodologies, where the focus is on equitable outcomes across different patient groups.
+
+### Understanding Coding Schemes
+
+The choice of coding schemes in regression models is crucial as it can shape the conclusions drawn from the data. Barry highlighted three coding schemes used in R: treatment contrast, sum contrast, and weighted effect coding. Each scheme presents categorical variables in different ways, affecting the interpretation of the data.
+
+1. **Treatment Contrast**: This is the default coding in R, where one category is used as a reference against which others are compared. In a clinical setting, this could inadvertently privilege a particular group, often aligning with the English-speaking, white demographic, which can skew the narrative towards existing inequities.
+
+2. **Sum Contrast**: Here, the grand mean of all categories is used as the reference point. This approach decouples any single category from being the norm, promoting a more balanced view. In the context of healthcare, it shifts the focus from a single dominant group to an aggregate understanding, which can be crucial in addressing biases.
+
+3. **Weighted Effect Coding**: This method is a variant of the sum contrast, where each category level is weighted by its sample size. Although not a built-in feature in base R, the `wec` package facilitates its implementation. This approach provides a nuanced view by factoring in the prevalence of each category, which can be especially useful in diverse patient populations.
+
+### Implications for Healthcare Research
+
+The choice of coding scheme is not just a statistical decision but an ethical one, as it affects how healthcare equity is perceived and addressed. Barry's presentation underscored that while odds ratios may differ across coding schemes, the marginal effects remain consistent, suggesting that predictions are unaffected by these choices. However, the ethical ramifications are significant, as they influence which group is centered in the analysis.
+
+In healthcare research, where categorical exposures like language group, race, or ethnicity lack a natural order, choosing the right coding scheme is vital. Sum contrasts, for instance, provide a means to avoid privileging any group, thereby promoting equity.
+
+### Broader Implications and Recommendations
+
+Barry's insights extend beyond surgery to any healthcare condition where equity is a concern. The presentation emphasized the importance of presenting marginal effects alongside regression coefficients or odds ratios to provide a comprehensive view of the data. By decentering from a single reference point, researchers can challenge the dominant social narratives and highlight systemic inequities, paving the way for more inclusive and equitable healthcare practices.
+
+In conclusion, the ethical dimensions of statistical modeling are as crucial as the statistical ones. As healthcare becomes increasingly data-driven, recognizing and addressing these ethical considerations is essential. By adopting coding schemes that promote equity, researchers and healthcare providers can ensure that their work contributes to a more just and equitable healthcare system.
