@@ -1,0 +1,58 @@
+--- 
+title: "Swimmer Plots with ggswim" 
+unpublished: true 
+url: "https://r-consortium.org/posts/swimmer-plots-with-ggswim/"
+description: " " 
+categories: [R/Medicine 2025, Clinical Research, Software Development]
+author: "R Consortium" 
+image: "thumbnail-swimmer-plogs-ggswim-hanna.png" 
+image-alt: "Swimmer Plots with ggswim - Richard Hanna" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/pbgNiq-KvIE >}}
+
+# Making Swimmer Plots Effortless with ggswim: A Dive into R's Medical Visualization Toolkit
+
+The R community is always on the lookout for innovative tools that can simplify complex data visualization tasks. Swimmer plots, known for their utility in visualizing treatment timelines in clinical trials, have long been a challenge to create in R due to their complexity. Enter ggswim, a package developed to ease the creation of swimmer plots while staying true to the grammar of graphics. 
+
+## The Challenge of Swimmer Plots in R
+
+Swimmer plots are invaluable in clinical and pharmaceutical research. They provide a compact, interpretable way to visualize patient data over time, highlighting key metrics such as adverse events and treatment durations. Despite their usefulness, generating swimmer plots using R's ggplot2 can be technically demanding. The intricacies of scale alignment and legend composition require a deep understanding of ggplot2's internals, which is often beyond the typical scope of a researcher's expertise.
+
+While there are existing packages that support swimmer plot development, none have fully bridged the gap between ease of use and compatibility with the grammar of graphics—until now.
+
+## Introducing ggswim
+
+Developed as an extension to ggplot2, ggswim addresses the challenges of creating swimmer plots in R. Richard Hanna from the Children's Hospital of Philadelphia, a data scientist with the Cell and Gene Therapy Informatics team, presented ggswim at the R/Medicine 2025 conference.
+
+### The Motivation Behind ggswim
+
+The development of ggswim was driven by the need for a tool that simplifies the creation of swimmer plots while maintaining full compatibility with ggplot2. By introducing a streamlined grammar specifically for swimmer plots, ggswim organizes visual elements into two conceptual categories: lanes and markers. Lanes represent continuous durations, such as time on a study, while markers denote discrete events, such as adverse events or outcomes.
+
+This framework integrates seamlessly with existing ggplot2 tools, allowing users to layer and label plot components using concise, intuitive syntax. This compatibility ensures that ggswim remains flexible and aesthetically pleasing, promoting reproducibility and transparency in medical research settings.
+
+### A Closer Look at ggswim's Capabilities
+
+ggswim builds on ggplot2’s architecture without wrapping standard functions, ensuring that all parameters familiar to ggplot2 users are retained. The package features several key functions:
+
+- **g_swim_lane**: Wraps ggsegment methods for creating continuous durations.
+- **g_swim_marker**: Wraps gg methods for discrete events.
+- **g_swim_arrow**: A specialized gsegment wrapper for continuation arrows.
+- **scale_marker_discrete**: The pivotal function for resolving legend output issues, allowing easy manipulation of legend components for clearer, more informative plots.
+
+Richard Hanna's presentation highlighted how ggswim leverages ggplot2’s guide functionality, enabling users to manipulate legend outputs effectively. The package simplifies the process of creating swimmer plots with minimal additional code, providing a succinct and reproducible means of visualizing complex clinical data.
+
+### Practical Applications and Future Directions
+
+ggswim is designed to be user-friendly while offering powerful customization options. It supports various glyph formats, including emojis and certain font libraries, allowing users to create visually engaging plots. The package also includes theming functions to help users tailor their swimmer plots to specific needs.
+
+While ggswim is currently focused on facilitating static visualizations suitable for publication in medical journals, the R community is keenly interested in exploring interactive capabilities. As Richard Hanna noted, future developments could include interactive features for web publication, potentially using tools like Plotly or ggiraph.
+
+The ggswim package is still in its early stages, with plans to submit it to CRAN once it has been thoroughly tested and refined. The R community is encouraged to contribute feedback and suggestions to enhance the package's functionality.
+
+## Conclusion
+
+ggswim fills a crucial gap in R's visualization toolkit, making swimmer plots accessible to a broader audience without sacrificing the flexibility and aesthetics that ggplot2 offers. By reducing the technical overhead associated with swimmer plots, ggswim promotes effective collaboration in medical research and opens new possibilities for data visualization in R.
+
+For those interested in exploring ggswim further, the package's documentation and resources are available online. As the R community continues to innovate, tools like ggswim exemplify the power of open-source collaboration and the potential for R to transform data visualization in healthcare and beyond.
