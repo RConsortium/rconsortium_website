@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2025-06-22">
+<meta name="description" content="Discover how Buenos Aires leverages R to optimize healthcare cost recovery, enhancing efficiency &amp; sustainability.">
 
-<title>newsletters – R Consortium</title>
+<title>Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0b749ae5895da4bc124901bc0aba940b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0b749ae5895da4bc124901bc0aba940b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -108,48 +80,19 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -164,35 +107,35 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -203,15 +146,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -222,23 +165,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="../all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -261,7 +204,7 @@ window.Quarto = {
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -276,15 +219,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">WG Calendar</span></a>
   </li>  
     </ul>
@@ -295,25 +238,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -344,104 +287,100 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina</h1>
+                  <div>
+        <div class="description">
+          Discover how Buenos Aires leverages R to optimize healthcare cost recovery, enhancing efficiency &amp; sustainability.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">R/Medicine 2025</div>
+                <div class="quarto-category">Healthcare</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 22, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="newsletters" class="level1">
-<h1>Newsletters</h1>
-<section id="whats-happening-in-the-r-consortium" class="level2">
-<h2 class="anchored" data-anchor-id="whats-happening-in-the-r-consortium">What’s happening in the R Consortium?<a href="https://oppkeyquarto.netlify.app/newsletters/newsletters#whats-happening-in-the-r-consortium"></a></h2>
-<p>Check out our previous Newsletters and stay tuned for future ones!</p>
 
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/BzYtr9dfHjQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="optimizing-argentinas-public-healthcare-system-with-r-a-case-study-in-efficiency-and-sustainability" class="level1">
+<h1>Optimizing Argentina’s Public Healthcare System with R: A Case Study in Efficiency and Sustainability</h1>
+<p>In the realm of public health, the need to do more with less is a constant challenge. This is particularly true in Argentina, where the healthcare system is fragmented into three subsystems: public, social security, and private sectors. Each of these subsystems serves different populations and has its unique funding mechanisms and challenges. However, in the spirit of equity and quality healthcare access, programs like SUMAR have emerged as vital tools for supporting the uninsured population by strengthening the public subsystem. SUMAR provides financial incentives to healthcare providers for each service rendered to individuals with exclusive public coverage, funded by external sources such as the World Bank.</p>
+<p>In this context, the Ministry of Health of the City of Buenos Aires has undertaken an innovative approach to optimize cost recovery processes via the implementation of open-source tools, particularly R, showcasing a practical application of data science in public health settings. This effort is spearheaded by the Operational Management of Health Information and Statistics, a team that uses R to enhance healthcare efficiency and sustainability.</p>
+<section id="understanding-argentinas-healthcare-landscape" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-argentinas-healthcare-landscape">Understanding Argentina’s Healthcare Landscape</h2>
+<p>Argentina’s healthcare landscape is characterized by its division into three main sectors:</p>
+<ol type="1">
+<li><strong>Public Sector</strong>: Comprising national, provincial, and municipal hospitals offering free universal care regardless of a person’s insurance status.</li>
+<li><strong>Social Security Sector</strong>: Funded through payroll and catering to workers, retirees, and individuals with disabilities, providing mandatory coverage linked to formal employment.</li>
+<li><strong>Private Sector</strong>: Offering voluntary, prepaid plans for those seeking additional or alternative coverage.</li>
+</ol>
+<p>The SUMAR program comes into play as a national policy aimed at better financing public healthcare by tying financial incentives directly to the services provided to uninsured individuals. It operates on a results-based funding model, which allocates resources based on service provision and health outcomes, with funding sourced primarily from the World Bank.</p>
+</section>
+<section id="leveraging-technology-for-sustainable-healthcare" class="level2">
+<h2 class="anchored" data-anchor-id="leveraging-technology-for-sustainable-healthcare">Leveraging Technology for Sustainable Healthcare</h2>
+<p>The City of Buenos Aires is at the forefront of utilizing technology to optimize healthcare processes. The widespread adoption of the Electronic Health Record (EHR) system, known as the Hospital Management System (HMS), is a game-changer. HMS seamlessly integrates administrative and clinical workflows across public healthcare facilities, ensuring uniform data collection and management.</p>
+<p>The data extracted from HMS is crucial for automating the SUMAR program. Each night, ETL (Extract, Transform, Load) jobs extract relevant data tables, such as patient encounters and diagnostics, which are then loaded into a central data warehouse. This setup forms the backbone of the automated SUMAR workflow in Buenos Aires.</p>
+</section>
+<section id="automating-the-sumar-process-with-r" class="level2">
+<h2 class="anchored" data-anchor-id="automating-the-sumar-process-with-r">Automating the SUMAR Process with R</h2>
+<p>The automation of the SUMAR program is a testament to the power of open-source tools like R. The data science team within the Ministry of Health employs R to automate processes and generate reports, ensuring a smooth and efficient workflow. Key outputs of this automated process include PDF invoices, weekly Excel reports, and performance indicator summaries.</p>
+<p>The R-based workflow comprises three critical stages:</p>
+<ol type="1">
+<li><strong>Enrollment</strong>: Identifying individuals with public coverage using national registries.</li>
+<li><strong>Detection of Basic Effective Coverage Services</strong>: Applying regex and logic rules across data sources to pinpoint eligible health services.</li>
+<li><strong>Analysis of Health Performance Indicators</strong>: Generating comprehensive reports through R Markdown, ensuring data is transformed into actionable insights.</li>
+</ol>
+<p>The team’s dedicated R environment, which includes an R Studio server and GitLab for version control, facilitates collaborative development, ensuring the process is both reproducible and auditable.</p>
+</section>
+<section id="the-impact-of-automation-and-open-source" class="level2">
+<h2 class="anchored" data-anchor-id="the-impact-of-automation-and-open-source">The Impact of Automation and Open Source</h2>
+<p>The automation of the SUMAR program in Buenos Aires is not merely about efficiency—it represents a paradigm shift in how public healthcare can be managed. The steady increase in detected health services from January 2021 to April 2025 is a testament to the robustness and scalability of the automated processes. Each detected service translates into real funding, enhancing the capacity and accountability of the public healthcare system.</p>
+<p>The use of R, with libraries like Tidyverse, StringR, WriteXL, and TinyTex, underscores the adaptability and sustainability of open-source solutions in public health. This approach not only saves time but also expands service coverage, ensuring that more individuals benefit from essential healthcare services.</p>
+</section>
+<section id="future-directions-and-opportunities" class="level2">
+<h2 class="anchored" data-anchor-id="future-directions-and-opportunities">Future Directions and Opportunities</h2>
+<p>The success of the SUMAR program’s automation opens up new possibilities for further innovation within the public healthcare sector. While the current focus is on generating tables and reports, there is potential for developing more interactive data visualizations and dashboards using tools like Shiny or R Markdown’s interactive capabilities. Such advancements could provide deeper insights and facilitate data-driven decision-making at various levels of government.</p>
+<p>In conclusion, the use of R in automating the SUMAR program in Buenos Aires highlights the transformative potential of data science in public health. By optimizing administrative workflows and enhancing data traceability, this initiative not only improves cost recovery efforts but also sets a benchmark for other regions to follow. As we look to the future, the continued adoption of open-source tools in healthcare promises to drive innovation and sustainability, ultimately benefiting populations most in need.</p>
 
 
 </section>
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1728259200000" data-listing-file-modified-sort="1750594027900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2451">
-<a href="../newsletters/R-Consortium-Q3-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q3-2024-NEWSLETTER-main-image.png" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium Q3 2024 Newsletter banner graphic">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2024 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Welcome to the R Consortium’s Q3 2024 Newsletter!
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 7, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1719705600000" data-listing-file-modified-sort="1750594027900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1546">
-<a href="../newsletters/R-Consortium-Q2-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1-1024x576.webp" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium logo banner for Q2 2024 newsletter">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q2 2024 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jun 30, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1750594027900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1491">
-<a href="../newsletters/R-Consortium-Q3-2023-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1.webp" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium Q3 2023 Newsletter banner graphic">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2023 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 31, 2023
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
