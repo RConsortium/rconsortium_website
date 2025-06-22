@@ -1,0 +1,53 @@
+--- 
+title: "Improving Reproducibility of Medical Research with Controlled Vocabularies" 
+unpublished: true 
+url: "https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/"
+description: "The crux of reproducibility lies in the precise and consistent implementation of the original work." 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium" 
+image: "thumbnail-reproducibility-pearce.jpg" 
+image-alt: "Improve reproducibility in medical research with controlled vocabularies - Jonathan Pearce" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/bf8NZTnz6NA >}}
+
+# Enhancing Reproducibility in Medical Research with Controlled Vocabularies
+
+Hello R community! Today, let's delve into an intriguing topic presented by Jonathan Pearce, a Senior Analyst at the Analysis Group, at the R/Medicine 2025 conference. Jonathan's insightful presentation focused on improving the reproducibility of medical research through the use of controlled vocabularies for variable naming. Reproducibility in medical research is crucial, and Jonathan's approach offers a structured methodology to enhance clarity and efficiency in data analysis.
+
+## The Need for Reproducibility
+
+The reproducibility of medical research has been a growing concern. Successful replication of studies depends on various factors such as code correctness, thorough documentation, and clear communication of the methods used. While much emphasis is often placed on technical aspects like coding environments and data access, the crux of reproducibility lies in the precise and consistent implementation of the original work.
+
+## Introducing Controlled Vocabularies
+
+Jonathan introduced the concept of controlled vocabularies for variable naming as a means to bolster reproducibility. This involves using a schema to label variables in a dataset consistently. This systematic approach encodes metadata directly into variable names, providing immediate context and enhancing the clarity of the data.
+
+### Example of Controlled Vocabulary
+
+Consider a scenario where you have a dataset with multiple tables, each containing various types of data. For instance, if you're tracking whether patients had an eGFR lab test during a baseline period, a variable name following a controlled vocabulary might be `labs_eGFR_baseline_ind`, where `ind` stands for indicator. This descriptive naming convention helps users instantly understand the data stored in the column.
+
+### Structured Naming and Its Advantages
+
+Controlled vocabularies mandate a consistent format across the project, which can be crucial for downstream analyses. For example, a variable capturing the median value of an eGFR test might be named `labs_eGFR_baseline_median_value`, providing additional clarity such as the unit of measurement and the calculation method.
+
+The benefits of controlled vocabularies extend to various facets of data analysis:
+
+- **Regular Expressions:** With consistently named variables, regular expressions can efficiently query subsets of data, facilitating tasks like data validation and report generation.
+- **Data Validation:** By defining expected data types and constraints (e.g., numeric values for duration variables should be non-negative), controlled vocabularies simplify the validation process.
+- **Streamlined Workflows:** Tasks such as creating summary tables, modeling, sensitivity analysis, and generating data dictionaries become more straightforward and reproducible.
+
+## Practical Considerations
+
+While controlled vocabularies offer significant advantages, there are practical considerations to keep in mind:
+
+- **Balancing Detail and Brevity:** It's essential to avoid overly long variable names by using abbreviations judiciously.
+- **Initial Setup Effort:** Defining a controlled vocabulary requires upfront work, but the long-term benefits often outweigh the initial investment.
+- **Avoiding Conflicts:** Care must be taken with underscores and keywords to prevent conflicts during keyword searches in variable names.
+
+## Conclusion
+
+Jonathan Pearce's presentation highlighted the transformative potential of controlled vocabularies in enhancing the reproducibility of medical research. By embedding metadata directly within variable names, researchers can achieve greater clarity and consistency, ultimately leading to more reliable and efficient data analysis.
+
+As we strive to make our work more sustainable and transparent, adopting practices like controlled vocabularies can help ensure that our research remains accessible and understandable, even months or years later. 
