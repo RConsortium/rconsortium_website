@@ -1,0 +1,46 @@
+--- 
+title: "Preprocessing Electronic Health Records for Analysis-Ready Data in an Asthma Cohort" 
+unpublished: true 
+url: "https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/"
+description: "Kimberly Lactaoen tackles EHR data challenges in asthma research using R's tidyverse suite." 
+categories: [R/Medicine 2025, Healthcare, Clinial Research]
+author: "R Consortium" 
+image: "thumbnail-reprocessing-ehs-lactaoen.jpg" 
+image-alt: "Preprocessing Electronic Health Records - Kimberley Lactaoen" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/EytsZg9Rqkg >}}
+
+# Pre-processing Electronic Health Records for Asthma Cohort Analysis with R
+
+Electronic health record (EHR) data has emerged as a critical tool for conducting large-scale biomedical research. However, the complexity, inconsistencies, and potential inaccuracies within EHR data pose significant challenges for researchers. Kimberly Lactaoen, a staff scientist at the University of Pennsylvania, sheds light on these challenges and offers solutions through her presentation at R/Medicine 2025. By utilizing the tidyverse suite in R, she demonstrates how to transform perplexing EHR data into analysis-ready datasets, focusing on an asthma cohort study.
+
+## Understanding the Intricacies of EHR Data
+
+EHR data encompasses vast amounts of patient information, providing a realistic representation of patient populations. Despite its potential, EHR data is riddled with complexities, including inconsistent data entries, diverse formats, and missing values, which can misrepresent a patient's true health status. Lactaoen's presentation focuses on the importance of understanding how this data is collected to streamline exploratory analyses and reduce scripting stages.
+
+### Key Challenges in EHR Data Cleaning
+
+1. **Encounter-Level vs. Patient-Level Data**: One of the initial hurdles is discerning between encounter-level and patient-level data. For instance, demographic details like sex, race, and ethnicity remain constant across encounters, while variables like insurance and BMI may vary. Lactaoen highlights the significance of understanding data collection methods to efficiently script for the most recent demographic entries using functions such as `as_date()` from the `lubridate` package.
+
+2. **Conflicting Patient Information**: EHR datasets often contain conflicting information, especially in demographic variables like race and ethnicity. Lactaoen's approach involved using the `case_when()` function from `dplyr` to resolve conflicts, ensuring consistent and distinct race and ethnicity variables.
+
+3. **Inconsistent Diagnostic Codes**: Diagnostic code descriptions can vary, complicating the grouping of patients based on diagnoses. Lactaoen addresses this by joining diagnostic codes with descriptions from the Center for Medicare and Medicaid Services using `left_join()`, ensuring consistency across datasets.
+
+4. **Medication Relevance for Asthma Treatment**: Selecting relevant medications for asthma treatment from EHR data is another challenge. Lactaoen's team collaborated with asthma specialists to filter relevant medications, leveraging Excel and the `map_dfr()` function from the `purrr` package to compile a comprehensive list for analysis.
+
+5. **Laboratory Test Result Variability**: Laboratory test results, such as eosinophil data, often feature varying units of measurement. Lactaoen utilized the `case_when()` function to standardize these units, though issues like missing unit information remain a work in progress.
+
+## Strategies for Effective EHR Data Pre-processing
+
+Lactaoen's presentation offers several strategies for overcoming these challenges:
+
+- **Understand Data Collection**: Familiarizing oneself with the data collection process is crucial for reducing exploratory analysis and scripting efforts.
+- **Identify and Resolve Conflicts**: Be vigilant about conflicting information, which may not accurately reflect a patient's health status.
+- **Collaborate with Domain Experts**: Engaging with specialists, such as asthma experts, ensures that the data used is relevant and accurate for the study.
+- **Simplify and Standardize Data**: Wherever possible, simplify data entries and standardize units to facilitate easier analysis.
+
+## Conclusion
+
+Lactaoen's insights into EHR data pre-processing underscore the importance of meticulous data cleaning and transformation. By leveraging R's tidyverse suite, researchers can effectively prepare EHR data for analysis, paving the way for impactful biomedical research. Her emphasis on understanding data collection, resolving conflicts, collaborating with experts, and standardizing data provides a robust framework for researchers embarking on EHR-based studies.
