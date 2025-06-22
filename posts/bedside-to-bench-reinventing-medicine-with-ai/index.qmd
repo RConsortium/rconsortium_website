@@ -1,0 +1,49 @@
+--- 
+title: "Bedside to Bench - Reinventing medicine with AI" 
+unpublished: true 
+url: "https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/"
+description: "Explore how AI is revolutionizing medical discovery, from knee pain to sudden cardiac death, as discussed by Dr. Ziad Obermeyer at R/Medicine 2025." 
+categories: [R/Medicine 2025, AI]
+author: "R Consortium" 
+image: "thumbnail-ai-ziad.jpg" 
+image-alt: "Reinventing medicine with AI - Keynote - Ziad Obermeyer" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/OPib-OztZQc >}}
+
+# Reinventing Medicine with AI: A New Pathway to Discovery
+
+The landscape of medical research and discovery is ripe for a seismic shift, one that is being catalyzed by the integration of artificial intelligence (AI) into the healthcare domain. This paradigm shift was the core focus of Dr. Ziad Obermeyer's keynote at R/Medicine 2025, where he explored the potential of AI to resurrect and revolutionize the "bedside to bench" pathway for medical discovery. 
+
+## From Bench to Bedside: The Traditional Model
+
+The traditional model of medical discovery often starts at the molecular level, focusing on genes, proteins, and signaling pathways. This approach has led to significant breakthroughs, particularly in areas like cancer and immunology, where targeted therapies have been transformative. However, this model is not without its limitations. As Dr. Obermeyer pointed out, many complex medical problems remain unsolved, and the traditional bench-to-bedside approach has largely overshadowed the alternative pathway — one that begins with observations at the bedside.
+
+## AI: A New Lens for Medical Discovery
+
+AI, with its ability to process vast amounts of data and detect patterns invisible to the human eye, offers a powerful alternative. Dr. Obermeyer provided compelling examples of how AI can generate novel empirical observations from real-world data, thereby reinvigorating the bedside-to-bench pathway.
+
+### The Case of Knee Pain
+
+One of the illustrative examples Dr. Obermeyer discussed was knee pain, a condition that has long eluded effective treatment through traditional molecular approaches. Historically, research on knee pain has zoomed in at a molecular level, focusing on inflammation markers and cartilage degradation. However, this approach has not significantly alleviated the widespread issue of knee pain, leading to an over-reliance on opioids as a treatment.
+
+Dr. Obermeyer’s team leveraged AI to analyze knee X-rays, not to replicate human radiologist interpretations, but to predict patient-reported pain scores directly from the image data. This approach uncovered new insights into the anatomical and physiological factors contributing to knee pain, particularly among Black patients, thus addressing a known disparity in pain management and treatment outcomes.
+
+### Sudden Cardiac Death: Predicting the Unpredictable
+
+Another poignant example involved the use of AI to predict sudden cardiac death, a condition notorious for its unpredictability. By analyzing ECG data linked to patient outcomes in Sweden, Dr. Obermeyer's team developed a model that could identify individuals at high risk of sudden cardiac death with greater accuracy than traditional metrics. This predictive capability has the potential to optimize the allocation of defibrillators, ensuring they reach those most in need.
+
+## Implications for the Future of Medicine
+
+The implications of these findings are profound. By turning complex medical images into actionable data, AI not only enhances diagnostic precision but also opens new avenues for therapeutic interventions. This approach allows for a re-examination of established medical knowledge, potentially leading to new standards of care.
+
+### Bridging Disciplines
+
+The integration of AI into medical research also underscores the importance of interdisciplinary collaboration. As Dr. Obermeyer noted, insights from fields such as computer science, economics, and behavioral science can enrich our understanding of health and disease, leading to more holistic and effective healthcare solutions.
+
+## Conclusion
+
+Dr. Obermeyer’s keynote at R/Medicine 2025 highlighted the transformative potential of AI in medicine. By enabling a new cycle of discovery that starts at the bedside, AI promises to uncover new abstractions and insights, ultimately improving patient care and outcomes. As the R community continues to explore these frontiers, the collaborative efforts between data scientists, clinicians, and researchers will be crucial in unlocking the full potential of AI in healthcare.
+
+With the power of AI and the collective wisdom of diverse disciplines, the future of medical discovery has the potential for advancements that were once thought unattainable.
