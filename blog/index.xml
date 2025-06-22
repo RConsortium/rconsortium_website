@@ -279,6 +279,89 @@
   <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Mix, Pour, Share: The rUM Cocktail for Biomedical Project Packaging</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/03_5KrQA-mo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="unveiling-rum-a-game-changer-for-biomedical-reproducibility" class="level1">
+<h1>Unveiling rUM: A Game-Changer for Biomedical Reproducibility</h1>
+<p>The reproducibility crisis in biomedical research is a formidable challenge that demands innovative solutions. At the forefront of addressing this issue is the rUM package, developed at the University of Miami, which promises to revolutionize how biomedical research projects are documented, shared, and analyzed. Here, we delve into the capabilities of <a href="https://raymondbalise.github.io/rUM/">rUM version 2.2</a>, named “rUM Runner,” and its potential to streamline research processes while promoting reproducibility.</p>
+<section id="meet-the-innovators" class="level2">
+<h2 class="anchored" data-anchor-id="meet-the-innovators">Meet the Innovators</h2>
+<p>Kyle Gealis and Dr.&nbsp;Raymond Balise from the University of Miami’s Department of Public Health Sciences are the developers of rUM. They aim to bridge the gap between complex research needs and user-friendly tools, ensuring that even researchers with minimal programming experience can produce high-quality, reproducible work.</p>
+</section>
+<section id="what-is-rum" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-rum">What is rUM?</h2>
+<p>While “rum” might first bring to mind thoughts of a tropical cocktail, in the context of biomedical research, rUM is an acronym for an R package designed to make research reproducibility more accessible. It facilitates the creation of comprehensive, CRAN-ready research packages with minimal coding effort. The package allows researchers to bundle entire projects, complete with analyses, datasets, documentation, and presentations, into a single distributable package.</p>
+</section>
+<section id="key-features-of-rum" class="level2">
+<h2 class="anchored" data-anchor-id="key-features-of-rum">Key Features of rUM</h2>
+<ol type="1">
+<li><p><strong>CRAN-Ready Package Structures</strong>: With a single function call, rUM creates package structures that adhere to CRAN standards, simplifying the package development process.</p></li>
+<li><p><strong>Automated Templates</strong>: R Markdown and Quarto manuscripts can be seamlessly integrated as package vignettes, providing a cohesive documentation of research efforts.</p></li>
+<li><p><strong>Enhanced Dataset Documentation</strong>: rUM includes tools for documenting datasets with comprehensive metadata, ensuring that datasets are well-described and easy to understand.</p></li>
+<li><p><strong>Presentation Integration</strong>: With rUM, creating Quarto RevealJS presentations within packages is straightforward. This feature allows researchers to share their findings in a visually engaging manner.</p></li>
+<li><p><strong>Slide Deck Display and Sharing</strong>: Researchers can easily display and share slide decks stored within their packages, enhancing collaborative communication.</p></li>
+</ol>
+</section>
+<section id="addressing-the-reproducibility-crisis" class="level2">
+<h2 class="anchored" data-anchor-id="addressing-the-reproducibility-crisis">Addressing the Reproducibility Crisis</h2>
+<p>The reproducibility crisis highlights the inconsistencies often found when attempting to replicate research findings, either with new data or the original datasets. rUM addresses this by providing a systematic approach to project organization, ensuring that all elements of the research process are documented and reproducible.</p>
+<section id="the-workflow-from-data-to-package" class="level3">
+<h3 class="anchored" data-anchor-id="the-workflow-from-data-to-package">The Workflow: From Data to Package</h3>
+<p>The rUM package facilitates a complete workflow:</p>
+<ul>
+<li><p><strong>Analyzing Data</strong>: Take, for example, the pharmacokinetic dataset (medicaldata::theophylline). rUM assists in analyzing such datasets with integrated tools.</p></li>
+<li><p><strong>Documenting with Metadata</strong>: Datasets are documented with comprehensive metadata, making them easier to understand and use by others.</p></li>
+<li><p><strong>Creating Presentations</strong>: Researchers can create presentation slides featuring their analysis visualizations, making it easier to communicate findings.</p></li>
+<li><p><strong>Bundling into a Package</strong>: Finally, all elements are bundled into a single, distributable package that is discoverable and reusable, addressing critical elements of reproducibility in medical research.</p></li>
+</ul>
+</section>
+</section>
+<section id="hands-on-with-rum" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on-with-rum">Hands-On with rUM</h2>
+<p>Kyle Gealis and Dr.&nbsp;Raymond Balise showcased the practical application of rUM during their presentation, guiding attendees through the steps of installing rUM, creating packages, and developing presentations. They demonstrated how to edit the R profile, initialize a package project, and navigate through various functionalities such as adding licenses, checking package integrity, and documenting datasets.</p>
+<section id="creating-and-sharing-presentations" class="level3">
+<h3 class="anchored" data-anchor-id="creating-and-sharing-presentations">Creating and Sharing Presentations</h3>
+<p>One of the standout features of rUM is its ability to create and share presentations directly from the package. Researchers can build slide decks and integrate them into their packages, making it easier to disseminate research findings.</p>
+</section>
+</section>
+<section id="new-features-in-rum-runner" class="level2">
+<h2 class="anchored" data-anchor-id="new-features-in-rum-runner">New Features in rUM Runner</h2>
+<p>The new version of rUM introduces several enhancements aimed at improving collaborative communication and documentation:</p>
+<ul>
+<li><strong>Write Notes</strong>: Create dated progress notes to keep track of project developments.</li>
+<li><strong>Readme Templates</strong>: Generate structured readme files, guiding users through the project’s contents and processes.</li>
+<li><strong>Quarto Documents and SCSS</strong>: Write Quarto documents and add custom SCSS for personalized styling.</li>
+</ul>
+</section>
+<section id="an-invitation-to-the-r-community" class="level2">
+<h2 class="anchored" data-anchor-id="an-invitation-to-the-r-community">An Invitation to the R Community</h2>
+<p>The developers of rUM invite the R community to explore and contribute to the package. They encourage feedback, ideas for new templates, and even pull requests on GitHub. The goal is to continuously enhance rUM’s functionality, ensuring it meets the evolving needs of the biomedical research community.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>rUM Runner is more than just a tool; it’s a step towards a more reproducible future in biomedical research. By simplifying the process of creating comprehensive research packages, rUM empowers researchers to focus on science while ensuring their work is transparent, discoverable, and reusable. Whether you’re a seasoned programmer or new to R, rUM offers a pathway to enhancing the reproducibility and impact of your research.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/thumbnail-rum-gealis-balise.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Model Evaluation: From Machine Learning to Generative AI</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/</link>
@@ -1120,63 +1203,6 @@
   <guid>https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/thumbnail-shiny-packages-kostiv.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/PWLRL0R7s3Y" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="breaking-through-memory-limitations-in-redcap-introducing-the-redquack-package" class="level1">
-<h1>Breaking Through Memory Limitations in REDCap: Introducing the {redquack} Package</h1>
-<p>In today’s data-driven healthcare environment, managing large datasets efficiently is crucial. The REDCap platform, a free electronic health record software, is widely used by over 7,000 institutions across the globe. Its ability to handle complex, longitudinal data and support multiple instruments or assessments makes it a favored choice for clinical research. However, with the exponential growth of data, researchers often encounter memory constraints when trying to extract and analyze vast amounts of information.</p>
-<p>Dylan Pieper from the University of Pittsburgh addressed this challenge head-on at the R/Medicine 2025 conference. His innovative solution, the {redquack} package, is designed to optimize data workflows between REDCap and DuckDB, providing a memory-efficient alternative for processing large datasets.</p>
-<section id="the-challenge-of-handling-large-datasets-in-redcap" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-of-handling-large-datasets-in-redcap">The Challenge of Handling Large Datasets in REDCap</h2>
-<p>At the School of Pharmacy, University of Pittsburgh, data scientists manage a REDCap database containing clinical data from over 200 outpatient treatment centers. This database is extensive, with nearly 3 million rows across 400 columns. Such large datasets pose a significant challenge when using traditional methods like the {REDCapR} package, which attempts to load all data into memory, often resulting in failures due to hardware limitations.</p>
-<p>REDCap stores its data using a MySQL backend, which is typically managed by an institution’s IT department. Direct interfacing with this database is not recommended, pushing researchers to rely on APIs and packages to access the data. However, as datasets grow, these methods become inefficient and sometimes infeasible.</p>
-</section>
-<section id="the-redquack-package-a-solution-for-seamless-data-extraction" class="level2">
-<h2 class="anchored" data-anchor-id="the-redquack-package-a-solution-for-seamless-data-extraction">The {redquack} Package: A Solution for Seamless Data Extraction</h2>
-<p>The {redquack} package emerged as a solution to these memory constraints by leveraging the power of DuckDB, a fast and portable SQL database management system. DuckDB’s columnar storage format makes it particularly suited for large-scale data processing, allowing data to be stored outside of R’s memory.</p>
-<p>The package introduces a novel batch processing approach to data extraction. By breaking down data into manageable chunks, researchers can efficiently process portions of the dataset without ever exceeding memory limits. This method involves:</p>
-<ol type="1">
-<li><strong>Batch Processing</strong>: Data is extracted in configurable batches of record IDs, minimizing memory usage.</li>
-<li><strong>Column Optimization</strong>: The package automatically optimizes column types across batches, enhancing query performance.</li>
-<li><strong>Detailed Logging</strong>: Users can track extraction progress through comprehensive logs, aiding in debugging and process monitoring.</li>
-<li><strong>Integration with Tidyverse</strong>: The resulting DuckDB connection can be seamlessly integrated with tidyverse workflows, allowing analysts to use familiar dplyr syntax for data manipulation.</li>
-</ol>
-</section>
-<section id="practical-implementation-and-benefits" class="level2">
-<h2 class="anchored" data-anchor-id="practical-implementation-and-benefits">Practical Implementation and Benefits</h2>
-<p>Using {redquack} is straightforward. Researchers need to provide their REDCap API credentials and configuration preferences to the <code>redcap_to_duckdb()</code> function. This function handles the extraction process, and the resulting DuckDB connection can be immediately utilized for data analysis.</p>
-<p>The package includes several quality-of-life features, such as sound notifications (a “quack” on success) for long-running operations. This user-friendly approach empowers researchers to work with datasets that exceed memory constraints without compromising their existing workflows.</p>
-</section>
-<section id="real-world-applications-at-the-university-of-pittsburgh" class="level2">
-<h2 class="anchored" data-anchor-id="real-world-applications-at-the-university-of-pittsburgh">Real-World Applications at the University of Pittsburgh</h2>
-<p>Dylan Pieper’s presentation showcased practical examples from the School of Pharmacy, where the {redquack} package has streamlined the data pipeline from REDCap to analysis. By eliminating memory constraints, the package has enabled clinical researchers, data scientists, and analysts to work more efficiently with large datasets. This is particularly beneficial for those handling complex, multi-form projects or longitudinal studies where traditional extraction methods fall short.</p>
-<p>The package is designed to be scalable and consistent, ensuring reliable data exports as projects grow in size. While it currently focuses on data reading, there is potential for future enhancements, such as supporting additional database drivers and expanding its capabilities.</p>
-</section>
-<section id="a-collaborative-future" class="level2">
-<h2 class="anchored" data-anchor-id="a-collaborative-future">A Collaborative Future</h2>
-<p>The development of {redquack} highlights the importance of collaboration within the R community. By sharing insights and innovations, researchers can collectively overcome the challenges posed by large-scale data management. The package is available on CRAN and GitHub, inviting contributions and feedback from the wider community.</p>
-<p>As REDCap continues to evolve, tools like {redquack} will play a pivotal role in ensuring that researchers can harness the full potential of their data without being hindered by technical limitations. Dylan Pieper’s work is a testament to the power of open-source collaboration and the continuous drive for innovation within the R ecosystem.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <guid>https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/</guid>
-  <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/thumbnail-redquack.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
