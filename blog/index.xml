@@ -70,6 +70,59 @@
   <media:content url="https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/thumbnail-advanced-distance-metrics-lee.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>An Accelerometry Biomarker Framework with Application in Vigilance in UK Biobank Data</title>
+  <dc:creator>R Consortium, Healthcare</dc:creator>
+  <link>https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KiQAySB2rF4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="exploring-vigilance-with-accelerometry-insights-from-the-uk-biobank" class="level1">
+<h1>Exploring Vigilance with Accelerometry: Insights from the UK Biobank</h1>
+<p>Accelerometry data from wearable devices have opened new horizons in non-invasive health monitoring, providing a continuous and objective measure of physical activity. Michael Kane, MD Anderson Cancer Center, alongside Dmitri Wolson and Francesco Onarati at Takeda Pharmaceuticals, delves into using accelerometry as a biomarker for assessing vigilance, focusing on the potential to identify non-vigilant states such as excessive daytime sleepiness or narcolepsy-like symptoms. This analysis is rooted in data from the UK Biobank, a rich resource encompassing accelerometry, demographic, and lifestyle data of approximately 78,500 participants.</p>
+<section id="understanding-the-data-and-its-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-data-and-its-challenges">Understanding the Data and Its Challenges</h2>
+<p>The UK Biobank’s accelerometry data provides a wealth of information, with measurements taken at 100 Hz over a week for each participant. These data offer a high-resolution view of daily activity patterns, recorded across three axes (X, Y, Z) in milligravities. However, this study’s foundational challenge lies in its observational nature and reliance on self-reported outcomes to define vigilance states.</p>
+<p>Vigilance and non-vigilance were distinguished using self-reported symptoms of narcolepsy and frequency of daytime naps. Non-vigilant participants reported narcolepsy symptoms often or always and took frequent naps, while vigilant participants did not report these symptoms or behaviors. Despite a robust overall dataset, the non-vigilant group comprised only 679 individuals, necessitating a careful matching process to ensure comparable analysis groups.</p>
+</section>
+<section id="propensity-score-matching-for-balanced-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="propensity-score-matching-for-balanced-analysis">Propensity Score Matching for Balanced Analysis</h2>
+<p>To address imbalances and potential confounders in the observational data, propensity score matching was employed. This method allowed for the creation of matched pairs of vigilant and non-vigilant participants based on physical and lifestyle characteristics, including age, sex, ethnicity, BMI, smoking habits, alcohol use, and more. This rigorous matching resulted in 95 well-matched pairs, setting the stage for a focused exploration of accelerometry’s potential in assessing vigilance.</p>
+</section>
+<section id="transforming-accelerometry-data-into-spectral-images" class="level2">
+<h2 class="anchored" data-anchor-id="transforming-accelerometry-data-into-spectral-images">Transforming Accelerometry Data into Spectral Images</h2>
+<p>A critical step in the analysis involved transforming raw accelerometry data into a structured format conducive to machine learning. The data were downsampled to 33 Hz to focus on relevant daily movement frequencies. Subsequently, the data were segmented into five-minute blocks, and a Discrete Fourier Transform was applied to each block. This transformation yielded sorted spectral images, representing the energy expended at different frequencies without capturing the precise timing of activities within a day.</p>
+</section>
+<section id="convolutional-neural-network-for-classification" class="level2">
+<h2 class="anchored" data-anchor-id="convolutional-neural-network-for-classification">Convolutional Neural Network for Classification</h2>
+<p>Inspired by the architecture of AlexNet, a simplified convolutional neural network (CNN) was developed to classify participants as vigilant or non-vigilant based on the spectral images. The CNN architecture included convolutional layers, max pooling, and dense layers with dropout to prevent overfitting. Training involved 20-fold cross-validation at the subject level, ensuring that predictions were genuinely out-of-sample.</p>
+<p>The CNN yielded an out-of-sample F1 score of 0.576 and an AUC of 0.539 at the sample level for participants aged 65 or younger. At the subject level, the F1 score was 0.539, and the AUC was 0.564. While these results indicate a weak association between accelerometry-derived biomarkers and vigilance states, they underscore the potential for further refinement and application in broader contexts.</p>
+</section>
+<section id="potential-applications-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="potential-applications-and-future-directions">Potential Applications and Future Directions</h2>
+<p>The study highlights accelerometry’s promise as a non-invasive tool for assessing cognitive states and movement-related disorders. The association between accelerometry and vigilance, albeit modest, opens avenues for monitoring conditions where non-vigilance is a co-morbidity, such as sleep disorders, neurological conditions, and psychiatric disorders.</p>
+<p>The findings also suggest potential applications in monitoring the effectiveness of treatments for conditions like narcolepsy, where stimulant medications may influence accelerometry patterns. Furthermore, the study indicates that stratifying by age could enhance the model’s predictive accuracy, given that younger participants tend to exhibit more movement.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Kane’s exploration into accelerometry as a biomarker for vigilance represents an exciting step forward in leveraging wearable technology for health monitoring. While the association between accelerometry and vigilance is currently weak, the study underscores the potential for accelerometry-derived insights to inform interventions across a range of conditions. The use of R for analysis and presentation further demonstrates the language’s versatility in handling complex datasets and machine learning models.</p>
+<p>As the R community continues to evolve and embrace cutting-edge methodologies, studies like this exemplify the innovative applications of R in advancing healthcare research. The integration of accelerometry data into clinical and research settings promises to enhance our understanding of human physiology and behavior, paving the way for more personalized and effective health interventions.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Clinical Research</category>
+  <guid>https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/thumbnail-kane-accelerometry.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Bootstrap inference made easy: p-values and confidence intervals in one line of code</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</link>
@@ -1148,55 +1201,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/</guid>
   <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/thumb.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Demystifying LLMs with Ellmer</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/demystifying-llms-with-ellmer/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/skLmOuNjqEU?feature=shared" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="unlocking-the-power-of-llms-with-r-a-practical-guide" class="level1">
-<h1>Unlocking the Power of LLMs with R: A Practical Guide</h1>
-<p>In the rapidly evolving landscape of Large Language Models (LLMs), the capabilities extend far beyond the familiar confines of ChatGPT or programming assistants like Copilot. The real magic begins when you access these models programmatically, integrating their vast knowledge and adaptability into your own applications, scripts, and workflows. At the heart of this exploration into the next frontier of LLM utility is the R language, facilitated by tools like the <code>ellmer</code> package and the innovative web framework, Shiny.</p>
-<section id="speaker-joe-cheng" class="level2">
-<h2 class="anchored" data-anchor-id="speaker-joe-cheng">Speaker: Joe Cheng</h2>
-<p>Joe Cheng, the CTO of Posit, PBC, stands at the forefront of this exploration. As the original creator of the Shiny web framework and co-creator of <code>ellmer</code>, Joe’s workshop at R/Medicine 2025 offered attendees a deep dive into the practical aspects of integrating LLMs with R. His journey from skepticism to embracing the potential of LLMs underscores a broader narrative within the data science community about the transformative power of these models when approached with curiosity and innovative tools.</p>
-<section id="from-skepticism-to-innovation" class="level3">
-<h3 class="anchored" data-anchor-id="from-skepticism-to-innovation">From Skepticism to Innovation</h3>
-<p>A year and a half ago, the consensus at Posit leaned towards skepticism regarding the hype surrounding AI and LLMs. The concern centered around the models’ black box nature and their apparent incompatibility with the principles of reproducible research and transparent methodologies. However, the turning point for Joe and his team came with the realization that the capabilities of LLMs defied their initial understanding and skepticism. This led to a series of internal hackathons aimed at demystifying LLMs for Posit employees, fostering a profound appreciation for the models’ potential when accessed programmatically.</p>
-</section>
-<section id="the-workshop-a-practical-introduction-to-llm-apis" class="level3">
-<h3 class="anchored" data-anchor-id="the-workshop-a-practical-introduction-to-llm-apis">The Workshop: A Practical Introduction to LLM APIs</h3>
-<p>Joe’s workshop provided a comprehensive introduction to utilizing LLM APIs within the R ecosystem, leveraging the <code>ellmer</code> package. Attendees learned how to configure R to interact with LLMs, customize model behavior through system prompts, integrate chatbots into Shiny applications, and employ LLMs for advanced natural language processing tasks. This hands-on approach equipped participants with the knowledge to embark on their own experiments with LLMs, pushing the boundaries of what’s possible in data analysis and application development.</p>
-</section>
-<section id="key-takeaways" class="level3">
-<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
-<ul>
-<li><strong>Programmatic Access to LLMs:</strong> The workshop emphasized the untapped potential of LLMs when accessed programmatically, allowing for more complex and tailored interactions than what standard interfaces like ChatGPT offer.</li>
-<li><strong>Integration with R:</strong> By showcasing the integration of LLMs with R, particularly through the <code>ellmer</code> package, Joe highlighted the seamless bridge between cutting-edge AI models and the robust analytical capabilities of R.</li>
-<li><strong>Empowering the R Community:</strong> The workshop not only showcased the technical possibilities but also served as a call to action for the R community to explore and innovate with LLMs, fostering a culture of experimentation and learning.</li>
-</ul>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>The journey from skepticism to embracing LLMs underscores a larger narrative within the tech community about the potential of these models to revolutionize data analysis, application development, and beyond. Joe Cheng’s workshop at R/Medicine 2025 stands as a beacon for R enthusiasts eager to explore this new frontier, armed with the knowledge and tools to unlock the full capabilities of LLMs.</p>
-
-
-</section>
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>AI</category>
-  <guid>https://r-consortium.org/posts/demystifying-llms-with-ellmer/</guid>
-  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/demystifying-llms-with-ellmer/thumbnail-cheng-demystifying-llms-with-ellmer.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
