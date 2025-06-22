@@ -1,0 +1,77 @@
+--- 
+title: "Mix, Pour, Share: The rUM Cocktail for Biomedical Project Packaging" 
+unpublished: true 
+url: "https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/"
+description: "Discover rUM 2.2, a game-changer for biomedical research reproducibility, developed at the University of Miami." 
+categories: [R/Medicine 2025, Software Development, Healthcare]
+author: "R Consortium" 
+image: "thumbnail-rum-gealis-balise.jpg" 
+image-alt: "rUM - biomedical research reproducibility - Gealis and Balise" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/03_5KrQA-mo >}}
+
+# Unveiling rUM: A Game-Changer for Biomedical Reproducibility
+
+The reproducibility crisis in biomedical research is a formidable challenge that demands innovative solutions. At the forefront of addressing this issue is the rUM package, developed at the University of Miami, which promises to revolutionize how biomedical research projects are documented, shared, and analyzed. Here, we delve into the capabilities of [rUM version 2.2](https://raymondbalise.github.io/rUM/), named "rUM Runner," and its potential to streamline research processes while promoting reproducibility.
+
+## Meet the Innovators
+
+Kyle Gealis and Dr. Raymond Balise from the University of Miami's Department of Public Health Sciences are the developers of rUM. They aim to bridge the gap between complex research needs and user-friendly tools, ensuring that even researchers with minimal programming experience can produce high-quality, reproducible work.
+
+## What is rUM?
+
+While "rum" might first bring to mind thoughts of a tropical cocktail, in the context of biomedical research, rUM is an acronym for an R package designed to make research reproducibility more accessible. It facilitates the creation of comprehensive, CRAN-ready research packages with minimal coding effort. The package allows researchers to bundle entire projects, complete with analyses, datasets, documentation, and presentations, into a single distributable package.
+
+## Key Features of rUM
+
+1. **CRAN-Ready Package Structures**: With a single function call, rUM creates package structures that adhere to CRAN standards, simplifying the package development process.
+   
+2. **Automated Templates**: R Markdown and Quarto manuscripts can be seamlessly integrated as package vignettes, providing a cohesive documentation of research efforts.
+
+3. **Enhanced Dataset Documentation**: rUM includes tools for documenting datasets with comprehensive metadata, ensuring that datasets are well-described and easy to understand.
+
+4. **Presentation Integration**: With rUM, creating Quarto RevealJS presentations within packages is straightforward. This feature allows researchers to share their findings in a visually engaging manner.
+
+5. **Slide Deck Display and Sharing**: Researchers can easily display and share slide decks stored within their packages, enhancing collaborative communication.
+
+## Addressing the Reproducibility Crisis
+
+The reproducibility crisis highlights the inconsistencies often found when attempting to replicate research findings, either with new data or the original datasets. rUM addresses this by providing a systematic approach to project organization, ensuring that all elements of the research process are documented and reproducible.
+
+### The Workflow: From Data to Package
+
+The rUM package facilitates a complete workflow:
+
+- **Analyzing Data**: Take, for example, the pharmacokinetic dataset (medicaldata::theophylline). rUM assists in analyzing such datasets with integrated tools.
+  
+- **Documenting with Metadata**: Datasets are documented with comprehensive metadata, making them easier to understand and use by others.
+
+- **Creating Presentations**: Researchers can create presentation slides featuring their analysis visualizations, making it easier to communicate findings.
+
+- **Bundling into a Package**: Finally, all elements are bundled into a single, distributable package that is discoverable and reusable, addressing critical elements of reproducibility in medical research.
+
+## Hands-On with rUM
+
+Kyle Gealis and Dr. Raymond Balise showcased the practical application of rUM during their presentation, guiding attendees through the steps of installing rUM, creating packages, and developing presentations. They demonstrated how to edit the R profile, initialize a package project, and navigate through various functionalities such as adding licenses, checking package integrity, and documenting datasets.
+
+### Creating and Sharing Presentations
+
+One of the standout features of rUM is its ability to create and share presentations directly from the package. Researchers can build slide decks and integrate them into their packages, making it easier to disseminate research findings.
+
+## New Features in rUM Runner
+
+The new version of rUM introduces several enhancements aimed at improving collaborative communication and documentation:
+
+- **Write Notes**: Create dated progress notes to keep track of project developments.
+- **Readme Templates**: Generate structured readme files, guiding users through the project's contents and processes.
+- **Quarto Documents and SCSS**: Write Quarto documents and add custom SCSS for personalized styling.
+
+## An Invitation to the R Community
+
+The developers of rUM invite the R community to explore and contribute to the package. They encourage feedback, ideas for new templates, and even pull requests on GitHub. The goal is to continuously enhance rUM's functionality, ensuring it meets the evolving needs of the biomedical research community.
+
+## Conclusion
+
+rUM Runner is more than just a tool; it's a step towards a more reproducible future in biomedical research. By simplifying the process of creating comprehensive research packages, rUM empowers researchers to focus on science while ensuring their work is transparent, discoverable, and reusable. Whether you're a seasoned programmer or new to R, rUM offers a pathway to enhancing the reproducibility and impact of your research.
