@@ -1,0 +1,71 @@
+--- 
+title: "What to Do When Shiny Packages Don't Fully Support Your Idea" 
+unpublished: true 
+url: "https://r-consortium.org/posts/what-to-do-when-shiny-packages-dont-fully-support-your-idea/"
+description: "Explore how React.js can extend Shiny's capabilities for building advanced, interactive applications!" 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium" 
+image: "thumbnail-shiny-packages-kostiv.png" 
+image-alt: "Extending Shiny apps with React.js - Anastasiia Kostiv" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/qXa0eDy315M >}}
+
+# Breaking the Limits of Shiny with React.js: A Deep Dive into ESQapp
+
+Anastasiia Kostiv from ESQlabs, who recently shared her insights at R/Medicine 2025 on how using React.js you can extend what Shiny apps are capable of. Her talk, "Shiny is great, but what if you need more flexibility and performance?" provides a roadmap for R developers who are looking to push the boundaries of what Shiny can offer by leveraging the power of modern web technologies.
+
+## Shiny: A Quick Overview
+
+Shiny is a popular tool among R developers for building data-driven web applications. It excels in its simplicity and ability to quickly transform R scripts into interactive web apps. However, as applications grow in complexity, developers can bump into certain limitations. These include challenges with custom UI implementations, performance degradation with multiple reactive components, and a lack of support for highly interactive interfaces like spreadsheets or model editors.
+
+## A Hybrid Approach: Using Shiny and React.js Together
+
+Anastasiia faced these exact challenges as she developed ESQapp, a highly interactive and scalable application. React.js is a widely used JavaScript library for building user interfaces. By utilizing the `reactR` package, Anastasiia was able to integrate React components into Shiny, combining Shiny's robust data backend with React’s advanced UI capabilities. This hybrid approach opened up a new realm of possibilities for creating modern, responsive, and customizable web applications.
+
+### Why React.js?
+
+React.js is known for its flexibility, performance, and ability to handle complex UIs. It allows developers to create reusable components, manage state efficiently, and ensure applications remain fast and responsive. By integrating React with Shiny, developers can sidestep the limitations of HTML widgets and avoid the reliance on jQuery plugins, which often require cumbersome workarounds.
+
+## Building ESQapp: A Case Study
+
+Let's take a closer look at how Anastasiia and her team at ESQlabs utilized React to expand Shiny's capabilities.
+
+### The Challenges
+
+As the ESQapp project grew, the team encountered several hurdles:
+
+- **Custom UI Components**: Shiny's default components were not sufficient for the complex user interfaces required.
+- **Performance**: The app's performance suffered with the addition of multiple reactive components.
+- **Interactivity**: The need for interactive features like editable tables, models, and visual editors was not supported out of the box by Shiny.
+
+### The Solution
+
+By integrating React.js via the `reactR` package, Anastasiia's team was able to:
+
+- **Create Custom Components**: Develop lightweight React components, such as editable tables and model editors, that seamlessly integrate with Shiny's reactive system.
+- **Improve Performance**: React's efficient rendering and state management improved the application's responsiveness.
+- **Enhance Interactivity**: Implement features like filterable selectors and validation logic that were previously unattainable with Shiny alone.
+
+### Hands-on Table Editor Example
+
+One of the standout components in ESQapp is the hands-on table editor. This component synchronizes with Shiny’s state using React, offering a fully reactive, fast, and customizable experience. It allows users to interact with data in a spreadsheet-like interface, delivering a modern and intuitive user experience.
+
+## The Technical Setup
+
+The integration of React into Shiny involves a few key steps:
+
+1. **Using Webpack**: To bundle the React code efficiently.
+2. **ReactR Package**: This package wraps the compiled React output and exposes it to Shiny, allowing it to behave like any native Shiny input or output component.
+3. **Fully Reactive System**: Ensures that all components remain in sync with Shiny’s reactive data flow.
+
+## Is This Approach Right for Your Project?
+
+While extending Shiny with React.js offers tremendous benefits, it may not be suitable for every project. If your application requires advanced UI features, improved performance, and your team possesses React or front-end experience, this approach could be useful. However, for simpler applications, Shiny alone might suffice.
+
+## Final Thoughts
+
+Anastasiia's talk at R/Medicine 2025 underscores the potential of combining Shiny with modern web technologies like React.js. By thinking outside the box and embracing the flexibility of React, developers can extend Shiny to build powerful, beautiful, and responsive applications.
+
+For those interested in exploring this approach, Anastasiia encourages you to check out a real-life example of ESQapp and see the integration in action. There is a QR code in the session video or the repo is available here: [https://esqlabs.github.io/ESQapp/](https://esqlabs.github.io/ESQapp/)
