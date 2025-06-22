@@ -12,6 +12,64 @@
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Sun, 22 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>Advanced Distance Metrics for High-Dimensional Clustering: introducing ‘distanceHD’ R-package</title>
+  <dc:creator>R Consortium, Software Development</dc:creator>
+  <link>https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/EC_vTG-_XCQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="distancehd-a-new-frontier-in-high-dimensional-clustering" class="level1">
+<h1>DistanceHD: A New Frontier in High-Dimensional Clustering</h1>
+<p>Greetings, data enthusiasts and R aficionados! Today, we delve into development in the realm of high-dimensional clustering with the introduction of the <code>distanceHD</code> package. This tool, crafted by Jung Ae Lee, Assistant Professor of Biostatistics at the University of Massachusetts Chan Medical School, addresses the need for robust, scalable, and statistically sound distance measures tailored specifically for high-dimensional settings.</p>
+<section id="why-distancehd" class="level2">
+<h2 class="anchored" data-anchor-id="why-distancehd">Why <code>distanceHD</code>?</h2>
+<p>Traditional distance metrics such as Euclidean or Mahalanobis distances often falter in high-dimensional spaces. These conventional methods, while effective in lower dimensions, struggle to detect meaningful clusters or outliers when faced with the complexity of high-dimensional data. This gap is particularly evident in fields like genomics, where the number of features (variables) often exceeds the number of samples.</p>
+<p>The <code>distanceHD</code> package introduces three innovative distance metrics designed for high-dimensional clustering and outlier detection: the centroid distance, ridge Mahalanobis distance, and maximal data piling (MDP) distance. Each of these metrics offers unique benefits, making them invaluable tools in the data scientist’s arsenal.</p>
+</section>
+<section id="the-three-pillars-of-distancehd" class="level2">
+<h2 class="anchored" data-anchor-id="the-three-pillars-of-distancehd">The Three Pillars of <code>distanceHD</code></h2>
+<section id="centroid-distance" class="level3">
+<h3 class="anchored" data-anchor-id="centroid-distance">1. Centroid Distance</h3>
+<p>Centroid distance, also known as Euclidean distance, calculates the distance between the centers of two groups. It is a straightforward metric but can be limited in high-dimensional spaces with correlated variables. However, it remains effective when variables are uncorrelated.</p>
+</section>
+<section id="ridge-mahalanobis-distance" class="level3">
+<h3 class="anchored" data-anchor-id="ridge-mahalanobis-distance">2. Ridge Mahalanobis Distance</h3>
+<p>The ridge Mahalanobis distance introduces a ridge correction constant, alpha, to ensure the covariance matrix is invertible — a common issue in high-dimensional analysis due to singularity problems. This adjustment allows for a more stable calculation of distances, bridging the gap between the centroid and MDP distances. When alpha is large, the ridge Mahalanobis distance approximates the centroid distance, while a smaller alpha brings it closer to the MDP distance.</p>
+</section>
+<section id="maximal-data-piling-mdp-distance" class="level3">
+<h3 class="anchored" data-anchor-id="maximal-data-piling-mdp-distance">3. Maximal Data Piling (MDP) Distance</h3>
+<p>The MDP distance is perhaps the most novel of the three metrics. It computes the orthogonal distance between the affine spaces spanned by each class, offering a unique direction vector that maximizes the distance between class projections. This metric shines in situations with highly correlated variables, such as gene expression data, and is particularly effective for classification problems.</p>
+</section>
+</section>
+<section id="practical-applications" class="level2">
+<h2 class="anchored" data-anchor-id="practical-applications">Practical Applications</h2>
+<p>The <code>distanceHD</code> package is not just a theoretical construct; it has real-world applications in clustering, classification, and outlier detection. For instance, in the context of outlier identification, the MDP distance can effectively discern outliers by maximizing the projection distance in a unique direction. This capability is demonstrated through sequential simulations, such as gene expression data with multiple features and patients, where traditional metrics may fall short.</p>
+<p>In classification tasks, the MDP distance provides a high-dimensional, low-sample-size version of Fisher’s discriminant analysis, offering a powerful tool for binary predictions, such as disease status classification.</p>
+</section>
+<section id="future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
+<p>While the <code>distanceHD</code> package is a significant leap forward, Jung Ae Lee plans to expand its functionalities further. Upcoming updates will focus on improving outlier detection processes and incorporating additional distance metrics to enhance the package’s versatility and applicability in various high-dimensional contexts.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The <code>distanceHD</code> package represents a significant advancement in the field of high-dimensional data analysis, offering robust tools for clustering, classification, and outlier detection. With its innovative metrics and practical applications, it is poised to become an essential resource for researchers and practitioners working with complex, high-dimensional datasets.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/thumbnail-advanced-distance-metrics-lee.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Bootstrap inference made easy: p-values and confidence intervals in one line of code</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</link>
@@ -1148,59 +1206,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/</guid>
   <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/r-pkgdown.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="a-community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign" class="level1">
-<h1>A Community-Powered Future for Regulatory R: Introducing Our Fundraising Campaign</h1>
-<p>As many of you may have seen, we’ve officially launched a fundraising campaign for the <strong>Regulatory R Repository</strong> — a critical initiative built to support the safe, efficient, and confident use of R packages in regulated environments.</p>
-<p>The <strong>Regulatory R Repository</strong> will provide a robust, <em>validation-ready collection of package metadata</em> using the R Validation Hub’s open-source <code>{riskmetric}</code> framework. Our goal is simple yet powerful: enable organizations to use R in their regulatory submissions.</p>
-<section id="why-a-fundraising" class="level3">
-<h3 class="anchored" data-anchor-id="why-a-fundraising">Why a fundraising?</h3>
-<p>Until now, the project has been built entirely on volunteer contributions. This has helped us build momentum — but to <strong>scale delivery and ensure consistency</strong>, we need dedicated funding. Importantly, this project is <strong>company-agnostic</strong> by design. It lives under the umbrella of the <strong>R Consortium</strong>, not any single corporation like Roche or others, to ensure transparency, neutrality, and broad utility.</p>
-</section>
-<section id="is-it-just-for-pharma" class="level3">
-<h3 class="anchored" data-anchor-id="is-it-just-for-pharma">Is it just for Pharma?</h3>
-<p>While the pharmaceutical industry has been a key driver of this effort, our scope extends far beyond pharma. This repository will benefit <strong>any organization that must meet regulatory standards while using R</strong>. This includes universities, NGOs, and regulated industries such as <strong>agriculture, finance, insurance, and biotech</strong>. Wherever R is used in regulated or quality-sensitive contexts, the repository can provide assurance and clarity.</p>
-</section>
-<section id="what-will-we-deliver" class="level3">
-<h3 class="anchored" data-anchor-id="what-will-we-deliver">What Will We Deliver?</h3>
-<ul>
-<li><p><strong>Tools for periodic assessment</strong> of public R packages</p></li>
-<li><p><strong>Template projects for in-house deployments</strong>, for organizations managing private packages</p></li>
-<li><p>A <strong>supplementary repository of metadata</strong> that supports the risk-assessment and governance of R environments in regulated settings</p></li>
-</ul>
-<p>We’re deeply grateful to everyone who has contributed so far — your work has laid the foundation for what’s next.</p>
-</section>
-<section id="why-open-source" class="level3">
-<h3 class="anchored" data-anchor-id="why-open-source">Why Open Source?</h3>
-<p>You might wonder: <em>“If some industries have the resources to build software, why do open-source projects still rely on funding and volunteer contributions?”</em></p>
-<p>Open Source thrives on collaboration rooted in <strong>transparency and trust</strong>. The solutions created in this space aren’t owned by any one company—they belong to the <strong>global community</strong>. That’s what makes them so powerful.</p>
-<p>Across all industries, there are countless <strong>smaller companies, research institutes, non-profits, and independent teams</strong> with brilliant ideas but limited budgets. Without access to costly, proprietary tools, their growth and potential impact are often restricted. Open Source breaks down these barriers—enabling them to move faster, innovate, and build on <strong>trusted, freely available technologies</strong>.</p>
-<p>While large enterprises do support Open Source—by funding organizations like the <strong>R Consortium</strong>, sponsoring events, or encouraging their employees to contribute—these efforts are often <strong>indirect</strong>. Open Source may not be owned, but it still needs to be built, maintained, and evolved. And that takes real resources.</p>
-<p>That’s where <strong>non-profit organizations and community fundraising</strong> play a vital role. They help fuel projects that are developed in parallel by volunteers around the world. Open Source isn’t free to create—it’s just <strong>freely shared</strong>. Ongoing support from both the community and companies that benefit from it is essential to keep it growing.</p>
-</section>
-<section id="contribute-now-to-support-open-source-software" class="level3">
-<h3 class="anchored" data-anchor-id="contribute-now-to-support-open-source-software">Contribute now to support Open Source Software</h3>
-<p>Fundraising initiatives help direct resources to high-impact projects—<strong>accelerating innovation, expanding access, and ensuring that open collaboration remains a driving force for progress</strong>.</p>
-<p>Let’s build this resource together — for the benefit of the entire R community and every organization that relies on it to meet regulatory standards. 👉 <a href="https://pharmar.org/repository">https://pharmar.org/repository</a></p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/</guid>
-  <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/r-regulatory-repo-main-image.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
