@@ -333,6 +333,79 @@
   <media:content url="https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/thumbnail-keynote-day2-model-evaluation-ledell.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>No More Copy-Paste: Automating Patient Inquiry Tracking in Pharma with Shiny</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/sRNxjGXZ0_0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="automating-patient-inquiry-tracking-in-pharma-with-shiny-a-game-changer-in-specialty-pharma-coordination" class="level1">
+<h1>Automating Patient Inquiry Tracking in Pharma with Shiny: A Game-Changer in Specialty Pharma Coordination</h1>
+<p>In the fast-paced world of specialty pharma coordination, the seamless flow of information and timely delivery of medication can be a matter of life and death for patients with rare diseases. The challenge? Managing patient support and prescription workflows often involves disparate tools, manual data wrangling, and time-consuming reporting. Tanya Cashorali, the founder of TCB Analytics, addressed this critical issue in her presentation at the R/Medicine conference, showcasing how an R Shiny application revolutionized these processes.</p>
+<section id="meet-the-speaker-tanya-cashorali" class="level2">
+<h2 class="anchored" data-anchor-id="meet-the-speaker-tanya-cashorali">Meet the Speaker: Tanya Cashorali</h2>
+<p>Tanya Cashorali is the founder of TCB Analytics, a Boston-based data science consultancy with a strong focus on bio and pharma. She has an impressive background in biotech, having started her career analyzing genetic data at Children’s Hospital in 2005. Tanya has since contributed to building molecular applications at Dana Farber, conducted modeling work at GNS Healthcare to understand causal mechanisms of disease, and helped launch TCB Analytics after her tenure at Biogen.</p>
+</section>
+<section id="the-problem-manual-mayhem-in-specialty-pharma-coordination" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-manual-mayhem-in-specialty-pharma-coordination">The Problem: Manual Mayhem in Specialty Pharma Coordination</h2>
+<p>For bio and pharma companies treating rare diseases, ensuring patients receive their medications on time is crucial. However, the process often involves multiple manual steps:</p>
+<ul>
+<li>Physicians write prescriptions that go to specialty pharmacies.</li>
+<li>Biopharma companies ensure the availability of drugs.</li>
+<li>Specialty pharmacies ship the drugs to patients.</li>
+</ul>
+<p>This workflow was previously managed through Excel sheets and lengthy email chains. The result? Manual mayhem, with room for errors, slow case preparation, and time-consuming weekly status meetings.</p>
+</section>
+<section id="the-solution-an-r-shiny-application" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-an-r-shiny-application">The Solution: An R Shiny Application</h2>
+<p>To tackle this challenge, Tanya and her team developed an R Shiny application that serves as a dynamic operational hub. This application integrates prescription fulfillment data with Smartsheet-tracked patient inquiries, providing a unified, interactive dashboard for users. Key features include:</p>
+<ul>
+<li><strong>Real-time Data Integration:</strong> The application merges daily Excel-based prescription data with live Smartsheet API feeds.</li>
+<li><strong>Interactive Dashboard:</strong> Users can filter, sort, and export patient records while tracking key support metrics such as shipment history and open ticket status.</li>
+<li><strong>Ticket Creation and Management:</strong> Users can create and manage tickets directly from the application, which syncs with Smartsheet to streamline communication between the market access team and specialty pharmacies.</li>
+</ul>
+</section>
+<section id="impact-and-efficiency-gains" class="level2">
+<h2 class="anchored" data-anchor-id="impact-and-efficiency-gains">Impact and Efficiency Gains</h2>
+<p>The impact of this R Shiny application has been significant:</p>
+<ul>
+<li><strong>Streamlined Communication:</strong> The application replaces five daily emails, reduces meeting times from 30 to 10 minutes, and supports over 36 users, including sales teams and market access teams.</li>
+<li><strong>Real-time Insights:</strong> The application provides a single source of real-time truth, enabling more productive case tracking and management.</li>
+<li><strong>Data-Driven Decisions:</strong> With 400 patients and two drug products tracked, the application offers valuable data insights, such as time to resolution and issue frequency across specialty pharmacies.</li>
+</ul>
+</section>
+<section id="lessons-learned" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learned">Lessons Learned</h2>
+<p>Tanya shared valuable lessons learned from the project:</p>
+<ul>
+<li><strong>Start Simple:</strong> Begin with sketches and iterate based on user feedback.</li>
+<li><strong>Build Dashboards with People, Not Just for Them:</strong> Engage users early and often to ensure the solution meets their needs.</li>
+<li><strong>Leverage Power Users:</strong> Identify and collaborate with power users who can provide valuable feedback and drive adoption.</li>
+<li><strong>Avoid Overengineering:</strong> Use existing tools like R Shiny, Smartsheet, and pins to create efficient solutions without complex infrastructure.</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The R Shiny application developed by TCB Analytics exemplifies the power of R in transforming workflows and improving patient outcomes in the pharma industry. By automating patient inquiry tracking, the application not only streamlines operations but also ensures that patients receive their medications promptly, ultimately saving lives.</p>
+<p>As Tanya summarized, this project demonstrates that you don’t need a big vendor platform or a six-month roadmap to make a significant impact. With the right tools and a focus on user needs, R can drive meaningful change in healthcare and beyond.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Pharma</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/thumbnail-no-more-copy-paste-tanya.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>nonprobsvy – An R package for modern methods for non-probability survey</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</link>
@@ -1102,68 +1175,6 @@
   <guid>https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/</guid>
   <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/thumbnail-AOUSDOHtools-deng.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Examining Factors Associated with Depressive Severity Among Cancer Survivors</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/examining-factors-associated-with-depressive-severity-among-cancer-survivors/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4vQJghIanQg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="understanding-the-psychological-burden-of-cancer-insights-into-depressive-symptoms-among-survivors" class="level1">
-<h1>Understanding the Psychological Burden of Cancer: Insights into Depressive Symptoms Among Survivors</h1>
-<p>Cancer, a formidable adversary in the realm of health, extends its profound impact beyond the physical, creeping into the psychological well-being of those it touches. The study presented by Andre Williams from the Christine E. Lynn College of Nursing at Florida Atlantic University, at R/Medicine 2025, dives deeply into this often overshadowed aspect of cancer survivorship—depression. This comprehensive analysis offers invaluable insights into the mental health challenges faced by cancer patients and survivors and underscores the need for integrated care models that address both physical and mental health.</p>
-<section id="the-psychological-toll-of-cancer" class="level2">
-<h2 class="anchored" data-anchor-id="the-psychological-toll-of-cancer">The Psychological Toll of Cancer</h2>
-<p>Cancer survivors face a multitude of challenges that encompass the physical, emotional, and financial spectrums. While advancements in detection and treatment have increased survival rates, they have also prolonged the duration of living with the disease and its psychological ramifications. Among these, depression stands out as a significant concern, affecting not just the quality of life but also treatment adherence, physical health outcomes, and mortality rates. Cancer patients are particularly susceptible to depression due to a complex interplay of physiological and psychological factors.</p>
-</section>
-<section id="exploring-the-correlates-of-depression-in-cancer-survivors" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-the-correlates-of-depression-in-cancer-survivors">Exploring the Correlates of Depression in Cancer Survivors</h2>
-<p>Despite the established link between cancer and depression, there remains a critical need to explore the specific demographic, socioeconomic, and health-related factors contributing to this mental health burden. Previous research, often limited by smaller sample sizes, has struggled to generalize findings across the broader U.S. cancer survivor population. Addressing this gap, Williams and his team leveraged the National Health Interview Survey (NHIS) data, a robust, nationally representative resource, to examine these factors.</p>
-<section id="research-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="research-methodology">Research Methodology</h3>
-<p>The study utilized NHIS data from 2022, focusing on individuals who reported a cancer diagnosis. The primary research question aimed to uncover the demographic, socioeconomic, and health-related factors associated with increased depressive symptomatology among these individuals. Depressive symptomatology was measured using the Patient Health Questionnaire-8 (PHQ-8), with a score of 10 or higher indicating moderate or greater depressive symptoms.</p>
-<p>For the analysis, various R packages, including <code>survey</code>, <code>tidyverse</code>, <code>modelsummary</code>, and <code>data.table</code>, were employed. The team conducted survey logistic regression to evaluate the associations between depressive symptoms and various independent variables.</p>
-</section>
-<section id="key-findings" class="level3">
-<h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
-<p>The analysis revealed several significant associations with moderate or greater depressive symptoms among cancer survivors:</p>
-<ul>
-<li><strong>Socioeconomic Factors</strong>: Poverty, lower levels of education, and lack of private health insurance were significantly associated with increased depressive symptoms, highlighting the impact of financial and educational disparities on mental health.</li>
-<li><strong>Demographic Factors</strong>: Female gender, younger age, and living alone were demographic variables linked to heightened depressive symptoms, suggesting a greater vulnerability among certain groups.</li>
-<li><strong>Healthcare Access and Utilization</strong>: Delays in care, unmet care needs due to cost, frequent emergency visits, and overnight hospitalizations were associated with increased depressive symptoms. These findings underscore the importance of accessible and affordable healthcare in addressing mental health issues.</li>
-<li><strong>Co-occurring Conditions</strong>: Mild or greater anxiety symptomatology was significantly associated with increased depressive symptoms, emphasizing the interconnectedness of mental health conditions.</li>
-</ul>
-</section>
-</section>
-<section id="implications-for-healthcare-practice" class="level2">
-<h2 class="anchored" data-anchor-id="implications-for-healthcare-practice">Implications for Healthcare Practice</h2>
-<p>The study’s findings have crucial implications for healthcare practice:</p>
-<ol type="1">
-<li><p><strong>Targeted Screening and Intervention</strong>: Routine use of validated tools like PHQ-8 or PHQ-9 for assessing depression is vital, alongside considering broader social determinants of health in patient evaluations.</p></li>
-<li><p><strong>Holistic Support</strong>: Interventions should address not only psychological needs but also socioeconomic factors and healthcare access issues, advocating for a comprehensive approach to patient support.</p></li>
-<li><p><strong>Integrated Care Models</strong>: Incorporating mental health support into oncology care is essential to ensure mental health is recognized and addressed as a vital component of cancer treatment and survivorship.</p></li>
-</ol>
-</section>
-<section id="looking-ahead" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
-<p>As the discussion concluded, the need for further research was highlighted, including the potential to extend the study to pediatric cancer patients and include a control group for comparison. Such future endeavors would enrich the understanding of depressive symptoms in cancer survivors and inform targeted interventions.</p>
-<p>This study, leveraging the power of R for data analysis, exemplifies the critical role of large-scale public health datasets in understanding the psychosocial challenges faced by cancer survivors. By integrating mental health considerations into cancer care, we can guide clinical decision-making and develop precision mental health interventions within oncology settings.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/examining-factors-associated-with-depressive-severity-among-cancer-survivors/</guid>
-  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/examining-factors-associated-with-depressive-severity-among-cancer-survivors/thumbnail-examining-factors-williams.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
