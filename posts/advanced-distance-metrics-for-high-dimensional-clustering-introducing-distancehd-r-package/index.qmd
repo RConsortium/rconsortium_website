@@ -1,0 +1,51 @@
+--- 
+title: "Advanced Distance Metrics for High-Dimensional Clustering: introducing 'distanceHD' R-package" 
+unpublished: true 
+url: "https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/"
+description: "Discover `distanceHD`, a new R package for high-dimensional clustering with innovative distance metrics." 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium, Software Development" 
+image: "thumbnail-advanced-distance-metrics-lee.png" 
+image-alt: "Advanced Distance Metrics for High-Dimensional Clustering: introducing 'distanceHD' R-package - Jung Ae Lee" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/EC_vTG-_XCQ >}}
+
+# DistanceHD: A New Frontier in High-Dimensional Clustering
+
+Greetings, data enthusiasts and R aficionados! Today, we delve into development in the realm of high-dimensional clustering with the introduction of the `distanceHD` package. This tool, crafted by Jung Ae Lee, Assistant Professor of Biostatistics at the University of Massachusetts Chan Medical School, addresses the need for robust, scalable, and statistically sound distance measures tailored specifically for high-dimensional settings.
+
+## Why `distanceHD`?
+
+Traditional distance metrics such as Euclidean or Mahalanobis distances often falter in high-dimensional spaces. These conventional methods, while effective in lower dimensions, struggle to detect meaningful clusters or outliers when faced with the complexity of high-dimensional data. This gap is particularly evident in fields like genomics, where the number of features (variables) often exceeds the number of samples.
+
+The `distanceHD` package introduces three innovative distance metrics designed for high-dimensional clustering and outlier detection: the centroid distance, ridge Mahalanobis distance, and maximal data piling (MDP) distance. Each of these metrics offers unique benefits, making them invaluable tools in the data scientist’s arsenal.
+
+## The Three Pillars of `distanceHD`
+
+### 1. Centroid Distance
+
+Centroid distance, also known as Euclidean distance, calculates the distance between the centers of two groups. It is a straightforward metric but can be limited in high-dimensional spaces with correlated variables. However, it remains effective when variables are uncorrelated.
+
+### 2. Ridge Mahalanobis Distance
+
+The ridge Mahalanobis distance introduces a ridge correction constant, alpha, to ensure the covariance matrix is invertible — a common issue in high-dimensional analysis due to singularity problems. This adjustment allows for a more stable calculation of distances, bridging the gap between the centroid and MDP distances. When alpha is large, the ridge Mahalanobis distance approximates the centroid distance, while a smaller alpha brings it closer to the MDP distance.
+
+### 3. Maximal Data Piling (MDP) Distance
+
+The MDP distance is perhaps the most novel of the three metrics. It computes the orthogonal distance between the affine spaces spanned by each class, offering a unique direction vector that maximizes the distance between class projections. This metric shines in situations with highly correlated variables, such as gene expression data, and is particularly effective for classification problems.
+
+## Practical Applications
+
+The `distanceHD` package is not just a theoretical construct; it has real-world applications in clustering, classification, and outlier detection. For instance, in the context of outlier identification, the MDP distance can effectively discern outliers by maximizing the projection distance in a unique direction. This capability is demonstrated through sequential simulations, such as gene expression data with multiple features and patients, where traditional metrics may fall short.
+
+In classification tasks, the MDP distance provides a high-dimensional, low-sample-size version of Fisher's discriminant analysis, offering a powerful tool for binary predictions, such as disease status classification.
+
+## Future Directions
+
+While the `distanceHD` package is a significant leap forward, Jung Ae Lee plans to expand its functionalities further. Upcoming updates will focus on improving outlier detection processes and incorporating additional distance metrics to enhance the package’s versatility and applicability in various high-dimensional contexts.
+
+## Conclusion
+
+The `distanceHD` package represents a significant advancement in the field of high-dimensional data analysis, offering robust tools for clustering, classification, and outlier detection. With its innovative metrics and practical applications, it is poised to become an essential resource for researchers and practitioners working with complex, high-dimensional datasets.
