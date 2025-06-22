@@ -1,0 +1,51 @@
+--- 
+title: "Model Evaluation: From Machine Learning to Generative AI" 
+unpublished: true 
+url: "https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/"
+description: "R/Medicine 2025 Keynote Day 2: Dr. Erin LeDell explores the evolution of AI evaluation from deterministic models to complex generative AI systems." 
+categories: [R/Medicine 2025, AI]
+author: "R Consortium" 
+image: "thumbnail-keynote-day2-model-evaluation-ledell.jpg" 
+image-alt: "From Machine Learning to Generative AI - Erin LeDell" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/Lq568n0pClc >}}
+
+# Exploring the Future of AI Evaluation with Dr. Erin LeDell at R/Medicine 2025
+
+As artificial intelligence evolves, so must the methodologies used to evaluate these systems. Dr. Erin LeDell, a prominent figure in the AI and R communities, addressed this critical transition in her keynote at R/Medicine 2025. Dr. LeDell, the Chief Scientist at Distributional, Inc. and founder of DataScientific, Inc., brings her extensive expertise to the forefront as she guides us through the intricate world of AI evaluation, moving from deterministic machine learning models to the more complex generative AI systems.
+
+## From Deterministic to Generative: A Paradigm Shift
+
+In traditional machine learning (ML), models are deterministic – given the same input, they produce the same output. This predictability provides a clear framework for evaluation metrics such as accuracy, precision, recall, and others familiar to statisticians and data scientists. However, with the rise of large language models (LLMs) and generative AI, this predictability is challenged. These systems introduce non-determinism, meaning outputs can vary even with identical inputs, necessitating new evaluation frameworks.
+
+Dr. LeDell emphasized that traditional accuracy-based metrics fall short when assessing generative AI systems. Instead, evaluation must consider coherence, consistency, and bias, along with the challenges of reproducibility in probabilistic AI systems. This shift leads to questions about how to ensure AI models are reliable and function as expected in real-world scenarios.
+
+## Dr. Erin LeDell's Journey with R and AI
+
+Dr. LeDell shared her journey from machine learning to generative AI, highlighting her longstanding experience with R. Since 2008, she has been deeply involved in machine learning, contributing to various R packages such as SuperLearner, Subsemble, and H2O, the latter of which she worked on extensively during her tenure at H2O.ai. Her work in AutoML led to the creation of the AutoML benchmark, setting standards for algorithm evaluation.
+
+Her transition into generative AI coincided with the advent of tools like ChatGPT, pushing her to explore new methods for evaluating these complex systems. Dr. LeDell's passion for using AI in healthcare was evident as she discussed her collaborations with medical companies, applying machine learning to tackle various health-related problems.
+
+## Evaluating Generative AI: New Approaches
+
+The talk delved into the architectural differences between traditional ML systems and modern AI applications, particularly generative AI systems. Dr. LeDell outlined the multi-component nature of these systems, where changes in one part can affect the whole, and the importance of monitoring these changes over time. She addressed the non-stationary behavior of generative AI, noting how external factors and updates from third-party providers can alter system performance.
+
+A significant challenge with generative AI is its inherent non-determinism. Unlike traditional ML models, generative AI requires novel evaluation metrics that account for variability in outputs. Dr. LeDell introduced several frameworks and tools aimed at assessing these systems, emphasizing the role of humans in the evaluation process. Humans provide essential oversight, creating "golden" datasets and evaluating outputs, though this process is not always scalable.
+
+## LLM as Judge: A New Standard
+
+One innovative approach Dr. LeDell highlighted is using LLMs themselves to evaluate AI outputs. This method involves deploying LLMs as judges to assess whether responses are correct, helpful, or safe. While this technique is automated and widely used, it presents challenges, such as potential biases if the same model is used for generation and evaluation. Dr. LeDell recommended using specialized LLMs designed for evaluation to mitigate these issues.
+
+## Practical Applications and Tools
+
+Dr. LeDell provided insights into practical applications of generative AI in healthcare, such as using LLMs for clinical note-taking and research acceleration. She described a retrieval-augmented generation (RAG) system for medical Q&A, which combines traditional information retrieval with generative capabilities, enriching AI responses with context from specialized knowledge bases.
+
+For those eager to explore AI evaluation further, Dr. LeDell pointed to several open-source tools, including the R package "vitals," a port of the Python library "inspect," developed by JJ Allaire. These tools provide a foundation for customizing evaluation metrics and integrating human oversight into the evaluation pipeline.
+
+## Conclusion
+
+Dr. LeDell's keynote at R/Medicine 2025 illuminated the evolving landscape of AI evaluation, underscoring the need for innovative methodologies to assess the next generation of AI models. Her insights into the intersection of AI and healthcare offer promising pathways for improving AI reliability and trustworthiness in critical applications.
+
+As the R community continues to embrace these advancements, Dr. LeDell's work encourages practitioners to think critically and creatively about AI evaluation.
