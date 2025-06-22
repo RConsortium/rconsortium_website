@@ -629,6 +629,57 @@
   <media:content url="https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/thumbnail-closing-remarks-day2-finalday-michael-kane.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>R/Medicine Day 1 Closing Remarks</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/rmedicine-closing-remarks/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tF2Vej2mTKQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="wrapping-up-day-one-of-rmedicine-2025-with-peter-higgins" class="level1">
+<h1>Wrapping Up Day One of R/Medicine 2025 with Peter Higgins</h1>
+<p>As we draw the curtains on Day 1 - after 3 days of Demos and Workshops, the events shifted to Keynotes, Talks and Lightning Talks - of the R/Medicine 2025 conference, Peter Higgins from the University of Michigan delivered the closing remarks, emphasizing the wealth of knowledge shared throughout the day and the excitement building up for what’s to come.</p>
+<p>The event has showcased the immense potential of the R language in revolutionizing medicine and healthcare.</p>
+<section id="highlights-of-day-one" class="level2">
+<h2 class="anchored" data-anchor-id="highlights-of-day-one">Highlights of Day One</h2>
+<p>The day was packed with a myriad of topics that span across different facets of medicine and technology. From the integration of artificial intelligence in medicine to ensuring data consistency through harmonization and controlled vocabularies, the sessions were nothing short of enlightening. Participants had the opportunity to delve into statistical consistency with CIS ARS and the validation of Shiny apps, alongside discussions on Shiny lifecycle management.</p>
+<p>One of the standout aspects of the day was the focus on reproducibility, emphasized through talks on the <code>rum</code> package. This package is pivotal for ensuring that medical research and practices are backed by reproducible and verifiable data. Furthermore, R’s capabilities in handling deep learning were highlighted, with particularly engaging discussions on applications in health, including asthma and other medical conditions.</p>
+<p>The day also featured presentations from the winners of the R/Medicine data challenge. These individuals and teams showcased innovative solutions that have the potential to transform healthcare practices. The challenge not only sparked creativity but also encouraged collaboration among R enthusiasts, setting the stage for future competitions.</p>
+</section>
+<section id="looking-forward-to-day-two" class="level2">
+<h2 class="anchored" data-anchor-id="looking-forward-to-day-two">Looking Forward to Day Two</h2>
+<p>As the conference gears up for Day Two of talks and its final day, anticipation is high. The keynote will focus on model evaluation, a critical aspect of healthcare analytics that ensures the accuracy and reliability of predictive models. Attendees can also look forward to sessions on risk calculators and talks addressing nonprobability surveys, which are crucial in understanding population health dynamics.</p>
+<p>The conference will also celebrate diversity and inclusivity with the rainbowR Community session, bringing to light the importance of diverse perspectives in the R community. Furthermore, the role of accelerometry as a biomarker will be explored, presenting new avenues for health monitoring and diagnosis.</p>
+<p>The excitement doesn’t stop there. The introduction of a new package, <code>redquack</code>, which combines REDCap and DuckDB, is set to be a game-changer for data management in healthcare research. Additional sessions will cover a variety of packages, including <code>ggswim</code>, <code>kidney.epi</code>, <code>nix</code>, and <code>distanceHD</code>.</p>
+<p>In the lightning talks, topics will range from bootstrapping to NHIS data, culminating in a deep dive into survival analysis with computation through deep learning. These sessions promise to be a treasure trove of insights and innovations.</p>
+</section>
+<section id="community-engagement-and-interactivity" class="level2">
+<h2 class="anchored" data-anchor-id="community-engagement-and-interactivity">Community Engagement and Interactivity</h2>
+<p>An exciting update for Day One is the activation of chat sessions during presentations. This feature is expected to enhance interactivity, allowing participants to engage in discussions, ask questions, and share their experiences in real-time.</p>
+<p>This type of collaborative environment is one of the hallmarks of the R/Medicine conference, fostering a sense of community among attendees.</p>
+</section>
+<section id="closing-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="closing-thoughts">Closing Thoughts</h2>
+<p>Peter Higgins’ closing remarks for Day One encapsulated the essence of the R/Medicine 2025 conference — a celebration of knowledge, innovation, and community. The event has provided a platform for sharing groundbreaking ideas and tools that have the potential to redefine medicine and healthcare practices.</p>
+<p>As the conference concludes, it is hoped that participants are inspired to continue exploring and leveraging the power of R in their work. Whether through participating in future data challenges or developing new packages and tools, the possibilities are endless.</p>
+<p>In case you missed any of the sessions, fear not! Almost all the content is recorded and will be available on the <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">R Consortium’s YouTube channel</a>. This ensures that the learning and inspiration derived from R/Medicine 2025 can continue to reach a wider audience, fostering growth and development within the R community.</p>
+<p>For more information on the event and to access resources, visit the official <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine website</a> and the <a href="https://www.r-consortium.org/">R Consortium site</a>.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Events</category>
+  <guid>https://r-consortium.org/posts/rmedicine-closing-remarks/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/rmedicine-closing-remarks/thumbnail-closing-remarks-day1-higgins.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Swimmer Plots with ggswim</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/swimmer-plots-with-ggswim/</link>
@@ -1123,63 +1174,6 @@
   <guid>https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/</guid>
   <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/thumbnail-MIIPW-bhrigu.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>How are Vaccination Rates and Case Rates Changing for Measles in 2025?</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Yk7jGc-E0Ys" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="celebrating-analytical-excellence-rmedicine-2025-professional-category-winners" class="level1">
-<h1>Celebrating Analytical Excellence: R/Medicine 2025 Professional Category Winners</h1>
-<p>The R/Medicine 2025 conference was marked by a remarkable array of data-driven insights, with the Professional Category of the data challenge spotlighting innovative work in the field. Harrison Plate and Shonushka Sawant from RSC Statistical Consulting delved into the dynamics of measles vaccination rates and case numbers across the United States and globally. Their entry not only earned them the top spot in the competition but also shed light on critical public health challenges and opportunities for intervention.</p>
-<section id="an-overview-of-the-rmedicine-data-challenge" class="level2">
-<h2 class="anchored" data-anchor-id="an-overview-of-the-rmedicine-data-challenge">An Overview of the R/Medicine Data Challenge</h2>
-<p>The data challenge was an open invitation to participants to explore the evolving landscape of measles vaccination and case rates, using a diverse set of public datasets. The competition sought to evaluate the quality of analyses presented through Quarto documents, with a keen focus on tables and visualizations that tell a comprehensive data story.</p>
-</section>
-<section id="a-deep-dive-into-measles-vaccination-trends" class="level2">
-<h2 class="anchored" data-anchor-id="a-deep-dive-into-measles-vaccination-trends">A Deep Dive into Measles Vaccination Trends</h2>
-<p>Harrison and Shonushka’s presentation began by framing the current measles outbreak in the United States, which originated in an undervaccinated community in Texas and has since spread to multiple states and even neighboring countries. Despite measles being declared eliminated in the U.S. in 2000, recent years have seen its resurgence, largely attributable to declining vaccination rates.</p>
-<p>Through meticulous data analysis, they highlighted a worrying trend: since 2020, median MMR (measles, mumps, and rubella) coverage across U.S. states has fallen below the 95% threshold required for herd immunity. This decline corresponds with the onset of the COVID-19 pandemic, an event that significantly disrupted healthcare access and vaccination routines.</p>
-</section>
-<section id="illustrating-change-visualizing-vaccination-data" class="level2">
-<h2 class="anchored" data-anchor-id="illustrating-change-visualizing-vaccination-data">Illustrating Change: Visualizing Vaccination Data</h2>
-<p>One of the strengths of their work was the effective use of visualizations to illustrate changes over time. Maps displaying MMR coverage across different years clearly showed the transition of states from meeting herd immunity thresholds to falling below critical levels. In 2023, a notable number of states reported coverage below 90%, underscoring the urgency of addressing vaccination gaps.</p>
-<p>The analysis also delved into the factors contributing to these declines, such as healthcare worker shortages, increased poverty, and familial instability—all exacerbated by the pandemic. Their insights into socio-economic factors provided a comprehensive backdrop for understanding the broader implications of vaccination trends.</p>
-</section>
-<section id="global-perspective-and-future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="global-perspective-and-future-directions">Global Perspective and Future Directions</h2>
-<p>Beyond the U.S., Harrison and Shonushka extended their analysis to a global context, examining measles case trends in regions like Africa. By fitting statistical models to historical data, they offered forecasts that capture both seasonal patterns and recent fluctuations. Their work demonstrated the complex interplay between vaccination coverage and case rates, revealing that even small declines in coverage can lead to significant increases in measles cases.</p>
-<p>In closing, their presentation emphasized three key takeaways:</p>
-<ol type="1">
-<li>The persistent decline in U.S. MMR coverage and its public health implications.</li>
-<li>The disparity between absolute case counts and relative growth rates in different regions.</li>
-<li>The inverse correlation between vaccination coverage and measles incidence, highlighting the critical need for maintaining high vaccination rates.</li>
-</ol>
-</section>
-<section id="looking-forward-plans-for-further-research" class="level2">
-<h2 class="anchored" data-anchor-id="looking-forward-plans-for-further-research">Looking Forward: Plans for Further Research</h2>
-<p>Harrison and Shonushka expressed plans to investigate substate data and explore international comparisons between countries with different healthcare systems. Their commitment to continuing this line of inquiry underscores the importance of data-driven approaches in addressing public health challenges.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Harrison Plate and Shonushka Sawant’s innovative analysis and thoughtful presentation has provided a roadmap for future research and intervention strategies. As the R community continues to grow and evolve, research like theirs highlight the profound impact of collaborative, data-driven exploration.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Epidemiology</category>
-  <guid>https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/</guid>
-  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/thumbnail-professional-competition-winner.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
