@@ -1,0 +1,46 @@
+--- 
+title: "Bootstrap inference made easy: p-values and confidence intervals in one line of code" 
+unpublished: true 
+url: "https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/"
+description: "Learn how to simplify your use of bootstrap methods in R with the boot.pval package for more reliable statistical inference." 
+categories: [R/Medicine 2025, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-bootstrap-inference-thulin.png" 
+image-alt: "Bootstrap inference made easy - Måns Thulin" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/EeAtvWF3twA >}}
+
+### Simplifying Bootstrap Inference in R with the boot.pval Package
+
+In the realm of statistical analysis, ensuring the reliability of p-values and confidence intervals is paramount, especially when classical assumptions about data distribution do not hold. This is where bootstrap methods come into play, offering a robust alternative by relying on data-driven, empirical distributions rather than theoretical assumptions. Despite their utility, bootstrap methods are often underutilized due to perceived complexities in implementation. However, with advancements in R packages like `boot.pval`, bootstrap inference has become more accessible than ever.
+
+#### The Bootstrap Approach
+
+Introduced by Bradley Efron in 1979, the bootstrap method revolutionizes statistical inference by focusing on the empirical distribution of the data itself. Unlike traditional methods that start with a distributional assumption (e.g., normality), bootstrap methods begin with the actual data distribution. By resampling from this empirical distribution and calculating the test statistic repeatedly, we obtain an accurate approximation of its distribution. This allows for the computation of p-values and confidence intervals without reliance on stringent assumptions about data normality.
+
+#### The Role of boot.pval
+
+The `boot.pval` package in R, developed by Måns Thulin from Thulin Consulting AB, simplifies the process of applying bootstrap methods to a variety of statistical tests and models. From t-tests to regression coefficients in linear models, GLMs, survival models, and mixed models, `boot.pval` enables users to compute bootstrap p-values and confidence intervals efficiently—often with just a single line of code.
+
+#### Key Features and Benefits
+
+- **Ease of Use**: The package allows for straightforward computation of bootstrap p-values and confidence intervals without needing to write complex custom functions.
+- **Integration**: Built on top of established R packages like `boot`, `car`, `lme4`, and `survival`, it ensures compatibility and extends functionality.
+- **Customizability**: Users can create custom bootstrap tests for unique statistical measures.
+- **Consistency**: It ensures that the derived p-values and confidence intervals are consistent, addressing discrepancies often found in other implementations.
+
+#### Practical Application: A Case Study
+
+Using the sleep dataset in R, Thulin demonstrates how to replace a classic t-test with a bootstrap t-test using `boot.pval`. This approach not only simplifies the code but also enhances the robustness of the test against non-normal data distributions. The output from `boot.pval` mirrors that from traditional tests but is derived from a more reliable, data-centric approach.
+
+#### Extending Beyond Simple Tests
+
+The `boot.pval` package is not limited to simple t-tests; it supports complex models including linear regressions and survival models. By fitting a model using standard R functions like `lm()` or `glm()`, users can then apply `boot.summary()` from `boot.pval` to obtain detailed summaries including estimates, confidence intervals, and p-values—all bootstrapped for enhanced reliability.
+
+#### Conclusion
+
+Bootstrap methods provide a powerful tool for statistical inference when traditional assumptions do not hold. With packages like `boot.pval`, R users can integrate robust bootstrap techniques into their daily analysis workflows effortlessly. Whether dealing with straightforward comparisons or complex multivariable models, `boot.pval` offers a user-friendly yet powerful solution for making informed statistical decisions based on solid empirical evidence.
+
+For those interested in delving deeper into bootstrap methods or seeking practical applications within R, exploring further resources such as [Thulin's book "Modern Statistics with R"](https://www.modernstatisticswithr.com/) or foundational texts on bootstrap methodology can be incredibly beneficial.
