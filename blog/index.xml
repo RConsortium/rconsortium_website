@@ -708,6 +708,70 @@
   <media:content url="https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Refactor or Preserve? Challenging ‘If It Ain’t Broken, Don’t Fix It’ Mindset in Shiny App Lifecycle</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9agO0o2gP68" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="refactor-or-preserve-challenging-the-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle" class="level1">
+<h1>Refactor or Preserve: Challenging the “If It Ain’t Broken, Don’t Fix It” Mindset in Shiny App Lifecycle</h1>
+<p>In the ever-evolving landscape of technology, even well-crafted software solutions eventually face obsolescence. This reality brings forth a critical question for developers: to refactor or not? Dror Berel, an independent consultant with a diverse background in statistics, R, and the pharmaceutical industry, delves into this conundrum using the Pharmaverse/Teal framework as a case study. His insights shed light on the benefits and risks of transitioning a functional Shiny application to a modern framework.</p>
+<section id="the-lifecycle-of-software-and-the-scope-creep-phenomenon" class="level2">
+<h2 class="anchored" data-anchor-id="the-lifecycle-of-software-and-the-scope-creep-phenomenon">The Lifecycle of Software and the Scope Creep Phenomenon</h2>
+<p>Throughout his career, Dror Berel has navigated through various programming environments—from SAS and S+ to R, becoming an early adopter of R web applications. His journey has led him through the intricate process of managing messy data and transforming it into meaningful insights. A recurring challenge in this process is the phenomenon of “scope creep,” where the project’s scope gradually expands beyond its original intent. This often results in unwieldy, spaghetti-like code that demands constant patching.</p>
+<p>Dror defines scope creep as the uncontrolled or gradual expansion of project scope, adding features or requirements without corresponding adjustments in resources. This incremental approach can lead to inefficiencies and the need for a complete overhaul. Dror argues that instead of perpetually patching code, building a better solution from scratch can be a more sustainable approach.</p>
+</section>
+<section id="the-innovation-adoption-curve-in-r-frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="the-innovation-adoption-curve-in-r-frameworks">The Innovation Adoption Curve in R Frameworks</h2>
+<p>Dror introduces the concept of the product adoption lifecycle, also known as the innovation adoption curve, to illustrate the evolution of R frameworks. Initially, solutions like R Base were created to address specific pain points. Over time, as these solutions gained popularity, they attracted early adopters, eventually reaching a broader audience. However, with the emergence of new challenges, frameworks like Tidyverse and Shiny were developed to address these issues.</p>
+<p>Dror highlights the current landscape where modern frameworks, such as Teal and Rhino, are gaining traction, offering more advanced solutions for complex Shiny applications. He emphasizes the importance of understanding when to embrace these new frameworks and when to preserve existing solutions.</p>
+</section>
+<section id="the-case-for-refactoring-when-and-why" class="level2">
+<h2 class="anchored" data-anchor-id="the-case-for-refactoring-when-and-why">The Case for Refactoring: When and Why?</h2>
+<p>Refactoring is an integral part of the software lifecycle, but it requires careful consideration. Dror outlines scenarios when refactoring is justified:</p>
+<ol type="1">
+<li><p><strong>Deprecated Dependencies</strong>: When existing dependencies become outdated or unsupported, refactoring becomes necessary to ensure continued functionality.</p></li>
+<li><p><strong>Scope Creep</strong>: If the current scope of the project exceeds its original limitations, refactoring can provide a more efficient and sustainable solution.</p></li>
+<li><p><strong>Critical Pain Points</strong>: When the existing framework cannot adequately address a critical issue, adopting a new solution may be warranted.</p></li>
+<li><p><strong>Trust in New Solutions</strong>: Refactoring should be pursued when there is confidence in the new solution’s longevity and support.</p></li>
+</ol>
+</section>
+<section id="the-role-of-modern-frameworks-in-shiny-applications" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-modern-frameworks-in-shiny-applications">The Role of Modern Frameworks in Shiny Applications</h2>
+<p>Dror delves into specific frameworks that have emerged to address the complexities of Shiny applications. He highlights the Pharmaverse open-source community’s ecosystem, particularly the Teal framework, which simplifies the development of Shiny apps by leveraging modules. This modular approach allows developers to focus on high-level objectives rather than getting bogged down in low-level details.</p>
+<p>In addition to Teal, Dror mentions the Rhino framework, which provides recommendations for organizing files within an app, enhancing maintainability. Together with the Box package, these frameworks offer clear code quality, automation, and more, empowering developers to create robust Shiny applications.</p>
+</section>
+<section id="when-not-to-refactor-preserving-stability" class="level2">
+<h2 class="anchored" data-anchor-id="when-not-to-refactor-preserving-stability">When Not to Refactor: Preserving Stability</h2>
+<p>While refactoring offers numerous benefits, there are scenarios where it may not be necessary or advisable:</p>
+<ol type="1">
+<li><p><strong>Legacy Methodology</strong>: If replicating legacy methodologies is challenging and not well-understood, preservation may be the safer option.</p></li>
+<li><p><strong>Overkill Features</strong>: Introducing features that do not significantly enhance functionality may lead to unnecessary complexity.</p></li>
+<li><p><strong>Heavy Dependencies</strong>: Modern frameworks can introduce dependencies that may not align with project objectives, warranting a cautious approach.</p></li>
+</ol>
+</section>
+<section id="conclusion-balancing-innovation-and-stability" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-balancing-innovation-and-stability">Conclusion: Balancing Innovation and Stability</h2>
+<p>In conclusion, the decision to refactor or preserve an existing solution hinges on a variety of factors, including the project’s scope, the availability of modern frameworks, and the specific challenges faced. Dror Berel emphasizes the importance of being strategic and intentional in these decisions, weighing the risks and benefits to ensure long-term success.</p>
+<p>For the R community, embracing new frameworks and technologies is essential for staying at the forefront of innovation. However, it is equally important to recognize when stability and preservation are the most prudent paths forward. By striking this balance, developers can ensure the longevity and effectiveness of their Shiny applications, ultimately delivering greater value to users and stakeholders.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/thumbnail-refactoring-dror.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>riskcalc.org: A Repository of Risk Calculators for Medical Decision Making</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</link>
@@ -1113,68 +1177,6 @@
   <guid>https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/</guid>
   <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/thumbnail-redquack.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>AOUSDOHtools: R Package for Social Determinants of Health Survey data in All of Us Research Program</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/nQum-dWBM3I" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="unraveling-the-aousdohtools-package-empowering-research-in-social-determinants-of-health" class="level1">
-<h1>Unraveling the AOUSDOHtools Package: Empowering Research in Social Determinants of Health</h1>
-<p>Hello, R community! Today we dive into the innovative R package, AOUSDOHtools, designed to streamline the analysis of Social Determinants of Health (SDOH) data. This package, presented by Zhirui Deng, a biostatistician from the University of Pittsburgh School of Nursing, is a game-changer for researchers working within the All of Us Research Program. Let’s explore how this tool enhances research efforts in health equity.</p>
-<section id="understanding-the-all-of-us-research-program" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-all-of-us-research-program">Understanding the All of Us Research Program</h2>
-<p>The All of Us Research Program, an initiative by the National Institutes of Health (NIH), aims to gather comprehensive data from over a million participants across the United States. This vast data collection includes health records, lab results, and survey responses, focusing significantly on health equity by enrolling participants traditionally underrepresented in research. The diversity and complexity of this data present unique challenges, particularly when it comes to analyzing SDOH data.</p>
-</section>
-<section id="challenges-with-sdoh-data" class="level2">
-<h2 class="anchored" data-anchor-id="challenges-with-sdoh-data">Challenges with SDOH Data</h2>
-<p>SDOH surveys collect detailed information on non-clinical factors impacting health, such as housing, education, stress, and social support. While invaluable, this data often comes in a raw, messy format, spread across multiple rows per participant, and lacking a built-in scoring system. Researchers face the daunting task of manually cleaning and computing these variables for analysis, a process fraught with potential inconsistencies.</p>
-</section>
-<section id="introducing-aousdohtools-the-r-package" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-aousdohtools-the-r-package">Introducing AOUSDOHtools: The R Package</h2>
-<p>To address these challenges, Dre Dong and the team developed the AOUSDOHtools R package. This tool automates the entire process of recoding, scoring, and outputting clean, personal variables ready for analysis. Based on a user guide by Dr.&nbsp;Koleck and colleagues (2024), the package standardizes scoring logic across 14 SDOH constructs, such as Neighborhood Cohesion, Social Support, and Perceived Stress.</p>
-<p>The package operates seamlessly within the All of Us Researcher Workbench, a secure cloud-based platform. It supports both RStudio and Jupyter environments, ensuring flexibility and ease of use for researchers. The package’s vibrant hex sticker, featuring symbols of housing, education, food, and income, embodies key SDOH components and adds a touch of whimsy for sticker enthusiasts.</p>
-</section>
-<section id="how-aousdohtools-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-aousdohtools-works">How AOUSDOHtools Works</h2>
-<p>The package includes 30 functions for scoring 14 constructs across various SDOH domains, such as Neighborhood Cohesion, Neighborhood Disorder, Food Insecurity, Housing Insecurity, and Housing Quality. Each construct is thoughtfully organized, with some offering sub-scores for more granular analysis.</p>
-<p>The workflow is simple: load the package and your SDOH survey data, and call one of the scoring functions like <code>calculate_cohesion</code> or <code>calculate_disorder</code>. The function outputs a tidy dataset—one row per person with the computed score. This straightforward process eliminates the need for manual data wrangling, allowing researchers to focus on analysis.</p>
-</section>
-<section id="a-peek-inside-the-scoring-functions" class="level2">
-<h2 class="anchored" data-anchor-id="a-peek-inside-the-scoring-functions">A Peek Inside the Scoring Functions</h2>
-<p>Take, for instance, the <code>calculate_cohesion</code> function. It extracts neighborhood-related questions, maps responses from “strongly agree” to “strongly disagree,” averages them, and returns a clean cohesion score for each participant. This automation relieves researchers from the burden of writing complex scoring algorithms, promoting consistency and reproducibility.</p>
-</section>
-<section id="staying-current-and-collaborative" class="level2">
-<h2 class="anchored" data-anchor-id="staying-current-and-collaborative">Staying Current and Collaborative</h2>
-<p>Released on March 26 and available on CRAN and GitHub, AOUSDOHtools is continuously updated to reflect changes in the All of Us platform. The development team welcomes feedback, feature requests, and collaboration ideas via email or GitHub issues. This open development approach fosters a thriving research community.</p>
-</section>
-<section id="why-aousdohtools-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-aousdohtools-matters">Why AOUSDOHtools Matters</h2>
-<p>By making SDOH data easier to use, share, and reproduce, AOUSDOHtools lays the groundwork for robust research in health equity. The package empowers researchers to explore how social factors like living conditions and social support influence health outcomes, aligning with the All of Us program’s mission.</p>
-<p>Researchers can become registered All of Us researchers, access the survey data via the Researcher Workbench, and install the package from CRAN or GitHub. This accessibility encourages diverse research efforts and collaborations within the R community.</p>
-</section>
-<section id="engage-with-aousdohtools" class="level2">
-<h2 class="anchored" data-anchor-id="engage-with-aousdohtools">Engage with AOUSDOHtools</h2>
-<p>For those eager to contribute, the development team appreciates input via GitHub issues or direct email communication. They are open to feedback and committed to refining the package to meet the evolving needs of the research community.</p>
-<p>In conclusion, AOUSDOHtools is a testament to the power of R in advancing research on social determinants of health. It simplifies complex data processes, enabling researchers to focus on impactful analyses and contribute to the broader goal of health equity. Thanks to Dre Dong and the development team for their dedication to this vital work.</p>
-<p>For more information and to explore the package, visit the <a href="https://github.com/zhd52/AOUSDOHtools">GitHub repository</a> or <a href="https://cran.r-project.org/package=AOUSDOHtools">CRAN page</a>.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/</guid>
-  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/aousdohtools-r-package-for-social-determinants-of-health-survey-data-in-all-of-us-research-program/thumbnail-AOUSDOHtools-deng.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
