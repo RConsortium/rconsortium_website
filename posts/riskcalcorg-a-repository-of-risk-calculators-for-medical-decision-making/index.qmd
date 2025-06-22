@@ -1,0 +1,55 @@
+--- 
+title: "riskcalc.org: A Repository of Risk Calculators for Medical Decision Making" 
+unpublished: true 
+url: "https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/"
+description: "Exploring riskcalc.org, a platform for clinical risk calculators using R, Shiny, and open-source tools." 
+categories: [R/Medicine 2025, Healthcare, Insurance/Risk]
+author: "R Consortium" 
+image: "thumbnail-riskcalc.png" 
+image-alt: "riskcalc.org, a platform for clinical risk calculators - Alex Zajichek" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/4mo5V_rjUhM >}}
+
+# Enhancing Clinical Decision-Making with Riskcalc.org
+
+In the rapidly evolving landscape of healthcare, the fusion of data science and clinical practice is creating unprecedented opportunities for personalized medicine. At the forefront of this intersection is [riskcalc.org](https://riskcalc.org/), a pioneering platform developed to aid clinicians and patients in making informed medical decisions. Alex Zajichek, a research data scientist at the Cleveland Clinic, recently provided an insightful overview of this platform at R/Medicine 2025, highlighting its capabilities, infrastructure, and future directions.
+
+## The Genesis of Riskcalc.org
+
+Riskcalc.org emerged from the Cleveland Clinic's Department of Quantitative Health Sciences, a hub of over 100 statisticians, data scientists, and researchers. This department is dedicated to providing quantitative support across various research activities, from clinical trials to precision medicine. The platform was conceptualized to serve as a free, accessible resource for clinicians and patients, facilitating individualized medical decision-making through a collection of predictive models.
+
+## Core Functionality and Infrastructure
+
+At its core, riskcalc.org hosts a suite of clinical risk calculators, each designed as a standalone R Shiny application. These calculators are predominantly regression models derived from published research studies. The platform garners significant engagement, with a monthly user base of 10,000 to 15,000.
+
+The development process involves creating applications locally using R and Shiny. The models are integrated into the applications either as stored R data objects or by hardcoding them directly into the app's code. For transparency, the code is pushed to GitHub, allowing users to inspect the application's backend functionality. The live interaction with riskcalc.org occurs via an open-source Shiny server hosted on AWS, a cost-effective infrastructure primarily incurring costs for compute resources.
+
+## Recent Developments and Enhancements
+
+The platform has seen several recent enhancements. All source codes for the applications are now publicly accessible on the department's GitHub page, with each application featuring a link to its source code. The homepage of riskcalc.org has undergone a redesign to improve user interface and navigation, with icons representing different disease areas leading users to relevant risk calculators.
+
+Moreover, an R package has been developed to streamline the creation of risk calculators. The package's main function, `risk_calculator`, allows users to generate a directory containing application files preconfigured with standard boilerplate elements. Users can then customize these files with specific model details, facilitating the rapid development of new calculators.
+
+## Future Directions
+
+Looking forward, several key areas for development and improvement have been identified:
+
+1. **Integration and Workflow Enhancement**: There is a push to more formally integrate GitHub into the workflow through CI/CD processes, ensuring that the code on GitHub is directly connected to the live website. This integration would aid in managing package versions and R itself on the server, mitigating compatibility issues during application development.
+
+2. **Standardization and Expansion**: Efforts are underway to generalize the concept of a risk calculator to include not just regression models but any mathematical object that predicts clinical outcomes, such as machine learning models. A standardized framework is being sought to power the backend consistently, regardless of model methodology.
+
+3. **Model Monitoring and Updating**: The team is exploring ways to monitor model performance over time, beyond the point of initial development. This ongoing evaluation would ensure that models remain relevant and accurate in clinical settings.
+
+4. **Broader Community and Research Ecosystem**: Riskcalc.org aims to become a one-stop shop for clinical risk prediction. This vision includes fostering community involvement for model validation and performance ranking, developing APIs for programmatic access to model outputs, and creating a research ecosystem to integrate and compare various models for improved clinical predictions.
+
+## Acknowledgements
+
+The platform has been a collaborative effort, with contributions from numerous co-developers and principal investigators. Special acknowledgment is given to Mike Kattan, the former department chair and a world-renowned expert in clinical risk prediction, whose vision and leadership were instrumental in the creation of riskcalc.org.
+
+## Conclusion
+
+Riskcalc.org represents a significant stride towards integrating data science with clinical practice, providing a robust tool for personalized medical decision-making. With its ongoing developments and future plans, the platform is poised to enhance its impact and utility in the healthcare domain.
+
+For more information on this talk and to access the slides, visit Alex Zajichek's [presentation](https://www.zajichekstats.com/presentations/riskcalc-a-repository-of-risk-calculators-for-medical-decision-making/).
