@@ -525,6 +525,60 @@
   <media:content url="https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/thumbnail-optimizing-buenos-aires.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Preprocessing Electronic Health Records for Analysis-Ready Data in an Asthma Cohort</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/EytsZg9Rqkg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="pre-processing-electronic-health-records-for-asthma-cohort-analysis-with-r" class="level1">
+<h1>Pre-processing Electronic Health Records for Asthma Cohort Analysis with R</h1>
+<p>Electronic health record (EHR) data has emerged as a critical tool for conducting large-scale biomedical research. However, the complexity, inconsistencies, and potential inaccuracies within EHR data pose significant challenges for researchers. Kimberly Lactaoen, a staff scientist at the University of Pennsylvania, sheds light on these challenges and offers solutions through her presentation at R/Medicine 2025. By utilizing the tidyverse suite in R, she demonstrates how to transform perplexing EHR data into analysis-ready datasets, focusing on an asthma cohort study.</p>
+<section id="understanding-the-intricacies-of-ehr-data" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-intricacies-of-ehr-data">Understanding the Intricacies of EHR Data</h2>
+<p>EHR data encompasses vast amounts of patient information, providing a realistic representation of patient populations. Despite its potential, EHR data is riddled with complexities, including inconsistent data entries, diverse formats, and missing values, which can misrepresent a patient’s true health status. Lactaoen’s presentation focuses on the importance of understanding how this data is collected to streamline exploratory analyses and reduce scripting stages.</p>
+<section id="key-challenges-in-ehr-data-cleaning" class="level3">
+<h3 class="anchored" data-anchor-id="key-challenges-in-ehr-data-cleaning">Key Challenges in EHR Data Cleaning</h3>
+<ol type="1">
+<li><p><strong>Encounter-Level vs.&nbsp;Patient-Level Data</strong>: One of the initial hurdles is discerning between encounter-level and patient-level data. For instance, demographic details like sex, race, and ethnicity remain constant across encounters, while variables like insurance and BMI may vary. Lactaoen highlights the significance of understanding data collection methods to efficiently script for the most recent demographic entries using functions such as <code>as_date()</code> from the <code>lubridate</code> package.</p></li>
+<li><p><strong>Conflicting Patient Information</strong>: EHR datasets often contain conflicting information, especially in demographic variables like race and ethnicity. Lactaoen’s approach involved using the <code>case_when()</code> function from <code>dplyr</code> to resolve conflicts, ensuring consistent and distinct race and ethnicity variables.</p></li>
+<li><p><strong>Inconsistent Diagnostic Codes</strong>: Diagnostic code descriptions can vary, complicating the grouping of patients based on diagnoses. Lactaoen addresses this by joining diagnostic codes with descriptions from the Center for Medicare and Medicaid Services using <code>left_join()</code>, ensuring consistency across datasets.</p></li>
+<li><p><strong>Medication Relevance for Asthma Treatment</strong>: Selecting relevant medications for asthma treatment from EHR data is another challenge. Lactaoen’s team collaborated with asthma specialists to filter relevant medications, leveraging Excel and the <code>map_dfr()</code> function from the <code>purrr</code> package to compile a comprehensive list for analysis.</p></li>
+<li><p><strong>Laboratory Test Result Variability</strong>: Laboratory test results, such as eosinophil data, often feature varying units of measurement. Lactaoen utilized the <code>case_when()</code> function to standardize these units, though issues like missing unit information remain a work in progress.</p></li>
+</ol>
+</section>
+</section>
+<section id="strategies-for-effective-ehr-data-pre-processing" class="level2">
+<h2 class="anchored" data-anchor-id="strategies-for-effective-ehr-data-pre-processing">Strategies for Effective EHR Data Pre-processing</h2>
+<p>Lactaoen’s presentation offers several strategies for overcoming these challenges:</p>
+<ul>
+<li><strong>Understand Data Collection</strong>: Familiarizing oneself with the data collection process is crucial for reducing exploratory analysis and scripting efforts.</li>
+<li><strong>Identify and Resolve Conflicts</strong>: Be vigilant about conflicting information, which may not accurately reflect a patient’s health status.</li>
+<li><strong>Collaborate with Domain Experts</strong>: Engaging with specialists, such as asthma experts, ensures that the data used is relevant and accurate for the study.</li>
+<li><strong>Simplify and Standardize Data</strong>: Wherever possible, simplify data entries and standardize units to facilitate easier analysis.</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Lactaoen’s insights into EHR data pre-processing underscore the importance of meticulous data cleaning and transformation. By leveraging R’s tidyverse suite, researchers can effectively prepare EHR data for analysis, paving the way for impactful biomedical research. Her emphasis on understanding data collection, resolving conflicts, collaborating with experts, and standardizing data provides a robust framework for researchers embarking on EHR-based studies.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <category>Clinial Research</category>
+  <guid>https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/thumbnail-reprocessing-ehs-lactaoen.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>rainbowR: A community for LGBTQ+ folks who code in R</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/</link>
@@ -1110,62 +1164,6 @@
   <guid>https://r-consortium.org/posts/examining-factors-associated-with-depressive-severity-among-cancer-survivors/</guid>
   <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/examining-factors-associated-with-depressive-severity-among-cancer-survivors/thumbnail-examining-factors-williams.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>kidney.epi R Package for Facilitating Research in Diabetes, Kidney, Heart, and Other Diseases</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pE3iZBegdr0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="empowering-chronic-kidney-disease-research-with-the-kidney.epi-r-package-an-insight-from-rmedicine-2025" class="level1">
-<h1>Empowering Chronic Kidney Disease Research with the <code>kidney.epi</code> R Package: An Insight from R/Medicine 2025</h1>
-<p>Chronic Kidney Disease (CKD) is an escalating global health issue, affecting approximately 700 million individuals worldwide and leading to 3.2 million deaths annually. Despite its prevalence, CKD is often overlooked in health prevention programs and clinical trials, resulting in a significant awareness gap. Alarmingly, only 10-20% of those with CKD know they have the condition. Early detection and management are crucial to mitigate the progression to end-stage renal disease and prevent further complications.</p>
-<section id="the-growing-ckd-challenge" class="level2">
-<h2 class="anchored" data-anchor-id="the-growing-ckd-challenge">The Growing CKD Challenge</h2>
-<p>The prevalence of CKD has surged nearly twofold over the past three decades, now affecting nearly 10% of the global population. CKD is more common than cardiovascular diseases, diabetes, and chronic respiratory conditions. Age-standardized rates for CKD have increased, unlike many other non-communicable diseases where rates have declined. This trend suggests a future increase in CKD cases. High-risk groups, such as individuals with diabetes, hypertension, and rheumatoid arthritis, show CKD prevalence rates ranging from 20% to 60%. Moreover, about 40% of those aged 65 and older live with CKD, underscoring its significance in geriatric care.</p>
-<p>CKD’s impact extends to pharmacotherapy, as kidneys play a pivotal role in drug elimination. Reduced kidney function necessitates dosage adjustments or contraindications for certain medications. Despite CKD’s high prevalence, patients with the condition are often excluded from clinical trials. A staggering 80% of cardiovascular medication trials exclude CKD patients, including 40% that exclude early-stage CKD patients.</p>
-</section>
-<section id="world-health-organizations-response" class="level2">
-<h2 class="anchored" data-anchor-id="world-health-organizations-response">World Health Organization’s Response</h2>
-<p>The World Health Organization recently adopted a kidney health resolution to enhance prevention and control strategies for kidney diseases. This development is promising, highlighting the growing recognition of CKD’s global health burden.</p>
-</section>
-<section id="introducing-the-kidney.epi-r-package" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-the-kidney.epi-r-package">Introducing the <code>kidney.epi</code> R Package</h2>
-<p>To address the research gap in CKD, the <code>kidney.epi</code> R package, developed by <a href="https://scientific-tools.org">Boris Bibkov</a>, offers a comprehensive toolkit for kidney-related data analysis. This package is a boon for researchers and data scientists, providing functions to calculate estimated glomerular filtration rate (eGFR) using multiple validated equations, categorize urine analysis results, and assign risk categories based on the KDIGO classification.</p>
-<section id="key-features-of-the-kidney.epi-package" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-of-the-kidney.epi-package">Key Features of the <code>kidney.epi</code> Package</h3>
-<ol type="1">
-<li><p><strong>eGFR Calculation</strong>: The package supports over 15 equations for calculating eGFR, including the widely used CKD-EPI equation, accommodating both serum creatinine and cystatin C markers for adults and children.</p></li>
-<li><p><strong>Kidney Transplantation Functions</strong>: It includes functions to calculate the Kidney Donor Profile Index (KDPI) and the Kidney Donor Risk Index (KDRI), crucial for transplantation research.</p></li>
-<li><p><strong>User-Friendly Design</strong>: The package offers flexible label handling, allowing researchers to use datasets without reformatting variables like sex or ethnicity. Functions accept user-defined labels and measurement units, making it adaptable to various datasets.</p></li>
-<li><p><strong>Automated Data Analysis</strong>: With the package, researchers can automate kidney-related calculations in screening programs, clinical trials, and observational studies, enhancing research accessibility and reproducibility.</p></li>
-</ol>
-</section>
-<section id="applications-beyond-ckd" class="level3">
-<h3 class="anchored" data-anchor-id="applications-beyond-ckd">Applications Beyond CKD</h3>
-<p>While the package is tailored for CKD research, its applications extend to other fields like diabetology, cardiology, and gerontology. Knowing eGFR is vital for monitoring medication appropriateness, particularly in high-risk groups.</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The <code>kidney.epi</code> R package is a valuable tool for CKD research and beyond, facilitating early detection and management strategies. Its flexible design and comprehensive functions empower researchers to contribute to the global effort in reducing the CKD burden. As the research community embraces this package, it stands to enhance awareness, improve patient outcomes, and drive innovation in kidney health research.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <category>Epidemiology</category>
-  <guid>https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/</guid>
-  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/thumbnail-kidney-boris.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
