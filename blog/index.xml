@@ -347,6 +347,69 @@
   <media:content url="https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/thumbnail-nonprobsvy.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Opening Remarks - Day 2</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/opening-remarks-day-2/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HWJH9RiGFsc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="rmedicine-2025-day-2-a-celebration-of-r-in-medicine" class="level1">
+<h1>R/Medicine 2025 Day 2: A Celebration of R in Medicine</h1>
+<p>The R/Medicine 2025 conference, a flagship event brought to the community by the R Consortium, continues to be a focus of innovation and collaboration between R programming and medicine. With participants joining from diverse corners of the globe, including, just to name a few read off by Zabor during the talk, the Netherlands, Romania, London, Germany, and from US states like Florida, California, Minnesota, and Pennsylvania, the event shines as a testament to the universal appeal and utility of R in medical research and practice.</p>
+<section id="acknowledgments-and-gratitude" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments-and-gratitude">Acknowledgments and Gratitude</h2>
+<p>The second day of the conference commenced with a welcome extended by Emily Zabor, the event’s chair and a dedicated biostatistician at the Cleveland Clinic.</p>
+<p>Zabor emphasized that the success of R/Medicine 2025 owes much to the support of its financial sponsors, Genentech and Posit, alongside the invaluable backing of the R Consortium. Thanks are also due to the organizing committee, whose dedication and expertise have been instrumental in crafting this enriching experience. And, of course, to all participants who contribute time, knowledge and energy.</p>
+</section>
+<section id="recap-of-day-1-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="recap-of-day-1-highlights">Recap of Day 1 Highlights</h2>
+<p>The first day of the conference was marked by an array of insightful presentations and discussions. Attendees were treated to a keynote by Ziad Obermeyer, who delved into the transformative potential of AI in the realm of medicine. The day unfolded with 9 regular talks and 2 lightning talks that spanned topics such as reproducibility, compliance, workflow automation, and clinical epidemiological applications.</p>
+<p>A notable highlight was the presentation of competition winners in both the student and professional categories. Their analysis of vaccination and measles case rates for 2025 provided critical insights, despite the somewhat concerning data trends. The rigor and clarity of their presentations underscored the power of data-driven decision-making in public health.</p>
+<section id="video-availability" class="level3">
+<h3 class="anchored" data-anchor-id="video-availability">Video Availability</h3>
+<p>For those who missed the live sessions, most of the presentations will be made available on the <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">R Consortium’s YouTube channel</a>. Participants are encouraged to watch for communications regarding the release of these videos, which will serve as a valuable resource for continued learning and inspiration.</p>
+</section>
+</section>
+<section id="day-2-exciting-lineup-of-keynotes-and-talks" class="level2">
+<h2 class="anchored" data-anchor-id="day-2-exciting-lineup-of-keynotes-and-talks">Day 2: Exciting Lineup of Keynotes and Talks</h2>
+<p>Day Two promises another engaging lineup, starting with a keynote by Erin LeDell, focusing on model evaluation from machine learning to generative AI. This is followed by 6 regular talks and 11 lightning talks. Sessions will cover a broad spectrum of topics, including:</p>
+<ul>
+<li>Packages and tools for data management</li>
+<li>Cohorts and APIs</li>
+<li>Visualization and communication</li>
+<li>Clinical and epidemiological applications</li>
+<li>Statistical modeling, inference, and methodology</li>
+</ul>
+<p>This diversity of topics reflects the multifaceted nature of R’s applications in medicine, ensuring that there is something of interest for every attendee.</p>
+</section>
+<section id="community-and-networking" class="level2">
+<h2 class="anchored" data-anchor-id="community-and-networking">Community and Networking</h2>
+<p>The conference provides an excellent platform for networking and community building. With a few minutes between sessions, attendees are encouraged to engage in discussions and share ideas. This interaction fosters a sense of camaraderie and collaboration, essential for advancing the field.</p>
+</section>
+<section id="looking-ahead-future-webinars" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead-future-webinars">Looking Ahead: Future Webinars</h2>
+<p>The R/Medicine conference is not limited to annual gatherings. Throughout the year, the <a href="https://r-consortium.org/webinars/webinars.html">R Consortium hosts webinars</a> that delve deeper into specific topics of interest. Last year saw two mid-year R/Medicine webinars, and this tradition of continuous learning and engagement is set to continue. Participants should stay tuned for announcements.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>R/Medicine 2025 stands as a vibrant celebration of the role of R in advancing medical research and practice. With an agenda packed with insightful talks, expert speakers, and a global community of attendees, the event embodies the spirit of innovation and collaboration. Participants are encouraged to immerse themselves in the wealth of knowledge shared and to continue engaging with the R community beyond the conference.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Events</category>
+  <guid>https://r-consortium.org/posts/opening-remarks-day-2/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/opening-remarks-day-2/thumbnail-opening-remarks-day2.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/</link>
@@ -1117,64 +1180,6 @@
   <guid>https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/</guid>
   <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/how-are-vaccination-rates-and-case-rates-changing-for-measles-in-2025/thumbnail-professional-competition-winner.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="identifying-measles-immunity-gaps-in-the-us-a-comprehensive-analysis-by-iko-musa" class="level1">
-<h1>Identifying Measles Immunity Gaps in the US: A Comprehensive Analysis by Iko Musa</h1>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LKNOEayXstU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>In the realm of public health, understanding and managing infectious diseases is crucial. This is particularly true for measles, a highly contagious virus that can lead to severe health complications. The recent R/Medicine 2025 conference shone a spotlight on an exemplary study conducted by Iko Musa, a master’s student from the University of Jos, Nigeria. His research, titled “Identifying Measles Immunity Gaps in the US: Analysis of Vaccination Coverage, Geographic Risk, and Future Outbreak Projections,” provides critical insights into the current state of measles immunity and vaccination in the United States.</p>
-<section id="the-changing-landscape-of-vaccination" class="level2">
-<h2 class="anchored" data-anchor-id="the-changing-landscape-of-vaccination">The Changing Landscape of Vaccination</h2>
-<p>Iko’s study addresses a timely issue: the declining measles vaccination rates in the U.S., which have dropped below the 95% threshold recommended for herd immunity. This decline poses a significant risk of outbreaks, making it imperative to understand where and why these gaps in immunity are occurring.</p>
-</section>
-<section id="research-objectives-and-methodology" class="level2">
-<h2 class="anchored" data-anchor-id="research-objectives-and-methodology">Research Objectives and Methodology</h2>
-<p>To tackle this issue, Iko formulated several research objectives: 1. Analyze the temporal trends of measles cases in the U.S. from 1990 to 2025. 2. Identify geographic areas at high risk. 3. Assess the influence of geographical factors on measles outbreaks. 4. Compare U.S. measles data with global trends. 5. Project future measles case trajectories and their potential health impacts. 6. Pinpoint immunity gaps where vaccination coverage falls below 95%.</p>
-<p>Iko employed a variety of analytical tools to achieve these objectives: - <strong>Temporal trend analysis</strong> using <code>ggplot2</code> for visualization. - <strong>Geospatial mapping</strong> with <code>ggplot2</code> maps and other tools to identify high-risk areas. - <strong>Comparative analysis</strong> to juxtapose U.S. data against global trends. - <strong>Time series forecasting</strong> to predict future outbreaks.</p>
-</section>
-<section id="key-findings" class="level2">
-<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
-<p><strong>Temporal Trends</strong> - The analysis revealed significant fluctuations in measles cases over the years, with notable outbreaks occurring periodically since 1989. A worrying trend is the recent increase in cases from 2020 through 2025.</p>
-<p><strong>Geographical Risk</strong> - High-risk areas predominantly lie in the Mountainous regions and southern parts of the U.S., with states like Texas showing particularly high numbers of cases.</p>
-<p><strong>Age Distribution</strong> - Most cases occur in individuals under 20 years old, emphasizing sustained transmission among children and teenagers.</p>
-<p><strong>Global Comparison</strong> - The proportion of peak quarterly cases shows that U.S. trends are generally consistent with global patterns, though some differences exist in seasonal peaks.</p>
-<section id="vaccination-rates-and-projections" class="level3">
-<h3 class="anchored" data-anchor-id="vaccination-rates-and-projections">Vaccination Rates and Projections</h3>
-<p>Current vaccination rates are alarmingly below the necessary threshold for herd immunity (95%). Forecasting models indicate that a decrease in vaccination rates could lead to significantly higher numbers of measles cases under various scenarios.</p>
-</section>
-</section>
-<section id="implications-and-recommendations" class="level2">
-<h2 class="anchored" data-anchor-id="implications-and-recommendations">Implications and Recommendations</h2>
-<p>The study underscores a critical need for targeted vaccination campaigns, especially focusing on school-aged children in high-risk states. Improving vaccination coverage by even 5% could prevent numerous cases and help restore herd immunity.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Iko Musa’s research not only highlights the challenges posed by declining measles vaccination rates but also provides a roadmap for intervention. His methodical approach and effective use of data visualization techniques make a compelling case for immediate public health action to close immunity gaps and protect communities across the United States.</p>
-</section>
-<section id="about-iko-musa" class="level2">
-<h2 class="anchored" data-anchor-id="about-iko-musa">About Iko Musa</h2>
-<p>Iko Musa is currently pursuing his Master’s degree in Field Epidemiology at the University of Jos, Nigeria. His academic focus is on community medicine, aiming to enhance public health through rigorous research and effective implementation of health policies. His work on measles immunity gaps has been recognized at R/Medicine 2025, reflecting his commitment to addressing critical global health issues through data-driven analysis.</p>
-<p>For more information on R/Medicine and competition rules, please visit: - <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine</a> - <a href="https://rconsortium.github.io/RMedicine_website/Competition.html#congratulations-to-our-winners">Competition Rules</a></p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Epidemiology</category>
-  <guid>https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/</guid>
-  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/thumbnail-iko-musa-student-competition-winner.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
