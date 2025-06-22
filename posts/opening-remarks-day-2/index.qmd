@@ -1,0 +1,57 @@
+--- 
+title: "Opening Remarks - Day 2" 
+unpublished: true 
+url: "https://r-consortium.org/posts/opening-remarks-day-2/"
+description: "Day 2 Opening Remarks for R/Medicine 2025: Emily Zabor covers R's role in medical innovation and research." 
+categories: [R/Medicine 2025, Events]
+author: "R Consortium" 
+image: "thumbnail-opening-remarks-day2.png" 
+image-alt: "Day 2 Opening Remarks - Emily Zabor" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/HWJH9RiGFsc >}}
+
+# R/Medicine 2025 Day 2: A Celebration of R in Medicine
+
+The R/Medicine 2025 conference, a flagship event brought to the community by the R Consortium, continues to be a focus of innovation and collaboration between R programming and medicine. With participants joining from diverse corners of the globe, including, just to name a few read off by Zabor during the talk, the Netherlands, Romania, London, Germany, and from US states like Florida, California, Minnesota, and Pennsylvania, the event shines as a testament to the universal appeal and utility of R in medical research and practice.
+
+## Acknowledgments and Gratitude
+
+The second day of the conference commenced with a welcome extended by Emily Zabor, the event's chair and a dedicated biostatistician at the Cleveland Clinic. 
+
+Zabor emphasized that the success of R/Medicine 2025 owes much to the support of its financial sponsors, Genentech and Posit, alongside the invaluable backing of the R Consortium. Thanks are also due to the organizing committee, whose dedication and expertise have been instrumental in crafting this enriching experience. And, of course, to all participants who contribute time, knowledge and energy.
+
+## Recap of Day 1 Highlights
+
+The first day of the conference was marked by an array of insightful presentations and discussions. Attendees were treated to a keynote by Ziad Obermeyer, who delved into the transformative potential of AI in the realm of medicine. The day unfolded with 9 regular talks and 2 lightning talks that spanned topics such as reproducibility, compliance, workflow automation, and clinical epidemiological applications.
+
+A notable highlight was the presentation of competition winners in both the student and professional categories. Their analysis of vaccination and measles case rates for 2025 provided critical insights, despite the somewhat concerning data trends. The rigor and clarity of their presentations underscored the power of data-driven decision-making in public health.
+
+### Video Availability
+
+For those who missed the live sessions, most of the presentations will be made available on the [R Consortium's YouTube channel](https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux). Participants are encouraged to watch for communications regarding the release of these videos, which will serve as a valuable resource for continued learning and inspiration.
+
+## Day 2: Exciting Lineup of Keynotes and Talks
+
+Day Two promises another engaging lineup, starting with a keynote by Erin LeDell, focusing on model evaluation from machine learning to generative AI. This is followed by 6 regular talks and 11 lightning talks. Sessions will cover a broad spectrum of topics, including:
+
+- Packages and tools for data management
+- Cohorts and APIs
+- Visualization and communication
+- Clinical and epidemiological applications
+- Statistical modeling, inference, and methodology
+
+This diversity of topics reflects the multifaceted nature of R's applications in medicine, ensuring that there is something of interest for every attendee.
+
+## Community and Networking
+
+The conference provides an excellent platform for networking and community building. With a few minutes between sessions, attendees are encouraged to engage in discussions and share ideas. This interaction fosters a sense of camaraderie and collaboration, essential for advancing the field.
+
+## Looking Ahead: Future Webinars
+
+The R/Medicine conference is not limited to annual gatherings. Throughout the year, the [R Consortium hosts webinars](https://r-consortium.org/webinars/webinars.html) that delve deeper into specific topics of interest. Last year saw two mid-year R/Medicine webinars, and this tradition of continuous learning and engagement is set to continue. Participants should stay tuned for announcements.
+
+## Conclusion
+
+R/Medicine 2025 stands as a vibrant celebration of the role of R in advancing medical research and practice. With an agenda packed with insightful talks, expert speakers, and a global community of attendees, the event embodies the spirit of innovation and collaboration. Participants are encouraged to immerse themselves in the wealth of knowledge shared and to continue engaging with the R community beyond the conference.
