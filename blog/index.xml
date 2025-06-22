@@ -235,6 +235,48 @@
   <media:content url="https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/thumbnail-optimizing-buenos-aires.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>R/Medicine 2025 - Closing Remarks - Final Day - Michael Kane</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ad5V0PBYl_M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="closing-remarks-from-rmedicine-2025-by-michael-kane-md" class="level1">
+<h1>Closing Remarks from R/Medicine 2025 by Michael Kane, MD</h1>
+<p>As R/Medicine 2025 concludes its second and final day, Michael Kane, MD, from the Anderson Cancer Center, delivered the closing remarks, encapsulating the essence and future direction of this unique conference dedicated to the intersection of R programming and healthcare. Kane, a co-founder of R/Medicine, provided insights into the conference’s achievements and aspirations, leaving the audience with a sense of community and purpose.</p>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>Kane began by expressing gratitude to the organizing committee, with a special nod to Emily Zaber, who chaired this year’s event. The seamless execution of the conference, he noted, is a testament to the dedication and behind-the-scenes effort of the team. The importance of organization and meticulous planning cannot be overstated, and this year’s smooth proceedings are a reflection of such diligence.</p>
+</section>
+<section id="a-conference-for-the-community" class="level2">
+<h2 class="anchored" data-anchor-id="a-conference-for-the-community">A Conference for the Community</h2>
+<p>Emphasizing the core philosophy of R/Medicine, Kane reiterated that this conference is designed to be a platform for the community. The healthcare space is expansive, with myriad groups engaged in cutting-edge research that often goes underrepresented. R/Medicine aims to bridge this gap by providing a forum for practitioners and methodologists alike to share their work, explore collaborative opportunities, and contribute to ongoing projects.</p>
+<p>The conference’s commitment to inclusivity was evident in the diverse international participation this year. Attendees from South America, Europe, and other regions enriched the discussions with their unique perspectives and innovations. This global engagement underscores the universal applicability and potential of R in transforming healthcare.</p>
+</section>
+<section id="towards-a-continuous-engagement" class="level2">
+<h2 class="anchored" data-anchor-id="towards-a-continuous-engagement">Towards a Continuous Engagement</h2>
+<p>Looking ahead, Kane shared the committee’s vision of making R/Medicine a continuous engagement rather than a once-a-year event. The introduction of periodic webinars is a step in this direction, allowing for ongoing dialogue and knowledge exchange throughout the year. By maintaining a steady flow of information and interaction, R/Medicine seeks to foster a vibrant and dynamic community that stays connected and informed about the latest developments in healthcare.</p>
+</section>
+<section id="invitation-to-participate" class="level2">
+<h2 class="anchored" data-anchor-id="invitation-to-participate">Invitation to Participate</h2>
+<p>In closing, Kane extended an open invitation to all participants to become more involved in R/Medicine. Whether by submitting proposals for future conferences, contributing to ongoing projects, or joining the organizing committee, the opportunities for involvement are numerous. The committee is keen on remaining dynamic and responsive to emerging healthcare challenges, and fresh perspectives are always welcome.</p>
+<p>Kane’s remarks concluded with heartfelt thanks to all attendees and participants, with a promise of even more exciting developments in the coming year. As R/Medicine 2025 draws to a close, the community looks forward to another year of innovation, collaboration, and progress in using R to revolutionize healthcare.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <guid>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/thumbnail-closing-remarks-day2-finalday-michael-kane.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Swimmer Plots with ggswim</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/swimmer-plots-with-ggswim/</link>
@@ -1155,61 +1197,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/demystifying-llms-with-ellmer/</guid>
   <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/demystifying-llms-with-ellmer/thumbnail-cheng-demystifying-llms-with-ellmer.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>rainbowR: Fostering an Inclusive Space for LGBTQ+ Coders in the R Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rainbow-r-inclusive-space-LGBTQ-coders/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/gLlRaqNfjys" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="rainbowr-fostering-an-inclusive-space-for-lgbtq-coders-in-the-r-community" class="level1">
-<h1>rainbowR: Fostering an Inclusive Space for LGBTQ+ Coders in the R Community</h1>
-<p>In the vibrant and ever-evolving world of R programming, diversity and inclusion have become crucial pillars for fostering innovation and creativity. Today, we delve into the inspiring journey of rainbowR, a community dedicated to connecting, supporting, and promoting LGBTQ+ individuals who code in R. Founded seven years ago, rainbowR has grown into a thriving network with over 100 members, and it continues to champion data-driven activism and community building. Join us as we explore the origins, initiatives, and future plans of rainbowR—a community that believes in the power of inclusivity to strengthen the R ecosystem.</p>
-<section id="speaker-ella-kaye" class="level2">
-<h2 class="anchored" data-anchor-id="speaker-ella-kaye">Speaker: Ella Kaye</h2>
-<p>Ella Kaye is a passionate advocate for diversity in the R community and a driving force behind rainbowR. Her journey began at the UseR! conference in 2017 when a chance conversation revealed the need for an LGBTQ+ community within the broader R landscape. Ella’s dedication has been instrumental in shaping rainbowR into a thriving network that connects and supports LGBTQ+ individuals while promoting awareness of LGBTQ+ issues through data-driven initiatives.</p>
-</section>
-<section id="the-genesis-of-rainbowr" class="level2">
-<h2 class="anchored" data-anchor-id="the-genesis-of-rainbowr">The Genesis of rainbowR</h2>
-<p>The seed for rainbowR was planted during a conversation at the UseR! conference in 2017. It was here that Ella Kaye realized the potential impact of creating a space where LGBTQ+ individuals could connect and share their experiences within the R community. The idea resonated with many, and rainbowR was born. Over the years, the community has grown and flourished, providing a supportive environment for members to engage in meaningful discussions and collaborations.</p>
-</section>
-<section id="initiatives-that-connect-support-and-promote" class="level2">
-<h2 class="anchored" data-anchor-id="initiatives-that-connect-support-and-promote">Initiatives that Connect, Support, and Promote</h2>
-<p>rainbowR’s mission is to connect, support, and promote LGBTQ+ individuals who code in R. To achieve these goals, the community has launched two main initiatives:</p>
-<ol type="1">
-<li><p><strong>Monthly Meetups</strong>: Held on the fourth Wednesday of each month on Zoom, these relaxed and friendly sessions offer a platform for members to chat about R, share resources, and showcase their work. The next meetup is scheduled for June 25th, providing an opportunity for participants to engage in a supportive setting.</p></li>
-<li><p><strong>Buddy Scheme</strong>: Designed to foster deeper connections, this initiative randomly pairs members every three months. Participants fill out a form detailing their interests, and an R script generates pairings and sends introduction emails. This approach helps members overcome the nerves of meeting new people and encourages meaningful conversations.</p></li>
-</ol>
-</section>
-<section id="data-driven-activism-and-community-engagement" class="level2">
-<h2 class="anchored" data-anchor-id="data-driven-activism-and-community-engagement">Data-Driven Activism and Community Engagement</h2>
-<p>rainbowR is committed to data-driven activism, hosting a GitHub repository called Tidy Rainbow that features LGBTQ+ datasets. These datasets serve as valuable resources for practicing data visualization, analysis, and teaching. The community also recently concluded its first rainbowR book club, where participants discussed “Queer Data: Using Gender, Sex, and Sexuality Data for Action” by Kevin Gian. The success of this initiative has paved the way for future book clubs.</p>
-</section>
-<section id="growing-the-community-and-future-plans" class="level2">
-<h2 class="anchored" data-anchor-id="growing-the-community-and-future-plans">Growing the Community and Future Plans</h2>
-<p>The past year has been transformative for rainbowR, with the community doubling in size. Ella Kaye’s efforts, including speaking engagements at conferences such as UseR! in Salzburg and Posit, have played a pivotal role in this growth. Social media strategies on platforms like Blue Sky and Mastodon have further amplified rainbowR’s reach.</p>
-<p>Looking ahead, Ella’s fellowship with the Software Sustainability Institute will support plans to nurture and sustain rainbowR. This includes ensuring clear pathways for community engagement, establishing robust policies and governance, and becoming a legal entity. A flagship event, the first-ever rainbowR Conference, will bring the community together to learn and share best practices in R and software sustainability.</p>
-</section>
-<section id="a-call-to-action" class="level2">
-<h2 class="anchored" data-anchor-id="a-call-to-action">A Call to Action</h2>
-<p>Whether you’re a member of the LGBTQ+ community or an ally, rainbowR welcomes you to get involved. By joining, you gain access to a vibrant network of R enthusiasts, opportunities for collaboration, and a platform to promote LGBTQ+ issues within the R community. To learn more or join the community, visit <a href="https://rainbow.org">rainbow.org</a>.</p>
-<p>In conclusion, rainbowR embodies the belief that a diverse and inclusive community enriches the R ecosystem. By fostering connections, supporting members, and promoting awareness, rainbowR continues to make a positive impact on the R community and beyond. We invite you to be a part of this transformative journey.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>LGBTQ+</category>
-  <guid>https://r-consortium.org/posts/rainbow-r-inclusive-space-LGBTQ-coders/</guid>
-  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rainbow-r-inclusive-space-LGBTQ-coders/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
