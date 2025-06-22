@@ -123,6 +123,61 @@
   <media:content url="https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/thumbnail-kane-accelerometry.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Bedside to Bench - Reinventing medicine with AI</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/OPib-OztZQc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="reinventing-medicine-with-ai-a-new-pathway-to-discovery" class="level1">
+<h1>Reinventing Medicine with AI: A New Pathway to Discovery</h1>
+<p>The landscape of medical research and discovery is ripe for a seismic shift, one that is being catalyzed by the integration of artificial intelligence (AI) into the healthcare domain. This paradigm shift was the core focus of Dr.&nbsp;Ziad Obermeyer’s keynote at R/Medicine 2025, where he explored the potential of AI to resurrect and revolutionize the “bedside to bench” pathway for medical discovery.</p>
+<section id="from-bench-to-bedside-the-traditional-model" class="level2">
+<h2 class="anchored" data-anchor-id="from-bench-to-bedside-the-traditional-model">From Bench to Bedside: The Traditional Model</h2>
+<p>The traditional model of medical discovery often starts at the molecular level, focusing on genes, proteins, and signaling pathways. This approach has led to significant breakthroughs, particularly in areas like cancer and immunology, where targeted therapies have been transformative. However, this model is not without its limitations. As Dr.&nbsp;Obermeyer pointed out, many complex medical problems remain unsolved, and the traditional bench-to-bedside approach has largely overshadowed the alternative pathway — one that begins with observations at the bedside.</p>
+</section>
+<section id="ai-a-new-lens-for-medical-discovery" class="level2">
+<h2 class="anchored" data-anchor-id="ai-a-new-lens-for-medical-discovery">AI: A New Lens for Medical Discovery</h2>
+<p>AI, with its ability to process vast amounts of data and detect patterns invisible to the human eye, offers a powerful alternative. Dr.&nbsp;Obermeyer provided compelling examples of how AI can generate novel empirical observations from real-world data, thereby reinvigorating the bedside-to-bench pathway.</p>
+<section id="the-case-of-knee-pain" class="level3">
+<h3 class="anchored" data-anchor-id="the-case-of-knee-pain">The Case of Knee Pain</h3>
+<p>One of the illustrative examples Dr.&nbsp;Obermeyer discussed was knee pain, a condition that has long eluded effective treatment through traditional molecular approaches. Historically, research on knee pain has zoomed in at a molecular level, focusing on inflammation markers and cartilage degradation. However, this approach has not significantly alleviated the widespread issue of knee pain, leading to an over-reliance on opioids as a treatment.</p>
+<p>Dr.&nbsp;Obermeyer’s team leveraged AI to analyze knee X-rays, not to replicate human radiologist interpretations, but to predict patient-reported pain scores directly from the image data. This approach uncovered new insights into the anatomical and physiological factors contributing to knee pain, particularly among Black patients, thus addressing a known disparity in pain management and treatment outcomes.</p>
+</section>
+<section id="sudden-cardiac-death-predicting-the-unpredictable" class="level3">
+<h3 class="anchored" data-anchor-id="sudden-cardiac-death-predicting-the-unpredictable">Sudden Cardiac Death: Predicting the Unpredictable</h3>
+<p>Another poignant example involved the use of AI to predict sudden cardiac death, a condition notorious for its unpredictability. By analyzing ECG data linked to patient outcomes in Sweden, Dr.&nbsp;Obermeyer’s team developed a model that could identify individuals at high risk of sudden cardiac death with greater accuracy than traditional metrics. This predictive capability has the potential to optimize the allocation of defibrillators, ensuring they reach those most in need.</p>
+</section>
+</section>
+<section id="implications-for-the-future-of-medicine" class="level2">
+<h2 class="anchored" data-anchor-id="implications-for-the-future-of-medicine">Implications for the Future of Medicine</h2>
+<p>The implications of these findings are profound. By turning complex medical images into actionable data, AI not only enhances diagnostic precision but also opens new avenues for therapeutic interventions. This approach allows for a re-examination of established medical knowledge, potentially leading to new standards of care.</p>
+<section id="bridging-disciplines" class="level3">
+<h3 class="anchored" data-anchor-id="bridging-disciplines">Bridging Disciplines</h3>
+<p>The integration of AI into medical research also underscores the importance of interdisciplinary collaboration. As Dr.&nbsp;Obermeyer noted, insights from fields such as computer science, economics, and behavioral science can enrich our understanding of health and disease, leading to more holistic and effective healthcare solutions.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Dr.&nbsp;Obermeyer’s keynote at R/Medicine 2025 highlighted the transformative potential of AI in medicine. By enabling a new cycle of discovery that starts at the bedside, AI promises to uncover new abstractions and insights, ultimately improving patient care and outcomes. As the R community continues to explore these frontiers, the collaborative efforts between data scientists, clinicians, and researchers will be crucial in unlocking the full potential of AI in healthcare.</p>
+<p>With the power of AI and the collective wisdom of diverse disciplines, the future of medical discovery has the potential for advancements that were once thought unattainable.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>AI</category>
+  <guid>https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/thumbnail-ai-ziad.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Bootstrap inference made easy: p-values and confidence intervals in one line of code</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</link>
@@ -1141,72 +1196,6 @@
   <guid>https://r-consortium.org/posts/rmedicine-closing-remarks/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rmedicine-closing-remarks/thumbnail-closing-remarks-day1-higgins.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Supercharging Statistical Analysis with ARDs and the {cards} R Package</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/supercharging-statistical-analysis-with-ards-and-the-cards-r-package/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/C_Y1pzpCS5o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="supercharging-statistical-analysis-with-the-analysis-results-data-model-and-cards-r-package" class="level1">
-<h1>Supercharging Statistical Analysis with the Analysis Results Data Model and {cards} R Package</h1>
-<p>In the ever-evolving world of statistical analysis, the Analysis Results Data (ARD) Model promises to elevate the standards of automation, reproducibility, reusability, and traceability. This approach is set to revolutionize the way we encode and manage statistical summaries, particularly in the realm of clinical trials and pharmaceutical research.</p>
-<p>At the forefront of this transformation is the {cards} R package, a collaborative development effort spearheaded by industry leaders such as Roche, GSK, Novartis, Pfizer, and Eli Lilly under the Pharmaverse initiative.</p>
-<p>Davide Garolini from GSK/Roche recently led an enlightening session at R/Medicine 2025, showing how {cards} can be utilized to create ARDs and integrate them into statistical workflows.</p>
-<section id="understanding-the-ard-model" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-ard-model">Understanding the ARD Model</h2>
-<p>The ARD Model is designed to address a fundamental challenge in statistical analysis: ensuring reproducibility across different datasets and formats. The model separates the statistical results from their presentation, allowing for maximum flexibility. By encoding statistical outcomes in a machine-readable format, ARDs facilitate easier automation, improve reproducibility, and enhance the traceability of data origins. This approach is particularly beneficial in clinical reporting, where it can significantly improve the quality and efficiency of analyses.</p>
-</section>
-<section id="introducing-the-cards-package" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-the-cards-package">Introducing the {cards} Package</h2>
-<p>The {cards} package is a powerful tool that enables users to create comprehensive ARDs. It supports a wide range of statistical analyses, from basic summaries like means and tabulations to more complex models involving regression and statistical tests. {cards} works seamlessly with other tabling packages such as {gtsummary} and {tfrmt} to produce insightful displays of analysis results.</p>
-<section id="key-features-of-cards" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-of-cards">Key Features of {cards}</h3>
-<ul>
-<li><strong>Metadata-Driven Infrastructure</strong>: {cards} leverages a metadata-driven approach, making it easy to create and manage analysis results. This ensures consistency and reliability across different datasets.</li>
-<li><strong>Compatibility with Other Packages</strong>: By integrating with {gtsummary} and {tfrmt}, {cards} allows for the creation of detailed and customizable tables and graphs.</li>
-<li><strong>Wide Adoption</strong>: With over 52,000 downloads per month, {cards} is gaining traction within the R community. Its intuitive design and robust functionality make it a valuable addition to any data scientist’s toolkit.</li>
-</ul>
-</section>
-</section>
-<section id="practical-applications-and-insights" class="level2">
-<h2 class="anchored" data-anchor-id="practical-applications-and-insights">Practical Applications and Insights</h2>
-<p>During the session, Garolini shared practical examples of how {cards} can be used to create ARDs and integrate them into analysis workflows. The package’s capabilities were demonstrated through a pilot study involving the reproduction of clinical trial results. The study showcased how {cards}, in conjunction with {gtsummary}, could be used to create comprehensive tables, listings, and graphs (TLGs) with ease.</p>
-<section id="integration-with-gtsummary" class="level3">
-<h3 class="anchored" data-anchor-id="integration-with-gtsummary">Integration with {gtsummary}</h3>
-<p>{gtsummary} is a widely-used package for creating summary tables in R, boasting over 1.5 million downloads. By integrating ARDs with {gtsummary}, users can automate the creation of summary tables while ensuring reproducibility and reliability. This integration allows for efficient quality control and the ability to repurpose results for different regulatory submissions.</p>
-</section>
-<section id="challenges-and-considerations" class="level3">
-<h3 class="anchored" data-anchor-id="challenges-and-considerations">Challenges and Considerations</h3>
-<p>While the metadata-driven approach of {cards} offers numerous benefits, it can also present challenges when dealing with non-standard tables. In such cases, manual adjustments may be necessary. However, the overall advantages of reproducibility, efficiency, and automation outweigh these challenges, making {cards} an invaluable tool for statistical analysis.</p>
-</section>
-</section>
-<section id="the-future-of-statistical-analysis-with-ard-and-cards" class="level2">
-<h2 class="anchored" data-anchor-id="the-future-of-statistical-analysis-with-ard-and-cards">The Future of Statistical Analysis with ARD and {cards}</h2>
-<p>The ARD Model and {cards} package represent a significant leap forward in the field of statistical analysis. By promoting reproducibility and efficiency, they pave the way for more streamlined and reliable analyses. As the R community continues to embrace these innovations, the potential for further advancements in automation and AI-driven analytics becomes increasingly promising.</p>
-<p>For those interested in exploring the capabilities of {cards} and the ARD Model, the Pharmaverse initiative offers a wealth of resources and collaborative opportunities. By participating in this vibrant community, data scientists and analysts can stay at the forefront of statistical innovation and contribute to the ongoing evolution of best practices in the field.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The Analysis Results Data Model and the {cards} R package are transforming the landscape of statistical analysis. By providing a robust framework for encoding and managing analysis results, they enable users to achieve higher levels of reproducibility, efficiency, and traceability.</p>
-<p>Join the R Consortium and Pharmaverse in the journey to redefine the standards of data analysis.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <category>Pharma</category>
-  <guid>https://r-consortium.org/posts/supercharging-statistical-analysis-with-ards-and-the-cards-r-package/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/supercharging-statistical-analysis-with-ards-and-the-cards-r-package/thumbnail-supercharging-garolini.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
