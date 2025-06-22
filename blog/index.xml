@@ -226,6 +226,73 @@
   <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>nonprobsvy – An R package for modern methods for non-probability survey</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/MnEZlFcpmCE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="unveiling-the-nonprobsvy-package-a-leap-in-non-probability-sample-inference-in-r" class="level1">
+<h1>Unveiling the <code>nonprobsvy</code> Package: A Leap in Non-Probability Sample Inference in R</h1>
+<p>Greetings R community! Today, we’re thrilled to delve into the details of <code>nonprobsvy</code>, an R package crafted for inference based on non-probability samples. Presented by Maciej Beręsewicz from the Poznań University of Economics and Business and the Statistical Office in Poznań, this package is a tool for statisticians dealing with the challenges of non-probability samples in various research domains.</p>
+<section id="addressing-non-probability-sample-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="addressing-non-probability-sample-challenges">Addressing Non-Probability Sample Challenges</h2>
+<p>The core motivation behind the development of <code>nonprobsvy</code> stems from the limitations often encountered in official statistics due to declining response rates and the growing reliance on non-probability surveys for population inference. Such surveys, including big data, opt-in web panels, and social media data, often introduce selection bias, complicating accurate population characteristic estimations.</p>
+<p>Beręsewicz, deeply rooted in survey sampling and methodology, recognized these challenges through his work at the university and the Statistical Office in Poznań. This package is a testament to his commitment to providing robust statistical methods that correct selection bias, making it a resource for researchers worldwide.</p>
+</section>
+<section id="the-power-of-nonprobsvy" class="level2">
+<h2 class="anchored" data-anchor-id="the-power-of-nonprobsvy">The Power of <code>nonprobsvy</code></h2>
+<p><code>nonprobsvy</code> integrates with the popular <code>survey</code> package in R, offering a toolkit for addressing non-probability sample biases. It categorizes its approaches into three main groups: prediction-based approach, inverse probability weighting, and doubly robust approach. Here’s a closer look at what it provides:</p>
+<ol type="1">
+<li><strong>Inverse Probability Weighting (IPW):</strong> Allows for correction of selection bias using known population totals or survey designs.</li>
+<li><strong>Mass Imputation Estimators:</strong> Employs methods such as regression imputation and nearest neighbors to estimate missing data.</li>
+<li><strong>Doubly Robust Estimators:</strong> Combines the strengths of both IPW and outcome modeling for improved estimations.</li>
+<li><strong>High-Dimensional Data Handling:</strong> Features variable selection using techniques like SCAD, LASSO, or MCP, crucial for handling administrative data or surveys with extensive questionnaires.</li>
+</ol>
+</section>
+<section id="a-user-friendly-package" class="level2">
+<h2 class="anchored" data-anchor-id="a-user-friendly-package">A User-Friendly Package</h2>
+<p>The <code>nonprobsvy</code> package is designed with user-friendliness in mind. Its main function, <code>nonprop()</code>, mimics existing R functions by utilizing formulas, ensuring a smooth transition for users familiar with R’s ecosystem. The package supports both analytical and bootstrap variance estimators, providing flexibility and robustness in variance estimation.</p>
+<section id="unique-features" class="level3">
+<h3 class="anchored" data-anchor-id="unique-features">Unique Features</h3>
+<ul>
+<li><strong>Full Integration with the Survey Package:</strong> Ensures compatibility and extends the capabilities of existing survey methods.</li>
+<li><strong>Advanced Estimators:</strong> Implements state-of-the-art methods, including those recently accepted for publication, ensuring users have access to the latest developments in survey sampling.</li>
+<li><strong>Extensive Documentation:</strong> Provides detailed explanations, equations, and use cases, guiding users through implementation and interpretation.</li>
+</ul>
+</section>
+</section>
+<section id="looking-ahead-future-developments" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead-future-developments">Looking Ahead: Future Developments</h2>
+<p>Beręsewicz and his team have ambitious plans for the future of <code>nonprobsvy</code>. They aim to incorporate overlapping samples, replicate weights, and expand mass imputation methods beyond parametric approaches. There is also a focus on developing inference methods for quantiles and integrating mixed-mode data handling, reflecting the dynamic needs of contemporary research.</p>
+<section id="community-involvement" class="level3">
+<h3 class="anchored" data-anchor-id="community-involvement">Community Involvement</h3>
+<p>The development team encourages feedback and suggestions from the community. By engaging with users on GitHub, they aim to continuously refine and enhance the package. If you have innovative ideas or encounter challenges, they’re eager to hear from you.</p>
+</section>
+</section>
+<section id="call-to-action" class="level2">
+<h2 class="anchored" data-anchor-id="call-to-action">Call to Action</h2>
+<p><code>nonprobsvy</code> is available on CRAN, and its development version is hosted on GitHub. We invite you to explore this powerful package, test its capabilities, and contribute to its evolution. Your insights and experiences are invaluable in shaping its future.</p>
+<p>For researchers, statisticians, and R enthusiasts, <code>nonprobsvy</code> offers a robust solution to the complexities of non-probability samples. Whether you’re tackling big data, social media analytics, or opt-in web panels, this package equips you with the tools needed to derive accurate, reliable inferences.</p>
+<p>To learn more about the package, visit the <a href="https://cran.r-project.org/package=nonprobsvy">CRAN page</a> or <a href="http://github.com/ncn-foreigners/nonprobsvy">GitHub repository</a>. Let’s work together in advancing statistical methodologies and making impactful contributions to the R community.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Clinical Research</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/thumbnail-nonprobsvy.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/</link>
@@ -1154,62 +1221,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/personal-r-administration/</guid>
   <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/personal-r-administration/thumbnail-personal-r-administration.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>pretestcad: An R package to calculate PreTest Probability (PTP) for Coronary Artery Disease (CAD)</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/pretestcad-an-r-package-to-calculate-pretest-probability-ptp-for-coronary-artery-disease-cad/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/5hpTlmKvRU8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="automating-pretest-probability-calculations-for-coronary-artery-disease-with-the-pretestcad-r-package" class="level1">
-<h1>Automating Pretest Probability Calculations for Coronary Artery Disease with the <code>pretestcad</code> R Package</h1>
-<p>In the ever-evolving field of cardiology, clinicians face the constant challenge of keeping up with the latest risk assessment models for coronary artery disease (CAD). Traditionally, tools like HeartScore have been used to calculate a patient’s risk of cardiovascular events. However, these tools are limited by their one-patient-at-a-time approach. Enter the realm of R packages—powerful tools that can automate and streamline these calculations for multiple patients simultaneously. Among them, the <code>pretestcad</code> R package emerges as a novel solution, specifically designed to address the gap in pretest risk assessment for obstructive CAD.</p>
-<section id="understanding-coronary-artery-disease-and-pretest-probability" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-coronary-artery-disease-and-pretest-probability">Understanding Coronary Artery Disease and Pretest Probability</h2>
-<p>Coronary artery disease occurs when the coronary arteries become narrowed or blocked by fatty deposits known as plaques. This can result in chest pain, shortness of breath, or even heart attacks. Diagnosing CAD often involves invasive tests like coronary angiography or less invasive options such as CT scans. The concept of pretest probability comes into play here, providing an estimated likelihood that a patient has CAD before any diagnostic tests are performed. This estimation helps clinicians decide which diagnostic path to pursue, especially when certain tests are expensive or invasive.</p>
-</section>
-<section id="the-evolution-of-pretest-probability-models" class="level2">
-<h2 class="anchored" data-anchor-id="the-evolution-of-pretest-probability-models">The Evolution of Pretest Probability Models</h2>
-<p>As our understanding of CAD has grown, so too have the models for estimating pretest probability. The European Society of Cardiology (ESC) guidelines have evolved from simple models with three risk factors to more sophisticated ones that include family history, smoking, cholesterol levels, hypertension, and diabetes. This increased complexity makes manual calculations tedious and prone to error.</p>
-<p>Jeremy, a research officer from the National Heart Center Singapore, recognized this challenge and sought to address it by developing the <code>pretestcad</code> R package. This package automates the calculation of pretest probability scores for CAD, drawing on a comprehensive collection of models from past to present. The package is designed to be flexible and user-friendly, accommodating missing data and providing clear error messages.</p>
-</section>
-<section id="key-features-of-the-pretestcad-r-package" class="level2">
-<h2 class="anchored" data-anchor-id="key-features-of-the-pretestcad-r-package">Key Features of the <code>pretestcad</code> R Package</h2>
-<p>The <code>pretestcad</code> package includes several pretest probability scores, such as the 2012 CAD Consortium 2 (CAD2) PTP scores, the 2017 PROMISE Minimal-Risk Score, and the 2020 Winther et al.&nbsp;Risk-Factor-weighted Clinical Likelihood (RF-CL) and Coronary Artery Calcium Score-Weighted Clinical Likelihood (CACS-CL) PTP. These scores are integral to the 2024 ESC Guidelines, and the package allows users to calculate them efficiently for multiple patients.</p>
-<section id="handling-missing-data" class="level3">
-<h3 class="anchored" data-anchor-id="handling-missing-data">Handling Missing Data</h3>
-<p>One of the standout features of the <code>pretestcad</code> package is its ability to handle missing data. In real-world scenarios, patient data may be incomplete. The package includes a parameter called <code>max_na</code> that specifies the number of missing risk factors tolerated in calculations. This flexibility ensures that clinicians can still obtain useful probability estimates even when some data points are missing.</p>
-</section>
-<section id="integration-with-r-ecosystem" class="level3">
-<h3 class="anchored" data-anchor-id="integration-with-r-ecosystem">Integration with R Ecosystem</h3>
-<p>The package leverages the <code>purrr</code> package to perform calculations over patient datasets, demonstrating its seamless integration with the broader R ecosystem. This compatibility allows users to incorporate <code>pretestcad</code> into their existing R workflows without significant overhead.</p>
-</section>
-</section>
-<section id="future-directions-and-community-engagement" class="level2">
-<h2 class="anchored" data-anchor-id="future-directions-and-community-engagement">Future Directions and Community Engagement</h2>
-<p>Jeremy’s presentation at the R/Medicine 2025 conference was not just an introduction to the <code>pretestcad</code> package but also a call to action for collaboration and feedback from the R community. While he has successfully submitted the package to CRAN, he recognizes the importance of user feedback, particularly from clinicians who will be the primary users of the tool.</p>
-<p>Going forward, Jeremy plans to conduct user testing with clinicians to refine the package’s usability and error messaging. While he is cautious about overextending the project’s scope, potential future enhancements could include integration with platforms like Shiny or Jamovi, making the tool even more accessible to a wider audience.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The development of the <code>pretestcad</code> R package exemplifies how the R community can contribute to medical advancements by providing tools that streamline and automate complex calculations. By addressing the gap in pretest probability assessment for CAD, the package empowers clinicians to make informed decisions more efficiently, ultimately improving patient care.</p>
-<p>As the package garners feedback and evolves, it promises to become an indispensable tool in the toolkit of cardiologists worldwide. Jeremy’s work is a testament to the power of the R language in transforming healthcare practices, and it highlights the potential for further innovations in the field.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Insurance/Risk</category>
-  <guid>https://r-consortium.org/posts/pretestcad-an-r-package-to-calculate-pretest-probability-ptp-for-coronary-artery-disease-cad/</guid>
-  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/pretestcad-an-r-package-to-calculate-pretest-probability-ptp-for-coronary-artery-disease-cad/thumbnail-pretestcad-jeremy-selva.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
