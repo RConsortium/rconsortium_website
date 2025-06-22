@@ -1,0 +1,62 @@
+--- 
+title: "No More Copy-Paste: Automating Patient Inquiry Tracking in Pharma with Shiny" 
+unpublished: true 
+url: "https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/"
+description: "Automating patient inquiry tracking in pharma with R Shiny: A game-changer in specialty pharma coordination." 
+categories: [R/Medicine 2025, Pharma, Healthcare]
+author: "R Consortium" 
+image: "thumbnail-no-more-copy-paste-tanya.jpg" 
+image-alt: "Automating Patient Inquiry Tracking - Tanya Cashorali" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/sRNxjGXZ0_0 >}}
+
+# Automating Patient Inquiry Tracking in Pharma with Shiny: A Game-Changer in Specialty Pharma Coordination
+
+In the fast-paced world of specialty pharma coordination, the seamless flow of information and timely delivery of medication can be a matter of life and death for patients with rare diseases. The challenge? Managing patient support and prescription workflows often involves disparate tools, manual data wrangling, and time-consuming reporting. Tanya Cashorali, the founder of TCB Analytics, addressed this critical issue in her presentation at the R/Medicine conference, showcasing how an R Shiny application revolutionized these processes.
+
+## Meet the Speaker: Tanya Cashorali
+
+Tanya Cashorali is the founder of TCB Analytics, a Boston-based data science consultancy with a strong focus on bio and pharma. She has an impressive background in biotech, having started her career analyzing genetic data at Children's Hospital in 2005. Tanya has since contributed to building molecular applications at Dana Farber, conducted modeling work at GNS Healthcare to understand causal mechanisms of disease, and helped launch TCB Analytics after her tenure at Biogen.
+
+## The Problem: Manual Mayhem in Specialty Pharma Coordination
+
+For bio and pharma companies treating rare diseases, ensuring patients receive their medications on time is crucial. However, the process often involves multiple manual steps:
+
+- Physicians write prescriptions that go to specialty pharmacies.
+- Biopharma companies ensure the availability of drugs.
+- Specialty pharmacies ship the drugs to patients.
+
+This workflow was previously managed through Excel sheets and lengthy email chains. The result? Manual mayhem, with room for errors, slow case preparation, and time-consuming weekly status meetings.
+
+## The Solution: An R Shiny Application
+
+To tackle this challenge, Tanya and her team developed an R Shiny application that serves as a dynamic operational hub. This application integrates prescription fulfillment data with Smartsheet-tracked patient inquiries, providing a unified, interactive dashboard for users. Key features include:
+
+- **Real-time Data Integration:** The application merges daily Excel-based prescription data with live Smartsheet API feeds.
+- **Interactive Dashboard:** Users can filter, sort, and export patient records while tracking key support metrics such as shipment history and open ticket status.
+- **Ticket Creation and Management:** Users can create and manage tickets directly from the application, which syncs with Smartsheet to streamline communication between the market access team and specialty pharmacies.
+
+## Impact and Efficiency Gains
+
+The impact of this R Shiny application has been significant:
+
+- **Streamlined Communication:** The application replaces five daily emails, reduces meeting times from 30 to 10 minutes, and supports over 36 users, including sales teams and market access teams.
+- **Real-time Insights:** The application provides a single source of real-time truth, enabling more productive case tracking and management.
+- **Data-Driven Decisions:** With 400 patients and two drug products tracked, the application offers valuable data insights, such as time to resolution and issue frequency across specialty pharmacies.
+
+## Lessons Learned
+
+Tanya shared valuable lessons learned from the project:
+
+- **Start Simple:** Begin with sketches and iterate based on user feedback.
+- **Build Dashboards with People, Not Just for Them:** Engage users early and often to ensure the solution meets their needs.
+- **Leverage Power Users:** Identify and collaborate with power users who can provide valuable feedback and drive adoption.
+- **Avoid Overengineering:** Use existing tools like R Shiny, Smartsheet, and pins to create efficient solutions without complex infrastructure.
+
+## Conclusion
+
+The R Shiny application developed by TCB Analytics exemplifies the power of R in transforming workflows and improving patient outcomes in the pharma industry. By automating patient inquiry tracking, the application not only streamlines operations but also ensures that patients receive their medications promptly, ultimately saving lives.
+
+As Tanya summarized, this project demonstrates that you don't need a big vendor platform or a six-month roadmap to make a significant impact. With the right tools and a focus on user needs, R can drive meaningful change in healthcare and beyond.
