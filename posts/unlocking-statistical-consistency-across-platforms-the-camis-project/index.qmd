@@ -1,0 +1,55 @@
+--- 
+title: "Unlocking Statistical Consistency Across Platforms: The CAMIS Project" 
+unpublished: true 
+url: "https://r-consortium.org/posts/unlocking-statistical-consistency-across-platforms-the-camis-project/"
+description: "Find out how CAMIS is fostering collaboration, transparency, and reliability in the field of statistical analysis." 
+categories: [R/Medicine 2025, Software Development, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-camis.jpg" 
+image-alt: "Introducing the CAMIS project - Lyn Taylor and Christina Fillmore" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/05mRFSfUCWI >}}
+
+# Bridging the Statistical Gap: Introducing the PHUSE CAMIS Project
+
+In the ever-evolving world of data science and statistical analysis, the need for replicable and reliable results across different software platforms has never been more critical. As industries, especially those as rigorously regulated as medical research, transition towards multilingual programming environments, ensuring consistency in statistical methodologies becomes paramount. 
+
+Enter the PHUSE CAMIS project — Comparing Analysis Method Implementations in Software.
+
+## What is CAMIS?
+
+CAMIS is an open-source repository designed to document and address the discrepancies in statistical methodologies across various software platforms like SAS, R, Python, StatXact, and EAST. In the medical research industry, where the accuracy of results is non-negotiable, double or triple programming practices are often employed to ensure that outcomes match across different systems. The CAMIS project aims to streamline this process, providing a centralized resource for identifying and understanding any differences that may arise.
+
+## The Driving Force Behind CAMIS
+
+At the heart of this initiative are Lyn Taylor and Christina Fillmore from Parexel. With a combined experience of over 20 years in the industry, Lyn and Christina represent the perfect blend of traditional and modern statistical analysis techniques. While Lyn favors SAS, Christina, with her background in object-oriented programming, leans towards using R. Together, they frequently encounter situations where results from different software do not match, prompting a deep dive into documentation and methodologies to identify the root causes of discrepancies.
+
+## The CAMIS Repository
+
+The CAMIS repository, available on [GitHub](https://psiaims.github.io/CAMIS/), serves as a comprehensive resource for understanding and documenting these discrepancies. The repository is organized into columns detailing different methods, their implementation in R, SAS, Python, and other platforms, and most importantly, a comparison column highlighting known differences. 
+
+This setup not only aids in identifying discrepancies but also serves as a call to action for the open-source community to contribute and fill in any gaps.
+
+### Practical Examples and Use Cases
+
+One of the strengths of CAMIS is its use of practical examples to illustrate potential pitfalls and discrepancies. For instance, when performing a Kaplan-Meier analysis, the default method for calculating confidence intervals differs between SAS and R. SAS uses the log-log method, while R defaults to the log method, leading to potential variations in results. Similarly, the handling of ties in Cox proportional hazards regression varies between platforms, necessitating a clear specification of methods to ensure consistency.
+
+### Enhancing Software Reliability
+
+Beyond identifying discrepancies, CAMIS plays a pivotal role in enhancing the reliability of software packages. For instance, when discrepancies were found in the confidence intervals produced by the `epibasix` package in R, the CAMIS team reached out to the package author. The author, unable to recall the specifics of the calculation, recommended using an alternative package, `vcd`, for more reliable results. 
+
+This interaction highlights how CAMIS not only helps users identify issues but also fosters communication and improvement within the software development community.
+
+## Community Collaboration
+
+The success of CAMIS hinges on community collaboration. With contributions from over 42 different companies, the repository is a testament to the collective effort of statisticians and programmers worldwide. Whether you're a SAS expert or an R aficionado, CAMIS welcomes contributions of all sizes. The project hosts regular meetings and offers training, particularly for statisticians unfamiliar with tools like GitHub, to facilitate participation.
+
+## The Bigger Picture
+
+The ultimate goal of CAMIS is to create a trusted, centralized resource that the industry can rely on for guidance. By documenting and understanding software discrepancies, providing detailed examples, and encouraging community contributions, CAMIS aims to empower users to select the best software for their needs without fear of inconsistencies. This initiative not only enhances the accuracy of statistical analyses but also promotes flexibility and innovation in programming practices.
+
+## Conclusion
+
+As we continue to navigate a world increasingly reliant on data-driven decisions, initiatives like CAMIS are indispensable. By bridging the gap between different software platforms, CAMIS ensures that the integrity of statistical analyses is maintained, regardless of the tools used. For the R community and beyond, CAMIS represents a step forward in fostering collaboration, transparency, and reliability in the field of statistical analysis.
