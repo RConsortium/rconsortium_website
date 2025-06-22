@@ -1,0 +1,59 @@
+--- 
+title: "Dengue Forecasting Addressing the Interrupted Effect from COVID-19 Cases" 
+unpublished: true 
+url: "https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/"
+description: "Addressing COVID-19's impact on Dengue forecasting using adaptive statistical models in Sri Lanka." 
+categories: [R/Medicine 2025, Epidemiology, Healthcare]
+author: "R Consortium" 
+image: "thumbnail-dengue.png" 
+image-alt: "Dengue Forecasting - Thiyanga S. Talagala" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/TNRH2WxA3J0 >}}
+
+_Note: This project is [funded by the R Consortium](http://localhost:4215/posts/empowering-dengue-research-through-the-dengue-data-hub/index.html)_
+
+# Navigating Interruption: Forecasting Dengue Cases Amidst COVID-19
+
+Dengue fever, a mosquito-borne disease, remains a significant health concern in tropical regions, particularly in countries near the equator. The dengue virus, primarily transmitted by Aedes mosquitoes, thrives in warm, humid conditions with regular rainfall—conditions that are prevalent in these regions. However, the onset of the COVID-19 pandemic introduced an unprecedented interruption in the usual dengue case patterns. This blog post delves into a study that explores how to accurately forecast dengue cases amidst the interruptions caused by the COVID-19 pandemic, using Sri Lanka as a case study.
+
+**Understanding the Interruption**
+
+During the COVID-19 pandemic, several factors contributed to an unusual pattern in dengue case reporting. These include:
+
+- Misclassification of dengue as COVID-19 due to overlapping symptoms such as fever, headache, and fatigue.
+- Underreporting or delayed reporting due to lockdowns and mobility restrictions.
+- Reduced human-mosquito contact due to people spending more time indoors.
+- School and workplace closures, which are common sites for dengue transmission.
+- Travel restrictions, which reduced the spread of dengue to new areas.
+
+This period, referred to as the "interrupted period," significantly affected the usual seasonal and annual patterns of dengue cases.
+
+**Forecasting Strategies**
+
+The study, presented by Thiyanga S. Talagala from the Department of Statistics at the University of Sri Jayewardenepura, Sri Lanka, investigates three modeling strategies to address this interruption in dengue case forecasting:
+
+1. **Excluding the Interrupted Period**: This approach involves using only post-COVID-19 data for model training, effectively ignoring the data from the interrupted period.
+
+2. **Forecasting the Interrupted Period First**: This method involves forecasting the interrupted period based on data up to 2019, then using the updated time series for model training.
+
+3. **Down-Weighting the Interrupted Period**: This strategy assigns lower weights to data points in the interrupted period, giving higher weights to uninterrupted periods.
+
+Data from 2007 to 2024 were used for model fitting, and data for 2025 served as the test set to evaluate the performance of these methods across 25 districts in Sri Lanka.
+
+**Evaluating the Methods**
+
+The study employed various accuracy measures, including Root Mean Square Error (RMSE) and Mean Absolute Error (MAE), to compare the forecasting performance of each approach. The findings revealed that no single method outperformed across all districts. Instead, the effectiveness of each approach depended on the specific characteristics and historical patterns of each district.
+
+**Insights and Implications**
+
+The study's insights underscore the importance of tailoring forecasting methods to the unique characteristics of each region. For instance, the down-weighting approach proved effective in areas where the usual dengue patterns persisted despite the interruption. In contrast, excluding the interrupted period worked best in districts that had shifted to a new normal post-COVID-19.
+
+Furthermore, the study highlighted the influence of weather patterns on dengue transmission. Districts affected by specific monsoon periods or characterized by unique weather conditions showed distinct forecasting patterns.
+
+**Conclusion**
+
+Forecasting dengue cases amidst interruptions like COVID-19 is a complex task that requires adaptive approaches. The study by Talagala emphasizes that understanding the local context, including weather patterns and historical data, is crucial for accurate forecasting. This research not only contributes to improving dengue preparedness but also offers valuable insights for handling future public health interruptions.
+
+For more detailed insights and to explore the methodologies used, you can access [the project on GitHub](https://github.com/thiyangt/denguedatahub) and [the main Dengue Data Hub site](https://denguedatahub.netlify.app/).
