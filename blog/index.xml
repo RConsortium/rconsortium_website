@@ -411,6 +411,65 @@
   <media:content url="https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>riskcalc.org: A Repository of Risk Calculators for Medical Decision Making</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4mo5V_rjUhM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="enhancing-clinical-decision-making-with-riskcalc.org" class="level1">
+<h1>Enhancing Clinical Decision-Making with Riskcalc.org</h1>
+<p>In the rapidly evolving landscape of healthcare, the fusion of data science and clinical practice is creating unprecedented opportunities for personalized medicine. At the forefront of this intersection is <a href="https://riskcalc.org/">riskcalc.org</a>, a pioneering platform developed to aid clinicians and patients in making informed medical decisions. Alex Zajichek, a research data scientist at the Cleveland Clinic, recently provided an insightful overview of this platform at R/Medicine 2025, highlighting its capabilities, infrastructure, and future directions.</p>
+<section id="the-genesis-of-riskcalc.org" class="level2">
+<h2 class="anchored" data-anchor-id="the-genesis-of-riskcalc.org">The Genesis of Riskcalc.org</h2>
+<p>Riskcalc.org emerged from the Cleveland Clinic’s Department of Quantitative Health Sciences, a hub of over 100 statisticians, data scientists, and researchers. This department is dedicated to providing quantitative support across various research activities, from clinical trials to precision medicine. The platform was conceptualized to serve as a free, accessible resource for clinicians and patients, facilitating individualized medical decision-making through a collection of predictive models.</p>
+</section>
+<section id="core-functionality-and-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="core-functionality-and-infrastructure">Core Functionality and Infrastructure</h2>
+<p>At its core, riskcalc.org hosts a suite of clinical risk calculators, each designed as a standalone R Shiny application. These calculators are predominantly regression models derived from published research studies. The platform garners significant engagement, with a monthly user base of 10,000 to 15,000.</p>
+<p>The development process involves creating applications locally using R and Shiny. The models are integrated into the applications either as stored R data objects or by hardcoding them directly into the app’s code. For transparency, the code is pushed to GitHub, allowing users to inspect the application’s backend functionality. The live interaction with riskcalc.org occurs via an open-source Shiny server hosted on AWS, a cost-effective infrastructure primarily incurring costs for compute resources.</p>
+</section>
+<section id="recent-developments-and-enhancements" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments-and-enhancements">Recent Developments and Enhancements</h2>
+<p>The platform has seen several recent enhancements. All source codes for the applications are now publicly accessible on the department’s GitHub page, with each application featuring a link to its source code. The homepage of riskcalc.org has undergone a redesign to improve user interface and navigation, with icons representing different disease areas leading users to relevant risk calculators.</p>
+<p>Moreover, an R package has been developed to streamline the creation of risk calculators. The package’s main function, <code>risk_calculator</code>, allows users to generate a directory containing application files preconfigured with standard boilerplate elements. Users can then customize these files with specific model details, facilitating the rapid development of new calculators.</p>
+</section>
+<section id="future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
+<p>Looking forward, several key areas for development and improvement have been identified:</p>
+<ol type="1">
+<li><p><strong>Integration and Workflow Enhancement</strong>: There is a push to more formally integrate GitHub into the workflow through CI/CD processes, ensuring that the code on GitHub is directly connected to the live website. This integration would aid in managing package versions and R itself on the server, mitigating compatibility issues during application development.</p></li>
+<li><p><strong>Standardization and Expansion</strong>: Efforts are underway to generalize the concept of a risk calculator to include not just regression models but any mathematical object that predicts clinical outcomes, such as machine learning models. A standardized framework is being sought to power the backend consistently, regardless of model methodology.</p></li>
+<li><p><strong>Model Monitoring and Updating</strong>: The team is exploring ways to monitor model performance over time, beyond the point of initial development. This ongoing evaluation would ensure that models remain relevant and accurate in clinical settings.</p></li>
+<li><p><strong>Broader Community and Research Ecosystem</strong>: Riskcalc.org aims to become a one-stop shop for clinical risk prediction. This vision includes fostering community involvement for model validation and performance ranking, developing APIs for programmatic access to model outputs, and creating a research ecosystem to integrate and compare various models for improved clinical predictions.</p></li>
+</ol>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>The platform has been a collaborative effort, with contributions from numerous co-developers and principal investigators. Special acknowledgment is given to Mike Kattan, the former department chair and a world-renowned expert in clinical risk prediction, whose vision and leadership were instrumental in the creation of riskcalc.org.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Riskcalc.org represents a significant stride towards integrating data science with clinical practice, providing a robust tool for personalized medical decision-making. With its ongoing developments and future plans, the platform is poised to enhance its impact and utility in the healthcare domain.</p>
+<p>For more information on this talk and to access the slides, visit Alex Zajichek’s <a href="https://www.zajichekstats.com/presentations/riskcalc-a-repository-of-risk-calculators-for-medical-decision-making/">presentation</a>.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <category>Insurance/Risk</category>
+  <guid>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/thumbnail-riskcalc.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>R/Medicine 2025 - Closing Remarks - Final Day - Michael Kane</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</link>
@@ -1155,72 +1214,6 @@
   <guid>https://r-consortium.org/posts/introduction-to-r-for-clinical-data/</guid>
   <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/introduction-to-r-for-clinical-data/thumbnail-introduction-to-r-for clinical-data.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Personal R Administration</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/personal-r-administration/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/m2eihAhl8so" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="personal-r-administration-streamlining-your-r-workflow" class="level1">
-<h1>Personal R Administration: Streamlining Your R Workflow</h1>
-<p>In the ever-evolving landscape of data science and software development, R remains a cornerstone for researchers, analysts, and programmers alike. However, managing R environments, handling package installations, and ensuring reproducibility can often feel like daunting tasks. At the R/Medicine 2025 conference, E. David Aja and Shannon Pileggi unveiled their workshop titled “Personal R Administration,” offering the R community invaluable insights into simplifying these processes, ensuring secure and efficient workflows, and fostering a more robust engagement with R projects.</p>
-<section id="speakers" class="level2">
-<h2 class="anchored" data-anchor-id="speakers">Speakers</h2>
-<p><strong>E. David Aja</strong><br>
-Software Engineer at Posit. Before his current role, he ventured through the realms of data science in the public sector, amassing a wealth of experience in deploying R across diverse computational landscapes.</p>
-<p><strong>Shannon Pileggi</strong><br>
-With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium, Shannon brings her expertise to the fore. A frequent blogger and a pivotal member of the R-Ladies Global leadership team, she excels in automating data wrangling, crafting digestible data insights, and demystifying the learning curve for new material.</p>
-</section>
-<section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
-<p>The workshop began with an open acknowledgment of the common pitfalls many R users face: fear of updating R versions, insecurely storing secrets, and the mystification surrounding package installations. Aja and Pileggi, through a blend of technical prowess and personal anecdotes, offered a roadmap to navigate these challenges.</p>
-<section id="embracing-project-based-workflows" class="level3">
-<h3 class="anchored" data-anchor-id="embracing-project-based-workflows">Embracing Project-Based Workflows</h3>
-<p>The speakers underscored the importance of project-based workflows in R, highlighting strategies for maintaining a clean slate with each new session. This approach not only aids in minimizing clutter but also ensures that projects remain insulated from each other, reducing dependency conflicts and enhancing reproducibility.</p>
-</section>
-<section id="navigating-package-management-with-renv" class="level3">
-<h3 class="anchored" data-anchor-id="navigating-package-management-with-renv">Navigating Package Management with <code>renv</code></h3>
-<p>A significant portion of the workshop was dedicated to <code>renv</code>, a package that revolutionizes how R users manage dependencies within projects. By isolating project environments and leveraging a global cache, <code>renv</code> allows for seamless package installations and version management, mitigating the risk of disrupting existing projects when making updates.</p>
-</section>
-<section id="version-control-and-environment-management" class="level3">
-<h3 class="anchored" data-anchor-id="version-control-and-environment-management">Version Control and Environment Management</h3>
-<p>The discussion ventured into the realm of version control and the management of R versions across different projects. Tools like <code>rig</code> were introduced, offering a streamlined method to switch between R versions without the hassle, thereby fostering an environment where projects can be easily shared and reproduced across teams.</p>
-</section>
-<section id="security-practices-and-workflow-optimization" class="level3">
-<h3 class="anchored" data-anchor-id="security-practices-and-workflow-optimization">Security Practices and Workflow Optimization</h3>
-<p>Security practices, particularly around the handling of sensitive information within R scripts, were addressed. The speakers advocated for the use of environment variables and secure storage solutions to mitigate risks. Additionally, they provided insights into optimizing workflows through the use of RStudio addins and other productivity-enhancing tools.</p>
-</section>
-<section id="community-and-resources" class="level3">
-<h3 class="anchored" data-anchor-id="community-and-resources">Community and Resources</h3>
-<p>Aja and Pileggi emphasized the value of the R community, encouraging attendees to engage with forums, contribute to open-source projects, and leverage the wealth of resources available, including blogs, webinars, and comprehensive guides like the <code>R Packages</code> book.</p>
-</section>
-<section id="looking-ahead" class="level3">
-<h3 class="anchored" data-anchor-id="looking-ahead"><strong>Looking Ahead</strong></h3>
-<p>As R continues to evolve, so too do the tools and practices surrounding its use. This workshop served as a vital resource for R users seeking to refine their administration skills, promising a future where managing R environments is less about troubleshooting and more about innovation.</p>
-<p>In closing, “Personal R Administration” was not just a workshop but a testament to the R community’s dedication to fostering a culture of continuous learning and improvement. For those looking to dive deeper into the topics covered, the speakers provided a wealth of resources, including links to the <code>renv</code> documentation, <code>rig</code> installation guides, and their own contributions to R package development.</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h2>
-<p>Whether you’re a seasoned R veteran or a newcomer to the language, the “Personal R Administration” workshop offered a treasure trove of knowledge designed to streamline workflows, enhance project reproducibility, and secure your R coding practices. As we move forward, the insights shared by Aja and Pileggi will undoubtedly serve as a beacon for the R community, guiding us toward more efficient and enjoyable data science experiences.</p>
-<p>For those interested in further exploring the themes of the workshop, the R/Medicine and R Consortium websites provide a gateway to a broader exploration of R’s capabilities within the medical field and beyond.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/personal-r-administration/</guid>
-  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/personal-r-administration/thumbnail-personal-r-administration.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
