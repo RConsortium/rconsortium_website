@@ -1,0 +1,54 @@
+--- 
+title: "{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows" 
+unpublished: true 
+url: "https://r-consortium.org/posts/redquack-an-r-package-for-memory-efficient-redcap-to-duckdb-workflows/"
+description: "Discover {redquack}, a package for memory-efficient REDCap data workflows with DuckDB." 
+categories: [R/Medicine 2025, Healthcare]
+author: "R Consortium" 
+image: "thumbnail-redquack.png" 
+image-alt: "{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows - Dylan Pieper" 
+date: "06/21/2025" 
+---
+
+{{< video https://www.youtube.com/embed/PWLRL0R7s3Y >}}
+
+# Breaking Through Memory Limitations in REDCap: Introducing the {redquack} Package
+
+In today's data-driven healthcare environment, managing large datasets efficiently is crucial. The REDCap platform, a free electronic health record software, is widely used by over 7,000 institutions across the globe. Its ability to handle complex, longitudinal data and support multiple instruments or assessments makes it a favored choice for clinical research. However, with the exponential growth of data, researchers often encounter memory constraints when trying to extract and analyze vast amounts of information.
+
+Dylan Pieper from the University of Pittsburgh addressed this challenge head-on at the R/Medicine 2025 conference. His innovative solution, the {redquack} package, is designed to optimize data workflows between REDCap and DuckDB, providing a memory-efficient alternative for processing large datasets.
+
+## The Challenge of Handling Large Datasets in REDCap
+
+At the School of Pharmacy, University of Pittsburgh, data scientists manage a REDCap database containing clinical data from over 200 outpatient treatment centers. This database is extensive, with nearly 3 million rows across 400 columns. Such large datasets pose a significant challenge when using traditional methods like the {REDCapR} package, which attempts to load all data into memory, often resulting in failures due to hardware limitations.
+
+REDCap stores its data using a MySQL backend, which is typically managed by an institution's IT department. Direct interfacing with this database is not recommended, pushing researchers to rely on APIs and packages to access the data. However, as datasets grow, these methods become inefficient and sometimes infeasible.
+
+## The {redquack} Package: A Solution for Seamless Data Extraction
+
+The {redquack} package emerged as a solution to these memory constraints by leveraging the power of DuckDB, a fast and portable SQL database management system. DuckDB's columnar storage format makes it particularly suited for large-scale data processing, allowing data to be stored outside of R's memory.
+
+The package introduces a novel batch processing approach to data extraction. By breaking down data into manageable chunks, researchers can efficiently process portions of the dataset without ever exceeding memory limits. This method involves:
+
+1. **Batch Processing**: Data is extracted in configurable batches of record IDs, minimizing memory usage.
+2. **Column Optimization**: The package automatically optimizes column types across batches, enhancing query performance.
+3. **Detailed Logging**: Users can track extraction progress through comprehensive logs, aiding in debugging and process monitoring.
+4. **Integration with Tidyverse**: The resulting DuckDB connection can be seamlessly integrated with tidyverse workflows, allowing analysts to use familiar dplyr syntax for data manipulation.
+
+## Practical Implementation and Benefits
+
+Using {redquack} is straightforward. Researchers need to provide their REDCap API credentials and configuration preferences to the `redcap_to_duckdb()` function. This function handles the extraction process, and the resulting DuckDB connection can be immediately utilized for data analysis.
+
+The package includes several quality-of-life features, such as sound notifications (a "quack" on success) for long-running operations. This user-friendly approach empowers researchers to work with datasets that exceed memory constraints without compromising their existing workflows.
+
+## Real-World Applications at the University of Pittsburgh
+
+Dylan Pieper's presentation showcased practical examples from the School of Pharmacy, where the {redquack} package has streamlined the data pipeline from REDCap to analysis. By eliminating memory constraints, the package has enabled clinical researchers, data scientists, and analysts to work more efficiently with large datasets. This is particularly beneficial for those handling complex, multi-form projects or longitudinal studies where traditional extraction methods fall short.
+
+The package is designed to be scalable and consistent, ensuring reliable data exports as projects grow in size. While it currently focuses on data reading, there is potential for future enhancements, such as supporting additional database drivers and expanding its capabilities.
+
+## A Collaborative Future
+
+The development of {redquack} highlights the importance of collaboration within the R community. By sharing insights and innovations, researchers can collectively overcome the challenges posed by large-scale data management. The package is available on CRAN and GitHub, inviting contributions and feedback from the wider community.
+
+As REDCap continues to evolve, tools like {redquack} will play a pivotal role in ensuring that researchers can harness the full potential of their data without being hindered by technical limitations. Dylan Pieper's work is a testament to the power of open-source collaboration and the continuous drive for innovation within the R ecosystem.
