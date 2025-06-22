@@ -178,6 +178,59 @@
   <media:content url="https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/thumbnail-bootstrap-inference-thulin.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Dengue Forecasting Addressing the Interrupted Effect from COVID-19 Cases</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/TNRH2WxA3J0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><em>Note: This project is <a href="http://localhost:4215/posts/empowering-dengue-research-through-the-dengue-data-hub/index.html">funded by the R Consortium</a></em></p>
+<section id="navigating-interruption-forecasting-dengue-cases-amidst-covid-19" class="level1">
+<h1>Navigating Interruption: Forecasting Dengue Cases Amidst COVID-19</h1>
+<p>Dengue fever, a mosquito-borne disease, remains a significant health concern in tropical regions, particularly in countries near the equator. The dengue virus, primarily transmitted by Aedes mosquitoes, thrives in warm, humid conditions with regular rainfall—conditions that are prevalent in these regions. However, the onset of the COVID-19 pandemic introduced an unprecedented interruption in the usual dengue case patterns. This blog post delves into a study that explores how to accurately forecast dengue cases amidst the interruptions caused by the COVID-19 pandemic, using Sri Lanka as a case study.</p>
+<p><strong>Understanding the Interruption</strong></p>
+<p>During the COVID-19 pandemic, several factors contributed to an unusual pattern in dengue case reporting. These include:</p>
+<ul>
+<li>Misclassification of dengue as COVID-19 due to overlapping symptoms such as fever, headache, and fatigue.</li>
+<li>Underreporting or delayed reporting due to lockdowns and mobility restrictions.</li>
+<li>Reduced human-mosquito contact due to people spending more time indoors.</li>
+<li>School and workplace closures, which are common sites for dengue transmission.</li>
+<li>Travel restrictions, which reduced the spread of dengue to new areas.</li>
+</ul>
+<p>This period, referred to as the “interrupted period,” significantly affected the usual seasonal and annual patterns of dengue cases.</p>
+<p><strong>Forecasting Strategies</strong></p>
+<p>The study, presented by Thiyanga S. Talagala from the Department of Statistics at the University of Sri Jayewardenepura, Sri Lanka, investigates three modeling strategies to address this interruption in dengue case forecasting:</p>
+<ol type="1">
+<li><p><strong>Excluding the Interrupted Period</strong>: This approach involves using only post-COVID-19 data for model training, effectively ignoring the data from the interrupted period.</p></li>
+<li><p><strong>Forecasting the Interrupted Period First</strong>: This method involves forecasting the interrupted period based on data up to 2019, then using the updated time series for model training.</p></li>
+<li><p><strong>Down-Weighting the Interrupted Period</strong>: This strategy assigns lower weights to data points in the interrupted period, giving higher weights to uninterrupted periods.</p></li>
+</ol>
+<p>Data from 2007 to 2024 were used for model fitting, and data for 2025 served as the test set to evaluate the performance of these methods across 25 districts in Sri Lanka.</p>
+<p><strong>Evaluating the Methods</strong></p>
+<p>The study employed various accuracy measures, including Root Mean Square Error (RMSE) and Mean Absolute Error (MAE), to compare the forecasting performance of each approach. The findings revealed that no single method outperformed across all districts. Instead, the effectiveness of each approach depended on the specific characteristics and historical patterns of each district.</p>
+<p><strong>Insights and Implications</strong></p>
+<p>The study’s insights underscore the importance of tailoring forecasting methods to the unique characteristics of each region. For instance, the down-weighting approach proved effective in areas where the usual dengue patterns persisted despite the interruption. In contrast, excluding the interrupted period worked best in districts that had shifted to a new normal post-COVID-19.</p>
+<p>Furthermore, the study highlighted the influence of weather patterns on dengue transmission. Districts affected by specific monsoon periods or characterized by unique weather conditions showed distinct forecasting patterns.</p>
+<p><strong>Conclusion</strong></p>
+<p>Forecasting dengue cases amidst interruptions like COVID-19 is a complex task that requires adaptive approaches. The study by Talagala emphasizes that understanding the local context, including weather patterns and historical data, is crucial for accurate forecasting. This research not only contributes to improving dengue preparedness but also offers valuable insights for handling future public health interruptions.</p>
+<p>For more detailed insights and to explore the methodologies used, you can access <a href="https://github.com/thiyangt/denguedatahub">the project on GitHub</a> and <a href="https://denguedatahub.netlify.app/">the main Dengue Data Hub site</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Epidemiology</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/thumbnail-dengue.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/</link>
@@ -1113,67 +1166,6 @@
   <guid>https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/</guid>
   <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/kidneyepi-r-package-for-facilitating-research-in-diabetes-kidney-heart-and-other-diseases/thumbnail-kidney-boris.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>MIIPW: An R package for Generalized Estimating Equations with missing data integration</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4OslUevy6AQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="tackling-missing-data-in-longitudinal-studies-with-the-miipw-r-package" class="level1">
-<h1>Tackling Missing Data in Longitudinal Studies with the MIIPW R Package</h1>
-<section id="introduction-to-longitudinal-data" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-longitudinal-data">Introduction to Longitudinal Data</h2>
-<p>Longitudinal data, a cornerstone of numerous scientific fields, captures repeated measurements from the same subjects over time. This approach allows researchers to delve into changes within subjects, uncover trends, and identify temporal patterns. Such data is pivotal in biomedical, social, and behavioral sciences, enabling insights into patient biomarker levels, treatment responses, and disease progression. However, longitudinal data often presents challenges related to correlated measurements, rendering standard statistical methods insufficient.</p>
-</section>
-<section id="addressing-missing-data-in-longitudinal-studies" class="level2">
-<h2 class="anchored" data-anchor-id="addressing-missing-data-in-longitudinal-studies">Addressing Missing Data in Longitudinal Studies</h2>
-<p>Missing data is a pervasive issue in longitudinal studies, often resulting from dropouts, loss to follow-up, or nonresponse. Traditional methods in R’s generalized estimating equations (GEE) packages tend to ignore or exclude these missing cases, potentially biasing results and diminishing statistical power. This is where the MIIPW package steps in, offering a robust solution for handling missing data through a combination of multiple imputation and inverse probability weighting techniques.</p>
-</section>
-<section id="the-miipw-r-package" class="level2">
-<h2 class="anchored" data-anchor-id="the-miipw-r-package">The MIIPW R Package</h2>
-<p>The MIIPW (Multiple Imputation and Inverse Probability Weighting) package is specifically designed to address missing data in marginal models used in longitudinal studies. Developed by Bhrigu Rajbongshi and his team at the Indian Institute of Technology (Indian School of Mines) Dhanbad, this package integrates advanced statistical techniques to provide accurate parameter estimation in the presence of incomplete data.</p>
-<section id="key-features-of-miipw" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-of-miipw">Key Features of MIIPW</h3>
-<ul>
-<li><p><strong>Multiple Imputation and Inverse Probability Weighting</strong>: MIIPW combines these two techniques to correct biases and provide reliable estimates. The package supports five different methods for parameter estimation: mean score, SIPW, AIPW, miSIPW, and miAIPW.</p></li>
-<li><p><strong>Covariance Structures</strong>: The package accommodates four covariance structures: AR-1, Exchangeable, Unstructured, and Independent, allowing users to model data appropriately.</p></li>
-<li><p><strong>Model Selection using QIC</strong>: For model selection, MIIPW employs the Quasi-Information Criterion (QIC), helping researchers identify the best-fitting model for their data.</p></li>
-<li><p><strong>Comprehensive Documentation and CRAN Availability</strong>: MIIPW is available on CRAN, complete with detailed documentation to assist users in effectively implementing its features.</p></li>
-</ul>
-</section>
-</section>
-<section id="practical-application-of-miipw" class="level2">
-<h2 class="anchored" data-anchor-id="practical-application-of-miipw">Practical Application of MIIPW</h2>
-<p>Using the MIIPW package involves several steps, from data preparation to model fitting and comparison. Here’s a brief overview of how to implement MIIPW in a real-world scenario:</p>
-<ol type="1">
-<li><p><strong>Data Preparation</strong>: Load the MIIPW package and your dataset. Define the longitudinal model formula and predictor matrix using the <code>make.predictorMatrix</code> function from the <code>mice</code> package.</p></li>
-<li><p><strong>Model Fitting</strong>: Use functions like <code>mean_score</code>, <code>SIPW</code>, and <code>AIPW</code> to fit your model. Specify the number of imputations and the desired covariance structure.</p></li>
-<li><p><strong>Model Comparison</strong>: Utilize the <code>QICw</code> function to compare models based on different covariance structures, selecting the one with the lowest QIC value as the best fit.</p></li>
-</ol>
-<p>The package’s integration with the <code>mice</code> package ensures flexibility and ease of use, making MIIPW a valuable tool for researchers dealing with complex longitudinal data.</p>
-</section>
-<section id="conclusion-and-future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-and-future-directions">Conclusion and Future Directions</h2>
-<p>The MIIPW package is a significant advancement in handling missing data within longitudinal studies. While it currently focuses on generalized estimating equations, there is potential for extending these methods to mixed-effect models, which would further enhance its applicability. The ongoing development aims to address computational challenges associated with random effects in mixed models, promising even greater utility for the research community.</p>
-<p>The MIIPW package is a testament to the innovative work being done in the R community, providing researchers with robust tools to tackle the intricacies of longitudinal data analysis. By integrating state-of-the-art statistical techniques, MIIPW empowers researchers to derive meaningful insights from their data, ultimately advancing knowledge across various scientific domains.</p>
-<p>For more information and to download the MIIPW package, visit <a href="https://CRAN.R-project.org/package=MIIPW">CRAN</a>.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/</guid>
-  <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/miipw-an-r-package-for-generalized-estimating-equations-with-missing-data-integration/thumbnail-MIIPW-bhrigu.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
