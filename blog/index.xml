@@ -67,6 +67,54 @@
   <media:content url="https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/thumbnail-bootstrap-inference-thulin.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pAx92roI3VE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="ethical-choices-in-regression-analysis-a-case-study-from-seattle-childrens-hospital" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-choices-in-regression-analysis-a-case-study-from-seattle-childrens-hospital">Ethical Choices in Regression Analysis: A Case Study from Seattle Children’s Hospital</h2>
+<p>In the world of statistical modeling, the choice of coding schemes for categorical variables is not merely a technical consideration but a decision laden with ethical implications. This was the focus of a recent presentation during the R/Medicine 2025 conference by Dwight Barry, Principal Data Scientist at Seattle Children’s Hospital, and Nicole Chicoine, DO, MPH, also at Seattle Children’s Hospital. The talk revolved around how these choices can influence the inferences drawn from regression analyses and ultimately impact healthcare delivery and research.</p>
+<section id="the-hospitals-language-diversity" class="level3">
+<h3 class="anchored" data-anchor-id="the-hospitals-language-diversity">The Hospital’s Language Diversity</h3>
+<p>Seattle Children’s Hospital is a bustling 400-bed facility that handles over half a million patient visits annually. With such a diverse patient base, the hospital encounters more than 130 languages, with Spanish being the most common after English. To accommodate this linguistic diversity, the hospital has initiated its first all-Spanish speaking operating room, ensuring equitable care for non-English speaking patients. This commitment to inclusivity is mirrored in their research methodologies, where the focus is on equitable outcomes across different patient groups.</p>
+</section>
+<section id="understanding-coding-schemes" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-coding-schemes">Understanding Coding Schemes</h3>
+<p>The choice of coding schemes in regression models is crucial as it can shape the conclusions drawn from the data. Barry highlighted three coding schemes used in R: treatment contrast, sum contrast, and weighted effect coding. Each scheme presents categorical variables in different ways, affecting the interpretation of the data.</p>
+<ol type="1">
+<li><p><strong>Treatment Contrast</strong>: This is the default coding in R, where one category is used as a reference against which others are compared. In a clinical setting, this could inadvertently privilege a particular group, often aligning with the English-speaking, white demographic, which can skew the narrative towards existing inequities.</p></li>
+<li><p><strong>Sum Contrast</strong>: Here, the grand mean of all categories is used as the reference point. This approach decouples any single category from being the norm, promoting a more balanced view. In the context of healthcare, it shifts the focus from a single dominant group to an aggregate understanding, which can be crucial in addressing biases.</p></li>
+<li><p><strong>Weighted Effect Coding</strong>: This method is a variant of the sum contrast, where each category level is weighted by its sample size. Although not a built-in feature in base R, the <code>wec</code> package facilitates its implementation. This approach provides a nuanced view by factoring in the prevalence of each category, which can be especially useful in diverse patient populations.</p></li>
+</ol>
+</section>
+<section id="implications-for-healthcare-research" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-healthcare-research">Implications for Healthcare Research</h3>
+<p>The choice of coding scheme is not just a statistical decision but an ethical one, as it affects how healthcare equity is perceived and addressed. Barry’s presentation underscored that while odds ratios may differ across coding schemes, the marginal effects remain consistent, suggesting that predictions are unaffected by these choices. However, the ethical ramifications are significant, as they influence which group is centered in the analysis.</p>
+<p>In healthcare research, where categorical exposures like language group, race, or ethnicity lack a natural order, choosing the right coding scheme is vital. Sum contrasts, for instance, provide a means to avoid privileging any group, thereby promoting equity.</p>
+</section>
+<section id="broader-implications-and-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="broader-implications-and-recommendations">Broader Implications and Recommendations</h3>
+<p>Barry’s insights extend beyond surgery to any healthcare condition where equity is a concern. The presentation emphasized the importance of presenting marginal effects alongside regression coefficients or odds ratios to provide a comprehensive view of the data. By decentering from a single reference point, researchers can challenge the dominant social narratives and highlight systemic inequities, paving the way for more inclusive and equitable healthcare practices.</p>
+<p>In conclusion, the ethical dimensions of statistical modeling are as crucial as the statistical ones. As healthcare becomes increasingly data-driven, recognizing and addressing these ethical considerations is essential. By adopting coding schemes that promote equity, researchers and healthcare providers can ensure that their work contributes to a more just and equitable healthcare system.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/</link>
@@ -1153,89 +1201,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/</guid>
   <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/r-regulatory-repo-main-image.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>Brewing Success with R.U.M.: How Inclusivity Fuels Manchester’s Thriving R Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/brewing-success-with-rum-how-inclusivity-fuels-manchesters-thriving-r-community/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>================== <strong>AnthonyEvans</strong></td>
-<td>:=========================: <strong>MartinHerrerias Azcue</strong></td>
-<td>:==============: <strong>RowanGreen</strong></td>
-<td>:==============: <strong>SianBladon</strong></td>
-<td>:=========================: <strong>Stavrina Dimosthenous</strong></td>
-</tr>
-</tbody>
-</table>
-<p>The R Consortium recently had the opportunity to interview Anthony Evans, <a href="https://www.linkedin.com/in/martinherrerias/">Martin Herrerias Azcue</a>, <a href="https://www.linkedin.com/in/rowan-green-microbes/?originalSubdomain=uk">Rowan Green</a>, <a href="https://www.linkedin.com/in/sian-bladon-2b324a61/">Sian Bladon</a>, and Stavrina Dimosthenous, organizers of the <a href="https://www.meetup.com/r-users-group-uni-manchester/">R User Group at the University of Manchester (R.U.M.)</a>. These leaders bring together a diverse community of students, researchers, and staff dedicated to advancing their skills in R programming. Their shared goal is to create an inclusive environment for learning and collaboration, which has driven the growth and success of the R.U.M. community.</p>
-<section id="related-links" class="level3">
-<h3 class="anchored" data-anchor-id="related-links">Related Links</h3>
-<ul>
-<li><a href="https://rumgroup.github.io/allaboutrum/">RUM website</a></li>
-<li><a href="https://research-it.manchester.ac.uk/building-communities/">CaDiR</a></li>
-</ul>
-</section>
-<section id="please-share-about-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-about-your-background-and-involvement-with-the-rugs-group.">Please share about your background and involvement with the RUGS group.</h2>
-<p><strong>Tony:</strong> Yes, we’ve been involved in this group for about two years now. Initially, it was run by someone named Kamilla, who later moved to another university, and her role was taken over by Martin. Martin has been doing an excellent job leading the group, which mainly serves postgraduates, teaching staff, and research staff—really anyone enthusiastic about learning R and improving their skills, including a lot of newcomers.</p>
-<p>When I first joined, my main goal was to improve my own R skills. Before that, I had been a helper in some R courses taught by the university, but I felt I could learn more and benefit from being part of a supportive community. The group is full of volunteers who are passionate about R and programming in general. They’re always willing to share their knowledge and help one another, which has been incredibly valuable. This spirit of sharing and collaboration creates a fantastic environment, especially in a university setting where research thrives on collective learning.</p>
-<p><strong>Martin:</strong> I joined the group about two years ago. I had only been using R for about six months before that, so I didn’t have much experience with it. Our group had only a handful of people who knew R, and two of them left the University shortly after. Suddenly I found myself needing to support researchers who ran into issues with R, as well as managing projects like our pilot Shiny server. We had to find ways to support these types of projects. The R User Group became a valuable resource for us to stay connected with researchers actively using R and to continue learning the language ourselves.</p>
-<p><strong>Rowan:</strong> I am a PhD student in evolution and ecology. When the R.U.M group was restarted, a general email was sent to the university. As someone who enjoys mentoring younger lab group members in R and learning about new R tools, I was interested in helping restart the group.</p>
-<p><strong>Stavrina:</strong> As a Data Scientist and Data Visualization enthusiast, I used to run our Data Visualisation Club monthly meetups. I have taken a step back, but I was involved in the group’s initial creation and help a bit with organizing and strategizing now.</p>
-</section>
-<section id="can-you-share-what-the-local-r-community-is-like" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-local-r-community-is-like">Can you share what the local R Community is like?</h2>
-<p><strong>Tony:</strong> The university’s local community is mostly composed of postgraduates, along with some researchers who are starting to use R in their work. Everyone in the community is very enthusiastic, eager to learn, and focused on improving their skills. It’s a highly motivated and self-sustaining group. Everyone in the R community is very friendly and welcoming. It’s a great, supportive environment.</p>
-<p><strong>Martin:</strong> Most people in our R community come from humanities backgrounds. There’s a group in health economics that uses R extensively, as well as some in psychology and language studies. We also have a large group in genomics. It feels like there’s a wide range of experience—some researchers have been working with R for a long time, while many postgraduates are just starting to learn. As a group, it can be challenging to support both experienced users and beginners, but we do our best to meet everyone’s needs.</p>
-<p><strong>Rowan:</strong> The local R community exists at multiple levels. It is often most active at a small scale within research groups, where members share advice. At the university level, R.U.M. brings together people from a broader variety of backgrounds. There is also a city-wide R community in Manchester, where quarterly talks are organized by <a href="https://datacove.co.uk/">Datacove</a>. These events bring together people from industry, public health, academia, and more.</p>
-</section>
-<section id="you-had-a-meetup-on-r-functions-for-visualization.-can-you-share-more-about-the-topic-covered-why-this-topic" class="level2">
-<h2 class="anchored" data-anchor-id="you-had-a-meetup-on-r-functions-for-visualization.-can-you-share-more-about-the-topic-covered-why-this-topic">You had a Meetup on “<a href="https://www.meetup.com/r-users-group-uni-manchester/events/303918144/?eventOrigin=group_upcoming_events">R Functions [for visualization]</a>.” Can you share more about the topic covered? Why this topic?</h2>
-<p><strong>Martin:</strong> Our previous event hadn’t gone as well as we hoped. We tried to cover a pretty complex topic—reproducible science using R on a Docker container with renv—but it wasn’t very well attended. So, we decided to shift our focus to beginner users and cover some basics that every R user should know but that we’ve noticed many beginners struggle with. The event covered the basics of function syntax and organizing code with functions. We also had a second talk that was a bit more advanced, focusing on using functions with the <a href="https://purrr.tidyverse.org/reference/map.html">purrr map function</a> to automate plot production. The goal was to attract a broader range of users, as our previous events have mainly catered to advanced users.</p>
-<p><strong>Tony:</strong> We’ve noticed that many users haven’t been responding to the more advanced topics. In general, though, making code readable is crucial, especially for researchers who need others to reproduce their work. If the code is hard to understand, it complicates reproducibility, but organizing code with functions makes it much clearer. This is an essential aspect of programming, and it also ties into plotting, which is one of the most requested skills among students. Most students using R for research will need to create plots to convey complex conclusions and ideas. Plots are much more effective than raw data alone, and R produces some of the best visualizations out there. Even organizations like the <a href="https://www.ft.com/">Financial Times</a> use R for their high-quality graphs, so it’s a valuable and widely-used skill.</p>
-<p><strong>Stavrina:</strong> A barrier to entry in any programming language or tool is sometimes seeing demonstrable evidence of how it can be useful to an individual, especially at undergraduate and early postgraduate level. Working within a University and Research environment, we all have to make plots and advanced visualizations. Sometimes, though, the extra step is standardizing and making that reproducible for high-throughput plotting. Combining visualizations with functions achieves just that and can serve as a practical and aspirational demonstration for our community.</p>
-</section>
-<section id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future" class="level2">
-<h2 class="anchored" data-anchor-id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future">Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</h2>
-<p><strong>Tony:</strong> One technique we started using since COVID is hybrid teaching. We initially used Zoom, but then switched to Teams. This approach has been very inclusive because it allows people in distant locations, even in other countries, or those with long commutes to participate in our talks. In the past, everyone had to be physically on campus, which excluded those who lived further away. Now, with hybrid teaching, more people can join in, regardless of their location.</p>
-<p><strong>Martin:</strong> Yes, we’ve noticed that this might have been part of the issue. Our last talk was advertised as in-person only because it was meant to be hands-on, Carpentry-style training. That may have contributed to the low attendance. It definitely makes a difference—when we make an event hybrid, we tend to get a lot more participation.</p>
-<p><strong>Stavrina:</strong> We use conferencing software for all our meetings and make the invitation open to anyone outside the organization, we are lucky that we have access to meeting spaces that have suitable equipment for running hybrid meetings.</p>
-</section>
-<section id="what-trends-do-you-currently-see-in-r-language-and-your-industry-any-trends-you-see-developing-in-the-near-future" class="level2">
-<h2 class="anchored" data-anchor-id="what-trends-do-you-currently-see-in-r-language-and-your-industry-any-trends-you-see-developing-in-the-near-future">What trends do you currently see in R language and your industry? Any trends you see developing in the near future?</h2>
-<p><strong>Tony:</strong> Researchers and academic programs are increasingly looking to include R and RStudio in their teaching and research for two main reasons. First, data regulations have become much stricter over the past couple of years, and with R, you have complete control over where your data is stored. You know it’s not in the cloud or being transferred to any external organization, which helps in meeting university data compliance standards.</p>
-<p>The second reason for the shift towards R is that it’s free from licensing restrictions. With some other software, licensing can be highly restrictive—you might only be allowed to use it in certain countries, like the UK, or only on campus. R, on the other hand, offers a more inclusive environment for research, allowing access without these geographic or licensing limitations. This flexibility is a big part of why R is becoming so popular within the research community.</p>
-<p><strong>Martin:</strong> I completely agree. I couldn’t have put it better myself, but as Tony pointed out, R is becoming more and more popular. It’s gaining broader appeal and is now appreciated as a general scientific programming language rather than just a niche statistical tool. There’s a clear trend, as Tony described, toward open science and open source software, and R is becoming a significant part of that movement.</p>
-<p><strong>Rowan:</strong> One big trend is the use of LLMs/AI both for writing code in R, and as a tool executed through R. We were really lucky to have a former R users group member, <a href="https://www.birmingham.ac.uk/research/arc/rsg/staff/kamilla-kopec-harding">Kamilla Kopec-Harding</a>, return to give a talk on both of these perspectives earlier this year.</p>
-<p><strong>Sian:</strong> R remains relatively niche and widely recognized in bioinformatics, clinical trials, fintech, and marketing. However, <a href="https://www.linkedin.com/in/hadleywickham/">Hadley Wickham</a> and others’ contributions - through the <a href="https://www.tidyverse.org/">tidyverse</a> and packages like <a href="https://dplyr.tidyverse.org/">dplyr,</a> <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, and <a href="https://roxygen2.r-lib.org/">roxygen2</a> - have significantly broadened R’s appeal and impact in recent years. From an anecdotal perspective, about a decade ago, it was rare to see job postings requiring R skills. Today, although R may not have the same reach as languages like Python, job searches for R roles now yield far more opportunities than before.</p>
-</section>
-<section id="how-do-i-join" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-join">How do I Join?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 75,492 members in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html" class="uri">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/brewing-success-with-rum-how-inclusivity-fuels-manchesters-thriving-r-community/</guid>
-  <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/brewing-success-with-rum-how-inclusivity-fuels-manchesters-thriving-r-community/rum-main-image.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
