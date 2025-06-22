@@ -12,6 +12,61 @@
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Sun, 22 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>Bootstrap inference made easy: p-values and confidence intervals in one line of code</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/EeAtvWF3twA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="simplifying-bootstrap-inference-in-r-with-the-boot.pval-package" class="level3">
+<h3 class="anchored" data-anchor-id="simplifying-bootstrap-inference-in-r-with-the-boot.pval-package">Simplifying Bootstrap Inference in R with the boot.pval Package</h3>
+<p>In the realm of statistical analysis, ensuring the reliability of p-values and confidence intervals is paramount, especially when classical assumptions about data distribution do not hold. This is where bootstrap methods come into play, offering a robust alternative by relying on data-driven, empirical distributions rather than theoretical assumptions. Despite their utility, bootstrap methods are often underutilized due to perceived complexities in implementation. However, with advancements in R packages like <code>boot.pval</code>, bootstrap inference has become more accessible than ever.</p>
+<section id="the-bootstrap-approach" class="level4">
+<h4 class="anchored" data-anchor-id="the-bootstrap-approach">The Bootstrap Approach</h4>
+<p>Introduced by Bradley Efron in 1979, the bootstrap method revolutionizes statistical inference by focusing on the empirical distribution of the data itself. Unlike traditional methods that start with a distributional assumption (e.g., normality), bootstrap methods begin with the actual data distribution. By resampling from this empirical distribution and calculating the test statistic repeatedly, we obtain an accurate approximation of its distribution. This allows for the computation of p-values and confidence intervals without reliance on stringent assumptions about data normality.</p>
+</section>
+<section id="the-role-of-boot.pval" class="level4">
+<h4 class="anchored" data-anchor-id="the-role-of-boot.pval">The Role of boot.pval</h4>
+<p>The <code>boot.pval</code> package in R, developed by Måns Thulin from Thulin Consulting AB, simplifies the process of applying bootstrap methods to a variety of statistical tests and models. From t-tests to regression coefficients in linear models, GLMs, survival models, and mixed models, <code>boot.pval</code> enables users to compute bootstrap p-values and confidence intervals efficiently—often with just a single line of code.</p>
+</section>
+<section id="key-features-and-benefits" class="level4">
+<h4 class="anchored" data-anchor-id="key-features-and-benefits">Key Features and Benefits</h4>
+<ul>
+<li><strong>Ease of Use</strong>: The package allows for straightforward computation of bootstrap p-values and confidence intervals without needing to write complex custom functions.</li>
+<li><strong>Integration</strong>: Built on top of established R packages like <code>boot</code>, <code>car</code>, <code>lme4</code>, and <code>survival</code>, it ensures compatibility and extends functionality.</li>
+<li><strong>Customizability</strong>: Users can create custom bootstrap tests for unique statistical measures.</li>
+<li><strong>Consistency</strong>: It ensures that the derived p-values and confidence intervals are consistent, addressing discrepancies often found in other implementations.</li>
+</ul>
+</section>
+<section id="practical-application-a-case-study" class="level4">
+<h4 class="anchored" data-anchor-id="practical-application-a-case-study">Practical Application: A Case Study</h4>
+<p>Using the sleep dataset in R, Thulin demonstrates how to replace a classic t-test with a bootstrap t-test using <code>boot.pval</code>. This approach not only simplifies the code but also enhances the robustness of the test against non-normal data distributions. The output from <code>boot.pval</code> mirrors that from traditional tests but is derived from a more reliable, data-centric approach.</p>
+</section>
+<section id="extending-beyond-simple-tests" class="level4">
+<h4 class="anchored" data-anchor-id="extending-beyond-simple-tests">Extending Beyond Simple Tests</h4>
+<p>The <code>boot.pval</code> package is not limited to simple t-tests; it supports complex models including linear regressions and survival models. By fitting a model using standard R functions like <code>lm()</code> or <code>glm()</code>, users can then apply <code>boot.summary()</code> from <code>boot.pval</code> to obtain detailed summaries including estimates, confidence intervals, and p-values—all bootstrapped for enhanced reliability.</p>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
+<p>Bootstrap methods provide a powerful tool for statistical inference when traditional assumptions do not hold. With packages like <code>boot.pval</code>, R users can integrate robust bootstrap techniques into their daily analysis workflows effortlessly. Whether dealing with straightforward comparisons or complex multivariable models, <code>boot.pval</code> offers a user-friendly yet powerful solution for making informed statistical decisions based on solid empirical evidence.</p>
+<p>For those interested in delving deeper into bootstrap methods or seeking practical applications within R, exploring further resources such as <a href="https://www.modernstatisticswithr.com/">Thulin’s book “Modern Statistics with R”</a> or foundational texts on bootstrap methodology can be incredibly beneficial.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Clinical Research</category>
+  <guid>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/thumbnail-bootstrap-inference-thulin.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/</link>
@@ -1181,290 +1236,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/brewing-success-with-rum-how-inclusivity-fuels-manchesters-thriving-r-community/</guid>
   <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/brewing-success-with-rum-how-inclusivity-fuels-manchesters-thriving-r-community/rum-main-image.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>Tidy topological machine learning with TDAvec and tdarec</title>
-  <dc:creator>Jason Cory Brunson, Alexsei Luchinsky, Umar Islambekov</dc:creator>
-  <link>https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="the-pitch" class="level2">
-<h2 class="anchored" data-anchor-id="the-pitch">The Pitch</h2>
-<p>Topological data analysis (TDA) is a pretty mature discipline at this point, but in the last several years its assimilation into machine learning (ML) has really taken off. Based on our experience, the plurality of experimental TDA tools are written in Python, and naturally Python is home to most of these applications.</p>
-<p>That’s not to say that there are no R packages for TDA-ML. <a href="https://github.com/kisungyou/TDAkit">{TDAkit}</a>, <a href="https://github.com/shaelebrown/TDApplied">{TDApplied}</a>, and others provide tools for specific self-contained analyses and could be used together in larger projects. As with the broader R ecosystem, though, their integration can require some additional work. The combination of several low-level libraries and compounding package dependencies has also made this toolkit fragile, with several packages temporarily or permanently archived.</p>
-<p>Meanwhile, the <a href="https://www.tidymodels.org/">Tidymodels</a> package collection has enabled a new generation of users, myself (JCB) included, to build familiarity and proficiency with conventional ML. By harmonizing syntax and smoothing pipelines, Tidymodels makes it quick and easy to adapt usable code to new data types, pre-processing steps, and model families. By using wrappers and extractors, it also allows seasoned users to extend their work beyond its sphere of convenience.</p>
-<p>We therefore think that Tidymodels is an ideal starting point for a more sustained and interoperable collection for TDA-ML in R. Since much of the role of TDA in ML has been to extract and vectorize features from spatial, image, and other high-dimensional data, we present an extension to <a href="https://recipes.tidymodels.org/">{recipes}</a> for just this purpose. Assembling a comprehensive, general-purpose toolkit is a long-term project. Our contribution is meant to spur that project on.</p>
-</section>
-<section id="the-packages" class="level2">
-<h2 class="anchored" data-anchor-id="the-packages">The Packages</h2>
-<p>We present two packages: {TDAvec}, an interface to several efficient feature vectorizations, and {tdarec}, a {recipes} + <a href="https://dials.tidymodels.org/">{dials}</a> extension that integrates these vectorizations into Tidymodels. First, though, we need to introduce persistent homology and how it can be computed with R.</p>
-<section id="computations-of-persistent-homology" class="level3">
-<h3 class="anchored" data-anchor-id="computations-of-persistent-homology">Computations of persistent homology</h3>
-<p>In predictive modeling, <a href="https://en.wikipedia.org/wiki/Persistent_homology"><strong>persistent homology</strong></a> (PH) is the workhorse of TDA.<sup>1</sup> In a nutshell, it measures topological patterns in data—most commonly clusters and enclosures—by the range of resolutions through which they persist. Several packages interface to lower-level libraries that compute PH for various data structures—all accept point clouds and distance matrices, but other structures are accepted where noted:</p>
-<ul>
-<li><a href="https://doi.org/10.48550/arXiv.1411.1830">{TDA}</a> <span class="citation" data-cites="Fasy2022">(Fasy et al. 2022)</span> interfaces to the Dionysus, PHAT, and GUDHI libraries and also accepts functions and rasters;</li>
-<li><a href="https://tdaverse.github.io/ripserr/">{ripserr}</a> <span class="citation" data-cites="Wadhwa2025">(Wadhwa et al. 2025)</span>, a spinoff from <a href="https://joss.theoj.org/papers/10.21105/joss.00860">{TDAstats}</a>, interfaces to the Ripser and Cubical Ripser C++ libraries and also accepts rasters;</li>
-<li><a href="https://joss.theoj.org/papers/10.21105/joss.06321">{TDApplied}</a> <span class="citation" data-cites="Brown2024">(Brown and Farivar 2024)</span> calls {TDA} and {TDAstats} but also interfaces with Python Ripser; and</li>
-<li><a href="https://lmjl-alea.github.io/rgudhi/">{rgudhi}</a> <span class="citation" data-cites="Stamm2023">(Stamm 2023)</span> interfaces to Python GUDHI.</li>
-</ul>
-<p>Here is an example using the most mature package, {TDA}, to compute the PH for an alpha filtration of a sample from a torus:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> TDA<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">torusUnif</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">200</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">a =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">c =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>)</span>
-<span id="cb1-2">pd <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> TDA<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">alphaComplexDiag</span>(x, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">maxdimension =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>)</span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">plot</span>(pd<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>diagram, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">asp =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span></code></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/index_files/figure-html/TDA-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>We rely for now on {ripserr} to compute PH, but a near-term upgrade will incorporate {TDA} as well.</p>
-</section>
-<section id="vectorizations-of-persistent-homology" class="level3">
-<h3 class="anchored" data-anchor-id="vectorizations-of-persistent-homology">Vectorizations of persistent homology</h3>
-<p>Vectorization is a crucial step to bridge TDA and ML. Numerous methods have been proposed, and research shows that ML performance on a specific task can depend strongly on the chosen method. Therefore, it is highly desirable to compare several approaches to a given problem and select the one found to be best-suited to it.</p>
-<p>Although most proposed vectorization methods are available in free software, they are scattered across various R and Python packages. This complicates the comparison process, as researchers must search for available methods and adapt their code to the interface of each specific implementation. The goal of <a href="https://cran.r-project.org/package=TDAvec">{TDAvec}</a> <span class="citation" data-cites="Luchinsky2025">(Luchinsky and Islambekov 2025)</span> is to address this issue.</p>
-<p>We (AL and UI) have consolidated all currently available vectorizations (of which we are aware) and implemented them in a single R library. Some of these vectorizations are parameter-free, but others rely on one or several hyperparameters. For ease of comparison, we also use a consistent interface, with a common camelcase naming convention, e.g.&nbsp;<code>computePersistenceLandscape()</code>. Additionally, several new vectorization methods developed by our group are also available within the TDAvec framework.</p>
-<p>Here, for example, is how to compute the tropical coordinates proposed by <span class="citation" data-cites="Kalisnik2019">Kališnik (2019)</span> and a coarse vectorization of our own persistence block transformation <span class="citation" data-cites="Chan2022">(Chan et al. 2022)</span> for the degree-1 layer of the persistence diagram above:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(TDAvec)</span>
-<span id="cb2-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">computeTropicalCoordinates</span>(pd<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>diagram, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">homDim =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>         F1          F2          F3          F4          F5          F6 
-  0.8904834   1.7756440   2.2856840   2.7673257  10.1883696   7.0749433 
-         F7 
-210.0180135 </code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">xy_seq <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">seq</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.5</span>, .<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>)</span>
-<span id="cb4-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">computePersistenceBlock</span>(</span>
-<span id="cb4-3">  pd<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>diagram, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">homDim =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>,</span>
-<span id="cb4-4">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xSeq =</span> xy_seq, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">ySeq =</span> xy_seq</span>
-<span id="cb4-5">)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1]  0.3539504  0.2527690  0.0000000  0.2708638 51.0522531 62.6966904  0.0000000
-[8] 66.3569136 84.8988826</code></pre>
-</div>
-</div>
-<p>Notably, all vectorizations are written in C++ and exposed to R using {Rcpp}. We also utilize the Armadillo package for various matrix operations, which makes all computations extremely fast and efficient.</p>
-</section>
-<section id="tidy-machine-learning-with-persistent-homology" class="level3">
-<h3 class="anchored" data-anchor-id="tidy-machine-learning-with-persistent-homology">Tidy machine learning with persistent homology</h3>
-<p>{recipes} is the pre-processing arm of Tidymodels; mostly it provides <code>step_*()</code> functions that pipe together as recipe specifications, to later be applied directly to data or built into workflows. {dials} provides tuning functions for these steps as well as for model families provided by {parsnip}.</p>
-<p><a href="https://tdaverse.github.io/tdarec/">{tdarec}</a> provides two primary families of steps:</p>
-<ol type="1">
-<li>Steps to <em>calculate persistent homology from data</em>, which share the naming pattern <code>step_pd_*()</code> for <strong>p</strong>ersistence <strong>d</strong>iagram. These steps rely on the engines above and are scoped according to the underlying mathematical object encoded in the data: Currently the {ripserr} engine handles point clouds (encoded as coordinate matrices or distance matrices) and rasters (encoded as numerical arrays). These steps accept list-columns of data sets and return list-columns of persistence diagrams.</li>
-<li>Steps to <em>transform and vectorize persistence diagrams</em>, which share the naming pattern <code>step_vpd_*()</code> for <strong>v</strong>ectorized <strong>p</strong>ersistence <strong>d</strong>iagram. These steps rely on {TDAvec} and are scoped as there by transformation. They accept list-columns of persistence diagrams and return numeric columns (sometimes flattened from matrix output, e.g.&nbsp;multi-level persistence landscapes) that can be used by most predictive model families.</li>
-</ol>
-<p>Here is how to incorporate PH (using the default Vietoris–Rips filtration) and the persistence block transformation above into a pre-processing recipe:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">suppressMessages</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tdarec))</span>
-<span id="cb6-2">dat <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tibble</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">source =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"torus"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">sample =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">list</span>(x))</span>
-<span id="cb6-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">recipe</span>(<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span> sample, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">data =</span> dat) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-4">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">step_pd_point_cloud</span>(sample, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">max_hom_degree =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">step_pd_degree</span>(sample_pd, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">hom_degrees =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-6">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">step_vpd_persistence_block</span>(</span>
-<span id="cb6-7">    sample_pd_2,</span>
-<span id="cb6-8">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">hom_degree =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xseq =</span> xy_seq</span>
-<span id="cb6-9">  ) <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">-&gt;</span> rec</span>
-<span id="cb6-10">rec <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-11">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">prep</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">training =</span> dat) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-12">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bake</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">new_data =</span> dat)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 299
-  sample          sample_pd_2 sample_pd_2_pb_1 sample_pd_2_pb_2 sample_pd_2_pb_3
-  &lt;list&gt;          &lt;list&gt;                 &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
-1 &lt;dbl [200 × 3]&gt; &lt;PHom&gt;                     0                0             39.7
-# ℹ 294 more variables: sample_pd_2_pb_4 &lt;dbl&gt;, sample_pd_2_pb_5 &lt;dbl&gt;,
-#   sample_pd_2_pb_6 &lt;dbl&gt;, sample_pd_2_pb_7 &lt;dbl&gt;, sample_pd_2_pb_8 &lt;dbl&gt;,
-#   sample_pd_2_pb_9 &lt;dbl&gt;, sample_pd_2_pb_10 &lt;dbl&gt;, sample_pd_2_pb_11 &lt;dbl&gt;,
-#   sample_pd_2_pb_12 &lt;dbl&gt;, sample_pd_2_pb_13 &lt;dbl&gt;, sample_pd_2_pb_14 &lt;dbl&gt;,
-#   sample_pd_2_pb_15 &lt;dbl&gt;, sample_pd_2_pb_16 &lt;dbl&gt;, sample_pd_2_pb_17 &lt;dbl&gt;,
-#   sample_pd_2_pb_18 &lt;dbl&gt;, sample_pd_2_pb_19 &lt;dbl&gt;, sample_pd_2_pb_20 &lt;dbl&gt;,
-#   sample_pd_2_pb_21 &lt;dbl&gt;, sample_pd_2_pb_22 &lt;dbl&gt;, …</code></pre>
-</div>
-</div>
-<p>The code chunk uses the additional step <code>step_pd_degree()</code> to extract degree-specific layers from multi-degree persistence diagrams; in this case, we are interested in vectorizing only 2-dimensional features. Despite this, we must also specify the degree of the features we want in the persistence block step.</p>
-</section>
-</section>
-<section id="the-potential" class="level2">
-<h2 class="anchored" data-anchor-id="the-potential">The Potential</h2>
-<p>Many methods remain to be built into these tools, which will only reach their full potential through user feedback. Two issues in particular, <a href="https://github.com/uislambekov/TDAvec/issues/3">additional vectorizations</a> for {TDAvec} and <a href="https://github.com/tdaverse/tdarec/issues/2">additional engines</a> for {tdarec}, may remain open—or, ahem, persist—into the foreseeable future. We welcome bug reports, feature requests, and code contributions from the community!</p>
-</section>
-<section id="references" class="level2">
-
-
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-Brown2024" class="csl-entry">
-Brown, Shael, and Reza Farivar. 2024. <span>“<span>TDApplied</span>: <span>Machine Learning</span> and <span>Inference</span> for <span>Topological Data Analysis</span>.”</span> <a href="https://cran.r-project.org/package=TDApplied">https://cran.r-project.org/package=TDApplied</a>.
-</div>
-<div id="ref-Chan2022" class="csl-entry">
-Chan, Kit C., Umar Islambekov, Alexey Luchinsky, and Rebecca Sanders. 2022. <span>“A <span>Computationally Efficient Framework</span> for <span>Vector Representation</span> of <span>Persistence Diagrams</span>.”</span> <em>Journal of Machine Learning Research</em> 23 (268): 1–33. <a href="http://jmlr.org/papers/v23/21-1129.html">http://jmlr.org/papers/v23/21-1129.html</a>.
-</div>
-<div id="ref-Fasy2022" class="csl-entry">
-Fasy, Brittany T., Jisu Kim, Fabrizio Lecci, Clement Maria, David L. Millman, and Vincent Rouvreau. 2022. <span>“<span>TDA</span>: <span>Statistical Tools</span> for <span>Topological Data Analysis</span>.”</span> <a href="https://CRAN.R-project.org/package=TDA">https://CRAN.R-project.org/package=TDA</a>.
-</div>
-<div id="ref-Kalisnik2019" class="csl-entry">
-Kališnik, Sara. 2019. <span>“Tropical <span>Coordinates</span> on the <span>Space</span> of <span>Persistence Barcodes</span>.”</span> <em>Foundations of Computational Mathematics</em> 19 (1): 101–29. <a href="https://doi.org/10.1007/s10208-018-9379-y">https://doi.org/10.1007/s10208-018-9379-y</a>.
-</div>
-<div id="ref-Luchinsky2025" class="csl-entry">
-Luchinsky, Aleksei, and Umar Islambekov. 2025. <span>“<span>TDAvec</span>: <span>Computing Vector Summaries</span> of <span>Persistence Diagrams</span> for <span>Topological Data Analysis</span> in <span>R</span> and <span>Python</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2411.17340">https://doi.org/10.48550/arXiv.2411.17340</a>.
-</div>
-<div id="ref-Stamm2023" class="csl-entry">
-Stamm, Aymeric. 2023. <span>“<span class="nocase">rgudhi</span>: <span>An Interface</span> to the <span>GUDHI Library</span> for <span>Topological Data Analysis</span>.”</span> <a href="https://lmjl-alea.github.io/rgudhi/">https://lmjl-alea.github.io/rgudhi/</a>.
-</div>
-<div id="ref-Wadhwa2025" class="csl-entry">
-Wadhwa, Raoul, Matt Piekenbrock, Jacob Scott, Jason Cory Brunson, Emily Noble, and Xinyi Zhang. 2025. <span>“<span class="nocase">ripserr</span>: <span>Calculate Persistent Homology</span> with <span>Ripser-Based Engines</span>.”</span> <a href="https://cran.r-project.org/package=ripserr">https://cran.r-project.org/package=ripserr</a>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Exploratory modeling is another story.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <guid>https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/</guid>
-  <pubDate>Wed, 04 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/front-image.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
