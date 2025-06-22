@@ -288,6 +288,62 @@
   <media:content url="https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/thumbnail-optimizing-buenos-aires.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>rainbowR: A community for LGBTQ+ folks who code in R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/gLlRaqNfjys" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="embracing-inclusivity-in-r-the-journey-of-rainbowr" class="level1">
+<h1>Embracing Inclusivity in R: The Journey of rainbowR</h1>
+<p>In the ever-evolving world of data science and statistical computing, R has become a beloved language, not just for its robustness and versatility, but also for its vibrant and inclusive community. A shining example of this inclusivity is rainbowR, a community dedicated to connecting, supporting, and promoting LGBTQ+ individuals who code in R. Founded by Ella Kaye of the University of Warwick, rainbowR has transformed into a thriving hub for LGBTQ+ coders and allies alike, fostering a sense of belonging and camaraderie through innovative initiatives and data-driven activism.</p>
+<section id="origin-and-growth-of-rainbowr" class="level2">
+<h2 class="anchored" data-anchor-id="origin-and-growth-of-rainbowr">Origin and Growth of rainbowR</h2>
+<p>The inception of rainbowR dates back to the useR! Conference in 2017, when Ella Kaye engaged in a conversation that highlighted the need for a dedicated LGBTQ+ space within the R community. Fast forward to today, and rainbowR has grown exponentially, boasting a membership of over 100 individuals. This growth is not just a testament to the need for such a community but also to the welcoming atmosphere and the meaningful connections it fosters.</p>
+</section>
+<section id="monthly-meetups-and-buddy-scheme" class="level2">
+<h2 class="anchored" data-anchor-id="monthly-meetups-and-buddy-scheme">Monthly Meetups and Buddy Scheme</h2>
+<p>Central to rainbowR’s mission are its monthly online meetups, typically held on the fourth Wednesday of each month. These gatherings provide a relaxed and supportive environment where participants can discuss R-related topics, share resources, and showcase their work. The focus on creating a friendly space encourages open dialogue and fosters learning among members.</p>
+<p>Another key initiative is the buddy scheme, which aims to facilitate deeper connections within the community. Every three months, members can opt into the scheme, where they are randomly paired with another member. An R script processes these pairings and generates personalized emails to introduce the paired individuals. This innovative approach not only eases the anxiety of meeting new people but also enriches the community fabric by fostering one-on-one connections.</p>
+</section>
+<section id="data-driven-activism" class="level2">
+<h2 class="anchored" data-anchor-id="data-driven-activism">Data-Driven Activism</h2>
+<p>rainbowR’s commitment to raising awareness about LGBTQ+ issues is further exemplified through its GitHub repository, Tidy Rainbow. This repository hosts a collection of LGBTQ+ datasets, providing valuable resources for data visualization and analysis. These datasets can be utilized for educational purposes, blog posts, or simply to practice data skills, making them a valuable asset for both community members and allies.</p>
+</section>
+<section id="engaging-with-literature-the-rainbow-r-book-club" class="level2">
+<h2 class="anchored" data-anchor-id="engaging-with-literature-the-rainbow-r-book-club">Engaging with Literature: The Rainbow R Book Club</h2>
+<p>In addition to its technical initiatives, rainbowR has ventured into the literary world with its book club. The club recently completed its first session, where participants delved into “Queer Data: Using Gender, Sex, and Sexuality Data for Action” by Kevin Gian. The success of this book club highlights the community’s commitment to broadening its understanding of LGBTQ+ issues through various mediums. Future book club sessions are in the pipeline, promising more engaging discussions and insights.</p>
+</section>
+<section id="future-plans-and-the-role-of-allies" class="level2">
+<h2 class="anchored" data-anchor-id="future-plans-and-the-role-of-allies">Future Plans and the Role of Allies</h2>
+<p>As rainbowR looks to the future, exciting plans are underway to ensure the community’s sustainability and impact. Ella Kaye, now a fellow of the Software Sustainability Institute, is utilizing her fellowship to nurture and solidify rainbowR’s foundations. This includes establishing clear engagement pathways, developing governance policies, and potentially becoming a legal entity.</p>
+<p>A flagship event in the pipeline is the inaugural Rainbow R Conference, designed to bring the community together to share knowledge and celebrate diversity. Allies play a crucial role in this journey, and their involvement is highly valued within rainbowR. The conference organizing committee welcomes allies, further emphasizing the inclusive nature of this vibrant community.</p>
+</section>
+<section id="call-for-collaboration-and-community-building" class="level2">
+<h2 class="anchored" data-anchor-id="call-for-collaboration-and-community-building">Call for Collaboration and Community Building</h2>
+<p>rainbowR’s mission extends beyond its own community. By sharing knowledge and experiences with other R or queer communities, rainbowR aims to build a network of support and shared learning. Community managers interested in exploring best practices for community building are encouraged to reach out to Ella Kaye and explore potential collaborations.</p>
+</section>
+<section id="join-the-movement" class="level2">
+<h2 class="anchored" data-anchor-id="join-the-movement">Join the Movement</h2>
+<p>For those interested in joining this vibrant community, rainbowR offers an open invitation to LGBTQ+ individuals and allies. By visiting <a href="https://rainbow.org">rainbow.org</a>, you can learn more about the community, sign up for newsletters, and become part of a supportive network that celebrates diversity and inclusivity in the R ecosystem.</p>
+<p>rainbowR is more than just a community; it’s a movement towards a more inclusive and supportive future for all who code in R. As the community continues to grow and evolve, it stands as a testament to the power of connection and the impact of collective action in the world of data science.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>LGBTQ+</category>
+  <guid>https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>R/Medicine 2025 - Closing Remarks - Final Day - Michael Kane</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</link>
@@ -1154,53 +1210,6 @@ With a title of Lead Data Scientist at The Prostate Cancer Clinical Trials Conso
   <guid>https://r-consortium.org/posts/pretestcad-an-r-package-to-calculate-pretest-probability-ptp-for-coronary-artery-disease-cad/</guid>
   <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/pretestcad-an-r-package-to-calculate-pretest-probability-ptp-for-coronary-artery-disease-cad/thumbnail-pretestcad-jeremy-selva.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Bridging the Gap: Introducing RHealth for Healthcare Predictive Modeling in R</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kGcq2YQVWcc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r">Bridging the Gap: Introducing RHealth for Healthcare Predictive Modeling in R</h2>
-<p>In an era where healthcare is rapidly evolving with the integration of artificial intelligence, the disparity between traditional clinical research and cutting-edge AI tools poses a significant challenge. The R language, long trusted by clinicians and statisticians for its robust analytics capabilities, finds itself at a crossroads with the burgeoning field of deep learning predominantly led by Python. With Python boasting over 7,800 healthcare projects on GitHub compared to just 700 in R, there’s a clear gap in tool development focus. This divide hampers the ability of clinical researchers to leverage the latest AI advancements directly within the R ecosystem they are familiar with.</p>
-<p>Enter RHealth, a revolutionary toolkit designed to empower the R community with the tools needed for advanced healthcare predictive modeling using deep learning. Spearheaded by Junyi Gao, a PhD candidate at the University of Edinburgh, in collaboration with notable researchers like Zhixia Ren, Ji Song, Liantao Ma, and Ewen M. Harrison, RHealth is a testament to interdisciplinary collaboration and innovation. This initiative, funded by the ISC grant from the R Consortium, aims to dismantle the barriers preventing R users from accessing state-of-the-art AI tools.</p>
-</section>
-<section id="why-rhealth" class="level2">
-<h2 class="anchored" data-anchor-id="why-rhealth">Why RHealth?</h2>
-<p>The primary mission of RHealth is to bridge the gap between R and the Python-based AI world. RHealth offers an open-source R package that mirrors the capabilities of PyHealth, a highly successful healthcare AI package in the Python ecosystem. PyHealth has set a precedent by garnering over 11,000 stars and 144,000 downloads on GitHub, signaling its widespread acceptance and utility. By replicating such a successful blueprint in R, RHealth aspires to bring similar capabilities to the R community.</p>
-</section>
-<section id="core-modules-of-rhealth" class="level2">
-<h2 class="anchored" data-anchor-id="core-modules-of-rhealth">Core Modules of RHealth</h2>
-<p>The development of RHealth focuses on four core modules that create a seamless pipeline from data to prediction:</p>
-<p><strong>EHR Database Module</strong>: This module provides a standardized framework to ingest, process, and manage diverse EHR datasets. It supports major public datasets like MIMIC-III, MIMIC-IV, and eICU, and facilitates user-specific data formats (OMOP-CDM), ensuring data consistency for downstream modeling.</p>
-<p><strong>EHR Code Mapping Module</strong>: One of the most critical aspects of healthcare data integration is harmonizing different medical coding systems. This module tackles the immense challenge of mapping between various coding systems such as ICD, CPT, and NDC. It simplifies the critical task of aligning terminology across datasets, thereby enhancing data interoperability.</p>
-<p><strong>Prediction Task Module</strong>: This module provides a framework for defining clinical prediction tasks. It supports patient-level tasks for long-term predictions, inter-visit level tasks for predictions during specific encounters, and intra-visit level tasks for predictions across encounters.</p>
-<p><strong>Healthcare Deep Learning Core Module</strong>: As the engine of the toolkit, this module offers a comprehensive suite of predictive models, including traditional machine learning methods and cutting-edge deep learning models optimized for healthcare. Models like RETAIN, Transformers, and graph neural networks are accessible natively within R, empowering R users with advanced analytical capabilities.</p>
-</section>
-<section id="empowering-clinical-researchers" class="level2">
-<h2 class="anchored" data-anchor-id="empowering-clinical-researchers">Empowering Clinical Researchers</h2>
-<p>RHealth is not just about providing tools but about empowering the healthcare community to innovate and contribute to improved healthcare outcomes. By lowering the technical barrier, RHealth enables rapid prototyping and validation of clinical risks and decision support tools directly within the trusted R environment. This democratization of AI tools in healthcare allows clinicians and statisticians to leverage their deep clinical knowledge alongside advanced AI techniques, thus enhancing the translation of research into practice.</p>
-</section>
-<section id="future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
-<p>The journey of RHealth is just beginning. The team is actively developing additional modules and seeking further funding to expand its capabilities. Future enhancements include support for multi-modal data integration, clinical trial applications, and large language model enhancements. The goal is to continually refine and expand RHealth to meet the evolving needs of the healthcare community.</p>
-<p>In conclusion, RHealth represents a significant milestone in the integration of R and AI for healthcare. It is a call to action for the R community to embrace and contribute to this open-source project, ensuring that the latest advancements in AI are accessible and usable by those who are at the forefront of healthcare research. By fostering a collaborative environment, RHealth aims to revolutionize healthcare predictive modeling and ultimately contribute to better patient outcomes.</p>
-
-
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/</guid>
-  <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/bridging-the-gap-introducing-rhealth-for-healthcare-predictive-modeling-in-r/thumb.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
