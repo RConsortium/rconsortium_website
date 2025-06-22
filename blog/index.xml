@@ -226,6 +226,60 @@
   <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Model Evaluation: From Machine Learning to Generative AI</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Lq568n0pClc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="exploring-the-future-of-ai-evaluation-with-dr.-erin-ledell-at-rmedicine-2025" class="level1">
+<h1>Exploring the Future of AI Evaluation with Dr.&nbsp;Erin LeDell at R/Medicine 2025</h1>
+<p>As artificial intelligence evolves, so must the methodologies used to evaluate these systems. Dr.&nbsp;Erin LeDell, a prominent figure in the AI and R communities, addressed this critical transition in her keynote at R/Medicine 2025. Dr.&nbsp;LeDell, the Chief Scientist at Distributional, Inc.&nbsp;and founder of DataScientific, Inc., brings her extensive expertise to the forefront as she guides us through the intricate world of AI evaluation, moving from deterministic machine learning models to the more complex generative AI systems.</p>
+<section id="from-deterministic-to-generative-a-paradigm-shift" class="level2">
+<h2 class="anchored" data-anchor-id="from-deterministic-to-generative-a-paradigm-shift">From Deterministic to Generative: A Paradigm Shift</h2>
+<p>In traditional machine learning (ML), models are deterministic – given the same input, they produce the same output. This predictability provides a clear framework for evaluation metrics such as accuracy, precision, recall, and others familiar to statisticians and data scientists. However, with the rise of large language models (LLMs) and generative AI, this predictability is challenged. These systems introduce non-determinism, meaning outputs can vary even with identical inputs, necessitating new evaluation frameworks.</p>
+<p>Dr.&nbsp;LeDell emphasized that traditional accuracy-based metrics fall short when assessing generative AI systems. Instead, evaluation must consider coherence, consistency, and bias, along with the challenges of reproducibility in probabilistic AI systems. This shift leads to questions about how to ensure AI models are reliable and function as expected in real-world scenarios.</p>
+</section>
+<section id="dr.-erin-ledells-journey-with-r-and-ai" class="level2">
+<h2 class="anchored" data-anchor-id="dr.-erin-ledells-journey-with-r-and-ai">Dr.&nbsp;Erin LeDell’s Journey with R and AI</h2>
+<p>Dr.&nbsp;LeDell shared her journey from machine learning to generative AI, highlighting her longstanding experience with R. Since 2008, she has been deeply involved in machine learning, contributing to various R packages such as SuperLearner, Subsemble, and H2O, the latter of which she worked on extensively during her tenure at H2O.ai. Her work in AutoML led to the creation of the AutoML benchmark, setting standards for algorithm evaluation.</p>
+<p>Her transition into generative AI coincided with the advent of tools like ChatGPT, pushing her to explore new methods for evaluating these complex systems. Dr.&nbsp;LeDell’s passion for using AI in healthcare was evident as she discussed her collaborations with medical companies, applying machine learning to tackle various health-related problems.</p>
+</section>
+<section id="evaluating-generative-ai-new-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="evaluating-generative-ai-new-approaches">Evaluating Generative AI: New Approaches</h2>
+<p>The talk delved into the architectural differences between traditional ML systems and modern AI applications, particularly generative AI systems. Dr.&nbsp;LeDell outlined the multi-component nature of these systems, where changes in one part can affect the whole, and the importance of monitoring these changes over time. She addressed the non-stationary behavior of generative AI, noting how external factors and updates from third-party providers can alter system performance.</p>
+<p>A significant challenge with generative AI is its inherent non-determinism. Unlike traditional ML models, generative AI requires novel evaluation metrics that account for variability in outputs. Dr.&nbsp;LeDell introduced several frameworks and tools aimed at assessing these systems, emphasizing the role of humans in the evaluation process. Humans provide essential oversight, creating “golden” datasets and evaluating outputs, though this process is not always scalable.</p>
+</section>
+<section id="llm-as-judge-a-new-standard" class="level2">
+<h2 class="anchored" data-anchor-id="llm-as-judge-a-new-standard">LLM as Judge: A New Standard</h2>
+<p>One innovative approach Dr.&nbsp;LeDell highlighted is using LLMs themselves to evaluate AI outputs. This method involves deploying LLMs as judges to assess whether responses are correct, helpful, or safe. While this technique is automated and widely used, it presents challenges, such as potential biases if the same model is used for generation and evaluation. Dr.&nbsp;LeDell recommended using specialized LLMs designed for evaluation to mitigate these issues.</p>
+</section>
+<section id="practical-applications-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="practical-applications-and-tools">Practical Applications and Tools</h2>
+<p>Dr.&nbsp;LeDell provided insights into practical applications of generative AI in healthcare, such as using LLMs for clinical note-taking and research acceleration. She described a retrieval-augmented generation (RAG) system for medical Q&amp;A, which combines traditional information retrieval with generative capabilities, enriching AI responses with context from specialized knowledge bases.</p>
+<p>For those eager to explore AI evaluation further, Dr.&nbsp;LeDell pointed to several open-source tools, including the R package “vitals,” a port of the Python library “inspect,” developed by JJ Allaire. These tools provide a foundation for customizing evaluation metrics and integrating human oversight into the evaluation pipeline.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Dr.&nbsp;LeDell’s keynote at R/Medicine 2025 illuminated the evolving landscape of AI evaluation, underscoring the need for innovative methodologies to assess the next generation of AI models. Her insights into the intersection of AI and healthcare offer promising pathways for improving AI reliability and trustworthiness in critical applications.</p>
+<p>As the R community continues to embrace these advancements, Dr.&nbsp;LeDell’s work encourages practitioners to think critically and creatively about AI evaluation.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>AI</category>
+  <guid>https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/thumbnail-keynote-day2-model-evaluation-ledell.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>nonprobsvy – An R package for modern methods for non-probability survey</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</link>
@@ -1121,99 +1175,6 @@
   <guid>https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/</guid>
   <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/identifying-measles-immunity-gaps-in-the-us/thumbnail-iko-musa-student-competition-winner.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Introduction to R for Clinical Data</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/introduction-to-r-for-clinical-data/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/2-xbe46EUTw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="a-gentle-introduction-to-r-for-healthcare-professionals-and-researchers-at-rmedicine-2025" class="level1">
-<h1>A Gentle Introduction to R for Healthcare Professionals and Researchers at R/Medicine 2025</h1>
-<p>Welcome to the world of R programming tailored specifically for healthcare professionals and clinical researchers! As part of the R/Medicine 2025 conference, Stephan Kadauke and Rich Hanna curated an insightful pre-conference workshop titled “Introduction to R for Clinical Data.” This workshop is designed to bridge the gap between healthcare and data science by providing a comprehensive introduction to R and its application in clinical research.</p>
-<section id="meet-your-instructors" class="level2">
-<h2 class="anchored" data-anchor-id="meet-your-instructors">Meet Your Instructors</h2>
-<section id="stephan-kadauke" class="level3">
-<h3 class="anchored" data-anchor-id="stephan-kadauke">Stephan Kadauke</h3>
-<p>Stephan is the Associate Director of the Cell Based Therapy Laboratory in the Department of Pathology at the Children’s Hospital of Philadelphia. He also serves as the Medical Director of the Cell and Gene Therapy Informatics Team. Stephan is passionate about using data to improve pediatric care, specifically for children undergoing bone marrow transplants and other cell therapies. He has developed curricula focused on Reproducible Clinical Data Analysis, demonstrating his commitment to improving healthcare through data-driven approaches.</p>
-</section>
-<section id="rich-hanna" class="level3">
-<h3 class="anchored" data-anchor-id="rich-hanna">Rich Hanna</h3>
-<p>Rich is a Data Scientist with the Cell and Gene Therapy Informatics Team at the Children’s Hospital of Philadelphia. With a background in biomedical and mechanical engineering, Rich specializes in automating clinical research workflows through advanced analytics and machine learning. His work is pivotal in supporting cell therapy research and enhancing patient care in pediatric medicine.</p>
-</section>
-</section>
-<section id="course-resources" class="level2">
-<h2 class="anchored" data-anchor-id="course-resources">Course Resources</h2>
-<ul>
-<li><strong>Course GitHub Repo</strong>: <a href="https://github.com/skadauke/intro-to-r-for-clinical-data-rmed2025">Introduction to R for Clinical Data</a></li>
-<li><strong>Course Website</strong>: <a href="https://stephan-kadauke.quarto.pub/intro-to-r-for-clinical-data-rmed2025/">Introduction to R for Clinical Data</a></li>
-</ul>
-</section>
-<section id="workshop-overview" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
-<section id="setting-the-stage" class="level3">
-<h3 class="anchored" data-anchor-id="setting-the-stage">Setting the Stage</h3>
-<p>The workshop commenced with a warm welcome and an interactive session to acquaint participants with the course’s objectives. Designed for healthcare professionals with minimal programming background, the workshop aims to demystify data analysis using R. Stephan and Rich have structured the course with interactive exercises, ensuring participants gain hands-on experience.</p>
-</section>
-<section id="importance-of-reproducibility" class="level3">
-<h3 class="anchored" data-anchor-id="importance-of-reproducibility">Importance of Reproducibility</h3>
-<p>A key highlight was the emphasis on reproducibility in clinical data analysis. Stephan shared a compelling case study from Duke University, where errors in data analysis led to significant repercussions. This case underscores the necessity of robust, reproducible workflows to prevent errors and improve patient outcomes.</p>
-</section>
-<section id="introduction-to-r-r-studio-and-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="introduction-to-r-r-studio-and-quarto">Introduction to R, R Studio, and Quarto</h3>
-<p>Participants were introduced to the essential tools of the trade:</p>
-<ul>
-<li><strong>R</strong>: A powerful programming language for data analysis.</li>
-<li><strong>R Studio</strong>: An integrated development environment for R, enhancing the user experience with features that aid coding and debugging.</li>
-<li><strong>Quarto</strong>: A computational document format that integrates code, narrative, and visualizations, supporting reproducible research.</li>
-</ul>
-</section>
-<section id="interactive-exercises" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-exercises">Interactive Exercises</h3>
-<p>The workshop featured a series of interactive exercises, allowing participants to:</p>
-<ul>
-<li>Create and manipulate data frames.</li>
-<li>Visualize data using ggplot2, a grammar of graphics for R.</li>
-<li>Transform and tidy data using the dplyr package.</li>
-<li>Develop reproducible workflows by integrating Quarto documents.</li>
-</ul>
-</section>
-<section id="data-visualization-and-transformation" class="level3">
-<h3 class="anchored" data-anchor-id="data-visualization-and-transformation">Data Visualization and Transformation</h3>
-<p>Rich led a session on data transformation, focusing on the dplyr package. Participants learned to:</p>
-<ul>
-<li>Select specific columns using the <code>select</code> function.</li>
-<li>Filter rows based on logical conditions with <code>filter</code>.</li>
-<li>Create new variables with <code>mutate</code>.</li>
-<li>Group data and summarize it with <code>group_by</code> and <code>summarize</code>.</li>
-</ul>
-</section>
-<section id="dashboards-and-interactive-visualization" class="level3">
-<h3 class="anchored" data-anchor-id="dashboards-and-interactive-visualization">Dashboards and Interactive Visualization</h3>
-<p>While time constraints limited a deep dive into dashboards, participants were introduced to the concept of interactive dashboards using Flex Dashboard and Plotly. These tools enable users to create dynamic, on-demand data visualizations, empowering healthcare professionals to make data-driven decisions efficiently.</p>
-</section>
-</section>
-<section id="conclusion-and-further-learning" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-and-further-learning">Conclusion and Further Learning</h2>
-<p>The workshop wrapped up with resources for continued learning. Participants were encouraged to explore the “R for Data Science” book by Garrett Grolemund and Hadley Wickham, available for free online. Additionally, generative AI tools like ChatGPT were recommended for troubleshooting and enhancing coding skills, with a caution to avoid entering sensitive information.</p>
-<p>The course materials, including the GitHub repository and course website, remain accessible for further exploration and practice.</p>
-<p>As the R community continues to grow, workshops like this play a pivotal role in equipping healthcare professionals with the skills to leverage data science for better patient care. We look forward to seeing how participants will apply their newfound knowledge to make a tangible impact in the healthcare sector.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/introduction-to-r-for-clinical-data/</guid>
-  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/introduction-to-r-for-clinical-data/thumbnail-introduction-to-r-for clinical-data.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
