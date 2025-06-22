@@ -916,6 +916,81 @@
   <media:content url="https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/thumbnail-refactoring-dror.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Retrospective clinical data harmonisation reporting using R and Quarto</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0rUcKR4fylw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="enhancing-clinical-data-harmonization-with-r-and-quarto" class="level1">
+<h1>Enhancing Clinical Data Harmonization with R and Quarto</h1>
+<p>Data harmonization has emerged as a crucial component in ensuring the integrity and utility of pooled data sets in clinical research. Jeremy Selva, a Research Officer at the National Heart Center Singapore, delivered a talk at R/Medicine 2025 on “Retrospective Clinical Data Harmonization Reporting.” His presentation delved into data harmonization, offering practical solutions and workflows for creating comprehensive reports using R and Quarto.</p>
+<section id="the-challenge-of-data-harmonization" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-of-data-harmonization">The Challenge of Data Harmonization</h2>
+<p>Data harmonization is an indispensable part of the data cleaning process. It involves identifying similar variables across diverse data sets, grouping them based on generalized concepts, and transforming them into unified, harmonized variables for analysis. This process is particularly vital in clinical research, where data pooling from multiple sources can dramatically increase the statistical power to analyze rare outcomes.</p>
+<p>However, as Jeremy highlighted, the path to effective data harmonization is fraught with challenges. Collaborators often send data in varying formats, making it difficult to match them against provided data dictionaries and input templates. This lack of uniformity necessitates a robust process to document and report the harmonization steps, serving as a bridge between data collaborators and the analysis team.</p>
+</section>
+<section id="the-importance-of-harmonization-reports" class="level2">
+<h2 class="anchored" data-anchor-id="the-importance-of-harmonization-reports">The Importance of Harmonization Reports</h2>
+<p>Jeremy emphasized the importance of transparency and accountability in data harmonization. A well-documented harmonization report can serve as a safeguard, providing clarity to collaborators and preempting potential issues that might arise from data mismanagement.</p>
+<p>Despite the critical role of such reports, there is a dearth of resources providing detailed guidance on creating them, particularly using programming languages like R.</p>
+</section>
+<section id="leveraging-r-for-data-harmonization" class="level2">
+<h2 class="anchored" data-anchor-id="leveraging-r-for-data-harmonization">Leveraging R for Data Harmonization</h2>
+<p>In his quest to streamline the data harmonization process, Jeremy explored various R packages. Although packages like <code>retroharmonize</code>, <code>Rmonize</code> and <code>psHarmonize</code> offer some functionality, they come with limitations, such as handling categorical data better than continuous data or presenting complex harmonization processes in Excel, which can be cumbersome.</p>
+<p>To address these gaps, Jeremy developed his own R project template for creating harmonization reports. This template draws inspiration from the <code>ourpackage</code> and <code>ourcompanion</code> packages, providing a structured layout for data storage, code management, and report generation.</p>
+<section id="common-issues-and-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="common-issues-and-solutions">Common Issues and Solutions</h3>
+<p>Jeremy shared some common pitfalls encountered during data harmonization and how they can be mitigated using R:</p>
+<ol type="1">
+<li><p><strong>Data Versioning Issues</strong>: Collaborators may send multiple versions of the same data set. Using the <code>readr</code> package and functions like <code>problems</code>, Jeremy demonstrated how to catch and address issues early in the data import process.</p></li>
+<li><p><strong>Automating Checks</strong>: By employing packages like <code>testthat</code> and <code>pointblank</code>, Jeremy automated the validation of data inputs, ensuring robustness against changes in data versions.</p></li>
+<li><p><strong>Variable Mapping and Validation</strong>: Jeremy outlined a workflow for mapping variables, validating mappings, and preparing data for merging. This included creating interactive tables for collaborators to review and using validation functions to ensure data integrity.</p></li>
+</ol>
+</section>
+</section>
+<section id="automating-report-generation-with-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="automating-report-generation-with-quarto">Automating Report Generation with Quarto</h2>
+<p>To tackle the challenge of generating extensive harmonization reports, Jeremy turned to Quarto, a publishing system that allows for dynamic report generation. By creating a Quarto book project, he automated the creation of harmonization reports for each cohort, ensuring consistency and efficiency.</p>
+<section id="creating-harmonization-reports" class="level3">
+<h3 class="anchored" data-anchor-id="creating-harmonization-reports">Creating Harmonization Reports</h3>
+<p>The process involves:</p>
+<ul>
+<li><strong>Index and Quarto Files</strong>: Setting up essential files like <code>index.qmd</code> and <code>quarto.yml</code> to control the book’s content and structure.</li>
+<li><strong>Automating Scripts</strong>: Developing an R script to render Quarto documents for each cohort, facilitating the creation of both reference and how-to guide documents.</li>
+</ul>
+</section>
+</section>
+<section id="visualizing-harmonization-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-harmonization-outcomes">Visualizing Harmonization Outcomes</h2>
+<p>Jeremy also explored various visualization techniques to convey harmonization outcomes to collaborators and management. While traditional methods like Venn diagrams and Upset plots proved complex, he developed a heat map approach. This visualization provided a clear overview of cohort attributes, patient numbers, and variable availability—categorized by different colors and accompanied by legends for clarity.</p>
+</section>
+<section id="conclusion-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-future-directions">Conclusion and Future Directions</h2>
+<p>Jeremy’s presentation underscored the critical role of data harmonization in clinical research and the power of R and Quarto in streamlining this process. By creating a robust documentation and reporting framework, researchers can enhance transparency, accountability, and efficiency in their data harmonization efforts.</p>
+<p>As Jeremy noted, while the current template offers a solid foundation, there is always room for improvement, such as unit testing and clearer documentation. His work serves as a valuable starting point for researchers facing similar challenges, fostering a more seamless integration of data across diverse clinical studies.</p>
+<ul>
+<li><a href="https://jauntyjjs.github.io/RMedicine2025_harmonisation/#/title-slide">Slides</a></li>
+<li><a href="https://github.com/JauntyJJS/harmonisation/">Repo</a></li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <category>Clinical Research</category>
+  <guid>https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/thumbnail-harmonisation-selva.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>riskcalc.org: A Repository of Risk Calculators for Medical Decision Making</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</link>
@@ -1132,68 +1207,6 @@
   <guid>https://r-consortium.org/posts/supercharging-statistical-analysis-with-ards-and-the-cards-r-package/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/supercharging-statistical-analysis-with-ards-and-the-cards-r-package/thumbnail-supercharging-garolini.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Swimmer Plots with ggswim</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/swimmer-plots-with-ggswim/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pbgNiq-KvIE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="making-swimmer-plots-effortless-with-ggswim-a-dive-into-rs-medical-visualization-toolkit" class="level1">
-<h1>Making Swimmer Plots Effortless with ggswim: A Dive into R’s Medical Visualization Toolkit</h1>
-<p>The R community is always on the lookout for innovative tools that can simplify complex data visualization tasks. Swimmer plots, known for their utility in visualizing treatment timelines in clinical trials, have long been a challenge to create in R due to their complexity. Enter ggswim, a package developed to ease the creation of swimmer plots while staying true to the grammar of graphics.</p>
-<section id="the-challenge-of-swimmer-plots-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-of-swimmer-plots-in-r">The Challenge of Swimmer Plots in R</h2>
-<p>Swimmer plots are invaluable in clinical and pharmaceutical research. They provide a compact, interpretable way to visualize patient data over time, highlighting key metrics such as adverse events and treatment durations. Despite their usefulness, generating swimmer plots using R’s ggplot2 can be technically demanding. The intricacies of scale alignment and legend composition require a deep understanding of ggplot2’s internals, which is often beyond the typical scope of a researcher’s expertise.</p>
-<p>While there are existing packages that support swimmer plot development, none have fully bridged the gap between ease of use and compatibility with the grammar of graphics—until now.</p>
-</section>
-<section id="introducing-ggswim" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-ggswim">Introducing ggswim</h2>
-<p>Developed as an extension to ggplot2, ggswim addresses the challenges of creating swimmer plots in R. Richard Hanna from the Children’s Hospital of Philadelphia, a data scientist with the Cell and Gene Therapy Informatics team, presented ggswim at the R/Medicine 2025 conference.</p>
-<section id="the-motivation-behind-ggswim" class="level3">
-<h3 class="anchored" data-anchor-id="the-motivation-behind-ggswim">The Motivation Behind ggswim</h3>
-<p>The development of ggswim was driven by the need for a tool that simplifies the creation of swimmer plots while maintaining full compatibility with ggplot2. By introducing a streamlined grammar specifically for swimmer plots, ggswim organizes visual elements into two conceptual categories: lanes and markers. Lanes represent continuous durations, such as time on a study, while markers denote discrete events, such as adverse events or outcomes.</p>
-<p>This framework integrates seamlessly with existing ggplot2 tools, allowing users to layer and label plot components using concise, intuitive syntax. This compatibility ensures that ggswim remains flexible and aesthetically pleasing, promoting reproducibility and transparency in medical research settings.</p>
-</section>
-<section id="a-closer-look-at-ggswims-capabilities" class="level3">
-<h3 class="anchored" data-anchor-id="a-closer-look-at-ggswims-capabilities">A Closer Look at ggswim’s Capabilities</h3>
-<p>ggswim builds on ggplot2’s architecture without wrapping standard functions, ensuring that all parameters familiar to ggplot2 users are retained. The package features several key functions:</p>
-<ul>
-<li><strong>g_swim_lane</strong>: Wraps ggsegment methods for creating continuous durations.</li>
-<li><strong>g_swim_marker</strong>: Wraps gg methods for discrete events.</li>
-<li><strong>g_swim_arrow</strong>: A specialized gsegment wrapper for continuation arrows.</li>
-<li><strong>scale_marker_discrete</strong>: The pivotal function for resolving legend output issues, allowing easy manipulation of legend components for clearer, more informative plots.</li>
-</ul>
-<p>Richard Hanna’s presentation highlighted how ggswim leverages ggplot2’s guide functionality, enabling users to manipulate legend outputs effectively. The package simplifies the process of creating swimmer plots with minimal additional code, providing a succinct and reproducible means of visualizing complex clinical data.</p>
-</section>
-<section id="practical-applications-and-future-directions" class="level3">
-<h3 class="anchored" data-anchor-id="practical-applications-and-future-directions">Practical Applications and Future Directions</h3>
-<p>ggswim is designed to be user-friendly while offering powerful customization options. It supports various glyph formats, including emojis and certain font libraries, allowing users to create visually engaging plots. The package also includes theming functions to help users tailor their swimmer plots to specific needs.</p>
-<p>While ggswim is currently focused on facilitating static visualizations suitable for publication in medical journals, the R community is keenly interested in exploring interactive capabilities. As Richard Hanna noted, future developments could include interactive features for web publication, potentially using tools like Plotly or ggiraph.</p>
-<p>The ggswim package is still in its early stages, with plans to submit it to CRAN once it has been thoroughly tested and refined. The R community is encouraged to contribute feedback and suggestions to enhance the package’s functionality.</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>ggswim fills a crucial gap in R’s visualization toolkit, making swimmer plots accessible to a broader audience without sacrificing the flexibility and aesthetics that ggplot2 offers. By reducing the technical overhead associated with swimmer plots, ggswim promotes effective collaboration in medical research and opens new possibilities for data visualization in R.</p>
-<p>For those interested in exploring ggswim further, the package’s documentation and resources are available online. As the R community continues to innovate, tools like ggswim exemplify the power of open-source collaboration and the potential for R to transform data visualization in healthcare and beyond.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/swimmer-plots-with-ggswim/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/swimmer-plots-with-ggswim/thumbnail-swimmer-plogs-ggswim-hanna.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
