@@ -1,0 +1,59 @@
+--- 
+title: "Supercharging Statistical Analysis with ARDs and the {cards} R Package" 
+unpublished: true 
+url: "https://r-consortium.org/posts/supercharging-statistical-analysis-with-ards-and-the-cards-r-package/"
+description: "Discover how the {cards} R package revolutionizes statistical analysis with the ARD Model for reproducibility." 
+categories: [R/Medicine 2025, Clinical Research, Pharma]
+author: "R Consortium" 
+image: "thumbnail-supercharging-garolini.jpg" 
+image-alt: "{cards} R package for statistical analysis - Davide Garolini" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/C_Y1pzpCS5o >}}
+
+# Supercharging Statistical Analysis with the Analysis Results Data Model and {cards} R Package
+
+In the ever-evolving world of statistical analysis, the Analysis Results Data (ARD) Model promises to elevate the standards of automation, reproducibility, reusability, and traceability. This  approach is set to revolutionize the way we encode and manage statistical summaries, particularly in the realm of clinical trials and pharmaceutical research. 
+
+At the forefront of this transformation is the {cards} R package, a collaborative development effort spearheaded by industry leaders such as Roche, GSK, Novartis, Pfizer, and Eli Lilly under the Pharmaverse initiative. 
+
+Davide Garolini from GSK/Roche recently led an enlightening session at R/Medicine 2025, showing how {cards} can be utilized to create ARDs and integrate them into statistical workflows. 
+
+## Understanding the ARD Model
+
+The ARD Model is designed to address a fundamental challenge in statistical analysis: ensuring reproducibility across different datasets and formats. The model separates the statistical results from their presentation, allowing for maximum flexibility. By encoding statistical outcomes in a machine-readable format, ARDs facilitate easier automation, improve reproducibility, and enhance the traceability of data origins. This approach is particularly beneficial in clinical reporting, where it can significantly improve the quality and efficiency of analyses.
+
+## Introducing the {cards} Package
+
+The {cards} package is a powerful tool that enables users to create comprehensive ARDs. It supports a wide range of statistical analyses, from basic summaries like means and tabulations to more complex models involving regression and statistical tests. {cards} works seamlessly with other tabling packages such as {gtsummary} and {tfrmt} to produce insightful displays of analysis results.
+
+### Key Features of {cards}
+
+- **Metadata-Driven Infrastructure**: {cards} leverages a metadata-driven approach, making it easy to create and manage analysis results. This ensures consistency and reliability across different datasets.
+- **Compatibility with Other Packages**: By integrating with {gtsummary} and {tfrmt}, {cards} allows for the creation of detailed and customizable tables and graphs.
+- **Wide Adoption**: With over 52,000 downloads per month, {cards} is gaining traction within the R community. Its intuitive design and robust functionality make it a valuable addition to any data scientist's toolkit.
+
+## Practical Applications and Insights
+
+During the session, Garolini shared practical examples of how {cards} can be used to create ARDs and integrate them into analysis workflows. The package's capabilities were demonstrated through a pilot study involving the reproduction of clinical trial results. The study showcased how {cards}, in conjunction with {gtsummary}, could be used to create comprehensive tables, listings, and graphs (TLGs) with ease.
+
+### Integration with {gtsummary}
+
+{gtsummary} is a widely-used package for creating summary tables in R, boasting over 1.5 million downloads. By integrating ARDs with {gtsummary}, users can automate the creation of summary tables while ensuring reproducibility and reliability. This integration allows for efficient quality control and the ability to repurpose results for different regulatory submissions.
+
+### Challenges and Considerations
+
+While the metadata-driven approach of {cards} offers numerous benefits, it can also present challenges when dealing with non-standard tables. In such cases, manual adjustments may be necessary. However, the overall advantages of reproducibility, efficiency, and automation outweigh these challenges, making {cards} an invaluable tool for statistical analysis.
+
+## The Future of Statistical Analysis with ARD and {cards}
+
+The ARD Model and {cards} package represent a significant leap forward in the field of statistical analysis. By promoting reproducibility and efficiency, they pave the way for more streamlined and reliable analyses. As the R community continues to embrace these innovations, the potential for further advancements in automation and AI-driven analytics becomes increasingly promising.
+
+For those interested in exploring the capabilities of {cards} and the ARD Model, the Pharmaverse initiative offers a wealth of resources and collaborative opportunities. By participating in this vibrant community, data scientists and analysts can stay at the forefront of statistical innovation and contribute to the ongoing evolution of best practices in the field.
+
+## Conclusion
+
+The Analysis Results Data Model and the {cards} R package are transforming the landscape of statistical analysis. By providing a robust framework for encoding and managing analysis results, they enable users to achieve higher levels of reproducibility, efficiency, and traceability. 
+
+Join the R Consortium and Pharmaverse in the journey to redefine the standards of data analysis.
