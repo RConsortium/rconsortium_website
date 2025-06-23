@@ -1,0 +1,55 @@
+--- 
+title: "Rix: reproducible data science environments with Nix" 
+unpublished: true 
+url: "https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/"
+description: "Boost R reproducibility with Nix and {rix}! Explore tools for consistent data science environments." 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium" 
+image: "thumbnail-rix-bruno.jpg" 
+image-alt: "Rix - reproducible data science environments with Nix - Bruno Rodrigues" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/odC3soY2qnk >}}
+
+# R/Medicine 2025: Enhancing Reproducibility with Nix and R
+
+Reproducibility is a cornerstone of reliable research, ensuring that findings can be consistently replicated and verified by peers. In recent years, the R community has been actively seeking ways to bolster reproducibility in data science workflows. At the R/Medicine 2025 conference, Bruno Rodrigues delivered a comprehensive workshop on leveraging the Nix package manager for creating reproducible data science environments, particularly focusing on the integration with R through the {rix} and {rixpress} packages.
+
+## Meet Bruno Rodrigues
+
+Bruno Rodrigues is a statistician at Luxembourg’s Ministry of Research and Higher Education, with extensive experience as a senior data scientist and team manager at PwC Luxembourg. His work at STATEC Research has also contributed to his deep understanding of data science and reproducibility. Bruno is an advocate for improving research practices and regularly develops tools and tutorials to aid the R community. He is the author of "Building Reproducible Analytical Pipelines with R" and actively contributes to the R ecosystem for Nix.
+
+## The Challenge of Reproducibility
+
+Traditional methods of managing R environments, such as {renv} and {groundhog}, allow users to manage package versions effectively but often fall short in handling system-level dependencies and the R version itself. This is where Nix, a package manager emphasizing reproducible builds, steps in. Unlike Docker, which is widely used but not inherently designed for reproducibility, Nix ensures that every layer of the software stack is accounted for, from the R version to system dependencies.
+
+## Introducing Nix and {rix}
+
+### What is Nix?
+
+Nix is a powerful package manager that installs and manages any type of software, ensuring that all dependencies are explicitly defined and versioned. This means that whether you're installing R packages, system libraries, or even the R interpreter itself, Nix guarantees that everything is pinned to a specific version, ensuring reproducibility across different systems and platforms.
+
+### The {rix} Package
+
+Bruno's {rix} package simplifies the use of Nix for R users by generating Nix expressions from simple R commands. Users can specify their required R version, packages, and even system tools, and {rix} will create a Nix expression that defines a complete, reproducible environment. This approach eliminates the need for Docker in many cases, streamlining the setup of development and production environments.
+
+## Hands-On with {rix} and {rixpress}
+
+### Creating Reproducible Environments
+
+During the workshop, Bruno demonstrated how to create reproducible environments using {rix}. By specifying the desired packages and their versions, users can generate a `default.nix` file, which can then be built using Nix to create a consistent environment. This environment is not only reproducible but also portable, meaning it can be shared with collaborators who can recreate the exact setup on their machines.
+
+### Integrating with IDEs
+
+Bruno showcased how to work with popular IDEs like RStudio and Positron to seamlessly integrate Nix environments. For RStudio, the environment must be explicitly managed by Nix, while Positron and VS Code can interact with Nix shells, allowing users to leverage their preferred development tools while maintaining reproducibility.
+
+### Beyond R: Multi-Language Pipelines with {rixpress}
+
+In addition to {rix}, Bruno introduced {rixpress}, a package designed to build and manage multi-language pipelines using Nix. Inspired by the {targets} package, {rixpress} allows users to define complex workflows that incorporate R, Python, and Julia, all while maintaining reproducibility. This is particularly beneficial for projects that require the integration of different programming languages.
+
+## Conclusion
+
+Bruno Rodrigues' workshop at R/Medicine 2025 highlighted the transformative potential of Nix in the R ecosystem. By providing a robust framework for reproducibility, Nix, along with {rix} and {rixpress}, empowers data scientists to create reliable and consistent research environments. Whether you're managing a simple R project or a complex multi-language pipeline, these tools offer a comprehensive solution for ensuring that your work can be reproduced accurately, anywhere, and at any time.
+
+For those interested in exploring these tools further, Bruno encourages the R community to engage with the available resources and contribute to the ongoing development and improvement of reproducibility practices.
