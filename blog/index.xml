@@ -10,7 +10,69 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 22 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>First Steps with SQL in R: Making Data Talk</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/1t0DvqGD9nM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> # Unlocking SQL’s Potential in R: A Beginner’s Guide<p></p>
+<p>In the ever-evolving landscape of data science and analytics, SQL (Structured Query Language) remains a steadfast tool for extracting and organizing data. For those entrenched in the world of R, particularly within clinical research and healthcare settings, integrating SQL skills can be a game changer. The recent workshop hosted by Chris Battiston, a seasoned REDCap administrator and research data analyst at Women’s College Hospital, Toronto, underscored the immense potential of SQL when used alongside R, especially for those managing complex data sets in clinical environments.</p>
+<section id="why-sql" class="level2">
+<h2 class="anchored" data-anchor-id="why-sql">Why SQL?</h2>
+<p>SQL’s longevity and widespread use across industries underscore its utility. Developed in the 1970s, SQL was designed for querying relational databases, which makes it perfect for managing structured data. In clinical research, where data integrity and accessibility are paramount, SQL acts as a bridge between raw data and meaningful insights.</p>
+<p>SQL is particularly beneficial for:</p>
+<ul>
+<li><strong>Data Extraction and Transformation</strong>: SQL efficiently handles large datasets, enabling the extraction of specific data points without overwhelming memory resources.</li>
+<li><strong>Relational Data Handling</strong>: Ideal for linking tables and datasets, SQL simplifies the process of combining disparate data sources for a comprehensive analysis.</li>
+<li><strong>Portability and Familiarity</strong>: As a universal language for data queries, SQL skills are transferable across various platforms and systems, making it a valuable addition to any data analyst’s toolkit.</li>
+</ul>
+</section>
+<section id="sql-in-the-r-environment" class="level2">
+<h2 class="anchored" data-anchor-id="sql-in-the-r-environment">SQL in the R Environment</h2>
+<p>Chris Battiston’s workshop, “First Steps in SQL with R: Making Data Talk,” offered an in-depth look at how the <code>sqldf</code> package in R can be used to run SQL queries directly on R data frames. This integration allows R users to take advantage of SQL’s strengths without leaving the R environment, streamlining workflows and enhancing productivity.</p>
+<p>Key learnings from the workshop included:</p>
+<ul>
+<li><strong>SQL Basics</strong>: Understanding SQL syntax, including commands like SELECT, FROM, WHERE, ORDER BY, GROUP BY, and JOIN.</li>
+<li><strong>Comparative Analysis</strong>: Using SQL alongside <code>dplyr</code> for common data tasks, highlighting scenarios where SQL might offer a more efficient or intuitive solution.</li>
+<li><strong>Hands-on Practice</strong>: Participants engaged in live coding exercises, writing SQL queries to filter, sort, group, and join data frames in R.</li>
+</ul>
+</section>
+<section id="practical-applications" class="level2">
+<h2 class="anchored" data-anchor-id="practical-applications">Practical Applications</h2>
+<p>The workshop provided practical examples using real-world data from New York City hospitals, demonstrating how SQL queries can surface valuable insights quickly. For instance, participants learned to:</p>
+<ul>
+<li>Identify the top hospitals by procedure type using SQL’s GROUP BY and ORDER BY clauses.</li>
+<li>Analyze demographic variations in healthcare charges across different counties.</li>
+<li>Understand the nuances of joins, such as inner joins and left joins, to merge datasets effectively.</li>
+</ul>
+<p>These examples showcased SQL’s ability to handle complex queries and provide actionable insights, essential for clinical data managers and researchers.</p>
+</section>
+<section id="complementary-tools" class="level2">
+<h2 class="anchored" data-anchor-id="complementary-tools">Complementary Tools</h2>
+<p>While SQL excels in data extraction and organization, R shines in statistical analysis and visualization. The workshop encouraged participants to think of SQL and R as complementary tools rather than competing ones. For instance, SQL can be used to preprocess and clean data, which can then be fed into R for advanced modeling and visualization.</p>
+</section>
+<section id="conclusion-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<p>By the end of the workshop, participants gained confidence in using SQL within R, learning to write queries that enhance data analysis workflows. The session emphasized that while SQL is a powerful tool, its true potential is realized when used to tell a story with data. In clinical research, this means transforming raw data into narratives that drive understanding and inform decision-making.</p>
+<p>For those looking to deepen their SQL skills within R, Chris Battiston provided a wealth of resources, including practice queries, cheat sheets, and access to the Spark dataset from New York State. These tools offer a solid foundation for further exploration and mastery of SQL in R.</p>
+<p>As the data landscape continues to evolve, the ability to integrate SQL into R workflows will undoubtedly remain a valuable skill, opening doors to more efficient data management and richer insights.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/</guid>
+  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/thumbnail-SQL-in-R-chris.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Advanced Distance Metrics for High-Dimensional Clustering: introducing ‘distanceHD’ R-package</title>
   <dc:creator>R Consortium, Software Development</dc:creator>
@@ -1173,65 +1235,6 @@
   <guid>https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/thumbnail-harmonisation-selva.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>riskcalc.org: A Repository of Risk Calculators for Medical Decision Making</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4mo5V_rjUhM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="enhancing-clinical-decision-making-with-riskcalc.org" class="level1">
-<h1>Enhancing Clinical Decision-Making with Riskcalc.org</h1>
-<p>In the rapidly evolving landscape of healthcare, the fusion of data science and clinical practice is creating unprecedented opportunities for personalized medicine. At the forefront of this intersection is <a href="https://riskcalc.org/">riskcalc.org</a>, a pioneering platform developed to aid clinicians and patients in making informed medical decisions. Alex Zajichek, a research data scientist at the Cleveland Clinic, recently provided an insightful overview of this platform at R/Medicine 2025, highlighting its capabilities, infrastructure, and future directions.</p>
-<section id="the-genesis-of-riskcalc.org" class="level2">
-<h2 class="anchored" data-anchor-id="the-genesis-of-riskcalc.org">The Genesis of Riskcalc.org</h2>
-<p>Riskcalc.org emerged from the Cleveland Clinic’s Department of Quantitative Health Sciences, a hub of over 100 statisticians, data scientists, and researchers. This department is dedicated to providing quantitative support across various research activities, from clinical trials to precision medicine. The platform was conceptualized to serve as a free, accessible resource for clinicians and patients, facilitating individualized medical decision-making through a collection of predictive models.</p>
-</section>
-<section id="core-functionality-and-infrastructure" class="level2">
-<h2 class="anchored" data-anchor-id="core-functionality-and-infrastructure">Core Functionality and Infrastructure</h2>
-<p>At its core, riskcalc.org hosts a suite of clinical risk calculators, each designed as a standalone R Shiny application. These calculators are predominantly regression models derived from published research studies. The platform garners significant engagement, with a monthly user base of 10,000 to 15,000.</p>
-<p>The development process involves creating applications locally using R and Shiny. The models are integrated into the applications either as stored R data objects or by hardcoding them directly into the app’s code. For transparency, the code is pushed to GitHub, allowing users to inspect the application’s backend functionality. The live interaction with riskcalc.org occurs via an open-source Shiny server hosted on AWS, a cost-effective infrastructure primarily incurring costs for compute resources.</p>
-</section>
-<section id="recent-developments-and-enhancements" class="level2">
-<h2 class="anchored" data-anchor-id="recent-developments-and-enhancements">Recent Developments and Enhancements</h2>
-<p>The platform has seen several recent enhancements. All source codes for the applications are now publicly accessible on the department’s GitHub page, with each application featuring a link to its source code. The homepage of riskcalc.org has undergone a redesign to improve user interface and navigation, with icons representing different disease areas leading users to relevant risk calculators.</p>
-<p>Moreover, an R package has been developed to streamline the creation of risk calculators. The package’s main function, <code>risk_calculator</code>, allows users to generate a directory containing application files preconfigured with standard boilerplate elements. Users can then customize these files with specific model details, facilitating the rapid development of new calculators.</p>
-</section>
-<section id="future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
-<p>Looking forward, several key areas for development and improvement have been identified:</p>
-<ol type="1">
-<li><p><strong>Integration and Workflow Enhancement</strong>: There is a push to more formally integrate GitHub into the workflow through CI/CD processes, ensuring that the code on GitHub is directly connected to the live website. This integration would aid in managing package versions and R itself on the server, mitigating compatibility issues during application development.</p></li>
-<li><p><strong>Standardization and Expansion</strong>: Efforts are underway to generalize the concept of a risk calculator to include not just regression models but any mathematical object that predicts clinical outcomes, such as machine learning models. A standardized framework is being sought to power the backend consistently, regardless of model methodology.</p></li>
-<li><p><strong>Model Monitoring and Updating</strong>: The team is exploring ways to monitor model performance over time, beyond the point of initial development. This ongoing evaluation would ensure that models remain relevant and accurate in clinical settings.</p></li>
-<li><p><strong>Broader Community and Research Ecosystem</strong>: Riskcalc.org aims to become a one-stop shop for clinical risk prediction. This vision includes fostering community involvement for model validation and performance ranking, developing APIs for programmatic access to model outputs, and creating a research ecosystem to integrate and compare various models for improved clinical predictions.</p></li>
-</ol>
-</section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>The platform has been a collaborative effort, with contributions from numerous co-developers and principal investigators. Special acknowledgment is given to Mike Kattan, the former department chair and a world-renowned expert in clinical risk prediction, whose vision and leadership were instrumental in the creation of riskcalc.org.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Riskcalc.org represents a significant stride towards integrating data science with clinical practice, providing a robust tool for personalized medical decision-making. With its ongoing developments and future plans, the platform is poised to enhance its impact and utility in the healthcare domain.</p>
-<p>For more information on this talk and to access the slides, visit Alex Zajichek’s <a href="https://www.zajichekstats.com/presentations/riskcalc-a-repository-of-risk-calculators-for-medical-decision-making/">presentation</a>.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <category>Insurance/Risk</category>
-  <guid>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/thumbnail-riskcalc.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
