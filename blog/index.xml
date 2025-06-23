@@ -77,6 +77,77 @@
   <media:content url="https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/thumbnail-SQL-in-R-chris.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Quarto Dashboards: from zero to publish in one hour</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/NoOU_nzeAGk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="from-zero-to-quarto-dashboards-a-comprehensive-guide" class="level1">
+<h1>From Zero to Quarto Dashboards: A Comprehensive Guide</h1>
+<p>In the ever-evolving landscape of data science and statistical analysis, Quarto offers a novel approach to creating and sharing interactive dashboards. Quarto Dashboards provide an intuitive platform that is both elegant and efficient, making it easier than ever to present data in a visually appealing format. Professor Mine Çetinkaya-Rundel from Duke University recently demonstrated the power of Quarto Dashboards at the R/Medicine 2025 conference, showcasing how to build and publish a dashboard from scratch in just an hour.</p>
+<section id="the-essence-of-quarto-dashboards" class="level2">
+<h2 class="anchored" data-anchor-id="the-essence-of-quarto-dashboards">The Essence of Quarto Dashboards</h2>
+<p>Quarto is an open-source scientific and technical publishing system designed to enhance the process of creating and collaborating on data projects. It seamlessly combines narrative text and code to produce outputs such as HTML, PDF, Word documents, and dashboards. Quarto Dashboards, in particular, have been available since version 1.4, with the latest pre-release version being 1.8. These dashboards are built using a variety of components, including static graphics, interactive widgets, and tabular data. They are responsive, ensuring that they look great on devices of all sizes.</p>
+<section id="key-features-of-quarto-dashboards" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-quarto-dashboards">Key Features of Quarto Dashboards</h3>
+<ol type="1">
+<li><p><strong>Component Flexibility</strong>: Users can incorporate static graphics, interactive widgets, tabular data, value boxes, and text annotations into their dashboards, offering a comprehensive range of visualization tools.</p></li>
+<li><p><strong>Responsive Design</strong>: With intelligent resizing, Quarto Dashboards offer optimal viewing experiences on any device, whether it’s a smartphone, tablet, or desktop.</p></li>
+<li><p><strong>Markdown Comfort</strong>: The ability to author dashboards in plain text markdown with any text editor makes Quarto Dashboards accessible for users familiar with markdown syntax.</p></li>
+<li><p><strong>Cross-Language Compatibility</strong>: While the demo primarily used R, Quarto Dashboards support computations in Python and Julia as well, with only minor syntax adjustments needed for code cells.</p></li>
+<li><p><strong>Theming and Customization</strong>: Users can define custom themes, including light and dark modes, by utilizing brand YAML files and SCSS rules, allowing for extensive personalization.</p></li>
+</ol>
+</section>
+</section>
+<section id="building-a-quarto-dashboard-a-step-by-step-approach" class="level2">
+<h2 class="anchored" data-anchor-id="building-a-quarto-dashboard-a-step-by-step-approach">Building a Quarto Dashboard: A Step-by-Step Approach</h2>
+<section id="starting-point" class="level3">
+<h3 class="anchored" data-anchor-id="starting-point">Starting Point</h3>
+<p>The process begins with a basic Quarto document. This document is then transformed into a dashboard by changing the document format to <code>dashboard</code>. The output of each R code cell becomes a card within the dashboard. The organization of these cards can be customized through rows and columns, offering a structured way to present data.</p>
+</section>
+<section id="creating-value-boxes" class="level3">
+<h3 class="anchored" data-anchor-id="creating-value-boxes">Creating Value Boxes</h3>
+<p>Value boxes are a key feature of Quarto Dashboards, providing a succinct way to display summary statistics. In the demo, value boxes were used to present the number of keynotes, tutorials, and other session types. Each value box is created by setting the content of a code cell to <code>value-box</code>, with customizable titles, icons, and colors.</p>
+</section>
+<section id="plot-sizing" class="level3">
+<h3 class="anchored" data-anchor-id="plot-sizing">Plot Sizing</h3>
+<p>An important aspect of dashboard design is ensuring that plots are appropriately sized. Quarto Dashboards allow users to specify figure heights and widths, ensuring plots are legible and well-integrated into the dashboard layout.</p>
+</section>
+<section id="light-and-dark-themes" class="level3">
+<h3 class="anchored" data-anchor-id="light-and-dark-themes">Light and Dark Themes</h3>
+<p>A standout feature of Quarto Dashboards is the ability to switch between light and dark themes. This is achieved through the use of brand YAML files, which define the color palettes for different components. Additionally, users can specify separate plot renderings for each theme, ensuring visual consistency.</p>
+</section>
+<section id="tab-sets-and-tables" class="level3">
+<h3 class="anchored" data-anchor-id="tab-sets-and-tables">Tab Sets and Tables</h3>
+<p>For dashboards that require the presentation of multiple tables or plots, Quarto Dashboards support the use of tab sets. This feature allows users to organize content into tabs, providing a cleaner and more interactive user experience. Tables can also be customized with light and dark themes, with helper functions available to streamline the process.</p>
+</section>
+</section>
+<section id="the-future-of-quarto-dashboards" class="level2">
+<h2 class="anchored" data-anchor-id="the-future-of-quarto-dashboards">The Future of Quarto Dashboards</h2>
+<p>Quarto Dashboards represent a significant advancement in data visualization within the R community. Their flexibility, ease of use, and cross-language compatibility make them a valuable tool for data scientists, educators, and researchers alike. As the Quarto platform continues to evolve, we can expect even more features and enhancements that will further streamline the process of creating interactive and visually appealing dashboards.</p>
+<p>Professor Mine Çetinkaya-Rundel’s demonstration at the R/Medicine 2025 conference highlighted the practical applications of Quarto Dashboards, providing attendees with the knowledge and tools needed to create their own dashboards. Her work in statistics and data science pedagogy, particularly her focus on open-source education and student-centered learning, continues to inspire and empower the R community.</p>
+<p>For those interested in exploring Quarto Dashboards further, resources and examples are available through the R Consortium and related projects. Whether you’re looking to enhance your teaching materials, share research findings, or simply present data in a new way, Quarto Dashboards offer a robust and versatile solution.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The introduction of Quarto Dashboards marks a new era in data visualization and reporting. By combining the power of R with the flexibility of Quarto, users can create dashboards that are not only informative but also visually stunning. As the R community continues to innovate and collaborate, tools like Quarto Dashboards will undoubtedly play a pivotal role in shaping the future of data science.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <guid>https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/</guid>
+  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/thumbnail-quarto-mine.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Supporting R learners on the job during interesting times: A panel of R educators</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</link>
@@ -1164,70 +1235,6 @@
   <guid>https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Refactor or Preserve? Challenging ‘If It Ain’t Broken, Don’t Fix It’ Mindset in Shiny App Lifecycle</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9agO0o2gP68" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="refactor-or-preserve-challenging-the-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle" class="level1">
-<h1>Refactor or Preserve: Challenging the “If It Ain’t Broken, Don’t Fix It” Mindset in Shiny App Lifecycle</h1>
-<p>In the ever-evolving landscape of technology, even well-crafted software solutions eventually face obsolescence. This reality brings forth a critical question for developers: to refactor or not? Dror Berel, an independent consultant with a diverse background in statistics, R, and the pharmaceutical industry, delves into this conundrum using the Pharmaverse/Teal framework as a case study. His insights shed light on the benefits and risks of transitioning a functional Shiny application to a modern framework.</p>
-<section id="the-lifecycle-of-software-and-the-scope-creep-phenomenon" class="level2">
-<h2 class="anchored" data-anchor-id="the-lifecycle-of-software-and-the-scope-creep-phenomenon">The Lifecycle of Software and the Scope Creep Phenomenon</h2>
-<p>Throughout his career, Dror Berel has navigated through various programming environments—from SAS and S+ to R, becoming an early adopter of R web applications. His journey has led him through the intricate process of managing messy data and transforming it into meaningful insights. A recurring challenge in this process is the phenomenon of “scope creep,” where the project’s scope gradually expands beyond its original intent. This often results in unwieldy, spaghetti-like code that demands constant patching.</p>
-<p>Dror defines scope creep as the uncontrolled or gradual expansion of project scope, adding features or requirements without corresponding adjustments in resources. This incremental approach can lead to inefficiencies and the need for a complete overhaul. Dror argues that instead of perpetually patching code, building a better solution from scratch can be a more sustainable approach.</p>
-</section>
-<section id="the-innovation-adoption-curve-in-r-frameworks" class="level2">
-<h2 class="anchored" data-anchor-id="the-innovation-adoption-curve-in-r-frameworks">The Innovation Adoption Curve in R Frameworks</h2>
-<p>Dror introduces the concept of the product adoption lifecycle, also known as the innovation adoption curve, to illustrate the evolution of R frameworks. Initially, solutions like R Base were created to address specific pain points. Over time, as these solutions gained popularity, they attracted early adopters, eventually reaching a broader audience. However, with the emergence of new challenges, frameworks like Tidyverse and Shiny were developed to address these issues.</p>
-<p>Dror highlights the current landscape where modern frameworks, such as Teal and Rhino, are gaining traction, offering more advanced solutions for complex Shiny applications. He emphasizes the importance of understanding when to embrace these new frameworks and when to preserve existing solutions.</p>
-</section>
-<section id="the-case-for-refactoring-when-and-why" class="level2">
-<h2 class="anchored" data-anchor-id="the-case-for-refactoring-when-and-why">The Case for Refactoring: When and Why?</h2>
-<p>Refactoring is an integral part of the software lifecycle, but it requires careful consideration. Dror outlines scenarios when refactoring is justified:</p>
-<ol type="1">
-<li><p><strong>Deprecated Dependencies</strong>: When existing dependencies become outdated or unsupported, refactoring becomes necessary to ensure continued functionality.</p></li>
-<li><p><strong>Scope Creep</strong>: If the current scope of the project exceeds its original limitations, refactoring can provide a more efficient and sustainable solution.</p></li>
-<li><p><strong>Critical Pain Points</strong>: When the existing framework cannot adequately address a critical issue, adopting a new solution may be warranted.</p></li>
-<li><p><strong>Trust in New Solutions</strong>: Refactoring should be pursued when there is confidence in the new solution’s longevity and support.</p></li>
-</ol>
-</section>
-<section id="the-role-of-modern-frameworks-in-shiny-applications" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-modern-frameworks-in-shiny-applications">The Role of Modern Frameworks in Shiny Applications</h2>
-<p>Dror delves into specific frameworks that have emerged to address the complexities of Shiny applications. He highlights the Pharmaverse open-source community’s ecosystem, particularly the Teal framework, which simplifies the development of Shiny apps by leveraging modules. This modular approach allows developers to focus on high-level objectives rather than getting bogged down in low-level details.</p>
-<p>In addition to Teal, Dror mentions the Rhino framework, which provides recommendations for organizing files within an app, enhancing maintainability. Together with the Box package, these frameworks offer clear code quality, automation, and more, empowering developers to create robust Shiny applications.</p>
-</section>
-<section id="when-not-to-refactor-preserving-stability" class="level2">
-<h2 class="anchored" data-anchor-id="when-not-to-refactor-preserving-stability">When Not to Refactor: Preserving Stability</h2>
-<p>While refactoring offers numerous benefits, there are scenarios where it may not be necessary or advisable:</p>
-<ol type="1">
-<li><p><strong>Legacy Methodology</strong>: If replicating legacy methodologies is challenging and not well-understood, preservation may be the safer option.</p></li>
-<li><p><strong>Overkill Features</strong>: Introducing features that do not significantly enhance functionality may lead to unnecessary complexity.</p></li>
-<li><p><strong>Heavy Dependencies</strong>: Modern frameworks can introduce dependencies that may not align with project objectives, warranting a cautious approach.</p></li>
-</ol>
-</section>
-<section id="conclusion-balancing-innovation-and-stability" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-balancing-innovation-and-stability">Conclusion: Balancing Innovation and Stability</h2>
-<p>In conclusion, the decision to refactor or preserve an existing solution hinges on a variety of factors, including the project’s scope, the availability of modern frameworks, and the specific challenges faced. Dror Berel emphasizes the importance of being strategic and intentional in these decisions, weighing the risks and benefits to ensure long-term success.</p>
-<p>For the R community, embracing new frameworks and technologies is essential for staying at the forefront of innovation. However, it is equally important to recognize when stability and preservation are the most prudent paths forward. By striking this balance, developers can ensure the longevity and effectiveness of their Shiny applications, ultimately delivering greater value to users and stakeholders.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/thumbnail-refactoring-dror.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
