@@ -77,6 +77,71 @@
   <media:content url="https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/thumbnail-SQL-in-R-chris.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Supporting R learners on the job during interesting times: A panel of R educators</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KKRbA2VYOb4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="navigating-the-seas-of-r-education-insights-from-rmedicine-2025" class="level1">
+<h1>Navigating the Seas of R Education: Insights from R/Medicine 2025</h1>
+<p>In an ever-evolving world where technology and data science are at the forefront of innovation, the need for effective education in tools like R is more critical than ever. The recent panel discussion at R/Medicine 2025 brought together a group of seasoned educators and practitioners who shared their insights on the challenges and opportunities in teaching R, especially outside the traditional classroom setting. This post delves into the key takeaways from the panel, offering a glimpse into the future of R education and how we can collectively support learners during these interesting times.</p>
+<section id="meet-the-panelists" class="level2">
+<h2 class="anchored" data-anchor-id="meet-the-panelists">Meet the Panelists</h2>
+<p>The panel was composed of esteemed educators with diverse backgrounds, each bringing unique perspectives to the table:</p>
+<ul>
+<li><p><strong>Ray Balise</strong>: An Associate Professor of Biostatistics and Bioinformatics at the University of Miami, Ray has a long history of teaching statistical programming and is passionate about teaching smart people to think about data.</p></li>
+<li><p><strong>Silvia Canelón</strong>: From Penn Medicine Center for Health Justice, Silvia is an advocate for data literacy, communication, and accessibility, with a focus on supporting others in their data-driven journeys.</p></li>
+<li><p><strong>Meghan Santiago Harris</strong>: Known for her work in public health and data science education, Meghan emphasizes the importance of self-teaching and mentoring in her field.</p></li>
+<li><p><strong>Ted Laderas</strong>: As the Director of Training and Community for the Office of the Chief Data Officer at Fred Hutch Cancer Center, Ted is focused on changing data culture through education and training.</p></li>
+<li><p><strong>Joy Payton</strong>: A dedicated data science educator in biomedicine, Joy has been instrumental in building capacity and fostering community among learners.</p></li>
+</ul>
+</section>
+<section id="the-challenge-of-interesting-times" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-of-interesting-times">The Challenge of Interesting Times</h2>
+<p>Joy Payton opened the discussion by acknowledging the “interesting times” we are living in. With cognitive load at an all-time high due to various global and local challenges, learners and educators alike must navigate these turbulent waters. The panelists echoed this sentiment, emphasizing the need for flexibility, adaptability, and a supportive community to help learners thrive.</p>
+</section>
+<section id="the-role-of-ai-and-llms-in-r-education" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-ai-and-llms-in-r-education">The Role of AI and LLMs in R Education</h2>
+<p>One of the hot topics discussed was the role of AI and large language models (LLMs) in learning and coding. While AI tools like ChatGPT and Claude can assist learners by handling syntax and providing quick answers, the panelists stressed the importance of understanding the underlying mental models and logic behind coding. They agreed that while LLMs are here to stay, educators must teach students how to use these tools effectively without compromising foundational skills.</p>
+<p>Ted Laderas highlighted the importance of cognitive load theory and psychological safety in education, advocating for a balance between leveraging AI tools and maintaining the integrity of the learning process. Ray Balise added that teaching prompt engineering and proper use of LLMs should be integrated into the curriculum to ensure students are equipped for the modern workforce.</p>
+</section>
+<section id="supporting-learners-in-uncertain-times" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-learners-in-uncertain-times">Supporting Learners in Uncertain Times</h2>
+<p>The panelists shared their strategies for supporting learners amidst uncertainty. Meghan Santiago Harris emphasized the value of integrating R into existing work or projects that learners are passionate about. This approach not only aids retention but also makes the learning process more enjoyable and relevant.</p>
+<p>Silvia Canelón pointed out the importance of community and collaboration, noting that much of her learning came from engaging with others in the R community. For educators, fostering an environment where learners can share their experiences and learn from each other is crucial.</p>
+</section>
+<section id="resources-and-tools-for-r-learners" class="level2">
+<h2 class="anchored" data-anchor-id="resources-and-tools-for-r-learners">Resources and Tools for R Learners</h2>
+<p>The panelists also discussed their favorite resources for teaching and learning R:</p>
+<ul>
+<li><strong>Big Book of R</strong>: A comprehensive collection of online R books covering various topics.</li>
+<li><strong>R OpenSci Trainings</strong>: Focused on research contexts, these resources are invaluable for developing R skills.</li>
+<li><strong>Our Ladies YouTube Channel</strong>: Offers a wealth of tutorials and workshops on different R topics.</li>
+<li><strong>Urban Institute’s Do No Harm Project</strong>: Provides guidance on equity and accessibility in data visualization.</li>
+</ul>
+<p>Joy Payton introduced <strong>Bent</strong>, a data education navigator tool, and <strong>Leoscript</strong>, a markdown renderer for creating educational resources. These tools exemplify the innovative approaches educators are taking to enhance the learning experience.</p>
+</section>
+<section id="building-a-community-of-r-educators" class="level2">
+<h2 class="anchored" data-anchor-id="building-a-community-of-r-educators">Building a Community of R Educators</h2>
+<p>In closing, Joy Payton urged attendees to be gate openers, highlighting that everyone has something to contribute to the R community. Whether you’re a seasoned educator or a beginner, sharing your knowledge and experiences can help build a robust network of engaged and supportive R learners and educators.</p>
+<p>As we look to the future, the insights from R/Medicine 2025 remind us of the importance of adaptability, community, and thoughtful integration of technology in education. By embracing these principles, we can empower the next generation of R users to navigate the complexities of data science with confidence and creativity.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <guid>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</guid>
+  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Advanced Distance Metrics for High-Dimensional Clustering: introducing ‘distanceHD’ R-package</title>
   <dc:creator>R Consortium, Software Development</dc:creator>
   <link>https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/</link>
@@ -1163,81 +1228,6 @@
   <guid>https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/refactor-or-preserve-challenging-if-it-aint-broken-dont-fix-it-mindset-in-shiny-app-lifecycle/thumbnail-refactoring-dror.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Retrospective clinical data harmonisation reporting using R and Quarto</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0rUcKR4fylw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="enhancing-clinical-data-harmonization-with-r-and-quarto" class="level1">
-<h1>Enhancing Clinical Data Harmonization with R and Quarto</h1>
-<p>Data harmonization has emerged as a crucial component in ensuring the integrity and utility of pooled data sets in clinical research. Jeremy Selva, a Research Officer at the National Heart Center Singapore, delivered a talk at R/Medicine 2025 on “Retrospective Clinical Data Harmonization Reporting.” His presentation delved into data harmonization, offering practical solutions and workflows for creating comprehensive reports using R and Quarto.</p>
-<section id="the-challenge-of-data-harmonization" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-of-data-harmonization">The Challenge of Data Harmonization</h2>
-<p>Data harmonization is an indispensable part of the data cleaning process. It involves identifying similar variables across diverse data sets, grouping them based on generalized concepts, and transforming them into unified, harmonized variables for analysis. This process is particularly vital in clinical research, where data pooling from multiple sources can dramatically increase the statistical power to analyze rare outcomes.</p>
-<p>However, as Jeremy highlighted, the path to effective data harmonization is fraught with challenges. Collaborators often send data in varying formats, making it difficult to match them against provided data dictionaries and input templates. This lack of uniformity necessitates a robust process to document and report the harmonization steps, serving as a bridge between data collaborators and the analysis team.</p>
-</section>
-<section id="the-importance-of-harmonization-reports" class="level2">
-<h2 class="anchored" data-anchor-id="the-importance-of-harmonization-reports">The Importance of Harmonization Reports</h2>
-<p>Jeremy emphasized the importance of transparency and accountability in data harmonization. A well-documented harmonization report can serve as a safeguard, providing clarity to collaborators and preempting potential issues that might arise from data mismanagement.</p>
-<p>Despite the critical role of such reports, there is a dearth of resources providing detailed guidance on creating them, particularly using programming languages like R.</p>
-</section>
-<section id="leveraging-r-for-data-harmonization" class="level2">
-<h2 class="anchored" data-anchor-id="leveraging-r-for-data-harmonization">Leveraging R for Data Harmonization</h2>
-<p>In his quest to streamline the data harmonization process, Jeremy explored various R packages. Although packages like <code>retroharmonize</code>, <code>Rmonize</code> and <code>psHarmonize</code> offer some functionality, they come with limitations, such as handling categorical data better than continuous data or presenting complex harmonization processes in Excel, which can be cumbersome.</p>
-<p>To address these gaps, Jeremy developed his own R project template for creating harmonization reports. This template draws inspiration from the <code>ourpackage</code> and <code>ourcompanion</code> packages, providing a structured layout for data storage, code management, and report generation.</p>
-<section id="common-issues-and-solutions" class="level3">
-<h3 class="anchored" data-anchor-id="common-issues-and-solutions">Common Issues and Solutions</h3>
-<p>Jeremy shared some common pitfalls encountered during data harmonization and how they can be mitigated using R:</p>
-<ol type="1">
-<li><p><strong>Data Versioning Issues</strong>: Collaborators may send multiple versions of the same data set. Using the <code>readr</code> package and functions like <code>problems</code>, Jeremy demonstrated how to catch and address issues early in the data import process.</p></li>
-<li><p><strong>Automating Checks</strong>: By employing packages like <code>testthat</code> and <code>pointblank</code>, Jeremy automated the validation of data inputs, ensuring robustness against changes in data versions.</p></li>
-<li><p><strong>Variable Mapping and Validation</strong>: Jeremy outlined a workflow for mapping variables, validating mappings, and preparing data for merging. This included creating interactive tables for collaborators to review and using validation functions to ensure data integrity.</p></li>
-</ol>
-</section>
-</section>
-<section id="automating-report-generation-with-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="automating-report-generation-with-quarto">Automating Report Generation with Quarto</h2>
-<p>To tackle the challenge of generating extensive harmonization reports, Jeremy turned to Quarto, a publishing system that allows for dynamic report generation. By creating a Quarto book project, he automated the creation of harmonization reports for each cohort, ensuring consistency and efficiency.</p>
-<section id="creating-harmonization-reports" class="level3">
-<h3 class="anchored" data-anchor-id="creating-harmonization-reports">Creating Harmonization Reports</h3>
-<p>The process involves:</p>
-<ul>
-<li><strong>Index and Quarto Files</strong>: Setting up essential files like <code>index.qmd</code> and <code>quarto.yml</code> to control the book’s content and structure.</li>
-<li><strong>Automating Scripts</strong>: Developing an R script to render Quarto documents for each cohort, facilitating the creation of both reference and how-to guide documents.</li>
-</ul>
-</section>
-</section>
-<section id="visualizing-harmonization-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-harmonization-outcomes">Visualizing Harmonization Outcomes</h2>
-<p>Jeremy also explored various visualization techniques to convey harmonization outcomes to collaborators and management. While traditional methods like Venn diagrams and Upset plots proved complex, he developed a heat map approach. This visualization provided a clear overview of cohort attributes, patient numbers, and variable availability—categorized by different colors and accompanied by legends for clarity.</p>
-</section>
-<section id="conclusion-and-future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-and-future-directions">Conclusion and Future Directions</h2>
-<p>Jeremy’s presentation underscored the critical role of data harmonization in clinical research and the power of R and Quarto in streamlining this process. By creating a robust documentation and reporting framework, researchers can enhance transparency, accountability, and efficiency in their data harmonization efforts.</p>
-<p>As Jeremy noted, while the current template offers a solid foundation, there is always room for improvement, such as unit testing and clearer documentation. His work serves as a valuable starting point for researchers facing similar challenges, fostering a more seamless integration of data across diverse clinical studies.</p>
-<ul>
-<li><a href="https://jauntyjjs.github.io/RMedicine2025_harmonisation/#/title-slide">Slides</a></li>
-<li><a href="https://github.com/JauntyJJS/harmonisation/">Repo</a></li>
-</ul>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/retrospective-clinical-data-harmonisation-reporting-using-r-and-quarto/thumbnail-harmonisation-selva.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
