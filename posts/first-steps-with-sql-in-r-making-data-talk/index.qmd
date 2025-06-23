@@ -10,6 +10,7 @@ image-alt: "First Steps with SQL in R - Chris Battison"
 date: "06/23/2025" 
 ---
 {{< video https://www.youtube.com/embed/1t0DvqGD9nM >}}
+
 # Unlocking SQL's Potential in R: A Beginner's Guide
 
 In the ever-evolving landscape of data science and analytics, SQL (Structured Query Language) remains a steadfast tool for extracting and organizing data. For those entrenched in the world of R, particularly within clinical research and healthcare settings, integrating SQL skills can be a game changer. The recent workshop hosted by Chris Battiston, a seasoned REDCap administrator and research data analyst at Women's College Hospital, Toronto, underscored the immense potential of SQL when used alongside R, especially for those managing complex data sets in clinical environments.
