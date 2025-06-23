@@ -1,0 +1,66 @@
+--- 
+title: "Quarto Dashboards: from zero to publish in one hour" 
+unpublished: true 
+url: "https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/"
+description: "Discover the power of Quarto Dashboards for data visualization with Professor Çetinkaya-Rundel's guide!" 
+categories: [R/Medicine 2025]
+author: "R Consortium" 
+image: "thumbnail-quarto-mine.jpg" 
+image-alt: "Publishing Quarto dashboards - Mine Çetinkaya-Rundel" 
+date: "06/23/2025" 
+---
+{{< video https://www.youtube.com/embed/NoOU_nzeAGk >}}
+
+# From Zero to Quarto Dashboards: A Comprehensive Guide
+
+In the ever-evolving landscape of data science and statistical analysis, Quarto offers a novel approach to creating and sharing interactive dashboards. Quarto Dashboards provide an intuitive platform that is both elegant and efficient, making it easier than ever to present data in a visually appealing format. Professor Mine Çetinkaya-Rundel from Duke University recently demonstrated the power of Quarto Dashboards at the R/Medicine 2025 conference, showcasing how to build and publish a dashboard from scratch in just an hour.
+
+## The Essence of Quarto Dashboards
+
+Quarto is an open-source scientific and technical publishing system designed to enhance the process of creating and collaborating on data projects. It seamlessly combines narrative text and code to produce outputs such as HTML, PDF, Word documents, and dashboards. Quarto Dashboards, in particular, have been available since version 1.4, with the latest pre-release version being 1.8. These dashboards are built using a variety of components, including static graphics, interactive widgets, and tabular data. They are responsive, ensuring that they look great on devices of all sizes.
+
+### Key Features of Quarto Dashboards
+
+1. **Component Flexibility**: Users can incorporate static graphics, interactive widgets, tabular data, value boxes, and text annotations into their dashboards, offering a comprehensive range of visualization tools.
+
+2. **Responsive Design**: With intelligent resizing, Quarto Dashboards offer optimal viewing experiences on any device, whether it's a smartphone, tablet, or desktop.
+
+3. **Markdown Comfort**: The ability to author dashboards in plain text markdown with any text editor makes Quarto Dashboards accessible for users familiar with markdown syntax.
+
+4. **Cross-Language Compatibility**: While the demo primarily used R, Quarto Dashboards support computations in Python and Julia as well, with only minor syntax adjustments needed for code cells.
+
+5. **Theming and Customization**: Users can define custom themes, including light and dark modes, by utilizing brand YAML files and SCSS rules, allowing for extensive personalization.
+
+## Building a Quarto Dashboard: A Step-by-Step Approach
+
+### Starting Point
+
+The process begins with a basic Quarto document. This document is then transformed into a dashboard by changing the document format to `dashboard`. The output of each R code cell becomes a card within the dashboard. The organization of these cards can be customized through rows and columns, offering a structured way to present data.
+
+### Creating Value Boxes
+
+Value boxes are a key feature of Quarto Dashboards, providing a succinct way to display summary statistics. In the demo, value boxes were used to present the number of keynotes, tutorials, and other session types. Each value box is created by setting the content of a code cell to `value-box`, with customizable titles, icons, and colors.
+
+### Plot Sizing
+
+An important aspect of dashboard design is ensuring that plots are appropriately sized. Quarto Dashboards allow users to specify figure heights and widths, ensuring plots are legible and well-integrated into the dashboard layout.
+
+### Light and Dark Themes
+
+A standout feature of Quarto Dashboards is the ability to switch between light and dark themes. This is achieved through the use of brand YAML files, which define the color palettes for different components. Additionally, users can specify separate plot renderings for each theme, ensuring visual consistency.
+
+### Tab Sets and Tables
+
+For dashboards that require the presentation of multiple tables or plots, Quarto Dashboards support the use of tab sets. This feature allows users to organize content into tabs, providing a cleaner and more interactive user experience. Tables can also be customized with light and dark themes, with helper functions available to streamline the process.
+
+## The Future of Quarto Dashboards
+
+Quarto Dashboards represent a significant advancement in data visualization within the R community. Their flexibility, ease of use, and cross-language compatibility make them a valuable tool for data scientists, educators, and researchers alike. As the Quarto platform continues to evolve, we can expect even more features and enhancements that will further streamline the process of creating interactive and visually appealing dashboards.
+
+Professor Mine Çetinkaya-Rundel's demonstration at the R/Medicine 2025 conference highlighted the practical applications of Quarto Dashboards, providing attendees with the knowledge and tools needed to create their own dashboards. Her work in statistics and data science pedagogy, particularly her focus on open-source education and student-centered learning, continues to inspire and empower the R community.
+
+For those interested in exploring Quarto Dashboards further, resources and examples are available through the R Consortium and related projects. Whether you're looking to enhance your teaching materials, share research findings, or simply present data in a new way, Quarto Dashboards offer a robust and versatile solution.
+
+## Conclusion
+
+The introduction of Quarto Dashboards marks a new era in data visualization and reporting. By combining the power of R with the flexibility of Quarto, users can create dashboards that are not only informative but also visually stunning. As the R community continues to innovate and collaborate, tools like Quarto Dashboards will undoubtedly play a pivotal role in shaping the future of data science.
