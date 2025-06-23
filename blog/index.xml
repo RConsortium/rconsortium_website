@@ -123,6 +123,75 @@
   <media:content url="https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/thumbnail-kane-accelerometry.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Application of attention mechanism to improve performance of llm/mllm used across R/Medicine</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/application-of-attention-mechanism-to-improve-performance-of-llmmllm-used-across-rmedicine/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/aGvAE7Z1XJ0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="rmedicine-2025-enhancing-regulatory-submissions-with-attention-mechanisms" class="level1">
+<h1>R/Medicine 2025: Enhancing Regulatory Submissions with Attention Mechanisms</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In the rapidly evolving field of medicine, the integration of technology and data science is ushering in transformative changes. At the R/Medicine 2025 conference, Robert Devine from Johnson &amp; Johnson Companies presented an insightful demonstration on the “Application of attention mechanism to improve performance of surveyed llm/mllm used across R/Medicine.” This session provided a deep dive into how attention mechanisms, a component of transformer architectures, can enhance the efficiency and accuracy of regulatory submissions in the medical field.</p>
+</section>
+<section id="the-role-of-attention-mechanisms" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-attention-mechanisms">The Role of Attention Mechanisms</h2>
+<p>Attention mechanisms have been pivotal in the field of natural language processing (NLP) since their emergence in 2014. Initially used in neural machine translation tasks, they have since been refined and expanded, particularly following significant advancements by Google in 2017. In the context of medicine, attention mechanisms help improve the performance of large language models (LLMs) and multi-modal large language models (MLLMs), facilitating tasks such as the generation of descriptive vignettes for analytical datasets and the auto-generation of the Analysis Data Reviewer’s Guide (ADRG).</p>
+<section id="transformer-architecture-in-rmedicine" class="level3">
+<h3 class="anchored" data-anchor-id="transformer-architecture-in-rmedicine">Transformer Architecture in R/Medicine</h3>
+<p>The session included a comprehensive overview of the transformer architecture, focusing on the attention mechanism’s role in R/Medicine. This architecture allows models to evaluate which parts of the input data are most relevant at each step of the process, thereby enhancing the model’s ability to generate accurate and contextually relevant outputs.</p>
+</section>
+</section>
+<section id="demonstration-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="demonstration-highlights">Demonstration Highlights</h2>
+<ol type="1">
+<li><p><strong>Vignette Generation for Analysis Dataset Descriptions</strong>: The demonstration showcased how attention mechanisms can automate the creation of detailed vignettes for analysis datasets. These vignettes are crucial for providing context and understanding of safety and efficacy data used in the R Consortium Pilot Series with the FDA.</p></li>
+<li><p><strong>Public Repository for Community Participation</strong>: A public repository was introduced to encourage community engagement. This resource allows participants to access and contribute to the development of working examples that hold clinical importance for analytics and regulatory submissions.</p></li>
+<li><p><strong>Private-Public Partnerships</strong>: The session highlighted the ongoing collaboration between private entities and regulatory agencies to foster the adoption of mandated submission guidelines. This collaboration is crucial for aligning industry practices with regulatory requirements and accelerating the conformance to technical guidelines.</p></li>
+</ol>
+</section>
+<section id="the-importance-of-r-consortium-pilot-series" class="level2">
+<h2 class="anchored" data-anchor-id="the-importance-of-r-consortium-pilot-series">The Importance of R Consortium Pilot Series</h2>
+<p>The R Consortium Pilot Series with the FDA plays a vital role in advancing the adoption of modern technical submission standards. These pilot studies focus on demonstrating the practical applications of LLMs/MLLMs in regulatory submissions, aiming to improve efficiency and accuracy while ensuring compliance with regulatory standards.</p>
+<p>Reference: <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/index.html#progress-reports-and-future-plans">R Submissions Working Group: Pilot 5 Launch and more!</a></p>
+<section id="key-achievements-and-future-directions" class="level3">
+<h3 class="anchored" data-anchor-id="key-achievements-and-future-directions">Key Achievements and Future Directions</h3>
+<ul>
+<li><p><strong>Pilot Studies</strong>: The pilot studies have successfully demonstrated the potential of LLMs/MLLMs in automating various aspects of regulatory submissions. These include generating vignettes, auto-generating ADRGs, and streamlining the overall submission process.</p></li>
+<li><p><strong>Ongoing Developments</strong>: The session emphasized the need for continuous development and collaboration within the R community. By leveraging the public repository, participants can contribute to ongoing projects, ensuring that advancements in technology are effectively integrated into regulatory practices.</p></li>
+</ul>
+</section>
+</section>
+<section id="the-broader-implications-of-attention-mechanisms" class="level2">
+<h2 class="anchored" data-anchor-id="the-broader-implications-of-attention-mechanisms">The Broader Implications of Attention Mechanisms</h2>
+<p>The application of attention mechanisms extends beyond regulatory submissions. In clinical trials and patient engagement, these mechanisms enable more accurate data analysis and improved patient outcomes. For example, attention mechanisms can identify significant interactions in complex biological systems, such as protein folding, which are critical for understanding disease mechanisms and developing new treatments.</p>
+<section id="interoperability-and-data-sharing" class="level3">
+<h3 class="anchored" data-anchor-id="interoperability-and-data-sharing">Interoperability and Data Sharing</h3>
+<p>The session also touched upon the importance of interoperability and data sharing in the medical field. The 21st Century Cures Act, which promotes interoperability between different technologies, was highlighted as a critical component for facilitating data sharing and enhancing patient care. The use of universal APIs allows patients to share their electronic health records seamlessly, promoting collaboration between clinicians, researchers, and pharmaceutical companies.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Robert Devine’s presentation at R/Medicine 2025 underscored the transformative potential of attention mechanisms in the field of regulatory submissions. By automating complex tasks and enhancing data analysis, these mechanisms pave the way for more efficient and accurate regulatory processes. The R Consortium’s ongoing collaboration with the FDA and industry sponsors is crucial for driving the adoption of these technologies and ensuring that regulatory practices keep pace with technological advancements.</p>
+<p>As the R community continues to explore and develop these capabilities, the potential for improving patient outcomes and streamlining regulatory processes becomes increasingly tangible. By embracing these innovations, the medical field can look forward to a future where technology and data science work hand in hand to deliver better healthcare solutions.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Submissions</category>
+  <guid>https://r-consortium.org/posts/application-of-attention-mechanism-to-improve-performance-of-llmmllm-used-across-rmedicine/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/application-of-attention-mechanism-to-improve-performance-of-llmmllm-used-across-rmedicine/thumbnail-devine-application-of-attention-mechanism.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Bedside to Bench - Reinventing medicine with AI</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/</link>
@@ -1163,70 +1232,6 @@
   <guid>https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/thumbnail-riskcalc.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Rix: reproducible data science environments with Nix</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/odC3soY2qnk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="rmedicine-2025-enhancing-reproducibility-with-nix-and-r" class="level1">
-<h1>R/Medicine 2025: Enhancing Reproducibility with Nix and R</h1>
-<p>Reproducibility is a cornerstone of reliable research, ensuring that findings can be consistently replicated and verified by peers. In recent years, the R community has been actively seeking ways to bolster reproducibility in data science workflows. At the R/Medicine 2025 conference, Bruno Rodrigues delivered a comprehensive workshop on leveraging the Nix package manager for creating reproducible data science environments, particularly focusing on the integration with R through the {rix} and {rixpress} packages.</p>
-<section id="meet-bruno-rodrigues" class="level2">
-<h2 class="anchored" data-anchor-id="meet-bruno-rodrigues">Meet Bruno Rodrigues</h2>
-<p>Bruno Rodrigues is a statistician at Luxembourg’s Ministry of Research and Higher Education, with extensive experience as a senior data scientist and team manager at PwC Luxembourg. His work at STATEC Research has also contributed to his deep understanding of data science and reproducibility. Bruno is an advocate for improving research practices and regularly develops tools and tutorials to aid the R community. He is the author of “Building Reproducible Analytical Pipelines with R” and actively contributes to the R ecosystem for Nix.</p>
-</section>
-<section id="the-challenge-of-reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-of-reproducibility">The Challenge of Reproducibility</h2>
-<p>Traditional methods of managing R environments, such as {renv} and {groundhog}, allow users to manage package versions effectively but often fall short in handling system-level dependencies and the R version itself. This is where Nix, a package manager emphasizing reproducible builds, steps in. Unlike Docker, which is widely used but not inherently designed for reproducibility, Nix ensures that every layer of the software stack is accounted for, from the R version to system dependencies.</p>
-</section>
-<section id="introducing-nix-and-rix" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-nix-and-rix">Introducing Nix and {rix}</h2>
-<section id="what-is-nix" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-nix">What is Nix?</h3>
-<p>Nix is a powerful package manager that installs and manages any type of software, ensuring that all dependencies are explicitly defined and versioned. This means that whether you’re installing R packages, system libraries, or even the R interpreter itself, Nix guarantees that everything is pinned to a specific version, ensuring reproducibility across different systems and platforms.</p>
-</section>
-<section id="the-rix-package" class="level3">
-<h3 class="anchored" data-anchor-id="the-rix-package">The {rix} Package</h3>
-<p>Bruno’s {rix} package simplifies the use of Nix for R users by generating Nix expressions from simple R commands. Users can specify their required R version, packages, and even system tools, and {rix} will create a Nix expression that defines a complete, reproducible environment. This approach eliminates the need for Docker in many cases, streamlining the setup of development and production environments.</p>
-</section>
-</section>
-<section id="hands-on-with-rix-and-rixpress" class="level2">
-<h2 class="anchored" data-anchor-id="hands-on-with-rix-and-rixpress">Hands-On with {rix} and {rixpress}</h2>
-<section id="creating-reproducible-environments" class="level3">
-<h3 class="anchored" data-anchor-id="creating-reproducible-environments">Creating Reproducible Environments</h3>
-<p>During the workshop, Bruno demonstrated how to create reproducible environments using {rix}. By specifying the desired packages and their versions, users can generate a <code>default.nix</code> file, which can then be built using Nix to create a consistent environment. This environment is not only reproducible but also portable, meaning it can be shared with collaborators who can recreate the exact setup on their machines.</p>
-</section>
-<section id="integrating-with-ides" class="level3">
-<h3 class="anchored" data-anchor-id="integrating-with-ides">Integrating with IDEs</h3>
-<p>Bruno showcased how to work with popular IDEs like RStudio and Positron to seamlessly integrate Nix environments. For RStudio, the environment must be explicitly managed by Nix, while Positron and VS Code can interact with Nix shells, allowing users to leverage their preferred development tools while maintaining reproducibility.</p>
-</section>
-<section id="beyond-r-multi-language-pipelines-with-rixpress" class="level3">
-<h3 class="anchored" data-anchor-id="beyond-r-multi-language-pipelines-with-rixpress">Beyond R: Multi-Language Pipelines with {rixpress}</h3>
-<p>In addition to {rix}, Bruno introduced {rixpress}, a package designed to build and manage multi-language pipelines using Nix. Inspired by the {targets} package, {rixpress} allows users to define complex workflows that incorporate R, Python, and Julia, all while maintaining reproducibility. This is particularly beneficial for projects that require the integration of different programming languages.</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Bruno Rodrigues’ workshop at R/Medicine 2025 highlighted the transformative potential of Nix in the R ecosystem. By providing a robust framework for reproducibility, Nix, along with {rix} and {rixpress}, empowers data scientists to create reliable and consistent research environments. Whether you’re managing a simple R project or a complex multi-language pipeline, these tools offer a comprehensive solution for ensuring that your work can be reproduced accurately, anywhere, and at any time.</p>
-<p>For those interested in exploring these tools further, Bruno encourages the R community to engage with the available resources and contribute to the ongoing development and improvement of reproducibility practices.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/thumbnail-rix-bruno.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
