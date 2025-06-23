@@ -233,6 +233,66 @@
   <media:content url="https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/thumbnail-bootstrap-inference-thulin.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Co-occurrence analysis and knowledge graphs for suicide risk prediction</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/zy6DD7-H_bg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="unraveling-the-complexities-of-mental-health-diagnosis-with-r-nlpembeds-and-kgraph" class="level1">
+<h1>Unraveling the Complexities of Mental Health Diagnosis with R: <code>nlpembeds</code> and <code>kgraph</code></h1>
+<p>In the ever-evolving landscape of mental health research, the integration of technology and data analytics has opened new horizons for understanding and diagnosing complex mental health disorders. At the forefront of this intersection is Thomas Charlon from Harvard Medical School, whose recent presentation at R/Medicine 2025 highlighted groundbreaking tools designed to tackle the intricacies of mental health diagnosis. These tools, encapsulated in the open-source R packages <code>nlpembeds</code> and <code>kgraph</code>, provide a novel approach to processing and analyzing electronic health records (EHR), especially unstructured text data such as clinician notes.</p>
+<section id="the-challenge-of-mental-health-diagnosis" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-of-mental-health-diagnosis">The Challenge of Mental Health Diagnosis</h2>
+<p>Mental health disorders are notoriously complex, characterized by overlapping symptoms and subtle variations that can be difficult to discern through traditional diagnostic methods. Current diagnostic frameworks often fail to capture the full spectrum and gradients of these disorders, leading to underdiagnoses or misdiagnoses. This is where Natural Language Processing (NLP) comes into play, offering new opportunities to enhance diagnostic accuracy by leveraging the rich, unstructured data found in clinician notes.</p>
+</section>
+<section id="the-role-of-celehs-and-the-csrp-project" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-celehs-and-the-csrp-project">The Role of CELEHS and the CSRP Project</h2>
+<p>Charlon’s work is anchored in the CELEHS laboratory at Harvard, which is part of the Center for Suicide Research and Prevention (CSRP) project led by Massachusetts General Hospital. This initiative aims to develop tools that help clinicians assess suicide risk more accurately. A significant challenge addressed by the project is the limitations of the International Classification of Diseases (ICD) in identifying suicide attempts, which often results in underestimations of their prevalence.</p>
+</section>
+<section id="two-pronged-approach-survival-models-and-nlp-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="two-pronged-approach-survival-models-and-nlp-techniques">Two-Pronged Approach: Survival Models and NLP Techniques</h2>
+<p>The CELEHS team’s contribution to the CSRP project is twofold. First, they focus on developing robust survival models on codified data that can be transferred between institutions like MGH and Cambridge Health Alliance. Second, they leverage advanced NLP techniques, including name-entity recognition, co-occurrence analysis, and knowledge graphs, to extract deeper insights from clinician notes.</p>
+<p>Charlon’s presentation underscored the analysis of cohorts comprising approximately 5,000 teenage patients admitted to psychiatric departments. This analysis is pivotal in understanding the nuances of mental health disorders among adolescents, a demographic that is particularly vulnerable to mental health challenges.</p>
+</section>
+<section id="introducing-nlpembeds-and-kgraph" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-nlpembeds-and-kgraph">Introducing <code>nlpembeds</code> and <code>kgraph</code></h2>
+<p>The tools developed by Charlon and his team, <code>nlpembeds</code> and <code>kgraph</code>, are both available on CRAN, the comprehensive R archive network. These packages were introduced in Charlon’s previous talk at R/Medicine 2024, where he discussed “Word embeddings in mental health.” The methods underlying these packages enable the efficient analysis of large volumes of EHR data, both codified and unstructured.</p>
+<section id="nlpembeds-harnessing-the-power-of-nlp" class="level3">
+<h3 class="anchored" data-anchor-id="nlpembeds-harnessing-the-power-of-nlp"><code>nlpembeds</code>: Harnessing the Power of NLP</h3>
+<p>The <code>nlpembeds</code> package focuses on transforming unstructured text data into structured insights. By utilizing techniques like word embeddings, which are akin to the Word2Vec algorithm, the package allows researchers to analyze the relationships between different medical concepts as documented in clinician notes. This transformation helps in identifying patterns and correlations that might not be evident in codified data alone.</p>
+</section>
+<section id="kgraph-visualizing-complex-data-relationships" class="level3">
+<h3 class="anchored" data-anchor-id="kgraph-visualizing-complex-data-relationships"><code>kgraph</code>: Visualizing Complex Data Relationships</h3>
+<p>Complementing <code>nlpembeds</code>, the <code>kgraph</code> package offers powerful visualization capabilities for the data relationships uncovered through NLP analysis. By constructing knowledge graphs, researchers can visually explore the connections between various medical concepts, enhancing their ability to interpret complex data sets. This is particularly useful in mental health research, where understanding the interplay between different symptoms and diagnoses is crucial.</p>
+</section>
+</section>
+<section id="real-world-applications-and-insights" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-applications-and-insights">Real-World Applications and Insights</h2>
+<p>Charlon shared compelling examples of how these tools can be applied in real-world settings. One notable case involved the interpretation of acetaminophen’s role in predicting suicide attempts. Initially perceived as a spurious correlation, further analysis using NLP techniques revealed its association with overdose and intoxication in clinician notes, suggesting a genuine predictive value.</p>
+<p>Such insights underscore the importance of considering both codified and unstructured data in mental health research. By integrating these two data types, the tools developed by Charlon and his team provide a more comprehensive view of patient health, enabling more accurate risk assessments and ultimately, better patient outcomes.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Thomas Charlon’s work demonstrates the power of R and open-source tools in unraveling the complexities of mental health diagnosis. The <code>nlpembeds</code> and <code>kgraph</code> packages are not only a testament to the potential of NLP in healthcare but also a call to the R community to continue pushing the boundaries of what is possible with data analytics.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <category>Healthcare</category>
+  <guid>https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/thumbnail-charlon-co-occurence-analysis.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Dengue Forecasting Addressing the Interrupted Effect from COVID-19 Cases</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/</link>
@@ -1167,48 +1227,6 @@
   <guid>https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/thumbnail-rix-bruno.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>R/Medicine 2025 - Closing Remarks - Final Day - Michael Kane</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ad5V0PBYl_M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="closing-remarks-from-rmedicine-2025-by-michael-kane-md" class="level1">
-<h1>Closing Remarks from R/Medicine 2025 by Michael Kane, MD</h1>
-<p>As R/Medicine 2025 concludes its second and final day, Michael Kane, MD, from the Anderson Cancer Center, delivered the closing remarks, encapsulating the essence and future direction of this unique conference dedicated to the intersection of R programming and healthcare. Kane, a co-founder of R/Medicine, provided insights into the conference’s achievements and aspirations, leaving the audience with a sense of community and purpose.</p>
-<section id="acknowledgments" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
-<p>Kane began by expressing gratitude to the organizing committee, with a special nod to Emily Zaber, who chaired this year’s event. The seamless execution of the conference, he noted, is a testament to the dedication and behind-the-scenes effort of the team. The importance of organization and meticulous planning cannot be overstated, and this year’s smooth proceedings are a reflection of such diligence.</p>
-</section>
-<section id="a-conference-for-the-community" class="level2">
-<h2 class="anchored" data-anchor-id="a-conference-for-the-community">A Conference for the Community</h2>
-<p>Emphasizing the core philosophy of R/Medicine, Kane reiterated that this conference is designed to be a platform for the community. The healthcare space is expansive, with myriad groups engaged in cutting-edge research that often goes underrepresented. R/Medicine aims to bridge this gap by providing a forum for practitioners and methodologists alike to share their work, explore collaborative opportunities, and contribute to ongoing projects.</p>
-<p>The conference’s commitment to inclusivity was evident in the diverse international participation this year. Attendees from South America, Europe, and other regions enriched the discussions with their unique perspectives and innovations. This global engagement underscores the universal applicability and potential of R in transforming healthcare.</p>
-</section>
-<section id="towards-a-continuous-engagement" class="level2">
-<h2 class="anchored" data-anchor-id="towards-a-continuous-engagement">Towards a Continuous Engagement</h2>
-<p>Looking ahead, Kane shared the committee’s vision of making R/Medicine a continuous engagement rather than a once-a-year event. The introduction of periodic webinars is a step in this direction, allowing for ongoing dialogue and knowledge exchange throughout the year. By maintaining a steady flow of information and interaction, R/Medicine seeks to foster a vibrant and dynamic community that stays connected and informed about the latest developments in healthcare.</p>
-</section>
-<section id="invitation-to-participate" class="level2">
-<h2 class="anchored" data-anchor-id="invitation-to-participate">Invitation to Participate</h2>
-<p>In closing, Kane extended an open invitation to all participants to become more involved in R/Medicine. Whether by submitting proposals for future conferences, contributing to ongoing projects, or joining the organizing committee, the opportunities for involvement are numerous. The committee is keen on remaining dynamic and responsive to emerging healthcare challenges, and fresh perspectives are always welcome.</p>
-<p>Kane’s remarks concluded with heartfelt thanks to all attendees and participants, with a promise of even more exciting developments in the coming year. As R/Medicine 2025 draws to a close, the community looks forward to another year of innovation, collaboration, and progress in using R to revolutionize healthcare.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <guid>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/thumbnail-closing-remarks-day2-finalday-michael-kane.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
