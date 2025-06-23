@@ -1,0 +1,63 @@
+--- 
+title: "Supporting R learners on the job during interesting times: A panel of R educators" 
+unpublished: true 
+url: "https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/"
+description: "Insights from R/Medicine 2025 panel on supporting R learners." 
+categories: [R/Medicine 2025]
+author: "R Consortium" 
+image: "supporting-r-learners-panel.png" 
+image-alt: "Supporting R Learners - Panel" 
+date: "06/23/2025" 
+---
+{{< video https://www.youtube.com/embed/KKRbA2VYOb4 >}}
+
+# Navigating the Seas of R Education: Insights from R/Medicine 2025
+
+In an ever-evolving world where technology and data science are at the forefront of innovation, the need for effective education in tools like R is more critical than ever. The recent panel discussion at R/Medicine 2025 brought together a group of seasoned educators and practitioners who shared their insights on the challenges and opportunities in teaching R, especially outside the traditional classroom setting. This post delves into the key takeaways from the panel, offering a glimpse into the future of R education and how we can collectively support learners during these interesting times.
+
+## Meet the Panelists
+
+The panel was composed of esteemed educators with diverse backgrounds, each bringing unique perspectives to the table:
+
+- **Ray Balise**: An Associate Professor of Biostatistics and Bioinformatics at the University of Miami, Ray has a long history of teaching statistical programming and is passionate about teaching smart people to think about data.
+  
+- **Silvia Canelón**: From Penn Medicine Center for Health Justice, Silvia is an advocate for data literacy, communication, and accessibility, with a focus on supporting others in their data-driven journeys.
+  
+- **Meghan Santiago Harris**: Known for her work in public health and data science education, Meghan emphasizes the importance of self-teaching and mentoring in her field.
+  
+- **Ted Laderas**: As the Director of Training and Community for the Office of the Chief Data Officer at Fred Hutch Cancer Center, Ted is focused on changing data culture through education and training.
+  
+- **Joy Payton**: A dedicated data science educator in biomedicine, Joy has been instrumental in building capacity and fostering community among learners.
+
+## The Challenge of Interesting Times
+
+Joy Payton opened the discussion by acknowledging the "interesting times" we are living in. With cognitive load at an all-time high due to various global and local challenges, learners and educators alike must navigate these turbulent waters. The panelists echoed this sentiment, emphasizing the need for flexibility, adaptability, and a supportive community to help learners thrive.
+
+## The Role of AI and LLMs in R Education
+
+One of the hot topics discussed was the role of AI and large language models (LLMs) in learning and coding. While AI tools like ChatGPT and Claude can assist learners by handling syntax and providing quick answers, the panelists stressed the importance of understanding the underlying mental models and logic behind coding. They agreed that while LLMs are here to stay, educators must teach students how to use these tools effectively without compromising foundational skills.
+
+Ted Laderas highlighted the importance of cognitive load theory and psychological safety in education, advocating for a balance between leveraging AI tools and maintaining the integrity of the learning process. Ray Balise added that teaching prompt engineering and proper use of LLMs should be integrated into the curriculum to ensure students are equipped for the modern workforce.
+
+## Supporting Learners in Uncertain Times
+
+The panelists shared their strategies for supporting learners amidst uncertainty. Meghan Santiago Harris emphasized the value of integrating R into existing work or projects that learners are passionate about. This approach not only aids retention but also makes the learning process more enjoyable and relevant.
+
+Silvia Canelón pointed out the importance of community and collaboration, noting that much of her learning came from engaging with others in the R community. For educators, fostering an environment where learners can share their experiences and learn from each other is crucial.
+
+## Resources and Tools for R Learners
+
+The panelists also discussed their favorite resources for teaching and learning R:
+
+- **Big Book of R**: A comprehensive collection of online R books covering various topics.
+- **R OpenSci Trainings**: Focused on research contexts, these resources are invaluable for developing R skills.
+- **Our Ladies YouTube Channel**: Offers a wealth of tutorials and workshops on different R topics.
+- **Urban Institute's Do No Harm Project**: Provides guidance on equity and accessibility in data visualization.
+
+Joy Payton introduced **Bent**, a data education navigator tool, and **Leoscript**, a markdown renderer for creating educational resources. These tools exemplify the innovative approaches educators are taking to enhance the learning experience.
+
+## Building a Community of R Educators
+
+In closing, Joy Payton urged attendees to be gate openers, highlighting that everyone has something to contribute to the R community. Whether you're a seasoned educator or a beginner, sharing your knowledge and experiences can help build a robust network of engaged and supportive R learners and educators.
+
+As we look to the future, the insights from R/Medicine 2025 remind us of the importance of adaptability, community, and thoughtful integration of technology in education. By embracing these principles, we can empower the next generation of R users to navigate the complexities of data science with confidence and creativity.
