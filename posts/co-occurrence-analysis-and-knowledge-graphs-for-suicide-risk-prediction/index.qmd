@@ -1,0 +1,53 @@
+--- 
+title: "Co-occurrence analysis and knowledge graphs for suicide risk prediction" 
+unpublished: true 
+url: "https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/"
+description: "Explore how R packages `nlpembeds` and `kgraph` revolutionize mental health diagnostics with NLP." 
+categories: [R/Medicine 2025, Software Development, Healthcare]
+author: "R Consortium" 
+image: "thumbnail-charlon-co-occurence-analysis.png" 
+image-alt: "Co-occurrence analysis and knowledge graphs for suicide risk prediction - Thomas Charlon" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/zy6DD7-H_bg >}}
+
+# Unraveling the Complexities of Mental Health Diagnosis with R: `nlpembeds` and `kgraph`
+
+In the ever-evolving landscape of mental health research, the integration of technology and data analytics has opened new horizons for understanding and diagnosing complex mental health disorders. At the forefront of this intersection is Thomas Charlon from Harvard Medical School, whose recent presentation at R/Medicine 2025 highlighted groundbreaking tools designed to tackle the intricacies of mental health diagnosis. These tools, encapsulated in the open-source R packages `nlpembeds` and `kgraph`, provide a novel approach to processing and analyzing electronic health records (EHR), especially unstructured text data such as clinician notes.
+
+## The Challenge of Mental Health Diagnosis
+
+Mental health disorders are notoriously complex, characterized by overlapping symptoms and subtle variations that can be difficult to discern through traditional diagnostic methods. Current diagnostic frameworks often fail to capture the full spectrum and gradients of these disorders, leading to underdiagnoses or misdiagnoses. This is where Natural Language Processing (NLP) comes into play, offering new opportunities to enhance diagnostic accuracy by leveraging the rich, unstructured data found in clinician notes.
+
+## The Role of CELEHS and the CSRP Project
+
+Charlon’s work is anchored in the CELEHS laboratory at Harvard, which is part of the Center for Suicide Research and Prevention (CSRP) project led by Massachusetts General Hospital. This initiative aims to develop tools that help clinicians assess suicide risk more accurately. A significant challenge addressed by the project is the limitations of the International Classification of Diseases (ICD) in identifying suicide attempts, which often results in underestimations of their prevalence.
+
+## Two-Pronged Approach: Survival Models and NLP Techniques
+
+The CELEHS team’s contribution to the CSRP project is twofold. First, they focus on developing robust survival models on codified data that can be transferred between institutions like MGH and Cambridge Health Alliance. Second, they leverage advanced NLP techniques, including name-entity recognition, co-occurrence analysis, and knowledge graphs, to extract deeper insights from clinician notes.
+
+Charlon’s presentation underscored the analysis of cohorts comprising approximately 5,000 teenage patients admitted to psychiatric departments. This analysis is pivotal in understanding the nuances of mental health disorders among adolescents, a demographic that is particularly vulnerable to mental health challenges.
+
+## Introducing `nlpembeds` and `kgraph`
+
+The tools developed by Charlon and his team, `nlpembeds` and `kgraph`, are both available on CRAN, the comprehensive R archive network. These packages were introduced in Charlon's previous talk at R/Medicine 2024, where he discussed "Word embeddings in mental health." The methods underlying these packages enable the efficient analysis of large volumes of EHR data, both codified and unstructured.
+
+### `nlpembeds`: Harnessing the Power of NLP
+
+The `nlpembeds` package focuses on transforming unstructured text data into structured insights. By utilizing techniques like word embeddings, which are akin to the Word2Vec algorithm, the package allows researchers to analyze the relationships between different medical concepts as documented in clinician notes. This transformation helps in identifying patterns and correlations that might not be evident in codified data alone.
+
+### `kgraph`: Visualizing Complex Data Relationships
+
+Complementing `nlpembeds`, the `kgraph` package offers powerful visualization capabilities for the data relationships uncovered through NLP analysis. By constructing knowledge graphs, researchers can visually explore the connections between various medical concepts, enhancing their ability to interpret complex data sets. This is particularly useful in mental health research, where understanding the interplay between different symptoms and diagnoses is crucial.
+
+## Real-World Applications and Insights
+
+Charlon shared compelling examples of how these tools can be applied in real-world settings. One notable case involved the interpretation of acetaminophen’s role in predicting suicide attempts. Initially perceived as a spurious correlation, further analysis using NLP techniques revealed its association with overdose and intoxication in clinician notes, suggesting a genuine predictive value.
+
+Such insights underscore the importance of considering both codified and unstructured data in mental health research. By integrating these two data types, the tools developed by Charlon and his team provide a more comprehensive view of patient health, enabling more accurate risk assessments and ultimately, better patient outcomes.
+
+## Conclusion
+
+Thomas Charlon’s work demonstrates the power of R and open-source tools in unraveling the complexities of mental health diagnosis. The `nlpembeds` and `kgraph` packages are not only a testament to the potential of NLP in healthcare but also a call to the R community to continue pushing the boundaries of what is possible with data analytics.
