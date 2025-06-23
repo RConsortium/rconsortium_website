@@ -1,0 +1,73 @@
+--- 
+title: "`teal` Mastery: From Pre-built Modules to Custom Module Creation" 
+unpublished: true 
+url: "https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/"
+description: "Explore `teal` in R for interactive clinical data analysis with Dony Unardi. Learn to build and extend Teal apps." 
+categories: [R/Medicine 2025, Software Development, Clinical Research]
+author: "R Consortium" 
+image: "thumbnail-teal-unardi.jpg" 
+image-alt: "`teal` in R for interactive clinical data analysis - Dony Unardi" 
+date: "06/22/2025" 
+---
+
+{{< video https://www.youtube.com/embed/0v3Zb-cRliM >}}
+
+# Discovering the Power of `teal`: From Pre-built Modules to Custom Creations
+
+Welcome to the world of `teal`, an open-source R package designed specifically for exploratory data analysis and visualization in clinical trials. Whether you're a seasoned R programmer or just starting your journey, this workshop led by Dony Unardi, Principal Data Scientist at Genentech, offers a comprehensive guide to understanding and utilizing `teal` for interactive and reproducible data analysis.
+
+## A Journey Through `teal`
+
+In this session, Dony Unardi takes us from the basics of creating a simple `teal` application to the complexities of custom module creation, all within a three-hour workshop. Let's dive into the key takeaways and insights from this engaging session.
+
+### Introduction to `teal`
+
+`teal` is built on the Shiny framework, utilizing Shiny modules to offer a modular and standardized approach to building applications. This modularity allows for flexibility, collaboration, and crowdsourcing, enabling users to create robust applications with pre-built and custom modules.
+
+The session begins with a simple agenda: understanding `teal`, diving into coding, and exploring additional resources. The goal is to familiarize participants with the `teal` framework and empower them to explore and create their own `teal` applications.
+
+### Setting the Stage
+
+Before diving into the code, it's essential to understand the core components of a `teal` app: data and modules. The `init` function is the cornerstone of any Teal app, requiring a data argument (a `teal` data object) and a modules argument (a list of `teal` modules).
+
+#### Creating a `teal` Data Object
+
+A `teal` data object is created using the `tdata` function, which requires name-value pairs representing the datasets you wish to include. For example:
+
+```r
+data <- tdata(x1 = iris, x2 = mtcars)
+```
+
+This object not only stores the datasets but also captures the code needed to recreate them, ensuring reproducibility.
+
+#### Building Modules
+
+Modules in `teal` can be pre-built from existing packages like `teal.modules.general` or custom-built to meet specific needs. The session covers the basics of creating a custom module, starting with Shiny's UI and server structure and integrating `teal`'s unique features.
+
+### Hands-On Workshop
+
+The heart of the session is a hands-on workshop where participants build a `teal` app from scratch. Dony guides us through creating a "Hello World" module, then progressively adds complexity by incorporating data selection, visualization, and interactivity.
+
+#### Creating a Custom Module
+
+The process begins with setting up a Shiny module structure, using the `module` function to encapsulate the UI and server logic. Key features include:
+
+- **Namespace Handling**: Ensuring UI components are uniquely identified.
+- **Reactivity**: Using Shiny's reactive programming to update UI elements based on data inputs.
+
+Participants learn to create dynamic dropdowns for dataset and variable selection and to render outputs like tables and plots using packages like `DT` for tables and `ggplot2` for plots.
+
+### Exploring Advanced Features
+
+As the workshop progresses, Dony introduces more advanced features like:
+
+- **Predefined Filters**: Using `teal.slices` to set default filters for datasets.
+- **Reproducibility**: Implementing a "Show R Code" button that extracts the code used to generate the current state of the app, enhancing reproducibility.
+- **Customization and Extension**: Leveraging `teal`'s modular structure to extend functionalities and create tailored solutions.
+
+### Conclusion and Beyond
+
+By the end of the workshop, participants have a solid understanding of both pre-built and custom module development in `teal`. This knowledge opens the door to creating sophisticated, interactive applications for clinical trial data analysis and beyond.
+
+* [CRAN](https://cran.r-project.org/web/packages/teal/index.html)
+* [repo](https://github.com/insightsengineering/teal/)
