@@ -1105,6 +1105,70 @@
   <media:content url="https://r-consortium.org/posts/riskcalcorg-a-repository-of-risk-calculators-for-medical-decision-making/thumbnail-riskcalc.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Rix: reproducible data science environments with Nix</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/odC3soY2qnk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="rmedicine-2025-enhancing-reproducibility-with-nix-and-r" class="level1">
+<h1>R/Medicine 2025: Enhancing Reproducibility with Nix and R</h1>
+<p>Reproducibility is a cornerstone of reliable research, ensuring that findings can be consistently replicated and verified by peers. In recent years, the R community has been actively seeking ways to bolster reproducibility in data science workflows. At the R/Medicine 2025 conference, Bruno Rodrigues delivered a comprehensive workshop on leveraging the Nix package manager for creating reproducible data science environments, particularly focusing on the integration with R through the {rix} and {rixpress} packages.</p>
+<section id="meet-bruno-rodrigues" class="level2">
+<h2 class="anchored" data-anchor-id="meet-bruno-rodrigues">Meet Bruno Rodrigues</h2>
+<p>Bruno Rodrigues is a statistician at Luxembourg’s Ministry of Research and Higher Education, with extensive experience as a senior data scientist and team manager at PwC Luxembourg. His work at STATEC Research has also contributed to his deep understanding of data science and reproducibility. Bruno is an advocate for improving research practices and regularly develops tools and tutorials to aid the R community. He is the author of “Building Reproducible Analytical Pipelines with R” and actively contributes to the R ecosystem for Nix.</p>
+</section>
+<section id="the-challenge-of-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-of-reproducibility">The Challenge of Reproducibility</h2>
+<p>Traditional methods of managing R environments, such as {renv} and {groundhog}, allow users to manage package versions effectively but often fall short in handling system-level dependencies and the R version itself. This is where Nix, a package manager emphasizing reproducible builds, steps in. Unlike Docker, which is widely used but not inherently designed for reproducibility, Nix ensures that every layer of the software stack is accounted for, from the R version to system dependencies.</p>
+</section>
+<section id="introducing-nix-and-rix" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-nix-and-rix">Introducing Nix and {rix}</h2>
+<section id="what-is-nix" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-nix">What is Nix?</h3>
+<p>Nix is a powerful package manager that installs and manages any type of software, ensuring that all dependencies are explicitly defined and versioned. This means that whether you’re installing R packages, system libraries, or even the R interpreter itself, Nix guarantees that everything is pinned to a specific version, ensuring reproducibility across different systems and platforms.</p>
+</section>
+<section id="the-rix-package" class="level3">
+<h3 class="anchored" data-anchor-id="the-rix-package">The {rix} Package</h3>
+<p>Bruno’s {rix} package simplifies the use of Nix for R users by generating Nix expressions from simple R commands. Users can specify their required R version, packages, and even system tools, and {rix} will create a Nix expression that defines a complete, reproducible environment. This approach eliminates the need for Docker in many cases, streamlining the setup of development and production environments.</p>
+</section>
+</section>
+<section id="hands-on-with-rix-and-rixpress" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on-with-rix-and-rixpress">Hands-On with {rix} and {rixpress}</h2>
+<section id="creating-reproducible-environments" class="level3">
+<h3 class="anchored" data-anchor-id="creating-reproducible-environments">Creating Reproducible Environments</h3>
+<p>During the workshop, Bruno demonstrated how to create reproducible environments using {rix}. By specifying the desired packages and their versions, users can generate a <code>default.nix</code> file, which can then be built using Nix to create a consistent environment. This environment is not only reproducible but also portable, meaning it can be shared with collaborators who can recreate the exact setup on their machines.</p>
+</section>
+<section id="integrating-with-ides" class="level3">
+<h3 class="anchored" data-anchor-id="integrating-with-ides">Integrating with IDEs</h3>
+<p>Bruno showcased how to work with popular IDEs like RStudio and Positron to seamlessly integrate Nix environments. For RStudio, the environment must be explicitly managed by Nix, while Positron and VS Code can interact with Nix shells, allowing users to leverage their preferred development tools while maintaining reproducibility.</p>
+</section>
+<section id="beyond-r-multi-language-pipelines-with-rixpress" class="level3">
+<h3 class="anchored" data-anchor-id="beyond-r-multi-language-pipelines-with-rixpress">Beyond R: Multi-Language Pipelines with {rixpress}</h3>
+<p>In addition to {rix}, Bruno introduced {rixpress}, a package designed to build and manage multi-language pipelines using Nix. Inspired by the {targets} package, {rixpress} allows users to define complex workflows that incorporate R, Python, and Julia, all while maintaining reproducibility. This is particularly beneficial for projects that require the integration of different programming languages.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Bruno Rodrigues’ workshop at R/Medicine 2025 highlighted the transformative potential of Nix in the R ecosystem. By providing a robust framework for reproducibility, Nix, along with {rix} and {rixpress}, empowers data scientists to create reliable and consistent research environments. Whether you’re managing a simple R project or a complex multi-language pipeline, these tools offer a comprehensive solution for ensuring that your work can be reproduced accurately, anywhere, and at any time.</p>
+<p>For those interested in exploring these tools further, Bruno encourages the R community to engage with the available resources and contribute to the ongoing development and improvement of reproducibility practices.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/</guid>
+  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/rix-reproducible-data-science-environments-with-nix/thumbnail-rix-bruno.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>R/Medicine 2025 - Closing Remarks - Final Day - Michael Kane</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</link>
@@ -1145,69 +1209,6 @@
   <guid>https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rmedicine-2025-closing-remarks-final-day-michael-kane/thumbnail-closing-remarks-day2-finalday-michael-kane.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>R/Medicine 2025 Opening Remarks - Thursday</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rmedicine-2025-opening-remarks-thursday/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0Qv_rFgoULA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="rmedicine-2025-opening-remarks-by-emily-zabor" class="level1">
-<h1>R/Medicine 2025: Opening Remarks by Emily Zabor</h1>
-<p>Welcome to R/Medicine 2025! With the conference officially underway, attendees are in for an exciting lineup of sessions and discussions over the coming days.</p>
-<p>The opening remarks were delivered by Emily Zabor, an Associate Staff Biostatistician at the Cleveland Clinic and an enthusiastic R user. Her roles span from the Department of Quantitative Health Sciences to the Taussig Cancer Institute and an academic appointment at the Cleveland Clinic Lerner College of Medicine. With a strong background in early phase clinical trial design, statistical methods for observational studies, prediction models, and survival analysis, Emily brings a wealth of expertise to her role as Chair of the organizing committee for this year’s conference.</p>
-<section id="gratitude-and-recognition" class="level2">
-<h2 class="anchored" data-anchor-id="gratitude-and-recognition">Gratitude and Recognition</h2>
-<p>Emily expressed heartfelt gratitude to the R Consortium for hosting the R/Medicine 2025 conference. The R Consortium continues to play a crucial role in supporting the R community with events, webinars, and support for various R groups, including R-Ladies. Their efforts not only facilitate the current conference but also bolster the R ecosystem throughout the year.</p>
-<p>A special thanks was also extended to financial sponsors, Genentech and Posit, whose generous contributions have kept registration fees relatively low, enabling the inclusion of workshops and demos at a flat rate. Scholarships based on financial need are also made possible by these sponsors, ensuring a diverse set of participants can join the conference.</p>
-<p>The organizing committee, chaired by Emily herself, received commendations for their dedication and creativity in bringing the conference to life. Some members have been involved since the conference’s inception in 2018, showcasing their commitment and knowledge. Attendees are encouraged to thank them for their efforts.</p>
-</section>
-<section id="a-global-and-accessible-gathering" class="level2">
-<h2 class="anchored" data-anchor-id="a-global-and-accessible-gathering">A Global and Accessible Gathering</h2>
-<p>R/Medicine 2025 continues its tradition of being a global and accessible event, running virtually to accommodate participants from around the world. This format, adopted during the pandemic, has allowed the conference to reach a diverse international audience. With greetings extended from Emily to all time zones, the virtual format enables knowledge sharing and networking across borders.</p>
-</section>
-<section id="conference-overview-and-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="conference-overview-and-highlights">Conference Overview and Highlights</h2>
-<p>The conference kicked off with three days of engaging workshops, demos, and panels. These days were structured into two tracks, making it impossible to attend every session. However, participants can look forward to <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">accessing video recordings on the R Consortium’s YouTube channel</a> after the conference concludes. This provides a great opportunity to revisit sessions or catch those that were missed.</p>
-<p>Workshop highlights included:</p>
-<ul>
-<li>Introduction to R workshops in both English and Spanish</li>
-<li>R package development with GitHub pages and package down</li>
-<li>Survival analysis with tidy models</li>
-<li>Data visualization using parameterization</li>
-<li>Reproducibility with Ricks and Nix</li>
-<li>Personal R administration</li>
-<li>LLMs using Elmer</li>
-<li>Teal Mastery</li>
-</ul>
-<p>The structure also featured panels of R educators and sessions focused on reproducibility and more.</p>
-</section>
-<section id="looking-forward" class="level2">
-<h2 class="anchored" data-anchor-id="looking-forward">Looking Forward</h2>
-<p>Opening the first day is a keynote by Zead Obermeyer, focusing on “Reinventing Medicine with AI.” The day will continue with 9 regular talks and 2 lightning talks covering topics such as reproducibility, compliance, workflow automation, and clinical and epidemiological applications.</p>
-<p>Attendees will also hear from winners of the data analysis competition on measles vaccination and case rates in 2025 in both professional and student categories.</p>
-<p>Participants are encouraged to engage actively in the conference by joining Zoom sessions, participating in the chat, asking questions, and connecting with fellow attendees. Before the keynote kicks off, attendees were invited to introduce themselves in the chat and share their locations, fostering a sense of community.</p>
-</section>
-<section id="stay-tuned" class="level2">
-<h2 class="anchored" data-anchor-id="stay-tuned">Stay Tuned</h2>
-<p>In addition to the conference, R/Medicine hosts mid-year webinars, and participants are encouraged to keep an eye out for these events. The webinars focus on topics such as reproducible data science environments with Nix and containerization in R. <a href="https://r-consortium.org/webinars/webinars.html">For more information on webinars, attendees can visit the R Consortium’s website.</a></p>
-<p>With an exciting program ahead, the R/Medicine 2025 conference promises to be a dynamic and enriching experience for the R community. Enjoy the conference, engage with peers, and make the most of the sessions and opportunities to learn and connect.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Events</category>
-  <guid>https://r-consortium.org/posts/rmedicine-2025-opening-remarks-thursday/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rmedicine-2025-opening-remarks-thursday/thumbnail-opening-remarks-day-one-emily.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
