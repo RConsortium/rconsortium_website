@@ -1,0 +1,46 @@
+--- 
+title: "Visualising data for patients: create accessible charts" 
+unpublished: true 
+url: "https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/"
+description: "Learn to create accessible, clear charts in R with colorblind and autism-friendly palettes, enhancing inclusivity." 
+categories: [R/Medicine 2025]
+author: "R Consortium" 
+image: "thumbnail-accessible-charts-giordano.png" 
+image-alt: "thumbnail for video on Visualising data for patients: create accessible charts" 
+date: "06/23/2025" 
+---
+
+
+{{< video https://www.youtube.com/embed/j6iwGeYj-xU >}}
+
+### Creating Accessible and Clear Charts in R: A Guide to Inclusion
+
+In today's world, patients can access a plethora of health data through various applications. However, visualizing this data in a manner that is understandable and inclusive remains a challenge. Dr. Rita Giordano from Visual Data Studio / Clarum presented a compelling demonstration on how to create charts in R that are not only clear but also accessible to a wider audience, including those with visual impairments like color blindness and autism.
+
+#### Key Takeaways from the Demonstration:
+
+- **Decluttering and Accessibility**: The importance of decluttering charts and making them accessible by choosing the right color palettes and fonts was emphasized. This ensures that even those without a scientific or medical background can understand the data presented to them.
+
+- **Colorblind-Friendly Palettes**: Attendees learned how to create colorblind-friendly palettes in R. Using packages like `RColorBrewer`, `colorspace`, and `colorblindr`, one can quickly generate palettes that are inclusive to those with color vision deficiencies. 
+
+- **Autism-Friendly Color Schemes**: Dr. Giordano highlighted the significance of using autism-friendly colors, which are calming shades of green and blue. The choice of colors can significantly impact how individuals on the autism spectrum perceive and interact with data.
+
+- **Font Readability**: Selecting fonts with high readability is crucial, especially for those with visual impairments. Google Fonts such as Roboto, Lexend, and OpenDyslexic were recommended for their legibility and accessibility.
+
+#### Practical Demonstration:
+
+Dr. Giordano provided a hands-on demonstration using R packages to create accessible charts:
+
+- **Using RColorBrewer and Colorblindr**: The session showcased how to apply colorblind-friendly palettes to a dataset using `ggplot2`. The `RColorBrewer` package was highlighted for its wide range of palettes that cater to different types of visual impairments.
+
+- **Color Contrast Testing**: Ensuring sufficient contrast between text and background colors is essential. Tools like `coloratio` and `colorspace` were demonstrated to test and adjust color contrasts, ensuring they meet accessibility standards.
+
+- **Recolorize Package**: For those needing to adjust brand colors to be more inclusive, the `recolorize` package was introduced. By tweaking saturation and brightness, existing palettes can be modified to become colorblind-friendly without losing brand identity.
+
+- **Interactive Tools for Palette Selection**: The `colorspace` package includes a GUI tool that allows users to select palettes and instantly see how they appear to individuals with different types of color blindness.
+
+#### Importance of Accessibility:
+
+The session underscored the moral and ethical responsibility of data scientists to make data accessible to everyone. Whether it's a report for an elderly arthritis patient or a dashboard for diabetic monitoring, accessibility should be a primary consideration.
+
+In conclusion, creating accessible visualizations is not merely about compliance but about inclusivity and empathy towards all data consumers. Dr. Giordano's demonstration serves as a vital reminder and guide on how this can be achieved effectively in R.
