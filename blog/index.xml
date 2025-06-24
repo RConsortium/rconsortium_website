@@ -213,6 +213,54 @@
   <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Visualising data for patients: create accessible charts</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/j6iwGeYj-xU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="creating-accessible-and-clear-charts-in-r-a-guide-to-inclusion" class="level3">
+<h3 class="anchored" data-anchor-id="creating-accessible-and-clear-charts-in-r-a-guide-to-inclusion">Creating Accessible and Clear Charts in R: A Guide to Inclusion</h3>
+<p>In today’s world, patients can access a plethora of health data through various applications. However, visualizing this data in a manner that is understandable and inclusive remains a challenge. Dr.&nbsp;Rita Giordano from Visual Data Studio / Clarum presented a compelling demonstration on how to create charts in R that are not only clear but also accessible to a wider audience, including those with visual impairments like color blindness and autism.</p>
+<section id="key-takeaways-from-the-demonstration" class="level4">
+<h4 class="anchored" data-anchor-id="key-takeaways-from-the-demonstration">Key Takeaways from the Demonstration:</h4>
+<ul>
+<li><p><strong>Decluttering and Accessibility</strong>: The importance of decluttering charts and making them accessible by choosing the right color palettes and fonts was emphasized. This ensures that even those without a scientific or medical background can understand the data presented to them.</p></li>
+<li><p><strong>Colorblind-Friendly Palettes</strong>: Attendees learned how to create colorblind-friendly palettes in R. Using packages like <code>RColorBrewer</code>, <code>colorspace</code>, and <code>colorblindr</code>, one can quickly generate palettes that are inclusive to those with color vision deficiencies.</p></li>
+<li><p><strong>Autism-Friendly Color Schemes</strong>: Dr.&nbsp;Giordano highlighted the significance of using autism-friendly colors, which are calming shades of green and blue. The choice of colors can significantly impact how individuals on the autism spectrum perceive and interact with data.</p></li>
+<li><p><strong>Font Readability</strong>: Selecting fonts with high readability is crucial, especially for those with visual impairments. Google Fonts such as Roboto, Lexend, and OpenDyslexic were recommended for their legibility and accessibility.</p></li>
+</ul>
+</section>
+<section id="practical-demonstration" class="level4">
+<h4 class="anchored" data-anchor-id="practical-demonstration">Practical Demonstration:</h4>
+<p>Dr.&nbsp;Giordano provided a hands-on demonstration using R packages to create accessible charts:</p>
+<ul>
+<li><p><strong>Using RColorBrewer and Colorblindr</strong>: The session showcased how to apply colorblind-friendly palettes to a dataset using <code>ggplot2</code>. The <code>RColorBrewer</code> package was highlighted for its wide range of palettes that cater to different types of visual impairments.</p></li>
+<li><p><strong>Color Contrast Testing</strong>: Ensuring sufficient contrast between text and background colors is essential. Tools like <code>coloratio</code> and <code>colorspace</code> were demonstrated to test and adjust color contrasts, ensuring they meet accessibility standards.</p></li>
+<li><p><strong>Recolorize Package</strong>: For those needing to adjust brand colors to be more inclusive, the <code>recolorize</code> package was introduced. By tweaking saturation and brightness, existing palettes can be modified to become colorblind-friendly without losing brand identity.</p></li>
+<li><p><strong>Interactive Tools for Palette Selection</strong>: The <code>colorspace</code> package includes a GUI tool that allows users to select palettes and instantly see how they appear to individuals with different types of color blindness.</p></li>
+</ul>
+</section>
+<section id="importance-of-accessibility" class="level4">
+<h4 class="anchored" data-anchor-id="importance-of-accessibility">Importance of Accessibility:</h4>
+<p>The session underscored the moral and ethical responsibility of data scientists to make data accessible to everyone. Whether it’s a report for an elderly arthritis patient or a dashboard for diabetic monitoring, accessibility should be a primary consideration.</p>
+<p>In conclusion, creating accessible visualizations is not merely about compliance but about inclusivity and empathy towards all data consumers. Dr.&nbsp;Giordano’s demonstration serves as a vital reminder and guide on how this can be achieved effectively in R.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <guid>https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/</guid>
+  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/thumbnail-accessible-charts-giordano.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Advanced Distance Metrics for High-Dimensional Clustering: introducing ‘distanceHD’ R-package</title>
   <dc:creator>R Consortium, Software Development</dc:creator>
   <link>https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/</link>
@@ -1179,62 +1227,6 @@
   <guid>https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/thumbnail-reprocessing-ehs-lactaoen.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>rainbowR: A community for LGBTQ+ folks who code in R</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/gLlRaqNfjys" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="embracing-inclusivity-in-r-the-journey-of-rainbowr" class="level1">
-<h1>Embracing Inclusivity in R: The Journey of rainbowR</h1>
-<p>In the ever-evolving world of data science and statistical computing, R has become a beloved language, not just for its robustness and versatility, but also for its vibrant and inclusive community. A shining example of this inclusivity is rainbowR, a community dedicated to connecting, supporting, and promoting LGBTQ+ individuals who code in R. Founded by Ella Kaye of the University of Warwick, rainbowR has transformed into a thriving hub for LGBTQ+ coders and allies alike, fostering a sense of belonging and camaraderie through innovative initiatives and data-driven activism.</p>
-<section id="origin-and-growth-of-rainbowr" class="level2">
-<h2 class="anchored" data-anchor-id="origin-and-growth-of-rainbowr">Origin and Growth of rainbowR</h2>
-<p>The inception of rainbowR dates back to the useR! Conference in 2017, when Ella Kaye engaged in a conversation that highlighted the need for a dedicated LGBTQ+ space within the R community. Fast forward to today, and rainbowR has grown exponentially, boasting a membership of over 100 individuals. This growth is not just a testament to the need for such a community but also to the welcoming atmosphere and the meaningful connections it fosters.</p>
-</section>
-<section id="monthly-meetups-and-buddy-scheme" class="level2">
-<h2 class="anchored" data-anchor-id="monthly-meetups-and-buddy-scheme">Monthly Meetups and Buddy Scheme</h2>
-<p>Central to rainbowR’s mission are its monthly online meetups, typically held on the fourth Wednesday of each month. These gatherings provide a relaxed and supportive environment where participants can discuss R-related topics, share resources, and showcase their work. The focus on creating a friendly space encourages open dialogue and fosters learning among members.</p>
-<p>Another key initiative is the buddy scheme, which aims to facilitate deeper connections within the community. Every three months, members can opt into the scheme, where they are randomly paired with another member. An R script processes these pairings and generates personalized emails to introduce the paired individuals. This innovative approach not only eases the anxiety of meeting new people but also enriches the community fabric by fostering one-on-one connections.</p>
-</section>
-<section id="data-driven-activism" class="level2">
-<h2 class="anchored" data-anchor-id="data-driven-activism">Data-Driven Activism</h2>
-<p>rainbowR’s commitment to raising awareness about LGBTQ+ issues is further exemplified through its GitHub repository, Tidy Rainbow. This repository hosts a collection of LGBTQ+ datasets, providing valuable resources for data visualization and analysis. These datasets can be utilized for educational purposes, blog posts, or simply to practice data skills, making them a valuable asset for both community members and allies.</p>
-</section>
-<section id="engaging-with-literature-the-rainbow-r-book-club" class="level2">
-<h2 class="anchored" data-anchor-id="engaging-with-literature-the-rainbow-r-book-club">Engaging with Literature: The Rainbow R Book Club</h2>
-<p>In addition to its technical initiatives, rainbowR has ventured into the literary world with its book club. The club recently completed its first session, where participants delved into “Queer Data: Using Gender, Sex, and Sexuality Data for Action” by Kevin Gian. The success of this book club highlights the community’s commitment to broadening its understanding of LGBTQ+ issues through various mediums. Future book club sessions are in the pipeline, promising more engaging discussions and insights.</p>
-</section>
-<section id="future-plans-and-the-role-of-allies" class="level2">
-<h2 class="anchored" data-anchor-id="future-plans-and-the-role-of-allies">Future Plans and the Role of Allies</h2>
-<p>As rainbowR looks to the future, exciting plans are underway to ensure the community’s sustainability and impact. Ella Kaye, now a fellow of the Software Sustainability Institute, is utilizing her fellowship to nurture and solidify rainbowR’s foundations. This includes establishing clear engagement pathways, developing governance policies, and potentially becoming a legal entity.</p>
-<p>A flagship event in the pipeline is the inaugural Rainbow R Conference, designed to bring the community together to share knowledge and celebrate diversity. Allies play a crucial role in this journey, and their involvement is highly valued within rainbowR. The conference organizing committee welcomes allies, further emphasizing the inclusive nature of this vibrant community.</p>
-</section>
-<section id="call-for-collaboration-and-community-building" class="level2">
-<h2 class="anchored" data-anchor-id="call-for-collaboration-and-community-building">Call for Collaboration and Community Building</h2>
-<p>rainbowR’s mission extends beyond its own community. By sharing knowledge and experiences with other R or queer communities, rainbowR aims to build a network of support and shared learning. Community managers interested in exploring best practices for community building are encouraged to reach out to Ella Kaye and explore potential collaborations.</p>
-</section>
-<section id="join-the-movement" class="level2">
-<h2 class="anchored" data-anchor-id="join-the-movement">Join the Movement</h2>
-<p>For those interested in joining this vibrant community, rainbowR offers an open invitation to LGBTQ+ individuals and allies. By visiting <a href="https://rainbow.org">rainbow.org</a>, you can learn more about the community, sign up for newsletters, and become part of a supportive network that celebrates diversity and inclusivity in the R ecosystem.</p>
-<p>rainbowR is more than just a community; it’s a movement towards a more inclusive and supportive future for all who code in R. As the community continues to grow and evolve, it stands as a testament to the power of connection and the impact of collective action in the world of data science.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>LGBTQ+</category>
-  <guid>https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rainbowr-a-community-for-lgbtq-folks-who-code-in-r/thumbnail-rainbowr.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
