@@ -12,22 +12,18 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    "[R Consortium Webinar: Scaling the r-spatial ecosystem for the modern composable data pipeline](https://r-consortium.org/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html)",
     "[R Consortium Webinar: From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration](https://r-consortium.org/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html)",
     "[R Consortium Working Group Webinar: R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, and Building Bridges](https://r-consortium.org/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html)",
-    "[Ghana R Conference 2025](https://ghana-rusers.org/forms/rconf2025/)",
-    "[Cascadia R Conference](https://cascadiarconf.com/)",
-    "[Galaxy and Bioconductor Community Conference 2025](https://gbcc2025.bioconductor.org/)",
     "Change Management for Moving to R/Open Source",
     "[useR! 2025](https://user2025.r-project.org/)",
     "[European Bioconductor Conference (EuroBioC2025)](https://eurobioc2025.bioconductor.org/)",
     "[EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)](https://earl-conference.com/)"
   ),
 
-  dates = c("June 24, 2025, 1pm ET", "June 27, 2025, 1pm ET", "June 30, 2025, 10am ET","Jun 19-20, 2025", "Jun 20-21, 2025", "Jun 23-26, 2025", "July 3, 2025", "Aug 8-10, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
-  location = c("Virtual", "Virtual", "Virtual", "Accra, Ghana", "Portland, Oregon, USA", "Cold Spring Harbor Laboratory (CSHL), New York", "Cambridge, UK", "Durham, NC - Duke University", "Barcelona, Spain", "Brighton, UK"),
-  icon = c("Webinar", "Webinar", "Webinar", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
-  Type = c("Webinar", "Webinar", "Webinar", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference", "Conference"),
+  dates = c("June 27, 2025, 1pm ET", "June 30, 2025, 10am ET","July 3, 2025", "Aug 8-10, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
+  location = c("Virtual", "Virtual", "Cambridge, UK", "Durham, NC - Duke University", "Barcelona, Spain", "Brighton, UK"),
+  icon = c("Webinar", "Webinar", "Conference", "Conference", "Conference", "Conference"),
+  Type = c("Webinar", "Webinar", "Conference", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
@@ -90,6 +86,10 @@ gt_table
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Scaling the r-spatial ecosystem for the modern composable data pipeline</a>',
+    '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">Galaxy and Bioconductor Community Conference 2025</a>',
+    '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
+    '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">Ghana R Conference 2025</a>',
     '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">R/Medicine 2025</a>',
     '<a href="https://rr2025.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2025</a>',
     'PharmaRUG 2025',
@@ -124,6 +124,10 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'June 24, 2025, 1pm ET',
+        'June 23-26, 2025',
+        'June 20-21, 2025',
+        'June 19-20, 2025',
         'June 9-13, 2025',
         'May 19-21, 2025', 
         'March 28, 2025', 
@@ -160,6 +164,10 @@ df <- data.frame(
         ),
   location = c(
         'Virtual',
+        'Cold Spring Harbor Laboratory (CSHL), New York',
+        'Portland, Oregon, USA',
+        'Accra, Ghana',
+        'Virtual',
         'Mons, Belgium',
         'Shanghai, Bejing',
         'Virtual',
@@ -193,10 +201,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
