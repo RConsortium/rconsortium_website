@@ -2,9 +2,7 @@
 title: "Scaling the r-spatial ecosystem for the modern composable data pipeline"
 ---
 
-![](images/dewey-webinar-main-image.png)
-
-## Register now! [https://zoom.us/webinar/register/WN_Fom4A0U6Sw6V2mGbZ4L2hA](https://zoom.us/webinar/register/WN_Fom4A0U6Sw6V2mGbZ4L2hA)
+{{< video https://www.youtube.com/embed/tjNEoIYr_ag >}}
 
 R has long been a top choice for spatial statistics, building on the pioneering sp and spdep packages and the wide ecosystem surrounding them. With the introduction of the sf package, R became home to a first-class spatial data frame API. A growing number of R users, however, need to scale beyond the capabilities of sf. This webinar will cover three broad categories of techniques to scale spatial workflows in R, including (1) ensuring that sf code is appropriately using features targeted at larger analyses, (2) using libraries that provide lower-level access to the primitives on which sf builds, including s2, wk, and geos, and (3) using database connectors and in-memory databases to write spatial SQL and perform computations in engines like PostGIS, DuckDB, and Apache Sedona. Finally, this webinar will provide an overview of the technologies that underlie these techniques, including GeoArrow, GeoParquet, and Apache Iceberg.
 
@@ -15,5 +13,3 @@ R has long been a top choice for spatial statistics, building on the pioneering 
 ![](images/dewey.jpg){width=40%}
 
 [Dewey Dunnington](https://dewey.dunnington.ca/) (Ph.D., P.Geo.) is a software engineer and geoscientist based in Winnipeg, Manitoba. As a software engineer he works on scaling spatial data science using Apache Sedona and Apache Arrow at Wherobots. Dewey is a co-creator of GeoArrow, nanoarrow, and a contributor to the Arrow Database Connectivity (ADBC) project. As a geoscientist, he has worked in contaminated site remediation, taught Applied Geomorphology at Acadia University, and has authored more than a dozen articles on lake water and sediment geochemistry. Dewey is an Apache Arrow Project Management Committee member, an RStudio-certified tidyverse instructor, an NSERC Postgraduate Scholarship (Doctoral) recipient, and maintainer of dozens of R, Python, C, and C++ libraries at the intersection of geoscience, geospatial data, and enterprise data connectivity.
-
-## Register now! [https://zoom.us/webinar/register/WN_Fom4A0U6Sw6V2mGbZ4L2hA](https://zoom.us/webinar/register/WN_Fom4A0U6Sw6V2mGbZ4L2hA)
