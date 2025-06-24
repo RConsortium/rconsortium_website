@@ -1,0 +1,60 @@
+--- 
+title: "Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis" 
+unpublished: true 
+url: "https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/"
+description: " " 
+categories: [R/Medicine 2025, Healthcare, Clinical Research, Software Development]
+author: "R Consortium" 
+image: "thumbnail-using-r-shiny-mahip.png" 
+image-alt: "thumbnail for video on Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis" 
+date: "06/23/2025" 
+---
+
+
+{{< video https://www.youtube.com/embed/UMdN9SgQbLA >}}
+
+# Leveraging R Shiny for Automated Decision-Analytic Modeling in Cost-Effectiveness Analysis
+
+The landscape of health economic evaluation is increasingly influenced by computational tools, and R is playing a pivotal role in this transformation. Mahip Acharya, an assistant professor at the University of Arkansas for Medical Sciences, has showcased the power of R and R Shiny in automating decision-analytic modeling for cost-effectiveness analysis. This innovative approach provides a flexible and efficient method of evaluating economic outcomes, particularly in the healthcare sector.
+
+## Understanding Cost-Effectiveness Analysis
+
+Cost-effectiveness analysis (CEA) is a form of economic evaluation that compares the relative costs and outcomes (effects) of different courses of action. It is commonly used in healthcare to determine the value of interventions, such as medications or surgical procedures, by assessing how much benefit they provide relative to their cost. The benefits are typically measured in terms of life years gained or quality-adjusted life years (QALYs).
+
+In CEA, the incremental cost-effectiveness ratio (ICER) is a crucial metric. It represents the additional cost per additional unit of benefit (e.g., per QALY). Decision-makers often compare the ICER to a willingness-to-pay threshold to determine if an intervention is cost-effective. For instance, in the United States, thresholds can range from $50,000 to $150,000 per QALY.
+
+## The Role of Markov Models
+
+Markov models are frequently employed in CEA to simulate the progression of diseases over time. They are particularly useful for modeling chronic conditions where the disease state changes over a long period. In a Markov model, patients transition between different health states at specified probabilities, which can be influenced by interventions.
+
+In his demonstration, Mahip Acharya utilized a Markov model to evaluate the cost-effectiveness of a treatment for hypertension. The model included various health states, such as myocardial infarction, heart failure, stroke, and death. Patients transition between these states based on predefined probabilities, and the model calculates the associated costs and QALYs.
+
+## Automating the Process with R Shiny
+
+R Shiny offers an interactive platform for building web applications directly from R. Mahip leveraged Shiny to automate the process of decision-analytic modeling, making it accessible for users without extensive programming expertise. The application allows users to input various parameters, such as transition probabilities, costs, and health utilities, through a user-friendly interface.
+
+### Key Features of the Shiny Application
+
+- **Model Structure Visualization**: Users can upload a PDF depicting the Markov model structure. The application reads the state names directly from the file, eliminating the need for manual input.
+
+- **Data Input Flexibility**: The app accepts multiple data inputs, including transition rates, hazard ratios, treatment costs, and health utilities. These inputs can be adjusted to explore different scenarios.
+
+- **Interactive Output**: The application calculates and displays key outputs, such as total costs, total QALYs, and ICERs. Users can adjust the model parameters, such as the discount rate and model cycle length, to see how these changes affect the results.
+
+- **Generalizability and Adaptability**: While the current model focuses on hypertension, the framework can be adapted to other chronic conditions by modifying the disease states and transition probabilities.
+
+## Challenges and Future Work
+
+While the application serves as a robust proof of concept, Mahip acknowledges several areas for future improvement:
+
+- **Expanding File Format Support**: Currently, the model structure must be uploaded as a PDF. Adding support for other image formats like PNG or JPEG would enhance usability.
+
+- **Incorporating Sensitivity Analyses**: Implementing deterministic and probabilistic sensitivity analyses would provide deeper insights into the model's robustness.
+
+- **Enhancing User Inputs**: Allowing users to specify different cycle lengths (e.g., annual or monthly) and starting cohorts would increase the model's flexibility.
+
+- **Supporting Multiple Treatment Groups**: The current version of the app supports only one treatment group. Expanding to multiple groups would accommodate more complex analyses.
+
+## Conclusion
+
+The integration of R Shiny with decision-analytic modeling marks a significant advancement in the field of health economic evaluation. By automating processes and providing a user-friendly interface, Mahip Acharya's approach empowers researchers and decision-makers to conduct comprehensive cost-effectiveness analyses with greater efficiency and precision. As the application evolves, it promises to become an invaluable tool in the evaluation of healthcare interventions, ultimately contributing to more informed and cost-effective healthcare decisions.
