@@ -213,6 +213,70 @@
   <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/UMdN9SgQbLA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="leveraging-r-shiny-for-automated-decision-analytic-modeling-in-cost-effectiveness-analysis" class="level1">
+<h1>Leveraging R Shiny for Automated Decision-Analytic Modeling in Cost-Effectiveness Analysis</h1>
+<p>The landscape of health economic evaluation is increasingly influenced by computational tools, and R is playing a pivotal role in this transformation. Mahip Acharya, an assistant professor at the University of Arkansas for Medical Sciences, has showcased the power of R and R Shiny in automating decision-analytic modeling for cost-effectiveness analysis. This innovative approach provides a flexible and efficient method of evaluating economic outcomes, particularly in the healthcare sector.</p>
+<section id="understanding-cost-effectiveness-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-cost-effectiveness-analysis">Understanding Cost-Effectiveness Analysis</h2>
+<p>Cost-effectiveness analysis (CEA) is a form of economic evaluation that compares the relative costs and outcomes (effects) of different courses of action. It is commonly used in healthcare to determine the value of interventions, such as medications or surgical procedures, by assessing how much benefit they provide relative to their cost. The benefits are typically measured in terms of life years gained or quality-adjusted life years (QALYs).</p>
+<p>In CEA, the incremental cost-effectiveness ratio (ICER) is a crucial metric. It represents the additional cost per additional unit of benefit (e.g., per QALY). Decision-makers often compare the ICER to a willingness-to-pay threshold to determine if an intervention is cost-effective. For instance, in the United States, thresholds can range from $50,000 to $150,000 per QALY.</p>
+</section>
+<section id="the-role-of-markov-models" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-markov-models">The Role of Markov Models</h2>
+<p>Markov models are frequently employed in CEA to simulate the progression of diseases over time. They are particularly useful for modeling chronic conditions where the disease state changes over a long period. In a Markov model, patients transition between different health states at specified probabilities, which can be influenced by interventions.</p>
+<p>In his demonstration, Mahip Acharya utilized a Markov model to evaluate the cost-effectiveness of a treatment for hypertension. The model included various health states, such as myocardial infarction, heart failure, stroke, and death. Patients transition between these states based on predefined probabilities, and the model calculates the associated costs and QALYs.</p>
+</section>
+<section id="automating-the-process-with-r-shiny" class="level2">
+<h2 class="anchored" data-anchor-id="automating-the-process-with-r-shiny">Automating the Process with R Shiny</h2>
+<p>R Shiny offers an interactive platform for building web applications directly from R. Mahip leveraged Shiny to automate the process of decision-analytic modeling, making it accessible for users without extensive programming expertise. The application allows users to input various parameters, such as transition probabilities, costs, and health utilities, through a user-friendly interface.</p>
+<section id="key-features-of-the-shiny-application" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-the-shiny-application">Key Features of the Shiny Application</h3>
+<ul>
+<li><p><strong>Model Structure Visualization</strong>: Users can upload a PDF depicting the Markov model structure. The application reads the state names directly from the file, eliminating the need for manual input.</p></li>
+<li><p><strong>Data Input Flexibility</strong>: The app accepts multiple data inputs, including transition rates, hazard ratios, treatment costs, and health utilities. These inputs can be adjusted to explore different scenarios.</p></li>
+<li><p><strong>Interactive Output</strong>: The application calculates and displays key outputs, such as total costs, total QALYs, and ICERs. Users can adjust the model parameters, such as the discount rate and model cycle length, to see how these changes affect the results.</p></li>
+<li><p><strong>Generalizability and Adaptability</strong>: While the current model focuses on hypertension, the framework can be adapted to other chronic conditions by modifying the disease states and transition probabilities.</p></li>
+</ul>
+</section>
+</section>
+<section id="challenges-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-and-future-work">Challenges and Future Work</h2>
+<p>While the application serves as a robust proof of concept, Mahip acknowledges several areas for future improvement:</p>
+<ul>
+<li><p><strong>Expanding File Format Support</strong>: Currently, the model structure must be uploaded as a PDF. Adding support for other image formats like PNG or JPEG would enhance usability.</p></li>
+<li><p><strong>Incorporating Sensitivity Analyses</strong>: Implementing deterministic and probabilistic sensitivity analyses would provide deeper insights into the model’s robustness.</p></li>
+<li><p><strong>Enhancing User Inputs</strong>: Allowing users to specify different cycle lengths (e.g., annual or monthly) and starting cohorts would increase the model’s flexibility.</p></li>
+<li><p><strong>Supporting Multiple Treatment Groups</strong>: The current version of the app supports only one treatment group. Expanding to multiple groups would accommodate more complex analyses.</p></li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The integration of R Shiny with decision-analytic modeling marks a significant advancement in the field of health economic evaluation. By automating processes and providing a user-friendly interface, Mahip Acharya’s approach empowers researchers and decision-makers to conduct comprehensive cost-effectiveness analyses with greater efficiency and precision. As the application evolves, it promises to become an invaluable tool in the evaluation of healthcare interventions, ultimately contributing to more informed and cost-effective healthcare decisions.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <category>Clinical Research</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</guid>
+  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Visualising data for patients: create accessible charts</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/</link>
@@ -1173,60 +1237,6 @@
   <guid>https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/optimizing-public-healthcare-cost-recovery-with-r-a-use-case-from-argentina/thumbnail-optimizing-buenos-aires.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Preprocessing Electronic Health Records for Analysis-Ready Data in an Asthma Cohort</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/EytsZg9Rqkg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="pre-processing-electronic-health-records-for-asthma-cohort-analysis-with-r" class="level1">
-<h1>Pre-processing Electronic Health Records for Asthma Cohort Analysis with R</h1>
-<p>Electronic health record (EHR) data has emerged as a critical tool for conducting large-scale biomedical research. However, the complexity, inconsistencies, and potential inaccuracies within EHR data pose significant challenges for researchers. Kimberly Lactaoen, a staff scientist at the University of Pennsylvania, sheds light on these challenges and offers solutions through her presentation at R/Medicine 2025. By utilizing the tidyverse suite in R, she demonstrates how to transform perplexing EHR data into analysis-ready datasets, focusing on an asthma cohort study.</p>
-<section id="understanding-the-intricacies-of-ehr-data" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-intricacies-of-ehr-data">Understanding the Intricacies of EHR Data</h2>
-<p>EHR data encompasses vast amounts of patient information, providing a realistic representation of patient populations. Despite its potential, EHR data is riddled with complexities, including inconsistent data entries, diverse formats, and missing values, which can misrepresent a patient’s true health status. Lactaoen’s presentation focuses on the importance of understanding how this data is collected to streamline exploratory analyses and reduce scripting stages.</p>
-<section id="key-challenges-in-ehr-data-cleaning" class="level3">
-<h3 class="anchored" data-anchor-id="key-challenges-in-ehr-data-cleaning">Key Challenges in EHR Data Cleaning</h3>
-<ol type="1">
-<li><p><strong>Encounter-Level vs.&nbsp;Patient-Level Data</strong>: One of the initial hurdles is discerning between encounter-level and patient-level data. For instance, demographic details like sex, race, and ethnicity remain constant across encounters, while variables like insurance and BMI may vary. Lactaoen highlights the significance of understanding data collection methods to efficiently script for the most recent demographic entries using functions such as <code>as_date()</code> from the <code>lubridate</code> package.</p></li>
-<li><p><strong>Conflicting Patient Information</strong>: EHR datasets often contain conflicting information, especially in demographic variables like race and ethnicity. Lactaoen’s approach involved using the <code>case_when()</code> function from <code>dplyr</code> to resolve conflicts, ensuring consistent and distinct race and ethnicity variables.</p></li>
-<li><p><strong>Inconsistent Diagnostic Codes</strong>: Diagnostic code descriptions can vary, complicating the grouping of patients based on diagnoses. Lactaoen addresses this by joining diagnostic codes with descriptions from the Center for Medicare and Medicaid Services using <code>left_join()</code>, ensuring consistency across datasets.</p></li>
-<li><p><strong>Medication Relevance for Asthma Treatment</strong>: Selecting relevant medications for asthma treatment from EHR data is another challenge. Lactaoen’s team collaborated with asthma specialists to filter relevant medications, leveraging Excel and the <code>map_dfr()</code> function from the <code>purrr</code> package to compile a comprehensive list for analysis.</p></li>
-<li><p><strong>Laboratory Test Result Variability</strong>: Laboratory test results, such as eosinophil data, often feature varying units of measurement. Lactaoen utilized the <code>case_when()</code> function to standardize these units, though issues like missing unit information remain a work in progress.</p></li>
-</ol>
-</section>
-</section>
-<section id="strategies-for-effective-ehr-data-pre-processing" class="level2">
-<h2 class="anchored" data-anchor-id="strategies-for-effective-ehr-data-pre-processing">Strategies for Effective EHR Data Pre-processing</h2>
-<p>Lactaoen’s presentation offers several strategies for overcoming these challenges:</p>
-<ul>
-<li><strong>Understand Data Collection</strong>: Familiarizing oneself with the data collection process is crucial for reducing exploratory analysis and scripting efforts.</li>
-<li><strong>Identify and Resolve Conflicts</strong>: Be vigilant about conflicting information, which may not accurately reflect a patient’s health status.</li>
-<li><strong>Collaborate with Domain Experts</strong>: Engaging with specialists, such as asthma experts, ensures that the data used is relevant and accurate for the study.</li>
-<li><strong>Simplify and Standardize Data</strong>: Wherever possible, simplify data entries and standardize units to facilitate easier analysis.</li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Lactaoen’s insights into EHR data pre-processing underscore the importance of meticulous data cleaning and transformation. By leveraging R’s tidyverse suite, researchers can effectively prepare EHR data for analysis, paving the way for impactful biomedical research. Her emphasis on understanding data collection, resolving conflicts, collaborating with experts, and standardizing data provides a robust framework for researchers embarking on EHR-based studies.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/preprocessing-electronic-health-records-for-analysis-ready-data-in-an-asthma-cohort/thumbnail-reprocessing-ehs-lactaoen.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
