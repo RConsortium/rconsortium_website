@@ -1,0 +1,68 @@
+--- 
+title: "A Framework for Cohort Building in R - Nuria Mercade-Besora and Edward Burn" 
+unpublished: true 
+url: "https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/"
+description: "Simplify patient cohort management in R with CohortConstructor, using OMOP Common Data Model for healthcare data." 
+categories: [R/Medicine 2025, Healthcare, Epidemiology, Software Development]
+author: "R Consortium" 
+image: "thumbnail-cohortconstructor-burn-and-mercade-bosora.png" 
+image-alt: "thumbnail for video on A Framework for Cohort Building in R - Nuria Mercade-Besora and Edward Burn" 
+date: "06/24/2025" 
+---
+
+{{< video https://www.youtube.com/embed/6-4diWLaE6w >}}
+
+# CohortConstructor: Simplifying Patient Cohort Management with R
+
+In the ever-evolving field of healthcare data analysis, managing patient cohorts efficiently is crucial. The CohortConstructor package in R provides an innovative solution for building and managing patient cohorts using real-world health data mapped to the OMOP Common Data Model (CDM). Developed by Nuria Mercade-Besora and Edward Burn, this package streamlines the process, allowing users to apply both common and complex inclusion criteria, combine cohorts, update cohort entry and exit dates, and track groups of patients—all without the need to write complicated code.
+
+## Background and Need for a Common Data Model
+
+In the realm of healthcare data, researchers often face the challenge of transforming disparate sources of data into reliable evidence. Traditional processes involve lengthy data transformations to make data research-ready, followed by the application of statistical methods. The introduction of a common data model, such as the OMOP CDM, simplifies this process by standardizing healthcare data. This allows researchers to focus on querying the standardized data to generate reliable evidence, without needing to handle the intricacies of data transformation themselves.
+
+### Key Benefits of the OMOP Common Data Model:
+
+- **Standardization:** Different source systems can be converted to the same common data model, enabling the use of consistent pipelines across various databases.
+- **Interoperability:** The OMOP CDM allows for international network studies, where analytic code is distributed to data partners who run it locally, keeping patient data secure and aggregated results are shared.
+- **Reproducibility:** The common vocabulary and standardized format ensure that studies are reproducible across different geographies and healthcare systems.
+
+## The CohortConstructor Package
+
+CohortConstructor is designed to make cohort work more transparent and reproducible. It offers a comprehensive set of tools for cohort curation, all within a tidyverse-style framework. The package does not require users to have expertise in the OMOP CDM, making it accessible to anyone working with healthcare data in R.
+
+### Core Features of CohortConstructor:
+
+1. **Base Cohort Creation:**
+   - **Demographic Cohorts:** Define cohorts based on age, sex, and observation periods.
+   - **Concept and Measurement Cohorts:** Use clinical concepts and measurements to define cohorts.
+   - **Death Cohorts:** Create cohorts based on recorded deaths in the database.
+
+2. **Cohort Curation Tools:**
+   
+   - Apply inclusion criteria based on demographics and other factors.
+   - Update cohort entry and exit dates using pre-defined functions.
+   - Transform and combine cohorts, allowing for complex cohort constructions such as intersections and unions.
+
+3. **Reproducibility and Transparency:**
+   - **Cohort Settings:** Associate each cohort with a name and variables for easy reference.
+   - **Attrition Tracking:** Document the inclusion criteria and the impact of each criterion on the cohort size.
+   - **Cohort Code List:** Maintain a record of the clinical codes used to define each cohort.
+
+## Practical Demonstration and Use Cases
+
+The webinar, presented by Nuria Mercade-Besora and Edward Burn, provided practical examples of how the CohortConstructor package can be used. From creating base cohorts to applying complex inclusion criteria, the session demonstrated the package's versatility in handling healthcare data.
+
+### Example Workflow:
+1. **Base Cohort Creation:** Using concepts and demographics to create initial cohorts.
+2. **Applying Inclusion Criteria:** Filtering cohorts based on required demographic and clinical criteria.
+3. **Transforming and Combining Cohorts:** Using functions to intersect and merge cohorts, creating complex patient groupings tailored to specific research questions.
+
+## Additional Resources
+
+For those interested in exploring the CohortConstructor package further, the full abstract, setup instructions, and demo slides are available on the [GitHub page](https://github.com/OHDSI/CohortConstructor). The package is also available on [CRAN](https://cran.r-project.org/web/packages/CohortConstructor/index.html) for easy installation.
+
+Ed Burn has also authored a book on programming with the OMOP Common Data Model in R, which is freely available online. This resource provides a deeper dive into working with databases in R, beyond just the OMOP CDM.
+
+## Conclusion
+
+The CohortConstructor package represents a significant advancement in the management of patient cohorts using R. By simplifying the process and making it accessible to a wider audience, it empowers researchers to focus on deriving insights from healthcare data, rather than being bogged down by data management tasks. Whether you are a seasoned data scientist or a healthcare professional delving into data analysis, CohortConstructor offers the tools needed to streamline your workflow and enhance the reproducibility of your research.
