@@ -99,6 +99,65 @@
   <media:content url="https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/thumbnail-cohortconstructor-burn-and-mercade-bosora.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-NARVwViEwA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="turbocharging-shiny-app-development-with-nix-and-rix" class="level3">
+<h3 class="anchored" data-anchor-id="turbocharging-shiny-app-development-with-nix-and-rix">Turbocharging Shiny App Development with Nix and {rix}</h3>
+<p>In the realm of data science, particularly for medical research, the integration of open-source tools has dramatically accelerated the development and deployment of sophisticated analytical applications. Among these tools, R has established itself as a powerhouse for statistical computing and data visualization, especially with its ability to create interactive web applications using Shiny. However, as developers push the boundaries of what’s possible, ensuring reproducibility and handling complex dependencies become crucial challenges. This is where the Nix package manager and the {rix} R package, authored by Bruno Rodrigues and Philipp Baumann, come into play.</p>
+<p>Eric Nantz, a seasoned statistician, developer, and the host of the R-Podcast, recently shared his insights at the R/Medicine 2025 conference on how these tools have revolutionized his workflow in developing robust production-quality Shiny applications. His demonstration highlighted the synergy between Nix and Shiny, presenting a compelling case for their combined use in data science projects.</p>
+<section id="the-reproducibility-challenge" class="level4">
+<h4 class="anchored" data-anchor-id="the-reproducibility-challenge">The Reproducibility Challenge</h4>
+<p>Shiny applications, while powerful, often require a myriad of dependencies. These range from R packages like {reactable} for table visualizations to system-level dependencies and external services such as APIs. Traditionally, tools like {renv} have been used to manage R package dependencies, while Docker has been employed to handle system-level dependencies. However, this combination can sometimes fall short, particularly in complex environments or when deploying across different systems.</p>
+</section>
+<section id="enter-nix-and-rix" class="level4">
+<h4 class="anchored" data-anchor-id="enter-nix-and-rix">Enter Nix and {rix}</h4>
+<p>The Nix package manager offers a comprehensive solution by managing the full dependency stack of software projects. It provides a sandboxed environment where dependencies can be installed and managed without interfering with the host system. This is particularly advantageous for Shiny applications, which can have intricate dependencies spread across different languages and systems.</p>
+<p>The {rix} package simplifies the integration of Nix with R projects. It allows developers to create project-specific sandboxes that include both R packages and system dependencies, all managed via Nix. This ensures that all team members can work in a consistent environment, reducing the “it works on my machine” syndrome.</p>
+</section>
+<section id="key-features-of-nix-and-rix" class="level4">
+<h4 class="anchored" data-anchor-id="key-features-of-nix-and-rix">Key Features of Nix and {rix}</h4>
+<ul>
+<li><p><strong>Comprehensive Package Management</strong>: Nix manages over 120,000 software packages, ensuring that all dependencies, including system libraries, are automatically resolved and installed.</p></li>
+<li><p><strong>Immutable and Reproducible Environments</strong>: By creating an immutable file system, Nix ensures that the development environment remains consistent, preventing accidental changes that can affect reproducibility.</p></li>
+<li><p><strong>Cross-Platform Compatibility</strong>: Nix can be installed on Linux, macOS, and Windows (via Windows Subsystem for Linux), making it accessible to a wide range of users.</p></li>
+<li><p><strong>Integration with {rix}</strong>: The {rix} package allows easy configuration of R-specific environments, including access to CRAN and Bioconductor packages, as well as GitHub-hosted packages.</p></li>
+</ul>
+</section>
+<section id="shiny-and-nix-a-perfect-match" class="level4">
+<h4 class="anchored" data-anchor-id="shiny-and-nix-a-perfect-match">Shiny and Nix: A Perfect Match</h4>
+<p>Eric Nantz’s demonstration showcased a Shiny application developed using the Nix and {rix} workflow. The app, which explored data from the National Health and Nutrition Examination Survey, was developed using the Golem package to convert the Shiny app into a package format—a best practice that enhances maintainability and scalability.</p>
+<p>One of the standout features of this workflow was the ability to run a Shiny application with all its dependencies managed by Nix, without R being installed on the host system. This was possible through the use of a Nix shell, which provided a sandboxed environment where R and its packages were available. This not only ensured a consistent development environment but also facilitated easy deployment via Docker for hosting on cloud platforms.</p>
+</section>
+<section id="overcoming-challenges" class="level4">
+<h4 class="anchored" data-anchor-id="overcoming-challenges">Overcoming Challenges</h4>
+<p>While the benefits of using Nix and {rix} are substantial, there are some challenges to be aware of. The learning curve associated with Nix’s domain-specific language can be steep, and managing storage space for the Nix store is necessary. Additionally, some packages that write to temporary directories may not play well with Nix’s immutable file system. However, the advantages of reproducibility and ease of deployment often outweigh these hurdles.</p>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
+<p>The integration of Nix and {rix} into Shiny app development represents a significant advancement in creating reproducible and scalable data science projects. By leveraging Nix’s powerful package management capabilities and {rix}’s seamless integration with R, developers can ensure their applications are robust, consistent, and easy to deploy across various environments.</p>
+<p>Eric Nantz’s insights and demonstration provide a valuable resource for R developers looking to enhance their workflow with these cutting-edge tools. As the R community continues to innovate and evolve, the combination of Shiny, Nix, and {rix} is poised to play a pivotal role in shaping the future of data science applications.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Clinical Research</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/</guid>
+  <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/thumbnail-rix-and-nix-nantz.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>REDCapSync and RosyREDCap for standardized data pipelines and exploratory data analysis</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/</link>
@@ -1205,79 +1264,6 @@
   <guid>https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/thumbnail-keynote-day2-model-evaluation-ledell.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>No More Copy-Paste: Automating Patient Inquiry Tracking in Pharma with Shiny</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/sRNxjGXZ0_0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="automating-patient-inquiry-tracking-in-pharma-with-shiny-a-game-changer-in-specialty-pharma-coordination" class="level1">
-<h1>Automating Patient Inquiry Tracking in Pharma with Shiny: A Game-Changer in Specialty Pharma Coordination</h1>
-<p>In the fast-paced world of specialty pharma coordination, the seamless flow of information and timely delivery of medication can be a matter of life and death for patients with rare diseases. The challenge? Managing patient support and prescription workflows often involves disparate tools, manual data wrangling, and time-consuming reporting. Tanya Cashorali, the founder of TCB Analytics, addressed this critical issue in her presentation at the R/Medicine conference, showcasing how an R Shiny application revolutionized these processes.</p>
-<section id="meet-the-speaker-tanya-cashorali" class="level2">
-<h2 class="anchored" data-anchor-id="meet-the-speaker-tanya-cashorali">Meet the Speaker: Tanya Cashorali</h2>
-<p>Tanya Cashorali is the founder of TCB Analytics, a Boston-based data science consultancy with a strong focus on bio and pharma. She has an impressive background in biotech, having started her career analyzing genetic data at Children’s Hospital in 2005. Tanya has since contributed to building molecular applications at Dana Farber, conducted modeling work at GNS Healthcare to understand causal mechanisms of disease, and helped launch TCB Analytics after her tenure at Biogen.</p>
-</section>
-<section id="the-problem-manual-mayhem-in-specialty-pharma-coordination" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem-manual-mayhem-in-specialty-pharma-coordination">The Problem: Manual Mayhem in Specialty Pharma Coordination</h2>
-<p>For bio and pharma companies treating rare diseases, ensuring patients receive their medications on time is crucial. However, the process often involves multiple manual steps:</p>
-<ul>
-<li>Physicians write prescriptions that go to specialty pharmacies.</li>
-<li>Biopharma companies ensure the availability of drugs.</li>
-<li>Specialty pharmacies ship the drugs to patients.</li>
-</ul>
-<p>This workflow was previously managed through Excel sheets and lengthy email chains. The result? Manual mayhem, with room for errors, slow case preparation, and time-consuming weekly status meetings.</p>
-</section>
-<section id="the-solution-an-r-shiny-application" class="level2">
-<h2 class="anchored" data-anchor-id="the-solution-an-r-shiny-application">The Solution: An R Shiny Application</h2>
-<p>To tackle this challenge, Tanya and her team developed an R Shiny application that serves as a dynamic operational hub. This application integrates prescription fulfillment data with Smartsheet-tracked patient inquiries, providing a unified, interactive dashboard for users. Key features include:</p>
-<ul>
-<li><strong>Real-time Data Integration:</strong> The application merges daily Excel-based prescription data with live Smartsheet API feeds.</li>
-<li><strong>Interactive Dashboard:</strong> Users can filter, sort, and export patient records while tracking key support metrics such as shipment history and open ticket status.</li>
-<li><strong>Ticket Creation and Management:</strong> Users can create and manage tickets directly from the application, which syncs with Smartsheet to streamline communication between the market access team and specialty pharmacies.</li>
-</ul>
-</section>
-<section id="impact-and-efficiency-gains" class="level2">
-<h2 class="anchored" data-anchor-id="impact-and-efficiency-gains">Impact and Efficiency Gains</h2>
-<p>The impact of this R Shiny application has been significant:</p>
-<ul>
-<li><strong>Streamlined Communication:</strong> The application replaces five daily emails, reduces meeting times from 30 to 10 minutes, and supports over 36 users, including sales teams and market access teams.</li>
-<li><strong>Real-time Insights:</strong> The application provides a single source of real-time truth, enabling more productive case tracking and management.</li>
-<li><strong>Data-Driven Decisions:</strong> With 400 patients and two drug products tracked, the application offers valuable data insights, such as time to resolution and issue frequency across specialty pharmacies.</li>
-</ul>
-</section>
-<section id="lessons-learned" class="level2">
-<h2 class="anchored" data-anchor-id="lessons-learned">Lessons Learned</h2>
-<p>Tanya shared valuable lessons learned from the project:</p>
-<ul>
-<li><strong>Start Simple:</strong> Begin with sketches and iterate based on user feedback.</li>
-<li><strong>Build Dashboards with People, Not Just for Them:</strong> Engage users early and often to ensure the solution meets their needs.</li>
-<li><strong>Leverage Power Users:</strong> Identify and collaborate with power users who can provide valuable feedback and drive adoption.</li>
-<li><strong>Avoid Overengineering:</strong> Use existing tools like R Shiny, Smartsheet, and pins to create efficient solutions without complex infrastructure.</li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The R Shiny application developed by TCB Analytics exemplifies the power of R in transforming workflows and improving patient outcomes in the pharma industry. By automating patient inquiry tracking, the application not only streamlines operations but also ensures that patients receive their medications promptly, ultimately saving lives.</p>
-<p>As Tanya summarized, this project demonstrates that you don’t need a big vendor platform or a six-month roadmap to make a significant impact. With the right tools and a focus on user needs, R can drive meaningful change in healthcare and beyond.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Pharma</category>
-  <category>Healthcare</category>
-  <guid>https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/thumbnail-no-more-copy-paste-tanya.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

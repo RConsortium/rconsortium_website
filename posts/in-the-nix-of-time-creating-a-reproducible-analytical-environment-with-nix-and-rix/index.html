@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2025-06-24">
+<meta name="description" content="Explore how Nix and {rix} transform Shiny app development with seamless reproducibility.">
 
-<title>newsletters – R Consortium</title>
+<title>In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix} – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0b749ae5895da4bc124901bc0aba940b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0b749ae5895da4bc124901bc0aba940b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -108,48 +80,19 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -164,35 +107,35 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -203,15 +146,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -222,23 +165,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="../all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -261,7 +204,7 @@ window.Quarto = {
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -276,15 +219,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">WG Calendar</span></a>
   </li>  
     </ul>
@@ -295,25 +238,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -344,104 +287,97 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}</h1>
+                  <div>
+        <div class="description">
+          Explore how Nix and {rix} transform Shiny app development with seamless reproducibility.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">R/Medicine 2025</div>
+                <div class="quarto-category">Clinical Research</div>
+                <div class="quarto-category">Software Development</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 24, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="newsletters" class="level1">
-<h1>Newsletters</h1>
-<section id="whats-happening-in-the-r-consortium" class="level2">
-<h2 class="anchored" data-anchor-id="whats-happening-in-the-r-consortium">What’s happening in the R Consortium?<a href="https://oppkeyquarto.netlify.app/newsletters/newsletters#whats-happening-in-the-r-consortium"></a></h2>
-<p>Check out our previous Newsletters and stay tuned for future ones!</p>
 
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-NARVwViEwA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="turbocharging-shiny-app-development-with-nix-and-rix" class="level3">
+<h3 class="anchored" data-anchor-id="turbocharging-shiny-app-development-with-nix-and-rix">Turbocharging Shiny App Development with Nix and {rix}</h3>
+<p>In the realm of data science, particularly for medical research, the integration of open-source tools has dramatically accelerated the development and deployment of sophisticated analytical applications. Among these tools, R has established itself as a powerhouse for statistical computing and data visualization, especially with its ability to create interactive web applications using Shiny. However, as developers push the boundaries of what’s possible, ensuring reproducibility and handling complex dependencies become crucial challenges. This is where the Nix package manager and the {rix} R package, authored by Bruno Rodrigues and Philipp Baumann, come into play.</p>
+<p>Eric Nantz, a seasoned statistician, developer, and the host of the R-Podcast, recently shared his insights at the R/Medicine 2025 conference on how these tools have revolutionized his workflow in developing robust production-quality Shiny applications. His demonstration highlighted the synergy between Nix and Shiny, presenting a compelling case for their combined use in data science projects.</p>
+<section id="the-reproducibility-challenge" class="level4">
+<h4 class="anchored" data-anchor-id="the-reproducibility-challenge">The Reproducibility Challenge</h4>
+<p>Shiny applications, while powerful, often require a myriad of dependencies. These range from R packages like {reactable} for table visualizations to system-level dependencies and external services such as APIs. Traditionally, tools like {renv} have been used to manage R package dependencies, while Docker has been employed to handle system-level dependencies. However, this combination can sometimes fall short, particularly in complex environments or when deploying across different systems.</p>
+</section>
+<section id="enter-nix-and-rix" class="level4">
+<h4 class="anchored" data-anchor-id="enter-nix-and-rix">Enter Nix and {rix}</h4>
+<p>The Nix package manager offers a comprehensive solution by managing the full dependency stack of software projects. It provides a sandboxed environment where dependencies can be installed and managed without interfering with the host system. This is particularly advantageous for Shiny applications, which can have intricate dependencies spread across different languages and systems.</p>
+<p>The {rix} package simplifies the integration of Nix with R projects. It allows developers to create project-specific sandboxes that include both R packages and system dependencies, all managed via Nix. This ensures that all team members can work in a consistent environment, reducing the “it works on my machine” syndrome.</p>
+</section>
+<section id="key-features-of-nix-and-rix" class="level4">
+<h4 class="anchored" data-anchor-id="key-features-of-nix-and-rix">Key Features of Nix and {rix}</h4>
+<ul>
+<li><p><strong>Comprehensive Package Management</strong>: Nix manages over 120,000 software packages, ensuring that all dependencies, including system libraries, are automatically resolved and installed.</p></li>
+<li><p><strong>Immutable and Reproducible Environments</strong>: By creating an immutable file system, Nix ensures that the development environment remains consistent, preventing accidental changes that can affect reproducibility.</p></li>
+<li><p><strong>Cross-Platform Compatibility</strong>: Nix can be installed on Linux, macOS, and Windows (via Windows Subsystem for Linux), making it accessible to a wide range of users.</p></li>
+<li><p><strong>Integration with {rix}</strong>: The {rix} package allows easy configuration of R-specific environments, including access to CRAN and Bioconductor packages, as well as GitHub-hosted packages.</p></li>
+</ul>
+</section>
+<section id="shiny-and-nix-a-perfect-match" class="level4">
+<h4 class="anchored" data-anchor-id="shiny-and-nix-a-perfect-match">Shiny and Nix: A Perfect Match</h4>
+<p>Eric Nantz’s demonstration showcased a Shiny application developed using the Nix and {rix} workflow. The app, which explored data from the National Health and Nutrition Examination Survey, was developed using the Golem package to convert the Shiny app into a package format—a best practice that enhances maintainability and scalability.</p>
+<p>One of the standout features of this workflow was the ability to run a Shiny application with all its dependencies managed by Nix, without R being installed on the host system. This was possible through the use of a Nix shell, which provided a sandboxed environment where R and its packages were available. This not only ensured a consistent development environment but also facilitated easy deployment via Docker for hosting on cloud platforms.</p>
+</section>
+<section id="overcoming-challenges" class="level4">
+<h4 class="anchored" data-anchor-id="overcoming-challenges">Overcoming Challenges</h4>
+<p>While the benefits of using Nix and {rix} are substantial, there are some challenges to be aware of. The learning curve associated with Nix’s domain-specific language can be steep, and managing storage space for the Nix store is necessary. Additionally, some packages that write to temporary directories may not play well with Nix’s immutable file system. However, the advantages of reproducibility and ease of deployment often outweigh these hurdles.</p>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
+<p>The integration of Nix and {rix} into Shiny app development represents a significant advancement in creating reproducible and scalable data science projects. By leveraging Nix’s powerful package management capabilities and {rix}’s seamless integration with R, developers can ensure their applications are robust, consistent, and easy to deploy across various environments.</p>
+<p>Eric Nantz’s insights and demonstration provide a valuable resource for R developers looking to enhance their workflow with these cutting-edge tools. As the R community continues to innovate and evolve, the combination of Shiny, Nix, and {rix} is poised to play a pivotal role in shaping the future of data science applications.</p>
 
 
 </section>
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1728259200000" data-listing-file-modified-sort="1750826396733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2451">
-<a href="../newsletters/R-Consortium-Q3-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q3-2024-NEWSLETTER-main-image.png" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium Q3 2024 Newsletter banner graphic">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2024 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Welcome to the R Consortium’s Q3 2024 Newsletter!
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 7, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1719705600000" data-listing-file-modified-sort="1750826396733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1546">
-<a href="../newsletters/R-Consortium-Q2-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1-1024x576.webp" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium logo banner for Q2 2024 newsletter">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q2 2024 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jun 30, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1750826396733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1491">
-<a href="../newsletters/R-Consortium-Q3-2023-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1.webp" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium Q3 2023 Newsletter banner graphic">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2023 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 31, 2023
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
