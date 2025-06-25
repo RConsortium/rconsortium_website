@@ -12,6 +12,93 @@
 <generator>quarto-1.7.32</generator>
 <lastBuildDate>Tue, 24 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>A Framework for Cohort Building in R - Nuria Mercade-Besora and Edward Burn</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6-4diWLaE6w" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="cohortconstructor-simplifying-patient-cohort-management-with-r" class="level1">
+<h1>CohortConstructor: Simplifying Patient Cohort Management with R</h1>
+<p>In the ever-evolving field of healthcare data analysis, managing patient cohorts efficiently is crucial. The CohortConstructor package in R provides an innovative solution for building and managing patient cohorts using real-world health data mapped to the OMOP Common Data Model (CDM). Developed by Nuria Mercade-Besora and Edward Burn, this package streamlines the process, allowing users to apply both common and complex inclusion criteria, combine cohorts, update cohort entry and exit dates, and track groups of patients—all without the need to write complicated code.</p>
+<section id="background-and-need-for-a-common-data-model" class="level2">
+<h2 class="anchored" data-anchor-id="background-and-need-for-a-common-data-model">Background and Need for a Common Data Model</h2>
+<p>In the realm of healthcare data, researchers often face the challenge of transforming disparate sources of data into reliable evidence. Traditional processes involve lengthy data transformations to make data research-ready, followed by the application of statistical methods. The introduction of a common data model, such as the OMOP CDM, simplifies this process by standardizing healthcare data. This allows researchers to focus on querying the standardized data to generate reliable evidence, without needing to handle the intricacies of data transformation themselves.</p>
+<section id="key-benefits-of-the-omop-common-data-model" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits-of-the-omop-common-data-model">Key Benefits of the OMOP Common Data Model:</h3>
+<ul>
+<li><strong>Standardization:</strong> Different source systems can be converted to the same common data model, enabling the use of consistent pipelines across various databases.</li>
+<li><strong>Interoperability:</strong> The OMOP CDM allows for international network studies, where analytic code is distributed to data partners who run it locally, keeping patient data secure and aggregated results are shared.</li>
+<li><strong>Reproducibility:</strong> The common vocabulary and standardized format ensure that studies are reproducible across different geographies and healthcare systems.</li>
+</ul>
+</section>
+</section>
+<section id="the-cohortconstructor-package" class="level2">
+<h2 class="anchored" data-anchor-id="the-cohortconstructor-package">The CohortConstructor Package</h2>
+<p>CohortConstructor is designed to make cohort work more transparent and reproducible. It offers a comprehensive set of tools for cohort curation, all within a tidyverse-style framework. The package does not require users to have expertise in the OMOP CDM, making it accessible to anyone working with healthcare data in R.</p>
+<section id="core-features-of-cohortconstructor" class="level3">
+<h3 class="anchored" data-anchor-id="core-features-of-cohortconstructor">Core Features of CohortConstructor:</h3>
+<ol type="1">
+<li><p><strong>Base Cohort Creation:</strong></p>
+<ul>
+<li><strong>Demographic Cohorts:</strong> Define cohorts based on age, sex, and observation periods.</li>
+<li><strong>Concept and Measurement Cohorts:</strong> Use clinical concepts and measurements to define cohorts.</li>
+<li><strong>Death Cohorts:</strong> Create cohorts based on recorded deaths in the database.</li>
+</ul></li>
+<li><p><strong>Cohort Curation Tools:</strong></p>
+<ul>
+<li>Apply inclusion criteria based on demographics and other factors.</li>
+<li>Update cohort entry and exit dates using pre-defined functions.</li>
+<li>Transform and combine cohorts, allowing for complex cohort constructions such as intersections and unions.</li>
+</ul></li>
+<li><p><strong>Reproducibility and Transparency:</strong></p>
+<ul>
+<li><strong>Cohort Settings:</strong> Associate each cohort with a name and variables for easy reference.</li>
+<li><strong>Attrition Tracking:</strong> Document the inclusion criteria and the impact of each criterion on the cohort size.</li>
+<li><strong>Cohort Code List:</strong> Maintain a record of the clinical codes used to define each cohort.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="practical-demonstration-and-use-cases" class="level2">
+<h2 class="anchored" data-anchor-id="practical-demonstration-and-use-cases">Practical Demonstration and Use Cases</h2>
+<p>The webinar, presented by Nuria Mercade-Besora and Edward Burn, provided practical examples of how the CohortConstructor package can be used. From creating base cohorts to applying complex inclusion criteria, the session demonstrated the package’s versatility in handling healthcare data.</p>
+<section id="example-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="example-workflow">Example Workflow:</h3>
+<ol type="1">
+<li><strong>Base Cohort Creation:</strong> Using concepts and demographics to create initial cohorts.</li>
+<li><strong>Applying Inclusion Criteria:</strong> Filtering cohorts based on required demographic and clinical criteria.</li>
+<li><strong>Transforming and Combining Cohorts:</strong> Using functions to intersect and merge cohorts, creating complex patient groupings tailored to specific research questions.</li>
+</ol>
+</section>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<p>For those interested in exploring the CohortConstructor package further, the full abstract, setup instructions, and demo slides are available on the <a href="https://github.com/OHDSI/CohortConstructor">GitHub page</a>. The package is also available on <a href="https://cran.r-project.org/web/packages/CohortConstructor/index.html">CRAN</a> for easy installation.</p>
+<p>Ed Burn has also authored a book on programming with the OMOP Common Data Model in R, which is freely available online. This resource provides a deeper dive into working with databases in R, beyond just the OMOP CDM.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The CohortConstructor package represents a significant advancement in the management of patient cohorts using R. By simplifying the process and making it accessible to a wider audience, it empowers researchers to focus on deriving insights from healthcare data, rather than being bogged down by data management tasks. Whether you are a seasoned data scientist or a healthcare professional delving into data analysis, CohortConstructor offers the tools needed to streamline your workflow and enhance the reproducibility of your research.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Healthcare</category>
+  <category>Epidemiology</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/</guid>
+  <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/thumbnail-cohortconstructor-burn-and-mercade-bosora.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>REDCapSync and RosyREDCap for standardized data pipelines and exploratory data analysis</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/</link>
@@ -1191,73 +1278,6 @@
   <guid>https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/no-more-copy-paste-automating-patient-inquiry-tracking-in-pharma-with-shiny/thumbnail-no-more-copy-paste-tanya.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>nonprobsvy – An R package for modern methods for non-probability survey</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/MnEZlFcpmCE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="unveiling-the-nonprobsvy-package-a-leap-in-non-probability-sample-inference-in-r" class="level1">
-<h1>Unveiling the <code>nonprobsvy</code> Package: A Leap in Non-Probability Sample Inference in R</h1>
-<p>Greetings R community! Today, we’re thrilled to delve into the details of <code>nonprobsvy</code>, an R package crafted for inference based on non-probability samples. Presented by Maciej Beręsewicz from the Poznań University of Economics and Business and the Statistical Office in Poznań, this package is a tool for statisticians dealing with the challenges of non-probability samples in various research domains.</p>
-<section id="addressing-non-probability-sample-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="addressing-non-probability-sample-challenges">Addressing Non-Probability Sample Challenges</h2>
-<p>The core motivation behind the development of <code>nonprobsvy</code> stems from the limitations often encountered in official statistics due to declining response rates and the growing reliance on non-probability surveys for population inference. Such surveys, including big data, opt-in web panels, and social media data, often introduce selection bias, complicating accurate population characteristic estimations.</p>
-<p>Beręsewicz, deeply rooted in survey sampling and methodology, recognized these challenges through his work at the university and the Statistical Office in Poznań. This package is a testament to his commitment to providing robust statistical methods that correct selection bias, making it a resource for researchers worldwide.</p>
-</section>
-<section id="the-power-of-nonprobsvy" class="level2">
-<h2 class="anchored" data-anchor-id="the-power-of-nonprobsvy">The Power of <code>nonprobsvy</code></h2>
-<p><code>nonprobsvy</code> integrates with the popular <code>survey</code> package in R, offering a toolkit for addressing non-probability sample biases. It categorizes its approaches into three main groups: prediction-based approach, inverse probability weighting, and doubly robust approach. Here’s a closer look at what it provides:</p>
-<ol type="1">
-<li><strong>Inverse Probability Weighting (IPW):</strong> Allows for correction of selection bias using known population totals or survey designs.</li>
-<li><strong>Mass Imputation Estimators:</strong> Employs methods such as regression imputation and nearest neighbors to estimate missing data.</li>
-<li><strong>Doubly Robust Estimators:</strong> Combines the strengths of both IPW and outcome modeling for improved estimations.</li>
-<li><strong>High-Dimensional Data Handling:</strong> Features variable selection using techniques like SCAD, LASSO, or MCP, crucial for handling administrative data or surveys with extensive questionnaires.</li>
-</ol>
-</section>
-<section id="a-user-friendly-package" class="level2">
-<h2 class="anchored" data-anchor-id="a-user-friendly-package">A User-Friendly Package</h2>
-<p>The <code>nonprobsvy</code> package is designed with user-friendliness in mind. Its main function, <code>nonprop()</code>, mimics existing R functions by utilizing formulas, ensuring a smooth transition for users familiar with R’s ecosystem. The package supports both analytical and bootstrap variance estimators, providing flexibility and robustness in variance estimation.</p>
-<section id="unique-features" class="level3">
-<h3 class="anchored" data-anchor-id="unique-features">Unique Features</h3>
-<ul>
-<li><strong>Full Integration with the Survey Package:</strong> Ensures compatibility and extends the capabilities of existing survey methods.</li>
-<li><strong>Advanced Estimators:</strong> Implements state-of-the-art methods, including those recently accepted for publication, ensuring users have access to the latest developments in survey sampling.</li>
-<li><strong>Extensive Documentation:</strong> Provides detailed explanations, equations, and use cases, guiding users through implementation and interpretation.</li>
-</ul>
-</section>
-</section>
-<section id="looking-ahead-future-developments" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead-future-developments">Looking Ahead: Future Developments</h2>
-<p>Beręsewicz and his team have ambitious plans for the future of <code>nonprobsvy</code>. They aim to incorporate overlapping samples, replicate weights, and expand mass imputation methods beyond parametric approaches. There is also a focus on developing inference methods for quantiles and integrating mixed-mode data handling, reflecting the dynamic needs of contemporary research.</p>
-<section id="community-involvement" class="level3">
-<h3 class="anchored" data-anchor-id="community-involvement">Community Involvement</h3>
-<p>The development team encourages feedback and suggestions from the community. By engaging with users on GitHub, they aim to continuously refine and enhance the package. If you have innovative ideas or encounter challenges, they’re eager to hear from you.</p>
-</section>
-</section>
-<section id="call-to-action" class="level2">
-<h2 class="anchored" data-anchor-id="call-to-action">Call to Action</h2>
-<p><code>nonprobsvy</code> is available on CRAN, and its development version is hosted on GitHub. We invite you to explore this powerful package, test its capabilities, and contribute to its evolution. Your insights and experiences are invaluable in shaping its future.</p>
-<p>For researchers, statisticians, and R enthusiasts, <code>nonprobsvy</code> offers a robust solution to the complexities of non-probability samples. Whether you’re tackling big data, social media analytics, or opt-in web panels, this package equips you with the tools needed to derive accurate, reliable inferences.</p>
-<p>To learn more about the package, visit the <a href="https://cran.r-project.org/package=nonprobsvy">CRAN page</a> or <a href="http://github.com/ncn-foreigners/nonprobsvy">GitHub repository</a>. Let’s work together in advancing statistical methodologies and making impactful contributions to the R community.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/thumbnail-nonprobsvy.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
