@@ -76,6 +76,88 @@
   <media:content url="https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/thumbnail-redcap-rose.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>The power of {targets} package for reproducible data science</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/2BtXjPRLGkQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="enhancing-reproducible-data-science-with-the-targets-package-in-r" class="level1">
+<h1>Enhancing Reproducible Data Science with the <code>targets</code> Package in R</h1>
+<p>Reproducibility is a non-negotiable pillar in the realm of data science, ensuring that analyses can be reliably replicated and shared. This commitment to reproducibility is vital for building trust and credibility in the outcomes of data-driven projects. In the R ecosystem, the <code>targets</code> package stands out as a powerful tool designed to streamline and enhance reproducibility in data science workflows.</p>
+<section id="the-power-of-targets" class="level2">
+<h2 class="anchored" data-anchor-id="the-power-of-targets">The Power of <code>targets</code></h2>
+<p>The <code>targets</code> package in R offers a robust framework for pipeline management, enabling efficient dependency tracking, automated pipeline execution, and clear documentation of the entire data analysis process. This package ensures that complex pipelines execute consistently in isolated environments.</p>
+<p>When combined with tools like <code>{renv}</code> and Docker, <code>targets</code> eliminates the common “it works on my machine” problem. This synergy fosters reproducibility across diverse computational environments, empowering data scientists to create scalable and maintainable projects.</p>
+</section>
+<section id="workshop-overview" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
+<p>The workshop, led by Rahul Sangole, a Senior Data Science Manager at Apple, was designed for data scientists and analysts eager to enhance their pipeline management skills. Through hands-on exercises and real-world examples, attendees learned how to leverage <code>targets</code> to build reproducible data science workflows.</p>
+<section id="key-topics-covered" class="level3">
+<h3 class="anchored" data-anchor-id="key-topics-covered">Key Topics Covered</h3>
+<ol type="1">
+<li><strong>Pipeline Basics and Functions</strong>:
+<ul>
+<li>Transitioning from a script-based approach to a <code>targets</code> pipeline involves converting each variable into a “target.”</li>
+<li>Using functions to keep pipelines clean and maintainable.</li>
+<li>Visualizing pipelines to understand dependencies and execution flow.</li>
+</ul></li>
+<li><strong>Handling Files</strong>:
+<ul>
+<li>Managing input and output files within a <code>targets</code> pipeline.</li>
+<li>Utilizing <code>format = "file"</code> to track file changes and ensure pipeline validity.</li>
+<li>Incorporating Quarto documents for literate programming within pipelines.</li>
+</ul></li>
+<li><strong>Parallel Computing</strong>:
+<ul>
+<li>Accelerating pipelines by utilizing multiple workers with the <code>crew</code> package.</li>
+<li>Monitoring pipeline execution in real-time with <code>tar_watch()</code>.</li>
+</ul></li>
+<li><strong>Dynamic Branching</strong>:
+<ul>
+<li>Utilizing dynamic branching to handle scenarios where the number of models or data sets is not known beforehand.</li>
+<li>Implementing <code>pattern = map</code> and <code>pattern = cross</code> to create flexible and scalable pipelines.</li>
+</ul></li>
+<li><strong>Database Integration</strong>:
+<ul>
+<li>Connecting to databases, querying data, and writing results back to databases within a <code>targets</code> pipeline.</li>
+<li>Using <code>withr</code> for clean database connections and disconnections.</li>
+</ul></li>
+<li><strong>Comprehensive Example</strong>:
+<ul>
+<li>Organizing code into clear, maintainable structures with separate functions and pipelines.</li>
+<li>Building a full-fledged example of a machine learning pipeline using <code>targets</code> to manage data cleaning, modeling, and reporting.</li>
+</ul></li>
+</ol>
+</section>
+<section id="resources" class="level3">
+<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<ul>
+<li><strong>Setup Instructions</strong> for the workshop: <a href="https://rsangole.netlify.app/talks/2025-06-09_rmedicine-targets/doc.html#setup-instructions">Workshop Setup</a></li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The <code>targets</code> package is an invaluable asset for data scientists committed to reproducibility. By adopting <code>targets</code>, data professionals can build transparent, trustable, and reproducible data workflows. The workshop provided a comprehensive introduction to <code>targets</code>, equipping participants with the knowledge and skills to implement these practices in their projects.</p>
+<p><strong>Rahul Sangole’s</strong> expertise and passion for reproducible data science were evident throughout the session, offering participants a deep dive into the capabilities of <code>targets</code>. This workshop is a stepping stone for data scientists to enhance their pipeline management and scale their analytical workflows effectively.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/</guid>
+  <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/thumbnail-targets-rahul.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>First Steps with SQL in R: Making Data Talk</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/</link>
@@ -1176,69 +1258,6 @@
   <guid>https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/nonprobsvy-an-r-package-for-modern-methods-for-non-probability-survey/thumbnail-nonprobsvy.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Opening Remarks - Day 2</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/opening-remarks-day-2/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HWJH9RiGFsc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="rmedicine-2025-day-2-a-celebration-of-r-in-medicine" class="level1">
-<h1>R/Medicine 2025 Day 2: A Celebration of R in Medicine</h1>
-<p>The R/Medicine 2025 conference, a flagship event brought to the community by the R Consortium, continues to be a focus of innovation and collaboration between R programming and medicine. With participants joining from diverse corners of the globe, including, just to name a few read off by Zabor during the talk, the Netherlands, Romania, London, Germany, and from US states like Florida, California, Minnesota, and Pennsylvania, the event shines as a testament to the universal appeal and utility of R in medical research and practice.</p>
-<section id="acknowledgments-and-gratitude" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgments-and-gratitude">Acknowledgments and Gratitude</h2>
-<p>The second day of the conference commenced with a welcome extended by Emily Zabor, the event’s chair and a dedicated biostatistician at the Cleveland Clinic.</p>
-<p>Zabor emphasized that the success of R/Medicine 2025 owes much to the support of its financial sponsors, Genentech and Posit, alongside the invaluable backing of the R Consortium. Thanks are also due to the organizing committee, whose dedication and expertise have been instrumental in crafting this enriching experience. And, of course, to all participants who contribute time, knowledge and energy.</p>
-</section>
-<section id="recap-of-day-1-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="recap-of-day-1-highlights">Recap of Day 1 Highlights</h2>
-<p>The first day of the conference was marked by an array of insightful presentations and discussions. Attendees were treated to a keynote by Ziad Obermeyer, who delved into the transformative potential of AI in the realm of medicine. The day unfolded with 9 regular talks and 2 lightning talks that spanned topics such as reproducibility, compliance, workflow automation, and clinical epidemiological applications.</p>
-<p>A notable highlight was the presentation of competition winners in both the student and professional categories. Their analysis of vaccination and measles case rates for 2025 provided critical insights, despite the somewhat concerning data trends. The rigor and clarity of their presentations underscored the power of data-driven decision-making in public health.</p>
-<section id="video-availability" class="level3">
-<h3 class="anchored" data-anchor-id="video-availability">Video Availability</h3>
-<p>For those who missed the live sessions, most of the presentations will be made available on the <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">R Consortium’s YouTube channel</a>. Participants are encouraged to watch for communications regarding the release of these videos, which will serve as a valuable resource for continued learning and inspiration.</p>
-</section>
-</section>
-<section id="day-2-exciting-lineup-of-keynotes-and-talks" class="level2">
-<h2 class="anchored" data-anchor-id="day-2-exciting-lineup-of-keynotes-and-talks">Day 2: Exciting Lineup of Keynotes and Talks</h2>
-<p>Day Two promises another engaging lineup, starting with a keynote by Erin LeDell, focusing on model evaluation from machine learning to generative AI. This is followed by 6 regular talks and 11 lightning talks. Sessions will cover a broad spectrum of topics, including:</p>
-<ul>
-<li>Packages and tools for data management</li>
-<li>Cohorts and APIs</li>
-<li>Visualization and communication</li>
-<li>Clinical and epidemiological applications</li>
-<li>Statistical modeling, inference, and methodology</li>
-</ul>
-<p>This diversity of topics reflects the multifaceted nature of R’s applications in medicine, ensuring that there is something of interest for every attendee.</p>
-</section>
-<section id="community-and-networking" class="level2">
-<h2 class="anchored" data-anchor-id="community-and-networking">Community and Networking</h2>
-<p>The conference provides an excellent platform for networking and community building. With a few minutes between sessions, attendees are encouraged to engage in discussions and share ideas. This interaction fosters a sense of camaraderie and collaboration, essential for advancing the field.</p>
-</section>
-<section id="looking-ahead-future-webinars" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead-future-webinars">Looking Ahead: Future Webinars</h2>
-<p>The R/Medicine conference is not limited to annual gatherings. Throughout the year, the <a href="https://r-consortium.org/webinars/webinars.html">R Consortium hosts webinars</a> that delve deeper into specific topics of interest. Last year saw two mid-year R/Medicine webinars, and this tradition of continuous learning and engagement is set to continue. Participants should stay tuned for announcements.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>R/Medicine 2025 stands as a vibrant celebration of the role of R in advancing medical research and practice. With an agenda packed with insightful talks, expert speakers, and a global community of attendees, the event embodies the spirit of innovation and collaboration. Participants are encouraged to immerse themselves in the wealth of knowledge shared and to continue engaging with the R community beyond the conference.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Events</category>
-  <guid>https://r-consortium.org/posts/opening-remarks-day-2/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/opening-remarks-day-2/thumbnail-opening-remarks-day2.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
