@@ -1,0 +1,65 @@
+--- 
+title: "The power of {targets} package for reproducible data science" 
+unpublished: true 
+url: "https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/"
+description: "Explore how the `targets` package in R enhances reproducibility in data science workflows." 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium" 
+image: "thumbnail-targets-rahul.png" 
+image-alt: "thumbnail for video on The power of {targets} package for reproducible data science" 
+date: "06/24/2025" 
+---
+
+{{< video https://www.youtube.com/embed/2BtXjPRLGkQ >}}
+
+# Enhancing Reproducible Data Science with the `targets` Package in R
+
+Reproducibility is a non-negotiable pillar in the realm of data science, ensuring that analyses can be reliably replicated and shared. This commitment to reproducibility is vital for building trust and credibility in the outcomes of data-driven projects. In the R ecosystem, the `targets` package stands out as a powerful tool designed to streamline and enhance reproducibility in data science workflows.
+
+## The Power of `targets`
+
+The `targets` package in R offers a robust framework for pipeline management, enabling efficient dependency tracking, automated pipeline execution, and clear documentation of the entire data analysis process. This package ensures that complex pipelines execute consistently in isolated environments.
+
+When combined with tools like `{renv}` and Docker, `targets` eliminates the common "it works on my machine" problem. This synergy fosters reproducibility across diverse computational environments, empowering data scientists to create scalable and maintainable projects.
+
+## Workshop Overview
+
+The workshop, led by Rahul Sangole, a Senior Data Science Manager at Apple, was designed for data scientists and analysts eager to enhance their pipeline management skills. Through hands-on exercises and real-world examples, attendees learned how to leverage `targets` to build reproducible data science workflows.
+
+### Key Topics Covered
+
+1. **Pipeline Basics and Functions**:
+   - Transitioning from a script-based approach to a `targets` pipeline involves converting each variable into a "target."
+   - Using functions to keep pipelines clean and maintainable.
+   - Visualizing pipelines to understand dependencies and execution flow.
+
+2. **Handling Files**:
+   - Managing input and output files within a `targets` pipeline.
+   - Utilizing `format = "file"` to track file changes and ensure pipeline validity.
+   - Incorporating Quarto documents for literate programming within pipelines.
+
+3. **Parallel Computing**:
+   - Accelerating pipelines by utilizing multiple workers with the `crew` package.
+   - Monitoring pipeline execution in real-time with `tar_watch()`.
+
+4. **Dynamic Branching**:
+   - Utilizing dynamic branching to handle scenarios where the number of models or data sets is not known beforehand.
+   - Implementing `pattern = map` and `pattern = cross` to create flexible and scalable pipelines.
+
+5. **Database Integration**:
+   - Connecting to databases, querying data, and writing results back to databases within a `targets` pipeline.
+   - Using `withr` for clean database connections and disconnections.
+
+6. **Comprehensive Example**:
+   - Organizing code into clear, maintainable structures with separate functions and pipelines.
+   - Building a full-fledged example of a machine learning pipeline using `targets` to manage data cleaning, modeling, and reporting.
+
+### Resources
+
+- **Setup Instructions** for the workshop: [Workshop Setup](https://rsangole.netlify.app/talks/2025-06-09_rmedicine-targets/doc.html#setup-instructions)
+
+## Conclusion
+
+The `targets` package is an invaluable asset for data scientists committed to reproducibility. By adopting `targets`, data professionals can build transparent, trustable, and reproducible data workflows. The workshop provided a comprehensive introduction to `targets`, equipping participants with the knowledge and skills to implement these practices in their projects.
+
+**Rahul Sangole's** expertise and passion for reproducible data science were evident throughout the session, offering participants a deep dive into the capabilities of `targets`. This workshop is a stepping stone for data scientists to enhance their pipeline management and scale their analytical workflows effectively.
