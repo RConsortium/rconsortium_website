@@ -10,7 +10,76 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Tue, 24 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 29 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>“Visualise, Optimise, Parameterise!” - Writing dataviz code - UPDATED</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tdaMw6NcNFM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="visualize-optimize-parameterize-enhancing-r-visualizations-for-impact" class="level1">
+<h1>Visualize, Optimize, Parameterize: Enhancing R Visualizations for Impact</h1>
+<p>Creating compelling and clear visualizations is an art that requires careful planning and execution. Cara Thompson, a data visualization consultant, recently led a workshop titled “Visualize, Optimize, Parameterize” aimed at enhancing participants’ skills in building reusable and adaptable visualizations with R. With an emphasis on parameterization, Cara shared insights on how to transform static plots into dynamic tools that can adapt to varied datasets and storytelling needs.</p>
+<section id="building-memorable-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="building-memorable-graphs">Building Memorable Graphs</h2>
+<p>To create memorable graphs, it’s crucial to select the right type of visualization and apply colors, fonts, and styling that complement the narrative. The workshop emphasized the importance of:</p>
+<ul>
+<li><strong>Choosing Appropriate Graph Types</strong>: Selecting the right graph type that aligns with the data story is fundamental.</li>
+<li><strong>Color and Font Choices</strong>: These should enhance readability and convey the right message. Tools like the <code>monochroma</code> package and the Shiny app can help create harmonious color palettes.</li>
+<li><strong>Annotations</strong>: Adding data-driven annotations can highlight key patterns and points of interest.</li>
+</ul>
+</section>
+<section id="the-power-of-reusability" class="level2">
+<h2 class="anchored" data-anchor-id="the-power-of-reusability">The Power of Reusability</h2>
+<p>One of the key takeaways from the workshop was the importance of creating reusable functions and vectors. This approach minimizes repetitive copy-pasting and allows for easy updates and maintenance. Cara demonstrated how to:</p>
+<ul>
+<li><strong>Turn Styling Code into Functions</strong>: By encapsulating styling choices into a function, users can apply consistent branding across multiple plots with ease.</li>
+<li><strong>Parameterize Plots</strong>: This involves creating a function that can take different datasets or parameters, making it adaptable for future use cases.</li>
+</ul>
+</section>
+<section id="adding-interactivity" class="level2">
+<h2 class="anchored" data-anchor-id="adding-interactivity">Adding Interactivity</h2>
+<p>Incorporating interactivity into visualizations enhances user engagement and allows for deeper exploration of the data. Cara introduced the <code>ggiraph</code> package, which helps transform static ggplot2 charts into interactive plots, making it an accessible way to add interactivity without extensive rework.</p>
+</section>
+<section id="parameterizing-for-flexibility" class="level2">
+<h2 class="anchored" data-anchor-id="parameterizing-for-flexibility">Parameterizing for Flexibility</h2>
+<p>Parameterizing plots allows users to easily adapt their visualizations to different datasets or scenarios. Throughout the session, Cara encouraged participants to think about:</p>
+<ul>
+<li><strong>Dataset Variations</strong>: How to quickly adapt plots for new or updated data without reworking the entire codebase.</li>
+<li><strong>Presentation Contexts</strong>: Adjusting visualizations for different formats such as presentations or publications with changes in text size and font.</li>
+<li><strong>Additional Functionality</strong>: Adding features like conditional formatting or exporting options to enhance the plot’s utility.</li>
+</ul>
+</section>
+<section id="avoiding-common-pitfalls" class="level2">
+<h2 class="anchored" data-anchor-id="avoiding-common-pitfalls">Avoiding Common Pitfalls</h2>
+<p>Cara highlighted several common pitfalls when parameterizing plots, such as:</p>
+<ul>
+<li><strong>Inconsistent Color Mapping</strong>: Colors should be stable across different datasets to maintain consistency. This can be achieved by using named vectors for color assignments.</li>
+<li><strong>Axis Limits Management</strong>: Decide whether to keep axis limits consistent or allow them to adapt based on the data’s range.</li>
+<li><strong>Annotation Placement</strong>: Ensure annotations are positioned correctly by using programmatic methods that adjust based on the data.</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The workshop equipped participants with the skills to create impactful and adaptable visualizations in R. By focusing on parameterization, attendees learned to streamline their workflow, reduce redundancy, and enhance their data storytelling capabilities. Cara Thompson’s expertise in data visualization provided valuable insights into making visualizations both functional and aesthetically pleasing.</p>
+<p>For those looking to delve deeper, resources from the workshop, including code snippets and additional readings, are available on Cara’s website.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R/Medicine 2025</category>
+  <category>Software Development</category>
+  <guid>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/</guid>
+  <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/thumbnail-dataviz-cara.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>A Framework for Cohort Building in R - Nuria Mercade-Besora and Edward Burn</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1210,60 +1279,6 @@
   <guid>https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/mix-pour-share-the-rum-cocktail-for-biomedical-project-packaging/thumbnail-rum-gealis-balise.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Model Evaluation: From Machine Learning to Generative AI</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Lq568n0pClc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="exploring-the-future-of-ai-evaluation-with-dr.-erin-ledell-at-rmedicine-2025" class="level1">
-<h1>Exploring the Future of AI Evaluation with Dr.&nbsp;Erin LeDell at R/Medicine 2025</h1>
-<p>As artificial intelligence evolves, so must the methodologies used to evaluate these systems. Dr.&nbsp;Erin LeDell, a prominent figure in the AI and R communities, addressed this critical transition in her keynote at R/Medicine 2025. Dr.&nbsp;LeDell, the Chief Scientist at Distributional, Inc.&nbsp;and founder of DataScientific, Inc., brings her extensive expertise to the forefront as she guides us through the intricate world of AI evaluation, moving from deterministic machine learning models to the more complex generative AI systems.</p>
-<section id="from-deterministic-to-generative-a-paradigm-shift" class="level2">
-<h2 class="anchored" data-anchor-id="from-deterministic-to-generative-a-paradigm-shift">From Deterministic to Generative: A Paradigm Shift</h2>
-<p>In traditional machine learning (ML), models are deterministic – given the same input, they produce the same output. This predictability provides a clear framework for evaluation metrics such as accuracy, precision, recall, and others familiar to statisticians and data scientists. However, with the rise of large language models (LLMs) and generative AI, this predictability is challenged. These systems introduce non-determinism, meaning outputs can vary even with identical inputs, necessitating new evaluation frameworks.</p>
-<p>Dr.&nbsp;LeDell emphasized that traditional accuracy-based metrics fall short when assessing generative AI systems. Instead, evaluation must consider coherence, consistency, and bias, along with the challenges of reproducibility in probabilistic AI systems. This shift leads to questions about how to ensure AI models are reliable and function as expected in real-world scenarios.</p>
-</section>
-<section id="dr.-erin-ledells-journey-with-r-and-ai" class="level2">
-<h2 class="anchored" data-anchor-id="dr.-erin-ledells-journey-with-r-and-ai">Dr.&nbsp;Erin LeDell’s Journey with R and AI</h2>
-<p>Dr.&nbsp;LeDell shared her journey from machine learning to generative AI, highlighting her longstanding experience with R. Since 2008, she has been deeply involved in machine learning, contributing to various R packages such as SuperLearner, Subsemble, and H2O, the latter of which she worked on extensively during her tenure at H2O.ai. Her work in AutoML led to the creation of the AutoML benchmark, setting standards for algorithm evaluation.</p>
-<p>Her transition into generative AI coincided with the advent of tools like ChatGPT, pushing her to explore new methods for evaluating these complex systems. Dr.&nbsp;LeDell’s passion for using AI in healthcare was evident as she discussed her collaborations with medical companies, applying machine learning to tackle various health-related problems.</p>
-</section>
-<section id="evaluating-generative-ai-new-approaches" class="level2">
-<h2 class="anchored" data-anchor-id="evaluating-generative-ai-new-approaches">Evaluating Generative AI: New Approaches</h2>
-<p>The talk delved into the architectural differences between traditional ML systems and modern AI applications, particularly generative AI systems. Dr.&nbsp;LeDell outlined the multi-component nature of these systems, where changes in one part can affect the whole, and the importance of monitoring these changes over time. She addressed the non-stationary behavior of generative AI, noting how external factors and updates from third-party providers can alter system performance.</p>
-<p>A significant challenge with generative AI is its inherent non-determinism. Unlike traditional ML models, generative AI requires novel evaluation metrics that account for variability in outputs. Dr.&nbsp;LeDell introduced several frameworks and tools aimed at assessing these systems, emphasizing the role of humans in the evaluation process. Humans provide essential oversight, creating “golden” datasets and evaluating outputs, though this process is not always scalable.</p>
-</section>
-<section id="llm-as-judge-a-new-standard" class="level2">
-<h2 class="anchored" data-anchor-id="llm-as-judge-a-new-standard">LLM as Judge: A New Standard</h2>
-<p>One innovative approach Dr.&nbsp;LeDell highlighted is using LLMs themselves to evaluate AI outputs. This method involves deploying LLMs as judges to assess whether responses are correct, helpful, or safe. While this technique is automated and widely used, it presents challenges, such as potential biases if the same model is used for generation and evaluation. Dr.&nbsp;LeDell recommended using specialized LLMs designed for evaluation to mitigate these issues.</p>
-</section>
-<section id="practical-applications-and-tools" class="level2">
-<h2 class="anchored" data-anchor-id="practical-applications-and-tools">Practical Applications and Tools</h2>
-<p>Dr.&nbsp;LeDell provided insights into practical applications of generative AI in healthcare, such as using LLMs for clinical note-taking and research acceleration. She described a retrieval-augmented generation (RAG) system for medical Q&amp;A, which combines traditional information retrieval with generative capabilities, enriching AI responses with context from specialized knowledge bases.</p>
-<p>For those eager to explore AI evaluation further, Dr.&nbsp;LeDell pointed to several open-source tools, including the R package “vitals,” a port of the Python library “inspect,” developed by JJ Allaire. These tools provide a foundation for customizing evaluation metrics and integrating human oversight into the evaluation pipeline.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Dr.&nbsp;LeDell’s keynote at R/Medicine 2025 illuminated the evolving landscape of AI evaluation, underscoring the need for innovative methodologies to assess the next generation of AI models. Her insights into the intersection of AI and healthcare offer promising pathways for improving AI reliability and trustworthiness in critical applications.</p>
-<p>As the R community continues to embrace these advancements, Dr.&nbsp;LeDell’s work encourages practitioners to think critically and creatively about AI evaluation.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>AI</category>
-  <guid>https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/model-evaluation-from-machine-learning-to-generative-ai/thumbnail-keynote-day2-model-evaluation-ledell.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
