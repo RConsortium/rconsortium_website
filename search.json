@@ -42,11 +42,11 @@
     "text": "The R Adoption Series\nThis is a series of webinars focused on the adoption of R. Each session will include a case study and often include panels or discussions to enable those starting their journey to ask questions.\nR Consortium will keep this page updated with information on future webinars in the R Adoption series. If there is some information that you are looking for specifically and you don’t see it here, feel free to email us at info@r-consortium.org."
   },
   {
-    "objectID": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html#register-now-httpszoom.uswebinarregisterwn_d5uefpg5raco2ux2wgkxlg",
-    "href": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html#register-now-httpszoom.uswebinarregisterwn_d5uefpg5raco2ux2wgkxlg",
+    "objectID": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html",
+    "href": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html",
     "title": "From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration",
-    "section": "Register now! https://zoom.us/webinar/register/WN_d5uefPg5RaCO2uX2WGkxLg",
-    "text": "Register now! https://zoom.us/webinar/register/WN_d5uefPg5RaCO2uX2WGkxLg\nThe Virginia Department of Environmental Quality (DEQ) is responsible for administering laws and regulations associated with air quality, water quality and supply, renewable energy, and land protection in the Commonwealth of Virginia. These responsibilities generate tremendous quantities of data from monitoring environmental quality, managing permitting processes across environmental media, responding to pollution events, and more. The data collected by DEQ requires management and analysis to gain insight, inform decision making, and meet legal and public obligations.\nIn this webinar, we will focus on the integration of our Posit and Esri environments to modernize data collection methods for water quality monitoring. We’ll begin with a review of historic water quality data collection processes. Then, we’ll present the architecture of these environments and describe how they were leveraged to modernize mobile data collection at DEQ."
+    "section": "",
+    "text": "The Virginia Department of Environmental Quality (DEQ) is responsible for administering laws and regulations associated with air quality, water quality and supply, renewable energy, and land protection in the Commonwealth of Virginia. These responsibilities generate tremendous quantities of data from monitoring environmental quality, managing permitting processes across environmental media, responding to pollution events, and more. The data collected by DEQ requires management and analysis to gain insight, inform decision making, and meet legal and public obligations.\nIn this webinar, we will focus on the integration of our Posit and Esri environments to modernize data collection methods for water quality monitoring. We’ll begin with a review of historic water quality data collection processes. Then, we’ll present the architecture of these environments and describe how they were leveraged to modernize mobile data collection at DEQ."
   },
   {
     "objectID": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html#speakers",
@@ -54,13 +54,6 @@
     "title": "From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration",
     "section": "Speakers",
     "text": "Speakers\n\nJoe Famularo - Analytics System Administrator\nMaddie Moore - GIS System Administrator\nEmma Jones - Water Monitoring Supervisor\nScott Hasinger - Water Monitoring Supervisor"
-  },
-  {
-    "objectID": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html#register-now-httpszoom.uswebinarregisterwn_d5uefpg5raco2ux2wgkxlg-1",
-    "href": "webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html#register-now-httpszoom.uswebinarregisterwn_d5uefpg5raco2ux2wgkxlg-1",
-    "title": "From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration",
-    "section": "Register now! https://zoom.us/webinar/register/WN_d5uefPg5RaCO2uX2WGkxLg",
-    "text": "Register now! https://zoom.us/webinar/register/WN_d5uefPg5RaCO2uX2WGkxLg"
   },
   {
     "objectID": "webinars/containerization-and-r-for-reproducibility.html#abstract",
