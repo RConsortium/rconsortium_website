@@ -1,0 +1,59 @@
+--- 
+title: "“Visualise, Optimise, Parameterise!” - Writing dataviz code - UPDATED" 
+unpublished: true 
+url: "https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/"
+description: "Enhance your R plots with parameterization to create reusable and interactive visualizations." 
+categories: [R/Medicine 2025, Software Development]
+author: "R Consortium" 
+image: "thumbnail-dataviz-cara.png" 
+image-alt: "thumbnail for video on “Visualise, Optimise, Parameterise!” - Writing dataviz code - UPDATED" 
+date: "06/29/2025" 
+---
+
+
+{{< video https://www.youtube.com/embed/tdaMw6NcNFM >}}
+
+# Visualize, Optimize, Parameterize: Enhancing R Visualizations for Impact
+
+Creating compelling and clear visualizations is an art that requires careful planning and execution. Cara Thompson, a data visualization consultant, recently led a workshop titled "Visualize, Optimize, Parameterize" aimed at enhancing participants' skills in building reusable and adaptable visualizations with R. With an emphasis on parameterization, Cara shared insights on how to transform static plots into dynamic tools that can adapt to varied datasets and storytelling needs.
+
+## Building Memorable Graphs
+
+To create memorable graphs, it's crucial to select the right type of visualization and apply colors, fonts, and styling that complement the narrative. The workshop emphasized the importance of:
+
+- **Choosing Appropriate Graph Types**: Selecting the right graph type that aligns with the data story is fundamental.
+- **Color and Font Choices**: These should enhance readability and convey the right message. Tools like the `monochroma` package and the Shiny app can help create harmonious color palettes.
+- **Annotations**: Adding data-driven annotations can highlight key patterns and points of interest.
+
+## The Power of Reusability
+
+One of the key takeaways from the workshop was the importance of creating reusable functions and vectors. This approach minimizes repetitive copy-pasting and allows for easy updates and maintenance. Cara demonstrated how to:
+
+- **Turn Styling Code into Functions**: By encapsulating styling choices into a function, users can apply consistent branding across multiple plots with ease.
+- **Parameterize Plots**: This involves creating a function that can take different datasets or parameters, making it adaptable for future use cases.
+
+## Adding Interactivity
+
+Incorporating interactivity into visualizations enhances user engagement and allows for deeper exploration of the data. Cara introduced the `ggiraph` package, which helps transform static ggplot2 charts into interactive plots, making it an accessible way to add interactivity without extensive rework.
+
+## Parameterizing for Flexibility
+
+Parameterizing plots allows users to easily adapt their visualizations to different datasets or scenarios. Throughout the session, Cara encouraged participants to think about:
+
+- **Dataset Variations**: How to quickly adapt plots for new or updated data without reworking the entire codebase.
+- **Presentation Contexts**: Adjusting visualizations for different formats such as presentations or publications with changes in text size and font.
+- **Additional Functionality**: Adding features like conditional formatting or exporting options to enhance the plot's utility.
+
+## Avoiding Common Pitfalls
+
+Cara highlighted several common pitfalls when parameterizing plots, such as:
+
+- **Inconsistent Color Mapping**: Colors should be stable across different datasets to maintain consistency. This can be achieved by using named vectors for color assignments.
+- **Axis Limits Management**: Decide whether to keep axis limits consistent or allow them to adapt based on the data's range.
+- **Annotation Placement**: Ensure annotations are positioned correctly by using programmatic methods that adjust based on the data.
+
+## Conclusion
+
+The workshop equipped participants with the skills to create impactful and adaptable visualizations in R. By focusing on parameterization, attendees learned to streamline their workflow, reduce redundancy, and enhance their data storytelling capabilities. Cara Thompson's expertise in data visualization provided valuable insights into making visualizations both functional and aesthetically pleasing.
+
+For those looking to delve deeper, resources from the workshop, including code snippets and additional readings, are available on Cara's website.
