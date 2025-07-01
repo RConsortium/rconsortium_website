@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/strength-in-numbers/index.html",
       "/posts/community-powered-future-for-regulatory-r-introducing-our-fundraising-campaign/index.html",
       "/posts/brewing-success-with-rum-how-inclusivity-fuels-manchesters-thriving-r-community/index.html",
       "/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/index.html",
@@ -127,6 +128,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/posts/strength-in-numbers/index.html",
       "/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/index.html",
       "/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/index.html",
       "/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/index.html",
