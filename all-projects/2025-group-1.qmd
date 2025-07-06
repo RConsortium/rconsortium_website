@@ -1,0 +1,62 @@
+## 2025 Group 1 Funded Projects
+
+The R Consortium is pleased to announce the following projects have been funded by the Infrastructure Steering Committee (ISC) for the first grant cycle of 2025. These projects address a range of needs within the R ecosystem, from economic data analysis to upgrades to igraph and redoc to a fast formatter for R code written entirely in Rust... and more.
+
+*   [EconDataverse](#econdataverse)
+*   [Maimer – Unifying Camera Trap Data in R](#maimer-unifying-camera-trap-data-in-r)
+*   [Bridging Worlds: Enhancing R igraph with C Core Innovations](#bridging-worlds-enhancing-r-igraph-with-c-core-innovations)
+*   [R Package Binaries for Linux – Community Edition](#r-package-binaries-for-linux-community-edition)
+*   [Fast Linter for R](#fast-linter-for-r)
+*   [Reviving redoc](#reviving-redoc)
+*   [Enhancing webchem](#enhancing-webchem)
+
+---
+
+### EconDataverse
+
+**Lead:** Christoph Scheuch, Christopher C. Smith, and Teal Emery  
+**Grant:** $6,600
+
+The econdataverse initiative was conceived as a unified ecosystem of packages for economic data access and analysis from sources like the IMF, World Bank, and OECD. By enforcing consistent function naming, tidy data formats, and cross-source compatibility, the project will work to significantly reduce the time spent on data acquisition and preparation and facilitate the creation of reproducible workflows. This work will support economic policy development through reproducible data workflows.
+
+### Maimer – Unifying Camera Trap Data in R
+
+**Leads:** Stanislas Mahussi Gandaho, Marcus Rowcliffe, and Damiano Oldoni  
+**Grant:** $4,000
+
+An integrated R ecosystem for camera trap data analysis in ecology; the project aims to develop standardized interfaces to connect maimer with key packages (activity, camtrapDensity, camtraptor) and ensure compatibility with common data standards like Camera Trap Metadata Standard (CTMS). The project combines visualization, data transformation, and deep-learning-based animal detection in a tidyverse-friendly package.
+
+### Bridging Worlds: Enhancing R igraph with C Core Innovations
+
+**Lead:** David Schoch, Kirill Müller, Maëlle Salmon  
+**Grant:** $10,000
+
+The ISC has previously granted funds in support of the igraph package. This round will support upgrades to igraph to include improved C core integration and improved documentation. You can contribute to the igraph package which is approaching its 1.0 release.
+
+### R Package Binaries for Linux – Community Edition
+
+**Lead:** Dr. Patrick Schratz  
+**Grant:** $4,250
+
+Establish an R-based, open-source build system for R package binaries including the build processes (running in CI) of the publicly running service building CRAN package binaries. The build system is expected to be able to build packages for (common) Linux distributions and multiple architectures (for the start x86 and arm64, riscv64). The goal of the project is to increase installation speed and improve accessibility across Linux environments.
+
+### Fast Linter for R
+
+**Lead:** Etienne Bacher  
+**Grant:** $4,000
+
+The project proposes to write a new linter for the R language that is fast and can apply automatic fixes. Eventually, this new linter would be integrated in air, a fast formatter for R code written entirely in Rust and created by Posit PBC.
+
+### Reviving redoc
+
+**Lead:** Noam Ross in partnership with The Tribal Exchange Network Group (TXG)  
+**Grant:** $16,800
+
+This project will revive and enhance the R package redoc, designed to bridge the critical gap between reproducible R reporting workflows (R Markdown, Quarto) and the collaborative editing environment of Microsoft Word. Currently, generating Word documents from R is largely a one-way process, creating friction when collaborating with colleagues who use Word’s Track Changes features for feedback. redoc enables a unique two-way synchronization, allowing R users to incorporate edits made in Word back into their source R Markdown documents.
+
+### Enhancing webchem
+
+**Lead:** Tamás Stirling, Eric Scott (contributor), Eduard Szöcs (original package author)  
+**Grant:** $8,500
+
+The project proposes enabling offline access to chemical databases, empowering chemistry professionals with faster, more reliable, and reproducible access to chemical data. They propose to develop functions that provide access to more data to strengthen the core purpose of that package – to provide easy access to chemical data.
