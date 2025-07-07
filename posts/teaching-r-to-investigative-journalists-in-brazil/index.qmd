@@ -1,0 +1,28 @@
+--- 
+title: "Teaching R to investigative journalists in Brazil" 
+unpublished: false 
+url: "https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/"
+description: "The Brazilian Association of Investigative Journalism (Abraji)'s annual international congress will take place on July 10th-13th, 2025, in São Paulo, Brazil." 
+categories: [Events]
+author: "R Consortium" 
+image: "data-sunday-2024.png" 
+image-alt: "Data Sunday 2024" 
+date: "07/07/2025" 
+---
+![](abraji_ceremony_2024_1.jpg)
+
+The [Brazilian Association of Investigative Journalism (Abraji)](https://abraji.org.br/english)'s annual international congress will take place on July 10th-13th in São Paulo, Brazil. And the final day is dedicated to data. Traditionally called “Domingo de Dados” (Data Sunday), it's a full day for journalist professionals and students from all over the country to take part in seven simultaneous labs with workshops and panels and learn new skills to apply data science in their investigations and coverage.
+
+One of the labs will be entirely dedicated to teaching R. Participants will spend the morning in an introductory session to R led by R-Ladies São Paulo volunteer instructors and TAs, especially designed for statistical analysis considering the specifics of journalism and using Brazilian electoral data.
+
+![](data-sunday-2024.png)
+
+In the afternoon, they will learn how to use the R packages `censobr` and `geobr`, two o f the most used ones for Brazilian census and geospatial data. The workshop will be given by Rafael Pereira, Chief of Data for Ipea, the Brazilian Institute for Applied Economic Research, who created both packages. They will also get to practice the new skills and interview official government databases to try and find news stories, with the help of the instructors.
+
+Because of its proximity to statistical analysis, R is one of the languages chosen by journalists on their first steps in acquiring data science skills to take their investigative work to a higher level. The investment in their training brings invaluable results in the form of news articles that expose detrimental public policies, fraud and other risks to our democracy, helping hold governments accountable and reduce social and economic inequality.
+
+![](ddados2024_R-Bootcamp_1.jpeg)
+
+For the second consecutive year, R Consortium is one of the partners at the Abraji International Congress. In its 20th edition, it has become the largest journalists event in Brazil, gathering over 1,800 participants in the four days of activities.
+
+![](abraji_r-consortium_logo_2024.jpeg)
