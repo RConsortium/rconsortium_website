@@ -10,7 +10,35 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Tue, 01 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 07 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Teaching R to investigative journalists in Brazil</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/abraji_ceremony_2024_1.jpg" class="img-fluid"></p>
+<p>The <a href="https://abraji.org.br/english">Brazilian Association of Investigative Journalism (Abraji)</a>’s annual international congress will take place on July 10th-13th in São Paulo, Brazil. And the final day is dedicated to data. Traditionally called “Domingo de Dados” (Data Sunday), it’s a full day for journalist professionals and students from all over the country to take part in seven simultaneous labs with workshops and panels and learn new skills to apply data science in their investigations and coverage.</p>
+<p>One of the labs will be entirely dedicated to teaching R. Participants will spend the morning in an introductory session to R led by R-Ladies São Paulo volunteer instructors and TAs, especially designed for statistical analysis considering the specifics of journalism and using Brazilian electoral data.</p>
+<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/data-sunday-2024.png" class="img-fluid"></p>
+<p>In the afternoon, they will learn how to use the R packages <code>censobr</code> and <code>geobr</code>, two o f the most used ones for Brazilian census and geospatial data. The workshop will be given by Rafael Pereira, Chief of Data for Ipea, the Brazilian Institute for Applied Economic Research, who created both packages. They will also get to practice the new skills and interview official government databases to try and find news stories, with the help of the instructors.</p>
+<p>Because of its proximity to statistical analysis, R is one of the languages chosen by journalists on their first steps in acquiring data science skills to take their investigative work to a higher level. The investment in their training brings invaluable results in the form of news articles that expose detrimental public policies, fraud and other risks to our democracy, helping hold governments accountable and reduce social and economic inequality.</p>
+<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/ddados2024_R-Bootcamp_1.jpeg" class="img-fluid"></p>
+<p>For the second consecutive year, R Consortium is one of the partners at the Abraji International Congress. In its 20th edition, it has become the largest journalists event in Brazil, gathering over 1,800 participants in the four days of activities.</p>
+<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/abraji_r-consortium_logo_2024.jpeg" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>Events</category>
+  <guid>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/</guid>
+  <pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/data-sunday-2024.png" medium="image" type="image/png" height="85" width="144"/>
+</item>
 <item>
   <title>Strength in Numbers</title>
   <dc:creator>Virginia Department of Environmental Quality</dc:creator>
@@ -1220,67 +1248,6 @@
   <guid>https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Improving Reproducibility of Medical Research with Controlled Vocabularies</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/bf8NZTnz6NA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="enhancing-reproducibility-in-medical-research-with-controlled-vocabularies" class="level1">
-<h1>Enhancing Reproducibility in Medical Research with Controlled Vocabularies</h1>
-<p>Hello R community! Today, let’s delve into an intriguing topic presented by Jonathan Pearce, a Senior Analyst at the Analysis Group, at the R/Medicine 2025 conference. Jonathan’s insightful presentation focused on improving the reproducibility of medical research through the use of controlled vocabularies for variable naming. Reproducibility in medical research is crucial, and Jonathan’s approach offers a structured methodology to enhance clarity and efficiency in data analysis.</p>
-<section id="the-need-for-reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="the-need-for-reproducibility">The Need for Reproducibility</h2>
-<p>The reproducibility of medical research has been a growing concern. Successful replication of studies depends on various factors such as code correctness, thorough documentation, and clear communication of the methods used. While much emphasis is often placed on technical aspects like coding environments and data access, the crux of reproducibility lies in the precise and consistent implementation of the original work.</p>
-</section>
-<section id="introducing-controlled-vocabularies" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-controlled-vocabularies">Introducing Controlled Vocabularies</h2>
-<p>Jonathan introduced the concept of controlled vocabularies for variable naming as a means to bolster reproducibility. This involves using a schema to label variables in a dataset consistently. This systematic approach encodes metadata directly into variable names, providing immediate context and enhancing the clarity of the data.</p>
-<section id="example-of-controlled-vocabulary" class="level3">
-<h3 class="anchored" data-anchor-id="example-of-controlled-vocabulary">Example of Controlled Vocabulary</h3>
-<p>Consider a scenario where you have a dataset with multiple tables, each containing various types of data. For instance, if you’re tracking whether patients had an eGFR lab test during a baseline period, a variable name following a controlled vocabulary might be <code>labs_eGFR_baseline_ind</code>, where <code>ind</code> stands for indicator. This descriptive naming convention helps users instantly understand the data stored in the column.</p>
-</section>
-<section id="structured-naming-and-its-advantages" class="level3">
-<h3 class="anchored" data-anchor-id="structured-naming-and-its-advantages">Structured Naming and Its Advantages</h3>
-<p>Controlled vocabularies mandate a consistent format across the project, which can be crucial for downstream analyses. For example, a variable capturing the median value of an eGFR test might be named <code>labs_eGFR_baseline_median_value</code>, providing additional clarity such as the unit of measurement and the calculation method.</p>
-<p>The benefits of controlled vocabularies extend to various facets of data analysis:</p>
-<ul>
-<li><strong>Regular Expressions:</strong> With consistently named variables, regular expressions can efficiently query subsets of data, facilitating tasks like data validation and report generation.</li>
-<li><strong>Data Validation:</strong> By defining expected data types and constraints (e.g., numeric values for duration variables should be non-negative), controlled vocabularies simplify the validation process.</li>
-<li><strong>Streamlined Workflows:</strong> Tasks such as creating summary tables, modeling, sensitivity analysis, and generating data dictionaries become more straightforward and reproducible.</li>
-</ul>
-</section>
-</section>
-<section id="practical-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="practical-considerations">Practical Considerations</h2>
-<p>While controlled vocabularies offer significant advantages, there are practical considerations to keep in mind:</p>
-<ul>
-<li><strong>Balancing Detail and Brevity:</strong> It’s essential to avoid overly long variable names by using abbreviations judiciously.</li>
-<li><strong>Initial Setup Effort:</strong> Defining a controlled vocabulary requires upfront work, but the long-term benefits often outweigh the initial investment.</li>
-<li><strong>Avoiding Conflicts:</strong> Care must be taken with underscores and keywords to prevent conflicts during keyword searches in variable names.</li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Jonathan Pearce’s presentation highlighted the transformative potential of controlled vocabularies in enhancing the reproducibility of medical research. By embedding metadata directly within variable names, researchers can achieve greater clarity and consistency, ultimately leading to more reliable and efficient data analysis.</p>
-<p>As we strive to make our work more sustainable and transparent, adopting practices like controlled vocabularies can help ensure that our research remains accessible and understandable, even months or years later.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/improving-reproducibility-of-medical-research-with-controlled-vocabularies/thumbnail-reproducibility-pearce.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
