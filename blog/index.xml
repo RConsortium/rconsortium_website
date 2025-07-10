@@ -10,7 +10,47 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Mon, 07 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 10 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R+AI Call for Proposals</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="rai-november-12-13-2025" class="level2">
+<h2 class="anchored" data-anchor-id="rai-november-12-13-2025">R+AI – November 12-13, 2025</h2>
+<p><img src="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" class="img-fluid"></p>
+<section id="call-for-proposals" class="level3">
+<h3 class="anchored" data-anchor-id="call-for-proposals">Call for Proposals</h3>
+<p>Join us at <strong>R+AI 2025</strong>, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence. Whether you’re just getting started with machine learning, experimenting with large language models in R, leveraging GenAI tools to accelerate your code, part of an industry team deploying AI solutions in finance, healthcare, or marketing, or a researcher pushing the boundaries of deep learning or responsible AI—there’s something here for you. Experience inspiring keynotes and talks, hands-on workshops, lightning talks, and panel discussions designed to educate, connect, and empower R users at every level.</p>
+<section id="submit-your-proposal-here" class="level4">
+<h4 class="anchored" data-anchor-id="submit-your-proposal-here"><a href="https://forms.gle/SUbQVNMpp11g7vbTA">Submit your proposal here</a></h4>
+</section>
+</section>
+</section>
+<section id="cfp-dates-open-7102025---closes-09052025" class="level2">
+<h2 class="anchored" data-anchor-id="cfp-dates-open-7102025---closes-09052025">CFP dates: OPEN 7/10/2025 - CLOSES: 09/05/2025</h2>
+<p>We are now inviting proposals for talks and workshops in all these areas:</p>
+<p><img src="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/talks_and_workshops.png" class="img-fluid"></p>
+<p>Whether you’re an R user new to AI or developing next-generation algorithms, <strong>R+AI 2025</strong> is your chance to learn, share, and collaborate with fellow R enthusiasts. Submit your talk or workshop proposal today and help shape the future of R+AI!</p>
+<section id="submit-your-proposal-here-1" class="level4">
+<h4 class="anchored" data-anchor-id="submit-your-proposal-here-1"><a href="https://forms.gle/SUbQVNMpp11g7vbTA">Submit your proposal here</a></h4>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Events</category>
+  <category>AI</category>
+  <guid>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/</guid>
+  <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Teaching R to investigative journalists in Brazil</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1201,54 +1241,6 @@
   <guid>https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/dengue-forecasting-addressing-the-interrupted-effect-from-covid-19-cases/thumbnail-dengue.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pAx92roI3VE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="ethical-choices-in-regression-analysis-a-case-study-from-seattle-childrens-hospital" class="level2">
-<h2 class="anchored" data-anchor-id="ethical-choices-in-regression-analysis-a-case-study-from-seattle-childrens-hospital">Ethical Choices in Regression Analysis: A Case Study from Seattle Children’s Hospital</h2>
-<p>In the world of statistical modeling, the choice of coding schemes for categorical variables is not merely a technical consideration but a decision laden with ethical implications. This was the focus of a recent presentation during the R/Medicine 2025 conference by Dwight Barry, Principal Data Scientist at Seattle Children’s Hospital, and Nicole Chicoine, DO, MPH, also at Seattle Children’s Hospital. The talk revolved around how these choices can influence the inferences drawn from regression analyses and ultimately impact healthcare delivery and research.</p>
-<section id="the-hospitals-language-diversity" class="level3">
-<h3 class="anchored" data-anchor-id="the-hospitals-language-diversity">The Hospital’s Language Diversity</h3>
-<p>Seattle Children’s Hospital is a bustling 400-bed facility that handles over half a million patient visits annually. With such a diverse patient base, the hospital encounters more than 130 languages, with Spanish being the most common after English. To accommodate this linguistic diversity, the hospital has initiated its first all-Spanish speaking operating room, ensuring equitable care for non-English speaking patients. This commitment to inclusivity is mirrored in their research methodologies, where the focus is on equitable outcomes across different patient groups.</p>
-</section>
-<section id="understanding-coding-schemes" class="level3">
-<h3 class="anchored" data-anchor-id="understanding-coding-schemes">Understanding Coding Schemes</h3>
-<p>The choice of coding schemes in regression models is crucial as it can shape the conclusions drawn from the data. Barry highlighted three coding schemes used in R: treatment contrast, sum contrast, and weighted effect coding. Each scheme presents categorical variables in different ways, affecting the interpretation of the data.</p>
-<ol type="1">
-<li><p><strong>Treatment Contrast</strong>: This is the default coding in R, where one category is used as a reference against which others are compared. In a clinical setting, this could inadvertently privilege a particular group, often aligning with the English-speaking, white demographic, which can skew the narrative towards existing inequities.</p></li>
-<li><p><strong>Sum Contrast</strong>: Here, the grand mean of all categories is used as the reference point. This approach decouples any single category from being the norm, promoting a more balanced view. In the context of healthcare, it shifts the focus from a single dominant group to an aggregate understanding, which can be crucial in addressing biases.</p></li>
-<li><p><strong>Weighted Effect Coding</strong>: This method is a variant of the sum contrast, where each category level is weighted by its sample size. Although not a built-in feature in base R, the <code>wec</code> package facilitates its implementation. This approach provides a nuanced view by factoring in the prevalence of each category, which can be especially useful in diverse patient populations.</p></li>
-</ol>
-</section>
-<section id="implications-for-healthcare-research" class="level3">
-<h3 class="anchored" data-anchor-id="implications-for-healthcare-research">Implications for Healthcare Research</h3>
-<p>The choice of coding scheme is not just a statistical decision but an ethical one, as it affects how healthcare equity is perceived and addressed. Barry’s presentation underscored that while odds ratios may differ across coding schemes, the marginal effects remain consistent, suggesting that predictions are unaffected by these choices. However, the ethical ramifications are significant, as they influence which group is centered in the analysis.</p>
-<p>In healthcare research, where categorical exposures like language group, race, or ethnicity lack a natural order, choosing the right coding scheme is vital. Sum contrasts, for instance, provide a means to avoid privileging any group, thereby promoting equity.</p>
-</section>
-<section id="broader-implications-and-recommendations" class="level3">
-<h3 class="anchored" data-anchor-id="broader-implications-and-recommendations">Broader Implications and Recommendations</h3>
-<p>Barry’s insights extend beyond surgery to any healthcare condition where equity is a concern. The presentation emphasized the importance of presenting marginal effects alongside regression coefficients or odds ratios to provide a comprehensive view of the data. By decentering from a single reference point, researchers can challenge the dominant social narratives and highlight systemic inequities, paving the way for more inclusive and equitable healthcare practices.</p>
-<p>In conclusion, the ethical dimensions of statistical modeling are as crucial as the statistical ones. As healthcare becomes increasingly data-driven, recognizing and addressing these ethical considerations is essential. By adopting coding schemes that promote equity, researchers and healthcare providers can ensure that their work contributes to a more just and equitable healthcare system.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <guid>https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/ethical-considerations-of-contrasts-in-statistical-modeling-of-medical-equity/thumbnail-ethical-considerations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
