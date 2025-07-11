@@ -124,14 +124,9 @@ format: html
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
-<div class="swiper-slide" id="survival-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/0NQNwKmH/survival-analysis2.png');">
-<h2>R/Medicine Webinar: Visualizing Survival Data with the {ggsurvfit} R Package</h2>
-<button class="blueButton"><a href="https://youtu.be/F-N_Pz2sPlg?si=0pTd4innRGY2k54a" style="text-decoration: none;">Webinar Recording</a></button>
-</div>
-
-<div class="swiper-slide" id="tidy-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/Wpxx6vVN/optimize-portfolios.png');">
-<h2>Tidy Finance Webinar Series</h2>
-<button class="blueButton"><a href="/webinars/tidy-finance-webinar-series.qmd" style="text-decoration: none;">Webinar Information</a></button>
+<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/jS1jnX7z/webinar-jpma-july-2025.png);">
+<h2></h2>
+<button class="blueButton"><a href="https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
 </div>
