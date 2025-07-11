@@ -1,0 +1,52 @@
+---
+title: "R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, Building Bridges"
+unpublished: false
+description: "Join the Health Technology Assessment (HTA) working group in building a strategy for standardization or automation for the HTA process."
+author: "R Consortium"
+categories: [Events, Working Groups]
+image: "hta-main-image.png"
+image-alt: "R for Health Technology Assessment (HTA)"
+date: "07/11/2025"
+---
+
+{{< video https://youtu.be/CwCMO9D0mjE >}}
+
+The Health Technology Assessment (HTA) working group within the R Consortium [was established](https://r-consortium.org/posts/health-technology-assessment-hta-working-group-kickoff-meeting/index.html) to support the use of R in HTA across academia, industry, and government authorities. This initiative aims to address key unmet needs in the field by mapping stakeholders, understanding processes, and identifying automatable streams. 
+
+The R Consortium's commitment to supporting these initiatives is crucial in driving the adoption and development of R-based solutions in HTA. As the community continues to engage in discussions and contribute to the working group's efforts, the vision of a unified, open-source approach to HTA analytics becomes increasingly attainable.
+
+The recent webinar titled "R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, Building Bridges" provided valuable insights from experts in the field.
+
+## The Role of R in Health Economics
+
+Rose Hart, Director and Health Economist at Dark Peak Analytics, emphasized the potential of R in health economics. She highlighted several advantages of adopting R, including:
+
+* End-to-End Modeling: R allows for seamless updates in data, automatically reflecting changes throughout the economic calculations and reports without manual copying and pasting.  
+* Version Control: R's centralized model ensures consistency in country-specific adaptations, avoiding the pitfalls of outdated or incorrect versions.  
+* Complex Functionality: Open-source R models invite scrutiny and improvement, enhancing transparency and trust.
+
+Despite these advantages, Rose acknowledged challenges such as unfamiliarity with R and entrenched Excel usage due to convenience and habit. She advocated for increased R uptake and collaboration across the industry to align priorities and create comprehensive guidelines for R model documentation and review.
+
+## Streamlining HTA Processes with R
+
+Christian Haargaard Olsen from Novo Nordisk shared insights on streamlining HTA processes using R. He discussed the potential of R to improve efficiency and reduce duplication of efforts across the European Union (EU) HTA submissions. Christian drew parallels with the success of the Pharmaverse initiative in regulatory clinical reporting, highlighting the potential for R to achieve similar success in HTA.
+
+Christian emphasized the need for a more orchestrated approach in the HTA space, potentially allowing for a faster transition from start to finish. He also pointed out the importance of defining data extraction interfaces, ensuring that AI or other tools can integrate seamlessly with R-based workflows.
+
+## Automating HTA Processes: Challenges and Opportunities
+
+Karolin Struck from SmartStep provided a detailed overview of the JCA HTA process, highlighting challenges and opportunities for automation. She outlined the complexity of managing multiple PICO scenarios and emphasized the need for early access to study data and updated data cuts.
+
+Karolin identified key challenges and pain points, such as the large number of analyses required for different PICO scenarios and the need for automation to handle frequent changes in output formats. She stressed the importance of standardizing input and output formats to facilitate collaboration across teams and vendors.
+
+## Leveraging AI and R in HTA
+
+The discussion also touched on the intersection of AI and R in HTA. While AI can assist in programming and data extraction, challenges remain in ensuring reliability and completeness of results. The speakers recognized the complementary roles of AI and R, suggesting that a well-defined data structure can facilitate integration with various tools, regardless of the underlying technology.
+
+## Conclusion: Building Bridges in HTA with R
+
+The webinar underscored the potential of R to transform HTA processes, enhancing efficiency, transparency, and collaboration. By addressing key challenges and fostering a culture of open-source collaboration, the HTA working group aims to build bridges across academia, industry, and authorities.
+
+The HTA working group will take the interactions and knowledge gained to focus and refine a strategy for standardization or automation and incorporate it as a part of the HTA process. If you are interested in joining our working group, please contact us\!
+
+For those interested in joining the conversation and contributing to the HTA working group, visit the [R Consortium's HTA Working Group repository](https://github.com/RConsortium/HTA-wg) and explore opportunities for collaboration. The [full webinar video \- with Q\&A session at the end \- is available here](https://youtu.be/CwCMO9D0mjE?feature=shared).
