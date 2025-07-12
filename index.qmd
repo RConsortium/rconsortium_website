@@ -124,24 +124,12 @@ format: html
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
-<div class="swiper-slide" id="survival-slide" style="height: 400px; position: relative;">
-  <a href="https://r-consortium.org/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html"
-     style="
-       display: block;
-       width: 100%;
-       height: 100%;
-       background-image: url('https://i.postimg.cc/ydd5c6PV/virginia-deq-webinar-main-image.png');
-       background-size: cover;
-       background-position: center;
-       text-decoration: none;
-       color: inherit;
-       ">
-  </a>
+<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/g2KtdhD8/virginia-deq-webinar-main-image.png);">
+<button class="blueButton"><a href="posts/strength-in-numbers" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
-<div class="swiper-slide" id="tidy-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/Wpxx6vVN/optimize-portfolios.png');">
-<h2>Tidy Finance Webinar Series</h2>
-<button class="blueButton"><a href="/webinars/tidy-finance-webinar-series.qmd" style="text-decoration: none;">Webinar Information</a></button>
+<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/59Hrv64W/r-spatial-main-carousel.png);">
+<button class="blueButton"><a href="webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.qmd" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
 </div>
