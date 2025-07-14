@@ -9,7 +9,39 @@ image-alt: "Call for Proposals Now Open!"
 date: "07/10/2025"
 ---
 
-## R+AI – November 12-13, 2025
+## CFP dates: OPEN 7/10/2025 - CLOSES: 09/05/2025
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(gt)
+library(dplyr)
+
+tibble::tibble(
+  Topic = 1:9,
+  `Title and Description` = c(
+    "**Foundations of AI & ML in R**<br>Tutorials and primers that help R users grasp core concepts, algorithms, and the modern R toolchain for GenAI, machine learning and deep learning.",
+    "**Using large-language models inside R**<br>E.g., packages and tools that help you call LLMs from R, prompt engineering for data science, how LLM conversations work.",
+    "**AI-assisted Development for R**<br>E.g., techniques and tools, Shiny Assistant, RStudio plug ins, comparison of different model capabilities.",
+    "**Machine learning & Deep Learning in R**<br>Education about popular R packages, workflows and toolchains, what sorts of problems they apply to, how and when to use them. Introduction to new R packages or algorithms.",
+    "**Industry Case Studies: R+AI in Action**<br>Applications of GenAI, ML and DL using R across Finance, healthcare, marketing, manufacturing, research labs, and more—real-world success stories and lessons learned.",
+    "**Responsible, Fair & Explainable AI + Governance with R**<br>Model interpretability, reproducibility, bias detection, privacy-preserving ML, governance and ethics for the use of R+AI.",
+    "**AIOps/MLOps & Production Deployment with R**<br>Frameworks, toolchains and techniques for putting AI/ML into production. Case studies on successful deployments and lessons learned are also welcome.",
+    "**Future Trends & Research Frontiers for R+AI**<br>E.g., Emerging Models & Architectures, Auto-Data Science, Low-Code AI—from the R user’s or developer’s perspective.",
+    "**Building & Orchestrating AI Agents in R**<br>Learn how to design and deploy autonomous agents that combine R functions, APIs, and LLMs to automate multi-step data science workflows."
+  )
+) %>%
+  gt() %>%
+  tab_header(title = "R+AI 2025 Call for Proposals: Technical Areas") %>%
+  fmt_markdown(columns = "Title and Description") %>%
+  cols_align(align = "center", columns = "Topic") %>%
+  cols_width(Topic ~ px(60)) %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = list(
+      cells_column_labels(columns = "Topic"),
+      cells_column_labels(columns = "Title and Description")
+    )
+  )
+```
 
 ![](CFP_now_open.png)
 
