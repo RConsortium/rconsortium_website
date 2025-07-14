@@ -9,7 +9,19 @@ image-alt: "Call for Proposals Now Open!"
 date: "07/10/2025"
 ---
 
-## CFP dates: OPEN 7/10/2025 - CLOSES: 09/05/2025
+![](CFP_now_open.png)
+
+### Call for Proposals
+
+Join us at **R+AI 2025**, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence. Whether you’re just getting started with machine learning, experimenting with large language models in R, leveraging GenAI tools to accelerate your code, part of an industry team deploying AI solutions in finance, healthcare, or marketing, or a researcher pushing the boundaries of deep learning or responsible AI—there’s something here for you. Experience inspiring keynotes and talks, hands-on workshops, lightning talks, and panel discussions designed to educate, connect, and empower R users at every level.
+
+#### [Submit your proposal here](https://forms.gle/SUbQVNMpp11g7vbTA)
+
+## CFP dates: OPEN 7/10/2025 \- CLOSES: 09/05/2025
+
+We are now inviting proposals for talks and workshops in all these areas:
+
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(gt)
@@ -42,20 +54,6 @@ tibble::tibble(
     )
   )
 ```
-
-![](CFP_now_open.png)
-
-### Call for Proposals
-
-Join us at **R+AI 2025**, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence. Whether you’re just getting started with machine learning, experimenting with large language models in R, leveraging GenAI tools to accelerate your code, part of an industry team deploying AI solutions in finance, healthcare, or marketing, or a researcher pushing the boundaries of deep learning or responsible AI—there’s something here for you. Experience inspiring keynotes and talks, hands-on workshops, lightning talks, and panel discussions designed to educate, connect, and empower R users at every level.
-
-#### [Submit your proposal here](https://forms.gle/SUbQVNMpp11g7vbTA)
-
-## CFP dates: OPEN 7/10/2025 \- CLOSES: 09/05/2025
-
-We are now inviting proposals for talks and workshops in all these areas:
-
-![](talks_and_workshops_UPDATED.png)
 
 Whether you’re an R user new to AI or developing next-generation algorithms, **R+AI 2025** is your chance to learn, share, and collaborate with fellow R enthusiasts. Submit your talk or workshop proposal today and help shape the future of R+AI\!
 
