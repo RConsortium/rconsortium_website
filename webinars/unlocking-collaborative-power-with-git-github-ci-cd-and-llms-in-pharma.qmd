@@ -1,0 +1,39 @@
+---
+title: "Unlocking Collaborative Power with Git, GitHub CI/CD, and LLMs in Pharma"
+---
+![](images/webinar-git-githubcicd-llms-in-pharma-main-image.png)
+
+## [Register now!](https://zoom.us/webinar/register/WN_uQg9mjrvQQCMH70ktAqdYg)
+
+### Abstract
+
+Are you new to Git and Github and wondering how to leverage it efficiently in your clinical trial work? Do you hear the terms "CI/CD" and/or "orchestration" and struggle to see the practical benefit in your day-to-day statistical programming work? If yes or you're just curious, then this session is for you\!
+
+Join us as we pull back the curtain on a unique, real-world project where more than 15 programmers from across the pharmaceutical industry united to collaborate effectively using Git and Github. We will share the practical strategies and workflows that made this multi-company effort a success, using the R Consortium Submission pilot5 project as our example.
+
+You'll see firsthand how we leveraged the power of GitHub to review code changes and have discussions in the code\!  We will then explore how the team used  CI/CD and GitHub Actions to maintain a codebase, build an automated QC engine, saving time and reducing manual errors. As a glimpse into the future, we will also reveal how we integrated a Large Language Model (LLM) to handle QC checks that rule-based automation alone can't manage.
+
+Leave this session inspired and equipped to take the next step, understanding how contributing to open-source projects is the perfect way to practice your new skills in a supportive, real-world environment.
+
+## Speakers  
+
+### Ning Leng, ad-interim global head, Data Science Acceleration (DSX) Group, Roche
+
+![](images/ning.jpg){width=30%}
+  
+Ning Leng is the ad-interim global head of the Data Science Acceleration (DSX) Group of Roche. The DSX group drives data science innovation projects, such as modernized computing platforms and the R based open source tools in clinical trial reporting. Ning joined Roche-Genentech in 2016 as a statistician, working on both early and late phase oncology development, with a specialty of biomarker development. Ning is an advocate of automation, open sourcing and open collaboration in pharma. Ning holds a B.S. in Information and Computing Science from Beijing Institute of Technology and a Ph.D. in Statistics from University of Wisconsin-Madison.  
+
+### Eli Miller, Senior Manager of Cloud Solutions at Atorus Research and technical lead for professional services, Atorus
+
+![](images/eli.jpg){width=30%}
+
+Eli Miller is a Senior Manager of Cloud Solutions at Atorus Research and is the technical lead for the professional services at Atorus. He works with organizations to create and improve their statistical systems and create modern processes. He also works with several industry groups aimed at furthering R in the pharma space.  
+
+### Ben Straub, Principal Programmer, Immunology Therapeutic Area, GSK
+
+![](images/ben.jpg){width=30%}
+
+Ben Straub works as a Principal Programmer at GSK in the Immunology Therapeutic Area since 2018\.  He has led and helped with many initiatives around R Adoption activities within Clinical Programming since his start at GSK.  He is actively helping to develop and maintain an end-to-end R package pipeline that addresses all the needs of Clinical Reporting (pharmaverse) and is very excited for the future of using R for Clinical Reporting. 
+
+## [Register now!](https://zoom.us/webinar/register/WN_uQg9mjrvQQCMH70ktAqdYg)
+
