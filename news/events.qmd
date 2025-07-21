@@ -15,14 +15,15 @@ df <- data.frame(
     "[R+AI](https://r-consortium.org/posts/r_plus_ai_call_for_proposals/)",
     "[R Consortium Webinar: Open Source Software Adoption in Japan's Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey](https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html)",
     "[useR! 2025](https://user2025.r-project.org/)",
+    "[R Consortium Webinar: Unlocking Collaborative Power with Git, GitHub CI/CD, and LLMs in Pharma](https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html)",
     "[European Bioconductor Conference (EuroBioC2025)](https://eurobioc2025.bioconductor.org/)",
     "[EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)](https://earl-conference.com/)"
   ),
 
-  dates = c("November 12-13, 2025", "July 23, 2025, 5pm PDT, and July 24, 2025, 9am JST", "Aug 8-10, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
-  location = c("Virtual","Virtual","Durham, NC - Duke University", "Barcelona, Spain", "Brighton, UK"),
-  icon = c("Conference", "Webinar", "Conference", "Conference", "Conference"),
-  Type = c("Conference", "Webinar", "Conference", "Conference", "Conference"),
+  dates = c("November 12-13, 2025", "July 23, 2025, 5pm PDT, and July 24, 2025, 9am JST", "Aug 8-10, 2025", "Aug 28, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
+  location = c("Virtual","Virtual","Durham, NC - Duke University", "Virtual","Barcelona, Spain", "Brighton, UK"),
+  icon = c("Conference", "Webinar", "Conference", "Webinar", "Conference", "Conference"),
+  Type = c("Conference", "Webinar", "Conference", "Webinar", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
