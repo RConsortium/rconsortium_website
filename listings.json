@@ -19,9 +19,18 @@
       "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
       "/webinars/super-charging-r-with-oracle-database.html",
       "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html",
       "/webinars/unlocking-insights-from-latinr.html",
       "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
       "/webinars/webinars.html"
+    ]
+  },
+  {
+    "listing": "/newsletters/newsletters.html",
+    "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
     ]
   },
   {
@@ -144,14 +153,6 @@
       "/posts/pfizer-r-adoption-webinar-february-8-2024/index.html",
       "/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html",
       "/posts/join-fake-it-until-you-make-it how-and-why-to-simulate-data first-glasgow-user-group-event-of-the-year/index.html"
-    ]
-  },
-  {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
     ]
   },
   {
