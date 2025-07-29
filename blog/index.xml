@@ -10,7 +10,76 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Fri, 11 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 29 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Julia Silge on Fostering a Technical, Inclusive R Community in Salt Lake City</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/juliasilge/">Julia Silge</a>, co-organizer of the <a href="https://www.meetup.com/slc-rug/">Salt Lake City R User Group</a>, recently talked to the R Consortium about sustaining an active R community in a region without a central tech hub. Julia shared how she discovered R and became deeply engaged with its open-source ecosystem. She discussed the group’s dual-format meetups, which include remote talks streamed via YouTube and quarterly in-person gatherings, as well as efforts to make the community inclusive for both local professionals and a wider audience. She also highlighted a recent session on advanced Git practices and an upcoming talk on sparse data structures in the tidymodels framework.</p>
+<p><img src="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/JuliaSilge.png" class="img-fluid"></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
+<p>My academic background is in physics and astronomy. About ten years ago, I transitioned from a more academic career into data science, and that’s when I first discovered R. I wasn’t very familiar with it; I had only heard about it in passing. The aspects of R that immediately appealed to me were its functional approach to data analysis and its programming style, which has a Lispy flavor.</p>
+<p>The R community played a significant role in my identifying it as a tool that was a good fit for me. This included engaging with the open-source community and contributing to open-source projects early in my R journey. Additionally, I became connected with groups such as R-Ladies, although there isn’t an R-Ladies chapter in my local city. I started attending a local RUG meetup around ten years ago in my town.</p>
+<p>My city is a smaller US city—it’s not on the coasts and doesn’t have a large tech scene like the Bay Area. Finding people here to connect with and discuss our work was incredibly valuable for me.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-salt-lake-city" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-salt-lake-city">Can you share what the R community is like in Salt Lake City?</h2>
+<p>Our city is significantly influenced by the presence of a large university, which serves as a significant hub for research, especially in the life sciences. A substantial number of people associated with the university contribute to the local community. Additionally, outside of the university, professionals work at healthcare systems, including the VA hospital, which serve the entire region.</p>
+<p>Several life science startups in the area focus on drug discovery and other health science initiatives. Many individuals involved in these startups have university backgrounds, although they are no longer directly affiliated with their respective institutions. The use of R programming is quite prevalent in these environments.</p>
+<p>Overall, our community is shaped not only by those engaged in pure research but also by entrepreneurs and professionals who apply their knowledge, especially in the field of health sciences, creating a dynamic intersection between academia and industry.</p>
+</section>
+<section id="do-you-host-online-or-in-person-meetups" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-host-online-or-in-person-meetups">Do you host online or in-person meetups?</h2>
+<p>We try to have a meeting most months, although we slow down a bit during the summer. There are two types of meetings we hold. The first type features a speaker who gives a talk. Since the pandemic began, we have been hosting these talks remotely via Zoom, rather than in person. We’ve found that this format works very well, allowing us to connect with people from all over, not just those in the Salt Lake area.</p>
+<p>These meetings are scheduled during lunchtime in our local time zone, allowing those of us in the area to take a break from work and join in to hear and learn about various topics. For our attendees in European time zones, the talks take place in the evening, which has worked out nicely.</p>
+<p>The second type of meeting we have is an in-person gathering that occurs about once a quarter. There isn’t a speaker for these events; instead, we focus on networking and casual conversations about what everyone is working on. These in-person meetings are only for residents of our city.</p>
+<p>Overall, this balance is working well for us. The online talks, which are also streamed to <a href="https://www.youtube.com/@slcrug/streams">YouTube</a>, make it easy for people to watch later if they’re interested. You can find all our recent discussions under the “Live” section on our channel. Meanwhile, the in-person meetings allow for valuable face-to-face interactions among local attendees.</p>
+</section>
+<section id="please-tell-us-about-the-organizing-team." class="level2">
+<h2 class="anchored" data-anchor-id="please-tell-us-about-the-organizing-team.">Please tell us about the organizing team.</h2>
+<p>Currently, <a href="https://www.linkedin.com/in/andrew-redd-202b5736/">Andrew Redd</a> and I are the only ones involved in organizing. We’ve had a few other people who have joined at various times but ultimately stepped away. Andrew was part of the team before I joined, back when he was at the university. Initially, our meetings took place on campus, but that posed challenges for those who didn’t work at the university. It was difficult to navigate, especially for newcomers who weren’t familiar with where to go and where to park.</p>
+<p>About seven or eight years ago, we decided to switch to using Meetup, allowing us to meet in different locations around the city that are more accessible for those who work downtown or aren’t on campus all day. I started helping with organizing the events around the same time.</p>
+<p>We’ve done reasonably well in terms of consistency, although we don’t have events every single month. We typically aim for most months, although we often take December and January off and slow down a bit in the summer. We strive to host either a talk or a networking event during those months, providing an opportunity for us to get together and connect.</p>
+</section>
+<section id="please-tell-us-about-a-recent-or-upcoming-event-from-your-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-tell-us-about-a-recent-or-upcoming-event-from-your-group.">Please tell us about a recent or upcoming event from your group.</h2>
+<p>We have two upcoming meetings scheduled! For our discussion today, I’ll highlight one event that took place in the past, so people can watch the video, and one that is coming up for anyone who wants to join us.</p>
+<p>Recently, we held a <a href="https://www.youtube.com/watch?v=IEAEvcnA9Hs">meetup in May</a>, with our primary focus on improving <a href="https://www.meetup.com/slc-rug/events/304955799/">Git practices</a>. We often find ourselves familiar only with the basic commands in Git—such as committing, pushing, and pulling—but there’s much more we can learn. The talk centered on enhancing our Git skills and strategies for troubleshooting difficult situations, which is something many of us struggle with.</p>
+<p>The session was well-attended, and participants appreciated the practical skills shared during the event. It was a great example of how our group aims to provide applied knowledge that is genuinely useful.</p>
+<p>Looking ahead, we have another exciting talk scheduled for the end of July. This presentation will delve into how we think about our data, specifically concerning data structures. We’ll explore the concept of <a href="https://www.meetup.com/slc-rug/events/307528267/">sparse data structures</a>, which are particularly common in machine learning contexts.</p>
+<p>For instance, with text data, certain words are used frequently while many others appear only a few times. This creates sparse data structures, where the majority of elements in a matrix are zero. Often, we don’t consider how our data is represented, but understanding this is crucial.</p>
+<p>This upcoming talk will explain how sparse data structures are integrated into the tidymodels framework, emphasizing the efficiency gains that can be achieved. By using sparse data structures, we can handle larger models that might otherwise be impossible to train on a standard computer due to memory constraints. I’m looking forward to this informative session!</p>
+<p><img src="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/SaltLakeCityOnlineMeetup.png" class="img-fluid"></p>
+</section>
+<section id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future" class="level2">
+<h2 class="anchored" data-anchor-id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future">Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</h2>
+<p>A good approach for us is to block out time for planning. Instead of trying to plan every single month, we can dedicate time to creating a plan that covers the next four or five months. We always strive to highlight local speakers from the Salt Lake area, but not all of our speakers are local. So, we’ll consider who from our community has done something interesting recently.</p>
+<p>Additionally, we keep an eye out for interesting blog posts that inspire potential speakers. Our group is very friendly and open, providing an excellent opportunity for members to present initial versions of talks they’re working on. If someone has a critical conference approaching, we often invite them to give a practice version of their presentation here before they present at a larger event. This setup is beneficial for both our group and the speaker.</p>
+<p>We also stream our presentations on YouTube, making it easy for speakers to have a video link of their talk. If someone has a blog post they’ve created, we can help them by providing a video version of their work to share with their audience.</p>
+<p>To sum up, some helpful techniques we use include planning for four to five months at a time, sending out emails to potential speakers, and considering topics based on our work or interesting discussions we’ve had. Lastly, we aim to find individuals who could benefit from practice opportunities or who want to share their work. These are some of the techniques we employ.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>RUGS</category>
+  <category>North America</category>
+  <guid>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/</guid>
+  <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/JuliaSilge-main-image.png" medium="image" type="image/png" height="95" width="144"/>
+</item>
 <item>
   <title>R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, Building Bridges</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1694,66 +1763,6 @@
   <guid>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/thumbnail-bootstrap-inference-thulin.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Co-occurrence analysis and knowledge graphs for suicide risk prediction</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/zy6DD7-H_bg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="unraveling-the-complexities-of-mental-health-diagnosis-with-r-nlpembeds-and-kgraph" class="level1">
-<h1>Unraveling the Complexities of Mental Health Diagnosis with R: <code>nlpembeds</code> and <code>kgraph</code></h1>
-<p>In the ever-evolving landscape of mental health research, the integration of technology and data analytics has opened new horizons for understanding and diagnosing complex mental health disorders. At the forefront of this intersection is Thomas Charlon from Harvard Medical School, whose recent presentation at R/Medicine 2025 highlighted groundbreaking tools designed to tackle the intricacies of mental health diagnosis. These tools, encapsulated in the open-source R packages <code>nlpembeds</code> and <code>kgraph</code>, provide a novel approach to processing and analyzing electronic health records (EHR), especially unstructured text data such as clinician notes.</p>
-<section id="the-challenge-of-mental-health-diagnosis" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-of-mental-health-diagnosis">The Challenge of Mental Health Diagnosis</h2>
-<p>Mental health disorders are notoriously complex, characterized by overlapping symptoms and subtle variations that can be difficult to discern through traditional diagnostic methods. Current diagnostic frameworks often fail to capture the full spectrum and gradients of these disorders, leading to underdiagnoses or misdiagnoses. This is where Natural Language Processing (NLP) comes into play, offering new opportunities to enhance diagnostic accuracy by leveraging the rich, unstructured data found in clinician notes.</p>
-</section>
-<section id="the-role-of-celehs-and-the-csrp-project" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-celehs-and-the-csrp-project">The Role of CELEHS and the CSRP Project</h2>
-<p>Charlon’s work is anchored in the CELEHS laboratory at Harvard, which is part of the Center for Suicide Research and Prevention (CSRP) project led by Massachusetts General Hospital. This initiative aims to develop tools that help clinicians assess suicide risk more accurately. A significant challenge addressed by the project is the limitations of the International Classification of Diseases (ICD) in identifying suicide attempts, which often results in underestimations of their prevalence.</p>
-</section>
-<section id="two-pronged-approach-survival-models-and-nlp-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="two-pronged-approach-survival-models-and-nlp-techniques">Two-Pronged Approach: Survival Models and NLP Techniques</h2>
-<p>The CELEHS team’s contribution to the CSRP project is twofold. First, they focus on developing robust survival models on codified data that can be transferred between institutions like MGH and Cambridge Health Alliance. Second, they leverage advanced NLP techniques, including name-entity recognition, co-occurrence analysis, and knowledge graphs, to extract deeper insights from clinician notes.</p>
-<p>Charlon’s presentation underscored the analysis of cohorts comprising approximately 5,000 teenage patients admitted to psychiatric departments. This analysis is pivotal in understanding the nuances of mental health disorders among adolescents, a demographic that is particularly vulnerable to mental health challenges.</p>
-</section>
-<section id="introducing-nlpembeds-and-kgraph" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-nlpembeds-and-kgraph">Introducing <code>nlpembeds</code> and <code>kgraph</code></h2>
-<p>The tools developed by Charlon and his team, <code>nlpembeds</code> and <code>kgraph</code>, are both available on CRAN, the comprehensive R archive network. These packages were introduced in Charlon’s previous talk at R/Medicine 2024, where he discussed “Word embeddings in mental health.” The methods underlying these packages enable the efficient analysis of large volumes of EHR data, both codified and unstructured.</p>
-<section id="nlpembeds-harnessing-the-power-of-nlp" class="level3">
-<h3 class="anchored" data-anchor-id="nlpembeds-harnessing-the-power-of-nlp"><code>nlpembeds</code>: Harnessing the Power of NLP</h3>
-<p>The <code>nlpembeds</code> package focuses on transforming unstructured text data into structured insights. By utilizing techniques like word embeddings, which are akin to the Word2Vec algorithm, the package allows researchers to analyze the relationships between different medical concepts as documented in clinician notes. This transformation helps in identifying patterns and correlations that might not be evident in codified data alone.</p>
-</section>
-<section id="kgraph-visualizing-complex-data-relationships" class="level3">
-<h3 class="anchored" data-anchor-id="kgraph-visualizing-complex-data-relationships"><code>kgraph</code>: Visualizing Complex Data Relationships</h3>
-<p>Complementing <code>nlpembeds</code>, the <code>kgraph</code> package offers powerful visualization capabilities for the data relationships uncovered through NLP analysis. By constructing knowledge graphs, researchers can visually explore the connections between various medical concepts, enhancing their ability to interpret complex data sets. This is particularly useful in mental health research, where understanding the interplay between different symptoms and diagnoses is crucial.</p>
-</section>
-</section>
-<section id="real-world-applications-and-insights" class="level2">
-<h2 class="anchored" data-anchor-id="real-world-applications-and-insights">Real-World Applications and Insights</h2>
-<p>Charlon shared compelling examples of how these tools can be applied in real-world settings. One notable case involved the interpretation of acetaminophen’s role in predicting suicide attempts. Initially perceived as a spurious correlation, further analysis using NLP techniques revealed its association with overdose and intoxication in clinician notes, suggesting a genuine predictive value.</p>
-<p>Such insights underscore the importance of considering both codified and unstructured data in mental health research. By integrating these two data types, the tools developed by Charlon and his team provide a more comprehensive view of patient health, enabling more accurate risk assessments and ultimately, better patient outcomes.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Thomas Charlon’s work demonstrates the power of R and open-source tools in unraveling the complexities of mental health diagnosis. The <code>nlpembeds</code> and <code>kgraph</code> packages are not only a testament to the potential of NLP in healthcare but also a call to the R community to continue pushing the boundaries of what is possible with data analytics.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
-  <category>Healthcare</category>
-  <guid>https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/co-occurrence-analysis-and-knowledge-graphs-for-suicide-risk-prediction/thumbnail-charlon-co-occurence-analysis.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
