@@ -13,17 +13,16 @@ format:
 df <- data.frame(
   Title = c(
     "[R+AI](https://r-consortium.org/posts/r_plus_ai_call_for_proposals/)",
-    "[R Consortium Webinar: Open Source Software Adoption in Japan's Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey](https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html)",
     "[useR! 2025](https://user2025.r-project.org/)",
     "[R Consortium Webinar: Unlocking Collaborative Power with Git, GitHub CI/CD, and LLMs in Pharma](https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html)",
     "[European Bioconductor Conference (EuroBioC2025)](https://eurobioc2025.bioconductor.org/)",
     "[EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)](https://earl-conference.com/)"
   ),
 
-  dates = c("November 12-13, 2025", "July 23, 2025, 5pm PDT, and July 24, 2025, 9am JST", "Aug 8-10, 2025", "Aug 28, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
-  location = c("Virtual","Virtual","Durham, NC - Duke University", "Virtual","Barcelona, Spain", "Brighton, UK"),
-  icon = c("Conference", "Webinar", "Conference", "Webinar", "Conference", "Conference"),
-  Type = c("Conference", "Webinar", "Conference", "Webinar", "Conference", "Conference"),
+  dates = c("November 12-13, 2025", "Aug 8-10, 2025", "Aug 28, 2025", "Sept 17-19, 2025", "Oct 14-16, 2025"),
+  location = c("Virtual","Durham, NC - Duke University", "Virtual","Barcelona, Spain", "Brighton, UK"),
+  icon = c("Conference", "Conference", "Webinar", "Conference", "Conference"),
+  Type = c("Conference", "Conference", "Webinar", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
@@ -86,6 +85,7 @@ gt_table
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+      '<a href="https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Open Source Software Adoption in Japan\'s Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey</a>',
       '<a href="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/" target="_blank" rel="noreferrer noopener">Brazilian Association of Investigative Journalism (Abraji)</a>',
      '<a href="https://www.psiweb.org/events/event-item/2025/07/03/default-calendar/one-day-event-change-management-for-moving-to-r-open-source" target="_blank" rel="noreferrer noopener">Change Management for Moving to R/Open Source</a>',
     '<a href="https://r-consortium.org/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html" target="_blank" rel="noreferrer noopener">R Consortium Working Group Webinar: R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, and Building Bridges</a>',
@@ -128,11 +128,12 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'July 23, 2025',
         'July 10-13, 2025',
         'July 3, 2025',
-        'June 30, 2025, 10am ET',
-        'June 27, 2025, 1pm ET',
-        'June 24, 2025, 1pm ET',
+        'June 30, 2025',
+        'June 27, 2025',
+        'June 24, 2025',
         'June 23-26, 2025',
         'June 20-21, 2025',
         'June 19-20, 2025',
@@ -171,6 +172,7 @@ df <- data.frame(
       
         ),
   location = c(
+        'Virtual',
         'São Paulo, Brazil',
         'Cambridge, UK',
         'Virtual',
@@ -213,10 +215,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
