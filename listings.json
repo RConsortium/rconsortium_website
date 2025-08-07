@@ -177,6 +177,41 @@
     ]
   },
   {
+    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "items": [
+      "/webinars/AdoptionOfRInJapansPharma.html",
+      "/webinars/RMedicineWebinar.html",
+      "/webinars/containerization-and-r-for-reproducibility.html",
+      "/webinars/escape-the-data-dungeon.html",
+      "/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html",
+      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/open-source-adoption-in-japans-pharma-industry.html",
+      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
+      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
+      "/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html",
+      "/webinars/r-insurance-series.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
+      "/webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html",
+      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
+      "/webinars/super-charging-r-with-oracle-database.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html",
+      "/webinars/unlocking-insights-from-latinr.html",
+      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
+      "/webinars/webinars.html"
+    ]
+  },
+  {
+    "listing": "/newsletters/newsletters.html",
+    "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/index.html",
@@ -297,40 +332,6 @@
       "/posts/pfizer-r-adoption-webinar-february-8-2024/index.html",
       "/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html",
       "/posts/join-fake-it-until-you-make-it how-and-why-to-simulate-data first-glasgow-user-group-event-of-the-year/index.html"
-    ]
-  },
-  {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
-    ]
-  },
-  {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
-    "items": [
-      "/webinars/AdoptionOfRInJapansPharma.html",
-      "/webinars/RMedicineWebinar.html",
-      "/webinars/containerization-and-r-for-reproducibility.html",
-      "/webinars/escape-the-data-dungeon.html",
-      "/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html",
-      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/open-source-adoption-in-japans-pharma-industry.html",
-      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
-      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
-      "/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html",
-      "/webinars/r-insurance-series.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
-      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
-      "/webinars/super-charging-r-with-oracle-database.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html",
-      "/webinars/unlocking-insights-from-latinr.html",
-      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
-      "/webinars/webinars.html"
     ]
   }
 ]
