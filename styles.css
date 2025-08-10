@@ -3,6 +3,47 @@ body {
     background-color: white;
 }
 
+/* Reduce spacing between paragraphs and above headers */
+body p {
+    margin-bottom: 0.75rem !important; /* Reduce bottom margin of paragraphs */
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    margin-top: 1.5rem !important; /* Reduce top margin of headers */
+    margin-bottom: 0.75rem !important; /* Reduce bottom margin of headers */
+}
+
+/* Reduce spacing between consecutive paragraphs */
+body p + p {
+    margin-top: 0.5rem !important; /* Reduce space between consecutive paragraphs */
+}
+
+/* Reduce spacing before headers when they follow paragraphs */
+body p + h1, body p + h2, body p + h3, body p + h4, body p + h5, body p + h6 {
+    margin-top: 1rem !important; /* Reduce space above headers that follow paragraphs */
+}
+
+/* Reduce spacing after headers */
+body h1 + p, body h2 + p, body h3 + p, body h4 + p, body h5 + p, body h6 + p {
+    margin-top: 0.5rem !important; /* Reduce space after headers */
+}
+
+/* Additional specific rules for blog post content */
+.quarto-layout-article p {
+    margin-bottom: 0.75rem !important;
+}
+
+.quarto-layout-article h1, .quarto-layout-article h2, .quarto-layout-article h3, 
+.quarto-layout-article h4, .quarto-layout-article h5, .quarto-layout-article h6 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.quarto-layout-article p + h1, .quarto-layout-article p + h2, .quarto-layout-article p + h3,
+.quarto-layout-article p + h4, .quarto-layout-article p + h5, .quarto-layout-article p + h6 {
+    margin-top: 1rem !important;
+}
+
 section {
     padding-bottom: 48px;
 }
