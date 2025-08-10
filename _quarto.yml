@@ -68,6 +68,8 @@ website:
 
       - text: "Events"
         menu:
+          - text: R+AI
+            href: https://rconsortium.github.io/RplusAI_website/
           - text: R/Medicine
             href: https://rconsortium.github.io/RMedicine_website/
           - text: Webinars
