@@ -8,70 +8,43 @@ date: "03/20/2025"
 
 **geometa** provides an essential object-oriented data model in R, enabling users to efficiently manage geographic metadata. The package facilitates handling of ISO and OGC standard geographic metadata and their dissemination on the web, ensuring that spatial data and maps are available in an open, internationally recognized format. As a widely adopted tool within the geospatial community, geometa plays a crucial role in standardizing metadata workflows.
 
+Since 2018, the R Consortium has supported the development of geometa, recognizing its value in bridging metadata standards with R’s data science ecosystem. You can try geometa yourself here: [CRAN – geometa](https://cran.r-project.org/package=geometa).
 
-Since 2018, the **R Consortium** has supported the development of geometa, recognizing its value in bridging metadata standards with R’s data science ecosystem. You can try geometa yourself here: [CRAN – geometa](https://cran.r-project.org/package=geometa).
-
-
-In this interview, we speak with **Emmanuel Blondel**, the author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management. With a background in **Agronomic Sciences and Environmental & Natural Resources Management** from the French National Polytechnical Institute (**INP-ENSAT**), Emmanuel specializes in **Geographic Information Systems (GIS)** applied to fields such as agronomy, environment, fisheries, and aquatic sciences. As an active open-source developer, he shares insights into the evolution of geometa, the challenges of metadata standardization, and the future of geospatial data management in R.
-
+In this interview, we speak with Emmanuel Blondel, the author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management. With a background in Agronomic Sciences and Environmental & Natural Resources Management from the French National Polytechnical Institute (INP-ENSAT), Emmanuel specializes in Geographic Information Systems (GIS) applied to fields such as agronomy, environment, fisheries, and aquatic sciences. As an active open-source developer, he shares insights into the evolution of geometa, the challenges of metadata standardization, and the future of geospatial data management in R.
 
 ![](emmanuel.png)
 
-
 ## What is the significance of geometa including support for ISO 19115-3 getting published on CRAN? Is this about incorporating new standards?
-
 
 Yes, it’s all about metadata standards. ISO standards can have a lifecycle from around five to ten years, and it takes time for institutions, governments, and software providers to adopt and implement them. The primary standard for geographic metadata has been ISO 19115 developed by the ISO/TC 211 (Technical Committee on Geographic Information/Geomatics). It defines the structure for describing geographic information. It is initially composed by the main geographic metadata standard (ISO 19115-1) and an extension to describe gridded and imagery datasets, called ISO 19115-2. To facilitate XML encoding, ISO 19139 provides the corresponding XML schema for implementing ISO 19115-compliant metadata.
 
-
 ISO 19115 has been widely used in geographic information systems, software providers, and legal frameworks such as the INSPIRE directive in Europe or the Geospatial Data Act in the U.S.. Countries and international organizations have gradually adopted ISO 19115. Meanwhile a new version of the ISO 19115, called ISO 19115-3, was developed by ISO experts to refactor and consolidate the standard. However, adoption takes time.
 
-
 The idea behind the latest **geometa** project funded by the R Consortium was to support this transition by implementing the newer version of ISO 19115. That’s why I’ve been pushing for this update. Since standardization work is a continuous process, there are already other prospects for improvements, such as the management of the JSON encoding format, targeted by the next ISO 19115-4 standard under development.
----
 
 
 ## How has the object-oriented data model developed with R6 been improved? And what are the main advantages?
 
-
 ISO 19115 and related standards, such as GML (Geographic Markup Language), are built on large object-oriented information models. It made sense to use an object-oriented data model in R to align with these standards.
 
+I chose R6 because it was the most convenient and practical way to model objects. I had previously explored other approaches, but R6 offered flexibility and efficiency.
 
-I chose **R6** because it was the most convenient and practical way to model objects. I had previously explored other approaches, but R6 offered flexibility and efficiency.
-
-
-Now, I’m also keeping an eye on **S7**, an initiative from the R Consortium. In the future, I might explore new approaches for object modeling such as S7, and possibly adopt them in packages such as geometa.
-
-
-
-
----
-
-
-
+Now, I’m also keeping an eye on S7, an initiative from the R Consortium. In the future, I might explore new approaches for object modeling such as S7, and possibly adopt them in packages such as geometa.
 
 ## How important is R for multidisciplinary projects involving data managers, analysts, statisticians, and researchers across different teams? What are its main advantages?
 
-
 R's main advantage is its broad accessibility across various roles—data managers, scientists, statisticians—who all understand and use it.
-
 
 This was a key reason why I developed **geometa** in R. In the past, I worked with Java for similar projects, but my colleagues struggled with it because they weren’t Java developers, and the programming language was a barrier. R served as a common language among them, enabling better collaboration.
 
-
 There are two main challenges:
-
 
 1. **The technology constraint** (R itself).
 2. **The complexity of metadata standards**, which are exhaustive and highly specialized.
 
-
 **geometa** provides fine-grained control, fully aligning with the standards. However, I’ve also developed tools to simplify metadata creation, making it easier for non-developers to generate metadata efficiently.
 
-
 Seeing my colleagues—who previously couldn’t produce metadata—now able to generate metadata and enable services has been rewarding. This is particularly valuable in data science, where the volume of data continues to grow. Instead of struggling with metadata formats, they can focus on improving data quality and descriptions.
----
-
 
 ## geometa is used in R packages such as ows4R (R Interface to OGC Web Services), geonapi (R Interface to GeoNetwork API), and geoflow (R engine for geospatial metadata workflows). What's the best way to get started?
 
@@ -89,9 +62,7 @@ Some key differences between the packages:
 * **[Geonapi](https://cran.r-project.org/package=geonapi)** is API-specific. It provides tools to manage metadata but with the [Geonetwork](https://geonetwork-opensource.org/) API.
 * **[Geoflow](https://github.com/r-geoflow/geoflow)** serves as an orchestrator, integrating metadata, data, and tasks to publish them into web catalogs, including non-geographic ones.
 
-
 For beginners, **geoflow** might be the best entry point.
----
 
 
 ## How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?
@@ -99,16 +70,11 @@ For beginners, **geoflow** might be the best entry point.
 
 My experience with the R Consortium has been positive. My [first project](https://r-consortium.org/all-projects/2018-group-2.html#strengthening-of-r-in-support-of-spatial-data-infrastructures-management-geometa-and-ows4r-r-packages) on geometa was funded in 2018, and it was a significant boost for the package.
 
-
 Since then, I had submitted another project twice, for enhancing the ows4R package, though it was not selected because maybe considered too specific. The R Consortium deals with a broad range of domains covered by the R community, so they have to prioritize. However, the interaction with them has always been great—both administratively and with the **Infrastructure Steering Committee (ISC)**.
-
 
 Before submitting my first application, I reached out to the ISC for advice on proposal structuring, approval processes, and whether partial funding was an option. Their feedback was helpful, and I’d definitely recommend other developers consider applying. It’s a great opportunity for funding and support.
 
-
 Get started with geometa now! [CRAN – geometa](https://cran.r-project.org/web/packages/geometa/index.html)
-
-
 
 
 ## What Projects Does the R Foundation Fund?
