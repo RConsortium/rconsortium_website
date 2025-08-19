@@ -10,7 +10,64 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Tue, 29 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 19 Aug 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Loves Math: cpp11armadillo connects R with Armadillo C++ linear algebra library, prioritizes prioritize safety over speed</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The R Consortium recently spoke with Mauricio “Pachá” Vargas Sepúlveda, a PhD student in Economics at the University of Surrey and the developer behind <strong>cpp11armadillo</strong>, a package funded through the R Consortium’s ISC grant program. cpp11armadillo connects R with the Armadillo C++ linear algebra library through the modern cpp11 interface, providing developers with safer, more flexible tools for computationally intensive work.</p>
+<p>The R Consortium has provided grants to Pachá two different times, including <a href="https://r-consortium.org/all-projects/2024-group-2.html#cpp11armadillo-an-armadillo-interface-c">most recently in late 2024</a>.</p>
+<p><img src="https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/pacha.jpg" class="img-fluid" style="width:40.0%"></p>
+<p>In this interview, conducted by email, Pachá discussed the current state of the project, the balance between safety and performance, and the kinds of features that make cpp11armadillo especially useful compared to other approaches. He also shared insights on future development priorities and reflected on his experience working with the R Consortium grant process.</p>
+<p>The conversation highlights both the technical progress of cpp11armadillo and the value of community support in driving open-source innovation within the R ecosystem.</p>
+<section id="what-is-the-current-development-status-of-cpp11armadillo-and-is-the-speed-optimized-version-you-mentioned-in-the-proposal-already-available-for-testing" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-current-development-status-of-cpp11armadillo-and-is-the-speed-optimized-version-you-mentioned-in-the-proposal-already-available-for-testing">What is the current development status of cpp11armadillo, and is the speed-optimized version you mentioned in the proposal already available for testing?</h3>
+<p><em>cpp11armadillo</em> has reached a stable stage according to the Tidyverse’s lifecycle. This means I am happy with the interface, I do not see major issues, and it reached a point where I was happy to share it with others. The current CRAN version is 0.5.4 and is available here: <a href="https://cran.r-project.org/package=cpp11armadillo">https://cran.r-project.org/package=cpp11armadillo</a>.</p>
+<p><img src="https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/cpp11armadillo_logo.png" class="img-fluid"></p>
+<p>At the present time I have a testing branch on my local git tree, it requires further work (lots of work, actually), and it aims at obtaining a (much) better speed to convert from R to Armadillo data types and vice versa. <em>cpp11armadillo</em> followed this premise from Don Knuth: “premature optimization is the root of all evil.” I tried to make sure to write a comprehensive list of unit tests and prioritize safety over speed (e.g., if we convert R’s integers to C++ unsigned integers we need to be careful about negative values and check bounds to avoid undefined behaviours).</p>
+</section>
+<section id="which-specific-armadillo-linear-algebra-operations-are-currently-supported-and-how-does-cpp11armadillo-handle-data-conversion-between-r-and-c-internally" class="level3">
+<h3 class="anchored" data-anchor-id="which-specific-armadillo-linear-algebra-operations-are-currently-supported-and-how-does-cpp11armadillo-handle-data-conversion-between-r-and-c-internally">Which specific Armadillo linear algebra operations are currently supported, and how does cpp11armadillo handle data conversion between R and C++ internally?</h3>
+<p>We currently support most Armadillo functions, as we covered with examples in the <a href="https://pacha.dev/cpp11armadillo/">official documentation</a>. Some functions require dedicated wrappers for them, as it is the case of Armadillo’s <a href="https://pacha.dev/cpp11armadillo/articles/statistics-and-clustering.html?q=pca#princomp">Principal Component Analysis</a>. Because R already provides a PCA function, we focused on supporting sparse matrices and expanding on different functions such as the <a href="https://pacha.dev/cpp11armadillo/articles/signal-and-image-processing.html#fft-ifft-2">Fast Fourier Transform</a></p>
+</section>
+<section id="for-r-developers-already-familiar-with-rcpp-what-advantages-does-cpp11armadillo-offer" class="level3">
+<h3 class="anchored" data-anchor-id="for-r-developers-already-familiar-with-rcpp-what-advantages-does-cpp11armadillo-offer">For R developers already familiar with Rcpp, what advantages does cpp11armadillo offer?</h3>
+<p>Both use the same underlying library. The main difference is that cpp11armadillo is slightly faster with the default configuration, which is not as important because we can compile against OpenBLAS or other optimised linear algebra libraries. The main advantage of cpp11armadillo over RcppArmadillo is that we offer a vendoring feature, which allows the user to copy all of cpp11armadillo codebase into an R package, eliminating the dependency requirement, allowing to use a snapshotted version of the code for replication purposes, and it facilitates running code routines in restricted environments (such as servers or clusters with restricted internet access).</p>
+</section>
+<section id="beyond-speed-optimization-what-additional-features-or-enhancements-do-you-plan-to-implement-to-make-cpp11armadillo-more-attractive-for-developers-building-computationally-intensive-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="beyond-speed-optimization-what-additional-features-or-enhancements-do-you-plan-to-implement-to-make-cpp11armadillo-more-attractive-for-developers-building-computationally-intensive-r-packages">Beyond speed optimization, what additional features or enhancements do you plan to implement to make cpp11armadillo more attractive for developers building computationally intensive R packages?</h3>
+<p>Future versions plan to offer a much better copy of complex numbers that right now we import back into C++ using lists because of a limitation in the underlying cpp11 package codebase. We already sent a <a href="https://github.com/r-lib/cpp11/pull/427">few Pull Requests to add complex numbers support in cpp11</a>, plus a <a href="https://github.com/r-lib/cpp11/pull/428">few fixed bugs affecting attributes for matrices</a>, adding the <a href="https://github.com/r-lib/cpp11/pull/437">code to export C++ ordered and unordered maps to R lists</a>, and a few other features and bug fixes.</p>
+</section>
+<section id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers" class="level3">
+<h3 class="anchored" data-anchor-id="how-has-it-been-working-with-the-r-consortium-would-you-recommend-applying-for-an-isc-grant-to-other-r-developers">How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?</h3>
+<p>It has been a great experience. My first proposal was accepted, which allowed me to create a first stable version, and then the second proposal was rejected over totally valid concerns about coordination between cpp11 (maintained by Posit, formerly RStudio) and cpp11armadillo development. For a third proposal I obtained funding again after reading the feedback carefully and focusing exclusively on the internal package development instead of uncertain upstream changes.</p>
+</section>
+<section id="what-projects-does-the-r-foundation-fund" class="level2">
+<h2 class="anchored" data-anchor-id="what-projects-does-the-r-foundation-fund">What Projects Does the R Foundation Fund?</h2>
+<p>Our grants target projects that make a difference in the R community, focusing on:</p>
+<p>Technical Infrastructure: Enhancements in key R packages, development tools like R-hub, and improvements for R on various operating systems.</p>
+<p>Social Infrastructure: Projects like SatRDays that promote local engagement and initiatives for better tracking of R Consortium activities.</p>
+<p>We’re eager to see your innovative ideas and how they can propel the R ecosystem forward. This is a call to action for all who wish to contribute to the growth and enhancement of R. Let’s build a stronger R community together!</p>
+<p>Submit your proposal now and be a part of shaping the future of the R Ecosystem. Learn more about how to apply <a href="https://www.r-consortium.org/all-projects/call-for-proposals">here</a>.</p>
+<p>We look forward to your submissions and furthering the R community’s advancement together!</p>
+<section id="apply-now" class="level3">
+<h3 class="anchored" data-anchor-id="apply-now"><a href="https://r-consortium.org/all-projects/callforproposals.html">Apply now!</a></h3>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/</guid>
+  <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/cpp11armadillo_logo.png" medium="image" type="image/png" height="167" width="144"/>
+</item>
 <item>
   <title>Julia Silge on Fostering a Technical, Inclusive R Community in Salt Lake City</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1755,61 +1812,6 @@
   <guid>https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bedside-to-bench-reinventing-medicine-with-ai/thumbnail-ai-ziad.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Bootstrap inference made easy: p-values and confidence intervals in one line of code</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/EeAtvWF3twA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="simplifying-bootstrap-inference-in-r-with-the-boot.pval-package" class="level3">
-<h3 class="anchored" data-anchor-id="simplifying-bootstrap-inference-in-r-with-the-boot.pval-package">Simplifying Bootstrap Inference in R with the boot.pval Package</h3>
-<p>In the realm of statistical analysis, ensuring the reliability of p-values and confidence intervals is paramount, especially when classical assumptions about data distribution do not hold. This is where bootstrap methods come into play, offering a robust alternative by relying on data-driven, empirical distributions rather than theoretical assumptions. Despite their utility, bootstrap methods are often underutilized due to perceived complexities in implementation. However, with advancements in R packages like <code>boot.pval</code>, bootstrap inference has become more accessible than ever.</p>
-<section id="the-bootstrap-approach" class="level4">
-<h4 class="anchored" data-anchor-id="the-bootstrap-approach">The Bootstrap Approach</h4>
-<p>Introduced by Bradley Efron in 1979, the bootstrap method revolutionizes statistical inference by focusing on the empirical distribution of the data itself. Unlike traditional methods that start with a distributional assumption (e.g., normality), bootstrap methods begin with the actual data distribution. By resampling from this empirical distribution and calculating the test statistic repeatedly, we obtain an accurate approximation of its distribution. This allows for the computation of p-values and confidence intervals without reliance on stringent assumptions about data normality.</p>
-</section>
-<section id="the-role-of-boot.pval" class="level4">
-<h4 class="anchored" data-anchor-id="the-role-of-boot.pval">The Role of boot.pval</h4>
-<p>The <code>boot.pval</code> package in R, developed by Måns Thulin from Thulin Consulting AB, simplifies the process of applying bootstrap methods to a variety of statistical tests and models. From t-tests to regression coefficients in linear models, GLMs, survival models, and mixed models, <code>boot.pval</code> enables users to compute bootstrap p-values and confidence intervals efficiently—often with just a single line of code.</p>
-</section>
-<section id="key-features-and-benefits" class="level4">
-<h4 class="anchored" data-anchor-id="key-features-and-benefits">Key Features and Benefits</h4>
-<ul>
-<li><strong>Ease of Use</strong>: The package allows for straightforward computation of bootstrap p-values and confidence intervals without needing to write complex custom functions.</li>
-<li><strong>Integration</strong>: Built on top of established R packages like <code>boot</code>, <code>car</code>, <code>lme4</code>, and <code>survival</code>, it ensures compatibility and extends functionality.</li>
-<li><strong>Customizability</strong>: Users can create custom bootstrap tests for unique statistical measures.</li>
-<li><strong>Consistency</strong>: It ensures that the derived p-values and confidence intervals are consistent, addressing discrepancies often found in other implementations.</li>
-</ul>
-</section>
-<section id="practical-application-a-case-study" class="level4">
-<h4 class="anchored" data-anchor-id="practical-application-a-case-study">Practical Application: A Case Study</h4>
-<p>Using the sleep dataset in R, Thulin demonstrates how to replace a classic t-test with a bootstrap t-test using <code>boot.pval</code>. This approach not only simplifies the code but also enhances the robustness of the test against non-normal data distributions. The output from <code>boot.pval</code> mirrors that from traditional tests but is derived from a more reliable, data-centric approach.</p>
-</section>
-<section id="extending-beyond-simple-tests" class="level4">
-<h4 class="anchored" data-anchor-id="extending-beyond-simple-tests">Extending Beyond Simple Tests</h4>
-<p>The <code>boot.pval</code> package is not limited to simple t-tests; it supports complex models including linear regressions and survival models. By fitting a model using standard R functions like <code>lm()</code> or <code>glm()</code>, users can then apply <code>boot.summary()</code> from <code>boot.pval</code> to obtain detailed summaries including estimates, confidence intervals, and p-values—all bootstrapped for enhanced reliability.</p>
-</section>
-<section id="conclusion" class="level4">
-<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
-<p>Bootstrap methods provide a powerful tool for statistical inference when traditional assumptions do not hold. With packages like <code>boot.pval</code>, R users can integrate robust bootstrap techniques into their daily analysis workflows effortlessly. Whether dealing with straightforward comparisons or complex multivariable models, <code>boot.pval</code> offers a user-friendly yet powerful solution for making informed statistical decisions based on solid empirical evidence.</p>
-<p>For those interested in delving deeper into bootstrap methods or seeking practical applications within R, exploring further resources such as <a href="https://www.modernstatisticswithr.com/">Thulin’s book “Modern Statistics with R”</a> or foundational texts on bootstrap methodology can be incredibly beneficial.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/bootstrap-inference-made-easy-p-values-and-confidence-intervals-in-one-line-of-code/thumbnail-bootstrap-inference-thulin.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
