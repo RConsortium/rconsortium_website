@@ -10,7 +10,55 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Wed, 20 Aug 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 25 Aug 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Spotify Stats and Real Estate Insights: R User Group Finland Builds Practical Projects</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/vboned/">Vicent Boned</a> and <a href="https://www.linkedin.com/in/marc-eixarch/">Marc Eixarch</a>, organizers of the <a href="https://www.meetup.com/r-user-group-finland/">R User Group Finland</a>, spoke with the R Consortium about how they revived the local R community by focusing on fun, practical applications of R. Drawing on their experience from Barcelona’s tech scene, they took over an inactive R group and began hosting engaging meetups focused on real-world applications of R. From building custom Spotify Wrapped-style reports to analyzing Helsinki’s real estate market, they’ve created a meetup environment where data enthusiasts can explore R through real-world use cases that go beyond the workplace.</p>
+<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandorganizers.png" class="img-fluid"></p>
+<p>L-R: Hazel Kavili (R-Ladies Helsinki Organizer), Marc Eixarch, Vicent Boned</p>
+<section id="please-share-your-background-and-involvement-in-the-rugs-group-or-the-r-community." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-in-the-rugs-group-or-the-r-community.">Please share your background and involvement in the RUGS group or the R Community.</h2>
+<p><strong>Vicent:</strong> I’m a data analyst. I first learned R in university and used it for 10 to 12 years. We used to live in Barcelona, a large city with a very active tech community. We were involved with the R user group and another popular meetup called Data Beers. It’s still running, but we’ve attended many of those events and enjoyed them.</p>
+<p>When we moved to Finland, I began searching for similar community activities, but I couldn’t find many. I found a meetup group, but it was inactive, so I reached out to the organizer. He told me he had moved out of Helsinki and was happy to pass on the group’s organization to someone new. That’s how we took over the R user group in Finland. We’re not Finnish, but now we’re working to organize events here and stay connected with other data analysts.</p>
+<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandLogo.png" class="img-fluid"></p>
+</section>
+<section id="whats-your-level-of-experience-with-the-r-language" class="level2">
+<h2 class="anchored" data-anchor-id="whats-your-level-of-experience-with-the-r-language">What’s your level of experience with the R language?</h2>
+<p><strong>Marc:</strong> I first encountered R in a university stats course, but I started working with it seriously once I became a data analyst. I’ve been in this role for approximately six or seven years, with a primary focus on data analysis. I work extensively with the <a href="https://www.tidyverse.org/">tidyverse</a> and <a href="https://ggplot2.tidyverse.org/">ggplot</a> for data visualization, preparation, and gathering data from various sources, such as APIs and databases. That’s my main strength in R.</p>
+<p>Occasionally, I take on small projects to explore more technical areas, such as package development, but in those areas, I’m more of a casual user than an expert. So, that’s a good summary of my experience level.</p>
+<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/MarcExirach.png" class="img-fluid"></p>
+<p><strong>Vicent:</strong> I’ve used R throughout my career, mainly for data analysis and visualization. While I’ve explored other packages through side projects, my current work primarily revolves around tidyverse, ggplot, and <a href="https://dplyr.tidyverse.org/">dplyr</a> for tables and reporting. At my company, we also utilize some Posit tools, such as <a href="https://rmarkdown.rstudio.com/">R Markdown</a>, and occasionally Shiny for prototyping.</p>
+<p>I used Shiny years ago in my second job when it was a new package. I didn’t work with it for many years after that, so it’s been exciting to see how much it has evolved. I’ve also attended several RStudio conferences, and it has been great to follow the development of the Tidyverse over time.</p>
+<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/VicentBoned.png" class="img-fluid"></p>
+</section>
+<section id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-related-to-your-industry" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-related-to-your-industry">Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?</h2>
+<p><strong>Vicent:</strong> At work, I use R for almost everything. I work for a gaming company, so my job involves analyzing user behavior and understanding how they interact with the app. This involves a significant amount of data exploration and visualization, as we have a wealth of data on nearly every action users take in the game. I often present my findings to non-technical team members, so I use R to create reports and presentations with Quarto, which I then share with the team. Your day-to-day work looks quite similar!</p>
+<p>Recently—or, to be more precise, last year—I worked on a side project while searching for an apartment to buy in Helsinki. I used R to explore the real estate market, gathering data over a few months to track trends. I built a small tool to filter listings based on different criteria, which was helpful for my search.</p>
+<p><strong>Marc:</strong> I’ve worked on a few small side projects, usually based on things I’m curious about or enjoy. I’m really into music, and one time, I discovered an API that lets you access Spotify data using R. With it, you can pull public data from Spotify and even create your own “Spotify Wrapped” experience. I liked this use case so much that I turned it into a <a href="https://www.meetup.com/r-user-group-finland/events/291613918/?eventOrigin=group_events_list">workshop</a> for one of our events. I prepared a tutorial and shared the code in advance, and then about 10–15 of us walked through it together. Everyone can input their username to customize the script, which displays their top artists, playlist vibe, or other insights based on their Spotify data.</p>
+<p>We have posted the project on GitHub, making it available for anyone to review. It was especially noteworthy because one attendee, Antti, took the project a step further by expanding it into a web application. He added functionality that allows you to type in something like “sad, melancholic metal,” which suggests a fitting band or song. He got creative; we even got permission to share the app link. It was one of my favorite projects to see grow beyond the workshop! <a href="https://cran.r-project.org/web/packages/spotifyr/index.html">{spotifyr} on CRAN</a> and <a href="https://github.com/charlie86/spotifyr">on GitHub</a></p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/</guid>
+  <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandLogo-homepage.png" medium="image" type="image/png" height="172" width="144"/>
+</item>
 <item>
   <title>How R Powers Cancer Research and Community Teaching in Austria</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1751,75 +1799,6 @@
   <guid>https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/thumbnail-kane-accelerometry.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Application of attention mechanism to improve performance of llm/mllm used across R/Medicine</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/application-of-attention-mechanism-to-improve-performance-of-llmmllm-used-across-rmedicine/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/aGvAE7Z1XJ0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="rmedicine-2025-enhancing-regulatory-submissions-with-attention-mechanisms" class="level1">
-<h1>R/Medicine 2025: Enhancing Regulatory Submissions with Attention Mechanisms</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In the rapidly evolving field of medicine, the integration of technology and data science is ushering in transformative changes. At the R/Medicine 2025 conference, Robert Devine from Johnson &amp; Johnson Companies presented an insightful demonstration on the “Application of attention mechanism to improve performance of surveyed llm/mllm used across R/Medicine.” This session provided a deep dive into how attention mechanisms, a component of transformer architectures, can enhance the efficiency and accuracy of regulatory submissions in the medical field.</p>
-</section>
-<section id="the-role-of-attention-mechanisms" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-attention-mechanisms">The Role of Attention Mechanisms</h2>
-<p>Attention mechanisms have been pivotal in the field of natural language processing (NLP) since their emergence in 2014. Initially used in neural machine translation tasks, they have since been refined and expanded, particularly following significant advancements by Google in 2017. In the context of medicine, attention mechanisms help improve the performance of large language models (LLMs) and multi-modal large language models (MLLMs), facilitating tasks such as the generation of descriptive vignettes for analytical datasets and the auto-generation of the Analysis Data Reviewer’s Guide (ADRG).</p>
-<section id="transformer-architecture-in-rmedicine" class="level3">
-<h3 class="anchored" data-anchor-id="transformer-architecture-in-rmedicine">Transformer Architecture in R/Medicine</h3>
-<p>The session included a comprehensive overview of the transformer architecture, focusing on the attention mechanism’s role in R/Medicine. This architecture allows models to evaluate which parts of the input data are most relevant at each step of the process, thereby enhancing the model’s ability to generate accurate and contextually relevant outputs.</p>
-</section>
-</section>
-<section id="demonstration-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="demonstration-highlights">Demonstration Highlights</h2>
-<ol type="1">
-<li><p><strong>Vignette Generation for Analysis Dataset Descriptions</strong>: The demonstration showcased how attention mechanisms can automate the creation of detailed vignettes for analysis datasets. These vignettes are crucial for providing context and understanding of safety and efficacy data used in the R Consortium Pilot Series with the FDA.</p></li>
-<li><p><strong>Public Repository for Community Participation</strong>: A public repository was introduced to encourage community engagement. This resource allows participants to access and contribute to the development of working examples that hold clinical importance for analytics and regulatory submissions.</p></li>
-<li><p><strong>Private-Public Partnerships</strong>: The session highlighted the ongoing collaboration between private entities and regulatory agencies to foster the adoption of mandated submission guidelines. This collaboration is crucial for aligning industry practices with regulatory requirements and accelerating the conformance to technical guidelines.</p></li>
-</ol>
-</section>
-<section id="the-importance-of-r-consortium-pilot-series" class="level2">
-<h2 class="anchored" data-anchor-id="the-importance-of-r-consortium-pilot-series">The Importance of R Consortium Pilot Series</h2>
-<p>The R Consortium Pilot Series with the FDA plays a vital role in advancing the adoption of modern technical submission standards. These pilot studies focus on demonstrating the practical applications of LLMs/MLLMs in regulatory submissions, aiming to improve efficiency and accuracy while ensuring compliance with regulatory standards.</p>
-<p>Reference: <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/index.html#progress-reports-and-future-plans">R Submissions Working Group: Pilot 5 Launch and more!</a></p>
-<section id="key-achievements-and-future-directions" class="level3">
-<h3 class="anchored" data-anchor-id="key-achievements-and-future-directions">Key Achievements and Future Directions</h3>
-<ul>
-<li><p><strong>Pilot Studies</strong>: The pilot studies have successfully demonstrated the potential of LLMs/MLLMs in automating various aspects of regulatory submissions. These include generating vignettes, auto-generating ADRGs, and streamlining the overall submission process.</p></li>
-<li><p><strong>Ongoing Developments</strong>: The session emphasized the need for continuous development and collaboration within the R community. By leveraging the public repository, participants can contribute to ongoing projects, ensuring that advancements in technology are effectively integrated into regulatory practices.</p></li>
-</ul>
-</section>
-</section>
-<section id="the-broader-implications-of-attention-mechanisms" class="level2">
-<h2 class="anchored" data-anchor-id="the-broader-implications-of-attention-mechanisms">The Broader Implications of Attention Mechanisms</h2>
-<p>The application of attention mechanisms extends beyond regulatory submissions. In clinical trials and patient engagement, these mechanisms enable more accurate data analysis and improved patient outcomes. For example, attention mechanisms can identify significant interactions in complex biological systems, such as protein folding, which are critical for understanding disease mechanisms and developing new treatments.</p>
-<section id="interoperability-and-data-sharing" class="level3">
-<h3 class="anchored" data-anchor-id="interoperability-and-data-sharing">Interoperability and Data Sharing</h3>
-<p>The session also touched upon the importance of interoperability and data sharing in the medical field. The 21st Century Cures Act, which promotes interoperability between different technologies, was highlighted as a critical component for facilitating data sharing and enhancing patient care. The use of universal APIs allows patients to share their electronic health records seamlessly, promoting collaboration between clinicians, researchers, and pharmaceutical companies.</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Robert Devine’s presentation at R/Medicine 2025 underscored the transformative potential of attention mechanisms in the field of regulatory submissions. By automating complex tasks and enhancing data analysis, these mechanisms pave the way for more efficient and accurate regulatory processes. The R Consortium’s ongoing collaboration with the FDA and industry sponsors is crucial for driving the adoption of these technologies and ensuring that regulatory practices keep pace with technological advancements.</p>
-<p>As the R community continues to explore and develop these capabilities, the potential for improving patient outcomes and streamlining regulatory processes becomes increasingly tangible. By embracing these innovations, the medical field can look forward to a future where technology and data science work hand in hand to deliver better healthcare solutions.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Submissions</category>
-  <guid>https://r-consortium.org/posts/application-of-attention-mechanism-to-improve-performance-of-llmmllm-used-across-rmedicine/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/application-of-attention-mechanism-to-improve-performance-of-llmmllm-used-across-rmedicine/thumbnail-devine-application-of-attention-mechanism.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
