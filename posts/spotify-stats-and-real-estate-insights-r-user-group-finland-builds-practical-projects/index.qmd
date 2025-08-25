@@ -1,0 +1,52 @@
+---
+title: "Spotify Stats and Real Estate Insights: R User Group Finland Builds Practical Projects"
+description: "Vicent Boned and Marc Eixarch, organizers of the R User Group Finland, spoke with the R Consortium about how they revived the local R community by focusing on fun, practical applications of R."
+author: "R Consortium"
+image: "RUGFinlandLogo-homepage.png"
+date: "08/25/2025"
+---
+
+
+[Vicent Boned](https://www.linkedin.com/in/vboned/) and [Marc Eixarch](https://www.linkedin.com/in/marc-eixarch/), organizers of the [R User Group Finland](https://www.meetup.com/r-user-group-finland/), spoke with the R Consortium about how they revived the local R community by focusing on fun, practical applications of R. Drawing on their experience from Barcelona's tech scene, they took over an inactive R group and began hosting engaging meetups focused on real-world applications of R. From building custom Spotify Wrapped-style reports to analyzing Helsinki's real estate market, they've created a meetup environment where data enthusiasts can explore R through real-world use cases that go beyond the workplace.
+
+![](RUGFinlandorganizers.png)
+
+L-R: Hazel Kavili (R-Ladies Helsinki Organizer), Marc Eixarch, Vicent Boned
+
+## Please share your background and involvement in the RUGS group or the R Community.
+
+**Vicent:** I'm a data analyst. I first learned R in university and used it for 10 to 12 years. We used to live in Barcelona, a large city with a very active tech community. We were involved with the R user group and another popular meetup called Data Beers. It's still running, but we've attended many of those events and enjoyed them.
+
+When we moved to Finland, I began searching for similar community activities, but I couldn't find many. I found a meetup group, but it was inactive, so I reached out to the organizer. He told me he had moved out of Helsinki and was happy to pass on the group's organization to someone new. That's how we took over the R user group in Finland. We're not Finnish, but now we're working to organize events here and stay connected with other data analysts.
+
+![](RUGFinlandLogo.png)
+
+## What's your level of experience with the R language?
+
+**Marc:** I first encountered R in a university stats course, but I started working with it seriously once I became a data analyst. I've been in this role for approximately six or seven years, with a primary focus on data analysis. I work extensively with the [tidyverse](https://www.tidyverse.org/) and [ggplot](https://ggplot2.tidyverse.org/) for data visualization, preparation, and gathering data from various sources, such as APIs and databases. That's my main strength in R.
+
+Occasionally, I take on small projects to explore more technical areas, such as package development, but in those areas, I'm more of a casual user than an expert. So, that's a good summary of my experience level.
+
+![](MarcExirach.png)
+
+**Vicent:** I've used R throughout my career, mainly for data analysis and visualization. While I've explored other packages through side projects, my current work primarily revolves around tidyverse, ggplot, and [dplyr](https://dplyr.tidyverse.org/) for tables and reporting. At my company, we also utilize some Posit tools, such as [R Markdown](https://rmarkdown.rstudio.com/), and occasionally Shiny for prototyping.
+
+I used Shiny years ago in my second job when it was a new package. I didn't work with it for many years after that, so it's been exciting to see how much it has evolved. I've also attended several RStudio conferences, and it has been great to follow the development of the Tidyverse over time.
+
+![](VicentBoned.png)
+
+## Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?
+
+**Vicent:** At work, I use R for almost everything. I work for a gaming company, so my job involves analyzing user behavior and understanding how they interact with the app. This involves a significant amount of data exploration and visualization, as we have a wealth of data on nearly every action users take in the game. I often present my findings to non-technical team members, so I use R to create reports and presentations with Quarto, which I then share with the team. Your day-to-day work looks quite similar!
+
+Recently—or, to be more precise, last year—I worked on a side project while searching for an apartment to buy in Helsinki. I used R to explore the real estate market, gathering data over a few months to track trends. I built a small tool to filter listings based on different criteria, which was helpful for my search.
+
+**Marc:** I've worked on a few small side projects, usually based on things I'm curious about or enjoy. I'm really into music, and one time, I discovered an API that lets you access Spotify data using R. With it, you can pull public data from Spotify and even create your own "Spotify Wrapped" experience. I liked this use case so much that I turned it into a [workshop](https://www.meetup.com/r-user-group-finland/events/291613918/?eventOrigin=group_events_list) for one of our events. I prepared a tutorial and shared the code in advance, and then about 10–15 of us walked through it together. Everyone can input their username to customize the script, which displays their top artists, playlist vibe, or other insights based on their Spotify data.
+
+We have posted the project on GitHub, making it available for anyone to review. It was especially noteworthy because one attendee, Antti, took the project a step further by expanding it into a web application. He added functionality that allows you to type in something like "sad, melancholic metal," which suggests a fitting band or song. He got creative; we even got permission to share the app link. It was one of my favorite projects to see grow beyond the workshop! [{spotifyr} on CRAN](https://cran.r-project.org/web/packages/spotifyr/index.html) and [on GitHub](https://github.com/charlie86/spotifyr)
+
+## How do I Build an R User Group?
+
+R Consortium's R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.
+
+[https://r-consortium.org/all-projects/rugsprogram.htm](https://r-consortium.org/all-projects/rugsprogram.html)
