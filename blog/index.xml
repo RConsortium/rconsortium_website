@@ -10,7 +10,83 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.34</generator>
-<lastBuildDate>Mon, 25 Aug 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 01 Sep 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>🚀 R Consortium Technical Grant Cycle Opens Today — Your Chance to Make a Mark</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>It’s official: the R Consortium Infrastructure Steering Committee (ISC) has opened the second grant cycle of 2025 today, September 1, 2025. If you’ve ever thought, <em>“I have an idea that could make life better for R users everywhere”</em>, this is your chance.</p>
+<section id="call-for-proposals" class="level2">
+<h2 class="anchored" data-anchor-id="call-for-proposals"><a href="https://r-consortium.org/all-projects/callforproposals.html">Call for Proposals</a></h2>
+<hr>
+</section>
+<section id="what-the-isc-is-looking-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-isc-is-looking-for"><strong>What the ISC Is Looking For</strong></h2>
+<p>The ISC focuses projects that deliver practical impact for the R community:</p>
+<ul>
+<li><strong>Tools and packages</strong> that smooth workflows and make R more powerful.<br>
+</li>
+<li><strong>Education resources</strong> like documentation, tutorials, reproducible workflows.<br>
+</li>
+<li><strong>Infrastructure</strong> that connects people, supports open science, or broadens access.</li>
+</ul>
+<p>The sweet spot? Proposals that are clear, scoped, and realistic. Don’t over-promise—break down big ideas into digestible, doable steps.</p>
+<p>High-risk, high-reward moonshots aren’t the target here. ISC grants back low-to-medium-risk projects with clear deliverables. A bit of work done already—sketches, prototypes, drafts—shows you’re ready to go.</p>
+<hr>
+</section>
+<section id="whats-not-covered" class="level2">
+<h2 class="anchored" data-anchor-id="whats-not-covered"><strong>What’s Not Covered</strong></h2>
+<p>Just so you don’t waste your time: events, conferences, and meetups belong under the <a href="https://r-consortium.org/all-projects/rugsprogram.html"><strong>RUGS funding program</strong></a>, not this one. ISC grants are for infrastructure and technical or social projects that scale across the community.</p>
+<hr>
+</section>
+<section id="how-to-apply" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-apply"><strong>How to Apply</strong></h2>
+<ol type="1">
+<li>Download and use the ISC proposal template.<br>
+</li>
+<li>Build your submission as a single PDF—self-contained and clear.<br>
+</li>
+<li>Submit it through the Google Form (yes, you’ll need a Google account).<br>
+</li>
+<li>Look for a confirmation email with a subject <em>“Thank you for your proposal!”</em>—and check spam if you don’t see it.</li>
+</ol>
+<p>Bonus tip: Read the ISC’s standard agreement now so you’re not surprised later.</p>
+<hr>
+</section>
+<section id="why-bother-because-this-is-big" class="level2">
+<h2 class="anchored" data-anchor-id="why-bother-because-this-is-big"><strong>Why Bother? Because This Is Big</strong></h2>
+<p>This is one of only <strong>two ISC grant windows per year</strong>. Grants get paid in two chunks—half when you sign, half when you finish—so you know you’ll be supported from the start through the finish line.</p>
+<p>Over the past few years, ISC grants have funded projects that strengthened core R tools, expanded internationalization, improved documentation, and built bridges across the ecosystem. It’s not just about money—it’s about visibility, credibility, and lasting community impact.</p>
+<p>When you’re funded, your work gets showcased to the global R community. You’re not just solving your own problem—you’re leveling up tools and workflows for thousands of R users worldwide.</p>
+<hr>
+</section>
+<section id="time-to-jump-in" class="level2">
+<h2 class="anchored" data-anchor-id="time-to-jump-in"><strong>Time to Jump In</strong></h2>
+<p>If you’ve been tinkering on a package, sketching a new teaching resource, thinking of ways to make R more inclusive, or dreaming of infrastructure that smooths collaboration—this is your launchpad.</p>
+<p>Don’t hold back. Share your idea, shape it into a proposal, and send it in.</p>
+<p><strong>Submissions close October 1.</strong></p>
+<p>Your idea could be the one that pushes the R ecosystem forward!</p>
+</section>
+<section id="call-for-proposals-1" class="level2">
+<h2 class="anchored" data-anchor-id="call-for-proposals-1"><a href="https://r-consortium.org/all-projects/callforproposals.html">Call for Proposals</a></h2>
+
+
+</section>
+
+ ]]></description>
+  <category>grants</category>
+  <category>infrastructure</category>
+  <category>community</category>
+  <guid>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/</guid>
+  <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/apply-now.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>Spotify Stats and Real Estate Insights: R User Group Finland Builds Practical Projects</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1746,59 +1822,6 @@
   <guid>https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/</guid>
   <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/advanced-distance-metrics-for-high-dimensional-clustering-introducing-distancehd-r-package/thumbnail-advanced-distance-metrics-lee.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>An Accelerometry Biomarker Framework with Application in Vigilance in UK Biobank Data</title>
-  <dc:creator>R Consortium, Healthcare</dc:creator>
-  <link>https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KiQAySB2rF4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="exploring-vigilance-with-accelerometry-insights-from-the-uk-biobank" class="level1">
-<h1>Exploring Vigilance with Accelerometry: Insights from the UK Biobank</h1>
-<p>Accelerometry data from wearable devices have opened new horizons in non-invasive health monitoring, providing a continuous and objective measure of physical activity. Michael Kane, MD Anderson Cancer Center, alongside Dmitri Wolson and Francesco Onarati at Takeda Pharmaceuticals, delves into using accelerometry as a biomarker for assessing vigilance, focusing on the potential to identify non-vigilant states such as excessive daytime sleepiness or narcolepsy-like symptoms. This analysis is rooted in data from the UK Biobank, a rich resource encompassing accelerometry, demographic, and lifestyle data of approximately 78,500 participants.</p>
-<section id="understanding-the-data-and-its-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-data-and-its-challenges">Understanding the Data and Its Challenges</h2>
-<p>The UK Biobank’s accelerometry data provides a wealth of information, with measurements taken at 100 Hz over a week for each participant. These data offer a high-resolution view of daily activity patterns, recorded across three axes (X, Y, Z) in milligravities. However, this study’s foundational challenge lies in its observational nature and reliance on self-reported outcomes to define vigilance states.</p>
-<p>Vigilance and non-vigilance were distinguished using self-reported symptoms of narcolepsy and frequency of daytime naps. Non-vigilant participants reported narcolepsy symptoms often or always and took frequent naps, while vigilant participants did not report these symptoms or behaviors. Despite a robust overall dataset, the non-vigilant group comprised only 679 individuals, necessitating a careful matching process to ensure comparable analysis groups.</p>
-</section>
-<section id="propensity-score-matching-for-balanced-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="propensity-score-matching-for-balanced-analysis">Propensity Score Matching for Balanced Analysis</h2>
-<p>To address imbalances and potential confounders in the observational data, propensity score matching was employed. This method allowed for the creation of matched pairs of vigilant and non-vigilant participants based on physical and lifestyle characteristics, including age, sex, ethnicity, BMI, smoking habits, alcohol use, and more. This rigorous matching resulted in 95 well-matched pairs, setting the stage for a focused exploration of accelerometry’s potential in assessing vigilance.</p>
-</section>
-<section id="transforming-accelerometry-data-into-spectral-images" class="level2">
-<h2 class="anchored" data-anchor-id="transforming-accelerometry-data-into-spectral-images">Transforming Accelerometry Data into Spectral Images</h2>
-<p>A critical step in the analysis involved transforming raw accelerometry data into a structured format conducive to machine learning. The data were downsampled to 33 Hz to focus on relevant daily movement frequencies. Subsequently, the data were segmented into five-minute blocks, and a Discrete Fourier Transform was applied to each block. This transformation yielded sorted spectral images, representing the energy expended at different frequencies without capturing the precise timing of activities within a day.</p>
-</section>
-<section id="convolutional-neural-network-for-classification" class="level2">
-<h2 class="anchored" data-anchor-id="convolutional-neural-network-for-classification">Convolutional Neural Network for Classification</h2>
-<p>Inspired by the architecture of AlexNet, a simplified convolutional neural network (CNN) was developed to classify participants as vigilant or non-vigilant based on the spectral images. The CNN architecture included convolutional layers, max pooling, and dense layers with dropout to prevent overfitting. Training involved 20-fold cross-validation at the subject level, ensuring that predictions were genuinely out-of-sample.</p>
-<p>The CNN yielded an out-of-sample F1 score of 0.576 and an AUC of 0.539 at the sample level for participants aged 65 or younger. At the subject level, the F1 score was 0.539, and the AUC was 0.564. While these results indicate a weak association between accelerometry-derived biomarkers and vigilance states, they underscore the potential for further refinement and application in broader contexts.</p>
-</section>
-<section id="potential-applications-and-future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="potential-applications-and-future-directions">Potential Applications and Future Directions</h2>
-<p>The study highlights accelerometry’s promise as a non-invasive tool for assessing cognitive states and movement-related disorders. The association between accelerometry and vigilance, albeit modest, opens avenues for monitoring conditions where non-vigilance is a co-morbidity, such as sleep disorders, neurological conditions, and psychiatric disorders.</p>
-<p>The findings also suggest potential applications in monitoring the effectiveness of treatments for conditions like narcolepsy, where stimulant medications may influence accelerometry patterns. Furthermore, the study indicates that stratifying by age could enhance the model’s predictive accuracy, given that younger participants tend to exhibit more movement.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Kane’s exploration into accelerometry as a biomarker for vigilance represents an exciting step forward in leveraging wearable technology for health monitoring. While the association between accelerometry and vigilance is currently weak, the study underscores the potential for accelerometry-derived insights to inform interventions across a range of conditions. The use of R for analysis and presentation further demonstrates the language’s versatility in handling complex datasets and machine learning models.</p>
-<p>As the R community continues to evolve and embrace cutting-edge methodologies, studies like this exemplify the innovative applications of R in advancing healthcare research. The integration of accelerometry data into clinical and research settings promises to enhance our understanding of human physiology and behavior, paving the way for more personalized and effective health interventions.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <guid>https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/</guid>
-  <pubDate>Sun, 22 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/an-accelerometry-biomarker-framework-with-application-in-vigilance-in-uk-biobank-data/thumbnail-kane-accelerometry.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
