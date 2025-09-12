@@ -9,7 +9,7 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.34</generator>
+<generator>quarto-1.8.24</generator>
 <lastBuildDate>Wed, 10 Sep 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Oracle R Distribution 4.4.1 Now Available with Enhanced Performance</title>
@@ -879,10 +879,10 @@
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<th colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">R+AI 2025 Call for Proposals: Technical Areas</th>
+<td colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">R+AI 2025 Call for Proposals: Technical Areas</td>
 </tr>
 <tr class="gt_col_headings even">
 <th id="Topic" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Topic</th>
