@@ -16,6 +16,14 @@ Make a branch and edit your branch locally.
 
 To preview the website locally you can execute this quarto command in your terminal:
 
+```bash
+quarto render
+```
+
+**Note:** This website uses Quarto's freeze feature to optimize rendering performance. The freeze feature caches computational results and only re-renders posts when their content has changed. This prevents unnecessary re-rendering of all 249+ posts when only one post is modified, making it much faster to contribute to the website.
+
+The freeze cache is stored in the `_freeze/` directory and should be committed to version control to ensure consistency across different environments.
+
 #### 3. Commit your changes
 
 Make your changes locally save them and commit them. Be sure to make your commit message descriptive of the work you did.

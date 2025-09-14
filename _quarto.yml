@@ -109,8 +109,10 @@ format:
       - cosmo.scss
     css: styles.css
 execute:
-  freeze: false
-# if we enable freeze, should likely be set to false
+  freeze: auto
+  cache: true
+# Enable freeze to only re-render posts when content changes
+# This prevents re-rendering all posts when only one post is modified
 
 editor:
   render-on-save: true
