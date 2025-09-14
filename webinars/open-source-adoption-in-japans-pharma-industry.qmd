@@ -1,13 +1,14 @@
 ---
 title: "Open Source Software Adoption in Japan's Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey"
 ---
-![](images/webinar-jpma-july-2025.png)
 
-Full recording coming soon
+{{< video https://www.youtube.com/embed/dTgv7KmLRxk?si=nJYMB4otBOS3Ygg- >}}
 
 ## Summary
 
-Join us for a special webinar hosted by R consortium and JPMA to explore the results of the "2024 OSS Usage Status Questionnaire Report." This report captures how pharmaceutical companies in Japan are adopting open-source software — particularly R — and how trends have evolved since our last survey in 2022.
+This webinar was hosted by the R consortium featuring speakers from the Japan Pharmaceutical Manufacturers Association (JPMA) to explore the results of the “2024 OSS Usage Status Questionnaire Report.” 
+
+This report captures how pharmaceutical companies in Japan are adopting open-source software — particularly R — and how trends have evolved since our last survey in 2022.
 
 Key highlights include:
 
@@ -26,18 +27,13 @@ During the session, JPMA members will walk through the key insights and host a Q
 
 ![](images/shinichi-hotta-sumitomo.png){width=40%}
 
-Shinichi Hotta is the Statistical Programmer at Sumitomo Pharma Co., Ltd. He has 22
-years of experience in the pharmaceutical companies and CRO in Japan as the statistical
-programmer, working for the clinical trials and submissions at Japan, US and China etc.
-Through his career, he had the presentations about the data analyses, SAS, R and CDISC.
-From 2020, he joined the open-source software task force in Japan Pharmaceutical
-Manufacturers Association as the leader.
+Shinichi Hotta is a Statistical Programmer at Sumitomo Pharma. He has 22 years of experience as a statistical programmer in pharmaceutical companies and Contract Research Organizations (CROs), working for clinical trials and submissions in Japan, the US, China and more. Throughout his career, he has given presentations about data analyses, SAS, R and CDISC (the Clinical Data Interchange Standards Consortium). Since 2020, he has been the leader of the open-source software task force in the JPMA.
 
 
 ### Yuki Matsunaga, Novartis Pharma K.K.
 
 ![](images/yuki-matsunaga-novartis.png){width=40%}
 
-Yuki Matsunaga has worked as a Clinical Development Director Japan, a Statistical Programmer, a Medical Scientific Expert, and a Medical Science Liaison for Novartis Pharma K.K. since April 2017.
+Yuki Matsunaga has held multiple positions at Novartis Pharma KK (Japan) including Clinical Development Director Japan, Statistical Programmer,  Medical Scientific Expert, and Medical Science Liaison.
 
-Recently, he works on new drug development and retrospective studies using medical real-world data such as electronic healthcare record and health claims data. Also, He is a member of the {admiralophtha} development team, and a member of start-up member of the open-source software task force in Japan Pharmaceutical Manufacturers Association.
+He is currently working on new drug development and retrospective studies using medical real-world data such as electronic healthcare records and health claims data. He is also a member of the {admiralophtha} (“Ophthalmology”) development team, and a start-up member of the open-source software task force in the JPMA.
