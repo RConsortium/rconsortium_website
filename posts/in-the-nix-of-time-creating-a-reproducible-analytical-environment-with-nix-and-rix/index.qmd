@@ -3,7 +3,7 @@ title: "In the Nix of Time: Creating a reproducible analytical environment with 
 unpublished: true 
 url: "https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/"
 description: "Explore how Nix and {rix} transform Shiny app development with seamless reproducibility." 
-categories: [R/Medicine 2025, Clinical Research, Software Development]
+categories: ["r/medicine 2025", "clinical research", "software development"]
 author: "R Consortium" 
 image: "thumbnail-rix-and-nix-nantz.png" 
 image-alt: "thumbnail for video on In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}" 
