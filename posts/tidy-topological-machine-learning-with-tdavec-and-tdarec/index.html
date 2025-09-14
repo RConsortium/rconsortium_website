@@ -273,11 +273,11 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
         <li>
     <a class="dropdown-item" href="https://rconsortium.github.io/RplusAI_website/">
- <span class="dropdown-text">R+AI</span></a>
+ <span class="dropdown-text">R+AI (Nov 12-13, 2025)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/">
- <span class="dropdown-text">R/Medicine</span></a>
+ <span class="dropdown-text">R/Medicine (May 4-8, 2026)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../webinars/webinars.html">
@@ -289,7 +289,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="../../news/cal.html">
- <span class="dropdown-text">WG Calendar</span></a>
+ <span class="dropdown-text">Working Groups Calendar</span></a>
   </li>  
     </ul>
   </li>
@@ -436,10 +436,8 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(TDAvec)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">computeTropicalCoordinates</span>(pd<span class="sc">$</span>diagram, <span class="at">homDim =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>         F1          F2          F3          F4          F5          F6 
-  0.8820621   1.7589323   2.3653501   2.8337500  10.5388024   7.2157557 
-         F7 
-217.0297993 </code></pre>
+<pre><code>        F1         F2         F3         F4         F5         F6         F7 
+  0.897293   1.699674   2.378744   2.831636  10.024340   6.567765 207.759935 </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>xy_seq <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">1.5</span>, .<span class="dv">5</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">computePersistenceBlock</span>(</span>
@@ -447,8 +445,8 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xSeq =</span> xy_seq, <span class="at">ySeq =</span> xy_seq</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  0.72251370  0.30453225  0.00000000  0.34965183 62.37513656 74.30472340
-[7]  0.06172213 78.55473214 95.00369855</code></pre>
+<pre><code>[1]  0.3888562  0.3352935  0.0000000  0.3419842 53.8842793 65.0866841  0.0000000
+[8] 69.1901115 83.6470736</code></pre>
 </div>
 </div>
 <p>Notably, all vectorizations are written in C++ and exposed to R using {Rcpp}. We also utilize the Armadillo package for various matrix operations, which makes all computations extremely fast and efficient.</p>
@@ -479,7 +477,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <pre><code># A tibble: 1 × 299
   sample          sample_pd_2 sample_pd_2_pb_1 sample_pd_2_pb_2 sample_pd_2_pb_3
   &lt;list&gt;          &lt;list&gt;                 &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
-1 &lt;dbl [200 × 3]&gt; &lt;PHom&gt;                     0            0.981             1.90
+1 &lt;dbl [200 × 3]&gt; &lt;PHom&gt;                     0                0             37.7
 # ℹ 294 more variables: sample_pd_2_pb_4 &lt;dbl&gt;, sample_pd_2_pb_5 &lt;dbl&gt;,
 #   sample_pd_2_pb_6 &lt;dbl&gt;, sample_pd_2_pb_7 &lt;dbl&gt;, sample_pd_2_pb_8 &lt;dbl&gt;,
 #   sample_pd_2_pb_9 &lt;dbl&gt;, sample_pd_2_pb_10 &lt;dbl&gt;, sample_pd_2_pb_11 &lt;dbl&gt;,

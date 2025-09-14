@@ -301,11 +301,11 @@ window.Quarto = {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
         <li>
     <a class="dropdown-item" href="https://rconsortium.github.io/RplusAI_website/">
- <span class="dropdown-text">R+AI</span></a>
+ <span class="dropdown-text">R+AI (Nov 12-13, 2025)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/">
- <span class="dropdown-text">R/Medicine</span></a>
+ <span class="dropdown-text">R/Medicine (May 4-8, 2026)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../webinars/webinars.html">
@@ -317,7 +317,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../../news/cal.html">
- <span class="dropdown-text">WG Calendar</span></a>
+ <span class="dropdown-text">Working Groups Calendar</span></a>
   </li>  
     </ul>
   </li>
@@ -473,21 +473,7 @@ x-\varphi(x) \rVert_q}^p} \right)^{1/p} \]</span></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>point_data <span class="ot">&lt;-</span> tdaunif<span class="sc">::</span><span class="fu">sample_ellipse</span>(<span class="at">n =</span> <span class="dv">100</span>L, <span class="at">ar =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div id="fig-point-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-point-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="index_files/figure-html/fig-point-data-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-point-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A sample of 100 points drawn uniformly on the contour of an ellispe.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>A typical workflow would be to compute the persistence data from the point cloud shown in <a href="#fig-point-data" class="quarto-xref">Figure&nbsp;1</a> using the <a href="https://cran.r-project.org/web/packages/TDA/index.html">{TDA}</a> package:</p>
+<p>A typical workflow would be to compute the persistence data from the point cloud shown in <strong>?@fig-point-data</strong> using the <a href="https://cran.r-project.org/web/packages/TDA/index.html">{TDA}</a> package:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ph_data <span class="ot">&lt;-</span> TDA<span class="sc">::</span><span class="fu">ripsDiag</span>(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    point_data,</span>
@@ -495,47 +481,19 @@ Figure&nbsp;1: A sample of 100 points drawn uniformly on the contour of an ellis
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">maxscale =</span> <span class="fl">1.5</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div id="fig-ph-data" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ph-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="index_files/figure-html/fig-ph-data-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ph-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Persistence data computed from the point cloud shown in <a href="#fig-point-data" class="quarto-xref">Figure&nbsp;1</a>.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>The output that is displayed in <a href="#fig-ph-data" class="quarto-xref">Figure&nbsp;2</a> is a list with a component <code>diagram</code> that contains the persistence data in the form of an aobject of class ‘diagram’. The latter is a 3-column matrix with the first column containing the dimension of the homological feature, the second column containing the birth time and the third column containing the death time. The column names</p>
+<p>The output that is displayed in <strong>?@fig-ph-data</strong> is a list with a component <code>diagram</code> that contains the persistence data in the form of an aobject of class ‘diagram’. The latter is a 3-column matrix with the first column containing the dimension of the homological feature, the second column containing the birth time and the third column containing the death time. The column names</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(ph_data<span class="sc">$</span>diagram)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "dimension" "Birth"     "Death"    </code></pre>
-</div>
 </div>
 <p>mix lower and upper cases. Finally the object also has attributes:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(<span class="fu">attributes</span>(ph_data<span class="sc">$</span>diagram))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "dim"          "dimnames"     "class"        "maxdimension" "scale"       
-[6] "call"        </code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(<span class="fu">attributes</span>(ph_data<span class="sc">$</span>diagram))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>that store information about how the diagram has been computed. The <code>persistence</code> class can coerce the ‘diagram’ object into a ‘persistence’ object:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phutil)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ph_data_pers <span class="ot">&lt;-</span> <span class="fu">as_persistence</span>(ph_data<span class="sc">$</span>diagram)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ph_data_pers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-── Persistence Data ────────────────────────────────────────────────────────────
-ℹ There are 100 and 1 pairs in dimensions 0 and 1 respectively.
-ℹ Computed from a Vietoris-Rips filtration using `TDA::ripsDiag()`.
-ℹ With the following parameters: maxdimension = 1 and maxscale = 1.5.</code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phutil)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>ph_data_pers <span class="ot">&lt;-</span> <span class="fu">as_persistence</span>(ph_data<span class="sc">$</span>diagram)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>ph_data_pers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="distance-computations-using-hera" class="level3">
@@ -547,19 +505,10 @@ Figure&nbsp;2: Persistence data computed from the point cloud shown in <a href="
 </ul>
 <p>For example, {phutil} has a built-in set of 100 persistence diagrams computed on 100 noisy versions of points on the 2-sphere. The diagrams are stored in the object <a href="https://tdaverse.github.io/phutil/reference/persistence_sample.html"><code>persistence_sample</code></a>. The following code computes the pairwise bottleneck distances between the first 7 diagrams in the set:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bottleneck_pairwise_distances</span>(</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    persistence_sample[<span class="dv">1</span>L<span class="sc">:</span><span class="dv">7</span>L],</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">ncores =</span> <span class="dv">2</span>L</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>           1          2          3          4          5          6
-2 0.06197453                                                       
-3 0.06182617 0.03393206                                            
-4 0.08125193 0.05359485 0.04198256                                 
-5 0.04190589 0.06276444 0.06261608 0.08065585                      
-6 0.02829251 0.05512256 0.05588969 0.09325840 0.03326582           
-7 0.11170465 0.07960792 0.06338179 0.06507459 0.11249456 0.11927148</code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bottleneck_pairwise_distances</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    persistence_sample[<span class="dv">1</span>L<span class="sc">:</span><span class="dv">7</span>L],</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">ncores =</span> <span class="dv">2</span>L</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
