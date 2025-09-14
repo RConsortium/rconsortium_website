@@ -31,8 +31,8 @@
 </section>
 
  ]]></description>
-  <category>Announcements</category>
-  <category>Members</category>
+  <category>announcements</category>
+  <category>members</category>
   <guid>https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/</guid>
   <pubDate>Wed, 10 Sep 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/oracle-machine-learning-header.png" medium="image" type="image/png" height="49" width="144"/>
@@ -344,8 +344,8 @@
 </section>
 
  ]]></description>
-  <category>RUGS</category>
-  <category>North America</category>
+  <category>rugs</category>
+  <category>north america</category>
   <guid>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/</guid>
   <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/JuliaSilge-main-image.png" medium="image" type="image/png" height="95" width="144"/>
@@ -400,8 +400,8 @@
 </section>
 
  ]]></description>
-  <category>Events</category>
-  <category>Working Groups</category>
+  <category>events</category>
+  <category>working groups</category>
   <guid>https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/</guid>
   <pubDate>Fri, 11 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/hta-main-image.png" medium="image" type="image/png" height="72" width="144"/>
@@ -950,8 +950,8 @@
 </section>
 
  ]]></description>
-  <category>Events</category>
-  <category>AI</category>
+  <category>events</category>
+  <category>ai</category>
   <guid>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/</guid>
   <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1027,7 +1027,7 @@
 </section>
 
  ]]></description>
-  <category>Events</category>
+  <category>events</category>
   <guid>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/</guid>
   <pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/data-sunday-2024.png" medium="image" type="image/png" height="85" width="144"/>
@@ -1110,9 +1110,9 @@
 </section>
 
  ]]></description>
-  <category>Environment</category>
-  <category>Software Development</category>
-  <category>North America</category>
+  <category>environment</category>
+  <category>software development</category>
+  <category>north america</category>
   <guid>https://r-consortium.org/posts/strength-in-numbers/</guid>
   <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/strength-in-numbers/vadeq-main-image.png" medium="image" type="image/png" height="82" width="144"/>
@@ -1180,8 +1180,8 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
+  <category>r/medicine 2025</category>
+  <category>software development</category>
   <guid>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/</guid>
   <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/thumbnail-dataviz-cara.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1265,10 +1265,10 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <category>Epidemiology</category>
-  <category>Software Development</category>
+  <category>r/medicine 2025</category>
+  <category>healthcare</category>
+  <category>epidemiology</category>
+  <category>software development</category>
   <guid>https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/thumbnail-cohortconstructor-burn-and-mercade-bosora.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1325,9 +1325,9 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <category>Software Development</category>
+  <category>r/medicine 2025</category>
+  <category>clinical research</category>
+  <category>software development</category>
   <guid>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/thumbnail-rix-and-nix-nantz.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1388,10 +1388,10 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Clinical Research</category>
-  <category>Software Development</category>
-  <category>Healthcare</category>
+  <category>r/medicine 2025</category>
+  <category>clinical research</category>
+  <category>software development</category>
+  <category>healthcare</category>
   <guid>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/thumbnail-redcap-rose.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1472,8 +1472,8 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
+  <category>r/medicine 2025</category>
+  <category>software development</category>
   <guid>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/thumbnail-targets-rahul.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1537,8 +1537,8 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Software Development</category>
+  <category>r/medicine 2025</category>
+  <category>software development</category>
   <guid>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/thumbnail-SQL-in-R-chris.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1609,7 +1609,7 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
+  <category>r/medicine 2025</category>
   <guid>https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/thumbnail-quarto-mine.jpg" medium="image" type="image/jpeg"/>
@@ -1674,7 +1674,7 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
+  <category>r/medicine 2025</category>
   <guid>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1735,10 +1735,10 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
-  <category>Healthcare</category>
-  <category>Clinical Research</category>
-  <category>Software Development</category>
+  <category>r/medicine 2025</category>
+  <category>healthcare</category>
+  <category>clinical research</category>
+  <category>software development</category>
   <guid>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1786,7 +1786,7 @@
 </section>
 
  ]]></description>
-  <category>R/Medicine 2025</category>
+  <category>r/medicine 2025</category>
   <guid>https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/thumbnail-accessible-charts-giordano.png" medium="image" type="image/png" height="81" width="144"/>
