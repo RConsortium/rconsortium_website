@@ -68,15 +68,15 @@ website:
 
       - text: "Events"
         menu:
-          - text: R+AI
+          - text: R+AI (Nov 12-13, 2025)
             href: https://rconsortium.github.io/RplusAI_website/
-          - text: R/Medicine
+          - text: R/Medicine (May 4-8, 2026)
             href: https://rconsortium.github.io/RMedicine_website/
           - text: Webinars
             href: webinars/webinars.qmd
           - text: Events
             href: news/events.qmd
-          - text: WG Calendar
+          - text: Working Groups Calendar
             href: news/cal.qmd
 
       - text: "News"
@@ -108,8 +108,8 @@ format:
       - cosmo
       - cosmo.scss
     css: styles.css
-# execute:
-#   freeze: false
+execute:
+  freeze: false
 # if we enable freeze, should likely be set to false
 
 editor:
