@@ -1,0 +1,14 @@
+{
+  "hash": "f74092296413ba3107edf65e86789828",
+  "result": {
+    "markdown": "---\ntitle: \"R+AI Call for Proposals\"\nunpublished: false\ndescription: \"Join us at R+AI 2025, Nov 12-13, 2025, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence.\"\nauthor: \"R Consortium\"\ncategories: [\"events\", \"ai\"]\nimage: \"CFP_now_open.png\"\nimage-alt: \"Call for Proposals Now Open!\"\ndate: \"07/10/2025\"\n---\n\n\n![](CFP_now_open.png)\n\n### Call for Proposals\n\nJoin us at **R+AI 2025**, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence. Whether you’re just getting started with machine learning, experimenting with large language models in R, leveraging GenAI tools to accelerate your code, part of an industry team deploying AI solutions in finance, healthcare, or marketing, or a researcher pushing the boundaries of deep learning or responsible AI—there’s something here for you. Experience inspiring keynotes and talks, hands-on workshops, lightning talks, and panel discussions designed to educate, connect, and empower R users at every level.\n\n#### [Submit your proposal here](https://forms.gle/SUbQVNMpp11g7vbTA)\n\n## CFP dates: OPEN 7/10/2025 \\- CLOSES: 09/05/2025\n\nWe are now inviting proposals for talks and workshops in all these areas:\n\n\n\n\n::: {.cell}\n\n:::\n\n\nWhether you’re an R user new to AI or developing next-generation algorithms, **R+AI 2025** is your chance to learn, share, and collaborate with fellow R enthusiasts. Submit your talk or workshop proposal today and help shape the future of R+AI\\!\n\n### Please note:\n\n* Event is 100% online\n* Talks will be recorded \n* Speakers participate in live Q&A\n* Schedule is US Eastern time zone\n\n#### [Submit your proposal here](https://forms.gle/SUbQVNMpp11g7vbTA)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
