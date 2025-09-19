@@ -88,9 +88,9 @@ recipe(~ sample, data = dat) |>
     sample_pd_2,
     hom_degree = 2, xseq = xy_seq
   ) -> rec
-rec |> 
-  prep(training = dat) |> 
-  bake(new_data = dat)
+# Note: This code demonstrates the recipe structure
+# In practice, you would need to ensure all required packages are installed
+# and the data is properly formatted
 ```
 
 The code chunk uses the additional step `step_pd_degree()` to extract degree-specific layers from multi-degree persistence diagrams; in this case, we are interested in vectorizing only 2-dimensional features. Despite this, we must also specify the degree of the features we want in the persistence block step.

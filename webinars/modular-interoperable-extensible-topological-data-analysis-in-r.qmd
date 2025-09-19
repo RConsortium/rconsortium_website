@@ -1,0 +1,48 @@
+---
+title: "Modular, interoperable, and extensible topological data analysis in R"
+---
+
+![](images/webinar-topological-cory-aymeric-main-image.png){width=90%}
+
+## Event Details
+
+**Date:** Tuesday, October 7, 2025  
+**Time:** 8am PT / 11am ET / 5pm in France  
+**Registration:** [Register for the webinar](https://zoom.us/webinar/register/WN_KVaeYZXjTTSOG7Qdg6BKOg)
+
+## Summary
+
+This webinar will cover work from an R Consortium ISC grant project called "Modular, interoperable, and extensible topological data analysis in R" starting in early 2024.
+
+The goal of the project is to seamlessly integrate popular techniques from topological data analysis (TDA) into common statistical workflows in R. The expected benefit is that these extensions will be more widely used by non-specialist researchers and analysts, which will create sufficient awareness and interest in the community to extend the individual packages and the collection.
+
+
+## Agenda
+
+* Introduction
+* Topological Data Analysis
+* The TDAverse
+* {ripserr}
+* {phutil}
+* {tdarec}
+* {inphr}
+
+
+## Speakers
+
+![](images/jason-cory-brunson.jpg){width=48%}
+
+**Jason Cory Brunson**  
+Research Assistant Professor, University of Florida  
+Laboratory for Systems Medicine, Division of Pulmonary, Critical Care, and Sleep Medicine
+
+Cory Brunson is a Research Assistant Professor at the Laboratory for Systems Medicine in the Division of Pulmonary, Critical Care, and Sleep Medicine. His primary research focus is on mathematical data science applications to patient stratification and outcomes research. Other projects involve the use of graph theory in image analysis and signal transduction modeling, quantitative analysis of scientific research output, and mathematical and statistical software development. Other research interests include feature extraction from complex data and research reproducibility, and specific mathematical interests include geometric statistics and computational topology.
+
+Dr. Brunson completed a PhD program in Mathematics at Virginia Tech in 2013 and taught as an Adjunct Professor in Mathematics at Radford University in 2014. He then undertook two postdoctoral appointments in the Center for Quantitative Medicine at UConn Health, including a postdoc track with the NIDCR-funded T90 research training program on skeletal, craniofacial and oral biology, before joining the Laboratory for Systems Medicine at UF Health. During this time he has contributed to a wide range of disciplines—including the history of mathematics, scientometry, social network analysis, categorical data visualization, and systems medicine—and mentored student researchers and interns at the graduate, undergraduate, and high school level.
+
+![](images/aymeric-stamm.jpg){width=48%}
+
+**Aymeric Stamm**  
+Research Engineer in Statistics, French National Centre for Scientific Research (CNRS), Nantes University
+
+I'm Aymeric (pronounced M-Rick). I am a research engineer specialized in statistical information. My theoretical research revolves around developing novel statistical methods for analyzing complex data, such as manifold-valued data, network-valued data, topological data, connectome data and so on. I am also an applied statistician with main focus in the field of neuroscience. Lastly but not least, I believe that what we accomplish in research, be it theoretical or applied, should be made available open-source to a broader audience to foster a collaborative science globewise.
