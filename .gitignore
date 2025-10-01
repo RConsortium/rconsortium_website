@@ -1,10 +1,19 @@
 /.quarto/
 /_site/
-# /docs/
+/docs/
 venv
 .Rproj.user
-/docs/
+
+# macOS
 .DS_Store
 **/.DS_Store
+
+# R cruft
 .Rhistory
 .RData
+
+# Quarto/knitr build artifacts
+*_cache/
+**/index_cache/
+_freeze/
+**/index_files/
