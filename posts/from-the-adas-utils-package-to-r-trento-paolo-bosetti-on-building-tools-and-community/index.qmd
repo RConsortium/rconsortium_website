@@ -1,0 +1,78 @@
+---
+title: "From the adas.utils Package to R-Trento: Paolo Bosetti on Building Tools and Community"
+author: "R Consortium"
+date: 2025-10-01
+categories: [rugs, eu, software development]
+description: "Paolo Bosetti discusses his path from creating the adas.utils package to fostering collaboration with the R-Trento community."
+image: "PaoloBosetti.png"
+draft: false
+---
+
+[Dr Paolo Bosetti](https://paolobosetti.quarto.pub/), Associate Professor at the University of Trento, Italy, recently spoke with the R Consortium about founding the [R-Trento User Group](https://www.meetup.com/r-trento-users-group/) (R-TUG) and fostering collaboration between academia, industry, and the public sector in Italy. He shared how he uses R in teaching industrial engineering students, from integrating RStudio and Quarto into coursework to emphasizing reproducible analysis and reporting. Dr. Paolo also discussed the development of his adas.utils package for experimental design, the importance of documenting community activities through a group blog, and his vision for expanding the R community in Trento.
+
+![](PaoloBosetti.png)
+
+## Please share your background and involvement with the RUGS group.
+
+I am an Associate Professor at the University of Trento, working in academia. I have been a long-time user of R, having started around 2004 or 2005, which means I’ve been using R for about 20 years. I utilize R regularly for teaching purposes, particularly in my statistics and data analysis course for undergraduate industrial engineering students.
+
+My focus is on the application of statistical methods in various contexts, including process control, experimental design, and industrial experiments. For teaching, I use R and specifically RStudio, which serves as the primary toolkit for my courses. I prepare all my teaching materials using RStudio and Quarto, including slides and handouts. The course is designed to be highly interactive; we begin with theoretical concepts presented on interactive slides prepared with Quarto, and then transition into RStudio for hands-on analysis, study, and data presentation from experiments.
+
+Within my university, I have several colleagues across different departments—such as economics, industrial engineering, bioengineering, and information technology—who also use R as a tool for data analysis. To foster this community, I initiated a local R user group, known as [R-TUG](https://www.meetup.com/r-trento-users-group/). We held our first meeting in late May, and we are planning the next one for the end of November. 
+
+We are using Meetup to gather users, and the group currently has around 60 to 65 members. At our inaugural meeting, approximately 30 users participated, and we conducted a total of four presentations on various topics over the course of three hours in the afternoon.
+
+![](RUsersTrentoLogo.png)
+
+## Was your first meetup held in person or online? What format do you plan to use for future meetups?
+
+The first meeting was held in person because we wanted to foster connections. Since it was our initial gathering, it was essential for us to come together and get to know one another. Although we are all part of the same university, many of us only knew each other by name. This meeting provided an opportunity to see each other’s faces and establish those connections.
+
+For future meetings, we plan to implement a hybrid format. We will continue to meet in person while also recording the sessions on Zoom and providing a link for others to participate remotely. This way, we can maintain our in-person interactions while accommodating those who wish to join online.
+
+![](RUsersTrentoMeetup.png)
+
+## Can you share what the R community is like in Italy?
+
+Our group consists of approximately half academics and half industry members, including some of my former students and representatives from the public sector. We have connections with local government statistical offices in industrial communities. One such community is [Confindustria](https://www.confindustria.it/en/), the association of local industries, which has a statistical study office that contributes to our group.
+
+The strength of our collaboration lies in bridging the gap between academia and the broader world. We facilitate connections between academics and individuals with in-depth knowledge, particularly in the theoretical aspects of statistics and the R programming language. Conversely, we provide academics with access to real-world cases and practical applications, enabling them to gather new ideas and explore innovative applications related to their research.
+
+## Aside from Meetup, which other platforms are you using for your R User Group?
+
+We also have a Quarto-based [website](https://rtug.unitn.it/) for our group. It is organized as a blog where we publish small articles contributed by our members, as well as presentations given during meetings. Our goal is to maintain a dynamic online presence by publishing one or two posts per year and documenting our meetings and activities. For each meeting, we will list the topics discussed and make the presentations available. Lastly, we have a list of founding members and regular members, which is also available on Meetup. This captures the life of our group, showcasing our projects and contributions.
+
+We also have a list of [founding members](https://rtug.unitn.it/members.html) on our website. Most of the members joined on the first day, and they come from various departments at the same university. However, Maria Michela Dickson, a former member of the University of Trento, is currently a professor at the University of Padua in a different city. 
+
+We also maintain a list of regular members, comprising professionals from various sectors. This group consists of professors, representatives from the public sector, and employees from private companies in the mechanical sector. We are affiliated with the local industry association, which serves as a platform for industrial partners, and we also have members from public foundations.
+
+Apart from this, there are spontaneously joining members on Meetup. I have been automating the process of connecting Meetup subscribers with our local Google email group. My university uses Google Workspace for emails, and we have a shared drive and a Google group for collecting members.
+
+Unfortunately, the Meetup API was recently changed, which has rendered previous automation packages ineffective. I attempted to write a new solution, but it remains unclear how to do so, and my efforts have not been successful. As a result, Meetup is not providing full access, and I find myself stuck.
+
+This situation is frustrating because it requires considerable time to keep the Meetup user list synchronized with our internal user list. This issue will be resolved sooner or later.
+
+## You are currently working in academia. How do you use R in your teaching and research?
+
+I've been using R for more than 20 years now, and I've recently completely transitioned to the latest features in R. I'm extensively using the Tidyverse package and have shifted from older methods to Tidyverse approaches. Nowadays, I only teach my students to use Tidyverse and Quarto. Everything we do is presented in a notebook style, utilizing Tidyverse, and I'm particularly focused on how to present analysis effectively. Our current environment is superior to others for this reason.
+
+The quality of the documents we can create using RStudio, R, Tidyverse, and Quarto is significantly better than what can be achieved with other environments commonly used for data analysis, such as MATLAB or Python. Additionally, you can integrate both Python and R within RStudio, but that's another story.
+
+My primary focus in teaching prospective industrial engineers is to emphasize the quality of both analysis and presentation, as well as the automation of documentation production. This includes automated reports, weekly reports, and similar outputs.
+
+## Can you tell us about your adas.utils package? What makes it unique compared to other experimental design packages in R?
+
+During this course, I also began developing a package called [adas.utils](https://cran.r-project.org/web/packages/adas.utils/index.html), which is currently on CRAN. Initially, it started as a collection of utility functions but has evolved into a complete set of objects and methods for applying Design of  Experiments (DoE) techniques in a Tidyverse manner. 
+
+For example, I use ggplot for graphics, and functions have been designed to be sequentially piped with the %>% operator. While other packages for designing experiments are already available on CRAN, they follow an "old school" approach and do not adhere to a Tidyverse interface. My package stands out because it employs the principles of piping operations and sequencing operations, and utilizes ggplot for visual outputs. The package is now relatively mature.
+
+In our blog, you can find an [introduction to the package](https://rtug.unitn.it/posts/004-adas.utils/), which is designed to facilitate the creation of target plans and fractional factorial plans, as well as to analyze the alias structure in fractional factorial designs. The package also features functionalities not commonly available in R, such as normal probability plots and Pareto charts, both of which are not standard in the Tidyverse.
+
+![](Normalprobabilityplot.png)
+
+
+## How do I Build an R User Group?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
+
+[Learn more](https://r-consortium.org/all-projects/rugsprogram.html)
