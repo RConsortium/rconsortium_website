@@ -10,7 +10,62 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Wed, 10 Sep 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 02 Oct 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Sovereign Tech Fund invests $450,000 in R Foundation to Enhance R’s Sustainability and Security</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" class="img-fluid"></p>
+<p>The R ecosystem, a cornerstone of statistical computing and data science, is poised for significant enhancements in its long-term health and security. With a new investment of USD $450,000 (€392,000) from the <a href="https://www.sovereign.tech/tech/r-project">Sovereign Tech Fund (STF)</a>, the <a href="https://www.r-project.org/foundation/">R Foundation</a> is embarking on a crucial project to modernize R’s core infrastructure, improve its maintainability, and fortify its supply chain.</p>
+<p>This initiative is championed by the R Foundation and the R Core Team. The R Foundation is a not-for-profit organization providing crucial financial and logistical support for the R project. Established by the members of the R Core Team, its primary mission is to ensure the continued success and stability of R for the global community. The Foundation, based in Vienna, Austria, holds the copyright for R software and uses its resources to support development and foster innovation in statistical computing. The R Core Team is the dedicated group of developers with write access to the R source code, who volunteer their time to guide the technical evolution of the language.</p>
+<p><img src="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/urbanek.jpg" class="img-fluid" style="width:50.0%"></p>
+<p>To understand the impact of this grant, we sat down with <a href="https://www.linkedin.com/in/simon-urbanek-08b973106/?originalSubdomain=nz">Simon Urbanek</a>, a key member of the R Core Team and an Associate Professor in Statistics at the University of Auckland. Simon shared his insights on what this funding means for the future of R and how the community can play a part.</p>
+<hr>
+<p><strong>R Consortium: What core problem or opportunity does the commissioned work from the Sovereign Tech Fund help the R Foundation address?</strong></p>
+<p><strong>Simon Urbanek:</strong> The main reason we are spearheading this effort is to increase the sustainability and maintainability of the R project. Sustainability, in the sense of making sure that the R codebase itself can be maintained long into the future, ensuring we have continuity and making that process easier.</p>
+<p>This investment also helps us address increasing concerns around software supply chain security. This has to do with provenance and reliability—ensuring that users can be assured that a particular piece of software comes from the right source. This involves initiatives like signing sources and binaries to verify their origin.</p>
+<p>Finally, a key component is reproducibility. We want to ensure that analyses and results can be reproduced reliably, both by the original authors and by others in the community.</p>
+<p><strong>R Consortium: You mentioned provenance and the need for verification. Is this being driven by new regulations?</strong></p>
+<p><strong>Simon Urbanek:</strong> Not directly by regulation, no. This is more of a proactive measure. Given the age of the R project, our distribution model has traditionally been a central repository where people can simply download files. While this has served us well, the open-source world has seen various security issues, making it clear that we need better ways to verify that software comes from a trusted source.</p>
+<p>We already have binary signing for R itself on macOS and Windows, but this hasn’t been extended to packages. It’s an important step to take. While it’s not clear if platforms like Microsoft will officially require it, there are indications they may. We want to prepare for that possibility and strengthen the security of the ecosystem, especially for a central distribution hub like CRAN.</p>
+<p><strong>R Consortium: Why is tackling this problem now timely for the R ecosystem and the wider open-source community?</strong></p>
+<p><strong>Simon Urbanek:</strong> R has been around for over 25 years and has become part of the fabric of data analytics and statistical analysis in government, academia, and commercial entities. With this level of adoption, it’s critical that we can sustain the maintenance of R to support its community. The purely volunteer-driven effort that got us here may not be sufficient to address the increasing complexities and threats we see today.</p>
+<p><strong>R Consortium: What tangible deliverables can the community expect, and on what timeline?</strong></p>
+<p><strong>Simon Urbanek:</strong> The main improvements will be within R itself, and some may be under the hood. Deliverables include replacing legacy code and older third-party projects that were integrated into R for historical reasons. This will make R more maintainable, as we won’t have to oversee unmaintained code.</p>
+<p>We are also focused on making it easier to port R to new platforms, such as the Windows ARM platform. Other improvements will be more visible to developers, including enhanced documentation and better tooling, with the goal of making it easier for new people to contribute to R.</p>
+<p>The work is expected to take place over the next 18 months. We hope that the foundations we lay during this project will carry over and continue to be useful long after the project officially concludes.</p>
+<p><strong>R Consortium: Who are the key people and teams involved in this initiative?</strong></p>
+<p><strong>Simon Urbanek:</strong> A significant portion of the technical work—including bug triage, platform improvements, and replacing old infrastructure—will be done by <a href="https://www.linkedin.com/in/kalibera/?originalSubdomain=cz">Tomas Kalibera</a>. As a member of the R Core Team, Tomas is one of the most active developers of the R interpreter, and his deep expertise in R’s internals and build systems makes him uniquely suited to lead the modernization of R’s core. This grant provides vital support for him to dedicate his time to these foundational improvements that are critical for R’s long-term health.</p>
+<p><img src="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/kalibera.jpg" class="img-fluid"></p>
+<p>Other efforts, especially around documentation and community engagement, will be led by various R Core members. This entire project was conceived with the help of the R Foundation board members, and we also hope to collaborate with the R Consortium to bring in more contributors from the community.</p>
+<p><strong>R Consortium: What makes the Sovereign Tech Fund a uniquely suitable partner for this initiative?</strong></p>
+<p><strong>Simon Urbanek:</strong> The Sovereign Tech Fund is a really good match because its mission is perfectly aligned with our needs. Their main focus is on sustainability for open-source software and strengthening digital public infrastructure, which is exactly our primary concern at the moment. We want to ensure R’s development is sustainable and that the community itself can support it without having to rely on commercial partners.</p>
+<p>This investment allows us to modernize the codebase to make it easier to maintain and, at the same time, build resources to encourage more community contributions.</p>
+<p><strong>R Consortium: How can the R community get involved and contribute to this effort?</strong></p>
+<p><strong>Simon Urbanek:</strong> There are many ways for the community to get involved. People can definitely provide feedback, especially as we add new user-facing features and create new documentation. We need to know if these resources are truly making it easier for the community to contribute.</p>
+<p>Another area is bug triage. We aim to reduce the number of pending bugs, especially older ones, to make the bug tracker less overwhelming. The community can help identify and work on important issues.</p>
+<p>Finally, we will need help with testing. This is true for improvements in R itself and for new infrastructure related to packages, such as containerized checks for reproducibility and the adoption of code signing. The community’s participation in testing, providing feedback, and adopting these new practices will be invaluable.</p>
+<section id="r-foundation-resources" class="level2">
+<h2 class="anchored" data-anchor-id="r-foundation-resources">R Foundation resources</h2>
+<p>Main site: <a href="https://www.r-project.org/foundation/">https://www.r-project.org/foundation/</a><br>
+How you can contribute: <a href="https://contributor.r-project.org/">https://contributor.r-project.org/</a></p>
+<p>The <a href="https://user2025.r-project.org/">useR! 2025</a> conference was held at Duke University, in Durham, NC, USA, on August 8-10. <a href="https://www.linkedin.com/posts/r-user-community_announcement-user-2026-conference-in-activity-7360399846479917058-IxDU/">Next year’s event will be in Warsaw, Poland.</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>announcements</category>
+  <guid>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/</guid>
+  <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" medium="image" type="image/png" height="112" width="144"/>
+</item>
 <item>
   <title>Oracle R Distribution 4.4.1 Now Available with Enhanced Performance</title>
   <dc:creator>R Consortium</dc:creator>
@@ -429,23 +484,23 @@
 <p>We are now inviting proposals for talks and workshops in all these areas:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ccyaaehjyb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ccyaaehjyb table {
+<div id="bwojllvakh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bwojllvakh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ccyaaehjyb thead, #ccyaaehjyb tbody, #ccyaaehjyb tfoot, #ccyaaehjyb tr, #ccyaaehjyb td, #ccyaaehjyb th {
+#bwojllvakh thead, #bwojllvakh tbody, #bwojllvakh tfoot, #bwojllvakh tr, #bwojllvakh td, #bwojllvakh th {
   border-style: none;
 }
 
-#ccyaaehjyb p {
+#bwojllvakh p {
   margin: 0;
   padding: 0;
 }
 
-#ccyaaehjyb .gt_table {
+#bwojllvakh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -471,12 +526,12 @@
   border-left-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_caption {
+#bwojllvakh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ccyaaehjyb .gt_title {
+#bwojllvakh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -488,7 +543,7 @@
   border-bottom-width: 0;
 }
 
-#ccyaaehjyb .gt_subtitle {
+#bwojllvakh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -500,7 +555,7 @@
   border-top-width: 0;
 }
 
-#ccyaaehjyb .gt_heading {
+#bwojllvakh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -512,13 +567,13 @@
   border-right-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_bottom_border {
+#bwojllvakh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_col_headings {
+#bwojllvakh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -533,7 +588,7 @@
   border-right-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_col_heading {
+#bwojllvakh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -553,7 +608,7 @@
   overflow-x: hidden;
 }
 
-#ccyaaehjyb .gt_column_spanner_outer {
+#bwojllvakh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -565,15 +620,15 @@
   padding-right: 4px;
 }
 
-#ccyaaehjyb .gt_column_spanner_outer:first-child {
+#bwojllvakh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ccyaaehjyb .gt_column_spanner_outer:last-child {
+#bwojllvakh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ccyaaehjyb .gt_column_spanner {
+#bwojllvakh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -585,11 +640,11 @@
   width: 100%;
 }
 
-#ccyaaehjyb .gt_spanner_row {
+#bwojllvakh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ccyaaehjyb .gt_group_heading {
+#bwojllvakh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -615,7 +670,7 @@
   text-align: left;
 }
 
-#ccyaaehjyb .gt_empty_group_heading {
+#bwojllvakh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -630,15 +685,15 @@
   vertical-align: middle;
 }
 
-#ccyaaehjyb .gt_from_md > :first-child {
+#bwojllvakh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ccyaaehjyb .gt_from_md > :last-child {
+#bwojllvakh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ccyaaehjyb .gt_row {
+#bwojllvakh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -657,7 +712,7 @@
   overflow-x: hidden;
 }
 
-#ccyaaehjyb .gt_stub {
+#bwojllvakh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -670,7 +725,7 @@
   padding-right: 5px;
 }
 
-#ccyaaehjyb .gt_stub_row_group {
+#bwojllvakh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -684,15 +739,15 @@
   vertical-align: top;
 }
 
-#ccyaaehjyb .gt_row_group_first td {
+#bwojllvakh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ccyaaehjyb .gt_row_group_first th {
+#bwojllvakh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ccyaaehjyb .gt_summary_row {
+#bwojllvakh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -702,16 +757,16 @@
   padding-right: 5px;
 }
 
-#ccyaaehjyb .gt_first_summary_row {
+#bwojllvakh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_first_summary_row.thick {
+#bwojllvakh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ccyaaehjyb .gt_last_summary_row {
+#bwojllvakh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -721,7 +776,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_grand_summary_row {
+#bwojllvakh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -731,7 +786,7 @@
   padding-right: 5px;
 }
 
-#ccyaaehjyb .gt_first_grand_summary_row {
+#bwojllvakh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -741,7 +796,7 @@
   border-top-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_last_grand_summary_row_top {
+#bwojllvakh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -751,11 +806,11 @@
   border-bottom-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_striped {
+#bwojllvakh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ccyaaehjyb .gt_table_body {
+#bwojllvakh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -764,7 +819,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_footnotes {
+#bwojllvakh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -778,7 +833,7 @@
   border-right-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_footnote {
+#bwojllvakh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -787,7 +842,7 @@
   padding-right: 5px;
 }
 
-#ccyaaehjyb .gt_sourcenotes {
+#bwojllvakh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -801,7 +856,7 @@
   border-right-color: #D3D3D3;
 }
 
-#ccyaaehjyb .gt_sourcenote {
+#bwojllvakh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -809,72 +864,72 @@
   padding-right: 5px;
 }
 
-#ccyaaehjyb .gt_left {
+#bwojllvakh .gt_left {
   text-align: left;
 }
 
-#ccyaaehjyb .gt_center {
+#bwojllvakh .gt_center {
   text-align: center;
 }
 
-#ccyaaehjyb .gt_right {
+#bwojllvakh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ccyaaehjyb .gt_font_normal {
+#bwojllvakh .gt_font_normal {
   font-weight: normal;
 }
 
-#ccyaaehjyb .gt_font_bold {
+#bwojllvakh .gt_font_bold {
   font-weight: bold;
 }
 
-#ccyaaehjyb .gt_font_italic {
+#bwojllvakh .gt_font_italic {
   font-style: italic;
 }
 
-#ccyaaehjyb .gt_super {
+#bwojllvakh .gt_super {
   font-size: 65%;
 }
 
-#ccyaaehjyb .gt_footnote_marks {
+#bwojllvakh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ccyaaehjyb .gt_asterisk {
+#bwojllvakh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ccyaaehjyb .gt_indent_1 {
+#bwojllvakh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ccyaaehjyb .gt_indent_2 {
+#bwojllvakh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ccyaaehjyb .gt_indent_3 {
+#bwojllvakh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ccyaaehjyb .gt_indent_4 {
+#bwojllvakh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ccyaaehjyb .gt_indent_5 {
+#bwojllvakh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ccyaaehjyb .katex-display {
+#bwojllvakh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ccyaaehjyb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bwojllvakh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1742,54 +1797,6 @@
   <guid>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Visualising data for patients: create accessible charts</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/j6iwGeYj-xU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="creating-accessible-and-clear-charts-in-r-a-guide-to-inclusion" class="level3">
-<h3 class="anchored" data-anchor-id="creating-accessible-and-clear-charts-in-r-a-guide-to-inclusion">Creating Accessible and Clear Charts in R: A Guide to Inclusion</h3>
-<p>In today’s world, patients can access a plethora of health data through various applications. However, visualizing this data in a manner that is understandable and inclusive remains a challenge. Dr.&nbsp;Rita Giordano from Visual Data Studio / Clarum presented a compelling demonstration on how to create charts in R that are not only clear but also accessible to a wider audience, including those with visual impairments like color blindness and autism.</p>
-<section id="key-takeaways-from-the-demonstration" class="level4">
-<h4 class="anchored" data-anchor-id="key-takeaways-from-the-demonstration">Key Takeaways from the Demonstration:</h4>
-<ul>
-<li><p><strong>Decluttering and Accessibility</strong>: The importance of decluttering charts and making them accessible by choosing the right color palettes and fonts was emphasized. This ensures that even those without a scientific or medical background can understand the data presented to them.</p></li>
-<li><p><strong>Colorblind-Friendly Palettes</strong>: Attendees learned how to create colorblind-friendly palettes in R. Using packages like <code>RColorBrewer</code>, <code>colorspace</code>, and <code>colorblindr</code>, one can quickly generate palettes that are inclusive to those with color vision deficiencies.</p></li>
-<li><p><strong>Autism-Friendly Color Schemes</strong>: Dr.&nbsp;Giordano highlighted the significance of using autism-friendly colors, which are calming shades of green and blue. The choice of colors can significantly impact how individuals on the autism spectrum perceive and interact with data.</p></li>
-<li><p><strong>Font Readability</strong>: Selecting fonts with high readability is crucial, especially for those with visual impairments. Google Fonts such as Roboto, Lexend, and OpenDyslexic were recommended for their legibility and accessibility.</p></li>
-</ul>
-</section>
-<section id="practical-demonstration" class="level4">
-<h4 class="anchored" data-anchor-id="practical-demonstration">Practical Demonstration:</h4>
-<p>Dr.&nbsp;Giordano provided a hands-on demonstration using R packages to create accessible charts:</p>
-<ul>
-<li><p><strong>Using RColorBrewer and Colorblindr</strong>: The session showcased how to apply colorblind-friendly palettes to a dataset using <code>ggplot2</code>. The <code>RColorBrewer</code> package was highlighted for its wide range of palettes that cater to different types of visual impairments.</p></li>
-<li><p><strong>Color Contrast Testing</strong>: Ensuring sufficient contrast between text and background colors is essential. Tools like <code>coloratio</code> and <code>colorspace</code> were demonstrated to test and adjust color contrasts, ensuring they meet accessibility standards.</p></li>
-<li><p><strong>Recolorize Package</strong>: For those needing to adjust brand colors to be more inclusive, the <code>recolorize</code> package was introduced. By tweaking saturation and brightness, existing palettes can be modified to become colorblind-friendly without losing brand identity.</p></li>
-<li><p><strong>Interactive Tools for Palette Selection</strong>: The <code>colorspace</code> package includes a GUI tool that allows users to select palettes and instantly see how they appear to individuals with different types of color blindness.</p></li>
-</ul>
-</section>
-<section id="importance-of-accessibility" class="level4">
-<h4 class="anchored" data-anchor-id="importance-of-accessibility">Importance of Accessibility:</h4>
-<p>The session underscored the moral and ethical responsibility of data scientists to make data accessible to everyone. Whether it’s a report for an elderly arthritis patient or a dashboard for diabetic monitoring, accessibility should be a primary consideration.</p>
-<p>In conclusion, creating accessible visualizations is not merely about compliance but about inclusivity and empathy towards all data consumers. Dr.&nbsp;Giordano’s demonstration serves as a vital reminder and guide on how this can be achieved effectively in R.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <guid>https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/</guid>
-  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/visualising-data-for-patients-create-accessible-charts/thumbnail-accessible-charts-giordano.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

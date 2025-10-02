@@ -437,9 +437,9 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">computeTropicalCoordinates</span>(pd<span class="sc">$</span>diagram, <span class="at">homDim =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>         F1          F2          F3          F4          F5          F6 
-  0.8610004   1.6898692   2.2264345   2.6968880  10.0967750   7.1271337 
+  0.8851577   1.7360642   2.3024251   2.7468851  10.0862664   6.8143945 
          F7 
-193.3111338 </code></pre>
+200.5602195 </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>xy_seq <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">1.5</span>, .<span class="dv">5</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">computePersistenceBlock</span>(</span>
@@ -447,8 +447,8 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xSeq =</span> xy_seq, <span class="at">ySeq =</span> xy_seq</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  0.4081159  0.4215975  0.0000000  0.5040178 49.5494847 57.7556257  0.1527104
-[8] 62.9673435 75.1931547</code></pre>
+<pre><code>[1]  0.2631576  0.2703382  0.0000000  0.2741236 44.6607951 55.3002189  0.0000000
+[8] 58.3511426 73.5698365</code></pre>
 </div>
 </div>
 <p>Notably, all vectorizations are written in C++ and exposed to R using {Rcpp}. We also utilize the Armadillo package for various matrix operations, which makes all computations extremely fast and efficient.</p>
