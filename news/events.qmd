@@ -15,7 +15,7 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: How to use pointblank to understand, validate, and document your data</a>',
     '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)</a>',
     '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government Data Science & AI Conference</a>',
-    '<a href="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/" target="_blank" rel="noreferrer noopener">R+AI</a>'
+    '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI</a>'
   ),
 
   dates = c("Oct 16, 2025", "Oct 14-16, 2025", "Oct 28-29, 2025", "Nov 12-13, 2025"),
