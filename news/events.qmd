@@ -12,18 +12,16 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://r-consortium.org/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Modular, interoperable, and extensible topological data analysis in R</a>',
-    '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production</a>',
     '<a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: How to use pointblank to understand, validate, and document your data</a>',
     '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)</a>',
     '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government Data Science & AI Conference</a>',
     '<a href="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/" target="_blank" rel="noreferrer noopener">R+AI</a>'
   ),
 
-  dates = c("Oct 7, 2025", "Oct 7-8, 2025", "Oct 16, 2025", "Oct 14-16, 2025", "Oct 28-29, 2025", "Nov 12-13, 2025"),
-  location = c("Virtual", "Newcastle Upon Tyne, UK", "Virtual", "Brighton, UK", "Washington, D.C", "Virtual"),
-  icon = c("Webinar", "Conference", "Webinar", "Conference", "Conference", "Conference"),
-  Type = c("Webinar", "Conference", "Webinar", "Conference", "Conference", "Conference"),
+  dates = c("Oct 16, 2025", "Oct 14-16, 2025", "Oct 28-29, 2025", "Nov 12-13, 2025"),
+  location = c("Virtual", "Brighton, UK", "Washington, D.C", "Virtual"),
+  icon = c("Webinar", "Conference", "Conference", "Conference"),
+  Type = c("Webinar", "Conference", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
@@ -86,6 +84,8 @@ gt_table
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+      '<a href="https://r-consortium.org/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Modular, interoperable, and extensible topological data analysis in R</a>',
+      '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production</a>',
       '<a href="https://eurobioc2025.bioconductor.org/" target="_blank" rel="noreferrer noopener">European Bioconductor Conference (EuroBioC2025)</a>',
       '<a href="https://r-consortium.org/webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: SAS to R in Pharma – Creating Custom Solutions for Closed-Source Code</a>',
       '<a href="https://dataconf.ai/nyc" target="_blank" rel="noreferrer noopener">New York Data Science & AI Conference</a>',
@@ -134,6 +134,8 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'Oct 7, 2025',
+        'Oct 7-8, 2025', 
         'Sept 17-19, 2025',
         'Sept 9, 2025',
         'Aug 25-27, 2025',
@@ -183,6 +185,8 @@ df <- data.frame(
       
         ),
   location = c(
+        'Virtual',
+        'Virtual',
         'Barcelona, Spain',
         'Virtual',
         'New York City, NY',
@@ -231,10 +235,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
