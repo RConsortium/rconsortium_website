@@ -484,23 +484,23 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
 <p>We are now inviting proposals for talks and workshops in all these areas:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="mufhofckcd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mufhofckcd table {
+<div id="qgyciqnllc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qgyciqnllc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mufhofckcd thead, #mufhofckcd tbody, #mufhofckcd tfoot, #mufhofckcd tr, #mufhofckcd td, #mufhofckcd th {
+#qgyciqnllc thead, #qgyciqnllc tbody, #qgyciqnllc tfoot, #qgyciqnllc tr, #qgyciqnllc td, #qgyciqnllc th {
   border-style: none;
 }
 
-#mufhofckcd p {
+#qgyciqnllc p {
   margin: 0;
   padding: 0;
 }
 
-#mufhofckcd .gt_table {
+#qgyciqnllc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -526,12 +526,12 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-left-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_caption {
+#qgyciqnllc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mufhofckcd .gt_title {
+#qgyciqnllc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -543,7 +543,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-width: 0;
 }
 
-#mufhofckcd .gt_subtitle {
+#qgyciqnllc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -555,7 +555,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-top-width: 0;
 }
 
-#mufhofckcd .gt_heading {
+#qgyciqnllc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -567,13 +567,13 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_bottom_border {
+#qgyciqnllc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_col_headings {
+#qgyciqnllc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -588,7 +588,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_col_heading {
+#qgyciqnllc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -608,7 +608,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   overflow-x: hidden;
 }
 
-#mufhofckcd .gt_column_spanner_outer {
+#qgyciqnllc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -620,15 +620,15 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 4px;
 }
 
-#mufhofckcd .gt_column_spanner_outer:first-child {
+#qgyciqnllc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mufhofckcd .gt_column_spanner_outer:last-child {
+#qgyciqnllc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mufhofckcd .gt_column_spanner {
+#qgyciqnllc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -640,11 +640,11 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   width: 100%;
 }
 
-#mufhofckcd .gt_spanner_row {
+#qgyciqnllc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mufhofckcd .gt_group_heading {
+#qgyciqnllc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -670,7 +670,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   text-align: left;
 }
 
-#mufhofckcd .gt_empty_group_heading {
+#qgyciqnllc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -685,15 +685,15 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   vertical-align: middle;
 }
 
-#mufhofckcd .gt_from_md > :first-child {
+#qgyciqnllc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mufhofckcd .gt_from_md > :last-child {
+#qgyciqnllc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mufhofckcd .gt_row {
+#qgyciqnllc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -712,7 +712,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   overflow-x: hidden;
 }
 
-#mufhofckcd .gt_stub {
+#qgyciqnllc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -725,7 +725,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#mufhofckcd .gt_stub_row_group {
+#qgyciqnllc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -739,15 +739,15 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   vertical-align: top;
 }
 
-#mufhofckcd .gt_row_group_first td {
+#qgyciqnllc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mufhofckcd .gt_row_group_first th {
+#qgyciqnllc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mufhofckcd .gt_summary_row {
+#qgyciqnllc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -757,16 +757,16 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#mufhofckcd .gt_first_summary_row {
+#qgyciqnllc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_first_summary_row.thick {
+#qgyciqnllc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mufhofckcd .gt_last_summary_row {
+#qgyciqnllc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -776,7 +776,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_grand_summary_row {
+#qgyciqnllc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -786,7 +786,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#mufhofckcd .gt_first_grand_summary_row {
+#qgyciqnllc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -796,7 +796,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-top-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_last_grand_summary_row_top {
+#qgyciqnllc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -806,11 +806,11 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_striped {
+#qgyciqnllc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mufhofckcd .gt_table_body {
+#qgyciqnllc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -819,7 +819,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_footnotes {
+#qgyciqnllc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -833,7 +833,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_footnote {
+#qgyciqnllc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -842,7 +842,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#mufhofckcd .gt_sourcenotes {
+#qgyciqnllc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -856,7 +856,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#mufhofckcd .gt_sourcenote {
+#qgyciqnllc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -864,72 +864,72 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#mufhofckcd .gt_left {
+#qgyciqnllc .gt_left {
   text-align: left;
 }
 
-#mufhofckcd .gt_center {
+#qgyciqnllc .gt_center {
   text-align: center;
 }
 
-#mufhofckcd .gt_right {
+#qgyciqnllc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mufhofckcd .gt_font_normal {
+#qgyciqnllc .gt_font_normal {
   font-weight: normal;
 }
 
-#mufhofckcd .gt_font_bold {
+#qgyciqnllc .gt_font_bold {
   font-weight: bold;
 }
 
-#mufhofckcd .gt_font_italic {
+#qgyciqnllc .gt_font_italic {
   font-style: italic;
 }
 
-#mufhofckcd .gt_super {
+#qgyciqnllc .gt_super {
   font-size: 65%;
 }
 
-#mufhofckcd .gt_footnote_marks {
+#qgyciqnllc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mufhofckcd .gt_asterisk {
+#qgyciqnllc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mufhofckcd .gt_indent_1 {
+#qgyciqnllc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mufhofckcd .gt_indent_2 {
+#qgyciqnllc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mufhofckcd .gt_indent_3 {
+#qgyciqnllc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mufhofckcd .gt_indent_4 {
+#qgyciqnllc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mufhofckcd .gt_indent_5 {
+#qgyciqnllc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mufhofckcd .katex-display {
+#qgyciqnllc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mufhofckcd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qgyciqnllc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
