@@ -14,14 +14,15 @@ df <- data.frame(
   Title = c(
     '<a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: How to use pointblank to understand, validate, and document your data</a>',
     '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)</a>',
+    '<a href="https://r-consortium.org/webinars/jnj-hybrid-sas-r-submission-story.html" target="_blank" rel="noreferrer noopener">J&J: A Hybrid SAS/R Submission Story</a>',
     '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government Data Science & AI Conference</a>',
     '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI</a>'
   ),
 
-  dates = c("Oct 16, 2025", "Oct 14-16, 2025", "Oct 28-29, 2025", "Nov 12-13, 2025"),
-  location = c("Virtual", "Brighton, UK", "Washington, D.C", "Virtual"),
-  icon = c("Webinar", "Conference", "Conference", "Conference"),
-  Type = c("Webinar", "Conference", "Conference", "Conference"),
+  dates = c("Oct 16, 2025", "Oct 14-16, 2025", "Oct 21, 2025", "Oct 28-29, 2025", "Nov 12-13, 2025"),
+  location = c("Virtual", "Brighton, UK", "Virtual", "Washington, D.C", "Virtual"),
+  icon = c("Webinar", "Conference", "Webinar", "Conference", "Conference"),
+  Type = c("Webinar", "Conference", "Webinar", "Conference", "Conference"),
   
   stringsAsFactors = FALSE
   
