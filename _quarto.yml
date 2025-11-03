@@ -111,8 +111,8 @@ format:
 execute:
   freeze: auto
   cache: true
-# Enable freeze to only re-render posts when content changes
-# This prevents re-rendering all posts when only one post is modified
+# freeze: auto ensures posts are only re-rendered when their source content changes
+# This prevents re-rendering all 252 posts when only one post is modified
 
 editor:
   render-on-save: true

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>R Consortium</title>
+<link>https://r-consortium.org/blog/index.html</link>
+<atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Thu, 02 Oct 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/index.html</link>
+  <description>{B4F502887207:/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/index.html}</description>
+  <category>announcements</category>
+  <guid>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/index.html</guid>
+  <pubDate>Thu, 02 Oct 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" medium="image" type="image/png" height="112" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/index.html</link>
+  <description>{B4F502887207:/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/index.html}</description>
+  <category>announcements</category>
+  <category>members</category>
+  <guid>https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/index.html</guid>
+  <pubDate>Wed, 10 Sep 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/oracle-machine-learning-header.png" medium="image" type="image/png" height="49" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/r-consortium-technical-grant-cycle-opens-today/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/index.html</link>
+  <description>{B4F502887207:/posts/r-consortium-technical-grant-cycle-opens-today/index.html}</description>
+  <category>grants</category>
+  <category>infrastructure</category>
+  <category>community</category>
+  <guid>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/index.html</guid>
+  <pubDate>Mon, 01 Sep 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/apply-now.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/index.html</link>
+  <description>{B4F502887207:/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/index.html}</description>
+  <guid>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/index.html</guid>
+  <pubDate>Mon, 25 Aug 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandLogo-homepage.png" medium="image" type="image/png" height="172" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/index.html</link>
+  <description>{B4F502887207:/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/index.html}</description>
+  <guid>https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/index.html</guid>
+  <pubDate>Wed, 20 Aug 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/EkaterinaAkimova.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/index.html</link>
+  <description>{B4F502887207:/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/index.html}</description>
+  <guid>https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/index.html</guid>
+  <pubDate>Tue, 19 Aug 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/cpp11armadillo_logo.png" medium="image" type="image/png" height="167" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/index.html</link>
+  <description>{B4F502887207:/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/index.html}</description>
+  <category>rugs</category>
+  <category>north america</category>
+  <guid>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/index.html</guid>
+  <pubDate>Tue, 29 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/JuliaSilge-main-image.png" medium="image" type="image/png" height="95" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/index.html</link>
+  <description>{B4F502887207:/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/index.html}</description>
+  <category>events</category>
+  <category>working groups</category>
+  <guid>https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/index.html</guid>
+  <pubDate>Fri, 11 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/hta-main-image.png" medium="image" type="image/png" height="72" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/r_plus_ai_call_for_proposals/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/index.html</link>
+  <description>{B4F502887207:/posts/r_plus_ai_call_for_proposals/index.html}</description>
+  <category>events</category>
+  <category>ai</category>
+  <guid>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/index.html</guid>
+  <pubDate>Thu, 10 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/teaching-r-to-investigative-journalists-in-brazil/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/index.html</link>
+  <description>{B4F502887207:/posts/teaching-r-to-investigative-journalists-in-brazil/index.html}</description>
+  <category>events</category>
+  <guid>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/index.html</guid>
+  <pubDate>Mon, 07 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/data-sunday-2024.png" medium="image" type="image/png" height="85" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/strength-in-numbers/index.html}</title>
+  <dc:creator>Virginia Department of Environmental Quality</dc:creator>
+  <link>https://r-consortium.org/posts/strength-in-numbers/index.html</link>
+  <description>{B4F502887207:/posts/strength-in-numbers/index.html}</description>
+  <category>environment</category>
+  <category>software development</category>
+  <category>north america</category>
+  <guid>https://r-consortium.org/posts/strength-in-numbers/index.html</guid>
+  <pubDate>Tue, 01 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/strength-in-numbers/vadeq-main-image.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/index.html</link>
+  <description>{B4F502887207:/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/index.html</guid>
+  <pubDate>Sun, 29 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/thumbnail-dataviz-cara.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/index.html</link>
+  <description>{B4F502887207:/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>healthcare</category>
+  <category>epidemiology</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/index.html</guid>
+  <pubDate>Tue, 24 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/thumbnail-cohortconstructor-burn-and-mercade-bosora.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/index.html</link>
+  <description>{B4F502887207:/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>clinical research</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/index.html</guid>
+  <pubDate>Tue, 24 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/thumbnail-rix-and-nix-nantz.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/index.html</link>
+  <description>{B4F502887207:/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>clinical research</category>
+  <category>software development</category>
+  <category>healthcare</category>
+  <guid>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/index.html</guid>
+  <pubDate>Tue, 24 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/thumbnail-redcap-rose.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/the-power-of-targets-package-for-reproducible-data-science/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/index.html</link>
+  <description>{B4F502887207:/posts/the-power-of-targets-package-for-reproducible-data-science/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/index.html</guid>
+  <pubDate>Tue, 24 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/thumbnail-targets-rahul.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/first-steps-with-sql-in-r-making-data-talk/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/index.html</link>
+  <description>{B4F502887207:/posts/first-steps-with-sql-in-r-making-data-talk/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/index.html</guid>
+  <pubDate>Mon, 23 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/thumbnail-SQL-in-R-chris.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/index.html</link>
+  <description>{B4F502887207:/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/index.html}</description>
+  <category>r/medicine 2025</category>
+  <guid>https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/index.html</guid>
+  <pubDate>Mon, 23 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/thumbnail-quarto-mine.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/index.html</link>
+  <description>{B4F502887207:/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/index.html}</description>
+  <category>r/medicine 2025</category>
+  <guid>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/index.html</guid>
+  <pubDate>Mon, 23 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/index.html}</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/index.html</link>
+  <description>{B4F502887207:/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/index.html}</description>
+  <category>r/medicine 2025</category>
+  <category>healthcare</category>
+  <category>clinical research</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/index.html</guid>
+  <pubDate>Mon, 23 Jun 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>
