@@ -15,5 +15,5 @@ venv
 # Quarto/knitr build artifacts
 *_cache/
 **/index_cache/
-_freeze/
+# _freeze/ - DO NOT ignore! Freeze cache should be committed to preserve rendering state
 **/index_files/
