@@ -381,11 +381,11 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <section id="moving-towards-r" class="level2">
 <h2 class="anchored" data-anchor-id="moving-towards-r">Moving towards R</h2>
 <p>FRB/US model definition is available to R users in the <code>FRB__MODEL</code> dataset of the <a href="https://CRAN.R-project.org/package=bimets">bimets</a> package (bimets ver. 4.0.2, a software framework for time series analysis and econometric modeling):</p>
-<div class="cell">
+<div class="cell" data-hash="index_cache/html/load_bimets_ac1077209b77968685916231dedb5f7d">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load bimets</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bimets)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="cell">
+<div class="cell" data-hash="index_cache/html/FRBUS_def_63cb09089d820e699a178e3b485028b4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load FRB/US MDL definition</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(FRB__MODEL)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -449,7 +449,7 @@ EQ&gt; dmptpi=
 <section id="dynamic-simulation-in-a-monetary-policy-shock" class="level2">
 <h2 class="anchored" data-anchor-id="dynamic-simulation-in-a-monetary-policy-shock">Dynamic simulation in a monetary policy shock</h2>
 <p>The first econometric exercise proposed by the Federal Reserve is a dynamic simulation of the FRB/US model under a monetary policy shock. The simulation is operated from 2040-Q1 to 2045-Q4, after the <code>rffintay</code> time series, defined as <em>“Value of eff. federal funds rate given by the inertial Taylor rule”</em>, is shocked by 100 base points in 2040-Q1.</p>
-<div class="cell">
+<div class="cell" data-hash="index_cache/html/monetary_shock_61869d35b518d03393dfa4080132173b">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(LONGBASE)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>

@@ -482,25 +482,25 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
 <section id="cfp-dates-open-7102025---closes-09052025" class="level2">
 <h2 class="anchored" data-anchor-id="cfp-dates-open-7102025---closes-09052025">CFP dates: OPEN 7/10/2025 - CLOSES: 09/05/2025</h2>
 <p>We are now inviting proposals for talks and workshops in all these areas:</p>
-<div class="cell">
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_cb882ed92554a47963d5753766b24a77">
 <div class="cell-output-display">
-<div id="sbbpelrljz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sbbpelrljz table {
+<div id="jwzgmxkcsu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jwzgmxkcsu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sbbpelrljz thead, #sbbpelrljz tbody, #sbbpelrljz tfoot, #sbbpelrljz tr, #sbbpelrljz td, #sbbpelrljz th {
+#jwzgmxkcsu thead, #jwzgmxkcsu tbody, #jwzgmxkcsu tfoot, #jwzgmxkcsu tr, #jwzgmxkcsu td, #jwzgmxkcsu th {
   border-style: none;
 }
 
-#sbbpelrljz p {
+#jwzgmxkcsu p {
   margin: 0;
   padding: 0;
 }
 
-#sbbpelrljz .gt_table {
+#jwzgmxkcsu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -526,12 +526,12 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-left-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_caption {
+#jwzgmxkcsu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#sbbpelrljz .gt_title {
+#jwzgmxkcsu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -543,7 +543,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-width: 0;
 }
 
-#sbbpelrljz .gt_subtitle {
+#jwzgmxkcsu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -555,7 +555,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-top-width: 0;
 }
 
-#sbbpelrljz .gt_heading {
+#jwzgmxkcsu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -567,13 +567,13 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_bottom_border {
+#jwzgmxkcsu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_col_headings {
+#jwzgmxkcsu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -588,7 +588,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_col_heading {
+#jwzgmxkcsu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -608,7 +608,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   overflow-x: hidden;
 }
 
-#sbbpelrljz .gt_column_spanner_outer {
+#jwzgmxkcsu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -620,15 +620,15 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 4px;
 }
 
-#sbbpelrljz .gt_column_spanner_outer:first-child {
+#jwzgmxkcsu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sbbpelrljz .gt_column_spanner_outer:last-child {
+#jwzgmxkcsu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sbbpelrljz .gt_column_spanner {
+#jwzgmxkcsu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -640,11 +640,11 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   width: 100%;
 }
 
-#sbbpelrljz .gt_spanner_row {
+#jwzgmxkcsu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#sbbpelrljz .gt_group_heading {
+#jwzgmxkcsu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -670,7 +670,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   text-align: left;
 }
 
-#sbbpelrljz .gt_empty_group_heading {
+#jwzgmxkcsu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -685,15 +685,15 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   vertical-align: middle;
 }
 
-#sbbpelrljz .gt_from_md > :first-child {
+#jwzgmxkcsu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sbbpelrljz .gt_from_md > :last-child {
+#jwzgmxkcsu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sbbpelrljz .gt_row {
+#jwzgmxkcsu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -712,7 +712,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   overflow-x: hidden;
 }
 
-#sbbpelrljz .gt_stub {
+#jwzgmxkcsu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -725,7 +725,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#sbbpelrljz .gt_stub_row_group {
+#jwzgmxkcsu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -739,15 +739,15 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   vertical-align: top;
 }
 
-#sbbpelrljz .gt_row_group_first td {
+#jwzgmxkcsu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#sbbpelrljz .gt_row_group_first th {
+#jwzgmxkcsu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#sbbpelrljz .gt_summary_row {
+#jwzgmxkcsu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -757,16 +757,16 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#sbbpelrljz .gt_first_summary_row {
+#jwzgmxkcsu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_first_summary_row.thick {
+#jwzgmxkcsu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#sbbpelrljz .gt_last_summary_row {
+#jwzgmxkcsu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -776,7 +776,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_grand_summary_row {
+#jwzgmxkcsu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -786,7 +786,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#sbbpelrljz .gt_first_grand_summary_row {
+#jwzgmxkcsu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -796,7 +796,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-top-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_last_grand_summary_row_top {
+#jwzgmxkcsu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -806,11 +806,11 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_striped {
+#jwzgmxkcsu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sbbpelrljz .gt_table_body {
+#jwzgmxkcsu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -819,7 +819,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-bottom-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_footnotes {
+#jwzgmxkcsu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -833,7 +833,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_footnote {
+#jwzgmxkcsu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -842,7 +842,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#sbbpelrljz .gt_sourcenotes {
+#jwzgmxkcsu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -856,7 +856,7 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   border-right-color: #D3D3D3;
 }
 
-#sbbpelrljz .gt_sourcenote {
+#jwzgmxkcsu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -864,72 +864,72 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   padding-right: 5px;
 }
 
-#sbbpelrljz .gt_left {
+#jwzgmxkcsu .gt_left {
   text-align: left;
 }
 
-#sbbpelrljz .gt_center {
+#jwzgmxkcsu .gt_center {
   text-align: center;
 }
 
-#sbbpelrljz .gt_right {
+#jwzgmxkcsu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sbbpelrljz .gt_font_normal {
+#jwzgmxkcsu .gt_font_normal {
   font-weight: normal;
 }
 
-#sbbpelrljz .gt_font_bold {
+#jwzgmxkcsu .gt_font_bold {
   font-weight: bold;
 }
 
-#sbbpelrljz .gt_font_italic {
+#jwzgmxkcsu .gt_font_italic {
   font-style: italic;
 }
 
-#sbbpelrljz .gt_super {
+#jwzgmxkcsu .gt_super {
   font-size: 65%;
 }
 
-#sbbpelrljz .gt_footnote_marks {
+#jwzgmxkcsu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#sbbpelrljz .gt_asterisk {
+#jwzgmxkcsu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#sbbpelrljz .gt_indent_1 {
+#jwzgmxkcsu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#sbbpelrljz .gt_indent_2 {
+#jwzgmxkcsu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#sbbpelrljz .gt_indent_3 {
+#jwzgmxkcsu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#sbbpelrljz .gt_indent_4 {
+#jwzgmxkcsu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#sbbpelrljz .gt_indent_5 {
+#jwzgmxkcsu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#sbbpelrljz .katex-display {
+#jwzgmxkcsu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#sbbpelrljz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jwzgmxkcsu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1796,6 +1796,12 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <category>software development</category>
   <guid>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>
+-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/index.html</guid>
+  <pubDate>Mon, 23 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
