@@ -10,7 +10,137 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 02 Oct 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 04 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Learning Shiny, Together: A Collaborative Reading Club Around Mastering Shiny in Buenos Aires</title>
+  <dc:creator>R-Ladies Buenos Aires &amp; R in Buenos Aires User Group</dc:creator>
+  <link>https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/portadashiny.png" class="img-fluid"></p>
+<p>Have you ever wanted to read Mastering Shiny but kept postponing it for “when things calm down”? So did we! At <a href="https://rladiesba.netlify.app/">R-Ladies Buenos Aires</a> and <a href="https://renbaires.github.io/">R en Buenos Aires</a>, many of us had Mastering Shiny sitting on our virtual shelves, always waiting for the right moment. After months (okay, maybe years) of good intentions and no progress, we realized we needed a push, and that push came from the power of community.</p>
+<section id="from-solo-intentions-to-collective-learning" class="level2">
+<h2 class="anchored" data-anchor-id="from-solo-intentions-to-collective-learning">From Solo Intentions to Collective Learning</h2>
+<p>There is an African proverb that says, <em>If you want to go fast, go alone. If you want to go far, go together.</em> We decided to turn individual intentions into collective learning. Instead of trying to read the book on our own, we organized a <strong>community-based reading club</strong>: one where we could support each other, share our doubts, and celebrate our progress. Our goals were simple. We wanted to create a friendly, welcoming environment for learning Shiny, break down the book into manageable chunks, and make space for everyone, regardless of their experience, to learn and lead.</p>
+</section>
+<section id="how-we-organized-the-reading-club" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-organized-the-reading-club">How We Organized the Reading Club</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/shiny1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-cap="Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/shiny3.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Virtual Meeting 9: Discussion of Chapters 14 of <em>Mastering Shiny</em></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<p>We organized the club around ten meetings, which took place between March and July. Although we initially planned to read the entire book, we decided that a shorter, time-bound version would be more realistic and sustainable for the organizing team and its participants. We began planning and organizing this large-scale activity in September 2024.</p>
+<p>All sessions were held online, lasting between 60 and 90 minutes. Each one was led by a different person (or pair), who walked us through the content and exercises of the assigned chapters.</p>
+<p>There was no expectation of being an expert. In fact, we explicitly encouraged people with little or no prior Shiny experience to join and to lead (and they did!). The only guideline was to read the chapters, try the exercises, and come ready to share. Presenters would explain what they understood from the chapters, highlight key concepts, and guide us through the exercises. Then the magic happened: we’d collectively fill in the gaps, ask questions, offer alternatives, and learn from one another.</p>
+</div>
+</div>
+<p>Most presenters created slides or notebooks to guide their sessions (though this wasn’t mandatory). We collected all those materials in this <a href="https://github.com/RLadies-BA/mastering-shiny">public GitHub repository</a>, with a variety of formats and styles. We deliberately avoided imposing a specific format as we didn’t want technical barriers to stop anyone from sharing. Eventually, we plan to curate and organize the materials to make them easier to reuse, especially for Spanish-speaking learners. We believe there’s real added value in having community-built learning materials in Spanish.</p>
+<p>Over time, participants started to share the Shiny apps they were building on their own. We added a small “Show and Tell” section to the beginning of some meetings, where people presented their work-in-progress and received feedback and encouragement. It was a space full of mutual support, curiosity, and honest learning.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/shiny2.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Summary of the Reading Club’s Last Meeting</figcaption>
+</figure>
+</div>
+<p>Although we recorded the sessions, we decided to make them accessible only to attendees. This was different from our chapters’ usual practice, but we wanted to keep the sessions informal, comfortable, and pressure-free — more like a study group than a workshop. This allowed everyone to feel safe sharing unfinished work, asking questions, and making mistakes.</p>
+</section>
+<section id="reflections-and-lessons-learned" class="level2">
+<h2 class="anchored" data-anchor-id="reflections-and-lessons-learned">Reflections and Lessons Learned</h2>
+<p>Throughout the series, different people volunteered to lead the sessions. These volunteers included academics and industry professionals with a variety of backgrounds and levels of experience with R. Each volunteer brought their own style and perspective to the sessions, and all of them did a fantastic job. Although a small core group participated in most sessions, many others joined according to their interests or availability.</p>
+<p>We were surprised to have new community members who took advantage of the virtual format to join us from other countries and cities in Argentina. This allowed us to break down the barriers of physical presence and discuss topics of interest from different professional areas in Spanish.</p>
+<p>Looking ahead, one idea for a future iteration is to organize the sessions around building a single Shiny app together. We believe this could help sustain engagement, make the learning more tangible, and give participants the chance to immediately see how the book’s concepts connect in practice.</p>
+<p>One of the most rewarding aspects of the book club was hearing what participants took away from the experience. Beyond Shiny itself, people highlighted the joy of learning together, the responsibility of having regular meetings, and the warmth of the community. By the end of the club, several participants left feeling motivated and thinking of strategies to improve their work by creating a Shiny app or exploring a topic to take their first steps with a dashboard.</p>
+<section id="here-are-some-of-their-reflections-translated-from-spanish" class="level3">
+<h3 class="anchored" data-anchor-id="here-are-some-of-their-reflections-translated-from-spanish">Here are some of their reflections (translated from Spanish):</h3>
+<div class="html-div" style="text-align:center; font-style:italic; margin-bottom:2em;">
+<p>“The format of coming together to analyze the chapters of a book with technical content seemed brilliant to me. It opens up an horizontal learning space that is very enriching.”</p>
+<div style="text-align:right; font-style:italic;">
+Graciela Bellotti
+</div>
+</div>
+<div class="html-div" style="text-align:center; font-style:italic; margin-bottom:2em;">
+<p>“I really liked that everyone shared everything, holding nothing back, and explained what they had understood—whether from prior experience or from their own research on the chapter’s content. They made it very enjoyable and not too heavy, so I was able to attend all the sessions”</p>
+<div style="text-align:right; font-style:italic;">
+Daniela Zacharías
+</div>
+</div>
+<div class="html-div" style="text-align:center; font-style:italic; margin-bottom:2em;">
+<p>“So much! Not only everything related to Shiny, but also the joy of sharing these meetings with such amazing people—both presenting and exchanging doubts or knowledge.”</p>
+<div style="text-align:right; font-style:italic;">
+Laura Misiani
+</div>
+</div>
+</section>
+</section>
+<section id="wrapping-up" class="level2">
+<h2 class="anchored" data-anchor-id="wrapping-up">Wrapping up</h2>
+<p>This reading club wasn’t just about working through a technical book. It was about carving out time for learning, growing confidence, building apps (and community!), and showing that you don’t need to know everything to lead or participate. If you’ve also been meaning to read Mastering Shiny, maybe this is your sign to gather your group and start together. Because when we learn together, we go further and we have more fun along the way.</p>
+<section id="you-can-reach-out-to-r-ladies-buenos-aires-r-in-buenos-aires-through-the-following" class="level3">
+<h3 class="anchored" data-anchor-id="you-can-reach-out-to-r-ladies-buenos-aires-r-in-buenos-aires-through-the-following">You can reach out to R-Ladies Buenos Aires &amp; R in Buenos Aires through the following:</h3>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://avatars.githubusercontent.com/u/38664570?s=200&amp;v=4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<ul>
+<li><p>Linkedin: <a href="https://www.linkedin.com/company/rladies-ba/">https://www.linkedin.com/company/rladies-ba/</a></p></li>
+<li><p>Instagram:<a href="https://www.instagram.com/rladiesba/?hl=en">https://www.instagram.com/rladiesba</a></p></li>
+<li><p>X: <a href="https://twitter.com/rladiesba?lang=en">https://twitter.com/rladiesba</a></p></li>
+<li><p>Website: <a href="https://rladiesba.netlify.app/">https://rladiesba.netlify.app/</a></p></li>
+</ul>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://renbaires.github.io/image/BA-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<ul>
+<li><p>Linkedin: <a href="https://www.linkedin.com/company/r-en-buenos-aires" class="uri">https://www.linkedin.com/company/r-en-buenos-aires</a></p></li>
+<li><p>Instagram: <a href="https://www.instagram.com/renbuenosaires">https://www.instagram.com/renbuenosaires</a></p></li>
+<li><p>X: <a href="https://x.com/renbaires">https://x.com/renbaires</a></p></li>
+<li><p>Website: <a href="https://renbaires.github.io/" class="uri">https://renbaires.github.io/</a></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h3>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html" class="uri">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>south america</category>
+  <guid>https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/</guid>
+  <pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/portadashiny.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>The Sovereign Tech Fund invests $450,000 in R Foundation to Enhance R’s Sustainability and Security</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1733,76 +1863,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/UMdN9SgQbLA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="leveraging-r-shiny-for-automated-decision-analytic-modeling-in-cost-effectiveness-analysis" class="level1">
-<h1>Leveraging R Shiny for Automated Decision-Analytic Modeling in Cost-Effectiveness Analysis</h1>
-<p>The landscape of health economic evaluation is increasingly influenced by computational tools, and R is playing a pivotal role in this transformation. Mahip Acharya, an assistant professor at the University of Arkansas for Medical Sciences, has showcased the power of R and R Shiny in automating decision-analytic modeling for cost-effectiveness analysis. This innovative approach provides a flexible and efficient method of evaluating economic outcomes, particularly in the healthcare sector.</p>
-<section id="understanding-cost-effectiveness-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-cost-effectiveness-analysis">Understanding Cost-Effectiveness Analysis</h2>
-<p>Cost-effectiveness analysis (CEA) is a form of economic evaluation that compares the relative costs and outcomes (effects) of different courses of action. It is commonly used in healthcare to determine the value of interventions, such as medications or surgical procedures, by assessing how much benefit they provide relative to their cost. The benefits are typically measured in terms of life years gained or quality-adjusted life years (QALYs).</p>
-<p>In CEA, the incremental cost-effectiveness ratio (ICER) is a crucial metric. It represents the additional cost per additional unit of benefit (e.g., per QALY). Decision-makers often compare the ICER to a willingness-to-pay threshold to determine if an intervention is cost-effective. For instance, in the United States, thresholds can range from $50,000 to $150,000 per QALY.</p>
-</section>
-<section id="the-role-of-markov-models" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-markov-models">The Role of Markov Models</h2>
-<p>Markov models are frequently employed in CEA to simulate the progression of diseases over time. They are particularly useful for modeling chronic conditions where the disease state changes over a long period. In a Markov model, patients transition between different health states at specified probabilities, which can be influenced by interventions.</p>
-<p>In his demonstration, Mahip Acharya utilized a Markov model to evaluate the cost-effectiveness of a treatment for hypertension. The model included various health states, such as myocardial infarction, heart failure, stroke, and death. Patients transition between these states based on predefined probabilities, and the model calculates the associated costs and QALYs.</p>
-</section>
-<section id="automating-the-process-with-r-shiny" class="level2">
-<h2 class="anchored" data-anchor-id="automating-the-process-with-r-shiny">Automating the Process with R Shiny</h2>
-<p>R Shiny offers an interactive platform for building web applications directly from R. Mahip leveraged Shiny to automate the process of decision-analytic modeling, making it accessible for users without extensive programming expertise. The application allows users to input various parameters, such as transition probabilities, costs, and health utilities, through a user-friendly interface.</p>
-<section id="key-features-of-the-shiny-application" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-of-the-shiny-application">Key Features of the Shiny Application</h3>
-<ul>
-<li><p><strong>Model Structure Visualization</strong>: Users can upload a PDF depicting the Markov model structure. The application reads the state names directly from the file, eliminating the need for manual input.</p></li>
-<li><p><strong>Data Input Flexibility</strong>: The app accepts multiple data inputs, including transition rates, hazard ratios, treatment costs, and health utilities. These inputs can be adjusted to explore different scenarios.</p></li>
-<li><p><strong>Interactive Output</strong>: The application calculates and displays key outputs, such as total costs, total QALYs, and ICERs. Users can adjust the model parameters, such as the discount rate and model cycle length, to see how these changes affect the results.</p></li>
-<li><p><strong>Generalizability and Adaptability</strong>: While the current model focuses on hypertension, the framework can be adapted to other chronic conditions by modifying the disease states and transition probabilities.</p></li>
-</ul>
-</section>
-</section>
-<section id="challenges-and-future-work" class="level2">
-<h2 class="anchored" data-anchor-id="challenges-and-future-work">Challenges and Future Work</h2>
-<p>While the application serves as a robust proof of concept, Mahip acknowledges several areas for future improvement:</p>
-<ul>
-<li><p><strong>Expanding File Format Support</strong>: Currently, the model structure must be uploaded as a PDF. Adding support for other image formats like PNG or JPEG would enhance usability.</p></li>
-<li><p><strong>Incorporating Sensitivity Analyses</strong>: Implementing deterministic and probabilistic sensitivity analyses would provide deeper insights into the model’s robustness.</p></li>
-<li><p><strong>Enhancing User Inputs</strong>: Allowing users to specify different cycle lengths (e.g., annual or monthly) and starting cohorts would increase the model’s flexibility.</p></li>
-<li><p><strong>Supporting Multiple Treatment Groups</strong>: The current version of the app supports only one treatment group. Expanding to multiple groups would accommodate more complex analyses.</p></li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The integration of R Shiny with decision-analytic modeling marks a significant advancement in the field of health economic evaluation. By automating processes and providing a user-friendly interface, Mahip Acharya’s approach empowers researchers and decision-makers to conduct comprehensive cost-effectiveness analyses with greater efficiency and precision. As the application evolves, it promises to become an invaluable tool in the evaluation of healthcare interventions, ultimately contributing to more informed and cost-effective healthcare decisions.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <category>healthcare</category>
-  <category>clinical research</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/</guid>
-  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-</channel>
-</rss>
--and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/index.html</guid>
-  <pubDate>Mon, 23 Jun 2025 07:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/using-r-shiny-to-perform-and-automate-decision-analytic-modeling-for-cost-effectiveness-analysis/thumbnail-using-r-shiny-mahip.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
