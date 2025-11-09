@@ -5614,25 +5614,11 @@
     "text": "The R Adoption Series\nThis is a series of webinars focused on the adoption of R. Each session will include a case study and often include panels or discussions to enable those starting their journey to ask questions.\nR Consortium will keep this page updated with information on future webinars in the R Adoption series. If there is some information that you are looking for specifically and you don’t see it here, feel free to email us at info@r-consortium.org."
   },
   {
-    "objectID": "webinars/jnj-hybrid-sas-r-submission-story.html#register-now",
-    "href": "webinars/jnj-hybrid-sas-r-submission-story.html#register-now",
-    "title": "J&J: A Hybrid SAS/R Submission Story",
-    "section": "Register now!",
-    "text": "Register now!\n\nTuesday, October 21, 9am PDT / 12pm ET\nR Consortium Silver Member Johnson & Johnson will share insights into their work on the successful R submission to the FDA. Three J&J researchers will show how open-source R packages were utilized for statistical analysis and the creation of tables, figures, and listings (TFLs).\n\n\nAbout the R Submissions Working Group\nThe R Consortium R Submissions Working Group is focused on improving practices for R-based clinical trial regulatory submissions.\nHealth authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.\nIn recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.\nTherefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the R consortium GitHub page."
-  },
-  {
     "objectID": "webinars/jnj-hybrid-sas-r-submission-story.html#speakers",
     "href": "webinars/jnj-hybrid-sas-r-submission-story.html#speakers",
     "title": "J&J: A Hybrid SAS/R Submission Story",
     "section": "Speakers",
     "text": "Speakers\n\nSteven Haesendonckx – Statistical Programming Lead at Johnson & Johnson\n\nSteven Haesendonckx is a Statistical Programming Lead at Johnson & Johnson Innovative Medicine, working within the Immunology therapeutic area. He is a passionate R advocate, driving its adoption within the statistical programming department and contributing to external initiatives that promote the use of R in clinical research. Steven actively supports the integration of R into daily workflows through collaboration, tooling, and community engagement.\n\n\nAlicia Humphreys – Associate Director at Johnson & Johnson\n\nAlicia Humphreys is an Associate Director within Clinical & Statistical Programming at Johnson & Johnson in the oncology therapeutic area. Alongside the planning and oversight of statistical programming activities for oncology clinical projects, she co-leads the R Implementation Team, aiming to implement R into the business processes within the Statistical Programming team. This initiative enhances data analysis and strengthens statistical programming capabilities.\n\n\nLinshan Yuan – Statistical Programmer at Johnson & Johnson\n\nLinshan Yuan is a Statistical Programmer at Johnson & Johnson Innovative Medicine, working over 15 years of experience in the pharmaceutical field. Her expertise includes SDTM, ADaM, TFLs, macro programming, and using R for clinical data analysis. Recently, she has been working on applying various programming techniques to perform statistical analyses in collaboration with her colleagues and has been involved in a hybrid submission."
-  },
-  {
-    "objectID": "webinars/jnj-hybrid-sas-r-submission-story.html#register-now-1",
-    "href": "webinars/jnj-hybrid-sas-r-submission-story.html#register-now-1",
-    "title": "J&J: A Hybrid SAS/R Submission Story",
-    "section": "Register now!",
-    "text": "Register now!"
   },
   {
     "objectID": "webinars/rix-reproducible-data-science-environments-with-nix.html",
