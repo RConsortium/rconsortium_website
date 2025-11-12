@@ -2,17 +2,11 @@
 title: "Modular, interoperable, and extensible topological data analysis in R"
 ---
 
-![](images/webinar-topological-cory-aymeric-main-image.png){width=90%}
-
-## Event Details
-
-**Date:** Tuesday, October 7, 2025  
-**Time:** 8am PT / 11am ET / 5pm in France  
-**Registration:** [Register for the webinar](https://zoom.us/webinar/register/WN_KVaeYZXjTTSOG7Qdg6BKOg)
+{{< video https://youtu.be/ozfevj8rReQ?si=q73axchIt3TJ9IyQ >}}
 
 ## Summary
 
-This webinar will cover work from an R Consortium ISC grant project called "Modular, interoperable, and extensible topological data analysis in R" starting in early 2024.
+This webinar covered work from an R Consortium ISC grant project called "Modular, interoperable, and extensible topological data analysis in R" starting in early 2024.
 
 The goal of the project is to seamlessly integrate popular techniques from topological data analysis (TDA) into common statistical workflows in R. The expected benefit is that these extensions will be more widely used by non-specialist researchers and analysts, which will create sufficient awareness and interest in the community to extend the individual packages and the collection.
 
