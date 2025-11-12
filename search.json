@@ -56,11 +56,11 @@
     "text": "Speakers\n\nShinichi Hotta, Sumitomo Pharma Co., Ltd. \n\nShinichi Hotta is a Statistical Programmer at Sumitomo Pharma. He has 22 years of experience as a statistical programmer in pharmaceutical companies and Contract Research Organizations (CROs), working for clinical trials and submissions in Japan, the US, China and more. Throughout his career, he has given presentations about data analyses, SAS, R and CDISC (the Clinical Data Interchange Standards Consortium). Since 2020, he has been the leader of the open-source software task force in the JPMA.\n\n\nYuki Matsunaga, Novartis Pharma K.K.\n\nYuki Matsunaga has held multiple positions at Novartis Pharma KK (Japan) including Clinical Development Director Japan, Statistical Programmer, Medical Scientific Expert, and Medical Science Liaison.\nHe is currently working on new drug development and retrospective studies using medical real-world data such as electronic healthcare records and health claims data. He is also a member of the {admiralophtha} (“Ophthalmology”) development team, and a start-up member of the open-source software task force in the JPMA."
   },
   {
-    "objectID": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html#register-now",
-    "href": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html#register-now",
+    "objectID": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html",
+    "href": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html",
     "title": "SAS to R in Pharma – Creating Custom Solutions for Closed-Source Code",
-    "section": "Register now!",
-    "text": "Register now!\n\nSeptember 9, 9am PT/12pm ET\nWhen supporting a heavily regulated pharmaceutical client in migrating their codebase from SAS to R, ProCogia encountered a complex pipeline built around a proprietary SAS function. The challenge was to develop an R-based solution that not only replicated the original functionality, but also integrated seamlessly with the client’s existing systems.\nIn this webinar, we’ll walk through the approach we took to deliver a high-fidelity migration tailored to the client’s specific needs. We’ll also highlight why a structured evaluation process is critical to the success of any SAS-to-R migration effort—especially in high-compliance environments like pharma."
+    "section": "",
+    "text": "When supporting a heavily regulated pharmaceutical client in migrating their codebase from SAS to R, ProCogia encountered a complex pipeline built around a proprietary SAS function. The challenge was to develop an R-based solution that not only replicated the original functionality, but also integrated seamlessly with the client’s existing systems.\nIn this webinar, ProCogia’s Gabriel Brock walked through the approach they took to deliver a high-fidelity migration tailored to the client’s specific needs. Brock also highlighted why a structured evaluation process is critical to the success of any SAS-to-R migration effort—especially in high-compliance environments like pharma."
   },
   {
     "objectID": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html#speaker",
@@ -68,13 +68,6 @@
     "title": "SAS to R in Pharma – Creating Custom Solutions for Closed-Source Code",
     "section": "Speaker",
     "text": "Speaker\n\nGabriel Brock – R Developer at ProCogia\n\nGabriel is an R Developer at ProCogia, where he has supported SAS-to-R migration projects and other advanced analytics initiatives since 2022. He brings a diverse background in pharmaceuticals, finance, healthcare, and consumer analytics, applying R to solve complex challenges in high-compliance environments.\nHis expertise spans statistical modeling, machine learning, and generative AI, with hands-on experience in text mining, simulations, and data visualization. Gabriel is fluent in R, Python, SAS, and SQL, and works regularly with cloud platforms like AWS and Google Cloud. He’s passionate about making data science accessible, scalable, and impactful—especially within the R ecosystem."
-  },
-  {
-    "objectID": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html#register-now-1",
-    "href": "webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html#register-now-1",
-    "title": "SAS to R in Pharma – Creating Custom Solutions for Closed-Source Code",
-    "section": "Register now!",
-    "text": "Register now!"
   },
   {
     "objectID": "webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html#abstract",
