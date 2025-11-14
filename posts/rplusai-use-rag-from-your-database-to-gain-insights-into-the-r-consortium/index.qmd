@@ -1,0 +1,156 @@
+---
+title: "R+AI: Use RAG from your database to gain insights into the R Consortium"
+unpublished: false
+description: "At R+AI 2025, Oracle Machine Learning’s Mark Hornick and Sherry LaMonica showed how R users can apply Retrieval Augmented Generation (RAG) to R Consortium blog data using Oracle Autonomous Database, Select AI, and an R interface."
+author: "R Consortium"
+categories: ["ai", "events", "r+ai"]
+image: "thumbnail-oracle.png"
+image-alt: "main image for Oracle Machine Learning's Mark Hornick and Sherry LaMonica at R+AI 2025"
+date: "11/14/2025"
+---
+
+{{< video https://youtu.be/h0ewziCZ0WI >}}
+
+### Slides with resource links [available here](RplusAI-Mark-Hornick-RAG.pdf) (PDF).
+
+Retrieval-Augmented Generation (RAG) is quickly becoming a core pattern for putting real-world data behind large language models (LLMs). At R+AI 2025, the session **“R+AI: Use RAG from your database to gain insights into the R Consortium”** put this pattern directly into the hands of R users.
+
+Presented by **Mark Hornick** (Senior Director, Oracle Machine Learning) and **Sherry LaMonica** (Consulting MTS, Oracle Machine Learning), the session walks through how to turn the R Consortium’s blog archive into a searchable knowledge source using R, Oracle Autonomous AI Database, and Select AI’s built-in RAG capabilities.
+
+---
+
+## Why RAG matters for R users
+
+The session opens with a problem that every R user experimenting with LLMs has already run into: models are powerful, but their knowledge is frozen at a training cutoff date. They know a lot about R in general, but not necessarily about:
+
+- Recent events such as R+AI 2025  
+- Newly published R Consortium posts or announcements  
+- Fresh community content, including RUG interviews and technical grant updates  
+
+Without access to current, domain-specific content, a base LLM simply cannot answer many questions accurately—especially about a fast-moving ecosystem like R.
+
+RAG solves this by combining:
+
+- **Vector search** over your own content (in this case, R Consortium blogs)  
+- **Generative AI** that uses the retrieved passages as grounded context  
+
+Instead of asking an LLM to “remember everything,” RAG feeds it the exact snippets it needs at query time. The model generates text, but the facts come from your data.
+
+---
+
+## Inside a RAG pipeline: from chunks to answers
+
+Hornick walks through a concise but clear mental model for RAG:
+
+1. **Chunk documents**  
+   R Consortium blog posts and related articles are split into text chunks using a sliding window approach, so each piece is big enough to be meaningful but small enough for precise retrieval.
+
+2. **Create embeddings and a vector index**  
+   Each chunk is converted into a high-dimensional vector using an embedding (transformer) model. These vectors are stored in a vector database and organized by a **vector index**, which makes similarity search fast and scalable, even with millions of chunks.  
+
+3. **Embed the user query**  
+   When a user asks a question in natural language, that question is also converted into a vector using the same embedding model.
+
+4. **Retrieve similar chunks**  
+   The system performs a semantic similarity search between the query vector and the document vectors, retrieving the top-k most relevant chunks.
+
+5. **Augment the prompt and call the LLM**  
+   Those chunks are combined with the user’s question to form an augmented prompt. The LLM then generates an answer grounded in the retrieved R Consortium content.
+
+6. **Return both answer and sources**  
+   In addition to the natural-language answer, the system can return which documents and offsets contributed to that response, giving transparency and traceability back to the original posts.
+
+The key point: RAG injects fresh, trusted knowledge into the LLM at inference time, without retraining or fine-tuning the model.
+
+---
+
+## Select AI and Autonomous AI Database: RAG built into the database
+
+Rather than asking R users to handcraft all this orchestration with an external framework, the session leans on **Oracle Autonomous AI Database** and **Select AI**. In this architecture:
+
+- The **R Consortium blog archive** is stored as HTML and text files in **Oracle Object Storage**.  
+- **Select AI RAG** automates chunking, embedding, vector store creation, and index maintenance inside the database.  
+- The entire RAG pipeline lives close to the data, which simplifies operations and improves performance.
+
+Select AI exposes a configuration object called an **AI profile**, which specifies:
+
+- The AI provider and LLM to use (for example, an OCI Generative AI model)  
+- The transformer (embedding) model  
+- The vector index to query  
+- Parameters like temperature, max tokens, and whether to return sources  
+
+The talk shows how AI profiles become the control center for RAG: define them once, then reuse them across R sessions, workflows, and applications.
+
+---
+
+## Building RAG from R: helper functions, not boilerplate
+
+From the R user’s perspective, the magic happens through a set of helper functions that wrap the underlying PL/SQL APIs in the database. LaMonica demonstrates this live from RStudio:
+
+- An R function establishes a secure connection to Oracle Autonomous AI Database.  
+- Another function creates an AI profile, passing in credentials, LLM configuration, and the name of the vector index.  
+- A third function creates the vector index itself, handling options like chunk size, chunk overlap, and refresh behavior as new content is added to Object Storage.   
+
+All of the PL/SQL complexity—JSON attribute strings, dynamic SQL, and calls to `DBMS_CLOUD_AI` procedures such as `CREATE_VECTOR_INDEX`—is hidden behind the R wrapper functions. R users stay in familiar territory while the database takes care of the heavy lifting.
+
+Once everything is configured, a single R function can:
+
+- Take a natural language prompt  
+- Call the appropriate Select AI procedure under the hood  
+- Return both the generated answer and the list of retrieved sources as a tidy R object
+
+This pattern makes it realistic for R teams to prototype and deploy RAG workflows without becoming experts in database internals.
+
+---
+
+## Direct LLM vs RAG: asking about R+AI 2025
+
+One of the most compelling moments in the demo is a simple A/B test:
+
+- First, LaMonica asks a base LLM (no RAG) about the **R+AI 2025 conference**. As expected, the model admits it has no information—this content postdates its training data.  
+- Then, she repeats the same question using RAG backed by the R Consortium blog and conference pages.  
+
+This time, the answer includes concrete details about R+AI 2025: dates, online format, and examples from the program, all drawn from the R Consortium’s own materials.  
+
+The difference is stark:
+
+- Without RAG, the model is blind to R Consortium’s latest activities.  
+- With RAG, it acts like a knowledgeable assistant that “reads” the current R Consortium site for every query.
+
+For anyone managing R content—websites, documentation, internal knowledge bases—the lesson is clear: RAG is how LLMs become truly useful on top of your own corpus.
+
+---
+
+## Multilingual retrieval on English blog content
+
+Another highlight is multilingual support. The R Consortium blog posts used in the demo are in English, but the speakers show queries issued in **Italian, Spanish, and Brazilian Portuguese**:
+
+- The multilingual embedding model interprets the query in each language.  
+- The system still retrieves relevant English-language blog chunks.  
+- The LLM responds in the same language as the question, grounded in English content.
+
+For an international community like the R ecosystem—where user groups and contributors span Europe, Latin America, and beyond—this multilingual RAG pattern is powerful. It makes English-only technical content accessible through conversational queries in local languages, while still keeping a single canonical source of truth. 
+
+---
+
+## Under the hood: AI profiles, vector indexes, and PL/SQL
+
+Toward the end of the session, the speakers briefly peel back the abstraction and show what the R helper functions are doing:
+
+- A **PL/SQL `CREATE_PROFILE` block** configures the AI profile: provider, credentials, LLM, embedding model, vector index, and parameters such as temperature and max tokens.  
+- A **`CREATE_VECTOR_INDEX` call** specifies the vector database provider (Oracle), the location in Object Storage, vector dimensionality, distance metric, and chunking options like overlap and size.  
+- Other procedures drop or refresh vector indexes, and control whether sources are returned with each answer.
+
+The R wrappers simply construct these PL/SQL calls as strings, execute them via a database connectivity package, and translate the results into forms that are easy to work with in R.
+
+The message to R developers is not “learn PL/SQL,” but “understand that these building blocks exist and are automated for you.”
+
+---
+
+## Who are the speakers?
+
+The session is anchored by two long-time contributors at the intersection of databases, machine learning, and R:
+
+- **Mark Hornick** is Senior Director of Product Management for Oracle Machine Learning and Select AI. He has more than 25 years of experience integrating machine learning into Oracle products and is Oracle’s representative to the R Consortium, as well as an advisor to the Analytics and Data Oracle User Community.
+
+- **Sherry LaMonica** works on Oracle’s AI and Machine Learning product management team, helping organizations integrate open-source and commercial data science tools into large-scale analytical environments. She brings decades of experience supporting data-driven innovation across industries. 
