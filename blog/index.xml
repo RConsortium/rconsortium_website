@@ -10,7 +10,173 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 04 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 14 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R+AI: Use RAG from your database to gain insights into the R Consortium</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/h0ewziCZ0WI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here-pdf." class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf.">Slides with resource links <a href="RplusAI-Mark-Hornick-RAG.pdf">available here</a> (PDF).</h3>
+<p>Retrieval-Augmented Generation (RAG) is quickly becoming a core pattern for putting real-world data behind large language models (LLMs). At R+AI 2025, the session <strong>“R+AI: Use RAG from your database to gain insights into the R Consortium”</strong> put this pattern directly into the hands of R users.</p>
+<p>Presented by <strong>Mark Hornick</strong> (Senior Director, Oracle Machine Learning) and <strong>Sherry LaMonica</strong> (Consulting MTS, Oracle Machine Learning), the session walks through how to turn the R Consortium’s blog archive into a searchable knowledge source using R, Oracle Autonomous AI Database, and Select AI’s built-in RAG capabilities.</p>
+<hr>
+</section>
+<section id="why-rag-matters-for-r-users" class="level2">
+<h2 class="anchored" data-anchor-id="why-rag-matters-for-r-users">Why RAG matters for R users</h2>
+<p>The session opens with a problem that every R user experimenting with LLMs has already run into: models are powerful, but their knowledge is frozen at a training cutoff date. They know a lot about R in general, but not necessarily about:</p>
+<ul>
+<li>Recent events such as R+AI 2025<br>
+</li>
+<li>Newly published R Consortium posts or announcements<br>
+</li>
+<li>Fresh community content, including RUG interviews and technical grant updates</li>
+</ul>
+<p>Without access to current, domain-specific content, a base LLM simply cannot answer many questions accurately—especially about a fast-moving ecosystem like R.</p>
+<p>RAG solves this by combining:</p>
+<ul>
+<li><strong>Vector search</strong> over your own content (in this case, R Consortium blogs)<br>
+</li>
+<li><strong>Generative AI</strong> that uses the retrieved passages as grounded context</li>
+</ul>
+<p>Instead of asking an LLM to “remember everything,” RAG feeds it the exact snippets it needs at query time. The model generates text, but the facts come from your data.</p>
+<hr>
+</section>
+<section id="inside-a-rag-pipeline-from-chunks-to-answers" class="level2">
+<h2 class="anchored" data-anchor-id="inside-a-rag-pipeline-from-chunks-to-answers">Inside a RAG pipeline: from chunks to answers</h2>
+<p>Hornick walks through a concise but clear mental model for RAG:</p>
+<ol type="1">
+<li><p><strong>Chunk documents</strong><br>
+R Consortium blog posts and related articles are split into text chunks using a sliding window approach, so each piece is big enough to be meaningful but small enough for precise retrieval.</p></li>
+<li><p><strong>Create embeddings and a vector index</strong><br>
+Each chunk is converted into a high-dimensional vector using an embedding (transformer) model. These vectors are stored in a vector database and organized by a <strong>vector index</strong>, which makes similarity search fast and scalable, even with millions of chunks.</p></li>
+<li><p><strong>Embed the user query</strong><br>
+When a user asks a question in natural language, that question is also converted into a vector using the same embedding model.</p></li>
+<li><p><strong>Retrieve similar chunks</strong><br>
+The system performs a semantic similarity search between the query vector and the document vectors, retrieving the top-k most relevant chunks.</p></li>
+<li><p><strong>Augment the prompt and call the LLM</strong><br>
+Those chunks are combined with the user’s question to form an augmented prompt. The LLM then generates an answer grounded in the retrieved R Consortium content.</p></li>
+<li><p><strong>Return both answer and sources</strong><br>
+In addition to the natural-language answer, the system can return which documents and offsets contributed to that response, giving transparency and traceability back to the original posts.</p></li>
+</ol>
+<p>The key point: RAG injects fresh, trusted knowledge into the LLM at inference time, without retraining or fine-tuning the model.</p>
+<hr>
+</section>
+<section id="select-ai-and-autonomous-ai-database-rag-built-into-the-database" class="level2">
+<h2 class="anchored" data-anchor-id="select-ai-and-autonomous-ai-database-rag-built-into-the-database">Select AI and Autonomous AI Database: RAG built into the database</h2>
+<p>Rather than asking R users to handcraft all this orchestration with an external framework, the session leans on <strong>Oracle Autonomous AI Database</strong> and <strong>Select AI</strong>. In this architecture:</p>
+<ul>
+<li>The <strong>R Consortium blog archive</strong> is stored as HTML and text files in <strong>Oracle Object Storage</strong>.<br>
+</li>
+<li><strong>Select AI RAG</strong> automates chunking, embedding, vector store creation, and index maintenance inside the database.<br>
+</li>
+<li>The entire RAG pipeline lives close to the data, which simplifies operations and improves performance.</li>
+</ul>
+<p>Select AI exposes a configuration object called an <strong>AI profile</strong>, which specifies:</p>
+<ul>
+<li>The AI provider and LLM to use (for example, an OCI Generative AI model)<br>
+</li>
+<li>The transformer (embedding) model<br>
+</li>
+<li>The vector index to query<br>
+</li>
+<li>Parameters like temperature, max tokens, and whether to return sources</li>
+</ul>
+<p>The talk shows how AI profiles become the control center for RAG: define them once, then reuse them across R sessions, workflows, and applications.</p>
+<hr>
+</section>
+<section id="building-rag-from-r-helper-functions-not-boilerplate" class="level2">
+<h2 class="anchored" data-anchor-id="building-rag-from-r-helper-functions-not-boilerplate">Building RAG from R: helper functions, not boilerplate</h2>
+<p>From the R user’s perspective, the magic happens through a set of helper functions that wrap the underlying PL/SQL APIs in the database. LaMonica demonstrates this live from RStudio:</p>
+<ul>
+<li>An R function establishes a secure connection to Oracle Autonomous AI Database.<br>
+</li>
+<li>Another function creates an AI profile, passing in credentials, LLM configuration, and the name of the vector index.<br>
+</li>
+<li>A third function creates the vector index itself, handling options like chunk size, chunk overlap, and refresh behavior as new content is added to Object Storage.</li>
+</ul>
+<p>All of the PL/SQL complexity—JSON attribute strings, dynamic SQL, and calls to <code>DBMS_CLOUD_AI</code> procedures such as <code>CREATE_VECTOR_INDEX</code>—is hidden behind the R wrapper functions. R users stay in familiar territory while the database takes care of the heavy lifting.</p>
+<p>Once everything is configured, a single R function can:</p>
+<ul>
+<li>Take a natural language prompt<br>
+</li>
+<li>Call the appropriate Select AI procedure under the hood<br>
+</li>
+<li>Return both the generated answer and the list of retrieved sources as a tidy R object</li>
+</ul>
+<p>This pattern makes it realistic for R teams to prototype and deploy RAG workflows without becoming experts in database internals.</p>
+<hr>
+</section>
+<section id="direct-llm-vs-rag-asking-about-rai-2025" class="level2">
+<h2 class="anchored" data-anchor-id="direct-llm-vs-rag-asking-about-rai-2025">Direct LLM vs RAG: asking about R+AI 2025</h2>
+<p>One of the most compelling moments in the demo is a simple A/B test:</p>
+<ul>
+<li>First, LaMonica asks a base LLM (no RAG) about the <strong>R+AI 2025 conference</strong>. As expected, the model admits it has no information—this content postdates its training data.<br>
+</li>
+<li>Then, she repeats the same question using RAG backed by the R Consortium blog and conference pages.</li>
+</ul>
+<p>This time, the answer includes concrete details about R+AI 2025: dates, online format, and examples from the program, all drawn from the R Consortium’s own materials.</p>
+<p>The difference is stark:</p>
+<ul>
+<li>Without RAG, the model is blind to R Consortium’s latest activities.<br>
+</li>
+<li>With RAG, it acts like a knowledgeable assistant that “reads” the current R Consortium site for every query.</li>
+</ul>
+<p>For anyone managing R content—websites, documentation, internal knowledge bases—the lesson is clear: RAG is how LLMs become truly useful on top of your own corpus.</p>
+<hr>
+</section>
+<section id="multilingual-retrieval-on-english-blog-content" class="level2">
+<h2 class="anchored" data-anchor-id="multilingual-retrieval-on-english-blog-content">Multilingual retrieval on English blog content</h2>
+<p>Another highlight is multilingual support. The R Consortium blog posts used in the demo are in English, but the speakers show queries issued in <strong>Italian, Spanish, and Brazilian Portuguese</strong>:</p>
+<ul>
+<li>The multilingual embedding model interprets the query in each language.<br>
+</li>
+<li>The system still retrieves relevant English-language blog chunks.<br>
+</li>
+<li>The LLM responds in the same language as the question, grounded in English content.</li>
+</ul>
+<p>For an international community like the R ecosystem—where user groups and contributors span Europe, Latin America, and beyond—this multilingual RAG pattern is powerful. It makes English-only technical content accessible through conversational queries in local languages, while still keeping a single canonical source of truth.</p>
+<hr>
+</section>
+<section id="under-the-hood-ai-profiles-vector-indexes-and-plsql" class="level2">
+<h2 class="anchored" data-anchor-id="under-the-hood-ai-profiles-vector-indexes-and-plsql">Under the hood: AI profiles, vector indexes, and PL/SQL</h2>
+<p>Toward the end of the session, the speakers briefly peel back the abstraction and show what the R helper functions are doing:</p>
+<ul>
+<li>A <strong>PL/SQL <code>CREATE_PROFILE</code> block</strong> configures the AI profile: provider, credentials, LLM, embedding model, vector index, and parameters such as temperature and max tokens.<br>
+</li>
+<li>A <strong><code>CREATE_VECTOR_INDEX</code> call</strong> specifies the vector database provider (Oracle), the location in Object Storage, vector dimensionality, distance metric, and chunking options like overlap and size.<br>
+</li>
+<li>Other procedures drop or refresh vector indexes, and control whether sources are returned with each answer.</li>
+</ul>
+<p>The R wrappers simply construct these PL/SQL calls as strings, execute them via a database connectivity package, and translate the results into forms that are easy to work with in R.</p>
+<p>The message to R developers is not “learn PL/SQL,” but “understand that these building blocks exist and are automated for you.”</p>
+<hr>
+</section>
+<section id="who-are-the-speakers" class="level2">
+<h2 class="anchored" data-anchor-id="who-are-the-speakers">Who are the speakers?</h2>
+<p>The session is anchored by two long-time contributors at the intersection of databases, machine learning, and R:</p>
+<ul>
+<li><p><strong>Mark Hornick</strong> is Senior Director of Product Management for Oracle Machine Learning and Select AI. He has more than 25 years of experience integrating machine learning into Oracle products and is Oracle’s representative to the R Consortium, as well as an advisor to the Analytics and Data Oracle User Community.</p></li>
+<li><p><strong>Sherry LaMonica</strong> works on Oracle’s AI and Machine Learning product management team, helping organizations integrate open-source and commercial data science tools into large-scale analytical environments. She brings decades of experience supporting data-driven innovation across industries.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>events</category>
+  <category>r+ai</category>
+  <guid>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</guid>
+  <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/thumbnail-oracle.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Learning Shiny, Together: A Collaborative Reading Club Around Mastering Shiny in Buenos Aires</title>
   <dc:creator>R-Ladies Buenos Aires &amp; R in Buenos Aires User Group</dc:creator>
@@ -1798,71 +1964,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/</guid>
   <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/quarto-dashboards-from-zero-to-publish-in-one-hour/thumbnail-quarto-mine.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Supporting R learners on the job during interesting times: A panel of R educators</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KKRbA2VYOb4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="navigating-the-seas-of-r-education-insights-from-rmedicine-2025" class="level1">
-<h1>Navigating the Seas of R Education: Insights from R/Medicine 2025</h1>
-<p>In an ever-evolving world where technology and data science are at the forefront of innovation, the need for effective education in tools like R is more critical than ever. The recent panel discussion at R/Medicine 2025 brought together a group of seasoned educators and practitioners who shared their insights on the challenges and opportunities in teaching R, especially outside the traditional classroom setting. This post delves into the key takeaways from the panel, offering a glimpse into the future of R education and how we can collectively support learners during these interesting times.</p>
-<section id="meet-the-panelists" class="level2">
-<h2 class="anchored" data-anchor-id="meet-the-panelists">Meet the Panelists</h2>
-<p>The panel was composed of esteemed educators with diverse backgrounds, each bringing unique perspectives to the table:</p>
-<ul>
-<li><p><strong>Ray Balise</strong>: An Associate Professor of Biostatistics and Bioinformatics at the University of Miami, Ray has a long history of teaching statistical programming and is passionate about teaching smart people to think about data.</p></li>
-<li><p><strong>Silvia Canelón</strong>: From Penn Medicine Center for Health Justice, Silvia is an advocate for data literacy, communication, and accessibility, with a focus on supporting others in their data-driven journeys.</p></li>
-<li><p><strong>Meghan Santiago Harris</strong>: Known for her work in public health and data science education, Meghan emphasizes the importance of self-teaching and mentoring in her field.</p></li>
-<li><p><strong>Ted Laderas</strong>: As the Director of Training and Community for the Office of the Chief Data Officer at Fred Hutch Cancer Center, Ted is focused on changing data culture through education and training.</p></li>
-<li><p><strong>Joy Payton</strong>: A dedicated data science educator in biomedicine, Joy has been instrumental in building capacity and fostering community among learners.</p></li>
-</ul>
-</section>
-<section id="the-challenge-of-interesting-times" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-of-interesting-times">The Challenge of Interesting Times</h2>
-<p>Joy Payton opened the discussion by acknowledging the “interesting times” we are living in. With cognitive load at an all-time high due to various global and local challenges, learners and educators alike must navigate these turbulent waters. The panelists echoed this sentiment, emphasizing the need for flexibility, adaptability, and a supportive community to help learners thrive.</p>
-</section>
-<section id="the-role-of-ai-and-llms-in-r-education" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-ai-and-llms-in-r-education">The Role of AI and LLMs in R Education</h2>
-<p>One of the hot topics discussed was the role of AI and large language models (LLMs) in learning and coding. While AI tools like ChatGPT and Claude can assist learners by handling syntax and providing quick answers, the panelists stressed the importance of understanding the underlying mental models and logic behind coding. They agreed that while LLMs are here to stay, educators must teach students how to use these tools effectively without compromising foundational skills.</p>
-<p>Ted Laderas highlighted the importance of cognitive load theory and psychological safety in education, advocating for a balance between leveraging AI tools and maintaining the integrity of the learning process. Ray Balise added that teaching prompt engineering and proper use of LLMs should be integrated into the curriculum to ensure students are equipped for the modern workforce.</p>
-</section>
-<section id="supporting-learners-in-uncertain-times" class="level2">
-<h2 class="anchored" data-anchor-id="supporting-learners-in-uncertain-times">Supporting Learners in Uncertain Times</h2>
-<p>The panelists shared their strategies for supporting learners amidst uncertainty. Meghan Santiago Harris emphasized the value of integrating R into existing work or projects that learners are passionate about. This approach not only aids retention but also makes the learning process more enjoyable and relevant.</p>
-<p>Silvia Canelón pointed out the importance of community and collaboration, noting that much of her learning came from engaging with others in the R community. For educators, fostering an environment where learners can share their experiences and learn from each other is crucial.</p>
-</section>
-<section id="resources-and-tools-for-r-learners" class="level2">
-<h2 class="anchored" data-anchor-id="resources-and-tools-for-r-learners">Resources and Tools for R Learners</h2>
-<p>The panelists also discussed their favorite resources for teaching and learning R:</p>
-<ul>
-<li><strong>Big Book of R</strong>: A comprehensive collection of online R books covering various topics.</li>
-<li><strong>R OpenSci Trainings</strong>: Focused on research contexts, these resources are invaluable for developing R skills.</li>
-<li><strong>Our Ladies YouTube Channel</strong>: Offers a wealth of tutorials and workshops on different R topics.</li>
-<li><strong>Urban Institute’s Do No Harm Project</strong>: Provides guidance on equity and accessibility in data visualization.</li>
-</ul>
-<p>Joy Payton introduced <strong>Bent</strong>, a data education navigator tool, and <strong>Leoscript</strong>, a markdown renderer for creating educational resources. These tools exemplify the innovative approaches educators are taking to enhance the learning experience.</p>
-</section>
-<section id="building-a-community-of-r-educators" class="level2">
-<h2 class="anchored" data-anchor-id="building-a-community-of-r-educators">Building a Community of R Educators</h2>
-<p>In closing, Joy Payton urged attendees to be gate openers, highlighting that everyone has something to contribute to the R community. Whether you’re a seasoned educator or a beginner, sharing your knowledge and experiences can help build a robust network of engaged and supportive R learners and educators.</p>
-<p>As we look to the future, the insights from R/Medicine 2025 remind us of the importance of adaptability, community, and thoughtful integration of technology in education. By embracing these principles, we can empower the next generation of R users to navigate the complexities of data science with confidence and creativity.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <guid>https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/</guid>
-  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators/supporting-r-learners-panel.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

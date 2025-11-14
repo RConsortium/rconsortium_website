@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2025-11-14">
+<meta name="description" content="At R+AI 2025, Oracle Machine Learning’s Mark Hornick and Sherry LaMonica showed how R users can apply Retrieval Augmented Generation (RAG) to R Consortium blog data using Oracle Autonomous Database, Select AI, and an R interface.">
 
-<title>newsletters – R Consortium</title>
+<title>R+AI: Use RAG from your database to gain insights into the R Consortium – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-92ef5327927b2d6ffbb2647db49d27b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-92ef5327927b2d6ffbb2647db49d27b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -109,49 +81,20 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
-    <img src="../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -166,35 +109,35 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -205,15 +148,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="../members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -224,23 +167,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="../all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -263,7 +206,7 @@ window.Quarto = {
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -282,15 +225,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine (May 4-8, 2026)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">Working Groups Calendar</span></a>
   </li>  
     </ul>
@@ -301,25 +244,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="../blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -350,104 +293,204 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">R+AI: Use RAG from your database to gain insights into the R Consortium</h1>
+                  <div>
+        <div class="description">
+          At R+AI 2025, Oracle Machine Learning’s Mark Hornick and Sherry LaMonica showed how R users can apply Retrieval Augmented Generation (RAG) to R Consortium blog data using Oracle Autonomous Database, Select AI, and an R interface.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">ai</div>
+                <div class="quarto-category">events</div>
+                <div class="quarto-category">r+ai</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 14, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="newsletters" class="level1">
-<h1>Newsletters</h1>
-<section id="whats-happening-in-the-r-consortium" class="level2">
-<h2 class="anchored" data-anchor-id="whats-happening-in-the-r-consortium">What’s happening in the R Consortium?<a href="https://oppkeyquarto.netlify.app/newsletters/newsletters#whats-happening-in-the-r-consortium"></a></h2>
-<p>Check out our previous Newsletters and stay tuned for future ones!</p>
 
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/h0ewziCZ0WI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here-pdf." class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf.">Slides with resource links <a href="RplusAI-Mark-Hornick-RAG.pdf">available here</a> (PDF).</h3>
+<p>Retrieval-Augmented Generation (RAG) is quickly becoming a core pattern for putting real-world data behind large language models (LLMs). At R+AI 2025, the session <strong>“R+AI: Use RAG from your database to gain insights into the R Consortium”</strong> put this pattern directly into the hands of R users.</p>
+<p>Presented by <strong>Mark Hornick</strong> (Senior Director, Oracle Machine Learning) and <strong>Sherry LaMonica</strong> (Consulting MTS, Oracle Machine Learning), the session walks through how to turn the R Consortium’s blog archive into a searchable knowledge source using R, Oracle Autonomous AI Database, and Select AI’s built-in RAG capabilities.</p>
+<hr>
+</section>
+<section id="why-rag-matters-for-r-users" class="level2">
+<h2 class="anchored" data-anchor-id="why-rag-matters-for-r-users">Why RAG matters for R users</h2>
+<p>The session opens with a problem that every R user experimenting with LLMs has already run into: models are powerful, but their knowledge is frozen at a training cutoff date. They know a lot about R in general, but not necessarily about:</p>
+<ul>
+<li>Recent events such as R+AI 2025<br>
+</li>
+<li>Newly published R Consortium posts or announcements<br>
+</li>
+<li>Fresh community content, including RUG interviews and technical grant updates</li>
+</ul>
+<p>Without access to current, domain-specific content, a base LLM simply cannot answer many questions accurately—especially about a fast-moving ecosystem like R.</p>
+<p>RAG solves this by combining:</p>
+<ul>
+<li><strong>Vector search</strong> over your own content (in this case, R Consortium blogs)<br>
+</li>
+<li><strong>Generative AI</strong> that uses the retrieved passages as grounded context</li>
+</ul>
+<p>Instead of asking an LLM to “remember everything,” RAG feeds it the exact snippets it needs at query time. The model generates text, but the facts come from your data.</p>
+<hr>
+</section>
+<section id="inside-a-rag-pipeline-from-chunks-to-answers" class="level2">
+<h2 class="anchored" data-anchor-id="inside-a-rag-pipeline-from-chunks-to-answers">Inside a RAG pipeline: from chunks to answers</h2>
+<p>Hornick walks through a concise but clear mental model for RAG:</p>
+<ol type="1">
+<li><p><strong>Chunk documents</strong><br>
+R Consortium blog posts and related articles are split into text chunks using a sliding window approach, so each piece is big enough to be meaningful but small enough for precise retrieval.</p></li>
+<li><p><strong>Create embeddings and a vector index</strong><br>
+Each chunk is converted into a high-dimensional vector using an embedding (transformer) model. These vectors are stored in a vector database and organized by a <strong>vector index</strong>, which makes similarity search fast and scalable, even with millions of chunks.</p></li>
+<li><p><strong>Embed the user query</strong><br>
+When a user asks a question in natural language, that question is also converted into a vector using the same embedding model.</p></li>
+<li><p><strong>Retrieve similar chunks</strong><br>
+The system performs a semantic similarity search between the query vector and the document vectors, retrieving the top-k most relevant chunks.</p></li>
+<li><p><strong>Augment the prompt and call the LLM</strong><br>
+Those chunks are combined with the user’s question to form an augmented prompt. The LLM then generates an answer grounded in the retrieved R Consortium content.</p></li>
+<li><p><strong>Return both answer and sources</strong><br>
+In addition to the natural-language answer, the system can return which documents and offsets contributed to that response, giving transparency and traceability back to the original posts.</p></li>
+</ol>
+<p>The key point: RAG injects fresh, trusted knowledge into the LLM at inference time, without retraining or fine-tuning the model.</p>
+<hr>
+</section>
+<section id="select-ai-and-autonomous-ai-database-rag-built-into-the-database" class="level2">
+<h2 class="anchored" data-anchor-id="select-ai-and-autonomous-ai-database-rag-built-into-the-database">Select AI and Autonomous AI Database: RAG built into the database</h2>
+<p>Rather than asking R users to handcraft all this orchestration with an external framework, the session leans on <strong>Oracle Autonomous AI Database</strong> and <strong>Select AI</strong>. In this architecture:</p>
+<ul>
+<li>The <strong>R Consortium blog archive</strong> is stored as HTML and text files in <strong>Oracle Object Storage</strong>.<br>
+</li>
+<li><strong>Select AI RAG</strong> automates chunking, embedding, vector store creation, and index maintenance inside the database.<br>
+</li>
+<li>The entire RAG pipeline lives close to the data, which simplifies operations and improves performance.</li>
+</ul>
+<p>Select AI exposes a configuration object called an <strong>AI profile</strong>, which specifies:</p>
+<ul>
+<li>The AI provider and LLM to use (for example, an OCI Generative AI model)<br>
+</li>
+<li>The transformer (embedding) model<br>
+</li>
+<li>The vector index to query<br>
+</li>
+<li>Parameters like temperature, max tokens, and whether to return sources</li>
+</ul>
+<p>The talk shows how AI profiles become the control center for RAG: define them once, then reuse them across R sessions, workflows, and applications.</p>
+<hr>
+</section>
+<section id="building-rag-from-r-helper-functions-not-boilerplate" class="level2">
+<h2 class="anchored" data-anchor-id="building-rag-from-r-helper-functions-not-boilerplate">Building RAG from R: helper functions, not boilerplate</h2>
+<p>From the R user’s perspective, the magic happens through a set of helper functions that wrap the underlying PL/SQL APIs in the database. LaMonica demonstrates this live from RStudio:</p>
+<ul>
+<li>An R function establishes a secure connection to Oracle Autonomous AI Database.<br>
+</li>
+<li>Another function creates an AI profile, passing in credentials, LLM configuration, and the name of the vector index.<br>
+</li>
+<li>A third function creates the vector index itself, handling options like chunk size, chunk overlap, and refresh behavior as new content is added to Object Storage.</li>
+</ul>
+<p>All of the PL/SQL complexity—JSON attribute strings, dynamic SQL, and calls to <code>DBMS_CLOUD_AI</code> procedures such as <code>CREATE_VECTOR_INDEX</code>—is hidden behind the R wrapper functions. R users stay in familiar territory while the database takes care of the heavy lifting.</p>
+<p>Once everything is configured, a single R function can:</p>
+<ul>
+<li>Take a natural language prompt<br>
+</li>
+<li>Call the appropriate Select AI procedure under the hood<br>
+</li>
+<li>Return both the generated answer and the list of retrieved sources as a tidy R object</li>
+</ul>
+<p>This pattern makes it realistic for R teams to prototype and deploy RAG workflows without becoming experts in database internals.</p>
+<hr>
+</section>
+<section id="direct-llm-vs-rag-asking-about-rai-2025" class="level2">
+<h2 class="anchored" data-anchor-id="direct-llm-vs-rag-asking-about-rai-2025">Direct LLM vs RAG: asking about R+AI 2025</h2>
+<p>One of the most compelling moments in the demo is a simple A/B test:</p>
+<ul>
+<li>First, LaMonica asks a base LLM (no RAG) about the <strong>R+AI 2025 conference</strong>. As expected, the model admits it has no information—this content postdates its training data.<br>
+</li>
+<li>Then, she repeats the same question using RAG backed by the R Consortium blog and conference pages.</li>
+</ul>
+<p>This time, the answer includes concrete details about R+AI 2025: dates, online format, and examples from the program, all drawn from the R Consortium’s own materials.</p>
+<p>The difference is stark:</p>
+<ul>
+<li>Without RAG, the model is blind to R Consortium’s latest activities.<br>
+</li>
+<li>With RAG, it acts like a knowledgeable assistant that “reads” the current R Consortium site for every query.</li>
+</ul>
+<p>For anyone managing R content—websites, documentation, internal knowledge bases—the lesson is clear: RAG is how LLMs become truly useful on top of your own corpus.</p>
+<hr>
+</section>
+<section id="multilingual-retrieval-on-english-blog-content" class="level2">
+<h2 class="anchored" data-anchor-id="multilingual-retrieval-on-english-blog-content">Multilingual retrieval on English blog content</h2>
+<p>Another highlight is multilingual support. The R Consortium blog posts used in the demo are in English, but the speakers show queries issued in <strong>Italian, Spanish, and Brazilian Portuguese</strong>:</p>
+<ul>
+<li>The multilingual embedding model interprets the query in each language.<br>
+</li>
+<li>The system still retrieves relevant English-language blog chunks.<br>
+</li>
+<li>The LLM responds in the same language as the question, grounded in English content.</li>
+</ul>
+<p>For an international community like the R ecosystem—where user groups and contributors span Europe, Latin America, and beyond—this multilingual RAG pattern is powerful. It makes English-only technical content accessible through conversational queries in local languages, while still keeping a single canonical source of truth.</p>
+<hr>
+</section>
+<section id="under-the-hood-ai-profiles-vector-indexes-and-plsql" class="level2">
+<h2 class="anchored" data-anchor-id="under-the-hood-ai-profiles-vector-indexes-and-plsql">Under the hood: AI profiles, vector indexes, and PL/SQL</h2>
+<p>Toward the end of the session, the speakers briefly peel back the abstraction and show what the R helper functions are doing:</p>
+<ul>
+<li>A <strong>PL/SQL <code>CREATE_PROFILE</code> block</strong> configures the AI profile: provider, credentials, LLM, embedding model, vector index, and parameters such as temperature and max tokens.<br>
+</li>
+<li>A <strong><code>CREATE_VECTOR_INDEX</code> call</strong> specifies the vector database provider (Oracle), the location in Object Storage, vector dimensionality, distance metric, and chunking options like overlap and size.<br>
+</li>
+<li>Other procedures drop or refresh vector indexes, and control whether sources are returned with each answer.</li>
+</ul>
+<p>The R wrappers simply construct these PL/SQL calls as strings, execute them via a database connectivity package, and translate the results into forms that are easy to work with in R.</p>
+<p>The message to R developers is not “learn PL/SQL,” but “understand that these building blocks exist and are automated for you.”</p>
+<hr>
+</section>
+<section id="who-are-the-speakers" class="level2">
+<h2 class="anchored" data-anchor-id="who-are-the-speakers">Who are the speakers?</h2>
+<p>The session is anchored by two long-time contributors at the intersection of databases, machine learning, and R:</p>
+<ul>
+<li><p><strong>Mark Hornick</strong> is Senior Director of Product Management for Oracle Machine Learning and Select AI. He has more than 25 years of experience integrating machine learning into Oracle products and is Oracle’s representative to the R Consortium, as well as an advisor to the Analytics and Data Oracle User Community.</p></li>
+<li><p><strong>Sherry LaMonica</strong> works on Oracle’s AI and Machine Learning product management team, helping organizations integrate open-source and commercial data science tools into large-scale analytical environments. She brings decades of experience supporting data-driven innovation across industries.</p></li>
+</ul>
 
 
 </section>
-</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1728259200000" data-listing-file-modified-sort="1763163899986" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2451">
-<a href="../newsletters/R-Consortium-Q3-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q3-2024-NEWSLETTER-main-image.png" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium Q3 2024 Newsletter banner graphic">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2024 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Welcome to the R Consortium’s Q3 2024 Newsletter!
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 7, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1719705600000" data-listing-file-modified-sort="1763163899986" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1546">
-<a href="../newsletters/R-Consortium-Q2-2024-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1-1024x576.webp" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium logo banner for Q2 2024 newsletter">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q2 2024 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jun 30, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1698710400000" data-listing-file-modified-sort="1763163899986" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1491">
-<a href="../newsletters/R-Consortium-Q3-2023-Newsletter.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../newsletters/images/R-CONSORTIUM-Q7-2023-NEWSLETTER-1.webp" class="thumbnail-image card-img" style="height: 450px;" alt="R Consortium Q3 2023 Newsletter banner graphic">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium Q3 2023 Newsletter
-</h5>
-<div class="card-text listing-description delink">
-Hello from the R Consortium! This quarterly newsletter puts together the latest updates about our organization’s activities, the progress each working group has made…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 31, 2023
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
