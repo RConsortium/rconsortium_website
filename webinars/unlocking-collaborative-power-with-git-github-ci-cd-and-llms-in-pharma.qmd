@@ -13,6 +13,74 @@ You'll see firsthand how we leveraged the power of GitHub to review code changes
 
 Leave this session inspired and equipped to take the next step, understanding how contributing to open-source projects is the perfect way to practice your new skills in a supportive, real-world environment.
 
+## Full Article
+
+The **R Consortium Submission Working Group** hosted the webinar: Unlocking Collaborative Power with Git, GitHub, CI/CD, and LLMs in Pharma. This session pulled back the curtain on a unique real-world project where more than **15 programmers from across the pharmaceutical industry** came together to collaborate using modern software practices. Using the **R Consortium Submission Pilot 5** project as an example, we demonstrated how open-source tools can transform the way statisticians and programmers work.
+
+---
+
+## Highlights from the Session
+
+🔹 **GitHub for Collaboration**
+We showed how GitHub enabled programmers from different companies to review code changes, raise discussions directly in the code, and track progress. This transparency and auditability created shared accountability and accelerated consensus.
+
+🔹 **CI/CD, LLM and Automation**
+Using GitHub Actions, the team maintained a clean, production-ready codebase while building a **QC automation engine**. This not only saved time but also reduced manual errors. A simple automation at first (like auto-deploying a slide or webpage) can become the foundation for more complex workflows—like validating datasets with `diffdf` or even automating figure QC with AI.
+
+🔹 **renv for Reproducibility**
+A critical enabler of collaboration was renv, which ensures a consistent R environment across all contributors. By capturing package versions in a lockfile, every programmer could reproduce results reliably—even across different operating systems and company infrastructures. The lockfile also laid the foundation for further automation: in Pilot 5, we leveraged it to support a workflow where a LLM authored an ADRG (Analysis Data Reviewer’s Guide) section. 
+
+---
+
+## Where Do I Start?
+
+Many questions we received centered on **“Where should I start?”**—both as individuals and organizations.
+
+👉 **For individuals:**
+
+* Start small! Contribute to an **open-source project** to get hands-on Git practice.
+* Learn CI/CD by setting up something simple, like auto-deploying a page. Both Eric and Eli shared how they started this way before moving into more advanced workflows.
+
+👉 **For organizations:**
+
+* Don’t overcomplicate Git adoption. As Eli said, *“The fastest way to kill enthusiasm is to make it look super complicated.”*
+* Small projects with 2–3 contributors may only need a **main branch**. Larger teams benefit from structured branching (feature branches, pull requests, issue boards).
+* A designated **Git “leader”** helps track best practices, manage issues, and resolve conflicts.
+* Remember: there’s **no one-size-fits-all**—tailor the workflow to your team’s needs.
+
+---
+
+## Industry Momentum
+
+Are companies moving to Git? **Yes!** Several pharma organizations are already adopting Git workflows for programming, though strategies differ.
+
+
+
+* **Company X:** Company X employs a DEV–Feature–Main branching strategy with tagging, integrated with JIRA for project management. To address the proliferation of long-lived branches, they adopted an agile framework with short-lived feature branches, encouraging completion within a three-week sprint. Over time, users became more comfortable with Git, and many initial pain points diminished through repeated experience across study teams. While they experimented with managing project work directly in GitHub, they ultimately found JIRA’s integration more effective and chose it as their primary project management tool.
+
+* **Roche:** Roche uses Git as the version control system for clinical trial reporting and is evaluating three branching strategies. (1) Trunk-based development, where developers commit directly to a single main branch with frequent, small changes to minimize merge conflicts; (2) Feature branching with a single main branch, where main serves as the stable source of truth for code and metadata while short-lived feature branches are reviewed, stabilized, and merged back; and (3) Roche's current practice, a more conservative devel–feature–main structure that restricts direct merges into main. Feedback from users suggests simplifying the current setup, with a slight preference toward the feature branch strategy.
+
+* **Novo Nordisk:** XX
+
+* ** Company Y:** Company Y experimented with several branching models, including more hierarchical structures with a devel branch, versus a simpler approach of branching directly off main with short-lived feature branches (i.e., GitHub Flow). They ultimately adopted the latter, as it proved easier to maintain and resulted in fewer merge conflicts. Their key advice was: “Don’t make the main branch feel sacred—if developers are hesitant to merge into main, you end up with long-lived feature branches and inevitable conflicts.” At Merck, the main branch is not treated as synonymous with “QC’ed code”; instead, quality control is managed separately from the branching strategy.
+
+
+* Denali: As a small company, Denali follows a streamlined Git strategy with a single main branch per study and dedicated subfolders within each repository for reporting events. Each reporting event subfolder has its own R project file, and development work is divided into feature branches from main that can be as granular as updating a single program file, or broader for multiple files with related changes. Second-line QC programs are added directly into the relevant feature branch, and then submitted as pull requests (PRs) for the entire branch. After peer review by another team member, the feature branch is merged into main and then deleted (this behavior can be enabled by default in Github to automatically reduce clutter!). To balance workload and avoid bottlenecks, PR review responsibilities are shared across the team.
+
+
+---
+
+## Open Source as a Learning Ground
+
+Finally, remember that open source is the best playground to **observe, experiment, and learn**. The [R Consortium](https://r-consortium.org/) itself thrives on contributions from individuals and companies who want to push the boundaries of collaboration in pharma data science.
+
+👉 Interested in joining? Learn more at [R Consortium](https://r-consortium.org/).
+
+---
+
+✨ **Takeaway:** Whether you’re an individual learning Git for the first time, or an organization looking to modernize programming workflows, the journey starts small—but the potential impact is huge.
+
+
 ## Speakers  
 
 ### Ning Leng, ad-interim global head, Data Science Acceleration (DSX) Group, Roche
