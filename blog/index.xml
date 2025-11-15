@@ -70,6 +70,190 @@
   <media:content url="https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/thumbnail-joe-cheng.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Me, Myself, and Claude: Scaling an R Consultancy with AI-Assisted Development</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/me-myself-claude/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/7uAf1Wz2gEQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here" class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here">Slides with resource links <a href="https://dalyanalytics.github.io/me-myself-claude-talk">available here</a></h3>
+<p>Large language models entered many data scientists’ lives through small conveniences: better email replies, smoother vacation planning, quick summaries of documentation. For Jasmine Daly, Principal Consultant and Founder of Daly Analytics, the next step was less comfortable: AI could write decent R code and Shiny apps. Did that make years of R experience obsolete? Was this a shortcut that would quietly erode hard-won expertise?</p>
+<p>In the R+AI talk “Me, Myself, and Claude: How I Leverage AI-Assisted Development to Scale My R-Based Data Science Consultancy,” Jasmine reframes those fears into a much more productive question: how can AI become a force multiplier for R developers, not a crutch?</p>
+</section>
+<section id="from-vibe-coding-to-accountable-ai-assisted-development" class="level2">
+<h2 class="anchored" data-anchor-id="from-vibe-coding-to-accountable-ai-assisted-development">From “vibe coding” to accountable AI-assisted development</h2>
+<p>Jasmine starts with a term many R users have seen online: “vibe coding.” It captures that slightly chaotic feeling of pasting prompts into an AI, grabbing whatever comes out, and hoping it runs. It is funny—but also dangerous. The mindset behind it is essentially:</p>
+<ul>
+<li>try something</li>
+<li>hope it works</li>
+<li>do not look too closely at why</li>
+</ul>
+<p>Instead of “vibe coding,” Jasmine prefers “intentional, accountable AI-assisted development.” The shift is not about policing language; it is about accurately describing the work:</p>
+<ul>
+<li>there is a real system being built for real organizations<br>
+</li>
+<li>there are real risks around correctness, maintainability, and security<br>
+</li>
+<li>a human developer remains responsible for design decisions and outcomes</li>
+</ul>
+<p>For Jasmine, AI is “a new agentic tool in the toolbox,” not a replacement for R expertise. That language matters, especially inside a consultancy where clients rely on clear judgment, not just clever code.</p>
+</section>
+<section id="mental-bandwidth-as-the-real-bottleneck" class="level2">
+<h2 class="anchored" data-anchor-id="mental-bandwidth-as-the-real-bottleneck">Mental bandwidth as the real bottleneck</h2>
+<p>As a solo consultant serving nonprofits and other mission-driven organizations, Jasmine used to spend most working hours writing code: Shiny apps, dashboards, R packages, data pipelines. The result: less time for the work that grows a sustainable practice and strengthens the R community.</p>
+<p>AI-assisted development changed that balance. Instead of treating AI as “time savings on tasks already being done,” Jasmine treats it as a <strong>mental bandwidth reallocator</strong>. Offloading boilerplate and repetitive scaffolding frees attention for:</p>
+<ul>
+<li>improving business operations and systems<br>
+</li>
+<li>thinking clearly about pricing, profitability, and packaging of services<br>
+</li>
+<li>building relationships through networking, speaking, and community work</li>
+</ul>
+<p>Crucially, this is not about doing less technical work. Jasmine still writes R code nearly every day. The difference is that cognitive load is no longer consumed entirely by syntax and glue code; there is space for bigger-picture thinking and community contribution.</p>
+</section>
+<section id="turning-personal-tools-into-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="turning-personal-tools-into-r-packages">Turning personal tools into R packages</h2>
+<p>A good example of that shift is the evolution from one-off scripts to reusable packages.</p>
+<section id="shinyfa-understanding-large-shiny-codebases" class="level3">
+<h3 class="anchored" data-anchor-id="shinyfa-understanding-large-shiny-codebases"><code>{shinyfa}</code>: understanding large Shiny codebases</h3>
+<p>A client Shiny app with a large, unfamiliar codebase was consuming huge onboarding time. To cope, Jasmine wrote ad hoc scripts—supported by Claude Code—to analyze file structure, track <code>render*()</code> and reactive functions, and surface where important logic lived.</p>
+<p>Previously, those scripts would have stayed on a local machine. With more bandwidth and AI-assisted help, Jasmine turned that exploratory tooling into a reusable R package: <strong>{shinyfa}</strong>, now on CRAN, which analyzes large Shiny directories and extracts structured information about reactivity patterns and outputs for easier onboarding and refactoring.</p>
+</section>
+<section id="avilistr-a-weekend-package-powered-by-curiosity" class="level3">
+<h3 class="anchored" data-anchor-id="avilistr-a-weekend-package-powered-by-curiosity"><code>{avilistr}</code>: a weekend package powered by curiosity</h3>
+<p>Another example came from a personal interest: bird taxonomy. Starting from an Excel file and the newly released AviList global bird checklist, Jasmine used Claude Code to help wrap the data, write documentation, and publish <strong>{avilistr}</strong>, an R package exposing the AviList global avian checklist to R users in a research-ready form.</p>
+<p>The technical lift was not extreme. The point is what changed:</p>
+<ul>
+<li>before AI, that project would likely have stayed a “someday” idea<br>
+</li>
+<li>with AI-assisted development, it became a polished, documented R package released in a weekend</li>
+</ul>
+<p>For the R community, this is the upside: more of those “nice-to-have” tools actually get shipped.</p>
+</section>
+</section>
+<section id="saying-yes-to-bigger-more-interesting-r-projects" class="level2">
+<h2 class="anchored" data-anchor-id="saying-yes-to-bigger-more-interesting-r-projects">Saying yes to bigger, more interesting R projects</h2>
+<p>Jasmine also shows how AI changes the filter for accepting new work.</p>
+<p>The old filter was purely capacity-driven:</p>
+<ul>
+<li>Can this be built in a reasonable timeframe?</li>
+<li>With current skills?</li>
+<li>Alongside existing client workload?</li>
+</ul>
+<p>With AI-assisted development, the filter becomes more strategic:</p>
+<ul>
+<li>The technical build is possible.<br>
+</li>
+<li>The key question is: can there be deep understanding of the client’s desired outcomes, their team’s strengths, and the right “size” of solution?</li>
+</ul>
+<p>That change leads to more ambitious, higher-impact problems—without requiring 80-hour weeks.</p>
+</section>
+<section id="claude-code-as-a-senior-and-sometimes-junior-developer" class="level2">
+<h2 class="anchored" data-anchor-id="claude-code-as-a-senior-and-sometimes-junior-developer">Claude Code as a senior (and sometimes junior) developer</h2>
+<p>A recurring theme in the talk is Jasmine’s mental model for working with Claude Code:</p>
+<ul>
+<li>Jasmine is the <strong>manager and technical lead</strong><br>
+</li>
+<li>Claude is a <strong>senior, sometimes junior, developer</strong></li>
+</ul>
+<p>That means Jasmine:</p>
+<ul>
+<li>sets direction and architecture<br>
+</li>
+<li>defines requirements in detail<br>
+</li>
+<li>reviews every pull request–equivalent output<br>
+</li>
+<li>remains in and on the loop at all times</li>
+</ul>
+<p>Practically, that looks like:</p>
+<ul>
+<li>being specific in prompts and requirements<br>
+</li>
+<li>always reviewing generated code and context files<br>
+</li>
+<li>using small, incremental commits to make AI changes auditable<br>
+</li>
+<li>feeding documentation links and relevant repos so the model has grounded context<br>
+</li>
+<li>sometimes asking for multiple options, then blending or choosing the simplest approach</li>
+</ul>
+<p>The R community takeaway: treat AI tools as part of a team that needs leadership, not as an infallible code generator.</p>
+</section>
+<section id="a-real-world-architecture-50-dashboards-github-actions-and-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="a-real-world-architecture-50-dashboards-github-actions-and-quarto">A real-world architecture: 50+ dashboards, GitHub Actions, and Quarto</h2>
+<p>One of the most compelling case studies in the talk centers on a client with more than 50 dashboards that needed to scale. Jasmine describes using Claude Code to help assemble a sustainable architecture:</p>
+<ul>
+<li>GitHub Actions and YAML workflows to orchestrate builds<br>
+</li>
+<li>Railway as a virtual machine environment<br>
+</li>
+<li>Supabase with row-level security for multi-tenant isolation<br>
+</li>
+<li>Quarto dashboards, each pulling only its own data<br>
+</li>
+<li>A shared component library and template so features could be toggled on or off</li>
+</ul>
+<p>The result: “right-sized, enterprise-grade infrastructure” delivered in weeks instead of months, with Jasmine still firmly in technical control. Without AI assistance, that project might have been impractical or too risky for a solo consultant to accept.</p>
+</section>
+<section id="building-r-intuition-through-volume-not-shortcuts" class="level2">
+<h2 class="anchored" data-anchor-id="building-r-intuition-through-volume-not-shortcuts">Building R intuition through volume, not shortcuts</h2>
+<p>A common fear in the R community is that relying on AI will erode skills. Jasmine’s experience is the opposite: <strong>AI increases the volume and variety of patterns seen</strong>, which, when handled deliberately, strengthens intuition.</p>
+<p>She highlights three recurring categories of AI mistakes and what they teach:</p>
+<ul>
+<li><strong>Package confusion</strong> – e.g., misinterpreting <code>{shinyfa}</code> as related to Font Awesome. The fix is to feed documentation URLs and be explicit about which package is in use. This forces better documentation habits.<br>
+</li>
+<li><strong>Data structure assumptions</strong> – incorrect column names or types, or confusing similar datasets. This encourages consistent use of <code>str()</code>, <code>glimpse()</code>, and other inspection tools, and can be mitigated by exposing the real R session via MCP tools so the model sees actual objects.</li>
+<li><strong>Over-engineering</strong> – proposing complex graph-based or multi-package solutions where a simple <code>dplyr</code> pipeline would work. Asking for multiple options and explicitly requesting the simplest approach helps counter this tendency.</li>
+</ul>
+<p>Each mistake becomes a prompt-engineering lesson and a design pattern lesson at the same time. Instead of avoiding errors, Jasmine leans into high-volume iteration, using failures to refine both prompts and architectural judgment.</p>
+</section>
+<section id="a-simple-reflection-framework-for-rai-projects" class="level2">
+<h2 class="anchored" data-anchor-id="a-simple-reflection-framework-for-rai-projects">A simple reflection framework for R+AI projects</h2>
+<p>In closing, Jasmine offers a practical reflection exercise for anyone starting an AI-assisted R project:</p>
+<ul>
+<li>What will always be done personally?<br>
+</li>
+<li>What can AI help with?<br>
+</li>
+<li>What needs to be understood deeply?<br>
+</li>
+<li>What is comfortable to delegate?</li>
+</ul>
+<p>Writing down the answers before starting a project makes the human/AI division of labor explicit. It also reinforces that responsibility for correctness, ethics, and impact stays with the human developer.</p>
+</section>
+<section id="what-this-means-for-the-r-community" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means-for-the-r-community">What this means for the R community</h2>
+<p>The core message to the R community is direct: AI does not automatically make developers lazy or dependent. Used with intention, it can:</p>
+<ul>
+<li>unlock time for community talks, open source work, and mentoring<br>
+</li>
+<li>turn private scripts into packages that benefit thousands of R users<br>
+</li>
+<li>enable R consultants to take on more ambitious, higher-impact projects<br>
+</li>
+<li>accelerate learning by exposing more patterns—while still demanding human judgment</li>
+</ul>
+<p>Jasmine’s journey from existential dread to strategic partnership with Claude is a blueprint many R users can follow. The tools may be new, but the craft is familiar: thoughtful design, careful review, and a commitment to building software that genuinely helps people.</p>
+<p>The invitation is clear: stay human-in-the-loop, build with intention, keep learning—and bring that energy back into the R community.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>r+ai</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/me-myself-claude/</guid>
+  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/me-myself-claude/thumbnail-jasmine-daly.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>R+AI: Use RAG from your database to gain insights into the R Consortium</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</link>
@@ -1886,71 +2070,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/thumbnail-targets-rahul.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>First Steps with SQL in R: Making Data Talk</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/1t0DvqGD9nM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="unlocking-sqls-potential-in-r-a-beginners-guide" class="level1">
-<h1>Unlocking SQL’s Potential in R: A Beginner’s Guide</h1>
-<p>In the ever-evolving landscape of data science and analytics, SQL (Structured Query Language) remains a steadfast tool for extracting and organizing data. For those entrenched in the world of R, particularly within clinical research and healthcare settings, integrating SQL skills can be a game changer. The recent workshop hosted by Chris Battiston, a seasoned REDCap administrator and research data analyst at Women’s College Hospital, Toronto, underscored the immense potential of SQL when used alongside R, especially for those managing complex data sets in clinical environments.</p>
-<section id="why-sql" class="level2">
-<h2 class="anchored" data-anchor-id="why-sql">Why SQL?</h2>
-<p>SQL’s longevity and widespread use across industries underscore its utility. Developed in the 1970s, SQL was designed for querying relational databases, which makes it perfect for managing structured data. In clinical research, where data integrity and accessibility are paramount, SQL acts as a bridge between raw data and meaningful insights.</p>
-<p>SQL is particularly beneficial for:</p>
-<ul>
-<li><strong>Data Extraction and Transformation</strong>: SQL efficiently handles large datasets, enabling the extraction of specific data points without overwhelming memory resources.</li>
-<li><strong>Relational Data Handling</strong>: Ideal for linking tables and datasets, SQL simplifies the process of combining disparate data sources for a comprehensive analysis.</li>
-<li><strong>Portability and Familiarity</strong>: As a universal language for data queries, SQL skills are transferable across various platforms and systems, making it a valuable addition to any data analyst’s toolkit.</li>
-</ul>
-</section>
-<section id="sql-in-the-r-environment" class="level2">
-<h2 class="anchored" data-anchor-id="sql-in-the-r-environment">SQL in the R Environment</h2>
-<p>Chris Battiston’s workshop, “First Steps in SQL with R: Making Data Talk,” offered an in-depth look at how the <code>sqldf</code> package in R can be used to run SQL queries directly on R data frames. This integration allows R users to take advantage of SQL’s strengths without leaving the R environment, streamlining workflows and enhancing productivity.</p>
-<p>Key learnings from the workshop included:</p>
-<ul>
-<li><strong>SQL Basics</strong>: Understanding SQL syntax, including commands like SELECT, FROM, WHERE, ORDER BY, GROUP BY, and JOIN.</li>
-<li><strong>Comparative Analysis</strong>: Using SQL alongside <code>dplyr</code> for common data tasks, highlighting scenarios where SQL might offer a more efficient or intuitive solution.</li>
-<li><strong>Hands-on Practice</strong>: Participants engaged in live coding exercises, writing SQL queries to filter, sort, group, and join data frames in R.</li>
-</ul>
-</section>
-<section id="practical-applications" class="level2">
-<h2 class="anchored" data-anchor-id="practical-applications">Practical Applications</h2>
-<p>The workshop provided practical examples using real-world data from New York City hospitals, demonstrating how SQL queries can surface valuable insights quickly. For instance, participants learned to:</p>
-<ul>
-<li>Identify the top hospitals by procedure type using SQL’s GROUP BY and ORDER BY clauses.</li>
-<li>Analyze demographic variations in healthcare charges across different counties.</li>
-<li>Understand the nuances of joins, such as inner joins and left joins, to merge datasets effectively.</li>
-</ul>
-<p>These examples showcased SQL’s ability to handle complex queries and provide actionable insights, essential for clinical data managers and researchers.</p>
-</section>
-<section id="complementary-tools" class="level2">
-<h2 class="anchored" data-anchor-id="complementary-tools">Complementary Tools</h2>
-<p>While SQL excels in data extraction and organization, R shines in statistical analysis and visualization. The workshop encouraged participants to think of SQL and R as complementary tools rather than competing ones. For instance, SQL can be used to preprocess and clean data, which can then be fed into R for advanced modeling and visualization.</p>
-</section>
-<section id="conclusion-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
-<p>By the end of the workshop, participants gained confidence in using SQL within R, learning to write queries that enhance data analysis workflows. The session emphasized that while SQL is a powerful tool, its true potential is realized when used to tell a story with data. In clinical research, this means transforming raw data into narratives that drive understanding and inform decision-making.</p>
-<p>For those looking to deepen their SQL skills within R, Chris Battiston provided a wealth of resources, including practice queries, cheat sheets, and access to the Spark dataset from New York State. These tools offer a solid foundation for further exploration and mastery of SQL in R.</p>
-<p>As the data landscape continues to evolve, the ability to integrate SQL into R workflows will undoubtedly remain a valuable skill, opening doors to more efficient data management and richer insights.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/</guid>
-  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/first-steps-with-sql-in-r-making-data-talk/thumbnail-SQL-in-R-chris.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
