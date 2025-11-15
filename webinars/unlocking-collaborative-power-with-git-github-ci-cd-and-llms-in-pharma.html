@@ -324,6 +324,54 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <p>You’ll see firsthand how we leveraged the power of GitHub to review code changes and have discussions in the code! We will then explore how the team used CI/CD and GitHub Actions to maintain a codebase, build an automated QC engine, saving time and reducing manual errors. As a glimpse into the future, we will also reveal how we integrated a Large Language Model (LLM) to handle QC checks that rule-based automation alone can’t manage.</p>
 <p>Leave this session inspired and equipped to take the next step, understanding how contributing to open-source projects is the perfect way to practice your new skills in a supportive, real-world environment.</p>
 </section>
+<section id="full-article" class="level2">
+<h2 class="anchored" data-anchor-id="full-article">Full Article</h2>
+<p>The <strong>R Consortium Submission Working Group</strong> hosted the webinar: Unlocking Collaborative Power with Git, GitHub, CI/CD, and LLMs in Pharma. This session pulled back the curtain on a unique real-world project where more than <strong>15 programmers from across the pharmaceutical industry</strong> came together to collaborate using modern software practices. Using the <strong>R Consortium Submission Pilot 5</strong> project as an example, we demonstrated how open-source tools can transform the way statisticians and programmers work.</p>
+<hr>
+</section>
+<section id="highlights-from-the-session" class="level2">
+<h2 class="anchored" data-anchor-id="highlights-from-the-session">Highlights from the Session</h2>
+<p>🔹 <strong>GitHub for Collaboration</strong> We showed how GitHub enabled programmers from different companies to review code changes, raise discussions directly in the code, and track progress. This transparency and auditability created shared accountability and accelerated consensus.</p>
+<p>🔹 <strong>CI/CD, LLM and Automation</strong> Using GitHub Actions, the team maintained a clean, production-ready codebase while building a <strong>QC automation engine</strong>. This not only saved time but also reduced manual errors. A simple automation at first (like auto-deploying a slide or webpage) can become the foundation for more complex workflows—like validating datasets with <code>diffdf</code> or even automating figure QC with AI.</p>
+<p>🔹 <strong>renv for Reproducibility</strong> A critical enabler of collaboration was renv, which ensures a consistent R environment across all contributors. By capturing package versions in a lockfile, every programmer could reproduce results reliably—even across different operating systems and company infrastructures. The lockfile also laid the foundation for further automation: in Pilot 5, we leveraged it to support a workflow where a LLM authored an ADRG (Analysis Data Reviewer’s Guide) section.</p>
+<hr>
+</section>
+<section id="where-do-i-start" class="level2">
+<h2 class="anchored" data-anchor-id="where-do-i-start">Where Do I Start?</h2>
+<p>Many questions we received centered on <strong>“Where should I start?”</strong>—both as individuals and organizations.</p>
+<p>👉 <strong>For individuals:</strong></p>
+<ul>
+<li>Start small! Contribute to an <strong>open-source project</strong> to get hands-on Git practice.</li>
+<li>Learn CI/CD by setting up something simple, like auto-deploying a page. Both Eric and Eli shared how they started this way before moving into more advanced workflows.</li>
+</ul>
+<p>👉 <strong>For organizations:</strong></p>
+<ul>
+<li>Don’t overcomplicate Git adoption. As Eli said, <em>“The fastest way to kill enthusiasm is to make it look super complicated.”</em></li>
+<li>Small projects with 2–3 contributors may only need a <strong>main branch</strong>. Larger teams benefit from structured branching (feature branches, pull requests, issue boards).</li>
+<li>A designated <strong>Git “leader”</strong> helps track best practices, manage issues, and resolve conflicts.</li>
+<li>Remember: there’s <strong>no one-size-fits-all</strong>—tailor the workflow to your team’s needs.</li>
+</ul>
+<hr>
+</section>
+<section id="industry-momentum" class="level2">
+<h2 class="anchored" data-anchor-id="industry-momentum">Industry Momentum</h2>
+<p>Are companies moving to Git? <strong>Yes!</strong> Several pharma organizations are already adopting Git workflows for programming, though strategies differ.</p>
+<ul>
+<li><p><strong>Company X:</strong> Company X employs a DEV–Feature–Main branching strategy with tagging, integrated with JIRA for project management. To address the proliferation of long-lived branches, they adopted an agile framework with short-lived feature branches, encouraging completion within a three-week sprint. Over time, users became more comfortable with Git, and many initial pain points diminished through repeated experience across study teams. While they experimented with managing project work directly in GitHub, they ultimately found JIRA’s integration more effective and chose it as their primary project management tool.</p></li>
+<li><p><strong>Roche:</strong> Roche uses Git as the version control system for clinical trial reporting and is evaluating three branching strategies. (1) Trunk-based development, where developers commit directly to a single main branch with frequent, small changes to minimize merge conflicts; (2) Feature branching with a single main branch, where main serves as the stable source of truth for code and metadata while short-lived feature branches are reviewed, stabilized, and merged back; and (3) Roche’s current practice, a more conservative devel–feature–main structure that restricts direct merges into main. Feedback from users suggests simplifying the current setup, with a slight preference toward the feature branch strategy.</p></li>
+<li><p><strong>Novo Nordisk:</strong> XX</p></li>
+<li><p>** Company Y:** Company Y experimented with several branching models, including more hierarchical structures with a devel branch, versus a simpler approach of branching directly off main with short-lived feature branches (i.e., GitHub Flow). They ultimately adopted the latter, as it proved easier to maintain and resulted in fewer merge conflicts. Their key advice was: “Don’t make the main branch feel sacred—if developers are hesitant to merge into main, you end up with long-lived feature branches and inevitable conflicts.” At Merck, the main branch is not treated as synonymous with “QC’ed code”; instead, quality control is managed separately from the branching strategy.</p></li>
+<li><p>Denali: As a small company, Denali follows a streamlined Git strategy with a single main branch per study and dedicated subfolders within each repository for reporting events. Each reporting event subfolder has its own R project file, and development work is divided into feature branches from main that can be as granular as updating a single program file, or broader for multiple files with related changes. Second-line QC programs are added directly into the relevant feature branch, and then submitted as pull requests (PRs) for the entire branch. After peer review by another team member, the feature branch is merged into main and then deleted (this behavior can be enabled by default in Github to automatically reduce clutter!). To balance workload and avoid bottlenecks, PR review responsibilities are shared across the team.</p></li>
+</ul>
+<hr>
+</section>
+<section id="open-source-as-a-learning-ground" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-as-a-learning-ground">Open Source as a Learning Ground</h2>
+<p>Finally, remember that open source is the best playground to <strong>observe, experiment, and learn</strong>. The <a href="https://r-consortium.org/">R Consortium</a> itself thrives on contributions from individuals and companies who want to push the boundaries of collaboration in pharma data science.</p>
+<p>👉 Interested in joining? Learn more at <a href="https://r-consortium.org/">R Consortium</a>.</p>
+<hr>
+<p>✨ <strong>Takeaway:</strong> Whether you’re an individual learning Git for the first time, or an organization looking to modernize programming workflows, the journey starts small—but the potential impact is huge.</p>
+</section>
 <section id="speakers" class="level2">
 <h2 class="anchored" data-anchor-id="speakers">Speakers</h2>
 <section id="ning-leng-ad-interim-global-head-data-science-acceleration-dsx-group-roche" class="level3">
