@@ -1,0 +1,49 @@
+--- 
+title: "Keeping LLMs in Their Lane: Focused AI for Data Science and Research" 
+unpublished: false 
+url: "https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/"
+description: " " 
+categories: ["ai", "r+ai", "software development"]
+author: "R Consortium" 
+image: "thumbnail-joe-cheng.png" 
+image-alt: "thumbnail for video on Keeping LLMs in Their Lane: Focused AI for Data Science and Research" 
+date: "11/15/2025" 
+---
+
+{{< video https://www.youtube.com/embed/ZlTKyBsLtag >}}
+
+### Slides with resource links [available here](joe_cheng_keynote_slides.pdf) (PDF)
+
+# Harnessing the Power of LLMs for Responsible Data Science and Research
+
+Joe Cheng, CTO of Posit, delivered a fanstastic keynote to kick off R+AI 2025, focusing on how Large Language Models (LLMs) can be effectively harnessed for data science and research. As the landscape of AI continues to evolve, Cheng emphasized the importance of utilizing LLMs in a responsible manner, adhering to principles such as correctness, transparency, and reproducibility.
+
+## The Role of LLMs Beyond Conventional Tools
+
+Cheng set the stage by clarifying that while tools like ChatGPT and Copilot are well-known for their coding assistance, the potential of LLMs extends far beyond these applications. He introduced the concept of utilizing LLMs as custom agents, allowing users to integrate them into their workflows for more tailored and sophisticated tasks. This approach is facilitated by the R package **Elmer**, which allows users with a background in R to easily tap into the capabilities of LLMs.
+
+## Posit's Mission and Ethical Considerations
+
+As a Public Benefit Corporation (PBC), Posit is committed to creating open-source software for data science, scientific research, and technical communication. The company is driven by a mission that emphasizes the importance of producing trustworthy results, especially in high-stakes scenarios such as healthcare data analysis, drug development, public policy, and environmental studies. Cheng underscores the ethical obligation to ensure that the software and analyses produced are reliable, as users often have no choice but to trust the results.
+
+## The Challenges of LLMs: Correctness, Transparency, and Reproducibility
+
+LLMs present inherent challenges when evaluated against the principles of correctness, transparency, and reproducibility. They are notorious for generating convincing but incorrect answers, operate as black boxes with limited transparency, and inherently lack reproducibility due to their non-deterministic nature. Despite these challenges, Cheng argued that LLMs can still be used responsibly with the right approaches.
+
+## Approaches to Responsible Use of LLMs
+
+Chenged presents three approaches to responsibly leveraging LLMs in data science:
+
+1. **Constrained Use of LLMs**: By identifying specific tasks that LLMs excel at, such as generating SQL queries, and constraining them to these tasks, users can mitigate the risk of errors. The use of deterministic software to augment LLM capabilities ensures that the results are trustworthy. This approach is exemplified by the use of SQL chatbots to drive Shiny dashboards, where the focus is on the correctness of SQL rather than the LLM's broader capabilities.
+
+2. **Micromanaging the Model**: This involves maintaining a tight feedback loop between the user and the LLM, allowing for immediate correction of errors. By taking small, manageable steps and closely overseeing the model's outputs, users can ensure that mistakes are caught promptly. This approach is particularly useful in data visualization, where subjectivity allows for easy judgment of outcomes.
+
+3. **Deferred Review**: In this approach, users allow the LLM to take larger steps, accumulating a "review debt" that is addressed before the final output is shared. This method offers rapid progress but requires a thorough review to ensure accuracy and reliability. Databot, Posit's exploratory data analysis agent, exemplifies this approach by generating reproducible reports that users can review and refine.
+
+## Balancing Use and Responsibility
+
+The decision on how to responsibly use LLMs depends on the specific context and the risk tolerance of the user. For instance, those working in marketing may have a higher tolerance for risk compared to individuals in fields where lives are at stake. Cheng emphasized the importance of understanding the capabilities and limitations of LLMs and advises users to find a balance that aligns with their needs and ethical considerations.
+
+## Conclusion
+
+Joe Cheng's keynote at R+AI 2025 provided valuable insights into the responsible use of LLMs in data science and research. By focusing on principles of correctness, transparency, and reproducibility, and adopting approaches that mitigate risks, users can harness the power of LLMs to enhance their workflows while maintaining trust and reliability. Posit's commitment to open-source software and ethical considerations serves as a strong example for the R community in navigating the evolving landscape of AI.
