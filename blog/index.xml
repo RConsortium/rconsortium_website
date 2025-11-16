@@ -254,6 +254,69 @@
   <media:content url="https://r-consortium.org/posts/me-myself-claude/thumbnail-jasmine-daly.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Tracking the Evolution of R and Python Tools for GenAI</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wYMzdAh8FyE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="Xu_Fei_Tracking_the_Evolution.pdf">available here</a> (PDF)</h3>
+</section>
+<section id="building-genai-applications-lessons-from-r-and-python-tooling" class="level1">
+<h1>Building GenAI Applications: Lessons from R and Python Tooling</h1>
+<p>Generative AI (GenAI) has become an exciting frontier for developers and data scientists eager to infuse applications with intelligent features. The journey at A2-Ai, a team of scientists and developers skilled in languages like R, Python, JavaScript, and more, provides valuable insights into the interplay of R and Python in GenAI tooling. This post delves into key learnings and experiences from building GenAI applications, focusing on tools that enhance communication between elements and back-end systems.</p>
+<section id="a-journey-into-genai-from-challenges-to-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="a-journey-into-genai-from-challenges-to-solutions">A Journey into GenAI: From Challenges to Solutions</h2>
+<p>A2-Ai’s exploration into GenAI began with a simple question: “How do I install the <code>dplyr</code> package?” While large language models like ChatGPT offered correct answers, they weren’t always applicable to internal processes. A2-Ai uses an internal tool written in Rust, called RB, for managing installations and environments for R packages. The need to incorporate such internal knowledge into a chatbot led to the development of a unique system built with Shiny for Python. The result was a chatbot capable of fetching precise information from the internal R repository, Prism, and making appropriate API calls.</p>
+<p>For example, one colleague developed a Model Context Protocol (MCP) server in R, enabling natural language queries for exploratory data analysis within pharmacometrics workflows. This allowed scientists to interact with data by posing questions in English, prompting updates in plots and legends.</p>
+<p>While applications are diverse, three core building blocks are essential for building GenAI applications: model interface, context handling, and result validation.</p>
+</section>
+<section id="core-building-blocks-of-genai-applications" class="level2">
+<h2 class="anchored" data-anchor-id="core-building-blocks-of-genai-applications">Core Building Blocks of GenAI Applications</h2>
+<ol type="1">
+<li><p><strong>Model Interface</strong>: This manages Language Model (LM) API calls. Despite the dearth of R SDKs for providers like OpenAI, the package <code>{ellmer}</code> has emerged as the go-to tool for R developers. <code>{ellmer}</code> abstracts overhead from HTTP calls, allowing developers to focus on building rather than communication intricacies.</p></li>
+<li><p><strong>Context Handling</strong>: This involves determining the necessary context for LLMs to provide accurate responses. In enterprise environments, internal documentation, codebases, and workflows form part of this context. The robustness of the Python ecosystem, rich with tools for document processing, offers an advantage, but recent R developments are bridging some gaps.</p></li>
+<li><p><strong>Result Validation</strong>: Ensuring systematic output of desired results is crucial, given the non-deterministic behavior of LM applications. Tools like <code>vital</code> in R and <code>inspect</code> in Python offer mechanisms to evaluate GenAI applications systematically, ensuring improvements are tracked and validated.</p></li>
+</ol>
+</section>
+<section id="evolution-of-tooling-in-r-and-python" class="level2">
+<h2 class="anchored" data-anchor-id="evolution-of-tooling-in-r-and-python">Evolution of Tooling in R and Python</h2>
+<p>R and Python ecosystems have evolved with various packages dealing with model interfaces. The chronological development of these packages reveals a convergence towards <code>{ellmer}</code> for R, while Python’s ecosystem remains diverse due to original SDKs from model providers and other unifying libraries.</p>
+<p>The Python ecosystem boasts high-level orchestration frameworks for different use cases, a result of foundational SDKs enabling diverse and rich use-case development. While R’s ecosystem is in a growth phase, new tools are helping it catch up.</p>
+</section>
+<section id="strategies-for-leveraging-r-and-python-together" class="level2">
+<h2 class="anchored" data-anchor-id="strategies-for-leveraging-r-and-python-together">Strategies for Leveraging R and Python Together</h2>
+<p>Developers need not choose between R and Python. Several strategies exist to leverage both:</p>
+<ul>
+<li><p><strong>R-Only Teams</strong>: Start with <code>{ellmer}</code> and explore packages like <code>{btw}</code> (from Posit), which allow interaction with LLMs within R environments.</p></li>
+<li><p><strong>Python-Only Tools</strong>: Use the <code>reticulate</code> package to call Python libraries and functions from R without switching languages entirely.</p></li>
+<li><p><strong>Multilingual Teams</strong>: Use REST APIs to expose tools to other teams, enabling interaction across different languages.</p></li>
+<li><p><strong>Model Context Protocol (MCP)</strong>: With MCP servers, developers can expose functions in any language as natural language queries, enhancing cross-language interactions.</p></li>
+</ul>
+</section>
+<section id="conclusion-and-final-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-final-takeaways">Conclusion and Final Takeaways</h2>
+<p>Building GenAI applications with R and Python is an exciting venture, enriched by rapidly evolving ecosystems. While Python offers maturity, R is catching up with robust tools like <code>{ellmer}</code>. The key is to start building and refine applications based on user interactions. Bridging gaps strategically through REST APIs and MCP servers ensures developers leverage the best of both worlds while being mindful of potential risks and vulnerabilities.</p>
+<p>Engage with the GenAI community, share experiences, and continue learning for a rewarding journey in building innovative applications.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>r+ai</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/</guid>
+  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/thumbnail-xu-fei.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>R+AI: Use RAG from your database to gain insights into the R Consortium</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</link>
@@ -1988,88 +2051,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/thumbnail-redcap-rose.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>The power of {targets} package for reproducible data science</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/2BtXjPRLGkQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="enhancing-reproducible-data-science-with-the-targets-package-in-r" class="level1">
-<h1>Enhancing Reproducible Data Science with the <code>targets</code> Package in R</h1>
-<p>Reproducibility is a non-negotiable pillar in the realm of data science, ensuring that analyses can be reliably replicated and shared. This commitment to reproducibility is vital for building trust and credibility in the outcomes of data-driven projects. In the R ecosystem, the <code>targets</code> package stands out as a powerful tool designed to streamline and enhance reproducibility in data science workflows.</p>
-<section id="the-power-of-targets" class="level2">
-<h2 class="anchored" data-anchor-id="the-power-of-targets">The Power of <code>targets</code></h2>
-<p>The <code>targets</code> package in R offers a robust framework for pipeline management, enabling efficient dependency tracking, automated pipeline execution, and clear documentation of the entire data analysis process. This package ensures that complex pipelines execute consistently in isolated environments.</p>
-<p>When combined with tools like <code>{renv}</code> and Docker, <code>targets</code> eliminates the common “it works on my machine” problem. This synergy fosters reproducibility across diverse computational environments, empowering data scientists to create scalable and maintainable projects.</p>
-</section>
-<section id="workshop-overview" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
-<p>The workshop, led by Rahul Sangole, a Senior Data Science Manager at Apple, was designed for data scientists and analysts eager to enhance their pipeline management skills. Through hands-on exercises and real-world examples, attendees learned how to leverage <code>targets</code> to build reproducible data science workflows.</p>
-<section id="key-topics-covered" class="level3">
-<h3 class="anchored" data-anchor-id="key-topics-covered">Key Topics Covered</h3>
-<ol type="1">
-<li><strong>Pipeline Basics and Functions</strong>:
-<ul>
-<li>Transitioning from a script-based approach to a <code>targets</code> pipeline involves converting each variable into a “target.”</li>
-<li>Using functions to keep pipelines clean and maintainable.</li>
-<li>Visualizing pipelines to understand dependencies and execution flow.</li>
-</ul></li>
-<li><strong>Handling Files</strong>:
-<ul>
-<li>Managing input and output files within a <code>targets</code> pipeline.</li>
-<li>Utilizing <code>format = "file"</code> to track file changes and ensure pipeline validity.</li>
-<li>Incorporating Quarto documents for literate programming within pipelines.</li>
-</ul></li>
-<li><strong>Parallel Computing</strong>:
-<ul>
-<li>Accelerating pipelines by utilizing multiple workers with the <code>crew</code> package.</li>
-<li>Monitoring pipeline execution in real-time with <code>tar_watch()</code>.</li>
-</ul></li>
-<li><strong>Dynamic Branching</strong>:
-<ul>
-<li>Utilizing dynamic branching to handle scenarios where the number of models or data sets is not known beforehand.</li>
-<li>Implementing <code>pattern = map</code> and <code>pattern = cross</code> to create flexible and scalable pipelines.</li>
-</ul></li>
-<li><strong>Database Integration</strong>:
-<ul>
-<li>Connecting to databases, querying data, and writing results back to databases within a <code>targets</code> pipeline.</li>
-<li>Using <code>withr</code> for clean database connections and disconnections.</li>
-</ul></li>
-<li><strong>Comprehensive Example</strong>:
-<ul>
-<li>Organizing code into clear, maintainable structures with separate functions and pipelines.</li>
-<li>Building a full-fledged example of a machine learning pipeline using <code>targets</code> to manage data cleaning, modeling, and reporting.</li>
-</ul></li>
-</ol>
-</section>
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
-<ul>
-<li><strong>Setup Instructions</strong> for the workshop: <a href="https://rsangole.netlify.app/talks/2025-06-09_rmedicine-targets/doc.html#setup-instructions">Workshop Setup</a></li>
-</ul>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The <code>targets</code> package is an invaluable asset for data scientists committed to reproducibility. By adopting <code>targets</code>, data professionals can build transparent, trustable, and reproducible data workflows. The workshop provided a comprehensive introduction to <code>targets</code>, equipping participants with the knowledge and skills to implement these practices in their projects.</p>
-<p><strong>Rahul Sangole’s</strong> expertise and passion for reproducible data science were evident throughout the session, offering participants a deep dive into the capabilities of <code>targets</code>. This workshop is a stepping stone for data scientists to enhance their pipeline management and scale their analytical workflows effectively.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/</guid>
-  <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/the-power-of-targets-package-for-reproducible-data-science/thumbnail-targets-rahul.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

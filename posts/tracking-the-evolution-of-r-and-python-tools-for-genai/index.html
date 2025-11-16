@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2025-11-15">
+<meta name="description" content="Insights into building GenAI applications using R and Python, focusing on model interfaces, context handling, and result validation.">
 
-<title>R Consortium</title>
+<title>Tracking the Evolution of R and Python Tools for GenAI – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-92ef5327927b2d6ffbb2647db49d27b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-92ef5327927b2d6ffbb2647db49d27b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,36 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -110,49 +81,20 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
-    <img src="./images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -167,35 +109,35 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -206,15 +148,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="./members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -225,23 +167,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="./all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -264,7 +206,7 @@ window.Quarto = {
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -283,15 +225,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine (May 4-8, 2026)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">Working Groups Calendar</span></a>
   </li>  
     </ul>
@@ -302,25 +244,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="./blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -351,445 +293,101 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Tracking the Evolution of R and Python Tools for GenAI</h1>
+                  <div>
+        <div class="description">
+          Insights into building GenAI applications using R and Python, focusing on model interfaces, context handling, and result validation.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">ai</div>
+                <div class="quarto-category">r+ai</div>
+                <div class="quarto-category">software development</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 15, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"></p>
-<style>
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.animate-slideInFromLeft {
-  opacity: 0;
-  animation: slideInFromLeft 1s forwards;
-}
-.scroll-title {
-  background-color: rgb(30, 81, 164);
-  color: white; 
-  display: inline-block;
-  padding: 10px;
-  cursor: pointer;
-}
 
-.darkButton {
-  background-color: black; 
-  color: #fff; 
-  border: none; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-.darkButton a {
-  color: inherit; 
-  text-decoration: none;
-}
-.darkButton:hover {
-  background-color: rgb(30, 81, 164); 
-  color: white;
-}
-.darkButton:hover a{
-  color: 
-}
-.joiningRButton {
-  background-color: black; 
-  color: #fff; 
-  border: 2px solid white; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-.joiningRButton a {
-  color: inherit; 
-  text-decoration: none;
-}
-.joiningRButton:hover {
-  background-color: white; 
-  color: black;
-}
-.joiningRButton:hover a {
-  color: black;
-}
-.joining-r-section {
-  background-image: url('./images/joining-r-consoritum-bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  color: white; 
-  
-}
-
-.video-popup{
-  position: relative;
-}
-
-.play {
-  border-radius: 50%;
-  padding: 10px;
-  background-color: rgb(30, 81, 164);
-  max-width: 50px;
-  max-height: 50px;
-  position: absolute;
-  right: 47%;
-  top: 40%;
-}
-
-.goldButton {
-  display:inline-block;
-  padding:24px 40px;
-  border-radius:999px;
-  font-weight:700;
-  font-size:2em;
-  text-transform:uppercase;
-  text-decoration:none;
-  background:linear-gradient(180deg,#f6e27a 0%, #d4af37 50%, #b8891a 100%);
-  color:#ffffff;
-  border:1px solid #a67c00;
-  box-shadow:0 6px 14px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.6);
-  transition:transform .06s ease, filter .2s ease, box-shadow .2s ease;
-}
-.goldButton:hover { color:#b8891a; }
-.goldButton:active { transform:translateY(1px); }
-.goldButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
-
-</style>
-<div class="swiper-container">
-<!-- swiper slides -->
-<div class="swiper-wrapper">
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
-<h2 class="anchored">
-R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.
-</h2>
-<button class="blueButton">
-<a href="./all-projects/rugsprogram.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div class="swiper-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/3rq6Gzgz/IMG-5390-1024x716-1.webp');">
-<h2 class="anchored">
-Find your local R user group Network with fellow statisticians and learn from your peers.
-</h2>
-<button class="blueButton">
-<a href="https://www.meetup.com/pro/r-user-groups/" style="text-decoration: none;">FIND A USER GROUP</a>
-</button>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/K8SHqLpN/rcon-slide-bg2.webp);">
-<h2 class="anchored">
-R Consortium: Supporting the R community, the R Foundation and organizations developing, maintaining and distributing R software.
-</h2>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/Sx6twsw-p/rcon-slide-bg2b.webp);">
-<h2 class="anchored">
-Find your local R user group Network with fellow statisticians and learn from your peers.
-</h2>
-<button class="blueButton">
-<a href="./all-projects/rugsprogram.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/g2KtdhD8/virginia-deq-webinar-main-image.png);">
-<button class="blueButton">
-<a href="posts/strength-in-numbers" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/59Hrv64W/r-spatial-main-carousel.png);">
-<button class="blueButton">
-<a href="./webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div class="swiper-slide" style="background-image:url(https://i.postimg.cc/hG8NBHg8/Rplus-AI-carousel-image.png);">
-<p><a class="goldButton" href="https://rconsortium.github.io/RplusAI_website/">REGISTER NOW!</a></p>
-</div>
-</div>
-<!-- !swiper slides -->
-<!-- next / prev arrows -->
-<div class="swiper-button-next">
-
-</div>
-<div class="swiper-button-prev">
-
-</div>
-<!-- !next / prev arrows -->
-<!-- pagination dots -->
-<div class="swiper-pagination">
-
-</div>
-<!-- !pagination dots -->
-</div>
-<section class="what-is-r-section" id="what-is-r">
-<div style="display: flex; flex-wrap: wrap;">
-<div style="flex: 2; min-width: 300px; padding: 10px; align-items: center;">
-<h2 class="scroll-title anchored">
-WHAT IS THE R CONSORTIUM
-</h2>
-<p>
-The central mission of the R Consortium is to work with and provide support to the R Foundation and to the key organizations developing, maintaining, distributing and using R software through the identification, development and implementation of infrastructure projects.
-</p>
-<p>
-The R language is an open source environment for statistical computing and graphics, and runs on a wide variety of computing platforms. The R language has enjoyed significant growth, and now supports over 2 million users. A broad range of industries have adopted the R language, including biotech, finance, research and high technology industries. The R language is often integrated into third party analysis, visualization and reporting applications.
-</p>
-</div>
-<div style="flex: 1; min-width: 300px; padding: 20px; border; display: flex; justify-content: flex-end; align-items: end; position: relative;">
-<a class="video-popup" href="https://www.youtube.com/watch?v=XcBLEVknqvY" target="blank"> <img src="images/rcon_video_preview.png" alt="Video Preview" style="width: 90%; height: auto; cursor: pointer; margin-left: 1%"> <img src="images/play-button-svgrepo-com.svg" alt="Play Button" class="play"> </a>
-</div>
-</div>
-<button class="darkButton">
-<a href="./about/governance.html" style="text-decoration: none;">GOVERNANCE</a>
-</button>
-<button class="darkButton">
-<a href="rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" style="text-decoration: none;">READ OUR ANNUAL REPORT 2023</a>
-</button>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wYMzdAh8FyE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="Xu_Fei_Tracking_the_Evolution.pdf">available here</a> (PDF)</h3>
 </section>
-<section class="joining-r-section" id="joining-r">
-<h2 class="scroll-title anchored" style="border:none;">
-Joining R Consortium
-</h2>
-<p>
-Industry-leading organizations have joined the R Consortium to support an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
-</p>
-<button class="joiningRButton">
-<a href="./about/join.html" style="text-decoration: none;">LEARN MORE ABOUT MEMBERSHIP</a>
-</button>
+<section id="building-genai-applications-lessons-from-r-and-python-tooling" class="level1">
+<h1>Building GenAI Applications: Lessons from R and Python Tooling</h1>
+<p>Generative AI (GenAI) has become an exciting frontier for developers and data scientists eager to infuse applications with intelligent features. The journey at A2-Ai, a team of scientists and developers skilled in languages like R, Python, JavaScript, and more, provides valuable insights into the interplay of R and Python in GenAI tooling. This post delves into key learnings and experiences from building GenAI applications, focusing on tools that enhance communication between elements and back-end systems.</p>
+<section id="a-journey-into-genai-from-challenges-to-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="a-journey-into-genai-from-challenges-to-solutions">A Journey into GenAI: From Challenges to Solutions</h2>
+<p>A2-Ai’s exploration into GenAI began with a simple question: “How do I install the <code>dplyr</code> package?” While large language models like ChatGPT offered correct answers, they weren’t always applicable to internal processes. A2-Ai uses an internal tool written in Rust, called RB, for managing installations and environments for R packages. The need to incorporate such internal knowledge into a chatbot led to the development of a unique system built with Shiny for Python. The result was a chatbot capable of fetching precise information from the internal R repository, Prism, and making appropriate API calls.</p>
+<p>For example, one colleague developed a Model Context Protocol (MCP) server in R, enabling natural language queries for exploratory data analysis within pharmacometrics workflows. This allowed scientists to interact with data by posing questions in English, prompting updates in plots and legends.</p>
+<p>While applications are diverse, three core building blocks are essential for building GenAI applications: model interface, context handling, and result validation.</p>
 </section>
-<section class="need-help-section" id="need-help">
-<h2 class="scroll-title anchored">
-Need Help?
-</h2>
-<p>
-If you need help such as with billing, mailing lists or other wise then please use this service desk for support.
-</p>
-<button class="darkButton">
-<a href="https://members.r-consortium.org/" style="text-decoration: none;">GET HELP</a>
-</button>
+<section id="core-building-blocks-of-genai-applications" class="level2">
+<h2 class="anchored" data-anchor-id="core-building-blocks-of-genai-applications">Core Building Blocks of GenAI Applications</h2>
+<ol type="1">
+<li><p><strong>Model Interface</strong>: This manages Language Model (LM) API calls. Despite the dearth of R SDKs for providers like OpenAI, the package <code>{ellmer}</code> has emerged as the go-to tool for R developers. <code>{ellmer}</code> abstracts overhead from HTTP calls, allowing developers to focus on building rather than communication intricacies.</p></li>
+<li><p><strong>Context Handling</strong>: This involves determining the necessary context for LLMs to provide accurate responses. In enterprise environments, internal documentation, codebases, and workflows form part of this context. The robustness of the Python ecosystem, rich with tools for document processing, offers an advantage, but recent R developments are bridging some gaps.</p></li>
+<li><p><strong>Result Validation</strong>: Ensuring systematic output of desired results is crucial, given the non-deterministic behavior of LM applications. Tools like <code>vital</code> in R and <code>inspect</code> in Python offer mechanisms to evaluate GenAI applications systematically, ensuring improvements are tracked and validated.</p></li>
+</ol>
 </section>
-<section id="latest-news">
-<h2 class="scroll-title anchored">
-BLOG
-</h2>
+<section id="evolution-of-tooling-in-r-and-python" class="level2">
+<h2 class="anchored" data-anchor-id="evolution-of-tooling-in-r-and-python">Evolution of Tooling in R and Python</h2>
+<p>R and Python ecosystems have evolved with various packages dealing with model interfaces. The chronological development of these packages reveals a convergence towards <code>{ellmer}</code> for R, while Python’s ecosystem remains diverse due to original SDKs from model providers and other unifying libraries.</p>
+<p>The Python ecosystem boasts high-level orchestration frameworks for different use cases, a result of foundational SDKs enabling diverse and rich use-case development. While R’s ecosystem is in a growth phase, new tools are helping it catch up.</p>
 </section>
-<script>
-
-document.addEventListener("DOMContentLoaded", function() {
-  const scrollTitles = document.querySelectorAll(".scroll-title");
-
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function checkAnimations() {
-    scrollTitles.forEach(el => {
-      if (isElementInViewport(el)) {
-        el.classList.add("animate-slideInFromLeft");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", checkAnimations);
-  checkAnimations(); 
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const scrollTitles = document.querySelectorAll(".scroll-title");
-
-  scrollTitles.forEach(el => {
-    el.addEventListener("click", function() {
-      const targetId = this.getAttribute("data-target");
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  });
-});
-document.getElementById('scroll-to-hero').addEventListener('click', function() {
-    document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-<script>
-var Swipes = new Swiper('.swiper-container', {
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-});
-</script>
+<section id="strategies-for-leveraging-r-and-python-together" class="level2">
+<h2 class="anchored" data-anchor-id="strategies-for-leveraging-r-and-python-together">Strategies for Leveraging R and Python Together</h2>
+<p>Developers need not choose between R and Python. Several strategies exist to leverage both:</p>
+<ul>
+<li><p><strong>R-Only Teams</strong>: Start with <code>{ellmer}</code> and explore packages like <code>{btw}</code> (from Posit), which allow interaction with LLMs within R environments.</p></li>
+<li><p><strong>Python-Only Tools</strong>: Use the <code>reticulate</code> package to call Python libraries and functions from R without switching languages entirely.</p></li>
+<li><p><strong>Multilingual Teams</strong>: Use REST APIs to expose tools to other teams, enabling interaction across different languages.</p></li>
+<li><p><strong>Model Context Protocol (MCP)</strong>: With MCP servers, developers can expose functions in any language as natural language queries, enhancing cross-language interactions.</p></li>
+</ul>
+</section>
+<section id="conclusion-and-final-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-final-takeaways">Conclusion and Final Takeaways</h2>
+<p>Building GenAI applications with R and Python is an exciting venture, enriched by rapidly evolving ecosystems. While Python offers maturity, R is catching up with robust tools like <code>{ellmer}</code>. The key is to start building and refine applications based on user interactions. Bridging gaps strategically through REST APIs and MCP servers ensures developers leverage the best of both worlds while being mindful of potential risks and vulnerabilities.</p>
+<p>Engage with the GenAI community, share experiences, and continue learning for a rewarding journey in building innovative applications.</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YWklMkNyJTJCYWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1763164800000" data-listing-file-modified-sort="1763257195462" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1415">
-<a href="./posts/me-myself-claude/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/me-myself-claude/thumbnail-jasmine-daly.png" class="thumbnail-image card-img" style="height: 150px;" alt="Thumbnail for the talk Me, Myself, and Claude on AI-assisted R development">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Me, Myself, and Claude: Scaling an R Consultancy with AI-Assisted Development
-</h5>
-<div class="card-text listing-description delink">
-<p>How Jasmine Daly uses AI-assisted development to scale an R-based data science consultancy, deepen R intuition, and say yes to bigger, more meaningful projects.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Nov 15, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="YWklMkNyJTJCYWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1763164800000" data-listing-file-modified-sort="1763257195879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="660">
-<a href="./posts/tracking-the-evolution-of-r-and-python-tools-for-genai/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/tracking-the-evolution-of-r-and-python-tools-for-genai/thumbnail-xu-fei.png" class="thumbnail-image card-img" style="height: 150px;" alt="thumbnail for video on Tracking the Evolution of R and Python Tools for GenAI">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tracking the Evolution of R and Python Tools for GenAI
-</h5>
-<div class="card-text listing-description delink">
-<p>Insights into building GenAI applications using R and Python, focusing on model interfaces, context handling, and result validation.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Nov 15, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="YWklMkNyJTJCYWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1763164800000" data-listing-file-modified-sort="1763257195290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="654">
-<a href="./posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/thumbnail-joe-cheng.png" class="thumbnail-image card-img" style="height: 150px;" alt="thumbnail for video on Keeping LLMs in Their Lane: Focused AI for Data Science and Research">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Keeping LLMs in Their Lane: Focused AI for Data Science and Research
-</h5>
-<div class="card-text listing-description delink">
-<p>Explore Joe Chang’s insights on responsibly harnessing LLMs in data science and research.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Nov 15, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="YWklMkNldmVudHMlMkNyJTJCYWk=" data-listing-date-sort="1763078400000" data-listing-file-modified-sort="1763257195728" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1388">
-<a href="./posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/thumbnail-oracle.png" class="thumbnail-image card-img" style="height: 150px;" alt="main image for Oracle Machine Learning&amp;#039;s Mark Hornick and Sherry LaMonica at R+AI 2025">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R+AI: Use RAG from your database to gain insights into the R Consortium
-</h5>
-<div class="card-text listing-description delink">
-<p>At R+AI 2025, Oracle Machine Learning’s Mark Hornick and Sherry LaMonica showed how R users can apply Retrieval Augmented Generation (RAG) to R Consortium blog data using…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Nov 14, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="cnVncyUyQ3NvdXRoJTIwYW1lcmljYQ==" data-listing-date-sort="1762214400000" data-listing-file-modified-sort="1763257195454" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1143">
-<a href="./posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/portadashiny.png" class="thumbnail-image card-img" style="height: 150px;" alt="Mastering Shiny book cover and R-Ladies Buenos Aires logo">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Learning Shiny, Together: A Collaborative Reading Club Around Mastering Shiny in Buenos Aires
-</h5>
-<div class="card-text listing-description delink">
-<p>R-Ladies Buenos Aires and R en Buenos Aires organized a community-based reading club to learn Mastering Shiny together, creating a supportive environment for learning and…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R-Ladies Buenos Aires &amp; R in Buenos Aires User Group
-</div>
-<div class="listing-date">
-Nov 4, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="YW5ub3VuY2VtZW50cw==" data-listing-date-sort="1759363200000" data-listing-file-modified-sort="1763257195811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1154">
-<a href="./posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" class="thumbnail-image card-img" style="height: 150px;" alt="Sovereign Tech Fund Investment in R Foundation - Sustainability and Security">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The Sovereign Tech Fund invests $450,000 in R Foundation to Enhance R’s Sustainability and Security
-</h5>
-<div class="card-text listing-description delink">
-<p>R Foundation embarking on a crucial project to modernize R’s core infrastructure, improve its maintainability, and fortify its supply chain.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Oct 2, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
