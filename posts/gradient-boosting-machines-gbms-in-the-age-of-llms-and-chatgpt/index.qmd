@@ -1,0 +1,54 @@
+--- 
+title: "Gradient Boosting Machines (GBMs) in the Age of LLMs and ChatGPT" 
+unpublished: false 
+url: "https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/"
+description: "Exploring the relevance of Gradient Boosting Machines in the AI and LLM era. Are GBMs still the best?" 
+categories: ["ai", "r+ai", "software development"]
+author: "R Consortium" 
+image: "thumbnail-szilard-pafka.png" 
+image-alt: "thumbnail for video on Gradient Boosting Machines (GBMs) in the Age of LLMs and ChatGPT" 
+date: "11/15/2025" 
+---
+
+
+{{< video https://www.youtube.com/embed/8pAv-aw8HYM >}}
+
+### Slides with resource links [available here](szilard_GBM_LLM.pdf) (PDF)
+
+# Gradient Boosting Machines: Are They Still Relevant in the Era of AI and LLMs?
+
+Gradient Boosting Machines (GBMs) have long been hailed as the leading machine learning algorithm for structured and tabular data. This reputation has been firmly established over the past decade, particularly in business applications where accuracy and predictive analytics are paramount. However, as Large Language Models (LLMs) like ChatGPT rise to prominence, questions about the relevance and potential obsolescence of GBMs are becoming more frequent. [Szilard Pafka, PhD, Chief Scientist at Epoch](https://szilard.github.io/aboutme/), addressed this topic in a compelling talk at the R+AI 2025 event hosted by the R Consortium.
+
+## The Proven Track Record of GBMs
+
+GBMs have been a cornerstone of machine learning since the 2000s, especially in business-related domains where tabular data is prevalent. This data type, organized in rows and columns, is typically stored in relational databases and is the backbone of many practical applications like fraud detection, credit scoring, and marketing analytics. GBMs' superiority in handling such data is well-documented, with popular implementations like XGBoost, LightGBM, and h2o available as R packages.
+
+### Historical Context
+
+The efficacy of GBMs in tabular data contexts is supported by numerous studies and benchmarks. A notable 2006 study compared several machine learning algorithms and found that random forests, neural networks, and GBMs consistently delivered the best performance across various datasets. Over the years, GBMs have maintained their status as the go-to solution for structured data, with prominent figures like Tianqi Chen, the creator of XGBoost, highlighting their dominance in competitive environments like Kaggle.
+
+### The Deep Learning Challenge
+
+Despite the success of GBMs, the advent of deep learning over a decade ago promised to revolutionize machine learning. While deep learning conquered domains like computer vision and speech recognition, its application to structured data lagged behind. Szilard Pafka expressed skepticism about deep learning's ability to outperform GBMs in tabular data contexts, a sentiment supported by empirical evidence and expert consensus.
+
+## The Rise of Large Language Models
+
+The landscape began to shift with the emergence of LLMs such as ChatGPT, which showcased unprecedented capabilities in text understanding and generation. These models have transformed information retrieval and synthesis, often replacing traditional search engines and providing sophisticated code generation and data analysis assistance. However, their application to tabular data remains limited.
+
+### The Role of LLMs in Machine Learning
+
+While LLMs excel in text-based domains, their utility in tabular data tasks is still being explored. Pafka notes that LLMs can aid in idea generation, advice, and code generation, but they have yet to replace the specialized efficiency of GBMs in structured data scenarios. This is due to the inherent differences in data structure and the challenges LLMs face when handling large, complex datasets.
+
+## Benchmarking GBMs and LLMs
+
+Pafka's [GBM-perf benchmark](https://github.com/szilard/GBM-perf), maintained on GitHub, continues to demonstrate the strength of GBMs against newer algorithms, including those involving deep learning and LLMs. The findings consistently place GBMs like XGBoost and CatBoost at the top in terms of performance, especially in classification tasks with tabular data.
+
+### Practical Applications and Deployment
+
+The practical deployment of machine learning models is as crucial as their training. H2o.ai, for example, offers seamless integration and deployment capabilities, making it a preferred choice for real-time applications. The ease of deployment and efficient scoring are significant advantages of GBMs, which are often not matched by LLMs in structured data tasks.
+
+## Future Prospects and Conclusion
+
+As the AI landscape rapidly evolves, the question remains: can LLMs and other AI advancements supplant GBMs in the domain of tabular data? The current consensus, both among human experts and AI systems like ChatGPT, is that GBMs are still the optimal choice for these tasks. While LLMs hold potential for assisting in various stages of data analysis and machine learning, GBMs continue to be the workhorse for structured data.
+
+The future is uncertain, and as AI technologies advance, new paradigms may emerge. However, for now, GBMs remain an indispensable tool in the data scientist’s arsenal, particularly for business applications involving structured data. Szilard Pafka’s insights reaffirm the enduring relevance of GBMs and highlight the need for continuous adaptation and learning in the face of technological progress.
