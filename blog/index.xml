@@ -12,6 +12,78 @@
 <generator>quarto-1.8.26</generator>
 <lastBuildDate>Sat, 15 Nov 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>Brand your docs, apps, and ggplots using LLMs</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/828KuEORQdg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here" class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here">Slides with resource links <a href="https://dru.quarto.pub/brandthis/#/title-slide">available here</a></h3>
+</section>
+<section id="branding-your-r-projects-with-ease-utilizing-the-brandthis-package" class="level1">
+<h1>Branding Your R Projects with Ease: Utilizing the <code>{brandthis}</code> Package</h1>
+<p>In the realm of data science, while achieving analytical accuracy is paramount, presenting those findings in an aesthetically appealing manner can make a significant difference. The amalgamation of data science with graphic design might seem daunting, but it is a crucial step to ensure that your work stands out and communicates effectively. Umar Dani, a data scientist from Prsage Group, offers an insightful look into harmonizing aesthetics with analytics using the <code>{brandthis}</code> R package. This package empowers users to create branded documents and visualizations with minimal effort, leveraging the power of large language models (LLMs) to make this process efficient.</p>
+<section id="the-challenges-of-theming-in-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenges-of-theming-in-data-science">The Challenges of Theming in Data Science</h2>
+<p>When embarking on a project, theming the output can be a task often overlooked until the end. However, theming is not just about making things look pretty; it ensures that the document or app resonates with the intended audience. A common starting point is company branding guidelines. But what if these do not exist, or the project is personal? The solution lies in choosing styles, colors, and fonts that are contextually appropriate.</p>
+<p>Options like Quarto offer various theming capabilities for HTML and Reveal.js outputs. However, customizing these requires knowledge of CSS or SCSS, pushing data scientists into the domain of graphic design.</p>
+</section>
+<section id="introducing-the-brandthis-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-the-brandthis-r-package">Introducing the <code>{brandthis}</code> R Package</h2>
+<p>The <code>{brandthis}</code> R package seeks to simplify this theming process. By utilizing large language models, it allows users to create <code>_brand.yaml</code> files swiftly. These files serve as blueprints for theming all core outputs, like HTML, ggplot visualizations, and presentations. The package facilitates the incorporation of:</p>
+<ul>
+<li><strong>Fonts</strong>: Import fonts from providers like Google Fonts to maintain consistency.</li>
+<li><strong>Color Palettes</strong>: Generate palettes based on images or predefined colors.</li>
+<li><strong>Custom Branding</strong>: Create personalized or company-specific themes effortlessly.</li>
+</ul>
+<p>The package primarily interacts with Google Gemini as its default LLM API, but it is flexible enough to accommodate other APIs supported by the Elmer package.</p>
+</section>
+<section id="streamlined-branding-with-create-branding-app" class="level2">
+<h2 class="anchored" data-anchor-id="streamlined-branding-with-create-branding-app">Streamlined Branding with Create Branding App</h2>
+<p><code>{brandthis}</code> includes the <code>create_brand</code> function, which provides a user-friendly interface for crafting brand files. Key features include:</p>
+<ul>
+<li><strong>LLM Interaction</strong>: Chat with an LLM API to generate brand files based on images or personal/company information.</li>
+<li><strong>Code Insights</strong>: View and edit <code>_brand.yaml</code> configurations directly.</li>
+<li><strong>Plot Customization</strong>: Generate plots and palettes aligned with the brand theme.</li>
+</ul>
+<p>This tool reduces the branding process to minutes, eliminating the need for extensive trial and error and in-depth design expertise.</p>
+</section>
+<section id="practical-application-generating-brand-files" class="level2">
+<h2 class="anchored" data-anchor-id="practical-application-generating-brand-files">Practical Application: Generating Brand Files</h2>
+<p>Creating a brand file with <code>{brandthis}</code> is straightforward. For personal brands, users can input their name and an inspiring image, while for company brands, multiple images and detailed information can be provided. The <code>create_brand</code> function leverages <code>{ellmer}</code>’s tool-calling feature, integrating seamlessly with user prompts to craft comprehensive brand files.</p>
+</section>
+<section id="enhancing-visualizations-with-color-scales" class="level2">
+<h2 class="anchored" data-anchor-id="enhancing-visualizations-with-color-scales">Enhancing Visualizations with Color Scales</h2>
+<p>Beyond branding, <code>{brandthis}</code> aids in suggesting color scales suitable for ggplot2. Utilizing the <code>ragnar</code> R package, it performs retrieval-augmented generation (RAG) to store and retrieve relevant information, enhancing the accuracy of the suggested palettes.</p>
+</section>
+<section id="conclusion-a-seamless-branding-experience" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-a-seamless-branding-experience">Conclusion: A Seamless Branding Experience</h2>
+<p>The <code>{brandthis}</code> R package is a game-changer for those seeking to enhance the visual appeal of their R projects. It offers:</p>
+<ul>
+<li><strong>Efficiency</strong>: Quickly generates polished themes and palettes.</li>
+<li><strong>Consistency</strong>: Ensures uniform branding across different outputs.</li>
+<li><strong>Intelligence</strong>: Draws on LLM knowledge to provide informed theming suggestions.</li>
+</ul>
+<p>For data scientists aiming to present their analyses with professional flair, <code>{brandthis}</code> promises to be an invaluable tool. Explore its capabilities on GitHub and transform how your data is perceived by your audience.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>r+ai</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/</guid>
+  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/thumbnail-umair-durrani.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Keeping LLMs in Their Lane: Focused AI for Data Science and Research</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/</link>
@@ -1987,70 +2059,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/thumbnail-rix-and-nix-nantz.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>REDCapSync and RosyREDCap for standardized data pipelines and exploratory data analysis</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/rkT6SParLO0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="enhancing-clinical-research-with-redcapsync-and-rosyredcap" class="level2">
-<h2 class="anchored" data-anchor-id="enhancing-clinical-research-with-redcapsync-and-rosyredcap">Enhancing Clinical Research with REDCapSync and RosyREDCap</h2>
-<p>In the realm of clinical research and trials, the synergy between R and REDCap is transforming data management and analysis. REDCapSync and RosyREDCap, two innovative R packages, are at the forefront of this transformation, offering a streamlined approach to data pipelines and exploratory data analysis using the REDCap API.</p>
-<section id="understanding-redcapsync-rosyredcap" class="level3">
-<h3 class="anchored" data-anchor-id="understanding-redcapsync-rosyredcap">Understanding REDCapSync &amp; RosyREDCap</h3>
-<p><strong>REDCapSync</strong> is a robust R package designed to facilitate the synchronization of data from one or multiple REDCap projects. The package introduces several core functions, such as <code>setup_project</code> and <code>sync_project</code>, which simplify the process of metadata and data extraction. By leveraging a cache of the last project save, a designated file directory, and the REDCap log, REDCapSync efficiently updates only the data that has changed since the last API call. This functionality is crucial, especially for large datasets, ensuring that users do not repeatedly download the entire dataset, thereby saving time and server load.</p>
-<p>Key Features of REDCapSync:</p>
-<ul>
-<li><strong>Efficient Data Updates:</strong> Utilizes REDCap logs to update only modified records, reducing server load and improving speed.</li>
-<li><strong>Standardized R List Objects:</strong> Maintains data as R list objects for easy downstream processing.</li>
-<li><strong>Experimental Functions:</strong> Includes features for adding derived variables, merging forms, and generating data subsets that refresh with <code>sync_project</code>.</li>
-<li><strong>Upload Capabilities:</strong> Allows for uploading labeled data via the API, a feature not available through the REDCap website.</li>
-</ul>
-<p><strong>RosyREDCap</strong>, on the other hand, is an exploratory data analysis tool. It is a Shiny application designed to load previous projects set up with REDCapSync. Users can navigate between projects, anonymize data, and perform ad-hoc visualizations effortlessly.</p>
-<p>Core Features of RosyREDCap:</p>
-<ul>
-<li><strong>Interactive Interface:</strong> Provides a user-friendly interface for toggling between projects, ideal for exploratory data analysis.</li>
-<li><strong>Data De-identification:</strong> Ensures confidentiality by allowing data de-identification within the application.</li>
-<li><strong>Visualization Tools:</strong> Facilitates data visualization through intuitive tools, enhancing data interpretation and presentation.</li>
-</ul>
-</section>
-<section id="the-power-of-r-and-redcap-in-clinical-research" class="level3">
-<h3 class="anchored" data-anchor-id="the-power-of-r-and-redcap-in-clinical-research">The Power of R and REDCap in Clinical Research</h3>
-<p>The integration of R with REDCap through these packages offers multiple advantages for researchers:</p>
-<ul>
-<li><strong>Reproducibility and Efficiency:</strong> By maintaining a standardized data structure and using efficient synchronization methods, researchers can ensure reproducibility and save time.</li>
-<li><strong>Enhanced Data Analysis:</strong> With functions tailored for clinical data, users can perform complex analyses and visualizations, leading to more insightful research outcomes.</li>
-<li><strong>Accessibility for New Users:</strong> Even those new to R can leverage the power of REDCapSync and RosyREDCap without needing in-depth knowledge of the REDCap API.</li>
-</ul>
-</section>
-<section id="real-world-applications-and-future-directions" class="level3">
-<h3 class="anchored" data-anchor-id="real-world-applications-and-future-directions">Real-World Applications and Future Directions</h3>
-<p>Dr.&nbsp;Brandon Rose, developer of these packages, brings extensive experience in hematology, oncology, and clinical informatics. His work on the Fire Fighter Cancer Cohort Study and UK BioBank research underscores the practical applications of these tools in real-world scenarios.</p>
-<p>At the R Medicine conference, Dr.&nbsp;Rose plans to showcase various examples and use cases of REDCapSync and RosyREDCap. These demonstrations will highlight how the combined strengths of R and REDCap can streamline clinical data pipelines, ultimately enhancing research quality and patient care.</p>
-<p>For those interested in the development and application of these packages, Dr.&nbsp;Rose offers support and collaboration opportunities. By generalizing code and sharing tools, researchers can contribute to a community of practice that enhances data management and analysis across various domains.</p>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>REDCapSync and RosyREDCap represent significant strides in the integration of R and REDCap, providing powerful tools for clinical data management and analysis. These packages not only simplify the technical aspects of data synchronization and analysis but also empower researchers to focus on the insights and outcomes of their work. As these tools continue to evolve, they hold the promise of further transforming the landscape of clinical research and healthcare data management.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <category>clinical research</category>
-  <category>software development</category>
-  <category>healthcare</category>
-  <guid>https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/</guid>
-  <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/redcapsync-and-rosyredcap-for-standardized-data-pipelines-and-exploratory-data-analysis/thumbnail-redcap-rose.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
