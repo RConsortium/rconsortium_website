@@ -140,18 +140,6 @@ format: html
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/g2KtdhD8/virginia-deq-webinar-main-image.png);">
-<button class="blueButton"><a href="posts/strength-in-numbers" style="text-decoration: none;">LEARN MORE</a></button>
-</div>
-
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/59Hrv64W/r-spatial-main-carousel.png);">
-<button class="blueButton"><a href="webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.qmd" style="text-decoration: none;">LEARN MORE</a></button>
-</div>
-
-<div class="swiper-slide" style="background-image:url(https://i.postimg.cc/hG8NBHg8/Rplus-AI-carousel-image.png);">
-  <a class="goldButton" href="https://rconsortium.github.io/RplusAI_website/">REGISTER NOW!</a>
-</div>
-
 </div>
 
 <!-- !swiper slides -->
