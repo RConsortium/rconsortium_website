@@ -84,6 +84,68 @@
   <media:content url="https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/thumbnail-umair-durrani.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Gradient Boosting Machines (GBMs) in the Age of LLMs and ChatGPT</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/8pAv-aw8HYM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="szilard_GBM_LLM.pdf">available here</a> (PDF)</h3>
+</section>
+<section id="gradient-boosting-machines-are-they-still-relevant-in-the-era-of-ai-and-llms" class="level1">
+<h1>Gradient Boosting Machines: Are They Still Relevant in the Era of AI and LLMs?</h1>
+<p>Gradient Boosting Machines (GBMs) have long been hailed as the leading machine learning algorithm for structured and tabular data. This reputation has been firmly established over the past decade, particularly in business applications where accuracy and predictive analytics are paramount. However, as Large Language Models (LLMs) like ChatGPT rise to prominence, questions about the relevance and potential obsolescence of GBMs are becoming more frequent. <a href="https://szilard.github.io/aboutme/">Szilard Pafka, PhD, Chief Scientist at Epoch</a>, addressed this topic in a compelling talk at the R+AI 2025 event hosted by the R Consortium.</p>
+<section id="the-proven-track-record-of-gbms" class="level2">
+<h2 class="anchored" data-anchor-id="the-proven-track-record-of-gbms">The Proven Track Record of GBMs</h2>
+<p>GBMs have been a cornerstone of machine learning since the 2000s, especially in business-related domains where tabular data is prevalent. This data type, organized in rows and columns, is typically stored in relational databases and is the backbone of many practical applications like fraud detection, credit scoring, and marketing analytics. GBMs’ superiority in handling such data is well-documented, with popular implementations like XGBoost, LightGBM, and h2o available as R packages.</p>
+<section id="historical-context" class="level3">
+<h3 class="anchored" data-anchor-id="historical-context">Historical Context</h3>
+<p>The efficacy of GBMs in tabular data contexts is supported by numerous studies and benchmarks. A notable 2006 study compared several machine learning algorithms and found that random forests, neural networks, and GBMs consistently delivered the best performance across various datasets. Over the years, GBMs have maintained their status as the go-to solution for structured data, with prominent figures like Tianqi Chen, the creator of XGBoost, highlighting their dominance in competitive environments like Kaggle.</p>
+</section>
+<section id="the-deep-learning-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="the-deep-learning-challenge">The Deep Learning Challenge</h3>
+<p>Despite the success of GBMs, the advent of deep learning over a decade ago promised to revolutionize machine learning. While deep learning conquered domains like computer vision and speech recognition, its application to structured data lagged behind. Szilard Pafka expressed skepticism about deep learning’s ability to outperform GBMs in tabular data contexts, a sentiment supported by empirical evidence and expert consensus.</p>
+</section>
+</section>
+<section id="the-rise-of-large-language-models" class="level2">
+<h2 class="anchored" data-anchor-id="the-rise-of-large-language-models">The Rise of Large Language Models</h2>
+<p>The landscape began to shift with the emergence of LLMs such as ChatGPT, which showcased unprecedented capabilities in text understanding and generation. These models have transformed information retrieval and synthesis, often replacing traditional search engines and providing sophisticated code generation and data analysis assistance. However, their application to tabular data remains limited.</p>
+<section id="the-role-of-llms-in-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="the-role-of-llms-in-machine-learning">The Role of LLMs in Machine Learning</h3>
+<p>While LLMs excel in text-based domains, their utility in tabular data tasks is still being explored. Pafka notes that LLMs can aid in idea generation, advice, and code generation, but they have yet to replace the specialized efficiency of GBMs in structured data scenarios. This is due to the inherent differences in data structure and the challenges LLMs face when handling large, complex datasets.</p>
+</section>
+</section>
+<section id="benchmarking-gbms-and-llms" class="level2">
+<h2 class="anchored" data-anchor-id="benchmarking-gbms-and-llms">Benchmarking GBMs and LLMs</h2>
+<p>Pafka’s <a href="https://github.com/szilard/GBM-perf">GBM-perf benchmark</a>, maintained on GitHub, continues to demonstrate the strength of GBMs against newer algorithms, including those involving deep learning and LLMs. The findings consistently place GBMs like XGBoost and CatBoost at the top in terms of performance, especially in classification tasks with tabular data.</p>
+<section id="practical-applications-and-deployment" class="level3">
+<h3 class="anchored" data-anchor-id="practical-applications-and-deployment">Practical Applications and Deployment</h3>
+<p>The practical deployment of machine learning models is as crucial as their training. H2o.ai, for example, offers seamless integration and deployment capabilities, making it a preferred choice for real-time applications. The ease of deployment and efficient scoring are significant advantages of GBMs, which are often not matched by LLMs in structured data tasks.</p>
+</section>
+</section>
+<section id="future-prospects-and-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="future-prospects-and-conclusion">Future Prospects and Conclusion</h2>
+<p>As the AI landscape rapidly evolves, the question remains: can LLMs and other AI advancements supplant GBMs in the domain of tabular data? The current consensus, both among human experts and AI systems like ChatGPT, is that GBMs are still the optimal choice for these tasks. While LLMs hold potential for assisting in various stages of data analysis and machine learning, GBMs continue to be the workhorse for structured data.</p>
+<p>The future is uncertain, and as AI technologies advance, new paradigms may emerge. However, for now, GBMs remain an indispensable tool in the data scientist’s arsenal, particularly for business applications involving structured data. Szilard Pafka’s insights reaffirm the enduring relevance of GBMs and highlight the need for continuous adaptation and learning in the face of technological progress.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>r+ai</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/</guid>
+  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/thumbnail-szilard-pafka.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>Keeping LLMs in Their Lane: Focused AI for Data Science and Research</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/</link>
@@ -2000,65 +2062,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/</guid>
   <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/a-framework-for-cohort-building-in-r-nuria-mercade-besora-and-edward-burn/thumbnail-cohortconstructor-burn-and-mercade-bosora.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-NARVwViEwA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="turbocharging-shiny-app-development-with-nix-and-rix" class="level3">
-<h3 class="anchored" data-anchor-id="turbocharging-shiny-app-development-with-nix-and-rix">Turbocharging Shiny App Development with Nix and {rix}</h3>
-<p>In the realm of data science, particularly for medical research, the integration of open-source tools has dramatically accelerated the development and deployment of sophisticated analytical applications. Among these tools, R has established itself as a powerhouse for statistical computing and data visualization, especially with its ability to create interactive web applications using Shiny. However, as developers push the boundaries of what’s possible, ensuring reproducibility and handling complex dependencies become crucial challenges. This is where the Nix package manager and the {rix} R package, authored by Bruno Rodrigues and Philipp Baumann, come into play.</p>
-<p>Eric Nantz, a seasoned statistician, developer, and the host of the R-Podcast, recently shared his insights at the R/Medicine 2025 conference on how these tools have revolutionized his workflow in developing robust production-quality Shiny applications. His demonstration highlighted the synergy between Nix and Shiny, presenting a compelling case for their combined use in data science projects.</p>
-<section id="the-reproducibility-challenge" class="level4">
-<h4 class="anchored" data-anchor-id="the-reproducibility-challenge">The Reproducibility Challenge</h4>
-<p>Shiny applications, while powerful, often require a myriad of dependencies. These range from R packages like {reactable} for table visualizations to system-level dependencies and external services such as APIs. Traditionally, tools like {renv} have been used to manage R package dependencies, while Docker has been employed to handle system-level dependencies. However, this combination can sometimes fall short, particularly in complex environments or when deploying across different systems.</p>
-</section>
-<section id="enter-nix-and-rix" class="level4">
-<h4 class="anchored" data-anchor-id="enter-nix-and-rix">Enter Nix and {rix}</h4>
-<p>The Nix package manager offers a comprehensive solution by managing the full dependency stack of software projects. It provides a sandboxed environment where dependencies can be installed and managed without interfering with the host system. This is particularly advantageous for Shiny applications, which can have intricate dependencies spread across different languages and systems.</p>
-<p>The {rix} package simplifies the integration of Nix with R projects. It allows developers to create project-specific sandboxes that include both R packages and system dependencies, all managed via Nix. This ensures that all team members can work in a consistent environment, reducing the “it works on my machine” syndrome.</p>
-</section>
-<section id="key-features-of-nix-and-rix" class="level4">
-<h4 class="anchored" data-anchor-id="key-features-of-nix-and-rix">Key Features of Nix and {rix}</h4>
-<ul>
-<li><p><strong>Comprehensive Package Management</strong>: Nix manages over 120,000 software packages, ensuring that all dependencies, including system libraries, are automatically resolved and installed.</p></li>
-<li><p><strong>Immutable and Reproducible Environments</strong>: By creating an immutable file system, Nix ensures that the development environment remains consistent, preventing accidental changes that can affect reproducibility.</p></li>
-<li><p><strong>Cross-Platform Compatibility</strong>: Nix can be installed on Linux, macOS, and Windows (via Windows Subsystem for Linux), making it accessible to a wide range of users.</p></li>
-<li><p><strong>Integration with {rix}</strong>: The {rix} package allows easy configuration of R-specific environments, including access to CRAN and Bioconductor packages, as well as GitHub-hosted packages.</p></li>
-</ul>
-</section>
-<section id="shiny-and-nix-a-perfect-match" class="level4">
-<h4 class="anchored" data-anchor-id="shiny-and-nix-a-perfect-match">Shiny and Nix: A Perfect Match</h4>
-<p>Eric Nantz’s demonstration showcased a Shiny application developed using the Nix and {rix} workflow. The app, which explored data from the National Health and Nutrition Examination Survey, was developed using the Golem package to convert the Shiny app into a package format—a best practice that enhances maintainability and scalability.</p>
-<p>One of the standout features of this workflow was the ability to run a Shiny application with all its dependencies managed by Nix, without R being installed on the host system. This was possible through the use of a Nix shell, which provided a sandboxed environment where R and its packages were available. This not only ensured a consistent development environment but also facilitated easy deployment via Docker for hosting on cloud platforms.</p>
-</section>
-<section id="overcoming-challenges" class="level4">
-<h4 class="anchored" data-anchor-id="overcoming-challenges">Overcoming Challenges</h4>
-<p>While the benefits of using Nix and {rix} are substantial, there are some challenges to be aware of. The learning curve associated with Nix’s domain-specific language can be steep, and managing storage space for the Nix store is necessary. Additionally, some packages that write to temporary directories may not play well with Nix’s immutable file system. However, the advantages of reproducibility and ease of deployment often outweigh these hurdles.</p>
-</section>
-<section id="conclusion" class="level4">
-<h4 class="anchored" data-anchor-id="conclusion">Conclusion</h4>
-<p>The integration of Nix and {rix} into Shiny app development represents a significant advancement in creating reproducible and scalable data science projects. By leveraging Nix’s powerful package management capabilities and {rix}’s seamless integration with R, developers can ensure their applications are robust, consistent, and easy to deploy across various environments.</p>
-<p>Eric Nantz’s insights and demonstration provide a valuable resource for R developers looking to enhance their workflow with these cutting-edge tools. As the R community continues to innovate and evolve, the combination of Shiny, Nix, and {rix} is poised to play a pivotal role in shaping the future of data science applications.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <category>clinical research</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/</guid>
-  <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/in-the-nix-of-time-creating-a-reproducible-analytical-environment-with-nix-and-rix/thumbnail-rix-and-nix-nantz.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
