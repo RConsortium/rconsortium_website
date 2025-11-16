@@ -1,0 +1,64 @@
+--- 
+title: "Brand your docs, apps, and ggplots using LLMs" 
+unpublished: false 
+url: "https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/"
+description: "Elevate your R projects with `{brandthis}`: Effortlessly craft branded documents using large language models." 
+categories: ["ai", "r+ai", "software development"]
+author: "R Consortium" 
+image: "thumbnail-umair-durrani.png" 
+image-alt: "thumbnail for video on Brand your docs, apps, and ggplots using LLMs" 
+date: "11/15/2025" 
+---
+
+
+{{< video https://www.youtube.com/embed/828KuEORQdg >}}
+
+### Slides with resource links [available here](https://dru.quarto.pub/brandthis/#/title-slide)
+
+# Branding Your R Projects with Ease: Utilizing the `{brandthis}` Package
+
+In the realm of data science, while achieving analytical accuracy is paramount, presenting those findings in an aesthetically appealing manner can make a significant difference. The amalgamation of data science with graphic design might seem daunting, but it is a crucial step to ensure that your work stands out and communicates effectively. Umar Dani, a data scientist from Prsage Group, offers an insightful look into harmonizing aesthetics with analytics using the `{brandthis}` R package. This package empowers users to create branded documents and visualizations with minimal effort, leveraging the power of large language models (LLMs) to make this process efficient.
+
+## The Challenges of Theming in Data Science
+
+When embarking on a project, theming the output can be a task often overlooked until the end. However, theming is not just about making things look pretty; it ensures that the document or app resonates with the intended audience. A common starting point is company branding guidelines. But what if these do not exist, or the project is personal? The solution lies in choosing styles, colors, and fonts that are contextually appropriate.
+
+Options like Quarto offer various theming capabilities for HTML and Reveal.js outputs. However, customizing these requires knowledge of CSS or SCSS, pushing data scientists into the domain of graphic design.
+
+## Introducing the `{brandthis}` R Package
+
+The `{brandthis}` R package seeks to simplify this theming process. By utilizing large language models, it allows users to create `_brand.yaml` files swiftly. These files serve as blueprints for theming all core outputs, like HTML, ggplot visualizations, and presentations. The package facilitates the incorporation of:
+
+- **Fonts**: Import fonts from providers like Google Fonts to maintain consistency.
+- **Color Palettes**: Generate palettes based on images or predefined colors.
+- **Custom Branding**: Create personalized or company-specific themes effortlessly.
+
+The package primarily interacts with Google Gemini as its default LLM API, but it is flexible enough to accommodate other APIs supported by the Elmer package.
+
+## Streamlined Branding with Create Branding App
+
+`{brandthis}` includes the `create_brand` function, which provides a user-friendly interface for crafting brand files. Key features include:
+
+- **LLM Interaction**: Chat with an LLM API to generate brand files based on images or personal/company information.
+- **Code Insights**: View and edit `_brand.yaml` configurations directly.
+- **Plot Customization**: Generate plots and palettes aligned with the brand theme.
+
+This tool reduces the branding process to minutes, eliminating the need for extensive trial and error and in-depth design expertise.
+
+## Practical Application: Generating Brand Files
+
+Creating a brand file with `{brandthis}` is straightforward. For personal brands, users can input their name and an inspiring image, while for company brands, multiple images and detailed information can be provided. The `create_brand` function leverages `{ellmer}`'s tool-calling feature, integrating seamlessly with user prompts to craft comprehensive brand files.
+
+## Enhancing Visualizations with Color Scales
+
+Beyond branding, `{brandthis}` aids in suggesting color scales suitable for ggplot2. Utilizing the `ragnar` R package, it performs retrieval-augmented generation (RAG) to store and retrieve relevant information, enhancing the accuracy of the suggested palettes.
+
+## Conclusion: A Seamless Branding Experience
+
+The `{brandthis}` R package is a game-changer for those seeking to enhance the visual appeal of their R projects. It offers:
+
+- **Efficiency**: Quickly generates polished themes and palettes.
+- **Consistency**: Ensures uniform branding across different outputs.
+- **Intelligence**: Draws on LLM knowledge to provide informed theming suggestions.
+
+For data scientists aiming to present their analyses with professional flair, `{brandthis}` promises to be an invaluable tool. Explore its capabilities on GitHub and transform how your data is perceived by your audience.
