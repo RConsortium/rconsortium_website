@@ -68,8 +68,8 @@ website:
 
       - text: "Events"
         menu:
-          - text: R+AI (Nov 12-13, 2025)
-            href: https://rconsortium.github.io/RplusAI_website/
+          - text: R!sk (Feb 18-19, 2026)
+            href: https://rconsortium.github.io/Risk_website/
           - text: R/Medicine (May 4-8, 2026)
             href: https://rconsortium.github.io/RMedicine_website/
           - text: Webinars
@@ -97,6 +97,10 @@ website:
         href: https://www.linkedin.com/company/r-consortium/
       - icon: mastodon
         href: https://fosstodon.org/@RConsortium
+      - icon: cloud
+        href: https://bsky.app/profile/rconsortium.bsky.social
+      - icon: youtube
+        href: https://www.youtube.com/@RConsortium
       - icon: twitter
         href: https://x.com/RConsortium
   page-footer:
