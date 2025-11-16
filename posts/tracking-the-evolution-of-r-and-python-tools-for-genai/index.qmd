@@ -1,0 +1,59 @@
+--- 
+title: "Tracking the Evolution of R and Python Tools for GenAI" 
+unpublished: false 
+url: "https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/"
+description: "Insights into building GenAI applications using R and Python, focusing on model interfaces, context handling, and result validation." 
+categories: ["ai", "r+ai", "software development"]
+author: "R Consortium" 
+image: "thumbnail-xu-fei.png" 
+image-alt: "thumbnail for video on Tracking the Evolution of R and Python Tools for GenAI" 
+date: "11/15/2025" 
+---
+
+{{< video https://www.youtube.com/embed/wYMzdAh8FyE >}}
+
+### Slides with resource links [available here](Xu_Fei_Tracking_the_Evolution.pdf) (PDF)
+
+# Building GenAI Applications: Lessons from R and Python Tooling
+
+Generative AI (GenAI) has become an exciting frontier for developers and data scientists eager to infuse applications with intelligent features. The journey at A2-Ai, a team of scientists and developers skilled in languages like R, Python, JavaScript, and more, provides valuable insights into the interplay of R and Python in GenAI tooling. This post delves into key learnings and experiences from building GenAI applications, focusing on tools that enhance communication between elements and back-end systems.
+
+## A Journey into GenAI: From Challenges to Solutions
+
+A2-Ai's exploration into GenAI began with a simple question: "How do I install the `dplyr` package?" While large language models like ChatGPT offered correct answers, they weren't always applicable to internal processes. A2-Ai uses an internal tool written in Rust, called RB, for managing installations and environments for R packages. The need to incorporate such internal knowledge into a chatbot led to the development of a unique system built with Shiny for Python. The result was a chatbot capable of fetching precise information from the internal R repository, Prism, and making appropriate API calls.
+
+For example, one colleague developed a Model Context Protocol (MCP) server in R, enabling natural language queries for exploratory data analysis within pharmacometrics workflows. This allowed scientists to interact with data by posing questions in English, prompting updates in plots and legends. 
+
+While applications are diverse, three core building blocks are essential for building GenAI applications: model interface, context handling, and result validation.
+
+## Core Building Blocks of GenAI Applications
+
+1. **Model Interface**: This manages Language Model (LM) API calls. Despite the dearth of R SDKs for providers like OpenAI, the package `{ellmer}` has emerged as the go-to tool for R developers. `{ellmer}` abstracts overhead from HTTP calls, allowing developers to focus on building rather than communication intricacies.
+
+2. **Context Handling**: This involves determining the necessary context for LLMs to provide accurate responses. In enterprise environments, internal documentation, codebases, and workflows form part of this context. The robustness of the Python ecosystem, rich with tools for document processing, offers an advantage, but recent R developments are bridging some gaps.
+
+3. **Result Validation**: Ensuring systematic output of desired results is crucial, given the non-deterministic behavior of LM applications. Tools like `vital` in R and `inspect` in Python offer mechanisms to evaluate GenAI applications systematically, ensuring improvements are tracked and validated.
+
+## Evolution of Tooling in R and Python
+
+R and Python ecosystems have evolved with various packages dealing with model interfaces. The chronological development of these packages reveals a convergence towards `{ellmer}` for R, while Python's ecosystem remains diverse due to original SDKs from model providers and other unifying libraries.
+
+The Python ecosystem boasts high-level orchestration frameworks for different use cases, a result of foundational SDKs enabling diverse and rich use-case development. While R's ecosystem is in a growth phase, new tools are helping it catch up.
+
+## Strategies for Leveraging R and Python Together
+
+Developers need not choose between R and Python. Several strategies exist to leverage both:
+
+- **R-Only Teams**: Start with `{ellmer}` and explore packages like `{btw}` (from Posit), which allow interaction with LLMs within R environments.
+  
+- **Python-Only Tools**: Use the `reticulate` package to call Python libraries and functions from R without switching languages entirely.
+
+- **Multilingual Teams**: Use REST APIs to expose tools to other teams, enabling interaction across different languages.
+
+- **Model Context Protocol (MCP)**: With MCP servers, developers can expose functions in any language as natural language queries, enhancing cross-language interactions.
+
+## Conclusion and Final Takeaways
+
+Building GenAI applications with R and Python is an exciting venture, enriched by rapidly evolving ecosystems. While Python offers maturity, R is catching up with robust tools like `{ellmer}`. The key is to start building and refine applications based on user interactions. Bridging gaps strategically through REST APIs and MCP servers ensures developers leverage the best of both worlds while being mindful of potential risks and vulnerabilities.
+
+Engage with the GenAI community, share experiences, and continue learning for a rewarding journey in building innovative applications.
