@@ -12,14 +12,13 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI</a>',
-    '<a href="https://r-consortium.org/webinars/making-health-economic-models-shiny.html" target="_blank" rel="noreferrer noopener">Making Health Economic Models Shiny: Our experience helping companies transition from Excel to R & Shiny</a>'),
+    '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>'),
 
 
-  dates = c("Nov 12-13, 2025", "Nov 18, 2025"),
-  location = c("Virtual", "Virtual"),
-  icon = c("Conference", "Webinar"),
-  Type = c("Conference", "Webinar"),
+  dates = c("Feb 18-19, 2025"),
+  location = c("Virtual"),
+  icon = c("Conference"),
+  Type = c("Conference"),
   
   stringsAsFactors = FALSE
   
@@ -82,6 +81,8 @@ gt_table
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
+      '<a href="https://r-consortium.org/webinars/making-health-economic-models-shiny.html" target="_blank" rel="noreferrer noopener">Making Health Economic Models Shiny: Our experience helping companies transition from Excel to R & Shiny</a>',     
+      '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI</a>',
       '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government Data Science & AI Conference</a>',
       '<a href="https://r-consortium.org/webinars/jnj-hybrid-sas-r-submission-story.html" target="_blank" rel="noreferrer noopener">J&J: A Hybrid SAS/R Submission Story</a>',
       '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)</a>',
@@ -136,6 +137,8 @@ df <- data.frame(
     '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+        'Nov 18, 2025',
+        'Nov 12-13, 2025',
         'Oct 28-29, 2025', 
         'Oct 21, 2025', 
         'Oct 14-16, 2025', 
@@ -191,6 +194,8 @@ df <- data.frame(
       
         ),
   location = c(
+        'Virtual',
+        'Virtual',  
         'Washington, D.C', 
         'Virtual', 
         'Brighton, UK', 
@@ -245,10 +250,10 @@ df <- data.frame(
         'Virtual'
 
         ),
-  Type = c('Conference', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  Type = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Conference', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
+  icon = c('Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
     'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
     'Webinar', 'Webinar', 'Webinar'),
   
