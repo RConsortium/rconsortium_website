@@ -41,6 +41,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/jarl-just-another-r-linter/index.html",
       "/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html",
       "/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html",
       "/posts/me-myself-claude/index.html",
@@ -178,6 +179,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/posts/jarl-just-another-r-linter/index.html",
       "/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html",
       "/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html",
       "/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html",

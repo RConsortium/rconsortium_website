@@ -10,7 +10,141 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Sun, 16 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 20 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Jarl: just another R linter</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/jarl-just-another-r-linter/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<!-- DON'T FORGET ALT TEXT FOR GIFS -->
+<p>I’m very excited to introduce Jarl<sup>1</sup>, a new R linter. A linter is a tool that statically parses code (meaning that it doesn’t run the code in question) and searches for patterns that are inefficient, hard to read, or likely bugs. Jarl can parse dozens of files and thousands of lines of code in milliseconds. Here is an example of Jarl running on <a href="https://github.com/wch/r-source/">r-source</a> (approximately 1000 files and 200k lines of R code) in about 700 milliseconds:</p>
+<video width="100%" alt="Running `jarl check . --with-timing` on the 'r-source' repository. This runs in about 700ms and returns hundreds of rule violations detailing the diagnostic and how to fix it." controls="">
+<source src="lint-r-source.webm" type="video/webm">
+</video>
+<p><br></p>
+<p>On top of that, Jarl can apply automatic fixes<sup>2</sup>:</p>
+<p>Suppose that we have the following file <code>foo.R</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">any</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">is.na</span>(mtcars))</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">f <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(x) {</span>
+<span id="cb1-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">apply</span>(x, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, mean)</span>
+<span id="cb1-5">}</span></code></pre></div></div>
+<p>There are two rule violations in this file:</p>
+<ol type="1">
+<li><code>any(is.na(mtcars))</code> should be replaced by <code>anyNA(mtcars)</code><sup>3</sup></li>
+<li><code>apply(x, 1, mean)</code> should be replaced by <code>rowMeans(x)</code><sup>4</sup></li>
+</ol>
+<p>Instead of fixing those cases by hand, we can run the following command in the terminal (not in the R console):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">jarl</span> check foo.R <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--fix</span></span></code></pre></div></div>
+<p>After running this, <code>foo.R</code> now contains the following code:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">x <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">anyNA</span>(mtcars)</span>
+<span id="cb3-2">f <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(x) {</span>
+<span id="cb3-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rowMeans</span>(x)</span>
+<span id="cb3-4">}</span></code></pre></div></div>
+<p>(Note that <code>f</code> is now useless since it is equivalent to <code>rowMeans()</code>.)</p>
+<p><br></p>
+<p>Jarl stands on the shoulders of giants, in particular:</p>
+<ul>
+<li><code>lintr</code>: this R package provides dozens of rules for linting R code, and Jarl wouldn’t exist without this package. Jarl currently supports 25 <code>lintr</code> rules.</li>
+<li>Air: this is a fast R formatter written in Rust, developed by Lionel Henry and Davis Vaughan, and released earlier this year. It is also a command-line tool that runs in the terminal. It is the technical foundation on which Jarl is built since Air provides the infrastructure to parse and manipulate R code.</li>
+</ul>
+<p>Jarl is a single binary, meaning that it doesn’t need an R installation to work. This makes it a very attractive option for continuous integration for instance, since it takes less than 10 seconds to download the binary and run it on the repository.</p>
+<section id="using-jarl" class="level2">
+<h2 class="anchored" data-anchor-id="using-jarl">Using Jarl</h2>
+<p>There are two ways to use Jarl:</p>
+<ol type="1">
+<li>via the terminal, using <code>jarl check [OPTIONS]</code>;</li>
+<li>using the integration in your coding editor (at the time of writing, a Jarl extension is available in VS Code, Positron, and Zed).</li>
+</ol>
+<p>The Jarl extension enables code highlighting and quick fixes. The former means that code that violates any of the rules in your setup (more on this below) will be underlined and will show the exact violation when hovered.</p>
+<video width="100%" alt="This shows the same file 'foo.R', but this time the two pieces of code that violate the rules are underlined in yellow. Hovering these two pieces of code show a popup detailing the diagnostic." controls="">
+<source src="hover.webm" type="video/webm">
+</video>
+<p><br></p>
+<p>The latter adds a lightbulb button next to rule violations, allowing you to selectively apply fixes.</p>
+<video width="100%" height="100%" alt="This shows the same file 'foo.R'. This time, clicking on the code that violate the rules displays a small lightbulb icon that applies the automatic fix when clicked." controls="">
+<source src="automatic-fixes.webm" type="video/webm">
+</video>
+<p>In the future, those extensions could have a “Fix on save” feature similar to the “Format on save” functionality provided by Air.</p>
+</section>
+<section id="configuring-jarl" class="level2">
+<h2 class="anchored" data-anchor-id="configuring-jarl">Configuring Jarl</h2>
+<p>By default, Jarl will report violations for almost of its rules. It is possible to configure its behavior using a configuration file named <code>jarl.toml</code>. In particular, in this file, you can specify:</p>
+<ul>
+<li>the rules you want to apply,</li>
+<li>the files to include or exclude,</li>
+<li>the rules for which you want to apply automatic fixes,</li>
+</ul>
+<p>and more.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Jarl is in its early days, there are more rules and options to add. Still, it can already be used in interactive use or in continuous integration (check out the <a href="https://github.com/etiennebacher/setup-jarl"><code>setup-jarl</code> workflow</a>!). Eventually, many <code>lintr</code> rules should be supported in Jarl, but the end goal is not to have perfect compatibility. <code>lintr</code> provides many rules related to code formatting (e.g.&nbsp;spaces_inside_linter). Those will not be integrated in Jarl since they are already covered by Air. Additionally (for now), Jarl cannot perform semantic analysis<sup>5</sup>, meaning that some <code>lintr</code> rules are out of scope (e.g.&nbsp;unreachable_code_linter).</p>
+<p>This was a very light introduction, go to the <a href="https://jarl.etiennebacher.com/">Jarl website</a> for more information.</p>
+<p>If you want to help developing Jarl, check out the <a href="https://jarl.etiennebacher.com/contributing">“Contributing” page</a>. Jarl is written in Rust, which may be a barrier to contributing but is also a very powerful language which is a real pleasure to use. I will add a more detailed tutorial soon so that this can also be a nice introduction to this language. You can also contribute to the documentation!</p>
+</section>
+<section id="acknowledgements" class="level1">
+<h1>Acknowledgements</h1>
+<p>As I said above, Jarl depends enormously on the work of <code>lintr</code> and Air developers, so thank you!</p>
+<p>Jarl is also very inspired by similar tools in other languages, in particular <a href="https://docs.astral.sh/ruff/">Ruff</a> in Python and <a href="https://github.com/rust-lang/rust-clippy">Cargo clippy</a> in Rust.</p>
+<p>Finally, thanks to the <a href="https://r-consortium.org/">R Consortium</a> for funding part of the development of Jarl via the ISC Grant Program.</p>
+<p>And thank you, Maëlle, for improving the draft!</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Jarl stands for “Just Another R Linter”.↩︎</p></li>
+<li id="fn2"><p>This is not always possible, it depends on the rule.↩︎</p></li>
+<li id="fn3"><p><code>anyNA(x)</code> is more efficient than <code>any(is.na(x)</code>).↩︎</p></li>
+<li id="fn4"><p><code>rowMeans(x)</code> is more efficient than <code>apply(x, 1, mean)</code>.↩︎</p></li>
+<li id="fn5"><p>Semantic analysis refers to using the context surrounding an expression to explore rule violations.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>infrastructure</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/jarl-just-another-r-linter/</guid>
+  <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/jarl-just-another-r-linter/etienne-bacher.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>mini007 - A Lightweight Framework for Multi-Agent Orchestration in R</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1963,75 +2097,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/strength-in-numbers/</guid>
   <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/strength-in-numbers/vadeq-main-image.png" medium="image" type="image/png" height="82" width="144"/>
-</item>
-<item>
-  <title>“Visualise, Optimise, Parameterise!” - Writing dataviz code - UPDATED</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tdaMw6NcNFM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="visualize-optimize-parameterize-enhancing-r-visualizations-for-impact" class="level1">
-<h1>Visualize, Optimize, Parameterize: Enhancing R Visualizations for Impact</h1>
-<p>Creating compelling and clear visualizations is an art that requires careful planning and execution. Cara Thompson, a data visualization consultant, recently led a workshop titled “Visualize, Optimize, Parameterize” aimed at enhancing participants’ skills in building reusable and adaptable visualizations with R. With an emphasis on parameterization, Cara shared insights on how to transform static plots into dynamic tools that can adapt to varied datasets and storytelling needs.</p>
-<section id="building-memorable-graphs" class="level2">
-<h2 class="anchored" data-anchor-id="building-memorable-graphs">Building Memorable Graphs</h2>
-<p>To create memorable graphs, it’s crucial to select the right type of visualization and apply colors, fonts, and styling that complement the narrative. The workshop emphasized the importance of:</p>
-<ul>
-<li><strong>Choosing Appropriate Graph Types</strong>: Selecting the right graph type that aligns with the data story is fundamental.</li>
-<li><strong>Color and Font Choices</strong>: These should enhance readability and convey the right message. Tools like the <code>monochroma</code> package and the Shiny app can help create harmonious color palettes.</li>
-<li><strong>Annotations</strong>: Adding data-driven annotations can highlight key patterns and points of interest.</li>
-</ul>
-</section>
-<section id="the-power-of-reusability" class="level2">
-<h2 class="anchored" data-anchor-id="the-power-of-reusability">The Power of Reusability</h2>
-<p>One of the key takeaways from the workshop was the importance of creating reusable functions and vectors. This approach minimizes repetitive copy-pasting and allows for easy updates and maintenance. Cara demonstrated how to:</p>
-<ul>
-<li><strong>Turn Styling Code into Functions</strong>: By encapsulating styling choices into a function, users can apply consistent branding across multiple plots with ease.</li>
-<li><strong>Parameterize Plots</strong>: This involves creating a function that can take different datasets or parameters, making it adaptable for future use cases.</li>
-</ul>
-</section>
-<section id="adding-interactivity" class="level2">
-<h2 class="anchored" data-anchor-id="adding-interactivity">Adding Interactivity</h2>
-<p>Incorporating interactivity into visualizations enhances user engagement and allows for deeper exploration of the data. Cara introduced the <code>ggiraph</code> package, which helps transform static ggplot2 charts into interactive plots, making it an accessible way to add interactivity without extensive rework.</p>
-</section>
-<section id="parameterizing-for-flexibility" class="level2">
-<h2 class="anchored" data-anchor-id="parameterizing-for-flexibility">Parameterizing for Flexibility</h2>
-<p>Parameterizing plots allows users to easily adapt their visualizations to different datasets or scenarios. Throughout the session, Cara encouraged participants to think about:</p>
-<ul>
-<li><strong>Dataset Variations</strong>: How to quickly adapt plots for new or updated data without reworking the entire codebase.</li>
-<li><strong>Presentation Contexts</strong>: Adjusting visualizations for different formats such as presentations or publications with changes in text size and font.</li>
-<li><strong>Additional Functionality</strong>: Adding features like conditional formatting or exporting options to enhance the plot’s utility.</li>
-</ul>
-</section>
-<section id="avoiding-common-pitfalls" class="level2">
-<h2 class="anchored" data-anchor-id="avoiding-common-pitfalls">Avoiding Common Pitfalls</h2>
-<p>Cara highlighted several common pitfalls when parameterizing plots, such as:</p>
-<ul>
-<li><strong>Inconsistent Color Mapping</strong>: Colors should be stable across different datasets to maintain consistency. This can be achieved by using named vectors for color assignments.</li>
-<li><strong>Axis Limits Management</strong>: Decide whether to keep axis limits consistent or allow them to adapt based on the data’s range.</li>
-<li><strong>Annotation Placement</strong>: Ensure annotations are positioned correctly by using programmatic methods that adjust based on the data.</li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The workshop equipped participants with the skills to create impactful and adaptable visualizations in R. By focusing on parameterization, attendees learned to streamline their workflow, reduce redundancy, and enhance their data storytelling capabilities. Cara Thompson’s expertise in data visualization provided valuable insights into making visualizations both functional and aesthetically pleasing.</p>
-<p>For those looking to delve deeper, resources from the workshop, including code snippets and additional readings, are available on Cara’s website.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>r/medicine 2025</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/</guid>
-  <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/visualise-optimise-parameterise-writing-dataviz-code-updated/thumbnail-dataviz-cara.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
