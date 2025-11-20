@@ -13,7 +13,7 @@
 <lastBuildDate>Thu, 20 Nov 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Jarl: just another R linter</title>
-  <dc:creator>R Consortium</dc:creator>
+  <dc:creator>Etienne Bacher</dc:creator>
   <link>https://r-consortium.org/posts/jarl-just-another-r-linter/</link>
   <description><![CDATA[ 
 
@@ -21,6 +21,7 @@
 
 
 
+<p><em>Original post here: <a href="https://deploy-preview-10--flamboyant-shannon-d37ae4.netlify.app/posts/2025-11-10-introducing-jarl/">Jarl: just another R linter</a></em></p>
 <!-- DON'T FORGET ALT TEXT FOR GIFS -->
 <p>I’m very excited to introduce Jarl<sup>1</sup>, a new R linter. A linter is a tool that statically parses code (meaning that it doesn’t run the code in question) and searches for patterns that are inefficient, hard to read, or likely bugs. Jarl can parse dozens of files and thousands of lines of code in milliseconds. Here is an example of Jarl running on <a href="https://github.com/wch/r-source/">r-source</a> (approximately 1000 files and 200k lines of R code) in about 700 milliseconds:</p>
 <video width="100%" alt="Running `jarl check . --with-timing` on the 'r-source' repository. This runs in about 700ms and returns hundreds of rule violations detailing the diagnostic and how to fix it." controls="">

@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="R Consortium">
+<meta name="author" content="Etienne Bacher">
 <meta name="dcterms.date" content="2025-11-20">
 <meta name="description" content="Remove bad patterns in your R code in the blink of an eye.">
 
@@ -360,7 +360,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>R Consortium </p>
+               <p>Etienne Bacher </p>
             </div>
     </div>
       
@@ -386,6 +386,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 
 
 
+<p><em>Original post here: <a href="https://deploy-preview-10--flamboyant-shannon-d37ae4.netlify.app/posts/2025-11-10-introducing-jarl/">Jarl: just another R linter</a></em></p>
 <!-- DON'T FORGET ALT TEXT FOR GIFS -->
 <p>I’m very excited to introduce Jarl<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, a new R linter. A linter is a tool that statically parses code (meaning that it doesn’t run the code in question) and searches for patterns that are inefficient, hard to read, or likely bugs. Jarl can parse dozens of files and thousands of lines of code in milliseconds. Here is an example of Jarl running on <a href="https://github.com/wch/r-source/">r-source</a> (approximately 1000 files and 200k lines of R code) in about 700 milliseconds:</p>
 <video width="100%" alt="Running `jarl check . --with-timing` on the 'r-source' repository. This runs in about 700ms and returns hundreds of rule violations detailing the diagnostic and how to fix it." controls="">
