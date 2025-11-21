@@ -1,0 +1,61 @@
+--- 
+title: "Introducing `{geodl}`: An R package for geospatial semantic segmentation" 
+unpublished: false 
+url: "https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/"
+description: "`{geodl}`introduces cutting-edge deep learning approaches tailored for geospatial applications." 
+categories: ["ai", "r+ai", "software development"]
+author: "R Consortium" 
+image: "thumbnail-aaron-maxwell.png" 
+image-alt: "thumbnail for video on Introducing `{geodl}`: An R package for geospatial semantic segmentation" 
+date: "11/20/2025" 
+---
+
+{{< video https://www.youtube.com/embed/dvBmbYwb-JA >}}
+
+### Slides with resource links [available here](geodl-aaron-maxwell-rplusai-conference.pdf) (PDF)
+
+# Introducing `{geodl}`: GPU-Accelerated Geospatial Deep Learning in R
+
+In the dynamic world of data science, the R language consistently evolves, providing innovative solutions across various domains. One such advancement is the `{geodl}` package, a significant contribution to geospatial semantic segmentation. Introduced by Aaron Maxwell, an Associate Professor in the Department of Geology and Geography at West Virginia University, `{geodl}` builds upon `{torch}`, `{terra}`, and `{luz}` packages to offer a robust framework for pixel-level classification without the need for a Python/PyTorch environment.
+
+## The Vision Behind `{geodl}`
+
+Aaron Maxwell's work in geospatial science and his role at the West Virginia GIS Tech Center have driven his passion for extracting actionable insights from geospatial data. The `{geodl}` package aligns with this vision, aiming to fill the gap in deep learning capabilities within R's geospatial ecosystem. While R has strong support for spatial data through packages like `{sf}`, `{terra}`, and `{stars}`, `{geodl}` introduces cutting-edge deep learning approaches tailored for geospatial applications.
+
+## The Power of Semantic Segmentation
+
+Semantic segmentation is a pivotal task in computer vision, especially within geospatial sciences. Unlike scene classification or object detection, semantic segmentation assigns each pixel a label, enabling detailed land cover classification and vegetation type differentiation. This pixel-level precision is crucial for applications such as differentiating wetlands from uplands or forest types from grasslands. Aaron Maxwell highlights the significance of semantic segmentation in enhancing the accuracy and specificity of geospatial analyses.
+
+## Leveraging Advanced Architectures
+
+`{geodl}` incorporates several convolutional neural network (CNN)-based architectures, each offering unique advantages for geospatial deep learning:
+
+- **UNet**: A versatile and configurable architecture that uses an encoder-decoder U-shape to create spatial abstractions of data. `{geodl}`'s implementation includes enhancements like residual connections and attention gates to improve classification performance.
+
+- **MobileUNet**: Integrates a MobileNet-style encoder for efficient processing, utilizing depthwise separable convolution to optimize performance.
+
+- **UNet3+**: Features dense connections between encoder and decoder blocks, enhancing information flow and improving classification accuracy without significantly increasing parameters.
+
+- **HRNet**: Maintains high-resolution feature maps throughout the architecture, ideal for detecting small features within large spatial extents.
+
+## Streamlined Workflows and Data Processing
+
+`{geodl}` offers a comprehensive workflow for geospatial semantic segmentation, simplifying the process from data preparation to model deployment. Key components include:
+
+- **Raster Mask and Chip Generation**: Functions to create raster masks and break larger extents into smaller, manageable chips for training and validation.
+
+- **Augmented Data Handling**: Support for data augmentations such as rotations and flips to reduce overfitting and enhance model robustness.
+
+- **Dynamic Prediction Capabilities**: The predict_spatial function allows for seamless wall-to-wall predictions, automatically managing data chipping and merging for large spatial extents.
+
+## Future Developments and Community Collaboration
+
+Looking ahead, `{geodl}` aims to incorporate autoencoder architectures for feature reduction and anomaly detection, edge-weighted loss functions for improved predictions near boundaries, and additional architectures like DeepLab v3+ and transformer-based models. These enhancements will further solidify `{geodl}`'s position as a leader in geospatial deep learning within R.
+
+Aaron Maxwell invites collaboration from the R community to expand `{geodl}`'s capabilities. His call for contributors highlights an opportunity for data scientists and developers to engage in the evolving field of geospatial deep learning, driving innovation and advancing the state of the art.
+
+## Explore `{geodl}`
+
+For those interested in exploring `{geodl}`, the package is available on [CRAN](https://cran.r-project.org/web/packages/geodl/index.html) and [GitHub](https://github.com/maxwell-geospatial/geodl). Additionally, chapters 15 and 16 of an online book on the West Virginia View website provide detailed insights into `{geodl}`'s functionalities and applications. This resource serves as a comprehensive guide for both new adopters and seasoned practitioners in geospatial data science.
+
+The introduction of `{geodl}` marks a significant milestone in R's geospatial capabilities, offering a powerful tool for researchers and professionals seeking to harness the potential of deep learning for geospatial data analysis. By embracing collaboration and continuous development, `{geodl}` stands poised to shape the future of geospatial deep learning in R.
