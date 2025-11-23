@@ -1,0 +1,54 @@
+--- 
+title: "kuzco | Computer Vision made easy" 
+unpublished: false 
+url: "https://r-consortium.org/posts/kuzco-computer-vision-made-easy/"
+description: "Discover how `{kuzco}` advances computer vision with LLMs, simplifying analysis and enhancing accessibility." 
+categories: ["ai","r+ai", "software development"]
+author: "R Consortium" 
+image: "thumbnail-frank-hull.png" 
+image-alt: "thumbnail for video on kuzco | Computer Vision made easy" 
+date: "11/22/2025" 
+---
+
+
+{{< video https://www.youtube.com/embed/Pt5-VSvuKMA >}}
+
+### Slides with resource links [available here](thursday-frank-hull-kuzco.pdf) (PDF)
+
+# Advancing Computer Vision with `{kuzco}`: Simplifying the Complex
+
+In the realm of computer vision, developers and data enthusiasts often face a steep learning curve. However, thanks to the innovative R package `{kuzco}`, this complexity can be significantly alleviated. Frank Hull, a Director of Data Science & Analytics in the energy sector, discussed at R+AI 2025 how `{kuzco}` leverages large language models (LLMs) to provide an intuitive approach to computer vision.
+
+## Understanding the Traditional Computer Vision Framework
+
+A typical computer vision framework involves several intricate steps. Building a model from scratch using TensorFlow demands a deep understanding of neural networks and image processing. While frameworks like Keras and Torch offer a less steep learning curve, they still require knowledge of tensors and image labeling. Utilizing pre-trained models like ResNet reduces complexity but remains constrained by the predefined contexts of those models. Analysts often encounter challenges like limited training images and incorrect labels, which complicate the process further.
+
+## Enter `{kuzco}`: A Shift to LLM-Based Computer Vision
+
+Hull presents a compelling case for using `{kuzco}`, a package that harnesses LLMs to redefine how computer vision tasks are approached. By treating LLMs as pre-trained models, `{kuzco}` eliminates the need for traditional image pre-processing. The package allows for prompt-driven computer vision, where one can define roles and tasks within the LLM system prompt. This approach opens up possibilities for classification, object detection, sentiment analysis, and even optical character recognition (OCR) without the cumbersome setup of traditional frameworks.
+
+## Structured Outputs for Ready Analysis
+
+One of the standout features of `{kuzco}` is its ability to return structured outputs. While LLMs typically produce streams of unstructured text, `{kuzco}` ensures that results are formatted in JSON, which can then be converted into data frames. This structured format is crucial for analysts who need to integrate computer vision results into broader data analysis workflows. `{kuzco}` facilitates this process, making it easier to perform detailed analyses with minimal hassle.
+
+## Comprehensive Analysis Toolkit with `{kuzco}`
+
+Beyond structured outputs, `{kuzco}` offers a range of input and output helpers, along with a Shiny application for visualization. Users can easily install the package via [GitHub](https://github.com/frankiethull/kuzco) or [R-universe](https://frankiethull.r-universe.dev/kuzco), and it includes functions for viewing images directly in R, a feature that simplifies the initial stages of analysis.
+
+A key function within `{kuzco}` is image classification, which can be tailored to various LLM providers. This flexibility allows users to choose from a variety of models, including Anthropic, Mistral, and OpenAI, depending on their specific needs. The package also includes a GT table output for displaying results, enhancing the readability of analysis outputs.
+
+## Diverse Applications and Tools
+
+From alt text generation to image recognition, `{kuzco}` supports a range of applications. The package offers tools for recognizing specific objects within images, a feature that is particularly useful for tasks like inventory management or wildlife monitoring. Additionally, the `{kuzco}` Shiny app provides a no-code solution for users who prefer a graphical interface over traditional coding methods.
+
+The modular framework of `{kuzco}` means that users can easily add or remove functions to suit their specific workflows. This flexibility is invaluable for integrating `{kuzco}` into existing machine learning pipelines or for creating new ones.
+
+## What’s New and What’s Coming
+
+Recent updates to `{kuzco}` include a custom function that allows users to define system and image prompts, complete with example data frames. This feature is particularly useful for conducting detailed analyses across multiple images. Upcoming developments for `{kuzco}` include enhanced developer tools for prompt editing and a potential release on CRAN, marking a significant milestone in the package’s evolution.
+
+## Embracing the Future of Computer Vision with `{kuzco}`
+
+As `{kuzco}` continues to evolve, its potential applications are vast. From creating dynamic family photo timelines to identifying plant species during hikes, the package opens up a world of possibilities. By simplifying the complexities of computer vision, `{kuzco}` empowers users to explore new avenues of analysis and discovery.
+
+In conclusion, `{kuzco}` represents a significant advancement in making computer vision accessible and manageable. Its use of LLMs simplifies traditional methodologies, offering structured outputs and a comprehensive toolkit for a wide array of applications. As the package grows, it promises to further democratize the field of computer vision, making it an exciting tool for the R community.
