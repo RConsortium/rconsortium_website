@@ -41,6 +41,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/kuzco-computer-vision-made-easy/index.html",
       "/posts/jarl-just-another-r-linter/index.html",
       "/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html",
       "/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html",
@@ -180,6 +181,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/posts/kuzco-computer-vision-made-easy/index.html",
       "/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html",
       "/posts/jarl-just-another-r-linter/index.html",
       "/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html",

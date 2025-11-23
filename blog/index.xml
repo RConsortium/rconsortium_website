@@ -10,7 +10,67 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 20 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 22 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>kuzco | Computer Vision made easy</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Pt5-VSvuKMA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="slides-with-resource-links-available-here-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="thursday-frank-hull-kuzco.pdf">available here</a> (PDF)</h3>
+</section>
+<section id="advancing-computer-vision-with-kuzco-simplifying-the-complex" class="level1">
+<h1>Advancing Computer Vision with <code>{kuzco}</code>: Simplifying the Complex</h1>
+<p>In the realm of computer vision, developers and data enthusiasts often face a steep learning curve. However, thanks to the innovative R package <code>{kuzco}</code>, this complexity can be significantly alleviated. Frank Hull, a Director of Data Science &amp; Analytics in the energy sector, discussed at R+AI 2025 how <code>{kuzco}</code> leverages large language models (LLMs) to provide an intuitive approach to computer vision.</p>
+<section id="understanding-the-traditional-computer-vision-framework" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-traditional-computer-vision-framework">Understanding the Traditional Computer Vision Framework</h2>
+<p>A typical computer vision framework involves several intricate steps. Building a model from scratch using TensorFlow demands a deep understanding of neural networks and image processing. While frameworks like Keras and Torch offer a less steep learning curve, they still require knowledge of tensors and image labeling. Utilizing pre-trained models like ResNet reduces complexity but remains constrained by the predefined contexts of those models. Analysts often encounter challenges like limited training images and incorrect labels, which complicate the process further.</p>
+</section>
+<section id="enter-kuzco-a-shift-to-llm-based-computer-vision" class="level2">
+<h2 class="anchored" data-anchor-id="enter-kuzco-a-shift-to-llm-based-computer-vision">Enter <code>{kuzco}</code>: A Shift to LLM-Based Computer Vision</h2>
+<p>Hull presents a compelling case for using <code>{kuzco}</code>, a package that harnesses LLMs to redefine how computer vision tasks are approached. By treating LLMs as pre-trained models, <code>{kuzco}</code> eliminates the need for traditional image pre-processing. The package allows for prompt-driven computer vision, where one can define roles and tasks within the LLM system prompt. This approach opens up possibilities for classification, object detection, sentiment analysis, and even optical character recognition (OCR) without the cumbersome setup of traditional frameworks.</p>
+</section>
+<section id="structured-outputs-for-ready-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="structured-outputs-for-ready-analysis">Structured Outputs for Ready Analysis</h2>
+<p>One of the standout features of <code>{kuzco}</code> is its ability to return structured outputs. While LLMs typically produce streams of unstructured text, <code>{kuzco}</code> ensures that results are formatted in JSON, which can then be converted into data frames. This structured format is crucial for analysts who need to integrate computer vision results into broader data analysis workflows. <code>{kuzco}</code> facilitates this process, making it easier to perform detailed analyses with minimal hassle.</p>
+</section>
+<section id="comprehensive-analysis-toolkit-with-kuzco" class="level2">
+<h2 class="anchored" data-anchor-id="comprehensive-analysis-toolkit-with-kuzco">Comprehensive Analysis Toolkit with <code>{kuzco}</code></h2>
+<p>Beyond structured outputs, <code>{kuzco}</code> offers a range of input and output helpers, along with a Shiny application for visualization. Users can easily install the package via <a href="https://github.com/frankiethull/kuzco">GitHub</a> or <a href="https://frankiethull.r-universe.dev/kuzco">R-universe</a>, and it includes functions for viewing images directly in R, a feature that simplifies the initial stages of analysis.</p>
+<p>A key function within <code>{kuzco}</code> is image classification, which can be tailored to various LLM providers. This flexibility allows users to choose from a variety of models, including Anthropic, Mistral, and OpenAI, depending on their specific needs. The package also includes a GT table output for displaying results, enhancing the readability of analysis outputs.</p>
+</section>
+<section id="diverse-applications-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="diverse-applications-and-tools">Diverse Applications and Tools</h2>
+<p>From alt text generation to image recognition, <code>{kuzco}</code> supports a range of applications. The package offers tools for recognizing specific objects within images, a feature that is particularly useful for tasks like inventory management or wildlife monitoring. Additionally, the <code>{kuzco}</code> Shiny app provides a no-code solution for users who prefer a graphical interface over traditional coding methods.</p>
+<p>The modular framework of <code>{kuzco}</code> means that users can easily add or remove functions to suit their specific workflows. This flexibility is invaluable for integrating <code>{kuzco}</code> into existing machine learning pipelines or for creating new ones.</p>
+</section>
+<section id="whats-new-and-whats-coming" class="level2">
+<h2 class="anchored" data-anchor-id="whats-new-and-whats-coming">What’s New and What’s Coming</h2>
+<p>Recent updates to <code>{kuzco}</code> include a custom function that allows users to define system and image prompts, complete with example data frames. This feature is particularly useful for conducting detailed analyses across multiple images. Upcoming developments for <code>{kuzco}</code> include enhanced developer tools for prompt editing and a potential release on CRAN, marking a significant milestone in the package’s evolution.</p>
+</section>
+<section id="embracing-the-future-of-computer-vision-with-kuzco" class="level2">
+<h2 class="anchored" data-anchor-id="embracing-the-future-of-computer-vision-with-kuzco">Embracing the Future of Computer Vision with <code>{kuzco}</code></h2>
+<p>As <code>{kuzco}</code> continues to evolve, its potential applications are vast. From creating dynamic family photo timelines to identifying plant species during hikes, the package opens up a world of possibilities. By simplifying the complexities of computer vision, <code>{kuzco}</code> empowers users to explore new avenues of analysis and discovery.</p>
+<p>In conclusion, <code>{kuzco}</code> represents a significant advancement in making computer vision accessible and manageable. Its use of LLMs simplifies traditional methodologies, offering structured outputs and a comprehensive toolkit for a wide array of applications. As the package grows, it promises to further democratize the field of computer vision, making it an exciting tool for the R community.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>r+ai</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/</guid>
+  <pubDate>Sat, 22 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/kuzco-computer-vision-made-easy/thumbnail-frank-hull.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Introducing {geodl}: An R package for geospatial semantic segmentation</title>
   <dc:creator>R Consortium</dc:creator>
@@ -2003,82 +2063,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/</guid>
   <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>UPDATED: Teaching R to investigative journalists in Brazil</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/abraji_ceremony_2024_1.jpg" class="img-fluid"></p>
-<p><em>credit for photos: Luciana Vassoler/Abraji</em></p>
-<section id="update-following-event" class="level2">
-<h2 class="anchored" data-anchor-id="update-following-event">UPDATE FOLLOWING EVENT</h2>
-<p>Pictures from the R track during the Abraji congress. Jade Maré, co-organizer at R-Ladies São Paulo and a Carpentries certified instructor (woman in blue). Rafael Pereira, head of Data at Ipea, the Brazilian Institute for Applied Economic Research, a federal government institution (man in glasses). He’s the creator of packages <a href="https://cran.r-project.org/web/packages/geobr/vignettes/intro_to_geobr.html">geobr</a>, <a href="https://cloud.r-project.org/web/packages/censobr/index.html">censobr</a>, <a href="https://cran.r-project.org/web/packages/geocodebr/index.html">geocodebr</a>, <a href="https://cran.r-project.org/web/packages/flightsbr/vignettes/intro_flightsbr.html">flightsbr</a> and many more, and Carol Moreno, Abraji Director (woman in peacock sweater).</p>
-<p>From Carol:</p>
-<p>“A quick summary: we have over 30 people taking place in our sessions and had great feedback. And I was really happy to see that people who took the introductory sessions last year (the ones that take place in the morning) came back this year in the afternoon to catch Rafael’s session. One of them is an investigative journalist who said that, after learning R last year, he took some more courses online and began practicing, and is now using R to produce news stories and interested in learning more and more!”</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6536.jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6153.jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6144.jpg" class="img-fluid" style="width:100.0%"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6141.jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6136.jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6128.jpg" class="img-fluid" style="width:100.0%"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI-6124.jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1303).jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1293).jpg" class="img-fluid" style="width:100.0%"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1292).jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1292) (1).jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1287).jpg" class="img-fluid" style="width:100.0%"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1286).jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1282).jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1280).jpg" class="img-fluid" style="width:100.0%"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/LV-ABRAJI (1279).jpg" class="img-fluid" style="width:100.0%"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>ORIGINAL POST</p>
-<p>The <a href="https://abraji.org.br/english">Brazilian Association of Investigative Journalism (Abraji)</a>’s annual international congress will take place on July 10th-13th in São Paulo, Brazil. And the final day is dedicated to data. Traditionally called “Domingo de Dados” (Data Sunday), it’s a full day for journalist professionals and students from all over the country to take part in seven simultaneous labs with workshops and panels and learn new skills to apply data science in their investigations and coverage.</p>
-<p>One of the labs will be entirely dedicated to teaching R. Participants will spend the morning in an introductory session to R led by R-Ladies São Paulo volunteer instructors and TAs, especially designed for statistical analysis considering the specifics of journalism and using Brazilian electoral data.</p>
-<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/data-sunday-2024.png" class="img-fluid"></p>
-<p>In the afternoon, they will learn how to use the R packages <code>censobr</code> and <code>geobr</code>, two o f the most used ones for Brazilian census and geospatial data. The workshop will be given by Rafael Pereira, Chief of Data for Ipea, the Brazilian Institute for Applied Economic Research, who created both packages. They will also get to practice the new skills and interview official government databases to try and find news stories, with the help of the instructors.</p>
-<p>Because of its proximity to statistical analysis, R is one of the languages chosen by journalists on their first steps in acquiring data science skills to take their investigative work to a higher level. The investment in their training brings invaluable results in the form of news articles that expose detrimental public policies, fraud and other risks to our democracy, helping hold governments accountable and reduce social and economic inequality.</p>
-<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/ddados2024_R-Bootcamp_1.jpeg" class="img-fluid"></p>
-<p>For the second consecutive year, R Consortium is one of the partners at the Abraji International Congress. In its 20th edition, it has become the largest journalists event in Brazil, gathering over 1,800 participants in the four days of activities.</p>
-<p><img src="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/abraji_r-consortium_logo_2024.jpeg" class="img-fluid"></p>
-
-
-</section>
-
- ]]></description>
-  <category>events</category>
-  <guid>https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/</guid>
-  <pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/data-sunday-2024.png" medium="image" type="image/png" height="85" width="144"/>
 </item>
 </channel>
 </rss>
