@@ -8,21 +8,21 @@ date: "11/24/2025"
 
 \[Alec Wong\](https://www.linkedin.com/in/alec-wong-67966242/), organizer of the \[Cleveland R Users Group\](https://www.meetup.com/cleveland-user-group/), recently spoke with the R Consortium about energizing the local R community and supporting data professionals in a rapidly changing job market. With a focus on inclusive learning and real-world applications, Alec and his co-organizers are creating events that connect students, analysts, and industry experts alike. Their recent “Career Planning” session brought together data scientists, hiring managers, and job seekers for an open conversation about navigating AI-driven changes in the workforce. Alec also shared how the group is expanding its reach through collaborations with other tech meetups and participation in Cleveland’s Best of Tech event.
 
-\![\](AlecWong.png)
+\![\](AlecWong.png){width=50%}
 
-\# Please share your background and involvement with the RUGS group.
+\## Please share your background and involvement with the RUGS group.
 
 My name is Alec Wong, and I am a co-organizer of the Cleveland R User Group alongside John Blischak and Tim Hoolihan. I have been a member of this group since 2019, and a co-organizer since 2022. John joined in 2018 and became a co-organizer in 2020. Tim joined in 2013 and became a co-organizer in 2015. We have a lot of dedication in this group and are constantly looking for new ways to engage with R users in the community!
 
 I have worked at Progressive Insurance since 2019, and this year I moved into a data scientist position working to apply machine vision to automate the detection of damage on vehicles.
 
-\# Can you share what the R community is like in Cleveland?
+\## Can you share what the R community is like in Cleveland?
 
 There is still interest in the R language, if our meetup attendance is any indicator. We typically see a few new faces each time we host a session, whether in-person or online. There are companies from a variety of industries situated in Cleveland – insurance, medical, financial, consulting, among other services – and you can find practicing data science professionals within all of these.
 
 R is a pleasant and beautiful language to work in, and this is what I hope to share with people regardless of their background. The sessions that we host, and plan to host, are aimed at this objective in mind.
 
-\# You hosted a “\[Career Planning\](https://www.meetup.com/cleveland-user-group/events/309804784/?eventOrigin=group_events_list)” meetup session. Can you share more about the topic? Why this topic?
+\## You hosted a “\[Career Planning\](https://www.meetup.com/cleveland-user-group/events/309804784/?eventOrigin=group_events_list)” meetup session. Can you share more about the topic? Why this topic?
 
 We, as data science professionals, are at a crossroad or inflection point in what it looks like to find a job and build a career right now. It’s been noted that since 2020, in the U.S., recent college graduates are seeing higher unemployment rates now relative to all workers, a departure from 30-year patterns according to the U.S. Bureau of Labor Statistics. Generative AI is developing into an arms race between those hiring and those seeking to be hired – applicants can fabricate resumes and submit more widely than ever before, while companies increase usage of automated screening tools (and occasionally automated interviewing) using AI. And regardless of the current efficacy of AI, there are grumblings of generative agentic AI supplanting entry-level positions. It’s a period of uncertainty.
 
@@ -42,7 +42,7 @@ We asked the panel a variety of questions related to the hiring process today. S
 
 After the session, we offered resume review comments for all participants. We may not have solved the hiring process with this panel discussion, but it was an enlightening and engaging discussion. 
 
-\# You represented the Cleveland R User Group at Cleveland’s Best of Tech event. Could you share more about that?
+\## You represented the Cleveland R User Group at Cleveland’s Best of Tech event. Could you share more about that?
 
 \[Cleveland’s Best of Tech\](https://greatercle.com/events/2025/09/09/signature-event/best-of-tech-day-2025/) is an annual event hosting tech companies, organizations, and educators. The Greater Cleveland Partnership organizes it, and this year it was held at the Great Lakes Science Center. Our group was offered a booth spot to share our program with participants.
 
@@ -52,7 +52,7 @@ We had many other participants visit the booth, and a key takeaway for me was in
 
 Overall, I am happy to see the good health of the data profession scene in Cleveland. Meeting other group organizers has already expanded my network; I attended a Data Days workshop event soon thereafter and had the pleasure of meeting \[Dro Sohrabian\](https://www.linkedin.com/in/drosohrabian/) and \[Samuel Martinez\](https://www.linkedin.com/in/samuel-martinez-975b37191/) with the City of Cleveland, demonstrating their \[Open Data Portal\](https://data.clevelandohio.gov/). Further meshing with technical meetup leaders will open a lot more doors for connectivity and inspire interesting sessions in the future; I plan to introduce our members to the City’s data portal in our next guided walkthrough session.
 
-\# How do I Build an R User Group?
+\## How do I Build an R User Group?
 
 R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
 
