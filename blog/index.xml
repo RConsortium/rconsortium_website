@@ -10,7 +10,66 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Sat, 22 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 24 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Expanding the Reach of R Across Cleveland’s Data and Tech Community</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/alec-wong-67966242/">Alec Wong</a>, organizer of the <a href="https://www.meetup.com/cleveland-user-group/">Cleveland R Users Group</a>, recently spoke with the R Consortium about energizing the local R community and supporting data professionals in a rapidly changing job market. With a focus on inclusive learning and real-world applications, Alec and his co-organizers are creating events that connect students, analysts, and industry experts alike. Their recent “Career Planning” session brought together data scientists, hiring managers, and job seekers for an open conversation about navigating AI-driven changes in the workforce. Alec also shared how the group is expanding its reach through collaborations with other tech meetups and participation in Cleveland’s Best of Tech event.</p>
+<p><img src="https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/AlecWong.png" class="img-fluid" style="width:50.0%"></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
+<p>My name is Alec Wong, and I am a co-organizer of the Cleveland R User Group alongside John Blischak and Tim Hoolihan. I have been a member of this group since 2019, and a co-organizer since 2022. John joined in 2018 and became a co-organizer in 2020. Tim joined in 2013 and became a co-organizer in 2015. We have a lot of dedication in this group and are constantly looking for new ways to engage with R users in the community!</p>
+<p>I have worked at Progressive Insurance since 2019, and this year I moved into a data scientist position working to apply machine vision to automate the detection of damage on vehicles.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-cleveland" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-cleveland">Can you share what the R community is like in Cleveland?</h2>
+<p>There is still interest in the R language, if our meetup attendance is any indicator. We typically see a few new faces each time we host a session, whether in-person or online. There are companies from a variety of industries situated in Cleveland – insurance, medical, financial, consulting, among other services – and you can find practicing data science professionals within all of these.</p>
+<p>R is a pleasant and beautiful language to work in, and this is what I hope to share with people regardless of their background. The sessions that we host, and plan to host, are aimed at this objective in mind.</p>
+</section>
+<section id="you-hosted-a-career-planning-meetup-session.-can-you-share-more-about-the-topic-why-this-topic" class="level2">
+<h2 class="anchored" data-anchor-id="you-hosted-a-career-planning-meetup-session.-can-you-share-more-about-the-topic-why-this-topic">You hosted a “<a href="https://www.meetup.com/cleveland-user-group/events/309804784/?eventOrigin=group_events_list">Career Planning</a>” meetup session. Can you share more about the topic? Why this topic?</h2>
+<p>We, as data science professionals, are at a crossroad or inflection point in what it looks like to find a job and build a career right now. It’s been noted that since 2020, in the U.S., recent college graduates are seeing higher unemployment rates now relative to all workers, a departure from 30-year patterns according to the U.S. Bureau of Labor Statistics. Generative AI is developing into an arms race between those hiring and those seeking to be hired – applicants can fabricate resumes and submit more widely than ever before, while companies increase usage of automated screening tools (and occasionally automated interviewing) using AI. And regardless of the current efficacy of AI, there are grumblings of generative agentic AI supplanting entry-level positions. It’s a period of uncertainty.</p>
+<p>In a primarily in-person event with a few online participants, we invited a panel of data science professionals who have either successfully navigated the job search environment recently, were in the process of searching for a job, or were making hiring decisions at their place of work. These were <a href="https://www.linkedin.com/in/jairaj-ranchod-223b4975/">Jai Ranchod</a>, a business systems analyst working at Availity since 2023, <a href="https://www.linkedin.com/in/aaron-montgomery-6b17421b1/">Aaron Montgomery</a>, a data scientist consultant working at Valtech, and <a href="https://www.linkedin.com/in/josh-vanderleest-6674a87b/">Josh Vanderleest</a>, a manager of data science working at Progressive Insurance.</p>
+<p>We asked the panel a variety of questions related to the hiring process today. Some examples were: How often did you get interviews from applications? How do you perceive the relative marketability of R versus Python today? Does generative technology help or hinder the job search? Emergent topics discussed were the added difficulty of the job search for international students and imposter syndrome among those seeking to break into the field.</p>
+<ul>
+<li><p>The consensus was that “hit rates” for interviews were fair – perhaps one in twenty – but not as egregious as some internet stories (one in hundreds).</p></li>
+<li><p>Tooling (R vs.&nbsp;Python) was not at the forefront of managers’ minds; rather, it was the capability to reason well about data analytical problems that was more important.</p></li>
+<li><p>Generative AI is a facet of modern job application – one audience member explained how it was used in a technical interview – but integrity and honesty nevertheless continue to be vital.</p></li>
+<li><p>Resumes exist to get you in front of the hiring manager – and should be formatted explicitly demonstrating how you satisfy minimum qualifications.&nbsp;</p></li>
+<li><p>Practicing interview questions using established methods like STAR can be very useful – check to see if answering questions in this format is a requirement of the organization.</p></li>
+</ul>
+<p>After the session, we offered resume review comments for all participants. We may not have solved the hiring process with this panel discussion, but it was an enlightening and engaging discussion.&nbsp;</p>
+</section>
+<section id="you-represented-the-cleveland-r-user-group-at-clevelands-best-of-tech-event.-could-you-share-more-about-that" class="level2">
+<h2 class="anchored" data-anchor-id="you-represented-the-cleveland-r-user-group-at-clevelands-best-of-tech-event.-could-you-share-more-about-that">You represented the Cleveland R User Group at Cleveland’s Best of Tech event. Could you share more about that?</h2>
+<p><a href="https://greatercle.com/events/2025/09/09/signature-event/best-of-tech-day-2025/">Cleveland’s Best of Tech</a> is an annual event hosting tech companies, organizations, and educators. The Greater Cleveland Partnership organizes it, and this year it was held at the Great Lakes Science Center. Our group was offered a booth spot to share our program with participants.</p>
+<p>I was extremely pleased to meet the organizers of other tech groups in Cleveland. I met the organizers of the <a href="https://www.datadayscle.org/">Data Days Cleveland group</a> (April Urban, Will Skora), and I also met the organizer of the <a href="https://www.meetup.com/cleveland-area-python-interest-group/">Cleveland Python meetup</a> (CLEpy) for the first time – Anurag Saxena, who works at the Cleveland Clinic. I am inspired to interface more with these groups, and we discussed the possibility of hosting a joint R+Python meetup sometime next year, which I am excited to plan!</p>
+<p>We had many other participants visit the booth, and a key takeaway for me was interest in beginner-level training in R. I have thought of this as something that the Cleveland R User group could offer in the future, possibly another activity that could be co-facilitated by the R and Python meetups.</p>
+<p>Overall, I am happy to see the good health of the data profession scene in Cleveland. Meeting other group organizers has already expanded my network; I attended a Data Days workshop event soon thereafter and had the pleasure of meeting <a href="https://www.linkedin.com/in/drosohrabian/">Dro Sohrabian</a> and <a href="https://www.linkedin.com/in/samuel-martinez-975b37191/">Samuel Martinez</a> with the City of Cleveland, demonstrating their <a href="https://data.clevelandohio.gov/">Open Data Portal</a>. Further meshing with technical meetup leaders will open a lot more doors for connectivity and inspire interesting sessions in the future; I plan to introduce our members to the City’s data portal in our next guided walkthrough session.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a>&nbsp;</p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>insurance/risk</category>
+  <category>north america</category>
+  <guid>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/</guid>
+  <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/AlecWong.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>kuzco | Computer Vision made easy</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1513,556 +1572,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/</guid>
   <pubDate>Fri, 11 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-for-health-technology-assessment-hta-identifying-needs-streamlining-processes-building-bridges/hta-main-image.png" medium="image" type="image/png" height="72" width="144"/>
-</item>
-<item>
-  <title>R+AI Call for Proposals</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" class="img-fluid"></p>
-<section id="call-for-proposals" class="level3">
-<h3 class="anchored" data-anchor-id="call-for-proposals">Call for Proposals</h3>
-<p>Join us at <strong>R+AI 2025</strong>, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence. Whether you’re just getting started with machine learning, experimenting with large language models in R, leveraging GenAI tools to accelerate your code, part of an industry team deploying AI solutions in finance, healthcare, or marketing, or a researcher pushing the boundaries of deep learning or responsible AI—there’s something here for you. Experience inspiring keynotes and talks, hands-on workshops, lightning talks, and panel discussions designed to educate, connect, and empower R users at every level.</p>
-<section id="submit-your-proposal-here" class="level4">
-<h4 class="anchored" data-anchor-id="submit-your-proposal-here"><a href="https://forms.gle/SUbQVNMpp11g7vbTA">Submit your proposal here</a></h4>
-</section>
-</section>
-<section id="cfp-dates-open-7102025---closes-09052025" class="level2">
-<h2 class="anchored" data-anchor-id="cfp-dates-open-7102025---closes-09052025">CFP dates: OPEN 7/10/2025 - CLOSES: 09/05/2025</h2>
-<p>We are now inviting proposals for talks and workshops in all these areas:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_cb882ed92554a47963d5753766b24a77">
-<div class="cell-output-display">
-<div id="jwzgmxkcsu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jwzgmxkcsu table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#jwzgmxkcsu thead, #jwzgmxkcsu tbody, #jwzgmxkcsu tfoot, #jwzgmxkcsu tr, #jwzgmxkcsu td, #jwzgmxkcsu th {
-  border-style: none;
-}
-
-#jwzgmxkcsu p {
-  margin: 0;
-  padding: 0;
-}
-
-#jwzgmxkcsu .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#jwzgmxkcsu .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#jwzgmxkcsu .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#jwzgmxkcsu .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#jwzgmxkcsu .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#jwzgmxkcsu .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#jwzgmxkcsu .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#jwzgmxkcsu .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#jwzgmxkcsu .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#jwzgmxkcsu .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#jwzgmxkcsu .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#jwzgmxkcsu .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#jwzgmxkcsu .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#jwzgmxkcsu .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#jwzgmxkcsu .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#jwzgmxkcsu .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#jwzgmxkcsu .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#jwzgmxkcsu .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#jwzgmxkcsu .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#jwzgmxkcsu .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#jwzgmxkcsu .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#jwzgmxkcsu .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#jwzgmxkcsu .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#jwzgmxkcsu .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#jwzgmxkcsu .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#jwzgmxkcsu .gt_left {
-  text-align: left;
-}
-
-#jwzgmxkcsu .gt_center {
-  text-align: center;
-}
-
-#jwzgmxkcsu .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#jwzgmxkcsu .gt_font_normal {
-  font-weight: normal;
-}
-
-#jwzgmxkcsu .gt_font_bold {
-  font-weight: bold;
-}
-
-#jwzgmxkcsu .gt_font_italic {
-  font-style: italic;
-}
-
-#jwzgmxkcsu .gt_super {
-  font-size: 65%;
-}
-
-#jwzgmxkcsu .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#jwzgmxkcsu .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#jwzgmxkcsu .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#jwzgmxkcsu .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#jwzgmxkcsu .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#jwzgmxkcsu .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#jwzgmxkcsu .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#jwzgmxkcsu .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#jwzgmxkcsu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
-<thead>
-<tr class="gt_heading header">
-<td colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">R+AI 2025 Call for Proposals: Technical Areas</td>
-</tr>
-<tr class="gt_col_headings even">
-<th id="Topic" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Topic</th>
-<th id="Title-and-Description" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Title and Description</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">1</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Foundations of AI &amp; ML in R</strong><br>Tutorials and primers that help R users grasp core concepts, algorithms, and the modern R toolchain for GenAI, machine learning and deep learning.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">2</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Using large-language models inside R</strong><br>E.g., packages and tools that help you call LLMs from R, prompt engineering for data science, how LLM conversations work.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">3</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>AI-assisted Development for R</strong><br>E.g., techniques and tools, Shiny Assistant, RStudio plug ins, comparison of different model capabilities.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">4</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Machine learning &amp; Deep Learning in R</strong><br>Education about popular R packages, workflows and toolchains, what sorts of problems they apply to, how and when to use them. Introduction to new R packages or algorithms.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">5</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Industry Case Studies: R+AI in Action</strong><br>Applications of GenAI, ML and DL using R across Finance, healthcare, marketing, manufacturing, research labs, and more—real-world success stories and lessons learned.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">6</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Responsible, Fair &amp; Explainable AI + Governance with R</strong><br>Model interpretability, reproducibility, bias detection, privacy-preserving ML, governance and ethics for the use of R+AI.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">7</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>AIOps/MLOps &amp; Production Deployment with R</strong><br>Frameworks, toolchains and techniques for putting AI/ML into production. Case studies on successful deployments and lessons learned are also welcome.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">8</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Future Trends &amp; Research Frontiers for R+AI</strong><br>E.g., Emerging Models &amp; Architectures, Auto-Data Science, Low-Code AI—from the R user’s or developer’s perspective.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">9</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Building &amp; Orchestrating AI Agents in R</strong><br>Learn how to design and deploy autonomous agents that combine R functions, APIs, and LLMs to automate multi-step data science workflows.</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<p>Whether you’re an R user new to AI or developing next-generation algorithms, <strong>R+AI 2025</strong> is your chance to learn, share, and collaborate with fellow R enthusiasts. Submit your talk or workshop proposal today and help shape the future of R+AI!</p>
-<section id="please-note" class="level3">
-<h3 class="anchored" data-anchor-id="please-note">Please note:</h3>
-<ul>
-<li>Event is 100% online</li>
-<li>Talks will be recorded</li>
-<li>Speakers participate in live Q&amp;A</li>
-<li>Schedule is US Eastern time zone</li>
-</ul>
-<section id="submit-your-proposal-here-1" class="level4">
-<h4 class="anchored" data-anchor-id="submit-your-proposal-here-1"><a href="https://forms.gle/SUbQVNMpp11g7vbTA">Submit your proposal here</a></h4>
-
-
-</section>
-</section>
-</section>
-
- ]]></description>
-  <category>events</category>
-  <category>ai</category>
-  <guid>https://r-consortium.org/posts/r_plus_ai_call_for_proposals/</guid>
-  <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r_plus_ai_call_for_proposals/CFP_now_open.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
