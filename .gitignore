@@ -8,3 +8,10 @@ venv
 **/.DS_Store
 .Rhistory
 .RData
+
+# R / knitr / Quarto caches
+*_cache/
+*.RData
+*.rdb
+*.rdx
+*_files/

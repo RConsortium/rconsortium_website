@@ -1,5 +1,5 @@
 ---
-title: "From the adas.utils Package to R-Trento: Paolo Bosetti on Building Tools and Community"
+title: "From the `adas.utils` Package to R-Trento: Paolo Bosetti on Building Tools and Community"
 unpublished: false
 url: "https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community"
 description: "Paolo Bosetti discusses his path from creating the adas.utils package to fostering collaboration with the R-Trento community."
@@ -10,7 +10,7 @@ image-alt: "picture of Paolo Bosetti, R-Trento User Group organizer"
 date: "11/25/2025"
 ---
 
-[Dr Paolo Bosetti](https://paolobosetti.quarto.pub/), Associate Professor at the University of Trento, Italy, recently spoke with the R Consortium about founding the [R-Trento User Group](https://www.meetup.com/r-trento-users-group/) (R-TUG) and fostering collaboration between academia, industry, and the public sector in Italy. He shared how he uses R in teaching industrial engineering students, from integrating RStudio and Quarto into coursework to emphasizing reproducible analysis and reporting. Dr. Paolo also discussed the development of his adas.utils package for experimental design, the importance of documenting community activities through a group blog, and his vision for expanding the R community in Trento.
+[Dr Paolo Bosetti](https://paolobosetti.quarto.pub/), Associate Professor at the University of Trento, Italy, recently spoke with the R Consortium about founding the [R-Trento User Group](https://www.meetup.com/r-trento-users-group/) (R-TUG) and fostering collaboration between academia, industry, and the public sector in Italy. He shared how he uses R in teaching industrial engineering students, from integrating RStudio and Quarto into coursework to emphasizing reproducible analysis and reporting. Dr. Paolo also discussed the development of his `adas.utils` package for experimental design, the importance of documenting community activities through a group blog, and his vision for expanding the R community in Trento.
 
 ![](PaoloBosetti.png){width=50%}
 
@@ -20,9 +20,9 @@ I am an Associate Professor at the University of Trento, working in academia. I 
 
 My focus is on the application of statistical methods in various contexts, including process control, experimental design, and industrial experiments. For teaching, I use R and specifically RStudio, which serves as the primary toolkit for my courses. I prepare all my teaching materials using RStudio and Quarto, including slides and handouts. The course is designed to be highly interactive; we begin with theoretical concepts presented on interactive slides prepared with Quarto, and then transition into RStudio for hands-on analysis, study, and data presentation from experiments.
 
-Within my university, I have several colleagues across different departments—such as economics, industrial engineering, bioengineering, and information technology—who also use R as a tool for data analysis. To foster this community, I initiated a local R user group, known as [R-TUG](https://www.meetup.com/r-trento-users-group/). We held our first meeting in late May, and we are planning the next one for the end of November.
+Within my university, I have several colleagues across different departments—such as economics, industrial engineering, bioengineering, and information technology—who also use R as a tool for data analysis. To foster this community, I initiated a local R user group, known as [R-TUG](https://www.meetup.com/r-trento-users-group/). We held our first meeting in late May 2025.
 
-We are using Meetup to gather users, and the group currently has around 60 to 65 members. At our inaugural meeting, approximately 30 users participated, and we conducted a total of four presentations on various topics over the course of three hours in the afternoon.
+We are using Meetup to gather users, and the group currently has around over 80 members. At our inaugural meeting, approximately 30 users participated, and we conducted a total of four presentations on various topics over the course of three hours in the afternoon.
 
 ![](RUsersTrentoLogo.png){width=50%}
 
@@ -64,9 +64,9 @@ My primary focus in teaching prospective industrial engineers is to emphasize th
 
 ## Can you tell us about your adas.utils package? What makes it unique compared to other experimental design packages in R?
 
-During this course, I also began developing a package called [adas.utils](https://cran.r-project.org/web/packages/adas.utils/index.html), which is currently on CRAN. Initially, it started as a collection of utility functions but has evolved into a complete set of objects and methods for applying Design of Experiments (DoE) techniques in a Tidyverse manner.
+During this course, I also began developing a package called [`adas.utils`](https://cran.r-project.org/web/packages/adas.utils/index.html), which is currently on CRAN. Initially, it started as a collection of utility functions but has evolved into a complete set of objects and methods for applying Design of Experiments (DoE) techniques in a Tidyverse manner.
 
-For example, I use ggplot for graphics, and functions have been designed to be sequentially piped with the %>% operator. While other packages for designing experiments are already available on CRAN, they follow an "old school" approach and do not adhere to a Tidyverse interface. My package stands out because it employs the principles of piping operations and sequencing operations, and utilizes ggplot for visual outputs. The package is now relatively mature.
+For example, I use `ggplot` for graphics, and functions have been designed to be sequentially piped with the `%>%` operator. While other packages for designing experiments are already available on CRAN, they follow an "old school" approach and do not adhere to a Tidyverse interface. My package stands out because it employs the principles of piping operations and sequencing operations, and utilizes `ggplot` for visual outputs. The package is now relatively mature.
 
 In our blog, you can find an [introduction to the package](https://rtug.unitn.it/posts/004-adas.utils/), which is designed to facilitate the creation of target plans and fractional factorial plans, as well as to analyze the alias structure in fractional factorial designs. The package also features functionalities not commonly available in R, such as normal probability plots and Pareto charts, both of which are not standard in the Tidyverse.
 
