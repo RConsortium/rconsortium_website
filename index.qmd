@@ -93,7 +93,23 @@ format: html
   top: 40%;
 }
 
-
+.goldButton {
+  display:inline-block;
+  padding:24px 40px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:2em;
+  text-transform:uppercase;
+  text-decoration:none;
+  background:linear-gradient(180deg,#f6e27a 0%, #d4af37 50%, #b8891a 100%);
+  color:#ffffff;
+  border:1px solid #a67c00;
+  box-shadow:0 6px 14px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.6);
+  transition:transform .06s ease, filter .2s ease, box-shadow .2s ease;
+}
+.goldButton:hover { color:#b8891a; }
+.goldButton:active { transform:translateY(1px); }
+.goldButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
 
 </style>
 
@@ -122,14 +138,6 @@ format: html
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/Sx6twsw-p/rcon-slide-bg2b.webp);">
 <h2>Find your local R user group Network with fellow statisticians and learn from your peers. </h2>
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
-</div>
-
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/g2KtdhD8/virginia-deq-webinar-main-image.png);">
-<button class="blueButton"><a href="posts/strength-in-numbers" style="text-decoration: none;">LEARN MORE</a></button>
-</div>
-
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/59Hrv64W/r-spatial-main-carousel.png);">
-<button class="blueButton"><a href="webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.qmd" style="text-decoration: none;">LEARN MORE</a></button>
 </div>
 
 </div>

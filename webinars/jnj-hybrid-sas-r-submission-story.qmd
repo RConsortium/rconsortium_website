@@ -1,0 +1,39 @@
+---
+title: "J&J: A Hybrid SAS/R Submission Story"
+---
+
+{{< video https://youtu.be/cve0whfsO6o?si=Pjqjn22q94ikpLHm >}}
+
+### Tuesday, October 21, 9am PDT / 12pm ET
+
+R Consortium Silver Member Johnson & Johnson shared insights into their work on the successful R submission to the FDA. Three J&J researchers showed how open-source R packages were utilized for statistical analysis and the creation of tables, figures, and listings (TFLs).
+
+### About the R Submissions Working Group
+
+The [R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/) is focused on improving practices for R-based clinical trial regulatory submissions.
+
+Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.
+
+In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.
+
+Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the R consortium GitHub page.
+
+## Speakers
+
+### Steven Haesendonckx – Statistical Programming Lead at Johnson & Johnson
+
+![](images/Steven_headshot.jpg){width=40%}
+
+Steven Haesendonckx is a Statistical Programming Lead at Johnson & Johnson Innovative Medicine, working within the Immunology therapeutic area. He is a passionate R advocate, driving its adoption within the statistical programming department and contributing to external initiatives that promote the use of R in clinical research. Steven actively supports the integration of R into daily workflows through collaboration, tooling, and community engagement.
+
+### Alicia Humphreys – Associate Director at Johnson & Johnson
+
+![](images/Alicia_headshot.jpg){width=40%}
+
+Alicia Humphreys is an Associate Director within Clinical & Statistical Programming at Johnson & Johnson in the oncology therapeutic area. Alongside the planning and oversight of statistical programming activities for oncology clinical projects, she co-leads the R Implementation Team, aiming to implement R into the business processes within the Statistical Programming team. This initiative enhances data analysis and strengthens statistical programming capabilities.
+
+### Linshan Yuan – Statistical Programmer at Johnson & Johnson
+
+![](images/Linshan_headshot.jpg){width=40%}
+
+Linshan Yuan is a Statistical Programmer at Johnson & Johnson Innovative Medicine, working over 15 years of experience in the pharmaceutical field. Her expertise includes SDTM, ADaM, TFLs, macro programming, and using R for clinical data analysis. Recently, she has been working on applying various programming techniques to perform statistical analyses in collaboration with her colleagues and has been involved in a hybrid submission.

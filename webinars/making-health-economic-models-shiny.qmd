@@ -1,0 +1,26 @@
+---
+title: "Making Health Economic Models Shiny: Our experience helping companies transition from Excel to R & Shiny"
+---
+{{< video https://youtu.be/GUf9pzpuX6k?si=gtRquuihlmc5ffuS >}}
+
+## Slides available [here](Making-Health-Economic-Models-Shiny.pdf)
+
+Dark Peak Analytics shared insights into their experience helping companies transition from Excel to R & Shiny for health economic models. The webinar explored the practical challenges and solutions involved in moving from traditional spreadsheet-based models to interactive Shiny applications.
+
+### About the R Consortium Health Technology Assessment (HTA) Working Group
+
+The [R Consortium Health Technology Assessment (HTA) Working Group](https://github.com/RConsortium/HTA-wg) aims to cultivate a more collaborative and unified approach to Health Technology Assessment (HTA) analytics work that leverages the power of R to enhance transparency, efficiency, and consistency, accelerating the delivery of innovative treatments to patients.
+
+## Speakers
+
+### Dr. Robert Smith – Director, Dark Peak Analytics
+
+![](images/robert-smith.png){width=40%}
+
+Dr. Robert Smith is the Director of Dark Peak Analytics, specializing in the application of methods from data-science to health economic evaluation in public health and Health Technology Assessment. He holds a PhD in Public Health Economics & Decision Science from the University of Sheffield (2025) and the University of Newcastle (2019). Having worked through the pandemic at the UK Health Security Agency, he has returned to academia and consulting. For more information see his GitHub page or the Dark Peak Analytics website.
+
+### Dr. Wael Mohammed – Principal Health Economist, Dark Peak Analytics
+
+![](images/wael-mohammed.png){width=40%}
+
+Dr. Wael Mohammed is a Principal Health Economist at Dark Peak Analytics. He holds a PhD in Public Health Economics & Decision Science and worked at UKHSA during the pandemic (2020 - 2022). He is also the Director of the R-4-HTA consortium. He is a highly-motivated, well-trained professional with a keen interest in Health Economics. His work experience alongside a considerable level of training and exposure to statistical packages have been significant assets in enriching his professional background and improving his work quality. Working within a quantitative research environment in the health sector provided him with extensive knowledge regarding challenges and different healthcare-resource allocation perspectives. This exposure helped him develop a better understanding of various aspects of health economics.
