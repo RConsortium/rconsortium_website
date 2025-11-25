@@ -12,6 +12,12 @@ venv
 .Rhistory
 .RData
 
+# R / knitr / Quarto caches
+*_cache/
+*.RData
+*.rdb
+*.rdx
+*_files/
 # Quarto/knitr build artifacts
 *_cache/
 **/index_cache/
