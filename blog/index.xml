@@ -10,7 +10,46 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 25 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>nlmixr2 is Becoming an R Consortium Working Group</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2025-11-23-r-consortium/">here</a>.</em></p>
+<p>From the nlmixr2 project blog:</p>
+<blockquote class="blockquote">
+<p>We are very excited to announce we are joining the R consortium as a Working Group (WG). Our vision will remain the same:</p>
+<blockquote class="blockquote">
+<p>“The vision of nlmixr2 is to develop a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.”</p>
+</blockquote>
+</blockquote>
+<p>Read the full post <a href="https://blog.nlmixr2.org/blog/2025-11-23-r-consortium/">here</a>.</p>
+<p><img src="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/nlmixr2.png" class="img-fluid" style="width:30.0%"></p>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>pharma</category>
+  <category>submissions</category>
+  <category>clinical research</category>
+  <category>announcements</category>
+  <guid>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/</guid>
+  <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/nlmixr2.png" medium="image" type="image/png" height="166" width="144"/>
+</item>
 <item>
   <title>From the adas.utils Package to R-Trento: Paolo Bosetti on Building Tools and Community</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1516,75 +1555,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/</guid>
   <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/cpp11armadillo_logo.png" medium="image" type="image/png" height="167" width="144"/>
-</item>
-<item>
-  <title>Julia Silge on Fostering a Technical, Inclusive R Community in Salt Lake City</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/juliasilge/">Julia Silge</a>, co-organizer of the <a href="https://www.meetup.com/slc-rug/">Salt Lake City R User Group</a>, recently talked to the R Consortium about sustaining an active R community in a region without a central tech hub. Julia shared how she discovered R and became deeply engaged with its open-source ecosystem. She discussed the group’s dual-format meetups, which include remote talks streamed via YouTube and quarterly in-person gatherings, as well as efforts to make the community inclusive for both local professionals and a wider audience. She also highlighted a recent session on advanced Git practices and an upcoming talk on sparse data structures in the tidymodels framework.</p>
-<p><img src="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/JuliaSilge.png" class="img-fluid"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>My academic background is in physics and astronomy. About ten years ago, I transitioned from a more academic career into data science, and that’s when I first discovered R. I wasn’t very familiar with it; I had only heard about it in passing. The aspects of R that immediately appealed to me were its functional approach to data analysis and its programming style, which has a Lispy flavor.</p>
-<p>The R community played a significant role in my identifying it as a tool that was a good fit for me. This included engaging with the open-source community and contributing to open-source projects early in my R journey. Additionally, I became connected with groups such as R-Ladies, although there isn’t an R-Ladies chapter in my local city. I started attending a local RUG meetup around ten years ago in my town.</p>
-<p>My city is a smaller US city—it’s not on the coasts and doesn’t have a large tech scene like the Bay Area. Finding people here to connect with and discuss our work was incredibly valuable for me.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-salt-lake-city" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-salt-lake-city">Can you share what the R community is like in Salt Lake City?</h2>
-<p>Our city is significantly influenced by the presence of a large university, which serves as a significant hub for research, especially in the life sciences. A substantial number of people associated with the university contribute to the local community. Additionally, outside of the university, professionals work at healthcare systems, including the VA hospital, which serve the entire region.</p>
-<p>Several life science startups in the area focus on drug discovery and other health science initiatives. Many individuals involved in these startups have university backgrounds, although they are no longer directly affiliated with their respective institutions. The use of R programming is quite prevalent in these environments.</p>
-<p>Overall, our community is shaped not only by those engaged in pure research but also by entrepreneurs and professionals who apply their knowledge, especially in the field of health sciences, creating a dynamic intersection between academia and industry.</p>
-</section>
-<section id="do-you-host-online-or-in-person-meetups" class="level2">
-<h2 class="anchored" data-anchor-id="do-you-host-online-or-in-person-meetups">Do you host online or in-person meetups?</h2>
-<p>We try to have a meeting most months, although we slow down a bit during the summer. There are two types of meetings we hold. The first type features a speaker who gives a talk. Since the pandemic began, we have been hosting these talks remotely via Zoom, rather than in person. We’ve found that this format works very well, allowing us to connect with people from all over, not just those in the Salt Lake area.</p>
-<p>These meetings are scheduled during lunchtime in our local time zone, allowing those of us in the area to take a break from work and join in to hear and learn about various topics. For our attendees in European time zones, the talks take place in the evening, which has worked out nicely.</p>
-<p>The second type of meeting we have is an in-person gathering that occurs about once a quarter. There isn’t a speaker for these events; instead, we focus on networking and casual conversations about what everyone is working on. These in-person meetings are only for residents of our city.</p>
-<p>Overall, this balance is working well for us. The online talks, which are also streamed to <a href="https://www.youtube.com/@slcrug/streams">YouTube</a>, make it easy for people to watch later if they’re interested. You can find all our recent discussions under the “Live” section on our channel. Meanwhile, the in-person meetings allow for valuable face-to-face interactions among local attendees.</p>
-</section>
-<section id="please-tell-us-about-the-organizing-team." class="level2">
-<h2 class="anchored" data-anchor-id="please-tell-us-about-the-organizing-team.">Please tell us about the organizing team.</h2>
-<p>Currently, <a href="https://www.linkedin.com/in/andrew-redd-202b5736/">Andrew Redd</a> and I are the only ones involved in organizing. We’ve had a few other people who have joined at various times but ultimately stepped away. Andrew was part of the team before I joined, back when he was at the university. Initially, our meetings took place on campus, but that posed challenges for those who didn’t work at the university. It was difficult to navigate, especially for newcomers who weren’t familiar with where to go and where to park.</p>
-<p>About seven or eight years ago, we decided to switch to using Meetup, allowing us to meet in different locations around the city that are more accessible for those who work downtown or aren’t on campus all day. I started helping with organizing the events around the same time.</p>
-<p>We’ve done reasonably well in terms of consistency, although we don’t have events every single month. We typically aim for most months, although we often take December and January off and slow down a bit in the summer. We strive to host either a talk or a networking event during those months, providing an opportunity for us to get together and connect.</p>
-</section>
-<section id="please-tell-us-about-a-recent-or-upcoming-event-from-your-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-tell-us-about-a-recent-or-upcoming-event-from-your-group.">Please tell us about a recent or upcoming event from your group.</h2>
-<p>We have two upcoming meetings scheduled! For our discussion today, I’ll highlight one event that took place in the past, so people can watch the video, and one that is coming up for anyone who wants to join us.</p>
-<p>Recently, we held a <a href="https://www.youtube.com/watch?v=IEAEvcnA9Hs">meetup in May</a>, with our primary focus on improving <a href="https://www.meetup.com/slc-rug/events/304955799/">Git practices</a>. We often find ourselves familiar only with the basic commands in Git—such as committing, pushing, and pulling—but there’s much more we can learn. The talk centered on enhancing our Git skills and strategies for troubleshooting difficult situations, which is something many of us struggle with.</p>
-<p>The session was well-attended, and participants appreciated the practical skills shared during the event. It was a great example of how our group aims to provide applied knowledge that is genuinely useful.</p>
-<p>Looking ahead, we have another exciting talk scheduled for the end of July. This presentation will delve into how we think about our data, specifically concerning data structures. We’ll explore the concept of <a href="https://www.meetup.com/slc-rug/events/307528267/">sparse data structures</a>, which are particularly common in machine learning contexts.</p>
-<p>For instance, with text data, certain words are used frequently while many others appear only a few times. This creates sparse data structures, where the majority of elements in a matrix are zero. Often, we don’t consider how our data is represented, but understanding this is crucial.</p>
-<p>This upcoming talk will explain how sparse data structures are integrated into the tidymodels framework, emphasizing the efficiency gains that can be achieved. By using sparse data structures, we can handle larger models that might otherwise be impossible to train on a standard computer due to memory constraints. I’m looking forward to this informative session!</p>
-<p><img src="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/SaltLakeCityOnlineMeetup.png" class="img-fluid"></p>
-</section>
-<section id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future" class="level2">
-<h2 class="anchored" data-anchor-id="any-techniques-you-recommend-using-for-planning-for-or-during-the-event-github-zoom-other-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-that-are-unable-to-attend-physical-events-in-the-future">Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?</h2>
-<p>A good approach for us is to block out time for planning. Instead of trying to plan every single month, we can dedicate time to creating a plan that covers the next four or five months. We always strive to highlight local speakers from the Salt Lake area, but not all of our speakers are local. So, we’ll consider who from our community has done something interesting recently.</p>
-<p>Additionally, we keep an eye out for interesting blog posts that inspire potential speakers. Our group is very friendly and open, providing an excellent opportunity for members to present initial versions of talks they’re working on. If someone has a critical conference approaching, we often invite them to give a practice version of their presentation here before they present at a larger event. This setup is beneficial for both our group and the speaker.</p>
-<p>We also stream our presentations on YouTube, making it easy for speakers to have a video link of their talk. If someone has a blog post they’ve created, we can help them by providing a video version of their work to share with their audience.</p>
-<p>To sum up, some helpful techniques we use include planning for four to five months at a time, sending out emails to potential speakers, and considering topics based on our work or interesting discussions we’ve had. Lastly, we aim to find individuals who could benefit from practice opportunities or who want to share their work. These are some of the techniques we employ.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>north america</category>
-  <guid>https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/</guid>
-  <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/julia-silge-on-fostering-a-technical-inclusive-r-community-in-salt-lake-city/JuliaSilge-main-image.png" medium="image" type="image/png" height="95" width="144"/>
 </item>
 </channel>
 </rss>
