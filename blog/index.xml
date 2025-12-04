@@ -71,6 +71,47 @@
   <media:content url="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>R Consortium announces JD Long as keynote speaker for R!sk 2026</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The R Consortium is pleased to announce that James “JD” Long, CTO at Palomar, a specialty insurance company serving residential and commercial clients in five product categories: Earthquake, Inland Marine and Other Property, Casualty, Fronting and Crop - and co-author of <em>R Cookbook: Proven Recipes for Data Analysis, Statistics, and Graphics</em>, will deliver the keynote address at R!sk 2026, an online conference taking place February 18–19, 2026.</p>
+<p>👉 R!sk 2026 is not just for insurance companies. It is for any domain that uses R to model, measure, and manage risk.</p>
+<p><img src="https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long.jpg" class="img-fluid" style="width:30.0%"></p>
+<p>R!sk 2026 is a new R Consortium event focused on how the R ecosystem is used to model, measure, and manage risk. The conference will be fully online and scheduled on US Eastern Time, with talks recorded and speakers participating in live Q&amp;A.</p>
+<section id="about-jd-long" class="level2">
+<h2 class="anchored" data-anchor-id="about-jd-long">About JD Long</h2>
+<p>JD Long is CTO at Palomar, He says “I’m the guy who can build a Monte Carlo model, help parallelize the model to run on cloud services and then stand in front of a group of business leaders and put the work in context where everyone understands. My super power is thinking probabilistically, understanding risk, and communicating clearly.”</p>
+<p>JD is widely known in the R community for his practical focus on building real-world risk and insurance models and for helping large organizations adopt R and modern analytics practices. He is a frequent speaker at R conferences and meetups, and his work has been featured in the R Journal and other publications.</p>
+<p>As co-author of <em>R Cookbook: Proven Recipes for Data Analysis, Statistics, and Graphics</em>, JD has helped thousands of R users solve everyday data and modeling problems. Through his talks and writing, he emphasizes probabilistic thinking, clear communication of uncertainty, and building analytics cultures that support experimentation and learning.</p>
+</section>
+<section id="about-rsk-2026" class="level2">
+<h2 class="anchored" data-anchor-id="about-rsk-2026">About R!sk 2026</h2>
+<p><strong>Dates:</strong> February 18–19, 2026</p>
+<p><strong>Format:</strong> 100% online</p>
+<p><strong>Focus:</strong> Using R to calculate, measure, report, and mitigate risk. NOT JUST IN INSURANCE BUT IN ANY DOMAIN.</p>
+<p><strong>Domains:</strong> financial risk, insurance, credit, operational risk, climate, healthcare, and more</p>
+<p><strong>Host:</strong> R Consortium</p>
+<p>The Call for Proposals is open through December 7, 2025. If you use R for risk modeling, reporting, or governance in any domain, you are encouraged to submit a proposal and help shape the inaugural R!sk 2026 program.</p>
+<p>More information, the Call for Proposals is available on the R!sk 2026 website:</p>
+<p><a href="https://rconsortium.github.io/Risk_website/">https://rconsortium.github.io/Risk_website/</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>insurance/risk</category>
+  <category>events</category>
+  <guid>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/</guid>
+  <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long-main-image.png" medium="image" type="image/png" height="92" width="144"/>
+</item>
+<item>
   <title>Connecting Pharma, Students, and R: Ronak Shah on Strengthening the Pune R Ecosystem</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/</link>
@@ -1508,54 +1549,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/</guid>
   <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/apply-now.png" medium="image" type="image/png" height="108" width="144"/>
-</item>
-<item>
-  <title>Spotify Stats and Real Estate Insights: R User Group Finland Builds Practical Projects</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/vboned/">Vicent Boned</a> and <a href="https://www.linkedin.com/in/marc-eixarch/">Marc Eixarch</a>, organizers of the <a href="https://www.meetup.com/r-user-group-finland/">R User Group Finland</a>, spoke with the R Consortium about how they revived the local R community by focusing on fun, practical applications of R. Drawing on their experience from Barcelona’s tech scene, they took over an inactive R group and began hosting engaging meetups focused on real-world applications of R. From building custom Spotify Wrapped-style reports to analyzing Helsinki’s real estate market, they’ve created a meetup environment where data enthusiasts can explore R through real-world use cases that go beyond the workplace.</p>
-<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandorganizers.png" class="img-fluid"></p>
-<p>L-R: Hazel Kavili (R-Ladies Helsinki Organizer), Marc Eixarch, Vicent Boned</p>
-<section id="please-share-your-background-and-involvement-in-the-rugs-group-or-the-r-community." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-in-the-rugs-group-or-the-r-community.">Please share your background and involvement in the RUGS group or the R Community.</h2>
-<p><strong>Vicent:</strong> I’m a data analyst. I first learned R in university and used it for 10 to 12 years. We used to live in Barcelona, a large city with a very active tech community. We were involved with the R user group and another popular meetup called Data Beers. It’s still running, but we’ve attended many of those events and enjoyed them.</p>
-<p>When we moved to Finland, I began searching for similar community activities, but I couldn’t find many. I found a meetup group, but it was inactive, so I reached out to the organizer. He told me he had moved out of Helsinki and was happy to pass on the group’s organization to someone new. That’s how we took over the R user group in Finland. We’re not Finnish, but now we’re working to organize events here and stay connected with other data analysts.</p>
-<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandLogo.png" class="img-fluid"></p>
-</section>
-<section id="whats-your-level-of-experience-with-the-r-language" class="level2">
-<h2 class="anchored" data-anchor-id="whats-your-level-of-experience-with-the-r-language">What’s your level of experience with the R language?</h2>
-<p><strong>Marc:</strong> I first encountered R in a university stats course, but I started working with it seriously once I became a data analyst. I’ve been in this role for approximately six or seven years, with a primary focus on data analysis. I work extensively with the <a href="https://www.tidyverse.org/">tidyverse</a> and <a href="https://ggplot2.tidyverse.org/">ggplot</a> for data visualization, preparation, and gathering data from various sources, such as APIs and databases. That’s my main strength in R.</p>
-<p>Occasionally, I take on small projects to explore more technical areas, such as package development, but in those areas, I’m more of a casual user than an expert. So, that’s a good summary of my experience level.</p>
-<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/MarcExirach.png" class="img-fluid"></p>
-<p><strong>Vicent:</strong> I’ve used R throughout my career, mainly for data analysis and visualization. While I’ve explored other packages through side projects, my current work primarily revolves around tidyverse, ggplot, and <a href="https://dplyr.tidyverse.org/">dplyr</a> for tables and reporting. At my company, we also utilize some Posit tools, such as <a href="https://rmarkdown.rstudio.com/">R Markdown</a>, and occasionally Shiny for prototyping.</p>
-<p>I used Shiny years ago in my second job when it was a new package. I didn’t work with it for many years after that, so it’s been exciting to see how much it has evolved. I’ve also attended several RStudio conferences, and it has been great to follow the development of the Tidyverse over time.</p>
-<p><img src="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/VicentBoned.png" class="img-fluid"></p>
-</section>
-<section id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-related-to-your-industry" class="level2">
-<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-working-on-or-have-worked-on-using-the-r-language.-what-is-the-goalreason-result-or-anything-interesting-related-to-your-industry">Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?</h2>
-<p><strong>Vicent:</strong> At work, I use R for almost everything. I work for a gaming company, so my job involves analyzing user behavior and understanding how they interact with the app. This involves a significant amount of data exploration and visualization, as we have a wealth of data on nearly every action users take in the game. I often present my findings to non-technical team members, so I use R to create reports and presentations with Quarto, which I then share with the team. Your day-to-day work looks quite similar!</p>
-<p>Recently—or, to be more precise, last year—I worked on a side project while searching for an apartment to buy in Helsinki. I used R to explore the real estate market, gathering data over a few months to track trends. I built a small tool to filter listings based on different criteria, which was helpful for my search.</p>
-<p><strong>Marc:</strong> I’ve worked on a few small side projects, usually based on things I’m curious about or enjoy. I’m really into music, and one time, I discovered an API that lets you access Spotify data using R. With it, you can pull public data from Spotify and even create your own “Spotify Wrapped” experience. I liked this use case so much that I turned it into a <a href="https://www.meetup.com/r-user-group-finland/events/291613918/?eventOrigin=group_events_list">workshop</a> for one of our events. I prepared a tutorial and shared the code in advance, and then about 10–15 of us walked through it together. Everyone can input their username to customize the script, which displays their top artists, playlist vibe, or other insights based on their Spotify data.</p>
-<p>We have posted the project on GitHub, making it available for anyone to review. It was especially noteworthy because one attendee, Antti, took the project a step further by expanding it into a web application. He added functionality that allows you to type in something like “sad, melancholic metal,” which suggests a fitting band or song. He got creative; we even got permission to share the app link. It was one of my favorite projects to see grow beyond the workshop! <a href="https://cran.r-project.org/web/packages/spotifyr/index.html">{spotifyr} on CRAN</a> and <a href="https://github.com/charlie86/spotifyr">on GitHub</a></p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/</guid>
-  <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandLogo-homepage.png" medium="image" type="image/png" height="172" width="144"/>
 </item>
 </channel>
 </rss>
