@@ -10,7 +10,66 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 02 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 04 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/uzairdatascientist/">Muhammad Uzair Aslam</a>, founder of the <a href="https://www.meetup.com/karachi-r-user-group/">Karachi R User Group</a>, spoke with the R Consortium about growing an open and volunteer-led R community in Pakistan—one of the first of its kind in the country. Since starting the group in 2023, Uzair has focused on building trust, increasing awareness of R, and creating accessible events for learners across cities. The R Consortium <a href="https://r-consortium.org/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html">spoke with Uzair about the Karachi R User Group’s work with R for Public Health Data Analysis previously</a>. This time, Uzair is sharing how the group has evolved from informal online meetups to hosting international speakers and publishing sessions on YouTube. He also discussed the community’s rising interest in tools like Quarto and ggplot2, recent consulting work in industrial forecasting using R, and the ongoing challenge of encouraging more local contributions.</p>
+<p><img src="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/UzairAslam.png" class="img-fluid" style="width:30.0%"></p>
+<section id="please-update-us-on-how-the-group-has-been-doing-since-we-last-spoke-and-share-your-experience." class="level2">
+<h2 class="anchored" data-anchor-id="please-update-us-on-how-the-group-has-been-doing-since-we-last-spoke-and-share-your-experience.">Please update us on how the group has been doing since we last spoke and share your experience.</h2>
+<p>Since we last spoke, our user group has made significant strides in growth and community engagement. We started this initiative in 2023 with just 10 to 15 members. During that first year, our focus was on building the foundation—introducing the concept of an open, volunteer-led R community in Pakistan, which was the first of its kind in the country. One of our key challenges early on was gaining trust and clarifying that these events are completely free and community-driven, with no commercial backing.</p>
+<p><img src="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" class="img-fluid"></p>
+<p>In 2024, we began organising more frequent and structured events, which led to a noticeable increase in interest and participation. Our commitment to consistency and open learning helped establish our reputation, and we gradually grew to a community of over 500 members—a major milestone for us.</p>
+<p>In 2025, we started inviting international speakers to bring in global perspectives and inspire our members. In April, we hosted <a href="https://www.linkedin.com/in/jeremy-horne-datacove/">Jeremy Horne</a>, an experienced R practitioner, whose talk was very well-received and added tremendous value to our growing community.</p>
+<p>While attendance started modestly at around 10 to 15 participants per session, we are now seeing numbers reach up to 20 attendees, reflecting a steady and encouraging upward trend. Overall, it’s been a rewarding journey, and we’re excited to continue expanding our reach and impact in the months ahead.</p>
+</section>
+<section id="are-you-hosting-all-your-events-online" class="level2">
+<h2 class="anchored" data-anchor-id="are-you-hosting-all-your-events-online">Are you hosting all your events online?&nbsp;</h2>
+<p>Currently, we are planning to host all our events online. The primary goal is to increase visibility and awareness of our meetup community and make participation more accessible for people across different cities. By focusing on building a consistent online presence, we aim to reach a wider audience and encourage regular engagement. Once we achieve a steady attendance of around 20 participants per session, we plan to transition into in-person meetups as well. Hosting physical events is one of our key objectives for this year, as it will allow us to strengthen community bonds and foster deeper collaboration among members.</p>
+</section>
+<section id="since-we-last-spoke-have-you-noticed-any-changes-in-the-r-community-in-pakistan-have-there-been-any-developments-or-shifts-in-how-r-is-being-adopted-or-perceived-locally" class="level2">
+<h2 class="anchored" data-anchor-id="since-we-last-spoke-have-you-noticed-any-changes-in-the-r-community-in-pakistan-have-there-been-any-developments-or-shifts-in-how-r-is-being-adopted-or-perceived-locally">Since we last spoke, have you noticed any changes in the R community in Pakistan? Have there been any developments or shifts in how R is being adopted or perceived locally?</h2>
+<p>Yes, since we last spoke, I’ve observed a noticeable and encouraging shift in the adoption of R within Pakistan. Through our regular community meetups and workshops, more individuals—especially students and early-career professionals—are beginning to explore and use R. While Python remains popular, our efforts in hosting free workshops and open community sessions have helped introduce R to a broader audience. This has contributed to a positive shift in perception across both industry and academia.</p>
+<p>In academic circles, students increasingly find R accessible for statistical computing, data analysis, and academic publishing, thanks to its rich ecosystem of packages and reproducible reporting tools like Quarto. In the industry, there’s a gradual but growing recognition of R’s value, particularly in domains that require strong statistical modelling and data visualisation. Overall, the R community in Pakistan is slowly but steadily expanding, with a growing sense of curiosity, collaboration, and openness to learning.</p>
+</section>
+<section id="have-you-faced-specific-challenges-in-organising-this-group-so-far-are-there-any-tools-or-techniques-that-have-been-particularly-helpful-to-you" class="level2">
+<h2 class="anchored" data-anchor-id="have-you-faced-specific-challenges-in-organising-this-group-so-far-are-there-any-tools-or-techniques-that-have-been-particularly-helpful-to-you">Have you faced specific challenges in organising this group so far? Are there any tools or techniques that have been particularly helpful to you?</h2>
+<p>Building and organising our community has come with its fair share of challenges. One of the most persistent issues has been the lack of speaker availability. It’s often difficult to motivate individuals to present their work or actively participate in discussions. While I’ve delivered several talks myself—both within Pakistan and internationally—encouraging others to step up and share their knowledge remains a tough task. Another major challenge is attracting and retaining attendees. To address this, I created a dedicated <a href="https://www.linkedin.com/company/karachi-r-user-group/">LinkedIn page</a> for the Karachi User Group last year, aimed at raising awareness and promoting our meetups. Despite these efforts, generating consistent interest and boosting attendance continues to be an ongoing effort.</p>
+<p>To improve engagement, I’ve been leveraging multiple social media platforms, including Facebook, LinkedIn, and WhatsApp, where I regularly post event updates in relevant groups. The WhatsApp group, in particular, has helped foster better communication and a sense of community among members. More recently, we launched a <a href="https://www.youtube.com/@Karachi_R_User_Group">YouTube</a> channel where we upload recordings of all our meetups. This not only ensures accessibility for those who can’t attend live but also helps us build a wider presence online. These tools and strategies have been instrumental in addressing some of our key challenges and continue to shape the way we grow our community.</p>
+</section>
+<section id="you-hosted-a-meetup-titled-reporting-champions-trophy-data-using-quarto-and-r-can-you-share-more-on-the-topic-covered-why-this-topic" class="level2">
+<h2 class="anchored" data-anchor-id="you-hosted-a-meetup-titled-reporting-champions-trophy-data-using-quarto-and-r-can-you-share-more-on-the-topic-covered-why-this-topic">You hosted a Meetup titled “<a href="https://www.youtube.com/watch?v=vIrSy5AXrz0">Reporting Champions Trophy Data using Quarto and R</a>,” can you share more on the topic covered? Why this topic?</h2>
+<p><img src="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/ChampionsTrophyDatausingR.png" class="img-fluid"></p>
+<p>We recently hosted an engaging talk on our Meetup group by <a href="https://www.linkedin.com/in/zahid-asghar/">Dr.&nbsp;Zahid Asghar</a> from Islamabad University titled “Reporting Champions Trophy Data using Quarto and R.” The session introduced the community to Quarto as a modern tool for creating parameterised, automated, and visually rich reports. Using real-world data from the ESPN Cricinfo API, Dr.&nbsp;Zahid demonstrated how to generate customised player statistics reports—blending R’s data manipulation capabilities with Quarto’s dynamic reporting features. This topic was chosen to help data professionals move beyond static dashboards and adopt reproducible, scalable reporting workflows, and it was well-received by attendees for its practical relevance and clarity.</p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
+<p>At <a href="https://www.statdevs.com/">Stat Devs</a>, one of our recent consulting projects involved developing a long-term demand forecasting model for <a href="https://ffc.com.pk/">Fauji Fertiliser Company (FFC)</a>, using the R programming language. The goal was to project Urea sales demand for the next 15 years based on 29 years of historical data. We used multiple time series regression models in R, incorporating economic indicators like Gross Domestic Product (GDP) and external variables such as Cropped Acreage and Water Availability. R proved particularly effective due to its strong statistical modelling capabilities and advanced visualisation tools like <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, which helped us uncover meaningful patterns and clearly communicate insights. The resulting forecasts supported FFC’s capacity planning and strategic decision-making, demonstrating the real-world value of R in industrial analytics.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>software development</category>
+  <category>asia</category>
+  <guid>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/</guid>
+  <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Connecting Pharma, Students, and R: Ronak Shah on Strengthening the Pune R Ecosystem</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1497,69 +1556,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/</guid>
   <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/RUGFinlandLogo-homepage.png" medium="image" type="image/png" height="172" width="144"/>
-</item>
-<item>
-  <title>How R Powers Cancer Research and Community Teaching in Austria</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/ekaterina-akimova-7727801a6/">Ekaterina Akimova-Höpner</a>, founder of the <a href="https://www.meetup.com/rladies-salzburg/">R-Ladies Salzburg</a> chapter, recently spoke with the R Consortium about using R to support cutting-edge cancer research and building a local R community in Austria. Ekaterina shared how she uses R for data preprocessing, statistical modeling, and visualizing high-dimensional genomic datasets. She discussed the launch of R-Ladies Salzburg in 2024, the importance of hands-on workshops for early-career researchers, and how scientific collaboration continues to shape her approach to community building. She also highlighted her talk last year at the useR! Conference 2024, where she presented tools for reproducible research in biomedical science.</p>
-<p><img src="https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/EkaterinaAkimova.png" class="img-fluid" style="width:50.0%"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>I come from a background in medical biology, with a strong focus on cancer research. I completed my PhD at the University of Salzburg, where I investigated tumor genetics and immune evasion mechanisms, particularly in leukemia, with a focus on chronic lymphocytic leukemia. Initially, my work was purely wet lab-based, but it quickly evolved into a combination of both experimental and computational biology. This dual focus naturally led me to the R programming environment, which has become an essential part of my daily work.</p>
-<p>During my doctoral studies, I started using R for statistical analysis and data visualization. As my projects became more complex and my research questions grew more intricate, I began building pipelines and analysis workflows in R, utilizing packages from Bioconductor, Tidyverse, and various other resources.</p>
-<p>My passion for the language and the broader community grew as I discovered the power and accessibility of the R environment. This enthusiasm ultimately led me to establish the R-Ladies Salzburg chapter last year, in 2024, as there were no local user groups in the area.</p>
-<p>At that time, it felt right to organize a group explicitly focused on supporting gender minorities in tech and science. I noticed a significant gap in the community that I was eager to fill. Establishing this chapter provided me with the invaluable opportunity to create an inclusive space for women in the science and data science communities in Salzburg.</p>
-<p>In our first year, 2024, I planned and organized four meetups, ranging from beginner R workshops to networking events. During this time, I connected with members and organizers from all over the world, which was an enriching experience. I was fortunate to be involved in organizing last year’s useR! conference, which took place in Salzburg. One of my most rewarding moments was presenting my R package, which is in development for analyzing amplicon sequence data. I was honored to receive the Best Poster award, and the positive feedback I received strengthened my desire to give back to the community and support others on their R journey.</p>
-<p><img src="https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/useR2024Conference.png" class="img-fluid" style="width:50.0%"></p>
-<p>Being part of the R-Ladies global community has broadened my horizons, and I have improved my public speaking, mentorship, and event organization skills.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-austria" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-austria">Can you share what the R community is like in Austria?</h2>
-<p><img src="https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/RLadiesSalzburgLogo.png" class="img-fluid" style="width:50.0%"></p>
-<p>R is actively used in various fields, particularly in academia and banking. While there are several user groups in Austria, they are mainly concentrated in the eastern part of the country, with Salzburg having a smaller presence. For instance, the <a href="https://www.meetup.com/viennar/">Vienna R User Group</a>, along with <a href="https://www.meetup.com/rladies-vienna/">R-Ladies Vienna</a>, represents a large community with which I’ve had the pleasure of connecting. However, organizing in-person events in the western region, particularly in Salzburg, is still a challenge. I see an opportunity to facilitate in-person meetings for those living in this area, helping to grow the local community.</p>
-</section>
-<section id="what-challenges-have-you-faced-in-organizing-the-group" class="level2">
-<h2 class="anchored" data-anchor-id="what-challenges-have-you-faced-in-organizing-the-group">What challenges have you faced in organizing the group?</h2>
-<p>The first challenge we faced was working with the Meetup platform, which is the tool of choice for R user group meetups. It isn’t very well established, so not many people are familiar with it. In addition to Meetup, we also use Slack and <a href="https://www.linkedin.com/company/r-ladies-salzburg/">LinkedIn</a> for communication. While Meetup does send notifications to those who sign up, it is challenging to reach a new audience through it. Therefore, enhancing our presence on LinkedIn will help ensure that more people are aware of our events.</p>
-</section>
-<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
-<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
-<p>Let me share my project on detecting complex rearrangements in next-generation sequencing data. The project aims to create a tool for detecting and characterizing complex genomic rearrangements, specifically templated sequence insertions, duplications, and inversions, using next-generation sequencing data. Previous studies have demonstrated that aberrant DNA double-strand break repair is a common feature in various types of cancer. In our earlier research, we discovered that these breaks can lead to genomic alterations that are not captured by standard variant-calling tools currently in use. For instance, we found evidence that high intracellular dNTP levels, observed in SAMHD1-deficient cells, promote increased templated sequence insertions.</p>
-<p><img src="https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/NGSDataProject.png" class="img-fluid"></p>
-<p>To quantify and characterize these events, we needed a pipeline capable of handling these datasets and performing filtering, characterization, and visualization. I chose to use R for this task because I felt more confident programming in R at the time. I developed an R-based pipeline utilizing packages from Bioconductor, including <a href="https://bioconductor.org/packages/release/bioc/html/IRanges.html">IRanges</a> and <a href="https://bioconductor.org/packages/release/bioc/html/GenomicRanges.html">GenomicRanges</a>, along with base R and the <a href="https://www.tidyverse.org/">Tidyverse</a>.</p>
-<p>The package takes over after the initial preprocessing steps of sequencing data, which include trimming, stitching, and BLAST alignment. It processes data downstream to detect sequence aberrations directly from FASTQ sequences or BLAST results, depending on what the research requires. One of the key features of our pipeline is the self-comparison metrics algorithm, which identifies internal duplications within the sequence reads.</p>
-<p>Currently, the project isn’t widely available on the market, but it is in progress. Parts of it have been published, and we are using the packages internally at the institute. The goal is to submit it to <a href="https://www.bioconductor.org/">Bioconductor</a> once it is fully completed, and we are nearing that finish line.</p>
-<p>This project primarily aimed to answer our main research question, and we successfully achieved this goal. We applied the same pipeline to other projects to address similar questions, focusing on how to significantly reduce the frequency of duplications while suggesting a novel role of a specific protein in maintaining genomic stability. The clinical relevance of these findings will be determined through future studies.</p>
-<p>This project has significantly expanded my understanding of genomic structures and the approach to addressing these questions through programming. It has enabled me to visualize and filter out genomic aberrations, thereby clarifying biologically relevant findings.</p>
-</section>
-<section id="is-this-an-ongoing-project-please-share-any-details-or-cta-for-who-should-get-involved" class="level2">
-<h2 class="anchored" data-anchor-id="is-this-an-ongoing-project-please-share-any-details-or-cta-for-who-should-get-involved">Is this an ongoing project? Please share any details or CTA for who should get involved!</h2>
-<p>My main current project marks my first step into self-employment, leveraging my expertise in academic research, biomedicine, and data science, with a focus on consulting and science education. A significant aspect of this project involves teaching data literacy and programming, particularly using R, to complete beginners, including those from non-technical backgrounds such as the humanities, social sciences, and creative disciplines. I’m currently developing a course for absolute beginners, designed to demystify data tools and help learners build confidence through hands-on, approachable content.</p>
-<p>What makes this project meaningful to me is that I’m not just teaching code, I’m guiding people through the anxiety of starting something new, helping them see that they don’t have to be math geniuses or seasoned programmers to understand data. I aim to help people feel empowered, not intimidated, by the world of data.</p>
-<p>To complement this technical side, I’m also working on a course called “Mindful Doctorate,” which addresses the emotional challenges of doing a PhD. It’s based on my own academic experiences and the conversations I’ve had with peers. Many doctoral candidates struggle silently with imposter syndrome or isolation. This course will offer practical strategies for navigating that journey with greater mental clarity.</p>
-<p>The common thread is to bridge technical knowledge with human communication and resilience. Learning should not only make you smarter, but also stronger and more self-aware.</p>
-<p>Long-term, this will evolve into a hybrid offering, comprising online courses, live workshops, community-based projects, and one-on-one mentoring or consulting in research workflows. I’m particularly interested in collaborating with clients or institutions that aim to integrate data skills into interdisciplinary settings.</p>
-<p>To summarize, my ongoing project primarily focuses on helping people find ways to realize their ideas or research objectives and to understand their data. So, whether you are analyzing a complex dataset, managing a project in the wet lab, or searching for a novel solution, feel free to connect with me on LinkedIn, and I’d be happy to chat.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">Learn more</a></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/</guid>
-  <pubDate>Wed, 20 Aug 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/EkaterinaAkimova.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
