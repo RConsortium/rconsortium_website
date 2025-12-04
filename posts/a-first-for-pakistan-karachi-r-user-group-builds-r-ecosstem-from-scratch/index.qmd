@@ -1,3 +1,4 @@
+
 ---
 title: "A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch"
 unpublished: false
@@ -5,7 +6,6 @@ url: "https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-b
 description: "Muhammad Uzair Aslam, founder of the Karachi R User Group, spoke with the R Consortium about growing an open and volunteer-led R community in Pakistan—one of the first of its kind in the country."
 author: "R Consortium"
 categories: ["rugs", "software development", "asia"]
-author: "R Consortium"
 image: "KarachiRUGlogo.png"
 image-alt: "picture of Karachi R User Group logo"
 date: "12/04/2025"
@@ -13,7 +13,7 @@ date: "12/04/2025"
 
 [Muhammad Uzair Aslam](https://www.linkedin.com/in/uzairdatascientist/), founder of the [Karachi R User Group](https://www.meetup.com/karachi-r-user-group/), spoke with the R Consortium about growing an open and volunteer-led R community in Pakistan—one of the first of its kind in the country. Since starting the group in 2023, Uzair has focused on building trust, increasing awareness of R, and creating accessible events for learners across cities. The R Consortium [spoke with Uzair about the Karachi R User Group’s work with R for Public Health Data Analysis previously](https://r-consortium.org/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html). This time, Uzair is sharing how the group has evolved from informal online meetups to hosting international speakers and publishing sessions on YouTube. He also discussed the community’s rising interest in tools like Quarto and ggplot2, recent consulting work in industrial forecasting using R, and the ongoing challenge of encouraging more local contributions.
 
-![](UzairAslam.png) {width=50%}
+![](UzairAslam.png){width=30%}
 
 ## Please update us on how the group has been doing since we last spoke and share your experience.
 
@@ -43,7 +43,7 @@ Building and organising our community has come with its fair share of challenges
 
 To improve engagement, I’ve been leveraging multiple social media platforms, including Facebook, LinkedIn, and WhatsApp, where I regularly post event updates in relevant groups. The WhatsApp group, in particular, has helped foster better communication and a sense of community among members. More recently, we launched a [YouTube](https://www.youtube.com/@Karachi_R_User_Group) channel where we upload recordings of all our meetups. This not only ensures accessibility for those who can’t attend live but also helps us build a wider presence online. These tools and strategies have been instrumental in addressing some of our key challenges and continue to shape the way we grow our community.
 
-## You hosted a Meetup titled “[Reporting Champions Trophy Data using Quarto and R](https://www.youtube.com/watch?v=vIrSy5AXrz0)”, can you share more on the topic covered? Why this topic?
+## You hosted a Meetup titled “[Reporting Champions Trophy Data using Quarto and R](https://www.youtube.com/watch?v=vIrSy5AXrz0),” can you share more on the topic covered? Why this topic?
 
 ![](ChampionsTrophyDatausingR.png)
 
