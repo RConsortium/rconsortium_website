@@ -1,0 +1,75 @@
+---
+title: "Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration"
+unpublished: false
+url: "https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages"
+description: "A milestone! FDA expands accepted R file formats, resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group."
+author: "R Consortium"
+categories: ["submissions", "pharma", "announcements"]
+image: "fda-logo-main-image.png"
+date: "12/08/2025"
+---
+
+# Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration
+
+![](fda-logo.jpg)
+
+Over the past several years, the [R Consortium Regulatory Submission Working Group](https://rconsortium.github.io/submissions-wg/) has conducted multiple pilots to explore and validate the use of R in regulatory submissions. One recurring challenge surfaced early in our work:
+
+**How should sponsors submit non-public R packages—especially those containing proprietary information—to the FDA?**
+
+For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1, our only feasible option was to convert an R package into a plain text bundle using [**pkglite**](https://cran.r-projeTct.org/web/packages/pkglite/index.html)—functional, but not ideal.
+
+---
+
+## **A Milestone: FDA Expands Accepted R File Formats**
+
+### **Resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group**
+
+We are pleased to share that the FDA has expanded its list of acceptable file formats to better support R workflows.
+
+This update—found in the August 2025 revision of the *FDA eCTD Technical Conformance Guide* ([link to guidance](https://www.fda.gov/media/85816/download?attachment))—was directly informed by multi-year collaboration between industry partners and FDA reviewers participating in the R Consortium Regulatory Submission Working Group.
+
+Through joint pilots, repeated feedback, and hands-on testing, FDA colleagues gained deeper visibility into how R packages are used and what formats are needed to preserve functionality and reproducibility.
+
+### **The 2025-08-20 update includes:**
+
+**Section 9.3 – Updated references**  
+ Newly accepted Modeling & Simulation file types:  
+ `.rds`, `.rdb`, `.rdx`, `.rdata` / `.rda`, `.md`, `.rd` (for delivering R packages)
+
+Expanded permissible use of:  
+ `.zip` and `.html` (for delivering full R packages)
+
+This means:
+
+**Sponsors can now submit non-public R packages directly as a .zip file.**
+
+This significantly reduces friction for organizations that rely on internal or proprietary R packages as part of their submission workflows.
+
+---
+
+## **Recommendation: Open-Source When Possible**
+
+Although submitting proprietary R packages is now easier, the Working Group continues to strongly recommend that organizations **open-source their R packages whenever feasible**.
+
+Reasons include:
+
+**Reproducibility**  
+ Public repositories (e.g., CRAN, GitHub) allow FDA reviewers and other users to retrieve, install, and verify dependencies reliably.
+
+**Transparency in dependency handling**  
+ Open-source packages minimize hidden or fragile dependency structures, supporting long-term reproducibility.
+
+**Trust and community validation**  
+ Open-source tools benefit from broader testing, feedback, and shared maintenance.
+
+**Sustainability**  
+ Packages with a public footprint are more likely to be updated and maintained over time, benefiting the entire community.
+
+In summary, while the updated guidance provides much-needed flexibility, open-source remains the most reliable path for transparency, reproducibility, and trust.
+
+---
+
+## **Looking Ahead**
+
+This guidance update reflects what can be achieved when industry experts and FDA reviewers work collaboratively to improve regulatory science infrastructure. The R Consortium Submissions Working Group will continue strengthening this partnership to ensure that R-based analysis workflows remain secure, reproducible, and reviewer-friendly. To learn more about the working group, visit: [https://rconsortium.github.io/submissions-wg/](https://rconsortium.github.io/submissions-wg/)  
