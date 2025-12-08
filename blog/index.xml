@@ -10,7 +10,76 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 04 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 08 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="expanded-fda-ectd-file-format-support-for-r-packages-a-milestone-achieved-through-industryfda-collaboration" class="level1">
+<h1>Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</h1>
+<p><img src="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo.jpg" class="img-fluid"></p>
+<p>Over the past several years, the <a href="https://rconsortium.github.io/submissions-wg/">R Consortium Regulatory Submission Working Group</a> has conducted multiple pilots to explore and validate the use of R in regulatory submissions. One recurring challenge surfaced early in our work:</p>
+<p><strong>How should sponsors submit non-public R packages—especially those containing proprietary information—to the FDA?</strong></p>
+<p>For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1, our only feasible option was to convert an R package into a plain text bundle using <a href="https://cran.r-projeTct.org/web/packages/pkglite/index.html"><strong>pkglite</strong></a>—functional, but not ideal.</p>
+<hr>
+<section id="a-milestone-fda-expands-accepted-r-file-formats" class="level2">
+<h2 class="anchored" data-anchor-id="a-milestone-fda-expands-accepted-r-file-formats"><strong>A Milestone: FDA Expands Accepted R File Formats</strong></h2>
+<section id="resulting-directly-from-joint-work-between-industry-and-fda-through-the-r-consortium-submissions-working-group" class="level3">
+<h3 class="anchored" data-anchor-id="resulting-directly-from-joint-work-between-industry-and-fda-through-the-r-consortium-submissions-working-group"><strong>Resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group</strong></h3>
+<p>We are pleased to share that the FDA has expanded its list of acceptable file formats to better support R workflows.</p>
+<p>This update—found in the August 2025 revision of the <em>FDA eCTD Technical Conformance Guide</em> (<a href="https://www.fda.gov/media/85816/download?attachment">link to guidance</a>)—was directly informed by multi-year collaboration between industry partners and FDA reviewers participating in the R Consortium Regulatory Submission Working Group.</p>
+<p>Through joint pilots, repeated feedback, and hands-on testing, FDA colleagues gained deeper visibility into how R packages are used and what formats are needed to preserve functionality and reproducibility.</p>
+</section>
+<section id="the-2025-08-20-update-includes" class="level3">
+<h3 class="anchored" data-anchor-id="the-2025-08-20-update-includes"><strong>The 2025-08-20 update includes:</strong></h3>
+<p><strong>Section 9.3 – Updated references</strong><br>
+Newly accepted Modeling &amp; Simulation file types:<br>
+<code>.rds</code>, <code>.rdb</code>, <code>.rdx</code>, <code>.rdata</code> / <code>.rda</code>, <code>.md</code>, <code>.rd</code> (for delivering R packages)</p>
+<p>Expanded permissible use of:<br>
+<code>.zip</code> and <code>.html</code> (for delivering full R packages)</p>
+<p>This means:</p>
+<p><strong>Sponsors can now submit non-public R packages directly as a .zip file.</strong></p>
+<p>This significantly reduces friction for organizations that rely on internal or proprietary R packages as part of their submission workflows.</p>
+<hr>
+</section>
+</section>
+<section id="recommendation-open-source-when-possible" class="level2">
+<h2 class="anchored" data-anchor-id="recommendation-open-source-when-possible"><strong>Recommendation: Open-Source When Possible</strong></h2>
+<p>Although submitting proprietary R packages is now easier, the Working Group continues to strongly recommend that organizations <strong>open-source their R packages whenever feasible</strong>.</p>
+<p>Reasons include:</p>
+<p><strong>Reproducibility</strong><br>
+Public repositories (e.g., CRAN, GitHub) allow FDA reviewers and other users to retrieve, install, and verify dependencies reliably.</p>
+<p><strong>Transparency in dependency handling</strong><br>
+Open-source packages minimize hidden or fragile dependency structures, supporting long-term reproducibility.</p>
+<p><strong>Trust and community validation</strong><br>
+Open-source tools benefit from broader testing, feedback, and shared maintenance.</p>
+<p><strong>Sustainability</strong><br>
+Packages with a public footprint are more likely to be updated and maintained over time, benefiting the entire community.</p>
+<p>In summary, while the updated guidance provides much-needed flexibility, open-source remains the most reliable path for transparency, reproducibility, and trust.</p>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead"><strong>Looking Ahead</strong></h2>
+<p>This guidance update reflects what can be achieved when industry experts and FDA reviewers work collaboratively to improve regulatory science infrastructure. The R Consortium Submissions Working Group will continue strengthening this partnership to ensure that R-based analysis workflows remain secure, reproducible, and reviewer-friendly. To learn more about the working group, visit: <a href="https://rconsortium.github.io/submissions-wg/">https://rconsortium.github.io/submissions-wg/</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>submissions</category>
+  <category>pharma</category>
+  <category>announcements</category>
+  <guid>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/</guid>
+  <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo-main-image.png" medium="image" type="image/png" height="85" width="144"/>
+</item>
 <item>
   <title>A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1473,82 +1542,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/</guid>
   <pubDate>Wed, 10 Sep 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/oracle-machine-learning-header.png" medium="image" type="image/png" height="49" width="144"/>
-</item>
-<item>
-  <title>🚀 R Consortium Technical Grant Cycle Opens Today — Your Chance to Make a Mark</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>It’s official: the R Consortium Infrastructure Steering Committee (ISC) has opened the second grant cycle of 2025 today, September 1, 2025. If you’ve ever thought, <em>“I have an idea that could make life better for R users everywhere”</em>, this is your chance.</p>
-<section id="call-for-proposals" class="level2">
-<h2 class="anchored" data-anchor-id="call-for-proposals"><a href="https://r-consortium.org/all-projects/callforproposals.html">Call for Proposals</a></h2>
-<hr>
-</section>
-<section id="what-the-isc-is-looking-for" class="level2">
-<h2 class="anchored" data-anchor-id="what-the-isc-is-looking-for"><strong>What the ISC Is Looking For</strong></h2>
-<p>The ISC focuses projects that deliver practical impact for the R community:</p>
-<ul>
-<li><strong>Tools and packages</strong> that smooth workflows and make R more powerful.<br>
-</li>
-<li><strong>Education resources</strong> like documentation, tutorials, reproducible workflows.<br>
-</li>
-<li><strong>Infrastructure</strong> that connects people, supports open science, or broadens access.</li>
-</ul>
-<p>The sweet spot? Proposals that are clear, scoped, and realistic. Don’t over-promise—break down big ideas into digestible, doable steps.</p>
-<p>High-risk, high-reward moonshots aren’t the target here. ISC grants back low-to-medium-risk projects with clear deliverables. A bit of work done already—sketches, prototypes, drafts—shows you’re ready to go.</p>
-<hr>
-</section>
-<section id="whats-not-covered" class="level2">
-<h2 class="anchored" data-anchor-id="whats-not-covered"><strong>What’s Not Covered</strong></h2>
-<p>Just so you don’t waste your time: events, conferences, and meetups belong under the <a href="https://r-consortium.org/all-projects/rugsprogram.html"><strong>RUGS funding program</strong></a>, not this one. ISC grants are for infrastructure and technical or social projects that scale across the community.</p>
-<hr>
-</section>
-<section id="how-to-apply" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-apply"><strong>How to Apply</strong></h2>
-<ol type="1">
-<li>Download and use the ISC proposal template.<br>
-</li>
-<li>Build your submission as a single PDF—self-contained and clear.<br>
-</li>
-<li>Submit it through the Google Form (yes, you’ll need a Google account).<br>
-</li>
-<li>Look for a confirmation email with a subject <em>“Thank you for your proposal!”</em>—and check spam if you don’t see it.</li>
-</ol>
-<p>Bonus tip: Read the ISC’s standard agreement now so you’re not surprised later.</p>
-<hr>
-</section>
-<section id="why-bother-because-this-is-big" class="level2">
-<h2 class="anchored" data-anchor-id="why-bother-because-this-is-big"><strong>Why Bother? Because This Is Big</strong></h2>
-<p>This is one of only <strong>two ISC grant windows per year</strong>. Grants get paid in two chunks—half when you sign, half when you finish—so you know you’ll be supported from the start through the finish line.</p>
-<p>Over the past few years, ISC grants have funded projects that strengthened core R tools, expanded internationalization, improved documentation, and built bridges across the ecosystem. It’s not just about money—it’s about visibility, credibility, and lasting community impact.</p>
-<p>When you’re funded, your work gets showcased to the global R community. You’re not just solving your own problem—you’re leveling up tools and workflows for thousands of R users worldwide.</p>
-<hr>
-</section>
-<section id="time-to-jump-in" class="level2">
-<h2 class="anchored" data-anchor-id="time-to-jump-in"><strong>Time to Jump In</strong></h2>
-<p>If you’ve been tinkering on a package, sketching a new teaching resource, thinking of ways to make R more inclusive, or dreaming of infrastructure that smooths collaboration—this is your launchpad.</p>
-<p>Don’t hold back. Share your idea, shape it into a proposal, and send it in.</p>
-<p><strong>Submissions close October 1.</strong></p>
-<p>Your idea could be the one that pushes the R ecosystem forward!</p>
-</section>
-<section id="call-for-proposals-1" class="level2">
-<h2 class="anchored" data-anchor-id="call-for-proposals-1"><a href="https://r-consortium.org/all-projects/callforproposals.html">Call for Proposals</a></h2>
-
-
-</section>
-
- ]]></description>
-  <category>grants</category>
-  <category>infrastructure</category>
-  <category>community</category>
-  <guid>https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/</guid>
-  <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r-consortium-technical-grant-cycle-opens-today/apply-now.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
