@@ -9,8 +9,6 @@ image: "fda-logo-main-image.png"
 date: "12/08/2025"
 ---
 
-# Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration
-
 ![](fda-logo.jpg)
 
 Over the past several years, the [R Consortium Regulatory Submission Working Group](https://rconsortium.github.io/submissions-wg/) has conducted multiple pilots to explore and validate the use of R in regulatory submissions. One recurring challenge surfaced early in our work:
