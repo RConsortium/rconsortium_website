@@ -21,8 +21,6 @@
 
 
 
-<section id="expanded-fda-ectd-file-format-support-for-r-packages-a-milestone-achieved-through-industryfda-collaboration" class="level1">
-<h1>Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</h1>
 <p><img src="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo.jpg" class="img-fluid"></p>
 <p>Over the past several years, the <a href="https://rconsortium.github.io/submissions-wg/">R Consortium Regulatory Submission Working Group</a> has conducted multiple pilots to explore and validate the use of R in regulatory submissions. One recurring challenge surfaced early in our work:</p>
 <p><strong>How should sponsors submit non-public R packages—especially those containing proprietary information—to the FDA?</strong></p>
@@ -69,7 +67,6 @@ Packages with a public footprint are more likely to be updated and maintained ov
 <p>This guidance update reflects what can be achieved when industry experts and FDA reviewers work collaboratively to improve regulatory science infrastructure. The R Consortium Submissions Working Group will continue strengthening this partnership to ensure that R-based analysis workflows remain secure, reproducible, and reviewer-friendly. To learn more about the working group, visit: <a href="https://rconsortium.github.io/submissions-wg/">https://rconsortium.github.io/submissions-wg/</a></p>
 
 
-</section>
 </section>
 
  ]]></description>
