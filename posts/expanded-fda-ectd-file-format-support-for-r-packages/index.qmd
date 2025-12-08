@@ -17,7 +17,7 @@ Over the past several years, the [R Consortium Regulatory Submission Working Gro
 
 **How should sponsors submit non-public R packages—especially those containing proprietary information—to the FDA?**
 
-For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1, our only feasible option was to convert an R package into a plain text bundle using [**pkglite**](https://cran.r-projeTct.org/web/packages/pkglite/index.html)—functional, but not ideal.
+For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1, our only feasible option was to convert an R package into a plain text bundle using [**pkglite**](https://cran.r-project.org/package=pkglite)—functional, but not ideal.
 
 ---
 
