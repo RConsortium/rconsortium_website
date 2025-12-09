@@ -2,10 +2,8 @@
 title: "Growing an R Community in a Shifting Tech Landscape: The Story of R-Ladies Zurich"
 unpublished: false
 url: "https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich"
-description: "Luisa Barbanti, organizer of R-Ladies Zurich, recently spoke with the R Consortium about building and sustaining a technically focused R community in Switzerland."
-author: "R Consortium"
-categories: ["rugs", "software development", "eu"]
-author: "R Consortium"
+description: "Luisa Barbanti, organizer of R-Ladies Zurich, shares how her team keeps a technically focused R community thriving in Switzerland as tools, workplaces, and expectations evolve. From meetup formats and speaker selection to mentorship and inclusion, she reflects on what it takes to grow a sustainable R community today."
+categories: ["rugs", "eu"]
 image: "RLadiesZurich.png"
 image-alt: "picture of R-Ladies Zurich organizers"
 date: "12/09/2025"
@@ -21,7 +19,7 @@ My name is Luisa, and I am based in Zurich because I started my studies here. Wh
 
 Zurich has a very active R community, including an [R User Group](https://www.meetup.com/zurich-r-user-group/). Being in this environment where everyone was engaged with R was inspiring. I started attending the R User Group meetings regularly. Eventually, I began a PhD in biostatistics at the University of Zurich, where working with R became a significant part of my daily responsibilities. I had tasks that required creating functions and packages in R.
 
-My supervisor encouraged me to attend the [useR conference](https://user2020.r-project.org/). Initially, the conference was scheduled to take place in Zurich in 2020, but it was converted to an online format due to the COVID-19 pandemic. In 2021, I attended the conference remotely and participated in an R-Ladies meeting for the first time. Although it was an online event, I was impressed by the atmosphere. 
+My supervisor encouraged me to attend the [useR! conference](https://user2020.r-project.org/). Initially, the conference was scheduled to take place in Zurich in 2020, but it was converted to an online format due to the COVID-19 pandemic. In 2021, I attended the conference remotely and participated in an R-Ladies meeting for the first time. Although it was an online event, I was impressed by the atmosphere. 
 
 During the meeting, I recognized one of my acquaintances from Zurich, [Seraphina](https://www.linkedin.com/in/seraphina-kissling-625048197/), who had a master's in biostatistics. We struck up a conversation about how great the meeting was and wondered if there was an R-Ladies chapter in Zurich. To our surprise, we discovered there wasn't one. There were no active R-Ladies chapters in Switzerland at that time; some had been started but had unfortunately ceased their activities. 
 
@@ -77,6 +75,6 @@ This situation may not be the most exciting news, but it’s an essential realit
 
 ## How do I Build an R User Group?
 
-R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in close to 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
 
 [https://r-consortium.org/all-projects/rugsprogram.htm](https://r-consortium.org/all-projects/rugsprogram.html)
