@@ -10,7 +10,73 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 08 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 09 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Growing an R Community in a Shifting Tech Landscape: The Story of R-Ladies Zurich</title>
+  <link>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/luisa-barbanti/?originalSubdomain=ch">Luisa Barbanti</a>, organizer of <a href="https://www.meetup.com/rladies-zurich/">R-Ladies Zurich</a>, recently spoke with the R Consortium about building and sustaining a technically focused R community in Switzerland. With a background in biostatistics and professional experience at a data science consultancy, Luisa shared how she utilizes R for data wrangling, statistical modeling, and internal tooling, leveraging Quarto and Shiny. She discussed the evolution of R-Ladies Zurich and highlighted the challenges of maintaining momentum as community members transition through different phases of their careers.</p>
+<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/LuisaBarbanti.png" class="img-fluid" style="width:50.0%"></p>
+<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
+<p>My name is Luisa, and I am based in Zurich because I started my studies here. While studying mathematics, I developed an interest in statistics. I realized that to pursue this field, I needed to learn R, a programming language essential for statistical work. I began to explore R by taking classes and practicing with it.</p>
+<p>Zurich has a very active R community, including an <a href="https://www.meetup.com/zurich-r-user-group/">R User Group</a>. Being in this environment where everyone was engaged with R was inspiring. I started attending the R User Group meetings regularly. Eventually, I began a PhD in biostatistics at the University of Zurich, where working with R became a significant part of my daily responsibilities. I had tasks that required creating functions and packages in R.</p>
+<p>My supervisor encouraged me to attend the <a href="https://user2020.r-project.org/">useR! conference</a>. Initially, the conference was scheduled to take place in Zurich in 2020, but it was converted to an online format due to the COVID-19 pandemic. In 2021, I attended the conference remotely and participated in an R-Ladies meeting for the first time. Although it was an online event, I was impressed by the atmosphere.&nbsp;</p>
+<p>During the meeting, I recognized one of my acquaintances from Zurich, <a href="https://www.linkedin.com/in/seraphina-kissling-625048197/">Seraphina</a>, who had a master’s in biostatistics. We struck up a conversation about how great the meeting was and wondered if there was an R-Ladies chapter in Zurich. To our surprise, we discovered there wasn’t one. There were no active R-Ladies chapters in Switzerland at that time; some had been started but had unfortunately ceased their activities.&nbsp;</p>
+<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurichLogo.png" class="img-fluid"></p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-switzerland" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-switzerland">Can you share what the R community is like in Switzerland?</h2>
+<p>There is a use for R, although I’m not sure about its prominence in industry. Official statistics at both the canton and federal levels often rely heavily on R. However, the industrial use of R can be a bit more challenging, primarily because many people are now using Python. It depends on what you want to do.&nbsp;</p>
+<p>I feel that with the rise of machine learning and AI, the role of R in industry has shifted. However, it is still included in university curricula. When pursuing a master’s degree in data science, students will encounter R at some point. This means that those entering the industry have at least a little experience working with R, but likely, they don’t use it in their everyday work. The people who do utilize R tend to be in a niche market, often focused on statistics. For instance, in risk analysis or research roles within the industry, R is still used, but it remains a more specialized tool.</p>
+<p>In my current role at a consulting firm specializing in data science, we utilize R because we recognize its power and the extent to which it can be leveraged.</p>
+<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" class="img-fluid"></p>
+<p>R-Ladies Zurich Organizers at the group’s second Anniversary</p>
+</section>
+<section id="what-industry-are-you-currently-in-how-do-you-use-r-in-your-work" class="level2">
+<h2 class="anchored" data-anchor-id="what-industry-are-you-currently-in-how-do-you-use-r-in-your-work">What industry are you currently in? How do you use R in your work?</h2>
+<p>I work at a data science consultancy where we primarily use R for all our projects. This includes data cleaning, producing graphs, and extracting relevant insights through modelling.&nbsp;</p>
+<p>We often work with large datasets and develop reporting tools using Markdown and Quarto to create presentations, even when they don’t involve R. However, when we do want to incorporate R elements, we can do so in a flexible manner.&nbsp;</p>
+<p>Furthermore, we have an entire ecosystem of <a href="https://shiny.posit.co/">Shiny</a> apps for internal use. For example, we have a system for tracking timesheets, where we collect the hours worked on various projects, along with the corresponding job codes. This data is automatically gathered and helps us produce invoices, as we can easily see how many hours each person has worked on specific tasks.</p>
+<p>While we are strong proponents of using R, this approach may be more of an exception than the norm. Nonetheless, R offers numerous capabilities that enable us to accomplish a wide range of tasks. Everything we do typically starts in RStudio, from which we work on various projects.</p>
+<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RyssaMoffat.png" class="img-fluid"></p>
+</section>
+<section id="how-has-the-local-community-responded-to-your-events-and-what-strategies-have-helped-you-grow-participation" class="level2">
+<h2 class="anchored" data-anchor-id="how-has-the-local-community-responded-to-your-events-and-what-strategies-have-helped-you-grow-participation">How has the local community responded to your events, and what strategies have helped you grow participation?</h2>
+<p>It’s been a positive journey for me and Seraphina, the co-founder of R-Ladies Zurich. During the early stages, I was deeply immersed in my PhD studies, which connected me with many individuals who used R. Meanwhile, Seraphina was working at a company that also utilized R and maintained ties to academia. This connection proved beneficial, as I was able to book university rooms for free, which helped us secure a venue for our events when we had limited funds.</p>
+<p>Initially, we relied on our networks to attract attendees to our events. As we began, people we knew showed interest, and gradually, we opened our events to newcomers. Platforms like <a href="https://www.linkedin.com/company/rladies-zurich/">LinkedIn</a> and <a href="https://www.instagram.com/rladieszurich/">Instagram</a> played a significant role in this growth. A friend of Seraphina, Tieu Khe, who specializes in marketing, helped us by creating a beautiful corporate identity for R-Ladies Zurich, which we still use today. This corporate identity has significantly enhanced our online visibility, enabling more people to discover us and participate in our events.</p>
+<p>Meetup has been crucial in this process; without it, many people wouldn’t be aware of our events. The platform notifies users via email about our upcoming gatherings, and we’ve seen numerous new attendees as a result. While many regulars continue to participate, we understand that people’s interests can shift, especially when they change fields or jobs, which may lead them to stop using R and consequently not attend our events.</p>
+<p>As for our upcoming events, we currently don’t have any specific ones lined up. However, we’re considering a joint event with the Zurich R User Group. Traditionally, we focus on interactive formats rather than frontal presentations, aiming to engage participants directly and encourage them to take an active role and get involved.</p>
+<p>Organizing these events requires considerable effort, and we’re currently facing a shortage of presenters. We do have one potential presenter in the pipeline, but the timeline remains uncertain. We have discussed collaborating with the Zurich R User Group to develop a workshop format for a larger audience, likely targeting the fall. Although we haven’t set a specific date yet, we anticipate being able to coordinate something after everyone returns from their summer vacations.</p>
+<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/R-LadiesZurichWomen'sDay.png" class="img-fluid"></p>
+<p>R-Ladies Zurich Co-hosted Panel Discussion with the Zurich R User Group on International Women’s Day 2024</p>
+</section>
+<section id="what-have-been-the-key-challenges-and-lessons-in-organizing-r-ladies-zurich-over-the-past-four-years" class="level2">
+<h2 class="anchored" data-anchor-id="what-have-been-the-key-challenges-and-lessons-in-organizing-r-ladies-zurich-over-the-past-four-years">What have been the key challenges and lessons in organizing R-Ladies Zurich over the past four years?</h2>
+<p>This is the fourth year we’ve been involved with this project, having started the chapter and managed it. We’re trying to figure out how to maintain some continuity, which has been one of our biggest challenges. People change, and their careers evolve. For instance, I still use R, but Céline, co-organiser of R-Ladies Zurich, is no longer using it.</p>
+<p>So, we’re considering how to sustain the community as people shift and change. Currently, we find ourselves in a transitional phase, attempting to define what this space represents. We have a Meetup group, but organizing events requires a lot of work, from finding locations to managing logistics. It’s becoming increasingly complex for me, especially since I’m no longer at the university.</p>
+<p>This situation may not be the most exciting news, but it’s an essential reality that every chapter faces: transitions and changes. Currently, we aren’t conducting online events. Otherwise, I would suggest that people follow us online. If you’re visiting Zurich and would like to connect, please don’t hesitate to reach out. It’s very easy to get in touch, and there’s a welcoming community here. Although R remains significant, it’s essential to acknowledge that many other programming languages also play a crucial role in keeping this community alive.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in close to 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>eu</category>
+  <guid>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/</guid>
+  <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1513,32 +1579,6 @@ How you can contribute: <a href="https://contributor.r-project.org/">https://con
   <guid>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/</guid>
   <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" medium="image" type="image/png" height="112" width="144"/>
-</item>
-<item>
-  <title>Oracle R Distribution 4.4.1 Now Available with Enhanced Performance</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/oracle-machine-learning-header.png" class="img-fluid"></p>
-<p>Oracle has released Oracle R Distribution 4.4.1, a free enhanced build of R with performance improvements of up to 2.5× in benchmark testing. These gains come from optimized use of Intel’s Math Kernel Library. ORD 4.4.1 is now available across supported platforms, offering R users faster computation and enterprise-level support.</p>
-<p>For more details, see the full announcement blog from Oracle:</p>
-<section id="oracle-r-distribution-4.4.1-now-available-with-enhanced-performance" class="level3">
-<h3 class="anchored" data-anchor-id="oracle-r-distribution-4.4.1-now-available-with-enhanced-performance"><a href="https://blogs.oracle.com/machinelearning/post/oracle-r-distribution-441-now-available-with-enhanced-performance">Oracle R Distribution 4.4.1 Now Available with Enhanced Performance</a></h3>
-
-
-</section>
-
- ]]></description>
-  <category>announcements</category>
-  <category>members</category>
-  <guid>https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/</guid>
-  <pubDate>Wed, 10 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/oracle-r-distribution-441-now-available-with-enhanced-performance/oracle-machine-learning-header.png" medium="image" type="image/png" height="49" width="144"/>
 </item>
 </channel>
 </rss>
