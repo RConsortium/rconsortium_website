@@ -1,0 +1,58 @@
+---
+title: "Bridging Gaps and Breaking Barriers: A Year of R Innovation with the China PharmaRUG"
+unpublished: false
+url: "https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug"
+description: "Guest post: In 2025, the China PharmaRUG connected local and global R-in-pharma communities through hybrid events, an APAC track at R/Pharma, and a strategy-focused session advancing regulated clinical reporting with open-source tooling, validation frameworks, and AI governance."
+author: 
+  - name: "Joe Zhu, Roche"
+  - name: "Yanli Chang, Johnson & Johnson"
+categories: ["asia", "pharma", "events"]
+image: "third-pharmarug-conf.png"
+date: "12/11/2025"
+---
+
+The use of R in the pharmaceutical industry has shifted from exploratory research to a robust standard for regulatory submission. In 2025, the China Pharmaceutical R User Group (PharmaRUG) exemplified this transformation, hosting a series of dynamic events that connected local developers with the global R community. As the R Consortium continues to support the worldwide community of users and developers, the China PharmaRUG’s activities this year highlight how open-source collaboration is reshaping clinical reporting,.
+
+Here are three pivotal moments from the China PharmaRUG in 2025 that showcased technical innovation and strategic foresight.
+
+![](third-pharmarug-conf.png)
+
+## 1. The 3rd PharmaRUG Conference: Innovation in Hybrid Format (March 2025)
+
+In March, the community gathered for the 3rd China Pharmaceutical Industry R User Group Meeting. True to the spirit of inclusivity, this was a hybrid event with on-site locations at the Johnson & Johnson campus in Shanghai and the Sanofi campus in Beijing, alongside an online broadcast.
+
+This meeting went beyond standard presentations and focused on overcoming technical hurdles in modern clinical trials. Highlights included:
+
+• AI and R Integration: Speakers from Boehringer Ingelheim demonstrated how to integrate AI coding assistants with R, comparing tools like gptstudio and btw to enhance workflow efficiency.
+
+• Serverless Analysis: Kaiping Yang from BeOne showcased a novel approach using Vue and webR to perform serverless local statistical analysis directly in a browser, proving that R applications can be both lightweight and highly responsive.
+
+• Open Source Education: The event also featured deep dives into package validation and design, such as Daniel Sabanés Bové’s (RCONIS) presentation on rpact and crmPack for designing clinical trials.
+
+The diversity of topics—ranging from AI-generated ADaM datasets to easeP21 for validation—demonstrated that the local community is not just adopting R, but actively pushing the boundaries of what the language can do in a regulated environment.
+
+![](apac-track.png)
+
+## 2. Global Connection: R in Pharma APAC Track (November 2025)
+
+In November, the PharmaRUG played a crucial role in the R/Pharma 2025 conference by organizing the APAC Track. While the conference was virtually accessible to anyone in the Asia-Pacific time zone, the community emphasized face-to-face connection through local hubs.
+
+The Shanghai gathering, hosted at the Johnson & Johnson office, served as a physical anchor for the virtual track. This event featured keynotes and over 18 regular presentations covering reporting, prediction, and AI. It was a testament to the "multiverse" concept often discussed in the industry—where end-to-end clinical reporting moves away from legacy systems toward a diverse ecosystem of open-source tools. By aligning with the global R/Pharma schedule, the China PharmaRUG ensured that local innovations were shared on a global stage, reinforcing the R Consortium’s mission to foster international collaboration.
+
+![](dec-4-gathering.png)
+
+## 3. Strategic Foundations: The December 4th Gathering
+
+The year concluded with a targeted small-group gathering on December 4th, focused on high-level strategy and future pilots. While the larger conferences focused on "showing," this meeting focused on "planning" for the complex regulatory landscape ahead.
+
+Key takeaways from this strategic session included:
+
+• Regulatory Validation: The group discussed the differences between FDA and CDE  submission requirements. With data and system requirements tightening, the group recognized the urgent need for robust validation frameworks.
+
+• Synthetic Data Pilot: A major proposal from the meeting was to pilot an end-to-end submission using synthetic data to both the FDA and CDE. This initiative aims to test the waters for future submissions without risking proprietary clinical data.
+
+• AI Governance: As AI tools become more prevalent, the group discussed building error detection systems and scoring models to validate AI outputs, ensuring that the "black box" of AI remains compliant with pharmaceutical standards.
+
+### Join the Movement
+
+The transition from legacy software to R is well underway, with major players and local biotechs alike embracing the language. The China PharmaRUG is supported by the R Consortium’s RUGS program, which provides grants to help groups organize and share information worldwide.
