@@ -88,9 +88,22 @@
 
 
 <p><img src="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo.jpg" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Update (December 10, 2025)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This post has been updated to more accurately characterize pkglite’s role in regulatory submissions. We regret any impression that pkglite was merely a stopgap solution: it remains a principled, peer-reviewed approach that continues to serve the community well.</p>
+</div>
+</div>
 <p>Over the past several years, the <a href="https://rconsortium.github.io/submissions-wg/">R Consortium Regulatory Submission Working Group</a> has conducted multiple pilots to explore and validate the use of R in regulatory submissions. One recurring challenge surfaced early in our work:</p>
 <p><strong>How should sponsors submit non-public R packages—especially those containing proprietary information—to the FDA?</strong></p>
-<p>For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1, our only feasible option was to convert an R package into a plain text bundle using <a href="https://cran.r-project.org/package=pkglite"><strong>pkglite</strong></a>—functional, but not ideal.</p>
+<p>For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1 and Pilot 2, we used <a href="https://cran.r-project.org/package=pkglite"><strong>pkglite</strong></a> to convert R packages into a plain text bundle. This approach, documented in a <a href="https://doi.org/10.1177/17407745221123244">peer-reviewed paper</a> in <em>Clinical Trials</em>, proved highly effective: the FDA reviewer successfully reproduced our analysis results by following the instructions in the Analysis Data Reviewer’s Guide (ADRG). The pkglite workflow offers distinct advantages: human-readable output, full transparency, easy version control, and language-agnostic design, that remain valuable regardless of which file formats the eCTD gateway accepts.</p>
 <hr>
 <section id="a-milestone-fda-expands-accepted-r-file-formats" class="level2">
 <h2 class="anchored" data-anchor-id="a-milestone-fda-expands-accepted-r-file-formats"><strong>A Milestone: FDA Expands Accepted R File Formats</strong></h2>
