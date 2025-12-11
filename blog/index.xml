@@ -10,7 +10,60 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 09 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 11 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Bridging Gaps and Breaking Barriers: A Year of R Innovation with the China PharmaRUG</title>
+  <dc:creator>Joe Zhu, Roche</dc:creator>
+  <dc:creator>Yanli Chang, Johnson &amp; Johnson</dc:creator>
+  <link>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The use of R in the pharmaceutical industry has shifted from exploratory research to a robust standard for regulatory submission. In 2025, the China Pharmaceutical R User Group (PharmaRUG) exemplified this transformation, hosting a series of dynamic events that connected local developers with the global R community. As the R Consortium continues to support the worldwide community of users and developers, the China PharmaRUG’s activities this year highlight how open-source collaboration is reshaping clinical reporting,.</p>
+<p>Here are three pivotal moments from the China PharmaRUG in 2025 that showcased technical innovation and strategic foresight.</p>
+<p><img src="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" class="img-fluid"></p>
+<section id="the-3rd-pharmarug-conference-innovation-in-hybrid-format-march-2025" class="level2">
+<h2 class="anchored" data-anchor-id="the-3rd-pharmarug-conference-innovation-in-hybrid-format-march-2025">1. The 3rd PharmaRUG Conference: Innovation in Hybrid Format (March 2025)</h2>
+<p>In March, the community gathered for the 3rd China Pharmaceutical Industry R User Group Meeting. True to the spirit of inclusivity, this was a hybrid event with on-site locations at the Johnson &amp; Johnson campus in Shanghai and the Sanofi campus in Beijing, alongside an online broadcast.</p>
+<p>This meeting went beyond standard presentations and focused on overcoming technical hurdles in modern clinical trials. Highlights included:</p>
+<p>• AI and R Integration: Speakers from Boehringer Ingelheim demonstrated how to integrate AI coding assistants with R, comparing tools like gptstudio and btw to enhance workflow efficiency.</p>
+<p>• Serverless Analysis: Kaiping Yang from BeOne showcased a novel approach using Vue and webR to perform serverless local statistical analysis directly in a browser, proving that R applications can be both lightweight and highly responsive.</p>
+<p>• Open Source Education: The event also featured deep dives into package validation and design, such as Daniel Sabanés Bové’s (RCONIS) presentation on rpact and crmPack for designing clinical trials.</p>
+<p>The diversity of topics—ranging from AI-generated ADaM datasets to easeP21 for validation—demonstrated that the local community is not just adopting R, but actively pushing the boundaries of what the language can do in a regulated environment.</p>
+<p><img src="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/apac-track.png" class="img-fluid"></p>
+</section>
+<section id="global-connection-r-in-pharma-apac-track-november-2025" class="level2">
+<h2 class="anchored" data-anchor-id="global-connection-r-in-pharma-apac-track-november-2025">2. Global Connection: R in Pharma APAC Track (November 2025)</h2>
+<p>In November, the PharmaRUG played a crucial role in the R/Pharma 2025 conference by organizing the APAC Track. While the conference was virtually accessible to anyone in the Asia-Pacific time zone, the community emphasized face-to-face connection through local hubs.</p>
+<p>The Shanghai gathering, hosted at the Johnson &amp; Johnson office, served as a physical anchor for the virtual track. This event featured keynotes and over 18 regular presentations covering reporting, prediction, and AI. It was a testament to the “multiverse” concept often discussed in the industry—where end-to-end clinical reporting moves away from legacy systems toward a diverse ecosystem of open-source tools. By aligning with the global R/Pharma schedule, the China PharmaRUG ensured that local innovations were shared on a global stage, reinforcing the R Consortium’s mission to foster international collaboration.</p>
+<p><img src="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/dec-4-gathering.png" class="img-fluid"></p>
+</section>
+<section id="strategic-foundations-the-december-4th-gathering" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-foundations-the-december-4th-gathering">3. Strategic Foundations: The December 4th Gathering</h2>
+<p>The year concluded with a targeted small-group gathering on December 4th, focused on high-level strategy and future pilots. While the larger conferences focused on “showing,” this meeting focused on “planning” for the complex regulatory landscape ahead.</p>
+<p>Key takeaways from this strategic session included:</p>
+<p>• Regulatory Validation: The group discussed the differences between FDA and CDE submission requirements. With data and system requirements tightening, the group recognized the urgent need for robust validation frameworks.</p>
+<p>• Synthetic Data Pilot: A major proposal from the meeting was to pilot an end-to-end submission using synthetic data to both the FDA and CDE. This initiative aims to test the waters for future submissions without risking proprietary clinical data.</p>
+<p>• AI Governance: As AI tools become more prevalent, the group discussed building error detection systems and scoring models to validate AI outputs, ensuring that the “black box” of AI remains compliant with pharmaceutical standards.</p>
+<section id="join-the-movement" class="level3">
+<h3 class="anchored" data-anchor-id="join-the-movement">Join the Movement</h3>
+<p>The transition from legacy software to R is well underway, with major players and local biotechs alike embracing the language. The China PharmaRUG is supported by the R Consortium’s RUGS program, which provides grants to help groups organize and share information worldwide.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>asia</category>
+  <category>pharma</category>
+  <category>events</category>
+  <guid>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/</guid>
+  <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
 <item>
   <title>Growing an R Community in a Shifting Tech Landscape: The Story of R-Ladies Zurich</title>
   <link>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/</link>
@@ -1537,61 +1590,6 @@ Laura Misiani
   <guid>https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/</guid>
   <pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/portadashiny.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>The Sovereign Tech Fund invests $450,000 in R Foundation to Enhance R’s Sustainability and Security</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" class="img-fluid"></p>
-<p>The R ecosystem, a cornerstone of statistical computing and data science, is poised for significant enhancements in its long-term health and security. With a new investment of USD $450,000 (€392,000) from the <a href="https://www.sovereign.tech/tech/r-project">Sovereign Tech Fund (STF)</a>, the <a href="https://www.r-project.org/foundation/">R Foundation</a> is embarking on a crucial project to modernize R’s core infrastructure, improve its maintainability, and fortify its supply chain.</p>
-<p>This initiative is championed by the R Foundation and the R Core Team. The R Foundation is a not-for-profit organization providing crucial financial and logistical support for the R project. Established by the members of the R Core Team, its primary mission is to ensure the continued success and stability of R for the global community. The Foundation, based in Vienna, Austria, holds the copyright for R software and uses its resources to support development and foster innovation in statistical computing. The R Core Team is the dedicated group of developers with write access to the R source code, who volunteer their time to guide the technical evolution of the language.</p>
-<p><img src="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/urbanek.jpg" class="img-fluid" style="width:50.0%"></p>
-<p>To understand the impact of this grant, we sat down with <a href="https://www.linkedin.com/in/simon-urbanek-08b973106/?originalSubdomain=nz">Simon Urbanek</a>, a key member of the R Core Team and an Associate Professor in Statistics at the University of Auckland. Simon shared his insights on what this funding means for the future of R and how the community can play a part.</p>
-<hr>
-<p><strong>R Consortium: What core problem or opportunity does the commissioned work from the Sovereign Tech Fund help the R Foundation address?</strong></p>
-<p><strong>Simon Urbanek:</strong> The main reason we are spearheading this effort is to increase the sustainability and maintainability of the R project. Sustainability, in the sense of making sure that the R codebase itself can be maintained long into the future, ensuring we have continuity and making that process easier.</p>
-<p>This investment also helps us address increasing concerns around software supply chain security. This has to do with provenance and reliability—ensuring that users can be assured that a particular piece of software comes from the right source. This involves initiatives like signing sources and binaries to verify their origin.</p>
-<p>Finally, a key component is reproducibility. We want to ensure that analyses and results can be reproduced reliably, both by the original authors and by others in the community.</p>
-<p><strong>R Consortium: You mentioned provenance and the need for verification. Is this being driven by new regulations?</strong></p>
-<p><strong>Simon Urbanek:</strong> Not directly by regulation, no. This is more of a proactive measure. Given the age of the R project, our distribution model has traditionally been a central repository where people can simply download files. While this has served us well, the open-source world has seen various security issues, making it clear that we need better ways to verify that software comes from a trusted source.</p>
-<p>We already have binary signing for R itself on macOS and Windows, but this hasn’t been extended to packages. It’s an important step to take. While it’s not clear if platforms like Microsoft will officially require it, there are indications they may. We want to prepare for that possibility and strengthen the security of the ecosystem, especially for a central distribution hub like CRAN.</p>
-<p><strong>R Consortium: Why is tackling this problem now timely for the R ecosystem and the wider open-source community?</strong></p>
-<p><strong>Simon Urbanek:</strong> R has been around for over 25 years and has become part of the fabric of data analytics and statistical analysis in government, academia, and commercial entities. With this level of adoption, it’s critical that we can sustain the maintenance of R to support its community. The purely volunteer-driven effort that got us here may not be sufficient to address the increasing complexities and threats we see today.</p>
-<p><strong>R Consortium: What tangible deliverables can the community expect, and on what timeline?</strong></p>
-<p><strong>Simon Urbanek:</strong> The main improvements will be within R itself, and some may be under the hood. Deliverables include replacing legacy code and older third-party projects that were integrated into R for historical reasons. This will make R more maintainable, as we won’t have to oversee unmaintained code.</p>
-<p>We are also focused on making it easier to port R to new platforms, such as the Windows ARM platform. Other improvements will be more visible to developers, including enhanced documentation and better tooling, with the goal of making it easier for new people to contribute to R.</p>
-<p>The work is expected to take place over the next 18 months. We hope that the foundations we lay during this project will carry over and continue to be useful long after the project officially concludes.</p>
-<p><strong>R Consortium: Who are the key people and teams involved in this initiative?</strong></p>
-<p><strong>Simon Urbanek:</strong> A significant portion of the technical work—including bug triage, platform improvements, and replacing old infrastructure—will be done by <a href="https://www.linkedin.com/in/kalibera/?originalSubdomain=cz">Tomas Kalibera</a>. As a member of the R Core Team, Tomas is one of the most active developers of the R interpreter, and his deep expertise in R’s internals and build systems makes him uniquely suited to lead the modernization of R’s core. This grant provides vital support for him to dedicate his time to these foundational improvements that are critical for R’s long-term health.</p>
-<p><img src="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/kalibera.jpg" class="img-fluid"></p>
-<p>Other efforts, especially around documentation and community engagement, will be led by various R Core members. This entire project was conceived with the help of the R Foundation board members, and we also hope to collaborate with the R Consortium to bring in more contributors from the community.</p>
-<p><strong>R Consortium: What makes the Sovereign Tech Fund a uniquely suitable partner for this initiative?</strong></p>
-<p><strong>Simon Urbanek:</strong> The Sovereign Tech Fund is a really good match because its mission is perfectly aligned with our needs. Their main focus is on sustainability for open-source software and strengthening digital public infrastructure, which is exactly our primary concern at the moment. We want to ensure R’s development is sustainable and that the community itself can support it without having to rely on commercial partners.</p>
-<p>This investment allows us to modernize the codebase to make it easier to maintain and, at the same time, build resources to encourage more community contributions.</p>
-<p><strong>R Consortium: How can the R community get involved and contribute to this effort?</strong></p>
-<p><strong>Simon Urbanek:</strong> There are many ways for the community to get involved. People can definitely provide feedback, especially as we add new user-facing features and create new documentation. We need to know if these resources are truly making it easier for the community to contribute.</p>
-<p>Another area is bug triage. We aim to reduce the number of pending bugs, especially older ones, to make the bug tracker less overwhelming. The community can help identify and work on important issues.</p>
-<p>Finally, we will need help with testing. This is true for improvements in R itself and for new infrastructure related to packages, such as containerized checks for reproducibility and the adoption of code signing. The community’s participation in testing, providing feedback, and adopting these new practices will be invaluable.</p>
-<section id="r-foundation-resources" class="level2">
-<h2 class="anchored" data-anchor-id="r-foundation-resources">R Foundation resources</h2>
-<p>Main site: <a href="https://www.r-project.org/foundation/">https://www.r-project.org/foundation/</a><br>
-How you can contribute: <a href="https://contributor.r-project.org/">https://contributor.r-project.org/</a></p>
-<p>The <a href="https://user2025.r-project.org/">useR! 2025</a> conference was held at Duke University, in Durham, NC, USA, on August 8-10. <a href="https://www.linkedin.com/posts/r-user-community_announcement-user-2026-conference-in-activity-7360399846479917058-IxDU/">Next year’s event will be in Warsaw, Poland.</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>announcements</category>
-  <guid>https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/</guid>
-  <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/Rlogo.png" medium="image" type="image/png" height="112" width="144"/>
 </item>
 </channel>
 </rss>
