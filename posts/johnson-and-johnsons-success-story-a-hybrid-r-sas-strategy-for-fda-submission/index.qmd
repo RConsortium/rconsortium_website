@@ -1,0 +1,64 @@
+---
+title: "Johnson & Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission"
+unpublished: false
+url: "https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission"
+description: "Johnson & Johnson shares how a pragmatic hybrid R/SAS workflow—SAS for ADaM derivation and R for TFLs—enabled successful FDA submission while maintaining reviewer-friendly reproducibility through clear ADRG setup guidance."
+author: "R Consortium"
+categories: ["submissions", "pharma"]
+image: "jnj-submissions-main-image.png"
+date: "12/15/2025"
+---
+
+The pharmaceutical industry is currently navigating a significant shift toward open-source programming, with R becoming an increasingly vital tool for regulatory submissions. In a recent R Consortium webinar, Johnson & Johnson (J\&J) shared a detailed case study of their successful "Hybrid R/SAS" submission strategy to the FDA.
+
+Presented by Alicia Humphreys, Steven Haesendonckx, and Linshan Yuan, the presentation outlines how J\&J leveraged the strengths of both languages to achieve FDA approval, offering a roadmap for other organizations looking to modernize their submission pipelines.
+
+![](jnj-submissions-main-image.png)
+
+### **The Hybrid Strategy: Best of Both Worlds**
+
+Moving entirely to a new language can be daunting. J\&J adopted a pragmatic "Hybrid R/SAS" approach to balance innovation with stability:
+
+* **SAS for Data Derivation:** ADaM datasets were created using SAS to leverage existing institutional knowledge.  
+* **R for Analysis and Visualization:** All Tables, Figures, and Listings (TFLs) were generated using R.
+
+This approach allowed the team to utilize R’s flexible visualization framework and cutting-edge statistical methods while seamlessly integrating into workflows built around legacy tools.
+
+### **A Proven Success**
+
+The presentation highlighted two major milestones regarding this strategy:
+
+1. **Submission 1:** A pilot trial utilizing this hybrid strategy was submitted and approved by the FDA within the designed timeline.  
+2. **Submission 2:** A second submission is currently ongoing with positive agency response.
+
+### **Ensure Reproducibility**
+
+One of the biggest hurdles in R submissions is replicating the sponsor’s environment (often Linux-based) on the reviewer’s system (often Windows).
+
+J\&J navigated this by adapting the practices used in R consortium pilot submissions. Specifically, in Analysis Data Reviewer’s Guide (ADRG) they included a specific Appendix titled "Set-up R environment and Analysis" which guided the reviewer through:
+
+1. **Installation:** Using a script to install required packages from CRAN or GitHub.  
+2. **Locking the Environment:** Creating an `renv.lock` file *after* installation to snapshot the ecosystem locally, rather than trying to transport a potentially non-portable lockfile between operating systems.  
+3. **Execution:** Scripts were converted to `.txt` files (e.g., `tsidem01-r.txt`) to meet eCTD requirements while maintaining traceability. 
+
+**R consortium’s Note on eCTD Requirements:** While the J\&J team converted scripts to `.txt` files for their submissions, please note that regulatory standards have recently progressed. As a result of the collaboration between the R Consortium and the FDA, the [latest FDA Study Data Technical Conformance Guide (August 2025\)](https://www.fda.gov/media/85816/download?attachment) now explicitly allows R-related file extensions for electronic submissions. This conversion step is therefore no longer necessary for future eCTD packages.
+
+### **Key Takeaways for the Community**
+
+The presenters offered several recommendations for future R submissions:
+
+* **Leverage Open Source Repositories:** Use CRAN or curated repositories to simplify the setup process for reviewers.  
+* **Documentation and Communication are the Key:** Update the ADRG with clear instructions on package installation and environment reproduction. J\&J used the R Consortium Pilot 3 ADRG as a template. It is always a good idea to communicate with FDA staff early on your submission plan.  
+* **Minimize Dependencies:** Use standard packages where possible and minimize reliance on complex proprietary packages to reduce friction.
+
+### **Watch the Presentation and Learn More**
+
+To see the full technical breakdown, including directory structures and code examples, watch the full recording of the presentation:
+
+* [**Watch the Webinar: Johnson & Johnson’s Hybrid R Submission Strategy**](https://www.youtube.com/watch?v=cve0whfsO6o)  
+* [**Slide deck**](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/RCONSORTIUM2025_JNJ.pptx)
+
+For those interested in the foundational work that made this possible, J\&J has also shared resources on their validation and adoption processes:
+
+* [**Using R in a GxP Environment (Validation Process)**](https://www.youtube.com/watch?v=lWXqfuaxNL8)  
+* [**Johnson & Johnson’s Open Source Journey in R**](https://posit.co/webinar/johnson-johnsons-open-source-journey-in-r/)
