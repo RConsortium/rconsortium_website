@@ -10,7 +10,88 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 11 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The pharmaceutical industry is currently navigating a significant shift toward open-source programming, with R becoming an increasingly vital tool for regulatory submissions. In a recent R Consortium webinar, Johnson &amp; Johnson (J&amp;J) shared a detailed case study of their successful “Hybrid R/SAS” submission strategy to the FDA.</p>
+<p>Presented by Alicia Humphreys, Steven Haesendonckx, and Linshan Yuan, the presentation outlines how J&amp;J leveraged the strengths of both languages to achieve FDA approval, offering a roadmap for other organizations looking to modernize their submission pipelines.</p>
+<p><img src="https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/jnj-submissions-main-image.png" class="img-fluid"></p>
+<section id="the-hybrid-strategy-best-of-both-worlds" class="level3">
+<h3 class="anchored" data-anchor-id="the-hybrid-strategy-best-of-both-worlds"><strong>The Hybrid Strategy: Best of Both Worlds</strong></h3>
+<p>Moving entirely to a new language can be daunting. J&amp;J adopted a pragmatic “Hybrid R/SAS” approach to balance innovation with stability:</p>
+<ul>
+<li><strong>SAS for Data Derivation:</strong> ADaM datasets were created using SAS to leverage existing institutional knowledge.<br>
+</li>
+<li><strong>R for Analysis and Visualization:</strong> All Tables, Figures, and Listings (TFLs) were generated using R.</li>
+</ul>
+<p>This approach allowed the team to utilize R’s flexible visualization framework and cutting-edge statistical methods while seamlessly integrating into workflows built around legacy tools.</p>
+</section>
+<section id="a-proven-success" class="level3">
+<h3 class="anchored" data-anchor-id="a-proven-success"><strong>A Proven Success</strong></h3>
+<p>The presentation highlighted two major milestones regarding this strategy:</p>
+<ol type="1">
+<li><strong>Submission 1:</strong> A pilot trial utilizing this hybrid strategy was submitted and approved by the FDA within the designed timeline.<br>
+</li>
+<li><strong>Submission 2:</strong> A second submission is currently ongoing with positive agency response.</li>
+</ol>
+</section>
+<section id="ensure-reproducibility" class="level3">
+<h3 class="anchored" data-anchor-id="ensure-reproducibility"><strong>Ensure Reproducibility</strong></h3>
+<p>One of the biggest hurdles in R submissions is replicating the sponsor’s environment (often Linux-based) on the reviewer’s system (often Windows).</p>
+<p>J&amp;J navigated this by adapting the practices used in R consortium pilot submissions. Specifically, in Analysis Data Reviewer’s Guide (ADRG) they included a specific Appendix titled “Set-up R environment and Analysis” which guided the reviewer through:</p>
+<ol type="1">
+<li><strong>Installation:</strong> Using a script to install required packages from CRAN or GitHub.<br>
+</li>
+<li><strong>Locking the Environment:</strong> Creating an <code>renv.lock</code> file <em>after</em> installation to snapshot the ecosystem locally, rather than trying to transport a potentially non-portable lockfile between operating systems.<br>
+</li>
+<li><strong>Execution:</strong> Scripts were converted to <code>.txt</code> files (e.g., <code>tsidem01-r.txt</code>) to meet eCTD requirements while maintaining traceability.</li>
+</ol>
+<p><strong>R consortium’s Note on eCTD Requirements:</strong> While the J&amp;J team converted scripts to <code>.txt</code> files for their submissions, please note that regulatory standards have recently progressed. As a result of the collaboration between the R Consortium and the FDA, the <a href="https://www.fda.gov/media/85816/download?attachment">latest FDA Study Data Technical Conformance Guide (August 2025)</a> now explicitly allows R-related file extensions for electronic submissions. This conversion step is therefore no longer necessary for future eCTD packages.</p>
+</section>
+<section id="key-takeaways-for-the-community" class="level3">
+<h3 class="anchored" data-anchor-id="key-takeaways-for-the-community"><strong>Key Takeaways for the Community</strong></h3>
+<p>The presenters offered several recommendations for future R submissions:</p>
+<ul>
+<li><strong>Leverage Open Source Repositories:</strong> Use CRAN or curated repositories to simplify the setup process for reviewers.<br>
+</li>
+<li><strong>Documentation and Communication are the Key:</strong> Update the ADRG with clear instructions on package installation and environment reproduction. J&amp;J used the R Consortium Pilot 3 ADRG as a template. It is always a good idea to communicate with FDA staff early on your submission plan.<br>
+</li>
+<li><strong>Minimize Dependencies:</strong> Use standard packages where possible and minimize reliance on complex proprietary packages to reduce friction.</li>
+</ul>
+</section>
+<section id="watch-the-presentation-and-learn-more" class="level3">
+<h3 class="anchored" data-anchor-id="watch-the-presentation-and-learn-more"><strong>Watch the Presentation and Learn More</strong></h3>
+<p>To see the full technical breakdown, including directory structures and code examples, watch the full recording of the presentation:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=cve0whfsO6o"><strong>Watch the Webinar: Johnson &amp; Johnson’s Hybrid R Submission Strategy</strong></a><br>
+</li>
+<li><a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/RCONSORTIUM2025_JNJ.pptx"><strong>Slide deck</strong></a></li>
+</ul>
+<p>For those interested in the foundational work that made this possible, J&amp;J has also shared resources on their validation and adoption processes:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lWXqfuaxNL8"><strong>Using R in a GxP Environment (Validation Process)</strong></a><br>
+</li>
+<li><a href="https://posit.co/webinar/johnson-johnsons-open-source-journey-in-r/"><strong>Johnson &amp; Johnson’s Open Source Journey in R</strong></a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>submissions</category>
+  <category>pharma</category>
+  <guid>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/</guid>
+  <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/jnj-submissions-main-image.png" medium="image" type="image/png" height="56" width="144"/>
+</item>
 <item>
   <title>Bridging Gaps and Breaking Barriers: A Year of R Innovation with the China PharmaRUG</title>
   <dc:creator>Joe Zhu, Roche</dc:creator>
@@ -1460,136 +1541,6 @@ In addition to the natural-language answer, the system can return which document
   <guid>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</guid>
   <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/thumbnail-oracle.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Learning Shiny, Together: A Collaborative Reading Club Around Mastering Shiny in Buenos Aires</title>
-  <dc:creator>R-Ladies Buenos Aires &amp; R in Buenos Aires User Group</dc:creator>
-  <link>https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/portadashiny.png" class="img-fluid"></p>
-<p>Have you ever wanted to read Mastering Shiny but kept postponing it for “when things calm down”? So did we! At <a href="https://rladiesba.netlify.app/">R-Ladies Buenos Aires</a> and <a href="https://renbaires.github.io/">R en Buenos Aires</a>, many of us had Mastering Shiny sitting on our virtual shelves, always waiting for the right moment. After months (okay, maybe years) of good intentions and no progress, we realized we needed a push, and that push came from the power of community.</p>
-<section id="from-solo-intentions-to-collective-learning" class="level2">
-<h2 class="anchored" data-anchor-id="from-solo-intentions-to-collective-learning">From Solo Intentions to Collective Learning</h2>
-<p>There is an African proverb that says, <em>If you want to go fast, go alone. If you want to go far, go together.</em> We decided to turn individual intentions into collective learning. Instead of trying to read the book on our own, we organized a <strong>community-based reading club</strong>: one where we could support each other, share our doubts, and celebrate our progress. Our goals were simple. We wanted to create a friendly, welcoming environment for learning Shiny, break down the book into manageable chunks, and make space for everyone, regardless of their experience, to learn and lead.</p>
-</section>
-<section id="how-we-organized-the-reading-club" class="level2">
-<h2 class="anchored" data-anchor-id="how-we-organized-the-reading-club">How We Organized the Reading Club</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><br></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/shiny1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-cap="Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/shiny3.png" class="img-fluid figure-img" style="width:90.0%"></p>
-<figcaption>Virtual Meeting 9: Discussion of Chapters 14 of <em>Mastering Shiny</em></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
-<p>We organized the club around ten meetings, which took place between March and July. Although we initially planned to read the entire book, we decided that a shorter, time-bound version would be more realistic and sustainable for the organizing team and its participants. We began planning and organizing this large-scale activity in September 2024.</p>
-<p>All sessions were held online, lasting between 60 and 90 minutes. Each one was led by a different person (or pair), who walked us through the content and exercises of the assigned chapters.</p>
-<p>There was no expectation of being an expert. In fact, we explicitly encouraged people with little or no prior Shiny experience to join and to lead (and they did!). The only guideline was to read the chapters, try the exercises, and come ready to share. Presenters would explain what they understood from the chapters, highlight key concepts, and guide us through the exercises. Then the magic happened: we’d collectively fill in the gaps, ask questions, offer alternatives, and learn from one another.</p>
-</div>
-</div>
-<p>Most presenters created slides or notebooks to guide their sessions (though this wasn’t mandatory). We collected all those materials in this <a href="https://github.com/RLadies-BA/mastering-shiny">public GitHub repository</a>, with a variety of formats and styles. We deliberately avoided imposing a specific format as we didn’t want technical barriers to stop anyone from sharing. Eventually, we plan to curate and organize the materials to make them easier to reuse, especially for Spanish-speaking learners. We believe there’s real added value in having community-built learning materials in Spanish.</p>
-<p>Over time, participants started to share the Shiny apps they were building on their own. We added a small “Show and Tell” section to the beginning of some meetings, where people presented their work-in-progress and received feedback and encouragement. It was a space full of mutual support, curiosity, and honest learning.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/shiny2.png" class="img-fluid figure-img" style="width:90.0%"></p>
-<figcaption>Summary of the Reading Club’s Last Meeting</figcaption>
-</figure>
-</div>
-<p>Although we recorded the sessions, we decided to make them accessible only to attendees. This was different from our chapters’ usual practice, but we wanted to keep the sessions informal, comfortable, and pressure-free — more like a study group than a workshop. This allowed everyone to feel safe sharing unfinished work, asking questions, and making mistakes.</p>
-</section>
-<section id="reflections-and-lessons-learned" class="level2">
-<h2 class="anchored" data-anchor-id="reflections-and-lessons-learned">Reflections and Lessons Learned</h2>
-<p>Throughout the series, different people volunteered to lead the sessions. These volunteers included academics and industry professionals with a variety of backgrounds and levels of experience with R. Each volunteer brought their own style and perspective to the sessions, and all of them did a fantastic job. Although a small core group participated in most sessions, many others joined according to their interests or availability.</p>
-<p>We were surprised to have new community members who took advantage of the virtual format to join us from other countries and cities in Argentina. This allowed us to break down the barriers of physical presence and discuss topics of interest from different professional areas in Spanish.</p>
-<p>Looking ahead, one idea for a future iteration is to organize the sessions around building a single Shiny app together. We believe this could help sustain engagement, make the learning more tangible, and give participants the chance to immediately see how the book’s concepts connect in practice.</p>
-<p>One of the most rewarding aspects of the book club was hearing what participants took away from the experience. Beyond Shiny itself, people highlighted the joy of learning together, the responsibility of having regular meetings, and the warmth of the community. By the end of the club, several participants left feeling motivated and thinking of strategies to improve their work by creating a Shiny app or exploring a topic to take their first steps with a dashboard.</p>
-<section id="here-are-some-of-their-reflections-translated-from-spanish" class="level3">
-<h3 class="anchored" data-anchor-id="here-are-some-of-their-reflections-translated-from-spanish">Here are some of their reflections (translated from Spanish):</h3>
-<div class="html-div" style="text-align:center; font-style:italic; margin-bottom:2em;">
-<p>“The format of coming together to analyze the chapters of a book with technical content seemed brilliant to me. It opens up an horizontal learning space that is very enriching.”</p>
-<div style="text-align:right; font-style:italic;">
-Graciela Bellotti
-</div>
-</div>
-<div class="html-div" style="text-align:center; font-style:italic; margin-bottom:2em;">
-<p>“I really liked that everyone shared everything, holding nothing back, and explained what they had understood—whether from prior experience or from their own research on the chapter’s content. They made it very enjoyable and not too heavy, so I was able to attend all the sessions”</p>
-<div style="text-align:right; font-style:italic;">
-Daniela Zacharías
-</div>
-</div>
-<div class="html-div" style="text-align:center; font-style:italic; margin-bottom:2em;">
-<p>“So much! Not only everything related to Shiny, but also the joy of sharing these meetings with such amazing people—both presenting and exchanging doubts or knowledge.”</p>
-<div style="text-align:right; font-style:italic;">
-Laura Misiani
-</div>
-</div>
-</section>
-</section>
-<section id="wrapping-up" class="level2">
-<h2 class="anchored" data-anchor-id="wrapping-up">Wrapping up</h2>
-<p>This reading club wasn’t just about working through a technical book. It was about carving out time for learning, growing confidence, building apps (and community!), and showing that you don’t need to know everything to lead or participate. If you’ve also been meaning to read Mastering Shiny, maybe this is your sign to gather your group and start together. Because when we learn together, we go further and we have more fun along the way.</p>
-<section id="you-can-reach-out-to-r-ladies-buenos-aires-r-in-buenos-aires-through-the-following" class="level3">
-<h3 class="anchored" data-anchor-id="you-can-reach-out-to-r-ladies-buenos-aires-r-in-buenos-aires-through-the-following">You can reach out to R-Ladies Buenos Aires &amp; R in Buenos Aires through the following:</h3>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://avatars.githubusercontent.com/u/38664570?s=200&amp;v=4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:70%;">
-<ul>
-<li><p>Linkedin: <a href="https://www.linkedin.com/company/rladies-ba/">https://www.linkedin.com/company/rladies-ba/</a></p></li>
-<li><p>Instagram:<a href="https://www.instagram.com/rladiesba/?hl=en">https://www.instagram.com/rladiesba</a></p></li>
-<li><p>X: <a href="https://twitter.com/rladiesba?lang=en">https://twitter.com/rladiesba</a></p></li>
-<li><p>Website: <a href="https://rladiesba.netlify.app/">https://rladiesba.netlify.app/</a></p></li>
-</ul>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://renbaires.github.io/image/BA-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:70%;">
-<ul>
-<li><p>Linkedin: <a href="https://www.linkedin.com/company/r-en-buenos-aires" class="uri">https://www.linkedin.com/company/r-en-buenos-aires</a></p></li>
-<li><p>Instagram: <a href="https://www.instagram.com/renbuenosaires">https://www.instagram.com/renbuenosaires</a></p></li>
-<li><p>X: <a href="https://x.com/renbaires">https://x.com/renbaires</a></p></li>
-<li><p>Website: <a href="https://renbaires.github.io/" class="uri">https://renbaires.github.io/</a></p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level3">
-<h3 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h3>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute.</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html" class="uri">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>south america</category>
-  <guid>https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/</guid>
-  <pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/portadashiny.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

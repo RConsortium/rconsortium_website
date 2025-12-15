@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2025-12-15">
+<meta name="description" content="Johnson &amp; Johnson shares how a pragmatic hybrid R/SAS workflow—SAS for ADaM derivation and R for TFLs—enabled successful FDA submission while maintaining reviewer-friendly reproducibility through clear ADRG setup guidance.">
 
-<title>R Consortium</title>
+<title>Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission – R Consortium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-92ef5327927b2d6ffbb2647db49d27b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-92ef5327927b2d6ffbb2647db49d27b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,36 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
 
 <script type="text/javascript">
@@ -110,49 +81,20 @@ gtag('js', new Date());
 gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
-    <img src="./images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -167,35 +109,35 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./about/index.html">
+    <a class="dropdown-item" href="../../about/index.html">
  <span class="dropdown-text">Mission</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/governance.html">
+    <a class="dropdown-item" href="../../about/governance.html">
  <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
  <span class="dropdown-text">Bylaws (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./governance/isc-charter.html">
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
  <span class="dropdown-text">ISC Charter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
  <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/faq.html">
+    <a class="dropdown-item" href="../../about/faq.html">
  <span class="dropdown-text">FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/contact.html">
+    <a class="dropdown-item" href="../../about/contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/privacy.html">
+    <a class="dropdown-item" href="../../about/privacy.html">
  <span class="dropdown-text">Privacy Policy</span></a>
   </li>  
     </ul>
@@ -206,15 +148,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
         <li>
-    <a class="dropdown-item" href="./members.html">
+    <a class="dropdown-item" href="../../members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/join.html">
+    <a class="dropdown-item" href="../../about/join.html">
  <span class="dropdown-text">Join</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
  <span class="dropdown-text">Membership Agreement (PDF)</span></a>
   </li>  
     </ul>
@@ -225,23 +167,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
         <li>
-    <a class="dropdown-item" href="./all-projects/index.html">
+    <a class="dropdown-item" href="../../all-projects/index.html">
  <span class="dropdown-text">Goal of ISC Grants Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/funded-projects.html">
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
  <span class="dropdown-text">Recipients of ISC Grants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/callforproposals.html">
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
  <span class="dropdown-text">Call for Proposals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/rugsprogram.html">
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
  <span class="dropdown-text">RUGS Program</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/submittingforpayment.html">
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
  <span class="dropdown-text">Submitting for payment</span></a>
   </li>  
     </ul>
@@ -264,7 +206,7 @@ window.Quarto = {
  <span class="dropdown-text">R-Universe</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./all-projects/isc-working-groups.html">
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
  <span class="dropdown-text">Working Groups</span></a>
   </li>  
     </ul>
@@ -283,15 +225,15 @@ window.Quarto = {
  <span class="dropdown-text">R/Medicine (May 4-8, 2026)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./webinars/webinars.html">
+    <a class="dropdown-item" href="../../webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./news/events.html">
+    <a class="dropdown-item" href="../../news/events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./news/cal.html">
+    <a class="dropdown-item" href="../../news/cal.html">
  <span class="dropdown-text">Working Groups Calendar</span></a>
   </li>  
     </ul>
@@ -302,25 +244,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
         <li>
-    <a class="dropdown-item" href="./blog/index.html">
+    <a class="dropdown-item" href="../../blog/index.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./newsletters/newsletters.html">
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
  <span class="dropdown-text">Newsletter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf">
  <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf">
  <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./codeofconduct.html"> 
+    <a class="nav-link" href="../../codeofconduct.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item compact">
@@ -361,432 +303,119 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission</h1>
+                  <div>
+        <div class="description">
+          Johnson &amp; Johnson shares how a pragmatic hybrid R/SAS workflow—SAS for ADaM derivation and R for TFLs—enabled successful FDA submission while maintaining reviewer-friendly reproducibility through clear ADRG setup guidance.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">submissions</div>
+                <div class="quarto-category">pharma</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 15, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"></p>
-<style>
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.animate-slideInFromLeft {
-  opacity: 0;
-  animation: slideInFromLeft 1s forwards;
-}
-.scroll-title {
-  background-color: rgb(30, 81, 164);
-  color: white; 
-  display: inline-block;
-  padding: 10px;
-  cursor: pointer;
-}
 
-.darkButton {
-  background-color: black; 
-  color: #fff; 
-  border: none; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-.darkButton a {
-  color: inherit; 
-  text-decoration: none;
-}
-.darkButton:hover {
-  background-color: rgb(30, 81, 164); 
-  color: white;
-}
-.darkButton:hover a{
-  color: 
-}
-.joiningRButton {
-  background-color: black; 
-  color: #fff; 
-  border: 2px solid white; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-.joiningRButton a {
-  color: inherit; 
-  text-decoration: none;
-}
-.joiningRButton:hover {
-  background-color: white; 
-  color: black;
-}
-.joiningRButton:hover a {
-  color: black;
-}
-.joining-r-section {
-  background-image: url('./images/joining-r-consoritum-bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  color: white; 
-  
-}
-
-.video-popup{
-  position: relative;
-}
-
-.play {
-  border-radius: 50%;
-  padding: 10px;
-  background-color: rgb(30, 81, 164);
-  max-width: 50px;
-  max-height: 50px;
-  position: absolute;
-  right: 47%;
-  top: 40%;
-}
-
-.goldButton {
-  display:inline-block;
-  padding:24px 40px;
-  border-radius:999px;
-  font-weight:700;
-  font-size:2em;
-  text-transform:uppercase;
-  text-decoration:none;
-  background:linear-gradient(180deg,#f6e27a 0%, #d4af37 50%, #b8891a 100%);
-  color:#ffffff;
-  border:1px solid #a67c00;
-  box-shadow:0 6px 14px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.6);
-  transition:transform .06s ease, filter .2s ease, box-shadow .2s ease;
-}
-.goldButton:hover { color:#b8891a; }
-.goldButton:active { transform:translateY(1px); }
-.goldButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
-
-</style>
-<div class="swiper-container">
-<!-- swiper slides -->
-<div class="swiper-wrapper">
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
-<h2 class="anchored">
-R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.
-</h2>
-<button class="blueButton">
-<a href="./all-projects/rugsprogram.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-<div class="swiper-slide" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.postimg.cc/3rq6Gzgz/IMG-5390-1024x716-1.webp');">
-<h2 class="anchored">
-Find your local R user group Network with fellow statisticians and learn from your peers.
-</h2>
-<button class="blueButton">
-<a href="https://www.meetup.com/pro/r-user-groups/" style="text-decoration: none;">FIND A USER GROUP</a>
-</button>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/K8SHqLpN/rcon-slide-bg2.webp);">
-<h2 class="anchored">
-R Consortium: Supporting the R community, the R Foundation and organizations developing, maintaining and distributing R software.
-</h2>
-</div>
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/Sx6twsw-p/rcon-slide-bg2b.webp);">
-<h2 class="anchored">
-Find your local R user group Network with fellow statisticians and learn from your peers.
-</h2>
-<button class="blueButton">
-<a href="./all-projects/rugsprogram.html" style="text-decoration: none;">LEARN MORE</a>
-</button>
-</div>
-</div>
-<!-- !swiper slides -->
-<!-- next / prev arrows -->
-<div class="swiper-button-next">
-
-</div>
-<div class="swiper-button-prev">
-
-</div>
-<!-- !next / prev arrows -->
-<!-- pagination dots -->
-<div class="swiper-pagination">
-
-</div>
-<!-- !pagination dots -->
-</div>
-<section class="what-is-r-section" id="what-is-r">
-<div style="display: flex; flex-wrap: wrap;">
-<div style="flex: 2; min-width: 300px; padding: 10px; align-items: center;">
-<h2 class="scroll-title anchored">
-WHAT IS THE R CONSORTIUM
-</h2>
-<p>
-The central mission of the R Consortium is to work with and provide support to the R Foundation and to the key organizations developing, maintaining, distributing and using R software through the identification, development and implementation of infrastructure projects.
-</p>
-<p>
-The R language is an open source environment for statistical computing and graphics, and runs on a wide variety of computing platforms. The R language has enjoyed significant growth, and now supports over 2 million users. A broad range of industries have adopted the R language, including biotech, finance, research and high technology industries. The R language is often integrated into third party analysis, visualization and reporting applications.
-</p>
-</div>
-<div style="flex: 1; min-width: 300px; padding: 20px; border; display: flex; justify-content: flex-end; align-items: end; position: relative;">
-<a class="video-popup" href="https://www.youtube.com/watch?v=XcBLEVknqvY" target="blank"> <img src="images/rcon_video_preview.png" alt="Video Preview" style="width: 90%; height: auto; cursor: pointer; margin-left: 1%"> <img src="images/play-button-svgrepo-com.svg" alt="Play Button" class="play"> </a>
-</div>
-</div>
-<button class="darkButton">
-<a href="./about/governance.html" style="text-decoration: none;">GOVERNANCE</a>
-</button>
-<button class="darkButton">
-<a href="rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" style="text-decoration: none;">READ OUR ANNUAL REPORT 2023</a>
-</button>
+<p>The pharmaceutical industry is currently navigating a significant shift toward open-source programming, with R becoming an increasingly vital tool for regulatory submissions. In a recent R Consortium webinar, Johnson &amp; Johnson (J&amp;J) shared a detailed case study of their successful “Hybrid R/SAS” submission strategy to the FDA.</p>
+<p>Presented by Alicia Humphreys, Steven Haesendonckx, and Linshan Yuan, the presentation outlines how J&amp;J leveraged the strengths of both languages to achieve FDA approval, offering a roadmap for other organizations looking to modernize their submission pipelines.</p>
+<p><img src="jnj-submissions-main-image.png" class="img-fluid"></p>
+<section id="the-hybrid-strategy-best-of-both-worlds" class="level3">
+<h3 class="anchored" data-anchor-id="the-hybrid-strategy-best-of-both-worlds"><strong>The Hybrid Strategy: Best of Both Worlds</strong></h3>
+<p>Moving entirely to a new language can be daunting. J&amp;J adopted a pragmatic “Hybrid R/SAS” approach to balance innovation with stability:</p>
+<ul>
+<li><strong>SAS for Data Derivation:</strong> ADaM datasets were created using SAS to leverage existing institutional knowledge.<br>
+</li>
+<li><strong>R for Analysis and Visualization:</strong> All Tables, Figures, and Listings (TFLs) were generated using R.</li>
+</ul>
+<p>This approach allowed the team to utilize R’s flexible visualization framework and cutting-edge statistical methods while seamlessly integrating into workflows built around legacy tools.</p>
 </section>
-<section class="joining-r-section" id="joining-r">
-<h2 class="scroll-title anchored" style="border:none;">
-Joining R Consortium
-</h2>
-<p>
-Industry-leading organizations have joined the R Consortium to support an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
-</p>
-<button class="joiningRButton">
-<a href="./about/join.html" style="text-decoration: none;">LEARN MORE ABOUT MEMBERSHIP</a>
-</button>
+<section id="a-proven-success" class="level3">
+<h3 class="anchored" data-anchor-id="a-proven-success"><strong>A Proven Success</strong></h3>
+<p>The presentation highlighted two major milestones regarding this strategy:</p>
+<ol type="1">
+<li><strong>Submission 1:</strong> A pilot trial utilizing this hybrid strategy was submitted and approved by the FDA within the designed timeline.<br>
+</li>
+<li><strong>Submission 2:</strong> A second submission is currently ongoing with positive agency response.</li>
+</ol>
 </section>
-<section class="need-help-section" id="need-help">
-<h2 class="scroll-title anchored">
-Need Help?
-</h2>
-<p>
-If you need help such as with billing, mailing lists or other wise then please use this service desk for support.
-</p>
-<button class="darkButton">
-<a href="https://members.r-consortium.org/" style="text-decoration: none;">GET HELP</a>
-</button>
+<section id="ensure-reproducibility" class="level3">
+<h3 class="anchored" data-anchor-id="ensure-reproducibility"><strong>Ensure Reproducibility</strong></h3>
+<p>One of the biggest hurdles in R submissions is replicating the sponsor’s environment (often Linux-based) on the reviewer’s system (often Windows).</p>
+<p>J&amp;J navigated this by adapting the practices used in R consortium pilot submissions. Specifically, in Analysis Data Reviewer’s Guide (ADRG) they included a specific Appendix titled “Set-up R environment and Analysis” which guided the reviewer through:</p>
+<ol type="1">
+<li><strong>Installation:</strong> Using a script to install required packages from CRAN or GitHub.<br>
+</li>
+<li><strong>Locking the Environment:</strong> Creating an <code>renv.lock</code> file <em>after</em> installation to snapshot the ecosystem locally, rather than trying to transport a potentially non-portable lockfile between operating systems.<br>
+</li>
+<li><strong>Execution:</strong> Scripts were converted to <code>.txt</code> files (e.g., <code>tsidem01-r.txt</code>) to meet eCTD requirements while maintaining traceability.</li>
+</ol>
+<p><strong>R consortium’s Note on eCTD Requirements:</strong> While the J&amp;J team converted scripts to <code>.txt</code> files for their submissions, please note that regulatory standards have recently progressed. As a result of the collaboration between the R Consortium and the FDA, the <a href="https://www.fda.gov/media/85816/download?attachment">latest FDA Study Data Technical Conformance Guide (August 2025)</a> now explicitly allows R-related file extensions for electronic submissions. This conversion step is therefore no longer necessary for future eCTD packages.</p>
 </section>
-<section id="latest-news">
-<h2 class="scroll-title anchored">
-BLOG
-</h2>
+<section id="key-takeaways-for-the-community" class="level3">
+<h3 class="anchored" data-anchor-id="key-takeaways-for-the-community"><strong>Key Takeaways for the Community</strong></h3>
+<p>The presenters offered several recommendations for future R submissions:</p>
+<ul>
+<li><strong>Leverage Open Source Repositories:</strong> Use CRAN or curated repositories to simplify the setup process for reviewers.<br>
+</li>
+<li><strong>Documentation and Communication are the Key:</strong> Update the ADRG with clear instructions on package installation and environment reproduction. J&amp;J used the R Consortium Pilot 3 ADRG as a template. It is always a good idea to communicate with FDA staff early on your submission plan.<br>
+</li>
+<li><strong>Minimize Dependencies:</strong> Use standard packages where possible and minimize reliance on complex proprietary packages to reduce friction.</li>
+</ul>
 </section>
-<script>
-
-document.addEventListener("DOMContentLoaded", function() {
-  const scrollTitles = document.querySelectorAll(".scroll-title");
-
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function checkAnimations() {
-    scrollTitles.forEach(el => {
-      if (isElementInViewport(el)) {
-        el.classList.add("animate-slideInFromLeft");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", checkAnimations);
-  checkAnimations(); 
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const scrollTitles = document.querySelectorAll(".scroll-title");
-
-  scrollTitles.forEach(el => {
-    el.addEventListener("click", function() {
-      const targetId = this.getAttribute("data-target");
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  });
-});
-document.getElementById('scroll-to-hero').addEventListener('click', function() {
-    document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-<script>
-var Swipes = new Swiper('.swiper-container', {
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-});
-</script>
+<section id="watch-the-presentation-and-learn-more" class="level3">
+<h3 class="anchored" data-anchor-id="watch-the-presentation-and-learn-more"><strong>Watch the Presentation and Learn More</strong></h3>
+<p>To see the full technical breakdown, including directory structures and code examples, watch the full recording of the presentation:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=cve0whfsO6o"><strong>Watch the Webinar: Johnson &amp; Johnson’s Hybrid R Submission Strategy</strong></a><br>
+</li>
+<li><a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/RCONSORTIUM2025_JNJ.pptx"><strong>Slide deck</strong></a></li>
+</ul>
+<p>For those interested in the foundational work that made this possible, J&amp;J has also shared resources on their validation and adoption processes:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lWXqfuaxNL8"><strong>Using R in a GxP Environment (Validation Process)</strong></a><br>
+</li>
+<li><a href="https://posit.co/webinar/johnson-johnsons-open-source-journey-in-r/"><strong>Johnson &amp; Johnson’s Open Source Journey in R</strong></a></li>
+</ul>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWE=" data-listing-date-sort="1765756800000" data-listing-file-modified-sort="1765815060443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="559">
-<a href="./posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/jnj-submissions-main-image.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission
-</h5>
-<div class="card-text listing-description delink">
-<p>Johnson &amp; Johnson shares how a pragmatic hybrid R/SAS workflow—SAS for ADaM derivation and R for TFLs—enabled successful FDA submission while maintaining reviewer-friendly…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Dec 15, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="YXNpYSUyQ3BoYXJtYSUyQ2V2ZW50cw==" data-listing-date-sort="1765411200000" data-listing-file-modified-sort="1765815060108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="613">
-<a href="./posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bridging Gaps and Breaking Barriers: A Year of R Innovation with the China PharmaRUG
-</h5>
-<div class="card-text listing-description delink">
-<p>Guest post: In 2025, the China PharmaRUG connected local and global R-in-pharma communities through hybrid events, an APAC track at R/Pharma, and a strategy-focused session…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Joe Zhu, Roche, Yanli Chang, Johnson &amp; Johnson
-</div>
-<div class="listing-date">
-Dec 11, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cnVncyUyQ2V1" data-listing-date-sort="1765238400000" data-listing-file-modified-sort="1765815060326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1415">
-<a href="./posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" class="thumbnail-image card-img" style="height: 150px;" alt="picture of R-Ladies Zurich organizers">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Growing an R Community in a Shifting Tech Landscape: The Story of R-Ladies Zurich
-</h5>
-<div class="card-text listing-description delink">
-<p>Luisa Barbanti, organizer of R-Ladies Zurich, shares how her team keeps a technically focused R community thriving in Switzerland as tools, workplaces, and expectations…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Dec 9, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWElMkNhbm5vdW5jZW1lbnRz" data-listing-date-sort="1765152000000" data-listing-file-modified-sort="1765815060265" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="548">
-<a href="./posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo-main-image.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration
-</h5>
-<div class="card-text listing-description delink">
-<p>A milestone! FDA expands accepted R file formats, resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Dec 8, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="aW5zdXJhbmNlJTJGcmlzayUyQ2V2ZW50cw==" data-listing-date-sort="1764806400000" data-listing-file-modified-sort="1765815060773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
-<a href="./posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long-main-image.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R Consortium announces JD Long as keynote speaker for R!sk 2026
-</h5>
-<div class="card-text listing-description delink">
-<p>The R Consortium is pleased to announce that James “JD” Long, CTO at Palomar, and co-author of <em>R Cookbook</em>, will deliver the keynote address at R!sk 2026, being held…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Dec 4, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="cnVncyUyQ3NvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMkNhc2lh" data-listing-date-sort="1764806400000" data-listing-file-modified-sort="1765815060072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1218">
-<a href="./posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" class="thumbnail-image card-img" style="height: 150px;" alt="picture of Karachi R User Group logo">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch
-</h5>
-<div class="card-text listing-description delink">
-<p>Muhammad Uzair Aslam, founder of the Karachi R User Group, spoke with the R Consortium about growing an open and volunteer-led R community in Pakistan—one of the first of…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium
-</div>
-<div class="listing-date">
-Dec 4, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
