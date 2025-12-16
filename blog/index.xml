@@ -10,7 +10,65 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 15 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Reviving Budapest Users of R Network and Reversing Diabetes: How Gergely Daroczi Brings Data to Life with R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="https://www.linkedin.com/in/daroczig/?originalSubdomain=hu">Gergely Daroczi</a>, organizer of the <a href="https://www.meetup.com/budapest-users-of-r-network/">Budapest Users of R Network</a> (BURN), recently spoke with the R Consortium about his efforts to reignite Hungary’s R community after the pandemic. With over 1,800 members, BURN is rebuilding momentum through in-person meetups and lightning talks that reconnect data professionals and R enthusiasts. Gergely also shared how he used R to integrate data from a continuous glucose monitor, dietary logs, and Strava’s API—analyzing real-time health metrics to successfully reverse type 2 diabetes and demonstrate R’s power beyond traditional analytics.</p>
+<p><img src="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/GergelyDaroczi.png" class="img-fluid" style="width:50.0%"></p>
+<section id="how-has-the-group-been-doing-since-we-last-spoke" class="level2">
+<h2 class="anchored" data-anchor-id="how-has-the-group-been-doing-since-we-last-spoke">How has the group been doing since we last spoke?</h2>
+<p>I’m still trying to figure out how to restart the community after COVID impacted it so heavily. Many other meetup organizers, even those outside of the R community, have shared similar experiences. Some have managed to get back on track fairly well; for instance, I attended a few <a href="https://pydata.org/">PyData</a> conferences and the <a href="https://user2025.r-project.org/">UseR! Conference</a> this year was a great opportunity to connect with others. However, in Budapest, we are still struggling.</p>
+<p>To provide some context, the Hungarian R meetup, known as Budapest Users of R Network (or BURN for short), has more than 1,800 members. I recently announced our first event for 2025, but attendance is not looking promising—only about 15 RSVPs so far, which is unusually low. In the past, we typically had between 50 and 80 attendees, regardless of the topic. I believe this decline reflects a general trend of reduced motivation to attend meetups.&nbsp;</p>
+<p>The Meetup platform is also becoming less effective in my opinion. I’ve checked in with several contacts on Slack, LinkedIn, and other platforms, and they said they didn’t receive notifications about the new event announcement. I also tried messaging the entire group via meetup.com, as that’s the only channel I have available, but even those follow-up emails didn’t reach many people. I’ve opened a support ticket with meetup.com, and they have acknowledged the problem, but there is no ETA on a fix and no way to reach our members effectively.</p>
+<p><img src="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/BURNMeetup1.png" class="img-fluid"></p>
+<p>We ended up with 39 RSVPs for our recent <a href="https://www.meetup.com/budapest-users-of-r-network/events/311069930">event in November</a> and 5 different presentations on a variety of topics. One presentation showcased a Shiny application created by a junior data scientist as part of his job application portfolio. Another talk, from a university professor, focused on her work with a static site generator using R to implement her CV and list of publications. And a well-known member of the Hungarian data community shared his insights on the global trends in the R and Python world.</p>
+<p>I also contributed by sharing a side project where I used R to track my blood glucose levels, as I’ve been diagnosed with type 2 diabetes. I’ve been utilizing R to monitor my diet and exercise habits to develop a healthier lifestyle.&nbsp;</p>
+</section>
+<section id="could-you-provide-some-insights-into-the-r-community-and-its-use-over-the-past-two-years-have-you-observed-any-significant-changes-during-this-time" class="level2">
+<h2 class="anchored" data-anchor-id="could-you-provide-some-insights-into-the-r-community-and-its-use-over-the-past-two-years-have-you-observed-any-significant-changes-during-this-time">Could you provide some insights into the R community and its use over the past two years? Have you observed any significant changes during this time?</h2>
+<p>I see both favorable and less favorable trends in my experience teaching in the Business Analytics program at Central European University in Vienna. Initially, R was the primary programming language used in the program. We taught R for various applications, including building dashboards, reporting with R Markdown, and even implementing APIs. All courses relied on R.&nbsp;</p>
+<p>However, two years ago, a decision was made to switch to Python. Although I continue to teach my courses in R, as I’m still convinced it is a better fit for general data analysis, they are now electives. That said, I understand the reasoning behind the shift; there is clearly more demand in the job market for Python users due to its versatility.</p>
+<p>On the flip side, R remains incredibly powerful in several industries. For example, in sectors like bioinformatics and banking, R continues to excel. Many outstanding R packages don’t have comparable alternatives in other programming languages. It’s reassuring to see that R remains strong and continues to grow in these fields.</p>
+<p><img src="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/BURNMeetup2.png" class="img-fluid"></p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
+<p>I was diagnosed with type 2 diabetes, which is a challenging condition. I was informed that I needed to start medication immediately because my glucose levels were extremely high. However, I consulted with another doctor who supported me in making lifestyle changes.&nbsp;</p>
+<p>I decided to adopt a strict low-carb diet to help lower my glucose levels. I also started exercising daily and began using a continuous glucose monitor (CGM) to get real-time access to my glucose levels. This small device attached to my arm takes measurements every few minutes.</p>
+<p>To track my progress, I created some R scripts that pull data points from various sources. I used an Android application to monitor my food intake, and this data is stored on a PHP-written website that unfortunately doesn’t provide an API. As a result, I had to devise creative methods to extract this data. I documented the process in a <a href="https://www.linkedin.com/posts/daroczig_rstats-activity-7334697464173596673-ELun?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAXwvhoB6jbBMHy1BYiiV9iOzSZxdmntXbI">LinkedIn</a> post, detailing how I tracked my caloric and carbohydrate intake throughout the day.</p>
+<p>In addition to my food data, I accessed the CGM data on my phone. I installed open-source software that synced all the collected data points to an <a href="https://www.influxdata.com/">InfluxDB</a>, another open-source database that I set up on one of my servers. I also integrated my old elliptical trainer, which uses a proprietary Android application. Fortunately, I found someone who reverse-engineered the protocol, allowing me to sync that data to <a href="https://www.strava.com/">Strava</a>. Strava offers a free API, even for its free plan, allowing me to obtain the data and run daily reports.</p>
+<p><img src="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/BURNPRoject1.png" class="img-fluid"></p>
+<p>These reports help me understand how my glucose levels fluctuate throughout the day, how different foods affect my levels, how I can manage spikes through exercise, and how to structure my day effectively. I’ve received regular feedback on how my body responds, which has been incredibly helpful.&nbsp;</p>
+<p>On these charts, the black line represents my actual glucose levels, as measured. The vertical red lines indicate my energy and carb intake, and the gray intervals show the periods when I was exercising on the elliptical trainer.</p>
+<p><img src="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/BURNProject2.png" class="img-fluid"></p>
+<p>I observed that my glucose levels fluctuated, with occasional spikes that were concerning. My goal was to maintain my glucose levels within the green zone, which represents a healthy range, while keeping them as low as possible when they approached the orange or red zones, indicating unhealthy levels. This feedback was instrumental in helping me attain a healthy state.&nbsp;</p>
+<p>After four months, I shared an update along with my lab results, which indicated that over the past quarter, I had been 100% healthy, with normal glucose levels. Achieving this required significant changes to my diet, such as reducing carbohydrate intake and committing to regular exercise. I accomplished this without medication, mainly because of the empirical data I collected and the instant feedback it provided.&nbsp;</p>
+<p>Overall, this experience was like a data analysis project, aimed at maximizing my health outcomes. I found R to be an invaluable tool for consolidating these data points, enabling me to track and improve my health.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?&nbsp;</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in almost 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>software development</category>
+  <category>eu</category>
+  <guid>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/</guid>
+  <pubDate>Tue, 16 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/GergelyDaroczi.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1375,172 +1433,6 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <guid>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/thumbnail-xu-fei.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>R+AI: Use RAG from your database to gain insights into the R Consortium</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/h0ewziCZ0WI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here-pdf." class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf.">Slides with resource links <a href="RplusAI-Mark-Hornick-RAG.pdf">available here</a> (PDF).</h3>
-<p>Retrieval-Augmented Generation (RAG) is quickly becoming a core pattern for putting real-world data behind large language models (LLMs). At R+AI 2025, the session <strong>“R+AI: Use RAG from your database to gain insights into the R Consortium”</strong> put this pattern directly into the hands of R users.</p>
-<p>Presented by <strong>Mark Hornick</strong> (Senior Director, Oracle Machine Learning) and <strong>Sherry LaMonica</strong> (Consulting MTS, Oracle Machine Learning), the session walks through how to turn the R Consortium’s blog archive into a searchable knowledge source using R, Oracle Autonomous AI Database, and Select AI’s built-in RAG capabilities.</p>
-<hr>
-</section>
-<section id="why-rag-matters-for-r-users" class="level2">
-<h2 class="anchored" data-anchor-id="why-rag-matters-for-r-users">Why RAG matters for R users</h2>
-<p>The session opens with a problem that every R user experimenting with LLMs has already run into: models are powerful, but their knowledge is frozen at a training cutoff date. They know a lot about R in general, but not necessarily about:</p>
-<ul>
-<li>Recent events such as R+AI 2025<br>
-</li>
-<li>Newly published R Consortium posts or announcements<br>
-</li>
-<li>Fresh community content, including RUG interviews and technical grant updates</li>
-</ul>
-<p>Without access to current, domain-specific content, a base LLM simply cannot answer many questions accurately—especially about a fast-moving ecosystem like R.</p>
-<p>RAG solves this by combining:</p>
-<ul>
-<li><strong>Vector search</strong> over your own content (in this case, R Consortium blogs)<br>
-</li>
-<li><strong>Generative AI</strong> that uses the retrieved passages as grounded context</li>
-</ul>
-<p>Instead of asking an LLM to “remember everything,” RAG feeds it the exact snippets it needs at query time. The model generates text, but the facts come from your data.</p>
-<hr>
-</section>
-<section id="inside-a-rag-pipeline-from-chunks-to-answers" class="level2">
-<h2 class="anchored" data-anchor-id="inside-a-rag-pipeline-from-chunks-to-answers">Inside a RAG pipeline: from chunks to answers</h2>
-<p>Hornick walks through a concise but clear mental model for RAG:</p>
-<ol type="1">
-<li><p><strong>Chunk documents</strong><br>
-R Consortium blog posts and related articles are split into text chunks using a sliding window approach, so each piece is big enough to be meaningful but small enough for precise retrieval.</p></li>
-<li><p><strong>Create embeddings and a vector index</strong><br>
-Each chunk is converted into a high-dimensional vector using an embedding (transformer) model. These vectors are stored in a vector database and organized by a <strong>vector index</strong>, which makes similarity search fast and scalable, even with millions of chunks.</p></li>
-<li><p><strong>Embed the user query</strong><br>
-When a user asks a question in natural language, that question is also converted into a vector using the same embedding model.</p></li>
-<li><p><strong>Retrieve similar chunks</strong><br>
-The system performs a semantic similarity search between the query vector and the document vectors, retrieving the top-k most relevant chunks.</p></li>
-<li><p><strong>Augment the prompt and call the LLM</strong><br>
-Those chunks are combined with the user’s question to form an augmented prompt. The LLM then generates an answer grounded in the retrieved R Consortium content.</p></li>
-<li><p><strong>Return both answer and sources</strong><br>
-In addition to the natural-language answer, the system can return which documents and offsets contributed to that response, giving transparency and traceability back to the original posts.</p></li>
-</ol>
-<p>The key point: RAG injects fresh, trusted knowledge into the LLM at inference time, without retraining or fine-tuning the model.</p>
-<hr>
-</section>
-<section id="select-ai-and-autonomous-ai-database-rag-built-into-the-database" class="level2">
-<h2 class="anchored" data-anchor-id="select-ai-and-autonomous-ai-database-rag-built-into-the-database">Select AI and Autonomous AI Database: RAG built into the database</h2>
-<p>Rather than asking R users to handcraft all this orchestration with an external framework, the session leans on <strong>Oracle Autonomous AI Database</strong> and <strong>Select AI</strong>. In this architecture:</p>
-<ul>
-<li>The <strong>R Consortium blog archive</strong> is stored as HTML and text files in <strong>Oracle Object Storage</strong>.<br>
-</li>
-<li><strong>Select AI RAG</strong> automates chunking, embedding, vector store creation, and index maintenance inside the database.<br>
-</li>
-<li>The entire RAG pipeline lives close to the data, which simplifies operations and improves performance.</li>
-</ul>
-<p>Select AI exposes a configuration object called an <strong>AI profile</strong>, which specifies:</p>
-<ul>
-<li>The AI provider and LLM to use (for example, an OCI Generative AI model)<br>
-</li>
-<li>The transformer (embedding) model<br>
-</li>
-<li>The vector index to query<br>
-</li>
-<li>Parameters like temperature, max tokens, and whether to return sources</li>
-</ul>
-<p>The talk shows how AI profiles become the control center for RAG: define them once, then reuse them across R sessions, workflows, and applications.</p>
-<hr>
-</section>
-<section id="building-rag-from-r-helper-functions-not-boilerplate" class="level2">
-<h2 class="anchored" data-anchor-id="building-rag-from-r-helper-functions-not-boilerplate">Building RAG from R: helper functions, not boilerplate</h2>
-<p>From the R user’s perspective, the magic happens through a set of helper functions that wrap the underlying PL/SQL APIs in the database. LaMonica demonstrates this live from RStudio:</p>
-<ul>
-<li>An R function establishes a secure connection to Oracle Autonomous AI Database.<br>
-</li>
-<li>Another function creates an AI profile, passing in credentials, LLM configuration, and the name of the vector index.<br>
-</li>
-<li>A third function creates the vector index itself, handling options like chunk size, chunk overlap, and refresh behavior as new content is added to Object Storage.</li>
-</ul>
-<p>All of the PL/SQL complexity—JSON attribute strings, dynamic SQL, and calls to <code>DBMS_CLOUD_AI</code> procedures such as <code>CREATE_VECTOR_INDEX</code>—is hidden behind the R wrapper functions. R users stay in familiar territory while the database takes care of the heavy lifting.</p>
-<p>Once everything is configured, a single R function can:</p>
-<ul>
-<li>Take a natural language prompt<br>
-</li>
-<li>Call the appropriate Select AI procedure under the hood<br>
-</li>
-<li>Return both the generated answer and the list of retrieved sources as a tidy R object</li>
-</ul>
-<p>This pattern makes it realistic for R teams to prototype and deploy RAG workflows without becoming experts in database internals.</p>
-<hr>
-</section>
-<section id="direct-llm-vs-rag-asking-about-rai-2025" class="level2">
-<h2 class="anchored" data-anchor-id="direct-llm-vs-rag-asking-about-rai-2025">Direct LLM vs RAG: asking about R+AI 2025</h2>
-<p>One of the most compelling moments in the demo is a simple A/B test:</p>
-<ul>
-<li>First, LaMonica asks a base LLM (no RAG) about the <strong>R+AI 2025 conference</strong>. As expected, the model admits it has no information—this content postdates its training data.<br>
-</li>
-<li>Then, she repeats the same question using RAG backed by the R Consortium blog and conference pages.</li>
-</ul>
-<p>This time, the answer includes concrete details about R+AI 2025: dates, online format, and examples from the program, all drawn from the R Consortium’s own materials.</p>
-<p>The difference is stark:</p>
-<ul>
-<li>Without RAG, the model is blind to R Consortium’s latest activities.<br>
-</li>
-<li>With RAG, it acts like a knowledgeable assistant that “reads” the current R Consortium site for every query.</li>
-</ul>
-<p>For anyone managing R content—websites, documentation, internal knowledge bases—the lesson is clear: RAG is how LLMs become truly useful on top of your own corpus.</p>
-<hr>
-</section>
-<section id="multilingual-retrieval-on-english-blog-content" class="level2">
-<h2 class="anchored" data-anchor-id="multilingual-retrieval-on-english-blog-content">Multilingual retrieval on English blog content</h2>
-<p>Another highlight is multilingual support. The R Consortium blog posts used in the demo are in English, but the speakers show queries issued in <strong>Italian, Spanish, and Brazilian Portuguese</strong>:</p>
-<ul>
-<li>The multilingual embedding model interprets the query in each language.<br>
-</li>
-<li>The system still retrieves relevant English-language blog chunks.<br>
-</li>
-<li>The LLM responds in the same language as the question, grounded in English content.</li>
-</ul>
-<p>For an international community like the R ecosystem—where user groups and contributors span Europe, Latin America, and beyond—this multilingual RAG pattern is powerful. It makes English-only technical content accessible through conversational queries in local languages, while still keeping a single canonical source of truth.</p>
-<hr>
-</section>
-<section id="under-the-hood-ai-profiles-vector-indexes-and-plsql" class="level2">
-<h2 class="anchored" data-anchor-id="under-the-hood-ai-profiles-vector-indexes-and-plsql">Under the hood: AI profiles, vector indexes, and PL/SQL</h2>
-<p>Toward the end of the session, the speakers briefly peel back the abstraction and show what the R helper functions are doing:</p>
-<ul>
-<li>A <strong>PL/SQL <code>CREATE_PROFILE</code> block</strong> configures the AI profile: provider, credentials, LLM, embedding model, vector index, and parameters such as temperature and max tokens.<br>
-</li>
-<li>A <strong><code>CREATE_VECTOR_INDEX</code> call</strong> specifies the vector database provider (Oracle), the location in Object Storage, vector dimensionality, distance metric, and chunking options like overlap and size.<br>
-</li>
-<li>Other procedures drop or refresh vector indexes, and control whether sources are returned with each answer.</li>
-</ul>
-<p>The R wrappers simply construct these PL/SQL calls as strings, execute them via a database connectivity package, and translate the results into forms that are easy to work with in R.</p>
-<p>The message to R developers is not “learn PL/SQL,” but “understand that these building blocks exist and are automated for you.”</p>
-<hr>
-</section>
-<section id="who-are-the-speakers" class="level2">
-<h2 class="anchored" data-anchor-id="who-are-the-speakers">Who are the speakers?</h2>
-<p>The session is anchored by two long-time contributors at the intersection of databases, machine learning, and R:</p>
-<ul>
-<li><p><strong>Mark Hornick</strong> is Senior Director of Product Management for Oracle Machine Learning and Select AI. He has more than 25 years of experience integrating machine learning into Oracle products and is Oracle’s representative to the R Consortium, as well as an advisor to the Analytics and Data Oracle User Community.</p></li>
-<li><p><strong>Sherry LaMonica</strong> works on Oracle’s AI and Machine Learning product management team, helping organizations integrate open-source and commercial data science tools into large-scale analytical environments. She brings decades of experience supporting data-driven innovation across industries.</p></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>events</category>
-  <category>r+ai</category>
-  <guid>https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/</guid>
-  <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/thumbnail-oracle.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
