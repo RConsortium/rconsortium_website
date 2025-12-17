@@ -8,6 +8,9 @@ name: Quarto Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:
+      # Speed up dependency installation on CI by preferring binaries and using pak when possible.
+      RENV_CONFIG_PAK_ENABLED: "TRUE"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -25,6 +28,7 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: "4.5.0"
+          use-public-rspm: true
 
       # this step is for the igraph dependency which was failing on build
       # as of June 4, 2025. igraph is a dependency of TDA
@@ -39,10 +43,7 @@ jobs:
         with:
           cache-version: 2
 
-      # ripserr is needed for tdarec blog post
-      - name: Install missing R packages (e.g., ripserr)
-        run: |
-          Rscript -e 'install.packages("ripserr", repos = "https://cran.r-project.org")'
+      # Note: `ripserr` is already in `renv.lock`, so it will be installed by renv restore.
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
