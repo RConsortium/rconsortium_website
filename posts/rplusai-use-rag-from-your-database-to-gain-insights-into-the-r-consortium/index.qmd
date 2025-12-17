@@ -1,6 +1,7 @@
 ---
 title: "R+AI: Use RAG from your database to gain insights into the R Consortium"
 unpublished: false
+url: "https://r-consortium.org/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/"
 description: "At R+AI 2025, Oracle Machine Learning’s Mark Hornick and Sherry LaMonica showed how R users can apply Retrieval Augmented Generation (RAG) to R Consortium blog data using Oracle Autonomous Database, Select AI, and an R interface."
 author: "R Consortium"
 categories: ["ai", "events", "r+ai"]
