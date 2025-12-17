@@ -173,39 +173,41 @@ function parseHash(hash) {
   const hashObj = {};
   hashValues.forEach((hashValue) => {
     let decodedValue = hashValue.value;
-    // Try to decode - handle both URL encoding and base64 encoding (for backward compatibility)
-    // Check if it looks like base64 (base64 strings are typically longer and contain = padding)
-    const looksLikeBase64 = /^[A-Za-z0-9+/]*={0,2}$/.test(hashValue.value) && 
-                            hashValue.value.length >= 4 && 
-                            (hashValue.value.includes('=') || hashValue.value.length % 4 === 0);
+    
+    // First, always try URL decoding (since values in URLs are typically URL-encoded)
+    let urlDecoded = hashValue.value;
+    try {
+      urlDecoded = decodeURIComponent(hashValue.value);
+    } catch (e) {
+      // URL decode failed, use original
+      urlDecoded = hashValue.value;
+    }
+    
+    // Check if the URL-decoded value looks like base64
+    // Base64 strings contain only A-Z, a-z, 0-9, +, /, and = padding
+    const looksLikeBase64 = /^[A-Za-z0-9+/]*={0,2}$/.test(urlDecoded) && 
+                            urlDecoded.length >= 4;
     
     if (looksLikeBase64) {
-      // Try base64 decode first for base64-looking strings
+      // Try base64 decode
       try {
-        decodedValue = atob(hashValue.value);
-        // Verify it's valid text (not binary data)
-        if (!/^[\x20-\x7E\s]*$/.test(decodedValue)) {
-          // Not valid text, try URL decode instead
-          decodedValue = decodeURIComponent(hashValue.value);
+        const base64Decoded = atob(urlDecoded);
+        // Verify it's valid printable text
+        if (/^[\x20-\x7E\s]*$/.test(base64Decoded)) {
+          decodedValue = base64Decoded;
+        } else {
+          // Base64 decoded to binary data, use URL-decoded value
+          decodedValue = urlDecoded;
         }
       } catch (e) {
-        // Base64 decode failed, try URL decode
-        try {
-          decodedValue = decodeURIComponent(hashValue.value);
-        } catch (e2) {
-          // Both failed, use original value
-          decodedValue = hashValue.value;
-        }
+        // Base64 decode failed, use URL-decoded value
+        decodedValue = urlDecoded;
       }
     } else {
-      // Doesn't look like base64, use URL decode
-      try {
-        decodedValue = decodeURIComponent(hashValue.value);
-      } catch (e) {
-        // URL decode failed, use original value
-        decodedValue = hashValue.value;
-      }
+      // Doesn't look like base64, use URL-decoded value
+      decodedValue = urlDecoded;
     }
+    
     hashObj[hashValue.name] = decodedValue;
   });
   return hashObj;
