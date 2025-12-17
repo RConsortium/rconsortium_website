@@ -10,7 +10,66 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 16 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 17 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Empowering Government Professionals in Nepal Using R programming for Forestry Data Analysis</title>
+  <dc:creator>Prakash Lamichhane, Research Officer at Ministry of Forests and Environment, Nepal</dc:creator>
+  <link>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The R Consortium supports the global community of users, maintainers, and developers of R, a fast-growing language for statistical computing and graphics. In a world where data is increasingly at the heart of evidence-based decision-making, the R language is empowering professionals in new and inspiring ways. A recent capacity-building initiative in Nepal, organized by the joint effort of Forest Research and Training Center, Koshi Province and <a href="https://www.meetup.com/enirodatar-group-nepal/">EnviroDataR Group Nepal</a>, exemplifies this transformation, showcasing how R is becoming an essential tool for sustainable forest management.</p>
+<section id="the-challenge-turning-data-into-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-turning-data-into-decisions"><strong>The Challenge: Turning Data into Decisions</strong></h2>
+<p>In recent years, the forestry and environment sectors have been undergoing a rapid digital transformation. Officials and professionals at government offices, particularly those in Divisional Forests Offices, often have to handle large, complex datasets for tasks such as forest inventories, biodiversity monitoring, carbon stock estimation, and national greenhouse gas (GHG) reporting.</p>
+<p>However, many of these professionals have faced significant challenges. Traditional approaches, relying on spreadsheets and proprietary software, often lack the flexibility and advanced analytical capabilities needed to manage and analyze this complex data effectively. This has created a critical gap between having the data and being able to use it to inform evidence-based decisions. R programming has emerged as a solution, offering an open-source, versatile, and reproducible alternative.</p>
+</section>
+<section id="a-transformative-learning-experience" class="level2">
+<h2 class="anchored" data-anchor-id="a-transformative-learning-experience"><strong>A Transformative Learning Experience</strong></h2>
+<p>To address this, the <strong>Forest Research and Training Center (FRTC)</strong> in Koshi Province organized a seven-day training program on R programming. The goal was to equip officials with skills to not only use R but also to transform their approach to data. Participants were taught to manage, process, and visualize datasets while also emphasizing reproducibility, transparency, and modern analytical practices.</p>
+<p>The training covered key areas essential for forestry professionals:</p>
+<ul>
+<li><strong>Foundational knowledge</strong> of R syntax and data structures.<br>
+</li>
+<li><strong>Practical data manipulation</strong> using packages like `dplyr`.<br>
+</li>
+<li><strong>Effective data visualization</strong> with `ggplot2`.<br>
+</li>
+<li><strong>Statistical tests</strong>, both parametric and non-parametric.<br>
+</li>
+<li><strong>Geospatial data handling</strong> and basic mapping.</li>
+</ul>
+<p>A key strength of the program was its interactive and technology-enabled methodology, which included pre- and post-test surveys via Google Forms and daily quizzes on Kahoot.com to reinforce learning and measure progress. This hands-on approach directly benefited government officials by providing them with the tools to solve the difficulties they face in their daily work.</p>
+<p><img src="https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/training-sessions.png" class="img-fluid"> <em>Figure 1: Glimpse of Training Sessions and Closing</em></p>
+</section>
+<section id="outcomes-and-acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="outcomes-and-acknowledgments"><strong>Outcomes and Acknowledgments</strong></h2>
+<p>The training was a resounding success. Participants from various districts of Koshi Province demonstrated a measurable improvement in their skills, becoming proficient in using R for real-world tasks. By the end of the program, officials were capable of applying reproducible, transparent workflows for tree data collection, keeping, and processing in R. This empowered them to conduct required data analysis within the Ministry of Forests and pursue their academic careers with enhanced data analysis skills.</p>
+<p>This initiative has contributed to building a skilled cadre of officials, strengthening Nepal’s national capacity for data-driven forestry decision making. We would like to extend our sincere gratitude to all who contributed to the success of this program:</p>
+<ul>
+<li>The Forest Research and Training Center for its leadership and vision in organizing this vital training.<br>
+</li>
+<li>The Divisional Forests Offices and Ministry of Forests and Environments for their enthusiastic participation and support.<br>
+</li>
+<li>The R Consortium community, whose continuous work in developing and maintaining open-source R packages make such transformative projects possible worldwide.<br>
+</li>
+<li>Dr.&nbsp;Shiva Khanal, whose dedication as a co-organizer was instrumental to the success of this initiative.</li>
+</ul>
+<p>This initiative in Nepal demonstrates the power of the R language to transform research and empower a new generation of data-driven professionals. It shows that with the right tools and training, we can overcome challenges and build a more sustainable future, one line of code at a time.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>asia</category>
+  <category>environment</category>
+  <guid>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/index.html</guid>
+  <pubDate>Wed, 17 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/data-forestry-analysis-group.png" medium="image" type="image/png" height="77" width="144"/>
+</item>
 <item>
   <title>Reviving Budapest Users of R Network and Reversing Diabetes: How Gergely Daroczi Brings Data to Life with R</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1349,68 +1408,6 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <guid>https://r-consortium.org/posts/me-myself-claude/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/me-myself-claude/thumbnail-jasmine-daly.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Tracking the Evolution of R and Python Tools for GenAI</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wYMzdAh8FyE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="Xu_Fei_Tracking_the_Evolution.pdf">available here</a> (PDF)</h3>
-</section>
-<section id="building-genai-applications-lessons-from-r-and-python-tooling" class="level1">
-<h1>Building GenAI Applications: Lessons from R and Python Tooling</h1>
-<p>Generative AI (GenAI) has become an exciting frontier for developers and data scientists eager to infuse applications with intelligent features. The journey at A2-Ai, a team of scientists and developers skilled in languages like R, Python, JavaScript, and more, provides valuable insights into the interplay of R and Python in GenAI tooling. This post delves into key learnings and experiences from building GenAI applications, focusing on tools that enhance communication between elements and back-end systems.</p>
-<section id="a-journey-into-genai-from-challenges-to-solutions" class="level2">
-<h2 class="anchored" data-anchor-id="a-journey-into-genai-from-challenges-to-solutions">A Journey into GenAI: From Challenges to Solutions</h2>
-<p>A2-Ai’s exploration into GenAI began with a simple question: “How do I install the <code>dplyr</code> package?” While large language models like ChatGPT offered correct answers, they weren’t always applicable to internal processes. A2-Ai uses an internal tool written in Rust, called RB, for managing installations and environments for R packages. The need to incorporate such internal knowledge into a chatbot led to the development of a unique system built with Shiny for Python. The result was a chatbot capable of fetching precise information from the internal R repository, Prism, and making appropriate API calls.</p>
-<p>For example, one colleague developed a Model Context Protocol (MCP) server in R, enabling natural language queries for exploratory data analysis within pharmacometrics workflows. This allowed scientists to interact with data by posing questions in English, prompting updates in plots and legends.</p>
-<p>While applications are diverse, three core building blocks are essential for building GenAI applications: model interface, context handling, and result validation.</p>
-</section>
-<section id="core-building-blocks-of-genai-applications" class="level2">
-<h2 class="anchored" data-anchor-id="core-building-blocks-of-genai-applications">Core Building Blocks of GenAI Applications</h2>
-<ol type="1">
-<li><p><strong>Model Interface</strong>: This manages Language Model (LM) API calls. Despite the dearth of R SDKs for providers like OpenAI, the package <code>{ellmer}</code> has emerged as the go-to tool for R developers. <code>{ellmer}</code> abstracts overhead from HTTP calls, allowing developers to focus on building rather than communication intricacies.</p></li>
-<li><p><strong>Context Handling</strong>: This involves determining the necessary context for LLMs to provide accurate responses. In enterprise environments, internal documentation, codebases, and workflows form part of this context. The robustness of the Python ecosystem, rich with tools for document processing, offers an advantage, but recent R developments are bridging some gaps.</p></li>
-<li><p><strong>Result Validation</strong>: Ensuring systematic output of desired results is crucial, given the non-deterministic behavior of LM applications. Tools like <code>vital</code> in R and <code>inspect</code> in Python offer mechanisms to evaluate GenAI applications systematically, ensuring improvements are tracked and validated.</p></li>
-</ol>
-</section>
-<section id="evolution-of-tooling-in-r-and-python" class="level2">
-<h2 class="anchored" data-anchor-id="evolution-of-tooling-in-r-and-python">Evolution of Tooling in R and Python</h2>
-<p>R and Python ecosystems have evolved with various packages dealing with model interfaces. The chronological development of these packages reveals a convergence towards <code>{ellmer}</code> for R, while Python’s ecosystem remains diverse due to original SDKs from model providers and other unifying libraries.</p>
-<p>The Python ecosystem boasts high-level orchestration frameworks for different use cases, a result of foundational SDKs enabling diverse and rich use-case development. While R’s ecosystem is in a growth phase, new tools are helping it catch up.</p>
-</section>
-<section id="strategies-for-leveraging-r-and-python-together" class="level2">
-<h2 class="anchored" data-anchor-id="strategies-for-leveraging-r-and-python-together">Strategies for Leveraging R and Python Together</h2>
-<p>Developers need not choose between R and Python. Several strategies exist to leverage both:</p>
-<ul>
-<li><p><strong>R-Only Teams</strong>: Start with <code>{ellmer}</code> and explore packages like <code>{btw}</code> (from Posit), which allow interaction with LLMs within R environments.</p></li>
-<li><p><strong>Python-Only Tools</strong>: Use the <code>reticulate</code> package to call Python libraries and functions from R without switching languages entirely.</p></li>
-<li><p><strong>Multilingual Teams</strong>: Use REST APIs to expose tools to other teams, enabling interaction across different languages.</p></li>
-<li><p><strong>Model Context Protocol (MCP)</strong>: With MCP servers, developers can expose functions in any language as natural language queries, enhancing cross-language interactions.</p></li>
-</ul>
-</section>
-<section id="conclusion-and-final-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-and-final-takeaways">Conclusion and Final Takeaways</h2>
-<p>Building GenAI applications with R and Python is an exciting venture, enriched by rapidly evolving ecosystems. While Python offers maturity, R is catching up with robust tools like <code>{ellmer}</code>. The key is to start building and refine applications based on user interactions. Bridging gaps strategically through REST APIs and MCP servers ensures developers leverage the best of both worlds while being mindful of potential risks and vulnerabilities.</p>
-<p>Engage with the GenAI community, share experiences, and continue learning for a rewarding journey in building innovative applications.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/index.html</guid>
-  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/thumbnail-xu-fei.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
