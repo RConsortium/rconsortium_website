@@ -185,15 +185,20 @@ function parseHash(hash) {
     
     // Check if the URL-decoded value looks like base64
     // Base64 strings contain only A-Z, a-z, 0-9, +, /, and = padding
-    const looksLikeBase64 = /^[A-Za-z0-9+/]*={0,2}$/.test(urlDecoded) && 
+    // Also check if it's not already a readable string (contains spaces or common punctuation)
+    const hasSpaces = /[\s]/.test(urlDecoded);
+    const looksLikeBase64 = !hasSpaces && 
+                            /^[A-Za-z0-9+/]*={0,2}$/.test(urlDecoded) && 
                             urlDecoded.length >= 4;
     
-    if (looksLikeBase64) {
+    // Always try base64 decode if it looks like base64, or as a fallback if URL-decoded value
+    // doesn't contain spaces (which would indicate it's not a normal category name)
+    if (looksLikeBase64 || (!hasSpaces && urlDecoded.length >= 4 && urlDecoded !== hashValue.value)) {
       // Try base64 decode
       try {
         const base64Decoded = atob(urlDecoded);
-        // Verify it's valid printable text
-        if (/^[\x20-\x7E\s]*$/.test(base64Decoded)) {
+        // Verify it's valid printable text (not binary) and looks like a category name
+        if (/^[\x20-\x7E\s]*$/.test(base64Decoded) && base64Decoded.length > 0) {
           decodedValue = base64Decoded;
         } else {
           // Base64 decoded to binary data, use URL-decoded value
@@ -204,7 +209,7 @@ function parseHash(hash) {
         decodedValue = urlDecoded;
       }
     } else {
-      // Doesn't look like base64, use URL-decoded value
+      // Looks like a normal category name, use URL-decoded value
       decodedValue = urlDecoded;
     }
     
