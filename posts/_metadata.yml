@@ -1,8 +1,7 @@
 # options specified here will apply to all posts in this folder
 
-# freeze computational output
-# (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: auto
+# Execution freezing is configured at the project level in `_quarto.yml`
+# via `execute: freeze: auto`. Keeping it centralized avoids confusion.
 
 # Enable banner style title blocks
 title-block-banner: true
