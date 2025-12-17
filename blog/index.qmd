@@ -10,6 +10,9 @@ page-layout: full
 format:
   html:
     toc: false
+    include-in-header:
+      - text: |
+          <script src="category-fix.js"></script>
 ---
 
 [Want to contribute to the R Consortium blog? Please review our Blog Post Guidelines.](guidelines.qmd)
