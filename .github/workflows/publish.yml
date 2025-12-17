@@ -8,9 +8,6 @@ name: Quarto Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    env:
-      # Speed up dependency installation on CI by preferring binaries and using pak when possible.
-      RENV_CONFIG_PAK_ENABLED: "TRUE"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
