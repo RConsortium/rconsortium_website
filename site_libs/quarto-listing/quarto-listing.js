@@ -185,15 +185,13 @@ function parseHash(hash) {
     
     // Check if the URL-decoded value looks like base64
     // Base64 strings contain only A-Z, a-z, 0-9, +, /, and = padding
-    // Also check if it's not already a readable string (contains spaces or common punctuation)
+    // Also check if it's not already a readable string (contains spaces)
     const hasSpaces = /[\s]/.test(urlDecoded);
     const looksLikeBase64 = !hasSpaces && 
                             /^[A-Za-z0-9+/]*={0,2}$/.test(urlDecoded) && 
                             urlDecoded.length >= 4;
     
-    // Always try base64 decode if it looks like base64, or as a fallback if URL-decoded value
-    // doesn't contain spaces (which would indicate it's not a normal category name)
-    if (looksLikeBase64 || (!hasSpaces && urlDecoded.length >= 4 && urlDecoded !== hashValue.value)) {
+    if (looksLikeBase64) {
       // Try base64 decode
       try {
         const base64Decoded = atob(urlDecoded);

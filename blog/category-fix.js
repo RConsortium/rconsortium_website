@@ -37,54 +37,86 @@
     return decoded;
   }
   
-  // Intercept the quarto-listing-loaded callback to fix category hash
-  const originalQuartoListingLoaded = window['quarto-listing-loaded'];
-  window['quarto-listing-loaded'] = function() {
-    // Fix the hash before processing
+  // Fix hash function that runs before quarto-listing processes it
+  function fixHashBeforeProcessing() {
     const hash = window.location.hash;
-    if (hash) {
-      // Parse the hash manually to fix base64-encoded categories
+    if (hash && hash.includes('category=')) {
       const hashMatch = hash.match(/category=([^&]*)/);
       if (hashMatch) {
         const encodedCategory = hashMatch[1];
         const decodedCategory = decodeCategory(encodedCategory);
         
         // If we decoded it, update the URL hash with the decoded value
-        if (decodedCategory !== encodedCategory) {
+        if (decodedCategory !== encodedCategory && decodedCategory !== encodedCategory.replace(/%3D/g, '=')) {
           const newHash = hash.replace(
             /category=[^&]*/,
             'category=' + encodeURIComponent(decodedCategory)
           );
+          // Use replaceState to avoid triggering navigation
           window.history.replaceState(null, null, newHash);
+          return true; // Indicates we fixed it
         }
       }
     }
+    return false;
+  }
+  
+  // Intercept the quarto-listing-loaded callback to fix category hash
+  const originalQuartoListingLoaded = window['quarto-listing-loaded'];
+  window['quarto-listing-loaded'] = function() {
+    // Fix the hash BEFORE the original function processes it
+    const wasFixed = fixHashBeforeProcessing();
     
     // Call the original function
     if (originalQuartoListingLoaded) {
       originalQuartoListingLoaded();
     }
+    
+    // If we fixed the hash, trigger category activation again with the correct value
+    if (wasFixed) {
+      setTimeout(function() {
+        const hash = window.location.hash;
+        if (hash) {
+          const hashMatch = hash.match(/category=([^&]*)/);
+          if (hashMatch) {
+            const category = decodeURIComponent(hashMatch[1]);
+            if (window.quartoListingCategory && window['quarto-listing-loaded']) {
+              // Small delay to ensure listing is ready
+              setTimeout(function() {
+                window.quartoListingCategory(category);
+              }, 100);
+            }
+          }
+        }
+      }, 200);
+    }
   };
   
-  // Also fix the hash on page load if it's already in the URL
+  // Fix hash immediately on page load
   function fixHashOnLoad() {
-    const hash = window.location.hash;
-    if (hash) {
-      const hashMatch = hash.match(/category=([^&]*)/);
-      if (hashMatch) {
-        const encodedCategory = hashMatch[1];
-        const decodedCategory = decodeCategory(encodedCategory);
-        
-        if (decodedCategory !== encodedCategory) {
-          const newHash = hash.replace(
-            /category=[^&]*/,
-            'category=' + encodeURIComponent(decodedCategory)
-          );
-          window.history.replaceState(null, null, newHash);
-          // Trigger a hash change event to reload
-          window.dispatchEvent(new Event('hashchange'));
+    const wasFixed = fixHashBeforeProcessing();
+    if (wasFixed) {
+      // If we fixed it, wait a bit then trigger the category activation
+      setTimeout(function() {
+        const hash = window.location.hash;
+        if (hash) {
+          const hashMatch = hash.match(/category=([^&]*)/);
+          if (hashMatch) {
+            const category = decodeURIComponent(hashMatch[1]);
+            // Wait for quarto-listing to be ready
+            const checkReady = setInterval(function() {
+              if (window.quartoListingCategory && window['quarto-listing-loaded']) {
+                clearInterval(checkReady);
+                window.quartoListingCategory(category);
+              }
+            }, 50);
+            // Stop checking after 5 seconds
+            setTimeout(function() {
+              clearInterval(checkReady);
+            }, 5000);
+          }
         }
-      }
+      }, 500);
     }
   }
   
@@ -96,7 +128,9 @@
   }
   
   // Also listen for hash changes
-  window.addEventListener('hashchange', fixHashOnLoad);
+  window.addEventListener('hashchange', function() {
+    fixHashBeforeProcessing();
+  });
   
 })();
 
