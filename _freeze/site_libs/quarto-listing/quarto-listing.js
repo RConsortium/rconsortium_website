@@ -172,46 +172,7 @@ function parseHash(hash) {
 
   const hashObj = {};
   hashValues.forEach((hashValue) => {
-    let decodedValue = hashValue.value;
-    
-    // First, always try URL decoding (since values in URLs are typically URL-encoded)
-    let urlDecoded = hashValue.value;
-    try {
-      urlDecoded = decodeURIComponent(hashValue.value);
-    } catch (e) {
-      // URL decode failed, use original
-      urlDecoded = hashValue.value;
-    }
-    
-    // Check if the URL-decoded value looks like base64
-    // Base64 strings contain only A-Z, a-z, 0-9, +, /, and = padding
-    // Also check if it's not already a readable string (contains spaces)
-    const hasSpaces = /[\s]/.test(urlDecoded);
-    const looksLikeBase64 = !hasSpaces && 
-                            /^[A-Za-z0-9+/]*={0,2}$/.test(urlDecoded) && 
-                            urlDecoded.length >= 4;
-    
-    if (looksLikeBase64) {
-      // Try base64 decode
-      try {
-        const base64Decoded = atob(urlDecoded);
-        // Verify it's valid printable text (not binary) and looks like a category name
-        if (/^[\x20-\x7E\s]*$/.test(base64Decoded) && base64Decoded.length > 0) {
-          decodedValue = base64Decoded;
-        } else {
-          // Base64 decoded to binary data, use URL-decoded value
-          decodedValue = urlDecoded;
-        }
-      } catch (e) {
-        // Base64 decode failed, use URL-decoded value
-        decodedValue = urlDecoded;
-      }
-    } else {
-      // Looks like a normal category name, use URL-decoded value
-      decodedValue = urlDecoded;
-    }
-    
-    hashObj[hashValue.name] = decodedValue;
+    hashObj[hashValue.name] = decodeURIComponent(hashValue.value);
   });
   return hashObj;
 }
@@ -219,7 +180,7 @@ function parseHash(hash) {
 function makeHash(obj) {
   return Object.keys(obj)
     .map((key) => {
-      return `${key}${kEquals}${encodeURIComponent(obj[key])}`;
+      return `${key}${kEquals}${obj[key]}`;
     })
     .join(kAnd);
 }
