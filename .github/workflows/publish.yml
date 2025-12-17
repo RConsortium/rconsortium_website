@@ -18,6 +18,12 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.3.450"
+
+      - name: Show Quarto version
+        run: |
+          quarto --version
       
       - name: Install R
         uses: r-lib/actions/setup-r@v2
