@@ -6,17 +6,16 @@
       version="2.0">
 <channel>
 <title>R Consortium</title>
-<link>https://r-consortium.org/blog/</link>
+<link>https://r-consortium.org/blog/index.html</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.3.450</generator>
 <lastBuildDate>Tue, 16 Dec 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Reviving Budapest Users of R Network and Reversing Diabetes: How Gergely Daroczi Brings Data to Life with R</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/</link>
+  <link>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -65,16 +64,15 @@
   <category>rugs</category>
   <category>software development</category>
   <category>eu</category>
-  <guid>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/</guid>
+  <guid>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/index.html</guid>
   <pubDate>Tue, 16 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/GergelyDaroczi.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/</link>
+  <link>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -146,7 +144,7 @@
  ]]></description>
   <category>submissions</category>
   <category>pharma</category>
-  <guid>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/</guid>
+  <guid>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html</guid>
   <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/jnj-submissions-main-image.png" medium="image" type="image/png" height="56" width="144"/>
 </item>
@@ -154,9 +152,8 @@
   <title>Bridging Gaps and Breaking Barriers: A Year of R Innovation with the China PharmaRUG</title>
   <dc:creator>Joe Zhu, Roche</dc:creator>
   <dc:creator>Yanli Chang, Johnson &amp; Johnson</dc:creator>
-  <link>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/</link>
+  <link>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -199,15 +196,14 @@
   <category>asia</category>
   <category>pharma</category>
   <category>events</category>
-  <guid>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/</guid>
+  <guid>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html</guid>
   <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 <item>
   <title>Growing an R Community in a Shifting Tech Landscape: The Story of R-Ladies Zurich</title>
-  <link>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/</link>
+  <link>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -265,16 +261,15 @@
  ]]></description>
   <category>rugs</category>
   <category>eu</category>
-  <guid>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/</guid>
+  <guid>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html</guid>
   <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/</link>
+  <link>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -286,7 +281,7 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Update (December 10, 2025)
+Update (December 10, 2025)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -344,16 +339,15 @@ Packages with a public footprint are more likely to be updated and maintained ov
   <category>submissions</category>
   <category>pharma</category>
   <category>announcements</category>
-  <guid>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/</guid>
+  <guid>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html</guid>
   <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo-main-image.png" medium="image" type="image/png" height="85" width="144"/>
 </item>
 <item>
   <title>A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/</link>
+  <link>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -403,16 +397,15 @@ Packages with a public footprint are more likely to be updated and maintained ov
   <category>rugs</category>
   <category>software development</category>
   <category>asia</category>
-  <guid>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/</guid>
+  <guid>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html</guid>
   <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>R Consortium announces JD Long as keynote speaker for R!sk 2026</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/</link>
+  <link>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -444,16 +437,15 @@ Packages with a public footprint are more likely to be updated and maintained ov
  ]]></description>
   <category>insurance/risk</category>
   <category>events</category>
-  <guid>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/</guid>
+  <guid>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html</guid>
   <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long-main-image.png" medium="image" type="image/png" height="92" width="144"/>
 </item>
 <item>
   <title>Connecting Pharma, Students, and R: Ronak Shah on Strengthening the Pune R Ecosystem</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/</link>
+  <link>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -506,16 +498,15 @@ Packages with a public footprint are more likely to be updated and maintained ov
   <category>rugs</category>
   <category>software development</category>
   <category>pharma</category>
-  <guid>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/</guid>
+  <guid>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/index.html</guid>
   <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/RonakShah-main-image.png" medium="image" type="image/png" height="113" width="144"/>
 </item>
 <item>
   <title>nlmixr2 is Becoming an R Consortium Working Group</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/</link>
+  <link>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -545,16 +536,15 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>submissions</category>
   <category>clinical research</category>
   <category>announcements</category>
-  <guid>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/</guid>
+  <guid>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/index.html</guid>
   <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/nlmixr2.png" medium="image" type="image/png" height="166" width="144"/>
 </item>
 <item>
   <title>From the adas.utils Package to R-Trento: Paolo Bosetti on Building Tools and Community</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/</link>
+  <link>https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -614,16 +604,15 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>rugs</category>
   <category>eu</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/</guid>
+  <guid>https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/index.html</guid>
   <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/PaoloBosetti.png" medium="image" type="image/png" height="134" width="144"/>
 </item>
 <item>
   <title>Expanding the Reach of R Across Cleveland’s Data and Tech Community</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/</link>
+  <link>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -673,16 +662,15 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>rugs</category>
   <category>insurance/risk</category>
   <category>north america</category>
-  <guid>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/</guid>
+  <guid>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/index.html</guid>
   <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/AlecWong.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>kuzco | Computer Vision made easy</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/</link>
+  <link>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -733,16 +721,15 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/</guid>
+  <guid>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/index.html</guid>
   <pubDate>Sat, 22 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/kuzco-computer-vision-made-easy/thumbnail-frank-hull.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Introducing {geodl}: An R package for geospatial semantic segmentation</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/</link>
+  <link>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -799,16 +786,15 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/</guid>
+  <guid>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html</guid>
   <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/thumbnail-aaron-maxwell.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Jarl: just another R linter</title>
   <dc:creator>Etienne Bacher</dc:creator>
-  <link>https://r-consortium.org/posts/jarl-just-another-r-linter/</link>
+  <link>https://r-consortium.org/posts/jarl-just-another-r-linter/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -822,7 +808,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 <p><br></p>
 <p>On top of that, Jarl can apply automatic fixes<sup>2</sup>:</p>
 <p>Suppose that we have the following file <code>foo.R</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -834,27 +820,26 @@ font-style: inherit;">is.na</span>(mtcars))</span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb1-4">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">apply</span>(x, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>, mean)</span>
-<span id="cb1-5">}</span></code></pre></div></div>
+<span id="cb1-5">}</span></code></pre></div>
 <p>There are two rule violations in this file:</p>
 <ol type="1">
 <li><code>any(is.na(mtcars))</code> should be replaced by <code>anyNA(mtcars)</code><sup>3</sup></li>
 <li><code>apply(x, 1, mean)</code> should be replaced by <code>rowMeans(x)</code><sup>4</sup></li>
 </ol>
 <p>Instead of fixing those cases by hand, we can run the following command in the terminal (not in the R console):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">jarl</span> check foo.R <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">--fix</span></span></code></pre></div></div>
+font-style: inherit;">--fix</span></span></code></pre></div>
 <p>After running this, <code>foo.R</code> now contains the following code:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">x <span class="ot" style="color: #003B4F;
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">x <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -863,12 +848,11 @@ font-style: inherit;">anyNA</span>(mtcars)</span>
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">function</span>(x) {</span>
 <span id="cb3-3">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">rowMeans</span>(x)</span>
-<span id="cb3-4">}</span></code></pre></div></div>
+<span id="cb3-4">}</span></code></pre></div>
 <p>(Note that <code>f</code> is now useless since it is equivalent to <code>rowMeans()</code>.)</p>
 <p><br></p>
 <p>Jarl stands on the shoulders of giants, in particular:</p>
@@ -934,16 +918,15 @@ font-style: inherit;">rowMeans</span>(x)</span>
 </section></div> ]]></description>
   <category>infrastructure</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/jarl-just-another-r-linter/</guid>
+  <guid>https://r-consortium.org/posts/jarl-just-another-r-linter/index.html</guid>
   <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/jarl-just-another-r-linter/etienne-bacher.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>mini007 - A Lightweight Framework for Multi-Agent Orchestration in R</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/</link>
+  <link>https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -991,16 +974,15 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/</guid>
+  <guid>https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html</guid>
   <pubDate>Sun, 16 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/thumbnail-fodil.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Brand your docs, apps, and ggplots using LLMs</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/</link>
+  <link>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1063,16 +1045,15 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/</guid>
+  <guid>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/thumbnail-umair-durrani.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Gradient Boosting Machines (GBMs) in the Age of LLMs and ChatGPT</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/</link>
+  <link>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1125,16 +1106,15 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/</guid>
+  <guid>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/thumbnail-szilard-pafka.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Keeping LLMs in Their Lane: Focused AI for Data Science and Research</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/</link>
+  <link>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1183,16 +1163,15 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/</guid>
+  <guid>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/thumbnail-joe-cheng.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Me, Myself, and Claude: Scaling an R Consultancy with AI-Assisted Development</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/me-myself-claude/</link>
+  <link>https://r-consortium.org/posts/me-myself-claude/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1367,16 +1346,15 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/me-myself-claude/</guid>
+  <guid>https://r-consortium.org/posts/me-myself-claude/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/me-myself-claude/thumbnail-jasmine-daly.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Tracking the Evolution of R and Python Tools for GenAI</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/</link>
+  <link>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -1430,7 +1408,7 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <category>ai</category>
   <category>r+ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/</guid>
+  <guid>https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/thumbnail-xu-fei.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
