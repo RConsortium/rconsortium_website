@@ -1,9 +1,13 @@
----
-title: "Exploring `{kuzco}`: Making Computer Vision for R Easily Accessible"
-description: "Interview with Frank Hull, data scientist, open source contributor, and developer of `{kuzco}`"
-author: "R Consortium"
-image: "frankthull.png"
-date: 05/22/2025
+--- 
+title: "Exploring `{kuzco}`: Making Computer Vision for R Easily Accessible" 
+unpublished: false 
+url: "https://r-consortium.org/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/"
+description: "Interview with Frank Hull, data scientist, open source contributor, and developer of `{kuzco}`, an R package for image classification and computer vision using large language models (LLMs)." 
+categories: ["ai", "software development"]
+author: "R Consortium" 
+image: "frankthull.png" 
+image-alt: "headshot of Frank Hull, {kuzco} developer" 
+date: "05/22/2025" 
 ---
 
 **Frank Hull** is a director of data science & analytics, leading a data science team in the energy sector, an open source contributor, and a developer of [`{kuzco}`](https://github.com/frankiethull/kuzco), an R package that reimagines how image classification and computer vision can be approached using large language models (LLMs). With a passion for building tools that make advanced technology accessible to non-specialists, Frank has also contributed to the R ecosystem through multiple projects, and actively maintains his work on [GitHub](https://github.com/frankiethull) and his [personal site](https://frankiethull.github.io/about.html). 
