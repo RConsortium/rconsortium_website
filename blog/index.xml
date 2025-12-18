@@ -10,7 +10,38 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 17 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 18 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Enabling the Next Generation of Contributors to R</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/650K-for-R/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>Original blog post by Heather Turner here: <a href="https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/index.html">RSMF: Enabling the Next Generation of Contributors to R</a></em></p>
+<p><img src="https://r-consortium.org/posts/650K-for-R/650K-grant-main-image.png" class="img-fluid"></p>
+<p>From the blog post:</p>
+<blockquote class="blockquote">
+<p>The Software Sustainability Institute (UK) has awarded a grant of £500k (~650k USD) under the Research Software Maintenance Fund, to the project Enabling the Next Generation of Contributors to R.</p>
+<p>The project is co-led by research software engineers at the University of Birmingham (Heather Turner and Ella Kaye), members of the R Core Team (Simon Urbanek and Peter Dalgaard), and a team of academic/freelance R developers (Gabe Becker, Kylie Bemis, Mikael Jagan, Jeroen Ooms). The project will receive further support from the R Consortium (developer events and travel support), the R Foundation (travel support for core developers), and several companies dedicating staff time: Posit, A2-Ai, and Google.</p>
+<p>The overall aim is to address the challenge of sustaining the R Project. This will be achieved through work on four areas described below.</p>
+<p>The overall aim is to address the challenge of sustaining the R Project. This will be achieved through work on four areas described below.</p>
+</blockquote>
+<section id="read-the-full-blog-post-here-rsmf-enabling-the-next-generation-of-contributors-to-r" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-full-blog-post-here-rsmf-enabling-the-next-generation-of-contributors-to-r">Read the full blog post here: <a href="https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/index.html">RSMF: Enabling the Next Generation of Contributors to R</a></h3>
+
+
+</section>
+
+ ]]></description>
+  <category>insfrastructure</category>
+  <category>announcements</category>
+  <guid>https://r-consortium.org/posts/650K-for-R/index.html</guid>
+  <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/650K-for-R/650K-grant-main-image.png" medium="image" type="image/png" height="85" width="144"/>
+</item>
 <item>
   <title>Empowering Government Professionals in Nepal Using R programming for Forestry Data Analysis</title>
   <dc:creator>Prakash Lamichhane, Research Officer at Ministry of Forests and Environment, Nepal</dc:creator>
@@ -1225,189 +1256,6 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <guid>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/thumbnail-joe-cheng.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Me, Myself, and Claude: Scaling an R Consultancy with AI-Assisted Development</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/me-myself-claude/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/7uAf1Wz2gEQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here">Slides with resource links <a href="https://dalyanalytics.github.io/me-myself-claude-talk">available here</a></h3>
-<p>Large language models entered many data scientists’ lives through small conveniences: better email replies, smoother vacation planning, quick summaries of documentation. For Jasmine Daly, Principal Consultant and Founder of Daly Analytics, the next step was less comfortable: AI could write decent R code and Shiny apps. Did that make years of R experience obsolete? Was this a shortcut that would quietly erode hard-won expertise?</p>
-<p>In the R+AI talk “Me, Myself, and Claude: How I Leverage AI-Assisted Development to Scale My R-Based Data Science Consultancy,” Jasmine reframes those fears into a much more productive question: how can AI become a force multiplier for R developers, not a crutch?</p>
-</section>
-<section id="from-vibe-coding-to-accountable-ai-assisted-development" class="level2">
-<h2 class="anchored" data-anchor-id="from-vibe-coding-to-accountable-ai-assisted-development">From “vibe coding” to accountable AI-assisted development</h2>
-<p>Jasmine starts with a term many R users have seen online: “vibe coding.” It captures that slightly chaotic feeling of pasting prompts into an AI, grabbing whatever comes out, and hoping it runs. It is funny—but also dangerous. The mindset behind it is essentially:</p>
-<ul>
-<li>try something</li>
-<li>hope it works</li>
-<li>do not look too closely at why</li>
-</ul>
-<p>Instead of “vibe coding,” Jasmine prefers “intentional, accountable AI-assisted development.” The shift is not about policing language; it is about accurately describing the work:</p>
-<ul>
-<li>there is a real system being built for real organizations<br>
-</li>
-<li>there are real risks around correctness, maintainability, and security<br>
-</li>
-<li>a human developer remains responsible for design decisions and outcomes</li>
-</ul>
-<p>For Jasmine, AI is “a new agentic tool in the toolbox,” not a replacement for R expertise. That language matters, especially inside a consultancy where clients rely on clear judgment, not just clever code.</p>
-</section>
-<section id="mental-bandwidth-as-the-real-bottleneck" class="level2">
-<h2 class="anchored" data-anchor-id="mental-bandwidth-as-the-real-bottleneck">Mental bandwidth as the real bottleneck</h2>
-<p>As a solo consultant serving nonprofits and other mission-driven organizations, Jasmine used to spend most working hours writing code: Shiny apps, dashboards, R packages, data pipelines. The result: less time for the work that grows a sustainable practice and strengthens the R community.</p>
-<p>AI-assisted development changed that balance. Instead of treating AI as “time savings on tasks already being done,” Jasmine treats it as a <strong>mental bandwidth reallocator</strong>. Offloading boilerplate and repetitive scaffolding frees attention for:</p>
-<ul>
-<li>improving business operations and systems<br>
-</li>
-<li>thinking clearly about pricing, profitability, and packaging of services<br>
-</li>
-<li>building relationships through networking, speaking, and community work</li>
-</ul>
-<p>Crucially, this is not about doing less technical work. Jasmine still writes R code nearly every day. The difference is that cognitive load is no longer consumed entirely by syntax and glue code; there is space for bigger-picture thinking and community contribution.</p>
-</section>
-<section id="turning-personal-tools-into-r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="turning-personal-tools-into-r-packages">Turning personal tools into R packages</h2>
-<p>A good example of that shift is the evolution from one-off scripts to reusable packages.</p>
-<section id="shinyfa-understanding-large-shiny-codebases" class="level3">
-<h3 class="anchored" data-anchor-id="shinyfa-understanding-large-shiny-codebases"><code>{shinyfa}</code>: understanding large Shiny codebases</h3>
-<p>A client Shiny app with a large, unfamiliar codebase was consuming huge onboarding time. To cope, Jasmine wrote ad hoc scripts—supported by Claude Code—to analyze file structure, track <code>render*()</code> and reactive functions, and surface where important logic lived.</p>
-<p>Previously, those scripts would have stayed on a local machine. With more bandwidth and AI-assisted help, Jasmine turned that exploratory tooling into a reusable R package: <strong>{shinyfa}</strong>, now on CRAN, which analyzes large Shiny directories and extracts structured information about reactivity patterns and outputs for easier onboarding and refactoring.</p>
-</section>
-<section id="avilistr-a-weekend-package-powered-by-curiosity" class="level3">
-<h3 class="anchored" data-anchor-id="avilistr-a-weekend-package-powered-by-curiosity"><code>{avilistr}</code>: a weekend package powered by curiosity</h3>
-<p>Another example came from a personal interest: bird taxonomy. Starting from an Excel file and the newly released AviList global bird checklist, Jasmine used Claude Code to help wrap the data, write documentation, and publish <strong>{avilistr}</strong>, an R package exposing the AviList global avian checklist to R users in a research-ready form.</p>
-<p>The technical lift was not extreme. The point is what changed:</p>
-<ul>
-<li>before AI, that project would likely have stayed a “someday” idea<br>
-</li>
-<li>with AI-assisted development, it became a polished, documented R package released in a weekend</li>
-</ul>
-<p>For the R community, this is the upside: more of those “nice-to-have” tools actually get shipped.</p>
-</section>
-</section>
-<section id="saying-yes-to-bigger-more-interesting-r-projects" class="level2">
-<h2 class="anchored" data-anchor-id="saying-yes-to-bigger-more-interesting-r-projects">Saying yes to bigger, more interesting R projects</h2>
-<p>Jasmine also shows how AI changes the filter for accepting new work.</p>
-<p>The old filter was purely capacity-driven:</p>
-<ul>
-<li>Can this be built in a reasonable timeframe?</li>
-<li>With current skills?</li>
-<li>Alongside existing client workload?</li>
-</ul>
-<p>With AI-assisted development, the filter becomes more strategic:</p>
-<ul>
-<li>The technical build is possible.<br>
-</li>
-<li>The key question is: can there be deep understanding of the client’s desired outcomes, their team’s strengths, and the right “size” of solution?</li>
-</ul>
-<p>That change leads to more ambitious, higher-impact problems—without requiring 80-hour weeks.</p>
-</section>
-<section id="claude-code-as-a-senior-and-sometimes-junior-developer" class="level2">
-<h2 class="anchored" data-anchor-id="claude-code-as-a-senior-and-sometimes-junior-developer">Claude Code as a senior (and sometimes junior) developer</h2>
-<p>A recurring theme in the talk is Jasmine’s mental model for working with Claude Code:</p>
-<ul>
-<li>Jasmine is the <strong>manager and technical lead</strong><br>
-</li>
-<li>Claude is a <strong>senior, sometimes junior, developer</strong></li>
-</ul>
-<p>That means Jasmine:</p>
-<ul>
-<li>sets direction and architecture<br>
-</li>
-<li>defines requirements in detail<br>
-</li>
-<li>reviews every pull request–equivalent output<br>
-</li>
-<li>remains in and on the loop at all times</li>
-</ul>
-<p>Practically, that looks like:</p>
-<ul>
-<li>being specific in prompts and requirements<br>
-</li>
-<li>always reviewing generated code and context files<br>
-</li>
-<li>using small, incremental commits to make AI changes auditable<br>
-</li>
-<li>feeding documentation links and relevant repos so the model has grounded context<br>
-</li>
-<li>sometimes asking for multiple options, then blending or choosing the simplest approach</li>
-</ul>
-<p>The R community takeaway: treat AI tools as part of a team that needs leadership, not as an infallible code generator.</p>
-</section>
-<section id="a-real-world-architecture-50-dashboards-github-actions-and-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="a-real-world-architecture-50-dashboards-github-actions-and-quarto">A real-world architecture: 50+ dashboards, GitHub Actions, and Quarto</h2>
-<p>One of the most compelling case studies in the talk centers on a client with more than 50 dashboards that needed to scale. Jasmine describes using Claude Code to help assemble a sustainable architecture:</p>
-<ul>
-<li>GitHub Actions and YAML workflows to orchestrate builds<br>
-</li>
-<li>Railway as a virtual machine environment<br>
-</li>
-<li>Supabase with row-level security for multi-tenant isolation<br>
-</li>
-<li>Quarto dashboards, each pulling only its own data<br>
-</li>
-<li>A shared component library and template so features could be toggled on or off</li>
-</ul>
-<p>The result: “right-sized, enterprise-grade infrastructure” delivered in weeks instead of months, with Jasmine still firmly in technical control. Without AI assistance, that project might have been impractical or too risky for a solo consultant to accept.</p>
-</section>
-<section id="building-r-intuition-through-volume-not-shortcuts" class="level2">
-<h2 class="anchored" data-anchor-id="building-r-intuition-through-volume-not-shortcuts">Building R intuition through volume, not shortcuts</h2>
-<p>A common fear in the R community is that relying on AI will erode skills. Jasmine’s experience is the opposite: <strong>AI increases the volume and variety of patterns seen</strong>, which, when handled deliberately, strengthens intuition.</p>
-<p>She highlights three recurring categories of AI mistakes and what they teach:</p>
-<ul>
-<li><strong>Package confusion</strong> – e.g., misinterpreting <code>{shinyfa}</code> as related to Font Awesome. The fix is to feed documentation URLs and be explicit about which package is in use. This forces better documentation habits.<br>
-</li>
-<li><strong>Data structure assumptions</strong> – incorrect column names or types, or confusing similar datasets. This encourages consistent use of <code>str()</code>, <code>glimpse()</code>, and other inspection tools, and can be mitigated by exposing the real R session via MCP tools so the model sees actual objects.</li>
-<li><strong>Over-engineering</strong> – proposing complex graph-based or multi-package solutions where a simple <code>dplyr</code> pipeline would work. Asking for multiple options and explicitly requesting the simplest approach helps counter this tendency.</li>
-</ul>
-<p>Each mistake becomes a prompt-engineering lesson and a design pattern lesson at the same time. Instead of avoiding errors, Jasmine leans into high-volume iteration, using failures to refine both prompts and architectural judgment.</p>
-</section>
-<section id="a-simple-reflection-framework-for-rai-projects" class="level2">
-<h2 class="anchored" data-anchor-id="a-simple-reflection-framework-for-rai-projects">A simple reflection framework for R+AI projects</h2>
-<p>In closing, Jasmine offers a practical reflection exercise for anyone starting an AI-assisted R project:</p>
-<ul>
-<li>What will always be done personally?<br>
-</li>
-<li>What can AI help with?<br>
-</li>
-<li>What needs to be understood deeply?<br>
-</li>
-<li>What is comfortable to delegate?</li>
-</ul>
-<p>Writing down the answers before starting a project makes the human/AI division of labor explicit. It also reinforces that responsibility for correctness, ethics, and impact stays with the human developer.</p>
-</section>
-<section id="what-this-means-for-the-r-community" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-means-for-the-r-community">What this means for the R community</h2>
-<p>The core message to the R community is direct: AI does not automatically make developers lazy or dependent. Used with intention, it can:</p>
-<ul>
-<li>unlock time for community talks, open source work, and mentoring<br>
-</li>
-<li>turn private scripts into packages that benefit thousands of R users<br>
-</li>
-<li>enable R consultants to take on more ambitious, higher-impact projects<br>
-</li>
-<li>accelerate learning by exposing more patterns—while still demanding human judgment</li>
-</ul>
-<p>Jasmine’s journey from existential dread to strategic partnership with Claude is a blueprint many R users can follow. The tools may be new, but the craft is familiar: thoughtful design, careful review, and a commitment to building software that genuinely helps people.</p>
-<p>The invitation is clear: stay human-in-the-loop, build with intention, keep learning—and bring that energy back into the R community.</p>
-
-
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/me-myself-claude/index.html</guid>
-  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/me-myself-claude/thumbnail-jasmine-daly.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
