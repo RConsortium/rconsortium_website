@@ -1,0 +1,68 @@
+--- 
+title: "2025 in Review: Growth, Community, & Momentum" 
+unpublished: false 
+url: "https://r-consortium.org/posts/2025-in-review-growth-community-momentum"
+description: "This Year in Review post nicely recaps the R Consortium’s 2025 highlights—major community events (R/Medicine, useR!, R+AI), continued growth of sponsored RUGs and R-Ladies+ chapters worldwide, and expanding engagement across channels. It also summarizes progress in industry/regulatory work (including FDA submissions efforts), infrastructure investment (ISC funding for 13 new projects), and the global breadth of R’s impact. And points to momentum heading into 2026 including new initiatives and the R!sk event in February." 
+categories: ["infrastructure", "rugs", "members"]
+author: "Terry Christiani, executive director, R Consortium" 
+image: "r-consortium-mosaic.png" 
+image-alt: "mosaic of various posts and people from 2025" 
+date: "12/18/2025" 
+---
+
+As we close out 2025, I want to pause and reflect on what has been an energizing and meaningful year for the R Consortium and the global R community. Across our blog, events, working groups, and partnerships, a clear theme emerged: the R language continues to grow as a language, of course but more important our community is a collaborative, global ecosystem grounded in openness, scientific rigor, and real-world impact.
+
+We started the year with [a refined mission](https://r-consortium.org/about/) and renewed energy. Throughout the year, the R Consortium worked to support and share the community’s efforts across the world from dozens of community organizers, and a wide range of industries – from healthcare and finance to environmental science, journalism, and public policy.
+
+![](r-consortium-mosaic.png)
+
+## Bringing the Community Together
+
+Community gatherings remained a cornerstone of the R ecosystem in 2025\.
+
+This year, the R Consortium supported multiple flagship, [regional events, and webinars](https://r-consortium.org/news/events.html), including [R/Medicine 2025](https://www.youtube.com/watch?v=tdaMw6NcNFM&list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux), [useR\!](https://www.youtube.com/@useRConference_global), and the inaugural [R \+ AI](https://www.youtube.com/watch?v=Pt5-VSvuKMA&list=PL4IzsxWztPdkm4lcgBilHQjBoFFysP81e) conferences. Collectively, these events brought together thousands of participants, with speakers and attendees spanning academia, industry, and government.
+
+In parallel, we worked to spotlight the continued expansion of local R User Groups (RUGs)and R-Ladies+ chapters. R Consortium sponsored groups grew to 99 RUGs across 41 countries, and a worldwide audience of over 82,000 members. R-ladies+ has grown to 225 chapters in 2025\. This year we featured stories from [cities and regions around the world](https://r-consortium.org/blog/#category=rugs) – demonstrating how R communities are forming and thriving well beyond traditional tech hubs.
+
+Together, these gatherings, both global and local, underscore the strength of R as a people-driven ecosystem.
+
+We have seen growing engagement across our outlets and channels. We hope that if you are not currently following or engaging with us on our primary outlets that you will take the time next year to follow and let us know your ideas and opinions. We added [Bluesky](https://bsky.app/profile/rconsortium.bsky.social) in September of this year and things are off to a lovely start there.
+
+| Channel | Current  | Growth in 2025 |
+| :---- | :---- | :---- |
+| [YouTube](https://www.youtube.com/@RConsortium) | 22,285 subscribers | \+ 1,472 subscribers |
+| [LinkedIn](https://www.linkedin.com/company/r-consortium/) | 10,212 followers | \+ 1,769 followers |
+
+## Advancing R in Industry and Regulation
+
+A major focus of 2025 was continuing to strengthen R’s role in production, validation, and regulatory contexts.
+
+Our Submissions Working Group advanced its work with [the launch of Pilot 5](https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/), building on years of collaboration among industry, regulators, and open-source contributors. We celebrated continued progress with Pilot 4 as well as [confirming and announcing the expansion of the FDA’s accepted R file formats](https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/). We welcomed the [nlmixr2 working group](https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/) to the R Consortium working groups. We are thrilled to support their continued advances in bringing R-based open-source nonlinear mixed-effects modeling to the community.
+
+Across the year, the Consortium also hosted and promoted multiple technical webinars focused on [Git, CI/CD](https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html), [scaling spatial workflows](https://r-consortium.org/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html), [data validation and documentation](https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html), and [emerging uses of LLMs in regulated environments](https://youtu.be/ZlTKyBsLtag?si=GCoGKURUnlE4ol5B)—helping organizations modernize analytics workflows while maintaining rigor and compliance.
+
+## Sustaining and Strengthening R Infrastructure
+
+Behind the scenes, infrastructure work continued to be a defining part of the Consortium’s mission.
+
+[In 2025, the Infrastructure Steering Committee (ISC) awarded funding to 13 open-source projects through its grants program](https://r-consortium.org/all-projects/funded-projects.html), supporting maintainers and teams working on critical R tooling and workflows. Grants were awarded to projects in areas such as pharmacometrics, geospatial analysis, AI-enabled tooling, and reproducible research infrastructure.
+
+These investments – representing hundreds of contributor hours and sustained multi-year efforts \- help ensure that R remains stable, extensible, and ready for future challenges.
+
+## A Truly Global Perspective
+
+One of the most striking takeaways from 2025 is the global reach of the R community.
+
+Just this year we were able to support and promote projects and user groups spanning [financial risk modeling in Europe](https://r-consortium.org/posts/quantifying-participation-risk-with-r-and-r-shiny-a-new-frontier-in-financial-risk-modeling/), [journalism training in South America](https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/index.html), [community organizing in Asia](https://r-consortium.org/posts/pharma-rug-the-rise-of-r/index.html), and [applied analytics across North America](https://r-consortium.org/posts/strength-in-numbers/) and beyond. Together, these stories highlighted R’s role as a shared language for data, evidence, and insight across borders, disciplines, and sectors.
+
+Just as importantly, many of these narratives centered on education, mentorship, and inclusion, reinforcing our commitment to a community where participation is broad, welcoming, and sustainable.
+
+## Looking Ahead
+
+As we move into 2026, the momentum from this year is unmistakable. New events are already taking shape, working groups continue to evolve, and conversations about sustainability, governance, and long-term impact are actively shaping the Consortium’s next chapter.
+
+Investments from the [Sovereign Tech Fund](https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/) and the [Research Software Maintenance Fund](https://www.software.ac.uk/ssi-awards-funding-13-critical-projects-through-research-software-maintenance-fund-round-1) in the R Foundation will underwrite significant progress in R’s sustainability and security through infrastructure modernization, active mentorship of the next generation of R Core, and increased engagement with the community. R Consortium members will be actively contributing to these efforts through financial support as well as new industry panels that we are organizing in 2026 for both pharma and technology members.
+
+We are also introducing a new R Consortium event in February of 2026\. We hope you will join us for [R\!sk on February 18-19](https://rconsortium.github.io/Risk_website/). We are excited and looking forward to another successful, inaugural event.
+
+On behalf of the R Consortium, I want to thank our members, contributors, organizers, speakers, and readers for making 2025 such a pivotal year for the community. Your time, expertise, and commitment are what keep R strong.
