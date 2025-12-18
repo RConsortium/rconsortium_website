@@ -12,6 +12,83 @@
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Thu, 18 Dec 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>2025 in Review: Growth, Community, &amp; Momentum</title>
+  <dc:creator>Terry Christiani, executive director, R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As we close out 2025, I want to pause and reflect on what has been an energizing and meaningful year for the R Consortium and the global R community. Across our blog, events, working groups, and partnerships, a clear theme emerged: the R language continues to grow as a language, of course but more important our community is a collaborative, global ecosystem grounded in openness, scientific rigor, and real-world impact.</p>
+<p>We started the year with <a href="https://r-consortium.org/about/">a refined mission</a> and renewed energy. Throughout the year, the R Consortium worked to support and share the community’s efforts across the world from dozens of community organizers, and a wide range of industries – from healthcare and finance to environmental science, journalism, and public policy.</p>
+<p><img src="https://r-consortium.org/posts/2025-in-review-growth-community-momentum/r-consortium-mosaic.png" class="img-fluid"></p>
+<section id="bringing-the-community-together" class="level2">
+<h2 class="anchored" data-anchor-id="bringing-the-community-together">Bringing the Community Together</h2>
+<p>Community gatherings remained a cornerstone of the R ecosystem in 2025.</p>
+<p>This year, the R Consortium supported multiple flagship, <a href="https://r-consortium.org/news/events.html">regional events, and webinars</a>, including <a href="https://www.youtube.com/watch?v=tdaMw6NcNFM&amp;list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">R/Medicine 2025</a>, <a href="https://www.youtube.com/@useRConference_global">useR!</a>, and the inaugural <a href="https://www.youtube.com/watch?v=Pt5-VSvuKMA&amp;list=PL4IzsxWztPdkm4lcgBilHQjBoFFysP81e">R + AI</a> conferences. Collectively, these events brought together thousands of participants, with speakers and attendees spanning academia, industry, and government.</p>
+<p>In parallel, we worked to spotlight the continued expansion of local R User Groups (RUGs)and R-Ladies+ chapters. R Consortium sponsored groups grew to 99 RUGs across 41 countries, and a worldwide audience of over 82,000 members. R-ladies+ has grown to 225 chapters in 2025. This year we featured stories from <a href="https://r-consortium.org/blog/#category=rugs">cities and regions around the world</a> – demonstrating how R communities are forming and thriving well beyond traditional tech hubs.</p>
+<p>Together, these gatherings, both global and local, underscore the strength of R as a people-driven ecosystem.</p>
+<p>We have seen growing engagement across our outlets and channels. We hope that if you are not currently following or engaging with us on our primary outlets that you will take the time next year to follow and let us know your ideas and opinions. We added <a href="https://bsky.app/profile/rconsortium.bsky.social">Bluesky</a> in September of this year and things are off to a lovely start there.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Channel</th>
+<th style="text-align: left;">Current</th>
+<th style="text-align: left;">Growth in 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.youtube.com/@RConsortium">YouTube</a></td>
+<td style="text-align: left;">22,285 subscribers</td>
+<td style="text-align: left;">+ 1,472 subscribers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.linkedin.com/company/r-consortium/">LinkedIn</a></td>
+<td style="text-align: left;">10,212 followers</td>
+<td style="text-align: left;">+ 1,769 followers</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advancing-r-in-industry-and-regulation" class="level2">
+<h2 class="anchored" data-anchor-id="advancing-r-in-industry-and-regulation">Advancing R in Industry and Regulation</h2>
+<p>A major focus of 2025 was continuing to strengthen R’s role in production, validation, and regulatory contexts.</p>
+<p>Our Submissions Working Group advanced its work with <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/">the launch of Pilot 5</a>, building on years of collaboration among industry, regulators, and open-source contributors. We celebrated continued progress with Pilot 4 as well as <a href="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/">confirming and announcing the expansion of the FDA’s accepted R file formats</a>. We welcomed the <a href="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/">nlmixr2 working group</a> to the R Consortium working groups. We are thrilled to support their continued advances in bringing R-based open-source nonlinear mixed-effects modeling to the community.</p>
+<p>Across the year, the Consortium also hosted and promoted multiple technical webinars focused on <a href="https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html">Git, CI/CD</a>, <a href="https://r-consortium.org/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html">scaling spatial workflows</a>, <a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html">data validation and documentation</a>, and <a href="https://youtu.be/ZlTKyBsLtag?si=GCoGKURUnlE4ol5B">emerging uses of LLMs in regulated environments</a>—helping organizations modernize analytics workflows while maintaining rigor and compliance.</p>
+</section>
+<section id="sustaining-and-strengthening-r-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="sustaining-and-strengthening-r-infrastructure">Sustaining and Strengthening R Infrastructure</h2>
+<p>Behind the scenes, infrastructure work continued to be a defining part of the Consortium’s mission.</p>
+<p><a href="https://r-consortium.org/all-projects/funded-projects.html">In 2025, the Infrastructure Steering Committee (ISC) awarded funding to 13 open-source projects through its grants program</a>, supporting maintainers and teams working on critical R tooling and workflows. Grants were awarded to projects in areas such as pharmacometrics, geospatial analysis, AI-enabled tooling, and reproducible research infrastructure.</p>
+<p>These investments – representing hundreds of contributor hours and sustained multi-year efforts - help ensure that R remains stable, extensible, and ready for future challenges.</p>
+</section>
+<section id="a-truly-global-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="a-truly-global-perspective">A Truly Global Perspective</h2>
+<p>One of the most striking takeaways from 2025 is the global reach of the R community.</p>
+<p>Just this year we were able to support and promote projects and user groups spanning <a href="https://r-consortium.org/posts/quantifying-participation-risk-with-r-and-r-shiny-a-new-frontier-in-financial-risk-modeling/">financial risk modeling in Europe</a>, <a href="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/index.html">journalism training in South America</a>, <a href="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/index.html">community organizing in Asia</a>, and <a href="https://r-consortium.org/posts/strength-in-numbers/">applied analytics across North America</a> and beyond. Together, these stories highlighted R’s role as a shared language for data, evidence, and insight across borders, disciplines, and sectors.</p>
+<p>Just as importantly, many of these narratives centered on education, mentorship, and inclusion, reinforcing our commitment to a community where participation is broad, welcoming, and sustainable.</p>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>As we move into 2026, the momentum from this year is unmistakable. New events are already taking shape, working groups continue to evolve, and conversations about sustainability, governance, and long-term impact are actively shaping the Consortium’s next chapter.</p>
+<p>Investments from the <a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">Sovereign Tech Fund</a> and the <a href="https://www.software.ac.uk/ssi-awards-funding-13-critical-projects-through-research-software-maintenance-fund-round-1">Research Software Maintenance Fund</a> in the R Foundation will underwrite significant progress in R’s sustainability and security through infrastructure modernization, active mentorship of the next generation of R Core, and increased engagement with the community. R Consortium members will be actively contributing to these efforts through financial support as well as new industry panels that we are organizing in 2026 for both pharma and technology members.</p>
+<p>We are also introducing a new R Consortium event in February of 2026. We hope you will join us for <a href="https://rconsortium.github.io/Risk_website/">R!sk on February 18-19</a>. We are excited and looking forward to another successful, inaugural event.</p>
+<p>On behalf of the R Consortium, I want to thank our members, contributors, organizers, speakers, and readers for making 2025 such a pivotal year for the community. Your time, expertise, and commitment are what keep R strong.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>infrastructure</category>
+  <category>rugs</category>
+  <category>members</category>
+  <guid>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/index.html</guid>
+  <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/2025-in-review-growth-community-momentum/r-consortium-mosaic.png" medium="image" type="image/png" height="103" width="144"/>
+</item>
+<item>
   <title>Enabling the Next Generation of Contributors to R</title>
   <dc:creator>R Consortium</dc:creator>
   <link>https://r-consortium.org/posts/650K-for-R/index.html</link>
@@ -1199,63 +1276,6 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <guid>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/thumbnail-szilard-pafka.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Keeping LLMs in Their Lane: Focused AI for Data Science and Research</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ZlTKyBsLtag" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="joe_cheng_keynote_slides.pdf">available here</a> (PDF)</h3>
-</section>
-<section id="harnessing-the-power-of-llms-for-responsible-data-science-and-research" class="level1">
-<h1>Harnessing the Power of LLMs for Responsible Data Science and Research</h1>
-<p>Joe Cheng, CTO of Posit, delivered a fanstastic keynote to kick off R+AI 2025, focusing on how Large Language Models (LLMs) can be effectively harnessed for data science and research. As the landscape of AI continues to evolve, Cheng emphasized the importance of utilizing LLMs in a responsible manner, adhering to principles such as correctness, transparency, and reproducibility.</p>
-<section id="the-role-of-llms-beyond-conventional-tools" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-llms-beyond-conventional-tools">The Role of LLMs Beyond Conventional Tools</h2>
-<p>Cheng set the stage by clarifying that while tools like ChatGPT and Copilot are well-known for their coding assistance, the potential of LLMs extends far beyond these applications. He introduced the concept of utilizing LLMs as custom agents, allowing users to integrate them into their workflows for more tailored and sophisticated tasks. This approach is facilitated by the R package <strong>Elmer</strong>, which allows users with a background in R to easily tap into the capabilities of LLMs.</p>
-</section>
-<section id="posits-mission-and-ethical-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="posits-mission-and-ethical-considerations">Posit’s Mission and Ethical Considerations</h2>
-<p>As a Public Benefit Corporation (PBC), Posit is committed to creating open-source software for data science, scientific research, and technical communication. The company is driven by a mission that emphasizes the importance of producing trustworthy results, especially in high-stakes scenarios such as healthcare data analysis, drug development, public policy, and environmental studies. Cheng underscores the ethical obligation to ensure that the software and analyses produced are reliable, as users often have no choice but to trust the results.</p>
-</section>
-<section id="the-challenges-of-llms-correctness-transparency-and-reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenges-of-llms-correctness-transparency-and-reproducibility">The Challenges of LLMs: Correctness, Transparency, and Reproducibility</h2>
-<p>LLMs present inherent challenges when evaluated against the principles of correctness, transparency, and reproducibility. They are notorious for generating convincing but incorrect answers, operate as black boxes with limited transparency, and inherently lack reproducibility due to their non-deterministic nature. Despite these challenges, Cheng argued that LLMs can still be used responsibly with the right approaches.</p>
-</section>
-<section id="approaches-to-responsible-use-of-llms" class="level2">
-<h2 class="anchored" data-anchor-id="approaches-to-responsible-use-of-llms">Approaches to Responsible Use of LLMs</h2>
-<p>Chenged presents three approaches to responsibly leveraging LLMs in data science:</p>
-<ol type="1">
-<li><p><strong>Constrained Use of LLMs</strong>: By identifying specific tasks that LLMs excel at, such as generating SQL queries, and constraining them to these tasks, users can mitigate the risk of errors. The use of deterministic software to augment LLM capabilities ensures that the results are trustworthy. This approach is exemplified by the use of SQL chatbots to drive Shiny dashboards, where the focus is on the correctness of SQL rather than the LLM’s broader capabilities.</p></li>
-<li><p><strong>Micromanaging the Model</strong>: This involves maintaining a tight feedback loop between the user and the LLM, allowing for immediate correction of errors. By taking small, manageable steps and closely overseeing the model’s outputs, users can ensure that mistakes are caught promptly. This approach is particularly useful in data visualization, where subjectivity allows for easy judgment of outcomes.</p></li>
-<li><p><strong>Deferred Review</strong>: In this approach, users allow the LLM to take larger steps, accumulating a “review debt” that is addressed before the final output is shared. This method offers rapid progress but requires a thorough review to ensure accuracy and reliability. Databot, Posit’s exploratory data analysis agent, exemplifies this approach by generating reproducible reports that users can review and refine.</p></li>
-</ol>
-</section>
-<section id="balancing-use-and-responsibility" class="level2">
-<h2 class="anchored" data-anchor-id="balancing-use-and-responsibility">Balancing Use and Responsibility</h2>
-<p>The decision on how to responsibly use LLMs depends on the specific context and the risk tolerance of the user. For instance, those working in marketing may have a higher tolerance for risk compared to individuals in fields where lives are at stake. Cheng emphasized the importance of understanding the capabilities and limitations of LLMs and advises users to find a balance that aligns with their needs and ethical considerations.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Joe Cheng’s keynote at R+AI 2025 provided valuable insights into the responsible use of LLMs in data science and research. By focusing on principles of correctness, transparency, and reproducibility, and adopting approaches that mitigate risks, users can harness the power of LLMs to enhance their workflows while maintaining trust and reliability. Posit’s commitment to open-source software and ethical considerations serves as a strong example for the R community in navigating the evolving landscape of AI.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html</guid>
-  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/thumbnail-joe-cheng.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
