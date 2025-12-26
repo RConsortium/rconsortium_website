@@ -67,6 +67,8 @@ website:
             href: https://r-universe.dev/search
           - text: Working Groups
             href: all-projects/isc-working-groups.qmd
+          - text: Previous Top-Level Projects
+            href: all-projects/previous-top-level-projects.qmd
 
       - text: "Events"
         menu:
