@@ -10,7 +10,75 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 18 Dec 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 07 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Applied Epidemiology in R: Cape Town R User Group’s Contribution to Global Immunization</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://www.linkedin.com/in/jared-norman-71b4b6187/">Jared Norman</a> and <a href="https://www.linkedin.com/in/rmonyake/">Retselisitsoe Monyake</a>, organizers of the <a href="https://www.meetup.com/cape-town-r-user-group/">Cape Town R User Group</a>, recently spoke with the R Consortium about strengthening South Africa’s R community and advancing infectious disease modeling at the Modeling and Simulation Hub Africa (MASHA), which is part of the Department of Statistics at the University of Cape Town (UCT). Alongside efforts to organize local meetups and collaborate with Johannesburg, they shared their work on DTPBoost—an R-based tool developed in collaboration with the CDC and AFENET to help countries evaluate and optimize DTP booster vaccination strategies. In this interview, they discuss how community building, Shiny development, and applied epidemiological modeling come together to strengthen R’s impact in global health.</p>
+<p><img src="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGOrganizers.png" class="img-fluid"></p>
+<section id="please-share-about-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-your-background-and-involvement-with-the-rugs-group.">Please share about your background and involvement with the RUGS group.</h2>
+<p>Jared: My name is Jared Norman, and I am a research officer at the <a href="https://science.uct.ac.za/masha">Modeling and Simulation Hub Africa</a> (MASHA), which is part of the Department of Statistics at the University of Cape Town (UCT). Our research focuses on infectious disease modeling, often with a policy emphasis. We address questions related to infectious disease interventions and also examine vaccine-preventable diseases, which we’ll discuss further.</p>
+<p>In terms of my background, I initially studied computer science and mathematics at university. During that time, I worked for a non-profit organization, <a href="https://numeric.org/">Numeric</a>, focused on math education, leveraging the approach of Khan Academy. I primarily used Python to develop a Django-based website, and I expected to work with Python in the industry after graduation.&nbsp;</p>
+<p>However, I first entered the cybersecurity field, where I ended up using C#. Eventually, I transitioned to my current role in infectious disease modeling, where I anticipated using Python again. Instead, I was assigned to work with R. It took me a while to perceive R as a programming language rather than just a tool for statisticians. However, after reading <a href="https://adv-r.hadley.nz/">”Advanced R” by Hadley Wickham</a>, a realization clicked for me. I began to appreciate R as a true programming language aligned with my computer science background.</p>
+<p>I have worked on several R packages, particularly in the malaria research space. In this area, reports often include data as Excel files in the appendices. However, there can be a barrier for individuals who are not very familiar with the structure of the reports, making it challenging for them to pull in the data. To address this, I developed an R package that provides a more transparent way to access this data within R. This package not only makes the data available but also promotes responsible use. I ensured that footnotes present in some columns or cells were maintained as character strings. This way, users are prompted to consider the context of the data rather than simply using the numbers without examination.</p>
+<p>Additionally, I have started a few other projects but have yet to find the time or grant funding to complete them. Each year, I also supervise undergraduate students in the statistics department, encouraging them to contribute their project outcomes back to the community. For instance, this year, some students focused on serological models, which involve examining antibodies in the blood to estimate how many people have contracted a disease. They worked on this project and successfully created an R package, which I’m proud to say they submitted to Journal of Open Source Software (JOSS).</p>
+<p>Overall, I advocate for the integration of software development into the academic realm.</p>
+<p>Retselisitsoe: I also work at the modeling and simulation hub with Jared, and we are based at UCT. I actually came across R during my studies at university while I was doing statistics, and to be honest, I didn’t really like it at that time. I was learning Python and Java in my Computer Science class. After I finished my studies, I was primarily using Python for work, focusing on building interactive applications with Dash.</p>
+<p>During the COVID-19 pandemic, many people started creating various dashboards related to the virus. I noticed that the dashboards I liked the most were built using Shiny, so I started looking into it. At first, I wasn’t completely sold on it, but I was also tutoring someone who needed help with R at the time. They were using the Tidyverse, which I wasn’t familiar with, so I read “R for Data Science,” which introduced me to Tidyverse. I absolutely loved it!</p>
+<p>After learning about the Tidyverse, I began to use it extensively. During the pandemic, I also started creating dashboards using <a href="https://shiny.posit.co/">Shiny</a>. In late 2020, I received a freelance project to build a Shiny application, which further solidified my interest. In my next job, I continued to use R, and that’s how my journey with it evolved.</p>
+<p>In terms of networking, I engage with a lot of people in the R community, including those who have transitioned from other fields. I’m active on platforms like <a href="https://mastodon.social/@rmonyake">Mastodon</a> and <a href="https://bsky.app/profile/rmonyake.bsky.social">Bluesky</a>. However, I’ve noticed that the people I used to follow on Twitter don’t post as much anymore. I’m also part of the Data Science Learning Club on Slack, which hosts book clubs. I’ve participated in a few; completed two, and I am currently involved in an ongoing book club for “Advanced R” as well as another one focused on DevOps for Data Science, which includes both R and Python content.</p>
+<p>Additionally, we have PhD students at our hub to whom we give workshops. I’ve conducted some R workshops, including one in Kigali, Rwanda, where I taught participants how to use Shiny, and I believe it went quite well.</p>
+<p><img src="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" class="img-fluid"></p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-south-africa" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-south-africa">Can you share what the R community is like in South Africa?</h2>
+<p>We had some participants from the pharmaceutical industry at our meetups. While I’m not entirely sure about the specifics of their work, they were actively hiring and looking for people with relevant skill sets. In South Africa, we have two major R user groups: the one in Cape Town, which is the smaller of the two, and the <a href="https://www.meetup.com/joburg-r-users-group/">Johannesburg R User Group</a>, which is significantly larger.</p>
+<p>The Johannesburg group has been incredibly helpful in getting us started and figuring out how to be a successful R user group. They have a broader understanding of the community. Johannesburg is also where much of the work happens in South Africa, more so than in Cape Town. While business does occur here, Johannesburg is the main hub, hosting a lot of major industries. So, it’s likely that there’s much more happening there.</p>
+<p>I’m somewhat aware of other groups in Cape Town; I think Fathom Data was one. There are some individuals who work in economics consulting and deal with significant publicly available economic data. They focus on organizing and analyzing that data.</p>
+</section>
+<section id="are-your-meetups-offered-online-in-person-or-in-a-hybrid-format-how-frequently-do-you-host-these-meetups" class="level2">
+<h2 class="anchored" data-anchor-id="are-your-meetups-offered-online-in-person-or-in-a-hybrid-format-how-frequently-do-you-host-these-meetups">Are your meetups offered online, in-person, or in a hybrid format? How frequently do you host these meetups?</h2>
+<p>This year, we have been meeting in Cape Town every two months and holding events in Johannesburg in the alternate months, creating a hybrid schedule. The hosting location attracts more participants, which has generally worked well for us. However, we’ve encountered some difficulties in securing speakers. Finding enough speakers for our events on a bimonthly basis has been challenging.</p>
+<p>We both gave talks this year. So, we’ve had a couple of speakers, but it’s still an area we need to improve. Initially, when we started before incorporating talks, we simply met at a restaurant-bar hybrid, enjoying drinks and chatting. Anyone was welcome to join, and we displayed a small user group flag to indicate our meetup group. During those early meetings, we would typically have just one or two additional attendees.</p>
+<p>As we looked to expand our gatherings, we’ve seen a modest increase in participation this year. Our goal for next year is to continue the bimonthly meetings and find ways to attract more speakers, as that remains a significant challenge. When we began this initiative, I reached out widely, and while many expressed interest, converting that interest into confirmed dates has proven to be quite challenging.</p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
+<p>One of the projects we are particularly proud of at MASHA is the development of the <a href="https://health.uct.ac.za/nish/dtp-boost-vaccination-strategy-tool">DTPBoost Vaccination Strategy Tool</a>. The DTP vaccine, which stands for Diphtheria, Tetanus, and Pertussis. This vaccine protects against these three diseases and is typically administered as part of a primary series starting within the first few weeks after birth.</p>
+<p>However, there are ongoing questions regarding when and if to administer booster doses of this vaccine in different countries. This project began in collaboration with the <a href="https://www.who.int/">WHO</a> and the <a href="https://www.cdc.gov/index.html">CDC</a> before the onset of COVID-19. Initially, we had discussions about pursuing this work, but when COVID-19 emerged, funding was redirected, and our efforts were put on hold. Nevertheless, we were eventually able to resume and complete the project.</p>
+<p>We have developed three disease models that are fully age-specific, tracking the administration of vaccine doses over the weeks following birth. These models are interconnected through the single vaccine and its various doses, making them quite complex to solve—there are approximately 10,000 equations that must be processed using a numerical integrator, including non-linear equations. Ensuring transparency for the modelers throughout this process is a significant challenge. Additionally, we have focused on effective communication and decision support throughout the project.</p>
+<p>We developed an application built on our modeling framework, which is a Shiny application that enables users to input detailed information about their country’s context. If you represent a Department of Health and have specific data that is confidential, you can input that data into the application. This allows the model to use your particular information instead of relying on a global average or less relevant data.</p>
+<p>Typically, this application is not used in isolation; rather, it is used in collaboration with a modeler. This collaboration is crucial, as it provides valuable involvement and feedback from stakeholders throughout the modeling process.</p>
+<p>In summary, DTP serves as the underlying model, while DTP Boost is the application built on top of it. We have been working on this project for several years and are pleased to announce that we have finally published it and secured a DOI. We are also in the process of preparing publications. Many people contributed to this project, and we take great pride in our accomplishment.</p>
+</section>
+<section id="what-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc." class="level2">
+<h2 class="anchored" data-anchor-id="what-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc.">What resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)</h2>
+<p>In the DTP project, much of the code was custom. We used the <a href="https://cran.r-project.org/web/packages/deSolve/index.html">deSolve</a> package for numerical integration. I utilized the <a href="https://tidyverse.org/packages/">tidyverse</a> extensively, along with several of its packages for various tasks, as well as the <a href="https://cran.r-project.org/web/packages/promises/index.html">promises</a> package. We have three independent models running concurrently within a Shiny app, and using promises is beneficial for parallelizing that workflow.</p>
+<p>In terms of packages, there’s the entire tidyverse, along with Shiny and Shiny Dashboard. If we were to redo this project, we would definitely incorporate the <a href="https://rstudio.github.io/bslib">bslib</a> package as well. Additionally, we used ShinyJS for client-side interactions, which is part of the usual Shiny package toolkit.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in almost 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>software development</category>
+  <category>epidemiology</category>
+  <guid>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/index.html</guid>
+  <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
 <item>
   <title>2025 in Review: Growth, Community, &amp; Momentum</title>
   <dc:creator>Terry Christiani, executive director, R Consortium</dc:creator>
@@ -1215,67 +1283,6 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <guid>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html</guid>
   <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/thumbnail-umair-durrani.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Gradient Boosting Machines (GBMs) in the Age of LLMs and ChatGPT</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/8pAv-aw8HYM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="szilard_GBM_LLM.pdf">available here</a> (PDF)</h3>
-</section>
-<section id="gradient-boosting-machines-are-they-still-relevant-in-the-era-of-ai-and-llms" class="level1">
-<h1>Gradient Boosting Machines: Are They Still Relevant in the Era of AI and LLMs?</h1>
-<p>Gradient Boosting Machines (GBMs) have long been hailed as the leading machine learning algorithm for structured and tabular data. This reputation has been firmly established over the past decade, particularly in business applications where accuracy and predictive analytics are paramount. However, as Large Language Models (LLMs) like ChatGPT rise to prominence, questions about the relevance and potential obsolescence of GBMs are becoming more frequent. <a href="https://szilard.github.io/aboutme/">Szilard Pafka, PhD, Chief Scientist at Epoch</a>, addressed this topic in a compelling talk at the R+AI 2025 event hosted by the R Consortium.</p>
-<section id="the-proven-track-record-of-gbms" class="level2">
-<h2 class="anchored" data-anchor-id="the-proven-track-record-of-gbms">The Proven Track Record of GBMs</h2>
-<p>GBMs have been a cornerstone of machine learning since the 2000s, especially in business-related domains where tabular data is prevalent. This data type, organized in rows and columns, is typically stored in relational databases and is the backbone of many practical applications like fraud detection, credit scoring, and marketing analytics. GBMs’ superiority in handling such data is well-documented, with popular implementations like XGBoost, LightGBM, and h2o available as R packages.</p>
-<section id="historical-context" class="level3">
-<h3 class="anchored" data-anchor-id="historical-context">Historical Context</h3>
-<p>The efficacy of GBMs in tabular data contexts is supported by numerous studies and benchmarks. A notable 2006 study compared several machine learning algorithms and found that random forests, neural networks, and GBMs consistently delivered the best performance across various datasets. Over the years, GBMs have maintained their status as the go-to solution for structured data, with prominent figures like Tianqi Chen, the creator of XGBoost, highlighting their dominance in competitive environments like Kaggle.</p>
-</section>
-<section id="the-deep-learning-challenge" class="level3">
-<h3 class="anchored" data-anchor-id="the-deep-learning-challenge">The Deep Learning Challenge</h3>
-<p>Despite the success of GBMs, the advent of deep learning over a decade ago promised to revolutionize machine learning. While deep learning conquered domains like computer vision and speech recognition, its application to structured data lagged behind. Szilard Pafka expressed skepticism about deep learning’s ability to outperform GBMs in tabular data contexts, a sentiment supported by empirical evidence and expert consensus.</p>
-</section>
-</section>
-<section id="the-rise-of-large-language-models" class="level2">
-<h2 class="anchored" data-anchor-id="the-rise-of-large-language-models">The Rise of Large Language Models</h2>
-<p>The landscape began to shift with the emergence of LLMs such as ChatGPT, which showcased unprecedented capabilities in text understanding and generation. These models have transformed information retrieval and synthesis, often replacing traditional search engines and providing sophisticated code generation and data analysis assistance. However, their application to tabular data remains limited.</p>
-<section id="the-role-of-llms-in-machine-learning" class="level3">
-<h3 class="anchored" data-anchor-id="the-role-of-llms-in-machine-learning">The Role of LLMs in Machine Learning</h3>
-<p>While LLMs excel in text-based domains, their utility in tabular data tasks is still being explored. Pafka notes that LLMs can aid in idea generation, advice, and code generation, but they have yet to replace the specialized efficiency of GBMs in structured data scenarios. This is due to the inherent differences in data structure and the challenges LLMs face when handling large, complex datasets.</p>
-</section>
-</section>
-<section id="benchmarking-gbms-and-llms" class="level2">
-<h2 class="anchored" data-anchor-id="benchmarking-gbms-and-llms">Benchmarking GBMs and LLMs</h2>
-<p>Pafka’s <a href="https://github.com/szilard/GBM-perf">GBM-perf benchmark</a>, maintained on GitHub, continues to demonstrate the strength of GBMs against newer algorithms, including those involving deep learning and LLMs. The findings consistently place GBMs like XGBoost and CatBoost at the top in terms of performance, especially in classification tasks with tabular data.</p>
-<section id="practical-applications-and-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="practical-applications-and-deployment">Practical Applications and Deployment</h3>
-<p>The practical deployment of machine learning models is as crucial as their training. H2o.ai, for example, offers seamless integration and deployment capabilities, making it a preferred choice for real-time applications. The ease of deployment and efficient scoring are significant advantages of GBMs, which are often not matched by LLMs in structured data tasks.</p>
-</section>
-</section>
-<section id="future-prospects-and-conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="future-prospects-and-conclusion">Future Prospects and Conclusion</h2>
-<p>As the AI landscape rapidly evolves, the question remains: can LLMs and other AI advancements supplant GBMs in the domain of tabular data? The current consensus, both among human experts and AI systems like ChatGPT, is that GBMs are still the optimal choice for these tasks. While LLMs hold potential for assisting in various stages of data analysis and machine learning, GBMs continue to be the workhorse for structured data.</p>
-<p>The future is uncertain, and as AI technologies advance, new paradigms may emerge. However, for now, GBMs remain an indispensable tool in the data scientist’s arsenal, particularly for business applications involving structured data. Szilard Pafka’s insights reaffirm the enduring relevance of GBMs and highlight the need for continuous adaptation and learning in the face of technological progress.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html</guid>
-  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/thumbnail-szilard-pafka.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
