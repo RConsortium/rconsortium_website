@@ -10,7 +10,62 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 07 Jan 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Crops, Code, and Community Build R-Mob User Group in Australia</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://www.linkedin.com/in/asad07/?originalSubdomain=au">Dr.&nbsp;Asad (Md) Asaduzzaman</a>, organizer of <a href="https://www.meetup.com/meetup-group-ckhmlaoy/">R-Mob</a>, the R user group at Charles Sturt University (CSU), Australia, recently spoke with the R Consortium about strengthening R capacity in agricultural and environmental research through community-driven learning. He shared how R-Mob brings together researchers and students to apply R to real-world agronomic and ecological challenges. Dr.&nbsp;Asad discussed integrating R into agricultural education, building inclusive R communities, and using statistical modeling and machine learning to support data-driven decision-making in modern agriculture.</p>
+<p><img src="https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/DrAsadAsaduzzaman.png" class="img-fluid" style="width:50.0%"></p>
+<section id="please-share-about-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-your-background-and-involvement-with-the-rugs-group.">Please share about your background and involvement with the RUGS group.</h2>
+<p>I am Dr.&nbsp;Asad (Md) Asaduzzaman, an academic and applied researcher with over 13 years of experience using R, a programming language I began working with during my PhD. My expertise includes statistical modeling, data visualization, and machine learning. My core motivation has always been to transform data into actionable information and compelling stories for end users.</p>
+<p>I have a disciplinary background in crop agronomy and weed science, with a focus on applying machine learning to agricultural research. My work emphasizes agronomic interventions for non-chemical weed management in the context of predicted climate change. Early in my career, I recognized that R could serve as a powerful bridge between traditional agricultural knowledge and modern, data-driven decision-making.</p>
+<p>At Charles Sturt University in Australia, I teach both undergraduate and postgraduate courses, integrating R into my instruction. This approach helps build students’ skills in data handling, interpretation, and visual communication—capabilities essential to digital and decision-based agriculture.</p>
+<p>To address the growing need for R programming support, I initiated and currently lead an R user group at CSU called “R-Mob.” The group has over 25 active members, including beginners and advanced users from fields such as agriculture, environmental science, and data analytics. We meet monthly in a hybrid format, emphasizing practical problem-solving rather than abstract coding.&nbsp;</p>
+<p>To keep engagement high between meetings, I share curated R resources, scripts, and updates through our R-Mob communication platform. Occasionally, we invite external experts for brief talks followed by Q&amp;A sessions, which have been particularly valuable for early-career researchers and HDR (Higher Degree by Research) students.&nbsp;</p>
+<p>I have advanced proficiency in R, especially in statistical modeling, visualization, machine learning, and reproducible research workflows. Overall, my involvement in R user group activities reflects my dual identity as both an R practitioner and an educator, dedicated to building sustainable R capacity within applied disciplines.</p>
+</section>
+<section id="can-you-share-what-the-r-community-is-like-in-australia" class="level2">
+<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-australia">Can you share what the R community is like in Australia?</h2>
+<p><img src="https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/RMobLogo.png" class="img-fluid" style="width:50.0%"></p>
+<p>The R community in Australia is highly active, diverse, and collaborative, encompassing academia, government, industry, and the private tech sector. Researchers and professionals in fields such as agriculture, ecology, health, economics, and IT increasingly rely on R due to its open-source nature, strong community support, and rapid innovation through various packages.</p>
+<p>In Australia, there is also cross-pollination of ideas between IT professionals and applied scientists. While R faces competition from other platforms for machine learning and large-scale data processing, it remains particularly strong in areas such as statistical rigor, transparency, and reproducibility, which are crucial in research and policy-making contexts. Additionally, from an educational perspective, R’s ability to integrate analysis, visualization, and reporting (such as R Markdown) makes it especially effective for teaching and for communicating results to non-technical audiences, including students and industry stakeholders.</p>
+</section>
+<section id="what-topics-are-receiving-a-good-response-in-your-group-what-do-you-hope-to-cover-in-2026" class="level2">
+<h2 class="anchored" data-anchor-id="what-topics-are-receiving-a-good-response-in-your-group-what-do-you-hope-to-cover-in-2026">What topics are receiving a good response in your group? What do you hope to cover in 2026?</h2>
+<p>The strongest engagement within our R-Mob group has focused on practical, immediately applicable topics. These include data visualization, data summarization and cleaning (specifically workflows for handling real, messy datasets), statistical modeling related to agriculture and ecology (such as linear mixed models and generalized linear models), and reproducible research workflows (using R Markdown and Quarto for theses, reports, and papers). These subjects resonate with members because they can be directly applied to their research projects.</p>
+<p>Looking ahead to 2026, I plan to expand our focus to include machine learning in R for agriculture, ecological and environmental data analysis, spatial analysis and mapping (integrating R with GIS-based decision-making), time series analysis, and climate-related studies. Additionally, I aim to develop inclusive and accessible R teaching approaches, especially for students from non-programming backgrounds and diverse cultural contexts.</p>
+<p>The goal is to gradually help users progress from confidence to competence and ultimately to leadership within the R ecosystem.</p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
+<p>One of my key research projects involves using R to analyze herbicide hormesis responses in both herbicide-resistant and susceptible weed phenotypes. Herbicide hormesis is a biphasic response in which low doses of herbicides stimulate weed growth, whereas higher doses inhibit it. This phenomenon is complex and non-linear, influenced by various biological and environmental factors, which makes traditional statistical analysis challenging.</p>
+<p>In my work, I utilize R—specifically the <a href="https://cran.r-project.org/web/packages/drc/index.html">drc</a> package—alongside machine learning techniques to model dose-response curves, estimate critical response parameters, and explore patterns that clarify how both resistant and susceptible weed phenotypes adapt and potentially develop resistance under sub-lethal herbicide exposure. This research is highly relevant to the industry, as it provides insights for improved herbicide stewardship and resistance management strategies.</p>
+<p>I am currently developing an innovative project called “Digital Divide in Agriculture,” specifically designed for my students. What motivates my ongoing learning is the challenge of making R accessible to agriculture students who may lack a background in data literacy and programming. As we transition from traditional farming to digital agriculture, data becomes a critical input. Many of my students possess strong technological skills but have limited experience with conventional farming practices, resulting in a gap in their data-handling literacy. My goal is to bridge this gap by using R.</p>
+<p>The project’s objectives include helping students recognize R as a practical tool for addressing real-world agricultural data-literacy challenges, rather than viewing it as merely an abstract technical skill. The most rewarding aspect of this effort has been witnessing the shift in students’ perspectives when they see R generate insights from agricultural data, whether it’s from family farm records or experimental plots. This immediate relevance significantly enhances both their engagement and academic performance.</p>
+</section>
+<section id="how-do-i-build-an-r-user-group" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
+<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in almost 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
+<p><a href="https://r-consortium.org/all-projects/rugsprogram.html" class="uri">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>rugs</category>
+  <category>software development</category>
+  <category>environment</category>
+  <guid>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/index.html</guid>
+  <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/RMobLogo.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
 <item>
   <title>Applied Epidemiology in R: Cape Town R User Group’s Contribution to Global Immunization</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1212,77 +1267,6 @@ font-style: inherit;">rowMeans</span>(x)</span>
   <guid>https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html</guid>
   <pubDate>Sun, 16 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/thumbnail-fodil.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Brand your docs, apps, and ggplots using LLMs</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/828KuEORQdg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here">Slides with resource links <a href="https://dru.quarto.pub/brandthis/#/title-slide">available here</a></h3>
-</section>
-<section id="branding-your-r-projects-with-ease-utilizing-the-brandthis-package" class="level1">
-<h1>Branding Your R Projects with Ease: Utilizing the <code>{brandthis}</code> Package</h1>
-<p>In the realm of data science, while achieving analytical accuracy is paramount, presenting those findings in an aesthetically appealing manner can make a significant difference. The amalgamation of data science with graphic design might seem daunting, but it is a crucial step to ensure that your work stands out and communicates effectively. Umar Dani, a data scientist from Prsage Group, offers an insightful look into harmonizing aesthetics with analytics using the <code>{brandthis}</code> R package. This package empowers users to create branded documents and visualizations with minimal effort, leveraging the power of large language models (LLMs) to make this process efficient.</p>
-<section id="the-challenges-of-theming-in-data-science" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenges-of-theming-in-data-science">The Challenges of Theming in Data Science</h2>
-<p>When embarking on a project, theming the output can be a task often overlooked until the end. However, theming is not just about making things look pretty; it ensures that the document or app resonates with the intended audience. A common starting point is company branding guidelines. But what if these do not exist, or the project is personal? The solution lies in choosing styles, colors, and fonts that are contextually appropriate.</p>
-<p>Options like Quarto offer various theming capabilities for HTML and Reveal.js outputs. However, customizing these requires knowledge of CSS or SCSS, pushing data scientists into the domain of graphic design.</p>
-</section>
-<section id="introducing-the-brandthis-r-package" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-the-brandthis-r-package">Introducing the <code>{brandthis}</code> R Package</h2>
-<p>The <code>{brandthis}</code> R package seeks to simplify this theming process. By utilizing large language models, it allows users to create <code>_brand.yaml</code> files swiftly. These files serve as blueprints for theming all core outputs, like HTML, ggplot visualizations, and presentations. The package facilitates the incorporation of:</p>
-<ul>
-<li><strong>Fonts</strong>: Import fonts from providers like Google Fonts to maintain consistency.</li>
-<li><strong>Color Palettes</strong>: Generate palettes based on images or predefined colors.</li>
-<li><strong>Custom Branding</strong>: Create personalized or company-specific themes effortlessly.</li>
-</ul>
-<p>The package primarily interacts with Google Gemini as its default LLM API, but it is flexible enough to accommodate other APIs supported by the Elmer package.</p>
-</section>
-<section id="streamlined-branding-with-create-branding-app" class="level2">
-<h2 class="anchored" data-anchor-id="streamlined-branding-with-create-branding-app">Streamlined Branding with Create Branding App</h2>
-<p><code>{brandthis}</code> includes the <code>create_brand</code> function, which provides a user-friendly interface for crafting brand files. Key features include:</p>
-<ul>
-<li><strong>LLM Interaction</strong>: Chat with an LLM API to generate brand files based on images or personal/company information.</li>
-<li><strong>Code Insights</strong>: View and edit <code>_brand.yaml</code> configurations directly.</li>
-<li><strong>Plot Customization</strong>: Generate plots and palettes aligned with the brand theme.</li>
-</ul>
-<p>This tool reduces the branding process to minutes, eliminating the need for extensive trial and error and in-depth design expertise.</p>
-</section>
-<section id="practical-application-generating-brand-files" class="level2">
-<h2 class="anchored" data-anchor-id="practical-application-generating-brand-files">Practical Application: Generating Brand Files</h2>
-<p>Creating a brand file with <code>{brandthis}</code> is straightforward. For personal brands, users can input their name and an inspiring image, while for company brands, multiple images and detailed information can be provided. The <code>create_brand</code> function leverages <code>{ellmer}</code>’s tool-calling feature, integrating seamlessly with user prompts to craft comprehensive brand files.</p>
-</section>
-<section id="enhancing-visualizations-with-color-scales" class="level2">
-<h2 class="anchored" data-anchor-id="enhancing-visualizations-with-color-scales">Enhancing Visualizations with Color Scales</h2>
-<p>Beyond branding, <code>{brandthis}</code> aids in suggesting color scales suitable for ggplot2. Utilizing the <code>ragnar</code> R package, it performs retrieval-augmented generation (RAG) to store and retrieve relevant information, enhancing the accuracy of the suggested palettes.</p>
-</section>
-<section id="conclusion-a-seamless-branding-experience" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-a-seamless-branding-experience">Conclusion: A Seamless Branding Experience</h2>
-<p>The <code>{brandthis}</code> R package is a game-changer for those seeking to enhance the visual appeal of their R projects. It offers:</p>
-<ul>
-<li><strong>Efficiency</strong>: Quickly generates polished themes and palettes.</li>
-<li><strong>Consistency</strong>: Ensures uniform branding across different outputs.</li>
-<li><strong>Intelligence</strong>: Draws on LLM knowledge to provide informed theming suggestions.</li>
-</ul>
-<p>For data scientists aiming to present their analyses with professional flair, <code>{brandthis}</code> promises to be an invaluable tool. Explore its capabilities on GitHub and transform how your data is perceived by your audience.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html</guid>
-  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/brand-your-docs-apps-and-ggplots-using-llms/thumbnail-umair-durrani.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
