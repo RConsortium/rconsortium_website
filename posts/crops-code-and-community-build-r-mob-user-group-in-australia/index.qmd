@@ -1,0 +1,61 @@
+---
+title: "Crops, Code, and Community Build R-Mob User Group in Australia"
+unpublished: false
+url: "https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia"
+description: "Dr. Asad (Md) Asaduzzaman, organizer of R-Mob, the R user group at Charles Sturt University (CSU), Australia, discusses how his group is strengthening R capacity in agricultural and environmental research through community-driven learning."
+categories: ["rugs", "software development", "environment"]
+author: "R Consortium"
+image: "RMobLogo.png"
+image-alt: "picture of R-Mob group logo"
+date: "01/12/2026"
+---
+
+[Dr. Asad (Md) Asaduzzaman](https://www.linkedin.com/in/asad07/?originalSubdomain=au), organizer of [R-Mob](https://www.meetup.com/meetup-group-ckhmlaoy/), the R user group at Charles Sturt University (CSU), Australia, recently spoke with the R Consortium about strengthening R capacity in agricultural and environmental research through community-driven learning. He shared how R-Mob brings together researchers and students to apply R to real-world agronomic and ecological challenges. Dr. Asad discussed integrating R into agricultural education, building inclusive R communities, and using statistical modeling and machine learning to support data-driven decision-making in modern agriculture.
+
+![](DrAsadAsaduzzaman.png){width=50%}
+
+## Please share about your background and involvement with the RUGS group.
+
+I am Dr. Asad (Md) Asaduzzaman, an academic and applied researcher with over 13 years of experience using R, a programming language I began working with during my PhD. My expertise includes statistical modeling, data visualization, and machine learning. My core motivation has always been to transform data into actionable information and compelling stories for end users.
+
+I have a disciplinary background in crop agronomy and weed science, with a focus on applying machine learning to agricultural research. My work emphasizes agronomic interventions for non-chemical weed management in the context of predicted climate change. Early in my career, I recognized that R could serve as a powerful bridge between traditional agricultural knowledge and modern, data-driven decision-making.
+
+At Charles Sturt University in Australia, I teach both undergraduate and postgraduate courses, integrating R into my instruction. This approach helps build students’ skills in data handling, interpretation, and visual communication—capabilities essential to digital and decision-based agriculture.
+
+To address the growing need for R programming support, I initiated and currently lead an R user group at CSU called "R-Mob." The group has over 25 active members, including beginners and advanced users from fields such as agriculture, environmental science, and data analytics. We meet monthly in a hybrid format, emphasizing practical problem-solving rather than abstract coding. 
+
+To keep engagement high between meetings, I share curated R resources, scripts, and updates through our R-Mob communication platform. Occasionally, we invite external experts for brief talks followed by Q&A sessions, which have been particularly valuable for early-career researchers and HDR (Higher Degree by Research) students. 
+
+I have advanced proficiency in R, especially in statistical modeling, visualization, machine learning, and reproducible research workflows. Overall, my involvement in R user group activities reflects my dual identity as both an R practitioner and an educator, dedicated to building sustainable R capacity within applied disciplines.
+
+## Can you share what the R community is like in Australia?
+
+![](RMobLogo.png){width=50%}
+
+The R community in Australia is highly active, diverse, and collaborative, encompassing academia, government, industry, and the private tech sector. Researchers and professionals in fields such as agriculture, ecology, health, economics, and IT increasingly rely on R due to its open-source nature, strong community support, and rapid innovation through various packages.
+
+In Australia, there is also cross-pollination of ideas between IT professionals and applied scientists. While R faces competition from other platforms for machine learning and large-scale data processing, it remains particularly strong in areas such as statistical rigor, transparency, and reproducibility, which are crucial in research and policy-making contexts. Additionally, from an educational perspective, R’s ability to integrate analysis, visualization, and reporting (such as R Markdown) makes it especially effective for teaching and for communicating results to non-technical audiences, including students and industry stakeholders.
+
+## What topics are receiving a good response in your group? What do you hope to cover in 2026?
+
+The strongest engagement within our R-Mob group has focused on practical, immediately applicable topics. These include data visualization, data summarization and cleaning (specifically workflows for handling real, messy datasets), statistical modeling related to agriculture and ecology (such as linear mixed models and generalized linear models), and reproducible research workflows (using R Markdown and Quarto for theses, reports, and papers). These subjects resonate with members because they can be directly applied to their research projects.
+
+Looking ahead to 2026, I plan to expand our focus to include machine learning in R for agriculture, ecological and environmental data analysis, spatial analysis and mapping (integrating R with GIS-based decision-making), time series analysis, and climate-related studies. Additionally, I aim to develop inclusive and accessible R teaching approaches, especially for students from non-programming backgrounds and diverse cultural contexts.
+
+The goal is to gradually help users progress from confidence to competence and ultimately to leadership within the R ecosystem.
+
+## Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?
+
+One of my key research projects involves using R to analyze herbicide hormesis responses in both herbicide-resistant and susceptible weed phenotypes. Herbicide hormesis is a biphasic response in which low doses of herbicides stimulate weed growth, whereas higher doses inhibit it. This phenomenon is complex and non-linear, influenced by various biological and environmental factors, which makes traditional statistical analysis challenging.
+
+In my work, I utilize R—specifically the [drc](https://cran.r-project.org/web/packages/drc/index.html) package—alongside machine learning techniques to model dose-response curves, estimate critical response parameters, and explore patterns that clarify how both resistant and susceptible weed phenotypes adapt and potentially develop resistance under sub-lethal herbicide exposure. This research is highly relevant to the industry, as it provides insights for improved herbicide stewardship and resistance management strategies.
+
+I am currently developing an innovative project called "Digital Divide in Agriculture," specifically designed for my students. What motivates my ongoing learning is the challenge of making R accessible to agriculture students who may lack a background in data literacy and programming. As we transition from traditional farming to digital agriculture, data becomes a critical input. Many of my students possess strong technological skills but have limited experience with conventional farming practices, resulting in a gap in their data-handling literacy. My goal is to bridge this gap by using R.
+
+The project's objectives include helping students recognize R as a practical tool for addressing real-world agricultural data-literacy challenges, rather than viewing it as merely an abstract technical skill. The most rewarding aspect of this effort has been witnessing the shift in students' perspectives when they see R generate insights from agricultural data, whether it’s from family farm records or experimental plots. This immediate relevance significantly enhances both their engagement and academic performance.
+
+## How do I Build an R User Group?
+
+R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in almost 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
+
+<https://r-consortium.org/all-projects/rugsprogram.html>
