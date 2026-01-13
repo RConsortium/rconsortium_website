@@ -1,0 +1,79 @@
+## 2025 Group 2 Funded Projects
+
+The R Consortium is pleased to announce the following projects have been funded by the Infrastructure Steering Committee (ISC) for the second grant cycle of 2025. These projects address a range of needs within the R ecosystem, from sandboxed execution of untrusted R code via webR to better Rust tooling and community infrastructure, improvements to ecological workflows, translation infrastructure, modern web mapping, and expanding access to causal inference education.
+
+*   [rw: CLI for webR with Sandboxing Features](#rw-cli-for-webr-with-sandboxing-features)
+*   [rextendr: Community-focused development for scientific computing with Rust and R](#rextendr-community-focused-development-for-scientific-computing-with-rust-and-r)
+*   [birdnetTools 2.0: Linking BirdNET outputs to occupancy modeling in R](#birdnettools-20-linking-birdnet-outputs-to-occupancy-modeling-in-r)
+*   [extendr: Modern OOP tools](#extendr-modern-oop-tools)
+*   [Consistent Translations Glossary across R](#consistent-translations-glossary-across-r)
+*   [Unlocking the Potential of Versioned-Controlled Reproducible Workflows](#unlocking-the-potential-of-versioned-controlled-reproducible-workflows)
+*   [Modernizing R’s web-mapping capabilities](#modernizing-rs-web-mapping-capabilities)
+*   [Translating the 'Causal Inference for The Brave and True' book to R](#translating-the-causal-inference-for-the-brave-and-true-book-to-r)
+
+---
+
+### rw: CLI for webR with Sandboxing Features {#rw-cli-for-webr-with-sandboxing-features}
+
+**Lead:** Henrik Bengtsson, University of California, San Fransisco  
+**Grant:** $8,000
+
+This project will deliver easy-to-install software tools for running R code in a sandboxed WebAssembly (Rossberg et al. 2019) environment via Node.js and webR (Stagg, Lionel, and Others 2025). This will allow for evaluating arbitrary, untrusted R code in a secure manner isolated from the host system.
+
+By default, the R code will not be able to access the host system (including the file system, the network, the process tree, and memory space). There will be options for relaxing the default containment, e.g. giving R access to a persistent package library on host, giving R access to one or more files on host, and giving R network access (as supported by Node.js and WebAssembly). There will be options to control the maximum runtime.
+
+### rextendr: Community-focused development for scientific computing with Rust and R {#rextendr-community-focused-development-for-scientific-computing-with-rust-and-r}
+
+**Lead:** Kenneth Vernon, Scientific Computing and Imaging Institute, University of Utah  
+**Grant:** $4,000
+
+This project is intended to reinforce the extendr project by building community-focused infrastructure that will ensure the project’s long term sustainability. The extendr project provides a Rust extension framework for developing type-safe and scalable scientific computing tools in R. For most R users, the primary mode of entry into the extendr ecosystem is the R package rextendr, which provides usethis- and devtools-like support for integrating Rust extensions into R packages with extendr. R developers will typically interact with rextendr by making contributions to its codebase or by developing their own Rust-powered R packages. However, both pathways currently present significant barriers that limit broader adoption within the R community.
+
+### birdnetTools 2.0: Linking BirdNET outputs to occupancy modeling in R {#birdnettools-20-linking-birdnet-outputs-to-occupancy-modeling-in-r}
+
+**Lead:** Sunny Tseng, University of Northern British Columbia  
+**Grant:** $7,488
+
+Passive acoustic monitoring is transforming biodiversity research, allowing scientists to study birds across vast landscapes using audio recordings. Machine learning tools such as BirdNET can automatically identify thousands of species from audio recordings, but converting its outputs into the structured format required for occupancy modeling, a key method for estimating where species occur and how likely they are to be detected, remains a major hurdle. birdnetTools 2.0 will remove this barrier by expanding the existing package to produce detection matrices compatible with widely used occupancy modeling R packages: spOccupancy, unmarked, and ubms. By streamlining data import, cleaning, validation, and preparation for modeling, this upgrade of birdnetTools will make it easier for researchers and conservationists to generate reproducible occupancy estimates from raw audio recordings. The project will also include step-by-step tutorials and example workflows, empowering ecologists to monitor bird populations at large scales and strengthening the R ecosystem for biodiversity science.
+
+### extendr: Modern OOP tools {#extendr-modern-oop-tools}
+
+**Lead:** Mossa Merhi Reimert, A2-Ai  
+**Grant:** $5,000
+
+This project is intended to enhance the extendr project (Reimert et al. 2024) with complete support for R’s three major object-oriented programming (OOP) systems: vctrs/S3, S7, and R6. The extendr project provides FFI bindings between R and Rust, enabling high-performance R package development with Rust’s safety, speed, and ecosystem. With 28 CRAN packages and nearly 600,000 downloads, extendr has demonstrated its value to the R community. Currently, extendr enables porting single-purpose Rust libraries, but with support for OOP, extendr developers will be able to port entire Rust ecosystems, capturing complex interdependencies through expressive, high-level interfaces in R.
+
+### Consistent Translations Glossary across R {#consistent-translations-glossary-across-r}
+
+**Lead:** Saranjeet Kaur Bhogal, Imperial College London  
+**Grant:** $2,500
+
+The R Contribution Working Group (RCWG) has been involved in a number of projects to foster a wider, more diverse, community of contributors to base R. The group facilitates active contribution by the community, especially through the R Dev Days. This proposal is specifically related to efforts to support contributions to the translations of messages in R. The aim is to improve the technical infrastructure of the translations process by providing a common glossary that can be used by all translation projects in the R ecosystem, thus avoiding duplicated work and effort.
+
+### Unlocking the Potential of Versioned-Controlled Reproducible Workflows {#unlocking-the-potential-of-versioned-controlled-reproducible-workflows}
+
+**Lead:** Emma Mendelsohn  
+**Grant:** $7,500
+
+The goal of this project is to simplify the use of CAS for both storage and retrieval of artifacts. We will produce two packages that will provide data scientists with tools for collaborative, version-controlled {targets} workflows using CAS.
+
+First, the {tarchive} package will provide a set of standard plugins to integrate the {targets} CAS system with widely-used cloud storage providers, including S3-compatible providers, GitHub artifact storage and general HTTP-based storage.
+
+The second package, {relic}, will provide the linkages between version-controlled code and content-addressed artifacts. It will enable users to fetch and compare multiple versions of artifacts by navigating both local and remote git histories, extracting relevant metadata, and then looking up an object in CAS.
+
+### Modernizing R’s web-mapping capabilities {#modernizing-rs-web-mapping-capabilities}
+
+**Lead:** Tim Appelhans, Friedrich-Alexander University of Erlangen–Nuremberg  
+**Grant:** $7,000
+
+To overcome problems with slow data transfer between R and the browser and lack of cloud-native data support, two main implementations will be realised with this proposal. First, a small package (working title geoarrowWidget) will be developed to provide general functionality for quickly transferring geo-spatial data from R memory to the browser via the geoarrow data specification. Second, geoarrowDeckgl will be finalised and extended with dedicated functions to both enable overlays for maplibre maps, as well as support visualisation of cloud-native data formats directly, i.e. without the need to read data into R memory. These developments will focus on extending web-mapping workflows provided by package mapgl, however, in a third step geoarrowDeckgl will be expanded with dedicated bindings for other web-mapping R packages, such as leaflet, tmap, mapdeck and mapview so that a wide range of R spatial users will benefit from these efforts.
+
+### Translating the _Causal Inference for The Brave and True_ book to R {#translating-the-causal-inference-for-the-brave-and-true-book-to-r}
+
+**Lead:** Bruna Wundervald  
+**Grant:** $4,000
+
+The book named _Causal Inference for The Brave and True_ (Facure 2023) is a highly regarded open-source book whose code is currently available only in Python. While popular in industry, this excludes a large community of learners, researchers, and instructors who primarily use R. With over 3,000 GitHub stars, the book’s reach is significant, yet its lack of an R version limits accessibility, reproducibility, and educational impact. This project aims to address that gap by providing a faithful R translation of the book’s code, making causal inference concepts more accessible, reproducible, and impactful for the community.
+
+To solve this problem, we will systematically translate the existing Python code from _Causal Inference for The Brave and True_ into R code, ensuring that all examples produce equivalent outputs and remain easy to follow.
+
