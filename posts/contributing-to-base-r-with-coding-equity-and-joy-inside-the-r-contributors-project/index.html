@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2026-01-13">
+<meta name="description" content="Ella Kaye, Research Software Engineer at the University of Warwick and one of the organizers of the R Contributors project, also on Meetup, recently spoke with the R Consortium about her path into the R community and her efforts to make contributing to base R more accessible and inclusive.">
+
+<title>R Consortium - Contributing to base R with Coding Equity and Joy - Inside the R Contributors Project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../about/index.html" rel="" target="">
+ <span class="dropdown-text">Mission</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/governance.html" rel="" target="">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf" rel="" target="">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../governance/isc-charter.html" rel="" target="">
+ <span class="dropdown-text">ISC Charter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf" rel="" target="">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/faq.html" rel="" target="">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/contact.html" rel="" target="">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/privacy.html" rel="" target="">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../../members.html" rel="" target="">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/join.html" rel="" target="">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf" rel="" target="">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../../all-projects/index.html" rel="" target="">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html" rel="" target="">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html" rel="" target="">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html" rel="" target="">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html" rel="" target="">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/" rel="" target="">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/" rel="" target="">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-universe.dev/search" rel="" target="">
+ <span class="dropdown-text">R-Universe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html" rel="" target="">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/previous-top-level-projects.html" rel="" target="">
+ <span class="dropdown-text">Previous Top-Level Projects</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/Risk_website/" rel="" target="">
+ <span class="dropdown-text">R!sk (Feb 18-19, 2026)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RMedicine_website/" rel="" target="">
+ <span class="dropdown-text">R/Medicine (May 4-8, 2026)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../webinars/webinars.html" rel="" target="">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/events.html" rel="" target="">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/cal.html" rel="" target="">
+ <span class="dropdown-text">Working Groups Calendar</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../../blog/index.html" rel="" target="">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../newsletters/newsletters.html" rel="" target="">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" rel="" target="">
+ <span class="dropdown-text">Annual Report 2023 (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-5-year-retrospective-2021-10-28.pdf" rel="" target="">
+ <span class="dropdown-text">Annual Report 2021 (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../codeofconduct.html" rel="" target="">
+ <span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium" rel="" target=""><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/rconsortium.bsky.social" rel="" target=""><i class="bi bi-cloud" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@RConsortium" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/RConsortium" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Contributing to base R with Coding Equity and Joy - Inside the R Contributors Project</h1>
+                  <div>
+        <div class="description">
+          Ella Kaye, Research Software Engineer at the University of Warwick and one of the organizers of the R Contributors project, also on Meetup, recently spoke with the R Consortium about her path into the R community and her efforts to make contributing to base R more accessible and inclusive.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">RUGS</div>
+                <div class="quarto-category">LGBTQ+</div>
+                <div class="quarto-category">Software Development</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 13, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><a href="https://www.linkedin.com/in/ellakaye/?originalSubdomain=uk">Ella Kaye</a>, Senior Research Software Engineer at the University of Warwick and one of the organizers of the <a href="https://contributor.r-project.org/">R Contributors project</a> (also on <a href="https://www.meetup.com/r-contributors/">Meetup</a>), recently spoke with the R Consortium about her path into the R community and her efforts to make contributing to base R more accessible and inclusive. She shared insights from organizing R Developer Days, using GitHub to lower barriers for new contributors, learning with joy while developing the R package <code>aperol</code>, and fostering community with rainbowR.</p>
+<p><img src="EllaKaye.png" class="img-fluid" style="width:50.0%"></p>
+<section id="please-share-about-your-background-and-involvement-with-the-rugs-group." class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-your-background-and-involvement-with-the-rugs-group.">Please share about your background and involvement with the RUGS group.</h2>
+<p>I am currently a Senior Research Software Engineer (RSE) at the University of Warwick in the UK. However, my career path to this point has been long and windy, via mathematics, secondary school teaching, market research, and statistics. I was first introduced to R while pursuing an MSc in Applied Statistics, where I learned to use it in an academic context for statistical analysis. Over time, I found that I enjoyed software development more than statistics itself, which led to my transition into research software engineering.</p>
+<p>During the first year of my PhD program, I developed my first R package, <a href="https://ellakaye.github.io/BradleyTerryScalable/"><code>BradleyTerryScalable</code></a>, for fitting the Bradley-Terry model to pair-wise comparison data. This experience ignited my passion for R package development. In 2017, I presented the package at the <a href="https://user2017.brussels">useR! conference</a> in Brussels. Just before then, I’d also learnt about R-Ladies and met some members of the London chapter. At the conference, I fully immersed myself in the R community and felt a great sense of camaraderie and a real joy of belonging.</p>
+<p>At Warwick, I’m on the committee of the <a href="https://warwickrug.github.io">Warwick R User Group</a>, but for this interview, I’d prefer to talk about the <a href="https://contributor.r-project.org">R Contributors</a> project. This initiative is primarily driven by <a href="https://www.heatherturner.net/">Dr.&nbsp;Heather Turner</a>, along with many other contributors. I’m employed on Heather’s fellowship grant, “Sustainability and Equality, Diversity, and Inclusion (EDI) in the R project.” The objective of this fellowship is to foster a larger and more diverse community of contributors to base R.</p>
+<p>We organize <a href="https://contributor.r-project.org/events/r-dev-days/">R Developer Days</a>, which bring together a wide range of contributors, from members of R Core to those who’ve never contributed to base R before. In 2023, we held a three-day <a href="https://contributor.r-project.org/r-project-sprint-2023/">R Sprint</a> at Warwick. Participants came from all over the world and represented various groups within the R community and the broader R world. It was a fantastic experience that led to several patches in the R codebase. We also run monthly R contributor <a href="https://contributor.r-project.org/events/office-hours/">office hours</a> and a <a href="https://contributor.r-project.org/events/c-study-group-2025/">C Study Group for R contributors</a>.</p>
+<p><img src="RSprint.png" class="img-fluid"></p>
+<p><em>R Project Sprint, University of Warwick, 2023</em></p>
+<p>Heather and I are very excited because, along with a large team of co-leads, we were recently awarded a grant of £500k from the Research Software Maintenance Fund to run a project over the next two years: “Enabling the Next Generation of Contributors to R”. You can read more about what this work will entail in <a href="https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/">this blog post</a>.</p>
+</section>
+<section id="do-you-recommend-any-techniques-for-planning-for-or-during-the-event-github-zoom-other.-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-who-cannot-attend-physical-events-in-the-future" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-recommend-any-techniques-for-planning-for-or-during-the-event-github-zoom-other.-can-these-techniques-be-used-to-make-your-group-more-inclusive-to-people-who-cannot-attend-physical-events-in-the-future">Do you recommend any techniques for planning for or during the event? (Github, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?</h2>
+<p>At the R Dev Days, we’re doing something a bit different and more specific than general R User Group meetings. What makes the R Dev Days successful is the diverse range of problems and opportunities for people to come together and address bugs in the R codebase.</p>
+<p>Success hinges on identifying suitable bugs to work on, as many listed on <a href="https://www.bugzilla.org/">Bugzilla</a> may exceed the technical capabilities of the participants or require buy-in from R Core members. A lot of work goes into reviewing bugs on Bugzilla beforehand to select those that are suitable for a Dev Day, ensuring they cater to varying levels of experience and technical skills.</p>
+<p><img src="RDevDay.png" class="img-fluid"></p>
+<p><em>R Contributors at R Dev Day @ PLUS 2024</em></p>
+<p>We aim to cover a range of issues, including documentation improvements, statistical bugs, or infrastructure. Additionally, there is significant work happening to <a href="https://translate.rx.studio/projects/r-project/">translate R’</a>s error messages into various languages. During R Dev Days, attendees who speak languages other than English can participate by working on translating messages through a web-based translation interface.</p>
+<p>For R Dev Days, we have a <a href="https://github.com/r-devel/r-dev-day">GitHub repo</a> to keep track of ideas and tasks, making use of discussions, issues and labels. This has a lower barrier-to-entry than Bugzilla, and makes collaboration easier and more familiar. Those not able to attend in-person can also engage with these issues.</p>
+<p>Overall, these preparations and strategies contribute to a more engaging and productive experience for everyone involved.</p>
+</section>
+<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
+<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
+<p>In summer 2024, I developed the R package <a href="https://ellakaye.github.io/aperol/"><code>aperol</code></a>. It began as a joke, though underpinned by some serious considerations. It led to some wonderful community interactions and showcases the joy and benefits of working openly.</p>
+<p>At <a href="https://events.linuxfoundation.org/user/">useR! 2024</a>, a few people went out for drinks. Over a round of Aperol Spritzes, they began wondering what an R package called “aperol” might do, which led to a lively discussion on <a href="https://fosstodon.org/@kellybodwin/112769186345818866">Mastodon</a>. During this exchange, just after the conference, Nick Tierney humorously <a href="https://aus.social/@njtierney/112770398923583882">suggested</a> that a package called “aperol” could generate praise. I <a href="https://fosstodon.org/@ellakaye/112771757956362352">jumped on that idea</a> and suggested generating “drunken praise,” referencing the existing <a href="https://github.com/rladies/praise"><code>praise</code></a> package that programmatically creates compliments. I quickly put together a package that generates praise from the praise package, then garbles it, mixing up words or repeating them.</p>
+<p>While the package is a joke, it was also motivated by a talk with a serious message. At the same useR! conference, Fonti Kar had delivered a very well-received talk about the value of creating <a href="https://fontikar.github.io/talks/wombat2024/">silly projects</a>. She emphasized that learning to code in R can feel high-stakes, but engaging in a lighthearted project where the outcomes don’t matter can be an excellent opportunity to learn. Fonti had learnt package development by writing the <a href="https://fontikar.github.io/ohwhaley/"><code>ohwhaley</code></a> package, which generates ASCII art of a whale accompanied by a pun. Fonti’s talk was part of the inspiration for <code>aperol</code> - I wrote it in the same spirit (pun intended).</p>
+<p>I had assumed, being an experienced package developer, that creating <code>aperol</code> would be straightforward, and, for v0.1.0, it was. However, one of the wonderful things about publishing projects on GitHub and engaging in open-source work is that others can see what you’re doing and comment or contribute. For instance, Maëlle Salmon reached out with suggestions to improve the code, which I appreciated, pointing me towards the <code>local_seed()</code> function in the <a href="https://withr.r-lib.org"><code>withr</code></a> package. Additionally, Collin Schwantes proposed a pull request to add a new function. While his feature idea was fun, its implementation went against some best practices in package development. It turned into a learning opportunity for both of us, and we ultimately solved the problem by making use of the <a href="https://r-pkgs.org/data.html#sec-data-state">environment</a>. This underscores Fonti’s point that building silly things can facilitate serious learning.</p>
+<p>I also appreciate what this experience says about the R community. I love the journey from throw-away comment to silly package to serious learning, with folks in the R community engaged at each stage. During the same conference, Kelly Bodwin delivered a keynote address titled “<a href="https://www.youtube.com/watch?v=KOQBfC1WPwM">Keep R weird,</a>” expressing her deep affection for the R community and its joy, fun, and silliness. That talk fired me up and was also part of the inspiration for creating the <code>aperol</code> package.</p>
+</section>
+<section id="is-there-anything-else-regarding-your-involvement-with-r-or-the-r-community-youd-like-to-share" class="level2">
+<h2 class="anchored" data-anchor-id="is-there-anything-else-regarding-your-involvement-with-r-or-the-r-community-youd-like-to-share">Is there anything else regarding your involvement with R or the R community you’d like to share?</h2>
+<p>I never miss an opportunity to talk about <a href="https://rainbowr.org">rainbowR</a>, a community that connects, supports and promotes LGBTQ+ folk who code in R, and spreads awareness of LGBTQ+ issues through data-driven activism!</p>
+<p>This takes us back to the useR! 2017 conference I talked about earlier. The idea for rainbowR emerged from a conversation I had with someone there. As we chatted, we discovered that we are both gay. My conversation partner expressed feeling overwhelmed by the size of the conference, but upon realizing he was talking to someone else gay, he felt more at ease. This exchange highlighted the importance of fostering community and the value of smaller, specific communities within larger groups. We saw the need for a community of LGBTQ+ folks who code in R, and that’s how rainbowR was founded. I’m still running the community, along with a wonderful team, and it’s thriving. If you’re LGBTQ+ and code in R, do consider <a href="https://rainbowr.org/join">joining</a>!</p>
+<p>My experience of the R community as a whole is wonderful, but its size can sometimes make it challenging to find a sense of belonging. That’s partly why Heather and I focus our efforts on equity, diversity, and inclusion (EDI). We are committed to creating spaces and opportunities for those who might feel overlooked. When individuals feel welcomed and supported in a community, it not only enhances their experience but also encourages their technical engagement. This supportive environment can help people see their value as developers. It has been particularly rewarding for me to see several members of rainbowR contribute to base R.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">© 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
