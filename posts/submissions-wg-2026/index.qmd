@@ -1,0 +1,47 @@
+---
+title: "R Submissions Working Group: 2026 Plans and 2025 Success"
+description: "The R Consortium Submission Working Group is excited to announce a new Pilot 6 and Pilot 7. This post also includes plans for additional news on Pilot 4 (containers and webassembly), Pilot 5 (datasetjson) and a few other goodies! "
+author: "R Consortium"
+image: "pilot5.png"
+date: "01/28/2026"
+---
+
+![](pilot5.png)
+
+A quick recap of previous Pilots:
+
+  * [Pilot 1](https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda) delivered Tables and Figures to the FDA using R.
+  * [Pilot 2](https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda) delivered the same Tables and Figures using a Shiny App using R. [Pilot 2 Announcement 2](https://archive.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2)
+  * [Pilot 3](https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/) delivered the Tables and Figures using R as well as the ADaMs...you guessed it using R. .
+  
+For information on these Pilots navigate to our [Pilot's background page on submission working group](https://rconsortium.github.io/submissions-wg/pilot_background.html)
+
+### Pilot 4
+
+### Pilot 5
+
+### Pilot 6
+
+### Pilot 7
+
+
+**More about the R Submissions Working Group**
+
+The [R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/) is focused on improving practices for R-based clinical trial regulatory submissions.
+
+Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language. 
+
+In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical 
+industry and research institutions. Although the health authorities accept submissions based on open source programming 
+languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.
+
+Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps 
+while submitting these example packages. All materials, including submission examples and communications, are 
+publicly available on the [R consortium GitHub page.](https://github.com/RConsortium)
+
+**Join the R Submissions Working Group**
+
+The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. 
+We are a collaborative community open to anyone interested in contributing to this important work. For more information, 
+or to get involved, visit [our website](https://rconsortium.github.io/submissions-wg) or contact us directly at 
+director@r-consortium.org.
