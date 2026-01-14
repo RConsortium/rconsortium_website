@@ -275,29 +275,11 @@ of the R Foundation, with a background in Computer Science and Mathematical Stat
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Mark.webp" alt="Profile Image 13">
-<h2>Mark Bynens</h2>
-<h4>JOHNSON & JOHNSON (SILVER MEMBER)</h4>
-<p>Mark Bynens serves as the Director and Head of Scientific Computing Operations (SCO) within 
-the Statistics & Decision Sciences (SDS) sector of Global Development at Johnson & Johnson R&D. 
-With a distinguished career spanning over 19 years in the industry, Mark joined Johnson & Johnson 
-as a full-time employee in 2016. In his pivotal role, he leads his team with dedication and 
-expertise, holding responsibility and accountability for a broad range of critical operations. 
-These include change management, project management, and the comprehensive management of software 
-applications designed for statistical evaluation or business processes. Mark’s leadership extends 
-to spearheading in-classroom and e-learning education initiatives, fostering knowledge sharing, 
-overseeing software/application acquisition, and managing high-performance computing for in-depth 
-data evaluation, simulations, and statistical research. His team is notably engaged in several R 
-platforms, encompassing both non-HPC and HPC (high-performance computing) environments, where 
-they deliver innovative solutions that significantly benefit the business. Previously, Mark was 
-the business lead for the custom-built GxP SCE (statistical computing environment) for releases 
-1 and 2 at Johnson & Johnson. This project involved a custom-built R-ecosystem, containerized to 
-include Shiny publishing capabilities. His contributions to the field are recognized through his 
-role as one of the main authors of the SCE White Paper, underlining his commitment to advancing 
-statistical computing within the pharmaceutical industry. Through his visionary leadership and 
-technical expertise, Mark Bynens continues to drive significant advancements in scientific computing 
-operations at Johnson & Johnson R&D.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bynens-mark-8399685/" title="LinkedIn">
+<img class="pic" src="./images/Benedikt.webp" alt="Profile Image 13">
+<h2>Benedikt Schamberger</h2>
+<h4>Swiss RE (SILVER MEMBER)</h4>
+<p>Benedikt leads actuarial AI & Technology consulting at Swiss Re, helping teams adopt R and open-source tools. He also leads a Posit-based internal analytics platform used by hundreds company-wide. He supports the R community by promoting best practices and delivering trainings for insurance and other financial professionals. He holds a MSc in mathematical finance and actuarial science from Technical University Munich.</p>
+<a target="_blank" class="tmm_sociallink" href=" http://linkedin.com/in/benedikt-schamberger-702002a2" title="LinkedIn">
 <img decoding="async" alt="LinkedIn" src="./images/linkedin.webp"></a>
 </div>
 
