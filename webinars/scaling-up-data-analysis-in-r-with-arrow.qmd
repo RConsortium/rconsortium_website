@@ -1,0 +1,32 @@
+---
+title: "Scaling up data analysis in R with Arrow"
+---
+
+![](images/crane-arrow-webinar-main-image.png)
+
+### [Register Now!](https://zoom.us/webinar/register/WN_sIj7GHbwR2unVmxvQfsgIA)
+
+Historically, scaling up data analysis in R meant adding infrastructure or radically changing analysis strategy - maintaining a database, working on a cluster, or refactoring code for parallel data processing.
+
+The Arrow ecosystem provides an alternative: fast, memory-efficient analysis without the overhead.
+
+This webinar will cover:
+
+- the evolution of the modern data stack
+- practical approaches to working with larger datasets in R
+- the impact of the Parquet format on data workflows
+- how Arrow enables handling of data that doesn't fit in memory
+- where tools like DuckDB fit into the picture
+
+We'll look at how to get started, real-world examples, and the design choices that make these tools work well together.
+
+## Speaker
+
+### Dr Nic Crane – R Consultant, NC Data Labs
+
+![](images/nic_crane.png){width=40%}
+
+Dr Nic Crane is an R educator and consultant. Nic is one of the maintainers of the Arrow R package, a member of the Apache Arrow Project Management Committee, and co-author of Scaling Up with R and Arrow.
+
+### [Register Now!](https://zoom.us/webinar/register/WN_sIj7GHbwR2unVmxvQfsgIA)
+
