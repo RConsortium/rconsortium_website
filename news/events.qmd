@@ -3,7 +3,7 @@ title: Events
 format:
   html:
     execute:
-    echo: false
+      echo: false
 ---
 
 ## Upcoming Events
@@ -12,16 +12,14 @@ format:
 # Sample data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>'),
-
-
-  dates = c("Feb 18-19, 2025"),
-  location = c("Virtual"),
-  icon = c("Conference"),
-  Type = c("Conference"),
-  
+    '<a href="https://r-consortium.org/webinars/scaling-up-data-analysis-in-r-with-arrow.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Scaling up data analysis in R with Arrow</a>',
+    '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>'
+  ),
+  dates = c("Feb 10, 2026","Feb 18-19, 2026"),
+  location = c("Virtual","Virtual"),
+  icon = c("Webinar","Conference"),
+  Type = c("Webinar","Conference"),
   stringsAsFactors = FALSE
-  
 )
 
 df <- df |>
@@ -43,8 +41,7 @@ gt_table <- gt(df) %>%
     Title = "Title",
     dates = "Dates",
     location = "Location",
-    icon  = "Type",
-
+    icon  = "Type"
   ) %>%
   
 
