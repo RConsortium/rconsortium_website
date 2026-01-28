@@ -1,6 +1,7 @@
 ---
 title: "Statistical Inference for Persistence Diagrams"
 unpublished: false
+url: https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/
 description: "{inphr} supports statistical inference for samples of persistence diagrams from persistent homology. It focuses on comparing populations of diagrams across different data types."
 author: "Manon Simonot, Aymeric Stamm"
 bibliography: references.bib
@@ -256,5 +257,9 @@ plot(out2$iwt, main = "Trefoil vs 2-arm Archspiral")
 ```
 
 @fig-iwt displays the results of the IWT procedure. We can see the portions where statistically significant differences have been detected highlighted by grey areas. The left column shows the curves of the two samples in two different colors while the right column shows the adjusted p-value functions which provide strong control of the familywise error rate.
+
+### Related information on R Consortium website:
+-   [Tidy topological machine learning with TDAvec and tdarec](https://r-consortium.org/posts/tidy-topological-machine-learning-with-tdavec-and-tdarec/index.html)
+-   [Webinar: Modular, interoperable, and extensible topological data analysis in R](https://r-consortium.org/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html#agenda)
 
 ## References
