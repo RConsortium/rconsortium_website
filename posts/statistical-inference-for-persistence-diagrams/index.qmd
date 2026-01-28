@@ -1,0 +1,260 @@
+---
+title: "Statistical Inference for Persistence Diagrams"
+unpublished: false
+description: "{inphr} supports statistical inference for samples of persistence diagrams from persistent homology. It focuses on comparing populations of diagrams across different data types."
+author: "Manon Simonot, Aymeric Stamm"
+bibliography: references.bib
+categories: [isc, software development]
+image: "toydata_preview.svg"
+image-alt: "The {inphr} package includes three toy data sets."
+date: "01/28/2026"
+---
+
+## Samples of persistence diagrams
+
+Topological data analysis (TDA) is a rapidly growing field that uses techniques
+from algebraic topology to analyze the shape and structure of data. At its core,
+TDA provides tools to understand the geometric and topological features of
+datasets across multiple scales, with persistent homology (PH) being one of its
+fundamental techniques.
+
+The documentation of the [{phutil}](https://tdaverse.github.io/phutil/) package provides an [overview of persistent homology](https://tdaverse.github.io/phutil/articles/validation-benchmark.html#definitions). For now, know that the result of
+this procedure is a **persistence diagram**: a multiset (set with multiplicity)
+of points in the plane---usually the upper-half plane and most often the first
+quadrant. Persistence diagrams encode topological features of different
+dimensions, and a single diagram may encode features of one or all dimensions.
+By **persistence data**, we mean a data structure that encodes diagrams of all
+dimensions, and possibly many diagrams coming from data sets of a common type.
+
+The goal of [{inphr}](https://tdaverse.github.io/inphr/) is precisely to deal with comparing populations of persistence
+diagrams coming from data sets of different types. This is classically called the
+task of making inference on the basis of some collected data. Several R packages
+include inferential capabilities for persistence diagrams, including:
+
+-   [{TDA}](https://cran.r-project.org/package=TDA) which focuses on statistical
+analysis of PH and density clustering by providing an R interface for the
+efficient algorithms of the C++ libraries
+[GUDHI](https://project.inria.fr/gudhi/software/),
+[Dionysus](https://www.mrzv.org/software/dionysus/) and
+[PHAT](https://bitbucket.org/phat-code/phat/). This package also implements
+methods from @fasy2014confidence and @chazal2014stochastic for analyzing the
+statistical significance of PH features.
+-   [{TDAstats}](https://cran.r-project.org/package=TDAstats) which provides a
+comprehensive toolset for conducting TDA, specifically via the calculation of PH
+in a Vietoris-Rips complex [@wadhwa2018tdastats].
+-   [{TDAkit}](https://cran.r-project.org/package=TDAkit) which provides a
+variety of algorithms to learn with PH of the data based on functional summaries
+for clustering, hypothesis testing, and visualization
+[@wasserman2018topological].
+
+While these packages have made inference on persistence diagrams available to the
+R community, they only deal with inference on a single diagram using bootstrap
+resampling ({TDA}), or only offer inference to compare two diagrams by permutations
+({TDAstats}), or only compare functional summaries of groups of persistence diagrams
+to answer whether they come from the same underlying distribution ({TDAkit}).
+
+The {inphr} package aims at going one step further by offering two sets of functions
+for making inference:
+
+1. in the space of persistence diagrams (@sec-pd) for testing whether multiple collections of persistence diagrams come from the same underlying distribution;
+2. in functional spaces (@sec-functions) for localizing differences between multiple collections of persistence diagrams on the domain of some functional summary of them.
+
+The following sections showcase these two kinds of inference.
+
+## Inference in the space of persistence diagrams {#sec-pd}
+
+### Distances between persistence diagrams
+
+Two persistence diagrams $X$ and $Y$ are canonically compared using
+**Wasserstein distances**.
+These are a family of metrics determined by a $q$-Minkowski distance on the plane
+and a $p$-norm on the distances between pairs of points matched via some $\varphi : X \to Y$:
+
+$$ \left( \sum_{x \in X}{{\lVert
+x-\varphi(x) \rVert_q}^p} \right)^{1/p} $$
+
+The distance $W_p^q(X,Y)$ is defined to be the infimum of this expression over all possible matchings.
+See this
+[vignette](https://tdaverse.github.io/phutil/articles/validation-benchmark.html) from the {phutil} package
+on distances for more detail, or @cohen2010lipschitz and @bubenik2023exact for
+detailed treatments and stability results on these families of metrics.
+
+In R, using the TDAverse, computation of the distance matrix is offered by the {phutil} package which is therefore a hard dependency of {inphr}.
+
+Functions in {inphr} therefore accept:
+
+- either two objects of class 'persistence_set' produced by `phutil::as_persistence_set()` representing the two samples;
+- or an object of class 'persistence_set' produced by `phutil::as_persistence_set()` representing the contatenation of the two samples and a vector of two integers providing the sample sizes;
+- or an object of class 'dist' typically produced by `phutil::bottleneck_pairwise_distances()` or `phutil::wasserstein_pairwise_distances()` and a vector of two integers with the sample sizes.
+
+### Permutation inference
+
+The package currently includes a function to compare two samples of persistence diagrams. The statistical method for doing that is described in @lovato2021multiscale. Subtantively, it performs inference in two steps:
+
+1. Pre-computation of the matrix $D$ of pairwise distances between persistence diagrams within and between samples;
+2. Permutations of the rows and columns of $D$ to approximate the distribution of one or more test statistics.
+
+Let $F_1$ be the probability distribution that generated the first sample and $F_2$ be the probability distribution that generated the second sample. Inference by permutations helps answering the following hypothesis test:
+
+$$
+H_0 : F_1 = F_2 \quad \mbox{v.s.} \quad H_a : F_1 \ne F_2.
+$$
+
+Differently from classic parametric inference in which the null hypothesis typically assumes equality of the mean parameters or the variance parameters, it is critical that the null distribution be that the entire probability distributions be the same. This is essential because only then can we permute the labels of statistical units under the null hypothesis.
+
+However, depending on the test statistic that is used, the test only focuses on comparing some features of the probability distributions. For instance, if one uses the distance between the Frechet means as test statistic, the test will detect differences in means between the two ditributions but will be blind to differences in variances for example. For this reason, one can use multiple test statistics to make the test sensitive to differences in several moments of the distributions. This is called *non-parametric combination* and it is described in @pesarin2010permutation. 
+
+The {inphr} package uses this approach by relying on the [{flipr}](https://permaverse.github.io/flipr/) package which is the core package of the [permaverse](https://github.com/permaverse) collection of packages for permutation inference. Specifically, the dedicated function is `two_sample_diagram_test()` and, by default, it combines two test statistics based solely on inter-point distances that are defined in @lovato2021multiscale. One is sensitive to differences in means and the other to differences in variances. The user can actually choose one or more test statistics or even define his/her own. The result of the test is a p-value that helps in making the decision of whether to reject the null hypothesis. Optionally, one can ask the function to return the permutations that have been used (`keep_permutations = TRUE`) and the permutation distribution of the combined test statistic (`keep_null_distribution = TRUE`).
+
+### Toy examples
+
+The {inphr} package includes the following three toy data sets.
+
+::: {.callout-note icon="false"}
+## `trefoils1` and `trefoils2`
+
+Two sets of 24 persistence diagrams each computed from noisy samples of trefoil knots. Each sample consists of 120 points sampled from a trefoil knot with Gaussian noise (sd = 0.05) added. Vietoris-Rips persistence was computed up to dimension 2 with maximum scale 6 using `TDA::ripsDiag()`. Generated with seed 28415.
+:::
+
+::: {.callout-note icon="false"}
+## `archspirals`
+
+A set of 24 persistence diagrams computed from noisy samples of 2-armed Archimedean spirals. Each sample consists of 120 points sampled from an Archimedean spiral, embedded in 3D with a zero z-coordinate, then Gaussian noise (sd = 0.05) added. Vietoris-Rips persistence was computed up to dimension 2 with maximum scale 6 using `TDA::ripsDiag()`. Generated with seed 28415.
+:::
+
+@fig-toydata displays the first five persistence diagrams of each sample. The reader can appreciate that the first two lines corresponding to the same trefoil geometry shows similar diagrams while the last line corresponding to a 2-arm archspiral shows a different kind of diagram.
+
+![The first data point of each toy data set.](toydata_preview.svg){#fig-toydata}
+
+We can therefore use `inphr::two_sample_diagram_test()` to compare:
+
+- `trefoils1` and `trefoils2` with expected output that there is not enough statistical evidence to reject the hypothesis that the two samples come from the same distribution;
+- `trefoils1` and `archspirals` with expected output that we can reject the hypothesis that the two samples come from the same distribution.
+
+The following code performs the test between the two trefoil samples using only the first five statistical units:
+
+```{r}
+#| include: false
+library(inphr)
+```
+
+```{r}
+withr::with_seed(1234, {
+    two_sample_diagram_test(trefoils1[1:5], trefoils2[1:5])
+})
+```
+
+As expected, the test is not able to reject the null hypothesis. By default, the function uses `B = 1000` permutations, which makes the p-value resolution of $1/1001 \approx 9.99 \times 10^{-4}$. If we compare instead `trefoils1` against `archspirals`, again using only the first five statistical units, we get:
+
+```{r}
+withr::with_seed(1234, {
+    two_sample_diagram_test(trefoils1[1:5], archspirals[1:5])
+})
+```
+
+As expected, the test does detect the difference despite the small sample size.
+
+## Inference in the functional spaces {#sec-functions}
+
+### Functional representations of persistence homology
+
+The {inphr} package relies on the [{TDAvec}](https://cran.r-project.org/package=TDAvec) package to compute functional representations of persistence diagrams. Currently, there are five truly functional representations (i.e. curves) of a given persisence diagram $D = (b_i, d_i)_{i=1}^N$ that {TDAvec} readily provides:
+
+- the Betti curve [@chazal2021introduction]:
+$$
+\beta(t) = \sum_{i=1}^N \mathbb{1}_{[b_i, d_i)}(t).
+$$
+
+- the Euler characteristic curve [@richardson2014efficient]:
+$$
+\chi(t) = \sum_{k=0}^d (-1)^k \beta_k(t),
+$$
+where $\beta_0, \beta_1, \dots, \beta_d$ are the Betti curves from the smaller persistence diagrams $D_0, D_1, \dots, D_d$ restricted to only features of homology dimensions $0, 1, \dots, d$ respectively.
+
+- the Normalized Life curve [@chung2022persistence]:
+$$
+\mathrm{sl}(t) = \sum_{i=1}^N \frac{d_i - b_i}{L} \mathbb{1}_{[b_i, d_i)}(t), \quad \mbox{where } L = \sum_{i=1}^N (d_i - b_i).
+$$
+
+- the Silhouette curve [@chazal2014stochastic]:
+$$
+\phi(t) = \frac{\sum_{i=1}^N (d_i - b_i) \Lambda_i(t)}{L}, \quad \mbox{where } \Lambda_i(t) = \begin{cases}
+t - b_i & \mbox{if } t \in \left[ b_i, \frac{b_i + d_i}{2} \right] \\
+d_i - t & \mbox{if } t \in \left( \frac{b_i + d_i}{2}, d_i \right] \\
+0 & \mbox{otherwise.}
+\end{cases}
+$$
+
+- the Entropy Summary curve [@atienza2020stability]:
+$$
+S(t) = \sum_{i=1}^N \frac{d_i - b_i}{L} \log_2 \frac{d_i - b_i}{L} \mathbb{1}_{[b_i, d_i]}(t).
+$$
+
+@fig-betti displays, as an example, the Betti curve representations of the 24 diagrams in each of the three toy data sets.
+
+![The Betti curves of all three toy data sets in {inphr}.](betti_curves.svg){#fig-betti}
+
+@fig-betti shows a clear difference between trefoil and archspiral geometry but overlapped curves between the two trefoil samples as expected.
+
+### Interval-wise testing for functional data
+
+The {inphr} package relies on the [{fdatest}](https://permaverse.github.io/fdatest/) package which is also part of the permaverse to handle hypothesis testing on functional representations of persistence homology. Specifically, the {fdatest} package implements a method called *interval-wise testing* described in @pini2017interval which effectively performs domain selection by identifying the portion(s) of the domain of definition of the functional representation where there are statistically significant differences between samples. In the future, the package will also integrate other such domain selection methods described in @abramowicz2023domain.
+
+When using functional representations, we must choose the homology dimension which we want to work on. In {inphr}, we perform inference in functional spaces with the `two_sample_functional_test()`. For example, the following code uses the Betti curves for dimension $0$ to compare the two trefoil samples:
+
+```{r}
+#| eval: false
+out1 <- two_sample_functional_test(
+    trefoils1, trefoils2, 
+    dimension = 0, 
+    representation = "betti"
+)
+```
+
+```{r}
+#| echo: false
+out1 <- readRDS("out1.rds")
+```
+
+Similarly, the following code uses the Betti curves for dimension $0$ to compare the first trefoil sample and the archspiral sample:
+
+```{r}
+#| eval: false
+out2 <- two_sample_functional_test(
+    trefoils1, archspirals, 
+    dimension = 0, 
+    representation = "betti"
+)
+```
+
+```{r}
+#| echo: false
+out2 <- readRDS("out2.rds")
+```
+
+The output of the `two_sample_functional_test()` function is a list with entries:
+
+- `xfd`: a numeric matrix of shape $N_1 \times (P - 1)$ storing the chosen functional representation of the persistence diagrams in the 1st sample, where $N_1$ is the sample size and $P$ is the number of points on which the curves have been evaluated;
+- `yfd`: a numeric matrix of shape $N_2 \times (P - 1)$ storing the chosen functional representation of the persistence diagrams in the 2st sample, where $N_2$ is the sample size and $P$ is the number of points on which the curves have been evaluated;
+- `scale_seq`: a numeric vector of shape $P$ storing the grid on which the curves have been evaluated;
+- `iwt`: an object of class 'ITP2' for which {fdatest} has dedicated `S3` implementations of methods such as `plot()`.
+
+Hence we can display the results of the inferential procedures with the following code:
+
+```{r}
+#| include: false
+library(fdatest)
+```
+
+```{r}
+#| layout-ncol: 2
+#| label: fig-iwt
+#| fig-cap: "Visual representation of the Interval-Wise Testing procedure."
+#| fig-subcap: ""
+plot(out1$iwt, main = "Trefoil 1 vs Trefoil 2")
+plot(out2$iwt, main = "Trefoil vs 2-arm Archspiral")
+```
+
+@fig-iwt displays the results of the IWT procedure. We can see the portions where statistically significant differences have been detected highlighted by grey areas. The left column shows the curves of the two samples in two different colors while the right column shows the adjusted p-value functions which provide strong control of the familywise error rate.
+
+## References
