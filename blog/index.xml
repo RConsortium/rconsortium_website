@@ -10,7 +10,357 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 13 Jan 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 28 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Statistical Inference for Persistence Diagrams</title>
+  <dc:creator>Manon Simonot, Aymeric Stamm</dc:creator>
+  <link>https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="samples-of-persistence-diagrams" class="level2">
+<h2 class="anchored" data-anchor-id="samples-of-persistence-diagrams">Samples of persistence diagrams</h2>
+<p>Topological data analysis (TDA) is a rapidly growing field that uses techniques from algebraic topology to analyze the shape and structure of data. At its core, TDA provides tools to understand the geometric and topological features of datasets across multiple scales, with persistent homology (PH) being one of its fundamental techniques.</p>
+<p>The documentation of the <a href="https://tdaverse.github.io/phutil/">{phutil}</a> package provides an <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html#definitions">overview of persistent homology</a>. For now, know that the result of this procedure is a <strong>persistence diagram</strong>: a multiset (set with multiplicity) of points in the plane—usually the upper-half plane and most often the first quadrant. Persistence diagrams encode topological features of different dimensions, and a single diagram may encode features of one or all dimensions. By <strong>persistence data</strong>, we mean a data structure that encodes diagrams of all dimensions, and possibly many diagrams coming from data sets of a common type.</p>
+<p>The goal of <a href="https://tdaverse.github.io/inphr/">{inphr}</a> is precisely to deal with comparing populations of persistence diagrams coming from data sets of different types. This is classically called the task of making inference on the basis of some collected data. Several R packages include inferential capabilities for persistence diagrams, including:</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=TDA">{TDA}</a> which focuses on statistical analysis of PH and density clustering by providing an R interface for the efficient algorithms of the C++ libraries <a href="https://project.inria.fr/gudhi/software/">GUDHI</a>, <a href="https://www.mrzv.org/software/dionysus/">Dionysus</a> and <a href="https://bitbucket.org/phat-code/phat/">PHAT</a>. This package also implements methods from <span class="citation" data-cites="fasy2014confidence">Fasy et al. (2014)</span> and <span class="citation" data-cites="chazal2014stochastic">Chazal et al. (2014)</span> for analyzing the statistical significance of PH features.</li>
+<li><a href="https://cran.r-project.org/package=TDAstats">{TDAstats}</a> which provides a comprehensive toolset for conducting TDA, specifically via the calculation of PH in a Vietoris-Rips complex <span class="citation" data-cites="wadhwa2018tdastats">(Wadhwa et al. 2018)</span>.</li>
+<li><a href="https://cran.r-project.org/package=TDAkit">{TDAkit}</a> which provides a variety of algorithms to learn with PH of the data based on functional summaries for clustering, hypothesis testing, and visualization <span class="citation" data-cites="wasserman2018topological">(Wasserman 2018)</span>.</li>
+</ul>
+<p>While these packages have made inference on persistence diagrams available to the R community, they only deal with inference on a single diagram using bootstrap resampling ({TDA}), or only offer inference to compare two diagrams by permutations ({TDAstats}), or only compare functional summaries of groups of persistence diagrams to answer whether they come from the same underlying distribution ({TDAkit}).</p>
+<p>The {inphr} package aims at going one step further by offering two sets of functions for making inference:</p>
+<ol type="1">
+<li>in the space of persistence diagrams (Section&nbsp;2) for testing whether multiple collections of persistence diagrams come from the same underlying distribution;</li>
+<li>in functional spaces (Section&nbsp;3) for localizing differences between multiple collections of persistence diagrams on the domain of some functional summary of them.</li>
+</ol>
+<p>The following sections showcase these two kinds of inference.</p>
+</section>
+<section id="sec-pd" class="level2">
+<h2 class="anchored" data-anchor-id="sec-pd">Inference in the space of persistence diagrams</h2>
+<section id="distances-between-persistence-diagrams" class="level3">
+<h3 class="anchored" data-anchor-id="distances-between-persistence-diagrams">Distances between persistence diagrams</h3>
+<p>Two persistence diagrams <img src="https://latex.codecogs.com/png.latex?X"> and <img src="https://latex.codecogs.com/png.latex?Y"> are canonically compared using <strong>Wasserstein distances</strong>. These are a family of metrics determined by a <img src="https://latex.codecogs.com/png.latex?q">-Minkowski distance on the plane and a <img src="https://latex.codecogs.com/png.latex?p">-norm on the distances between pairs of points matched via some <img src="https://latex.codecogs.com/png.latex?%5Cvarphi%20:%20X%20%5Cto%20Y">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Cleft(%20%5Csum_%7Bx%20%5Cin%20X%7D%7B%7B%5ClVert%0Ax-%5Cvarphi(x)%20%5CrVert_q%7D%5Ep%7D%20%5Cright)%5E%7B1/p%7D%20"></p>
+<p>The distance <img src="https://latex.codecogs.com/png.latex?W_p%5Eq(X,Y)"> is defined to be the infimum of this expression over all possible matchings. See this <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html">vignette</a> from the {phutil} package on distances for more detail, or <span class="citation" data-cites="cohen2010lipschitz">Cohen-Steiner et al. (2010)</span> and <span class="citation" data-cites="bubenik2023exact">Bubenik, Scott, and Stanley (2023)</span> for detailed treatments and stability results on these families of metrics.</p>
+<p>In R, using the TDAverse, computation of the distance matrix is offered by the {phutil} package which is therefore a hard dependency of {inphr}.</p>
+<p>Functions in {inphr} therefore accept:</p>
+<ul>
+<li>either two objects of class ‘persistence_set’ produced by <code>phutil::as_persistence_set()</code> representing the two samples;</li>
+<li>or an object of class ‘persistence_set’ produced by <code>phutil::as_persistence_set()</code> representing the contatenation of the two samples and a vector of two integers providing the sample sizes;</li>
+<li>or an object of class ‘dist’ typically produced by <code>phutil::bottleneck_pairwise_distances()</code> or <code>phutil::wasserstein_pairwise_distances()</code> and a vector of two integers with the sample sizes.</li>
+</ul>
+</section>
+<section id="permutation-inference" class="level3">
+<h3 class="anchored" data-anchor-id="permutation-inference">Permutation inference</h3>
+<p>The package currently includes a function to compare two samples of persistence diagrams. The statistical method for doing that is described in <span class="citation" data-cites="lovato2021multiscale">Lovato et al. (2021)</span>. Subtantively, it performs inference in two steps:</p>
+<ol type="1">
+<li>Pre-computation of the matrix <img src="https://latex.codecogs.com/png.latex?D"> of pairwise distances between persistence diagrams within and between samples;</li>
+<li>Permutations of the rows and columns of <img src="https://latex.codecogs.com/png.latex?D"> to approximate the distribution of one or more test statistics.</li>
+</ol>
+<p>Let <img src="https://latex.codecogs.com/png.latex?F_1"> be the probability distribution that generated the first sample and <img src="https://latex.codecogs.com/png.latex?F_2"> be the probability distribution that generated the second sample. Inference by permutations helps answering the following hypothesis test:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AH_0%20:%20F_1%20=%20F_2%20%5Cquad%20%5Cmbox%7Bv.s.%7D%20%5Cquad%20H_a%20:%20F_1%20%5Cne%20F_2.%0A"></p>
+<p>Differently from classic parametric inference in which the null hypothesis typically assumes equality of the mean parameters or the variance parameters, it is critical that the null distribution be that the entire probability distributions be the same. This is essential because only then can we permute the labels of statistical units under the null hypothesis.</p>
+<p>However, depending on the test statistic that is used, the test only focuses on comparing some features of the probability distributions. For instance, if one uses the distance between the Frechet means as test statistic, the test will detect differences in means between the two ditributions but will be blind to differences in variances for example. For this reason, one can use multiple test statistics to make the test sensitive to differences in several moments of the distributions. This is called <em>non-parametric combination</em> and it is described in <span class="citation" data-cites="pesarin2010permutation">Pesarin and Salmaso (2010)</span>.</p>
+<p>The {inphr} package uses this approach by relying on the <a href="https://permaverse.github.io/flipr/">{flipr}</a> package which is the core package of the <a href="https://github.com/permaverse">permaverse</a> collection of packages for permutation inference. Specifically, the dedicated function is <code>two_sample_diagram_test()</code> and, by default, it combines two test statistics based solely on inter-point distances that are defined in <span class="citation" data-cites="lovato2021multiscale">Lovato et al. (2021)</span>. One is sensitive to differences in means and the other to differences in variances. The user can actually choose one or more test statistics or even define his/her own. The result of the test is a p-value that helps in making the decision of whether to reject the null hypothesis. Optionally, one can ask the function to return the permutations that have been used (<code>keep_permutations = TRUE</code>) and the permutation distribution of the combined test statistic (<code>keep_null_distribution = TRUE</code>).</p>
+</section>
+<section id="toy-examples" class="level3">
+<h3 class="anchored" data-anchor-id="toy-examples">Toy examples</h3>
+<p>The {inphr} package includes the following three toy data sets.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<code>trefoils1</code> and <code>trefoils2</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Two sets of 24 persistence diagrams each computed from noisy samples of trefoil knots. Each sample consists of 120 points sampled from a trefoil knot with Gaussian noise (sd = 0.05) added. Vietoris-Rips persistence was computed up to dimension 2 with maximum scale 6 using <code>TDA::ripsDiag()</code>. Generated with seed 28415.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<code>archspirals</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A set of 24 persistence diagrams computed from noisy samples of 2-armed Archimedean spirals. Each sample consists of 120 points sampled from an Archimedean spiral, embedded in 3D with a zero z-coordinate, then Gaussian noise (sd = 0.05) added. Vietoris-Rips persistence was computed up to dimension 2 with maximum scale 6 using <code>TDA::ripsDiag()</code>. Generated with seed 28415.</p>
+</div>
+</div>
+<p>Figure&nbsp;1 displays the first five persistence diagrams of each sample. The reader can appreciate that the first two lines corresponding to the same trefoil geometry shows similar diagrams while the last line corresponding to a 2-arm archspiral shows a different kind of diagram.</p>
+<div id="fig-toydata" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: The first data point of each toy data set.</figcaption>
+</figure>
+</div>
+<p>We can therefore use <code>inphr::two_sample_diagram_test()</code> to compare:</p>
+<ul>
+<li><code>trefoils1</code> and <code>trefoils2</code> with expected output that there is not enough statistical evidence to reject the hypothesis that the two samples come from the same distribution;</li>
+<li><code>trefoils1</code> and <code>archspirals</code> with expected output that we can reject the hypothesis that the two samples come from the same distribution.</li>
+</ul>
+<p>The following code performs the test between the two trefoil samples using only the first five statistical units:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_296f7037c8c4cce86985f7139c4560d3">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">withr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">with_seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1234</span>, {</span>
+<span id="cb1-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">two_sample_diagram_test</span>(trefoils1[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>], trefoils2[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>])</span>
+<span id="cb1-3">})</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9702381</code></pre>
+</div>
+</div>
+<p>As expected, the test is not able to reject the null hypothesis. By default, the function uses <code>B = 1000</code> permutations, which makes the p-value resolution of <img src="https://latex.codecogs.com/png.latex?1/1001%20%5Capprox%209.99%20%5Ctimes%2010%5E%7B-4%7D">. If we compare instead <code>trefoils1</code> against <code>archspirals</code>, again using only the first five statistical units, we get:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_b8b026c9560f2465af61d98cab413ab4">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">withr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">with_seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1234</span>, {</span>
+<span id="cb3-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">two_sample_diagram_test</span>(trefoils1[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>], archspirals[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>])</span>
+<span id="cb3-3">})</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.002308242</code></pre>
+</div>
+</div>
+<p>As expected, the test does detect the difference despite the small sample size.</p>
+</section>
+</section>
+<section id="sec-functions" class="level2">
+<h2 class="anchored" data-anchor-id="sec-functions">Inference in the functional spaces</h2>
+<section id="functional-representations-of-persistence-homology" class="level3">
+<h3 class="anchored" data-anchor-id="functional-representations-of-persistence-homology">Functional representations of persistence homology</h3>
+<p>The {inphr} package relies on the <a href="https://cran.r-project.org/package=TDAvec">{TDAvec}</a> package to compute functional representations of persistence diagrams. Currently, there are five truly functional representations (i.e.&nbsp;curves) of a given persisence diagram <img src="https://latex.codecogs.com/png.latex?D%20=%20(b_i,%20d_i)_%7Bi=1%7D%5EN"> that {TDAvec} readily provides:</p>
+<ul>
+<li><p>the Betti curve <span class="citation" data-cites="chazal2021introduction">(Chazal and Michel 2021)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbeta(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i)%7D(t).%0A"></p></li>
+<li><p>the Euler characteristic curve <span class="citation" data-cites="richardson2014efficient">(Richardson and Werman 2014)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cchi(t)%20=%20%5Csum_%7Bk=0%7D%5Ed%20(-1)%5Ek%20%5Cbeta_k(t),%0A"> where <img src="https://latex.codecogs.com/png.latex?%5Cbeta_0,%20%5Cbeta_1,%20%5Cdots,%20%5Cbeta_d"> are the Betti curves from the smaller persistence diagrams <img src="https://latex.codecogs.com/png.latex?D_0,%20D_1,%20%5Cdots,%20D_d"> restricted to only features of homology dimensions <img src="https://latex.codecogs.com/png.latex?0,%201,%20%5Cdots,%20d"> respectively.</p></li>
+<li><p>the Normalized Life curve <span class="citation" data-cites="chung2022persistence">(Chung and Lawson 2022)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cmathrm%7Bsl%7D(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i)%7D(t),%20%5Cquad%20%5Cmbox%7Bwhere%20%7D%20L%20=%20%5Csum_%7Bi=1%7D%5EN%20(d_i%20-%20b_i).%0A"></p></li>
+<li><p>the Silhouette curve <span class="citation" data-cites="chazal2014stochastic">(Chazal et al. 2014)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cphi(t)%20=%20%5Cfrac%7B%5Csum_%7Bi=1%7D%5EN%20(d_i%20-%20b_i)%20%5CLambda_i(t)%7D%7BL%7D,%20%5Cquad%20%5Cmbox%7Bwhere%20%7D%20%5CLambda_i(t)%20=%20%5Cbegin%7Bcases%7D%0At%20-%20b_i%20&amp;%20%5Cmbox%7Bif%20%7D%20t%20%5Cin%20%5Cleft%5B%20b_i,%20%5Cfrac%7Bb_i%20+%20d_i%7D%7B2%7D%20%5Cright%5D%20%5C%5C%0Ad_i%20-%20t%20&amp;%20%5Cmbox%7Bif%20%7D%20t%20%5Cin%20%5Cleft(%20%5Cfrac%7Bb_i%20+%20d_i%7D%7B2%7D,%20d_i%20%5Cright%5D%20%5C%5C%0A0%20&amp;%20%5Cmbox%7Botherwise.%7D%0A%5Cend%7Bcases%7D%0A"></p></li>
+<li><p>the Entropy Summary curve <span class="citation" data-cites="atienza2020stability">(Atienza, González-Dı́az, and Soriano-Trigueros 2020)</span>: <img src="https://latex.codecogs.com/png.latex?%0AS(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Clog_2%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i%5D%7D(t).%0A"></p></li>
+</ul>
+<p>Figure&nbsp;2 displays, as an example, the Betti curve representations of the 24 diagrams in each of the three toy data sets.</p>
+<div id="fig-betti" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/betti_curves.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.</figcaption>
+</figure>
+</div>
+<p>Figure&nbsp;2 shows a clear difference between trefoil and archspiral geometry but overlapped curves between the two trefoil samples as expected.</p>
+</section>
+<section id="interval-wise-testing-for-functional-data" class="level3">
+<h3 class="anchored" data-anchor-id="interval-wise-testing-for-functional-data">Interval-wise testing for functional data</h3>
+<p>The {inphr} package relies on the <a href="https://permaverse.github.io/fdatest/">{fdatest}</a> package which is also part of the permaverse to handle hypothesis testing on functional representations of persistence homology. Specifically, the {fdatest} package implements a method called <em>interval-wise testing</em> described in <span class="citation" data-cites="pini2017interval">Pini and Vantini (2017)</span> which effectively performs domain selection by identifying the portion(s) of the domain of definition of the functional representation where there are statistically significant differences between samples. In the future, the package will also integrate other such domain selection methods described in <span class="citation" data-cites="abramowicz2023domain">Abramowicz et al. (2023)</span>.</p>
+<p>When using functional representations, we must choose the homology dimension which we want to work on. In {inphr}, we perform inference in functional spaces with the <code>two_sample_functional_test()</code>. For example, the following code uses the Betti curves for dimension <img src="https://latex.codecogs.com/png.latex?0"> to compare the two trefoil samples:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_4ae392e1a17f5f400aa28ddb17fdf32c">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">out1 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">two_sample_functional_test</span>(</span>
+<span id="cb5-2">    trefoils1, trefoils2, </span>
+<span id="cb5-3">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">dimension =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, </span>
+<span id="cb5-4">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">representation =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"betti"</span></span>
+<span id="cb5-5">)</span></code></pre></div>
+</div>
+<p>Similarly, the following code uses the Betti curves for dimension <img src="https://latex.codecogs.com/png.latex?0"> to compare the first trefoil sample and the archspiral sample:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_5d63dc73ec34d429bf70d86867f47509">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">out2 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">two_sample_functional_test</span>(</span>
+<span id="cb6-2">    trefoils1, archspirals, </span>
+<span id="cb6-3">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">dimension =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, </span>
+<span id="cb6-4">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">representation =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"betti"</span></span>
+<span id="cb6-5">)</span></code></pre></div>
+</div>
+<p>The output of the <code>two_sample_functional_test()</code> function is a list with entries:</p>
+<ul>
+<li><code>xfd</code>: a numeric matrix of shape <img src="https://latex.codecogs.com/png.latex?N_1%20%5Ctimes%20(P%20-%201)"> storing the chosen functional representation of the persistence diagrams in the 1st sample, where <img src="https://latex.codecogs.com/png.latex?N_1"> is the sample size and <img src="https://latex.codecogs.com/png.latex?P"> is the number of points on which the curves have been evaluated;</li>
+<li><code>yfd</code>: a numeric matrix of shape <img src="https://latex.codecogs.com/png.latex?N_2%20%5Ctimes%20(P%20-%201)"> storing the chosen functional representation of the persistence diagrams in the 2st sample, where <img src="https://latex.codecogs.com/png.latex?N_2"> is the sample size and <img src="https://latex.codecogs.com/png.latex?P"> is the number of points on which the curves have been evaluated;</li>
+<li><code>scale_seq</code>: a numeric vector of shape <img src="https://latex.codecogs.com/png.latex?P"> storing the grid on which the curves have been evaluated;</li>
+<li><code>iwt</code>: an object of class ‘ITP2’ for which {fdatest} has dedicated <code>S3</code> implementations of methods such as <code>plot()</code>.</li>
+</ul>
+<p>Hence we can display the results of the inferential procedures with the following code:</p>
+<div>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(out1<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>iwt, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">main =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Trefoil 1 vs Trefoil 2"</span>)</span>
+<span id="cb7-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(out2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>iwt, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">main =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Trefoil vs 2-arm Archspiral"</span>)</span></code></pre></div>
+<div id="fig-iwt" class="cell quarto-layout-panel" data-hash="index_cache/html/fig-iwt_788d748a96cc17ba4314b8bf8df08530">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-iwt-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-1.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
+<figcaption class="figure-caption">(a)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-iwt-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-2.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
+<figcaption class="figure-caption">(b)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-iwt-3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-3.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
+<figcaption class="figure-caption">(c)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-iwt-4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-4.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
+<figcaption class="figure-caption">(d)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Visual representation of the Interval-Wise Testing procedure.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<p>Figure&nbsp;3 displays the results of the IWT procedure. We can see the portions where statistically significant differences have been detected highlighted by grey areas. The left column shows the curves of the two samples in two different colors while the right column shows the adjusted p-value functions which provide strong control of the familywise error rate.</p>
+</section>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-abramowicz2023domain" class="csl-entry">
+Abramowicz, Konrad, Alessia Pini, Lina Schelin, Sara Sjöstedt de Luna, Aymeric Stamm, and Simone Vantini. 2023. <span>“Domain Selection and Familywise Error Rate for Functional Data: A Unified Framework.”</span> <em>Biometrics</em> 79 (2): 1119–32.
+</div>
+<div id="ref-atienza2020stability" class="csl-entry">
+Atienza, Nieves, Rocı́o González-Dı́az, and Manuel Soriano-Trigueros. 2020. <span>“On the Stability of Persistent Entropy and New Summary Functions for Topological Data Analysis.”</span> <em>Pattern Recognition</em> 107: 107509.
+</div>
+<div id="ref-bubenik2023exact" class="csl-entry">
+Bubenik, Peter, Jonathan Scott, and Donald Stanley. 2023. <span>“Exact Weights, Path Metrics, and Algebraic Wasserstein Distances.”</span> <em>Journal of Applied and Computational Topology</em> 7 (2): 185–219.
+</div>
+<div id="ref-chazal2014stochastic" class="csl-entry">
+Chazal, Frédéric, Brittany Terese Fasy, Fabrizio Lecci, Alessandro Rinaldo, and Larry Wasserman. 2014. <span>“Stochastic Convergence of Persistence Landscapes and Silhouettes.”</span> In <em>Proceedings of the Thirtieth Annual Symposium on Computational Geometry</em>, 474–83.
+</div>
+<div id="ref-chazal2021introduction" class="csl-entry">
+Chazal, Frédéric, and Bertrand Michel. 2021. <span>“An Introduction to Topological Data Analysis: Fundamental and Practical Aspects for Data Scientists.”</span> <em>Frontiers in Artificial Intelligence</em> 4: 667963.
+</div>
+<div id="ref-chung2022persistence" class="csl-entry">
+Chung, Yu-Min, and Austin Lawson. 2022. <span>“Persistence Curves: A Canonical Framework for Summarizing Persistence Diagrams.”</span> <em>Advances in Computational Mathematics</em> 48 (1): 6.
+</div>
+<div id="ref-cohen2010lipschitz" class="csl-entry">
+Cohen-Steiner, David, Herbert Edelsbrunner, John Harer, and Yuriy Mileyko. 2010. <span>“Lipschitz Functions Have l p-Stable Persistence.”</span> <em>Foundations of Computational Mathematics</em> 10 (2): 127–39.
+</div>
+<div id="ref-fasy2014confidence" class="csl-entry">
+Fasy, Brittany Terese, Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman, Sivaraman Balakrishnan, and Aarti Singh. 2014. <span>“Confidence Sets for Persistence Diagrams.”</span>
+</div>
+<div id="ref-lovato2021multiscale" class="csl-entry">
+Lovato, Ilenia, Alessia Pini, Aymeric Stamm, Maxime Taquet, and Simone Vantini. 2021. <span>“Multiscale Null Hypothesis Testing for Network-Valued Data: Analysis of Brain Networks of Patients with Autism.”</span> <em>Journal of the Royal Statistical Society Series C: Applied Statistics</em> 70 (2): 372–97.
+</div>
+<div id="ref-pesarin2010permutation" class="csl-entry">
+Pesarin, Fortunato, and Luigi Salmaso. 2010. <em>Permutation Tests for Complex Data: Theory, Applications and Software</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-pini2017interval" class="csl-entry">
+Pini, Alessia, and Simone Vantini. 2017. <span>“Interval-Wise Testing for Functional Data.”</span> <em>Journal of Nonparametric Statistics</em> 29 (2): 407–24.
+</div>
+<div id="ref-richardson2014efficient" class="csl-entry">
+Richardson, Eitan, and Michael Werman. 2014. <span>“Efficient Classification Using the Euler Characteristic.”</span> <em>Pattern Recognition Letters</em> 49: 99–106.
+</div>
+<div id="ref-wadhwa2018tdastats" class="csl-entry">
+Wadhwa, Raoul R, Drew FK Williamson, Andrew Dhawan, and Jacob G Scott. 2018. <span>“TDAstats: R Pipeline for Computing Persistent Homology in Topological Data Analysis.”</span> <em>Journal of Open Source Software</em> 3 (28): 860.
+</div>
+<div id="ref-wasserman2018topological" class="csl-entry">
+Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual Review of Statistics and Its Application</em> 5 (2018): 501–32.
+</div>
+</div></section></div> ]]></description>
+  <category>isc</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index.html</guid>
+  <pubDate>Wed, 28 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" medium="image" type="image/svg+xml"/>
+</item>
 <item>
   <title>Contributing to base R with Coding Equity and Joy - Inside the R Contributors Project</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1135,138 +1485,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html</guid>
   <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/thumbnail-aaron-maxwell.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Jarl: just another R linter</title>
-  <dc:creator>Etienne Bacher</dc:creator>
-  <link>https://r-consortium.org/posts/jarl-just-another-r-linter/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>Original post here: <a href="https://www.etiennebacher.com/posts/2025-11-20-introducing-jarl/">Jarl: just another R linter</a></em></p>
-<!-- DON'T FORGET ALT TEXT FOR GIFS -->
-<p>I’m very excited to introduce Jarl<sup>1</sup>, a new R linter. A linter is a tool that statically parses code (meaning that it doesn’t run the code in question) and searches for patterns that are inefficient, hard to read, or likely bugs. Jarl can parse dozens of files and thousands of lines of code in milliseconds. Here is an example of Jarl running on <a href="https://github.com/wch/r-source/">r-source</a> (approximately 1000 files and 200k lines of R code) in about 700 milliseconds:</p>
-<video width="100%" alt="Running `jarl check . --with-timing` on the 'r-source' repository. This runs in about 700ms and returns hundreds of rule violations detailing the diagnostic and how to fix it." controls="">
-<source src="lint-r-source.webm" type="video/webm">
-</video>
-<p><br></p>
-<p>On top of that, Jarl can apply automatic fixes<sup>2</sup>:</p>
-<p>Suppose that we have the following file <code>foo.R</code>:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">any</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">is.na</span>(mtcars))</span>
-<span id="cb1-2"></span>
-<span id="cb1-3">f <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">function</span>(x) {</span>
-<span id="cb1-4">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">apply</span>(x, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, mean)</span>
-<span id="cb1-5">}</span></code></pre></div>
-<p>There are two rule violations in this file:</p>
-<ol type="1">
-<li><code>any(is.na(mtcars))</code> should be replaced by <code>anyNA(mtcars)</code><sup>3</sup></li>
-<li><code>apply(x, 1, mean)</code> should be replaced by <code>rowMeans(x)</code><sup>4</sup></li>
-</ol>
-<p>Instead of fixing those cases by hand, we can run the following command in the terminal (not in the R console):</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">jarl</span> check foo.R <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">--fix</span></span></code></pre></div>
-<p>After running this, <code>foo.R</code> now contains the following code:</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">x <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">anyNA</span>(mtcars)</span>
-<span id="cb3-2">f <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">function</span>(x) {</span>
-<span id="cb3-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rowMeans</span>(x)</span>
-<span id="cb3-4">}</span></code></pre></div>
-<p>(Note that <code>f</code> is now useless since it is equivalent to <code>rowMeans()</code>.)</p>
-<p><br></p>
-<p>Jarl stands on the shoulders of giants, in particular:</p>
-<ul>
-<li><code>lintr</code>: this R package provides dozens of rules for linting R code, and Jarl wouldn’t exist without this package. Jarl currently supports 25 <code>lintr</code> rules.</li>
-<li>Air: this is a fast R formatter written in Rust, developed by Lionel Henry and Davis Vaughan, and released earlier this year. It is also a command-line tool that runs in the terminal. It is the technical foundation on which Jarl is built since Air provides the infrastructure to parse and manipulate R code.</li>
-</ul>
-<p>Jarl is a single binary, meaning that it doesn’t need an R installation to work. This makes it a very attractive option for continuous integration for instance, since it takes less than 10 seconds to download the binary and run it on the repository.</p>
-<section id="using-jarl" class="level2">
-<h2 class="anchored" data-anchor-id="using-jarl">Using Jarl</h2>
-<p>There are two ways to use Jarl:</p>
-<ol type="1">
-<li>via the terminal, using <code>jarl check [OPTIONS]</code>;</li>
-<li>using the integration in your coding editor (at the time of writing, a Jarl extension is available in VS Code, Positron, and Zed).</li>
-</ol>
-<p>The Jarl extension enables code highlighting and quick fixes. The former means that code that violates any of the rules in your setup (more on this below) will be underlined and will show the exact violation when hovered.</p>
-<video width="100%" alt="This shows the same file 'foo.R', but this time the two pieces of code that violate the rules are underlined in yellow. Hovering these two pieces of code show a popup detailing the diagnostic." controls="">
-<source src="hover.webm" type="video/webm">
-</video>
-<p><br></p>
-<p>The latter adds a lightbulb button next to rule violations, allowing you to selectively apply fixes.</p>
-<video width="100%" height="100%" alt="This shows the same file 'foo.R'. This time, clicking on the code that violate the rules displays a small lightbulb icon that applies the automatic fix when clicked." controls="">
-<source src="automatic-fixes.webm" type="video/webm">
-</video>
-<p>In the future, those extensions could have a “Fix on save” feature similar to the “Format on save” functionality provided by Air.</p>
-</section>
-<section id="configuring-jarl" class="level2">
-<h2 class="anchored" data-anchor-id="configuring-jarl">Configuring Jarl</h2>
-<p>By default, Jarl will report violations for almost of its rules. It is possible to configure its behavior using a configuration file named <code>jarl.toml</code>. In particular, in this file, you can specify:</p>
-<ul>
-<li>the rules you want to apply,</li>
-<li>the files to include or exclude,</li>
-<li>the rules for which you want to apply automatic fixes,</li>
-</ul>
-<p>and more.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Jarl is in its early days, there are more rules and options to add. Still, it can already be used in interactive use or in continuous integration (check out the <a href="https://github.com/etiennebacher/setup-jarl"><code>setup-jarl</code> workflow</a>!). Eventually, many <code>lintr</code> rules should be supported in Jarl, but the end goal is not to have perfect compatibility. <code>lintr</code> provides many rules related to code formatting (e.g.&nbsp;spaces_inside_linter). Those will not be integrated in Jarl since they are already covered by Air. Additionally (for now), Jarl cannot perform semantic analysis<sup>5</sup>, meaning that some <code>lintr</code> rules are out of scope (e.g.&nbsp;unreachable_code_linter).</p>
-<p>This was a very light introduction, go to the <a href="https://jarl.etiennebacher.com/">Jarl website</a> for more information.</p>
-<p>If you want to help developing Jarl, check out the <a href="https://jarl.etiennebacher.com/contributing">“Contributing” page</a>. Jarl is written in Rust, which may be a barrier to contributing but is also a very powerful language which is a real pleasure to use. I will add a more detailed tutorial soon so that this can also be a nice introduction to this language. You can also contribute to the documentation!</p>
-</section>
-<section id="acknowledgements" class="level1">
-<h1>Acknowledgements</h1>
-<p>As I said above, Jarl depends enormously on the work of <code>lintr</code> and Air developers, so thank you!</p>
-<p>Jarl is also very inspired by similar tools in other languages, in particular <a href="https://docs.astral.sh/ruff/">Ruff</a> in Python and <a href="https://github.com/rust-lang/rust-clippy">Cargo clippy</a> in Rust.</p>
-<p>Finally, thanks to the <a href="https://r-consortium.org/">R Consortium</a> for funding part of the development of Jarl via the ISC Grant Program.</p>
-<p>And thank you, Maëlle, for improving the draft!</p>
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Jarl stands for “Just Another R Linter”.↩︎</p></li>
-<li id="fn2"><p>This is not always possible, it depends on the rule.↩︎</p></li>
-<li id="fn3"><p><code>anyNA(x)</code> is more efficient than <code>any(is.na(x)</code>).↩︎</p></li>
-<li id="fn4"><p><code>rowMeans(x)</code> is more efficient than <code>apply(x, 1, mean)</code>.↩︎</p></li>
-<li id="fn5"><p>Semantic analysis refers to using the context surrounding an expression to explore rule violations.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>infrastructure</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/jarl-just-another-r-linter/index.html</guid>
-  <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/jarl-just-another-r-linter/etienne-bacher.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
