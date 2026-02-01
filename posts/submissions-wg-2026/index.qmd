@@ -52,9 +52,10 @@ group](https://rconsortium.github.io/submissions-wg/pilot_background.html)
 
 ## Pilot 4
 
-The R Consortium Submissions Working Group's Pilot 4 project aimed to evaluate the use of both WebAssembly and container technologies to bundle R-language based Shiny applications for submission to the FDA, focusing on enhancing reproducibility and ease of review. 
+The R Consortium Submissions Working Group's Pilot 4 project aimed to evaluate the use of both WebAssembly and container technologies to bundle R-language based Shiny applications for submission to the FDA, focusing on enhancing reproducibility and ease of review. Pilot 4 has completed the WebAssembly portion and
+we hope to have the container portion finished very soon!
 
-### webassembly
+### Webassembly
 
 **Submission and Interactions:** The WebAssembly component of Pilot 4 was successfully submitted to the FDA's Electronic Common Technical Document (eCTD) gateway on September 20, 2024. This marked a significant milestone as it was the first publicly available submission package to include a WebAssembly component, officially received by the FDA Center for Drug Evaluation and Research (CDER) staff.
 
@@ -72,11 +73,44 @@ The R Consortium Submissions Working Group's Pilot 4 project aimed to evaluate t
 
 ## Pilot 5
 
+Pilot 5 is ambitious in it plans to replace all xpts with [datasetjson](https://www.cdisc.org/standards/data-exchange/dataset-json). The
+pilot started in early 2025 and we were able to submit in the Fall of 2025. The ADaM
+programs for Pilot 5 write out datasetjson in lieu of xpts for submission to the FDA and
+we also converted all the SDTM xpts to datasetjson. The SDTM programs are not available
+for this pilot and so we just did a straigtt conversion of the data using [Converting from XPT](https://atorus-research.github.io/datasetjson/articles/converting_files.html) from the [datasetjson R package](https://atorus-research.github.io/datasetjson/index.html). 
+
+**FDA Interactions and Preference:** The FDA requested some minor rework with how we use intermediate datasets in the programs, which led to a re-submission in early 2026. We hope to have completed this
+submission some time in the Spring of 2026.
+
+**Findings and Advantages:** There are a few minor findings from conversion of data to datasetjson, which we have documented in the [ADRG](https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda/blob/main/m5/datasets/rconsortiumpilot5/analysis/adam/datasets/adrg.pdf). We also discovered that the datasetjson v1.1 was not avaialble
+in the Pinnacle 21 validation software. We discussed this with the FDA and validated
+with xpts, which you can also find int he [ADRG](https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda/blob/main/m5/datasets/rconsortiumpilot5/analysis/adam/datasets/adrg.pdf). datasetjson replacing xpts for submission
+would be a huge win for modernizing workflows and stacks for doing submissions!
+
 ## Pilot 6
+
+Each Pilot to the FDA has been focused on the delivery of the R-based content so
+Pilots have been small in nature.  For example Pilot 1 only had 4 R programs! Pilot 6
+seeks to expand the number of R programs availables for ADaMs and Dispalys. Pilot 6 is
+not going to Submissions, but is laying the groundwork for future pilots if more
+programs are needed.
 
 ## Pilot 7
 
+[Link to Survey](https://docs.google.com/forms/d/e/1FAIpQLSceKPp-Yqlx2iND8XDYZYHKR1K2VQ7J4YNhJeG8sy5uwN8Hxw/viewform)
+
+## Other great achievements
+
 ### R packages submitted through ectd portal
+
+A milestone! FDA expands accepted R file formats, resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group. Submitting an R package
+via the eCTD portal just got a little easier - [Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration](https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/)
+
+### Presentations at Industry Conferences
+
+### Hex Stickers
+
+
 
 ### ???
 
