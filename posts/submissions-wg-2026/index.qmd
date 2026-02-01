@@ -4,44 +4,111 @@ description: "The R Consortium Submission Working Group is excited to announce a
 author: "R Consortium"
 image: "pilot5.png"
 date: "01/28/2026"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-![](pilot5.png)
+## Introduction
 
-A quick recap of previous Pilots:
+2025 was a very busy year for the Submissions Working Group and we have
+big plans for 2026.
 
-  * [Pilot 1](https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda) delivered Tables and Figures to the FDA using R.
-  * [Pilot 2](https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda) delivered the same Tables and Figures using a Shiny App using R. [Pilot 2 Announcement 2](https://archive.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2)
-  * [Pilot 3](https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/) delivered the Tables and Figures using R as well as the ADaMs...you guessed it using R. .
-  
-For information on these Pilots navigate to our [Pilot's background page on submission working group](https://rconsortium.github.io/submissions-wg/pilot_background.html)
+For 2025 recap we have two Pilots nearing completion:
 
-### Pilot 4
+- [Pilot 4](https://rconsortium.github.io/submissions-wg/pilot4.html) - containers and webassembly
+- [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/) - datasetjson replacing all xpts
 
-### Pilot 5
+For 2026 we have launched two new Pilots:
 
-### Pilot 6
+- Pilot 6 - expansion of ADaMs and Display programs
+- Pilot 7 - creation of new simulated data
 
-### Pilot 7
+Read on if you want to learn more about what we submitted to the FDA for 2025 and
+what we plan on working on for 2026.
 
+## Previous Pilots to the FDA
+
+Each Pilot has served to explore how a sponsor can submit an R-based submission 
+package to the FDA via the eCTD portal. The Pilots are small sets of programs
+using the original [CDISC Pilot data](https://github.com/cdisc-org/sdtm-adam-pilot-project). 
+
+Previous successful Pilots to the FDA:
+
+-   [Pilot
+    1](https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda)
+    delivered Tables and Figures to the FDA using R.
+-   [Pilot
+    2](https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda)
+    delivered the same Tables and Figures using a Shiny App created in R.
+-   [Pilot
+    3](https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/)
+    delivered the Tables and Figures using R as well as the ADaMs...you
+    guessed it using R. .
+
+For information on these Pilots navigate to our [Pilot's background page
+on submission working
+group](https://rconsortium.github.io/submissions-wg/pilot_background.html)
+
+## Pilot 4
+
+The R Consortium Submissions Working Group's Pilot 4 project aimed to evaluate the use of both WebAssembly and container technologies to bundle R-language based Shiny applications for submission to the FDA, focusing on enhancing reproducibility and ease of review. 
+
+### webassembly
+
+**Submission and Interactions:** The WebAssembly component of Pilot 4 was successfully submitted to the FDA's Electronic Common Technical Document (eCTD) gateway on September 20, 2024. This marked a significant milestone as it was the first publicly available submission package to include a WebAssembly component, officially received by the FDA Center for Drug Evaluation and Research (CDER) staff.
+
+**Findings and Advantages:** WebAssembly technology compiles applications into a portable and consistent environment that can be run directly within a web browser, eliminating the need for complex setups on the reviewer's side. According to Eric Nantz of Eli Lilly, using WebAssembly significantly reduces the steps reviewers need to take to get an application running on their machines.
+
+**FDA Preference:** Surprisingly, FDA reviewers initially found WebAssembly easier to work with compared to container technology. This was contrary to the R Consortium team's initial expectation, as WebAssembly is a newer framework. Reviewers found WebAssembly more accessible because it only required a web browser, which was readily available to them.
+
+### containers
+
+**Submission and Interactions:** The container technology component represents the second part of the Pilot 4 project. While the WebAssembly component has been submitted, the container component was planned for submission "later this year" (referring to the announcement in October 2024). As of June 2025, a container component for Pilot 4 was still noted as "under development", although a GitHub repository for the container submission shows its eCTD bundle was last rendered on June 13, 2025, indicating progress towards its submission.
+
+**Findings and Advantages (Expected):** The objective for containers (such as Docker or Podman) is to package the entire application environment, including system and R-specific dependencies, to ensure consistent and reproducible execution across different systems.
+
+**FDA Interactions and Preference:** The R Consortium team initially anticipated that container technology would be easier for the FDA to administer and install. However, the initial feedback from FDA reviewers indicated a preference for the WebAssembly approach. This suggests that while containers offer robust reproducibility, their setup or execution might present an initial learning curve or more steps for FDA reviewers compared to the browser-based WebAssembly option. Additional FDA feedback on the container component is expected after its submission.
+
+## Pilot 5
+
+## Pilot 6
+
+## Pilot 7
+
+### R packages submitted through ectd portal
+
+### ???
 
 **More about the R Submissions Working Group**
 
-The [R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/) is focused on improving practices for R-based clinical trial regulatory submissions.
+The [R Consortium R Submissions Working
+Group](https://rconsortium.github.io/submissions-wg/) is focused on
+improving practices for R-based clinical trial regulatory submissions.
 
-Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language. 
+Health authority agencies from different countries require electronic
+submission of data, computer programs, and relevant documentation to
+bring an experimental clinical product to market. In the past,
+submissions have mainly been based on the SAS language.
 
-In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical 
-industry and research institutions. Although the health authorities accept submissions based on open source programming 
-languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.
+In recent years, the use of open source languages, especially the R
+language, has become very popular in the pharmaceutical industry and
+research institutions. Although the health authorities accept
+submissions based on open source programming languages, sponsors may be
+hesitant to conduct submissions using open source languages due to a
+lack of working examples.
 
-Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps 
-while submitting these example packages. All materials, including submission examples and communications, are 
-publicly available on the [R consortium GitHub page.](https://github.com/RConsortium)
+Therefore, the R Submissions Working Group aims to provide R-based
+submission examples and identify potential gaps while submitting these
+example packages. All materials, including submission examples and
+communications, are publicly available on the [R consortium GitHub
+page.](https://github.com/RConsortium)
 
 **Join the R Submissions Working Group**
 
-The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. 
-We are a collaborative community open to anyone interested in contributing to this important work. For more information, 
-or to get involved, visit [our website](https://rconsortium.github.io/submissions-wg) or contact us directly at 
-director@r-consortium.org.
+The R Submissions Working Group comprises members from over 10
+pharmaceutical companies, as well as regulatory agencies. We are a
+collaborative community open to anyone interested in contributing to
+this important work. For more information, or to get involved, visit
+[our website](https://rconsortium.github.io/submissions-wg) or contact
+us directly at director\@r-consortium.org.
