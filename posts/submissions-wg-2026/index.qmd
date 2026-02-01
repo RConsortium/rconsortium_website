@@ -97,6 +97,12 @@ programs are needed.
 
 ## Pilot 7
 
+The R Submissions Working Group Pilot 7, kicked off in January 2026, is focused on closing a key gap in the open-source clinical trial ecosystem: objective, realistic benchmarking data for demonstrating and evaluating modern R-based and AI-enabled workflows across clinical development, analysis, and regulatory submissions.
+
+As adoption of open-source tooling accelerates, demonstration and evaluation are increasingly constrained by the lack of high-quality, publicly available clinical trial datasets. While existing public references (e.g., CDISC Pilot 1) have been valuable, they are often outdated relative to current CDISC standards and industry practice, limited in scale and complexity, and not well-suited for testing today’s end-to-end automation and AI-assisted workflows.
+
+Pilot 7 aims to address this by leveraging statistical simulation methods together with advanced AI capabilities to generate “realistic-looking” datasets that align with recent CDISC standards. These benchmark datasets will support future pilots within the R submissions Working Group, and are also intended to be broadly useful for tool demonstrations, method evaluation, and education across the clinical trial community.
+
 [Link to Survey](https://docs.google.com/forms/d/e/1FAIpQLSceKPp-Yqlx2iND8XDYZYHKR1K2VQ7J4YNhJeG8sy5uwN8Hxw/viewform)
 
 ## Other great achievements
