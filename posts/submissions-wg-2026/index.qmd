@@ -1,9 +1,9 @@
 ---
 title: "R Submissions Working Group: 2026 Plans and 2025 Success"
-description: "The R Consortium Submission Working Group is excited to announce a new Pilot 6 and Pilot 7. This post also includes plans for additional news on Pilot 4 (containers and webassembly), Pilot 5 (datasetjson) and a few other goodies! "
+description: "The R Consortium Submission Working Group is excited to announce a new Pilot 6 and Pilot 7. This post includes news on Pilot 4 (containers and webassembly), Pilot 5 (datasetjson) and a few other goodies! "
 author: "R Consortium"
 image: "pilot5.png"
-date: "01/28/2026"
+date: "02/01/2026"
 editor: 
   markdown: 
     wrap: 72
@@ -21,16 +21,16 @@ For 2025 recap we have two Pilots nearing completion:
 
 For 2026 we have launched two new Pilots:
 
-- Pilot 6 - expansion of ADaMs and Display programs
+- Pilot 6 - expansion of ADaM and Display programs
 - Pilot 7 - creation of new simulated data
 
 Read on if you want to learn more about what we submitted to the FDA for 2025 and
-what we plan on working on for 2026.
+what we plan on working on for 2026 as well as a few more related bits of news.
 
-## Previous Pilots to the FDA
+## Previous Pilots (1 - 3) to the FDA
 
-Each Pilot has served to explore how a sponsor can submit an R-based submission 
-package to the FDA via the eCTD portal. The Pilots are small sets of programs
+In case this is your first time hearing about these R-based Submissions to the FDA (Pilots), then
+we got a quick recap for you! Each Pilot has served to explore how a sponsor can submit an R-based submission package to the FDA via the eCTD portal. The Pilots are small sets of R programs
 using the original [CDISC Pilot data](https://github.com/cdisc-org/sdtm-adam-pilot-project). 
 
 Previous successful Pilots to the FDA:
@@ -50,24 +50,27 @@ For information on these Pilots navigate to our [Pilot's background page
 on submission working
 group](https://rconsortium.github.io/submissions-wg/pilot_background.html)
 
-## Pilot 4
+## Pilot 4 (Webassembly and containers)
 
-The R Consortium Submissions Working Group's Pilot 4 project aimed to evaluate the use of both WebAssembly and container technologies to bundle R-language based Shiny applications for submission to the FDA, focusing on enhancing reproducibility and ease of review. Pilot 4 has completed the WebAssembly portion and
-we hope to have the container portion finished very soon!
+The R Consortium Submissions Working Group's Pilot 4 project aims to evaluate the use of both WebAssembly and container technologies to bundle R-language based Shiny applications for submission to the FDA, focusing on enhancing reproducibility and ease of review. Pilot 4 has completed the WebAssembly portion and we hope to have the container portion finished very soon!
 
 ### Webassembly
 
 **Submission and Interactions:** The WebAssembly component of Pilot 4 was successfully submitted to the FDA's Electronic Common Technical Document (eCTD) gateway on September 20, 2024. This marked a significant milestone as it was the first publicly available submission package to include a WebAssembly component, officially received by the FDA Center for Drug Evaluation and Research (CDER) staff.
 
-**Findings and Advantages:** WebAssembly technology compiles applications into a portable and consistent environment that can be run directly within a web browser, eliminating the need for complex setups on the reviewer's side. According to Eric Nantz of Eli Lilly, using WebAssembly significantly reduces the steps reviewers need to take to get an application running on their machines.
+**Findings and Advantages:** WebAssembly technology compiles applications into a portable and consistent environment that can be run directly within a web browser, eliminating the need for complex setups on the reviewer's side. According to Eric Nantz of Eli Lilly and Pilot 4 Lead, using WebAssembly significantly reduces the steps reviewers need to take to get an application running on their machines.
 
 **FDA Preference:** Surprisingly, FDA reviewers initially found WebAssembly easier to work with compared to container technology. This was contrary to the R Consortium team's initial expectation, as WebAssembly is a newer framework. Reviewers found WebAssembly more accessible because it only required a web browser, which was readily available to them.
 
 ### containers
 
-**Submission and Interactions:** The container technology component represents the second part of the Pilot 4 project. While the WebAssembly component has been submitted, the container component was planned for submission "later this year" (referring to the announcement in October 2024). As of June 2025, a container component for Pilot 4 was still noted as "under development", although a GitHub repository for the container submission shows its eCTD bundle was last rendered on June 13, 2025, indicating progress towards its submission.
+**Submission and Interactions:** The container technology component represents the second part of the Pilot 4 project. The submission has been sent via the eCTD portal in Summer of 2025, but there is still
+ongoing discussion for the viability of container technology being used behind the
+FDA firewall. We plan on releasing a more thorough post on our finding and interactions with
+the FDA in the coming months.
 
-**Findings and Advantages (Expected):** The objective for containers (such as Docker or Podman) is to package the entire application environment, including system and R-specific dependencies, to ensure consistent and reproducible execution across different systems.
+**Findings and Advantages:** The objective for containers (such as Docker or Podman) is to package the entire application environment, including system and R-specific dependencies, to ensure consistent and reproducible execution across different systems. Firewalls and risk of supply-chain attacks
+have presented challenges along with fruitful discussion.
 
 **FDA Interactions and Preference:** The R Consortium team initially anticipated that container technology would be easier for the FDA to administer and install. However, the initial feedback from FDA reviewers indicated a preference for the WebAssembly approach. This suggests that while containers offer robust reproducibility, their setup or execution might present an initial learning curve or more steps for FDA reviewers compared to the browser-based WebAssembly option. Additional FDA feedback on the container component is expected after its submission.
 
@@ -79,7 +82,7 @@ programs for Pilot 5 write out datasetjson in lieu of xpts for submission to the
 we also converted all the SDTM xpts to datasetjson. The SDTM programs are not available
 for this pilot and so we just did a straigtt conversion of the data using [Converting from XPT](https://atorus-research.github.io/datasetjson/articles/converting_files.html) from the [datasetjson R package](https://atorus-research.github.io/datasetjson/index.html). 
 
-**FDA Interactions and Preference:** The FDA requested some minor rework with how we use intermediate datasets in the programs, which led to a re-submission in early 2026. We hope to have completed this
+**FDA Interactions and Preference:** The FDA requested some minor rework with how we use intermediate datasets in the programs, which led to a re-submission in early January 2026. We hope to have completed this
 submission some time in the Spring of 2026.
 
 **Findings and Advantages:** There are a few minor findings from conversion of data to datasetjson, which we have documented in the [ADRG](https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda/blob/main/m5/datasets/rconsortiumpilot5/analysis/adam/datasets/adrg.pdf). We also discovered that the datasetjson v1.1 was not avaialble
@@ -90,10 +93,14 @@ would be a huge win for modernizing workflows and stacks for doing submissions!
 ## Pilot 6
 
 Each Pilot to the FDA has been focused on the delivery of the R-based content so
-Pilots have been small in nature.  For example Pilot 1 only had 4 R programs! Pilot 6
-seeks to expand the number of R programs availables for ADaMs and Dispalys. Pilot 6 is
-not going to Submissions, but is laying the groundwork for future pilots if more
-programs are needed.
+Pilots have been small in nature.  For example Pilot 1 only had 4 R programs! 
+
+Pilot 6 seeks to expand the number of R programs available for ADaMs and Displays. 
+We just kicked off this Pilot in January of 2026 so if are looking to write R programs
+for ADaM and Displays in a low-stress environment then come join us!
+FYI - Pilot 6 is will not be submitted to the FDA, but is laying the groundwork for future pilots if more
+programs are needed. We also hope to leverage AI and other automation tools to help
+build a more robust pipeline in preparation for future submissions.
 
 ## Pilot 7
 
@@ -103,7 +110,7 @@ As adoption of open-source tooling accelerates, demonstration and evaluation are
 
 Pilot 7 aims to address this by leveraging statistical simulation methods together with advanced AI capabilities to generate “realistic-looking” datasets that align with recent CDISC standards. These benchmark datasets will support future pilots within the R submissions Working Group, and are also intended to be broadly useful for tool demonstrations, method evaluation, and education across the clinical trial community.
 
-[Link to Survey](https://docs.google.com/forms/d/e/1FAIpQLSceKPp-Yqlx2iND8XDYZYHKR1K2VQ7J4YNhJeG8sy5uwN8Hxw/viewform)
+Please take our survey so we can better understand and create data needed to meet today's modern pipelines.[Link to Survey](https://docs.google.com/forms/d/e/1FAIpQLSceKPp-Yqlx2iND8XDYZYHKR1K2VQ7J4YNhJeG8sy5uwN8Hxw/viewform)
 
 ## Other great achievements
 
@@ -112,13 +119,23 @@ Pilot 7 aims to address this by leveraging statistical simulation methods togeth
 A milestone! FDA expands accepted R file formats, resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group. Submitting an R package
 via the eCTD portal just got a little easier - [Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration](https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/)
 
-### Presentations at Industry Conferences
-
 ### Hex Stickers
 
+Huge shout out to J&J to help us create some really beautiful hex stickers. Feels like
+a legitimate project when you got [some hexes](https://github.com/RConsortium/submissions-wg/tree/main/hexes)!
 
+![](all_hexes.png)
 
-### ???
+## How to Join!
+
+**Join the R Submissions Working Group**
+
+The R Submissions Working Group comprises members from over 10
+pharmaceutical companies, as well as regulatory agencies. We are a
+collaborative community open to anyone interested in contributing to
+this important work. For more information, or to get involved, visit
+[our website](https://rconsortium.github.io/submissions-wg) or contact
+us directly at director\@r-consortium.org.
 
 **More about the R Submissions Working Group**
 
@@ -144,11 +161,4 @@ example packages. All materials, including submission examples and
 communications, are publicly available on the [R consortium GitHub
 page.](https://github.com/RConsortium)
 
-**Join the R Submissions Working Group**
 
-The R Submissions Working Group comprises members from over 10
-pharmaceutical companies, as well as regulatory agencies. We are a
-collaborative community open to anyone interested in contributing to
-this important work. For more information, or to get involved, visit
-[our website](https://rconsortium.github.io/submissions-wg) or contact
-us directly at director\@r-consortium.org.
