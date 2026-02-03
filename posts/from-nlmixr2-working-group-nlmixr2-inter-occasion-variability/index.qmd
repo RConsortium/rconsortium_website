@@ -1,0 +1,43 @@
+--- 
+title: "From nlmixr2 Working Group: nlmixr2 inter occasion variability" 
+unpublished: false 
+url: "https://r-consortium.org/posts/nlmixr2-working-group-nlmixr2-inter-occasion-variability/"
+description: "nlmixr2, a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions, now supports inter-occasion variability!" 
+categories: ["pharma", "submissions", "clinical research", "announcements", "working group"]
+author: "R Consortium" 
+image: "nlmixr2.png" 
+image-alt: "logo for nlmixr2 project" 
+date: "02/03/2026" 
+---
+
+_Original post on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-01-16-iov/)._
+
+From the nlmixr2 project blog:
+
+> Inter-occasion variability
+> Happy new year! With the holidays over we had the opportunity to celebrate many special occasions.
+> 
+> I invite you to celebrate a new occasion for nlmixr2 – inter-occasion variability.
+> 
+> We now support inter-occasion variability estimation in nlmixr2!
+>
+> ### Implementing inter-occasion variability in models
+>
+> To implement inter-occasion variability in `nlmixr2` models you simply
+have to specify that the variable is an occasion variable, say `occ`:
+> 
+>```r
+> iov.cl ~ 0.1 | occ
+>```
+
+### Full article on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-01-06-iov/).
+
+Previous announcement from November 2025: [nlmixr2 is Becoming an R Consortium Working Group](https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/)
+
+## Get involved in the nlmixr2 working group
+
+The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:
+
+Main repo: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)  
+Issues: [https://github.com/nlmixr2/nlmixr2/issues](https://github.com/nlmixr2/nlmixr2/issues)  
+Discussions: [https://github.com/nlmixr2/nlmixr2/discussions](https://github.com/nlmixr2/nlmixr2/discussions)  
