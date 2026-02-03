@@ -10,7 +10,56 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 28 Jan 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 03 Feb 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>From nlmixr2 Working Group: nlmixr2 inter occasion variability</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-01-16-iov/">here</a>.</em></p>
+<p>From the nlmixr2 project blog:</p>
+<blockquote class="blockquote">
+<p>Inter-occasion variability Happy new year! With the holidays over we had the opportunity to celebrate many special occasions.</p>
+<p>I invite you to celebrate a new occasion for nlmixr2 – inter-occasion variability.</p>
+<p>We now support inter-occasion variability estimation in nlmixr2!</p>
+<h3 id="implementing-inter-occasion-variability-in-models" class="anchored">Implementing inter-occasion variability in models</h3>
+<p>To implement inter-occasion variability in <code>nlmixr2</code> models you simply have to specify that the variable is an occasion variable, say <code>occ</code>:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">iov.cl <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|</span> occ</span></code></pre></div>
+</blockquote>
+<section id="full-article-on-the-nlmixr2-project-blog-is-here." class="level3">
+<h3 class="anchored" data-anchor-id="full-article-on-the-nlmixr2-project-blog-is-here.">Full article on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-01-06-iov/">here</a>.</h3>
+<p>Previous announcement from November 2025: <a href="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/">nlmixr2 is Becoming an R Consortium Working Group</a></p>
+</section>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>pharma</category>
+  <category>submissions</category>
+  <category>clinical research</category>
+  <category>announcements</category>
+  <category>working group</category>
+  <guid>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/index.html</guid>
+  <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/nlmixr2.png" medium="image" type="image/png" height="166" width="144"/>
+</item>
 <item>
   <title>Statistical Inference for Persistence Diagrams</title>
   <dc:creator>Manon Simonot, Aymeric Stamm</dc:creator>
@@ -1239,6 +1288,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>submissions</category>
   <category>clinical research</category>
   <category>announcements</category>
+  <category>working group</category>
   <guid>https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/index.html</guid>
   <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/nlmixr2.png" medium="image" type="image/png" height="166" width="144"/>
@@ -1427,71 +1477,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/index.html</guid>
   <pubDate>Sat, 22 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/kuzco-computer-vision-made-easy/thumbnail-frank-hull.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Introducing {geodl}: An R package for geospatial semantic segmentation</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/dvBmbYwb-JA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="geodl-aaron-maxwell-rplusai-conference.pdf">available here</a> (PDF)</h3>
-</section>
-<section id="introducing-geodl-gpu-accelerated-geospatial-deep-learning-in-r" class="level1">
-<h1>Introducing <code>{geodl}</code>: GPU-Accelerated Geospatial Deep Learning in R</h1>
-<p>In the dynamic world of data science, the R language consistently evolves, providing innovative solutions across various domains. One such advancement is the <code>{geodl}</code> package, a significant contribution to geospatial semantic segmentation. Introduced by Aaron Maxwell, an Associate Professor in the Department of Geology and Geography at West Virginia University, <code>{geodl}</code> builds upon <code>{torch}</code>, <code>{terra}</code>, and <code>{luz}</code> packages to offer a robust framework for pixel-level classification without the need for a Python/PyTorch environment.</p>
-<section id="the-vision-behind-geodl" class="level2">
-<h2 class="anchored" data-anchor-id="the-vision-behind-geodl">The Vision Behind <code>{geodl}</code></h2>
-<p>Aaron Maxwell’s work in geospatial science and his role at the West Virginia GIS Tech Center have driven his passion for extracting actionable insights from geospatial data. The <code>{geodl}</code> package aligns with this vision, aiming to fill the gap in deep learning capabilities within R’s geospatial ecosystem. While R has strong support for spatial data through packages like <code>{sf}</code>, <code>{terra}</code>, and <code>{stars}</code>, <code>{geodl}</code> introduces cutting-edge deep learning approaches tailored for geospatial applications.</p>
-</section>
-<section id="the-power-of-semantic-segmentation" class="level2">
-<h2 class="anchored" data-anchor-id="the-power-of-semantic-segmentation">The Power of Semantic Segmentation</h2>
-<p>Semantic segmentation is a pivotal task in computer vision, especially within geospatial sciences. Unlike scene classification or object detection, semantic segmentation assigns each pixel a label, enabling detailed land cover classification and vegetation type differentiation. This pixel-level precision is crucial for applications such as differentiating wetlands from uplands or forest types from grasslands. Aaron Maxwell highlights the significance of semantic segmentation in enhancing the accuracy and specificity of geospatial analyses.</p>
-</section>
-<section id="leveraging-advanced-architectures" class="level2">
-<h2 class="anchored" data-anchor-id="leveraging-advanced-architectures">Leveraging Advanced Architectures</h2>
-<p><code>{geodl}</code> incorporates several convolutional neural network (CNN)-based architectures, each offering unique advantages for geospatial deep learning:</p>
-<ul>
-<li><p><strong>UNet</strong>: A versatile and configurable architecture that uses an encoder-decoder U-shape to create spatial abstractions of data. <code>{geodl}</code>’s implementation includes enhancements like residual connections and attention gates to improve classification performance.</p></li>
-<li><p><strong>MobileUNet</strong>: Integrates a MobileNet-style encoder for efficient processing, utilizing depthwise separable convolution to optimize performance.</p></li>
-<li><p><strong>UNet3+</strong>: Features dense connections between encoder and decoder blocks, enhancing information flow and improving classification accuracy without significantly increasing parameters.</p></li>
-<li><p><strong>HRNet</strong>: Maintains high-resolution feature maps throughout the architecture, ideal for detecting small features within large spatial extents.</p></li>
-</ul>
-</section>
-<section id="streamlined-workflows-and-data-processing" class="level2">
-<h2 class="anchored" data-anchor-id="streamlined-workflows-and-data-processing">Streamlined Workflows and Data Processing</h2>
-<p><code>{geodl}</code> offers a comprehensive workflow for geospatial semantic segmentation, simplifying the process from data preparation to model deployment. Key components include:</p>
-<ul>
-<li><p><strong>Raster Mask and Chip Generation</strong>: Functions to create raster masks and break larger extents into smaller, manageable chips for training and validation.</p></li>
-<li><p><strong>Augmented Data Handling</strong>: Support for data augmentations such as rotations and flips to reduce overfitting and enhance model robustness.</p></li>
-<li><p><strong>Dynamic Prediction Capabilities</strong>: The predict_spatial function allows for seamless wall-to-wall predictions, automatically managing data chipping and merging for large spatial extents.</p></li>
-</ul>
-</section>
-<section id="future-developments-and-community-collaboration" class="level2">
-<h2 class="anchored" data-anchor-id="future-developments-and-community-collaboration">Future Developments and Community Collaboration</h2>
-<p>Looking ahead, <code>{geodl}</code> aims to incorporate autoencoder architectures for feature reduction and anomaly detection, edge-weighted loss functions for improved predictions near boundaries, and additional architectures like DeepLab v3+ and transformer-based models. These enhancements will further solidify <code>{geodl}</code>’s position as a leader in geospatial deep learning within R.</p>
-<p>Aaron Maxwell invites collaboration from the R community to expand <code>{geodl}</code>’s capabilities. His call for contributors highlights an opportunity for data scientists and developers to engage in the evolving field of geospatial deep learning, driving innovation and advancing the state of the art.</p>
-</section>
-<section id="explore-geodl" class="level2">
-<h2 class="anchored" data-anchor-id="explore-geodl">Explore <code>{geodl}</code></h2>
-<p>For those interested in exploring <code>{geodl}</code>, the package is available on <a href="https://cran.r-project.org/web/packages/geodl/index.html">CRAN</a> and <a href="https://github.com/maxwell-geospatial/geodl">GitHub</a>. Additionally, chapters 15 and 16 of an online book on the West Virginia View website provide detailed insights into <code>{geodl}</code>’s functionalities and applications. This resource serves as a comprehensive guide for both new adopters and seasoned practitioners in geospatial data science.</p>
-<p>The introduction of <code>{geodl}</code> marks a significant milestone in R’s geospatial capabilities, offering a powerful tool for researchers and professionals seeking to harness the potential of deep learning for geospatial data analysis. By embracing collaboration and continuous development, <code>{geodl}</code> stands poised to shape the future of geospatial deep learning in R.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html</guid>
-  <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/thumbnail-aaron-maxwell.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
