@@ -1,0 +1,51 @@
+---
+title: "Bringing Students, Researchers, and Industry Together with R in Malaysia"
+unpublished: false
+url: "https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia"
+description: "Richie Yu Yong Poh, organizer of the Malaysia R User Group, recently spoke with the R Consortium about building a national R community centered around its annual conference."
+categories: ["rugs", "software development", "asia"]
+author: "R Consortium"
+image: "RMobLogo.png"
+image-alt: "picture of R-Mob group logo"
+date: "02/05/2026"
+---
+
+[Richie Yu Yong Poh](https://www.linkedin.com/in/yong-poh-yu/?originalSubdomain=my), organizer of the [Malaysia R User Group](https://www.meetup.com/malaysia-r-user-group/), recently spoke with the R Consortium about building a national R community centered around its annual conference. He shared that the group has evolved from a small network into a robust platform that connects students, researchers, and industry practitioners through workshops, seminars, and a flagship two-day event. Richie discussed the logistics of the annual conference, the design of hands-on workshops, and R's role in bridging the gap between academia and industry through real-world applications.
+
+**Please share about your background and involvement with the RUGS group.**
+
+My career spans both industry and academia. I first adopted R while working as a university researcher; I was seeking a powerful, open-source alternative to MATLAB that could deliver equivalent functionality without the licensing costs.
+
+Over time, our team explored both R and Python, noting that they complement each other effectively, as many users are proficient in both. After my tenure at the university, I introduced R to my current institution and continued to champion its use when I transitioned to the industry. As a lead for data science and AI teams, I encouraged a multi-language approach, leveraging the unique strengths of both Python and R to solve complex problems.
+
+**Please provide an update on the R user group. How have you all been doing, and what kind of events have you been hosting?**
+
+The group was founded by my colleague, [Dr Poo Kuan Hoong](https://www.linkedin.com/in/kuanhoong/?originalSubdomain=my), who introduced me to the community. Given my academic background and familiarity with R, I was eager to contribute. Since those early days, the group has grown significantly. We now officially co-organize the **Annual R Conference** in partnership with my university, supplemented by periodic seminars and workshops. We also utilize social media and digital platforms to share resources, fostering a collaborative environment where members regularly exchange insights and experiences.
+
+**Let's discuss the [R conference](https://www.r-conference.com/#h.q3v7ag2doxpm) held in November. Can you provide details on the speakers, topics covered, and audience response?**
+
+The R Conference in Malaysia has become a premier annual event, attracting participants from academia and industry, both locally and internationally. This year’s event was co-organized with **Tunku Abdul Rahman University of Management and Technology (TAR UMT)** in Kuala Lumpur.
+
+The two-day format featured one day of intensive workshops followed by a day of professional talks. Due to overwhelming interest—particularly for the hands-on sessions—we moved to a larger venue to accommodate the high volume of attendees bringing their own equipment.
+
+We offered two primary workshops:
+
+1.  **Text Analytics:** Led by a medical professional with extensive experience applying R to healthcare data.
+
+2.  **Introduction to R:** Conducted by myself, this session guided participants from fundamental concepts to advanced applications using **RStudio, Google Colab, and the Tidyverse**, culminating in building **Shiny** applications and statistical modeling.
+
+The Sunday sessions featured industry professionals and medical researchers—who make up a core part of our committee and support base—sharing how they apply R in their respective fields. This builds on the success of our previous event at the **USM Health Campus**, which focused on biomedical applications.
+
+**Could you share some insights about the topics covered in your events? Which topics are currently resonating most with the group members?**
+
+Our workshops are particularly popular among students and young professionals, while our technical talks attract established industry practitioners. We have found that the most resonant content is **application-specific** rather than purely theoretical. Instead of teaching just the basics, we provide frameworks for real-world scenarios, such as analyzing **IoT data in manufacturing** to drive business outcomes.
+
+**How do you use R in your work?**
+
+In our current R&D and consultancy work, we maintain a dual-language environment. R is especially valuable for collaborators from **non-IT backgrounds**, such as those in business or biomedicine, because it provides a more intuitive entry point to advanced analytics.
+
+We utilize R in two primary ways:
+
+-   **Industry Solutions:** As a university center with strong industry ties, we act as consultants, using R to develop tailored R&D solutions for our partners.
+
+-   **Education:** We integrate R into our Data Science and Statistics curriculum. By teaching students to work with practical datasets and conduct rigorous statistical tests (e.g., the **KS test**), we ensure they are prepared for real-world data processing challenges.
