@@ -10,7 +10,54 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 03 Feb 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 05 Feb 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Bringing Students, Researchers, and Industry Together with R in Malaysia</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://www.linkedin.com/in/yong-poh-yu/?originalSubdomain=my">Richie Yu Yong Poh</a>, organizer of the <a href="https://www.meetup.com/malaysia-r-user-group/">Malaysia R User Group</a>, recently spoke with the R Consortium about building a national R community centered around its annual conference. He shared that the group has evolved from a small network into a robust platform that connects students, researchers, and industry practitioners through workshops, seminars, and a flagship two-day event. Richie discussed the logistics of the annual conference, the design of hands-on workshops, and R’s role in bridging the gap between academia and industry through real-world applications.</p>
+<p><img src="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/YuYongPoh.png" class="img-fluid" style="width:50.0%"></p>
+<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
+<p>My career spans both industry and academia. I first adopted R while working as a university researcher; I was seeking a powerful, open-source alternative to MATLAB that could deliver equivalent functionality without the licensing costs.</p>
+<p>Over time, our team explored both R and Python, noting that they complement each other effectively, as many users are proficient in both. After my tenure at the university, I introduced R to my current institution and continued to champion its use when I transitioned to the industry. As a lead for data science and AI teams, I encouraged a multi-language approach, leveraging the unique strengths of both Python and R to solve complex problems.</p>
+<p><strong>Please provide an update on the R user group. How have you all been doing, and what kind of events have you been hosting?</strong></p>
+<p>The group was founded by my colleague, <a href="https://www.linkedin.com/in/kuanhoong/?originalSubdomain=my">Dr Poo Kuan Hoong</a>, who introduced me to the community. Given my academic background and familiarity with R, I was eager to contribute. Since those early days, the group has grown significantly. We now officially co-organize the <strong>Annual R Conference</strong> in partnership with my university, supplemented by periodic seminars and workshops. We also utilize social media and digital platforms to share resources, fostering a collaborative environment where members regularly exchange insights and experiences.</p>
+<p><img src="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/MalaysiaRUGFounder.png" class="img-fluid"></p>
+<p><strong>Let’s discuss the <a href="https://www.r-conference.com/#h.q3v7ag2doxpm">R conference</a> held in November. Can you provide details on the speakers, topics covered, and audience response?</strong></p>
+<p>The R Conference in Malaysia has become a premier annual event, attracting participants from academia and industry, both locally and internationally. This year’s event was co-organized with <strong>Tunku Abdul Rahman University of Management and Technology (TAR UMT)</strong> in Kuala Lumpur.</p>
+<p>The two-day format featured one day of intensive workshops followed by a day of professional talks. Due to overwhelming interest—particularly for the hands-on sessions—we moved to a larger venue to accommodate the high volume of attendees bringing their own equipment.</p>
+<p><img src="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/R-conference-group-photo-main.png" class="img-fluid"></p>
+<p>We offered two primary workshops:</p>
+<ol type="1">
+<li><p><strong>Text Analytics:</strong> Led by a medical professional with extensive experience applying R to healthcare data.</p></li>
+<li><p><strong>Introduction to R:</strong> Conducted by myself, this session guided participants from fundamental concepts to advanced applications using <strong>RStudio, Google Colab, and the Tidyverse</strong>, culminating in building <strong>Shiny</strong> applications and statistical modeling.</p></li>
+</ol>
+<p>The Sunday sessions featured industry professionals and medical researchers—who make up a core part of our committee and support base—sharing how they apply R in their respective fields. This builds on the success of our previous event at the <strong>USM Health Campus</strong>, which focused on biomedical applications.</p>
+<p><strong>Could you share some insights about the topics covered in your events? Which topics are currently resonating most with the group members?</strong></p>
+<p>Our workshops are particularly popular among students and young professionals, while our technical talks attract established industry practitioners. We have found that the most resonant content is <strong>application-specific</strong> rather than purely theoretical. Instead of teaching just the basics, we provide frameworks for real-world scenarios, such as analyzing <strong>IoT data in manufacturing</strong> to drive business outcomes.</p>
+<p><strong>How do you use R in your work?</strong></p>
+<p>In our current R&amp;D and consultancy work, we maintain a dual-language environment. R is especially valuable for collaborators from <strong>non-IT backgrounds</strong>, such as those in business or biomedicine, because it provides a more intuitive entry point to advanced analytics.</p>
+<p>We utilize R in two primary ways:</p>
+<ul>
+<li><p><strong>Industry Solutions:</strong> As a university center with strong industry ties, we act as consultants, using R to develop tailored R&amp;D solutions for our partners.</p></li>
+<li><p><strong>Education:</strong> We integrate R into our Data Science and Statistics curriculum. By teaching students to work with practical datasets and conduct rigorous statistical tests (e.g., the <strong>KS test</strong>), we ensure they are prepared for real-world data processing challenges.</p></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>rugs</category>
+  <category>software development</category>
+  <category>asia</category>
+  <guid>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/index.html</guid>
+  <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/R-conference-group-photo-main.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
 <item>
   <title>From nlmixr2 Working Group: nlmixr2 inter occasion variability</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1418,65 +1465,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/index.html</guid>
   <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/AlecWong.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>kuzco | Computer Vision made easy</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Pt5-VSvuKMA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="slides-with-resource-links-available-here-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="slides-with-resource-links-available-here-pdf">Slides with resource links <a href="thursday-frank-hull-kuzco.pdf">available here</a> (PDF)</h3>
-</section>
-<section id="advancing-computer-vision-with-kuzco-simplifying-the-complex" class="level1">
-<h1>Advancing Computer Vision with <code>{kuzco}</code>: Simplifying the Complex</h1>
-<p>In the realm of computer vision, developers and data enthusiasts often face a steep learning curve. However, thanks to the innovative R package <code>{kuzco}</code>, this complexity can be significantly alleviated. Frank Hull, a Director of Data Science &amp; Analytics in the energy sector, discussed at R+AI 2025 how <code>{kuzco}</code> leverages large language models (LLMs) to provide an intuitive approach to computer vision.</p>
-<section id="understanding-the-traditional-computer-vision-framework" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-traditional-computer-vision-framework">Understanding the Traditional Computer Vision Framework</h2>
-<p>A typical computer vision framework involves several intricate steps. Building a model from scratch using TensorFlow demands a deep understanding of neural networks and image processing. While frameworks like Keras and Torch offer a less steep learning curve, they still require knowledge of tensors and image labeling. Utilizing pre-trained models like ResNet reduces complexity but remains constrained by the predefined contexts of those models. Analysts often encounter challenges like limited training images and incorrect labels, which complicate the process further.</p>
-</section>
-<section id="enter-kuzco-a-shift-to-llm-based-computer-vision" class="level2">
-<h2 class="anchored" data-anchor-id="enter-kuzco-a-shift-to-llm-based-computer-vision">Enter <code>{kuzco}</code>: A Shift to LLM-Based Computer Vision</h2>
-<p>Hull presents a compelling case for using <code>{kuzco}</code>, a package that harnesses LLMs to redefine how computer vision tasks are approached. By treating LLMs as pre-trained models, <code>{kuzco}</code> eliminates the need for traditional image pre-processing. The package allows for prompt-driven computer vision, where one can define roles and tasks within the LLM system prompt. This approach opens up possibilities for classification, object detection, sentiment analysis, and even optical character recognition (OCR) without the cumbersome setup of traditional frameworks.</p>
-</section>
-<section id="structured-outputs-for-ready-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="structured-outputs-for-ready-analysis">Structured Outputs for Ready Analysis</h2>
-<p>One of the standout features of <code>{kuzco}</code> is its ability to return structured outputs. While LLMs typically produce streams of unstructured text, <code>{kuzco}</code> ensures that results are formatted in JSON, which can then be converted into data frames. This structured format is crucial for analysts who need to integrate computer vision results into broader data analysis workflows. <code>{kuzco}</code> facilitates this process, making it easier to perform detailed analyses with minimal hassle.</p>
-</section>
-<section id="comprehensive-analysis-toolkit-with-kuzco" class="level2">
-<h2 class="anchored" data-anchor-id="comprehensive-analysis-toolkit-with-kuzco">Comprehensive Analysis Toolkit with <code>{kuzco}</code></h2>
-<p>Beyond structured outputs, <code>{kuzco}</code> offers a range of input and output helpers, along with a Shiny application for visualization. Users can easily install the package via <a href="https://github.com/frankiethull/kuzco">GitHub</a> or <a href="https://frankiethull.r-universe.dev/kuzco">R-universe</a>, and it includes functions for viewing images directly in R, a feature that simplifies the initial stages of analysis.</p>
-<p>A key function within <code>{kuzco}</code> is image classification, which can be tailored to various LLM providers. This flexibility allows users to choose from a variety of models, including Anthropic, Mistral, and OpenAI, depending on their specific needs. The package also includes a GT table output for displaying results, enhancing the readability of analysis outputs.</p>
-</section>
-<section id="diverse-applications-and-tools" class="level2">
-<h2 class="anchored" data-anchor-id="diverse-applications-and-tools">Diverse Applications and Tools</h2>
-<p>From alt text generation to image recognition, <code>{kuzco}</code> supports a range of applications. The package offers tools for recognizing specific objects within images, a feature that is particularly useful for tasks like inventory management or wildlife monitoring. Additionally, the <code>{kuzco}</code> Shiny app provides a no-code solution for users who prefer a graphical interface over traditional coding methods.</p>
-<p>The modular framework of <code>{kuzco}</code> means that users can easily add or remove functions to suit their specific workflows. This flexibility is invaluable for integrating <code>{kuzco}</code> into existing machine learning pipelines or for creating new ones.</p>
-</section>
-<section id="whats-new-and-whats-coming" class="level2">
-<h2 class="anchored" data-anchor-id="whats-new-and-whats-coming">What’s New and What’s Coming</h2>
-<p>Recent updates to <code>{kuzco}</code> include a custom function that allows users to define system and image prompts, complete with example data frames. This feature is particularly useful for conducting detailed analyses across multiple images. Upcoming developments for <code>{kuzco}</code> include enhanced developer tools for prompt editing and a potential release on CRAN, marking a significant milestone in the package’s evolution.</p>
-</section>
-<section id="embracing-the-future-of-computer-vision-with-kuzco" class="level2">
-<h2 class="anchored" data-anchor-id="embracing-the-future-of-computer-vision-with-kuzco">Embracing the Future of Computer Vision with <code>{kuzco}</code></h2>
-<p>As <code>{kuzco}</code> continues to evolve, its potential applications are vast. From creating dynamic family photo timelines to identifying plant species during hikes, the package opens up a world of possibilities. By simplifying the complexities of computer vision, <code>{kuzco}</code> empowers users to explore new avenues of analysis and discovery.</p>
-<p>In conclusion, <code>{kuzco}</code> represents a significant advancement in making computer vision accessible and manageable. Its use of LLMs simplifies traditional methodologies, offering structured outputs and a comprehensive toolkit for a wide array of applications. As the package grows, it promises to further democratize the field of computer vision, making it an exciting tool for the R community.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>r+ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/kuzco-computer-vision-made-easy/index.html</guid>
-  <pubDate>Sat, 22 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/kuzco-computer-vision-made-easy/thumbnail-frank-hull.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
