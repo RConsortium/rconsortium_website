@@ -2,9 +2,7 @@
 title: "Scaling up data analysis in R with Arrow"
 ---
 
-![](images/crane-arrow-webinar-main-image.png)
-
-### [Register Now!](https://zoom.us/webinar/register/WN_sIj7GHbwR2unVmxvQfsgIA)
+{{< video https://youtu.be/Bz17K5ZPHAE >}}
 
 Historically, scaling up data analysis in R meant adding infrastructure or radically changing analysis strategy - maintaining a database, working on a cluster, or refactoring code for parallel data processing.
 
@@ -27,6 +25,3 @@ We'll look at how to get started, real-world examples, and the design choices th
 ![](images/nic_crane.png){width=40%}
 
 Dr Nic Crane is an R educator and consultant. Nic is one of the maintainers of the Arrow R package, a member of the Apache Arrow Project Management Committee, and co-author of Scaling Up with R and Arrow.
-
-### [Register Now!](https://zoom.us/webinar/register/WN_sIj7GHbwR2unVmxvQfsgIA)
-
