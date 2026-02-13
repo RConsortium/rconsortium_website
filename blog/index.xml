@@ -10,7 +10,106 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 05 Feb 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 13 Feb 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Submissions Working Group: 2026 Plans and 2025 Success</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/submissions-wg-2026/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>2025 was a very busy year for the Submissions Working Group and we have big plans for 2026.</p>
+<p>For 2025 recap we have two Pilots nearing completion:</p>
+<ul>
+<li><a href="https://rconsortium.github.io/submissions-wg/pilot4.html">Pilot 4</a> - Containers and Webassembly</li>
+<li><a href="https://rconsortium.github.io/submissions-pilot5-website/">Pilot 5</a> - Dataset-JSON replacing all xpts</li>
+</ul>
+<p>For 2026 we have launched two new Pilots:</p>
+<ul>
+<li>Pilot 6 - expansion of ADaM and Display programs</li>
+<li>Pilot 7 - creation of new simulated data</li>
+</ul>
+<p>Read on if you want to learn more about what we submitted to the FDA for 2025 and what we plan on working on for 2026 as well as a few more related bits of news.</p>
+</section>
+<section id="previous-pilots-1---3-to-the-fda" class="level2">
+<h2 class="anchored" data-anchor-id="previous-pilots-1---3-to-the-fda">Previous Pilots (1 - 3) to the FDA</h2>
+<p>In case this is your first time hearing about these R-based Submissions to the FDA (Pilots), then we got a quick recap for you! Each Pilot has served to explore how a sponsor can submit an R-based submission package to the FDA via the eCTD portal. The Pilots are small sets of R programs using the original <a href="https://github.com/cdisc-org/sdtm-adam-pilot-project">CDISC Pilot data</a>.</p>
+<p>Previous successful Pilots to the FDA:</p>
+<ul>
+<li><a href="https://archive.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">Pilot 1</a> delivered Tables and Figures to the FDA using R.</li>
+<li><a href="https://archive.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda">Pilot 2</a> delivered the same Tables and Figures using a Shiny App created in R.</li>
+<li><a href="https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/">Pilot 3</a> delivered the Tables and Figures using R as well as the ADaMs…you guessed it using R. .</li>
+</ul>
+<p>For information on these Pilots navigate to our <a href="https://rconsortium.github.io/submissions-wg/pilot_background.html">Pilot’s background page on submission working group</a></p>
+</section>
+<section id="pilot-4-webassembly-and-containers" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-webassembly-and-containers">Pilot 4 (Webassembly and containers)</h2>
+<p>The R Consortium Submissions Working Group’s Pilot 4 project aims to evaluate the use of both WebAssembly and container technologies to bundle R-language based Shiny applications for submission to the FDA, focusing on enhancing reproducibility and ease of review. The container and WebAssembly portions have been submitted to FDA, with the formal report summarizing findings and conclusions is nearing completion.</p>
+<section id="webassembly" class="level3">
+<h3 class="anchored" data-anchor-id="webassembly">Webassembly</h3>
+<p><strong>Submission and Interactions:</strong> The WebAssembly component of Pilot 4 was successfully submitted to the FDA’s Electronic Common Technical Document (eCTD) gateway on September 20, 2024. This marked a significant milestone as it was the first publicly available submission package to include a WebAssembly component, officially received by the FDA Center for Drug Evaluation and Research (CDER) staff.</p>
+<p><strong>Findings and Advantages:</strong> WebAssembly technology compiles applications into a portable and consistent environment that can be run directly within a web browser, eliminating the need for complex setups on the reviewer’s side. According to Eric Nantz of Eli Lilly and Pilot 4 Lead, using WebAssembly reduces the amount of dependencies required to run a Shiny application in the traditional method (such as the application submitted in Pilot 2), however certain libraries are still required to compile the WebAssembly application and launch a web server process to view the application.</p>
+<p><strong>FDA Preference:</strong> Surprisingly, FDA reviewers initially found WebAssembly easier to work with compared to container technology. This was contrary to the R Consortium team’s initial expectation, as WebAssembly is a newer framework. Reviewers found WebAssembly more accessible because it only required a web browser, which was readily available to them.</p>
+</section>
+<section id="containers" class="level3">
+<h3 class="anchored" data-anchor-id="containers">containers</h3>
+<p><strong>Submission and Interactions:</strong> The container technology component represents the second part of the Pilot 4 project. The submission has been sent via the eCTD portal in Summer of 2025, but there is still ongoing discussion for the viability of container technology being used behind the FDA firewall. We plan on releasing a more thorough post on our finding and interactions with the FDA in the coming months.</p>
+<p><strong>Findings and Advantages:</strong> The objective for containers (such as Docker or Podman) is to package the entire application environment, including system and R-specific dependencies, to ensure consistent and reproducible execution across different systems. Key challenges discovered during the review process for installing dependencies required to run Docker containers in a Windows environment have presented challenges along with fruitful discussion.</p>
+<p><strong>FDA Interactions and Preference:</strong> The R Consortium team initially anticipated that container technology would be easier for the FDA to administer and install. However, the initial feedback from FDA reviewers indicated a preference for the WebAssembly approach. This suggests that while containers offer robust reproducibility, their setup or execution might present an initial learning curve or more steps for FDA reviewers compared to the browser-based WebAssembly option. Additional FDA feedback on the container component is expected after its submission.</p>
+</section>
+</section>
+<section id="pilot-5" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5">Pilot 5</h2>
+<p>Pilot 5 is ambitious in it plans to replace all xpts with <a href="https://www.cdisc.org/standards/data-exchange/dataset-json">datasetjson</a>. The pilot started in early 2025 and we were able to submit in the Fall of 2025. The ADaM programs for Pilot 5 write out datasetjson in lieu of xpts for submission to the FDA and we also converted all the SDTM xpts to datasetjson. The SDTM programs are not available for this pilot and so we just did a straigtt conversion of the data using <a href="https://atorus-research.github.io/datasetjson/articles/converting_files.html">Converting from XPT</a> from the <a href="https://atorus-research.github.io/datasetjson/index.html">datasetjson R package</a>.</p>
+<p><strong>FDA Interactions and Preference:</strong> The FDA requested some minor rework with how we use intermediate datasets in the programs, which led to a re-submission in early January 2026. We hope to have completed this submission some time in the Spring of 2026.</p>
+<p><strong>Findings and Advantages:</strong> There are a few minor findings from conversion of data to datasetjson, which we have documented in the <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda/blob/main/m5/datasets/rconsortiumpilot5/analysis/adam/datasets/adrg.pdf">ADRG</a>. We also discovered that the datasetjson v1.1 was not available in the Pinnacle 21 validation software. We discussed this with the FDA and validated with xpts, which you can also find int he <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda/blob/main/m5/datasets/rconsortiumpilot5/analysis/adam/datasets/adrg.pdf">ADRG</a>. datasetjson replacing xpts for submission would be a huge win for modernizing workflows and stacks for doing submissions!</p>
+</section>
+<section id="pilot-6" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-6">Pilot 6</h2>
+<p>Each Pilot to the FDA has been focused on the delivery of the R-based content so Pilots have been small in nature. For example Pilot 1 only had 4 R programs!</p>
+<p>Pilot 6 seeks to expand the number of R programs available for ADaMs and Displays. We just kicked off this Pilot in January of 2026 so if are looking to write R programs for ADaM and Displays in a low-stress environment then come join us! FYI - Pilot 6 is will not be submitted to the FDA, but is laying the groundwork for future pilots if more programs are needed. We also hope to leverage AI and other automation tools to help build a more robust pipeline in preparation for future submissions.</p>
+</section>
+<section id="pilot-7" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7">Pilot 7</h2>
+<p>The R Submissions Working Group Pilot 7, kicked off in January 2026, is focused on closing a key gap in the open-source clinical trial ecosystem: objective, realistic benchmarking data for demonstrating and evaluating modern R-based and AI-enabled workflows across clinical development, analysis, and regulatory submissions.</p>
+<p>As adoption of open-source tooling accelerates, demonstration and evaluation are increasingly constrained by the lack of high-quality, publicly available clinical trial datasets. While existing public references (e.g., CDISC Pilot 1) have been valuable, they are often outdated relative to current CDISC standards and industry practice, limited in scale and complexity, and not well-suited for testing today’s end-to-end automation and AI-assisted workflows.</p>
+<p>Pilot 7 aims to address this by leveraging statistical simulation methods together with advanced AI capabilities to generate “realistic-looking” datasets that align with recent CDISC standards. These benchmark datasets will support future pilots within the R submissions Working Group, and are also intended to be broadly useful for tool demonstrations, method evaluation, and education across the clinical trial community.</p>
+<p>Please take our survey so we can better understand and create data needed to meet today’s modern pipelines.<a href="https://docs.google.com/forms/d/e/1FAIpQLSceKPp-Yqlx2iND8XDYZYHKR1K2VQ7J4YNhJeG8sy5uwN8Hxw/viewform">Link to Survey</a></p>
+</section>
+<section id="other-great-achievements" class="level2">
+<h2 class="anchored" data-anchor-id="other-great-achievements">Other great achievements</h2>
+<section id="r-packages-submitted-through-ectd-portal" class="level3">
+<h3 class="anchored" data-anchor-id="r-packages-submitted-through-ectd-portal">R packages submitted through ectd portal</h3>
+<p>A milestone! FDA expands accepted R file formats, resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group. Submitting an R package via the eCTD portal just got a little easier - <a href="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/">Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</a></p>
+</section>
+<section id="hex-stickers" class="level3">
+<h3 class="anchored" data-anchor-id="hex-stickers">Hex Stickers</h3>
+<p>Huge shout out to J&amp;J to help us create some really beautiful hex stickers. Feels like a legitimate project when you got <a href="https://github.com/RConsortium/submissions-wg/tree/main/hexes">some hexes</a>!</p>
+<p><img src="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="how-to-join" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-join">How to Join!</h2>
+<p><strong>Join the R Submissions Working Group</strong></p>
+<p>The R Submissions Working Group comprises members from over 10 pharmaceutical companies, as well as regulatory agencies. We are a collaborative community open to anyone interested in contributing to this important work. For more information, or to get involved, visit <a href="https://rconsortium.github.io/submissions-wg">our website</a> or contact us directly at director@r-consortium.org.</p>
+<p><strong>More about the R Submissions Working Group</strong></p>
+<p>The <a href="https://rconsortium.github.io/submissions-wg/">R Consortium R Submissions Working Group</a> is focused on improving practices for R-based clinical trial regulatory submissions.</p>
+<p>Health authority agencies from different countries require electronic submission of data, computer programs, and relevant documentation to bring an experimental clinical product to market. In the past, submissions have mainly been based on the SAS language.</p>
+<p>In recent years, the use of open source languages, especially the R language, has become very popular in the pharmaceutical industry and research institutions. Although the health authorities accept submissions based on open source programming languages, sponsors may be hesitant to conduct submissions using open source languages due to a lack of working examples.</p>
+<p>Therefore, the R Submissions Working Group aims to provide R-based submission examples and identify potential gaps while submitting these example packages. All materials, including submission examples and communications, are publicly available on the <a href="https://github.com/RConsortium">R consortium GitHub page.</a></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/submissions-wg-2026/index.html</guid>
+  <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Bringing Students, Researchers, and Industry Together with R in Malaysia</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1407,64 +1506,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/index.html</guid>
   <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/PaoloBosetti.png" medium="image" type="image/png" height="134" width="144"/>
-</item>
-<item>
-  <title>Expanding the Reach of R Across Cleveland’s Data and Tech Community</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://www.linkedin.com/in/alec-wong-67966242/">Alec Wong</a>, organizer of the <a href="https://www.meetup.com/cleveland-user-group/">Cleveland R Users Group</a>, recently spoke with the R Consortium about energizing the local R community and supporting data professionals in a rapidly changing job market. With a focus on inclusive learning and real-world applications, Alec and his co-organizers are creating events that connect students, analysts, and industry experts alike. Their recent “Career Planning” session brought together data scientists, hiring managers, and job seekers for an open conversation about navigating AI-driven changes in the workforce. Alec also shared how the group is expanding its reach through collaborations with other tech meetups and participation in Cleveland’s Best of Tech event.</p>
-<p><img src="https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/AlecWong.png" class="img-fluid" style="width:50.0%"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>My name is Alec Wong, and I am a co-organizer of the Cleveland R User Group alongside John Blischak and Tim Hoolihan. I have been a member of this group since 2019, and a co-organizer since 2022. John joined in 2018 and became a co-organizer in 2020. Tim joined in 2013 and became a co-organizer in 2015. We have a lot of dedication in this group and are constantly looking for new ways to engage with R users in the community!</p>
-<p>I have worked at Progressive Insurance since 2019, and this year I moved into a data scientist position working to apply machine vision to automate the detection of damage on vehicles.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-cleveland" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-cleveland">Can you share what the R community is like in Cleveland?</h2>
-<p>There is still interest in the R language, if our meetup attendance is any indicator. We typically see a few new faces each time we host a session, whether in-person or online. There are companies from a variety of industries situated in Cleveland – insurance, medical, financial, consulting, among other services – and you can find practicing data science professionals within all of these.</p>
-<p>R is a pleasant and beautiful language to work in, and this is what I hope to share with people regardless of their background. The sessions that we host, and plan to host, are aimed at this objective in mind.</p>
-</section>
-<section id="you-hosted-a-career-planning-meetup-session.-can-you-share-more-about-the-topic-why-this-topic" class="level2">
-<h2 class="anchored" data-anchor-id="you-hosted-a-career-planning-meetup-session.-can-you-share-more-about-the-topic-why-this-topic">You hosted a “<a href="https://www.meetup.com/cleveland-user-group/events/309804784/?eventOrigin=group_events_list">Career Planning</a>” meetup session. Can you share more about the topic? Why this topic?</h2>
-<p>We, as data science professionals, are at a crossroad or inflection point in what it looks like to find a job and build a career right now. It’s been noted that since 2020, in the U.S., recent college graduates are seeing higher unemployment rates now relative to all workers, a departure from 30-year patterns according to the U.S. Bureau of Labor Statistics. Generative AI is developing into an arms race between those hiring and those seeking to be hired – applicants can fabricate resumes and submit more widely than ever before, while companies increase usage of automated screening tools (and occasionally automated interviewing) using AI. And regardless of the current efficacy of AI, there are grumblings of generative agentic AI supplanting entry-level positions. It’s a period of uncertainty.</p>
-<p>In a primarily in-person event with a few online participants, we invited a panel of data science professionals who have either successfully navigated the job search environment recently, were in the process of searching for a job, or were making hiring decisions at their place of work. These were <a href="https://www.linkedin.com/in/jairaj-ranchod-223b4975/">Jai Ranchod</a>, a business systems analyst working at Availity since 2023, <a href="https://www.linkedin.com/in/aaron-montgomery-6b17421b1/">Aaron Montgomery</a>, a data scientist consultant working at Valtech, and <a href="https://www.linkedin.com/in/josh-vanderleest-6674a87b/">Josh Vanderleest</a>, a manager of data science working at Progressive Insurance.</p>
-<p>We asked the panel a variety of questions related to the hiring process today. Some examples were: How often did you get interviews from applications? How do you perceive the relative marketability of R versus Python today? Does generative technology help or hinder the job search? Emergent topics discussed were the added difficulty of the job search for international students and imposter syndrome among those seeking to break into the field.</p>
-<ul>
-<li><p>The consensus was that “hit rates” for interviews were fair – perhaps one in twenty – but not as egregious as some internet stories (one in hundreds).</p></li>
-<li><p>Tooling (R vs.&nbsp;Python) was not at the forefront of managers’ minds; rather, it was the capability to reason well about data analytical problems that was more important.</p></li>
-<li><p>Generative AI is a facet of modern job application – one audience member explained how it was used in a technical interview – but integrity and honesty nevertheless continue to be vital.</p></li>
-<li><p>Resumes exist to get you in front of the hiring manager – and should be formatted explicitly demonstrating how you satisfy minimum qualifications.&nbsp;</p></li>
-<li><p>Practicing interview questions using established methods like STAR can be very useful – check to see if answering questions in this format is a requirement of the organization.</p></li>
-</ul>
-<p>After the session, we offered resume review comments for all participants. We may not have solved the hiring process with this panel discussion, but it was an enlightening and engaging discussion.&nbsp;</p>
-</section>
-<section id="you-represented-the-cleveland-r-user-group-at-clevelands-best-of-tech-event.-could-you-share-more-about-that" class="level2">
-<h2 class="anchored" data-anchor-id="you-represented-the-cleveland-r-user-group-at-clevelands-best-of-tech-event.-could-you-share-more-about-that">You represented the Cleveland R User Group at Cleveland’s Best of Tech event. Could you share more about that?</h2>
-<p><a href="https://greatercle.com/events/2025/09/09/signature-event/best-of-tech-day-2025/">Cleveland’s Best of Tech</a> is an annual event hosting tech companies, organizations, and educators. The Greater Cleveland Partnership organizes it, and this year it was held at the Great Lakes Science Center. Our group was offered a booth spot to share our program with participants.</p>
-<p>I was extremely pleased to meet the organizers of other tech groups in Cleveland. I met the organizers of the <a href="https://www.datadayscle.org/">Data Days Cleveland group</a> (April Urban, Will Skora), and I also met the organizer of the <a href="https://www.meetup.com/cleveland-area-python-interest-group/">Cleveland Python meetup</a> (CLEpy) for the first time – Anurag Saxena, who works at the Cleveland Clinic. I am inspired to interface more with these groups, and we discussed the possibility of hosting a joint R+Python meetup sometime next year, which I am excited to plan!</p>
-<p>We had many other participants visit the booth, and a key takeaway for me was interest in beginner-level training in R. I have thought of this as something that the Cleveland R User group could offer in the future, possibly another activity that could be co-facilitated by the R and Python meetups.</p>
-<p>Overall, I am happy to see the good health of the data profession scene in Cleveland. Meeting other group organizers has already expanded my network; I attended a Data Days workshop event soon thereafter and had the pleasure of meeting <a href="https://www.linkedin.com/in/drosohrabian/">Dro Sohrabian</a> and <a href="https://www.linkedin.com/in/samuel-martinez-975b37191/">Samuel Martinez</a> with the City of Cleveland, demonstrating their <a href="https://data.clevelandohio.gov/">Open Data Portal</a>. Further meshing with technical meetup leaders will open a lot more doors for connectivity and inspire interesting sessions in the future; I plan to introduce our members to the City’s data portal in our next guided walkthrough session.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a>&nbsp;</p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>insurance/risk</category>
-  <category>north america</category>
-  <guid>https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/index.html</guid>
-  <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/AlecWong.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
