@@ -1,5 +1,37 @@
 [
   {
+    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "items": [
+      "/webinars/AdoptionOfRInJapansPharma.html",
+      "/webinars/RMedicineWebinar.html",
+      "/webinars/containerization-and-r-for-reproducibility.html",
+      "/webinars/escape-the-data-dungeon.html",
+      "/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html",
+      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
+      "/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html",
+      "/webinars/jnj-hybrid-sas-r-submission-story.html",
+      "/webinars/making-health-economic-models-shiny.html",
+      "/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html",
+      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
+      "/webinars/open-source-adoption-in-japans-pharma-industry.html",
+      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
+      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
+      "/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html",
+      "/webinars/r-insurance-series.html",
+      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
+      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
+      "/webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html",
+      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
+      "/webinars/scaling-up-data-analysis-in-r-with-arrow.html",
+      "/webinars/super-charging-r-with-oracle-database.html",
+      "/webinars/tidy-finance-webinar-series.html",
+      "/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html",
+      "/webinars/unlocking-insights-from-latinr.html",
+      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
+      "/webinars/webinars.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/index.html",
@@ -214,14 +246,6 @@
     ]
   },
   {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/index.html",
@@ -230,29 +254,29 @@
       "/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/index.html",
       "/posts/crops-code-and-community-build-r-mob-user-group-in-australia/index.html",
       "/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/index.html",
-      "/posts/2025-in-review-growth-community-momentum/index.html",
       "/posts/650K-for-R/index.html",
+      "/posts/2025-in-review-growth-community-momentum/index.html",
       "/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/index.html",
       "/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/index.html",
       "/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html",
       "/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html",
       "/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html",
       "/posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html",
-      "/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html",
       "/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html",
+      "/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html",
       "/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/index.html",
       "/posts/nlmixr2-is-becoming-an-r-consortium-working-group/index.html",
       "/posts/from-the-adas-utils-package-to-r-trento-paolo-bosetti-on-building-tools-and-community/index.html",
       "/posts/expanding-the-reach-of-r-across-clevelands-data-and-tech-community/index.html",
       "/posts/kuzco-computer-vision-made-easy/index.html",
-      "/posts/jarl-just-another-r-linter/index.html",
       "/posts/introducing-geodl-an-r-package-for-geospatial-semantic-segmentation/index.html",
+      "/posts/jarl-just-another-r-linter/index.html",
       "/posts/mini007-a-lightweight-framework-for-multi-agent-orchestration-in-r/index.html",
-      "/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html",
-      "/posts/me-myself-claude/index.html",
       "/posts/tracking-the-evolution-of-r-and-python-tools-for-genai/index.html",
-      "/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html",
+      "/posts/me-myself-claude/index.html",
       "/posts/brand-your-docs-apps-and-ggplots-using-llms/index.html",
+      "/posts/gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt/index.html",
+      "/posts/keeping-llms-in-their-lane-focused-ai-for-data-science-and-research/index.html",
       "/posts/rplusai-use-rag-from-your-database-to-gain-insights-into-the-r-consortium/index.html",
       "/posts/learning-shiny-together-a-collaborative-reading-club-around-mastering-shiny-in-buenos-aires/index.html",
       "/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/index.html",
@@ -336,8 +360,8 @@
       "/posts/keith-karani-wachira-leading-the-dekut-r-community-in-kenya-and-innovating-with-r/index.html",
       "/posts/Full-time-Korea-R-User-Group-Founder-Victor-Lee-Sees-AI-Future-for-R-and-Quarto-Textbooks-R-Consortium/index.html",
       "/posts/r4hr-in-buenos-aires-leveraging-r-for-dynamic-hr-solution/index.html",
-      "/posts/enhancing-clinical-trial-data-sharing-with-r-consortiums-r-submissions-working-group/index.html",
       "/posts/one-more-step-forward-the-r-consortium-submission-working-group-presentation-to-swissmedic-on-regulator-submission-using-r-and-shiny/index.html",
+      "/posts/enhancing-clinical-trial-data-sharing-with-r-consortiums-r-submissions-working-group/index.html",
       "/posts/collaborative-growth-the-botswana-r-user-group-and-regional-partnerships/index.html",
       "/posts/gergely-daroczis-journey-empowering-r-users-in-hungary/index.html",
       "/posts/enhancing-r-the-vision-and-impact-of-jan-viteks-maintainr-initiative/index.html",
@@ -377,40 +401,16 @@
       "/posts/satellite-data-with-r-unveiling-earths-surface-using-the-icesat2r-package/index.html",
       "/posts/rebooting-warsaw-r-community-2024-kamil-sijko-journey-future-aspirations/index.html",
       "/posts/pfizer-r-adoption-webinar-february-8-2024/index.html",
-      "/posts/join-fake-it-until-you-make-it how-and-why-to-simulate-data first-glasgow-user-group-event-of-the-year/index.html",
-      "/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html"
+      "/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html",
+      "/posts/join-fake-it-until-you-make-it how-and-why-to-simulate-data first-glasgow-user-group-event-of-the-year/index.html"
     ]
   },
   {
-    "listing": "/webinars/webinars-auto-not-being-used.html",
+    "listing": "/newsletters/newsletters.html",
     "items": [
-      "/webinars/AdoptionOfRInJapansPharma.html",
-      "/webinars/RMedicineWebinar.html",
-      "/webinars/containerization-and-r-for-reproducibility.html",
-      "/webinars/escape-the-data-dungeon.html",
-      "/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html",
-      "/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html",
-      "/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html",
-      "/webinars/jnj-hybrid-sas-r-submission-story.html",
-      "/webinars/making-health-economic-models-shiny.html",
-      "/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html",
-      "/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html",
-      "/webinars/open-source-adoption-in-japans-pharma-industry.html",
-      "/webinars/oracle-augmenting-your-quarto-website-with-rag-select-ai-autonomous-database.html",
-      "/webinars/quantification-of-participation-risk-using-r-and-rshiny.html",
-      "/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html",
-      "/webinars/r-insurance-series.html",
-      "/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html",
-      "/webinars/rix-reproducible-data-science-environments-with-nix.html",
-      "/webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html",
-      "/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html",
-      "/webinars/scaling-up-data-analysis-in-r-with-arrow.html",
-      "/webinars/super-charging-r-with-oracle-database.html",
-      "/webinars/tidy-finance-webinar-series.html",
-      "/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html",
-      "/webinars/unlocking-insights-from-latinr.html",
-      "/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html",
-      "/webinars/webinars.html"
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
     ]
   }
 ]
