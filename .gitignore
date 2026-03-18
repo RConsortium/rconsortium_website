@@ -23,3 +23,5 @@ venv
 **/index_cache/
 # _freeze/ - DO NOT ignore! Freeze cache should be committed to preserve rendering state
 **/index_files/
+
+**/*.quarto_ipynb
