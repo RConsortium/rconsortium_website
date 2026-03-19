@@ -10,7 +10,78 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 11 Mar 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Q1 2026 Update: Community Growth, Collaboration, and Momentum Across the R Ecosystem</title>
+  <dc:creator>Terry Christiani, Executive Director</dc:creator>
+  <link>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As we move through 2026, the R Consortium continues its social infrastructure mission to support and grow the global R community. The first quarter of the year has been marked by continued growth in technical collaboration, community engagement, and events that bring R users together to share ideas and innovation.</p>
+<p>Investments from the <a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">Sovereign Tech Fund</a> and the <a href="https://www.software.ac.uk/ssi-awards-funding-13-critical-projects-through-research-software-maintenance-fund-round-1">Research Software Maintenance Fund</a> in the R Foundation are underwriting significant progress in R’s sustainability and security through infrastructure modernization, active mentorship of the next generation of R Core, and increased engagement with the community.</p>
+<p>At the R Consortium, one of our roles is to help sustain and strengthen the ecosystem that supports R. That means supporting open technical work through our Infrastructure Steering Committee (ISC) grants, enabling grassroots community growth through R User Group (RUG) micro-grants, supporting R-Ladies promote gender diversity in the R community, and hosting multi-day events and webinars where practitioners can exchange knowledge and showcase how R is used to solve real problems.</p>
+<p>Together, these efforts reinforce a central goal: ensuring that R remains a vibrant, collaborative environment for statistical computing, data science, and applied analytics across industries.</p>
+<p><img src="https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/2026-collage.png" class="img-fluid"></p>
+<section id="structured-for-the-r-community" class="level2">
+<h2 class="anchored" data-anchor-id="structured-for-the-r-community">Structured for the R Community</h2>
+<p>I have focused my efforts as executive director in building a sustainable, annual platform for community events. These events provide a collegial and relevant venue for practitioners to share research, demonstrate applications, and discuss emerging trends across the R ecosystem.</p>
+<p>The R Consortium now annually hosts three flagship events:</p>
+<ul>
+<li>R/Medicine, which brings together experts applying R in healthcare, clinical research, and biomedical data analysis<br>
+</li>
+<li>R+AI, focused on the growing intersection of R with artificial intelligence and machine learning<br>
+</li>
+<li>R!sk, highlighting applications of R in financial risk, modeling, and quantitative analysis</li>
+</ul>
+<p>R/Medicine has grown into an important forum for knowledge exchange within its domain. Our inaugural R+AI and R!sk events focused on specific application areas, and provided the opportunity formeaningful discussions among practitioners facing similar challenges.</p>
+<p>At the same time, they connect participants to the broader R community, across specialities and industries.</p>
+<p>In addition to these hosted events, the R Consortium continues to sponsor useR!, the long-standing global conference for the R community. While useR! is organized independently, sponsorship helps support the conference and ensures that it remains accessible to the global R community.</p>
+<p>Together, these events create a structured platform for engagement across the ecosystem. The events help tell the stories of how R is used in practice - from clinical trials and financial modeling to AI workflows and reproducible research.</p>
+</section>
+<section id="supporting-the-technical-foundation-of-r" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-the-technical-foundation-of-r">Supporting the Technical Foundation of R</h2>
+<p>One of the R Consortium’s most important responsibilities is supporting technical projects that benefit the broader R ecosystem. Through the ISC grants program and working groups, the Consortium helps fund and coordinate work that improves infrastructure, tooling, and long-term sustainability.</p>
+<p>ISC working groups bring together experts from multiple organizations to tackle challenges that benefit the entire community. These collaborative efforts lead to improvements that ripple across the entire ecosystem. From package infrastructure and interoperability to tools that make R more reliable in production and regulatory environments.</p>
+<p>At the end of 2025, the R Consortium announced eight newly funded ISC technical projects, continuing our investment in strengthening and modernizing the infrastructure that supports the global R ecosystem. These projects represent ongoing renewal and improvement of core capabilities across developer tooling, reproducible workflows, internationalization, and data infrastructure. Highlights include rw, a CLI for webR with sandboxing features; rextendr, supporting scientific computing development with Rust and R; birdnetTools 2.0, linking BirdNET outputs to occupancy modeling in R; and extendr, advancing modern object-oriented programming tools for R.</p>
+<p>Additional projects focus on ecosystem-wide improvements, including a consistent translations glossary for R, version-controlled reproducible workflows, efforts to modernize R’s web-mapping capabilities, and translating the <em>Causal Inference for the Brave and True</em> book to R. Together, these initiatives demonstrate the R Consortium’s ongoing commitment to strengthening the technical foundations that help the R community innovate and collaborate.</p>
+<p>The full list of funded projects is available here:<br>
+<a href="https://r-consortium.org/all-projects/funded-projects.html">https://r-consortium.org/all-projects/funded-projects.html</a></p>
+<p>For organizations that rely on R but may not yet be ready to become members of the R Consortium, participating in a working group is often the best first step. It allows teams to collaborate directly with other R practitioners, help shape technical priorities, and contribute to solutions that strengthen the ecosystem.</p>
+<p>You can explore the current working groups here:<br>
+<a href="https://r-consortium.org/all-projects/isc-working-groups.html">https://r-consortium.org/all-projects/isc-working-groups.html</a></p>
+</section>
+<section id="grassroots-growth-through-r-ladies-and-r-user-groups" class="level2">
+<h2 class="anchored" data-anchor-id="grassroots-growth-through-r-ladies-and-r-user-groups">Grassroots Growth Through R-Ladies and R User Groups</h2>
+<p>While technical work strengthens the infrastructure of R, community engagement helps the education ecosystem continue to grow and builds bridges to industry. The R Consortium has long supported this grassroots layer of the community through programs such as R-Ladies+, a Top-Level Project at the R Consortium, that promotes gender diversity in the R ecosystem by supporting women and underrepresented groups in learning and using R. With hundreds of chapters around the world, R-Ladies+ provides mentorship, training, and community support that helps expand access to data science and statistical computing. Their mission, to achieve gender diversity among R users, developers, and leaders, continues to have a powerful impact across the global R community.</p>
+<p>Alongside R-Ladies+, the R Consortium’s R User Group (RUG) micro-grant program helps local organizers host meetups, workshops, and small events that bring together practitioners from academia, industry, and government. These groups are often where new users first connect with the R community, providing welcoming spaces for learning, mentorship, and collaboration. Over time, many of these local networks become hubs for innovation and knowledge sharing. The stories emerging from these communities, from the Philippines and Malaysia to the United Kingdom, Australia, and beyond, highlight the global reach of R.</p>
+<p>You can read many of these R-Ladies and R User Groups community stories on the R Consortium blog: <a href="https://r-consortium.org/blog/">https://r-consortium.org/blog/</a></p>
+</section>
+<section id="opportunities-to-get-involved" class="level2">
+<h2 class="anchored" data-anchor-id="opportunities-to-get-involved">Opportunities to Get Involved</h2>
+<p>For organizations that rely on R or are exploring how R can support their data science and analytics work there are several ways to engage with the R Consortium.</p>
+<p>One option is to join an ISC working group and collaborate directly with peers on projects that strengthen the R ecosystem. R Consortium membership is not required.</p>
+<p>Another opportunity is to share your organization’s experience with R through a blog post or webinar. Many companies have compelling stories about how they use R to drive innovation, and sharing those stories benefits the broader community.</p>
+<p>Of course, the most impactful way to participate is to become a member of the R Consortium. Membership supports the programs that sustain the ecosystem - technical grants, community initiatives, and global events - and helps ensure that R continues to thrive.</p>
+<p>More information here: <a href="https://r-consortium.org/about/join.html">https://r-consortium.org/about/join.html</a></p>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>The first quarter of 2026 demonstrates the continued vitality of the R ecosystem. Through technical collaboration, grassroots community engagement, and a growing platform of global events, the R Consortium is helping bring practitioners together and amplify the work happening across the community.</p>
+<p>By providing platforms for sharing innovation, providing funds to build and improve R infrastructure, telling community stories, and encouraging collaboration across organizations and industries, we can ensure that R continues to evolve and expand.</p>
+<p>I look forward to continuing this momentum throughout the year and to welcoming new participants into the community along the way.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>events</category>
+  <guid>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/index.html</guid>
+  <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/r_wordcloud.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Igniting an R Movement in the Philippines: RNVSU’s Open Science Vision</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1468,67 +1539,6 @@ Packages with a public footprint are more likely to be updated and maintained ov
   <guid>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html</guid>
   <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long-main-image.png" medium="image" type="image/png" height="92" width="144"/>
-</item>
-<item>
-  <title>Connecting Pharma, Students, and R: Ronak Shah on Strengthening the Pune R Ecosystem</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://www.linkedin.com/in/shahronak47/?originalSubdomain=in">Ronak Shah</a>, co-organizer of the <a href="https://www.meetup.com/pune-r-userr-group/">Pune R User Group</a> in India, is energizing a growing R community that connects students, professionals, and data enthusiasts across the city. Through in-person and online meetups, the group fosters collaboration and learning while supporting R’s expanding role in India’s pharmaceutical industry. Ronak also discussed his side project, Package Reviewer, a Shiny app that enables users to rate and review R packages, helping others discover reliable tools within the R ecosystem.</p>
-<p><img src="https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/RonakShah.png" class="img-fluid" style="width:50.0%"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>My name is Ronak, and I’m based in Pune, India. I have been using R for the last 11 years. This year, we launched the Pune R User Group, designed for R enthusiasts and colleagues who utilise R in their daily work or are interested in learning more about it.&nbsp;</p>
-<p>As one of the co-organizers of the group, I am fortunate to have found other colleagues who share a strong interest in R. We are working to organize events and meet-ups in Pune to foster learning and growth within the R community.</p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-india" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-india">Can you share what the R community is like in India?&nbsp;</h2>
-<p>The use of R has increased significantly over the past few years, particularly within the pharmaceutical industry. We are witnessing a growth in open-source tools, particularly within the pharma space, tools such as the <a href="https://pharmaverse.org/">Pharmaverse</a> and <a href="https://cran.r-project.org/web/packages/teal/index.html">Teal</a> packages. Many pharmaceutical companies have established Global Capability Centers (GCCs) in India, not just in Pune.</p>
-<p>Currently, I work with <a href="https://www.rocheindia.com/">Roche</a>, a pharmaceutical company that has its GCC setup in Pune. However, there are numerous other locations, such as Bangalore, Hyderabad, Delhi, and Mumbai, where many talented developers contribute to this ecosystem. The growth of these developers working with pharmaceutical companies is happening rapidly.</p>
-<p>In Pune specifically, about 50% of our R user group consists of master’s students. They are studying R as part of their coursework and are also conducting projects using R. This has led to a strong interest in the meetups we organize, and I see a lot of traction and growth happening in this area as well.</p>
-<p><img src="https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/PuneRUGMeetup1.png" class="img-fluid"></p>
-</section>
-<section id="are-you-currently-hosting-your-meetups-online-in-person-or-in-a-hybrid-format" class="level2">
-<h2 class="anchored" data-anchor-id="are-you-currently-hosting-your-meetups-online-in-person-or-in-a-hybrid-format">Are you currently hosting your meetups online, in person, or in a hybrid format?</h2>
-<p>We initially started with in-person meetups at Pune University, where we reserved some rooms to make it easier for students to join our community. This was one of the reasons why more students began participating. During the summer and monsoon seasons, especially when the rains were heavy, we also decided to incorporate online sessions. This not only allowed local enthusiasts to join but also attracted those situated outside Pune, helping us grow our user base. Going forward, we plan to maintain a mix of both virtual and on-site events, ensuring we cater to everyone’s preferences.</p>
-</section>
-<section id="what-are-your-plans-for-the-group-over-the-next-few-months" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-your-plans-for-the-group-over-the-next-few-months">What are your plans for the group over the next few months?</h2>
-<p>When we started this year, the initial plan was to have one meetup every month. However, we have taken a brief break, and we haven’t met in August and September. After six months, we decided to regroup and reorganize to evaluate our approach and determine our satisfaction with it. Currently, we have five co-organizers who are primarily responsible for decision-making regarding the organization of these meetups and the topics we want to cover.&nbsp;</p>
-<p>We want to analyze what has gone well and identify areas for improvement and change. We are currently working on this.&nbsp;</p>
-<p>Initially, we focused on the basics of R, but now we plan to move on to some advanced topics. We have also hosted a couple of sessions on introduction to Shiny, including a hands-on workshop. We would now like to introduce more advanced-level topics in R, which we plan to cover in the coming months.</p>
-<p><img src="https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/PuneRUGMeetup2.png" class="img-fluid"></p>
-</section>
-<section id="what-challenges-have-you-faced-while-organizing-the-group" class="level2">
-<h2 class="anchored" data-anchor-id="what-challenges-have-you-faced-while-organizing-the-group">What challenges have you faced while organizing the group?</h2>
-<p>We are facing a couple of challenges. First, it remains challenging to find enthusiasts who are interested in R and bring them together on a single online platform. We are exploring various initiatives to address this, including leveraging LinkedIn and utilizing our mutual connections. However, it remains a challenge to attract these individuals.&nbsp;</p>
-<p>Even when we do find people, getting them to attend events can be difficult. We usually schedule these sessions on weekends when they are typically free, but we still encounter obstacles in encouraging their participation.&nbsp;</p>
-<p>To encourage attendance, we are considering relocating our events to a more convenient location. For example, we might arrange to hold them in a café setting and provide coffee and snacks. This external motivation could encourage more participants to join us. We’re hopeful that these changes will be effective, and we look forward to seeing the results in upcoming months.</p>
-<p>Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</p>
-<p>One challenge I noticed is that, while there are many well-known packages, such as dplyr, data.table, and ggplot2, which are thoroughly tested and come with extensive user feedback, a vast array of other packages—over 20,000 on CRAN alone, with numerous more on GitHub—exist. This raises the question: how can users assess the quality of these lesser-known packages? Are they still being actively maintained? Is there someone available to respond to user reports?</p>
-<p>To address this issue, I created a simple Shiny app called Package Reviewer. In this app, users can select any package they have tried and rate it on a scale of 0 to 5 stars. Users can give half-star ratings (e.g., 0.5, 1, 1.5, etc.) and add a brief comment to describe their experience with the package.</p>
-<p>The goal of this project is to encourage enough user participation so that when someone is considering trying out a new package, they can visit Package Reviewer to see community reviews. This way, they can summarize feedback and understand how the package has been received, helping them make informed decisions about whether to use that package or seek alternatives. That’s the idea behind Package Reviewer.&nbsp;</p>
-<p>Check out <a href="https://shahronak.shinyapps.io/packagerevieweR/">Package Reviewer</a> and share your thoughts on the R packages you use! Your reviews can help fellow R users find dependable tools and provide developers with valuable feedback to further improve their packages. (Note: Registration is not required to use Package Reviewer. On the main page, use the pulldown menu to select an R package review. For example, AATTools.)</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?&nbsp;</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>software development</category>
-  <category>pharma</category>
-  <guid>https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/index.html</guid>
-  <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/connecting-pharma-students-and-r-ronak-shah-on-strengthening-pune-r-ecosystem/RonakShah-main-image.png" medium="image" type="image/png" height="113" width="144"/>
 </item>
 </channel>
 </rss>
