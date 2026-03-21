@@ -11,7 +11,7 @@ date: "03/21/2026"
 
 [Frans van Dunné](https://www.linkedin.com/in/fransvandunne/), organizer of the [San Carlos R User Group](https://scrug.github.io/) (also on [Meetup](https://www.meetup.com/es-ES/san-carlos-r-user-group/?eventOrigin=home_groups_you_organize)) in San Carlos, Costa Rica, recently reconnected with the R Consortium to discuss the evolution of the community he has been building over the past decade. He shared how the group grew from small local meetups in a mountain town into online events that attracted participants from across Costa Rica and the wider Latin American region. Frans discussed some of the group’s most memorable events, the realities of sustaining engagement in a long-running user group, the continued momentum behind the DataLatam podcast, and his perspective on how R adoption has changed across academia and industry over the years.
 
-\![\](FransVanDunne.png){width="50%"}
+![](FransVanDunne.png){width="50%"}
 
 ## How has the group been doing since we last talked in [September 2024](https://r-consortium.org/posts/conectaR-podcasts-and-datathons-san-carlos-r-user-group-in-costa-rica/)?
 
@@ -19,7 +19,7 @@ The group has been struggling a bit to keep things going. I just had the first s
 
 On the other hand, the [DataLatam Podcast](https://www.datalatam.com/) is easier to manage because there’s more momentum behind it. We continue to be very active with the podcast, and we’re considering organizing a DataLatam event that could potentially include more languages. It’s something we’re thinking about because it would be fun.
 
-\![\](SCRUGLogo.png)
+![](SCRUGLogo.png)
 
 ## What has your 10-year experience of organizing the San Carlos R User Group been like? Which group events stand out as your favorites?
 
@@ -43,9 +43,7 @@ Are you interested in the tools we use? Great! We record using [Zoom](https://ww
 
 For editing, I use a digital audio workstation called [Reaper](https://www.reaper.fm/). While the name may sound a bit ominous, it’s a wonderful program that I’ve used for quite some time. I import the different audio tracks, mix them, and polish the sound by removing gaps and filler words like "uh" and "um." If a speaker accidentally says something they shouldn’t have, I edit that out as well. Once the editing is complete, I convert the audio to MP3 format and upload it to the website.
 
-On the website, we have configured the XML in the Apple Podcast format. This XML is crucial as it allows us to distribute the podcast across various platforms like Apple Podcasts and Spotify. 
-
-## 
+On the website, we have configured the XML in the Apple Podcast format. This XML is crucial as it allows us to distribute the podcast across various platforms like Apple Podcasts and Spotify.  
 
 ## You may have noticed a shift in the R community and how R is accepted and used over the past 10 years. How has its adoption changed in industry and academia?
 
@@ -61,4 +59,4 @@ In our work at [ixpantia,](https://www.ixpantia.com/en/) we still undertake proj
 
 R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in almost 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute
 
-<https://r-consortium.org/all-projects/rugsprogram.html>
+[https://r-consortium.org/all-projects/rugsprogram.html](https://r-consortium.org/all-projects/rugsprogram.html)
