@@ -1,37 +1,3 @@
-# Development Server for R Consortium Website
-
-This is a new Quarto-based website which updates and supersedes the original website here: [archive.r-consortium.org](archive.r-consortium.org)
-
-## Contributing to this website
-
-This website is being built members of the R Consortium, R-Ladies Gaborone and other volunteer contributors. Thank you! If you want to help contribute to the site, please use the following workflow.
-
-### Workflow for making contributions
-
-#### 1. Clone this website
-
-#### 2. Make a branch
-
-Make a branch and edit your branch locally.
-
-To preview the website locally you can execute this quarto command in your terminal:
-
-```bash
-quarto render
-```
-
-**Note:** This website uses Quarto's freeze feature to optimize rendering performance. The freeze feature caches computational results and only re-renders posts when their content has changed. This prevents unnecessary re-rendering of all 249+ posts when only one post is modified, making it much faster to contribute to the website.
-
-The freeze cache is stored in the `_freeze/` directory and should be committed to version control to ensure consistency across different environments.
-
-#### 3. Commit your changes
-
-Make your changes locally save them and commit them. Be sure to make your commit message descriptive of the work you did.
-
-#### 4. Do a Pull Request
-
-Do a pull request from your local copy to make sure branch is in sync with the website branch. We will review your Pull Request!
-
 ## What is the R Consortium?
 
 The R Consortium, Inc. is a group organized under an open source governance and foundation model to support the worldwide community of users, maintainers and developers of R software. Its [members](https://www.r-consortium.org/members) include leading institutions and companies dedicated to the use, development and growth of R.
@@ -59,30 +25,59 @@ The mission of the R Consortium is formally defined in the [R Consortium bylaws]
 
 ## Main Links
 
-Main Site: [https://www.r-consortium.org/](https://www.r-consortium.org/)  
-News: [https://www.r-consortium.org/news](https://www.r-consortium.org/news)  
-Blog: [https://www.r-consortium.org/news/blog](https://www.r-consortium.org/news/blog)  
+Main Site (this site): [https://www.r-consortium.org/](https://www.r-consortium.org/)  
 Join: [https://www.r-consortium.org/about/join](https://www.r-consortium.org/about/join)  
-Twitter: [https://twitter.com/rconsortium?lang=en](https://twitter.com/rconsortium?lang=en)  
+
+Blog: [https://www.r-consortium.org/news/blog](https://www.r-consortium.org/news/blog)  
 LinkedIn: [https://www.linkedin.com/company/r-consortium/](https://www.linkedin.com/company/r-consortium/)  
-Mastodon: [https://fosstodon.org/@RConsortium](https://fosstodon.org/@RConsortium)
+Bluesky: [https://bsky.app/profile/rconsortium.bsky.social](https://bsky.app/profile/rconsortium.bsky.social)  
+Fosstodon: [https://fosstodon.org/@RConsortium](https://fosstodon.org/@RConsortium)  
 
 ---
 
-## Development Section
+# Contributing to the R Consortium Website
 
-## Running locally
+This website is built members of the R Consortium, and a wide range of contributors and helpers include R-Ladies Gaborone and other volunteers. There are many blog posts from R Consortium ISC technology projects, helping to build R infrastructure. And many from R User Groups around the world learning R, promoting R, making connections to local industry, and much more. There are also many R experts and enthusiasts giving webinars and sharing their expertise. And multiple annual events, including R+AI, R/Medicine, Risk and userR!, that are directly hosted or sponsored by the R Consortium. 
 
-Clone repo
+Thank you to all our contrubitors and volunteers! 
 
-Use `quarto preview` to run locally. Ensure you are in the root directory of the Quarto project where the _quarto.yml file is located.
+If you want to help contribute to the site, please use the following workflow.
 
-If you use `quarto serve` you may get the error:
+### Workflow for making contributions
 
-ERROR: No input passed to serve.
-If you are attempting to preview a website or book use the quarto preview command instead.
+#### 1. Fork this website
 
-## Setup for Contributors
+#### 2. Make a branch
+
+Pull down the fork locally, make a branch and edit your branch locally.
+
+To preview the website locally and your new edits:
+
+```bash
+quarto preview
+```
+
+Ensure you are in the root directory of the Quarto project where the _quarto.yml file is located.
+
+**Note:** This website uses Quarto's freeze feature to optimize rendering performance. The freeze feature caches computational results and only re-renders posts when their content has changed. This prevents unnecessary re-rendering of all 250+ posts when only one post is modified, making it much faster to contribute to the website. However, the first time you render the site locally, you will be rendering a large group of files. This is normal.
+
+The freeze cache is stored in the `_freeze/` directory and should be committed to version control to ensure consistency across different environments.
+
+#### 3. Commit your changes
+
+Make your changes locally, save them and commit them. Please make your commit message descriptive of the work you did.
+
+#### 4. Do a Pull Request
+
+Push up to your own forked repo. Then do a pull request to the R Consortium website repo. We will review your Pull Request!
+
+## If your system has not run a Quarto site before...
+
+## Install Quarto
+
+If you need to install Quarto locally, please see: [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+
+## Make sure you have R and two important R libraries
 
 Install R using `sudo apt-get install r-base` and `sudo apt-get install r-base-dev`
 
@@ -92,7 +87,7 @@ GGPLOT2 installation: `install.packages("ggplot2")`
 
 dygraphs installation : `install.packages("dygraphs")`
 
-## Project Setup
+## Some Info on .gitignore
 
 The .gitignore of this project is setup to ignore `_site/`, `.quarto/` and `docs`
 
@@ -104,23 +99,27 @@ The .gitignore of this project is setup to ignore `_site/`, `.quarto/` and `docs
 
 - `docs/` 
 
-## Quarto Workflow Notes
+### RStudio Workflow
 
-### R Studio Workflow
+Make sure you have RStudio installed. The RStudio IDE is still called "RStudio." The company has changed its name to Posit. Posit is an R Consortium Platinum member.
 
-Make sure you have R Studio installed.
+Fork this [Github public repo](https://github.com/RConsortium/rconsortium_website) to your own GitHub account. Then pull it down to your local machine.
 
-Clone down this [Github repo](https://github.com/RConsortium/rconsortium_website) (public repo). Make sure to pull down the new changes on main.
-
-Open the quarto-blog-dev project in R Studio (File → Open Project). Ensure that you’ve switched to a new branch. `git checkout -b name_branch`
+Open the rconsortium_website project in RStudio (File → Open Project). Ensure that you’ve switched to a new branch. `git checkout -b name_new_branch`
 
 Install renv with `install.packages(“renv”)` in console
 
 Run `renv::restore()` in console
 
-Open a file for testing. Make edits to the file and run `render`in R studio to view the updates.
+Open a file for testing. Make edits to the file and run `render` in RStudio to view the updates.
 
-See **Final Steps** below.
+## Push Up and Create Pull Request
+
+Once finished with editing, run `git add`, `git commit`, and `git push` to your fork on GitHub.
+
+Make a Pull Request!
+
+A reviewer will test your Pull Request and get back to you within just a couple of days.
 
 ### VSCode Workflow
 
@@ -133,13 +132,3 @@ Install packages for R extension on VS Code.
 Run `install.packages("renv")` and `renv::restore()` in the terminal.
 
 Make edits to a file and run `quarto render` and `quarto preview` to see the changes.
-
-See **Final Steps** below.
-
-## Final Steps
-
-Once finished with editing, run `git add`, `git commit`, and `git push` to the branch.
-
-Make a pull request and assign a reviewer. The reviewer should test the request locally by switching to the test branch. Run`quarto render` and `quarto preview` to view the site locally.
-
-Once the pull request is accepted, view the workflow status run in GitHub actions.
