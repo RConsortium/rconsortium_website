@@ -67,10 +67,6 @@ body h6 + p {
   margin-top: 1rem !important;
 }
 
-section {
-  padding-bottom: 48px;
-}
-
 .title {
   color: black;
   width: 100%;
