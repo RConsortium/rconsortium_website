@@ -10,7 +10,105 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 19 Mar 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 08 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Collaborating between Bioconductor and R-universe on Development of Common Infrastructure</title>
+  <dc:creator>The rOpenSci Team</dc:creator>
+  <dc:creator>The Bioconductor Team</dc:creator>
+  <link>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><small><i>This article is cross-posted on <a href="https://ropensci.org/blog/">rOpenSci</a> and <a href="https://blog.bioconductor.org/">Bioconductor</a> blogs.</i></small></p>
+<p>For more than two decades, the <a href="https://www.bioconductor.org/">Bioconductor project</a> has been a cornerstone of the R ecosystem, providing high-quality, peer-reviewed tools for bioinformatics and computational biology. Its curated repository model, rigorous review standards, and tightly coordinated release process have helped establish Bioconductor as one of the most trusted distribution channels in scientific computing.</p>
+<p>However the infrastructure that supports such a long-standing and large-scale project inevitably accumulates technical debt. Legacy build systems, bespoke tooling, and historically grown workflows add up to costly and unsustainable maintenance work. For this reason, Bioconductor is collaborating with <a href="https://r-universe.dev/">R-universe</a> to gradually modernize parts of its infrastructure, while accommodating the project’s scale, governance, and established processes. In turn, Bioconductor is helping R-universe expand and refine its features as we learn to serve the complex needs of the Bioconductor community.</p>
+<p>This collaboration reflects a core principle of R-universe as an R Consortium <a href="https://r-consortium.org/all-projects/">Infrastructure Steering Committee (ISC)</a> top-level project: supporting reviewed package repositories such as rOpenSci and Bioconductor, and providing modern, open, and reusable infrastructure that strengthens the broader R ecosystem.</p>
+<section id="a-shared-mission-tooling-for-managed-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="a-shared-mission-tooling-for-managed-repositories">A shared mission: Tooling for managed repositories</h2>
+<p>R-universe was designed as a next-generation package distribution and build system for R. It provides:</p>
+<ul>
+<li>Continuous building and checking of R packages across platforms<br>
+</li>
+<li>Binary packages for Windows, macOS, Linux, and WebAssembly<br>
+</li>
+<li>Transparent and reproducible build environments managed via GitHub actions<br>
+</li>
+<li>Dashboards and metadata apis for monitoring ecosystem health and activity<br>
+</li>
+<li>CRAN-like package repositories with discoverable metrics and documentation</li>
+</ul>
+<p>From the outset, a key objective has been to support curated and reviewed communities — such as rOpenSci and Bioconductor — by offering modern infrastructure without requiring them to redesign their governance model or review processes.</p>
+<p>For Bioconductor, this means incrementally introducing piece-wise functionality, with consideration for established release cycles and quality control mechanisms:</p>
+<ol type="1">
+<li>Setting up independent build and dashboard tooling, replicating processes from the current Bioconductor build systems on R-universe infrastructure.</li>
+<li>Mirorring Windows/macOS binaries produced on R-universe to Bioconductor.</li>
+<li>Exploring further integration of results and metadata produced by R-universe for Bioconductor health/activity monitoring and aiding the curation processes.</li>
+<li>Potential future steps toward deeper automation and harmonization</li>
+</ol>
+<p>By taking small gradual steps towards adopting R-universe components, everyone gets the opportunity to experiment with new tooling and evaluate where adjustments may be needed in order to minimize disruption to existing practices.</p>
+<p>An important milestone in this venture is that Bioconductor now uses R-universe to build the Windows and macOS binaries, which significantly reduces costs and the maintenance load on the Bioconductor team. Beyond binary distribution, we are currently exploring on deeper integration of R-universe’s continuous check results into Bioconductor’s quality control and release processes.</p>
+</section>
+<section id="two-universes-release-and-development" class="level2">
+<h2 class="anchored" data-anchor-id="two-universes-release-and-development">Two Universes: Release and Development</h2>
+<p>Bioconductor maintains two distinct repositories:</p>
+<ul>
+<li>A <strong>release</strong> branch for stable packages<br>
+</li>
+<li>A <strong>devel</strong> branch for ongoing development and the next release cycle</li>
+</ul>
+<p>To mirror this structure, we currently operate two dedicated R-universe instances:</p>
+<ul>
+<li><strong>Development branch:</strong> <a href="https://bioc.r-universe.dev">https://bioc.r-universe.dev</a><br>
+</li>
+<li><strong>Release branch:</strong> <a href="https://bioc-release.r-universe.dev">https://bioc-release.r-universe.dev</a></li>
+</ul>
+<p>These universes integrate directly with Bioconductor’s existing Git infrastructure and provide continuous builds for packages in both branches.</p>
+<p>Through the R-universe dashboard, package maintainers and users can:</p>
+<ul>
+<li>Inspect cross-platform check results<br>
+</li>
+<li>Review extended BiocCheck diagnostics<br>
+</li>
+<li>Monitor build logs and dependency graphs<br>
+</li>
+<li>Explore rich package metadata and metrics<br>
+</li>
+<li>Publish binary packages for Windows, macOS, and Linux</li>
+</ul>
+<p>This provides a familiar yet modern interface for Bioconductor contributors, aligned with what users increasingly expect from contemporary R package infrastructure.</p>
+<p>Information about each package is available on <code>https://bioc.r-universe.dev/{pkgname}</code>, for example <a href="https://bioc.r-universe.dev/DESeq2">https://bioc.r-universe.dev/DESeq2</a> shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/https:/docs.r-universe.dev/img/bioc-pkg.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">screenshot of r-universe</figcaption>
+</figure>
+</div>
+<p>If this your first time visiting R-universe, we recommend clicking the “Website Tour” button which will walk you through the most important information in 1 or 2 minutes.</p>
+</section>
+<section id="technical-documentation-for-bioconductor-maintainers" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation-for-bioconductor-maintainers">Technical Documentation for Bioconductor Maintainers</h2>
+<p>The R-universe project maintains comprehensive technical documentation at <a href="https://docs.r-universe.dev">https://docs.r-universe.dev</a>. For Bioconductor specifically, we created a dedicated summarizing the most relevant topics for developers to get started with R-universe: <a href="https://docs.r-universe.dev/bioconductor/">https://docs.r-universe.dev/bioconductor/</a></p>
+<p>As the collaboration evolves and new components get introduced, the documentation will continue to be expanded. The goal is to provide Bioconductor maintainers with a clear reference point for understanding how R-universe fits into their development workflow, while maintaining compatibility with the established practices that have made Bioconductor a successful project within the R community.</p>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Adopting new infrastructure inevitably involves adjustments. For Bioconductor developers, integrating with a new build and distribution system will likely require some changes to workflows, and time to become familiar with new or different package checks, build diagnostics, and binary distribution.</p>
+<p>However, by gradually moving toward common infrastructure, the Bioconductor project will benefit from improvements that are being continuously developed and maintained for the broader R ecosystem. A system based on modern CI will provide developers with improved tooling, and will give the core team more time to focus on community coordination and quality control, rather than on maintaining costly infrastructure. At the same time, the shared platform provided by R-universe can help to increase the visibility and accessibility of Bioconductor software to the greater R community.</p>
+<p>We look forward to continuing this alliance and to working with the Bioconductor community to ensure that the next generation of infrastructure supports the project for many years to come.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Bioconductor</category>
+  <category>R-universe</category>
+  <category>Infrastructure</category>
+  <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/index.html</guid>
+  <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://docs.r-universe.dev/img/bioc-pkg.png" medium="image" type="image/png"/>
+</item>
 <item>
   <title>Q1 2026 Update: Community Growth, Collaboration, and Momentum Across the R Ecosystem</title>
   <dc:creator>Terry Christiani, Executive Director</dc:creator>
@@ -1499,46 +1597,6 @@ Packages with a public footprint are more likely to be updated and maintained ov
   <guid>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html</guid>
   <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>R Consortium announces JD Long as keynote speaker for R!sk 2026</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>The R Consortium is pleased to announce that James “JD” Long, CTO at Palomar, a specialty insurance company serving residential and commercial clients in five product categories: Earthquake, Inland Marine and Other Property, Casualty, Fronting and Crop - and co-author of <em>R Cookbook: Proven Recipes for Data Analysis, Statistics, and Graphics</em>, will deliver the keynote address at R!sk 2026, an online conference taking place February 18–19, 2026.</p>
-<p>👉 R!sk 2026 is not just for insurance companies. It is for any domain that uses R to model, measure, and manage risk.</p>
-<p><img src="https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long.jpg" class="img-fluid" style="width:30.0%"></p>
-<p>R!sk 2026 is a new R Consortium event focused on how the R ecosystem is used to model, measure, and manage risk. The conference will be fully online and scheduled on US Eastern Time, with talks recorded and speakers participating in live Q&amp;A.</p>
-<section id="about-jd-long" class="level2">
-<h2 class="anchored" data-anchor-id="about-jd-long">About JD Long</h2>
-<p>JD Long is CTO at Palomar, He says “I’m the guy who can build a Monte Carlo model, help parallelize the model to run on cloud services and then stand in front of a group of business leaders and put the work in context where everyone understands. My super power is thinking probabilistically, understanding risk, and communicating clearly.”</p>
-<p>JD is widely known in the R community for his practical focus on building real-world risk and insurance models and for helping large organizations adopt R and modern analytics practices. He is a frequent speaker at R conferences and meetups, and his work has been featured in the R Journal and other publications.</p>
-<p>As co-author of <em>R Cookbook: Proven Recipes for Data Analysis, Statistics, and Graphics</em>, JD has helped thousands of R users solve everyday data and modeling problems. Through his talks and writing, he emphasizes probabilistic thinking, clear communication of uncertainty, and building analytics cultures that support experimentation and learning.</p>
-</section>
-<section id="about-rsk-2026" class="level2">
-<h2 class="anchored" data-anchor-id="about-rsk-2026">About R!sk 2026</h2>
-<p><strong>Dates:</strong> February 18–19, 2026</p>
-<p><strong>Format:</strong> 100% online</p>
-<p><strong>Focus:</strong> Using R to calculate, measure, report, and mitigate risk. NOT JUST IN INSURANCE BUT IN ANY DOMAIN.</p>
-<p><strong>Domains:</strong> financial risk, insurance, credit, operational risk, climate, healthcare, and more</p>
-<p><strong>Host:</strong> R Consortium</p>
-<p>The Call for Proposals is open through December 7, 2025. If you use R for risk modeling, reporting, or governance in any domain, you are encouraged to submit a proposal and help shape the inaugural R!sk 2026 program.</p>
-<p>More information, the Call for Proposals is available on the R!sk 2026 website:</p>
-<p><a href="https://rconsortium.github.io/Risk_website/">https://rconsortium.github.io/Risk_website/</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>insurance/risk</category>
-  <category>events</category>
-  <guid>https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/index.html</guid>
-  <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r-consortium-announces-jd-long-as-keynote-speaker-for-rsk-2026/jd-long-main-image.png" medium="image" type="image/png" height="92" width="144"/>
 </item>
 </channel>
 </rss>
