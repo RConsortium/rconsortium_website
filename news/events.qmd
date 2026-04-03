@@ -9,15 +9,43 @@ format:
 ## Upcoming Events
 
 ```{r}
-# Sample data frame with HTML links
+# Data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>'
+    '<a href="https://eurobioc2026.bioconductor.org/" target="_blank" rel="noreferrer noopener">EuroBioC 2026</a>',
+    '<a href="https://rr2026.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2026</a>',
+    '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
+    '<a href="https://user2026.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2026</a>',
+    '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
-  dates = c("Feb 18-19, 2026"),
-  location = c("Virtual"),
-  icon = c("Conference"),
-  Type = c("Conference"),
+  dates = c(
+    "June 3-5, 2026",
+    "June 16-18, 2026",
+    "June 26-27, 2026",
+    "July 6-9, 2026",
+    "Nov 11, 2026"
+  ),
+  location = c(
+    "Turku, Finland",
+    "Nantes, France",
+    "Portland, OR, USA",
+    "Warsaw, Poland",
+    "Virtual"
+  ),
+  icon = c(
+    "Conference",
+    "Conference",
+    "Conference",
+    "Conference",
+    "Conference"
+  ),
+  Type = c(
+    "Conference",
+    "Conference",
+    "Conference",
+    "Conference",
+    "Conference"
+  ),
   stringsAsFactors = FALSE
 )
 
@@ -25,75 +53,61 @@ df <- df |>
   dplyr::filter(icon %in% c("Conference", "Webinar")) |>
   dplyr::mutate(
     icon = ifelse(icon == "Webinar", "chalkboard-user", "handshake")
-  ) 
+  )
 
-
-
-# Load necessary libraries
 library(gt)
 
-# Create a gt table and use fmt_markdown() to render HTML links
 gt_table <- gt(df) %>%
   fmt_icon(columns = icon) %>%
-
   cols_label(
     Title = "Title",
     dates = "Dates",
     location = "Location",
-    icon  = "Type"
-  ) %>%
-  
-
+    icon = "Type"
+  )%>%
   tab_options(
     heading.background.color = "lightblue",
     column_labels.background.color = "lightblue",
     column_labels.font.weight = "bold",
     table.font.size = "14px",
     column_labels.font.size = "16px"
-    
-   
   ) %>%
-  opt_horizontal_padding(scale = 3)  %>%
+  opt_horizontal_padding(scale = 3) %>%
   opt_vertical_padding(scale = 2) %>%
-
-#
-
-  cols_merge(columns = c(Type, icon), 
-             pattern="{2}    {1}") %>%
-# Render the 'Link' column as HTML using fmt_markdown()
-  fmt_markdown(columns = c(Title))
+  cols_merge(
+    columns = c(Type, icon),
+    pattern = "{2}    {1}"
+  ) %>%
+  fmt_markdown(columns = Title)
 
 
-# Print the gt table
 gt_table
-
 ```
 
 ## Recently Completed Events and Webinars
 
-------------------------------------------------------------------------
-
 ```{r}
-# Sample data frame with HTML links
+# Data frame with HTML links
 df <- data.frame(
   Title = c(
-      '<a href="https://r-consortium.org/webinars/scaling-up-data-analysis-in-r-with-arrow.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Scaling up data analysis in R with Arrow</a>',
-      '<a href="https://r-consortium.org/webinars/making-health-economic-models-shiny.html" target="_blank" rel="noreferrer noopener">Making Health Economic Models Shiny: Our experience helping companies transition from Excel to R & Shiny</a>',     
-      '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI</a>',
-      '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government Data Science & AI Conference</a>',
-      '<a href="https://r-consortium.org/webinars/jnj-hybrid-sas-r-submission-story.html" target="_blank" rel="noreferrer noopener">J&J: A Hybrid SAS/R Submission Story</a>',
-      '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)</a>',
-      '<a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: How to use pointblank to understand, validate, and document your data</a>',
-      '<a href="https://r-consortium.org/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Modular, interoperable, and extensible topological data analysis in R</a>',
-      '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production</a>',
-      '<a href="https://eurobioc2025.bioconductor.org/" target="_blank" rel="noreferrer noopener">European Bioconductor Conference (EuroBioC2025)</a>',
-      '<a href="https://r-consortium.org/webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: SAS to R in Pharma – Creating Custom Solutions for Closed-Source Code</a>',
-      '<a href="https://dataconf.ai/nyc" target="_blank" rel="noreferrer noopener">New York Data Science & AI Conference</a>',
-      '<a href="https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Unlocking Collaborative Power with Git, GitHub CI/CD, and LLMs in Pharma</a>',
-      '<a href="https://user2025.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2025</a>',
-      '<a href="https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Open Source Software Adoption in Japan\'s Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey</a>',
-      '<a href="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/" target="_blank" rel="noreferrer noopener">Brazilian Association of Investigative Journalism (Abraji)</a>',
-     '<a href="https://www.psiweb.org/events/event-item/2025/07/03/default-calendar/one-day-event-change-management-for-moving-to-r-open-source" target="_blank" rel="noreferrer noopener">Change Management for Moving to R/Open Source</a>',
+    '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>',
+    '<a href="https://r-consortium.org/webinars/scaling-up-data-analysis-in-r-with-arrow.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Scaling up data analysis in R with Arrow</a>',
+    '<a href="https://r-consortium.org/webinars/making-health-economic-models-shiny.html" target="_blank" rel="noreferrer noopener">Making Health Economic Models Shiny: Our experience helping companies transition from Excel to R & Shiny</a>',
+    '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI</a>',
+    '<a href="https://rstats.ai/gov" target="_blank" rel="noreferrer noopener">Government Data Science & AI Conference</a>',
+    '<a href="https://r-consortium.org/webinars/jnj-hybrid-sas-r-submission-story.html" target="_blank" rel="noreferrer noopener">J&J: A Hybrid SAS/R Submission Story</a>',
+    '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL (Enterprise Applications of the R Language) Tech Conference (EARL2025)</a>',
+    '<a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: How to use pointblank to understand, validate, and document your data</a>',
+    '<a href="https://r-consortium.org/webinars/modular-interoperable-extensible-topological-data-analysis-in-r.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Modular, interoperable, and extensible topological data analysis in R</a>',
+    '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production</a>',
+    '<a href="https://eurobioc2025.bioconductor.org/" target="_blank" rel="noreferrer noopener">European Bioconductor Conference (EuroBioC2025)</a>',
+    '<a href="https://r-consortium.org/webinars/sas-to-r-in-pharma-creating-custom-solutions-for-closed-source-code.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: SAS to R in Pharma – Creating Custom Solutions for Closed-Source Code</a>',
+    '<a href="https://dataconf.ai/nyc" target="_blank" rel="noreferrer noopener">New York Data Science & AI Conference</a>',
+    '<a href="https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Unlocking Collaborative Power with Git, GitHub CI/CD, and LLMs in Pharma</a>',
+    '<a href="https://user2025.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2025</a>',
+    '<a href="https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Open Source Software Adoption in Japan\'s Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey</a>',
+    '<a href="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/" target="_blank" rel="noreferrer noopener">Brazilian Association of Investigative Journalism (Abraji)</a>',
+    '<a href="https://www.psiweb.org/events/event-item/2025/07/03/default-calendar/one-day-event-change-management-for-moving-to-r-open-source" target="_blank" rel="noreferrer noopener">Change Management for Moving to R/Open Source</a>',
     '<a href="https://r-consortium.org/webinars/r-for-health-technology-assessment-identifying-needs-streamlining-processes-and-building-bridges.html" target="_blank" rel="noreferrer noopener">R Consortium Working Group Webinar: R for Health Technology Assessment (HTA): Identifying Needs, Streamlining Processes, and Building Bridges</a>',
     '<a href="https://r-consortium.org/webinars/from-paper-to-pixels-digitizing-water-quality-data-collection-with-posit-and-esri-integration.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: From Paper to Pixels: Digitizing Water Quality Data Collection with Posit and Esri Integration</a>',
     '<a href="https://r-consortium.org/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Scaling the r-spatial ecosystem for the modern composable data pipeline</a>',
@@ -106,306 +120,299 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html" target="_blank" rel="noreferrer noopener">Rix: reproducible data science environments with Nix</a>',
     '<a href="https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html" target="_blank" rel="noreferrer noopener">Quantification of Participation Risk using R and R Shiny</a>',
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#value-companies-using-discounted-cash-flow-analysis" target="_blank" rel="noreferrer noopener">Value Companies using Discounted Cash Flow Analysis</a>',
-    '<a href="https://latinr.org/en/" target="_blank" rel="noreferrer noopener">LatinR 2024</a>',
+    '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR 2024</a>',
     '<a href="https://r-consortium.org/webinars/containerization-and-r-for-reproducibility.html" target="_blank" rel="noreferrer noopener">R/Medicine Webinar: Containerization and R for Reproducibility and More</a>',
     '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#analyze-companies-using-financial-ratios" target="_blank" rel="noreferrer noopener">Analyze Companies using Financial Ratios</a>',
     '<a href="https://www.rstats.ai/gov" target="_blank" rel="noreferrer noopener">2024 Government & Public Sector R Conference</a>',
     '<a href="https://rinpharma.com/" target="_blank" rel="noreferrer noopener">R/Pharma 2024 with new APAC Track</a>',
-    '<a href="https://r-consortium.org/webinars/unlocking-insights-from-latinr.html" target="_blank" rel="noreferrer noopener">Unlocking Insights from LatinR: Collaboration and Innovation in Data Science</a>', 
-    '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production 2024</a>', 
-    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model" target="_blank" rel="noreferrer noopener">Evaluate Performance using the Capital Asset Pricing Model</a>', 
-    '<a href="https://www.ascent.io/earl" target="_blank" rel="noreferrer noopener">EARL 2024</a>', 
-    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#optimize-portfolios-using-the-markowitz-model" target="_blank" rel="noreferrer noopener">Optimize Portfolios using the Markowitz Model</a>', 
-    '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>', 
-    '<a href="https://posit.co/conference/" target="_blank" rel="noreferrer noopener">posit::conf 2024</a>', 
+    '<a href="https://r-consortium.org/webinars/unlocking-insights-from-latinr.html" target="_blank" rel="noreferrer noopener">Unlocking Insights from LatinR: Collaboration and Innovation in Data Science</a>',
+    '<a href="https://shiny-in-production.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">Shiny in Production 2024</a>',
+    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model" target="_blank" rel="noreferrer noopener">Evaluate Performance using the Capital Asset Pricing Model</a>',
+    '<a href="https://earl-conference.com/" target="_blank" rel="noreferrer noopener">EARL 2024</a>',
+    '<a href="https://r-consortium.org/webinars/tidy-finance-webinar-series.html#optimize-portfolios-using-the-markowitz-model" target="_blank" rel="noreferrer noopener">Optimize Portfolios using the Markowitz Model</a>',
+    '<a href="https://www.r-project.org/conferences/" target="_blank" rel="noreferrer noopener">useR! 2024</a>',
+    '<a href="https://posit.co/conference/" target="_blank" rel="noreferrer noopener">posit::conf 2024</a>',
     '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
     '<a href="https://www.rstats.nyc/" target="_blank" rel="noreferrer noopener">New York R Conference</a>',
     '<a href="https://www.rinfinance.com/" target="_blank" rel="noreferrer noopener">R/Finance 2024</a>',
     '<a href="https://satrday-london-2024.jumpingrivers.com/" target="_blank" rel="noreferrer noopener">SatRdays London 2024</a>',
-    '<a href="https://www.r-consortium.org/r-medicine-quarto-for-reproducible-medical-manuscripts" target="_blank" rel="noreferrer noopener">R/Medicine: Quarto for Reproducible Medical Manuscripts</a>',
-    '<a href="https://www.r-consortium.org/new-webinar-tidy-finance-and-accessing-financial-data" target="_blank" rel="noreferrer noopener">New Webinar: Tidy Finance and Accessing Financial Data</a>',
-    '<a href="https://www.r-consortium.org/escape-the-data-dungeon-unlock-scalable-r-analytics-and-ml" target="_blank" rel="noreferrer noopener">Escape the Data Dungeon: Unlock Scalable R Analytics and ML</a>',
-    '<a href="https://www.r-consortium.org/from-vision-to-action-the-r-pfizer-r-center-of-excellence-led-journey-to-r-adoption" target="_blank" rel="noreferrer noopener">From Vision to Action: The Pfizer R Center of Excellence-led journey to R Adoption</a>',
-    '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">R/Insurance Series: High performance programming in R</a>',
-    '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">Dan Sjoberg presenting on Plotting Survival with {ggsurvfit}</a>',
-    '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">R/Insurance Series:&nbsp;R performance culture</a>',
-    '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">R/Insurance Series: From programming in R to putting R into production</a>',
-    '<a href="https://www.r-consortium.org/r-insurance-series-for-everyone-in-insurance-or-actuarial-science" target="_blank" rel="noreferrer noopener">R/Insurance Series:&nbsp;From Excel to Programming in R</a>',
-    '<a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
+    '<a href="https://www.r-consortium.org/webinars/r-medicine-quarto-for-reproducible-medical-manuscripts.html" target="_blank" rel="noreferrer noopener">R/Medicine: Quarto for Reproducible Medical Manuscripts</a>',
+    '<a href="https://www.r-consortium.org/webinars/new-webinar-tidy-finance-and-accessing-financial-data.html" target="_blank" rel="noreferrer noopener">New Webinar: Tidy Finance and Accessing Financial Data</a>',
+    '<a href="https://www.r-consortium.org/webinars/escape-the-data-dungeon.html" target="_blank" rel="noreferrer noopener">Escape the Data Dungeon: Unlock Scalable R Analytics and ML</a>',
+    '<a href="https://www.r-consortium.org/webinars/from-vision-to-action-the-pfizer-r-center-of-excellence.html" target="_blank" rel="noreferrer noopener">From Vision to Action: The Pfizer R Center of Excellence-led journey to R Adoption</a>',
+    '<a href="https://www.r-consortium.org/webinars/r-insurance-series.html#high-performance-programming-in-r" target="_blank" rel="noreferrer noopener">R/Insurance Series (4/4): High performance programming in R</a>',
+    '<a href="https://www.r-consortium.org/webinars/visualizing-survival-data-with-the-ggsurvfit-r-package.html" target="_blank" rel="noreferrer noopener">Dan Sjoberg presenting on Plotting Survival with {ggsurvfit}</a>',
+    '<a href="https://www.r-consortium.org/webinars/r-insurance-series.html#r-performance-culture" target="_blank" rel="noreferrer noopener">R/Insurance Series (3/4): R performance culture</a>',
+    '<a href="https://www.r-consortium.org/webinars/r-insurance-series.html#from-programming-in-r-to-putting-r-into-production" target="_blank" rel="noreferrer noopener">R/Insurance Series (2/4): From programming in R to putting R into production</a>',
+    '<a href="https://www.r-consortium.org/webinars/r-insurance-series.html#from-excel-to-programming-in-r" target="_blank" rel="noreferrer noopener">R/Insurance Series (1/4): From Excel to Programming in R</a>',
+    '<a href="https://r-consortium.org/webinars/AdoptionOfRInJapansPharma.html" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
-        'Feb 10, 2026',
-        'Nov 18, 2025',
-        'Nov 12-13, 2025',
-        'Oct 28-29, 2025', 
-        'Oct 21, 2025', 
-        'Oct 14-16, 2025', 
-        'Oct 16, 2025',
-        'Oct 7, 2025',
-        'Oct 7-8, 2025', 
-        'Sept 17-19, 2025',
-        'Sept 9, 2025',
-        'Aug 25-27, 2025',
-        'Aug 28, 2025',
-        'Aug 8-10, 2025',
-        'July 23, 2025',
-        'July 10-13, 2025',
-        'July 3, 2025',
-        'June 30, 2025',
-        'June 27, 2025',
-        'June 24, 2025',
-        'June 23-26, 2025',
-        'June 20-21, 2025',
-        'June 19-20, 2025',
-        'June 9-13, 2025',
-        'May 19-21, 2025', 
-        'March 28, 2025', 
-        'March 13, 2025',
-        'December 12, 2024',
-        'December 4, 2024',
-        'November 18-22, 2024', 
-        'November 19, 2024',
-        'November 6, 2024',
-        'October 29-30, 2024',
-        'October 29-31, 2024',
-        'October 22, 2024',
-        'October 9-10, 2024',
-        'October 9, 2024',
-        'September 4-5, 2024', 
-        'September 4, 2024', 
-        'July 8-11, 2024', 
-        'August 12-14, 2024', 
-        'June 21-22, 2024',
-        'May 16-17, 2024',
-        'May 17-18, 2024',
-        'April 27, 2024',
-        'March 20, 2024',
-        'March 6, 2024',
-        'February 27, 2024',
-        'February 8, 2024',
-        'January 31, 2024',
-        'January 25, 2024',
-        'January 24, 2024',
-        'January 17, 2024',
-        'January 10, 2024',
-        'January 8, 2024'
-      
-        ),
+    'Feb 18-19, 2026',
+    'Feb 10, 2026',
+    'Nov 18, 2025',
+    'Nov 12-13, 2025',
+    'Oct 28-29, 2025',
+    'Oct 21, 2025',
+    'Oct 14-16, 2025',
+    'Oct 16, 2025',
+    'Oct 7, 2025',
+    'Oct 7-8, 2025',
+    'Sept 17-19, 2025',
+    'Sept 9, 2025',
+    'Aug 25-27, 2025',
+    'Aug 28, 2025',
+    'Aug 8-10, 2025',
+    'July 23, 2025',
+    'July 10-13, 2025',
+    'July 3, 2025',
+    'June 30, 2025',
+    'June 27, 2025',
+    'June 24, 2025',
+    'June 23-26, 2025',
+    'June 20-21, 2025',
+    'June 19-20, 2025',
+    'June 9-13, 2025',
+    'May 19-21, 2025',
+    'March 28, 2025',
+    'March 13, 2025',
+    'December 12, 2024',
+    'December 4, 2024',
+    'November 18-22, 2024',
+    'November 19, 2024',
+    'November 6, 2024',
+    'October 29-30, 2024',
+    'October 29-31, 2024',
+    'October 22, 2024',
+    'October 9-10, 2024',
+    'October 9, 2024',
+    'September 4-5, 2024',
+    'September 4, 2024',
+    'July 8-11, 2024',
+    'August 12-14, 2024',
+    'June 21-22, 2024',
+    'May 16-17, 2024',
+    'May 17-18, 2024',
+    'April 27, 2024',
+    'March 20, 2024',
+    'March 6, 2024',
+    'February 27, 2024',
+    'February 8, 2024',
+    'January 31, 2024',
+    'January 25, 2024',
+    'January 24, 2024',
+    'January 17, 2024',
+    'January 10, 2024',
+    'January 8, 2024'
+  ),
   location = c(
-        'Virtual',
-        'Virtual',
-        'Virtual',  
-        'Washington, D.C', 
-        'Virtual', 
-        'Brighton, UK', 
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Barcelona, Spain',
-        'Virtual',
-        'New York City, NY',
-        'Virtual',
-        'Durham, NC - Duke University',
-        'Virtual',
-        'São Paulo, Brazil',
-        'Cambridge, UK',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Cold Spring Harbor Laboratory (CSHL), New York',
-        'Portland, Oregon, USA',
-        'Accra, Ghana',
-        'Virtual',
-        'Mons, Belgium',
-        'Shanghai, Bejing',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Washington, DC, USA', 
-        'Virtual',
-        'Virtual',
-        'Newcastle upon Tyne, UK',
-        'Virtual',
-        'Brighton, UK',
-        'Virtual',
-        'Salzburg, Austria',
-        'Seattle, WA, USA', 
-        'Seattle, WA, USA',
-        'New York City, NY, USA',
-        'Chicago, IL, USA',
-        'London, UK',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual',
-        'Virtual'
-
-        ),
-  Type = c('Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
-    'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
-    'Webinar', 'Webinar', 'Webinar'),
-  icon = c('Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Conference', 'Webinar', 'Webinar', 'Conference', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Webinar', 'Conference', 'Conference', 'Conference', 'Conference', 'Conference',
-    'Conference', 'Conference', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar', 'Webinar',
-    'Webinar', 'Webinar', 'Webinar'),
-  
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Washington, D.C',
+    'Virtual',
+    'Brighton, UK',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Barcelona, Spain',
+    'Virtual',
+    'New York City, NY',
+    'Virtual',
+    'Durham, NC - Duke University',
+    'Virtual',
+    'São Paulo, Brazil',
+    'Cambridge, UK',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Cold Spring Harbor Laboratory (CSHL), New York',
+    'Portland, Oregon, USA',
+    'Accra, Ghana',
+    'Virtual',
+    'Mons, Belgium',
+    'Shanghai, Bejing',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Washington, DC, USA',
+    'Virtual',
+    'Virtual',
+    'Newcastle upon Tyne, UK',
+    'Virtual',
+    'Brighton, UK',
+    'Virtual',
+    'Salzburg, Austria',
+    'Seattle, WA, USA',
+    'Seattle, WA, USA',
+    'New York City, NY, USA',
+    'Chicago, IL, USA',
+    'London, UK',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Virtual'
+  ),
+  Type = c(
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar'
+  ),
+  icon = c(
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Webinar',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar',
+    'Webinar'
+  ),
   stringsAsFactors = FALSE
 )
-
 
 df <- df |>
   dplyr::filter(icon %in% c("Conference", "Webinar")) |>
   dplyr::mutate(
     icon = ifelse(icon == "Webinar", "chalkboard-user", "handshake")
-  ) 
+  )
 
-# Load necessary libraries
 library(gt)
 
-# Create a gt table and use fmt_markdown() to render HTML links
 gt_table <- gt(df) %>%
-  
-
   cols_label(
     Title = "Title",
     dates = "Dates",
     location = "Location",
-    Type  = "Type",
-
+    Type = "Type"
   ) %>%
-  fmt_icon(columns =c(icon)) %>%
-  cols_merge(columns = c(Type, icon), 
-             pattern="{2}    {1}") %>%
+  fmt_icon(columns = c(icon)) %>%
+  cols_merge(
+    columns = c(Type, icon),
+    pattern = "{2}    {1}"
+  ) %>%
   tab_options(
     heading.background.color = "grey",
     column_labels.background.color = "grey",
     column_labels.font.weight = "bold",
     table.font.size = "14px",
     column_labels.font.size = "16px"
-    
-   
   ) %>%
-  opt_horizontal_padding(scale = 3)  %>%
+  opt_horizontal_padding(scale = 3) %>%
   opt_vertical_padding(scale = 2) %>%
-# Render the 'Link' column as HTML using fmt_markdown()
   fmt_markdown(columns = c(Title))
 
-# Print the gt table
 gt_table
 
 ```
-
-## Archived Events and Webinars
-
-------------------------------------------------------------------------
-
-[**R and shiny in regulatory submission**](https://www.r-consortium.org/r-adoption-series-r-and-shiny-in-regulatory-submissions-webinar) – December, 11 2023 • Virtual
-
-This series was a collaborative effort by the R consortium, PhUSE, and PSI. The FDA and industry speakers shared their unique experiences with R-based and shiny-based submissions.
-
-[**PHUSE EU Connect 2023**](https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=11403&eventID=19) – Nov 5 – 8, 2023 • Birmingham, UK
-
-The PHUSE EU Connect 2023 was a key event for professionals in healthcare data science.
-
-[**R/Pharma**](http://rinpharma.com/) – Oct 24 – 26, 2023 • Virtual
-
-The R/Pharma conference in 2023 was a specialized event focusing on the use of R in pharmaceutical development.
-
-[**R government**](https://rstats.ai/gov) – October 19 – 20, 2023 • Washington DC
-
-The 2023 Government & Public Sector R Conference was an event dedicated to exploring the use of the R programming language in government and public sector contexts. It featured a diverse lineup of speakers and workshops, focusing on various applications of R, including data analysis, machine learning, and policy research. The conference provided a platform for professionals and enthusiasts to share insights, innovations, and experiences in applying R in governmental and public sector projects.
-
-[**LatinR 2023**](https://latin-r.com/en) – October 18 – 20, 2023 • Montevideo, Uruguay
-
-LatinR 2023 was a Latin American conference focusing on the use of the R programming language in research and development.
-
-[**Shiny in Production**](https://shiny-in-production.jumpingrivers.com/) – October 12 – 13, 2023 • Newcastle, UK
-
-The “Shiny in Production” conference, which took place in Newcastle Upon Tyne, UK, was centered around the application of Shiny and other web-based R packages. It attracted a diverse group of participants, ranging from experienced Shiny users to novices.
-
-[**BioC Europe**](https://eurobioc2023.bioconductor.org/) – September 20 – 22, 2023 • Heidelberg, Germany
-
-The European Bioconductor Conference 2023 is centered on new developments in the Bioconductor project and related fields of bioinformatics and computational biology. It includes workshops and keynote presentations for knowledge sharing and collaboration.
-
-[**Posit:conf**](https://posit.co/conference/) – September 17 – 20, 2023 • Chicago, IL
-
-Posit::conf (2023) was two days of workshops and two days of conference keynotes and talks, with endless opportunities to connect with the data science community.
-
-[**R Validation Hub Community Meeting**](https://www.r-consortium.org/blog/2023/06/14/learnings-and-reflection-from-case-studies-what-is-next-for-the-r-validation-hub) – June 27, 2023 • Virtual
-
-Last year, the R validation hub initiated a three-part presentation series on “case studies.” Eight pharma companies presented their implementation of the risk assessment framework. We briefly summarize common themes and differences in the approaches. For the majority of the meeting, we want to discuss common challenges and brainstorm ideas for possible future projects by the R Validation Hub.
-
-[**R/Medicine 2023 Virtual Conference**](https://events.linuxfoundation.org/r-medicine/) – June 5-9, 2023 • Virtual
-
-The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and gain insights from health data.
-
-**SatRday – Hosted By Jumping Rivers** – April 22, 2023 • Hosted at King’s College London, UK
-
-Hosted at King’s College, UK, this one-day event will feature talks on all things R! SatRdays events are for everyone with an interest in R, whether you’re a seasoned pro or just getting started. [Learn More](https://satrday-london-2023.jumpingrivers.com/)
-
-[**R/Adoption Series: Learnings and Reflection from R Validation Case Studies**](https://www.r-consortium.org/r-adoption-series-learnings-and-reflection-from-r-validation-case-studies) – March 30, 2023 • Virtual
-
-The R Validation Hub will review the implementation of risk-based approaches to assess R package accuracy within a validated infrastructure and present our learnings from applied case studies. The discussion reflects the thinking of the R Validation Hub working group, which is a cross-industry initiative funded by the R Consortium.
-
-[**Teal: An R-Shiny Framework to Unlock the Power of Interactive Data Exploration**](https://www.r-consortium.org/r-adoption-series-teal-an-r-shiny-framework-interactive-data-exploration) – Feb 23, 2023 • Virtual
-
-Teal is an open-source framework for building interactive data exploration applications in R. Developed at Roche, Teal allows users to quickly and easily create dynamic visualizations and tabulations of their data. It provides a range of pre-built, customizable modules and enables users to interact with their data in real time. This allows users to quickly and easily explore their data, thus enabling fast insights generation.
-
-[**{MMRM} and Software Engineering Working Group**](https://www.r-consortium.org/r-adoption-series-introducing-the-software-engineering-working-group-and-mmrm) – Jan 26, 2023 • Virtual
-
-In this R Adoption Series Webinar, the R Consortium invites the ASA Software Engineering Working Group ASA BIOP SWE to share their experience of how the group formed and the types of problems they are trying to solve in the Open Source for the Pharmaceutical industry.
-
-[**Using R at Scale on Database Data**](https://www.r-consortium.org/r-database-using-r-at-scale-on-database-data) – December 8, 2022 • Virtual
-
-In this webinar, Mark and Sherry present on how to increase overall solution performance with R tightly integrated with Oracle databases.
-
-[**A Survey of Changes around the Tidyverse Package in R**](https://www.r-consortium.org/blog/2022/10/24/a-survey-of-changes-around-the-tidyverse-package-in-r) – October 28, 2022 • Virtual
-
-The Osun RUG, Nigeria hosts “A Survey of Changes around the Tidyverse Package in R” with special guest, Chief Scientist at RStudio, Hadley Wickham. The core tidyverse includes the packages that is likely used in everyday data analyses.
-
-[**Upskilling on Data Handling and Communication at Swiss Re**](https://hopin.com/events/r-insurance-webinar-78ebfbb8-e585-4e25-94dd-00ef94fe27a3) – October 27, 2022 • Virtual
-
-In this session, Swiss Re team members shared their approach to upskilling for data analytics before diving into an example of how to create automated (and stunning) actuarial reports. [More Information](https://www.r-consortium.org/webinars)
-
-[**Using Metadata for Speedy Delivery**](http://hopin.com/events/using-metadata-for-speedy-delivery-c2a8b27e-ba3e-47dc-aeb3-b80550fb105d) – September 29, 2022 • Virtual
-
-In this R Adoption Series Webinar, the R Consortium invited two Pharmaceutical organizations to share their experience in leveraging metadata for automation pieces of the clinical delivery workflow. [More Information](https://www.r-consortium.org/webinars)
-
-[**R/Medicine Conference 2022!**](https://events.linuxfoundation.org/r-medicine/) – August 23 – 26, 2022 • Virtual
-
-Announcing [R/Medicine 2022](https://events.linuxfoundation.org/r-medicine/)! The conference was fully virtual from August 23 through 26 and featured two days of workshops (included with the low registration fee!) and two days of keynotes featuring JJ Allaire and Frank Harrell. Check out the [R Consortium Youtube](https://www.youtube.com/r-consortium) to view the talks!
-
-[**Rstudio::conf 2022**](https://www.rstudio.com/conference/) – July 25-28, 2022 • Washington DC
-
-A conference to connect, learn and celebrate all things R and RStudio! Sharpen your skills and celebrate the R Community together with an array of workshops and an inspiring lineup of speakers.
-
-[**userR! 2022**](https://user2022.r-project.org/)  – June 20 – 23, 2022 • Virtual
-
-Now in its 18th year is the official conference of the R Project for Statistical Computing. Keynotes include Sebastian Meyer, Amanda Cox, Julia Silge, Mine Dogucu and will showcase the [afrimapr](https://afrimapr.github.io/afrimapr.website/) project supports the development of a community of practice in Africa around map-making in R
-
-**R Conference** – June 8-10, New York
-
-A conference that gathers data scientists and data professionals to explore, share, and inspire ideas, and to promote the growth of open source ideals
-
-**IDEA, The R Consortium working group on Inclusion, Diversity, Equity, and Accessibility** – June 4 
-
-Will be holding francophone [satRdays](https://satrdays.org/) event. More information should be available on the [R Consortium Blog](https://www.r-consortium.org/news/blog) shortly
-
-**R/ Finance** – June 3-4, Chicago
-
-One of the longest-running R conferences is the primary meeting for academics and Quants using R for finance. This single-track event is the place to talk time series, stochastic modeling, and meet some legendary R developers.
-
-**R Adoption Series: Reporting Table Creation In R: Meeting Specific Needs With a General Framework** – Apr 28, 8-9:30am PDT / 11am-12:30pm EDT / 4-5:30pm BST
-
-Gabriel Becker, Scientist in the Bioinformatics and Computational Biology department at Genentech Research.
-
-Gabe will present the rtables package in three contexts. First, he will briefly present the package itself and how it can be used to create reporting tables, including those suitable for regulatory submissions. He will then discuss where rtables fits in the larger process of filing-table creation within Roche. Finally, he will pivot to discussing what contributed to rtables’ success as a general framework intended to meet specific needs and what lessons those in Industry can draw from its development. 
-
-Register [here](https://hopin.com/events/the-r-adoption-series) or [see the webinar home page](/webinars) for details.
