@@ -90,6 +90,7 @@ gt_table
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html" target="_blank" rel="noreferrer noopener">Make your first R open source project contribution with git, forks, and PRs</a>',
     '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>',
     '<a href="https://r-consortium.org/webinars/scaling-up-data-analysis-in-r-with-arrow.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Scaling up data analysis in R with Arrow</a>',
     '<a href="https://r-consortium.org/webinars/making-health-economic-models-shiny.html" target="_blank" rel="noreferrer noopener">Making Health Economic Models Shiny: Our experience helping companies transition from Excel to R & Shiny</a>',
@@ -148,6 +149,7 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/AdoptionOfRInJapansPharma.html" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+    'Apr 8, 2026',
     'Feb 18-19, 2026',
     'Feb 10, 2026',
     'Nov 18, 2025',
@@ -210,6 +212,7 @@ df <- data.frame(
     'Virtual',
     'Virtual',
     'Virtual',
+    'Virtual',
     'Washington, D.C',
     'Virtual',
     'Brighton, UK',
@@ -264,6 +267,7 @@ df <- data.frame(
     'Virtual'
   ),
   Type = c(
+    'Webinar',
     'Conference',
     'Webinar',
     'Webinar',
@@ -322,6 +326,7 @@ df <- data.frame(
     'Webinar'
   ),
   icon = c(
+    'Webinar',
     'Conference',
     'Webinar',
     'Webinar',
