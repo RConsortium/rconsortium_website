@@ -12,6 +12,7 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">R/Medicine 2026</a>',
     '<a href="https://eurobioc2026.bioconductor.org/" target="_blank" rel="noreferrer noopener">EuroBioC 2026</a>',
     '<a href="https://rr2026.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2026</a>',
     '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
@@ -19,6 +20,7 @@ df <- data.frame(
     '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
   dates = c(
+    "May 5-8, 2026",
     "June 3-5, 2026",
     "June 16-18, 2026",
     "June 26-27, 2026",
@@ -26,6 +28,7 @@ df <- data.frame(
     "Nov 11, 2026"
   ),
   location = c(
+    "Virtual",
     "Turku, Finland",
     "Nantes, France",
     "Portland, OR, USA",
@@ -37,9 +40,11 @@ df <- data.frame(
     "Conference",
     "Conference",
     "Conference",
+    "Conference",
     "Conference"
   ),
   Type = c(
+    "Conference",
     "Conference",
     "Conference",
     "Conference",
