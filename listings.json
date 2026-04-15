@@ -2,6 +2,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/index.html",
       "/posts/r-universe-bioconductor-collaboration/index.html",
       "/posts/community-growth-collaboration-momentum-across-r-ecosystem/index.html",
       "/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/index.html",
@@ -219,6 +220,14 @@
     ]
   },
   {
+    "listing": "/newsletters/newsletters.html",
+    "items": [
+      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
+      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
+    ]
+  },
+  {
     "listing": "/webinars/webinars-auto-not-being-used.html",
     "items": [
       "/webinars/AdoptionOfRInJapansPharma.html",
@@ -252,16 +261,9 @@
     ]
   },
   {
-    "listing": "/newsletters/newsletters.html",
-    "items": [
-      "/newsletters/R-Consortium-Q3-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q2-2024-Newsletter.html",
-      "/newsletters/R-Consortium-Q3-2023-Newsletter.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/index.html",
       "/posts/r-universe-bioconductor-collaboration/index.html",
       "/posts/community-growth-collaboration-momentum-across-r-ecosystem/index.html",
       "/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/index.html",

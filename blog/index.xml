@@ -10,7 +10,148 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 08 Apr 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Investing in the R Community: Our Support for Global R Events in 2026</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The R ecosystem continues to grow because of its community - organizers, educators, and practitioners who create spaces for collaboration and learning. These efforts often happen independently, across regions and domains, yet collectively they shape the future of R.</p>
+<p>At the R Consortium, we actively invest in that layer of the ecosystem. In 2026, we are committed to support R-related events and community initiatives worldwide, with a particular focus on strengthening independent, community-led conferences and user groups.</p>
+<p>Please note that R Dev Days are connected with three of the events listed below. These are open, collaborative events that help participants contribute base R. Both new and experienced contributors are welcome.</p>
+<p>You can explore the full list of supported events here:<br>
+👉 <a href="https://r-consortium.org/news/events.html?utm_source=chatgpt.com">R Consortium Events Page</a></p>
+<section id="supporting-key-global-events" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-key-global-events">Supporting Key Global Events</h2>
+<p>As part of this annual initiative, we support important R-related events listed under our Upcoming Events. The events reflect different regions, audiences, and applications of R, demonstrating the breadth of the R ecosystem.</p>
+</section>
+<section id="eurobioc-2026" class="level2">
+<h2 class="anchored" data-anchor-id="eurobioc-2026"><a href="https://eurobioc2026.bioconductor.org/">EuroBioC 2026</a></h2>
+<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" class="img-fluid"></p>
+<p>EuroBioC focuses on the Bioconductor ecosystem and the use of R in bioinformatics and computational biology. It is being held in Turku, Finland, during the first week of June. It connects scientists working on genomics, proteomics, and related fields, highlighting how R supports cutting-edge research in the life sciences.</p>
+</section>
+<section id="rencontres-r-2026" class="level2">
+<h2 class="anchored" data-anchor-id="rencontres-r-2026"><a href="https://astamm.github.io/en/rr2026.html">Rencontres R 2026</a></h2>
+<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/rencontresr2026.png" class="img-fluid"></p>
+<p>Rencontres is a long-running conference rooted in the French-speaking R community. It is organized by the French Statistical Society (SFdS) and brings together researchers, public sector professionals, and industry practitioners to share applied work and foster collaboration. Its regional focus helps strengthen R adoption across Europe while maintaining strong technical depth. Rencontres is open to beginners as well as experienced users from all sectors and is being held June 16-18 in Nantes, France.</p>
+<p>This year’s Rencontres will also host an R Dev Day, supported in part by recent funding from the Research Software Maintenance Fund. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome.</p>
+<p>R Dev Day @ RencontresR 2026<br>
+Fri, June 19, 9am - 5pm UTC+2<br>
+Location: On-site at Nantes University or virtual<br>
+Working languages: French and English</p>
+<p>Registration deadline: Friday, May 29, 2026<br>
+<a href="https://pretix.eu/r-contributors/r-dev-day-rr2026/">https://pretix.eu/r-contributors/r-dev-day-rr2026/</a></p>
+</section>
+<section id="cascadia-r-conference" class="level2">
+<h2 class="anchored" data-anchor-id="cascadia-r-conference"><a href="https://cascadiarconf.com/">Cascadia R Conference</a></h2>
+<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/cascadiar2026.png" class="img-fluid" style="width:50.0%"></p>
+<p>The Cascadia R Conference serves the Pacific Northwest in the US, with a strong emphasis on practical data science and community engagement. It is held in Portland, OR, running over two days on June 26-27. Cascadia R is known for being accessible, welcoming, and highly relevant to both new and experienced R users working in industry and academia.</p>
+<p>There will be a satellite R Dev Day event at CascadiaR. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome. Please note: This is a satellite event to Cascadia R Conf 2026, which takes place on Sat, June 27 in Portland, OR, USA. It is not necessary to register for the main conference in order to attend the R Dev Day.</p>
+<p>R Dev Day @ Cascadia R 2026, Portland<br>
+Fri, June 26, 2026<br>
+Location: On-site or virtual<br>
+Working languages: English</p>
+<p>Registration deadline: Fri, June 12, 2026<br>
+<a href="https://pretix.eu/r-contributors/r-dev-day-cascadiar-2026/">https://pretix.eu/r-contributors/r-dev-day-cascadiar-2026/</a></p>
+</section>
+<section id="user-2026" class="level2">
+<h2 class="anchored" data-anchor-id="user-2026"><a href="https://user2026.r-project.org/">useR! 2026</a></h2>
+<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/userbam2026.png" class="img-fluid"></p>
+<p>The useR! 2026 conference is the flagship global gathering of the R community, taking place this year July 6 - 9, 2026 in Warsaw, Poland. It brings together data scientists, statisticians, developers, and researchers from around the world for keynote talks, hands-on workshops, and community-driven sessions that showcase cutting-edge applications and developments in the R ecosystem.</p>
+<p>There will be a satellite R Dev Day event at useR! 2026. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome.</p>
+<p>Please note: R Dev Day @ useR! 2026 is a free, hybrid event that will take place on July 10, the day after the conference concludes. You will need to fill out a self-nomination form, this is different from registering. Participants will be selected from the nominations received to fill the available places, balancing experience levels and giving opportunity to members of historically underrepresented groups. R Dev Day is free of charge. No support is available for travel or accommodations. Registration at useR! 2026 is not required to participate in R Dev Day.</p>
+<p>R Dev Day @ useR! 2026<br>
+Fri, July 10, 2026<br>
+Location: On-site at Warsaw University of Technology or virtual</p>
+<p>Nomination deadline: Fri, April 24, 2026<br>
+<a href="https://user2026.r-project.org/additional/r-dev-day.html">https://user2026.r-project.org/additional/r-dev-day.html</a></p>
+</section>
+<section id="ghana-r-conference" class="level2">
+<h2 class="anchored" data-anchor-id="ghana-r-conference"><a href="https://ghana-rusers.org/ghana-r-conference-2026/">Ghana R Conference</a></h2>
+<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/ghanar2026.png" class="img-fluid"></p>
+<p>The Ghana R Conference 2026, organized by the Ghana R Users Community, will take place July 9 - 10, 2026, at Accra Technical University in Accra, bringing together data scientists, researchers, and practitioners to explore the role of R in advancing Ghana’s digital transformation. Centered on the theme of using R to support AI and data-driven development, the event features talks, workshops, and community engagement aimed at building local expertise and strengthening the data science ecosystem across Ghana and the broader African region.</p>
+</section>
+<section id="latinr" class="level2">
+<h2 class="anchored" data-anchor-id="latinr">LatinR</h2>
+<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/latinr2026.png" class="img-fluid"></p>
+<p>LatinR is one of the most important R conferences in Latin America. It provides a platform for Spanish- and Portuguese-speaking communities to share knowledge, present research, and build connections across countries. It is being held in early November 2026. Its regional focus helps drive adoption and innovation in fast-growing data science markets.</p>
+</section>
+<section id="why-this-investment-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-investment-matters">Why This Investment Matters</h2>
+<p>These events differ in geography and specialization, but they serve a shared purpose: enabling people to learn, collaborate, and contribute to the R ecosystem.</p>
+<p>Our role is to support and complement these efforts.</p>
+<p>Funding from the R Consortium helps organizers:</p>
+<ul>
+<li>Keep events accessible and affordable<br>
+</li>
+<li>Expand speaker participation and diversity<br>
+</li>
+<li>Improve technical programming and workshops<br>
+</li>
+<li>Reach new audiences in emerging regions</li>
+</ul>
+<p>In practical terms, this support increases participation and strengthens the quality of engagement across the ecosystem.</p>
+</section>
+<section id="supporting-grassroots-growth-r-ladies" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-grassroots-growth-r-ladies">Supporting Grassroots Growth: R-Ladies+</h2>
+<p>Beyond conferences, we also continue to support R-Ladies+, a global initiative focused on promoting gender diversity in the R community.</p>
+<p>R-Ladies+ operates hundreds of local chapters worldwide, offering workshops, mentorship, and community events that lower barriers to entry. Many R users have their first meaningful experience with the language through these groups.</p>
+<p>Supporting R-Ladies+ is a direct investment in expanding who participates in R and that has long-term implications for the health of the ecosystem.</p>
+</section>
+<section id="complementing-our-own-events" class="level2">
+<h2 class="anchored" data-anchor-id="complementing-our-own-events">Complementing Our Own Events</h2>
+<p>In addition to supporting independent events, the R Consortium organizes three annual conferences:</p>
+<ul>
+<li><a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine</a><br>
+</li>
+<li><a href="https://rconsortium.github.io/RplusAI_website/">R+AI</a><br>
+</li>
+<li><a href="https://rconsortium.github.io/Risk_website/">R!sk</a></li>
+</ul>
+<p>These events focus on specific domains where R is widely used. However, our broader strategy is to support a distributed ecosystem rather than centralize activity around a single set of conferences.</p>
+</section>
+<section id="get-involved---participants-and-sponsors" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved---participants-and-sponsors">Get Involved - Participants and Sponsors</h2>
+<p>These events are where applied R work is presented, evaluated, and adopted.</p>
+<p>For participants, they offer direct access to:</p>
+<ul>
+<li>Practical implementations from peers working in production environments<br>
+</li>
+<li>Opportunities to present and validate your own work<br>
+</li>
+<li>Entry points into meaningful open source contribution<br>
+</li>
+<li>Professional relationships with practitioners across industries</li>
+</ul>
+<p>For sponsors, these events provide a targeted channel into the R ecosystem. Direct engagement with the people actively shaping tools, workflows, and standards.</p>
+<p>By sponsoring, your organization can:</p>
+<ul>
+<li>Position itself alongside credible, practitioner-led work<br>
+</li>
+<li>Reach highly technical audiences using R in finance, healthcare, AI, and research<br>
+</li>
+<li>Engage early with emerging approaches and infrastructure decisions<br>
+</li>
+<li>Build relationships with contributors, maintainers, and advanced users</li>
+</ul>
+<p>This is not passive brand exposure. It is proximity to the conversations and decisions that influence how R is used in real-world environments.</p>
+<p>Explore upcoming events and identify where your organization can participate:</p>
+<p>👉 <a href="https://r-consortium.org/news/events.html?utm_source=chatgpt.com">View Upcoming R Events</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>events</category>
+  <category>community</category>
+  <guid>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/index.html</guid>
+  <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" medium="image" type="image/png" height="41" width="144"/>
+</item>
 <item>
   <title>Collaborating between Bioconductor and R-universe on Development of Common Infrastructure</title>
   <dc:creator>The rOpenSci Team</dc:creator>
@@ -1533,64 +1674,6 @@ Packages with a public footprint are more likely to be updated and maintained ov
   <guid>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html</guid>
   <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo-main-image.png" medium="image" type="image/png" height="85" width="144"/>
-</item>
-<item>
-  <title>A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://www.linkedin.com/in/uzairdatascientist/">Muhammad Uzair Aslam</a>, founder of the <a href="https://www.meetup.com/karachi-r-user-group/">Karachi R User Group</a>, spoke with the R Consortium about growing an open and volunteer-led R community in Pakistan—one of the first of its kind in the country. Since starting the group in 2023, Uzair has focused on building trust, increasing awareness of R, and creating accessible events for learners across cities. The R Consortium <a href="https://r-consortium.org/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html">spoke with Uzair about the Karachi R User Group’s work with R for Public Health Data Analysis previously</a>. This time, Uzair is sharing how the group has evolved from informal online meetups to hosting international speakers and publishing sessions on YouTube. He also discussed the community’s rising interest in tools like Quarto and ggplot2, recent consulting work in industrial forecasting using R, and the ongoing challenge of encouraging more local contributions.</p>
-<p><img src="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/UzairAslam.png" class="img-fluid" style="width:30.0%"></p>
-<section id="please-update-us-on-how-the-group-has-been-doing-since-we-last-spoke-and-share-your-experience." class="level2">
-<h2 class="anchored" data-anchor-id="please-update-us-on-how-the-group-has-been-doing-since-we-last-spoke-and-share-your-experience.">Please update us on how the group has been doing since we last spoke and share your experience.</h2>
-<p>Since we last spoke, our user group has made significant strides in growth and community engagement. We started this initiative in 2023 with just 10 to 15 members. During that first year, our focus was on building the foundation—introducing the concept of an open, volunteer-led R community in Pakistan, which was the first of its kind in the country. One of our key challenges early on was gaining trust and clarifying that these events are completely free and community-driven, with no commercial backing.</p>
-<p><img src="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" class="img-fluid"></p>
-<p>In 2024, we began organising more frequent and structured events, which led to a noticeable increase in interest and participation. Our commitment to consistency and open learning helped establish our reputation, and we gradually grew to a community of over 500 members—a major milestone for us.</p>
-<p>In 2025, we started inviting international speakers to bring in global perspectives and inspire our members. In April, we hosted <a href="https://www.linkedin.com/in/jeremy-horne-datacove/">Jeremy Horne</a>, an experienced R practitioner, whose talk was very well-received and added tremendous value to our growing community.</p>
-<p>While attendance started modestly at around 10 to 15 participants per session, we are now seeing numbers reach up to 20 attendees, reflecting a steady and encouraging upward trend. Overall, it’s been a rewarding journey, and we’re excited to continue expanding our reach and impact in the months ahead.</p>
-</section>
-<section id="are-you-hosting-all-your-events-online" class="level2">
-<h2 class="anchored" data-anchor-id="are-you-hosting-all-your-events-online">Are you hosting all your events online?&nbsp;</h2>
-<p>Currently, we are planning to host all our events online. The primary goal is to increase visibility and awareness of our meetup community and make participation more accessible for people across different cities. By focusing on building a consistent online presence, we aim to reach a wider audience and encourage regular engagement. Once we achieve a steady attendance of around 20 participants per session, we plan to transition into in-person meetups as well. Hosting physical events is one of our key objectives for this year, as it will allow us to strengthen community bonds and foster deeper collaboration among members.</p>
-</section>
-<section id="since-we-last-spoke-have-you-noticed-any-changes-in-the-r-community-in-pakistan-have-there-been-any-developments-or-shifts-in-how-r-is-being-adopted-or-perceived-locally" class="level2">
-<h2 class="anchored" data-anchor-id="since-we-last-spoke-have-you-noticed-any-changes-in-the-r-community-in-pakistan-have-there-been-any-developments-or-shifts-in-how-r-is-being-adopted-or-perceived-locally">Since we last spoke, have you noticed any changes in the R community in Pakistan? Have there been any developments or shifts in how R is being adopted or perceived locally?</h2>
-<p>Yes, since we last spoke, I’ve observed a noticeable and encouraging shift in the adoption of R within Pakistan. Through our regular community meetups and workshops, more individuals—especially students and early-career professionals—are beginning to explore and use R. While Python remains popular, our efforts in hosting free workshops and open community sessions have helped introduce R to a broader audience. This has contributed to a positive shift in perception across both industry and academia.</p>
-<p>In academic circles, students increasingly find R accessible for statistical computing, data analysis, and academic publishing, thanks to its rich ecosystem of packages and reproducible reporting tools like Quarto. In the industry, there’s a gradual but growing recognition of R’s value, particularly in domains that require strong statistical modelling and data visualisation. Overall, the R community in Pakistan is slowly but steadily expanding, with a growing sense of curiosity, collaboration, and openness to learning.</p>
-</section>
-<section id="have-you-faced-specific-challenges-in-organising-this-group-so-far-are-there-any-tools-or-techniques-that-have-been-particularly-helpful-to-you" class="level2">
-<h2 class="anchored" data-anchor-id="have-you-faced-specific-challenges-in-organising-this-group-so-far-are-there-any-tools-or-techniques-that-have-been-particularly-helpful-to-you">Have you faced specific challenges in organising this group so far? Are there any tools or techniques that have been particularly helpful to you?</h2>
-<p>Building and organising our community has come with its fair share of challenges. One of the most persistent issues has been the lack of speaker availability. It’s often difficult to motivate individuals to present their work or actively participate in discussions. While I’ve delivered several talks myself—both within Pakistan and internationally—encouraging others to step up and share their knowledge remains a tough task. Another major challenge is attracting and retaining attendees. To address this, I created a dedicated <a href="https://www.linkedin.com/company/karachi-r-user-group/">LinkedIn page</a> for the Karachi User Group last year, aimed at raising awareness and promoting our meetups. Despite these efforts, generating consistent interest and boosting attendance continues to be an ongoing effort.</p>
-<p>To improve engagement, I’ve been leveraging multiple social media platforms, including Facebook, LinkedIn, and WhatsApp, where I regularly post event updates in relevant groups. The WhatsApp group, in particular, has helped foster better communication and a sense of community among members. More recently, we launched a <a href="https://www.youtube.com/@Karachi_R_User_Group">YouTube</a> channel where we upload recordings of all our meetups. This not only ensures accessibility for those who can’t attend live but also helps us build a wider presence online. These tools and strategies have been instrumental in addressing some of our key challenges and continue to shape the way we grow our community.</p>
-</section>
-<section id="you-hosted-a-meetup-titled-reporting-champions-trophy-data-using-quarto-and-r-can-you-share-more-on-the-topic-covered-why-this-topic" class="level2">
-<h2 class="anchored" data-anchor-id="you-hosted-a-meetup-titled-reporting-champions-trophy-data-using-quarto-and-r-can-you-share-more-on-the-topic-covered-why-this-topic">You hosted a Meetup titled “<a href="https://www.youtube.com/watch?v=vIrSy5AXrz0">Reporting Champions Trophy Data using Quarto and R</a>,” can you share more on the topic covered? Why this topic?</h2>
-<p><img src="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/ChampionsTrophyDatausingR.png" class="img-fluid"></p>
-<p>We recently hosted an engaging talk on our Meetup group by <a href="https://www.linkedin.com/in/zahid-asghar/">Dr.&nbsp;Zahid Asghar</a> from Islamabad University titled “Reporting Champions Trophy Data using Quarto and R.” The session introduced the community to Quarto as a modern tool for creating parameterised, automated, and visually rich reports. Using real-world data from the ESPN Cricinfo API, Dr.&nbsp;Zahid demonstrated how to generate customised player statistics reports—blending R’s data manipulation capabilities with Quarto’s dynamic reporting features. This topic was chosen to help data professionals move beyond static dashboards and adopt reproducible, scalable reporting workflows, and it was well-received by attendees for its practical relevance and clarity.</p>
-</section>
-<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
-<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
-<p>At <a href="https://www.statdevs.com/">Stat Devs</a>, one of our recent consulting projects involved developing a long-term demand forecasting model for <a href="https://ffc.com.pk/">Fauji Fertiliser Company (FFC)</a>, using the R programming language. The goal was to project Urea sales demand for the next 15 years based on 29 years of historical data. We used multiple time series regression models in R, incorporating economic indicators like Gross Domestic Product (GDP) and external variables such as Cropped Acreage and Water Availability. R proved particularly effective due to its strong statistical modelling capabilities and advanced visualisation tools like <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, which helped us uncover meaningful patterns and clearly communicate insights. The resulting forecasts supported FFC’s capacity planning and strategic decision-making, demonstrating the real-world value of R in industrial analytics.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 76,000 members in over 90 user groups in 39 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>software development</category>
-  <category>asia</category>
-  <guid>https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/index.html</guid>
-  <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/a-first-for-pakistan-karachi-r-user-group-builds-r-ecosstem-from-scratch/KarachiRUGlogo.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
