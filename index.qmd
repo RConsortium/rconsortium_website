@@ -120,12 +120,6 @@ format: html
 
 <div class="swiper-wrapper">
 
-<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/Thv82G7s/RMed26-carousel.png);">
-<h2>Don't miss out!</h2>
-<h2>Keynotes from Yanina Bellini, David Robinson, and Peter Gruber already announced! Diversity and Need-Based Scholarships available!</h2>
-<button class="blueButton"><a href="https://rconsortium.github.io/RMedicine_website/Register.html" style="text-decoration: none;">Register Now!</a></button>
-</div>
-
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2>R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.</h2>
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
