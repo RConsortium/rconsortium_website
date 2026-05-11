@@ -73,8 +73,6 @@ website:
 
       - text: "Events"
         menu:
-          - text: R/Medicine (May 5-8, 2026)
-            href: https://rconsortium.github.io/RMedicine_website/
           - text: Webinars
             href: webinars/webinars.qmd
           - text: Events
