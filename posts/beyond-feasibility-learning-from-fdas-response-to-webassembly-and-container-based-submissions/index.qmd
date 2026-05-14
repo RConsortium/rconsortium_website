@@ -1,0 +1,24 @@
+---
+title: "Beyond Feasibility: Learning from FDA's Response to WebAssembly and Container-Based Submissions"
+description: "The R Consortium R Submissions Working Group received the FDA's review letter for Pilot 4, summarizing the evaluation of using WebAssembly and Docker containers to package and run an R Shiny application in a regulatory review setting."
+author: "R Consortium"
+image: "Screenshot.png"
+image-alt: "FDA review letter for Pilot 4 submission"
+date: "05/14/2026"
+---
+
+In May 2026, the R Consortium R Submissions Working Group received the FDA's review letter for Pilot 4, which summarized the FDA's evaluation of using WebAssembly and Docker containers to package and run an R Shiny application in a regulatory review setting. The letter can be found here: [Summary R Pilot 4 Submission](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot4_Submission.pdf)
+
+The R Consortium R Submissions Working Group's Pilot 4 explored an important question for the future of regulatory submissions: can modern technologies such as WebAssembly and Docker containers help deliver R Shiny applications in a way that FDA reviewers can run, inspect, and reproduce?
+
+The pilot, led by Eric Nantz from Eli Lilly, was intentionally ambitious. Its goal was to package an R Shiny application and associated data into a more self-contained submission, reducing the need for reviewers to manually configure complex software environments. The first part of the submission, using WebAssembly, was made in September 2024. The pilot was then resubmitted in June 2025 with both WebAssembly and Docker containers. FDA staff successfully reviewed the submission, demonstrating the technical feasibility of both approaches. Just as importantly, the review generated valuable feedback on how to make modern submission artifacts even more practical, reproducible, and reviewer-friendly.
+
+WebAssembly testing did not identify major issues, which is an encouraging signal for browser-based approaches. At the same time, the review reinforced that WebAssembly does not fully eliminate the core reproducibility challenges inherent in FDA submissions. Even with WebAssembly, the renv package was still required to restore the dependencies needed to build the application, and a web server process was needed to view it. Robust package management, accurate file paths, and clear reviewer instructions remain essential — and that the approach does not yet remove the need to reproduce the applicant's computing environment.
+
+Docker containers demonstrated potential as a model for portable and reproducible computing environments, but the review also surfaced practical barriers. The FDA report noted that the usability of Docker containers in the FDA environment remains uncertain: Docker Desktop requires Windows Subsystem for Linux (WSL), which may not be permitted on all FDA computing environments, and FDA does not currently support installation of Docker Desktop on agency-issued laptops without a paid license or Docker Community Edition. Additional issues included inconsistent build performance. The report concluded that Docker containers, as currently implemented, do not fully eliminate the need for manual configuration and may not yet provide the level of robustness required for regulatory submissions.
+
+Strategically, Pilot 4 was not just a technical test. It was also a learning exercise. As part of the pilot, a series of educational sessions on container technology was provided to FDA and industry participants, helping build a shared understanding of the opportunities, limitations, and practical considerations of these modern approaches. This pilot helped reveal the practical gap between technical feasibility and operational ease for reviewers, giving us a clearer view of what needs to be improved next. Pilot 4 reminds us that feasibility is only the first step. The broader goal is to make open-source-based regulatory submissions operational, repeatable, secure, and easy for reviewers to use. By demonstrating what is possible and illuminating where additional alignment is needed, Pilot 4 helps pave the way for a future where modern solutions like WebAssembly and Docker are not only technically possible, but truly practical for regulatory review.
+
+To learn more about the R Consortium Submission Working Group's past and ongoing pilots, visit <https://rconsortium.github.io/submissions-wg/>
+
+To learn more about the R Consortium Working Groups and how you can get involved, please see: <https://r-consortium.org/all-projects/isc-working-groups.html>
