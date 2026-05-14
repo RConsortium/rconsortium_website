@@ -4,7 +4,7 @@ description: "The R Consortium R Submissions Working Group received the FDA's re
 author: "R Consortium"
 image: "Screenshot.png"
 image-alt: "FDA review letter for Pilot 4 submission"
-date: "05/05/2026"
+date: "05/14/2026"
 ---
 
 In May 2026, the R Consortium R Submissions Working Group received the FDA's review letter for Pilot 4, which summarized the FDA's evaluation of using WebAssembly and Docker containers to package and run an R Shiny application in a regulatory review setting. The letter can be found here: [Summary R Pilot 4 Submission](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot4_Submission.pdf)
@@ -20,3 +20,5 @@ Docker containers demonstrated potential as a model for portable and reproducibl
 Strategically, Pilot 4 was not just a technical test. It was also a learning exercise. As part of the pilot, a series of educational sessions on container technology was provided to FDA and industry participants, helping build a shared understanding of the opportunities, limitations, and practical considerations of these modern approaches. This pilot helped reveal the practical gap between technical feasibility and operational ease for reviewers, giving us a clearer view of what needs to be improved next. Pilot 4 reminds us that feasibility is only the first step. The broader goal is to make open-source-based regulatory submissions operational, repeatable, secure, and easy for reviewers to use. By demonstrating what is possible and illuminating where additional alignment is needed, Pilot 4 helps pave the way for a future where modern solutions like WebAssembly and Docker are not only technically possible, but truly practical for regulatory review.
 
 To learn more about the R Consortium Submission Working Group's past and ongoing pilots, visit <https://rconsortium.github.io/submissions-wg/>
+
+To learn more about the R Consortium Working Groups and how you can get involved, please see: <https://r-consortium.org/all-projects/isc-working-groups.html>
