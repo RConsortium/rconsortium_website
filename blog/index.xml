@@ -10,7 +10,32 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 15 Apr 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 14 May 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Beyond Feasibility: Learning from FDA’s Response to WebAssembly and Container-Based Submissions</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In May 2026, the R Consortium R Submissions Working Group received the FDA’s review letter for Pilot 4, which summarized the FDA’s evaluation of using WebAssembly and Docker containers to package and run an R Shiny application in a regulatory review setting. The letter can be found here: <a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot4_Submission.pdf">Summary R Pilot 4 Submission</a></p>
+<p>The R Consortium R Submissions Working Group’s Pilot 4 explored an important question for the future of regulatory submissions: can modern technologies such as WebAssembly and Docker containers help deliver R Shiny applications in a way that FDA reviewers can run, inspect, and reproduce?</p>
+<p>The pilot, led by Eric Nantz from Eli Lilly, was intentionally ambitious. Its goal was to package an R Shiny application and associated data into a more self-contained submission, reducing the need for reviewers to manually configure complex software environments. The first part of the submission, using WebAssembly, was made in September 2024. The pilot was then resubmitted in June 2025 with both WebAssembly and Docker containers. FDA staff successfully reviewed the submission, demonstrating the technical feasibility of both approaches. Just as importantly, the review generated valuable feedback on how to make modern submission artifacts even more practical, reproducible, and reviewer-friendly.</p>
+<p>WebAssembly testing did not identify major issues, which is an encouraging signal for browser-based approaches. At the same time, the review reinforced that WebAssembly does not fully eliminate the core reproducibility challenges inherent in FDA submissions. Even with WebAssembly, the renv package was still required to restore the dependencies needed to build the application, and a web server process was needed to view it. Robust package management, accurate file paths, and clear reviewer instructions remain essential — and that the approach does not yet remove the need to reproduce the applicant’s computing environment.</p>
+<p>Docker containers demonstrated potential as a model for portable and reproducible computing environments, but the review also surfaced practical barriers. The FDA report noted that the usability of Docker containers in the FDA environment remains uncertain: Docker Desktop requires Windows Subsystem for Linux (WSL), which may not be permitted on all FDA computing environments, and FDA does not currently support installation of Docker Desktop on agency-issued laptops without a paid license or Docker Community Edition. Additional issues included inconsistent build performance. The report concluded that Docker containers, as currently implemented, do not fully eliminate the need for manual configuration and may not yet provide the level of robustness required for regulatory submissions.</p>
+<p>Strategically, Pilot 4 was not just a technical test. It was also a learning exercise. As part of the pilot, a series of educational sessions on container technology was provided to FDA and industry participants, helping build a shared understanding of the opportunities, limitations, and practical considerations of these modern approaches. This pilot helped reveal the practical gap between technical feasibility and operational ease for reviewers, giving us a clearer view of what needs to be improved next. Pilot 4 reminds us that feasibility is only the first step. The broader goal is to make open-source-based regulatory submissions operational, repeatable, secure, and easy for reviewers to use. By demonstrating what is possible and illuminating where additional alignment is needed, Pilot 4 helps pave the way for a future where modern solutions like WebAssembly and Docker are not only technically possible, but truly practical for regulatory review.</p>
+<p>To learn more about the R Consortium Submission Working Group’s past and ongoing pilots, visit <a href="https://rconsortium.github.io/submissions-wg/" class="uri">https://rconsortium.github.io/submissions-wg/</a></p>
+<p>To learn more about the R Consortium Working Groups and how you can get involved, please see: <a href="https://r-consortium.org/all-projects/isc-working-groups.html" class="uri">https://r-consortium.org/all-projects/isc-working-groups.html</a></p>
+
+
+
+ ]]></description>
+  <guid>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/index.html</guid>
+  <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/Screenshot.png" medium="image" type="image/png" height="147" width="144"/>
+</item>
 <item>
   <title>Investing in the R Community: Our Support for Global R Events in 2026</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1596,84 +1621,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html</guid>
   <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><img src="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo.jpg" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Update (December 10, 2025)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This post has been updated to more accurately characterize pkglite’s role in regulatory submissions. We regret any impression that pkglite was merely a stopgap solution: it remains a principled, peer-reviewed approach that continues to serve the community well.</p>
-</div>
-</div>
-<p>Over the past several years, the <a href="https://rconsortium.github.io/submissions-wg/">R Consortium Regulatory Submission Working Group</a> has conducted multiple pilots to explore and validate the use of R in regulatory submissions. One recurring challenge surfaced early in our work:</p>
-<p><strong>How should sponsors submit non-public R packages—especially those containing proprietary information—to the FDA?</strong></p>
-<p>For security reasons, FDA’s eCTD portal historically allowed only a highly restricted set of file formats. As a result, standard R package formats such as compressed files were not accepted. In Pilot 1 and Pilot 2, we used <a href="https://cran.r-project.org/package=pkglite"><strong>pkglite</strong></a> to convert R packages into a plain text bundle. This approach, documented in a <a href="https://doi.org/10.1177/17407745221123244">peer-reviewed paper</a> in <em>Clinical Trials</em>, proved highly effective: the FDA reviewer successfully reproduced our analysis results by following the instructions in the Analysis Data Reviewer’s Guide (ADRG). The pkglite workflow offers distinct advantages: human-readable output, full transparency, easy version control, and language-agnostic design, that remain valuable regardless of which file formats the eCTD gateway accepts.</p>
-<hr>
-<section id="a-milestone-fda-expands-accepted-r-file-formats" class="level2">
-<h2 class="anchored" data-anchor-id="a-milestone-fda-expands-accepted-r-file-formats"><strong>A Milestone: FDA Expands Accepted R File Formats</strong></h2>
-<section id="resulting-directly-from-joint-work-between-industry-and-fda-through-the-r-consortium-submissions-working-group" class="level3">
-<h3 class="anchored" data-anchor-id="resulting-directly-from-joint-work-between-industry-and-fda-through-the-r-consortium-submissions-working-group"><strong>Resulting directly from joint work between industry and FDA through the R Consortium Submissions Working Group</strong></h3>
-<p>We are pleased to share that the FDA has expanded its list of acceptable file formats to better support R workflows.</p>
-<p>This update—found in the August 2025 revision of the <em>FDA eCTD Technical Conformance Guide</em> (<a href="https://www.fda.gov/media/85816/download?attachment">link to guidance</a>)—was directly informed by multi-year collaboration between industry partners and FDA reviewers participating in the R Consortium Regulatory Submission Working Group.</p>
-<p>Through joint pilots, repeated feedback, and hands-on testing, FDA colleagues gained deeper visibility into how R packages are used and what formats are needed to preserve functionality and reproducibility.</p>
-</section>
-<section id="the-2025-08-20-update-includes" class="level3">
-<h3 class="anchored" data-anchor-id="the-2025-08-20-update-includes"><strong>The 2025-08-20 update includes:</strong></h3>
-<p><strong>Section 9.3 – Updated references</strong><br>
-Newly accepted Modeling &amp; Simulation file types:<br>
-<code>.rds</code>, <code>.rdb</code>, <code>.rdx</code>, <code>.rdata</code> / <code>.rda</code>, <code>.md</code>, <code>.rd</code> (for delivering R packages)</p>
-<p>Expanded permissible use of:<br>
-<code>.zip</code> and <code>.html</code> (for delivering full R packages)</p>
-<p>This means:</p>
-<p><strong>Sponsors can now submit non-public R packages directly as a .zip file.</strong></p>
-<p>This significantly reduces friction for organizations that rely on internal or proprietary R packages as part of their submission workflows.</p>
-<hr>
-</section>
-</section>
-<section id="recommendation-open-source-when-possible" class="level2">
-<h2 class="anchored" data-anchor-id="recommendation-open-source-when-possible"><strong>Recommendation: Open-Source When Possible</strong></h2>
-<p>Although submitting proprietary R packages is now easier, the Working Group continues to strongly recommend that organizations <strong>open-source their R packages whenever feasible</strong>.</p>
-<p>Reasons include:</p>
-<p><strong>Reproducibility</strong><br>
-Public repositories (e.g., CRAN, GitHub) allow FDA reviewers and other users to retrieve, install, and verify dependencies reliably.</p>
-<p><strong>Transparency in dependency handling</strong><br>
-Open-source packages minimize hidden or fragile dependency structures, supporting long-term reproducibility.</p>
-<p><strong>Trust and community validation</strong><br>
-Open-source tools benefit from broader testing, feedback, and shared maintenance.</p>
-<p><strong>Sustainability</strong><br>
-Packages with a public footprint are more likely to be updated and maintained over time, benefiting the entire community.</p>
-<p>In summary, while the updated guidance provides much-needed flexibility, open-source remains the most reliable path for transparency, reproducibility, and trust.</p>
-<hr>
-</section>
-<section id="looking-ahead" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead"><strong>Looking Ahead</strong></h2>
-<p>This guidance update reflects what can be achieved when industry experts and FDA reviewers work collaboratively to improve regulatory science infrastructure. The R Consortium Submissions Working Group will continue strengthening this partnership to ensure that R-based analysis workflows remain secure, reproducible, and reviewer-friendly. To learn more about the working group, visit: <a href="https://rconsortium.github.io/submissions-wg/">https://rconsortium.github.io/submissions-wg/</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>submissions</category>
-  <category>pharma</category>
-  <category>announcements</category>
-  <guid>https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/index.html</guid>
-  <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/fda-logo-main-image.png" medium="image" type="image/png" height="85" width="144"/>
 </item>
 </channel>
 </rss>
