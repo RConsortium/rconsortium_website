@@ -10,7 +10,105 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 14 May 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 20 May 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Open Source Makes AI Better</title>
+  <dc:creator>Terry Christiani, Executive Director</dc:creator>
+  <link>https://r-consortium.org/posts/open-source-makes-ai-better/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="investing-in-people-languages-and-shared-infrastructure-gives-companies-a-stronger-foundation-for-ai." class="level2">
+<h2 class="anchored" data-anchor-id="investing-in-people-languages-and-shared-infrastructure-gives-companies-a-stronger-foundation-for-ai.">Investing in people, languages, and shared infrastructure gives companies a stronger foundation for AI.</h2>
+<p>Artificial intelligence is changing how software gets written. It can help developers move faster, autocomplete routine code, explain unfamiliar functions, generate tests, and lower the friction of learning a new API. Used well, AI is a force multiplier for technical teams.</p>
+<p>That productivity gain is real. <a href="https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/">In a controlled experiment on GitHub Copilot</a>, developers with access to the AI pair programmer completed a programming task 55.8% faster than developers without it.</p>
+<p>That is good news for companies. It is also good news for open-source communities.</p>
+<p>But it points to an important strategic question: <em>What is the foundation that AI tools are multiplying?</em></p>
+<p>AI coding tools do not emerge from nowhere. They are built on human-created code, documentation, examples, issues, package ecosystems, tutorials, and years of direct experience solving real problems. <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-research-recitation">GitHub has described Copilot as trained on billions of lines of public code</a>, and the BigCode project’s “The Stack” dataset <a href="https://arxiv.org/abs/2211.15533">includes 6.4 TB of permissively licensed source code across 358 programming languages</a>. StarCoderBase was trained on more than 80 languages from that dataset.</p>
+<p>That matters because AI is downstream from open-source ecosystems.</p>
+<p>The better the ecosystem, the better the AI assistance can become. Better packages create better examples. Better documentation creates better answers. Better standards reduce ambiguity. Better public workflows give AI systems stronger patterns to learn from and give human developers stronger patterns to apply.</p>
+<p>For companies investing heavily in AI, this should be encouraging. Supporting open-source is not separate from AI strategy. It is part of building the knowledge base, practice base, and trust base that AI depends on.</p>
+<section id="open-source-is-where-new-practice-becomes-shared-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="open-source-is-where-new-practice-becomes-shared-infrastructure">Open source is where new practice becomes shared infrastructure</h3>
+<p>Open-source languages stay relevant because people keep using them to solve new problems.</p>
+<p>That is especially true for R. R is not just a programming language. It is a working environment for statistics, data science, visualization, and research in medicine, finance, insurance, public policy, and regulated analytics. Its value comes from the interaction between the language, its package ecosystem, its users, and the community that test ideas in practice.</p>
+<p>Many important improvements in R reflect that cycle.</p>
+<p><a href="https://blog.r-project.org/2020/02/16/stringsasfactors">R 4.0.0 changed the default behavior of <code>stringsAsFactors</code> to <code>FALSE</code></a>, a change shaped by long-running user experience and by practices already adopted in modern alternatives such as <code>data.table</code> and tibble. R 4.1.0 introduced <a href="https://cran.r-project.org/bin/windows/base/old/4.1.0/NEWS.R-4.1.0.html">the native pipe operator</a>, reflecting the widespread value of pipeline-oriented programming in R workflows.</p>
+<p>These are not abstract language changes. They are examples of how real-world use creates better tooling.</p>
+<p>People encounter friction. They compare approaches. They build packages. They teach others. They document what works. Eventually, the best ideas influence the language and the broader ecosystem.</p>
+<p>That human pattern of engagement and development creates the examples AI systems learn from.</p>
+<p>If companies want AI tools that understand modern R practice, regulated analytics, reproducible research, production workflows, and domain-specific constraints, those practices need to exist in the open. They need maintainers. They need documentation. They need public examples. They need people with direct experience doing the work.</p>
+</section>
+<section id="human-experience-creates-the-use-cases-ai-cannot-invent-alone" class="level3">
+<h3 class="anchored" data-anchor-id="human-experience-creates-the-use-cases-ai-cannot-invent-alone">Human experience creates the use cases AI cannot invent alone</h3>
+<p>Novel use cases come from people applying tools under real constraints.</p>
+<p>Consider pharmaceutical and regulatory work. <a href="https://pharmar.org/riskassessment/">The R Validation Hub</a> supports the adoption of R in biopharmaceutical regulatory settings and develops resources such as <code>{riskmetric}</code> and the Risk Assessment Shiny application.</p>
+<p><a href="https://r-consortium.org/posts/submissions-wg-2026/">The R Consortium Submissions Working Group</a> is another example. Its cross-industry work focuses on improving practices for R-based clinical trial regulatory submissions. Recent pilots have explored WebAssembly and container technologies for bundling R-based Shiny applications for FDA submission workflows, R-based submissions using Dataset-JSON.</p>
+<p>This work is valuable because it is grounded in experience. It is not generic code generation. It is the result of statisticians, programmers, reviewers, companies, and regulators working through the details of reproducibility, reviewability, data standards, package risk, and submission workflows.</p>
+<p>That is how best practices are created.</p>
+<p>Best practices aren’t just snippets of code. They are habits formed through development, review, testing, documentation, release management, maintenance, user support, and organizational adoption. Open-source is a powerful environment for this work because decisions are visible, examples are reusable, and lessons can travel across companies instead of remaining locked inside one organization.</p>
+<p>AI can help accelerate that process because it benefits from the process first.</p>
+</section>
+<section id="ai-makes-open-source-ecosystem-investment-more-valuable" class="level3">
+<h3 class="anchored" data-anchor-id="ai-makes-open-source-ecosystem-investment-more-valuable">AI makes open-source ecosystem investment more valuable</h3>
+<p>The rise of AI should not reduce corporate investment in open-source languages. It should increase the value of that investment.</p>
+<p>There is a practical reason: AI tools need fresh, high-quality, human-tested material. Research in <a href="https://www.nature.com/articles/s41586-024-07566-y"><em>Nature</em></a> warns that generative models trained recursively on model-generated content can experience “model collapse,” where the tails of the original data distribution disappear and models misperceive the underlying reality.</p>
+<p>For software, the lesson is straightforward. AI systems need a continuing supply of human-created, human-reviewed, real-world examples. They need living ecosystems, not stale archives.</p>
+<p>That is where corporate participation matters.</p>
+<p>When companies contribute to open-source languages and communities, they strengthen the same foundation their internal teams use every day. They also improve the public knowledge base from which AI-enabled development benefits.</p>
+<p>That contribution can take many forms:</p>
+<ul>
+<li>Funding core infrastructure.</li>
+<li>Supporting package maintenance.</li>
+<li>Giving engineers time to contribute upstream.</li>
+<li>Sponsoring documentation, training, and translation.</li>
+<li>Participating in working groups.</li>
+<li>Sharing non-differentiating tools and workflows.</li>
+<li>Supporting conferences and community education.</li>
+<li>Helping develop industry standards around reproducibility, validation, risk, and regulatory use.</li>
+</ul>
+<p>None of these actions require a company to give away its competitive advantage. They strengthen the common layer beneath private innovation.</p>
+</section>
+<section id="the-r-consortiums-role" class="level3">
+<h3 class="anchored" data-anchor-id="the-r-consortiums-role">The R Consortium’s role</h3>
+<p><a href="https://r-consortium.org/about/">The R Consortium</a> exists to support that common layer. Its central mission is to work with and support the R Foundation and the key organizations developing, maintaining, distributing, and using R software through technical and social infrastructure projects. Its ISC grants program funds code development, technical infrastructure, and other research projects that help sustain the R community.</p>
+<p>Recent investments in R reinforce the same point.</p>
+<p><a href="https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/">The Software Sustainability Institute</a> awarded approximately USD $650,000 under the Research Software Maintenance Fund to support “Enabling the Next Generation of Contributors to R,” a project focused on sustaining the human contributor pipeline for the language.</p>
+<p><a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">The Sovereign Tech Fund</a> also invested $450,000 in the R Foundation to modernize R’s core infrastructure, improve maintainability, and strengthen the supply chain. More broadly, the Sovereign Tech Fund invests in open digital base technologies that are vital to other software, including programming language libraries, package managers, developer tools, and encryption technologies.</p>
+<p>That framing is useful for companies thinking about AI. Open-source languages are base technologies. They are part of the infrastructure that makes innovation possible.</p>
+<p>AI does not make that infrastructure less important. It increases the leverage of every improvement made to it.</p>
+</section>
+<section id="a-better-flywheel" class="level3">
+<h3 class="anchored" data-anchor-id="a-better-flywheel">A better flywheel</h3>
+<p>The opportunity is not to choose between AI and open-source. The opportunity is to connect them.</p>
+<p>A healthy open-source ecosystem produces better tools, better packages, better documentation, better standards, and better public examples. Those resources help developers work more effectively. They also help AI tools provide better assistance. Better AI assistance, in turn, can help more people contribute, learn, document, test, and build.</p>
+<p>This is the flywheel companies should want:</p>
+<ul>
+<li>Invest in open source.</li>
+<li>Improve the ecosystem.</li>
+<li>Strengthen the human knowledge base.</li>
+<li>Make AI tools more useful.</li>
+<li>Accelerate internal engineering.</li>
+<li>Contribute back what can be shared.</li>
+<li>Repeat.</li>
+</ul>
+<p>For companies that depend on R, the invitation is clear. Join the R Consortium. Participate in working groups. Support grants. Fund maintenance. Encourage engineers and statisticians to contribute upstream. Help build shared standards in regulatory submissions, assessing and assigning risk, ensuring reproducibility, automating package validation, and strengthening industry analytics.</p>
+<p>The future of AI-enabled development will be stronger if the open-source ecosystems beneath it are strong.</p>
+<p>Open-source languages are living systems. They need maintainers, contributors, reviewers, educators, users, and institutions willing to invest in the shared foundation. AI can help us move faster on that foundation. Together, we can make sure the foundation keeps getting stronger.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/open-source-makes-ai-better/index.html</guid>
+  <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/open-source-makes-ai-better/open-source-makes-ai-better-thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Beyond Feasibility: Learning from FDA’s Response to WebAssembly and Container-Based Submissions</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1558,71 +1656,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html</guid>
   <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" medium="image" type="image/png" height="75" width="144"/>
-</item>
-<item>
-  <title>Growing an R Community in a Shifting Tech Landscape: The Story of R-Ladies Zurich</title>
-  <link>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://www.linkedin.com/in/luisa-barbanti/?originalSubdomain=ch">Luisa Barbanti</a>, organizer of <a href="https://www.meetup.com/rladies-zurich/">R-Ladies Zurich</a>, recently spoke with the R Consortium about building and sustaining a technically focused R community in Switzerland. With a background in biostatistics and professional experience at a data science consultancy, Luisa shared how she utilizes R for data wrangling, statistical modeling, and internal tooling, leveraging Quarto and Shiny. She discussed the evolution of R-Ladies Zurich and highlighted the challenges of maintaining momentum as community members transition through different phases of their careers.</p>
-<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/LuisaBarbanti.png" class="img-fluid" style="width:50.0%"></p>
-<section id="please-share-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-your-background-and-involvement-with-the-rugs-group.">Please share your background and involvement with the RUGS group.</h2>
-<p>My name is Luisa, and I am based in Zurich because I started my studies here. While studying mathematics, I developed an interest in statistics. I realized that to pursue this field, I needed to learn R, a programming language essential for statistical work. I began to explore R by taking classes and practicing with it.</p>
-<p>Zurich has a very active R community, including an <a href="https://www.meetup.com/zurich-r-user-group/">R User Group</a>. Being in this environment where everyone was engaged with R was inspiring. I started attending the R User Group meetings regularly. Eventually, I began a PhD in biostatistics at the University of Zurich, where working with R became a significant part of my daily responsibilities. I had tasks that required creating functions and packages in R.</p>
-<p>My supervisor encouraged me to attend the <a href="https://user2020.r-project.org/">useR! conference</a>. Initially, the conference was scheduled to take place in Zurich in 2020, but it was converted to an online format due to the COVID-19 pandemic. In 2021, I attended the conference remotely and participated in an R-Ladies meeting for the first time. Although it was an online event, I was impressed by the atmosphere.&nbsp;</p>
-<p>During the meeting, I recognized one of my acquaintances from Zurich, <a href="https://www.linkedin.com/in/seraphina-kissling-625048197/">Seraphina</a>, who had a master’s in biostatistics. We struck up a conversation about how great the meeting was and wondered if there was an R-Ladies chapter in Zurich. To our surprise, we discovered there wasn’t one. There were no active R-Ladies chapters in Switzerland at that time; some had been started but had unfortunately ceased their activities.&nbsp;</p>
-<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurichLogo.png" class="img-fluid"></p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-switzerland" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-switzerland">Can you share what the R community is like in Switzerland?</h2>
-<p>There is a use for R, although I’m not sure about its prominence in industry. Official statistics at both the canton and federal levels often rely heavily on R. However, the industrial use of R can be a bit more challenging, primarily because many people are now using Python. It depends on what you want to do.&nbsp;</p>
-<p>I feel that with the rise of machine learning and AI, the role of R in industry has shifted. However, it is still included in university curricula. When pursuing a master’s degree in data science, students will encounter R at some point. This means that those entering the industry have at least a little experience working with R, but likely, they don’t use it in their everyday work. The people who do utilize R tend to be in a niche market, often focused on statistics. For instance, in risk analysis or research roles within the industry, R is still used, but it remains a more specialized tool.</p>
-<p>In my current role at a consulting firm specializing in data science, we utilize R because we recognize its power and the extent to which it can be leveraged.</p>
-<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" class="img-fluid"></p>
-<p>R-Ladies Zurich Organizers at the group’s second Anniversary</p>
-</section>
-<section id="what-industry-are-you-currently-in-how-do-you-use-r-in-your-work" class="level2">
-<h2 class="anchored" data-anchor-id="what-industry-are-you-currently-in-how-do-you-use-r-in-your-work">What industry are you currently in? How do you use R in your work?</h2>
-<p>I work at a data science consultancy where we primarily use R for all our projects. This includes data cleaning, producing graphs, and extracting relevant insights through modelling.&nbsp;</p>
-<p>We often work with large datasets and develop reporting tools using Markdown and Quarto to create presentations, even when they don’t involve R. However, when we do want to incorporate R elements, we can do so in a flexible manner.&nbsp;</p>
-<p>Furthermore, we have an entire ecosystem of <a href="https://shiny.posit.co/">Shiny</a> apps for internal use. For example, we have a system for tracking timesheets, where we collect the hours worked on various projects, along with the corresponding job codes. This data is automatically gathered and helps us produce invoices, as we can easily see how many hours each person has worked on specific tasks.</p>
-<p>While we are strong proponents of using R, this approach may be more of an exception than the norm. Nonetheless, R offers numerous capabilities that enable us to accomplish a wide range of tasks. Everything we do typically starts in RStudio, from which we work on various projects.</p>
-<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RyssaMoffat.png" class="img-fluid"></p>
-</section>
-<section id="how-has-the-local-community-responded-to-your-events-and-what-strategies-have-helped-you-grow-participation" class="level2">
-<h2 class="anchored" data-anchor-id="how-has-the-local-community-responded-to-your-events-and-what-strategies-have-helped-you-grow-participation">How has the local community responded to your events, and what strategies have helped you grow participation?</h2>
-<p>It’s been a positive journey for me and Seraphina, the co-founder of R-Ladies Zurich. During the early stages, I was deeply immersed in my PhD studies, which connected me with many individuals who used R. Meanwhile, Seraphina was working at a company that also utilized R and maintained ties to academia. This connection proved beneficial, as I was able to book university rooms for free, which helped us secure a venue for our events when we had limited funds.</p>
-<p>Initially, we relied on our networks to attract attendees to our events. As we began, people we knew showed interest, and gradually, we opened our events to newcomers. Platforms like <a href="https://www.linkedin.com/company/rladies-zurich/">LinkedIn</a> and <a href="https://www.instagram.com/rladieszurich/">Instagram</a> played a significant role in this growth. A friend of Seraphina, Tieu Khe, who specializes in marketing, helped us by creating a beautiful corporate identity for R-Ladies Zurich, which we still use today. This corporate identity has significantly enhanced our online visibility, enabling more people to discover us and participate in our events.</p>
-<p>Meetup has been crucial in this process; without it, many people wouldn’t be aware of our events. The platform notifies users via email about our upcoming gatherings, and we’ve seen numerous new attendees as a result. While many regulars continue to participate, we understand that people’s interests can shift, especially when they change fields or jobs, which may lead them to stop using R and consequently not attend our events.</p>
-<p>As for our upcoming events, we currently don’t have any specific ones lined up. However, we’re considering a joint event with the Zurich R User Group. Traditionally, we focus on interactive formats rather than frontal presentations, aiming to engage participants directly and encourage them to take an active role and get involved.</p>
-<p>Organizing these events requires considerable effort, and we’re currently facing a shortage of presenters. We do have one potential presenter in the pipeline, but the timeline remains uncertain. We have discussed collaborating with the Zurich R User Group to develop a workshop format for a larger audience, likely targeting the fall. Although we haven’t set a specific date yet, we anticipate being able to coordinate something after everyone returns from their summer vacations.</p>
-<p><img src="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/R-LadiesZurichWomen'sDay.png" class="img-fluid"></p>
-<p>R-Ladies Zurich Co-hosted Panel Discussion with the Zurich R User Group on International Women’s Day 2024</p>
-</section>
-<section id="what-have-been-the-key-challenges-and-lessons-in-organizing-r-ladies-zurich-over-the-past-four-years" class="level2">
-<h2 class="anchored" data-anchor-id="what-have-been-the-key-challenges-and-lessons-in-organizing-r-ladies-zurich-over-the-past-four-years">What have been the key challenges and lessons in organizing R-Ladies Zurich over the past four years?</h2>
-<p>This is the fourth year we’ve been involved with this project, having started the chapter and managed it. We’re trying to figure out how to maintain some continuity, which has been one of our biggest challenges. People change, and their careers evolve. For instance, I still use R, but Céline, co-organiser of R-Ladies Zurich, is no longer using it.</p>
-<p>So, we’re considering how to sustain the community as people shift and change. Currently, we find ourselves in a transitional phase, attempting to define what this space represents. We have a Meetup group, but organizing events requires a lot of work, from finding locations to managing logistics. It’s becoming increasingly complex for me, especially since I’m no longer at the university.</p>
-<p>This situation may not be the most exciting news, but it’s an essential reality that every chapter faces: transitions and changes. Currently, we aren’t conducting online events. Otherwise, I would suggest that people follow us online. If you’re visiting Zurich and would like to connect, please don’t hesitate to reach out. It’s very easy to get in touch, and there’s a welcoming community here. Although R remains significant, it’s essential to acknowledge that many other programming languages also play a crucial role in keeping this community alive.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in close to 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.htm</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>eu</category>
-  <guid>https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/index.html</guid>
-  <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/growing-an-r-community-in-a-shifting-tech-landscape-the-story-of-rladies-zurich/RLadiesZurich.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
