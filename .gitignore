@@ -25,3 +25,4 @@ venv
 **/index_files/
 
 **/*.quarto_ipynb
+.tmp_pillow/

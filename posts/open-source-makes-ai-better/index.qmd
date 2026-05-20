@@ -1,0 +1,124 @@
+---
+title: "Open Source Makes AI Better"
+unpublished: false
+url: "https://r-consortium.org/posts/open-source-makes-ai-better/"
+description: "Investing in people, languages, and shared infrastructure gives companies a stronger foundation for AI."
+categories: ["ai", "software development"]
+author: "Terry Christiani, Executive Director"
+image: "open-source-makes-ai-better-thumbnail.png"
+image-alt: "Line drawing of a flexed arm beside bold Open Source text"
+date: "05/20/2026"
+---
+
+## Investing in people, languages, and shared infrastructure gives companies a stronger foundation for AI.
+
+Artificial intelligence is changing how software gets written. It can help developers move faster, autocomplete routine code, explain unfamiliar functions, generate tests, and lower the friction of learning a new API. Used well, AI is a force multiplier for technical teams.
+
+That productivity gain is real. [In a controlled experiment on GitHub Copilot](https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/), developers with access to the AI pair programmer completed a programming task 55.8% faster than developers without it.
+
+That is good news for companies. It is also good news for open-source communities.
+
+But it points to an important strategic question: *What is the foundation that AI tools are multiplying?*
+
+AI coding tools do not emerge from nowhere. They are built on human-created code, documentation, examples, issues, package ecosystems, tutorials, and years of direct experience solving real problems. [GitHub has described Copilot as trained on billions of lines of public code](https://github.blog/ai-and-ml/github-copilot/github-copilot-research-recitation), and the BigCode project's "The Stack" dataset [includes 6.4 TB of permissively licensed source code across 358 programming languages](https://arxiv.org/abs/2211.15533). StarCoderBase was trained on more than 80 languages from that dataset.
+
+That matters because AI is downstream from open-source ecosystems.
+
+The better the ecosystem, the better the AI assistance can become. Better packages create better examples. Better documentation creates better answers. Better standards reduce ambiguity. Better public workflows give AI systems stronger patterns to learn from and give human developers stronger patterns to apply.
+
+For companies investing heavily in AI, this should be encouraging. Supporting open-source is not separate from AI strategy. It is part of building the knowledge base, practice base, and trust base that AI depends on.
+
+### Open source is where new practice becomes shared infrastructure
+
+Open-source languages stay relevant because people keep using them to solve new problems.
+
+That is especially true for R. R is not just a programming language. It is a working environment for statistics, data science, visualization, and research in medicine, finance, insurance, public policy, and regulated analytics. Its value comes from the interaction between the language, its package ecosystem, its users, and the community that test ideas in practice.
+
+Many important improvements in R reflect that cycle.
+
+[R 4.0.0 changed the default behavior of `stringsAsFactors` to `FALSE`](https://blog.r-project.org/2020/02/16/stringsasfactors), a change shaped by long-running user experience and by practices already adopted in modern alternatives such as `data.table` and tibble. R 4.1.0 introduced [the native pipe operator](https://cran.r-project.org/bin/windows/base/old/4.1.0/NEWS.R-4.1.0.html), reflecting the widespread value of pipeline-oriented programming in R workflows.
+
+These are not abstract language changes. They are examples of how real-world use creates better tooling.
+
+People encounter friction. They compare approaches. They build packages. They teach others. They document what works. Eventually, the best ideas influence the language and the broader ecosystem.
+
+That human pattern of engagement and development creates the examples AI systems learn from.
+
+If companies want AI tools that understand modern R practice, regulated analytics, reproducible research, production workflows, and domain-specific constraints, those practices need to exist in the open. They need maintainers. They need documentation. They need public examples. They need people with direct experience doing the work.
+
+### Human experience creates the use cases AI cannot invent alone
+
+Novel use cases come from people applying tools under real constraints.
+
+Consider pharmaceutical and regulatory work. [The R Validation Hub](https://pharmar.org/riskassessment/) supports the adoption of R in biopharmaceutical regulatory settings and develops resources such as `{riskmetric}` and the Risk Assessment Shiny application.
+
+[The R Consortium Submissions Working Group](https://r-consortium.org/posts/submissions-wg-2026/) is another example. Its cross-industry work focuses on improving practices for R-based clinical trial regulatory submissions. Recent pilots have explored WebAssembly and container technologies for bundling R-based Shiny applications for FDA submission workflows, R-based submissions using Dataset-JSON.
+
+This work is valuable because it is grounded in experience. It is not generic code generation. It is the result of statisticians, programmers, reviewers, companies, and regulators working through the details of reproducibility, reviewability, data standards, package risk, and submission workflows.
+
+That is how best practices are created.
+
+Best practices aren't just snippets of code. They are habits formed through development, review, testing, documentation, release management, maintenance, user support, and organizational adoption. Open-source is a powerful environment for this work because decisions are visible, examples are reusable, and lessons can travel across companies instead of remaining locked inside one organization.
+
+AI can help accelerate that process because it benefits from the process first.
+
+### AI makes open-source ecosystem investment more valuable
+
+The rise of AI should not reduce corporate investment in open-source languages. It should increase the value of that investment.
+
+There is a practical reason: AI tools need fresh, high-quality, human-tested material. Research in [*Nature*](https://www.nature.com/articles/s41586-024-07566-y) warns that generative models trained recursively on model-generated content can experience "model collapse," where the tails of the original data distribution disappear and models misperceive the underlying reality.
+
+For software, the lesson is straightforward. AI systems need a continuing supply of human-created, human-reviewed, real-world examples. They need living ecosystems, not stale archives.
+
+That is where corporate participation matters.
+
+When companies contribute to open-source languages and communities, they strengthen the same foundation their internal teams use every day. They also improve the public knowledge base from which AI-enabled development benefits.
+
+That contribution can take many forms:
+
+* Funding core infrastructure.
+* Supporting package maintenance.
+* Giving engineers time to contribute upstream.
+* Sponsoring documentation, training, and translation.
+* Participating in working groups.
+* Sharing non-differentiating tools and workflows.
+* Supporting conferences and community education.
+* Helping develop industry standards around reproducibility, validation, risk, and regulatory use.
+
+None of these actions require a company to give away its competitive advantage. They strengthen the common layer beneath private innovation.
+
+### The R Consortium's role
+
+[The R Consortium](https://r-consortium.org/about/) exists to support that common layer. Its central mission is to work with and support the R Foundation and the key organizations developing, maintaining, distributing, and using R software through technical and social infrastructure projects. Its ISC grants program funds code development, technical infrastructure, and other research projects that help sustain the R community.
+
+Recent investments in R reinforce the same point.
+
+[The Software Sustainability Institute](https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/) awarded approximately USD $650,000 under the Research Software Maintenance Fund to support "Enabling the Next Generation of Contributors to R," a project focused on sustaining the human contributor pipeline for the language.
+
+[The Sovereign Tech Fund](https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/) also invested $450,000 in the R Foundation to modernize R's core infrastructure, improve maintainability, and strengthen the supply chain. More broadly, the Sovereign Tech Fund invests in open digital base technologies that are vital to other software, including programming language libraries, package managers, developer tools, and encryption technologies.
+
+That framing is useful for companies thinking about AI. Open-source languages are base technologies. They are part of the infrastructure that makes innovation possible.
+
+AI does not make that infrastructure less important. It increases the leverage of every improvement made to it.
+
+### A better flywheel
+
+The opportunity is not to choose between AI and open-source. The opportunity is to connect them.
+
+A healthy open-source ecosystem produces better tools, better packages, better documentation, better standards, and better public examples. Those resources help developers work more effectively. They also help AI tools provide better assistance. Better AI assistance, in turn, can help more people contribute, learn, document, test, and build.
+
+This is the flywheel companies should want:
+
+* Invest in open source.
+* Improve the ecosystem.
+* Strengthen the human knowledge base.
+* Make AI tools more useful.
+* Accelerate internal engineering.
+* Contribute back what can be shared.
+* Repeat.
+
+For companies that depend on R, the invitation is clear. Join the R Consortium. Participate in working groups. Support grants. Fund maintenance. Encourage engineers and statisticians to contribute upstream. Help build shared standards in regulatory submissions, assessing and assigning risk, ensuring reproducibility, automating package validation, and strengthening industry analytics.
+
+The future of AI-enabled development will be stronger if the open-source ecosystems beneath it are strong.
+
+Open-source languages are living systems. They need maintainers, contributors, reviewers, educators, users, and institutions willing to invest in the shared foundation. AI can help us move faster on that foundation. Together, we can make sure the foundation keeps getting stronger.
