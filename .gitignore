@@ -26,3 +26,5 @@ venv
 
 **/*.quarto_ipynb
 .tmp_pillow/
+
+.pip_packages/
