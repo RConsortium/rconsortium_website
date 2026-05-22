@@ -120,6 +120,9 @@ format: html
 
 <div class="swiper-wrapper">
 
+<div class="swiper-slide" style="background-image: url(https://i.postimg.cc/RFHJY5Vp/rmedicine-webinar-garrett-grolemund-main-image.png);">
+</div>
+
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2>R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.</h2>
 <button class="blueButton"><a href="all-projects/rugsprogram.qmd" style="text-decoration: none;">LEARN MORE</a></button>
