@@ -1,0 +1,31 @@
+--- 
+title: "Survival Analysis with nlmixr2" 
+unpublished: false 
+url: "https://r-consortium.org/posts/survival-analysis-with-nlmixr2/"
+description: "Justin Wilkins and the nlmixr2 Development Team show how to fit parametric time-to-event models in nlmixr2 using the package's custom log-likelihood interface."
+categories: ["pharma", "submissions", "clinical research", "announcements", "working group"]
+author: "R Consortium" 
+image: "nlmixr2-logo.png" 
+image-alt: "the nlmixr2 working group logo" 
+date: "05/28/2026" 
+---
+
+![](nlmixr2-logo.png){fig-alt="the nlmixr2 working group logo" width=30%}
+
+_Original post on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/)._
+
+The nlmixr2 Working Group is expanding what open-source R tooling can support in pharmacometrics, including time-to-event modeling workflows that are important in clinical and drug-development settings.
+
+In this technical post, Justin Wilkins and the nlmixr2 Development Team show how to fit parametric time-to-event models in nlmixr2 using the package's custom log-likelihood interface.
+
+The post walks through simulated two-arm trial data, compares exponential and Gompertz models, and shows how nlmixr2 can support flexible survival modeling workflows in R.
+
+Read the full post from the nlmixr2 blog: [Survival Analysis with nlmixr2](https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/)
+
+## Get involved in the nlmixr2 working group
+
+The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:
+
+Main repo: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)  
+Issues: [https://github.com/nlmixr2/nlmixr2/issues](https://github.com/nlmixr2/nlmixr2/issues)  
+Discussions: [https://github.com/nlmixr2/nlmixr2/discussions](https://github.com/nlmixr2/nlmixr2/discussions)  
