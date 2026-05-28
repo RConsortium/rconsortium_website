@@ -10,7 +10,42 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 20 May 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 28 May 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Survival Analysis with nlmixr2</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" class="img-fluid" style="width:30.0%" alt="the nlmixr2 working group logo"></p>
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/">here</a>.</em></p>
+<p>The nlmixr2 Working Group is expanding what open-source R tooling can support in pharmacometrics, including time-to-event modeling workflows that are important in clinical and drug-development settings.</p>
+<p>In this technical post, Justin Wilkins and the nlmixr2 Development Team show how to fit parametric time-to-event models in nlmixr2 using the package’s custom log-likelihood interface.</p>
+<p>The post walks through simulated two-arm trial data, compares exponential and Gompertz models, and shows how nlmixr2 can support flexible survival modeling workflows in R.</p>
+<p>Read the full post from the nlmixr2 blog: <a href="https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/">Survival Analysis with nlmixr2</a></p>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>pharma</category>
+  <category>submissions</category>
+  <category>clinical research</category>
+  <category>announcements</category>
+  <category>working group</category>
+  <guid>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/index.html</guid>
+  <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
+</item>
 <item>
   <title>Open Source Makes AI Better</title>
   <dc:creator>Terry Christiani, Executive Director</dc:creator>
@@ -1604,58 +1639,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html</guid>
   <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/jnj-submissions-main-image.png" medium="image" type="image/png" height="56" width="144"/>
-</item>
-<item>
-  <title>Bridging Gaps and Breaking Barriers: A Year of R Innovation with the China PharmaRUG</title>
-  <dc:creator>Joe Zhu, Roche</dc:creator>
-  <dc:creator>Yanli Chang, Johnson &amp; Johnson</dc:creator>
-  <link>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>The use of R in the pharmaceutical industry has shifted from exploratory research to a robust standard for regulatory submission. In 2025, the China Pharmaceutical R User Group (PharmaRUG) exemplified this transformation, hosting a series of dynamic events that connected local developers with the global R community. As the R Consortium continues to support the worldwide community of users and developers, the China PharmaRUG’s activities this year highlight how open-source collaboration is reshaping clinical reporting,.</p>
-<p>Here are three pivotal moments from the China PharmaRUG in 2025 that showcased technical innovation and strategic foresight.</p>
-<p><img src="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" class="img-fluid"></p>
-<section id="the-3rd-pharmarug-conference-innovation-in-hybrid-format-march-2025" class="level2">
-<h2 class="anchored" data-anchor-id="the-3rd-pharmarug-conference-innovation-in-hybrid-format-march-2025">1. The 3rd PharmaRUG Conference: Innovation in Hybrid Format (March 2025)</h2>
-<p>In March, the community gathered for the 3rd China Pharmaceutical Industry R User Group Meeting. True to the spirit of inclusivity, this was a hybrid event with on-site locations at the Johnson &amp; Johnson campus in Shanghai and the Sanofi campus in Beijing, alongside an online broadcast.</p>
-<p>This meeting went beyond standard presentations and focused on overcoming technical hurdles in modern clinical trials. Highlights included:</p>
-<p>• AI and R Integration: Speakers from Boehringer Ingelheim demonstrated how to integrate AI coding assistants with R, comparing tools like gptstudio and btw to enhance workflow efficiency.</p>
-<p>• Serverless Analysis: Kaiping Yang from BeOne showcased a novel approach using Vue and webR to perform serverless local statistical analysis directly in a browser, proving that R applications can be both lightweight and highly responsive.</p>
-<p>• Open Source Education: The event also featured deep dives into package validation and design, such as Daniel Sabanés Bové’s (RCONIS) presentation on rpact and crmPack for designing clinical trials.</p>
-<p>The diversity of topics—ranging from AI-generated ADaM datasets to easeP21 for validation—demonstrated that the local community is not just adopting R, but actively pushing the boundaries of what the language can do in a regulated environment.</p>
-<p><img src="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/apac-track.png" class="img-fluid"></p>
-</section>
-<section id="global-connection-r-in-pharma-apac-track-november-2025" class="level2">
-<h2 class="anchored" data-anchor-id="global-connection-r-in-pharma-apac-track-november-2025">2. Global Connection: R in Pharma APAC Track (November 2025)</h2>
-<p>In November, the PharmaRUG played a crucial role in the R/Pharma 2025 conference by organizing the APAC Track. While the conference was virtually accessible to anyone in the Asia-Pacific time zone, the community emphasized face-to-face connection through local hubs.</p>
-<p>The Shanghai gathering, hosted at the Johnson &amp; Johnson office, served as a physical anchor for the virtual track. This event featured keynotes and over 18 regular presentations covering reporting, prediction, and AI. It was a testament to the “multiverse” concept often discussed in the industry—where end-to-end clinical reporting moves away from legacy systems toward a diverse ecosystem of open-source tools. By aligning with the global R/Pharma schedule, the China PharmaRUG ensured that local innovations were shared on a global stage, reinforcing the R Consortium’s mission to foster international collaboration.</p>
-<p><img src="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/dec-4-gathering.png" class="img-fluid"></p>
-</section>
-<section id="strategic-foundations-the-december-4th-gathering" class="level2">
-<h2 class="anchored" data-anchor-id="strategic-foundations-the-december-4th-gathering">3. Strategic Foundations: The December 4th Gathering</h2>
-<p>The year concluded with a targeted small-group gathering on December 4th, focused on high-level strategy and future pilots. While the larger conferences focused on “showing,” this meeting focused on “planning” for the complex regulatory landscape ahead.</p>
-<p>Key takeaways from this strategic session included:</p>
-<p>• Regulatory Validation: The group discussed the differences between FDA and CDE submission requirements. With data and system requirements tightening, the group recognized the urgent need for robust validation frameworks.</p>
-<p>• Synthetic Data Pilot: A major proposal from the meeting was to pilot an end-to-end submission using synthetic data to both the FDA and CDE. This initiative aims to test the waters for future submissions without risking proprietary clinical data.</p>
-<p>• AI Governance: As AI tools become more prevalent, the group discussed building error detection systems and scoring models to validate AI outputs, ensuring that the “black box” of AI remains compliant with pharmaceutical standards.</p>
-<section id="join-the-movement" class="level3">
-<h3 class="anchored" data-anchor-id="join-the-movement">Join the Movement</h3>
-<p>The transition from legacy software to R is well underway, with major players and local biotechs alike embracing the language. The China PharmaRUG is supported by the R Consortium’s RUGS program, which provides grants to help groups organize and share information worldwide.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>asia</category>
-  <category>pharma</category>
-  <category>events</category>
-  <guid>https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/index.html</guid>
-  <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/bridging-gaps-and-breaking-barriers-a-year-of-r-innovation-with-the-china-pharmarug/third-pharmarug-conf.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 </channel>
 </rss>
