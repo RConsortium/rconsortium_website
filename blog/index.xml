@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>R Consortium</title>
-<link>https://r-consortium.org/blog/index.html</link>
+<link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.9.38</generator>
 <lastBuildDate>Thu, 28 May 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Survival Analysis with nlmixr2</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/index.html</link>
+  <link>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -42,15 +43,16 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>clinical research</category>
   <category>announcements</category>
   <category>working group</category>
-  <guid>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/index.html</guid>
+  <guid>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/</guid>
   <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
 </item>
 <item>
   <title>Open Source Makes AI Better</title>
   <dc:creator>Terry Christiani, Executive Director</dc:creator>
-  <link>https://r-consortium.org/posts/open-source-makes-ai-better/index.html</link>
+  <link>https://r-consortium.org/posts/open-source-makes-ai-better/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -140,15 +142,16 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
  ]]></description>
   <category>ai</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/open-source-makes-ai-better/index.html</guid>
+  <guid>https://r-consortium.org/posts/open-source-makes-ai-better/</guid>
   <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/open-source-makes-ai-better/open-source-makes-ai-better-thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Beyond Feasibility: Learning from FDA’s Response to WebAssembly and Container-Based Submissions</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/index.html</link>
+  <link>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -165,15 +168,16 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 
 
  ]]></description>
-  <guid>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/index.html</guid>
+  <guid>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/</guid>
   <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/Screenshot.png" medium="image" type="image/png" height="147" width="144"/>
 </item>
 <item>
   <title>Investing in the R Community: Our Support for Global R Events in 2026</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/index.html</link>
+  <link>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -189,12 +193,12 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 </section>
 <section id="eurobioc-2026" class="level2">
 <h2 class="anchored" data-anchor-id="eurobioc-2026"><a href="https://eurobioc2026.bioconductor.org/">EuroBioC 2026</a></h2>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" class="img-fluid"></p>
+<p><a href="eurobioc2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" class="img-fluid"></a></p>
 <p>EuroBioC focuses on the Bioconductor ecosystem and the use of R in bioinformatics and computational biology. It is being held in Turku, Finland, during the first week of June. It connects scientists working on genomics, proteomics, and related fields, highlighting how R supports cutting-edge research in the life sciences.</p>
 </section>
 <section id="rencontres-r-2026" class="level2">
 <h2 class="anchored" data-anchor-id="rencontres-r-2026"><a href="https://astamm.github.io/en/rr2026.html">Rencontres R 2026</a></h2>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/rencontresr2026.png" class="img-fluid"></p>
+<p><a href="rencontresr2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/rencontresr2026.png" class="img-fluid"></a></p>
 <p>Rencontres is a long-running conference rooted in the French-speaking R community. It is organized by the French Statistical Society (SFdS) and brings together researchers, public sector professionals, and industry practitioners to share applied work and foster collaboration. Its regional focus helps strengthen R adoption across Europe while maintaining strong technical depth. Rencontres is open to beginners as well as experienced users from all sectors and is being held June 16-18 in Nantes, France.</p>
 <p>This year’s Rencontres will also host an R Dev Day, supported in part by recent funding from the Research Software Maintenance Fund. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome.</p>
 <p>R Dev Day @ RencontresR 2026<br>
@@ -206,7 +210,7 @@ Working languages: French and English</p>
 </section>
 <section id="cascadia-r-conference" class="level2">
 <h2 class="anchored" data-anchor-id="cascadia-r-conference"><a href="https://cascadiarconf.com/">Cascadia R Conference</a></h2>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/cascadiar2026.png" class="img-fluid" style="width:30.0%"></p>
+<p><a href="cascadiar2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/cascadiar2026.png" class="img-fluid" style="width:30.0%"></a></p>
 <p>The Cascadia R Conference serves the Pacific Northwest in the US, with a strong emphasis on practical data science and community engagement. It is held in Portland, OR, running over two days on June 26-27. Cascadia R is known for being accessible, welcoming, and highly relevant to both new and experienced R users working in industry and academia.</p>
 <p>There will be a satellite R Dev Day event at CascadiaR. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome. Please note: This is a satellite event to Cascadia R Conf 2026, which takes place on Sat, June 27 in Portland, OR, USA. It is not necessary to register for the main conference in order to attend the R Dev Day.</p>
 <p>R Dev Day @ Cascadia R 2026, Portland<br>
@@ -218,7 +222,7 @@ Working languages: English</p>
 </section>
 <section id="user-2026" class="level2">
 <h2 class="anchored" data-anchor-id="user-2026"><a href="https://user2026.r-project.org/">useR! 2026</a></h2>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/userbam2026.png" class="img-fluid" style="width:30.0%"></p>
+<p><a href="userbam2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/userbam2026.png" class="img-fluid" style="width:30.0%"></a></p>
 <p>The useR! 2026 conference is the flagship global gathering of the R community, taking place this year July 6 - 9, 2026 in Warsaw, Poland. It brings together data scientists, statisticians, developers, and researchers from around the world for keynote talks, hands-on workshops, and community-driven sessions that showcase cutting-edge applications and developments in the R ecosystem.</p>
 <p>There will be a satellite R Dev Day event at useR! 2026. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome.</p>
 <p>Please note: R Dev Day @ useR! 2026 is a free, hybrid event that will take place on July 10, the day after the conference concludes. You will need to fill out a self-nomination form, this is different from registering. Participants will be selected from the nominations received to fill the available places, balancing experience levels and giving opportunity to members of historically underrepresented groups. R Dev Day is free of charge. No support is available for travel or accommodations. Registration at useR! 2026 is not required to participate in R Dev Day.</p>
@@ -230,14 +234,14 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </section>
 <section id="ghana-r-conference" class="level2">
 <h2 class="anchored" data-anchor-id="ghana-r-conference"><a href="https://ghana-rusers.org/ghana-r-conference-2026/">Ghana R Conference</a></h2>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/ghanar2026.png" class="img-fluid" style="width:30.0%"></p>
+<p><a href="ghanar2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/ghanar2026.png" class="img-fluid" style="width:30.0%"></a></p>
 <p>The Ghana R Conference 2026, organized by the Ghana R Users Community, will take place July 9 - 10, 2026, at Accra Technical University in Accra, bringing together data scientists, researchers, and practitioners to explore the role of R in advancing Ghana’s digital transformation. Centered on the theme of using R to support AI and data-driven development, the event features talks, workshops, and community engagement aimed at building local expertise and strengthening the data science ecosystem across Ghana and the broader African region.</p>
 </section>
 <section id="latinr" class="level2">
 <h2 class="anchored" data-anchor-id="latinr"><a href="https://latinr.org/">LatinR</a></h2>
 <p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/latinr-main-image.png" class="img-fluid"> <em>photo credit: <a href="https://www.flickr.com/people/comunicacionfcea/">Comunicación FCEA</a></em></p>
 <p>LatinR is one of the most important R conferences in Latin America. It provides a platform for Spanish- and Portuguese-speaking communities to share knowledge, present research, and build connections across countries. Its regional focus helps drive adoption and innovation in fast-growing data science markets.</p>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/latinr-logo.png" class="img-fluid" style="width:38.0%"></p>
+<p><a href="latinr-logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/latinr-logo.png" class="img-fluid" style="width:38.0%"></a></p>
 <p>LatinR is being held in November 11-13, 2026. Don’t miss it!</p>
 </section>
 <section id="why-this-investment-matters" class="level2">
@@ -308,7 +312,7 @@ Location: On-site at Warsaw University of Technology or virtual</p>
  ]]></description>
   <category>events</category>
   <category>community</category>
-  <guid>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/index.html</guid>
+  <guid>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/</guid>
   <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" medium="image" type="image/png" height="41" width="144"/>
 </item>
@@ -316,8 +320,9 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <title>Collaborating between Bioconductor and R-universe on Development of Common Infrastructure</title>
   <dc:creator>The rOpenSci Team</dc:creator>
   <dc:creator>The Bioconductor Team</dc:creator>
-  <link>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/index.html</link>
+  <link>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -379,7 +384,7 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </ul>
 <p>This provides a familiar yet modern interface for Bioconductor contributors, aligned with what users increasingly expect from contemporary R package infrastructure.</p>
 <p>Information about each package is available on <code>https://bioc.r-universe.dev/{pkgname}</code>. For example, <a href="https://bioc.r-universe.dev/DESeq2">https://bioc.r-universe.dev/DESeq2</a> provides details on the DESeq2 package as shown below:</p>
-<p><img src="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/https:/docs.r-universe.dev/img/bioc-pkg.png" class="img-fluid"></p>
+<p><a href="https://docs.r-universe.dev/img/bioc-pkg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://docs.r-universe.dev/img/bioc-pkg.png" class="img-fluid"></a></p>
 <p>If this is your first time visiting R-universe, we recommend clicking the “Website Tour” button which will walk you through the most important information in 1 or 2 minutes.</p>
 </section>
 <section id="technical-documentation-for-bioconductor-maintainers" class="level2">
@@ -400,15 +405,16 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <category>Bioconductor</category>
   <category>R-universe</category>
   <category>Infrastructure</category>
-  <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/index.html</guid>
+  <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</guid>
   <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
   <media:content url="https://docs.r-universe.dev/img/bioc-pkg.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Q1 2026 Update: Community Growth, Collaboration, and Momentum Across the R Ecosystem</title>
   <dc:creator>Terry Christiani, Executive Director</dc:creator>
-  <link>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/index.html</link>
+  <link>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -471,15 +477,16 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 
  ]]></description>
   <category>events</category>
-  <guid>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/index.html</guid>
+  <guid>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/</guid>
   <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/r_wordcloud.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Igniting an R Movement in the Philippines: RNVSU’s Open Science Vision</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/index.html</link>
+  <link>https://r-consortium.org/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -542,15 +549,16 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <category>rugs</category>
   <category>software development</category>
   <category>asia</category>
-  <guid>https://r-consortium.org/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/index.html</guid>
+  <guid>https://r-consortium.org/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/</guid>
   <pubDate>Wed, 11 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/igniting-an-r-movement-in-the-philippines-rnvsus-open-science-vision/RNVSULogo.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Jeremy Horne on Building Inclusive R Communities Across the UK</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/jeremy-horne-on-building-inclusive-r-communities-across-the-uk/index.html</link>
+  <link>https://r-consortium.org/posts/jeremy-horne-on-building-inclusive-r-communities-across-the-uk/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -601,15 +609,16 @@ Location: On-site at Warsaw University of Technology or virtual</p>
  ]]></description>
   <category>rugs</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/jeremy-horne-on-building-inclusive-r-communities-across-the-uk/index.html</guid>
+  <guid>https://r-consortium.org/posts/jeremy-horne-on-building-inclusive-r-communities-across-the-uk/</guid>
   <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/jeremy-horne-on-building-inclusive-r-communities-across-the-uk/BirminghamRUGMeetup1.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>R Submissions Working Group: 2026 Plans and 2025 Success</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/submissions-wg-2026/index.html</link>
+  <link>https://r-consortium.org/posts/submissions-wg-2026/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -700,15 +709,16 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </section>
 
  ]]></description>
-  <guid>https://r-consortium.org/posts/submissions-wg-2026/index.html</guid>
+  <guid>https://r-consortium.org/posts/submissions-wg-2026/</guid>
   <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Bringing Students, Researchers, and Industry Together with R in Malaysia</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/index.html</link>
+  <link>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -747,15 +757,16 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <category>rugs</category>
   <category>software development</category>
   <category>asia</category>
-  <guid>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/index.html</guid>
+  <guid>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/</guid>
   <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/R-conference-group-photo-main.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>From nlmixr2 Working Group: nlmixr2 inter occasion variability</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/index.html</link>
+  <link>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -768,13 +779,13 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 <p>We now support inter-occasion variability estimation in nlmixr2!</p>
 <h3 id="implementing-inter-occasion-variability-in-models" class="anchored">Implementing inter-occasion variability in models</h3>
 <p>To implement inter-occasion variability in <code>nlmixr2</code> models you simply have to specify that the variable is an occasion variable, say <code>occ</code>:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">iov.cl <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">iov.cl <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">~</span> <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.1</span> <span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">|</span> occ</span></code></pre></div>
+font-style: inherit;">|</span> occ</span></code></pre></div></div>
 </blockquote>
 <section id="full-article-on-the-nlmixr2-project-blog-is-here." class="level3">
 <h3 class="anchored" data-anchor-id="full-article-on-the-nlmixr2-project-blog-is-here.">Full article on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-01-06-iov/">here</a>.</h3>
@@ -796,15 +807,16 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>clinical research</category>
   <category>announcements</category>
   <category>working group</category>
-  <guid>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/index.html</guid>
+  <guid>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/</guid>
   <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/nlmixr2.png" medium="image" type="image/png" height="166" width="144"/>
 </item>
 <item>
   <title>Statistical Inference for Persistence Diagrams</title>
   <dc:creator>Manon Simonot, Aymeric Stamm</dc:creator>
-  <link>https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index.html</link>
+  <link>https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -833,7 +845,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 <h3 class="anchored" data-anchor-id="distances-between-persistence-diagrams">Distances between persistence diagrams</h3>
 <p>Two persistence diagrams <img src="https://latex.codecogs.com/png.latex?X"> and <img src="https://latex.codecogs.com/png.latex?Y"> are canonically compared using <strong>Wasserstein distances</strong>. These are a family of metrics determined by a <img src="https://latex.codecogs.com/png.latex?q">-Minkowski distance on the plane and a <img src="https://latex.codecogs.com/png.latex?p">-norm on the distances between pairs of points matched via some <img src="https://latex.codecogs.com/png.latex?%5Cvarphi%20:%20X%20%5Cto%20Y">:</p>
 <p><img src="https://latex.codecogs.com/png.latex?%20%5Cleft(%20%5Csum_%7Bx%20%5Cin%20X%7D%7B%7B%5ClVert%0Ax-%5Cvarphi(x)%20%5CrVert_q%7D%5Ep%7D%20%5Cright)%5E%7B1/p%7D%20"></p>
-<p>The distance <img src="https://latex.codecogs.com/png.latex?W_p%5Eq(X,Y)"> is defined to be the infimum of this expression over all possible matchings. See this <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html">vignette</a> from the {phutil} package on distances for more detail, or <span class="citation" data-cites="cohen2010lipschitz">Cohen-Steiner et al. (2010)</span> and <span class="citation" data-cites="bubenik2023exact">Bubenik, Scott, and Stanley (2023)</span> for detailed treatments and stability results on these families of metrics.</p>
+<p>The distance <img src="https://latex.codecogs.com/png.latex?W_p%5Eq(X,Y)"> is defined to be the infimum of this expression over all possible matchings. See this <a href="https://tdaverse.github.io/phutil/articles/validation-benchmark.html">vignette</a> from the {phutil} package on distances for more detail, or <span class="citation" data-cites="cohen2010lipschitz">Cohen-Steiner et al. (2010)</span> and <span class="citation" data-cites="bubenik2023exact">Bubenik et al. (2023)</span> for detailed treatments and stability results on these families of metrics.</p>
 <p>In R, using the TDAverse, computation of the distance matrix is offered by the {phutil} package which is therefore a hard dependency of {inphr}.</p>
 <p>Functions in {inphr} therefore accept:</p>
 <ul>
@@ -864,7 +876,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<code>trefoils1</code> and <code>trefoils2</code>
+<span class="screen-reader-only">Note</span><code>trefoils1</code> and <code>trefoils2</code>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -877,7 +889,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<code>archspirals</code>
+<span class="screen-reader-only">Note</span><code>archspirals</code>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -885,10 +897,14 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 </div>
 </div>
 <p>Figure&nbsp;1 displays the first five persistence diagrams of each sample. The reader can appreciate that the first two lines corresponding to the same trefoil geometry shows similar diagrams while the last line corresponding to a 2-arm archspiral shows a different kind of diagram.</p>
-<div id="fig-toydata" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: The first data point of each toy data set.</figcaption>
+<div id="fig-toydata" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-toydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-toydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The first data point of each toy data set.
+</figcaption>
 </figure>
 </div>
 <p>We can therefore use <code>inphr::two_sample_diagram_test()</code> to compare:</p>
@@ -898,7 +914,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 </ul>
 <p>The following code performs the test between the two trefoil samples using only the first five statistical units:</p>
 <div class="cell" data-hash="index_cache/html/unnamed-chunk-2_296f7037c8c4cce86985f7139c4560d3">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">withr<span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">withr<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -920,14 +936,14 @@ background-color: null;
 font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">5</span>])</span>
-<span id="cb1-3">})</span></code></pre></div>
+<span id="cb1-3">})</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.9702381</code></pre>
 </div>
 </div>
 <p>As expected, the test is not able to reject the null hypothesis. By default, the function uses <code>B = 1000</code> permutations, which makes the p-value resolution of <img src="https://latex.codecogs.com/png.latex?1/1001%20%5Capprox%209.99%20%5Ctimes%2010%5E%7B-4%7D">. If we compare instead <code>trefoils1</code> against <code>archspirals</code>, again using only the first five statistical units, we get:</p>
 <div class="cell" data-hash="index_cache/html/unnamed-chunk-3_b8b026c9560f2465af61d98cab413ab4">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">withr<span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">withr<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -949,7 +965,7 @@ background-color: null;
 font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">5</span>])</span>
-<span id="cb3-3">})</span></code></pre></div>
+<span id="cb3-3">})</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.002308242</code></pre>
 </div>
@@ -967,13 +983,17 @@ font-style: inherit;">5</span>])</span>
 <li><p>the Euler characteristic curve <span class="citation" data-cites="richardson2014efficient">(Richardson and Werman 2014)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cchi(t)%20=%20%5Csum_%7Bk=0%7D%5Ed%20(-1)%5Ek%20%5Cbeta_k(t),%0A"> where <img src="https://latex.codecogs.com/png.latex?%5Cbeta_0,%20%5Cbeta_1,%20%5Cdots,%20%5Cbeta_d"> are the Betti curves from the smaller persistence diagrams <img src="https://latex.codecogs.com/png.latex?D_0,%20D_1,%20%5Cdots,%20D_d"> restricted to only features of homology dimensions <img src="https://latex.codecogs.com/png.latex?0,%201,%20%5Cdots,%20d"> respectively.</p></li>
 <li><p>the Normalized Life curve <span class="citation" data-cites="chung2022persistence">(Chung and Lawson 2022)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cmathrm%7Bsl%7D(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i)%7D(t),%20%5Cquad%20%5Cmbox%7Bwhere%20%7D%20L%20=%20%5Csum_%7Bi=1%7D%5EN%20(d_i%20-%20b_i).%0A"></p></li>
 <li><p>the Silhouette curve <span class="citation" data-cites="chazal2014stochastic">(Chazal et al. 2014)</span>: <img src="https://latex.codecogs.com/png.latex?%0A%5Cphi(t)%20=%20%5Cfrac%7B%5Csum_%7Bi=1%7D%5EN%20(d_i%20-%20b_i)%20%5CLambda_i(t)%7D%7BL%7D,%20%5Cquad%20%5Cmbox%7Bwhere%20%7D%20%5CLambda_i(t)%20=%20%5Cbegin%7Bcases%7D%0At%20-%20b_i%20&amp;%20%5Cmbox%7Bif%20%7D%20t%20%5Cin%20%5Cleft%5B%20b_i,%20%5Cfrac%7Bb_i%20+%20d_i%7D%7B2%7D%20%5Cright%5D%20%5C%5C%0Ad_i%20-%20t%20&amp;%20%5Cmbox%7Bif%20%7D%20t%20%5Cin%20%5Cleft(%20%5Cfrac%7Bb_i%20+%20d_i%7D%7B2%7D,%20d_i%20%5Cright%5D%20%5C%5C%0A0%20&amp;%20%5Cmbox%7Botherwise.%7D%0A%5Cend%7Bcases%7D%0A"></p></li>
-<li><p>the Entropy Summary curve <span class="citation" data-cites="atienza2020stability">(Atienza, González-Dı́az, and Soriano-Trigueros 2020)</span>: <img src="https://latex.codecogs.com/png.latex?%0AS(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Clog_2%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i%5D%7D(t).%0A"></p></li>
+<li><p>the Entropy Summary curve <span class="citation" data-cites="atienza2020stability">(Atienza et al. 2020)</span>: <img src="https://latex.codecogs.com/png.latex?%0AS(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Clog_2%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i%5D%7D(t).%0A"></p></li>
 </ul>
 <p>Figure&nbsp;2 displays, as an example, the Betti curve representations of the 24 diagrams in each of the three toy data sets.</p>
-<div id="fig-betti" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/betti_curves.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.</figcaption>
+<div id="fig-betti" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-betti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/betti_curves.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-betti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.
+</figcaption>
 </figure>
 </div>
 <p>Figure&nbsp;2 shows a clear difference between trefoil and archspiral geometry but overlapped curves between the two trefoil samples as expected.</p>
@@ -983,7 +1003,7 @@ font-style: inherit;">5</span>])</span>
 <p>The {inphr} package relies on the <a href="https://permaverse.github.io/fdatest/">{fdatest}</a> package which is also part of the permaverse to handle hypothesis testing on functional representations of persistence homology. Specifically, the {fdatest} package implements a method called <em>interval-wise testing</em> described in <span class="citation" data-cites="pini2017interval">Pini and Vantini (2017)</span> which effectively performs domain selection by identifying the portion(s) of the domain of definition of the functional representation where there are statistically significant differences between samples. In the future, the package will also integrate other such domain selection methods described in <span class="citation" data-cites="abramowicz2023domain">Abramowicz et al. (2023)</span>.</p>
 <p>When using functional representations, we must choose the homology dimension which we want to work on. In {inphr}, we perform inference in functional spaces with the <code>two_sample_functional_test()</code>. For example, the following code uses the Betti curves for dimension <img src="https://latex.codecogs.com/png.latex?0"> to compare the two trefoil samples:</p>
 <div class="cell" data-hash="index_cache/html/unnamed-chunk-4_4ae392e1a17f5f400aa28ddb17fdf32c">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">out1 <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">out1 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -999,11 +1019,11 @@ background-color: null;
 font-style: inherit;">representation =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"betti"</span></span>
-<span id="cb5-5">)</span></code></pre></div>
+<span id="cb5-5">)</span></code></pre></div></div>
 </div>
 <p>Similarly, the following code uses the Betti curves for dimension <img src="https://latex.codecogs.com/png.latex?0"> to compare the first trefoil sample and the archspiral sample:</p>
 <div class="cell" data-hash="index_cache/html/unnamed-chunk-6_5d63dc73ec34d429bf70d86867f47509">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">out2 <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">out2 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1019,7 +1039,7 @@ background-color: null;
 font-style: inherit;">representation =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"betti"</span></span>
-<span id="cb6-5">)</span></code></pre></div>
+<span id="cb6-5">)</span></code></pre></div></div>
 </div>
 <p>The output of the <code>two_sample_functional_test()</code> function is a list with entries:</p>
 <ul>
@@ -1029,8 +1049,7 @@ font-style: inherit;">"betti"</span></span>
 <li><code>iwt</code>: an object of class ‘ITP2’ for which {fdatest} has dedicated <code>S3</code> implementations of methods such as <code>plot()</code>.</li>
 </ul>
 <p>Hence we can display the results of the inferential procedures with the following code:</p>
-<div>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot</span>(out1<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -1047,48 +1066,67 @@ font-style: inherit;">$</span>iwt, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">main =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Trefoil vs 2-arm Archspiral"</span>)</span></code></pre></div>
-<div id="fig-iwt" class="cell quarto-layout-panel" data-hash="index_cache/html/fig-iwt_788d748a96cc17ba4314b8bf8df08530">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-iwt-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-1.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
-<figcaption class="figure-caption">(a)</figcaption>
+font-style: inherit;">"Trefoil vs 2-arm Archspiral"</span>)</span></code></pre></div></div>
+<div id="fig-iwt" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iwt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-iwt" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-iwt-1" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-iwt-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-1.png" id="fig-iwt-1" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-iwt-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a)
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-iwt-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-2.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
-<figcaption class="figure-caption">(b)</figcaption>
-</figure>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-iwt" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-iwt-2" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-iwt-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-2.png" id="fig-iwt-2" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672">
 </div>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-iwt-3" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-3.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
-<figcaption class="figure-caption">(c)</figcaption>
-</figure>
-</div>
-</div>
-<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-iwt-4" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-4.png" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672"></p>
-<figcaption class="figure-caption">(d)</figcaption>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-iwt-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b)
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3: Visual representation of the Interval-Wise Testing procedure.</figcaption><p></p>
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-iwt" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-iwt-3" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-iwt-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-3.png" id="fig-iwt-3" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-iwt-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c)
+</figcaption>
 </figure>
 </div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-iwt" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-iwt-4" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-iwt-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index_files/figure-html/fig-iwt-4.png" id="fig-iwt-4" class="img-fluid figure-img" data-ref-parent="fig-iwt" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-iwt-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iwt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Visual representation of the Interval-Wise Testing procedure.
+</figcaption>
+</figure>
 </div>
 <p>Figure&nbsp;3 displays the results of the IWT procedure. We can see the portions where statistically significant differences have been detected highlighted by grey areas. The left column shows the curves of the two samples in two different colors while the right column shows the adjusted p-value functions which provide strong control of the familywise error rate.</p>
 </section>
@@ -1107,7 +1145,7 @@ font-style: inherit;">"Trefoil vs 2-arm Archspiral"</span>)</span></code></pre><
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-abramowicz2023domain" class="csl-entry">
 Abramowicz, Konrad, Alessia Pini, Lina Schelin, Sara Sjöstedt de Luna, Aymeric Stamm, and Simone Vantini. 2023. <span>“Domain Selection and Familywise Error Rate for Functional Data: A Unified Framework.”</span> <em>Biometrics</em> 79 (2): 1119–32.
 </div>
@@ -1118,7 +1156,7 @@ Atienza, Nieves, Rocı́o González-Dı́az, and Manuel Soriano-Trigueros. 2020.
 Bubenik, Peter, Jonathan Scott, and Donald Stanley. 2023. <span>“Exact Weights, Path Metrics, and Algebraic Wasserstein Distances.”</span> <em>Journal of Applied and Computational Topology</em> 7 (2): 185–219.
 </div>
 <div id="ref-chazal2014stochastic" class="csl-entry">
-Chazal, Frédéric, Brittany Terese Fasy, Fabrizio Lecci, Alessandro Rinaldo, and Larry Wasserman. 2014. <span>“Stochastic Convergence of Persistence Landscapes and Silhouettes.”</span> In <em>Proceedings of the Thirtieth Annual Symposium on Computational Geometry</em>, 474–83.
+Chazal, Frédéric, Brittany Terese Fasy, Fabrizio Lecci, Alessandro Rinaldo, and Larry Wasserman. 2014. <span>“Stochastic Convergence of Persistence Landscapes and Silhouettes.”</span> <em>Proceedings of the Thirtieth Annual Symposium on Computational Geometry</em>, 474–83.
 </div>
 <div id="ref-chazal2021introduction" class="csl-entry">
 Chazal, Frédéric, and Bertrand Michel. 2021. <span>“An Introduction to Topological Data Analysis: Fundamental and Practical Aspects for Data Scientists.”</span> <em>Frontiers in Artificial Intelligence</em> 4: 667963.
@@ -1130,7 +1168,7 @@ Chung, Yu-Min, and Austin Lawson. 2022. <span>“Persistence Curves: A Canonical
 Cohen-Steiner, David, Herbert Edelsbrunner, John Harer, and Yuriy Mileyko. 2010. <span>“Lipschitz Functions Have l p-Stable Persistence.”</span> <em>Foundations of Computational Mathematics</em> 10 (2): 127–39.
 </div>
 <div id="ref-fasy2014confidence" class="csl-entry">
-Fasy, Brittany Terese, Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman, Sivaraman Balakrishnan, and Aarti Singh. 2014. <span>“Confidence Sets for Persistence Diagrams.”</span>
+Fasy, Brittany Terese, Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman, Sivaraman Balakrishnan, and Aarti Singh. 2014. <em>Confidence Sets for Persistence Diagrams</em>.
 </div>
 <div id="ref-lovato2021multiscale" class="csl-entry">
 Lovato, Ilenia, Alessia Pini, Aymeric Stamm, Maxime Taquet, and Simone Vantini. 2021. <span>“Multiscale Null Hypothesis Testing for Network-Valued Data: Analysis of Brain Networks of Patients with Autism.”</span> <em>Journal of the Royal Statistical Society Series C: Applied Statistics</em> 70 (2): 372–97.
@@ -1153,15 +1191,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
 </div></section></div> ]]></description>
   <category>isc</category>
   <category>software development</category>
-  <guid>https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/index.html</guid>
+  <guid>https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/</guid>
   <pubDate>Wed, 28 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Contributing to base R with Coding Equity and Joy - Inside the R Contributors Project</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/index.html</link>
+  <link>https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1209,15 +1248,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>RUGS</category>
   <category>LGBTQ+</category>
   <category>Software Development</category>
-  <guid>https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/index.html</guid>
+  <guid>https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/</guid>
   <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/RSprint.png" medium="image" type="image/png" height="37" width="144"/>
 </item>
 <item>
   <title>Crops, Code, and Community Build R-Mob User Group in Australia</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/index.html</link>
+  <link>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1264,15 +1304,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>rugs</category>
   <category>software development</category>
   <category>environment</category>
-  <guid>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/index.html</guid>
+  <guid>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/</guid>
   <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/RMobLogo.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 <item>
   <title>Applied Epidemiology in R: Cape Town R User Group’s Contribution to Global Immunization</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/index.html</link>
+  <link>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1332,15 +1373,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>rugs</category>
   <category>software development</category>
   <category>epidemiology</category>
-  <guid>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/index.html</guid>
+  <guid>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/</guid>
   <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" medium="image" type="image/png" height="65" width="144"/>
 </item>
 <item>
   <title>2025 in Review: Growth, Community, &amp; Momentum</title>
   <dc:creator>Terry Christiani, executive director, R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/index.html</link>
+  <link>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1355,7 +1397,7 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
 <p>In parallel, we worked to spotlight the continued expansion of local R User Groups (RUGs)and R-Ladies+ chapters. R Consortium sponsored groups grew to 99 RUGs across 41 countries, and a worldwide audience of over 82,000 members. R-ladies+ has grown to 225 chapters in 2025. This year we featured stories from <a href="https://r-consortium.org/blog/#category=rugs">cities and regions around the world</a> – demonstrating how R communities are forming and thriving well beyond traditional tech hubs.</p>
 <p>Together, these gatherings, both global and local, underscore the strength of R as a people-driven ecosystem.</p>
 <p>We have seen growing engagement across our outlets and channels. We hope that if you are not currently following or engaging with us on our primary outlets that you will take the time next year to follow and let us know your ideas and opinions. We added <a href="https://bsky.app/profile/rconsortium.bsky.social">Bluesky</a> in September of this year and things are off to a lovely start there.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Channel</th>
@@ -1409,15 +1451,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>infrastructure</category>
   <category>rugs</category>
   <category>members</category>
-  <guid>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/index.html</guid>
+  <guid>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/</guid>
   <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/2025-in-review-growth-community-momentum/r-consortium-mosaic.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
   <title>Enabling the Next Generation of Contributors to R</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/650K-for-R/index.html</link>
+  <link>https://r-consortium.org/posts/650K-for-R/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1440,15 +1483,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
  ]]></description>
   <category>insfrastructure</category>
   <category>announcements</category>
-  <guid>https://r-consortium.org/posts/650K-for-R/index.html</guid>
+  <guid>https://r-consortium.org/posts/650K-for-R/</guid>
   <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/650K-for-R/650K-grant-main-image.png" medium="image" type="image/png" height="85" width="144"/>
 </item>
 <item>
   <title>Empowering Government Professionals in Nepal Using R programming for Forestry Data Analysis</title>
   <dc:creator>Prakash Lamichhane, Research Officer at Ministry of Forests and Environment, Nepal</dc:creator>
-  <link>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/index.html</link>
+  <link>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1499,15 +1543,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>rugs</category>
   <category>asia</category>
   <category>environment</category>
-  <guid>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/index.html</guid>
+  <guid>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/</guid>
   <pubDate>Wed, 17 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/data-forestry-analysis-group.png" medium="image" type="image/png" height="77" width="144"/>
 </item>
 <item>
   <title>Reviving Budapest Users of R Network and Reversing Diabetes: How Gergely Daroczi Brings Data to Life with R</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/index.html</link>
+  <link>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1556,15 +1601,16 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>rugs</category>
   <category>software development</category>
   <category>eu</category>
-  <guid>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/index.html</guid>
+  <guid>https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/</guid>
   <pubDate>Tue, 16 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/reviving-budapest-users-of-r-network-and-reversing-diabetes-how-gergely-daroczi-brings-data-to-life-with-r/GergelyDaroczi.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Johnson &amp; Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission</title>
   <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html</link>
+  <link>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1636,7 +1682,7 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
  ]]></description>
   <category>submissions</category>
   <category>pharma</category>
-  <guid>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/index.html</guid>
+  <guid>https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/</guid>
   <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/jnj-submissions-main-image.png" medium="image" type="image/png" height="56" width="144"/>
 </item>
