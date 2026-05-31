@@ -94,11 +94,11 @@ website:
         href: https://www.linkedin.com/company/r-consortium/
       - icon: mastodon
         href: https://fosstodon.org/@RConsortium
-      - icon: cloud
+      - text: "{{< bi bluesky >}}"
         href: https://bsky.app/profile/rconsortium.bsky.social
       - icon: youtube
         href: https://www.youtube.com/@RConsortium
-      - icon: twitter
+      - text: "{{< bi twitter-x >}}"
         href: https://x.com/RConsortium
   page-footer:
     background: dark
