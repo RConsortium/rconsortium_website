@@ -61,8 +61,11 @@ page-layout: full
   font-size: 20px;
 }
 
-.profile-card h4 {
+.profile-card .profile-role {
   font-size: 16px;
+  margin: 0.15em 0;
+  line-height: 1.35;
+  font-weight: 400;
 }
 
 .profile-card p {
@@ -94,96 +97,66 @@ director as [defined in the ByLaws](/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf) (
 <div class="profile-cards">
 
 <div class="profile-card">
-<img class="pic" src="./images/David.webp" alt="Profile Image 2">
-<h2>David Smith</h2>
-<h4>MICROSOFT (PLATINUM MEMBER)(R CONSORTIUM TREASURER)</h4>
-<p>David Smith is a developer advocate at Microsoft, with a focus on data science and the R community. 
-With a background in Statistics, he writes regularly about applications of R at the Revolutions 
-blog (blog.revolutionanalytics.com), and is a co-author of “Introduction to R”, the R manual. Follow 
-David on Twitter as @revodavid</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/revodavid" title=""><img decoding="async" 
-alt="" src="./images/x.png"></a>
+<img class="pic" src="./images/Mike.webp" alt="Profile Image 9">
+<h2>Mike K Smith, Pfizer</h2>
+<p class="profile-role">Chair, Silver Member Representative</p>
+<p>Mike K Smith, Lead, R Centre of Excellence and Senior Director Statistics at Pfizer. Mike is a 
+professional geek, helping colleagues from the business lines understand the power of reproducibility, 
+automation and writing good code and helping the IT department understand the needs of the business 
+lines. He is passionate about driving business outcomes through primary research, data and alternative 
+data solutions as well as statistical analysis.</p>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/Michael.webp" alt="Profile Image 4">
-<h2>Michael Lawrence</h2>
-<h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE)</h4>
+<h2>Michael Lawrence, R Foundation</h2>
+<p class="profile-role">R Foundation Representative</p>
 <p>Michael is a scientist in the Bioinformatics and Computational Biology department at Genentech 
 Research and Early Development (gRED), based in South San Francisco, CA. There he leads the development 
 of tools, applications and environments for analyzing genomic data using R and Bioconductor. His 
 research interests are in visualization, software interfacing, and genomic data manipulation. Michael 
 is a member of the Bioconductor Technical Advisory Board, the R Core team, and the R Foundation Board.</p>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/lawremi" title="">
-<img decoding="async" alt="" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/Henrik.webp" alt="Profile Image 5">
-<h2>Henrik Bengtsson</h2>
-<h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC DIRECTOR)</h4>
+<h2>Henrik Bengtsson, R Foundation</h2>
+<p class="profile-role">R Foundation Representative, ISC Director</p>
 <p>Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member 
 of the R Foundation, with a background in Computer Science and Mathematical Statistics. He has used 
 R since 2000 for applied research in statistics and bioinformatics. He develops statistical methods, 
 scientific computational software, and programming tools. His work includes R packages for science 
 (e.g. matrixStats, and PSCBS, aroma.affymetrix) and software development (e.g. future, profmem, 
 startup, and R.rsp).</p>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title="">
-<img decoding="async" alt="" src="./images/github.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title="">
-<img decoding="async" alt="" src="./images/x.png"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/Hadley.webp" alt="Profile Image 6">
-<h2>Hadley Wickham</h2>
-<h4>POSIT (PLATINUM MEMBER)</h4>
+<h2>Hadley Wickham, Posit</h2>
+<p class="profile-role">Platinum Member</p>
 <p>Hadley is Chief Scientist at RStudio, a member of the R Foundation, and Adjunct Professor at 
 Stanford University and the University of Auckland. He builds tools (both computational and cognitive) 
 to make data science easier, faster, and more fun. His work includes packages for data science 
 (the tidyverse: including ggplot2, dplyr, tidyr, purrr, and readr) and principled software development 
 (roxygen2, testthat, devtools). He is also a writer, educator, and speaker promoting the use of R 
 for data science. Learn more on his website, http://hadley.nz.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hadleywickham" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/hadleywickham" title="">
-<img decoding="async" alt="" src="./images/x.png"></a>
-<a target="_blank" class="tmm_sociallink" href="http://hadley.nz/" title="">
-<img decoding="async" alt="" src="./images/website.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/hadley" title="">
-<img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/Ben.webp" alt="Profile Image 8">
-<h2>Benjamin Arancibia</h2>
-<h4>GSK (SILVER MEMBER REPRESENTATIVE)</h4>
+<h2>Benjamin Arancibia, GSK</h2>
+<p class="profile-role">Silver Member Representative</p>
 <p>Benjamin Arancibia, Director of Data Science, focuses on enabling the use of R in GSK Biostatistics. 
 He builds tools to make data science fun, reproducible, and helps advocate for the use of R in the 
 department. Ben is passionate about making sure that teams have the right support when using R in 
 production analyses and helping teams learn while delivering. He is an advocate of R and open source 
 technologies internally at GSK and externally speaking about lived experiences at various conferences.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/bcarancibia/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
-</div>
-
-<div class="profile-card">
-<img class="pic" src="./images/Mike.webp" alt="Profile Image 9">
-<h2>Mike K Smith</h2>
-<h4>PFIZER (VICE CHAIR, SILVER MEMBER REPRESENTATIVE)</h4>
-<p>Mike K Smith, Lead, R Centre of Excellence and Senior Director Statistics at Pfizer. Mike is a 
-professional geek, helping colleagues from the business lines understand the power of reproducibility, 
-automation and writing good code and helping the IT department understand the needs of the business 
-lines. He is passionate about driving business outcomes through primary research, data and alternative 
-data solutions as well as statistical analysis.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/mikeksmith/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/Uday.webp" alt="Profile Image 10">
-<h2>Uday Preetham Palukuru</h2>
-<h4>MERCK (SILVER MEMBER REPRESENTATIVE)</h4>
+<h2>Uday Preetham Palukuru, Merck</h2>
+<p class="profile-role">Silver Member Representative</p>
 <p>Uday Preetham Palukuru is a Standards lead at Merck &Co., providing leadership to develop and maintain 
 global standards for ADaM implementation, R package development, Open Source package qualification, 
 Computing Platform enhancements and compliance management tools. He has contributed to various internal 
@@ -208,117 +181,79 @@ the <a href="/rc-docs/ISC-Charter-08-13-24.pdf">ISC Charter</a> (PDF).</p>
 
 <div class="profile-card">
 <img class="pic" src="./images/Henrik.webp" alt="Profile Image 11">
-<h2>Henrik Bengtsson</h2>
-<h4>R FOUNDATION (R FOUNDATION REPRESENTATIVE) (ISC DIRECTOR)</h4>
+<h2>Henrik Bengtsson, R Foundation</h2>
+<p class="profile-role">ISC Director, R Foundation Representative</p>
 <p>Henrik Bengtsson is an Associated Professor at University of California, San Francisco, a member 
 of the R Foundation, with a background in Computer Science and Mathematical Statistics.</p>
-<div class="social-links">
-<a target="_blank" class="tmm_sociallink" href="https://github.com/HenrikBengtsson" title="">
-<img decoding="async" alt="" src="./images/github.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://twitter.com/henrikbengtsson" title="">
-<img decoding="async" alt="" src="./images/x.png"></a>
 </div>
-
-</div>
-<div class="profile-card">
-<img class="pic" src="./images/Yanina-new.jpg" alt="Profile Image 12">
-<h2>Yanina Bellini Saibene</h2>
-<h4>rOpenSci, R-Ladies, Universidad Austral</h4>
-<p>Yanina Bellini Saibene is the Community Manager at rOpenSci and co-founder of LatinR. She serves on the Boards of The Carpentries and R-Ladies, and teaches at Universidad Austral. A GitHub Star (2022–2025), Yanina has received multiple national awards for her work in open data and digital agriculture.</p>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/yabellini" title="">
-<img decoding="async" alt="" src="./images/github.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://yabellini.netlify.app" title=""><img decoding="async" alt="" src="./images/website.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/yabellini/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
-</div>
-
-<div class="profile-card">
-<img class="pic" src="./images/Benedikt.webp" alt="Profile Image 13">
-<h2>Benedikt Schamberger</h2>
-<h4>Swiss RE (SILVER MEMBER)</h4>
-<p>Benedikt leads actuarial AI & Technology consulting at Swiss Re, helping teams adopt R and open-source tools. He also leads a Posit-based internal analytics platform used by hundreds company-wide. He supports the R community by promoting best practices and delivering trainings for insurance and other financial professionals. He holds a MSc in mathematical finance and actuarial science from Technical University Munich.</p>
-<a target="_blank" class="tmm_sociallink" href=" http://linkedin.com/in/benedikt-schamberger-702002a2" title="LinkedIn">
-<img decoding="async" alt="LinkedIn" src="./images/linkedin.webp"></a>
-</div>
-
-<div class="profile-card">
-<img class="pic" src="./images/daniela-colombo.jpg" alt="Profile Image 16">
-<h2>Daniela Colombo</h2>
-<h4>MICROSOFT (PLATINUM MEMBER)</h4>
-<p>Daniela Colombo is EMEA Enterprise Partner CTO and Sr. Director of Technology 
-at Microsoft with in depth experience and knowledge about Data & AI and Applications.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/colombodaniela/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
-
-</div>
-
 <div class="profile-card">
 <img class="pic" src="./images/Josiah.webp" alt="Profile Image 17">
-<h2>Josiah Parry</h2>
-<h4>ESRI (SILVER MEMBER REPRESENTATIVE) (ISC VICE CHAIR)</h4>
+<h2>Josiah Parry, Esri</h2>
+<p class="profile-role">ISC Vice Chair, Silver Member Representative</p>
 <p>Josiah Parry is a Senior Product Engineer in Spatial Analysis and Data Science at Esri. He leads the R-ArcGIS Bridge project, bringing the ArcGIS system to the R community. A contributor to the extendr library, Josiah specializes in bridging R and Rust and is a package developer focused on building fast, scalable tools. 
 </p>
 </div>
 
 <div class="profile-card">
-<img class="pic" src="./images/Jeroen.webp" alt="Profile Image 20">
-<h2>Jeroen Ooms</h2>
-<h4>rOpenSci</h4>
-<p>Jeroen Ooms is the Lead Infrastructure Engineer at rOpenSci and creator of the R-universe platform. He is also a member of the Tidyverse team and maintains some of the most widely used R packages. Jeroen has PhD in statistics from UCLA and spent 10 years as a postdoc and research engineer at UC Berkeley.</p>
-<div class="social-links">
-<a target="_blank" class="tmm_sociallink" href="https://github.com/jeroen" title="">
-<img decoding="async" alt="" src="./images/github.png"></a>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/datajeroen/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
+<img class="pic" src="./images/Yanina-new.jpg" alt="Profile Image 12">
+<h2>Yanina Bellini Saibene, rOpenSci, R-Ladies, Universidad Austral</h2>
+<p>Yanina Bellini Saibene is the Community Manager at rOpenSci and co-founder of LatinR. She serves on the Boards of The Carpentries and R-Ladies, and teaches at Universidad Austral. A GitHub Star (2022–2025), Yanina has received multiple national awards for her work in open data and digital agriculture.</p>
 </div>
+
+<div class="profile-card">
+<img class="pic" src="./images/Benedikt.webp" alt="Profile Image 13">
+<h2>Benedikt Schamberger, Swiss Re</h2>
+<p class="profile-role">Silver Member</p>
+<p>Benedikt leads actuarial AI & Technology consulting at Swiss Re, helping teams adopt R and open-source tools. He also leads a Posit-based internal analytics platform used by hundreds company-wide. He supports the R community by promoting best practices and delivering trainings for insurance and other financial professionals. He holds a MSc in mathematical finance and actuarial science from Technical University Munich.</p>
+</div>
+
+<div class="profile-card">
+<img class="pic" src="./images/daniela-colombo.jpg" alt="Profile Image 16">
+<h2>Daniela Colombo, Microsoft</h2>
+<p class="profile-role">Platinum Member</p>
+<p>Daniela Colombo is EMEA Enterprise Partner CTO and Sr. Director of Technology 
+at Microsoft with in depth experience and knowledge about Data & AI and Applications.</p>
+</div>
+
+<div class="profile-card">
+<img class="pic" src="./images/Jeroen.webp" alt="Profile Image 20">
+<h2>Jeroen Ooms, rOpenSci</h2>
+<p>Jeroen Ooms is the Lead Infrastructure Engineer at rOpenSci and creator of the R-universe platform. He is also a member of the Tidyverse team and maintains some of the most widely used R packages. Jeroen has PhD in statistics from UCLA and spent 10 years as a postdoc and research engineer at UC Berkeley.</p>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/Hannah.webp" alt="Profile Image 22">
-<h2>Hannah Frick</h2>
-<h4>POSIT (PLATINUM MEMBER)</h4>
+<h2>Hannah Frick, Posit</h2>
+<p class="profile-role">Platinum Member</p>
 <p>Software engineer on the tidymodels team at Posit. Co-founder of R-Ladies Global and former 
 co-organiser of the London chapter. </p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/hannah-frick/?originalSubdomain=uk" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://www.frick.ws/" title=""><img decoding="async" alt="" src="./images/website.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://github.com/hfrick" title=""><img decoding="async" alt="" src="./images/github.png"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="/posts/building-data-highways-kirill-mullers-journey-in-enhancing-rs-database/kirill.webp" alt="Profile Image 23">
-<h2>Kirill Müller</h2>
-<h4>TOP-LEVEL PROJECT </h4>
+<h2>Kirill Müller, R-DBI, Top-Level Project</h2>
 <p>Kirill runs the DBI project, a top-level project at the R Consortium, has previously been awarded five other projects, and is a core contributor to several tidyverse packages, including duckplyr, dplyr, and tibble. He is a founder and partner at cynkra, a data science consultancy based in Zurich.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/kirill-m%C3%BCller/" title=""><img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/payman-eshghi.jpeg" alt="Peyman Eshghi">
-<h2>Peyman Eshghi</h2>
-<h4>JOHNSON & JOHNSON (SILVER MEMBER)</h4>
+<h2>Peyman Eshghi, Johnson & Johnson</h2>
+<p class="profile-role">Silver Member</p>
 <p>Senior Principal Technical Lead at Johnson & Johnson, with years of experience in R and data science, dedicated to advancing R in regulated industries by promoting robust, reproducible tooling, community collaboration, and best practices in package development and visualization.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/peyman-eshghi/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/nik-kountouris.jpeg" alt="Nikolas Kountouris">
-<h2>Nikolas Kountouris</h2>
-<h4>PFIZER (SILVER MEMBER)</h4>
+<h2>Nikolas Kountouris, Pfizer</h2>
+<p class="profile-role">Silver Member</p>
 <p>Nikolas is a professional with a proven track record of successfully delivering projects and leading teams in the banking, consulting, technology and pharmaceutical sectors. He has worked in different environments and countries and has extensive experience in data science, data analytics and risk management (ICAAP, IFRS 9 and IRB).</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/nikolas-kountouris-6155061b/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
 </div>
 
 <div class="profile-card">
 <img class="pic" src="./images/James.webp" alt="James Black">
-<h2>James Black</h2>
-<h4>NOVARTIS (SILVER MEMBER)</h4>
+<h2>James Black, Novartis</h2>
+<p class="profile-role">Silver Member</p>
 <p>Hello my name is James &#128075;. I'm a father, kiwi, husband, code tinkerer and technical leader. I started my career in epidemiology and now work to improve our ability to understand and leverage data to improve human health.</p>
-<a target="_blank" class="tmm_sociallink" href="https://www.linkedin.com/in/epijim/" title="">
-<img decoding="async" alt="" src="./images/linkedin.webp"></a>
-<a target="_blank" class="tmm_sociallink" href="https://www.epijim.uk/" title="">
-<img decoding="async" alt="" src="./images/website.webp"></a>
 </div>
 
 </div>
@@ -333,7 +268,7 @@ environment for collaboration.
 <div class="profile-card">
 <img class="pic" src="./images/Terry.jpg" alt="Profile Image 22">
 <h2>Terry Christiani</h2>
-<h4>EXECUTIVE DIRECTOR</h4>
+<p class="profile-role">Executive Director</p>
 <p>30 years of building content strategies to help companies acquire and 
 support customers. Successfully rebranded and created content programs 
 to help build and sell 4 different companies. Built programs to identify 
