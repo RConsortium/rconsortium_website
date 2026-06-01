@@ -4,6 +4,11 @@ description: "Ekaterina Akimova-Höpner, founder of the R-Ladies Salzburg chapte
 author: "R Consortium"
 image: "EkaterinaAkimova.png"
 date: "08/20/2025"
+url: "https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/"
+unpublished: false
+categories: ["rugs", "events"]
+image-alt: "How R Powers Cancer Research and Community Teaching in Austria"
+
 ---
 
 [Ekaterina Akimova-Höpner](https://www.linkedin.com/in/ekaterina-akimova-7727801a6/), founder of the [R-Ladies Salzburg](https://www.meetup.com/rladies-salzburg/) chapter, recently spoke with the R Consortium about using R to support cutting-edge cancer research and building a local R community in Austria. Ekaterina shared how she uses R for data preprocessing, statistical modeling, and visualizing high-dimensional genomic datasets. She discussed the launch of R-Ladies Salzburg in 2024, the importance of hands-on workshops for early-career researchers, and how scientific collaboration continues to shape her approach to community building. She also highlighted her talk last year at the useR! Conference 2024, where she presented tools for reproducible research in biomedical science.

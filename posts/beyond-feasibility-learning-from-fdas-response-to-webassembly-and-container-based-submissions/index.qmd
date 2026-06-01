@@ -5,6 +5,10 @@ author: "R Consortium"
 image: "Screenshot.png"
 image-alt: "FDA review letter for Pilot 4 submission"
 date: "05/14/2026"
+url: "https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/"
+unpublished: false
+categories: ["isc", "announcements", "submissions", "pharma"]
+
 ---
 
 In May 2026, the R Consortium R Submissions Working Group received the FDA's review letter for Pilot 4, which summarized the FDA's evaluation of using WebAssembly and Docker containers to package and run an R Shiny application in a regulatory review setting. The letter can be found here: [Summary R Pilot 4 Submission](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot4_Submission.pdf)

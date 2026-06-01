@@ -3,7 +3,7 @@ title: "Survival Analysis with nlmixr2"
 unpublished: false 
 url: "https://r-consortium.org/posts/survival-analysis-with-nlmixr2/"
 description: "Justin Wilkins and the nlmixr2 Development Team show how to fit parametric time-to-event models in nlmixr2 using the package's custom log-likelihood interface."
-categories: ["pharma", "submissions", "clinical research", "announcements", "working group"]
+categories: ["pharma", "submissions", "clinical research", "announcements", "working groups"]
 author: "R Consortium" 
 image: "nlmixr2-logo.png" 
 image-alt: "the nlmixr2 working group logo" 

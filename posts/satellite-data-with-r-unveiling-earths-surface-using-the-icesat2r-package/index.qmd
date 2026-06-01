@@ -4,6 +4,11 @@ description: "The R Consortium recently connected with Lampros Sp. Mouselimis, t
 author: "R Consortium"
 image: "mouselimis.jpeg"
 date: "01/16/2024"
+url: "https://r-consortium.org/posts/satellite-data-with-r-unveiling-earths-surface-using-the-icesat2r-package/"
+unpublished: false
+categories: ["isc", "announcements", "infrastructure"]
+image-alt: "Satellite Data with R: Unveiling Earth’s Surface Using the ICESat2R Package"
+
 ---
 
 The R Consortium recently connected with Lampros Sp. Mouselimis, the creator of the [ICESat2R](https://github.com/mlampros/IceSat2R/blob/master/README.md) package, discussing the ICESat-2 mission, a significant initiative in understanding the Earth’s surface dynamics. This NASA mission, utilizing the Advanced Topographic Laser Altimeter System (ATLAS), provides in-depth altimetry data, capturing Earth’s topography with unparalleled precision. 

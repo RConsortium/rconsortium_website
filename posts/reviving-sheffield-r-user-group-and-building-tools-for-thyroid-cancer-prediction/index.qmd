@@ -4,6 +4,11 @@ description: "Neil Shephard, co-organizer of the Sheffield R User Group in Sheff
 author: "R Consortium"
 image: "SheffieldRUGs.png"
 date: "11/01/2024"
+url: "https://r-consortium.org/posts/reviving-sheffield-r-user-group-and-building-tools-for-thyroid-cancer-prediction/"
+unpublished: false
+categories: ["pharma", "rugs", "events", "ai", "eu"]
+image-alt: "Reviving Sheffield R User Group and Building Tools for Thyroid Cancer Prediction"
+
 ---
 
 [Neil Shephard](https://blog.nshephard.dev/about.html), co-organizer of the [Sheffield R User Group](https://www.meetup.com/sheffieldr-sheffield-r-users-group/) in Sheffield, United Kingdom (also on [fosstodon](https://fosstodon.org/@sheffieldr)), recently spoke to the R Consortium about his journey from Genetic Epidemiology to Research Software Engineering with R. He also discussed the revival of the Sheffield R User group and the challenges of organizing inclusive and hybrid events. Neil also highlighted the group's successful participation in Hacktoberfest and shared insights into his current R projects, including developing tools for thyroid cancer prediction and deploying Shiny applications.

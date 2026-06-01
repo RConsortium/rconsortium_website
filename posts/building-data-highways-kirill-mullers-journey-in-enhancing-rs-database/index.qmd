@@ -3,6 +3,12 @@ title: "Building Data Highways: Kirill Müller’s Journey in Enhancing R’s Da
 description: "Kirill Müller is the author of the {DBI} package, which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages…"
 author: "R Consortium"
 date: "04/18/2024"
+url: "https://r-consortium.org/posts/building-data-highways-kirill-mullers-journey-in-enhancing-rs-database/"
+unpublished: false
+categories: ["eu"]
+image: "kirill.webp"
+image-alt: "Building Data Highways: Kirill Müller’s Journey in Enhancing R’s Database"
+
 ---
 
 Kirill Müller is the author of the [{DBI} package](https://dbi.r-dbi.org/), which helps to connect R and database management systems (DBMS). The connection to a DBMS is achieved through database-specific backend packages that implement this interface, such as [RPostgres](https://cran.r-project.org/web/packages/RPostgres/index.html), [RMariaDB](https://cran.r-project.org/web/packages/RMariaDB/index.html), and [RSQLite](https://cran.r-project.org/web/packages/RSQLite/index.html). There’s more information [here.](https://r-dbi.org/blog/dbi-4-1/) Most users who want to access a database do not need to install DBI directly. It will be installed automatically when one of the database backends is installed. If you are new to DBI, the [introductory tutorial](https://dbi.r-dbi.org/articles/DBI.html) is an excellent starting point for familiarizing yourself with essential concepts.

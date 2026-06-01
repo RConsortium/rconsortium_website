@@ -4,6 +4,11 @@ description: "Kamil Sijko, organizer of both the R Users and R-Ladies Warsaw gro
 author: "R Consortium"
 image: "KamilSijko-main.png"
 date: "05/01/2025"
+url: "https://r-consortium.org/posts/microservices-randomization-apis-and-r-in-the-medical-sector-warsaws-data-community-in-focus/"
+unpublished: false
+categories: ["pharma", "rugs", "events", "ai"]
+image-alt: "Microservices, Randomization APIs, and R in the Medical Sector – Warsaw’s Data Community in Focus"
+
 ---
 
 [Kamil Sijko](https://www.linkedin.com/in/kamilsijko/), organizer of both the [R Users and R-Ladies Warsaw groups](https://www.meetup.com/spotkania-entuzjastow-r-warsaw-r-users-group-meetup/), recently spoke with the R Consortium about the evolving R community in Poland and the group's efforts to connect users across academia, industry, and open-source development. Kamil shared his journey from discovering R as a student to taking over the leadership of the Warsaw R community in 2024. He discussed the group’s hybrid meetups, industry collaborations with companies like AstraZeneca and Appsilon, and the importance of making R accessible through recorded sessions and international outreach. He also highlighted a recent open-source project on patient randomization, demonstrating how R can be effectively integrated into modern software ecosystems, particularly in medical applications.

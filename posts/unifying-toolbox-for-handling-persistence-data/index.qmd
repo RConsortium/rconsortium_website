@@ -1,10 +1,16 @@
 ---
 title: "A unifying toolbox for handling persistence data"
+description: "The phutil R package unifies topological data analysis workflows for persistence diagrams, integrating tools from the TDA ecosystem for reproducible research."
 author: "Aymeric Stamm, Jason Cory Brunson"
 format: html
 date: "05/16/2025"
 image: "phutil-main-image.png"
 bibliography: references.bib
+url: "https://r-consortium.org/posts/unifying-toolbox-for-handling-persistence-data/"
+unpublished: false
+categories: ["isc", "announcements", "infrastructure"]
+image-alt: "A unifying toolbox for handling persistence data"
+
 ---
 
 ## Topological data analysis in R

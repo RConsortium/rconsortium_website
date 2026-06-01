@@ -6,13 +6,14 @@ author:
     url: http://ropensci.org/about
   - name: The Bioconductor Team
     url: https://www.bioconductor.org/about/core-team/
-categories:
-  - Bioconductor
-  - R-universe
-  - Infrastructure
+categories: ["top level projects", "infrastructure", "announcements"]
 date: 2026-04-08
 image: "https://docs.r-universe.dev/img/bioc-pkg.png"
 lightbox: true
+url: "https://r-consortium.org/posts/r-universe-bioconductor-collaboration/"
+unpublished: false
+image-alt: "Collaborating between Bioconductor and R-universe on Development of Common Infrastructure"
+
 ---
 
 <small><i>This article is cross-posted on [rOpenSci](https://ropensci.org/blog/) and [Bioconductor](https://blog.bioconductor.org/) blogs.</i></small>
