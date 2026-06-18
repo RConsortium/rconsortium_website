@@ -1,15 +1,8 @@
 ---
 title: "The U.S. Federal Reserve quarterly model in R"
-description: "How to load the FRB/US econometric model and run Federal Reserve econometric exercises in R using the bimets package."
 author: "Guest Blog Post"
 date: '2024-10-16'
 output: html_document
-url: "https://r-consortium.org/posts/us-federal-reserve-quarterly-model-in-r/"
-unpublished: false
-categories: ["north america"]
-image: "FRB_R_1.png"
-image-alt: "The U.S. Federal Reserve quarterly model in R"
-
 ---
 
 ```{r setup, include=FALSE}
