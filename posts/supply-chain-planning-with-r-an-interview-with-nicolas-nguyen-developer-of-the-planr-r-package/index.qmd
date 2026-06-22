@@ -5,14 +5,14 @@ url: "https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-w
 description: "Nicolas Nguyen discusses how the planr R package brings demand and supply planning workflows from spreadsheets into reproducible, programmable R workflows."
 categories: ["software development", "supply chain"]
 author: "R Consortium"
-image: "NicolasNguyen.png"
+image: "NicolasNguyen.jpg"
 image-alt: "Nicolas Nguyen, developer of the planr R package"
 date: "06/22/2026"
 ---
 
 The R Consortium recently spoke with Nicolas Nguyen, Integrated Operations Manager at Pernod Ricard Taiwan and developer of the *planr* R package, about his work bringing R into practical supply chain planning.
 
-![](NicolasNguyen.png){width=50%}
+![](NicolasNguyen.jpg){width=50%}
 
 Nicolas developed *planr* to support common tasks in Demand and Supply Planning and S&OP, or Sales and Operations Planning. The package provides tools for calculating projected inventories and stock coverages, identifying constrained demand, building replenishment plans, converting monthly demand into weekly planning buckets, estimating short shelf-life stock, and projecting goods in transit.
 
