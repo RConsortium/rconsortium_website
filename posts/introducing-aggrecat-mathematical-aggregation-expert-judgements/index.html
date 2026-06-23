@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="David P. Wilkinson">
+<meta name="author" content="Elliot Gould">
+<meta name="dcterms.date" content="2026-06-23">
+<meta name="description" content="aggreCAT is an open-source R package hosted on CRAN designed for mathematically aggregating expert judgments">
+
+<title>Introducing {aggreCAT}: Mathematical aggregation of expert judgments – R Consortium</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d9e4005158de2f692e8bb39e16d5706b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../about/index.html">
+ <span class="dropdown-text">Mission</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
+ <span class="dropdown-text">ISC Charter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/faq.html">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/privacy.html">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../../members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/join.html">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../../all-projects/index.html">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-universe.dev/search">
+ <span class="dropdown-text">R-Universe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/previous-top-level-projects.html">
+ <span class="dropdown-text">Previous Top-Level Projects</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="../../webinars/webinars.html">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/events.html">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/cal.html">
+ <span class="dropdown-text">Working Groups Calendar</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../../blog/index.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../codeofconduct.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/rconsortium.bsky.social"> 
+<span class="menu-text"><i class="bi-bluesky " style="" role="img" aria-hidden="true"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@RConsortium"> <i class="bi bi-youtube" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Introducing {aggreCAT}: Mathematical aggregation of expert judgments</h1>
+                  <div>
+        <div class="description">
+          aggreCAT is an open-source R package hosted on CRAN designed for mathematically aggregating expert judgments
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">isc</div>
+                <div class="quarto-category">software development</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>David P. Wilkinson <a href="mailto:dwilkinson@unimelb.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-9560-6499" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+               <p>Elliot Gould <a href="https://orcid.org/0000-0002-6585-538X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 23, 2026</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">June 23, 2026</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<style>
+/* 1) Collapse spacing on the <pre> blocks produced by fansi */
+pre.fansi {
+  margin: 0 !important;
+}
+
+/* Optional: if you still see gaps, also collapse adjacent fansi blocks */
+pre.fansi + pre.fansi {
+  margin-top: 0 !important;
+}
+
+/* 2) remove the default margin that Quarto adds around output code blocks */
+.cell pre {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+</style>
+<p>Expert judgements and forecasts are playing an increasingly important role in a variety of fields such as ecological management and decision making<span class="citation" data-cites="Legge2022"><sup><a href="#ref-Legge2022" role="doc-biblioref">1</a></sup></span>, biosecurity risk analyses<span class="citation" data-cites="Wittmann2015"><sup><a href="#ref-Wittmann2015" role="doc-biblioref">2</a></sup></span>, replicability forecasts<span class="citation" data-cites="Mody2026"><sup><a href="#ref-Mody2026" role="doc-biblioref">3</a></sup></span>, and horizon scanning exercises<span class="citation" data-cites="Sutherland2017"><sup><a href="#ref-Sutherland2017" role="doc-biblioref">4</a></sup></span>. Eliciting judgements from multiple experts is always preferable to relying on single estimates, but it comes with the challenge of aggregating different opinions. Achieving <em>behavioural consensus</em> amongst a group of experts, i.e.&nbsp;continued deliberation until everyone agrees on the same answer, is difficult, time consuming, and not always appropriate when multiple, valid viewpoints exist. The alternative is to make use of <em>mathematical consensus</em>, whereby data from a group of experts is mathematically aggregated into a single score.</p>
+<p>Aggregated elicited judgements form a critical component of decision-making across multiple contexts, but there has been a dearth of accessible tools for implementing anything more complex than linear averages. Existing software options are either closed-source, locked behind paid software licenses, non-reproducible, or written in programming languages scantly used by ecologists or metascientists. Methods implemented in R, one of the most widely used programming languages in the life sciences<span class="citation" data-cites="Gao2025"><sup><a href="#ref-Gao2025" role="doc-biblioref">5</a></sup></span>, are also limited, either being small in scope or having been archived from CRAN over the years.</p>
+<section id="elicitation-at-scale-the-score-program-and-a-need-for-easy-and-reliable-aggregation-methods" class="level1">
+<h1>Elicitation at scale: The SCORE program and a need for easy and reliable aggregation methods</h1>
+<p>{aggreCAT} was initially developed as part of the <a href="https://arts.unimelb.edu.au/school-of-historical-and-philosophical-studies/our-research/research-projects/replicats">repliCATS</a> (Collaborative Assessment of Trustworthy Science) project within the international <a href="https://www.darpa.mil/research/programs/systematizing-confidence-in-open-research-and-evidence">DARPA SCORE program</a> (Systemizing Confidence in Open Research and Evidence). As part of SCORE, repliCATS used expert elicitation to evaluate the replicability of 4000 research claims published in the social and behavioural sciences (the results of which have just been released, see Mody et al.&nbsp;2026<span class="citation" data-cites="Mody2026"><sup><a href="#ref-Mody2026" role="doc-biblioref">3</a></sup></span>). {aggreCAT} arose out of a need for a software solution to reliably conduct mathematical aggregation at scale. While originally a bespoke implementation for repliCATS, we have since developed {aggreCAT} into a more general R package to handle most types of elicitation data requiring mathematical aggregation allowing for wider applicability.</p>
+</section>
+<section id="what-does-aggrecat-offer" class="level1">
+<h1>What does {aggreCAT} offer?</h1>
+<p>{aggreCAT} is an open, reliable, and modular R package for the mathematical aggregation of expert elicitation data with a straightforward user interface<span class="citation" data-cites="Gould2021"><sup><a href="#ref-Gould2021" role="doc-biblioref">6</a></sup></span>. {aggreCAT} provides a suite of 29 aggregation methods that explore different approaches to mathematical aggregation from straightforward arithmetic calculations to Bayesian statistical models. In addition, we provide extra functionality such as plotting functions and performance evaluation against known outcomes. While the repliCATS project uses the IDEA protocol to structure their elicitation process, we have generalised {aggreCAT} to work with a variety of elicitation protocols. {aggreCAT} fills a large void in open software for aggregating elicited judgements, providing enormous benefit to researchers and decision makers across any field of research.</p>
+</section>
+<section id="using-aggrecat" class="level1 page-columns page-full">
+<h1>Using {aggreCAT}</h1>
+<p>{aggreCAT} v1.1.0 is available on <a href="https://cran.r-project.org/package=aggreCAT">CRAN</a> while a development version is maintained on <a href="https://github.com/metamelb-repliCATS/aggreCAT">GitHub (metamelb-repliCATS/aggreCAT)</a>. For the walkthrough below we make use of the {aggreCAT}’s inbuilt datasets, which were originally published in Wintle et al.&nbsp;(2023)<span class="citation" data-cites="Wintle2023"><sup><a href="#ref-Wintle2023" role="doc-biblioref">7</a></sup></span>. This study served as a pilot of the repliCATS approach to the SCORE program and consists of evaluations by 25 experts of 25 published papers that underwent attempted replication.</p>
+<section id="load-packages" class="level2">
+<h2 class="anchored" data-anchor-id="load-packages">Load Packages</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aggreCAT)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="look-at-the-data-object" class="level2">
+<h2 class="anchored" data-anchor-id="look-at-the-data-object">Look at the data object</h2>
+<p>All aggregation methods require a data frame input of the elicited data, and we’ve included <code>data_ratings</code> in the package as an example dataset. Let’s take a look:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_ratings</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6,880 × 7
+   round   paper_id user_name  question           element           value group
+   &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;              &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;
+ 1 round_1 100      7l8m7dmjdb direct_replication three_point_lower    30 UOM1 
+ 2 round_1 100      7l8m7dmjdb involved_binary    binary_question      -1 UOM1 
+ 3 round_1 100      7l8m7dmjdb belief_binary      binary_question      -1 UOM1 
+ 4 round_1 100      7l8m7dmjdb direct_replication three_point_best     40 UOM1 
+ 5 round_1 100      7l8m7dmjdb direct_replication three_point_upper    45 UOM1 
+ 6 round_1 100      7l8m7dmjdb comprehension      likert_binary         5 UOM1 
+ 7 round_1 100      bvpgcjm09w direct_replication three_point_lower    60 UOM1 
+ 8 round_1 100      bvpgcjm09w direct_replication three_point_upper    90 UOM1 
+ 9 round_1 100      bvpgcjm09w direct_replication three_point_best     75 UOM1 
+10 round_1 100      bvpgcjm09w comprehension      likert_binary         7 UOM1 
+# ℹ 6,870 more rows</code></pre>
+</div>
+</div>
+<p>The data frame is in long format with six required columns (<code>group</code> here is additional and ignored). The full details are explained in <code>?data_ratings</code>, but these columns represent the structure of an IDEA protocol elicitation. You have an elicitation round, IDs for paper and elicitation participant, names of questions and elements (we support three-point elicitation questions), and then the value of the participants’ responses. While set up this way to support the IDEA protocol, {aggreCAT} isn’t limited to that elicitation format. As we’ll show later, we have some function arguments to allow for other elicitation styles.</p>
+</section>
+<section id="mathematical-aggregation" class="level2">
+<h2 class="anchored" data-anchor-id="mathematical-aggregation">Mathematical aggregation</h2>
+<p>Once you have a dataset in the correct format, conducting the mathematical aggregation is straightforward. All aggregation methods are grouped by type into a series of wrapper functions with a <code>*WAgg()</code> naming convention (where <code>WAgg</code> is short for ‘weighted aggregation’ and <code>*</code> indicating the group). To start with, let’s just do a simple arithmetic mean aggregation with the <code>AverageWAgg()</code> function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AverageWAgg</span>(<span class="at">expert_judgements =</span> data_ratings)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── AverageWAgg: ArMean ─────────────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Pre-Processing Options ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Round Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Three Point Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Percent Toggle: FALSE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 25 × 4
+   method paper_id    cs n_experts
+   &lt;chr&gt;  &lt;chr&gt;    &lt;dbl&gt;     &lt;int&gt;
+ 1 ArMean 100       70.6        25
+ 2 ArMean 102       30.8        25
+ 3 ArMean 103       62.5        25
+ 4 ArMean 104       47.1        25
+ 5 ArMean 106       36.5        25
+ 6 ArMean 108       71.8        25
+ 7 ArMean 109       72.5        25
+ 8 ArMean 116       62.6        25
+ 9 ArMean 118       54.8        25
+10 ArMean 133       59.9        25
+# ℹ 15 more rows</code></pre>
+</div>
+</div>
+<p>The output of all <code>*WAgg()</code> functions is a four-column data frame. The name of the chosen aggregation method, the ID of the elicitation being aggregated, the aggregated elicitation value (known as a confidence score), and the number of experts whose elicitation was aggregated. <code>ArMean</code>, the arithmetic mean aggregation method, is the default method for <code>AverageWAgg()</code> but we can use the <code>type</code> argument to apply a different aggregation method. Let’s aggregate using the median value instead:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">AverageWAgg</span>(<span class="at">expert_judgements =</span> data_ratings,</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">type =</span> <span class="st">"Median"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── AverageWAgg: Median ─────────────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Pre-Processing Options ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Round Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Three Point Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Percent Toggle: FALSE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 25 × 4
+   method paper_id    cs n_experts
+   &lt;chr&gt;  &lt;chr&gt;    &lt;dbl&gt;     &lt;int&gt;
+ 1 Median 100         75        25
+ 2 Median 102         30        25
+ 3 Median 103         70        25
+ 4 Median 104         50        25
+ 5 Median 106         30        25
+ 6 Median 108         70        25
+ 7 Median 109         75        25
+ 8 Median 116         69        25
+ 9 Median 118         53        25
+10 Median 133         65        25
+# ℹ 15 more rows</code></pre>
+</div>
+</div>
+<p>You may have noticed the list of pre-processing methods that are output to the console marked with an <i class="bi bi-info"></i> icon. Every <code>*WAgg()</code> function has a different combination of options available, which let the user toggle certain behaviours on or off to suit their chosen elicitation style. IDEA is a two round elicitation where only the second round of data gets used in the aggregation, but the <code>round_2_filter</code> argument lets you turn this step off if you wanted to retain both rounds, or if you used a single round elicitation approach. The <code>percent_toggle</code> argument lets you convert percentages into probabilities because the original requirements for {aggreCAT} included the need to accept elicited probabilities as percentages. By keeping <code>round_2_filter</code> set to <code>FALSE</code> you can aggregate other elicitation data formats (e.g.&nbsp;counts) but note that some aggregation methods are only applicable to probabilistic data.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>cs_ArMean <span class="ot">&lt;-</span> <span class="fu">AverageWAgg</span>(<span class="at">expert_judgements =</span> data_ratings,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>                         <span class="at">type =</span> <span class="st">"ArMean"</span>,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">percent_toggle =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>                         <span class="at">round_2_filter =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── AverageWAgg: ArMean ─────────────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Pre-Processing Options ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Round Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Three Point Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Percent Toggle: TRUE</code></pre>
+</div>
+</div>
+<p>Let’s generate confidence scores for several aggregation methods. First, we’ll use <code>IntervalWAgg()</code> and the <code>IntWAgg</code> aggregation type to perform a weighted aggregation where participants are weighted based on the width of their supplied uncertainty bounds.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>cs_IntWAgg <span class="ot">&lt;-</span> <span class="fu">IntervalWAgg</span>(<span class="at">expert_judgements =</span> data_ratings,</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>                           <span class="at">type =</span> <span class="st">"IntWAgg"</span>,</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">percent_toggle =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">round_2_filter =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── IntervalWAgg: IntWAgg ───────────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Pre-Processing Options ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Round Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Three Point Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Percent Toggle: TRUE</code></pre>
+</div>
+</div>
+<p>Next, we’ll use <code>ReasoningWAgg()</code> and the <code>ReasonWAgg</code> method to conduct a weighted aggregation based on the number of unique reasons the participant used to justify their numeric estimates. This method requires a supplementary dataset of these coded reasons to calculate a weight, which exists as an example dataset called <code>data_supp_reasons</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>cs_ReasonWAgg <span class="ot">&lt;-</span> <span class="fu">ReasoningWAgg</span>(<span class="at">expert_judgements =</span> data_ratings,</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>                               <span class="at">reasons =</span> data_supp_reasons,</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>                               <span class="at">type =</span> <span class="st">"ReasonWAgg"</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">percent_toggle =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">round_2_filter =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── ReasoningWAgg: ReasonWAgg ───────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Pre-Processing Options ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Round Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Three Point Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Percent Toggle: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(paper_id)`
+Joining with `by = join_by(paper_id, n_experts)`</code></pre>
+</div>
+</div>
+<p>Finally, we will use <code>LinearWAgg()</code> and the <code>Participant</code> type to conduct a weighted aggregation using a user-supplied weight that applies at the participant level. Here we create our <code>QuizWAgg</code> method where we weight users based on how well they performed on a quiz they completed prior to conducting the full elicitation. The <code>data_supp_quiz</code> object supplies several different ways that participant quiz responses were scored as different columns and we just need to specify which scoring method is to be used as the weight.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>cs_QuizWAgg <span class="ot">&lt;-</span> <span class="fu">LinearWAgg</span>(<span class="at">expert_judgements =</span> data_ratings,</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">type =</span> <span class="st">"Participant"</span>,</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">weights =</span> data_supp_quiz <span class="sc">|&gt;</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rename</span>(<span class="at">weight =</span> quiz_score),</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>                          <span class="at">name =</span> <span class="st">"QuizWAgg"</span>,</span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>                          <span class="at">percent_toggle =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>                          <span class="at">round_2_filter =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── LinearWAgg: QuizWAgg ────────────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Pre-Processing Options ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Round Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Three Point Filter: TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Percent Toggle: TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="performance-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="performance-evaluation">Performance evaluation</h2>
+<p>The <code>confidence_score_evaluation()</code> function evaluates the performance of the aggregation methods when there are known outcomes, or “truth” values to be evaluated against. In our case, <code>data_outcomes</code> provides a binary value indicating whether a replication attempt for a given paper was successful or not.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confidence_score_evaluation</span>(<span class="at">confidence_scores =</span> <span class="fu">bind_rows</span>(cs_ArMean,</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>                                                          cs_IntWAgg,</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>                                                          cs_QuizWAgg,</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>                                                          cs_ReasonWAgg),</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>                            <span class="at">outcomes =</span> data_outcomes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  method       AUC Brier_Score Classification_Accuracy Correlation
+  &lt;chr&gt;      &lt;dbl&gt;       &lt;dbl&gt;                   &lt;dbl&gt;       &lt;dbl&gt;
+1 ArMean     0.936       0.152                    0.84       0.747
+2 IntWAgg    0.929       0.137                    0.84       0.725
+3 QuizWAgg   0.942       0.148                    0.84       0.756
+4 ReasonWAgg 0.891       0.154                    0.84       0.719</code></pre>
+</div>
+</div>
+<p>This function currently calculates performance using four different metrics: AUC, Brier Score, classification accuracy, and a point-biserial correlation. Performance by each metric is calculated separately for each aggregation method.</p>
+</section>
+<section id="visualisation" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="visualisation">Visualisation</h2>
+<p>Finally, we have several basic visualisation functions to let you explore your data. First, we use <code>confidence_score_ridgeplot()</code> to generate a ridge plot of the aggregated scores across a full suite of aggregation methods, using the <code>data_confidence_scores</code> object. With this plot we can see the distribution of scores generated by each aggregation method for the 25 papers being assessed. This visualisation lets us identify which aggregation methods are returning different, or similar, scores. Here we can see that the <code>BayesianWAgg()</code> and <code>IntervalWAgg()</code> methods are generating stronger negative scores, while <code>BetaArMean()</code>, an extremising method, returns stronger positive and negative scores.</p>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confidence_score_ridgeplot</span>(<span class="at">confidence_scores =</span> data_confidence_scores)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="index_files/figure-html/visualise-cs-ridgeplot-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img column-body" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Here we use <code>confidence_score_heatmap()</code> to generate a heatmap of the aggregated scores across a number of aggregation methods, using the <code>data_confidence_scores</code> object, and split by the replication study result within <code>data_outcomes</code>.</p>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confidence_score_heatmap</span>(<span class="at">confidence_scores =</span> data_confidence_scores,</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data_outcomes =</span> data_outcomes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="index_files/figure-html/visualise-cs-heatmap-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img column-body" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>{aggreCAT}’s example dataset included some infamous replication studies, so many participants were likely familiar with the outcomes of some or all replication studies before they gave their own estimates. We can see this playing out in the heatmap visualisation, where studies that did replicate mostly had scores above 0.5, while studies that failed to replicate were mostly below 0.5. It also reveals that behaviour was consistent across participants because this pattern largely holds across the different aggregation methods weighting by different behavioural characteristics. The exceptions to this are the methods found in <code>IntervalWAgg()</code>, which weights based on the user’s self-reported uncertainty, and <code>BetaArMean()</code> which uses a beta distribution to extremise participant scores to account for participant tendencies to provide conservative estimates. Both aggregation methods demonstrate much stronger “will not replicate” signals in the scores.</p>
+</section>
+</section>
+<section id="what-is-next-for-aggrecat" class="level1">
+<h1>What is next for {aggreCAT}?</h1>
+<p>While {aggreCAT} is perfectly functional in its current form we are always looking for ways to improve it. We have generalised the package functionality to work beyond the IDEA protocol elicitation formats alone, but there are still some hold-over naming conventions for dataset columns or function arguments that could be more generic, which will eventually be changed. We’re also working on some new aggregation methods to be included in future package versions. As a teaser, I have an early version of an aggregation method that implements Cooke’s classical method<span class="citation" data-cites="Cooke1991"><sup><a href="#ref-Cooke1991" role="doc-biblioref">8</a></sup></span>, a method for combining elicited probability distributions. We also have plans to improve and expand visualisation functions. Some of these are new functions based on plots we’ve created for publications, some of them are feature updates to existing functions to allow for some more user customisation.</p>
+<p>We’re always happy to hear from existing and would-be users about any additional features that would help them conduct their own research or practitioners conducting their own elicitations. If you have any requests, you can submit them as an <a href="https://github.com/metamelb-repliCATS/aggreCAT/issues">issue on our GitHub repository</a> and we can add them to our to do lists, or you’re welcome to submit pull requests with additional features that you’ve coded up that we will review and evaluate for inclusion in the package down the line. Finally, we are <a href="mailto:dwilkinson@unimelb.edu.au">contactable by email</a> should you have any queries about the package, or about our research at <a href="https://arts.unimelb.edu.au/school-of-historical-and-philosophical-studies/our-research/metamelb">MetaMelb</a>.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Legge2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Legge, S., Rumpff, L., Woinarski, J.C.Z., Whiterod, N.S., Ward, M., Southwell, D.G., Scheele, B.C., Nimmo, D.G., Lintermans, M., Geyle, H.M., et al. (2022). The conservation impacts of ecological disturbance: Time-bound estimates of population loss and recovery for fauna affected by the 2019<span></span>2020 australian megafires. Global Ecology and Biogeography <em>31</em>, 2085–2104. <a href="https://doi.org/10.1111/geb.13473">https://doi.org/10.1111/geb.13473</a>.</div>
+</div>
+<div id="ref-Wittmann2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Wittmann, M.E., Cooke, R.M., Rothlisberger, J.D., Rutherford, E.S., Zhang, H., Mason, D.M., and Lodge, D.M. (2015). Use of structured expert judgment to forecast invasions by bighead and silver carp in lake erie. Conservation Biology <em>29</em>, 187–197. <a href="https://doi.org/10.1111/cobi.12369">https://doi.org/10.1111/cobi.12369</a>.</div>
+</div>
+<div id="ref-Mody2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Mody, F., Wilkinson, D.P., Fraser, H., Fidler, F., Bishop, M.M., Burgman, M., Bush, M., Chen, Y., Dreber, A., Goldfedder, B., et al. (2026). Large-scale human predictions of the replicability of published social and behavioural science papers – a multi- study analysis. <a href="https://doi.org/10.31222/osf.io/vgyed_v1">https://doi.org/10.31222/osf.io/vgyed_v1</a>.</div>
+</div>
+<div id="ref-Sutherland2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Sutherland, W.J., Barnard, P., Broad, S., Clout, M., Connor, B., Côté, I.M., Dicks, L.V., Doran, H., Entwistle, A.C., Fleishman, E., et al. (2017). A 2017 horizon scan of emerging issues for global conservation and biological diversity. Trends in Ecology &amp; Evolution <em>32</em>, 31–40. <a href="https://doi.org/10.1016/j.tree.2016.11.005">https://doi.org/10.1016/j.tree.2016.11.005</a>.</div>
+</div>
+<div id="ref-Gao2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Gao, M., Ye, Y., Zheng, Y., and Lai, J. (2025). A comprehensive analysis of r<span>’</span>s application in ecological research from 2008 to 2023. Journal of Plant Ecology <em>18</em>, rtaf010. <a href="https://doi.org/10.1093/jpe/rtaf010">https://doi.org/10.1093/jpe/rtaf010</a>.</div>
+</div>
+<div id="ref-Gould2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Gould, E., Gray, C.T., Willcox, A., O’Dea, R.E., Groenewegen, R., and Wilkinson, D.P. (2026). aggreCAT: An r package for mathematically aggregating expert judgments. MetaArXiv [Preprint]. <a href="https://doi.org/10.31222/osf.io/74tfv_v2">https://doi.org/10.31222/osf.io/74tfv_v2</a>.</div>
+</div>
+<div id="ref-Wintle2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Wintle, B.C., Smith, E.T., Bush, M., Mody, F., Wilkinson, D.P., Hanea, A.M., Marcoci, A., Fraser, H., Hemming, V., Thorn, F.S., et al. (2023). Predicting and reasoning about replicability using structured groups. Royal Society Open Science, 1–24. <a href="https://doi.org/10.1098/rsos.221553">https://doi.org/10.1098/rsos.221553</a>.</div>
+</div>
+<div id="ref-Cooke1991" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Cooke, R.M. (1991). Experts in uncertainty: Opinion and subjective probability in science (Oxford University Press).</div>
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/r-consortium\.org");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
