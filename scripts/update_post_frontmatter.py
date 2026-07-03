@@ -10,6 +10,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 POSTS = ROOT / "posts"
 
+EXECUTABLE_CHUNK_EXCLUDE = {
+    "statistical-inference-for-persistence-diagrams",
+    "unifying-toolbox-for-handling-persistence-data",
+    "tidy-topological-machine-learning-with-tdavec-and-tdarec",
+    "us-federal-reserve-quarterly-model-in-r",
+    "r_plus_ai_call_for_proposals",
+}
+
 R_AI_SLUGS = {
     "brand-your-docs-apps-and-ggplots-using-llms",
     "gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt",
@@ -322,6 +330,8 @@ def set_categories_block(fm: str, cats: list[str]) -> str:
 
 def process_post(path: Path, apply: bool) -> bool:
     slug = path.parent.name
+    if slug in EXECUTABLE_CHUNK_EXCLUDE:
+        return False
     text = path.read_text(encoding="utf-8", errors="replace")
     parts = split_fm(text)
     if not parts:
@@ -391,12 +401,16 @@ def main() -> int:
     )
     args = parser.parse_args()
     paths = sorted(POSTS.glob("*/index.qmd"))
+    skipped = sum(1 for p in paths if p.parent.name in EXECUTABLE_CHUNK_EXCLUDE)
     updated = 0
     for p in paths:
         if process_post(p, apply=args.apply):
             updated += 1
     mode = "updated" if args.apply else "would update"
-    print(f"{mode} {updated} of {len(paths)} posts")
+    print(
+        f"{mode} {updated} of {len(paths) - skipped} posts "
+        f"({skipped} executable-chunk posts skipped)"
+    )
     return 0
 
 

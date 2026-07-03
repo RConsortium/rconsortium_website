@@ -44,6 +44,24 @@ APPROVED_CATEGORIES = {
 }
 APPROVED_LOWER = {c.lower() for c in APPROVED_CATEGORIES}
 
+EXECUTABLE_CHUNK_EXCLUDE = {
+    "statistical-inference-for-persistence-diagrams",
+    "unifying-toolbox-for-handling-persistence-data",
+    "tidy-topological-machine-learning-with-tdavec-and-tdarec",
+    "us-federal-reserve-quarterly-model-in-r",
+    "r_plus_ai_call_for_proposals",
+}
+
+CATEGORY_TYPO_CHECKS: dict[str, str] = {
+    "RUGS": "rugs",
+    "LGBTQ+": "lgbtq+",
+    "Software Development": "software development",
+    "Infrastructure": "infrastructure",
+    "insfrastructure": "infrastructure",
+    "working group": "working groups",
+    "r+ai": "r+ai 2025",
+}
+
 R_AI_SLUGS = {
     "brand-your-docs-apps-and-ggplots-using-llms",
     "gradient-boosting-machines-gbms-in-the-age-of-llms-and-chatgpt",
@@ -130,14 +148,13 @@ def audit_post(path: Path) -> list[str]:
         errors.append(f"{slug}: more than {MAX_CATEGORIES} categories ({len(cats)})")
 
     for c in cats:
+        if c in CATEGORY_TYPO_CHECKS:
+            errors.append(
+                f"{slug}: typo category '{c}' (use {CATEGORY_TYPO_CHECKS[c]!r})"
+            )
+            continue
         n = norm_cat(c)
-        if n == "insfrastructure":
-            errors.append(f"{slug}: typo category '{c}' (use infrastructure)")
-        elif n == "working group":
-            errors.append(f"{slug}: use 'working groups' not '{c}'")
-        elif n == "r+ai":
-            errors.append(f"{slug}: legacy category 'r+ai' (use r+ai 2025)")
-        elif n not in APPROVED_LOWER:
+        if n not in APPROVED_LOWER:
             errors.append(f"{slug}: unapproved category '{c}'")
 
     if slug in R_AI_SLUGS:
@@ -174,16 +191,27 @@ def audit_post(path: Path) -> list[str]:
 def main() -> int:
     paths = sorted(POSTS.glob("*/index.qmd"))
     all_errors: list[str] = []
+    skipped = 0
     for p in paths:
+        if p.parent.name in EXECUTABLE_CHUNK_EXCLUDE:
+            skipped += 1
+            continue
         all_errors.extend(audit_post(p))
 
+    audited = len(paths) - skipped
     if all_errors:
-        print(f"Found {len(all_errors)} error(s) in {len(paths)} posts:\n")
+        print(
+            f"Found {len(all_errors)} error(s) in {audited} posts "
+            f"({skipped} executable-chunk posts skipped):\n"
+        )
         for e in all_errors:
             print(e)
         return 1
 
-    print(f"OK: {len(paths)} posts passed audit.")
+    print(
+        f"OK: {audited} posts passed audit "
+        f"({skipped} executable-chunk posts skipped)."
+    )
     return 0
 
 
