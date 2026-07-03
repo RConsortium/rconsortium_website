@@ -12,27 +12,18 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://eurobioc2026.bioconductor.org/" target="_blank" rel="noreferrer noopener">EuroBioC 2026</a>',
-    '<a href="https://r-consortium.org/webinars/use-ai-to-build-and-share-insights-from-health-data.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Use AI to build and share insights from health data</a>',
-    '<a href="https://rr2026.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2026</a>',
     '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
     '<a href="https://user2026.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2026</a>',
     '<a href="https://ghana-rusers.org/ghana-r-conference-2026/" target="_blank" rel="noreferrer noopener">Ghana R Conference</a>',
     '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
   dates = c(
-    "June 3-5, 2026",
-    "June 11, 2026",
-    "June 16-18, 2026",
     "June 26-27, 2026",
     "July 6-9, 2026",
     "July 9-10, 2026",
     "Nov 11, 2026"
   ),
   location = c(
-    "Turku, Finland",
-    "Virtual",
-    "Nantes, France",
     "Portland, OR, USA",
     "Warsaw, Poland",
     "Accra Technical University, Ghana",
@@ -40,17 +31,11 @@ df <- data.frame(
   ),
   icon = c(
     "Conference",
-    "Webinar",
-    "Conference",
-    "Conference",
     "Conference",
     "Conference",
     "Conference"
   ),
   Type = c(
-    "Conference",
-    "Webinar",
-    "Conference",
     "Conference",
     "Conference",
     "Conference",
@@ -100,6 +85,9 @@ gt_table
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://rr2026.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2026</a>',
+    '<a href="https://r-consortium.org/webinars/use-ai-to-build-and-share-insights-from-health-data.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Use AI to build and share insights from health data</a>',
+    '<a href="https://eurobioc2026.bioconductor.org/" target="_blank" rel="noreferrer noopener">EuroBioC 2026</a>',
     '<a href="https://rconsortium.github.io/RMedicine_website/" target="_blank" rel="noreferrer noopener">R/Medicine 2026</a>',
     '<a href="https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html" target="_blank" rel="noreferrer noopener">Make your first R open source project contribution with git, forks, and PRs</a>',
     '<a href="https://rconsortium.github.io/Risk_website/" target="_blank" rel="noreferrer noopener">Risk 2026</a>',
@@ -160,6 +148,9 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/AdoptionOfRInJapansPharma.html" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+    'June 16-18, 2026',
+    'June 11, 2026',
+    'June 3-5, 2026',
     'May 5-8, 2026',
     'Apr 8, 2026',
     'Feb 18-19, 2026',
@@ -220,6 +211,9 @@ df <- data.frame(
     'January 8, 2024'
   ),
   location = c(
+    'Nantes, France',
+    'Virtual',
+    'Turku, Finland',
     'Virtual',
     'Virtual',
     'Virtual',
@@ -283,6 +277,9 @@ df <- data.frame(
     'Conference',
     'Webinar',
     'Conference',
+    'Conference',
+    'Webinar',
+    'Conference',
     'Webinar',
     'Webinar',
     'Conference',
@@ -340,6 +337,9 @@ df <- data.frame(
     'Webinar'
   ),
   icon = c(
+    'Conference',
+    'Webinar',
+    'Conference',
     'Conference',
     'Webinar',
     'Conference',

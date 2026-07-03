@@ -1,0 +1,86 @@
+---
+title: "Supply Chain Planning with R: An Interview with Nicolas Nguyen, Developer of the *planr* R Package"
+unpublished: false
+url: "https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/"
+description: "Nicolas Nguyen discusses how the planr R package brings demand and supply planning workflows from spreadsheets into reproducible, programmable R workflows."
+categories: ["software development", "supply chain"]
+author: "R Consortium"
+image: "NicolasNguyen.jpg"
+image-alt: "Nicolas Nguyen, developer of the planr R package"
+date: "06/22/2026"
+---
+
+The R Consortium recently spoke with Nicolas Nguyen, Integrated Operations Manager at Pernod Ricard Taiwan and developer of the *planr* R package, about his work bringing R into practical supply chain planning.
+
+![](NicolasNguyen.jpg){width=50%}
+
+Nicolas developed *planr* to support common tasks in Demand and Supply Planning and S&OP, or Sales and Operations Planning. The package provides tools for calculating projected inventories and stock coverages, identifying constrained demand, building replenishment plans, converting monthly demand into weekly planning buckets, estimating short shelf-life stock, and projecting goods in transit.
+
+In practical terms, *planr* helps planners move from static spreadsheets toward repeatable, transparent, and programmable planning workflows in R.
+
+What makes Nicolas's work especially relevant to the R community is its applied focus. Supply chain planning often depends on recurring calculations, scenario analysis, and cross-functional communication between commercial, operations, and finance teams. By packaging these workflows in R, *planr* gives practitioners a way to make planning logic more reproducible, auditable, and adaptable across products, markets, and time horizons.
+
+*planr* is available on CRAN: [CRAN - Package planr](https://cran.r-project.org/web/packages/planr/)
+
+In this interview, Nicolas discusses his professional background, how his operational work shaped the development of *planr*, and why R can be a strong tool for supply chain analytics and planning.
+
+**What led you to build the planr package, and how much of it came directly from problems you encountered in real demand and supply planning work?**
+
+I've been working in Supply Chain for about 20 years now. When we run our S&OP (Sales & Operations Planning) process and also DSP (Demand & Supply Planning), we often need to perform calculations related to projected inventories, replenishment plans, identification of constrained demand or supply allocations.
+
+Those calculations can be time consuming in Excel, and sometimes the APS (Advanced Planning Scheduling) software lacks some flexibility to perform some simulations.
+
+Using the calculations power of R, together with the data visualization capabilities and the possibility to wrap all this into a R Shiny web app is the perfect solution for those needs.
+
+I then started to develop some functions to calculate classic operations related to demand and supply planning, and gathered them into the R package *planr*.
+
+**For someone new to the package, what specific supply chain planning problem does planr solve especially well compared with building the logic manually in base R or tidyverse workflows?**
+
+Using functions such as `light_proj_inv()` or `drp()`, we can calculate in a few seconds the projected inventories or replenishment plans for a portfolio of items.
+
+It's also possible to combine those calculations in a workflow, to model a supply chain network and perform calculations through different steps.
+
+**Among the package functions such as projected inventory, constrained demand, and DRP, which ones do you think are most important for practitioners to understand first, and why?**
+
+I think the most classic need is related to the calculation of the projected inventories, so the functions `light_proj_inv()` and `proj_inv()` are, I believe, the most used ones. They are also simple functions, allowing you to visualize shortages and overstocks in the coming horizon.
+
+They can be performed at the product level, or at an aggregated level such as a Product Family or Market level.
+
+Then, based on what is seen, you might want to identify a constrained demand (i.e. the demand that you can answer considering your projected available inventories) or allocate some demand, so you will use other functions such as `const_dmd()` or `alloc_dmd()`.
+
+The function `drp()` is also pretty useful, of course to calculate a Replenishment Plan - also called DRP (Distribution Requirement Planning) - but also to run some "what if" scenarios, such as "what happens if I reduce my safety stocks targets or change my frequency of supply?"
+
+**How do you see planr fitting into a broader R-based supply chain workflow, especially for interactive analysis, visual cockpits, and Shiny apps that help planners explore projected inventories, constrained demand, and replenishment plans?**
+
+I think R offers fantastic tools for Supply Chain professionals, especially in the area of Demand Forecasting, and of course data visualization.
+
+In that context, the *planr* package is one more R tool to run wider calculations related to Demand and Supply Planning.
+
+Then comes the visualization part, so it's good to use it together with some other R packages such as *highcharter*, *reactable*, *reactablefmtr* and of course Shiny to provide a complete supply chain solution.
+
+**Looking ahead, what do you want to add or improve in planr, and what kinds of users, use cases, or capabilities are you most interested in supporting next?**
+
+I try regularly to add new useful functions to the *planr* package. For this, I need to give a big thank you to all my colleagues who suggested ideas - especially thank you April! - I think the coming functions will be about optimization and prescriptive analytics, to produce some recommendations for actions based on inputs and calculations.
+
+## planr Resources
+
+Main site: [https://niconguyen.quarto.pub/planr/about.html](https://niconguyen.quarto.pub/planr/about.html)
+
+Github repo: [https://github.com/nguyennico/planr](https://github.com/nguyennico/planr)
+
+R CRAN: [CRAN - Package planr](https://cran.r-project.org/web/packages/planr/)
+
+To install the CRAN version:
+
+```r
+# install.packages("planr")
+library(planr)
+```
+
+To install the latest development version from GitHub:
+
+```r
+library(devtools)
+# install_github("nguyennico/planr")
+library(planr)
+```
