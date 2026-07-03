@@ -8,6 +8,11 @@ format:
   html:
     css: 
       - https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+url: "https://r-consortium.org/posts/gergely-daroczis-journey-empowering-r-users-in-hungary/"
+unpublished: false
+categories: ["rugs", "events", "ai", "north america"]
+image-alt: "Gergely Daróczi’s Journey: Empowering R Users in Hungary"
+
 ---
 
 Gergely Daróczi, the founder and organizer of the [Budapest Users of R Network](https://www.meetup.com/budapest-users-of-r-network/), updated the R Consortium about the group’s recent activities. Last year, Gergely discussed the [group’s inception](https://www.r-consortium.org/blog/2023/01/11/how-a-user-2014-experience-led-to-development-of-r-community-in-budapest), and the challenges faced by the group during the pandemic. The group has now resumed in-person meetings, followed by networking sessions. The recent events organized by the group have focused on bioinformatics, large language models, and mathematical modeling. 

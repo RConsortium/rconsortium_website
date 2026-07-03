@@ -1,12 +1,14 @@
 ---
 title: "Johnson & Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission"
 unpublished: false
-url: "https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission"
+url: "https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission/"
 description: "Johnson & Johnson shares how a pragmatic hybrid R/SAS workflow—SAS for ADaM derivation and R for TFLs—enabled successful FDA submission while maintaining reviewer-friendly reproducibility through clear ADRG setup guidance."
 author: "R Consortium"
-categories: ["submissions", "pharma"]
+categories: ["submissions", "pharma", "members", "working groups"]
 image: "jnj-submissions-main-image.png"
 date: "12/15/2025"
+image-alt: "Johnson & Johnson’s Success Story: A Hybrid R/SAS Strategy for FDA Submission"
+
 ---
 
 The pharmaceutical industry is currently navigating a significant shift toward open-source programming, with R becoming an increasingly vital tool for regulatory submissions. In a recent R Consortium webinar, Johnson & Johnson (J\&J) shared a detailed case study of their successful "Hybrid R/SAS" submission strategy to the FDA.

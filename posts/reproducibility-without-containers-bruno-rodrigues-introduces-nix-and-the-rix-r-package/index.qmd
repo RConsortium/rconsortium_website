@@ -4,6 +4,11 @@ description: "How can we ensure long-term reproducibility across operating syste
 author: "R Consortium Community Assistant, Caitlyn Oda"
 image: "rix-main-image.png"
 date: "05/19/2025"
+url: "https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/"
+unpublished: false
+categories: ["events"]
+image-alt: "Reproducibility Without Containers: Bruno Rodrigues Introduces Nix and the `{rix}` R Package"
+
 ---
 
 ![](brunoheadshot.jpeg){width=30%}

@@ -4,6 +4,11 @@ description: "geometa provides an essential object-oriented data model in R, ena
 author: "R Consortium"
 image: "emmanuel-main.png"
 date: "03/20/2025"
+url: "https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/"
+unpublished: false
+categories: ["isc", "announcements", "submissions", "pharma", "infrastructure"]
+image-alt: "Exploring geometa: An R Package for Managing Geographic Metadata"
+
 ---
 
 **geometa** provides an essential object-oriented data model in R, enabling users to efficiently manage geographic metadata. The package facilitates handling of ISO and OGC standard geographic metadata and their dissemination on the web, ensuring that spatial data and maps are available in an open, internationally recognized format. As a widely adopted tool within the geospatial community, geometa plays a crucial role in standardizing metadata workflows.
