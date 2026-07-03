@@ -617,7 +617,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>submissions</category>
   <category>clinical research</category>
   <category>announcements</category>
-  <category>working group</category>
+  <category>working groups</category>
   <guid>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/</guid>
   <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
@@ -743,6 +743,11 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 
 
  ]]></description>
+  <category>isc</category>
+  <category>announcements</category>
+  <category>submissions</category>
+  <category>pharma</category>
+  <category>working groups</category>
   <guid>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/</guid>
   <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/Screenshot.png" medium="image" type="image/png" height="147" width="144"/>
@@ -885,8 +890,9 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </section>
 
  ]]></description>
+  <category>top level projects</category>
   <category>events</category>
-  <category>community</category>
+  <category>announcements</category>
   <guid>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/</guid>
   <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" medium="image" type="image/png" height="41" width="144"/>
@@ -977,9 +983,9 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </section>
 
  ]]></description>
-  <category>Bioconductor</category>
-  <category>R-universe</category>
-  <category>Infrastructure</category>
+  <category>top level projects</category>
+  <category>infrastructure</category>
+  <category>announcements</category>
   <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</guid>
   <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
   <media:content url="https://docs.r-universe.dev/img/bioc-pkg.png" medium="image" type="image/png"/>
@@ -1051,6 +1057,10 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </section>
 
  ]]></description>
+  <category>top level projects</category>
+  <category>isc</category>
+  <category>announcements</category>
+  <category>rugs</category>
   <category>events</category>
   <guid>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/</guid>
   <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
@@ -1284,6 +1294,11 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </section>
 
  ]]></description>
+  <category>submissions</category>
+  <category>pharma</category>
+  <category>rugs</category>
+  <category>ai</category>
+  <category>working groups</category>
   <guid>https://r-consortium.org/posts/submissions-wg-2026/</guid>
   <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" medium="image" type="image/png" height="81" width="144"/>
@@ -1381,7 +1396,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>submissions</category>
   <category>clinical research</category>
   <category>announcements</category>
-  <category>working group</category>
+  <category>working groups</category>
   <guid>https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/</guid>
   <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/from-nlmixr2-working-group-nlmixr2-inter-occasion-variability/nlmixr2.png" medium="image" type="image/png" height="166" width="144"/>
@@ -1820,9 +1835,10 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
 </section>
 
  ]]></description>
-  <category>RUGS</category>
-  <category>LGBTQ+</category>
-  <category>Software Development</category>
+  <category>rugs</category>
+  <category>lgbtq+</category>
+  <category>software development</category>
+  <category>women in tech</category>
   <guid>https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/</guid>
   <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/RSprint.png" medium="image" type="image/png" height="37" width="144"/>
@@ -1948,6 +1964,7 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <category>rugs</category>
   <category>software development</category>
   <category>epidemiology</category>
+  <category>africa</category>
   <guid>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/</guid>
   <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" medium="image" type="image/png" height="65" width="144"/>
@@ -2056,7 +2073,7 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
 </section>
 
  ]]></description>
-  <category>insfrastructure</category>
+  <category>infrastructure</category>
   <category>announcements</category>
   <guid>https://r-consortium.org/posts/650K-for-R/</guid>
   <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
