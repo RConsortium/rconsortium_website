@@ -7,7 +7,9 @@ categories: ["rugs","eu", "software development"]
 author: "R Consortium"
 image: "PaoloBosetti.png"
 image-alt: "Dr Paolo Bosetti, founder of R-Trento User Group (R-TUG), and Associate Professor, University of Trento, Italy"
-date: "11/25/2025"---
+date: "11/25/2025"
+---
+
 [Dr Paolo Bosetti](https://paolobosetti.quarto.pub/), Associate Professor at the University of Trento, Italy, recently spoke with the R Consortium about founding the [R-Trento User Group](https://www.meetup.com/r-trento-users-group/) (R-TUG) and fostering collaboration between academia, industry, and the public sector in Italy. He shared how he uses R in teaching industrial engineering students, from integrating RStudio and Quarto into coursework to emphasizing reproducible analysis and reporting. Dr. Paolo also discussed the development of his `adas.utils` package for experimental design, the importance of documenting community activities through a group blog, and his vision for expanding the R community in Trento.
 
 ![](PaoloBosetti.png){width=50% fig-alt="Dr Paolo Bosetti, founder of R-Trento User Group (R-TUG), and Associate Professor, University of Trento, Italy"}
