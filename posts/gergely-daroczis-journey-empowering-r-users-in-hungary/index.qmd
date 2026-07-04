@@ -54,7 +54,7 @@ In 2013, I attended my first [useR! conference](https://www.r-project.org/confer
 
 
 
-![](Untitled%20(2).jpg){fig-alt="Budapest R User Group event with guest speakers including Hadley Wickham"}
+![](Untitled%20(2).jpg){fig-alt="Image of large Budapest Users of R Network audience"}
 
 
 In Hungary, the community’s growth began slowly, with only 20 to 30 members in the first few years. However, it gradually increased over time. The community also hosted some famous personalities such as [Romain Francois](https://www.linkedin.com/in/romain-francois/), Matt Dowle, and [Hadley Wickham](https://www.rstudio.com/authors/hadley-wickham/), which further accelerated its growth. Additionally, the community organized the [first satRday](https://budapest.satrdays.org/) and [second ERUM conference](https://2018.erum.io/), which provided a platform for networking and knowledge sharing, further strengthening the community.
@@ -63,7 +63,7 @@ In Hungary, the community’s growth began slowly, with only 20 to 30 members in
 
 
 
-![](Untitled%20(3).jpg){fig-alt="Budapest R User Group in-person meetup after COVID"}
+![](Untitled%20(3).jpg){fig-alt="Participants from eRum 2018, held in Budapest, Hungary, May 14-16, 2018"}
 
 
 **How has the group been doing since our last conversation?**
@@ -74,7 +74,7 @@ After COVID, restarting the meetups was very challenging. We didn’t organize a
 
 
 
-![](Untitled%20(4).jpg){fig-alt="Budapest R User Group bioinformatics lightning talks event"}
+![](Untitled%20(4).jpg){fig-alt="Image from presentation of '\"Full-Stack\" Data Science with R' delivered by Ajay Gopal, Chief Data Scientist at SelfScore, at Crunch 2018 in Budapest, Hungary"}
 
 
 Recently, we have been focusing on bioinformatics and I was introduced to a local company that offered help with reaching out to speakers. Speakers drive these community meetings by bringing in a topic for discussion and talk, which we continue to discuss later on. Our past few events have focused on life sciences and have followed a lightning talk format, where we had around five 15-minute talks at each event. The topics were diverse, covering life sciences, some with LLMs involved, others focused on highly advanced math for modeling. We also had shiny applications that showed the biodiversity of forests in Hungary and some open-source tools besides R. 
@@ -87,7 +87,7 @@ I can only offer subjective experiences on the matter, but I have witnessed the 
 
 
 
-![](Untitled%20(5).jpg){fig-alt="Budapest R User Group networking session with food and drinks"}
+![](Untitled%20(5).jpg){fig-alt="Budapest Users of R Network networking session with food and drinks"}
 
 
 It is important to have a room with plenty of chairs and a larger area for people to gather after the talks. We can provide soft drinks, beer, or wine along with some pizzas and have a chat for an hour or two after the talk. The venue is a crucial factor. It’s also important to have speakers who are interested in the community so that they will come to learn as well. It’s great to have speakers with interesting topics, but the most important thing for me is networking. After the talks, coming together and getting to know others, learning about their struggles, and maybe sharing some tips in person with each other, becoming friends, or learning about opportunities in other industries. Networking and facilitating connections are crucial tasks for R user group organizers.
@@ -104,7 +104,7 @@ I’m excited that COVID restrictions are easing up and meetups are returning to
 
 
 
-![](Untitled.png){fig-alt="Spare Cores cloud compute resources project related to R bindings"}
+![](Untitled.png){fig-alt="Logo for Spare Cores cloud compute resources project related to R bindings"}
 
 
 Currently, I’m focusing on the ETL pipeline of the [Spare Cores](https://sparecores.com/) project, collecting information on cloud compute resources, which will soon have the R bindings as well. In the past, I’ve been working on R packages related to reporting (e.g. “[pander](https://cran.r-project.org/web/packages/pander/index.html)”) and using R in production (e.g. “[logger](https://cran.r-project.org/web/packages/logger/index.html),” “[dbr](https://github.com/daroczig/dbr)” or “boto3”). Recently, I enjoyed integrating APIs and frameworks from other programming languages, such as Python (kudos to the [reticulate](https://rstudio.github.io/reticulate/) team!), in R.

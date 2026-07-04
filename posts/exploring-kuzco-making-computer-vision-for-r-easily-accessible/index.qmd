@@ -14,7 +14,7 @@ date: "05/22/2025"
 
 In this interview, we explore the ideas behind `{kuzco}`, its use of LLMs, and how it differs from conventional deep learning frameworks like `{keras}` and `{torch}` in R. `{kuzco}` is open source and Frank states in the interview that the project is actively looking for contributions, both technical and non-technical. Feel free to contact him directly (frankiethull@proton.me for open source connections) to ask questions and find out more.
 
-![](frankthull.png){width=60%}
+![](frankthull.png){width=60% fig-alt="Frank Hull, data scientist, open source contributor, and developer of {kuzco}, an R package for image classification and computer vision using large language models (LLMs)"}
 
 
 ## 1. What problem does {kuzco} solve that existing R tools like {keras} or {torch} don’t?

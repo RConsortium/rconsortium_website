@@ -7,17 +7,15 @@ date: "03/20/2025"
 url: "https://r-consortium.org/posts/exploring-geometa-an-r-package-for-managing-geographic-metadata/"
 unpublished: false
 categories: ["isc", "announcements", "submissions", "pharma", "infrastructure"]
-image-alt: "Exploring geometa: An R Package for Managing Geographic Metadata"
-
+image-alt: "Emmanuel Blondel, author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management"
 ---
-
 **geometa** provides an essential object-oriented data model in R, enabling users to efficiently manage geographic metadata. The package facilitates handling of ISO and OGC standard geographic metadata and their dissemination on the web, ensuring that spatial data and maps are available in an open, internationally recognized format. As a widely adopted tool within the geospatial community, geometa plays a crucial role in standardizing metadata workflows.
 
 Since 2018, the R Consortium has supported the development of geometa, recognizing its value in bridging metadata standards with R’s data science ecosystem. You can try geometa yourself here: [CRAN – geometa](https://cran.r-project.org/package=geometa).
 
 In this interview, we speak with Emmanuel Blondel, the author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management. With a background in Agronomic Sciences and Environmental & Natural Resources Management from the French National Polytechnical Institute (INP-ENSAT), Emmanuel specializes in Geographic Information Systems (GIS) applied to fields such as agronomy, environment, fisheries, and aquatic sciences. As an active open-source developer, he shares insights into the evolution of geometa, the challenges of metadata standardization, and the future of geospatial data management in R.
 
-![](emmanuel.png)
+![](emmanuel.png){fig-alt="Emmanuel Blondel, the author of geometa, ows4R, geosapi, geonapi and geoflow—key R packages for geospatial data management"}
 
 ## What is the significance of geometa including support for ISO 19115-3 getting published on CRAN? Is this about incorporating new standards?
 
