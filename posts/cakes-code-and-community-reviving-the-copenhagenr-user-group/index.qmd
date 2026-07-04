@@ -3,6 +3,7 @@ title: "Cakes, Code, and Community: Rasmus Bååth’s Secret to Reviving the Co
 description: "After joining the Copenhagen R User Group in 2013, Rasmus Bååth took the lead in reviving the group in 2023 after a period of inactivity. Under his guidance, the group now focuses on industry-related topics, personal projects, and emerging tools like Quarto."
 author: "R Consortium"
 image: "copenhangenr-meetup3.png"
+image-alt: "Cakes, Code, and Community: Rasmus Bååth’s Secret to Reviving the CopenhagenR UseR Group"
 date: "10/08/2024"
 url: "https://r-consortium.org/posts/cakes-code-and-community-reviving-the-copenhagenr-user-group/"
 unpublished: false
@@ -20,7 +21,7 @@ now focuses on industry-related topics, personal projects, and emerging tools
 like Quarto. Rasmus is dedicated to fostering a vibrant local R community 
 through in-person meetups that encourage learning and collaboration.
 
-![](rasmus-baath.png)
+![](rasmus-baath.png){fig-alt="Rasmus Bååth"}
 
 The CopenhagenR UseR Group is hosting an exciting 
 “[Two Tools for Report Generation in R](https://www.meetup.com/copenhagenr-user-group/events/303309816/)” event 
@@ -53,7 +54,7 @@ years by 2023, and I felt it was a shame to let it die. I decided to restart it,
 and now we have a small but active group. We enjoy discussing industry-related 
 topics and personal projects.
 
-![](copenhangenr-meetup.png)
+![](copenhangenr-meetup.png){fig-alt="CopenhangenR meetup"}
 
 
 **Can you share what the local R community is like?**
@@ -75,7 +76,7 @@ recognize the need for in-person events. For those unable to attend, there
 is plenty of valuable content online. We don't have the setup to record events, 
 but we would consider doing so if feasible.
 
-![](copenhangenr-meetup2.png)
+![](copenhangenr-meetup2.png){fig-alt="CopenhangenR meetup2"}
 
 
 **You have a Meetup titled “[Two tools for report generation in R](https://www.meetup.com/copenhagenr-user-group/events/303309816/).” Can you share more on the topic covered? Why this topic?**
@@ -111,7 +112,7 @@ machine learning is not a common focus at our meetups, as most speakers
 are more inclined towards visualization, reporting, and statistics rather 
 than machine learning.
 
-![](copenhangenr-meetup3.png)
+![](copenhangenr-meetup3.png){fig-alt="CopenhangenR meetup3"}
 
 **Do you recommend any techniques for planning for or during the event? (GitHub, Zoom, other.) Can these techniques be used to make your group more inclusive to people who cannot attend physical events in the future?**
 

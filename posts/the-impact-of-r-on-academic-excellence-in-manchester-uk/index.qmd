@@ -7,7 +7,7 @@ url: "https://r-consortium.org/posts/the-impact-of-r-on-academic-excellence-in-m
 unpublished: false
 categories: ["rugs", "events", "ai", "eu"]
 image: "media.jpg"
-image-alt: "The Impact of R on Academic Excellence in Manchester, UK"
+image-alt: "Martín Herrerías Azcué, Research Software Engineer at the University of Manchester"
 
 ---
 
@@ -15,25 +15,25 @@ The R Consortium recently spoke with the organizing team of the [R User Group at
 
 During the discussion, the team shared details about their recent events and their plans for this year. They also discussed the latest trends in the R programming language and how they are utilizing it in their work.
 
-![](media.jpg)
+![](media.jpg){fig-alt="Martín Herrerías Azcué, Research Software Engineer at the University of Manchester"}
 
 [Martín Herrerías Azcué](https://www.linkedin.com/in/martinherrerias/)  
 Research Software Engineer  
 University of Manchester
 
-![](Screenshot-2024-04-15-at-1.30.33 PM.webp)
+![](Screenshot-2024-04-15-at-1.30.33 PM.webp){fig-alt="Anthony Evans, Research Software Engineer at the University of Manchester"}
 
 Anthony Evans  
 Research Software Engineer  
 University of Manchester
 
-![](media2.jpg)
+![](media2.jpg){fig-alt="Lana Bojanić, PhD Candidate at the University of Manchester"}
 
 [Lana Bojanić](https://www.linkedin.com/in/lana-bojani%C4%87-344b6696/?originalSubdomain=uk)  
 Researcher PhD Candidate  
 University of Manchester
 
-![](media3.jpg)
+![](media3.jpg){fig-alt="Rowan Green, PhD Student in Evolutionary Microbiology at the University of Manchester"}
 
 [Rowan Green](https://www.linkedin.com/in/rowan-green-microbes/?originalSubdomain=uk)  
 PhD Student in Evolutionary Microbiology   
@@ -61,7 +61,7 @@ Martin: Our events are a mix of in-person and online meetings. There have been t
 
 Our book club has mostly or completely taken place online.
 
-![](1000048419.jpg)
+![](1000048419.jpg){fig-alt="R User Group at the University of Manchester book club discussing R for Data Science"}
 
 Lana:  Bookclub was mostly online. During the summer book club, we were reading [R for Data Science](https://r4ds.hadley.nz/). We covered a chapter or two chapters each time. We had the book’s second edition, and people from all over the university joined the club.
 

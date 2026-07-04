@@ -7,14 +7,14 @@ date: "05/21/2025"
 url: "https://r-consortium.org/posts/quantifying-participation-risk-with-r-and-r-shiny-a-new-frontier-in-financial-risk-modeling/"
 unpublished: false
 categories: ["insurance/risk", "events", "infrastructure"]
-image-alt: "Quantifying Participation Risk with R and R Shiny: A New Frontier in Financial Risk Modeling"
+image-alt: "Quantifying participation risk with R and R Shiny webinar promotional image"
 
 ---
 
 
 Financial institutions are increasingly looking beyond traditional market risk to quantify and manage more complex forms of risk. [In a recent R Consortium webinar](https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html), Goran Lovric, LL.M., and Simon Aigner, MSc, from Raiffeisenlandesbank Oberösterreich (RLB OÖ) unveiled a novel approach to modeling *participation risk* using R and R Shiny, empowering banks to analyze value fluctuations in corporate holdings with a reproducible, open-source solution.
 
-![](goran.jpeg){width=40%}![](simon.jpeg){width=40%}
+![](goran.jpeg){fig-alt="Goran Lovric, LL.M., financial risk management expert at Raiffeisenlandesbank Oberösterreich"}![](simon.jpeg){fig-alt="Simon Aigner, MSc, economic and business analytics professional at Raiffeisenlandesbank Oberösterreich"}
 
 ## From Market Price to Participation Value
 
@@ -30,7 +30,7 @@ Using the `ecb` R package, participants saw how to fetch interest rate curves di
 
 These datasets form the foundation for estimating future cash flows and cost of equity, key components in the discounted cash flow model used to simulate value at risk (VaR) for participations.
 
-![](data.png)
+![](data.png){fig-alt="Screenshot of R code fetching financial data from the European Central Bank using the ecb package"}
 
 ## The R and Shiny App: Simulation, Reporting, and Deployment
 
@@ -40,7 +40,7 @@ All of these capabilities are built into a custom R Shiny app that the speakers 
 
 One striking example from the presentation illustrated the power of diversification. “Let’s say a portfolio is worth €1.7 billion. If you ignore sector correlations, you’d get a risk of €9.9 billion—58%,” Lovric explained. “But if you incorporate actual correlations across different sectors, that drops to about €750 million, or 44.5%, over a one-year, 99.9% confidence interval.”
 
-The tool includes a database-backed architecture for scalability, and Lovric detailed how it can be deployed on an internal server with a few additional scripts. This ensures compliance with banking regulations while preserving accessibility for teams across departments.![](demo.png)
+The tool includes a database-backed architecture for scalability, and Lovric detailed how it can be deployed on an internal server with a few additional scripts. This ensures compliance with banking regulations while preserving accessibility for teams across departments.![](demo.png){fig-alt="Screenshot of the participation risk R Shiny app showing Monte Carlo simulation results"}
 
 ## A Launchpad for Future Collaboration
 

@@ -7,10 +7,10 @@ date: "06/11/2024"
 url: "https://r-consortium.org/posts/keith-karani-wachira-leading-the-dekut-r-community-in-kenya-and-innovating-with-r/"
 unpublished: false
 categories: ["pharma", "rugs", "events", "ai", "africa"]
-image-alt: "Keith Karani Wachira: Leading the Dekut R Community in Kenya and Innovating with R"
+image-alt: "Keith Karani Wachira, organizer of the Dekut R Community in Nyeri, Kenya"
 
 ---
-![](unnamed.jpg)
+![](unnamed.jpg){fig-alt="Keith Karani Wachira, organizer of the Dekut R Community in Nyeri, Kenya"}
 
 [Keith Karani Wachira](https://www.linkedin.com/in/karani-keith-3794041a4/?originalSubdomain=ke), the [Dekut R Community ](https://www.meetup.com/dekutrcommunity/)organizer based in Nyeri, Kenya, was recently interviewed by the R Consortium and shared his journey in the R community, which began in 2019 during his university years. Sparked by a tech meetup, Keith’s interest grew through the pandemic sessions. Now in academia, he uses R to address business automation challenges, attracting industry professionals to his practical sessions. Excited by trends like AI integration and tools like Quarto, Keith foresees increased automation and efficiency. Outside work, he enjoys baseball, graphic design, web development, and teaching R, finding great reward in his students’ success.
 
@@ -30,7 +30,7 @@ I continued attending the sessions in 2020 during the pandemic. Although we no l
 
 
 
-![](unnamed%20(1).jpg)
+![](unnamed%20(1).jpg){fig-alt="Dekut R Community meetup session in 2020 during the pandemic"}
 
 
 Throughout 2020, I attended regularly but still lacked confidence in the language. However, in 2022, I made significant progress. Under Eric’s leadership, we expanded the community to involve more people, especially students from the department of Actuarial Science, Telecommunication Engineering and electrical engineering. We set up a structured learning environment based on materials from Hadley Wickham’s books and resources from the R website and blogs.
@@ -49,7 +49,7 @@ Coming from a background in business and information technology, I focus on solv
 
 
 
-![](unnamed%20(2).jpg)
+![](unnamed%20(2).jpg){fig-alt="Dekut R Community hybrid session with Egerton University students learning tidy models"}
 
 
 An interesting scenario arose when I became interested in EMS (Engineering and Management Systems). We started organizing hybrid sessions after the COVID period and it caught interest of students from another university in Kenya ,Egerton University. Through, statistical analysis bureau of Egerton University they joined our sessions to learn how to leverage tidy models packages to create machine learning models and also collaborate with the community members.
@@ -60,7 +60,7 @@ They were very interested, and as future economists, we demonstrated how to buil
 
 
 
-![](unnamed.png)
+![](unnamed.png){fig-alt="Dekut R Community session on generating reports with R Markdown"}
 
 
 Another valuable skill we taught was generating reports using R Markdown. This allows users to write code, format text, add videos, images, and emojis, and present their work in a professional and engaging manner. Attendees found this particularly useful as it enhanced their ability to write, structure, and report code effectively.
@@ -71,7 +71,7 @@ Participants learned to leverage the R ecosystem for coding, structuring their w
 
 
 
-![](unnamed%20(3).jpg)
+![](unnamed%20(3).jpg){fig-alt="Dekut R Community members at a learning session"}
 
 
 **What trends do you currently see in R language and your industry? Any trends you see developing in the near future?**
@@ -88,7 +88,7 @@ The integration of AI will likely lead to the automation of many manual processe
 
 
 
-![](unnamed%20(4).jpg)
+![](unnamed%20(4).jpg){fig-alt="Keith Karani Wachira playing baseball as catcher"}
 
 
 When not in front of my laptop, I enjoy playing baseball and softball, especially as a catcher. Catching allows me to see the entire game command the play, and I enjoy throwing the ball from home to second base and picking off a runner. It’s a challenging position that helps me focus and improve my aim.

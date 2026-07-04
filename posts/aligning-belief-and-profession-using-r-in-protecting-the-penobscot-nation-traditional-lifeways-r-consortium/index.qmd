@@ -3,6 +3,7 @@ title: "Aligning Beliefs and Profession: Using R in Protecting the Penobscot Nat
 description: "Angie Reed sampling Chlorophyll on the Penobscot River where a dam was removed In a recent interview by the R Consortium, Angie Reed, Water Resources Planner for the Penobscot Indian…"
 author: "R Consortium"
 image: "angie.png"
+image-alt: "Aligning Beliefs and Profession: Using R in Protecting the Penobscot Nation’s Traditional Lifeways"
 date: "03/27/2024"
 format:
   html:
@@ -54,7 +55,7 @@ My co-worker, Jan Paul, and I had the pleasure of attending and [presenting ](ht
 
 
 
-![](water-map.png)
+![](water-map.png){fig-alt="water map"}
 
 
 I find that people connect more with maps, especially when it comes to visualizing data that is geographically referenced. For instance, if there’s an issue in the water, people can see exactly where it is on the map. This is particularly relevant as people in this area are very familiar with the Penobscot River watershed.  My aim is to create tools that are not only interactive but also intuitive, allowing users to zoom into familiar areas and understand what’s happening there. 
@@ -96,7 +97,7 @@ I am deeply committed to engaging the younger generation, especially the student
 
 
 
-![](sampling-bacteria.png)
+![](sampling-bacteria.png){fig-alt="sampling bacteria"}
 <div style="text-align: center;">
   <p>Sampling for Bacteria</p>
 </div>
@@ -111,7 +112,7 @@ Beyond the Penobscot Nation school, we’re extending our reach to local high sc
 
 
 
-![](processing-bacteria.png)
+![](processing-bacteria.png){fig-alt="processing bacteria"}
 <div style="text-align: center;">
   <p>Processing bacteria sample</p>
 </div>

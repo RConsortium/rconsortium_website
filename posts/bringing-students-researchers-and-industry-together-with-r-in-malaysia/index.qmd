@@ -12,7 +12,7 @@ date: "02/05/2026"
 
 [Richie Yu Yong Poh](https://www.linkedin.com/in/yong-poh-yu/?originalSubdomain=my), organizer of the [Malaysia R User Group](https://www.meetup.com/malaysia-r-user-group/), recently spoke with the R Consortium about building a national R community centered around its annual conference. He shared that the group has evolved from a small network into a robust platform that connects students, researchers, and industry practitioners through workshops, seminars, and a flagship two-day event. Richie discussed the logistics of the annual conference, the design of hands-on workshops, and R's role in bridging the gap between academia and industry through real-world applications.
 
-![](YuYongPoh.png){width=50%}
+![](YuYongPoh.png){fig-alt="YuYongPoh — Bringing Students, Researchers, and Industry Together with R in Malaysia" width=50%}
 
 **Please share about your background and involvement with the RUGS group.**
 
@@ -24,7 +24,7 @@ Over time, our team explored both R and Python, noting that they complement each
 
 The group was founded by my colleague, [Dr Poo Kuan Hoong](https://www.linkedin.com/in/kuanhoong/?originalSubdomain=my), who introduced me to the community. Given my academic background and familiarity with R, I was eager to contribute. Since those early days, the group has grown significantly. We now officially co-organize the **Annual R Conference** in partnership with my university, supplemented by periodic seminars and workshops. We also utilize social media and digital platforms to share resources, fostering a collaborative environment where members regularly exchange insights and experiences.
 
-![](MalaysiaRUGFounder.png)
+![](MalaysiaRUGFounder.png){fig-alt="MalaysiaRUG Founder"}
 
 **Let's discuss the [R conference](https://www.r-conference.com/#h.q3v7ag2doxpm) held in November. Can you provide details on the speakers, topics covered, and audience response?**
 
@@ -32,7 +32,7 @@ The R Conference in Malaysia has become a premier annual event, attracting parti
 
 The two-day format featured one day of intensive workshops followed by a day of professional talks. Due to overwhelming interest—particularly for the hands-on sessions—we moved to a larger venue to accommodate the high volume of attendees bringing their own equipment.
 
-![](R-conference-group-photo-main.png)
+![](R-conference-group-photo-main.png){fig-alt="R conference group photo"}
 
 We offered two primary workshops:
 

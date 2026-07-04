@@ -3,6 +3,7 @@ title: "Books, Beginners, and Big Ideas: Beatriz Milz on Fostering R-Ladies São
 description: "Beatriz Milz, a co-organizer of R-Ladies São Paulo, recently spoke with the R Consortium about the vibrant growth of the R community in São Paulo and its commitment to inclusivity and accessible learning."
 author: "R Consortium"
 image: "R-LadiesSaoPaulo.png"
+image-alt: "Books, Beginners, and Big Ideas: Beatriz Milz on Fostering R-Ladies São Paulo’s Vibrant Community"
 date: "12/23/2024"
 url: "https://r-consortium.org/posts/books-beginners-big-ideas-beatriz-milz-fostering-r-ladies-sao-paulo-community/"
 unpublished: false
@@ -13,7 +14,7 @@ image-alt: "Books, Beginners, and Big Ideas: Beatriz Milz on Fostering R-Ladies 
 
 [Beatriz Milz](https://beamilz.com/about), a co-organizer of [R-Ladies São Paulo](https://www.meetup.com/rladies-sao-paulo/?eventOrigin=event_home_page), recently spoke with the R Consortium about the vibrant growth of the R community in São Paulo and its commitment to inclusivity and accessible learning. Beatriz shared insights into the group’s activities, from organizing popular in-person and online events to coordinating a book club focused on the newly translated R for Data Science in Portuguese. She also discussed the unique needs of R users in Brazil and how R-Ladies São Paulo supports beginners and advanced users through collaborative events and community-driven resources.
 
-![](BeatrizMilz.jpg)
+![](BeatrizMilz.jpg){fig-alt="Beatriz Milz R-Ladies São Paulo"}
 
 
 
@@ -43,7 +44,7 @@ We also have many members with a background in Statistics. Since most university
 
 It varies. This year, we hosted two in-person and many more online events—11. We held an average of 6.5 events per year. However, this year, we focused more on online events and had fewer in-person ones, mostly because booking venues for in-person events has been more difficult.
 
-![](R-LadiesSaoPauloEvents.png)
+![](R-LadiesSaoPauloEvents.png){fig-alt="R Ladies São Paulo Events"}
 
 **Regarding your experience, are people more interested in online or in-person events?**
 
@@ -57,7 +58,7 @@ While online events can have a broader impact on reaching a larger audience, in-
 
 **Please provide us with an update on your group's recent activities.**
 
-![](R-LadiesSaoPaulo.png)
+![](R-LadiesSaoPaulo.png){fig-alt="R Ladies São Paulo"}
 
 I wanted to discuss a series of events related to the book club we’re hosting. In Brazil, we speak Brazilian Portuguese. An editorial group published the highly regarded book [R for Data Science](https://r4ds.hadley.nz/) in Portuguese. The first edition is available only through purchase, but the English version is free online.
 

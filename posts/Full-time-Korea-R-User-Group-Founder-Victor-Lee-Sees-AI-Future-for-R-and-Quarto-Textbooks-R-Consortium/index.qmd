@@ -11,7 +11,7 @@ image-alt: "Full-time Korea R User Group Founder Victor Lee Sees AI Future for R
 
 ---
 
-![](victor.png)
+![](victor.png){fig-alt="Full-time Korea R User Group Founder Victor Lee Sees AI Future for R and Quarto Textbooks"}
 
 The R Consortium recently interviewed Victor Lee, organizer of the [Korea R User Group](https://r2bit.com/), about his role establishing and expanding the Korean R community. Victor shared his journey, beginning with an introduction to R and open source programming languages while working at the Hyundai Motor Company, and later, his efforts in establishing the tidyverse community in Korea. He highlighted his extensive experience with R, including writing blog posts, publishing Quarto books, and building websites for the Korea R User Group. Victor will be a Software Carpentry instructor at the Software Carpentry Workshops at Sejong University. 
 
@@ -42,7 +42,7 @@ R has evolved from a simple data analysis and statistical language to a tool tha
 
 **Why do industry professionals come to your user group? What is the benefit for attending?**
 
-![](krusergroup.jpg)
+![](krusergroup.jpg){fig-alt="krusergroup"}
 
 In Korea, about 20 to 30 years ago, R was the number one programming language for data science and statistics, particularly in areas like machine learning. However, with the rise of Python, many R users transitioned to Python due to its increasing popularity. Despite this shift, R remains significant in Korea, with many people continuing to use both R and Python.
 
