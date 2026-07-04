@@ -5,14 +5,14 @@ description: "Ella Kaye, Research Software Engineer at the University of Warwick
 author: "R Consortium"
 categories: ["rugs", "lgbtq+", "software development", "women in tech"]
 image: "RSprint.png"
-image-alt: "Making contributing to base R more accessible and inclusive"
+image-alt: "Participants from the R Project Sprint, University of Warwick, 2023"
 date: "01/13/2026"
 url: "https://r-consortium.org/posts/contributing-to-base-r-with-coding-equity-and-joy-inside-the-r-contributors-project/"
 
 ---
 [Ella Kaye](https://www.linkedin.com/in/ellakaye/?originalSubdomain=uk), Senior Research Software Engineer at the University of Warwick and one of the organizers of the [R Contributors project](https://contributor.r-project.org/) (also on [Meetup](https://www.meetup.com/r-contributors/)), recently spoke with the R Consortium about her path into the R community and her efforts to make contributing to base R more accessible and inclusive. She shared insights from organizing R Developer Days, using GitHub to lower barriers for new contributors, learning with joy while developing the R package `aperol`, and fostering community with rainbowR.
 
-![](EllaKaye.png){width=50%}
+![](EllaKaye.png){width=50% fig-alt="Ella Kaye, Senior Research Software Engineer at the University of Warwick and one of the organizers of the R Contributors project"}
 
 ## Please share about your background and involvement with the RUGS group.
 
@@ -24,7 +24,7 @@ At Warwick, I’m on the committee of the [Warwick R User Group](https://warwick
 
 We organize [R Developer Days](https://contributor.r-project.org/events/r-dev-days/), which bring together a wide range of contributors, from members of R Core to those who’ve never contributed to base R before. In 2023, we held a three-day [R Sprint](https://contributor.r-project.org/r-project-sprint-2023/) at Warwick. Participants came from all over the world and represented various groups within the R community and the broader R world. It was a fantastic experience that led to several patches in the R codebase. We also run monthly R contributor [office hours](https://contributor.r-project.org/events/office-hours/) and a [C Study Group for R contributors](https://contributor.r-project.org/events/c-study-group-2025/).
 
-![](RSprint.png)
+![](RSprint.png){fig-alt="Participants from the R Project Sprint, University of Warwick, 2023"}
 
 _R Project Sprint, University of Warwick, 2023_
 
@@ -36,7 +36,7 @@ At the R Dev Days, we’re doing something a bit different and more specific tha
 
 Success hinges on identifying suitable bugs to work on, as many listed on [Bugzilla](https://www.bugzilla.org/) may exceed the technical capabilities of the participants or require buy-in from R Core members. A lot of work goes into reviewing bugs on Bugzilla beforehand to select those that are suitable for a Dev Day, ensuring they cater to varying levels of experience and technical skills. 
 
-![](RDevDay.png)
+![](RDevDay.png){fig-alt="R Contributors at R Dev Day @ PLUS 2024"}
 
 _R Contributors at R Dev Day @ PLUS 2024_
 
