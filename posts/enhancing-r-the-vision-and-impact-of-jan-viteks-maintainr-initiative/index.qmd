@@ -7,11 +7,9 @@ date: "05/15/2024"
 url: "https://r-consortium.org/posts/enhancing-r-the-vision-and-impact-of-jan-viteks-maintainr-initiative/"
 unpublished: false
 categories: ["isc", "announcements", "events", "ai", "infrastructure"]
-image-alt: "Enhancing R: The Vision and Impact of Jan Vitek’s MaintainR Initiative"
-
+image-alt: "Jan Vitek, a professor at Northeastern University’s Khoury College of Computer Sciences"
 ---
-
-![](Untitled.jpg)
+![](Untitled.jpg){fig-alt="Jan Vitek, a professor at Northeastern University’s Khoury College of Computer Sciences"}
 
 
 The R Consortium recently interviewed [Jan Vitek](http://janvitek.org/), a professor at Northeastern University’s Khoury College of Computer Sciences. He specializes in programming languages, compilers, and systems. Notably, he developed one of the first real-time Java virtual machines in collaboration with Boeing, which involved writing the navigation software of a [ScanEagle UAV](https://www.cs.purdue.edu/news/articles/2006/researchers-scaneagle.html) in Java and demonstrating that it out-performed the legacy version of the system written in C++. Vitek is actively involved in the programming language community and has held multiple leadership roles, including chairing [SIGPLAN](https://www.sigplan.org/). In his spare time Vitek is a cinephile with a presence on [Letterboxd](https://letterboxd.com/janvite/) and is the human of a dog named [Olaf](https://www.instagram.com/olaf.pix/).

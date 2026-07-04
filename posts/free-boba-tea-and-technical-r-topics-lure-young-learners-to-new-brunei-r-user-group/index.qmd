@@ -5,14 +5,12 @@ aliases:
 description: "The R community in Brunei may be small, but it is growing thanks to the efforts of the Brunei R User Group."
 author: "R Consortium"
 image: "smiles.jpg"
-image-alt: "Brunei R User Group Meeting"
+image-alt: "Brunei R User Group participants selfie"
 date: "09/20/2024"
 url: "https://r-consortium.org/posts/free-boba-tea-and-technical-r-topics-lure-young-learners-to-new-brunei-r-user-group/"
 unpublished: false
 categories: ["rugs", "events", "asia"]
-
 ---
-
 [Haziq Jamil](https://www.linkedin.com/in/haziqjamil/), the founder and organizer of 
 the [Brunei R User Group](https://www.meetup.com/bruneir/), recently spoke with the 
 R Consortium. Haziq established the first R User Group in Brunei to promote R programming 
@@ -21,8 +19,7 @@ monthly meetups and events to advance R skills across various sectors in Brunei.
 Through these efforts, Haziq aims to build a supportive and inclusive R community, 
 encouraging both personal growth and data-driven innovation in the region.
 
-![](haziq-jamil.jpg){fig-alt="Haziq Jamil Assistant Professor in Statistics at Universiti 
-Brunei Darussalam"}
+![](haziq-jamil.jpg){fig-alt="Haziq Jamil, founder and organizer of Brunei R User Group, Assistant Professor in Statistics at Universiti Brunei Darussalam"}
 
 **Please share your background and involvement with the RUGS group.**
 
@@ -36,7 +33,7 @@ and strategy, and ensure that its initiatives align with its mission of promotin
 programming and fostering a supportive learning environment, focusing on community 
 engagement and collaboration.
 
-![](smiles.jpg){fig-alt="Brunei R User Group members"}
+![](smiles.jpg){fig-alt="Brunei R User Group participants selfie"}
 
 **Can you share what the R community is like in Brunei? **
 
@@ -57,7 +54,7 @@ local R community.
 **You hosted a Meetup, “[R>aya with R](https://www.meetup.com/bruneir/events/300000854/?eventOrigin=group_events_list),” 
 in April. Can you share more about the topic? Why this topic? **
 
-![](brunei-raya-meetup.jpg){fig-alt="Brunei R User Group Raya Meetup"}
+![](brunei-raya-meetup.jpg){fig-alt="Brunei R User Group Raya Meetup 2024-04-27"}
 
 The R User Group’s "[R>aya with R](https://bruneir.github.io/posts/bru-2/)" Meetup in 
 Brunei was a lively event that combined Hari Raya Aidilfitri’s (Eid-ul-Fitr) festive 
@@ -65,7 +62,7 @@ spirit with the exploration of R programming. To engage younger audiences, we of
 free boba tea as a beverage during the session. The event featured informative sessions 
 led by expert community members, each focusing on advanced topics relevant to different fields.
 
-![](boba.jpg){fig-alt="Brunei R User Group Boba Tea"}
+![](boba.jpg){fig-alt="Free boba tea offered to engage younger audiences"}
 
 
 One of the critical presentations was on “Survival Analysis” 
@@ -74,7 +71,7 @@ explained statistical techniques to predict the time until an event of interest,
 guests’ arrival at a Hari Raya open house. This topic is directly related to fields 
 that depend on time-to-event data, such as healthcare or actuarial science.
 
-![](presentation.jpg){fig-alt="presentation Survival Analysis by Dr. Elvynna Leong"}
+![](presentation.jpg){fig-alt="Survival Analysis presentation by Dr. Elvynna Leong"}
 
 One of the highlights was [Wafid Sophian](https://www.linkedin.com/in/wafid-sophian-6b8073141/?originalSubdomain=bn)’s session 
 on “Simulation Methods for Economic Analysis.” In this presentation, Wafid demonstrated how R can be 

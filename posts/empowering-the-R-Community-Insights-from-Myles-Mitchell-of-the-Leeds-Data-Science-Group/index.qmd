@@ -7,13 +7,11 @@ url: "https://r-consortium.org/posts/empowering-the-R-Community-Insights-from-My
 unpublished: false
 categories: ["submissions", "pharma", "rugs", "events", "ai"]
 image: "image_1.jpg"
-image-alt: "Empowering the R Community: Insights from Myles Mitchell of the Leeds Data Science Group"
-
+image-alt: "Myles Mitchell, co-organizer of the Leeds Data Science group"
 ---
-
 The R Consortium recently interviewed [Myles Mitchell](https://www.linkedin.com/in/myles-mitchell-4009aa98/?originalSubdomain=uk), co-organizer of the [Leeds Data Science group](https://www.meetup.com/leeds-data-science-meetup/), to discuss the local R community and the group’s recent activities. Myles highlighted the group’s efforts to create an inclusive and welcoming environment for all participants. The group is dedicated to creating networking opportunities for students interested in pursuing a career in data science and sharing job openings.\
 \
-![](image_1.jpg)
+![](image_1.jpg){fig-alt="Myles Mitchell, co-organizer of the Leeds Data Science group"}
 
 The Leeds Data Science group is hosting an in-person event titled “[***Improving the Fidelity and Stability of Large Language Models***](https://www.meetup.com/leeds-data-science-meetup/events/300758737/)” on the 23rd of July. 
 
@@ -25,7 +23,7 @@ At Jumping Rivers, we receive funding from the R Consortium. We organize the [Le
 
 **Can you share what the local R Community is like?**
 
-![](image_2.jpg)
+![](image_2.jpg){fig-alt="Leeds Data Science building"}
 
 I am located in Newcastle, in the northeast of England, where a large community is keenly interested in data science. Our community includes [Newcastle University](https://www.ncl.ac.uk/) and [Northumbria University](https://www.northumbria.ac.uk/) students, many of whom are studying data science or statistics. There are also professionals from various industries looking for data science jobs. Our meetups are attended by prospective data scientists and students eager to network and learn more about the field.
 
@@ -43,7 +41,7 @@ During our Meetup on “Improving the Fidelity and Stability of Large Language M
 
 Regarding techniques, I’m currently reviewing how we organize our meetups. Our meetups are free to attend for all participants, and we aim to create a welcoming and accessible environment for everyone to network and meet like-minded individuals in the area. The meetups are held every two to three months on weekdays in the evenings, providing attendees with time to travel from their place of work to the venue. We offer refreshments at the start, including pizza and soft drinks, and we ensure that vegan, gluten-free, and halal options are included to cater to a wide range of dietary preferences. 
 
-![](image_3.jpg)
+![](image_3.jpg){fig-alt="Image of presenter at Leeds Data Science Group meetup"}
 
 We often run interactive workshops at the North East Data Science Meetups, including a recent [meetup](https://www.meetup.com/newcastle-upon-tyne-data-science-meetup/events/300470386/) on the Apache Arrow interface for R, led by [Nic Crane](https://thisisnic.github.io/about/) on July 18th. To make our workshops as inclusive as possible, we provide attendees with all necessary materials and dependencies via a cloud environment created using [Posit Workbench](https://docs.posit.co/pwb/). It allows participants without prior installation of RStudio IDE to contribute and interact with the workshop materials. Our goal is to make our workshops accessible to a broad audience, including those from non-R backgrounds. In general, we aim to create an event where attendees can participate without the burden of installing multiple packages or downloading data.
 

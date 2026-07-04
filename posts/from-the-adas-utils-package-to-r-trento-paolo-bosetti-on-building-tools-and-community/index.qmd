@@ -6,13 +6,11 @@ description: "Paolo Bosetti discusses his path from creating the adas.utils pack
 categories: ["rugs","eu", "software development"]
 author: "R Consortium"
 image: "PaoloBosetti.png"
-image-alt: "picture of Paolo Bosetti, R-Trento User Group organizer"
-date: "11/25/2025"
----
-
+image-alt: "Dr Paolo Bosetti, founder of R-Trento User Group (R-TUG), and Associate Professor, University of Trento, Italy"
+date: "11/25/2025"---
 [Dr Paolo Bosetti](https://paolobosetti.quarto.pub/), Associate Professor at the University of Trento, Italy, recently spoke with the R Consortium about founding the [R-Trento User Group](https://www.meetup.com/r-trento-users-group/) (R-TUG) and fostering collaboration between academia, industry, and the public sector in Italy. He shared how he uses R in teaching industrial engineering students, from integrating RStudio and Quarto into coursework to emphasizing reproducible analysis and reporting. Dr. Paolo also discussed the development of his `adas.utils` package for experimental design, the importance of documenting community activities through a group blog, and his vision for expanding the R community in Trento.
 
-![](PaoloBosetti.png){width=50%}
+![](PaoloBosetti.png){width=50% fig-alt="Dr Paolo Bosetti, founder of R-Trento User Group (R-TUG), and Associate Professor, University of Trento, Italy"}
 
 ## Please share your background and involvement with the RUGS group.
 
@@ -24,7 +22,7 @@ Within my university, I have several colleagues across different departments—s
 
 We are using Meetup to gather users, and the group currently has around over 80 members. At our inaugural meeting, approximately 30 users participated, and we conducted a total of four presentations on various topics over the course of three hours in the afternoon.
 
-![](RUsersTrentoLogo.png){width=50%}
+![](RUsersTrentoLogo.png){width=50% fig-alt="R-Trento User Group (R-TUG) Logo"}
 
 ## Was your first meetup held in person or online? What format do you plan to use for future meetups?
 
@@ -32,7 +30,7 @@ The first meeting was held in person because we wanted to foster connections. Si
 
 For future meetings, we plan to implement a hybrid format. We will continue to meet in person while also recording the sessions on Zoom and providing a link for others to participate remotely. This way, we can maintain our in-person interactions while accommodating those who wish to join online.
 
-![](RUsersTrentoMeetup.png)
+![](RUsersTrentoMeetup.png){fig-alt="View of R-Trento User Group (R-TUG) meetup"}
 
 ## Can you share what the R community is like in Italy?
 
@@ -70,7 +68,7 @@ For example, I use `ggplot` for graphics, and functions have been designed to be
 
 In our blog, you can find an [introduction to the package](https://rtug.unitn.it/posts/004-adas.utils/), which is designed to facilitate the creation of target plans and fractional factorial plans, as well as to analyze the alias structure in fractional factorial designs. The package also features functionalities not commonly available in R, such as normal probability plots and Pareto charts, both of which are not standard in the Tidyverse.
 
-![](Normalprobabilityplot.png)
+![](Normalprobabilityplot.png){fig-alt="Normal probability plot using the {adas.utils} R package for experimental design"}
 
 
 ## How do I Build an R User Group?

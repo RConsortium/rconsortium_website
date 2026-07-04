@@ -8,10 +8,8 @@ date: "10/18/2024"
 url: "https://r-consortium.org/posts/endophytes-oaks-and-r-how-r-ladies-morelia-is-cultivating-science-and-community-in-morelia-mexico/"
 unpublished: false
 categories: ["rugs", "events", "ai", "south america", "women in tech"]
-image-alt: "Endophytes, Oaks, and R: How R-Ladies Morelia is Cultivating Science and Community in Morelia, Mexico"
-
+image-alt: "Members of R-Ladies Morelia"
 ---
-
 [Goretty Mendoza](https://www.linkedin.com/in/goretty-mendoza-785004322/), the organizer of the 
 [R-Ladies Morelia](https://www.meetup.com/es-ES/rladies-morelia/), recently spoke to the R Consortium about her experience 
 with the group and her work using R in molecular biology. Under her guidance, the group has grown into a supportive 
@@ -20,7 +18,7 @@ Goretty is committed to empowering the local R community through online and phys
 and networking. 
 
 
-![](Goretty.png){width=50%}
+![](Goretty.png){width=50% fig-alt="Goretty Mendoza, organizer of the R-Ladies Morelia"}
 
 
 ***Please share about your background and involvement with the RUGS group.***
@@ -36,7 +34,7 @@ who live in other cities, thanks to the R Consortium’s grant. I'm sure we retu
 aim to improve our R skills.
 
 
-![](RLadiesMorelia.png)
+![](RLadiesMorelia.png){fig-alt="Members of R-Ladies Morelia"}
 
 
 **Can you share what the local R community is like? **
@@ -49,7 +47,7 @@ experience in R share their knowledge with new members who are just starting. It
 can learn and grow together. Our R-community is a great opportunity to get involved, collaborate with other women, 
 and make new friends as we learn. 
 
-![](r-ladies-morelia-zoom.png)
+![](r-ladies-morelia-zoom.png){fig-alt="Many faces from R-Ladies Morelia online Zoom meeting"}
 
 
 **Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, 
