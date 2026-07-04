@@ -1,13 +1,13 @@
---- 
-title: "Empowering Government Professionals in Nepal Using R programming for Forestry Data Analysis" 
-unpublished: false 
+---
+title: "Empowering Government Professionals in Nepal Using R programming for Forestry Data Analysis"
+unpublished: false
 url: "https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/"
-description: "In a seven-day program run by the Forest Research and Training Center (Koshi Province, Nepal) with EnviroDataR Group Nepal, participants learned practical workflows (data wrangling, visualization, stats, and basic geospatial mapping) and showed measurable skill improvements they could apply directly in their day-to-day forestry work." 
+description: "In a seven-day program run by the Forest Research and Training Center (Koshi Province, Nepal) with EnviroDataR Group Nepal, participants learned practical workflows (data wrangling, visualization, stats, and basic geospatial mapping) and showed measurable skill improvements they could apply directly in their day-to-day forestry work."
 categories: ["rugs", "asia", "environment"]
-author: "Prakash Lamichhane, Research Officer at Ministry of Forests and Environment, Nepal" 
-image: "data-forestry-analysis-group.png" 
-image-alt: "picture from EnviroDataR Group Nepal on meetup.com" 
-date: "12/17/2025" 
+author: "Prakash Lamichhane, Research Officer at Ministry of Forests and Environment, Nepal"
+image: "data-forestry-analysis-group.png"
+image-alt: "picture from EnviroDataR Group Nepal on meetup.com"
+date: "12/17/2025"
 ---
 
 The R Consortium supports the global community of users, maintainers, and developers of R, a fast-growing language for statistical computing and graphics. In a world where data is increasingly at the heart of evidence-based decision-making, the R language is empowering professionals in new and inspiring ways. A recent capacity-building initiative in Nepal, organized by the joint effort of Forest Research and Training Center, Koshi Province and [EnviroDataR Group Nepal](https://www.meetup.com/enirodatar-group-nepal/), exemplifies this transformation, showcasing how R is becoming an essential tool for sustainable forest management.
@@ -32,7 +32,7 @@ The training covered key areas essential for forestry professionals:
 
 A key strength of the program was its interactive and technology-enabled methodology, which included pre- and post-test surveys via Google Forms and daily quizzes on Kahoot.com to reinforce learning and measure progress. This hands-on approach directly benefited government officials by providing them with the tools to solve the difficulties they face in their daily work.
 
-![](training-sessions.png)
+![](training-sessions.png){fig-alt="The Forest Research and Training Center (FRTC) in Koshi Province organized a seven-day training program on R programming - Mosaic of images of Training Sessions and Closing"}
 _Figure 1: Glimpse of Training Sessions and Closing_
 
 ## **Outcomes and Acknowledgments**

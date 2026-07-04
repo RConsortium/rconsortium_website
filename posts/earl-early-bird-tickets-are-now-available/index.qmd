@@ -11,17 +11,15 @@ format:
 url: "https://r-consortium.org/posts/earl-early-bird-tickets-are-now-available/"
 unpublished: false
 categories: ["events", "eu"]
-image-alt: "EARL Early Bird Tickets Are Now Available!"
-
+image-alt: "EARL Conf 2024 list of prices"
 ---
-
 Contributed by Abbie Brookes, Senior Data Analyst at Datacove
 
 
 
 
 
-![](datacove.png)
+![](datacove.png){fig-alt="EARL Conf 2024 list of prices"}
 
 
 Datacove is pleased to announce the availability of tickets for the upcoming EARL (Enterprise Applications of the R Language) conference. 
@@ -38,7 +36,7 @@ This year’s keynote speakers include:
 
 
 
-<img src="andy.png" alt="Andy Field" width="320" height="320">
+<img src="andy.png" alt="EARL keynote speaker Andy Field" width="320" height="320">
 
 [Professor Andy Field](https://www.linkedin.com/in/profandyfield/), known for his contributions to statistics education
 
@@ -46,7 +44,7 @@ This year’s keynote speakers include:
 
 
 
-<img src="christel.png" alt="Christel Swift" width="320" height="320">
+<img src="christel.png" alt="EARL keynote speaker Christel Swift" width="320" height="320">
 
 [Christel Swift](https://www.linkedin.com/in/christellacazeswift/), a senior data scientist at the BBC
 
@@ -54,7 +52,7 @@ This year’s keynote speakers include:
 
 
 
-<img src="hadley.png" alt="Hadley Wickham" width="320" height="320">
+<img src="hadley.png" alt="EARL keynote speaker Hadley Wickham" width="320" height="320">
 
 [Hadley Wickham](https://www.linkedin.com/in/hadleywickham/), a key figure in the R community and author of the Tidyverse
 

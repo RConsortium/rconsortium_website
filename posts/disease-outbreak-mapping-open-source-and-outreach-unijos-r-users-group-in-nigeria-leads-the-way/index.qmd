@@ -7,14 +7,11 @@ date: "05/09/2025"
 url: "https://r-consortium.org/posts/disease-outbreak-mapping-open-source-and-outreach-unijos-r-users-group-in-nigeria-leads-the-way/"
 unpublished: false
 categories: ["rugs", "events", "africa"]
-image-alt: "Disease Outbreak Mapping, Open Source, and Outreach - Unijos R Users Group in Nigeria Leads the Way"
-
+image-alt: "Unijos R Users Group logo"
 ---
-
-
 [Iko Musa](https://www.linkedin.com/in/iko-musa-a17a24114/), founder of the [Unijos R Users Group](https://www.meetup.com/unijos-r-users/) at the University of Jos (UNIJOS), Nigeria, spoke with the R Consortium about how the group built an inclusive and cross-disciplinary R community in northern Nigeria. Iko explained how the group supported students and professionals in transitioning from proprietary tools like SPSS to R. He highlighted their efforts to improve accessibility through online sessions, providing internet support for undergraduates, and hosting practical events like a recent Meetup on outbreak mapping in R.
 
-![](IkoMusa.png){width=50%}
+![](IkoMusa.png){width=50% fig-alt="Iko Musa, founder of the Unijos R Users Group at the University of Jos (UNIJOS), Nigeria"}
 
 
 
@@ -37,7 +34,7 @@ In my role with MSF, I also encourage my data entry teams and medical data super
 
 Our university, the University of Jos, is commonly known as UNIJOS. Since founding this group, I've noticed that many who join our community are my MSc colleagues. Initially, there were just seven of us in the MSc Epidemiology program. At that time, we were using software like EpiInfo and SPSS for data analysis and outbreak investigations. Still, I realized the trend was shifting toward R. So, we formed a small group at UNIJOS to learn it together.
 
-![](UnijosRUGlogo.png)
+![](UnijosRUGlogo.png){fig-alt="Unijos R Users Group logo"}
 
 Our community quickly expanded to include students from other programmes, such as MSc Clinical Epidemiology, MSc Chemistry, and MPH (Master of Public Health), who joined us because we offered free and accessible learning sessions. We hold online sessions every two weeks and also organise in-person sessions within our department. Sometimes, after classes, we gather for a session on R. Currently, our focus is on undergraduate students, although we also include postgraduates. We encourage participation across departments and post information on Meetup, WhatsApp, Facebook, and bulletin boards to invite anyone interested. It’s a free community open to anyone who wants to learn.
 
@@ -45,7 +42,7 @@ Our reach has grown beyond UNIJOS. In our recent online session, I noticed parti
 
 At MSF, I also encourage my team to use R for data analysis and other tasks. This integration has been beneficial, and I’m thrilled to see more people embracing R both within and outside UNIJOS.
 
-![](UnijosRUGMeeting.png)
+![](UnijosRUGMeeting.png){fig-alt="Unijos R User Group first meeting selfie"}
 
 Unijos R User Group First Meeting
 
@@ -67,7 +64,7 @@ Our sessions were designed to be inclusive of all skill levels, from undergradua
 
 We primarily use Microsoft Teams for our online sessions, especially to reach participants in remote areas. As I mentioned, our last session included many participants from other universities and locations beyond the University of Jos and Plateau State. Microsoft Teams has been effective for these online sessions due to its ease of use.
 
-![](UnijosRUGOnlineMeeting.png)
+![](UnijosRUGOnlineMeeting.png){fig-alt="Unijos R User Group First Online Meeting Using Microsoft Teams"}
 
 Unijos R User Group First Online Meeting Using Microsoft Teams
 

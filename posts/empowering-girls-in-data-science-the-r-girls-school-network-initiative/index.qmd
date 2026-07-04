@@ -7,15 +7,13 @@ date: "12/03/2024"
 url: "https://r-consortium.org/posts/empowering-girls-in-data-science-the-r-girls-school-network-initiative/"
 unpublished: false
 categories: ["pharma", "rugs", "events", "eu", "women in tech"]
-image-alt: "Empowering Girls in Data Science: The R-Girls-School Network Initiative"
-
+image-alt: "Dr. Razia Ghani, Green Oak Academy, leading a two-year project to establish the R-Girls-School (R-GS) network"
 ---
-
-![](drghani.png)
+![](drghani.png){fig-alt="Dr. Razia Ghani, Green Oak Academy, leading a two-year project to establish the R-Girls-School (R-GS) network"}
 
 The R Consortium recently interviewed Dr. Raiza Ghani, Professor Mohamed Amin, and R teacher Anisa Nawaz. Dr. Razia Ghani and her team at [Green Oak Academy](https://greenoak.bham.sch.uk/) are leading a two-year project to establish the R-Girls-School (R-GS) network, addressing the underrepresentation of women, particularly from deprived and ethnically diverse backgrounds, in data science. The initiative aims to integrate data science into the UK national curriculum, which is used by schools globally. The project focuses on developing 10 R-based lesson plans in the first year, with the second year dedicated to networking and dissemination. This includes a dedicated website with extensive online resources. Supported by key figures and organizations in the R community, the project aims to provide sustainable, impactful education in data science for girls worldwide​. This project was funded by the R Consortium. 
 
-[![](rgirlswebsite.png)](https://rgirls.org.uk/)
+[![](rgirlswebsite.png){fig-alt="R-Girls Website at rgirls.org.uk"}](https://rgirls.org.uk/)
 [R-Girls Website](https://rgirls.org.uk/)
 
 
@@ -25,7 +23,7 @@ The R Consortium recently interviewed Dr. Raiza Ghani, Professor Mohamed Amin, a
 
 Additionally, being an all-girls school made this initiative particularly appealing to us. We recognized that our students might not have had this exposure otherwise and wanted to provide them with this valuable opportunity. Professor Mohamed worked with us, making it an ideal situation. It was an opportunity that came our way, and we seized it enthusiastically.
 
-![](rgirls_logo.png)
+![](rgirls_logo.png){fig-alt="R-Girls-School (R-GS) network logo - Logo design by Anisa Nawaz"}
 
 _Logo design: Anisa Nawaz_
 
@@ -69,11 +67,11 @@ If someone had suggested on day one that 11 to 16-year-olds would be building th
 
 ### Feedback on the Second R Lesson using R Markdown
 
-![](feedback1.png)
+![](feedback1.png){fig-alt="Handwritten feedback from students on the second R lesson using R Markdown"}
 
-![](feedback2.png)
+![](feedback2.png){fig-alt="More handwritten feedback from students on the second R lesson using R Markdown"}
 
-![](feedback3.png)
+![](feedback3.png){fig-alt="Even more handwritten feedback from students on the second R lesson using R Markdown"}
 
 **How did your previous experience as an applied statistician in the pharmaceutical sector influence your approach to integrating R in the school curriculum?**
 
@@ -117,7 +115,7 @@ This approach highlights a necessary mindset change for schools: it's not about 
 
 **Dr. Ghani:** Our science and geography lessons are data-rich. For example, when experimenting, students collect a lot of data, which is a great starting point. The girls are already programming in some ways. They can use the collected data with a ready-made lesson for that experiment. For science, they simply input their data and work with it. For geography, they can find readily available data online, like rainfall data from different parts of the world, and analyze it.
 
-![](geography_lesson.png)
+![](geography_lesson.png){fig-alt="Screenshot of blog created by students - geography lessons posts"}
 
 We started by creating lessons based on our needs and exploring the data to generate charts and insights. Initially, that was our focus. However, we began developing websites with the girls, which was not something we originally planned. If someone had told me at the beginning that we would be doing web design, I wouldn't have believed it. One of our visitors helped us develop our girls' website, and during a conversation, the girls expressed their desire to create a website. Now, we have lessons on creating websites step by step.
 
@@ -135,7 +133,7 @@ Dr. Ghani and I, who had the initial conversation, can now step back and enjoy s
 
 **How has it been working with the R Consortium? Would you recommend applying for an ISC grant to other R developers?**
 
-![](priceless.png)
+![](priceless.png){fig-alt="Timeline showing support starting with R community for the National Health Service and including R Consortium"}
 
 **Dr. Ghani:** The visitors and opportunities we've had are priceless. The initial funding from the R Consortium gave us credibility, showing people we were serious because we had reputable backing.
 
