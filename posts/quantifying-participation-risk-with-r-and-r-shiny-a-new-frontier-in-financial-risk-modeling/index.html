@@ -338,7 +338,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 
 
 <p>Financial institutions are increasingly looking beyond traditional market risk to quantify and manage more complex forms of risk. <a href="https://r-consortium.org/webinars/quantification-of-participation-risk-using-r-and-rshiny.html">In a recent R Consortium webinar</a>, Goran Lovric, LL.M., and Simon Aigner, MSc, from Raiffeisenlandesbank Oberösterreich (RLB OÖ) unveiled a novel approach to modeling <em>participation risk</em> using R and R Shiny, empowering banks to analyze value fluctuations in corporate holdings with a reproducible, open-source solution.</p>
-<p><img src="goran.jpeg" class="img-fluid" style="width:40.0%"><img src="simon.jpeg" class="img-fluid" style="width:40.0%"></p>
+<p><img src="goran.jpeg" class="img-fluid" alt="Goran Lovric, LL.M., financial risk management expert at Raiffeisenlandesbank Oberösterreich"><img src="simon.jpeg" class="img-fluid" alt="Simon Aigner, MSc, economic and business analytics professional at Raiffeisenlandesbank Oberösterreich"></p>
 <section id="from-market-price-to-participation-value" class="level2">
 <h2 class="anchored" data-anchor-id="from-market-price-to-participation-value">From Market Price to Participation Value</h2>
 <p>“Participation risk,” explained Lovric, a seasoned expert with over 18 years in international financial risk management, “is the risk of changes in <em>value</em>, not price. That’s the key difference between market risk and participation risk.”</p>
@@ -347,14 +347,14 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <p>The webinar provided an in-depth look at a full-stack modeling approach—from data sourcing to Shiny dashboard deployment. Aigner, an economic and business analytics professional at RLB OÖ, walked attendees through the process of acquiring live financial data using R packages and web scraping techniques.</p>
 <p>Using the <code>ecb</code> R package, participants saw how to fetch interest rate curves directly from the European Central Bank. Then, leveraging web scraping with packages like <code>rvest</code>, <code>stringr</code>, and <code>xml2</code>, Aigner demonstrated how to extract key financial statements—such as cash flow data—from sources like Google Finance and Yahoo Finance.</p>
 <p>These datasets form the foundation for estimating future cash flows and cost of equity, key components in the discounted cash flow model used to simulate value at risk (VaR) for participations.</p>
-<p><img src="data.png" class="img-fluid"></p>
+<p><img src="data.png" class="img-fluid" alt="Screenshot of R code fetching financial data from the European Central Bank using the ecb package"></p>
 </section>
 <section id="the-r-and-shiny-app-simulation-reporting-and-deployment" class="level2">
 <h2 class="anchored" data-anchor-id="the-r-and-shiny-app-simulation-reporting-and-deployment">The R and Shiny App: Simulation, Reporting, and Deployment</h2>
 <p>Lovric emphasized the importance of simulating volatilities and correlations across sectors using peer data. “Once you have the right inputs—cash flow volatility, cost of capital, sector correlations—you can generate both diversified and non-diversified risk measures,” he said.</p>
 <p>All of these capabilities are built into a custom R Shiny app that the speakers have generously made available under an MIT open license. Users can upload structured input files containing valuations, cash flow data, and cost of equity estimates, and the app runs Monte Carlo simulations to quantify value at risk (VaR) under different correlation scenarios.</p>
 <p>One striking example from the presentation illustrated the power of diversification. “Let’s say a portfolio is worth €1.7 billion. If you ignore sector correlations, you’d get a risk of €9.9 billion—58%,” Lovric explained. “But if you incorporate actual correlations across different sectors, that drops to about €750 million, or 44.5%, over a one-year, 99.9% confidence interval.”</p>
-<p>The tool includes a database-backed architecture for scalability, and Lovric detailed how it can be deployed on an internal server with a few additional scripts. This ensures compliance with banking regulations while preserving accessibility for teams across departments.<img src="demo.png" class="img-fluid"></p>
+<p>The tool includes a database-backed architecture for scalability, and Lovric detailed how it can be deployed on an internal server with a few additional scripts. This ensures compliance with banking regulations while preserving accessibility for teams across departments.<img src="demo.png" class="img-fluid" alt="Screenshot of the participation risk R Shiny app showing Monte Carlo simulation results"></p>
 </section>
 <section id="a-launchpad-for-future-collaboration" class="level2">
 <h2 class="anchored" data-anchor-id="a-launchpad-for-future-collaboration">A Launchpad for Future Collaboration</h2>
