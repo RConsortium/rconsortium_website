@@ -14,7 +14,7 @@ image-alt: "Connecting Nebraska Through R: Jeffrey Stevens’ Journey of Communi
 
  [Jeffrey Stevens](https://www.linkedin.com/in/jeffreyrstevens/), organizer of the [Nebraska R User Group](https://www.meetup.com/nebraskarusergroup/), recently spoke with the R Consortium about his efforts to establish a vibrant R community across Nebraska. Jeffrey shared insights into the group's activities, including fostering connections between academics, industry professionals, and nonprofits, and creating a hybrid model to engage participants from across the state. He also discussed his passion for package development, open science initiatives like the Many Dogs Project, and the challenges of building an inclusive R ecosystem in a geographically dispersed region.
 
-![](JeffreyStevens.png)
+![](JeffreyStevens.png){fig-alt="Jeffrey Stevens"}
 
 
 
@@ -28,7 +28,7 @@ In the last three years, I have also ventured into package development. To date,
 
 I teach R to diverse learners, including undergraduates, graduate students, postdocs, lab managers, and some faculty members. Additionally, I serve as a data science mentor for [Posit](https://posit.co/), guiding corporate individuals through data science training programs. In this role, I lead cohorts of employees seeking to enhance their R and data science skills. I have participated in several of these mentoring sessions, and my extensive experience with R has made it an essential part of my daily work.
 
-![](NebraskaRUGlogo.png)
+![](NebraskaRUGlogo.png){fig-alt="Nebraska RUG logo"}
 
 ## What was your motivation behind starting this R User group?
 
@@ -57,7 +57,7 @@ All attendees at the kickoff meeting were from academia or involved in nonprofit
 
 I highlighted this topic in my email, emphasizing the desire for industry partners to participate and share their insights. The academic participants are significantly interested in how to transition to industry positions, an area I feel more comfortable discussing.
 
-![](NebRUGCollinBerke.png)
+![](NebRUGCollinBerke.png){fig-alt="Nebraska RUG Collin Berke"}
 Nebraska R User Group Kickoff Meeting: [Collin Berke](https://www.collinberke.com/)
 
 
@@ -66,7 +66,7 @@ Nebraska R User Group Kickoff Meeting: [Collin Berke](https://www.collinberke.co
 
 The kickoff meeting was fantastic. As I mentioned last year, the original group consisted of about five or six people from the university. Typically, only four of us met each month, which was relatively small. However, we had 20 people in attendance for the kickoff meeting, which was great! It was mostly folks from Lincoln; unfortunately, no one from Omaha could make it since the meeting was in person.
 
-![](NebRUGRachelRogers.png)
+![](NebRUGRachelRogers.png){fig-alt="Nebraska RUG Rachel Rogers"}
 Nebraska R User Group Kickoff Meeting: [Rachel Rogers](https://www.linkedin.com/in/rachelesrogers/)
 
 I was excited about the turnout, mainly because most attendees were academics I already knew. Still, I also met a few new people from the university. Additionally, we had representatives from [Nebraska Public Media](https://nebraskapublicmedia.org/en/watch/live/?gad_source=1\&gclid=Cj0KCQiAqL28BhCrARIsACYJvkc0RJUmqAJrWTGT1J6o9P0anRam3rJyxk4FKHEJHotsnaxDMe_AClUaApW9EALw_wcB) and [Nebraska Game and Parks](https://members.grownebraska.org/list/member/nebraska-game-and-parks-164?utm_source=google\&gad_source=1\&gclid=Cj0KCQiAqL28BhCrARIsACYJvkdMY_i--W_KWOLTzLpze8Izpcet2qEWRrFwRpTk0UPC00QdMMI9Nd4aAkCIEALw_wcB), which was exciting because it included some nonprofit and governmental groups. 
@@ -77,7 +77,7 @@ My main goal for the kickoff meeting was facilitating communication among the at
 
 We included a couple of lightning talks in the agenda. These were short, five-minute presentations showcasing the various projects participants had been working on. The aim was to help everyone build connections and gain insight into their peers' work. 
 
-![](NebRUGParticipants.png)
+![](NebRUGParticipants.png){fig-alt="Nebraska RUG participants"}
 Nebraska R User Group Kickoff Meeting: Participants
 
 

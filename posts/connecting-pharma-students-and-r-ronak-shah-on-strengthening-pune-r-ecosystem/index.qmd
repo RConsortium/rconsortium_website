@@ -6,13 +6,13 @@ description: "Ronak Shah, co-organizer of the Pune R User Group in India, is ene
 categories: ["rugs", "software development", "pharma"]
 author: "R Consortium"
 image: "RonakShah-main-image.png"
-image-alt: "picture of Ronah Shah, Pune R User Group organizer"
+image-alt: "Ronah Shah, Pune R User Group organizer"
 date: "12/02/2025"
 ---
 
 [Ronak Shah](https://www.linkedin.com/in/shahronak47/?originalSubdomain=in), co-organizer of the [Pune R User Group](https://www.meetup.com/pune-r-userr-group/) in India, is energizing a growing R community that connects students, professionals, and data enthusiasts across the city. Through in-person and online meetups, the group fosters collaboration and learning while supporting R’s expanding role in India’s pharmaceutical industry. Ronak also discussed his side project, Package Reviewer, a Shiny app that enables users to rate and review R packages, helping others discover reliable tools within the R ecosystem.
 
-![](RonakShah.png){width=50%}
+![](RonakShah.png){fig-alt="Ronah Shah, Pune R User Group organizer" width=50%}
 
 ## Please share your background and involvement with the RUGS group.
 
@@ -28,7 +28,7 @@ Currently, I work with [Roche](https://www.rocheindia.com/), a pharmaceutical co
 
 In Pune specifically, about 50% of our R user group consists of master's students. They are studying R as part of their coursework and are also conducting projects using R. This has led to a strong interest in the meetups we organize, and I see a lot of traction and growth happening in this area as well.
 
-![](PuneRUGMeetup1.png)
+![](PuneRUGMeetup1.png){fig-alt="Pune RUG Meetup participants selfie 1"}
 
 ## Are you currently hosting your meetups online, in person, or in a hybrid format?
 
@@ -42,7 +42,7 @@ We want to analyze what has gone well and identify areas for improvement and cha
 
 Initially, we focused on the basics of R, but now we plan to move on to some advanced topics. We have also hosted a couple of sessions on introduction to Shiny, including a hands-on workshop. We would now like to introduce more advanced-level topics in R, which we plan to cover in the coming months.
 
-![](PuneRUGMeetup2.png)
+![](PuneRUGMeetup2.png){fig-alt="Pune RUG Meetup participants selfie 2"}
 
 ## What challenges have you faced while organizing the group?
 

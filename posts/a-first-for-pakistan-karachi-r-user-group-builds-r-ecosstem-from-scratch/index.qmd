@@ -6,19 +6,19 @@ description: "Muhammad Uzair Aslam, founder of the Karachi R User Group, spoke w
 author: "R Consortium"
 categories: ["rugs", "software development", "asia"]
 image: "KarachiRUGlogo.png"
-image-alt: "picture of Karachi R User Group logo"
+image-alt: "Karachi R User Group logo"
 date: "12/04/2025"
 ---
 
 [Muhammad Uzair Aslam](https://www.linkedin.com/in/uzairdatascientist/), founder of the [Karachi R User Group](https://www.meetup.com/karachi-r-user-group/), spoke with the R Consortium about growing an open and volunteer-led R community in Pakistan—one of the first of its kind in the country. Since starting the group in 2023, Uzair has focused on building trust, increasing awareness of R, and creating accessible events for learners across cities. The R Consortium [spoke with Uzair about the Karachi R User Group’s work with R for Public Health Data Analysis previously](https://r-consortium.org/posts/r-for-public-health-data-analysis-in-karachi-pakistan/index.html). This time, Uzair is sharing how the group has evolved from informal online meetups to hosting international speakers and publishing sessions on YouTube. He also discussed the community’s rising interest in tools like Quarto and ggplot2, recent consulting work in industrial forecasting using R, and the ongoing challenge of encouraging more local contributions.
 
-![](UzairAslam.png){width=30%}
+![](UzairAslam.png){fig-alt="A First for Pakistan: Karachi R User Group Builds R Ecosystem from Scratch" width=30%}
 
 ## Please update us on how the group has been doing since we last spoke and share your experience.
 
 Since we last spoke, our user group has made significant strides in growth and community engagement. We started this initiative in 2023 with just 10 to 15 members. During that first year, our focus was on building the foundation—introducing the concept of an open, volunteer-led R community in Pakistan, which was the first of its kind in the country. One of our key challenges early on was gaining trust and clarifying that these events are completely free and community-driven, with no commercial backing.
 
-![](KarachiRUGlogo.png)
+![](KarachiRUGlogo.png){fig-alt="KarachiRUG logo"}
 
 In 2024, we began organising more frequent and structured events, which led to a noticeable increase in interest and participation. Our commitment to consistency and open learning helped establish our reputation, and we gradually grew to a community of over 500 members—a major milestone for us.
 
@@ -44,7 +44,7 @@ To improve engagement, I’ve been leveraging multiple social media platforms, i
 
 ## You hosted a Meetup titled “[Reporting Champions Trophy Data using Quarto and R](https://www.youtube.com/watch?v=vIrSy5AXrz0),” can you share more on the topic covered? Why this topic?
 
-![](ChampionsTrophyDatausingR.png)
+![](ChampionsTrophyDatausingR.png){fig-alt="Champions Trophy Data using R"}
 
 We recently hosted an engaging talk on our Meetup group by [Dr. Zahid Asghar](https://www.linkedin.com/in/zahid-asghar/) from Islamabad University titled “Reporting Champions Trophy Data using Quarto and R.” The session introduced the community to Quarto as a modern tool for creating parameterised, automated, and visually rich reports. Using real-world data from the ESPN Cricinfo API, Dr. Zahid demonstrated how to generate customised player statistics reports—blending R’s data manipulation capabilities with Quarto’s dynamic reporting features. This topic was chosen to help data professionals move beyond static dashboards and adopt reproducible, scalable reporting workflows, and it was well-received by attendees for its practical relevance and clarity.
 

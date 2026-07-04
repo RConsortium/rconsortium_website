@@ -7,7 +7,7 @@ date: "08/12/2024"
 url: "https://r-consortium.org/posts/a-new-r-community-in-ahmedabad/"
 unpublished: false
 categories: ["submissions", "pharma", "rugs", "events", "asia"]
-image-alt: "A New R Community in Ahmedabad, India, focused on Clinical Research and Pharmaceutical Industries"
+image-alt: "Ahmedabad R User Group organizer Sanket Sinojia"
 
 ---
 
@@ -15,7 +15,7 @@ The R Consortium recently interviewed [Sanket Sinojia](https://www.linkedin.com/
 
 Since its official setup in 2023, ARUG has rapidly grown into a vibrant group with over 100 active members. The community fosters collaboration, knowledge-sharing, and mentorship, contributing significantly to the broader R ecosystem. Sanket’s dedication to data science and community building is evident in his efforts to organize impactful events, mentor new members, and drive the group’s growth.
 
-![](unnamed.png)
+![](unnamed.png){fig-alt="Ahmedabad R User Group community members"}
 
 **Please share about your background and involvement with the RUGS group.**
 
@@ -23,7 +23,7 @@ I’ve been working in statistical programming and data sciences in the clinical
 
 While the group was initially formed in 2021, its formal setup was completed in 2023 with collaboration from the R Consortium. Since then, I’ve been organizing events, facilitating discussions, and contributing to the group’s growth. My passion for data science and community building drives my commitment to ARUG. Beyond organizing, I also mentor new members, helping them navigate the complexities of R. It’s incredibly rewarding to see the community thrive and to witness the impact of our collective efforts on advancing the field. ARUG is the first city-based group in India associated with R Consortium and the only R user group focused on Clinical Research & Pharmaceutical Industries.
 
-![](unnamed2.png)
+![](unnamed2.png){fig-alt="Ahmedabad R User Group members at a meetup"}
 
 **Can you share what the R community is like in Ahmedabad?** 
 
@@ -31,7 +31,7 @@ Ahmedabad, a world heritage city known for its rich history and vibrant culture,
 
 **You had a** [**meetup on July 21st, 2024**](https://www.meetup.com/ahmedabad-r-users-group/events/302239112/)**. Can you share more about the topic covered? Why this topic?**
 
-![](unnamed3.png)
+![](unnamed3.png){fig-alt="Ahmedabad R User Group R Evolution clinical trials meetup July 2024"}
 
 The meetup was a highly anticipated event entitled ‘R Evolution: Shaping the Future of Clinical Trials.’ We chose this topic because it aligns perfectly with the emerging demand for R in our industry and aims to make our attendees aware of the transformative potential R brings to clinical research. Here’s a quick recap:
 
@@ -55,15 +55,15 @@ The ARUG Event Team – [Ankit Vadodariya](http://linkedin.com/in/ankit-vadodari
 
 **Who was the target audience for attending this event?** 
 
-![](unnamed4.png)
+![](unnamed4.png){fig-alt="Clinical and pharmaceutical industry professionals at Ahmedabad R User Group event"}
 
 Our target audience primarily includes professionals and researchers from the clinical and pharmaceutical industries. This encompasses data scientists, statistical programmers, biostatisticians, clinical trial analysts, and anyone interested in leveraging R for data analysis and visualization in these fields. We also welcome newcomers who are eager to learn and contribute to this dynamic industry. By targeting this specific audience, we ensure our content is highly relevant and impactful, addressing real-world challenges and opportunities our members face. Additionally, our events offer networking opportunities that can lead to collaborations.
 
 **Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?**   
 
-![](unnamed5.png)
+![](unnamed5.png){fig-alt="Ahmedabad R User Group event planning and collaboration"}
 
-![](unnamed6.png)
+![](unnamed6.png){fig-alt="Ahmedabad R User Group virtual session or hybrid event"}
 
 For planning and executing our events, we rely on a combination of tools such as [GitHub](https://github.com/ssinojia/ARUG/tree/main) for collaborative project management and repositories, Zoom for virtual sessions, and [Meetup](https://www.meetup.com/ahmedabad-r-users-group/) and [LinkedIn ARUG](https://www.linkedin.com/company/arug/about/) pages for continuous engagement and communication. These tools not only streamline our processes but also enhance accessibility. By utilizing these technologies, we can include members who cannot attend physical events, making our group more inclusive. We share our event summaries and slides on GitHub, ensuring that valuable information is accessible to all members. Additionally, we are considering recording sessions and sharing them on platforms like YouTube to further extend the reach of our events. Using these tools also allows us to gather feedback and improve future events, ensuring we meet the evolving needs of our community. This approach helps us maintain a vibrant and connected community, regardless of geographical limitations.
 

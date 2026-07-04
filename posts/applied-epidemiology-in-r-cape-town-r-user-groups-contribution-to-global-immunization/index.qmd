@@ -13,7 +13,7 @@ date: "01/07/2026"
 
  [Jared Norman](https://www.linkedin.com/in/jared-norman-71b4b6187/) and [Retselisitsoe Monyake](https://www.linkedin.com/in/rmonyake/), organizers of the [Cape Town R User Group](https://www.meetup.com/cape-town-r-user-group/), recently spoke with the R Consortium about strengthening South Africa’s R community and advancing infectious disease modeling at the Modeling and Simulation Hub Africa (MASHA), which is part of the Department of Statistics at the University of Cape Town (UCT). Alongside efforts to organize local meetups and collaborate with Johannesburg, they shared their work on DTPBoost—an R-based tool developed in collaboration with the CDC and AFENET to help countries evaluate and optimize DTP booster vaccination strategies. In this interview, they discuss how community building, Shiny development, and applied epidemiological modeling come together to strengthen R’s impact in global health.
  
- ![](CapetownRUGOrganizers.png)
+ ![](CapetownRUGOrganizers.png){fig-alt="Capetown RUG Organizers"}
 
 ## Please share about your background and involvement with the RUGS group.
 
@@ -39,7 +39,7 @@ In terms of networking, I engage with a lot of people in the R community, includ
 
 Additionally, we have PhD students at our hub to whom we give workshops. I’ve conducted some R workshops, including one in Kigali, Rwanda, where I taught participants how to use Shiny, and I believe it went quite well.
 
-![](CapetownRUGMeetup.png)
+![](CapetownRUGMeetup.png){fig-alt="Capetown RUG Meetup"}
 
 ## Can you share what the R community is like in South Africa?
 

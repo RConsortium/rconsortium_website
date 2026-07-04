@@ -6,7 +6,7 @@ description: "I have focused my efforts as executive director in building a sust
 categories: ["top level projects", "isc", "announcements", "rugs", "events"]
 author: "Terry Christiani, Executive Director"
 image: "r_wordcloud.png"
-image-alt: "word cloud of the key concepts in Terry's post"
+image-alt: "Word cloud"
 date: "03/19/2026"
 ---
 
@@ -18,7 +18,7 @@ At the R Consortium, one of our roles is to help sustain and strengthen the ecos
 
 Together, these efforts reinforce a central goal: ensuring that R remains a vibrant, collaborative environment for statistical computing, data science, and applied analytics across industries.
 
-![](2026-collage.png)
+![](2026-collage.png){fig-alt="Collage of 2026 R Consortium images"}
 
 ## Structured for the R Community
 

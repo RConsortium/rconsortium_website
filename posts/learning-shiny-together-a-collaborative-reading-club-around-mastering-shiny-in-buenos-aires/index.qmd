@@ -10,7 +10,7 @@ image-alt: "Mastering Shiny book cover and R-Ladies Buenos Aires logo"
 date: "11/04/2025"
 ---
 
-![](portadashiny.png)
+![](portadashiny.png){fig-alt="Mastering Shiny book cover and R-Ladies Buenos Aires logo"}
 
 Have you ever wanted to read Mastering Shiny but kept postponing it for "when things calm down"? So did we! At [R-Ladies Buenos Aires](https://rladiesba.netlify.app/) and [R en Buenos Aires](https://renbaires.github.io/), many of us had Mastering Shiny sitting on our virtual shelves, always waiting for the right moment. After months (okay, maybe years) of good intentions and no progress, we realized we needed a push, and that push came from the power of community. 
 
@@ -27,11 +27,9 @@ Our goals were simple. We wanted to create a friendly, welcoming environment for
 ::: {.columns}
 ::: {.column width="40%"}
 
-<br>
+![Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*](shiny1.png){fig-align="center" width="90%" fig-alt="Virtual Meeting 9 of the Mastering Shiny reading club discussing Chapter 14"}
 
-![](shiny1.png){fig-align="center" width="90%" fig-cap="Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*"} 
-
-![Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*](shiny3.png){fig-align="center" width="90%" fig-cap="Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*"} 
+![Virtual Meeting 9: Discussion of Chapters 14 of *Mastering Shiny*](shiny3.png){fig-align="center" width="90%" fig-alt="Virtual Meeting 9 of the Mastering Shiny reading club discussing Chapter 14"}
 
 :::
 
@@ -51,7 +49,7 @@ Most presenters created slides or notebooks to guide their sessions (though this
 Over time, participants started to share the Shiny apps they were building on their own. We added a small "Show and Tell" section to the beginning of some meetings, where people presented their work-in-progress and received feedback and encouragement.
 It was a space full of mutual support, curiosity, and honest learning.
 
-![Summary of the Reading Club's Last Meeting](shiny2.png){fig-align="center" width="90%" fig-cap="Summary of the Reading Club's Last Meeting"}
+![Summary of the Reading Club's Last Meeting](shiny2.png){fig-align="center" width="90%" fig-alt="Summary slide from the last meeting of the Mastering Shiny reading club"}
 
 
 Although we recorded the sessions, we decided to make them accessible only to attendees. This was different from our chapters' usual practice, but we wanted to keep the sessions informal, comfortable, and pressure-free — more like a study group than a workshop. This allowed everyone to feel safe sharing unfinished work, asking questions, and making mistakes. 
@@ -117,7 +115,7 @@ This reading club wasn't just about working through a technical book. It was abo
 ::: {.columns}
 ::: {.column width="30%"}
 
-![](https://avatars.githubusercontent.com/u/38664570?s=200&v=4){width=80% fig-align="center"}
+![](https://avatars.githubusercontent.com/u/38664570?s=200&v=4){width=80% fig-align="center" fig-alt="R-Ladies Buenos Aires logo"}
 
 :::
 
@@ -138,7 +136,7 @@ This reading club wasn't just about working through a technical book. It was abo
 ::: {.columns}
 ::: {.column width="30%"}
 
-![](https://renbaires.github.io/image/BA-1.png){width=70% fig-align="center"}
+![](https://renbaires.github.io/image/BA-1.png){width=70% fig-align="center" fig-alt="R en Buenos Aires user group logo"}
 
 :::
 
