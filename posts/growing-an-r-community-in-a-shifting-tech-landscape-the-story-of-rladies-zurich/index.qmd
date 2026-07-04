@@ -6,13 +6,12 @@ description: "Luisa Barbanti, organizer of R-Ladies Zurich, shares how her team 
 author: "R Consortium"
 categories: ["rugs", "eu", "women in tech"]
 image: "RLadiesZurich.png"
-image-alt: "picture of R-Ladies Zurich organizers"
+image-alt: "R-Ladies Zurich organizers at the group’s second Anniversary"
 date: "12/09/2025"
 ---
-
 [Luisa Barbanti](https://www.linkedin.com/in/luisa-barbanti/?originalSubdomain=ch), organizer of [R-Ladies Zurich](https://www.meetup.com/rladies-zurich/), recently spoke with the R Consortium about building and sustaining a technically focused R community in Switzerland. With a background in biostatistics and professional experience at a data science consultancy, Luisa shared how she utilizes R for data wrangling, statistical modeling, and internal tooling, leveraging Quarto and Shiny. She discussed the evolution of R-Ladies Zurich and highlighted the challenges of maintaining momentum as community members transition through different phases of their careers.
 
-![](LuisaBarbanti.png){width=50%}
+![](LuisaBarbanti.png){width=50% fig-alt="Luisa Barbanti, organizer of R-Ladies Zurich"}
 
 ## Please share your background and involvement with the RUGS group.
 
@@ -24,7 +23,7 @@ My supervisor encouraged me to attend the [useR! conference](https://user2020.r-
 
 During the meeting, I recognized one of my acquaintances from Zurich, [Seraphina](https://www.linkedin.com/in/seraphina-kissling-625048197/), who had a master's in biostatistics. We struck up a conversation about how great the meeting was and wondered if there was an R-Ladies chapter in Zurich. To our surprise, we discovered there wasn't one. There were no active R-Ladies chapters in Switzerland at that time; some had been started but had unfortunately ceased their activities. 
 
-![](RLadiesZurichLogo.png)
+![](RLadiesZurichLogo.png){fig-alt="R-Ladies Zurich logo"}
 
 ## Can you share what the R community is like in Switzerland?
 
@@ -34,7 +33,7 @@ I feel that with the rise of machine learning and AI, the role of R in industry 
 
 In my current role at a consulting firm specializing in data science, we utilize R because we recognize its power and the extent to which it can be leveraged.
 
-![](RLadiesZurich.png)
+![](RLadiesZurich.png){fig-alt="R-Ladies Zurich organizers at the group’s second Anniversary"}
 
 R-Ladies Zurich Organizers at the group’s second Anniversary
 
@@ -48,7 +47,7 @@ Furthermore, we have an entire ecosystem of [Shiny](https://shiny.posit.co/) app
 
 While we are strong proponents of using R, this approach may be more of an exception than the norm. Nonetheless, R offers numerous capabilities that enable us to accomplish a wide range of tasks. Everything we do typically starts in RStudio, from which we work on various projects.
 
-![](RyssaMoffat.png)
+![](RyssaMoffat.png){fig-alt="Ryssa Moffat presenting"}
 
 ## How has the local community responded to your events, and what strategies have helped you grow participation?
 
@@ -62,7 +61,7 @@ As for our upcoming events, we currently don’t have any specific ones lined up
 
 Organizing these events requires considerable effort, and we’re currently facing a shortage of presenters. We do have one potential presenter in the pipeline, but the timeline remains uncertain. We have discussed collaborating with the Zurich R User Group to develop a workshop format for a larger audience, likely targeting the fall. Although we haven’t set a specific date yet, we anticipate being able to coordinate something after everyone returns from their summer vacations.
 
-![](R-LadiesZurichWomen'sDay.png)
+![](R-LadiesZurichWomen'sDay.png){fig-alt="R-Ladies Zurich Co-hosted Panel Discussion with the Zurich R User Group on International Women’s Day 2024"}
 
 R-Ladies Zurich Co-hosted Panel Discussion with the Zurich R User Group on International Women’s Day 2024
 

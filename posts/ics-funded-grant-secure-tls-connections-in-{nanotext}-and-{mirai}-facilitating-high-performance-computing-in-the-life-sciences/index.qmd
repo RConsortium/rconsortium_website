@@ -8,8 +8,7 @@ format: html
 url: "https://r-consortium.org/posts/ics-funded-grant-secure-tls-connections-in-{nanotext}-and-{mirai}-facilitating-high-performance-computing-in-the-life-sciences/"
 unpublished: false
 categories: ["isc", "announcements", "pharma", "ai", "infrastructure"]
-image-alt: "ISC-funded Grant: Secure TLS Connections in {nanonext} and {mirai} Facilitating High-Performance Computing in the Life Sciences"
-
+image-alt: "Logos for {nanonext}, an R binding to the state-of-the-art C messaging library NNG (Nanomsg Next Generation), created as a successor to ZeroMQ, and {mirai}, a package that enables asynchronous evaluation in R, built on top of {nanonext}"
 ---
 <style>
   .anchorjs-link {
@@ -23,7 +22,7 @@ _Contributed by Charlie Gao, Director at Hibiki AI Limited_
 
 
 <div style="text-align: center;">
-  <img src="mirai.webp" alt="Mirai Nano Next" >
+  <img src="mirai.webp" alt="Logos for {nanonext}, an R binding to the state-of-the-art C messaging library NNG (Nanomsg Next Generation), created as a successor to ZeroMQ, and {mirai}, a package that enables asynchronous evaluation in R, built on top of {nanonext}" >
 </div>
 
 
@@ -46,7 +45,7 @@ With the seed planted in {nanonext}, {mirai} and {crew} have grown to form an el
 
 
 <div style="text-align: center;">
-  <img src="charlie.webp" alt="Charlie Gao" style="width:556px; height:423.516px; object-fit:contain;">
+  <img src="charlie.webp" alt="Charlie Gao, Director at Hibiki AI Limited" style="width:556px; height:423.516px; object-fit:contain;">
   <p>Charlie Gao, Director at Hibiki AI Limited</p>
 </div>
 

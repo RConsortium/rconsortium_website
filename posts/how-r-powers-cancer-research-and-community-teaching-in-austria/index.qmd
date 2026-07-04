@@ -7,13 +7,11 @@ date: "08/20/2025"
 url: "https://r-consortium.org/posts/how-r-powers-cancer-research-and-community-teaching-in-austria/"
 unpublished: false
 categories: ["rugs", "events", "women in tech"]
-image-alt: "How R Powers Cancer Research and Community Teaching in Austria"
-
+image-alt: "Ekaterina Akimova-Höpner, founder of R-Ladies Salzburg"
 ---
-
 [Ekaterina Akimova-Höpner](https://www.linkedin.com/in/ekaterina-akimova-7727801a6/), founder of the [R-Ladies Salzburg](https://www.meetup.com/rladies-salzburg/) chapter, recently spoke with the R Consortium about using R to support cutting-edge cancer research and building a local R community in Austria. Ekaterina shared how she uses R for data preprocessing, statistical modeling, and visualizing high-dimensional genomic datasets. She discussed the launch of R-Ladies Salzburg in 2024, the importance of hands-on workshops for early-career researchers, and how scientific collaboration continues to shape her approach to community building. She also highlighted her talk last year at the useR! Conference 2024, where she presented tools for reproducible research in biomedical science.
 
-![](EkaterinaAkimova.png){width=50%}
+![](EkaterinaAkimova.png){width=50% fig-alt="Ekaterina Akimova-Höpner, founder of R-Ladies Salzburg"}
 
 ## Please share your background and involvement with the RUGS group.
 
@@ -27,13 +25,13 @@ At that time, it felt right to organize a group explicitly focused on supporting
 
 In our first year, 2024, I planned and organized four meetups, ranging from beginner R workshops to networking events. During this time, I connected with members and organizers from all over the world, which was an enriching experience. I was fortunate to be involved in organizing last year's useR! conference, which took place in Salzburg. One of my most rewarding moments was presenting my R package, which is in development for analyzing amplicon sequence data. I was honored to receive the Best Poster award, and the positive feedback I received strengthened my desire to give back to the community and support others on their R journey.
 
-![](useR2024Conference.png){width=50%}
+![](useR2024Conference.png){width=50% fig-alt="Ekaterina Akimova-Höpner receiving Best Poster award at useR! 2024 conference in Salzburg, Germany"}
 
 Being part of the R-Ladies global community has broadened my horizons, and I have improved my public speaking, mentorship, and event organization skills. 
 
 ## Can you share what the R community is like in Austria? 
 
-![](RLadiesSalzburgLogo.png){width=50%}
+![](RLadiesSalzburgLogo.png){width=50% fig-alt="R Ladies Salzburg logo"}
 
 R is actively used in various fields, particularly in academia and banking. While there are several user groups in Austria, they are mainly concentrated in the eastern part of the country, with Salzburg having a smaller presence. For instance, the [Vienna R User Group](https://www.meetup.com/viennar/), along with [R-Ladies Vienna](https://www.meetup.com/rladies-vienna/), represents a large community with which I've had the pleasure of connecting. However, organizing in-person events in the western region, particularly in Salzburg, is still a challenge. I see an opportunity to facilitate in-person meetings for those living in this area, helping to grow the local community. 
 
@@ -45,7 +43,7 @@ The first challenge we faced was working with the Meetup platform, which is the 
 
 Let me share my project on detecting complex rearrangements in next-generation sequencing data. The project aims to create a tool for detecting and characterizing complex genomic rearrangements, specifically templated sequence insertions, duplications, and inversions, using next-generation sequencing data. Previous studies have demonstrated that aberrant DNA double-strand break repair is a common feature in various types of cancer. In our earlier research, we discovered that these breaks can lead to genomic alterations that are not captured by standard variant-calling tools currently in use. For instance, we found evidence that high intracellular dNTP levels, observed in SAMHD1-deficient cells, promote increased templated sequence insertions.
 
-![](NGSDataProject.png)
+![](NGSDataProject.png){fig-alt="Diagram of NGS Data Project for detecting complex rearrangements in next-generation sequencing data"}
 
 To quantify and characterize these events, we needed a pipeline capable of handling these datasets and performing filtering, characterization, and visualization. I chose to use R for this task because I felt more confident programming in R at the time. I developed an R-based pipeline utilizing packages from Bioconductor, including [IRanges](https://bioconductor.org/packages/release/bioc/html/IRanges.html) and [GenomicRanges](https://bioconductor.org/packages/release/bioc/html/GenomicRanges.html), along with base R and the [Tidyverse](https://www.tidyverse.org/).
 
