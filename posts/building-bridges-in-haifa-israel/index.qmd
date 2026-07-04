@@ -11,7 +11,7 @@ categories: ["pharma", "rugs", "events", "middle east"]
 
 ---
 
-![](unnamed.jpg)
+![](unnamed.jpg){fig-alt="Eli Eydlin, instrumental in establishing an R User Group in Haifa, Israel"}
 
 The R Consortium recently interviewed [Eli Eydlin](https://www.linkedin.com/in/elieydlin/?originalSubdomain=il), a dedicated member of the R community who has been instrumental in establishing an [R User Group in Haifa, Israel](https://www.meetup.com/haifa-r-user-group/). With a background in physics and a recent shift into the biotech industry, Eli was motivated to create the group after noticing the absence of a local R community in his new city. Despite Haifa’s relatively small size, it boasts a diverse R community, including professionals from high-tech companies, academia, and startups. Eli shared his experience organizing their first Meetup, which featured speakers from vastly different backgrounds, and his plans to make future events more inclusive. His story highlights the importance of community building and the impact of taking the initiative, offering inspiration for others looking to contribute to their local R communities.
 
@@ -21,17 +21,17 @@ I’ve been working in a biotech startup for nearly two years. My background is 
 
 **Can you share what the R community is like in Haifa?** 
 
-![](unnamed2.png)
+![](unnamed2.png){fig-alt="Haifa R User Group logo"}
 
 One of the reasons I started this was to meet new people who are also R programmers or users. I already know that the community is really diverse. My city isn’t huge—around 300,000 people—but has much to offer. There are big high-tech companies like Microsoft and Amazon here that support their R&D departments, and I’m certain that some of our members are involved. Like in many places in Israel, there are hundreds of small startups. What I find interesting is that people come from all sorts of backgrounds—mostly from academia, as usual, but now also from government, traditional companies, and small businesses. I’m excited to see where this leads.
 
 **You had a** [**Meetup on August 6th, 2024**](https://www.meetup.com/haifa-r-user-group/events/302199640/)**. Can you share more about the topic covered? Why this topic**? 
 
-![](unnamed3.png)
+![](unnamed3.png){fig-alt="Haifa R User Group meetup Aug 6, 2024, participants"}
 
 We have two completely different topics and two amazing speakers. [Sofia Nazarova](https://www.linkedin.com/in/snazarova/?trk=public_profile_browsemap_mini-profile_title&originalSubdomain=ru) is a marine biologist at [Israel Oceanographic & Limnological](https://www.ocean.org.il/en/), who also organizes private guided tours. She teaches people about plants and animals, so she’s not a programmer. However, she co-authored the first-ever R textbook published in Russian, which makes her experience unique. Typically, I work with people who are programmers or data scientists, but she’s out there in the field, literally working with marine life.
 
-![](unnamed4.jpg)
+![](unnamed4.jpg){fig-alt="Second speaker - Adi Sarid, CEO of Sarid Institute LTD, a data science company focusing on production and consumption"}
 
 Our second speaker was [Adi Sarid](https://www.linkedin.com/in/adi-sarid/?originalSubdomain=il), the CEO of [Sarid Institute LTD](https://sarid-ins.com/), a data science company focusing on production and consumption. He’s also writing a book on R, this time in Hebrew. It’s a completely different experience—he’s a business leader working with governments and large firms, and he showcased some fantastic examples of practical applications in his talk.
 
