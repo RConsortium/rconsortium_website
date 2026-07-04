@@ -9,10 +9,9 @@ image: "JuliaSilge-main-image.png"
 image-alt: "image of Julie Silge co-organizer of Salt Lake City R User Group" 
 date: "07/029/2025"
 ---
-
 [Julia Silge](https://www.linkedin.com/in/juliasilge/), co-organizer of the [Salt Lake City R User Group](https://www.meetup.com/slc-rug/), recently talked to the R Consortium about sustaining an active R community in a region without a central tech hub. Julia shared how she discovered R and became deeply engaged with its open-source ecosystem. She discussed the group’s dual-format meetups, which include remote talks streamed via YouTube and quarterly in-person gatherings, as well as efforts to make the community inclusive for both local professionals and a wider audience. She also highlighted a recent session on advanced Git practices and an upcoming talk on sparse data structures in the tidymodels framework.
 
-![](JuliaSilge.png)
+![](JuliaSilge.png){fig-alt="image of Julie Silge co-organizer of Salt Lake City R User Group"}
 
 ## Please share your background and involvement with the RUGS group.
 
@@ -65,7 +64,7 @@ For instance, with text data, certain words are used frequently while many other
 
 This upcoming talk will explain how sparse data structures are integrated into the tidymodels framework, emphasizing the efficiency gains that can be achieved. By using sparse data structures, we can handle larger models that might otherwise be impossible to train on a standard computer due to memory constraints. I’m looking forward to this informative session!
 
-![](SaltLakeCityOnlineMeetup.png)
+![](SaltLakeCityOnlineMeetup.png){fig-alt="Salt Lake City members during online meetup"}
 
 ## Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?
 

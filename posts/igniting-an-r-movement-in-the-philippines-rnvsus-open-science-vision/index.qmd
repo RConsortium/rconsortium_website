@@ -6,13 +6,12 @@ description: "Dr. Orville D. Hombrebueno, Romnick Pascua, Mer Joseph Q. Carranza
 categories: ["rugs", "software development","asia"]
 author: "R Consortium"
 image: "RNVSULogo.png"
-image-alt: "picture of RNVSU Logo"
+image-alt: "Logo for R User Group of Nueva Vizcaya State University (RNVSU), Philippines"
 date: "03/11/2026"
 ---
-
 [Dr. Orville D. Hombrebueno](https://www.linkedin.com/in/orville-hombrebueno-1725a8276/), [Romnick Pascua](https://www.linkedin.com/in/romnick-pascua-00424536/), [Mer Joseph Q. Carranza](https://www.linkedin.com/in/mer-joseph-caranza-19182b24a/), [Richard J. Taclay](https://scholar.google.com/citations?user=D2as-VkAAAAJ&hl=en), and Mart Jasper G. Antonio, organizers of the [R User Group of Nueva Vizcaya State University](https://www.meetup.com/r-nvsu/) (RNVSU) recently spoke with the R Consortium about building a provincial, university-based R community in the Philippines. They shared how the group evolved from a handful of faculty members independently using R for theses, mathematical modeling, biodiversity research, and land-use analysis into a funded initiative promoting reproducible research and open science. The team discussed launching foundational workshops, introducing GitHub and Quarto workflows, organizing hybrid events for their university’s charter anniversary, and envisioning dashboards and data-driven tools to support local education, agriculture, and research.
 
-![](RNVSULogo.png){width="50%"}
+![](RNVSULogo.png){width="50%" fig-alt="Logo for R User Group of Nueva Vizcaya State University (RNVSU), Philippines"}
 
 **Please share about your background and involvement with the RUGS group.**
 
@@ -52,7 +51,7 @@ The RUGS community provides a meaningful space for exchanging ideas, exploring a
 
 I believe this group will broaden my knowledge and hone my skills in data analysis and mathematical computations. Now, I am exploring model development and geographic visualizations in R, which are among R's strengths compared to other computational software. Moreover, it is an honor to be one of the founders of this group, as it serves as a platform to support and help students, academicians, scholars, teachers, and researchers in their academic and professional endeavors.
 
-![](RNVSUMeetup.png)
+![](RNVSUMeetup.png){fig-alt="Participants from the R User Group of Nueva Vizcaya State University (RNVSU), Philippines"}
 
 **Can you share what the R community is like in the Philippines?**
 

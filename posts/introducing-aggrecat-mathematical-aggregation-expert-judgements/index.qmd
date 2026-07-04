@@ -6,7 +6,7 @@ description: "aggreCAT is an open-source R package hosted on CRAN designed for m
 categories: ["isc", "software development"]
 date: "06/23/2026"
 image: "img_IDEA_repliCATS.png"
-image-alt: "IDEA elicitation workflow used by repliCATS: Investigate, Discuss, Estimate, and Aggregate expert judgments"
+image-alt: "replicCATS graphic of the IDEA Protocol: Investigate-Discuss-Estimate-Aggregate"
 bibliography: ISC_blog.bib
 csl: cell.csl
 date-modified: last-modified
@@ -17,7 +17,6 @@ author:
   - name: Elliot Gould
     orcid: 0000-0002-6585-538X
 ---
-
 ```{r}
 #| label: setup
 #| include: false

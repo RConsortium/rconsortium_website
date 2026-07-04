@@ -7,13 +7,11 @@ date: "12/30/2024"
 url: "https://r-consortium.org/posts/introducing-r-to-malawi-a-community-in-the-making/"
 unpublished: false
 categories: ["rugs", "events", "africa"]
-image-alt: "Introducing R to Malawi: A Community in the Making"
-
+image-alt: "R Users Malawi logo"
 ---
-
 David Mwale, the [R Users Malawi](https://www.meetup.com/r-users-malawi/) group organizer, recently spoke with the R Consortium about his efforts to establish and grow the R community in Malawi. David shared insights into the group's inaugural meeting, the excitement surrounding R among researchers and students, and his plans to engage academic institutions through online and in-person events. He also discussed the challenges of introducing R in a region where other tools like Stata and SPSS dominate and his vision for fostering a vibrant and supportive R ecosystem in Malawi.
 
-![](DavidMwale.png){width=50%}
+![](DavidMwale.png){width=50% fig-alt="David Mwale, the R Users Malawi group organizer,"}
 
 **Please share your background and involvement with the RUGS group.**
 
@@ -27,7 +25,7 @@ The use of R in Malawi is still in its infancy and is not widely adopted. For in
 
 One issue may be that academic institution lecturers themselves still need to become familiar with R. They tend to teach what they already know, which might limit students' exposure to more modern tools. A colleague of mine, pursuing his studies at an institution in Malawi, mentioned that they still use Stata for their master's dissertation. Again, while this is acceptable, R offers more advantages.
 
-![](RUsersMalawi.png){width=50%}
+![](RUsersMalawi.png){width=50% fig-alt="R Users Malawi logo"}
 
 **How was the response to your first event? How did you promote the event?** 
 

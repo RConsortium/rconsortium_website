@@ -6,13 +6,12 @@ description: "Jeremy Horne, organizer of the Birmingham R User Group and founder
 categories: ["rugs", "software development"]
 author: "R Consortium"
 image: "BirminghamRUGMeetup1.png"
-image-alt: "picture of Birmingham RUG Organizer"
+image-alt: "Jeremy Horne on Building Inclusive R Communities Across the UK"
 date: "03/02/2026"
 ---
-
 [Jeremy Horne](https://www.linkedin.com/in/jeremy-horne-datacove/?originalSubdomain=uk), organizer of the [Birmingham R User Group](https://www.meetup.com/birminghamr/) and founder of the data and analytics consultancy [Datacove](https://datacove.co.uk/), recently spoke with the R Consortium about rebuilding Birmingham’s R community as an inclusive space for learning and collaboration. Drawing on Datacove’s experience supporting R user groups across the UK, Jeremy discussed the Birmingham group's relaunch post-COVID and how bringing R and Python users together has strengthened participation across industries. He reflected on the importance of cross-language collaboration, welcoming freelancers and early-career practitioners, and creating community-led meetups that translate shared knowledge into real professional opportunities.
 
-![](JeremyHorne.png){width=50%}
+![](JeremyHorne.png){width=50% fig-alt="Jeremy Horne, organizer of the Birmingham R User Group and founder of the data and analytics consultancy Datacove"}
 
 **Please share about your background and involvement with the RUGS group.**
 
@@ -30,7 +29,7 @@ My journey transitioned from consulting to exploring the marketing field in 2014
 
 I wanted to help people work more efficiently with data. Many view data as a cost, but I believe it is an investment in the business. When you invest in data analysis, it pays off by revealing insights that drive growth. Some people say "data is the new oil," but at Datacove, we prefer "data is the new soil" because it nurtures and enables your business to grow.
 
-![](BirminghamRUGOrganizers.png)
+![](BirminghamRUGOrganizers.png){fig-alt="Birmingham RUG organizers sharing a toast"}
 
 **Can you share what the R community is like in the United Kingdom in general and in Birmingham specifically?**
 
@@ -40,7 +39,7 @@ In Birmingham, the predominant industries using R include pharmaceuticals, healt
 
 Birmingham's R community is still evolving and rebuilding. It tends to be one of our more junior communities, and we are actively working to bring more people back into the Birmingham R scene. We see a good mix of attendees, many of whom are freelancers. These individuals are often curious and eager to learn, but may not have a large team to support them. The community atmosphere provides them with a sense of belonging and peer support to discuss their challenges.
 
-![](BirminghamRUGMeetup1.png)
+![](BirminghamRUGMeetup1.png){fig-alt="Picture of audience from Birmingham RUG meetup"}
 
 I remember a comment from someone at EARL two years ago. He works in data and tech, doesn't primarily use R, but decided to attend EARL out of interest. By the end of the conference, he expressed surprise at how helpful, friendly, and supportive the R community is, even for someone new to it. Everyone there is eager to help one another, whether it’s providing guidance or assisting someone in advancing their career.
 
@@ -60,7 +59,7 @@ Our goal is to host quarterly meetups this year. We already have a schedule for 
 
 Although we haven't organized many meetups in Birmingham, we have a couple of champions in the area who are strong supporters of the community. They are actively helping us revitalize the group as best as they can.
 
-![](BirminghamRUGMeetup2.png)
+![](BirminghamRUGMeetup2.png){fig-alt="Audience members networking from Birmingham RUG meetup"}
 
 **How do you approach community building across multiple cities, and what tools or platforms help you keep people connected between events?**
 

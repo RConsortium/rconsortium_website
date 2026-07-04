@@ -7,19 +7,17 @@ date: "07/12/2024"
 url: "https://r-consortium.org/posts/kolkata-r-user-group-a-rich-history-with-statistics/"
 unpublished: false
 categories: ["rugs", "events", "asia"]
-image-alt: "Kolkata R User Group: A Rich History with Statistics"
-
+image-alt: "Samrit Pramanik, manager of Kolkata R User Group, India"
 ---
-
 The R Consortium recently spoke with [Samrit Pramanik](https://samrit.quarto.pub/) of the [Kolkata R User Group](https://www.meetup.com/kolkata-r-user-group/) about his experience starting a new R User Group in India. Samrit highlighted Kolkata’s rich history with statistics and talked about the diverse local R community.
 
 
-![](Samrit.jpg){width=50%}
+![](Samrit.jpg){width=50% fig-alt="Samrit Pramanik, manager of Kolkata R User Group, India"}
 
 
 The Kolkata R User group is organizing its second online event titled “[A New Approach for Teaching Data Analytics with R](https://www.meetup.com/kolkata-r-user-group/events/301528636/)” on July 13th. R users from around the world are invited to join this event.
 
-![](Announcement.jpg)
+![](Announcement.jpg){fig-alt="Announcement for Kolkata R User Group second online event titled “A New Approach for Teaching Data Analytics with R,” held on July 13, 2024"}
 
 
 **_Please share your background and involvement with the RUGS group._**
@@ -31,7 +29,7 @@ This is the third city-based R user group in India that is affiliated with the R
 **_Can you share what the R community is like in Kolkata?_**
 
 
-![](KolkotaLogo.jpg){width=50%}
+![](KolkotaLogo.jpg){width=50% fig-alt="Kolkata R User Group logo"}
 
 
 The Kolkata User Group has been formed with a broader perspective that I would like to share with you. Kolkata is known for its reputation in statistical research and education. The city is recognized as the birthplace of modern statistics in India, with the establishment of the [Indian Statistical Institute](https://www.isical.ac.in/) (ISI) in 1931 by a prominent figure in statistics. The University of Calcutta, where I graduated, was the first in Asia to offer a post-graduate degree in statistics in 1941. This rich history made the formation of the Kolkata R User Group inevitable. Our community consists of academics and professionals from diverse fields such as life sciences, healthcare, the public sector, physics, astrophysics, and other industries. This diverse background facilitates robust exchanges of ideas and techniques related to R and data, making our R community in Kolkata truly unique.
@@ -50,7 +48,7 @@ We have received very positive feedback and responses from the participants who 
 Currently, I am working on two projects. The first project involves cricket analytics, where I extensively use R for cleaning up messy raw data and conducting exploratory data analysis at both the team and individual player levels and published a [shiny dashboard](https://samritpramanik.shinyapps.io/T20PerformAnalysis/) on performance analysis of T20I players. I’m also building a statistical model to predict the total score of an innings, the winner of the match, and the tournament. Lastly, I aim to compile all the findings into an ebook format.
 
 
-![](Dashboard.png)
+![](Dashboard.png){fig-alt="Screenshot from Cricket Performance Analysis Shiny dashboard"}
 
 
  Cricket Performance Analysis Shiny Dashboard

@@ -6,11 +6,10 @@ description: "In 2026, the R Consortium is supporting global R events and commun
 categories: ["top level projects", "events", "announcements"]
 author: "R Consortium"
 image: "eurobioc2026.png"
-image-alt: "event logos for R community events in 2026"
+image-alt: "Participants from previous EuroBioC conference"
 date: "04/15/2026"
 lightbox: true
 ---
-
 The R ecosystem continues to grow because of its community - organizers, educators, and practitioners who create spaces for collaboration and learning. These efforts often happen independently, across regions and domains, yet collectively they shape the future of R.
 
 At the R Consortium, we actively invest in that layer of the ecosystem. In 2026, we are committed to support R-related events and community initiatives worldwide, with a particular focus on strengthening independent, community-led conferences and user groups.
@@ -26,13 +25,13 @@ As part of this annual initiative, we support important R-related events listed 
 
 ## [EuroBioC 2026](https://eurobioc2026.bioconductor.org/)
 
-![](eurobioc2026.png)
+![](eurobioc2026.png){fig-alt="Participants from previous EuroBioC conference"}
 
 EuroBioC focuses on the Bioconductor ecosystem and the use of R in bioinformatics and computational biology. It is being held in Turku, Finland, during the first week of June. It connects scientists working on genomics, proteomics, and related fields, highlighting how R supports cutting-edge research in the life sciences.
 
 ## [Rencontres R 2026](https://astamm.github.io/en/rr2026.html)
 
-![](rencontresr2026.png)
+![](rencontresr2026.png){fig-alt="Logo for Rencontres 2026, organized by the French Statistical Society (SFdS)"}
 
 Rencontres is a long-running conference rooted in the French-speaking R community. It is organized by the French Statistical Society (SFdS) and brings together researchers, public sector professionals, and industry practitioners to share applied work and foster collaboration. Its regional focus helps strengthen R adoption across Europe while maintaining strong technical depth. Rencontres is open to beginners as well as experienced users from all sectors and is being held June 16-18 in Nantes, France.
 
@@ -48,7 +47,7 @@ Registration deadline: Friday, May 29, 2026
 
 ## [Cascadia R Conference](https://cascadiarconf.com/)
 
-![](cascadiar2026.png){width=30%}
+![](cascadiar2026.png){width=30% fig-alt="CascadiaR conference 2026 logo, Portland, Oregon"}
 
 The Cascadia R Conference serves the Pacific Northwest in the US, with a strong emphasis on practical data science and community engagement. It is held in Portland, OR, running over two days on June 26-27. Cascadia R is known for being accessible, welcoming, and highly relevant to both new and experienced R users working in industry and academia.
 
@@ -64,7 +63,7 @@ Registration deadline: Fri, June 12, 2026
 
 ## [useR! 2026](https://user2026.r-project.org/)
 
-![](userbam2026.png){width=30%}
+![](userbam2026.png){width=30% fig-alt="useR! 2026 logo, July 6 - 9, 2026 in Warsaw, Poland"}
 
 The useR! 2026 conference is the flagship global gathering of the R community, taking place this year July 6 - 9, 2026 in Warsaw, Poland. It brings together data scientists, statisticians, developers, and researchers from around the world for keynote talks, hands-on workshops, and community-driven sessions that showcase cutting-edge applications and developments in the R ecosystem.
 
@@ -81,18 +80,18 @@ Nomination deadline: Fri, April 24, 2026
 
 ## [Ghana R Conference](https://ghana-rusers.org/ghana-r-conference-2026/)
 
-![](ghanar2026.png){width=30%}
+![](ghanar2026.png){width=30% fig-alt="GhanaR 2026 conference logo"}
 
 The Ghana R Conference 2026, organized by the Ghana R Users Community, will take place July 9 - 10, 2026, at Accra Technical University in Accra, bringing together data scientists, researchers, and practitioners to explore the role of R in advancing Ghana’s digital transformation. Centered on the theme of using R to support AI and data-driven development, the event features talks, workshops, and community engagement aimed at building local expertise and strengthening the data science ecosystem across Ghana and the broader African region.
 
 ## [LatinR](https://latinr.org/)
 
-![](latinr-main-image.png)
+![](latinr-main-image.png){fig-alt="Photos from previous LatinR - credit: Comunicación FCEA"}
 _photo credit: [Comunicación FCEA](https://www.flickr.com/people/comunicacionfcea/)_
 
 LatinR is one of the most important R conferences in Latin America. It provides a platform for Spanish- and Portuguese-speaking communities to share knowledge, present research, and build connections across countries. Its regional focus helps drive adoption and innovation in fast-growing data science markets.
 
-![](latinr-logo.png){width=38%}
+![](latinr-logo.png){width=38% fig-alt="LatinR 2026 conference logo"}
 
 LatinR is being held in November 11-13, 2026. Don't miss it!
 
