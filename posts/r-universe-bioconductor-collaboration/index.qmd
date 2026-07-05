@@ -8,11 +8,11 @@ author:
     url: https://www.bioconductor.org/about/core-team/
 categories: ["top level projects", "infrastructure", "announcements"]
 date: 2026-04-08
-image: "https://docs.r-universe.dev/img/bioc-pkg.png"
+image: "bioc-pkg.png"
 lightbox: true
 url: "https://r-consortium.org/posts/r-universe-bioconductor-collaboration/"
 unpublished: false
-image-alt: "Collaborating between Bioconductor and R-universe on Development of Common Infrastructure"
+image-alt: "Screenshot of the DESeq2 package page on bioc.r-universe.dev, highlighting the Website Tour button and package check results"
 
 ---
 
@@ -73,7 +73,7 @@ This provides a familiar yet modern interface for Bioconductor contributors, ali
 
 Information about each package is available on `https://bioc.r-universe.dev/{pkgname}`. For example,  [https://bioc.r-universe.dev/DESeq2](https://bioc.r-universe.dev/DESeq2) provides details on the DESeq2 package as shown below:
 
-![](https://docs.r-universe.dev/img/bioc-pkg.png){fig-alt="Screenshot of Bioconductor development branch - Technical Documentation for Bioconductor Maintainers"}
+![](bioc-pkg.png){fig-alt="Screenshot of the DESeq2 package page on bioc.r-universe.dev, highlighting the Website Tour button and package check results"}
 
 If this is your first time visiting R-universe, we recommend clicking the "Website Tour" button which will walk you through the most important information in 1 or 2 minutes.
 

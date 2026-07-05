@@ -7,13 +7,11 @@ date: "04/16/2025"
 url: "https://r-consortium.org/posts/strengthening-r-communities-across-borders-ozan-evkaya-on-organizing-the-edinburgh-r-user-group/"
 unpublished: false
 categories: ["submissions", "pharma", "rugs", "events", "eu"]
-image-alt: "Strengthening R Communities Across Borders: Ozan Evkaya on Organizing the Edinburgh R User Group"
-
+image-alt: "Ozan Evkaya, one of the local organizers of the Edinburgh R User group"
 ---
-
 [Ozan Evkaya](https://www.linkedin.com/in/ozanevkaya/), one of the local organizers of the [Edinburgh R User group](http://edinbr.org/), recently spoke with the R Consortium about his journey in the R community and his efforts to strengthen R adoption in Edinburgh. He discussed his experiences hosting R events in Turkey during the pandemic, the importance of online engagement, and his vision for expanding collaborations with neighboring user groups. He also reflected on his research in dependence modeling and contributions to open-source R packages, highlighting how R continues to shape his work in academia and community building.
 
-![](Ozan_Evkaya.png)
+![](Ozan_Evkaya.png){fig-alt="Ozan Evkaya, one of the local organizers of the Edinburgh R User group"}
 
 **Please share about your background and involvement with the RUGS group.**
 
@@ -42,7 +40,7 @@ Based on my interactions with members of the Edinburgh R Group and the[ Royal St
 
 
 
-![](EdinburghRUG_Meetup.png)
+![](EdinburghRUG_Meetup.png){fig-alt="Presenter from Edinburgh R User Group meeting: “No likelihood? No problem! — Bayesian Statistics in R”"}
 
 Edinburgh R User Group Event: “[No likelihood? No problem! — Bayesian Statistics in R](https://www.meetup.com/edinbr/events/306226785/?eventOrigin=group_events_list)”
 

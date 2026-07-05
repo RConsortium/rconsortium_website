@@ -5,19 +5,17 @@ description: "R Foundation embarking on a crucial project to modernize R’s cor
 author: "R Consortium"
 categories: ["events", "infrastructure"]
 image: "Rlogo.png"
-image-alt: "Sovereign Tech Fund Investment in R Foundation - Sustainability and Security"
+image-alt: "The R logo - The R logo is © 2016 The R Foundation - https://www.r-project.org/logo/"
 date: "10/02/2025"
 url: "https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/"
-
 ---
-
-![](Rlogo.png)
+![](Rlogo.png){fig-alt="The R logo - The R logo is © 2016 The R Foundation - https://www.r-project.org/logo/"}
 
 The R ecosystem, a cornerstone of statistical computing and data science, is poised for significant enhancements in its long-term health and security. With a new investment of USD $450,000 (€392,000) from the [Sovereign Tech Fund (STF)](https://www.sovereign.tech/tech/r-project), the [R Foundation](https://www.r-project.org/foundation/) is embarking on a crucial project to modernize R's core infrastructure, improve its maintainability, and fortify its supply chain.
 
 This initiative is championed by the R Foundation and the R Core Team. The R Foundation is a not-for-profit organization providing crucial financial and logistical support for the R project. Established by the members of the R Core Team, its primary mission is to ensure the continued success and stability of R for the global community. The Foundation, based in Vienna, Austria, holds the copyright for R software and uses its resources to support development and foster innovation in statistical computing. The R Core Team is the dedicated group of developers with write access to the R source code, who volunteer their time to guide the technical evolution of the language.
 
-![](urbanek.jpg){width=50%}
+![](urbanek.jpg){width=50% fig-alt="Simon Urbanek, key member of the R Core Team and an Associate Professor in Statistics at the University of Auckland"}
 
 To understand the impact of this grant, we sat down with [Simon Urbanek](https://www.linkedin.com/in/simon-urbanek-08b973106/?originalSubdomain=nz), a key member of the R Core Team and an Associate Professor in Statistics at the University of Auckland. Simon shared his insights on what this funding means for the future of R and how the community can play a part.
 
@@ -53,7 +51,7 @@ The work is expected to take place over the next 18 months. We hope that the fou
 
 **Simon Urbanek:** A significant portion of the technical work—including bug triage, platform improvements, and replacing old infrastructure—will be done by [Tomas Kalibera](https://www.linkedin.com/in/kalibera/?originalSubdomain=cz). As a member of the R Core Team, Tomas is one of the most active developers of the R interpreter, and his deep expertise in R's internals and build systems makes him uniquely suited to lead the modernization of R's core. This grant provides vital support for him to dedicate his time to these foundational improvements that are critical for R's long-term health.
 
-![](kalibera.jpg)
+![](kalibera.jpg){fig-alt="Tomas Kalibera, member of the R Core Team, one of the most active developers of the R interpreter"}
 
 Other efforts, especially around documentation and community engagement, will be led by various R Core members. This entire project was conceived with the help of the R Foundation board members, and we also hope to collaborate with the R Consortium to bring in more contributors from the community.
 

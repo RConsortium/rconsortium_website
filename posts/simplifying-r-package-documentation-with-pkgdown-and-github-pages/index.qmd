@@ -5,13 +5,11 @@ description: "Learn how pkgdown combined with GitHub Pages simplifies creating a
 author: "R Consortium"
 categories: ["r/medicine 2025", "software development"]
 image: "r-pkgdown.jpg"
-image-alt: "R Package Development with pkgdown - Melissa Van Bussel"
+image-alt: "From R/Medicine 2025 - \"R Package Development with GitHub Pages and pkgdown\" - presented by Melissa Van Bussel, Senior Data Analyst at Statistics Canada"
 date: "06/18/2025"
 url: "https://r-consortium.org/posts/simplifying-r-package-documentation-with-pkgdown-and-github-pages/"
-
 ---
-
-![](r-pkgdown.jpg){fig-alt="R Package Development with pkgdown - Melissa Van Bussel"}
+![](r-pkgdown.jpg){fig-alt="From R/Medicine 2025 - \"R Package Development with GitHub Pages and pkgdown\" - presented by Melissa Van Bussel, Senior Data Analyst at Statistics Canada"}
 
 Welcome to the world of R package development! If you've ever created an R package, you know that one of the most crucial aspects is its documentation. Good documentation not only makes your package more accessible to others but also enhances its usability. However, creating and maintaining a neat documentation website can be a daunting task. This is where `pkgdown` and GitHub Pages come into play, simplifying the process significantly.
 

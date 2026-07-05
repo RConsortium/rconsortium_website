@@ -7,13 +7,11 @@ date: "02/13/2025"
 url: "https://r-consortium.org/posts/seville-r-users-group-rs-role-in-optimization-research-and-stroke-prevention/"
 unpublished: false
 categories: ["rugs", "events", "south america"]
-image-alt: "Seville R Users Group: R’s Role in Optimization Research and Stroke Prevention"
-
+image-alt: "Alberto Torrejon Valenzuela, organizer of the Seville R Users Group"
 ---
-
 [Alberto Torrejon Valenzuela](https://www.linkedin.com/in/alberto-torrej%C3%B3n-valenzuela/?locale=en_US), organizer of the [Seville R Users Group](https://www.meetup.com/sevilla-r-users/), recently spoke with the R Consortium about the dynamic growth of the R community in Seville and the group’s role in fostering collaboration across academia and industry. Alberto shared highlights from hosting the Third Spanish R Conference, which brought together local and international participants. He discussed the group’s initiatives, including monthly workshops and online outreach through platforms like YouTube. He also reflected on his research in optimization and a collaborative project analyzing stroke prevention, showcasing how R drives innovation in scientific research and community development.
 
-![](AlbertoValenzuela.png){width=60%}
+![](AlbertoValenzuela.png){width=60% fig-alt="Alberto Torrejon Valenzuela, organizer of the Seville R Users Group"}
 
 **Please share your background and involvement with the RUGS group.**
 
@@ -21,23 +19,23 @@ My name is Alberto Torrejon Valenzuela. I am from Los Barrios, a town in Cádiz,
 
 I also joined the R group in Sevilla, which I discovered through Meetup. It was another motivation to enhance my R skills. The Sevilla R Users Group meets at the University of Sevilla's facilities every one to two months. During these meetings, we discuss our work and share our experiences. Our group includes many users from academia and industry, making our discussions very diverse. We enjoy discussing our various implementation packages and applications; hearing from both perspectives is always interesting.
 
-![](SevilleRUGOrganizers.png){width=60%}
+![](SevilleRUGOrganizers.png){width=60% fig-alt="Selfie with Seville R Users Group"}
 
 **Your Group recently hosted the [Third Spanish R Conference](https://www.imus.us.es/congresos/IIIRqueR/). Please share some details about the event.** 
 
 The Third Spanish R Conference took place from November 6 to 8 in Seville, co-organized by the [Institute of Mathematics at the University of Seville](https://www.imus.us.es/www/) and Sevilla R group, with support from the R Consortium and several other organizations. 
 
-![](SpanishRConference1.png){width=60%}
+![](SpanishRConference1.png){width=60% fig-alt="Participants from the Spanish R Conference"}
 
 We used a catchy slogan for the conference: "R tiene un color especial" (R has a special color). This is a modification of the lyrics of a famous song about Seville that everyone in Spain knows. It became a hit!
 
 The conference featured a wide range of activities from both scientific and social perspectives. We had four plenary speakers: [Jakub Nowosad](https://jakubnowosad.com/), from University of Münster, and [Hannah Frick](https://www.frick.ws/) from POSIT, along with national speakers [Rosana Ferrero](https://www.linkedin.com/in/rosanaferrero/?originalSubdomain=es), who is very active in social networking, and [Javier Tejedor Aguilera](https://www.linkedin.com/in/javier-tejedor-aguilera/?originalSubdomain=es) from [Endesa](https://www.endesa.com/en), who represents the industry.
 
-![](SpanishRConference2.png){width=60%}
+![](SpanishRConference2.png){width=60% fig-alt="Participants from the Spanish R Conference"}
 
 Additionally, it's important to mention that the group recognized the contributions of two founding members, [Francisco Rodriguez-Sanchez](https://frodriguezsanchez.net/) and [Jerónimo Carranza](https://jeronimocarranza.github.io/), during the conference. We honored them with a gift to acknowledge their hard work.
 
-![](SpanishRConference3.png){width=60%}
+![](SpanishRConference3.png){width=60% fig-alt="Participants from the Spanish R Conference"}
 
 **Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?**
 
@@ -45,7 +43,7 @@ Organizing a conference, like the one in Spain, is quite a significant undertaki
 
 We primarily use social networks to connect with the local community, including the former [Twitter](https://x.com/_SevillaR) (now known as X), [BlueSky](https://bsky.app/profile/sevillar.bsky.social), and [LinkedIn](https://www.linkedin.com/in/gruposevillar/). We rely on our Meetup page to organise the event, where we post details about our seminars or talleres. People can indicate whether they will attend in person or online, making this a helpful tool. Additionally, since some members are researchers and professors in the University of Seville, we have support from Microsoft Teams to stream and record these meetings, as many participants come from South American and Spanish-speaking countries. For example, in our last meeting, we had attendees from Panama and Colombia.
 
-![](SevilleRUGMeeting.png){width=60%}
+![](SevilleRUGMeeting.png){width=60% fig-alt="Photo from Seville RUG meeting"}
 
 After the meeting, we usually post our recordings on our [YouTube](https://www.youtube.com/channel/UC4_SN0le5WFMu_LFaIufLbA) channel. Every session is recorded there. We also have a [website](https://sevillarusers.netlify.app/) and a [Telegram](https://t.me/+HE3IBL13swTfZwYI) group where we engage in more active discussions. This is mainly for our meetings. 
 

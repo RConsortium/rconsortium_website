@@ -7,14 +7,12 @@ date: "11/01/2024"
 url: "https://r-consortium.org/posts/reviving-sheffield-r-user-group-and-building-tools-for-thyroid-cancer-prediction/"
 unpublished: false
 categories: ["pharma", "rugs", "events", "ai", "eu"]
-image-alt: "Reviving Sheffield R User Group and Building Tools for Thyroid Cancer Prediction"
-
+image-alt: "Neil Shephard, co-organizer of the Sheffield R User Group in Sheffield, United Kingdom"
 ---
-
 [Neil Shephard](https://blog.nshephard.dev/about.html), co-organizer of the [Sheffield R User Group](https://www.meetup.com/sheffieldr-sheffield-r-users-group/) in Sheffield, United Kingdom (also on [fosstodon](https://fosstodon.org/@sheffieldr)), recently spoke to the R Consortium about his journey from Genetic Epidemiology to Research Software Engineering with R. He also discussed the revival of the Sheffield R User group and the challenges of organizing inclusive and hybrid events. Neil also highlighted the group's successful participation in Hacktoberfest and shared insights into his current R projects, including developing tools for thyroid cancer prediction and deploying Shiny applications.
 
 
-![](NeilShephard.png){width=30%}
+![](NeilShephard.png){width=30% fig-alt="Neil Shephard, co-organizer of the Sheffield R User Group in Sheffield, United Kingdom"}
 
 
 **Please share your background and involvement with the RUGS group.**
@@ -37,7 +35,7 @@ I was asked to improve Sheffield's RSE (Research Software Engineering) community
 
 I briefly worked with Anna, who had started the SheffieldR group, but unfortunately, soon after I started to work with the RSE Team, she [moved on](https://www.r-rse.eu/) and became an R consultant. Still, we had some overlap, and she was happy to share all the materials and the [GitHub](https://github.com/SheffieldR) repository for the website with me. So, I took on the responsibility of organizing the group. I rewrote the [website](https://sheffieldr.github.io/) and switched it from [R Markdown](https://rmarkdown.rstudio.com/) to [Quarto](https://quarto.org/) to learn more about using Quarto, which had just been released. It wasn't too difficult since the languages are pretty similar.
 
-![](SheffieldRUGs.png)
+![](SheffieldRUGs.png){fig-alt="Sheffield R User Group April 2024 Meetup “Profiling and Optimising your R code,” Speaker: Dan Brady, Research Software Engineer, University of Sheffield."}
 _Sheffield R User Group [April 2024](https://sheffieldr.github.io/posts/2024-04-22-april-meetup/) Meetup “Profiling and Optimising your R code,” Speaker: Dan Brady, Research Software Engineer, University of Sheffield._ 
 
 I was joined by [Grace Accad](https://www.linkedin.com/in/grace-accad-9776b22b9/) from the Data Analytics Service at the University of Sheffield to organize SheffieldR. She had been involved in R ladies and attended other R user groups, and I’ve been very grateful to her for her support and help in sharing the workload.
@@ -46,7 +44,7 @@ We have been hosting Sheffield R user group events for over a year, and they hav
 
 **Can you share what the R community is like in Sheffield? **
 
-![](SheffieldJanuary2024.png)
+![](SheffieldJanuary2024.png){fig-alt="Sheffield R User Group January 2024 Meetup “Automating Health Economic Evaluation with R,” Speaker: Robert Smith, Dark Peak Analytics."}
 _Sheffield R User Group January 2024 Meetup “[Automating Health Economic Evaluation with R](https://sheffieldr.github.io/posts/2024-01-18-jan-meetup/),” Speaker: Robert Smith, [Dark Peak Analytics](https://darkpeakanalytics.com/)._
 
 I only have a little industry experience, having only worked for one company. However, I think R is more academic, although that is changing. In Sheffield, the company I worked for had a research department with only two people. So, at least in Sheffield, R is used in the industry. The Sheffield R user group aims to bring together people who use R in the area to create a community where they can ask questions and help each other. A [data science learning community](https://shef-ai.github.io/) in Sheffield used to be more R-oriented but now includes people using pandas. I like that community as well.

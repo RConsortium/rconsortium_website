@@ -9,7 +9,7 @@ image: "data-sunday-2024.png"
 image-alt: "Data Sunday 2024" 
 date: "07/07/2025" 
 ---
-![](abraji_ceremony_2024_1.jpg)
+![](abraji_ceremony_2024_1.jpg){fig-alt="Picture of audience from the R track during the Abraji congress 2025"}
 
 _credit for photos: Luciana Vassoler/Abraji_ 
 
@@ -23,12 +23,12 @@ From Carol:
 
 | | | |
 |:---:|:---:|:---:|
-| ![](LV-ABRAJI-6536.jpg){width=100%} | ![](LV-ABRAJI-6153.jpg){width=100%} | ![](LV-ABRAJI-6144.jpg){width=100%} |
-| ![](LV-ABRAJI-6141.jpg){width=100%} | ![](LV-ABRAJI-6136.jpg){width=100%} | ![](LV-ABRAJI-6128.jpg){width=100%} |
-| ![](LV-ABRAJI-6124.jpg){width=100%} | ![](LV-ABRAJI (1303).jpg){width=100%} | ![](LV-ABRAJI (1293).jpg){width=100%} |
-| ![](LV-ABRAJI (1292).jpg){width=100%} | ![](LV-ABRAJI (1292) (1).jpg){width=100%} | ![](LV-ABRAJI (1287).jpg){width=100%} |
-| ![](LV-ABRAJI (1286).jpg){width=100%} | ![](LV-ABRAJI (1282).jpg){width=100%} | ![](LV-ABRAJI (1280).jpg){width=100%} |
-| ![](LV-ABRAJI (1279).jpg){width=100%} | | |
+| ![](LV-ABRAJI-6536.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6536"} | ![](LV-ABRAJI-6153.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6153"} | ![](LV-ABRAJI-6144.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6144"} |
+| ![](LV-ABRAJI-6141.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6141"} | ![](LV-ABRAJI-6136.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6136"} | ![](LV-ABRAJI-6128.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6128"} |
+| ![](LV-ABRAJI-6124.jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI 6124"} | ![](LV-ABRAJI (1303).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1303)"} | ![](LV-ABRAJI (1293).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1293)"} |
+| ![](LV-ABRAJI (1292).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1292)"} | ![](LV-ABRAJI (1292) (1).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1292) (1)"} | ![](LV-ABRAJI (1287).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1287)"} |
+| ![](LV-ABRAJI (1286).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1286)"} | ![](LV-ABRAJI (1282).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1282)"} | ![](LV-ABRAJI (1280).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1280)"} |
+| ![](LV-ABRAJI (1279).jpg){width=100% fig-alt="Various pictures - credit for photos: Luciana Vassoler/Abraji - LV ABRAJI (1279)"} | | |
 
 ---
 ORIGINAL POST  
@@ -37,14 +37,14 @@ The [Brazilian Association of Investigative Journalism (Abraji)](https://abraji.
 
 One of the labs will be entirely dedicated to teaching R. Participants will spend the morning in an introductory session to R led by R-Ladies São Paulo volunteer instructors and TAs, especially designed for statistical analysis considering the specifics of journalism and using Brazilian electoral data.
 
-![](data-sunday-2024.png)
+![](data-sunday-2024.png){fig-alt="Mosaic of images from Domingo de Dados” (Data Sunday) 2024"}
 
 In the afternoon, they will learn how to use the R packages `censobr` and `geobr`, two o f the most used ones for Brazilian census and geospatial data. The workshop will be given by Rafael Pereira, Chief of Data for Ipea, the Brazilian Institute for Applied Economic Research, who created both packages. They will also get to practice the new skills and interview official government databases to try and find news stories, with the help of the instructors.
 
 Because of its proximity to statistical analysis, R is one of the languages chosen by journalists on their first steps in acquiring data science skills to take their investigative work to a higher level. The investment in their training brings invaluable results in the form of news articles that expose detrimental public policies, fraud and other risks to our democracy, helping hold governments accountable and reduce social and economic inequality.
 
-![](ddados2024_R-Bootcamp_1.jpeg)
+![](ddados2024_R-Bootcamp_1.jpeg){fig-alt="Domingo de Dados” (Data Sunday) 2024 R Bootcamp"}
 
 For the second consecutive year, R Consortium is one of the partners at the Abraji International Congress. In its 20th edition, it has become the largest journalists event in Brazil, gathering over 1,800 participants in the four days of activities.
 
-![](abraji_r-consortium_logo_2024.jpeg)
+![](abraji_r-consortium_logo_2024.jpeg){fig-alt="ABRAJI sponsor page including R Consortium logo 2024"}

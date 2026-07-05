@@ -7,13 +7,11 @@ date: "10/30/2024"
 url: "https://r-consortium.org/posts/streamlining-api-integration-jon-harmons-journey-with-the-api2r-package/"
 unpublished: false
 categories: ["isc", "announcements", "infrastructure"]
-image-alt: "Streamlining API Integration: Jon Harmon’s Journey with the *api2r* Package"
-
+image-alt: "Beekeeper logo - One of three part of the api2r package"
 ---
-
 The R Consortium recently interviewed [Jon Harmon](https://www.linkedin.com/in/jonthegeek/), Principal Data Solutions Engineer at Atorus, about his ISC-funded project, *api2r*. Jon's extensive experience working with APIs from platforms like Slack, YouTube, and LinkedIn, along with his leadership of the Data Science Learning Community (DSLC.io), inspired him to develop *api2r* to simplify the process of wrapping APIs in R. The package streamlines the creation of R packages for various APIs by leveraging the OpenAPI standard, making it easier for developers to integrate external services into their R workflows. 
 
-![](JonHarmon.png){width=50%}
+![](JonHarmon.png){width=50% fig-alt="Jon Harmon, Principal Data Solutions Engineer at Atorus, and head of ISC-funded project, api2r."}
 
 Jon discusses the challenges he faced during the package's development, particularly around authentication and endpoint setup, and how *api2r* differs from other tools like {httr2} and {paws}. 
 
@@ -31,7 +29,7 @@ In terms of how the R community could benefit, I want to make it easier for othe
 
 I've actually moved past the initial milestone of setting up authentication, but it definitely presented—and continues to present—challenges. First, I ended up splitting the package into three parts. There's *[rapid](https://rapid.api2r.org/)*, which parses API descriptions into a standard object, *[nectar](https://nectar.api2r.org/)*, which wraps the `httr2` package to handle common tasks, and *[beekeeper](https://beekeeper.api2r.org/)*, which is the main package. *Nectar* was particularly helpful because I was able to abstract the standard types of authentication into just a few simple wrappers. While `httr2` handles much of the heavy lifting, it doesn't guide you through what you need to find in the documentation. That's where *Nectar* steps in, helping streamline the setup process.
 
-![](beekeeperlogo.png){width=50%}
+![](beekeeperlogo.png){width=50% fig-alt="Beekeeper logo - One of three part of the api2r package"}
 
 That said, there are still ongoing challenges. Many sites don't fully or correctly implement the OpenAPI Specification, making it difficult to find the necessary information. Even when they do, details on how to obtain an API key can be tricky to track down. I spent a lot of time trying to address this issue, although there's no perfect solution. Fortunately, after I wrote my grant application, a new version of `httr2` was released that simplifies a lot of these processes, which has been a big help.
 

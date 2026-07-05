@@ -10,7 +10,7 @@ image-alt: "thumbnail for developing an analytics community at the Virginia Depa
 date: "07/01/2025" 
 ---
 
-![](vadeq-main-image.png)
+![](vadeq-main-image.png){fig-alt="Mosaic of images of Virginia Department of Environmental Quality (DEQ) team out in nature measuring water quality and other key components"}
 
 ### About DEQ
 
@@ -54,7 +54,7 @@ The mobile data collection process begins with the preparation of ArcGIS Survey1
 
 Monitoring teams collect field data using these customized surveys on field-ready devices. They often use the software’s offline capabilities, storing data locally until they have service to send completed surveys to the internal ArcGIS portal. The surveys include quality assurance (QA) checks that enforce numeric thresholds and minimum data requirements, ensuring accuracy and compliance with database rules. For lake surveys, where sample profiles of multiple parameters are collected at depth, teams can visualize the data in real-time to confirm accuracy. Once data is entered and equipment passes calibration post checks, the teams submit the data to the ArcGIS portal and prepare samples for shipment to a lab for further analysis.
 
-![](WQM-lake-survey.png)
+![](WQM-lake-survey.png){fig-alt="Example Lake Survey with real time data table thanks to Angie Reed"}
 
 _Caption: Example Lake Survey with real time data table thanks to Angie Reed. ([link to her R Consortium blog post](https://r-consortium.org/posts/aligning-belief-and-profession-using-r-in-protecting-the-penobscot-nation-traditional-lifeways-r-consortium/))_
 
@@ -66,7 +66,7 @@ Each evening, after all monitoring activities are published to the internal ArcG
 
 This field data is used the next morning by the centralized laboratory to track samples staged for analysis at the lab. These data are also made accessible in CEDS by the ETL process described above, which enables our Posit environment to query this information. Monitoring teams and managers can visualize data using custom Posit Connect hosted shiny applications. These applications streamline data querying and management by providing a user-friendly database front end. Simplifying data querying and management through Posit Connect hosted shiny applications helps DEQ staff respond to internal and public data inquiries.
 
-![](internal-deq-shiny-app.png)
+![](internal-deq-shiny-app.png){fig-alt="Water monitoring data is available the next morning in an internal DEQ shiny application that acts as a database front end."}
 
 _Caption: Water monitoring data is available the next morning in an internal DEQ shiny application that acts as a database front end._
 
