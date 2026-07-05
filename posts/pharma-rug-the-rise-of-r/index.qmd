@@ -7,13 +7,11 @@ date: "08/01/2024"
 url: "https://r-consortium.org/posts/pharma-rug-the-rise-of-r/"
 unpublished: false
 categories: ["submissions", "pharma", "rugs", "events", "asia"]
-image-alt: "Pharma RUG: The Rise of R in China’s Pharmaceutical Industry"
-
+image-alt: "PharmaRUG China organizer Joe Zhu"
 ---
-
 PharmaRUG, China organizer [Joe Zhu](https://shajoezhu.github.io/), spoke with the R Consortium about the growing R community and the increasing use of R in the pharmaceutical industry in China. The group has contributed to the pharmaceutical R community through several R packages. Since its establishment last year, the group has organized large-scale hybrid events. Joe also shared some tools and techniques for smoothly organizing and running hybrid events.
 
-![](unnamed.jpg)
+![](unnamed.jpg){fig-alt="PharmaRUG China organizer Joe Zhu"}
 
 **_Please share about your background and involvement with the RUGS group._**
 
@@ -23,13 +21,13 @@ For the past four years, I’ve worked at [Roche](https://www.roche.com/innovati
 
 At first, we open sourced the project on GitHub and then submitted it to [CRAN](https://cran.r-project.org/). I’m heavily involved in one of China’s R user groups, PharmaRUG. We use the group to share posts about developments in the area, and we organize events and conferences. In March last year, we hosted the first [event](https://pharmarug.github.io/pharmarug-2023/) with over 100 people on-site and around 100 online. The event covered topics like R package usage in the pharma industry. Later that year, we organized another event called “[Open Source Clinical Reporting summeR](https://insightsengineering.github.io/nest-2023-summeR/)“. 
 
-![](unnamed2.png)
+![](unnamed2.png){fig-alt="Pharma RUG meetup participants"}
 
 Lately, I have been busy organizing several events. I recently gave a talk (about R package dependencies as directed in acyclic graphs) at a conference hosted by the R community in China. Early next month, on August 1st, I will attend a [pharma conference](https://pharmarug.github.io/pharmasug2024-r-workshop/) where I will conduct a workshop on good practices in software package development. The conference schedule is quite packed for me as I also have a session on how teams operate and collaborate within the Pharma industry to develop R packages. On the third day of the conference, I will organize a series of 11 data visualization talks, one of which is about Python. Most of the talks will focus on using R, except for one discussion on Python.
 
 **_Can you share what the R community is like in China?_** 
 
-![](unnamed3.png)
+![](unnamed3.png){fig-alt="More Pharma RUG meetup participants"}
 
 We have opened up seats for students to join our events in the pharmaceutical industry. In the past, fewer than 20 students, mostly from academia, have joined us for these conferences. The events include big names like Roche, Johnson & Johnson, Novartis, Boehringer Ingelheim, and Sanofi and local companies such as Fosun, Hengrui, and Legend Biotech. There is a big R community in China across academia and industry. Our user group primarily focuses on the pharma industry. Our [WeChat](https://www.wechat.com/) channel has nearly a thousand subscribers, and our group chat has almost 500 members. It’s a very active community. 
 
@@ -41,7 +39,7 @@ We have created a GitHub account called [PharmaRUG](https://github.com/pharmarug
 
 **_Can you share some valuable tips for organizing succesful Hybrid events?_**
 
-![](unnamed4.jpg)
+![](unnamed4.jpg){fig-alt="Mosaic of Pharma RUG meetup pictures"}
 
 We have a series of planning sessions where we actively communicate using WeChat. We meet at a community center where everyone is open, and we have preset meetings. We test the audio and everything beforehand. This is our second year organizing these events, so we have gained more experience. We are now familiar with the standards and know what needs to be done. For example, when two companies, like MNCs, use different systems, we find it better to use one shared system to ensure everything is synchronized.
 

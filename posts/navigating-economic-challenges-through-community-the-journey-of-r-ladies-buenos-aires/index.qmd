@@ -7,13 +7,11 @@ date: "12/27/2024"
 url: "https://r-consortium.org/posts/navigating-economic-challenges-through-community-the-journey-of-r-ladies-buenos-aires/"
 unpublished: false
 categories: ["rugs", "events", "south america", "women in tech"]
-image-alt: "Navigating Economic Challenges Through Community: The Journey of R-Ladies Buenos Aires"
-
+image-alt: "R-Ladies Buenos group participants"
 ---
-
 [Betsabe Cohen](https://www.linkedin.com/in/betsabe1984/), organizer of [R-Ladies Buenos Aires](https://www.meetup.com/rladies-buenos-aires/), recently spoke with the R Consortium about the growth and diversity of the R community in Argentina and its role in navigating the country’s economic challenges. Betsy shared insights into the group’s activities, including hosting workshops on tools like Quarto and plans to launch a Shiny-focused reading club. She also highlighted the importance of fostering inclusion and collaboration within the community locally and across Latin America.
 
-![](BetsabeCohen.png){width=60%}
+![](BetsabeCohen.png){width=60% fig-alt="Betsabe Cohen, organizer of R-Ladies Buenos Aires"}
 
 **Please share your background and involvement with the RUGS group.**
 
@@ -29,7 +27,7 @@ Communities like our group here in Buenos Aires are essential for people to acce
 
 Balancing these responsibilities can feel like double work, and that's what we're currently facing.
 
-![](R-LadiesBuenosAiresGroupPhoto1.png) 
+![](R-LadiesBuenosAiresGroupPhoto1.png){fig-alt="R-Ladies Buenos group selfie"} 
 
 **You had a Meetup on “[Turn your data into visual stories with Quarto](https://www.meetup.com/rladies-buenos-aires/events/304386918/?eventOrigin=group_past_events).” Can you share more about the topic covered? Why this topic?**
 
@@ -41,7 +39,7 @@ Additionally, I have some exciting news: we are planning to start a reading club
 
 We are still preparing it. Shiny is widely used to make data accessible to users, which is part of our decision-making to support people during this challenging time. Reading this book alone is not the same as sharing the experience with others. There is significant value in sharing information and being part of a network, as it fosters community and support among us.
 
-![](R-LadiesBuenosAiresGroupPhoto2.png)
+![](R-LadiesBuenosAiresGroupPhoto2.png){fig-alt="R-Ladies Buenos group participants"}
 
 **Do you host your events in person or online? What kind of response do you get for each type of event?** 
 

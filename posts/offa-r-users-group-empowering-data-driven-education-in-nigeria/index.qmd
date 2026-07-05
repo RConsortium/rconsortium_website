@@ -8,8 +8,7 @@ format: html
 url: "https://r-consortium.org/posts/offa-r-users-group-empowering-data-driven-education-in-nigeria/"
 unpublished: false
 categories: ["rugs", "events", "africa"]
-image-alt: "Offa R Users Group: Empowering Data-Driven Education in Nigeria"
-
+image-alt: "Anietie Edem Udokang, founder and organizer of the Offa R Users Group (ORUG)"
 ---
 <style>
   .anchorjs-link {
@@ -23,7 +22,7 @@ The R Consortium had a conversation with [Anietie Edem Udokang](https://www.link
 
 
 
-![](anietie.jpg)
+![](anietie.jpg){fig-alt="Anietie Edem Udokang, founder and organizer of the Offa R Users Group (ORUG)"}
 
 
 The Offa R Users Group has a Meetup coming up on March 26th, 2024, titled “[Test for the Assumptions of Linear Regression Using R](https://www.meetup.com/fedpofa-r-users-group/events/299459705/).” The group is also seeking individuals to serve as guest speakers for their online events.
@@ -40,7 +39,7 @@ Ever since I began using R, I have had the privilege of engaging with a diverse 
 
 
 
-![](offar.jpg)
+![](offar.jpg){fig-alt="Logo for Offa R Users Group (ORUG)"}
 
 
 **Can you share what the R community is like in Offa?**
@@ -53,7 +52,7 @@ I use R for many of my publications. R has gained a lot of popularity, not only 
 
 
 
-![](group.webp)
+![](group.webp){fig-alt="Participants in Offa R Users Group (ORUG) meeting"}
 
 **What industry are you currently in? How do you use R in your work?**
 
@@ -67,7 +66,7 @@ Some authors use regression models without checking whether the assumptions hold
 
 
 
-![](organizer.jpg)
+![](organizer.jpg){fig-alt="Graphic with Logo for Offa R Users Group (ORUG), slogans, and R Consortium as sponsor"}
 
 
 I appreciate the R Consortium for their valuable RUGs grant assistance in 2022. With this grant, I could open two other user groups: the [Ilorin R Users Group](https://www.meetup.com/ilorin-r-users-group/) and the [Kwara Environmental Statistics R Group](https://www.meetup.com/kwara-environmental-statistics-r-group/). I also want to express my gratitude to the R Consortium for sponsoring my Meetup subscription and covering other minor expenses in 2022. The subscription is still ongoing, and I hope that we can continue our partnership to promote the use of R in our community. 
