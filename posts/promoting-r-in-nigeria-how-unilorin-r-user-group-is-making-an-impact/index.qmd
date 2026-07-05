@@ -7,17 +7,15 @@ date: "03/03/2025"
 url: "https://r-consortium.org/posts/promoting-r-in-nigeria-how-unilorin-r-user-group-is-making-an-impact/"
 unpublished: false
 categories: ["rugs", "events", "ai", "africa"]
-image-alt: "Promoting R in Nigeria: How Unilorin R User Group is Making an Impact"
-
+image-alt: "Unilorin R User Group logo"
 ---
-
 [Dr. M.K. Garba](https://www.linkedin.com/in/mohammed-kabir-garba-46795823/?originalSubdomain=ng) and [Ezekiel Ogundepo](https://gbganalyst.github.io/), organizers of the University of Ilorin, shortened to  [Unilorin R User Group](https://www.meetup.com/unilorin-r-user-group/), recently spoke with the R Consortium about their efforts to promote R programming in Nigeria and foster a thriving local R community. They discussed the group's origins, their experiences teaching R across academia and industry, and the impact of their inaugural event. Dr. Garba and Ezekiel also shared their plans for future workshops and highlighted their outreach strategies to engage learners and expand R’s reach in Nigeria. Ilorin is the capital city of Kwara State and is located in the western region of Nigeria.
 
-![](MKGarba.png){width=40%}
+![](MKGarba.png){width=40% fig-alt="Dr. M.K. Garba, co-organizer of the University of Ilorin R User Group, shortened to Unilorin R User Group"}
 
 Dr. M. K. Garba
 
-![](EzekielOgundepo.png){width=40%}
+![](EzekielOgundepo.png){width=40% fig-alt="Ezekiel Ogundepo co-organizer of the University of Ilorin R User Group, shortened to Unilorin R User Group"}
 
 Ezekiel Ogundepo
 
@@ -35,7 +33,7 @@ In 2018, I became a [Tidyverse instructor](https://education.rstudio.com/trainer
 
 **What is the local R community like in Nigeria? Is R being used in Academia and Industry?**
 
-![](UnilorinRUGlogo.png){width=50%}
+![](UnilorinRUGlogo.png){width=50% fig-alt="Unilorin R User Group logo"}
 
 Dr. Garba: I'll focus on academia and leave the industry to Ezekiel. While I am a tenured staff member at the University of Ilorin, I also serve as a visiting professor at several universities in my state. In any course I teach, I introduce my students to R programming. I am pleased to share that one or two of these institutions have adopted R as the programming language for their statistical computing courses. 
 

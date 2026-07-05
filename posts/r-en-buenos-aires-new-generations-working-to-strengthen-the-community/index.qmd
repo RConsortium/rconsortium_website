@@ -7,17 +7,15 @@ date: "01/23/2025"
 url: "https://r-consortium.org/posts/r-en-buenos-aires-new-generations-working-to-strengthen-the-community/"
 unpublished: false
 categories: ["rugs", "events", "south america"]
-image-alt: "R en Buenos Aires: New Generations Working to Strengthen the Community"
-
+image-alt: "Participants from the R in Buenos Aires User Group October 29, 2024, meetup"
 ---
-
 # R en Buenos Aires: New Generations Working to Strengthen the Community
 
 <br> <br>
 
 ::: columns
 ::: {.column width="30%"}
-![](andrea-gomez-vargas.jpg)
+![](andrea-gomez-vargas.jpg){fig-alt="Andrea Gomez Vargas, R in Buenos Aires User Group organizer"}
 :::
 
 ::: {.column width="5%"}
@@ -40,7 +38,7 @@ Andrea was part of the 2023-2024 cohort of the rOpenSci champions program, and i
 :::
 
 ::: {.column width="30%"}
-![](renBA.png)
+![](renBA.png){fig-alt="Logo for R in Buenos Aires User Group"}
 :::
 :::
 
@@ -48,7 +46,7 @@ Andrea was part of the 2023-2024 cohort of the rOpenSci champions program, and i
 
 Communities are essential spaces for breaking down barriers to access information and knowledge, especially when it comes to free and open-source software. When these resources are paid or only reach a small percentage of people, it creates inequities. As a public university teacher, I am driven by the belief that everyone, regardless of background, should have the opportunity to learn and grow in a collaborative, open environment. That’s what keeps me motivated to continue spreading R knowledge and ensuring it remains accessible for all.
 
-![](renBA-2.jpg)
+![](renBA-2.jpg){fig-alt="Participants from R in Buenos Aires User Group meetup held on December 20th, 2024"}
 _Participants from the December 20th, 2024, meetup_
 
 ### What are your main objectives for the R chapter in Buenos Aires, and what challenges do you anticipate in achieving them?
@@ -65,7 +63,7 @@ The main objectives at this moment for the R chapter in Buenos Aires are to have
 :::
 
 ::: {.column width="30%"}
-<br> <br> ![](arcenso.png)
+<br> <br> ![](arcenso.png){fig-alt="Logo for arcenso, an R package with census data from Argentina"}
 :::
 :::
 
@@ -81,7 +79,7 @@ This package aims to make census data available, homogenized and ready to use. I
 
 I use R on a daily basis to teach, work and collaborate in the community. Part of my work requires processing and combining various data sources (censuses, surveys and administrative records) to produce socio-demographic indicators for the country. I also design and develop digital statistical products, such as a Shiny app or dashboards. For all this I rely on several R packages for ETL and visualisation *(gt, tidyverse, expss, plotly, quarto, and many more).* And this is what I try to teach my students or the people who attend the workshops.
 
-![](renBA-5.jpg)
+![](renBA-5.jpg){fig-alt="Photo of Betsy, Ariana, and Andrea, organizers of the R in Buenos Aires User Group October 29, 2024, meetup, from left to right"}
 _Photo of Betsy, Ariana, and Andrea, organizers of the October 29, 2024, meetup, from left to right_
 
 ### You had a Meetup on October 29th, 2024. Can you share more about the topic covered?
@@ -90,13 +88,13 @@ _Photo of Betsy, Ariana, and Andrea, organizers of the October 29, 2024, meetup,
 
 The topic of the workshop was socio-demographic analysis in R using data from the Argentine Labour Force Survey. We learned about the R packages needed to calculate the indicators and how to present the results in graphs and tables.
 
-![](renBA-3.png)
+![](renBA-3.png){fig-alt="Presenter and attendees from R in Buenos Aires User Group meetup"}
 
 The workshop was aimed at university students who are taking their first steps in R and who would like to do real-life practice guided by people from the community with experience in the field.
 
 After the workshop a specific website [r-unlam.netlify.app](https://r-unlam.netlify.app/) was created. We believe it is a good practice for people who cannot attend physically to have access to all the materials and to have the activities documented.
 
-![](renBA-4.jpg)
+![](renBA-4.jpg){fig-alt="Participants from the R in Buenos Aires User Group October 29, 2024, meetup"}
 _Participants from the October 29th, 2024, meetup_
 
 ### You can reach out to R in Buenos Aires through the following:

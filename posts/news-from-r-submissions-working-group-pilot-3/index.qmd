@@ -7,10 +7,8 @@ url: "https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot
 unpublished: false
 categories: ["submissions", "pharma", "working groups"]
 image: "collaboration.png"
-image-alt: "News from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA"
-
+image-alt: "Illustration showing open source collaboration standardizing clinical trial analyses and submissions"
 ---
-
 _Blog contributed by Ning Leng, People and Product Leader, Roche-Genentech and Joel Laxamana, Principal Data Scientist, Roche-Genentech_
 
 The R Consortium is pleased to announce the successful completion of the Pilot 3 Submission which extended the work done in Pilots 1 and 2 by generating the ADaM datasets. The complete [FDA response letter](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot3_Submission.pdf) is available.  
@@ -19,7 +17,7 @@ The objective of the R Consortium R Submission Pilot 3 Project is to test the co
 
 All submission materials can be found at: [submissions-pilot3-adam-to-fda](https://github.com/RConsortium/submissions-pilot3-adam-to-fda). This is the first publicly available R-based FDA submission package including R scripts to generate Analysis Data Models (ADaM) and Tables, Listings & Figures (TLFs).
 
-![](collaboration.png)
+![](collaboration.png){fig-alt="Illustration showing open source collaboration standardizing clinical trial analyses and submissions"}
 
 _Open-Source Collaboration in standardizing Clinical Trial analyses and Submissions. Broadening ways to bring treatments to Patients._
 

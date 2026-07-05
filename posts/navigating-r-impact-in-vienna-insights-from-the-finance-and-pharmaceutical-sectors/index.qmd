@@ -12,10 +12,8 @@ format:
 url: "https://r-consortium.org/posts/navigating-r-impact-in-vienna-insights-from-the-finance-and-pharmaceutical-sectors/"
 unpublished: false
 categories: ["submissions", "pharma", "rugs", "events", "ai"]
-image-alt: "Navigating R’s Impact in Vienna: Insights from the Finance and Pharmaceutical Sectors"
-
+image-alt: "Mario Annau, co-organizer of the Vienna R User Group"
 ---
-
 The R Consortium recently spoke with [Mario Annau](https://www.linkedin.com/in/mario-annau-a68b2056/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=at), co-organizer of the [Vienna R User Group](https://www.meetup.com/ViennaR/). During the conversation, he discussed the use of R in the finance and pharmaceutical industries in Vienna. He also shared insights into the latest and upcoming trends in using R in these sectors and tips for organizing successful hybrid meetups with minimal overhead.
 
 In September 2022, [Mario Annau](https://www.linkedin.com/in/mario-annau-a68b2056/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=at) talked to the R Consortium about the role of the local financial industry in the [Robust Vienna R Community](https://www.r-consortium.org/blog/2022/09/06/financial-industry-supports-robust-vienna-r-community). Recently, the R Consortium reached out to Mario for a detailed discussion about the use of R in the finance and pharmaceutical industries in Vienna. Mario shared his insights regarding the latest and upcoming trends in using R in these sectors and tips for organizing successful hybrid meetups with minimal overhead.
@@ -29,7 +27,7 @@ In September 2022, [Mario Annau](https://www.linkedin.com/in/mario-annau-a68b205
 <div class="container">
   <div class="row align-items-center">
   <div class="col-md-4">
-  <img src="annau.jpg" class="img-fluid" alt="Gergely Daróczi">
+  <img src="annau.jpg" class="img-fluid" alt="Mario Annau, co-organizer of the Vienna R User Group">
   </div>
   <div class="col-md-8">
   <p>
@@ -56,7 +54,7 @@ I learned about open source technologies during my university studies and discov
 
 
 
-![](viennar.jpg)
+![](viennar.jpg){fig-alt="Vienna R User Group logo"}
 
 
 It’s evident that the industry has started accepting open source, including R. I work primarily in the financial sector and pharma, which are industries where R is widely used. R is also a strong contender, alongside Python, in these fields.
