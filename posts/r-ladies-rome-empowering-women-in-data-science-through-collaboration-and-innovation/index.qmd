@@ -7,17 +7,15 @@ image: "collage.png"
 date: "07/26/2024"
 url: "https://r-consortium.org/posts/r-ladies-rome-empowering-women-in-data-science-through-collaboration-and-innovation/"
 unpublished: false
-image-alt: "R-Ladies Rome: Empowering Women in Data Science Through Collaboration and Innovation"
-
+image-alt: "Various pictures of R-Ladies Rome people and tools and more"
 ---
-
 [Federica Gazzelloni](https://federicagazzelloni.com/), co-organizer of [R-Ladies Rome](https://www.meetup.com/rladies-rome/), recently spoke with the R Consortium about the fast-growing R community in Rome. The group collaborates with R user groups worldwide and has successfully attracted a diverse audience to its events. Federica also contributes to the R community through package development and is currently working on a book about using R for health metrics and tracking the spread of infectious diseases.
 
 
 
 
 
-![](federica.png){width=60%}
+![](federica.png){width=60% fig-alt="Federica Gazzelloni, co-organizer of R-Ladies Rome"}
 
 
 The group is hosting an online event titled [“Building Reproducible Pipelines with R, Docker, and Nix”](https://www.meetup.com/rladies-rome/events/302078600/) on the 29th of July. R users from around the world are invited to attend this event.
@@ -26,7 +24,7 @@ The group is hosting an online event titled [“Building Reproducible Pipelines 
 
 
 
-![](bruno.jpg )
+![](bruno.jpg){fig-alt="R-Ladies Rome presents Building Reproducible Pipelines with R, Docker and Nix with speaker Dr. Bruno Rodrigues"}
 
 
 ### Please share about your background and involvement with the RUGS group.
@@ -40,7 +38,7 @@ R-Ladies Rome started in 2023 and has grown significantly since then. Our events
 
 
 
-![](r-ladies.png )
+![](r-ladies.png){fig-alt="R-Ladies Rome logo"}
 
 
 Since the kick-off of the chapter in 2023, R-Ladies Rome has played a pivotal role in fostering a dynamic community. We have successfully brought together an international group of R enthusiasts, ranging from beginners to experienced data scientists, creating a supportive and engaging environment for all. The popularity of the R language within the open source community, particularly for statistical analysis and medical research, is evident in Rome. R offers a wide range of libraries that can be easily applied to various topics, making it very convenient for users. Although Python is gaining attention in research and providing another accessible option for statistical analysis, the medical statistical community seems to prefer R over Python due to its extensive capabilities and strong community support.
@@ -59,9 +57,9 @@ The R community in Rome is expected to grow, with R-Ladies Rome at its heart, dr
 
 
 
-![](rsvps.png )
+![](rsvps.png){fig-alt="Graph showing increasing number of RSVPs to R-Ladies Rome events from March 2023 to June 2024"}
 
-![](registration-growth.png )
+![](registration-growth.png){fig-alt="Graph showing increasing number of membership registrations from from March 2022 to June 2024"}
 
 ### What trends do you currently see in R language?
 
@@ -73,7 +71,7 @@ Moreover, integrating R with other programming languages and platforms is gainin
 
 
 
-![](collage.png )
+![](collage.png){fig-alt="Various pictures of R-Ladies Rome people and tools and more"}
 
 
 ### Any techniques you recommend using for planning for or during the event? (Github, zoom, other) Can these techniques be used to make your group more inclusive to people that are unable to attend physical events in the future?

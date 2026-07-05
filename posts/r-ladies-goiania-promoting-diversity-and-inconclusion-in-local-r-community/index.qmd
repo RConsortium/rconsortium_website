@@ -8,8 +8,7 @@ format: html
 url: "https://r-consortium.org/posts/r-ladies-goiania-promoting-diversity-and-inconclusion-in-local-r-community/"
 unpublished: false
 categories: ["rugs", "events", "ai", "south america", "women in tech"]
-image-alt: "R-Ladies Goiânia: Promoting Diversity and Inclusion in Local R Community"
-
+image-alt: "Fernanda Kelly, founder and organizer of the R-Ladies Goiânia"
 ---
 <style>
   .anchorjs-link {
@@ -23,7 +22,7 @@ image-alt: "R-Ladies Goiânia: Promoting Diversity and Inclusion in Local R Comm
 
 
 <div style="text-align: center;">
-  <img src="fernanda.jpg" alt="Fernanda Kelly" >
+  <img src="fernanda.jpg" alt="Fernanda Kelly, founder and organizer of the R-Ladies Goiânia" >
 </div>
 
 
@@ -47,7 +46,7 @@ I want to emphasize that the work I have accomplished for the R community since 
 
 
 <div style="text-align: center;">
-  <img src="rcommunity.jpg" alt="R Community" >
+  <img src="rcommunity.jpg" alt="R-Ladies Goiânia logo" >
 </div>
 
 
@@ -59,7 +58,7 @@ R language is widely used in Brazil across various sectors, including health, ag
 
 
 
-![](video-call.jpg)
+![](video-call.jpg){fig-alt="R-Ladies Goiânia fun looking video conference call"}
 
 
 **Do you have an upcoming event planned? Can you share more about the topic covered? Why this topic?**

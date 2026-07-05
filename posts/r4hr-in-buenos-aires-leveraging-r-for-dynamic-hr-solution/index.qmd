@@ -7,17 +7,15 @@ date: "05/30/2024"
 url: "https://r-consortium.org/posts/r4hr-in-buenos-aires-leveraging-r-for-dynamic-hr-solution/"
 unpublished: false
 categories: ["rugs", "events", "south america"]
-image-alt: "R4HR in Buenos Aires: Leveraging R for Dynamic HR Solutions"
-
+image-alt: "Marcela Victoria Soto, co-organizer of the R4HR - Club de R para RRHH, Buenos Aires, Argentina"
 ---
-
 [Marcela Victoria Soto](https://www.linkedin.com/in/marcelavictoriasoto/?originalSubdomain=ar), co-organizer of the [R4HR -Club de R para RRHH](https://www.meetup.com/r4hr-club-r-para-rrhh/), Buenos Aires, Argentina, recently updated the R Consortium about the group’s recent activities. Last year, Sergio García Mora, the group’s founder, discussed the [adoption and expansion of R in human resources in Argentina](https://www.r-consortium.org/blog/2023/03/02/adoption-and-expansion-of-r-in-human-resources-in-argentina). Marcela emphasized the importance of data analysis for informed and agile decision-making for companies in Argentina. She also shared details of some of her budgeting, accounting, and annual income tax projects.
 
 
 
 
 
-![](marcela-victoria-soto.webp)
+![](marcela-victoria-soto.webp){fig-alt="Marcela Victoria Soto, co-organizer of the R4HR - Club de R para RRHH, Buenos Aires, Argentina"}
 
 
 R4HR is holding an online event called “[Data Visualization in HR](https://www.meetup.com/r4hr-club-r-para-rrhh/events/300882828/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)” on June 1, 2024, for Spanish-speaking R users. The meetup will be conducted via Google Meet. 
@@ -36,7 +34,7 @@ I currently work in the textile industry as the Head of Human Resources. At [Yag
 
 
 
-![](r4hr-logo.jpg)
+![](r4hr-logo.jpg){fig-alt="Logo for R4HR - Club de R para RRHH, Buenos Aires, Argentina"}
 
 
 The R4HR community is a collaborative space comprising individuals interested in data and human resources. We hold various meetups within the community where projects, R packages, etc., are shared. It is a Spanish-speaking community. The R Club is a meeting space for professionals in the field, where we can share tools, new ways of addressing issues, and novel approaches to similar problems. People who attend and are familiar with R sometimes need to be made aware of everything this programming language offers for simple and complex issues—the benefit of attending lies in sharing and creating spaces for knowledge exchange.
@@ -44,7 +42,7 @@ The R4HR community is a collaborative space comprising individuals interested in
 **You have a Meetup on “[Data Visualization in HR](https://www.meetup.com/r4hr-club-r-para-rrhh/events/300882828/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)” on June 1st, 2024. Can you share more about the topic covered? Why this topic?**
 
 
-![](Meetup.png)
+![](meetup.png){fig-alt="Graphic for online meetup - Visualización de Datos en RRHH"}
 
 
 In June, we will hold a meetup to address Data Visualization in HR using the [ggplot2](https://ggplot2.tidyverse.org/) package, adding interactivity and context with [plotly](https://plotly.com/r/). This topic is not just interesting but also highly practical. Visualization is a great way to interpret data and graphically identify behavior patterns, which can also prompt questions about the presented information. The plotly package can add insights that are not apparent in the graphs. Additionally, plotly allows for creating interactive visualizations, enabling users to explore and manipulate the charts directly within the visualization. It can include zooming, data selection, and more, providing a richer and more dynamic user experience. 
@@ -61,7 +59,7 @@ I recently presented at a group event titled [Annual Income Tax with R](https://
 
 
 
-![](tax.png)
+![](tax.png){fig-alt="Screenshot from online presentation on Annual Income Tax with R"}
 
 
 In Argentina, the frequent changes and calculation methods have made everything related to this tax quite complex. They impose this tax on salaries that are considered high-value. It is a tax withheld by the company, and due to inflation and various modifications, the analysis and handling of this tax end up being one of the most complex issues for employees in the country. I made this process easier in this meetup by using R. 
@@ -70,7 +68,7 @@ In Argentina, the frequent changes and calculation methods have made everything 
 
 
 
-![](tax2).png
+![](tax2.png){fig-alt="Second screenshot from online presentation on Annual Income Tax with R"}
 
 
 **What trends do you currently see in R language and your industry? Are there any trends you see developing in the near future?**
