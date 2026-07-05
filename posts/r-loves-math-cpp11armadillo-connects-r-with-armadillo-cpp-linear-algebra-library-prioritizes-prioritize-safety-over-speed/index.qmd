@@ -7,16 +7,13 @@ date: "08/19/2025"
 url: "https://r-consortium.org/posts/r-loves-math-cpp11armadillo-connects-r-with-armadillo-cpp-linear-algebra-library-prioritizes-prioritize-safety-over-speed/"
 unpublished: false
 categories: ["isc", "announcements", "submissions", "pharma", "infrastructure"]
-image-alt: "R Loves Math: cpp11armadillo connects R with Armadillo C++ linear algebra library, prioritizes prioritize safety over speed"
-
+image-alt: "cpp11armadillo R package logo"
 ---
-
-
 The R Consortium recently spoke with Mauricio "Pachá" Vargas Sepúlveda, a PhD student in Economics at the University of Surrey and the developer behind **cpp11armadillo**, a package funded through the R Consortium's ISC grant program. cpp11armadillo connects R with the Armadillo C++ linear algebra library through the modern cpp11 interface, providing developers with safer, more flexible tools for computationally intensive work.
 
 The R Consortium has provided grants to Pachá two different times, including [most recently in late 2024](https://r-consortium.org/all-projects/2024-group-2.html#cpp11armadillo-an-armadillo-interface-c).
 
-![](pacha.jpg){width=40%}
+![](pacha.jpg){width=40% fig-alt="Mauricio “Pachá” Vargas Sepúlveda, a PhD student in Economics at the University of Surrey and the developer behind cpp11armadillo, a package funded through the R Consortium’s ISC grant program"}
 
 In this interview, conducted by email, Pachá discussed the current state of the project, the balance between safety and performance, and the kinds of features that make cpp11armadillo especially useful compared to other approaches. He also shared insights on future development priorities and reflected on his experience working with the R Consortium grant process.
 
@@ -26,7 +23,7 @@ The conversation highlights both the technical progress of cpp11armadillo and th
 
 *cpp11armadillo* has reached a stable stage according to the Tidyverse's lifecycle. This means I am happy with the interface, I do not see major issues, and it reached a point where I was happy to share it with others. The current CRAN version is 0.5.4 and is available here: [https://cran.r-project.org/package=cpp11armadillo](https://cran.r-project.org/package=cpp11armadillo).
 
-![](cpp11armadillo_logo.png)
+![](cpp11armadillo_logo.png){fig-alt="cpp11armadillo R package logo"}
 
 At the present time I have a testing branch on my local git tree, it requires further work (lots of work, actually), and it aims at obtaining a (much) better speed to convert from R to Armadillo data types and vice versa. *cpp11armadillo* followed this premise from Don Knuth: "premature optimization is the root of all evil." I tried to make sure to write a comprehensive list of unit tests and prioritize safety over speed (e.g., if we convert R's integers to C++ unsigned integers we need to be careful about negative values and check bounds to avoid undefined behaviours).
 

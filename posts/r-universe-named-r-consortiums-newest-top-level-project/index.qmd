@@ -7,11 +7,9 @@ url: "https://r-consortium.org/posts/r-universe-named-r-consortiums-newest-top-l
 unpublished: false
 categories: ["top level projects", "isc", "announcements", "rugs", "infrastructure"]
 image: "r-universe-search.png"
-image-alt: "R-Universe Named R Consortium’s Newest Top Level Project"
-
+image-alt: "Search interface for R-Universe - R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci"
 ---
-
-[![](r-universe-search.png)](https://r-universe.dev/search)
+[![](r-universe-search.png){fig-alt="Search interface for R-Universe - R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci"}](https://r-universe.dev/search)
 
 The R Consortium is proud to announce our newest top level project, [R-Universe](https://r-universe.dev/search). R-universe is a platform for improving publication and discovery of research software in R, developed by rOpenSci.
 
