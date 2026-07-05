@@ -7,11 +7,9 @@ date: "05/19/2025"
 url: "https://r-consortium.org/posts/reproducibility-without-containers-bruno-rodrigues-introduces-nix-and-the-rix-r-package/"
 unpublished: false
 categories: ["events"]
-image-alt: "Reproducibility Without Containers: Bruno Rodrigues Introduces Nix and the `{rix}` R Package"
-
+image-alt: "Bruno Rodrigues, developer of the `rix` R package"
 ---
-
-![](brunoheadshot.jpeg){width=30%}
+![](brunoheadshot.jpeg){width=30% fig-alt="Bruno Rodrigues, developer of the `rix` R package"}
 
 At a [recent R Medicine webinar hosted by the R Consortium](https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html), Bruno Rodrigues, Head of the Statistics and Data Strategy Departments at Luxembourg’s Ministry of Research and Higher Education, presented an innovative approach to reproducibility in R: one that eliminates the complexity of containerization, works seamlessly across systems, and offers analysis reproducibility for years into the future.
 
@@ -23,7 +21,7 @@ Reproducibility is a cornerstone of scientific research, yet achieving it in dat
 
 Rodrigues emphasized that true reproducibility requires capturing the entire computational environment, including system libraries, compilers, and the operating system. This holistic approach ensures that analyses can be rerun with identical results, regardless of changes in the software ecosystem.
 
-![](continuum.png){width=70%}
+![](continuum.png){width=70% fig-alt="Graphic - reproducibility in on a continuum"}
 
 ---
 
@@ -35,7 +33,7 @@ Rodrigues highlighted that Nix's approach to package management eliminates issue
 
 “Nix really makes it possible to reach this gold standard of reproducibility.”
 
-![](nix.png){width=40%}
+![](nix.png){width=40% fig-alt="Logo for Nix, cross-platform package manager"}
 
 ---
 
@@ -45,7 +43,7 @@ To make Nix more accessible to R users, Rodrigues developed `{rix}`, an R packag
 
 The core function, `rix()`, generates a `default.nix` file, which Nix uses to build the environment. This process ensures that the entire software stack, from the R interpreter to system libraries, is captured and can be reproduced reliably.
 
-![](rix.jpeg){width=40%}
+![](rix.jpeg){width=40% fig-alt="Logo for {rix}, an R package that simplifies the creation of reproducible environments using Nix"}
 
 ---
 

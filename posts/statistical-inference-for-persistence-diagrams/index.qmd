@@ -7,10 +7,9 @@ author: "Manon Simonot, Aymeric Stamm"
 bibliography: references.bib
 categories: [isc, software development]
 image: "toydata_preview.svg"
-image-alt: "The {inphr} package includes three toy data sets."
+image-alt: "Figure 1: The first data point of each toy data set."
 date: "01/28/2026"
 ---
-
 ## Samples of persistence diagrams
 
 Topological data analysis (TDA) is a rapidly growing field that uses techniques
@@ -125,7 +124,7 @@ A set of 24 persistence diagrams computed from noisy samples of 2-armed Archimed
 
 @fig-toydata displays the first five persistence diagrams of each sample. The reader can appreciate that the first two lines corresponding to the same trefoil geometry shows similar diagrams while the last line corresponding to a 2-arm archspiral shows a different kind of diagram.
 
-![The first data point of each toy data set.](toydata_preview.svg){#fig-toydata}
+![The first data point of each toy data set.](toydata_preview.svg){#fig-toydata fig-alt="Figure 1: The first data point of each toy data set."}
 
 We can therefore use `inphr::two_sample_diagram_test()` to compare:
 
@@ -193,7 +192,7 @@ $$
 
 @fig-betti displays, as an example, the Betti curve representations of the 24 diagrams in each of the three toy data sets.
 
-![The Betti curves of all three toy data sets in {inphr}.](betti_curves.svg){#fig-betti}
+![The Betti curves of all three toy data sets in {inphr}.](betti_curves.svg){#fig-betti fig-alt="Figure 2: The Betti curves of all three toy data sets in {inphr}."}
 
 @fig-betti shows a clear difference between trefoil and archspiral geometry but overlapped curves between the two trefoil samples as expected.
 

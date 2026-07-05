@@ -7,14 +7,12 @@ date: "03/31/2025"
 url: "https://r-consortium.org/posts/revitalizing-the-melbourne-users-of-r-network-hybrid-events-collaboration-and-the-future-of-r/"
 unpublished: false
 categories: ["insurance/risk", "rugs", "events", "ai", "africa"]
-image-alt: "Revitalizing the Melbourne Users of R Network: Hybrid Events, Collaboration, and the Future of R"
-
+image-alt: "Melbourne Users of R Network (MELBURN) logo"
 ---
-
 [Lito P. Cruz](https://www.linkedin.com/in/l-p-cruz-phd/), organizer of the [Melbourne Users of R Network](https://www.meetup.com/melburn-melbourne-users-of-r-network/) (MELBURN), recently spoke with the R Consortium about the evolving R community in Melbourne and the group’s efforts to engage data professionals across government, academia, and industry. Lito shared insights into the group's history, the impact of the pandemic on community engagement, and his ongoing efforts to revitalize in-person and hybrid events. He discussed new initiatives, including collaborations with the Statistical Society of Australia and interactive event formats featuring hands-on tutorials. 
 
 
-![](LitoPCruz.png){width=50%}
+![](LitoPCruz.png){width=50% fig-alt="Lito P. Cruz, organizer of the Melbourne Users of R Network (MELBURN)"}
 
 
 **Please share your background and involvement with the RUGS group.**
@@ -31,7 +29,7 @@ I particularly admire R's functional style, which allows me to write concise cod
 
 **Can you share what the R community is like in Melbourne?**
 
-![](MELBURNlogo.png)
+![](MELBURNlogo.png){fig-alt="Melbourne Users of R Network (MELBURN) logo"}
 
 
 
@@ -54,7 +52,7 @@ Academia also remains loyal to R, although there is a current trend leaning towa
 
 The initial founder of an R User Group in 2010, [Dr. Eugene Dubossarsky](https://www.linkedin.com/in/eugene-dubossarsky-09208a1/?originalSubdomain=au), was quite influential in the field of analytics, which, back then, was simply referred to as "analytics" before the term "data scientist" became popular. 
 
-![](MELBURNMeetup.png)
+![](MELBURNMeetup.png){fig-alt="Melbourne Users of R Network meetup photo"}
 
 Today, our database has grown to 2,900 members associated with the Melbourne R-Users group. I've actually asked our members to remove their names if they're no longer interested in R, as we want to clean up the list. However, I haven’t had much success; many still want to remain in the community.
 
@@ -80,7 +78,7 @@ We are also collaborating with the Victoria branch of the [Statistical Society o
 
 
 
-![](MELBURNBBQ.png)
+![](MELBURNBBQ.png){fig-alt="Melbourne Users of R Network participants giving the thumbs up"}
 
 
 

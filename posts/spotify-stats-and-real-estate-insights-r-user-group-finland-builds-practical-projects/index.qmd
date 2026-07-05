@@ -7,14 +7,11 @@ date: "08/25/2025"
 url: "https://r-consortium.org/posts/spotify-stats-and-real-estate-insights-r-user-group-finland-builds-practical-projects/"
 unpublished: false
 categories: ["rugs", "events"]
-image-alt: "Spotify Stats and Real Estate Insights: R User Group Finland Builds Practical Projects"
-
+image-alt: "R User Group (RUGFINLANDLOGO) logo"
 ---
-
-
 [Vicent Boned](https://www.linkedin.com/in/vboned/) and [Marc Eixarch](https://www.linkedin.com/in/marc-eixarch/), organizers of the [R User Group Finland](https://www.meetup.com/r-user-group-finland/), spoke with the R Consortium about how they revived the local R community by focusing on fun, practical applications of R. Drawing on their experience from Barcelona's tech scene, they took over an inactive R group and began hosting engaging meetups focused on real-world applications of R. From building custom Spotify Wrapped-style reports to analyzing Helsinki's real estate market, they've created a meetup environment where data enthusiasts can explore R through real-world use cases that go beyond the workplace.
 
-![](RUGFinlandorganizers.png)
+![](RUGFinlandorganizers.png){fig-alt="Picture of 3 people: Hazel Kavili (left), R-Ladies Helsinki Organizer, Marc Eixarch (center) and Vicent Boned (right), organizers of the R User Group Finland"}
 
 L-R: Hazel Kavili (R-Ladies Helsinki Organizer), Marc Eixarch, Vicent Boned
 
@@ -24,7 +21,7 @@ L-R: Hazel Kavili (R-Ladies Helsinki Organizer), Marc Eixarch, Vicent Boned
 
 When we moved to Finland, I began searching for similar community activities, but I couldn't find many. I found a meetup group, but it was inactive, so I reached out to the organizer. He told me he had moved out of Helsinki and was happy to pass on the group's organization to someone new. That's how we took over the R user group in Finland. We're not Finnish, but now we're working to organize events here and stay connected with other data analysts.
 
-![](RUGFinlandLogo.png)
+![](RUGFinlandLogo.png){fig-alt="R User Group (RUGFINLAND) logo"}
 
 ## What's your level of experience with the R language?
 
@@ -32,13 +29,13 @@ When we moved to Finland, I began searching for similar community activities, bu
 
 Occasionally, I take on small projects to explore more technical areas, such as package development, but in those areas, I'm more of a casual user than an expert. So, that's a good summary of my experience level.
 
-![](MarcExirach.png)
+![](MarcExirach.png){fig-alt="Marc Exirach, co-organizer of the R User Group Finland (RUGFINLAND)"}
 
 **Vicent:** I've used R throughout my career, mainly for data analysis and visualization. While I've explored other packages through side projects, my current work primarily revolves around tidyverse, ggplot, and [dplyr](https://dplyr.tidyverse.org/) for tables and reporting. At my company, we also utilize some Posit tools, such as [R Markdown](https://rmarkdown.rstudio.com/), and occasionally Shiny for prototyping.
 
 I used Shiny years ago in my second job when it was a new package. I didn't work with it for many years after that, so it's been exciting to see how much it has evolved. I've also attended several RStudio conferences, and it has been great to follow the development of the Tidyverse over time.
 
-![](VicentBoned.png)
+![](VicentBoned.png){fig-alt="Vicent Boned, co-organizer of the R User Group Finland (RUGFINLAND)"}
 
 ## Please share about a project you are working on or have worked on using the R language. What is the goal/reason, result, or anything interesting related to your industry?
 

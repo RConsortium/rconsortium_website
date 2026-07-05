@@ -8,10 +8,8 @@ url: "https://r-consortium.org/posts/rpharma-2024-virtual-oct29-nov1-apac-track/
 unpublished: false
 categories: ["pharma", "rugs", "events", "ai", "asia"]
 image-alt: "R/Pharma 2024, Virtual, October 29-November 1, Includes New Dedicated Asia-Pacific (APAC) Track"
-
 ---
-
-![](rpharma-apac-main-image.png)
+![](rpharma-apac-main-image.png){fig-alt="R/Pharma 2024 - logo for APAC Track"}
 
 R/Pharma 2024 is coming up Oct 29-Nov 1, 2024. This is a free event, fully virtual. R users in Pharma 
 around the world are encouraged to attend, ask questions, and contribute their opinions!
@@ -23,9 +21,9 @@ aligns with Asian time zones and includes 2 pre-conference workshops, 3 keynotes
 from the global track and then streamed with live discussion sessions thereafter, and 2 live panels, 
 one focusing on Japan, and one on China. In addition, there are 20 contributed talks.
 
-![](rpharma-china-panel.png)
+![](rpharma-china-panel.png){fig-alt="R/Pharma APAC Track - slide - China panel discussion - China: New Region, New Topics, New Perspectives and New Heights - Oct 30, 2024 - Xiuting Mi, Roche; Baoqing Li, Johnson & Johnson; Yanli Chang, Novartis; Joe Zhu, Roche"}
 
-![](rpharma-japan-panel.png)
+![](rpharma-japan-panel.png){fig-alt="R/Pharma APAC Track - slide - Japan panel discussion - How do we, statistical programmers in pharmaceutical companies, use R? - Nov 1, 2024 - Keita Takahashi, Chugai; Mirai Kirihara, Chugai; Takashi Kitahara, Novartis; Yuki Matsunaga, Novartis"}
 
 The R Consortium talked with Daniel Sabanés Bové, R/Pharma organizer, co-chair of openstatsware.org, 
 co-founder of RCONIS, a biostatistics consulting and software engineering firm, (co-)author of multiple 
@@ -36,7 +34,7 @@ a talk on 31 October.
 
 We talked to Daniel to find out more about the new APAC track.
 
-![](daniel.png)
+![](daniel.png){fig-alt="Daniel Sabanés Bové, R/Pharma organizer"}
 
 
 ### Why is R/Pharma adding an APAC track now? 
@@ -90,9 +88,9 @@ A full list of workshops, keynotes, talks and panels is available
 
 If you use the filter button you can get just the APAC Track information.
 
-![](filter.png)
+![](filter.png){fig-alt="Screenshot1- filtering for the APAC track on the R/Pharma 2024 site"}
 
-![](filter-apac.png)
+![](filter-apac.png){fig-alt="Screenshot2 - filtering for the APAC track on the R/Pharma 2024 site"}
 
 
 
