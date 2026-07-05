@@ -498,10 +498,10 @@ H_0 : F_1 = F_2 \quad \mbox{v.s.} \quad H_a : F_1 \ne F_2.
 </div>
 </div>
 <p><a href="#fig-toydata" class="quarto-xref">Figure&nbsp;1</a> displays the first five persistence diagrams of each sample. The reader can appreciate that the first two lines corresponding to the same trefoil geometry shows similar diagrams while the last line corresponding to a 2-arm archspiral shows a different kind of diagram.</p>
-<div id="fig-toydata" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-toydata" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figure&nbsp;1: The first data point of each toy data set.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-toydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="toydata_preview.svg" class="img-fluid figure-img">
+<img src="toydata_preview.svg" class="img-fluid figure-img" alt="Figure&nbsp;1: The first data point of each toy data set.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-toydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: The first data point of each toy data set.
@@ -514,7 +514,7 @@ Figure&nbsp;1: The first data point of each toy data set.
 <li><code>trefoils1</code> and <code>archspirals</code> with expected output that we can reject the hypothesis that the two samples come from the same distribution.</li>
 </ul>
 <p>The following code performs the test between the two trefoil samples using only the first five statistical units:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_296f7037c8c4cce86985f7139c4560d3">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>withr<span class="sc">::</span><span class="fu">with_seed</span>(<span class="dv">1234</span>, {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">two_sample_diagram_test</span>(trefoils1[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>], trefoils2[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>])</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -523,7 +523,7 @@ Figure&nbsp;1: The first data point of each toy data set.
 </div>
 </div>
 <p>As expected, the test is not able to reject the null hypothesis. By default, the function uses <code>B = 1000</code> permutations, which makes the p-value resolution of <span class="math inline">\(1/1001 \approx 9.99 \times 10^{-4}\)</span>. If we compare instead <code>trefoils1</code> against <code>archspirals</code>, again using only the first five statistical units, we get:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_b8b026c9560f2465af61d98cab413ab4">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>withr<span class="sc">::</span><span class="fu">with_seed</span>(<span class="dv">1234</span>, {</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">two_sample_diagram_test</span>(trefoils1[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>], archspirals[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>])</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -561,10 +561,10 @@ S(t) = \sum_{i=1}^N \frac{d_i - b_i}{L} \log_2 \frac{d_i - b_i}{L} \mathbb{1}_{[
 \]</span></p></li>
 </ul>
 <p><a href="#fig-betti" class="quarto-xref">Figure&nbsp;2</a> displays, as an example, the Betti curve representations of the 24 diagrams in each of the three toy data sets.</p>
-<div id="fig-betti" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-betti" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-betti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="betti_curves.svg" class="img-fluid figure-img">
+<img src="betti_curves.svg" class="img-fluid figure-img" alt="Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-betti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.
@@ -577,7 +577,7 @@ Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.
 <h3 class="anchored" data-anchor-id="interval-wise-testing-for-functional-data">Interval-wise testing for functional data</h3>
 <p>The {inphr} package relies on the <a href="https://permaverse.github.io/fdatest/">{fdatest}</a> package which is also part of the permaverse to handle hypothesis testing on functional representations of persistence homology. Specifically, the {fdatest} package implements a method called <em>interval-wise testing</em> described in <span class="citation" data-cites="pini2017interval">Pini and Vantini (<a href="#ref-pini2017interval" role="doc-biblioref">2017</a>)</span> which effectively performs domain selection by identifying the portion(s) of the domain of definition of the functional representation where there are statistically significant differences between samples. In the future, the package will also integrate other such domain selection methods described in <span class="citation" data-cites="abramowicz2023domain">Abramowicz et al. (<a href="#ref-abramowicz2023domain" role="doc-biblioref">2023</a>)</span>.</p>
 <p>When using functional representations, we must choose the homology dimension which we want to work on. In {inphr}, we perform inference in functional spaces with the <code>two_sample_functional_test()</code>. For example, the following code uses the Betti curves for dimension <span class="math inline">\(0\)</span> to compare the two trefoil samples:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_4ae392e1a17f5f400aa28ddb17fdf32c">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>out1 <span class="ot">&lt;-</span> <span class="fu">two_sample_functional_test</span>(</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    trefoils1, trefoils2, </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">dimension =</span> <span class="dv">0</span>, </span>
@@ -585,7 +585,7 @@ Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Similarly, the following code uses the Betti curves for dimension <span class="math inline">\(0\)</span> to compare the first trefoil sample and the archspiral sample:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_5d63dc73ec34d429bf70d86867f47509">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>out2 <span class="ot">&lt;-</span> <span class="fu">two_sample_functional_test</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    trefoils1, archspirals, </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">dimension =</span> <span class="dv">0</span>, </span>

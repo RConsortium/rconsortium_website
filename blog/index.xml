@@ -528,7 +528,7 @@ font-style: inherit;">data_outcomes =</span> data_outcomes)</span></code></pre><
 
 
 <p>The R Consortium recently spoke with Nicolas Nguyen, Integrated Operations Manager at Pernod Ricard Taiwan and developer of the <em>planr</em> R package, about his work bringing R into practical supply chain planning.</p>
-<p><img src="https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/NicolasNguyen.jpg" class="img-fluid" style="width:50.0%"></p>
+<p><img src="https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/NicolasNguyen.jpg" class="img-fluid" style="width:50.0%" alt="Nicolas Nguyen, developer of the planr R package"></p>
 <p>Nicolas developed <em>planr</em> to support common tasks in Demand and Supply Planning and S&amp;OP, or Sales and Operations Planning. The package provides tools for calculating projected inventories and stock coverages, identifying constrained demand, building replenishment plans, converting monthly demand into weekly planning buckets, estimating short shelf-life stock, and projecting goods in transit.</p>
 <p>In practical terms, <em>planr</em> helps planners move from static spreadsheets toward repeatable, transparent, and programmable planning workflows in R.</p>
 <p>What makes Nicolas’s work especially relevant to the R community is its applied focus. Supply chain planning often depends on recurring calculations, scenario analysis, and cross-functional communication between commercial, operations, and finance teams. By packaging these workflows in R, <em>planr</em> gives practitioners a way to make planning logic more reproducible, auditable, and adaptable across products, markets, and time horizons.</p>
@@ -596,7 +596,7 @@ font-style: inherit;">library</span>(planr)</span></code></pre></div></div>
 
 
 
-<p><img src="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" class="img-fluid" style="width:30.0%" alt="the nlmixr2 working group logo"></p>
+<p><img src="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" class="img-fluid" style="width:30.0%" alt="R Consortium new nlmixr2 Working Group logo"></p>
 <p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/">here</a>.</em></p>
 <p>The nlmixr2 Working Group is expanding what open-source R tooling can support in pharmacometrics, including time-to-event modeling workflows that are important in clinical and drug-development settings.</p>
 <p>In this technical post, Justin Wilkins and the nlmixr2 Development Team show how to fit parametric time-to-event models in nlmixr2 using the package’s custom log-likelihood interface.</p>
@@ -965,7 +965,7 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 </ul>
 <p>This provides a familiar yet modern interface for Bioconductor contributors, aligned with what users increasingly expect from contemporary R package infrastructure.</p>
 <p>Information about each package is available on <code>https://bioc.r-universe.dev/{pkgname}</code>. For example, <a href="https://bioc.r-universe.dev/DESeq2">https://bioc.r-universe.dev/DESeq2</a> provides details on the DESeq2 package as shown below:</p>
-<p><a href="https://docs.r-universe.dev/img/bioc-pkg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://docs.r-universe.dev/img/bioc-pkg.png" class="img-fluid" alt="Screenshot of Bioconductor development branch - Technical Documentation for Bioconductor Maintainers"></a></p>
+<p><a href="bioc-pkg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/bioc-pkg.png" class="img-fluid" alt="Screenshot of the DESeq2 package page on bioc.r-universe.dev, highlighting the Website Tour button and package check results"></a></p>
 <p>If this is your first time visiting R-universe, we recommend clicking the “Website Tour” button which will walk you through the most important information in 1 or 2 minutes.</p>
 </section>
 <section id="technical-documentation-for-bioconductor-maintainers" class="level2">
@@ -988,7 +988,7 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <category>announcements</category>
   <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</guid>
   <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://docs.r-universe.dev/img/bioc-pkg.png" medium="image" type="image/png"/>
+  <media:content url="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/bioc-pkg.png" medium="image" type="image/png" height="87" width="144"/>
 </item>
 <item>
   <title>Q1 2026 Update: Community Growth, Collaboration, and Momentum Across the R Ecosystem</title>
@@ -1277,7 +1277,7 @@ Location: On-site at Warsaw University of Technology or virtual</p>
 <section id="hex-stickers" class="level3">
 <h3 class="anchored" data-anchor-id="hex-stickers">Hex Stickers</h3>
 <p>Huge shout out to J&amp;J to help us create some really beautiful hex stickers. Feels like a legitimate project when you got <a href="https://github.com/RConsortium/submissions-wg/tree/main/hexes">some hexes</a>!</p>
-<p><img src="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" class="img-fluid"></p>
+<p><img src="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" class="img-fluid" alt="6 hex logos for the Submissions Working Group Pilots 1-5 - https://github.com/RConsortium/submissions-wg/tree/main/hexes"></p>
 </section>
 </section>
 <section id="how-to-join" class="level2">
@@ -1487,10 +1487,10 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
 </div>
 </div>
 <p>Figure&nbsp;1 displays the first five persistence diagrams of each sample. The reader can appreciate that the first two lines corresponding to the same trefoil geometry shows similar diagrams while the last line corresponding to a 2-arm archspiral shows a different kind of diagram.</p>
-<div id="fig-toydata" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-toydata" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figure&nbsp;1: The first data point of each toy data set.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-toydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" class="img-fluid figure-img">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/toydata_preview.svg" class="img-fluid figure-img" alt="Figure&nbsp;1: The first data point of each toy data set.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-toydata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: The first data point of each toy data set.
@@ -1503,7 +1503,7 @@ Figure&nbsp;1: The first data point of each toy data set.
 <li><code>trefoils1</code> and <code>archspirals</code> with expected output that we can reject the hypothesis that the two samples come from the same distribution.</li>
 </ul>
 <p>The following code performs the test between the two trefoil samples using only the first five statistical units:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-2_296f7037c8c4cce86985f7139c4560d3">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">withr<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
@@ -1532,7 +1532,7 @@ font-style: inherit;">5</span>])</span>
 </div>
 </div>
 <p>As expected, the test is not able to reject the null hypothesis. By default, the function uses <code>B = 1000</code> permutations, which makes the p-value resolution of <img src="https://latex.codecogs.com/png.latex?1/1001%20%5Capprox%209.99%20%5Ctimes%2010%5E%7B-4%7D">. If we compare instead <code>trefoils1</code> against <code>archspirals</code>, again using only the first five statistical units, we get:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_b8b026c9560f2465af61d98cab413ab4">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">withr<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
@@ -1576,10 +1576,10 @@ font-style: inherit;">5</span>])</span>
 <li><p>the Entropy Summary curve <span class="citation" data-cites="atienza2020stability">(Atienza et al. 2020)</span>: <img src="https://latex.codecogs.com/png.latex?%0AS(t)%20=%20%5Csum_%7Bi=1%7D%5EN%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Clog_2%20%5Cfrac%7Bd_i%20-%20b_i%7D%7BL%7D%20%5Cmathbb%7B1%7D_%7B%5Bb_i,%20d_i%5D%7D(t).%0A"></p></li>
 </ul>
 <p>Figure&nbsp;2 displays, as an example, the Betti curve representations of the 24 diagrams in each of the three toy data sets.</p>
-<div id="fig-betti" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-betti" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-betti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/betti_curves.svg" class="img-fluid figure-img">
+<img src="https://r-consortium.org/posts/statistical-inference-for-persistence-diagrams/betti_curves.svg" class="img-fluid figure-img" alt="Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-betti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.
@@ -1592,7 +1592,7 @@ Figure&nbsp;2: The Betti curves of all three toy data sets in {inphr}.
 <h3 class="anchored" data-anchor-id="interval-wise-testing-for-functional-data">Interval-wise testing for functional data</h3>
 <p>The {inphr} package relies on the <a href="https://permaverse.github.io/fdatest/">{fdatest}</a> package which is also part of the permaverse to handle hypothesis testing on functional representations of persistence homology. Specifically, the {fdatest} package implements a method called <em>interval-wise testing</em> described in <span class="citation" data-cites="pini2017interval">Pini and Vantini (2017)</span> which effectively performs domain selection by identifying the portion(s) of the domain of definition of the functional representation where there are statistically significant differences between samples. In the future, the package will also integrate other such domain selection methods described in <span class="citation" data-cites="abramowicz2023domain">Abramowicz et al. (2023)</span>.</p>
 <p>When using functional representations, we must choose the homology dimension which we want to work on. In {inphr}, we perform inference in functional spaces with the <code>two_sample_functional_test()</code>. For example, the following code uses the Betti curves for dimension <img src="https://latex.codecogs.com/png.latex?0"> to compare the two trefoil samples:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_4ae392e1a17f5f400aa28ddb17fdf32c">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">out1 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
@@ -1612,7 +1612,7 @@ font-style: inherit;">"betti"</span></span>
 <span id="cb5-5">)</span></code></pre></div></div>
 </div>
 <p>Similarly, the following code uses the Betti curves for dimension <img src="https://latex.codecogs.com/png.latex?0"> to compare the first trefoil sample and the archspiral sample:</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_5d63dc73ec34d429bf70d86867f47509">
+<div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">out2 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;

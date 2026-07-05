@@ -335,14 +335,14 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 
 
 
-<p><img src="brunoheadshot.jpeg" class="img-fluid" style="width:30.0%"></p>
+<p><img src="brunoheadshot.jpeg" class="img-fluid" style="width:30.0%" alt="Bruno Rodrigues, developer of the `rix` R package"></p>
 <p>At a <a href="https://r-consortium.org/webinars/rix-reproducible-data-science-environments-with-nix.html">recent R Medicine webinar hosted by the R Consortium</a>, Bruno Rodrigues, Head of the Statistics and Data Strategy Departments at Luxembourg’s Ministry of Research and Higher Education, presented an innovative approach to reproducibility in R: one that eliminates the complexity of containerization, works seamlessly across systems, and offers analysis reproducibility for years into the future.</p>
 <hr>
 <section id="the-challenge-of-reproducibility-in-data-science" class="level3">
 <h3 class="anchored" data-anchor-id="the-challenge-of-reproducibility-in-data-science">The Challenge of Reproducibility in Data Science</h3>
 <p>Reproducibility is a cornerstone of scientific research, yet achieving it in data science remains challenging. Rodrigues explains that reproducibility is on a continuum and depends on 4 factors: the version of R, package versions, operating systems, and hardware. Traditional tools like <code>{renv}</code> capture R package dependencies but fall short in tracking system-level libraries or the R interpreter itself. In my own work, I’ve utilized <code>{renv}</code>to import packages for implementing tables for R-powered websites. Containerization tools like Docker offer more comprehensive encapsulation but come with their own complexities and do not guarantee deterministic builds.</p>
 <p>Rodrigues emphasized that true reproducibility requires capturing the entire computational environment, including system libraries, compilers, and the operating system. This holistic approach ensures that analyses can be rerun with identical results, regardless of changes in the software ecosystem.</p>
-<p><img src="continuum.png" class="img-fluid" style="width:70.0%"></p>
+<p><img src="continuum.png" class="img-fluid" style="width:70.0%" alt="Graphic - reproducibility in on a continuum"></p>
 <hr>
 </section>
 <section id="nix-a-functional-package-manager-for-reproducible-builds" class="level3">
@@ -350,14 +350,14 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <p>Nix is a cross-platform package manager designed for reproducibility. It allows users to define environments declaratively, ensuring that builds are deterministic and environments can be recreated identically across different systems and over time. Nix manages not just R packages but also system dependencies, making it a comprehensive solution for reproducible research.</p>
 <p>Rodrigues highlighted that Nix’s approach to package management eliminates issues related to hidden dependencies and environment drift, common pitfalls in data science workflows.</p>
 <p>“Nix really makes it possible to reach this gold standard of reproducibility.”</p>
-<p><img src="nix.png" class="img-fluid" style="width:40.0%"></p>
+<p><img src="nix.png" class="img-fluid" style="width:40.0%" alt="Logo for Nix, cross-platform package manager"></p>
 <hr>
 </section>
 <section id="introducing-rix-bridging-r-and-nix" class="level3">
 <h3 class="anchored" data-anchor-id="introducing-rix-bridging-r-and-nix">Introducing <code>{rix}</code>: Bridging R and Nix</h3>
 <p>To make Nix more accessible to R users, Rodrigues developed <code>{rix}</code>, an R package that simplifies the creation of reproducible environments using Nix. With <code>{rix}</code>, users can generate Nix expressions directly from R, specifying the R version, required packages, system dependencies, and preferred IDEs.</p>
 <p>The core function, <code>rix()</code>, generates a <code>default.nix</code> file, which Nix uses to build the environment. This process ensures that the entire software stack, from the R interpreter to system libraries, is captured and can be reproduced reliably.</p>
-<p><img src="rix.jpeg" class="img-fluid" style="width:40.0%"></p>
+<p><img src="rix.jpeg" class="img-fluid" style="width:40.0%" alt="Logo for {rix}, an R package that simplifies the creation of reproducible environments using Nix"></p>
 <hr>
 </section>
 <section id="the-magic-of-rix" class="level3">
