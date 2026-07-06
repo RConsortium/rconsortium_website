@@ -1,0 +1,37 @@
+---
+title: "Fitting PK/PD Models to Published Data with admixr2"
+unpublished: false
+url: "https://r-consortium.org/posts/fitting-pk-pd-models-to-published-data-with-admixr2/"
+description: "The nlmixr2 Working Group introduces admixr2 for fitting pharmacometric models to published aggregate data and model-based meta-analysis summaries in R."
+categories: ["pharma", "submissions", "clinical research", "announcements", "working groups"]
+author: "R Consortium"
+image: "nlmixr2-logo.png"
+image-alt: "The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"
+date: "07/06/2026"
+---
+
+![](nlmixr2-logo.png){fig-alt="The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge" width=60%}
+
+_Original post on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-07-02-admixr2-mbma/)._
+
+The nlmixr2 Working Group continues to expand what open-source R tooling can support in pharmacometrics. In a new technical post, the team introduces **admixr2**, an R package that fits PK/PD models directly to aggregate published data—such as mean concentration-time profiles, standard deviations, and published model estimates—when individual patient data are unavailable because of privacy, access, or competitive constraints.
+
+The post shows how admixr2 integrates with the familiar nlmixr2/rxode2 `ini()`/`model()` syntax to model digitized mean ± SD profiles from the literature, derive aggregate data from published NLME models for meta-analytic model-based analysis (MBMA), and combine multiple study summaries in a single joint fit.
+
+Read the full post from the nlmixr2 blog: [Fitting PK/PD models to published data with admixr2](https://blog.nlmixr2.org/blog/2026-07-02-admixr2-mbma/)
+
+## Why nlmixr2?
+
+The vision of nlmixr2 is to develop a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.
+
+In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.
+
+From: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)
+
+## Get involved in the nlmixr2 working group
+
+The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:
+
+Main repo: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)  
+Issues: [https://github.com/nlmixr2/nlmixr2/issues](https://github.com/nlmixr2/nlmixr2/issues)  
+Discussions: [https://github.com/nlmixr2/nlmixr2/discussions](https://github.com/nlmixr2/nlmixr2/discussions)
