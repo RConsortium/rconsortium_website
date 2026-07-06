@@ -10,7 +10,48 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Tue, 23 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 06 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Fitting PK/PD Models to Published Data with admixr2</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/fitting-pk-pd-models-to-published-data-with-admixr2/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/fitting-pk-pd-models-to-published-data-with-admixr2/nlmixr2-logo.png" class="img-fluid" style="width:30.0%" alt="The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"></p>
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-07-02-admixr2-mbma/">here</a>.</em></p>
+<p>The nlmixr2 Working Group continues to expand what open-source R tooling can support in pharmacometrics. In a new technical post, the team introduces admixr2, an R package that fits PK/PD models directly to aggregate published data, such as mean concentration-time profiles, standard deviations, and published model estimates, when individual patient data are unavailable because of privacy, access, or competitive constraints.</p>
+<p>The post shows how admixr2 integrates with the familiar nlmixr2/rxode2 <code>ini()</code>/<code>model()</code> syntax to model digitized mean ± SD profiles from the literature, derive aggregate data from published NLME models for meta-analytic model-based analysis (MBMA), and combine multiple study summaries in a single joint fit.</p>
+<p>Read the full post from the nlmixr2 blog: <a href="https://blog.nlmixr2.org/blog/2026-07-02-admixr2-mbma/">Fitting PK/PD models to published data with admixr2</a></p>
+<section id="why-nlmixr2" class="level2">
+<h2 class="anchored" data-anchor-id="why-nlmixr2">Why nlmixr2?</h2>
+<p>The vision of nlmixr2 is to develop a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.</p>
+<p>In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.</p>
+<p>From: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a></p>
+</section>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>pharma</category>
+  <category>submissions</category>
+  <category>clinical research</category>
+  <category>announcements</category>
+  <category>working groups</category>
+  <guid>https://r-consortium.org/posts/fitting-pk-pd-models-to-published-data-with-admixr2/</guid>
+  <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/fitting-pk-pd-models-to-published-data-with-admixr2/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
+</item>
 <item>
   <title>Introducing {aggreCAT}: Mathematical aggregation of expert judgments</title>
   <dc:creator>David P. Wilkinson</dc:creator>
@@ -2078,66 +2119,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/650K-for-R/</guid>
   <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/650K-for-R/650K-grant-main-image.png" medium="image" type="image/png" height="85" width="144"/>
-</item>
-<item>
-  <title>Empowering Government Professionals in Nepal Using R programming for Forestry Data Analysis</title>
-  <dc:creator>Prakash Lamichhane, Research Officer at Ministry of Forests and Environment, Nepal</dc:creator>
-  <link>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>The R Consortium supports the global community of users, maintainers, and developers of R, a fast-growing language for statistical computing and graphics. In a world where data is increasingly at the heart of evidence-based decision-making, the R language is empowering professionals in new and inspiring ways. A recent capacity-building initiative in Nepal, organized by the joint effort of Forest Research and Training Center, Koshi Province and <a href="https://www.meetup.com/enirodatar-group-nepal/">EnviroDataR Group Nepal</a>, exemplifies this transformation, showcasing how R is becoming an essential tool for sustainable forest management.</p>
-<section id="the-challenge-turning-data-into-decisions" class="level2">
-<h2 class="anchored" data-anchor-id="the-challenge-turning-data-into-decisions"><strong>The Challenge: Turning Data into Decisions</strong></h2>
-<p>In recent years, the forestry and environment sectors have been undergoing a rapid digital transformation. Officials and professionals at government offices, particularly those in Divisional Forests Offices, often have to handle large, complex datasets for tasks such as forest inventories, biodiversity monitoring, carbon stock estimation, and national greenhouse gas (GHG) reporting.</p>
-<p>However, many of these professionals have faced significant challenges. Traditional approaches, relying on spreadsheets and proprietary software, often lack the flexibility and advanced analytical capabilities needed to manage and analyze this complex data effectively. This has created a critical gap between having the data and being able to use it to inform evidence-based decisions. R programming has emerged as a solution, offering an open-source, versatile, and reproducible alternative.</p>
-</section>
-<section id="a-transformative-learning-experience" class="level2">
-<h2 class="anchored" data-anchor-id="a-transformative-learning-experience"><strong>A Transformative Learning Experience</strong></h2>
-<p>To address this, the <strong>Forest Research and Training Center (FRTC)</strong> in Koshi Province organized a seven-day training program on R programming. The goal was to equip officials with skills to not only use R but also to transform their approach to data. Participants were taught to manage, process, and visualize datasets while also emphasizing reproducibility, transparency, and modern analytical practices.</p>
-<p>The training covered key areas essential for forestry professionals:</p>
-<ul>
-<li><strong>Foundational knowledge</strong> of R syntax and data structures.<br>
-</li>
-<li><strong>Practical data manipulation</strong> using packages like `dplyr`.<br>
-</li>
-<li><strong>Effective data visualization</strong> with `ggplot2`.<br>
-</li>
-<li><strong>Statistical tests</strong>, both parametric and non-parametric.<br>
-</li>
-<li><strong>Geospatial data handling</strong> and basic mapping.</li>
-</ul>
-<p>A key strength of the program was its interactive and technology-enabled methodology, which included pre- and post-test surveys via Google Forms and daily quizzes on Kahoot.com to reinforce learning and measure progress. This hands-on approach directly benefited government officials by providing them with the tools to solve the difficulties they face in their daily work.</p>
-<p><img src="https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/training-sessions.png" class="img-fluid" alt="The&nbsp;Forest Research and Training Center (FRTC)&nbsp;in Koshi Province organized a seven-day training program on R programming - Mosaic of images of Training Sessions and Closing"> <em>Figure 1: Glimpse of Training Sessions and Closing</em></p>
-</section>
-<section id="outcomes-and-acknowledgments" class="level2">
-<h2 class="anchored" data-anchor-id="outcomes-and-acknowledgments"><strong>Outcomes and Acknowledgments</strong></h2>
-<p>The training was a resounding success. Participants from various districts of Koshi Province demonstrated a measurable improvement in their skills, becoming proficient in using R for real-world tasks. By the end of the program, officials were capable of applying reproducible, transparent workflows for tree data collection, keeping, and processing in R. This empowered them to conduct required data analysis within the Ministry of Forests and pursue their academic careers with enhanced data analysis skills.</p>
-<p>This initiative has contributed to building a skilled cadre of officials, strengthening Nepal’s national capacity for data-driven forestry decision making. We would like to extend our sincere gratitude to all who contributed to the success of this program:</p>
-<ul>
-<li>The Forest Research and Training Center for its leadership and vision in organizing this vital training.<br>
-</li>
-<li>The Divisional Forests Offices and Ministry of Forests and Environments for their enthusiastic participation and support.<br>
-</li>
-<li>The R Consortium community, whose continuous work in developing and maintaining open-source R packages make such transformative projects possible worldwide.<br>
-</li>
-<li>Dr.&nbsp;Shiva Khanal, whose dedication as a co-organizer was instrumental to the success of this initiative.</li>
-</ul>
-<p>This initiative in Nepal demonstrates the power of the R language to transform research and empower a new generation of data-driven professionals. It shows that with the right tools and training, we can overcome challenges and build a more sustainable future, one line of code at a time.</p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>asia</category>
-  <category>environment</category>
-  <guid>https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/</guid>
-  <pubDate>Wed, 17 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/empowering-government-professionals-in-nepal-using-r-programming-for-forestry-data-analysis/data-forestry-analysis-group.png" medium="image" type="image/png" height="77" width="144"/>
 </item>
 </channel>
 </rss>
