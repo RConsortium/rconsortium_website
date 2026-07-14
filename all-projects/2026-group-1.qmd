@@ -1,0 +1,88 @@
+## 2026 Group 1 Funded Projects
+
+The R Consortium is pleased to announce the following projects have been funded by the Infrastructure Steering Committee (ISC) for the first grant cycle of 2026. These projects address a range of needs within the R ecosystem, from Census data access and spatial network analysis to genome visualization, integer partitions, string interoperability, weed science, and conservation biology.
+
+*   [Sustaining R’s Census Data Infrastructure](#sustaining-rs-census-data-infrastructure)
+*   [Modernizing Spatial Network Analysis in R](#modernizing-spatial-network-analysis-in-r)
+*   [WeedR: Reproducible R Infrastructure for Advancing Weed Science](#weedr-reproducible-r-infrastructure-for-advancing-weed-science)
+*   [Universal ALTREP Interoperability for Strings](#universal-altrep-interoperability-for-strings)
+*   [Modernization and Refactoring igvShiny](#modernization-and-refactoring-igvshiny)
+*   [Bridging IUCN and GBIF Taxonomies for Reproducible Red List Assessments in R](#bridging-iucn-and-gbif-taxonomies-for-reproducible-red-list-assessments-in-r)
+*   [Modernising Integer Partitions: Implementing Standard Iterators for the partitions Package](#modernising-integer-partitions-implementing-standard-iterators-for-the-partitions-package)
+
+---
+
+### Sustaining R’s Census Data Infrastructure {#sustaining-rs-census-data-infrastructure}
+
+**Lead:** Kyle Walker, Professor and Chair of Geography, Texas Christian University; Walker Data  
+**Grant:** $7,000
+
+Kyle Walker will lead a focused maintenance and modernization project for two widely used resources in the R and Census data communities: the `tigris` package, the `tidycensus` package.
+
+`tigris` and `tidycensus` are core infrastructure for analysts who work with U.S. Census Bureau data in R. They are widely used in classrooms, journalism, public policy, health research, local government analysis, consulting, and open source software built on top of Census data. This project will modernize package internals, improve tests and documentation, address issue backlogs, strengthen behavior during upstream Census API or file outages.
+
+The work will help ensure that R users can continue to acquire, map, model, and analyze Census data through dependable, well-maintained tools.
+
+### Modernizing Spatial Network Analysis in R {#modernizing-spatial-network-analysis-in-r}
+
+**Lead:** Lucas van der Meer, Doctoral Researcher, Department of Geoinformatics, University of Salzburg  
+**Grant:** $10,000
+
+Lucas van der Meer will work on the release of `sfnetworks` version 1.0, a stable and modernized tool for geospatial network analysis in R. The package supports tidy analysis of spatial networks and has been used across transportation planning, ecology, epidemiology, archaeology, economics, environmental planning, spatial statistics, and other domains. The `sfnetworks` team was previously funded by the R Consortium in Round 2019-2 for the project “[Tidy spatial networks in R](https://r-consortium.org/all-projects/2019-group-2.html#tidy-spatial-networks-in-r),” which supported earlier development of this important geospatial infrastructure.
+
+The project will update the existing codebase, align the package with major dependency changes, address community feature requests and bug reports, and improve performance for larger geospatial networks. It will also explore integration with high-performance routing libraries such as `dodgr` and `cppRouting`, as well as out-of-memory spatial workflows through `duckspatial`.
+
+The planned release will help keep R competitive and practical for large-scale geospatial network analysis while preserving the package’s intuitive, tidy interface.
+
+### WeedR: Reproducible R Infrastructure for Advancing Weed Science {#weedr-reproducible-r-infrastructure-for-advancing-weed-science}
+
+**Lead:** Dr. Md Asaduzzaman, Lecturer, Charles Sturt University; Coordinator, R-Mob R User Group  
+**Grant:** $3,700
+
+Dr. Md Asaduzzaman will lead WeedR, a project designed to establish weed science as a reproducible, code-first analytical domain within the R ecosystem. The project will develop practical R resources for herbicide dose-response analysis, hormesis modeling, crop-weed competition, and herbicide resistance simulation.
+
+The project will produce four executable R scripts with companion PDF guides, three curated open datasets, and a reusable MIT-licensed function library. These resources will be built from real field data from Bangladesh and designed for direct use in RStudio IDE without additional setup.
+
+A key part of the project is capacity building. WeedR will engage weed scientists from Bangladesh’s National Agricultural Research System and support wider adoption across research institutes and universities. While Bangladesh is the demonstration context, the openly licensed outputs will be useful to weed scientists globally.
+
+### Universal ALTREP Interoperability for Strings {#universal-altrep-interoperability-for-strings}
+
+**Lead:** Travers Ching, Independent developer  
+**Grant:** $5,000
+
+Travers Ching’s project addresses a technical limitation in how R handles ALTREP strings across package boundaries. Today, string ALTREP often functions as a package-local optimization: a package can gain performance benefits internally, but those benefits may disappear when strings move into code that does not understand that specific ALTREP class.
+
+This project proposes a universal interoperability layer for ALTREP strings, allowing different altstring classes to interact directly without unnecessary materialization. The work will include a runtime registration interface, an interoperability layer built around a common read path, and a broader surface of ALTREP-aware string operations.
+
+The project builds on existing proof-of-concept work in `stringfish` and aims to make efficient string handling more broadly available across R workflows involving large text corpora, logs, genomic sequence data, file-backed strings, and other string-heavy applications.
+
+### Modernization and Refactoring igvShiny {#modernization-and-refactoring-igvshiny}
+
+**Lead:** Arkadiusz Gladki, Author and Maintainer of igvShiny and igvR; Independent / gladki.pl  
+**Grant:** $4,000
+
+Arkadiusz Gladki will modernize and extend `igvShiny`, a Bioconductor package that embeds the Integrative Genomics Viewer as an htmlwidget in R Shiny. The package connects IGV to the R ecosystem and is used by bioinformaticians, clinicians, and Shiny developers working with genomic data.
+
+The project will focus on bug fixes, Bioconductor compliance, API completeness, testing, continuous integration, and documentation.
+
+### Bridging IUCN and GBIF Taxonomies for Reproducible Red List Assessments in R {#bridging-iucn-and-gbif-taxonomies-for-reproducible-red-list-assessments-in-r}
+
+**Lead:** Stanislas Mahussi Gandaho, Ecological Data Scientist, African Parks, Benin; Laboratory of Applied Ecology, University of Abomey-Calavi, Benin  
+**Grant:** $6,600
+
+Stanislas Mahussi Gandaho will extend the `redlist` R package to bridge IUCN Red List taxonomy with the GBIF taxonomic backbone. This work addresses a practical problem in conservation biology: IUCN and GBIF may use different accepted names and synonyms for the same species, which can lead to incomplete or inaccurate occurrence data retrieval.
+
+The proposed extension will add taxonomic name resolution, multi-synonym occurrence retrieval, and assessment-readiness checks. These tools will help users retrieve GBIF occurrence records under accepted names and synonyms, deduplicate records, identify data-quality issues, and prepare occurrence data for Red List assessment metrics such as Extent of Occurrence and Area of Occupancy.
+
+This work will support conservation biologists, government agencies, NGOs, and researchers conducting reproducible Red List assessments in R.
+
+### Modernising Integer Partitions: Implementing Standard Iterators for the partitions Package {#modernising-integer-partitions-implementing-standard-iterators-for-the-partitions-package}
+
+**Leads:** Sam Kamperis, Oxford Brookes University; Robin Hankin, Original Author of the partitions Package, University of Stirling  
+**Grant:** $4,200
+
+Sam Kamperis and Robin Hankin will modernize the `partitions` package by adding a standard S3 iterator interface. The package is long-standing R infrastructure for working with integer partitions, but its current APIs either materialize all partitions in memory or rely on non-standard manual iteration.
+
+The project will implement a `partitions_iter` S3 class that conforms to the standard iterator interface, enabling lazy evaluation, lower memory use, and interoperability with tools such as `foreach` and `itertools`. This will allow users to stream partitions rather than generating large objects all at once.
+
+The work preserves the package’s established enumeration logic while making it more compatible with contemporary R workflows, including parallel and distributed computation.
