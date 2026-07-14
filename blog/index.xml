@@ -10,7 +10,96 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Wed, 08 Jul 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 14 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Consortium Awards First Round of 2026 Technical Grants</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-awards-first-round-of-2026-technical-grants/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/r-consortium-awards-first-round-of-2026-technical-grants/technical-grant-winners-announced-2026.png" class="img-fluid" alt="Graphic with text: Technical Grant Winners Announced! on a blue background"></p>
+<p>The R Consortium’s Infrastructure Steering Committee (ISC) is pleased to announce the first round of 2026 technical grant recipients. These seven projects will receive support to strengthen R’s technical infrastructure, expand reproducible workflows in applied domains, and modernize important packages used across research, industry, government, and open source software development.</p>
+<p>The R Consortium ISC grant program funds projects that strengthen the R ecosystem’s technical and social infrastructure. These grants support open source development, tools, and community initiatives that benefit the broader R community. Successful proposals typically show broad impact, focused scope, clear deliverables, and demonstrable value to R users and package developers.</p>
+<p>The first 2026 grant cycle reflects the range of work required to keep R useful, modern, and reliable. Some projects focus on core infrastructure used by large user communities, including Census data access, spatial network analysis, genome visualization, integer partitions, and string interoperability. Others expand reproducible R workflows into applied scientific fields such as weed science and conservation biology.</p>
+<p>The recipients also bring significant technical and domain expertise from a geographically diverse set of institutions and communities. They include university faculty, doctoral researchers, package authors and maintainers, ecological data scientists, independent R developers, and applied researchers working across the United States, Austria, Australia, Bangladesh, Benin, the United Kingdom, and the broader international R community. Several are maintainers of established R or Bioconductor packages, authors of technical books and documentation, or leaders of applied research communities, while others are extending R into fields where reproducible workflows can directly support public policy, conservation, agriculture, genomics, and scientific computing.</p>
+<p>Together, these projects demonstrate the continuing importance of targeted funding and support for open source software.</p>
+<section id="sustaining-rs-census-data-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="sustaining-rs-census-data-infrastructure">Sustaining R’s Census Data Infrastructure</h3>
+<p>Lead: Kyle Walker, Professor and Chair of Geography, Texas Christian University; Walker Data<br>
+Grant: $7,000</p>
+<p>Kyle Walker will lead a focused maintenance and modernization project for two widely used resources in the R and Census data communities: the <code>tigris</code> package, the <code>tidycensus</code> package.</p>
+<p><code>tigris</code> and <code>tidycensus</code> are core infrastructure for analysts who work with U.S. Census Bureau data in R. They are widely used in classrooms, journalism, public policy, health research, local government analysis, consulting, and open source software built on top of Census data. This project will modernize package internals, improve tests and documentation, address issue backlogs, strengthen behavior during upstream Census API or file outages.</p>
+<p>The work will help ensure that R users can continue to acquire, map, model, and analyze Census data through dependable, well-maintained tools.</p>
+</section>
+<section id="modernizing-spatial-network-analysis-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="modernizing-spatial-network-analysis-in-r">Modernizing Spatial Network Analysis in R</h3>
+<p>Lead: Lucas van der Meer, Doctoral Researcher, Department of Geoinformatics, University of Salzburg<br>
+Grant: $10,000</p>
+<p>Lucas van der Meer will work on the release of <code>sfnetworks</code> version 1.0, a stable and modernized tool for geospatial network analysis in R. The package supports tidy analysis of spatial networks and has been used across transportation planning, ecology, epidemiology, archaeology, economics, environmental planning, spatial statistics, and other domains. The <code>sfnetworks</code> team was previously funded by the R Consortium in Round 2019-2 for the project “<a href="https://r-consortium.org/all-projects/2019-group-2.html#tidy-spatial-networks-in-r">Tidy spatial networks in R</a>,” which supported earlier development of this important geospatial infrastructure.</p>
+<p>The project will update the existing codebase, align the package with major dependency changes, address community feature requests and bug reports, and improve performance for larger geospatial networks. It will also explore integration with high-performance routing libraries such as <code>dodgr</code> and <code>cppRouting</code>, as well as out-of-memory spatial workflows through <code>duckspatial</code>.</p>
+<p>The planned release will help keep R competitive and practical for large-scale geospatial network analysis while preserving the package’s intuitive, tidy interface.</p>
+</section>
+<section id="weedr-reproducible-r-infrastructure-for-advancing-weed-science" class="level3">
+<h3 class="anchored" data-anchor-id="weedr-reproducible-r-infrastructure-for-advancing-weed-science">WeedR: Reproducible R Infrastructure for Advancing Weed Science</h3>
+<p>Lead: Dr.&nbsp;Md Asaduzzaman, Lecturer, Charles Sturt University; Coordinator, R-Mob R User Group<br>
+Grant: $3,700</p>
+<p>Dr.&nbsp;Md Asaduzzaman will lead WeedR, a project designed to establish weed science as a reproducible, code-first analytical domain within the R ecosystem. The project will develop practical R resources for herbicide dose-response analysis, hormesis modeling, crop-weed competition, and herbicide resistance simulation.</p>
+<p>The project will produce four executable R scripts with companion PDF guides, three curated open datasets, and a reusable MIT-licensed function library. These resources will be built from real field data from Bangladesh and designed for direct use in RStudio IDE without additional setup.</p>
+<p>A key part of the project is capacity building. WeedR will engage weed scientists from Bangladesh’s National Agricultural Research System and support wider adoption across research institutes and universities. While Bangladesh is the demonstration context, the openly licensed outputs will be useful to weed scientists globally.</p>
+</section>
+<section id="universal-altrep-interoperability-for-strings" class="level3">
+<h3 class="anchored" data-anchor-id="universal-altrep-interoperability-for-strings">Universal ALTREP Interoperability for Strings</h3>
+<p>Lead: Travers Ching, Independent developer<br>
+Grant: $5,000</p>
+<p>Travers Ching’s project addresses a technical limitation in how R handles ALTREP strings across package boundaries. Today, string ALTREP often functions as a package-local optimization: a package can gain performance benefits internally, but those benefits may disappear when strings move into code that does not understand that specific ALTREP class.</p>
+<p>This project proposes a universal interoperability layer for ALTREP strings, allowing different altstring classes to interact directly without unnecessary materialization. The work will include a runtime registration interface, an interoperability layer built around a common read path, and a broader surface of ALTREP-aware string operations.</p>
+<p>The project builds on existing proof-of-concept work in <code>stringfish</code> and aims to make efficient string handling more broadly available across R workflows involving large text corpora, logs, genomic sequence data, file-backed strings, and other string-heavy applications.</p>
+</section>
+<section id="modernization-and-refactoring-igvshiny" class="level3">
+<h3 class="anchored" data-anchor-id="modernization-and-refactoring-igvshiny">Modernization and Refactoring igvShiny</h3>
+<p>Lead: Arkadiusz Gladki, Author and Maintainer of igvShiny and igvR; Independent / gladki.pl<br>
+Grant: $4,000</p>
+<p>Arkadiusz Gladki will modernize and extend <code>igvShiny</code>, a Bioconductor package that embeds the Integrative Genomics Viewer as an htmlwidget in R Shiny. The package connects IGV to the R ecosystem and is used by bioinformaticians, clinicians, and Shiny developers working with genomic data.</p>
+<p>The project will focus on bug fixes, Bioconductor compliance, API completeness, testing, continuous integration, and documentation.</p>
+</section>
+<section id="bridging-iucn-and-gbif-taxonomies-for-reproducible-red-list-assessments-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="bridging-iucn-and-gbif-taxonomies-for-reproducible-red-list-assessments-in-r">Bridging IUCN and GBIF Taxonomies for Reproducible Red List Assessments in R</h3>
+<p>Lead: Stanislas Mahussi Gandaho, Ecological Data Scientist, African Parks, Benin; Laboratory of Applied Ecology, University of Abomey-Calavi, Benin<br>
+Grant: $6,600</p>
+<p>Stanislas Mahussi Gandaho will extend the <code>redlist</code> R package to bridge IUCN Red List taxonomy with the GBIF taxonomic backbone. This work addresses a practical problem in conservation biology: IUCN and GBIF may use different accepted names and synonyms for the same species, which can lead to incomplete or inaccurate occurrence data retrieval.</p>
+<p>The proposed extension will add taxonomic name resolution, multi-synonym occurrence retrieval, and assessment-readiness checks. These tools will help users retrieve GBIF occurrence records under accepted names and synonyms, deduplicate records, identify data-quality issues, and prepare occurrence data for Red List assessment metrics such as Extent of Occurrence and Area of Occupancy.</p>
+<p>This work will support conservation biologists, government agencies, NGOs, and researchers conducting reproducible Red List assessments in R.</p>
+</section>
+<section id="modernising-integer-partitions-implementing-standard-iterators-for-the-partitions-package" class="level3">
+<h3 class="anchored" data-anchor-id="modernising-integer-partitions-implementing-standard-iterators-for-the-partitions-package">Modernising Integer Partitions: Implementing Standard Iterators for the partitions Package</h3>
+<p>Leads: Sam Kamperis, Oxford Brookes University; Robin Hankin, Original Author of the partitions Package, University of Stirling<br>
+Grant: $4,200</p>
+<p>Sam Kamperis and Robin Hankin will modernize the <code>partitions</code> package by adding a standard S3 iterator interface. The package is long-standing R infrastructure for working with integer partitions, but its current APIs either materialize all partitions in memory or rely on non-standard manual iteration.</p>
+<p>The project will implement a <code>partitions_iter</code> S3 class that conforms to the standard iterator interface, enabling lazy evaluation, lower memory use, and interoperability with tools such as <code>foreach</code> and <code>itertools</code>. This will allow users to stream partitions rather than generating large objects all at once.</p>
+<p>The work preserves the package’s established enumeration logic while making it more compatible with contemporary R workflows, including parallel and distributed computation.</p>
+</section>
+<section id="supporting-open-infrastructure-for-the-r-community" class="level3">
+<h3 class="anchored" data-anchor-id="supporting-open-infrastructure-for-the-r-community">Supporting Open Infrastructure for the R Community</h3>
+<p>The R Consortium ISC is pleased to support these seven projects. Each addresses a concrete need in the R ecosystem: maintaining essential data infrastructure, improving performance and interoperability, modernizing widely used packages, and extending reproducible R workflows into scientific domains where open tools can have substantial impact.</p>
+<p>We will be following the progress of these projects and sharing updates as the grantees deliver new releases, documentation, examples, workshops, and community resources.</p>
+<p>A full list of all ISC technical grant recipients is available <a href="https://r-consortium.org/all-projects/funded-projects.html">here</a>. We look forward to seeing your work on the list in the near future!</p>
+<p>For future grant opportunities, <a href="https://r-consortium.org/all-projects/callforproposals.html">visit the R Consortium Call for Proposals page</a> and follow the R Consortium blog for announcements.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>isc</category>
+  <category>announcements</category>
+  <category>infrastructure</category>
+  <guid>https://r-consortium.org/posts/r-consortium-awards-first-round-of-2026-technical-grants/</guid>
+  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-awards-first-round-of-2026-technical-grants/technical-grant-winners-announced-2026.png" medium="image" type="image/png" height="60" width="144"/>
+</item>
 <item>
   <title>Searching the R Ecosystem by Function, Not Package Name</title>
   <dc:creator>R Consortium</dc:creator>
@@ -2078,84 +2167,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/</guid>
   <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" medium="image" type="image/png" height="65" width="144"/>
-</item>
-<item>
-  <title>2025 in Review: Growth, Community, &amp; Momentum</title>
-  <dc:creator>Terry Christiani, executive director, R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>As we close out 2025, I want to pause and reflect on what has been an energizing and meaningful year for the R Consortium and the global R community. Across our blog, events, working groups, and partnerships, a clear theme emerged: the R language continues to grow as a language, of course but more important our community is a collaborative, global ecosystem grounded in openness, scientific rigor, and real-world impact.</p>
-<p>We started the year with <a href="https://r-consortium.org/about/">a refined mission</a> and renewed energy. Throughout the year, the R Consortium worked to support and share the community’s efforts across the world from dozens of community organizers, and a wide range of industries – from healthcare and finance to environmental science, journalism, and public policy.</p>
-<p><img src="https://r-consortium.org/posts/2025-in-review-growth-community-momentum/r-consortium-mosaic.png" class="img-fluid" alt="r consortium mosaic"></p>
-<section id="bringing-the-community-together" class="level2">
-<h2 class="anchored" data-anchor-id="bringing-the-community-together">Bringing the Community Together</h2>
-<p>Community gatherings remained a cornerstone of the R ecosystem in 2025.</p>
-<p>This year, the R Consortium supported multiple flagship, <a href="https://r-consortium.org/news/events.html">regional events, and webinars</a>, including <a href="https://www.youtube.com/watch?v=tdaMw6NcNFM&amp;list=PL4IzsxWztPdmU2q31ZrTCASr78e0jpKux">R/Medicine 2025</a>, <a href="https://www.youtube.com/@useRConference_global">useR!</a>, and the inaugural <a href="https://www.youtube.com/watch?v=Pt5-VSvuKMA&amp;list=PL4IzsxWztPdkm4lcgBilHQjBoFFysP81e">R + AI</a> conferences. Collectively, these events brought together thousands of participants, with speakers and attendees spanning academia, industry, and government.</p>
-<p>In parallel, we worked to spotlight the continued expansion of local R User Groups (RUGs)and R-Ladies+ chapters. R Consortium sponsored groups grew to 99 RUGs across 41 countries, and a worldwide audience of over 82,000 members. R-ladies+ has grown to 225 chapters in 2025. This year we featured stories from <a href="https://r-consortium.org/blog/#category=rugs">cities and regions around the world</a> – demonstrating how R communities are forming and thriving well beyond traditional tech hubs.</p>
-<p>Together, these gatherings, both global and local, underscore the strength of R as a people-driven ecosystem.</p>
-<p>We have seen growing engagement across our outlets and channels. We hope that if you are not currently following or engaging with us on our primary outlets that you will take the time next year to follow and let us know your ideas and opinions. We added <a href="https://bsky.app/profile/rconsortium.bsky.social">Bluesky</a> in September of this year and things are off to a lovely start there.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Channel</th>
-<th style="text-align: left;">Current</th>
-<th style="text-align: left;">Growth in 2025</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://www.youtube.com/@RConsortium">YouTube</a></td>
-<td style="text-align: left;">22,285 subscribers</td>
-<td style="text-align: left;">+ 1,472 subscribers</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://www.linkedin.com/company/r-consortium/">LinkedIn</a></td>
-<td style="text-align: left;">10,212 followers</td>
-<td style="text-align: left;">+ 1,769 followers</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="advancing-r-in-industry-and-regulation" class="level2">
-<h2 class="anchored" data-anchor-id="advancing-r-in-industry-and-regulation">Advancing R in Industry and Regulation</h2>
-<p>A major focus of 2025 was continuing to strengthen R’s role in production, validation, and regulatory contexts.</p>
-<p>Our Submissions Working Group advanced its work with <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/">the launch of Pilot 5</a>, building on years of collaboration among industry, regulators, and open-source contributors. We celebrated continued progress with Pilot 4 as well as <a href="https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/">confirming and announcing the expansion of the FDA’s accepted R file formats</a>. We welcomed the <a href="https://r-consortium.org/posts/nlmixr2-is-becoming-an-r-consortium-working-group/">nlmixr2 working group</a> to the R Consortium working groups. We are thrilled to support their continued advances in bringing R-based open-source nonlinear mixed-effects modeling to the community.</p>
-<p>Across the year, the Consortium also hosted and promoted multiple technical webinars focused on <a href="https://r-consortium.org/webinars/unlocking-collaborative-power-with-git-github-ci-cd-and-llms-in-pharma.html">Git, CI/CD</a>, <a href="https://r-consortium.org/webinars/scaling-the-r-spatial-ecosystem-for-the-modern-composable-data-pipeline.html">scaling spatial workflows</a>, <a href="https://r-consortium.org/webinars/how-to-use-pointblank-to-understand-validate-and-document-your-data.html">data validation and documentation</a>, and <a href="https://youtu.be/ZlTKyBsLtag?si=GCoGKURUnlE4ol5B">emerging uses of LLMs in regulated environments</a>—helping organizations modernize analytics workflows while maintaining rigor and compliance.</p>
-</section>
-<section id="sustaining-and-strengthening-r-infrastructure" class="level2">
-<h2 class="anchored" data-anchor-id="sustaining-and-strengthening-r-infrastructure">Sustaining and Strengthening R Infrastructure</h2>
-<p>Behind the scenes, infrastructure work continued to be a defining part of the Consortium’s mission.</p>
-<p><a href="https://r-consortium.org/all-projects/funded-projects.html">In 2025, the Infrastructure Steering Committee (ISC) awarded funding to 13 open-source projects through its grants program</a>, supporting maintainers and teams working on critical R tooling and workflows. Grants were awarded to projects in areas such as pharmacometrics, geospatial analysis, AI-enabled tooling, and reproducible research infrastructure.</p>
-<p>These investments – representing hundreds of contributor hours and sustained multi-year efforts - help ensure that R remains stable, extensible, and ready for future challenges.</p>
-</section>
-<section id="a-truly-global-perspective" class="level2">
-<h2 class="anchored" data-anchor-id="a-truly-global-perspective">A Truly Global Perspective</h2>
-<p>One of the most striking takeaways from 2025 is the global reach of the R community.</p>
-<p>Just this year we were able to support and promote projects and user groups spanning <a href="https://r-consortium.org/posts/quantifying-participation-risk-with-r-and-r-shiny-a-new-frontier-in-financial-risk-modeling/">financial risk modeling in Europe</a>, <a href="https://r-consortium.org/posts/teaching-r-to-investigative-journalists-in-brazil/index.html">journalism training in South America</a>, <a href="https://r-consortium.org/posts/pharma-rug-the-rise-of-r/index.html">community organizing in Asia</a>, and <a href="https://r-consortium.org/posts/strength-in-numbers/">applied analytics across North America</a> and beyond. Together, these stories highlighted R’s role as a shared language for data, evidence, and insight across borders, disciplines, and sectors.</p>
-<p>Just as importantly, many of these narratives centered on education, mentorship, and inclusion, reinforcing our commitment to a community where participation is broad, welcoming, and sustainable.</p>
-</section>
-<section id="looking-ahead" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
-<p>As we move into 2026, the momentum from this year is unmistakable. New events are already taking shape, working groups continue to evolve, and conversations about sustainability, governance, and long-term impact are actively shaping the Consortium’s next chapter.</p>
-<p>Investments from the <a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">Sovereign Tech Fund</a> and the <a href="https://www.software.ac.uk/ssi-awards-funding-13-critical-projects-through-research-software-maintenance-fund-round-1">Research Software Maintenance Fund</a> in the R Foundation will underwrite significant progress in R’s sustainability and security through infrastructure modernization, active mentorship of the next generation of R Core, and increased engagement with the community. R Consortium members will be actively contributing to these efforts through financial support as well as new industry panels that we are organizing in 2026 for both pharma and technology members.</p>
-<p>We are also introducing a new R Consortium event in February of 2026. We hope you will join us for <a href="https://rconsortium.github.io/Risk_website/">R!sk on February 18-19</a>. We are excited and looking forward to another successful, inaugural event.</p>
-<p>On behalf of the R Consortium, I want to thank our members, contributors, organizers, speakers, and readers for making 2025 such a pivotal year for the community. Your time, expertise, and commitment are what keep R strong.</p>
-
-
-</section>
-
- ]]></description>
-  <category>infrastructure</category>
-  <category>rugs</category>
-  <category>members</category>
-  <guid>https://r-consortium.org/posts/2025-in-review-growth-community-momentum/</guid>
-  <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/2025-in-review-growth-community-momentum/r-consortium-mosaic.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 </channel>
 </rss>
