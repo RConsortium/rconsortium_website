@@ -37,7 +37,7 @@ Many working groups are open for anyone. Please see the [R Consortium Public Cal
 
 [nlmixr2:](https://github.com/nlmixr2/nlmixr2) Nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.
 
-[R7 Package](https://github.com/RConsortium/OOP-WG): Object-Oriented Programming. The R7 package is a new OOP system designed to be a successor to S3 and S4. It has been designed and implemented collaboratively by the R Consortium Object-Oriented Programming Working Group, which includes representatives from R-Core, BioConductor, RStudio/tidyverse, and the wider R community.
+[S7 Package](https://github.com/RConsortium/S7): Object-Oriented Programming. The S7 package is a new OOP system designed to be a successor to S3 and S4. It has been designed and implemented collaboratively by the R Consortium Object-Oriented Programming Working Group, which includes representatives from R-Core, BioConductor, RStudio/tidyverse, and the wider R community.
 
 
 [R Certification](https://github.com/RConsortium/R-Certification-WG): Is working to establish a common certification program for proficiency in R.
@@ -68,7 +68,7 @@ Active working groups have public [mailing lists](https://lists.r-consortium.org
 [Future-proof native APIs for R](https://wiki.r-consortium.org/view/R_Native_API): Is working to assess current native API usage, gather community input, and work towards an easy-to-understand, consistent and verifiable API that will drive R language adoption.
 
 
-[R IDEA](https://www.r-consortium.org/all-projects/r-community-diversity-and-inclusion): Now a Top Level Project. R Community Diversity and Inclusion is a group broadly considering how the R Consortium can best encourage and support diversity and inclusion in the R Community.
+[R IDEA](https://github.com/RConsortium/IDEA-WG): Now a Top Level Project. R Community Diversity and Inclusion is a group broadly considering how the R Consortium can best encourage and support diversity and inclusion in the R Community.
 
 
 [Unified Framework for Distributed Computing in R](https://github.com/RConsortium/Distributed-Computing-WG): Exploring the feasibility of developing a common framework to standardize the programming of distributed applications in R.
