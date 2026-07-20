@@ -10,7 +10,64 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Tue, 14 Jul 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 20 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>What Makes R Strong: Reflections from useR! 2026</title>
+  <dc:creator>Mike K Smith, R Consortium Board Chair</dc:creator>
+  <link>https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="Mike.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/Mike.webp" class="img-fluid" style="float: left; margin: 0 1.25em 0.75em 0;" alt="Mike K Smith, Pfizer, R Consortium Board Chair, Silver Member Representative" width="180"></a></p>
+<p><em>This blog post is authored by Mike K Smith, Lead, R Centre of Excellence and Senior Director, Statistical Data Science and Analytics, Pfizer, and R Consortium Board Chair, Silver Member Representative. Mike attended useR! 2026 in Warsaw, Poland. The R Consortium was a Platinum sponsor and has enthusiastically sponsored useR! annually. As a Platinum sponsor, the R Consortium also had an opportunity to present. Mike’s sponsor session, titled “R is People,” stressed the importance of individual people’s work and collaboration.</em></p>
+<div style="clear: both;">
+
+</div>
+<hr>
+<p>UseR! 2026 took place during the week of 6th July in Warsaw, bringing together R users from industry, academia and government for several days of learning, discussion and community-building. Hosted by Warsaw Universities, with sessions held at SGH Warsaw School of Economics, the conference offered a warm welcome, a strong technical programme and many opportunities to connect over coffee, lunch and conversation.</p>
+<p><a href="IMG_0953.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0953.jpeg" class="img-fluid" style="width:60.0%" alt="Peter Dalgaard presenting an overview of R's history, CRAN, the release process and governance"></a></p>
+<p>Peter Dalgaard gave us an overview of R’s history, CRAN, the release process and governance. This was a timely presentation given in the context of the recent <a href="https://www.rousseeuwprize.org/2026/press-release">Rousseeuw Prize awarded to the R Project</a>. I was familiar with parts of this process, but it was valuable to hear “how the cake is made”. Evolving a programming language used worldwide, often in business-critical settings, requires care, discipline and a strong instinct to “not break things”.</p>
+<p>It was encouraging to hear how the R Foundation and R Core are inviting deeper community engagement while strengthening resilience for the future.</p>
+<p>The panel on open source software and digital sovereignty broadened that discussion. Digital sovereignty—the ability of nations, or groups of nations, to remain resilient if access to critical digital systems is withdrawn—is a sobering topic. It underlined how open source is not only a technical choice, but also part of a wider conversation about resilience, independence and trust.</p>
+<p>Community was another strong theme throughout the conference.</p>
+<p>Kari Jordan from The Carpentries gave an engaging talk on building and sustaining resilient communities, reminding us that everyone starts somewhere and that we each have a role in helping others move forward. At a time when AI is prompting questions about the future of data science and programming, her message felt especially important: people still matter. Supporting each other as individuals is something LLMs cannot do.</p>
+<p>Dariia Mykhailyshyna from the Kyiv School of Economics offered a powerful example of that resilience through her survey of the R community in Ukraine. Despite the war and the many challenges it has created, Ukrainian data scientists continue to learn, build and support one another through R. Her words captured both determination and community spirit:</p>
+<p>“We are still here, we are still coding…”</p>
+<p><a href="IMG_0942.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0942.jpeg" class="img-fluid" style="width:60.0%" alt="Dariia Mykhailyshyna, Kyiv School of Economics, presenting a survey of R users in Ukraine"></a></p>
+<p>I arrived in Warsaw not knowing many delegates, but left with new connections, memorable conversations and a renewed appreciation for the breadth and generosity of the R community. My thanks to the organisers, speakers and delegates for a stimulating and welcoming few days.</p>
+<section id="sights-from-warsaw" class="level2">
+<h2 class="anchored" data-anchor-id="sights-from-warsaw">Sights from Warsaw</h2>
+<div class="columns">
+<div class="column" style="padding-right: 0.75rem;">
+<p><a href="IMG_0933.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0933.jpeg" class="img-fluid" alt="Atrium at SGH Warsaw School of Economics during useR! 2026"></a></p>
+</div><div class="column" style="padding-left: 0.75rem;">
+<p><a href="IMG_0936.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0936.jpeg" class="img-fluid" alt="Speaker presenting in the lecture hall at useR! 2026"></a></p>
+<p><a href="IMG_0944.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0944.JPG" class="img-fluid" style="margin-top: 0.75rem;" alt="Mike K Smith, Pfizer, R Consortium Board Chair, presenting at useR! 2026"></a></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="padding-right: 0.5rem;">
+<p><a href="IMG_0930.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0930.jpeg" class="img-fluid" alt="View of Warsaw, Poland, location of useR! 2026"></a></p>
+</div><div class="column" style="padding-left: 0.5rem; padding-right: 0.5rem;">
+<p><a href="IMG_0958.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0958.jpeg" class="img-fluid" alt="Evening street scene in Warsaw during useR! 2026"></a></p>
+</div><div class="column" style="padding-left: 0.5rem;">
+<p><a href="IMG_0959.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/IMG_0959.jpeg" class="img-fluid" alt="Presidential Palace in Warsaw at night"></a></p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>events</category>
+  <category>community</category>
+  <guid>https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/</guid>
+  <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/what-makes-r-strong-reflections-from-user-2026/user2026-logo.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>R Consortium Awards First Round of 2026 Technical Grants</title>
   <dc:creator>R Consortium</dc:creator>
@@ -2097,76 +2154,6 @@ Wasserman, Larry. 2018. <span>“Topological Data Analysis.”</span> <em>Annual
   <guid>https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/</guid>
   <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/crops-code-and-community-build-r-mob-user-group-in-australia/RMobLogo.png" medium="image" type="image/png" height="82" width="144"/>
-</item>
-<item>
-  <title>Applied Epidemiology in R: Cape Town R User Group’s Contribution to Global Immunization</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/jared-norman-71b4b6187/">Jared Norman</a> and <a href="https://www.linkedin.com/in/rmonyake/">Retselisitsoe Monyake</a>, organizers of the <a href="https://www.meetup.com/cape-town-r-user-group/">Cape Town R User Group</a>, recently spoke with the R Consortium about strengthening South Africa’s R community and advancing infectious disease modeling at the Modeling and Simulation Hub Africa (MASHA), which is part of the Department of Statistics at the University of Cape Town (UCT). Alongside efforts to organize local meetups and collaborate with Johannesburg, they shared their work on DTPBoost—an R-based tool developed in collaboration with the CDC and AFENET to help countries evaluate and optimize DTP booster vaccination strategies. In this interview, they discuss how community building, Shiny development, and applied epidemiological modeling come together to strengthen R’s impact in global health.</p>
-<p><img src="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGOrganizers.png" class="img-fluid" alt="Capetown RUG Organizers"></p>
-<section id="please-share-about-your-background-and-involvement-with-the-rugs-group." class="level2">
-<h2 class="anchored" data-anchor-id="please-share-about-your-background-and-involvement-with-the-rugs-group.">Please share about your background and involvement with the RUGS group.</h2>
-<p>Jared: My name is Jared Norman, and I am a research officer at the <a href="https://science.uct.ac.za/masha">Modeling and Simulation Hub Africa</a> (MASHA), which is part of the Department of Statistics at the University of Cape Town (UCT). Our research focuses on infectious disease modeling, often with a policy emphasis. We address questions related to infectious disease interventions and also examine vaccine-preventable diseases, which we’ll discuss further.</p>
-<p>In terms of my background, I initially studied computer science and mathematics at university. During that time, I worked for a non-profit organization, <a href="https://numeric.org/">Numeric</a>, focused on math education, leveraging the approach of Khan Academy. I primarily used Python to develop a Django-based website, and I expected to work with Python in the industry after graduation.&nbsp;</p>
-<p>However, I first entered the cybersecurity field, where I ended up using C#. Eventually, I transitioned to my current role in infectious disease modeling, where I anticipated using Python again. Instead, I was assigned to work with R. It took me a while to perceive R as a programming language rather than just a tool for statisticians. However, after reading <a href="https://adv-r.hadley.nz/">”Advanced R” by Hadley Wickham</a>, a realization clicked for me. I began to appreciate R as a true programming language aligned with my computer science background.</p>
-<p>I have worked on several R packages, particularly in the malaria research space. In this area, reports often include data as Excel files in the appendices. However, there can be a barrier for individuals who are not very familiar with the structure of the reports, making it challenging for them to pull in the data. To address this, I developed an R package that provides a more transparent way to access this data within R. This package not only makes the data available but also promotes responsible use. I ensured that footnotes present in some columns or cells were maintained as character strings. This way, users are prompted to consider the context of the data rather than simply using the numbers without examination.</p>
-<p>Additionally, I have started a few other projects but have yet to find the time or grant funding to complete them. Each year, I also supervise undergraduate students in the statistics department, encouraging them to contribute their project outcomes back to the community. For instance, this year, some students focused on serological models, which involve examining antibodies in the blood to estimate how many people have contracted a disease. They worked on this project and successfully created an R package, which I’m proud to say they submitted to Journal of Open Source Software (JOSS).</p>
-<p>Overall, I advocate for the integration of software development into the academic realm.</p>
-<p>Retselisitsoe: I also work at the modeling and simulation hub with Jared, and we are based at UCT. I actually came across R during my studies at university while I was doing statistics, and to be honest, I didn’t really like it at that time. I was learning Python and Java in my Computer Science class. After I finished my studies, I was primarily using Python for work, focusing on building interactive applications with Dash.</p>
-<p>During the COVID-19 pandemic, many people started creating various dashboards related to the virus. I noticed that the dashboards I liked the most were built using Shiny, so I started looking into it. At first, I wasn’t completely sold on it, but I was also tutoring someone who needed help with R at the time. They were using the Tidyverse, which I wasn’t familiar with, so I read “R for Data Science,” which introduced me to Tidyverse. I absolutely loved it!</p>
-<p>After learning about the Tidyverse, I began to use it extensively. During the pandemic, I also started creating dashboards using <a href="https://shiny.posit.co/">Shiny</a>. In late 2020, I received a freelance project to build a Shiny application, which further solidified my interest. In my next job, I continued to use R, and that’s how my journey with it evolved.</p>
-<p>In terms of networking, I engage with a lot of people in the R community, including those who have transitioned from other fields. I’m active on platforms like <a href="https://mastodon.social/@rmonyake">Mastodon</a> and <a href="https://bsky.app/profile/rmonyake.bsky.social">Bluesky</a>. However, I’ve noticed that the people I used to follow on Twitter don’t post as much anymore. I’m also part of the Data Science Learning Club on Slack, which hosts book clubs. I’ve participated in a few; completed two, and I am currently involved in an ongoing book club for “Advanced R” as well as another one focused on DevOps for Data Science, which includes both R and Python content.</p>
-<p>Additionally, we have PhD students at our hub to whom we give workshops. I’ve conducted some R workshops, including one in Kigali, Rwanda, where I taught participants how to use Shiny, and I believe it went quite well.</p>
-<p><img src="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" class="img-fluid" alt="Capetown RUG Meetup"></p>
-</section>
-<section id="can-you-share-what-the-r-community-is-like-in-south-africa" class="level2">
-<h2 class="anchored" data-anchor-id="can-you-share-what-the-r-community-is-like-in-south-africa">Can you share what the R community is like in South Africa?</h2>
-<p>We had some participants from the pharmaceutical industry at our meetups. While I’m not entirely sure about the specifics of their work, they were actively hiring and looking for people with relevant skill sets. In South Africa, we have two major R user groups: the one in Cape Town, which is the smaller of the two, and the <a href="https://www.meetup.com/joburg-r-users-group/">Johannesburg R User Group</a>, which is significantly larger.</p>
-<p>The Johannesburg group has been incredibly helpful in getting us started and figuring out how to be a successful R user group. They have a broader understanding of the community. Johannesburg is also where much of the work happens in South Africa, more so than in Cape Town. While business does occur here, Johannesburg is the main hub, hosting a lot of major industries. So, it’s likely that there’s much more happening there.</p>
-<p>I’m somewhat aware of other groups in Cape Town; I think Fathom Data was one. There are some individuals who work in economics consulting and deal with significant publicly available economic data. They focus on organizing and analyzing that data.</p>
-</section>
-<section id="are-your-meetups-offered-online-in-person-or-in-a-hybrid-format-how-frequently-do-you-host-these-meetups" class="level2">
-<h2 class="anchored" data-anchor-id="are-your-meetups-offered-online-in-person-or-in-a-hybrid-format-how-frequently-do-you-host-these-meetups">Are your meetups offered online, in-person, or in a hybrid format? How frequently do you host these meetups?</h2>
-<p>This year, we have been meeting in Cape Town every two months and holding events in Johannesburg in the alternate months, creating a hybrid schedule. The hosting location attracts more participants, which has generally worked well for us. However, we’ve encountered some difficulties in securing speakers. Finding enough speakers for our events on a bimonthly basis has been challenging.</p>
-<p>We both gave talks this year. So, we’ve had a couple of speakers, but it’s still an area we need to improve. Initially, when we started before incorporating talks, we simply met at a restaurant-bar hybrid, enjoying drinks and chatting. Anyone was welcome to join, and we displayed a small user group flag to indicate our meetup group. During those early meetings, we would typically have just one or two additional attendees.</p>
-<p>As we looked to expand our gatherings, we’ve seen a modest increase in participation this year. Our goal for next year is to continue the bimonthly meetings and find ways to attract more speakers, as that remains a significant challenge. When we began this initiative, I reached out widely, and while many expressed interest, converting that interest into confirmed dates has proven to be quite challenging.</p>
-</section>
-<section id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in" class="level2">
-<h2 class="anchored" data-anchor-id="please-share-about-a-project-you-are-currently-working-on-or-have-worked-on-in-the-past-using-the-r-language.-goalreason-result-anything-interesting-especially-related-to-the-industry-you-work-in">Please share about a project you are currently working on or have worked on in the past using the R language. Goal/reason, result, anything interesting, especially related to the industry you work in?</h2>
-<p>One of the projects we are particularly proud of at MASHA is the development of the <a href="https://health.uct.ac.za/nish/dtp-boost-vaccination-strategy-tool">DTPBoost Vaccination Strategy Tool</a>. The DTP vaccine, which stands for Diphtheria, Tetanus, and Pertussis. This vaccine protects against these three diseases and is typically administered as part of a primary series starting within the first few weeks after birth.</p>
-<p>However, there are ongoing questions regarding when and if to administer booster doses of this vaccine in different countries. This project began in collaboration with the <a href="https://www.who.int/">WHO</a> and the <a href="https://www.cdc.gov/index.html">CDC</a> before the onset of COVID-19. Initially, we had discussions about pursuing this work, but when COVID-19 emerged, funding was redirected, and our efforts were put on hold. Nevertheless, we were eventually able to resume and complete the project.</p>
-<p>We have developed three disease models that are fully age-specific, tracking the administration of vaccine doses over the weeks following birth. These models are interconnected through the single vaccine and its various doses, making them quite complex to solve—there are approximately 10,000 equations that must be processed using a numerical integrator, including non-linear equations. Ensuring transparency for the modelers throughout this process is a significant challenge. Additionally, we have focused on effective communication and decision support throughout the project.</p>
-<p>We developed an application built on our modeling framework, which is a Shiny application that enables users to input detailed information about their country’s context. If you represent a Department of Health and have specific data that is confidential, you can input that data into the application. This allows the model to use your particular information instead of relying on a global average or less relevant data.</p>
-<p>Typically, this application is not used in isolation; rather, it is used in collaboration with a modeler. This collaboration is crucial, as it provides valuable involvement and feedback from stakeholders throughout the modeling process.</p>
-<p>In summary, DTP serves as the underlying model, while DTP Boost is the application built on top of it. We have been working on this project for several years and are pleased to announce that we have finally published it and secured a DOI. We are also in the process of preparing publications. Many people contributed to this project, and we take great pride in our accomplishment.</p>
-</section>
-<section id="what-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc." class="level2">
-<h2 class="anchored" data-anchor-id="what-resourcestechniques-dodid-you-use-posit-rstudio-github-tidyverse-etc.">What resources/techniques do/did you use? (Posit (RStudio), Github, Tidyverse, etc.)</h2>
-<p>In the DTP project, much of the code was custom. We used the <a href="https://cran.r-project.org/web/packages/deSolve/index.html">deSolve</a> package for numerical integration. I utilized the <a href="https://tidyverse.org/packages/">tidyverse</a> extensively, along with several of its packages for various tasks, as well as the <a href="https://cran.r-project.org/web/packages/promises/index.html">promises</a> package. We have three independent models running concurrently within a Shiny app, and using promises is beneficial for parallelizing that workflow.</p>
-<p>In terms of packages, there’s the entire tidyverse, along with Shiny and Shiny Dashboard. If we were to redo this project, we would definitely incorporate the <a href="https://rstudio.github.io/bslib">bslib</a> package as well. Additionally, we used ShinyJS for client-side interactions, which is part of the usual Shiny package toolkit.</p>
-</section>
-<section id="how-do-i-build-an-r-user-group" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-build-an-r-user-group">How do I Build an R User Group?</h2>
-<p>R Consortium’s R User Group and Small Conference Support Program (RUGS) provides grants to help R groups organize, share information, and support each other worldwide. We have given grants over the past four years, encompassing over 82,000 members in almost 100 user groups in 41 countries. We would like to include you! Cash grants and meetup.com accounts are awarded based on the intended use of the funds and the amount of money available to distribute</p>
-<p><a href="https://r-consortium.org/all-projects/rugsprogram.html">https://r-consortium.org/all-projects/rugsprogram.html</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>rugs</category>
-  <category>software development</category>
-  <category>epidemiology</category>
-  <category>africa</category>
-  <guid>https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/</guid>
-  <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/applied-epidemiology-in-r-cape-town-r-user-groups-contribution-to-global-immunization/CapetownRUGMeetup.png" medium="image" type="image/png" height="65" width="144"/>
 </item>
 </channel>
 </rss>
