@@ -12,33 +12,18 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
-    '<a href="https://user2026.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2026</a>',
-    '<a href="https://ghana-rusers.org/ghana-r-conference-2026/" target="_blank" rel="noreferrer noopener">Ghana R Conference</a>',
     '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
   dates = c(
-    "June 26-27, 2026",
-    "July 6-9, 2026",
-    "July 9-10, 2026",
     "Nov 11, 2026"
   ),
   location = c(
-    "Portland, OR, USA",
-    "Warsaw, Poland",
-    "Accra Technical University, Ghana",
     "Virtual"
   ),
   icon = c(
-    "Conference",
-    "Conference",
-    "Conference",
     "Conference"
   ),
   Type = c(
-    "Conference",
-    "Conference",
-    "Conference",
     "Conference"
   ),
   stringsAsFactors = FALSE
@@ -85,6 +70,9 @@ gt_table
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://ghana-rusers.org/ghana-r-conference-2026/" target="_blank" rel="noreferrer noopener">Ghana R Conference</a>',
+    '<a href="https://user2026.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2026</a>',
+    '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
     '<a href="https://rr2026.sciencesconf.org/" target="_blank" rel="noreferrer noopener">Rencontres 2026</a>',
     '<a href="https://r-consortium.org/webinars/use-ai-to-build-and-share-insights-from-health-data.html" target="_blank" rel="noreferrer noopener">R Consortium Webinar: Use AI to build and share insights from health data</a>',
     '<a href="https://eurobioc2026.bioconductor.org/" target="_blank" rel="noreferrer noopener">EuroBioC 2026</a>',
@@ -148,6 +136,9 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/AdoptionOfRInJapansPharma.html" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+    'July 9-10, 2026',
+    'July 6-9, 2026',
+    'June 26-27, 2026',
     'June 16-18, 2026',
     'June 11, 2026',
     'June 3-5, 2026',
@@ -211,6 +202,9 @@ df <- data.frame(
     'January 8, 2024'
   ),
   location = c(
+    'Accra Technical University, Ghana',
+    'Warsaw, Poland',
+    'Portland, OR, USA',
     'Nantes, France',
     'Virtual',
     'Turku, Finland',
@@ -275,6 +269,9 @@ df <- data.frame(
   ),
   Type = c(
     'Conference',
+    'Conference',
+    'Conference',
+    'Conference',
     'Webinar',
     'Conference',
     'Conference',
@@ -337,6 +334,9 @@ df <- data.frame(
     'Webinar'
   ),
   icon = c(
+    'Conference',
+    'Conference',
+    'Conference',
     'Conference',
     'Webinar',
     'Conference',
