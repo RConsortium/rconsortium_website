@@ -32,6 +32,11 @@ page-layout: full
   object-fit: cover; /* This ensures the image covers the entire area without distortion */
 }
 
+/* Logos are shown whole rather than cropped like a headshot */
+.profile-card .pic-logo {
+  object-fit: contain;
+}
+
 /* Media query for responsiveness */
 @media (max-width: 900px) {
   .profile-cards {
@@ -283,6 +288,15 @@ hybrid, and IRL events.</p>
 </div>
 </div>
 
-
+<div class="profile-card">
+<img class="pic pic-logo" src="./images/linux-foundation-logo.webp" alt="Linux Foundation logo">
+<h2>Yasmeen Waqar</h2>
+<p class="profile-role">Program Manager, Linux Foundation</p>
+<p>Yasmeen Waqar supports operations, grant administration, and financial 
+management for the R Consortium as part of her role as a Program Manager at 
+The Linux Foundation. Working closely with project leadership, she ensures 
+smooth day-to-day workflows, ranging from coordinating event sponsorships 
+to managing corporate memberships and governance.</p>
+</div>
 
 </div>
