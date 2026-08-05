@@ -6,8 +6,7 @@ date: "08/05/2026"
 url: "https://r-consortium.org/posts/making-r-submissions-reviewable-for-fda/"
 image: "reviewable-r-submissions.png"
 image-alt: "Comparison of code written for computers and code written for reviewers, emphasizing readable and transparent reviewer-centric R code"
-draft: true
-unpublished: true
+unpublished: false
 categories: ["submissions", "pharma", "working groups"]
 ---
 
