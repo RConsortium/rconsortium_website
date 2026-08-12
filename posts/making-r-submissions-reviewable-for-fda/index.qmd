@@ -20,11 +20,11 @@ In an open dialogue with FDA members participating in the working group, reviewe
 
 While FDA does not endorse any specific statistical software, SAS has historically been the dominant statistical software for regulatory review, and that context shapes the practical challenges reviewers face. In short, reviewers have sometimes struggled to reliably recreate a sponsor's environment, install required packages, run scripts without sponsor-specific assumptions, or validate R results.
 
-This post reflects discussion in the [R Consortium Submissions Working Group meeting on June 5, 2026](https://pr-181--submissions-wg-preview.netlify.app/minutes/2026-06-05/) and should not be read as official FDA guidance.
+This post reflects discussion in the [R Consortium Submissions Working Group meeting on June 5, 2026](https://rconsortium.github.io/submissions-wg/minutes/2026-06-05/) and should not be read as official FDA guidance.
 
 ## R Is Feasible, But Reproducibility Comes First
 
-R offers transparency, a rich package ecosystem, and the benefits of an open-source language where code, methods, and errors can be inspected directly. As FDA's [Statistical Software Clarifying Statement](https://www.fda.gov/media/161196/download) notes, sponsors should consult with FDA review teams early, ensure that software used for data management and statistical analysis is reliable, and have documentation of appropriate software testing procedures available.
+R offers transparency, a rich package ecosystem, and the benefits of an open-source language where code, methods, and errors can be inspected directly. As FDA's [Statistical Software Clarifying Statement (PDF)](https://www.fda.gov/media/161196/download) notes, sponsors should consult with FDA review teams early, ensure that software used for data management and statistical analysis is reliable, and have documentation of appropriate software testing procedures available.
 
 Those benefits only translate into a successful submission when the package can actually be run in the review environment. Good practice for R submissions is therefore not simply "use R." It is "submit R in a way that supports efficient independent review."
 
