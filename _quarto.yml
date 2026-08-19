@@ -73,6 +73,8 @@ website:
 
       - text: "Events"
         menu:
+          - text: "R+AI 2026 (Nov 10-11, 2026)"
+            href: https://rconsortium.github.io/RplusAI_website/
           - text: Webinars
             href: webinars/webinars.qmd
           - text: Events
