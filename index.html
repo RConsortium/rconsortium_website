@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-552ff69ebb95be3e3355d53b37610434.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6b75a8b349f7e8baa223eb5b5825b523.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -285,6 +285,10 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
         <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RplusAI_website/">
+ <span class="dropdown-text">R+AI 2026 (Nov 10-11, 2026)</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./webinars/webinars.html">
  <span class="dropdown-text">Webinars</span></a>
   </li>  
@@ -460,10 +464,72 @@ window.Quarto = {
 .goldButton:active { transform:translateY(1px); }
 .goldButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
 
+.mustardButton {
+  display:inline-block;
+  padding:20px 36px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:1.6em;
+  text-decoration:none;
+  background-color:#D09028;
+  color:#ffffff;
+  border:none;
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+  transition:background-color .2s ease, transform .06s ease;
+}
+.mustardButton a {
+  color:inherit;
+  text-decoration:none;
+}
+.mustardButton:hover {
+  background-color:#B87C1F;
+  color:#ffffff;
+}
+.mustardButton:hover a {
+  color:#ffffff;
+}
+.mustardButton:active { transform:translateY(1px); }
+.mustardButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
+
+.rai-cfp-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.rai-cfp-slide .rai-cfp-kicker,
+.rai-cfp-slide .rai-cfp-deadline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 56rem);
+  margin: 0;
+  padding: 0 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3.2vw, 2.4rem);
+  line-height: 1.25;
+  text-align: center;
+  z-index: 2;
+}
+.rai-cfp-slide .rai-cfp-kicker { top: 1.5rem; }
+.rai-cfp-slide .rai-cfp-deadline { bottom: 1.5rem; }
+.rai-cfp-slide .mustardButton { z-index: 2; }
+
 </style>
 <div class="swiper-container">
 <!-- swiper slides -->
 <div class="swiper-wrapper">
+<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-cfp-2026.png);">
+<p class="rai-cfp-kicker">
+Call for Proposals is open now!
+</p>
+<button class="mustardButton">
+<a href="https://rconsortium.github.io/RplusAI_website/cfp.html" style="text-decoration: none;">Submit your proposal now!</a>
+</button>
+<p class="rai-cfp-deadline">
+Submit now! Deadline is September 7!
+</p>
+</div>
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2 class="anchored">
 R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.
@@ -628,7 +694,7 @@ var Swipes = new Swiper('.swiper-container', {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1786320000000" data-listing-file-modified-sort="1786505623091" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+<div class="g-col-1" data-index="0" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1786320000000" data-listing-file-modified-sort="1787183106160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
 <a href="./posts/nlmixr2-7-0/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -652,7 +718,7 @@ Aug 10, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWElMkN3b3JraW5nJTIwZ3JvdXBz" data-listing-date-sort="1785888000000" data-listing-file-modified-sort="1786505623006" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
+<div class="g-col-1" data-index="1" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWElMkN3b3JraW5nJTIwZ3JvdXBz" data-listing-date-sort="1785888000000" data-listing-file-modified-sort="1787183106082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
 <a href="./posts/making-r-submissions-reviewable-for-fda/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -676,7 +742,7 @@ Aug 5, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="ZXZlbnRzJTJDY29tbXVuaXR5" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1786505623542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
+<div class="g-col-1" data-index="2" data-categories="ZXZlbnRzJTJDY29tbXVuaXR5" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1787183106563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
 <a href="./posts/what-makes-r-strong-reflections-from-user-2026/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -700,7 +766,7 @@ Jul 20, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aXNjJTJDYW5ub3VuY2VtZW50cyUyQ2luZnJhc3RydWN0dXJl" data-listing-date-sort="1783987200000" data-listing-file-modified-sort="1786505623147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
+<div class="g-col-1" data-index="3" data-categories="aXNjJTJDYW5ub3VuY2VtZW50cyUyQ2luZnJhc3RydWN0dXJl" data-listing-date-sort="1783987200000" data-listing-file-modified-sort="1787183106212" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
 <a href="./posts/r-consortium-awards-first-round-of-2026-technical-grants/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -724,7 +790,7 @@ Jul 14, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="YWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1783468800000" data-listing-file-modified-sort="1786505623497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1029">
+<div class="g-col-1" data-index="4" data-categories="YWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1783468800000" data-listing-file-modified-sort="1787183106523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1029">
 <a href="./posts/the-warehouse-searching-r-packages-by-function/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -748,7 +814,7 @@ Jul 8, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1783296000000" data-listing-file-modified-sort="1786505622504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
+<div class="g-col-1" data-index="5" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1783296000000" data-listing-file-modified-sort="1787183105631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
 <a href="./posts/fitting-pk-pd-models-to-published-data-with-admixr2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
