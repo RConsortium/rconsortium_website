@@ -12,18 +12,23 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI 2026</a>',
     '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
   dates = c(
+    "Nov 10-11, 2026",
     "Nov 11, 2026"
   ),
   location = c(
+    "Virtual",
     "Virtual"
   ),
   icon = c(
+    "Conference",
     "Conference"
   ),
   Type = c(
+    "Conference",
     "Conference"
   ),
   stringsAsFactors = FALSE

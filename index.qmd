@@ -111,6 +111,57 @@ format: html
 .goldButton:active { transform:translateY(1px); }
 .goldButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
 
+.mustardButton {
+  display:inline-block;
+  padding:20px 36px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:1.6em;
+  text-decoration:none;
+  background-color:#D09028;
+  color:#ffffff;
+  border:none;
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+  transition:background-color .2s ease, transform .06s ease;
+}
+.mustardButton a {
+  color:inherit;
+  text-decoration:none;
+}
+.mustardButton:hover {
+  background-color:#B87C1F;
+  color:#ffffff;
+}
+.mustardButton:hover a {
+  color:#ffffff;
+}
+.mustardButton:active { transform:translateY(1px); }
+.mustardButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
+
+.rai-cfp-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.rai-cfp-slide .rai-cfp-kicker,
+.rai-cfp-slide .rai-cfp-deadline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 56rem);
+  margin: 0;
+  padding: 0 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3.2vw, 2.4rem);
+  line-height: 1.25;
+  text-align: center;
+  z-index: 2;
+}
+.rai-cfp-slide .rai-cfp-kicker { top: 1.5rem; }
+.rai-cfp-slide .rai-cfp-deadline { bottom: 1.5rem; }
+.rai-cfp-slide .mustardButton { z-index: 2; }
+
 </style>
 
 
@@ -119,6 +170,12 @@ format: html
 <!-- swiper slides -->
 
 <div class="swiper-wrapper">
+
+<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-cfp-2026.png);">
+<p class="rai-cfp-kicker">Call for Proposals is open now!</p>
+<button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/cfp.html" style="text-decoration: none;">Submit your proposal now!</a></button>
+<p class="rai-cfp-deadline">Submit now! Deadline is September 7!</p>
+</div>
 
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2>R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.</h2>
