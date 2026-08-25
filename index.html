@@ -386,6 +386,30 @@ window.Quarto = {
   padding: 10px;
   cursor: pointer;
 }
+.need-help-heading-link,
+.scroll-title-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.need-help-heading-link .scroll-title,
+.scroll-title-link .scroll-title {
+  cursor: pointer !important;
+}
+#joining-r h2.scroll-title {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#joining-r > p {
+  margin-top: 0.4rem !important;
+}
+.what-is-r-headings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
 
 .darkButton {
   background-color: black; 
@@ -515,6 +539,14 @@ window.Quarto = {
 .rai-cfp-slide .rai-cfp-deadline { bottom: 1.5rem; }
 .rai-cfp-slide .mustardButton { z-index: 2; }
 
+.mike-testimonial-slide,
+.ben-testimonial-slide {
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 </style>
 <div class="swiper-container">
 <!-- swiper slides -->
@@ -529,6 +561,12 @@ Call for Proposals is open now!
 <p class="rai-cfp-deadline">
 Submit now! Deadline is September 7!
 </p>
+</div>
+<div class="swiper-slide mike-testimonial-slide" style="background-image: url(images/carousel/mike-testimonial-week4.jpg);">
+
+</div>
+<div class="swiper-slide ben-testimonial-slide" style="background-image: url(images/carousel/ben-testimonial-week3.jpg);">
+
 </div>
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2 class="anchored">
@@ -578,9 +616,17 @@ Find your local R user group Network with fellow statisticians and learn from yo
 <section class="what-is-r-section" id="what-is-r">
 <div style="display: flex; flex-wrap: wrap;">
 <div style="flex: 2; min-width: 300px; padding: 10px; align-items: center;">
+<div class="what-is-r-headings">
+<a class="scroll-title-link" href="./about/index.html">
 <h2 class="scroll-title anchored">
-WHAT IS THE R CONSORTIUM
+WHAT IS THE R CONSORTIUM?
 </h2>
+</a> <a class="scroll-title-link" href="./about/governance.html">
+<h2 class="scroll-title anchored">
+GOVERNANCE
+</h2>
+</a>
+</div>
 <p>
 The central mission of the R Consortium is to work with and provide support to the R Foundation and to the key organizations developing, maintaining, distributing and using R software through the identification, development and implementation of infrastructure projects.
 </p>
@@ -592,34 +638,26 @@ The R language is an open source environment for statistical computing and graph
 <a class="video-popup" href="https://www.youtube.com/watch?v=XcBLEVknqvY" target="blank"> <img src="images/rcon_video_preview.png" alt="Video Preview" style="width: 90%; height: auto; cursor: pointer; margin-left: 1%"> <img src="images/play-button-svgrepo-com.svg" alt="Play Button" class="play"> </a>
 </div>
 </div>
-<button class="darkButton">
-<a href="./about/governance.html" style="text-decoration: none;">GOVERNANCE</a>
-</button>
-<button class="darkButton">
-<a href="rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" style="text-decoration: none;">READ OUR ANNUAL REPORT 2023</a>
-</button>
 </section>
 <section class="joining-r-section" id="joining-r">
+<a class="scroll-title-link" href="./about/join.html">
 <h2 class="scroll-title anchored" style="border:none;">
 Joining R Consortium
 </h2>
+</a><p><a class="scroll-title-link" href="./about/join.html"></a></p>
 <p>
 Industry-leading organizations have joined the R Consortium to support an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
 </p>
-<button class="joiningRButton">
-<a href="./about/join.html" style="text-decoration: none;">LEARN MORE ABOUT MEMBERSHIP</a>
-</button>
 </section>
 <section class="need-help-section" id="need-help">
+<a class="need-help-heading-link" href="https://members.r-consortium.org/">
 <h2 class="scroll-title anchored">
 Need Help?
 </h2>
+</a>
 <p>
-If you need help such as with billing, mailing lists or other wise then please use this service desk for support.
+If you need help such as with billing, mailing lists or otherwise then please use this service desk for support.
 </p>
-<button class="darkButton">
-<a href="https://members.r-consortium.org/" style="text-decoration: none;">GET HELP</a>
-</button>
 </section>
 <section id="latest-news">
 <h2 class="scroll-title anchored">
@@ -694,7 +732,7 @@ var Swipes = new Swiper('.swiper-container', {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1786320000000" data-listing-file-modified-sort="1787183106160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+<div class="g-col-1" data-index="0" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1786320000000" data-listing-file-modified-sort="1787695904681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
 <a href="./posts/nlmixr2-7-0/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -718,7 +756,7 @@ Aug 10, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWElMkN3b3JraW5nJTIwZ3JvdXBz" data-listing-date-sort="1785888000000" data-listing-file-modified-sort="1787183106082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
+<div class="g-col-1" data-index="1" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWElMkN3b3JraW5nJTIwZ3JvdXBz" data-listing-date-sort="1785888000000" data-listing-file-modified-sort="1787695904604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
 <a href="./posts/making-r-submissions-reviewable-for-fda/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -742,7 +780,7 @@ Aug 5, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="ZXZlbnRzJTJDY29tbXVuaXR5" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1787183106563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
+<div class="g-col-1" data-index="2" data-categories="ZXZlbnRzJTJDY29tbXVuaXR5" data-listing-date-sort="1784505600000" data-listing-file-modified-sort="1787695905082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
 <a href="./posts/what-makes-r-strong-reflections-from-user-2026/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -766,7 +804,7 @@ Jul 20, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aXNjJTJDYW5ub3VuY2VtZW50cyUyQ2luZnJhc3RydWN0dXJl" data-listing-date-sort="1783987200000" data-listing-file-modified-sort="1787183106212" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
+<div class="g-col-1" data-index="3" data-categories="aXNjJTJDYW5ub3VuY2VtZW50cyUyQ2luZnJhc3RydWN0dXJl" data-listing-date-sort="1783987200000" data-listing-file-modified-sort="1787695904733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
 <a href="./posts/r-consortium-awards-first-round-of-2026-technical-grants/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -790,7 +828,7 @@ Jul 14, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="YWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1783468800000" data-listing-file-modified-sort="1787183106523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1029">
+<div class="g-col-1" data-index="4" data-categories="YWklMkNzb2Z0d2FyZSUyMGRldmVsb3BtZW50" data-listing-date-sort="1783468800000" data-listing-file-modified-sort="1787695905043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1029">
 <a href="./posts/the-warehouse-searching-r-packages-by-function/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -814,7 +852,7 @@ Jul 8, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1783296000000" data-listing-file-modified-sort="1787183105631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
+<div class="g-col-1" data-index="5" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1783296000000" data-listing-file-modified-sort="1787695904153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
 <a href="./posts/fitting-pk-pd-models-to-published-data-with-admixr2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1248,7 +1286,7 @@ Jul 6, 2026
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.</p>
+<p>© 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved.<br>This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.<br>Contact us at: info@r-consortium.org</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
