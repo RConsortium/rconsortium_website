@@ -33,6 +33,30 @@ format: html
   padding: 10px;
   cursor: pointer;
 }
+.need-help-heading-link,
+.scroll-title-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.need-help-heading-link .scroll-title,
+.scroll-title-link .scroll-title {
+  cursor: pointer !important;
+}
+#joining-r h2.scroll-title {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#joining-r > p {
+  margin-top: 0.4rem !important;
+}
+.what-is-r-headings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
 
 .darkButton {
   background-color: black; 
@@ -162,6 +186,14 @@ format: html
 .rai-cfp-slide .rai-cfp-deadline { bottom: 1.5rem; }
 .rai-cfp-slide .mustardButton { z-index: 2; }
 
+.mike-testimonial-slide,
+.ben-testimonial-slide {
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 </style>
 
 
@@ -176,6 +208,10 @@ format: html
 <button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/cfp.html" style="text-decoration: none;">Submit your proposal now!</a></button>
 <p class="rai-cfp-deadline">Submit now! Deadline is September 7!</p>
 </div>
+
+<div class="swiper-slide mike-testimonial-slide" style="background-image: url(images/carousel/mike-testimonial-week4.jpg);"></div>
+
+<div class="swiper-slide ben-testimonial-slide" style="background-image: url(images/carousel/ben-testimonial-week3.jpg);"></div>
 
 <div class="swiper-slide" style="background-image: url(https://i.postimg.cc/25ks3bQy/rcon-member-bg2.png);">
 <h2>R User Group Program and Small Conference Funding Program now accepting applications Partner with us to support your meetup or local event.</h2>
@@ -216,7 +252,14 @@ format: html
 <section class="what-is-r-section" id="what-is-r">
   <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 2; min-width: 300px; padding: 10px; align-items: center;">
-  <h2 class="scroll-title" >WHAT IS THE R CONSORTIUM</h2>
+  <div class="what-is-r-headings">
+  <a class="scroll-title-link" href="about/index.qmd">
+  <h2 class="scroll-title">WHAT IS THE R CONSORTIUM?</h2>
+  </a>
+  <a class="scroll-title-link" href="about/governance.qmd">
+  <h2 class="scroll-title">GOVERNANCE</h2>
+  </a>
+  </div>
   <p>The central mission of the R Consortium is to work with and provide support to the R Foundation and to the key organizations developing, maintaining, distributing and using R software through the identification, development and implementation of infrastructure projects.</p>
   <p>The R language is an open source environment for statistical computing and graphics, and runs on a wide variety of computing platforms. The R language has enjoyed significant growth, and now supports over 2 million users. A broad range of industries have adopted the R language, including biotech, finance, research and high technology industries. The R language is often integrated into third party analysis, visualization and reporting applications.</p>
   </div>
@@ -227,28 +270,27 @@ format: html
   </a>
   </div>
   </div>
-<button class="darkButton"><a href="about/governance.qmd" style="text-decoration: none;">GOVERNANCE</a></button>
-<button class="darkButton"><a href="rc-docs/RC-AR-2023_Final-Draft_1-30-24.pdf" style="text-decoration: none;">READ OUR ANNUAL REPORT 2023</a></button>
 
 </section>
 
 <section class="joining-r-section" id="joining-r">
-<h2 class="scroll-title"  style="border:none;">Joining R Consortium</h2>
+<a class="scroll-title-link" href="about/join.qmd">
+<h2 class="scroll-title" style="border:none;">Joining R Consortium</h2>
+</a>
 
 <p>
 Industry-leading organizations have joined the R Consortium to support an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
 </p>
 
-<button class="joiningRButton"><a href="about/join.qmd" style="text-decoration: none;">LEARN MORE ABOUT MEMBERSHIP</a></button>
-
 </section>
 
 <section class="need-help-section" id="need-help">
-<h2 class="scroll-title" >Need Help?</h2>
+<a class="need-help-heading-link" href="https://members.r-consortium.org/">
+<h2 class="scroll-title">Need Help?</h2>
+</a>
 <p>
-If you need help such as with billing, mailing lists or other wise then please use this service desk for support.
+If you need help such as with billing, mailing lists or otherwise then please use this service desk for support.
 </p>
-<button class="darkButton"><a href="https://members.r-consortium.org/" style="text-decoration: none;">GET HELP</a></button>
 </section>
 
 <section id="latest-news">

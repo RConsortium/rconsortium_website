@@ -102,7 +102,7 @@ website:
         href: https://www.youtube.com/@RConsortium
   page-footer:
     background: dark
-    center: © 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved. This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.
+    center: '© 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved.<br>This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.<br>Contact us at: info@r-consortium.org'
 format:
   html:
     theme:
