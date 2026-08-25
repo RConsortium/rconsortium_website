@@ -120,6 +120,8 @@ h1.title {
     max-width: none !important;
     min-width: 100%;
     left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .container1,
@@ -253,6 +255,7 @@ section#hero2 > p {
 
 div.nav-footer {
   color: white;
+  display: block;
 }
 
 div.nav-footer a {
@@ -315,11 +318,25 @@ div.nav-footer a:hover {
   width: 140px;
 }
 
+.nav-footer-left,
+.nav-footer-right {
+  display: none;
+}
+
 .nav-footer-center {
-  max-width: 505px;
-  left: -310px;
-  position: relative;
+  max-width: none !important;
+  left: 0;
+  position: static;
   text-align: left;
+  line-height: 1.35;
+  /* Same left edge as the old 505px centered column shifted by -310px */
+  margin-left: calc(50vw - 562.5px);
+  margin-right: 24px;
+  width: auto;
+}
+
+.nav-footer-center p {
+  margin: 0 !important;
 }
 
 .container1 {
