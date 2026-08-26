@@ -1,0 +1,37 @@
+---
+title: "nlmixr2 7.0's Covariance Step, All Grown Up"
+unpublished: false
+url: "https://r-consortium.org/posts/nlmixr2-7-0-covariance-step/"
+description: "The nlmixr2 Working Group explains full covariance-step support in nlmixr2 7.0, including every estimated parameter and switching covariance methods without refitting."
+categories: ["pharma", "submissions", "clinical research", "announcements", "working groups"]
+author: "R Consortium"
+image: "nlmixr2-logo.png"
+image-alt: "The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"
+date: "08/26/2026"
+---
+
+![](nlmixr2-logo.png){width=30% fig-alt="The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"}
+
+_Original post on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-08-17-nlmixr2-cov/)._
+
+The nlmixr2 Working Group continues to expand what open-source R tooling can support in pharmacometrics. In a follow-up to the nlmixr2 7.0 release post, Matthew Fidler focuses on a frequently requested feature: a full covariance step, plus other refinements to how covariance is computed after a fit.
+
+Two related changes stand out. Nearly any covariance method can now be requested from nearly any estimation method, and you can switch a finished fit to a different covariance method without refitting. The default covariance step also now covers every estimated parameter - not just the structural ones - so residual-error terms can return standard errors, %RSE, and confidence intervals in `$parFixed` the way users expect.
+
+Read the full post from the nlmixr2 blog: [nlmixr2 7.0's covariance step, all grown up](https://blog.nlmixr2.org/blog/2026-08-17-nlmixr2-cov/)
+
+## Why nlmixr2?
+
+The vision of nlmixr2 is to develop a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.
+
+In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.
+
+From: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)
+
+## Get involved in the nlmixr2 working group
+
+The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:
+
+Main repo: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)  
+Issues: [https://github.com/nlmixr2/nlmixr2/issues](https://github.com/nlmixr2/nlmixr2/issues)  
+Discussions: [https://github.com/nlmixr2/nlmixr2/discussions](https://github.com/nlmixr2/nlmixr2/discussions)
