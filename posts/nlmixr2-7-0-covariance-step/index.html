@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="R Consortium">
-<meta name="dcterms.date" content="2025-07-10">
-<meta name="description" content="Join us at R+AI 2025, Nov 12-13, 2025, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence.">
+<meta name="dcterms.date" content="2026-08-26">
+<meta name="description" content="The nlmixr2 Working Group explains full covariance-step support in nlmixr2 7.0, including every estimated parameter and switching covariance methods without refitting.">
 
-<title>R+AI Call for Proposals – R Consortium</title>
+<title>nlmixr2 7.0’s Covariance Step, All Grown Up – R Consortium</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -298,15 +298,18 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">R+AI Call for Proposals</h1>
+      <h1 class="title">nlmixr2 7.0’s Covariance Step, All Grown Up</h1>
                   <div>
         <div class="description">
-          Join us at R+AI 2025, Nov 12-13, 2025, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence.
+          The nlmixr2 Working Group explains full covariance-step support in nlmixr2 7.0, including every estimated parameter and switching covariance methods without refitting.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">events</div>
-                <div class="quarto-category">ai</div>
+                <div class="quarto-category">pharma</div>
+                <div class="quarto-category">submissions</div>
+                <div class="quarto-category">clinical research</div>
+                <div class="quarto-category">announcements</div>
+                <div class="quarto-category">working groups</div>
               </div>
                   </div>
   </div>
@@ -324,7 +327,7 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 10, 2025</p>
+        <p class="date">August 26, 2026</p>
       </div>
     </div>
     
@@ -343,537 +346,25 @@ gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
 
 
 
-<p><img src="CFP_now_open.png" class="img-fluid" alt="R+AI 2025 Call for Proposals Now Open!"></p>
-<section id="call-for-proposals" class="level3">
-<h3 class="anchored" data-anchor-id="call-for-proposals">Call for Proposals</h3>
-<p>Join us at <strong>R+AI 2025</strong>, our inaugural conference dedicated to the open-source R community and every facet of artificial intelligence. Whether you’re just getting started with machine learning, experimenting with large language models in R, leveraging GenAI tools to accelerate your code, part of an industry team deploying AI solutions in finance, healthcare, or marketing, or a researcher pushing the boundaries of deep learning or responsible AI—there’s something here for you. Experience inspiring keynotes and talks, hands-on workshops, lightning talks, and panel discussions designed to educate, connect, and empower R users at every level.</p>
-<section id="submit-your-proposal-here" class="level4">
-<h4 class="anchored" data-anchor-id="submit-your-proposal-here"><a href="https://forms.gle/SUbQVNMpp11g7vbTA">Submit your proposal here</a></h4>
+<p><img src="nlmixr2-logo.png" class="img-fluid" style="width:30.0%" alt="The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"></p>
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-08-17-nlmixr2-cov/">here</a>.</em></p>
+<p>The nlmixr2 Working Group continues to expand what open-source R tooling can support in pharmacometrics. In a follow-up to the nlmixr2 7.0 release post, Matthew Fidler focuses on a frequently requested feature: a full covariance step, plus other refinements to how covariance is computed after a fit.</p>
+<p>Two related changes stand out. Nearly any covariance method can now be requested from nearly any estimation method, and you can switch a finished fit to a different covariance method without refitting. The default covariance step also now covers every estimated parameter - not just the structural ones - so residual-error terms can return standard errors, %RSE, and confidence intervals in <code>$parFixed</code> the way users expect.</p>
+<p>Read the full post from the nlmixr2 blog: <a href="https://blog.nlmixr2.org/blog/2026-08-17-nlmixr2-cov/">nlmixr2 7.0’s covariance step, all grown up</a></p>
+<section id="why-nlmixr2" class="level2">
+<h2 class="anchored" data-anchor-id="why-nlmixr2">Why nlmixr2?</h2>
+<p>The vision of nlmixr2 is to develop a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.</p>
+<p>In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.</p>
+<p>From: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a></p>
 </section>
-</section>
-<section id="cfp-dates-open-7102025---closes-09052025" class="level2">
-<h2 class="anchored" data-anchor-id="cfp-dates-open-7102025---closes-09052025">CFP dates: OPEN 7/10/2025 - CLOSES: 09/05/2025</h2>
-<p>We are now inviting proposals for talks and workshops in all these areas:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="pjgfxagzgy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pjgfxagzgy table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#pjgfxagzgy thead, #pjgfxagzgy tbody, #pjgfxagzgy tfoot, #pjgfxagzgy tr, #pjgfxagzgy td, #pjgfxagzgy th {
-  border-style: none;
-}
-
-#pjgfxagzgy p {
-  margin: 0;
-  padding: 0;
-}
-
-#pjgfxagzgy .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#pjgfxagzgy .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#pjgfxagzgy .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#pjgfxagzgy .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#pjgfxagzgy .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#pjgfxagzgy .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#pjgfxagzgy .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#pjgfxagzgy .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#pjgfxagzgy .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#pjgfxagzgy .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#pjgfxagzgy .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#pjgfxagzgy .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#pjgfxagzgy .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#pjgfxagzgy .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#pjgfxagzgy .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjgfxagzgy .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#pjgfxagzgy .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#pjgfxagzgy .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#pjgfxagzgy .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjgfxagzgy .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#pjgfxagzgy .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjgfxagzgy .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#pjgfxagzgy .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjgfxagzgy .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pjgfxagzgy .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pjgfxagzgy .gt_left {
-  text-align: left;
-}
-
-#pjgfxagzgy .gt_center {
-  text-align: center;
-}
-
-#pjgfxagzgy .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#pjgfxagzgy .gt_font_normal {
-  font-weight: normal;
-}
-
-#pjgfxagzgy .gt_font_bold {
-  font-weight: bold;
-}
-
-#pjgfxagzgy .gt_font_italic {
-  font-style: italic;
-}
-
-#pjgfxagzgy .gt_super {
-  font-size: 65%;
-}
-
-#pjgfxagzgy .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#pjgfxagzgy .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#pjgfxagzgy .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#pjgfxagzgy .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#pjgfxagzgy .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#pjgfxagzgy .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#pjgfxagzgy .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#pjgfxagzgy .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#pjgfxagzgy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
-<thead>
-<tr class="gt_heading header">
-<td colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border">R+AI 2025 Call for Proposals: Technical Areas</td>
-</tr>
-<tr class="gt_col_headings even">
-<th id="Topic" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Topic</th>
-<th id="Title-and-Description" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Title and Description</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">1</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Foundations of AI &amp; ML in R</strong><br>Tutorials and primers that help R users grasp core concepts, algorithms, and the modern R toolchain for GenAI, machine learning and deep learning.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">2</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Using large-language models inside R</strong><br>E.g., packages and tools that help you call LLMs from R, prompt engineering for data science, how LLM conversations work.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">3</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>AI-assisted Development for R</strong><br>E.g., techniques and tools, Shiny Assistant, RStudio plug ins, comparison of different model capabilities.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">4</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Machine learning &amp; Deep Learning in R</strong><br>Education about popular R packages, workflows and toolchains, what sorts of problems they apply to, how and when to use them. Introduction to new R packages or algorithms.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">5</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Industry Case Studies: R+AI in Action</strong><br>Applications of GenAI, ML and DL using R across Finance, healthcare, marketing, manufacturing, research labs, and more—real-world success stories and lessons learned.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">6</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Responsible, Fair &amp; Explainable AI + Governance with R</strong><br>Model interpretability, reproducibility, bias detection, privacy-preserving ML, governance and ethics for the use of R+AI.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">7</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>AIOps/MLOps &amp; Production Deployment with R</strong><br>Frameworks, toolchains and techniques for putting AI/ML into production. Case studies on successful deployments and lessons learned are also welcome.</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="Topic">8</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Future Trends &amp; Research Frontiers for R+AI</strong><br>E.g., Emerging Models &amp; Architectures, Auto-Data Science, Low-Code AI—from the R user’s or developer’s perspective.</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="Topic">9</td>
-<td class="gt_row gt_left" headers="Title and Description"><strong>Building &amp; Orchestrating AI Agents in R</strong><br>Learn how to design and deploy autonomous agents that combine R functions, APIs, and LLMs to automate multi-step data science workflows.</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<p>Whether you’re an R user new to AI or developing next-generation algorithms, <strong>R+AI 2025</strong> is your chance to learn, share, and collaborate with fellow R enthusiasts. Submit your talk or workshop proposal today and help shape the future of R+AI!</p>
-<section id="please-note" class="level3">
-<h3 class="anchored" data-anchor-id="please-note">Please note:</h3>
-<ul>
-<li>Event is 100% online</li>
-<li>Talks will be recorded</li>
-<li>Speakers participate in live Q&amp;A</li>
-<li>Schedule is US Eastern time zone</li>
-</ul>
-<section id="submit-your-proposal-here-1" class="level4">
-<h4 class="anchored" data-anchor-id="submit-your-proposal-here-1"><a href="https://forms.gle/SUbQVNMpp11g7vbTA">Submit your proposal here</a></h4>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
