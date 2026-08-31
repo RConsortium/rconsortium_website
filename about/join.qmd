@@ -1,94 +1,247 @@
 ---
-format:
-  html:
-    execute:
-    echo: false
+title: "Join the R Consortium"
 ---
 
-# Why Join the R Consortium?
+<style>
+.effective-note {
+  background: #eef4fb;
+  border-left: 4px solid #1e51a4;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0 1.5rem 0;
+}
 
-The R Consortium is the mechanism for corporate entities and other organizations to support  and engage with the R Community. Membership in the R Consortium signals community leadership, a long term viewpoint, and an appreciation for the efforts of R’s open source contributors. Membership shows commitment and a desire to contribute to the community, strengthening it for the benefit of all.
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.membership-card {
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 1.25rem 1.35rem 1.4rem 1.35rem;
+  background: #fff;
+}
+
+.membership-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  color: #1e51a4;
+}
+
+.membership-card .price {
+  font-weight: 600;
+  margin: 0 0 0.35rem 0;
+}
+
+.membership-card .price-sub {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 0.85rem 0;
+}
+
+.membership-card .for-whom {
+  font-size: 0.95rem;
+  margin-bottom: 0.85rem;
+}
+
+.membership-card ul {
+  margin-bottom: 0;
+  padding-left: 1.15rem;
+}
+
+.membership-card li {
+  margin-bottom: 0.35rem;
+}
+
+.compare-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 2rem 0;
+}
+
+.compare-wrap table {
+  width: 100%;
+  min-width: 640px;
+}
+
+.join-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.join-cta a {
+  display: inline-block;
+  background: #1e51a4;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.join-cta a.secondary {
+  background: #fff;
+  color: #1e51a4 !important;
+  border: 2px solid #1e51a4;
+}
+
+.join-cta a:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 900px) {
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+## Invest in the Future of R
+
+R is critical open-source infrastructure for statistics, data science, research, and production applications worldwide. Its long-term health depends on organizations investing in the people, infrastructure, and community that sustain it.
+
+**R Consortium membership gives organizations that rely on R a direct way to support its future while participating in the ecosystem.**
+
+Member support helps strengthen technical infrastructure, contributor development, working groups, community programs, and initiatives that keep R reliable, relevant, and sustainable.
+
+::: {.effective-note}
+The 2027 R Consortium membership program is effective January 1, 2027.
+:::
 
 ![](images/mike-smith-testimonial1.png){fig-alt="Quote from Mike Smith, R Consortium Board Chair"}
 
-## Membership in the R Consortium
+## Why Membership Matters
 
--   Helps fund key R infrastructure such as the R-Hub build system, database interfaces, distributed computing architecture, regional conferences, local R user groups and more.
--   Provides a way for companies to generate industry-wide support for projects that they see as valuable.
-    -   The bulk of the R Consortium budget goes directly to funding key community projects.
--   Through participation in the R Consortium Infrastructure Steering Committee (ISC), members have a voice in the process of selecting projects and the opportunity to guide their development.
--   Gives companies direct access to the R Foundation:
-    -   Board members interact with the R Foundation’s representative on the R Consortium Board of Directors.
-    -   ISC members:
-        -   Work side-by-side with R Foundation members engaged in technical projects,
-        -   Participate in regular meetings with R Foundation members.
--   Provides insight and access to accurate and up-to-date knowledge about important developments in the the R Community and the extended R ecosystem.
+Organizations that use R benefit from a global open-source ecosystem. Membership provides a way to help sustain that ecosystem while engaging with the organizations and people shaping its future.
+
+R Consortium members help support:
+
+- **R sustainability and infrastructure**
+- **Reliability, reproducibility, validation, and production readiness**
+- **Technical grants and collaborative projects**
+- **Contributor recruitment and mentorship**
+- **Industry engagement and shared problem-solving**
+- **Education, events, and community development**
+
+The R Consortium provides a neutral forum where companies, institutions, the R Foundation, and the broader R community can collaborate on shared priorities.
+
+## 2027 Membership Options
+
+::: {.membership-grid}
+
+::: {.membership-card}
+### Premier
+
+<p class="price">$100,000 annually</p>
+
+<p class="for-whom">For organizations seeking the highest level of participation in R Consortium governance and activities.</p>
+
+Premier Members receive:
+
+- One designated voting seat on the R Consortium Board of Directors
+- Voting representation in the Infrastructure Steering Committee, subject to ISC governance
+- Participation in member and industry forums
+- Three complimentary registrations per R Consortium event
+- Logo recognition on the R Consortium website
+- Access to working groups, programs, events, and member initiatives
+:::
+
+::: {.membership-card}
+### Core
+
+<p class="price">$35,000 annually - 100 or more FTEs</p>
+<p class="price-sub">$12,500 annually - Fewer than 100 FTEs</p>
+
+<p class="for-whom">For organizations that rely on R and want to support the ecosystem while participating in Consortium governance and activities.</p>
+
+Core Members receive:
+
+- The right to nominate and elect voting Core Directors
+- One elected Core Director for every two Core Members
+- Eligibility for ISC representation, subject to ISC governance
+- Participation in member and industry forums
+- Three complimentary registrations per R Consortium event
+- Logo recognition on the R Consortium website
+- Access to working groups, programs, events, and member initiatives
+:::
+
+::: {.membership-card}
+### Associate
+
+<p class="price">$10,000 annually</p>
+
+<p class="for-whom">For eligible nonprofit organizations and academic institutions.</p>
+
+Associate Members receive:
+
+- The right to nominate and elect Associate Board Observers
+- One non-voting Board Observer for every two Associate Members
+- Non-voting ISC participation, subject to ISC governance
+- Participation in appropriate member, academic, and nonprofit forums
+- Three complimentary registrations per R Consortium event
+- Logo recognition on the R Consortium website
+- Opportunities to highlight relevant work through R Consortium channels
+- Access to working groups, programs, events, and member initiatives
+:::
+
+:::
+
+## Compare Membership
+
+::: {.compare-wrap}
+
+| Benefit | Premier | Core | Associate |
+|:----|:----|:----|:----|
+| Annual dues | $100,000 | $35,000 / $12,500 | $10,000 |
+| Eligibility | Organizations | Organizations | Nonprofits & academic institutions |
+| Board participation | Designated voting Director | Elect voting Directors | Elect non-voting Observers |
+| Representation formula | 1 per Premier Member | 1 per 2 Core Members | 1 per 2 Associate Members |
+| ISC participation | Voting | Eligible for representation | Non-voting |
+| Member / industry forums | ✓ | ✓ | ✓ |
+| 3 complimentary event registrations | ✓ | ✓ | ✓ |
+| Website recognition | ✓ | ✓ | ✓ |
+| Working groups & member activities | ✓ | ✓ | ✓ |
+
+:::
+
+## More Than Sponsorship
+
+Membership is an opportunity to participate.
+
+Members contribute expertise, industry experience, and organizational resources to programs addressing shared challenges across the R ecosystem.
+
+Participation can include working groups, industry roundtables, technical initiatives, community programs, conferences, workshops, and other R Consortium activities.
+
+You do not need to serve on the Board to make membership valuable. Organizations can involve subject-matter experts from across their teams in the work most relevant to them.
 
 ![](images/ben-arancibia-testimonial1.png){fig-alt="Quote from Ben Arancibia, R Consortium Board Member"}
 
-## How R Consortium membership helps support the R Community
+## Ready to Join?
 
-```{r}
-suppressPackageStartupMessages({
-  library(dplyr)
-  library(gt)
-})
+1. Review the R Consortium Bylaws, Membership Agreement, and membership information.
 
-df <- data.frame(
-  Benefits = c("One seat on the Board of Directors with full voting rights", "One seat on the ISC with full voting rights", "Elect Silver representatives to the Board and ISC (1 Board seat per 3 Silver members, 1 ISC seat for all Silver members)", "Company logo on R Consortium website and collateral", "R Consortium logo on company website", "Membership dues (annually)"),
-  Platinum = c("Check", "Check", "None", "Check", "Check", "US$100,000"),
-  Silver = c("None", "None", "Check", "Check", "Check", "100+ FTE US $25,000 <100 FTE / non-profits, universities US $10,000"),
-  stringsAsFactors = FALSE
-)
+    - [R Consortium Membership Datasheet](../rc-docs/r_consortium_datasheet.pdf) (PDF)
+    - R Consortium Bylaws (PDF)
+    - [R Consortium Membership Agreement](../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf) (PDF)
+    - [R Consortium – Certificate of Incorporation](../rc-docs/R-Consortium-Certificate-of-Incorporation.pdf) (PDF)
 
+2. Select the membership level that fits your organization.
 
-df <- df |>
-  dplyr::mutate(
-    Platinum = case_when(Platinum == "Check" ~ "check", Platinum == "None" ~ "xmark",TRUE ~ Platinum )
-  ) |>
-  dplyr::mutate(
-    Silver = case_when(Silver == "Check" ~ "check", Silver == "None" ~ "xmark",TRUE ~ Silver )
-  ) 
+3. Complete the [membership application](https://join.r-consortium.org/) and agreement.
 
+4. Join the programs, working groups, and activities that matter to your organization.
 
+::: {.join-cta}
+[Apply for Membership](https://join.r-consortium.org/)
+:::
 
-gt(df) %>%
-  fmt_icon(columns = c(Platinum, Silver), rows = c(1:5), fill_color = c("check" = "green", "xmark" = "darkred")) %>%
+## Have Questions?
 
-  cols_label(
-    Benefits = "Benefits by member class",
-    Platinum = "Platinum",
-    Silver = "Silver"
-  ) %>%
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "lightblue",
-    column_labels.font.weight = "bold",
-    table.font.size = "14px",
-    column_labels.font.size = "16px"
-    
-   
-  ) %>%
-  cols_align(align="center", columns=c(Platinum, Silver)) %>%
-  opt_horizontal_padding(scale = 3)  %>%
-  opt_vertical_padding(scale = 2)
-  
-```
+Want to discuss which membership level is right for your organization or how your team could participate?
 
-
-### Joining the R Consortium is easy.
-
-1. Review the Membership Documents.
-
--   [R Consortium Membership Datasheet](../rc-docs/r_consortium_datasheet.pdf) (PDF)
--   [R Consortium Bylaws](../rc-docs/R-Consortium-Bylaws-7-9-2024.pdf) (PDF)
--   [R Consortium Membership Agreement](../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf) (PDF)
--   [R Consortium – Certificate of Incorporation](../rc-docs/R-Consortium-Certificate-of-Incorporation.pdf) (PDF)
-
-2. Fill out our online [membership application form](https://join.r-consortium.org/).
-
-3. Remit the annual dues payment that is applicable for your membership level.
-
-4. Begin participating in Events, Discussions, Projects and working Groups.
-
-If you have questions about membership or joining the R Consortium, please contact our [member support desk](https://members.r-consortium.org/) and you will be contacted as soon as possible. Thank you.
+::: {.join-cta}
+[Talk to Us About Membership](https://members.r-consortium.org/){.secondary}
+:::
