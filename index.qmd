@@ -186,6 +186,38 @@ format: html
 .rai-cfp-slide .rai-cfp-deadline { bottom: 1.5rem; }
 .rai-cfp-slide .mustardButton { z-index: 2; }
 
+.isc-grants-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.isc-grants-slide .blueButton {
+  z-index: 2;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  display: inline-block;
+  padding: 20px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.6em;
+  white-space: nowrap;
+  background-color: rgb(21, 56, 112);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+.isc-grants-slide .blueButton a {
+  color: inherit;
+  text-decoration: none;
+}
+.isc-grants-slide .blueButton:hover {
+  background-color: rgb(15, 42, 86);
+  color: #fff;
+}
+
 .mike-testimonial-slide,
 .ben-testimonial-slide {
   background-color: #ffffff;
@@ -202,6 +234,10 @@ format: html
 <!-- swiper slides -->
 
 <div class="swiper-wrapper">
+
+<div class="swiper-slide isc-grants-slide" style="background-image: url(images/carousel/isc-grants-cfp-2026.png?v=5);">
+<button class="blueButton"><a href="all-projects/callforproposals.qmd" style="text-decoration: none;">Accepting submissions now!</a></button>
+</div>
 
 <div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-cfp-2026.png);">
 <p class="rai-cfp-kicker">Call for Proposals is open now!</p>
