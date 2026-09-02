@@ -10,7 +10,63 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 31 Aug 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 01 Sep 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Consortium Now Accepting Submissions for Technical Grants</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-now-accepting-submissions-for-technical-grants/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/r-consortium-now-accepting-submissions-for-technical-grants/now-accepting-submissions-technical-grants.png" class="img-fluid" alt="Graphic with text: Technical Grants on a blue background"></p>
+<p>The R Consortium Infrastructure Steering Committee (ISC) is now accepting proposals for the second technical grant cycle of 2026. The application window opened September 1 and closes October 1, 2026, at 11:59 p.m. US Eastern Time.</p>
+<p>R Consortium awards grants that build the technical and social infrastructure of the R ecosystem. Funding supports open-source software, developer tools, and community programs that serve R users and package authors worldwide.</p>
+<section id="call-for-proposals" class="level2">
+<h2 class="anchored" data-anchor-id="call-for-proposals"><a href="https://r-consortium.org/all-projects/callforproposals.html">Call for Proposals</a></h2>
+<section id="is-your-project-a-fit" class="level3">
+<h3 class="anchored" data-anchor-id="is-your-project-a-fit">Is your project a fit?</h3>
+<p>The program looks for work that will help a wide R audience, not a narrow user group. Strong proposals have a focused scope, clear deliverables, and low-to-medium risk with value that can be shown. If your idea is large, consider breaking it into a smaller, well-defined first phase.</p>
+<p>Past technical grants have supported R-hub for package checking, DBI database backends, packages such as mapview and sf, translations in R, and infrastructure for R on Windows and macOS. Social infrastructure grants have included SatRDays, which helped bootstrap local R conferences.</p>
+</section>
+<section id="what-we-generally-do-not-fund" class="level3">
+<h3 class="anchored" data-anchor-id="what-we-generally-do-not-fund">What we generally do not fund</h3>
+<p>ISC grants are not the right path for every request. We generally do not fund projects that affect only small user groups, conference or workshop sponsorship (see the <a href="https://r-consortium.org/all-projects/rugsprogram.html">RUGS program</a>), highly exploratory research (consider an <a href="https://r-consortium.org/all-projects/isc-working-groups.html">ISC working group</a>), or hardware and cloud software purchases.</p>
+</section>
+<section id="how-to-apply" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-apply">How to apply</h3>
+<p>Prepare a 2 to 5 page proposal that describes the problem you want to solve. Use the required <a href="https://github.com/RConsortium/isc-proposal">ISC proposal template</a>, which includes guidance and examples for each section. Save the completed proposal as a self-contained PDF, then submit it through the Google Form on the Call for Proposals page. A Google account is required.</p>
+<p>After you submit, you should see a “Thank you for your proposal!” message and receive a confirmation email. If that email does not arrive, check your spam folder and contact us right away. Questions can go to <a href="mailto:proposal@r-consortium.org">proposal@r-consortium.org</a>.</p>
+<p>The ISC has a limited grant budget and looks for well-defined milestones, with some initial work already completed to keep delivery risk in check. You are welcome to seek informal feedback from committee members or the broader R community before you submit. A standard consultant agreement is used for all funded projects and is available for review on the Call for Proposals page.</p>
+</section>
+<section id="key-dates-for-the-second-2026-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="key-dates-for-the-second-2026-cycle">Key dates for the second 2026 cycle</h3>
+<ul>
+<li>September 1, 2026 — application period opens</li>
+<li>October 1, 2026 — applications close, 11:59 p.m. US ET</li>
+<li>November 1, 2026 — the ISC contacts accepted grantees</li>
+<li>December 1, 2026 — deadline to accept the grant and contract; public notification follows shortly after</li>
+</ul>
+<p>Grants are paid in two parts: 50% when you sign the contract and 50% when the work is complete. Accepted projects are published on the R Consortium blog.</p>
+<p>This is one of two ISC grant windows each year. If you have been building a package, strengthening documentation, improving translations, or designing infrastructure that would help R users everywhere, now is the time to turn that idea into a proposal.</p>
+</section>
+</section>
+<section id="call-for-proposals-1" class="level2">
+<h2 class="anchored" data-anchor-id="call-for-proposals-1"><a href="https://r-consortium.org/all-projects/callforproposals.html">Call for Proposals</a></h2>
+
+
+</section>
+
+ ]]></description>
+  <category>isc</category>
+  <category>announcements</category>
+  <category>infrastructure</category>
+  <guid>https://r-consortium.org/posts/r-consortium-now-accepting-submissions-for-technical-grants/</guid>
+  <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-now-accepting-submissions-for-technical-grants/now-accepting-submissions-technical-grants-homepage.png" medium="image" type="image/png" height="62" width="144"/>
+</item>
 <item>
   <title>Meet Our 2026-2027 R Consortium Board of Directors</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1800,54 +1856,6 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <guid>https://r-consortium.org/posts/submissions-wg-2026/</guid>
   <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/submissions-wg-2026/all_hexes.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Bringing Students, Researchers, and Industry Together with R in Malaysia</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><a href="https://www.linkedin.com/in/yong-poh-yu/?originalSubdomain=my">Richie Yu Yong Poh</a>, organizer of the <a href="https://www.meetup.com/malaysia-r-user-group/">Malaysia R User Group</a>, recently spoke with the R Consortium about building a national R community centered around its annual conference. He shared that the group has evolved from a small network into a robust platform that connects students, researchers, and industry practitioners through workshops, seminars, and a flagship two-day event. Richie discussed the logistics of the annual conference, the design of hands-on workshops, and R’s role in bridging the gap between academia and industry through real-world applications.</p>
-<p><img src="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/YuYongPoh.png" class="img-fluid" style="width:50.0%" alt="Richie Yu Yong Poh, organizer of the Malaysia R User Group"></p>
-<p><strong>Please share about your background and involvement with the RUGS group.</strong></p>
-<p>My career spans both industry and academia. I first adopted R while working as a university researcher; I was seeking a powerful, open-source alternative to MATLAB that could deliver equivalent functionality without the licensing costs.</p>
-<p>Over time, our team explored both R and Python, noting that they complement each other effectively, as many users are proficient in both. After my tenure at the university, I introduced R to my current institution and continued to champion its use when I transitioned to the industry. As a lead for data science and AI teams, I encouraged a multi-language approach, leveraging the unique strengths of both Python and R to solve complex problems.</p>
-<p><strong>Please provide an update on the R user group. How have you all been doing, and what kind of events have you been hosting?</strong></p>
-<p>The group was founded by my colleague, <a href="https://www.linkedin.com/in/kuanhoong/?originalSubdomain=my">Dr Poo Kuan Hoong</a>, who introduced me to the community. Given my academic background and familiarity with R, I was eager to contribute. Since those early days, the group has grown significantly. We now officially co-organize the <strong>Annual R Conference</strong> in partnership with my university, supplemented by periodic seminars and workshops. We also utilize social media and digital platforms to share resources, fostering a collaborative environment where members regularly exchange insights and experiences.</p>
-<p><img src="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/MalaysiaRUGFounder.png" class="img-fluid" alt="MalaysiaRUG Founder"></p>
-<p><strong>Let’s discuss the <a href="https://www.r-conference.com/#h.q3v7ag2doxpm">R conference</a> held in November. Can you provide details on the speakers, topics covered, and audience response?</strong></p>
-<p>The R Conference in Malaysia has become a premier annual event, attracting participants from academia and industry, both locally and internationally. This year’s event was co-organized with <strong>Tunku Abdul Rahman University of Management and Technology (TAR UMT)</strong> in Kuala Lumpur.</p>
-<p>The two-day format featured one day of intensive workshops followed by a day of professional talks. Due to overwhelming interest—particularly for the hands-on sessions—we moved to a larger venue to accommodate the high volume of attendees bringing their own equipment.</p>
-<p><img src="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/R-conference-group-photo-main.png" class="img-fluid" alt="R conference group photo"></p>
-<p>We offered two primary workshops:</p>
-<ol type="1">
-<li><p><strong>Text Analytics:</strong> Led by a medical professional with extensive experience applying R to healthcare data.</p></li>
-<li><p><strong>Introduction to R:</strong> Conducted by myself, this session guided participants from fundamental concepts to advanced applications using <strong>RStudio, Google Colab, and the Tidyverse</strong>, culminating in building <strong>Shiny</strong> applications and statistical modeling.</p></li>
-</ol>
-<p>The Sunday sessions featured industry professionals and medical researchers—who make up a core part of our committee and support base—sharing how they apply R in their respective fields. This builds on the success of our previous event at the <strong>USM Health Campus</strong>, which focused on biomedical applications.</p>
-<p><strong>Could you share some insights about the topics covered in your events? Which topics are currently resonating most with the group members?</strong></p>
-<p>Our workshops are particularly popular among students and young professionals, while our technical talks attract established industry practitioners. We have found that the most resonant content is <strong>application-specific</strong> rather than purely theoretical. Instead of teaching just the basics, we provide frameworks for real-world scenarios, such as analyzing <strong>IoT data in manufacturing</strong> to drive business outcomes.</p>
-<p><strong>How do you use R in your work?</strong></p>
-<p>In our current R&amp;D and consultancy work, we maintain a dual-language environment. R is especially valuable for collaborators from <strong>non-IT backgrounds</strong>, such as those in business or biomedicine, because it provides a more intuitive entry point to advanced analytics.</p>
-<p>We utilize R in two primary ways:</p>
-<ul>
-<li><p><strong>Industry Solutions:</strong> As a university center with strong industry ties, we act as consultants, using R to develop tailored R&amp;D solutions for our partners.</p></li>
-<li><p><strong>Education:</strong> We integrate R into our Data Science and Statistics curriculum. By teaching students to work with practical datasets and conduct rigorous statistical tests (e.g., the <strong>KS test</strong>), we ensure they are prepared for real-world data processing challenges.</p></li>
-</ul>
-
-
-
- ]]></description>
-  <category>rugs</category>
-  <category>software development</category>
-  <category>asia</category>
-  <guid>https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/</guid>
-  <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/bringing-students-researchers-and-industry-together-with-r-in-malaysia/R-conference-group-photo-main.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 </channel>
 </rss>
