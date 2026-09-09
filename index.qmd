@@ -167,24 +167,38 @@ format: html
   background-size: cover;
   background-position: center center;
 }
+.rai-cfp-slide .rai-cfp-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: min(22vw, 14rem);
+  padding: 0 1.5rem;
+}
 .rai-cfp-slide .rai-cfp-kicker,
 .rai-cfp-slide .rai-cfp-deadline {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(90%, 56rem);
   margin: 0;
-  padding: 0 1rem;
   color: #fff;
   font-weight: 700;
-  font-size: clamp(1.35rem, 3.2vw, 2.4rem);
-  line-height: 1.25;
-  text-align: center;
-  z-index: 2;
+  font-size: clamp(1.75rem, 4.2vw, 3.25rem);
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0,0,0,.45);
 }
-.rai-cfp-slide .rai-cfp-kicker { top: 1.5rem; }
-.rai-cfp-slide .rai-cfp-deadline { bottom: 1.5rem; }
-.rai-cfp-slide .mustardButton { z-index: 2; }
+.rai-cfp-slide .rai-cfp-deadline { margin-top: 0.35rem; }
+.rai-cfp-slide .mustardButton {
+  z-index: 2;
+  margin-top: 1.4rem;
+  padding: 22px 44px;
+  font-size: 1.8em;
+}
+@media (max-width: 700px) {
+  .rai-cfp-slide .rai-cfp-copy { margin-left: 0; padding-top: 5.5rem; }
+  .rai-cfp-slide .rai-cfp-kicker,
+  .rai-cfp-slide .rai-cfp-deadline { font-size: clamp(1.35rem, 6vw, 2rem); }
+  .rai-cfp-slide .mustardButton { font-size: 1.25em; padding: 16px 28px; }
+}
 
 .isc-grants-slide {
   position: relative;
@@ -239,10 +253,12 @@ format: html
 <button class="blueButton"><a href="all-projects/callforproposals.qmd" style="text-decoration: none;">Accepting submissions now!</a></button>
 </div>
 
-<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-cfp-2026.png);">
-<p class="rai-cfp-kicker">Call for Proposals is open now!</p>
-<button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/cfp.html" style="text-decoration: none;">Submit your proposal now!</a></button>
-<p class="rai-cfp-deadline">Submit now! Deadline is September 7!</p>
+<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-registration-2026.png);">
+<div class="rai-cfp-copy">
+<p class="rai-cfp-kicker">November 10-22, 2026</p>
+<p class="rai-cfp-deadline">Registration Opens Soon!</p>
+<button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/" style="text-decoration: none;">More Details</a></button>
+</div>
 </div>
 
 <div class="swiper-slide mike-testimonial-slide" style="background-image: url(images/carousel/mike-testimonial-week4.jpg);"></div>
