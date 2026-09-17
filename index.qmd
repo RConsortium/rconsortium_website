@@ -200,7 +200,7 @@ format: html
   top: 66%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 0;
+  margin-top: 30px;
   display: inline-block;
   padding: 20px 36px;
   border-radius: 999px;
@@ -229,6 +229,82 @@ format: html
   background-repeat: no-repeat;
 }
 
+.birdnet-carousel-slide {
+  position: relative;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.birdnet-carousel-slide .birdnet-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(90deg, rgb(18, 58, 122) 0%, rgb(36, 92, 176) 45%, rgb(18, 58, 122) 100%);
+}
+.birdnet-carousel-slide .birdnet-banner-top {
+  top: 0;
+  height: 13%;
+  font-size: clamp(1.35rem, 3.4vw, 2.6rem);
+}
+.birdnet-carousel-slide .birdnet-banner-bottom {
+  bottom: 0;
+  height: 13%;
+  font-size: clamp(1.05rem, 2.4vw, 1.85rem);
+}
+.birdnet-carousel-slide .blueButton {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+  display: inline-block;
+  padding: 20px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.6em;
+  white-space: nowrap;
+  background-color: rgb(21, 56, 112);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+.birdnet-carousel-slide .blueButton a {
+  color: inherit;
+  text-decoration: none;
+}
+.birdnet-carousel-slide .blueButton:hover {
+  background-color: rgb(15, 42, 86);
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .birdnet-carousel-slide .birdnet-banner-top {
+    font-size: 1.05rem;
+    padding: 0 0.75rem;
+  }
+  .birdnet-carousel-slide .birdnet-banner-bottom {
+    font-size: 0.85rem;
+    padding: 0 0.75rem;
+  }
+  .birdnet-carousel-slide .blueButton {
+    font-size: 1rem;
+    padding: 12px 18px;
+    white-space: normal;
+    max-width: 90%;
+  }
+}
+
 </style>
 
 
@@ -246,6 +322,12 @@ format: html
 <div class="rai-cfp-copy">
 <button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/" style="text-decoration: none;">Register Now!</a></button>
 </div>
+</div>
+
+<div class="swiper-slide birdnet-carousel-slide" style="background-image: url(images/carousel/birdnettools-2-0-2026.png);">
+<p class="birdnet-banner birdnet-banner-top">birdnetTools 2.0 available now!</p>
+<button class="blueButton"><a href="posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/" style="text-decoration: none;">Learn more!</a></button>
+<p class="birdnet-banner birdnet-banner-bottom">5 million downloads includes R Consortium-supported technology</p>
 </div>
 
 <div class="swiper-slide mike-testimonial-slide" style="background-image: url(images/carousel/mike-testimonial-week4.jpg);"></div>
