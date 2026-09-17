@@ -553,7 +553,7 @@ window.Quarto = {
   top: 66%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 0;
+  margin-top: 30px;
   display: inline-block;
   padding: 20px 36px;
   border-radius: 999px;
@@ -582,6 +582,82 @@ window.Quarto = {
   background-repeat: no-repeat;
 }
 
+.birdnet-carousel-slide {
+  position: relative;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.birdnet-carousel-slide .birdnet-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(90deg, rgb(18, 58, 122) 0%, rgb(36, 92, 176) 45%, rgb(18, 58, 122) 100%);
+}
+.birdnet-carousel-slide .birdnet-banner-top {
+  top: 0;
+  height: 13%;
+  font-size: clamp(1.35rem, 3.4vw, 2.6rem);
+}
+.birdnet-carousel-slide .birdnet-banner-bottom {
+  bottom: 0;
+  height: 13%;
+  font-size: clamp(1.05rem, 2.4vw, 1.85rem);
+}
+.birdnet-carousel-slide .blueButton {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+  display: inline-block;
+  padding: 20px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.6em;
+  white-space: nowrap;
+  background-color: rgb(21, 56, 112);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+.birdnet-carousel-slide .blueButton a {
+  color: inherit;
+  text-decoration: none;
+}
+.birdnet-carousel-slide .blueButton:hover {
+  background-color: rgb(15, 42, 86);
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .birdnet-carousel-slide .birdnet-banner-top {
+    font-size: 1.05rem;
+    padding: 0 0.75rem;
+  }
+  .birdnet-carousel-slide .birdnet-banner-bottom {
+    font-size: 0.85rem;
+    padding: 0 0.75rem;
+  }
+  .birdnet-carousel-slide .blueButton {
+    font-size: 1rem;
+    padding: 12px 18px;
+    white-space: normal;
+    max-width: 90%;
+  }
+}
+
 </style>
 <div class="swiper-container">
 <!-- swiper slides -->
@@ -597,6 +673,17 @@ window.Quarto = {
 <a href="https://rconsortium.github.io/RplusAI_website/" style="text-decoration: none;">Register Now!</a>
 </button>
 </div>
+</div>
+<div class="swiper-slide birdnet-carousel-slide" style="background-image: url(images/carousel/birdnettools-2-0-2026.png);">
+<p class="birdnet-banner birdnet-banner-top">
+birdnetTools 2.0 available now!
+</p>
+<button class="blueButton">
+<a href="posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/" style="text-decoration: none;">Learn more!</a>
+</button>
+<p class="birdnet-banner birdnet-banner-bottom">
+5 million downloads includes R Consortium-supported technology
+</p>
 </div>
 <div class="swiper-slide mike-testimonial-slide" style="background-image: url(images/carousel/mike-testimonial-week4.jpg);">
 
@@ -768,7 +855,31 @@ var Swipes = new Swiper('.swiper-container', {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cnVncyUyQ2V2ZW50cyUyQ3NvdXRoJTIwYW1lcmljYQ==" data-listing-date-sort="1788393600000" data-listing-file-modified-sort="1789595320185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1464">
+<div class="g-col-1" data-index="0" data-categories="aXNjJTJDc29mdHdhcmUlMjBkZXZlbG9wbWVudA==" data-listing-date-sort="1789603200000" data-listing-file-modified-sort="1789654939830" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1684">
+<a href="./posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/birdnet-screens-listing.png" class="thumbnail-image card-img" style="height: 150px;" alt="BirdNET app screens showing spectrogram, Explore map, and Blue Jay identification">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+From BirdNET Detections to Ecological Insight: Sunny Tseng on birdnetTools 2.0
+</h5>
+<div class="card-text listing-description delink">
+<p>Sunny Tseng discusses birdnetTools 2.0, an R Consortium–funded package that turns BirdNET detections into reproducible occupancy-modeling workflows.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+R Consortium
+</div>
+<div class="listing-date">
+Sep 17, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="cnVncyUyQ2V2ZW50cyUyQ3NvdXRoJTIwYW1lcmljYQ==" data-listing-date-sort="1788393600000" data-listing-file-modified-sort="1789654939612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1464">
 <a href="./posts/a-decade-of-meetups-code-and-community-san-carlos-rug-turns-10/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -792,7 +903,7 @@ Sep 3, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="aXNjJTJDYW5ub3VuY2VtZW50cyUyQ2luZnJhc3RydWN0dXJl" data-listing-date-sort="1788220800000" data-listing-file-modified-sort="1789595321084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
+<div class="g-col-1" data-index="2" data-categories="aXNjJTJDYW5ub3VuY2VtZW50cyUyQ2luZnJhc3RydWN0dXJl" data-listing-date-sort="1788220800000" data-listing-file-modified-sort="1789654940432" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
 <a href="./posts/r-consortium-now-accepting-submissions-for-technical-grants/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -816,7 +927,7 @@ Sep 1, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="YW5ub3VuY2VtZW50cyUyQ2NvbW11bml0eQ==" data-listing-date-sort="1788134400000" data-listing-file-modified-sort="1789595320947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="569">
+<div class="g-col-1" data-index="3" data-categories="YW5ub3VuY2VtZW50cyUyQ2NvbW11bml0eQ==" data-listing-date-sort="1788134400000" data-listing-file-modified-sort="1789654940305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="569">
 <a href="./posts/meet-our-2026-r-consortium-board-of-directors/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -840,7 +951,7 @@ Aug 31, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1787702400000" data-listing-file-modified-sort="1789595321031" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="238">
+<div class="g-col-1" data-index="4" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1787702400000" data-listing-file-modified-sort="1789654940382" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="238">
 <a href="./posts/nlmixr2-7-0-covariance-step/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -864,7 +975,7 @@ Aug 26, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1786320000000" data-listing-file-modified-sort="1789595321032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+<div class="g-col-1" data-index="5" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1786320000000" data-listing-file-modified-sort="1789654940383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
 <a href="./posts/nlmixr2-7-0/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -883,30 +994,6 @@ R Consortium
 </div>
 <div class="listing-date">
 Aug 10, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="c3VibWlzc2lvbnMlMkNwaGFybWElMkN3b3JraW5nJTIwZ3JvdXBz" data-listing-date-sort="1785888000000" data-listing-file-modified-sort="1789595320943" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912">
-<a href="./posts/making-r-submissions-reviewable-for-fda/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/making-r-submissions-reviewable-for-fda/reviewable-r-submissions.png" class="thumbnail-image card-img" style="height: 150px;" alt="Comparison of code written for computers and code written for reviewers, emphasizing readable and transparent reviewer-centric R code">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Making R Submissions Reviewable for FDA
-</h5>
-<div class="card-text listing-description delink">
-<p>Practical guidance from R Consortium Submissions Working Group discussion on making R-based regulatory submissions easier to reproduce, inspect, and trust.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-R Consortium Submissions Working Group
-</div>
-<div class="listing-date">
-Aug 5, 2026
 </div>
 </div>
 </div>
