@@ -1,0 +1,39 @@
+---
+title: "Adaptive Dosing in rxode2: Event Tables That Follow the Patient"
+unpublished: false
+url: "https://r-consortium.org/posts/nlmixr2-adaptive-dosing/"
+description: "The nlmixr2 Working Group shows how rxode2 can now change an individual’s event history while a model is being solved, so clinical dose holds and reductions can follow the simulated trajectory."
+categories: ["pharma", "submissions", "clinical research", "announcements", "working groups"]
+author: "R Consortium"
+image: "nlmixr2-logo.png"
+image-alt: "The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"
+date: "09/18/2026"
+---
+
+![](adaptive-dosing.png){width=70% fig-alt="Four-panel illustration of adaptive dosing in rxode2: a solver writing event history, a researcher inspecting patients in the tail of a dose-modification protocol, encoding the Taxotere label into the model, and notes from using the feature"}
+
+_Original post on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-09-09-adaptive-dosing/)._
+
+The nlmixr2 Working Group continues to expand what open-source R tooling can support in pharmacometrics. In a new post, Matthew Fidler describes adaptive dosing in `rxode2`: decision logic inside the `model({})` block that can push bolus, infusion, reset, and observation events while the solver is running.
+
+That matters for protocols where the next dose depends on the trajectory so far — hold a cycle, cut a dose level, start a rescue infusion — which cannot be written into a fixed event table up front. The post walks through the Friberg myelosuppression model and a Taxotere-style dose-modification table, using sticky variables to remember dose level, days at grade 4, and when the next cycle is due.
+
+Watch the 8-minute narrated walkthrough: [https://youtu.be/kuQbzj5Hm4I](https://youtu.be/kuQbzj5Hm4I)
+
+Read the full post from the nlmixr2 blog: [Adaptive dosing in rxode2](https://blog.nlmixr2.org/blog/2026-09-09-adaptive-dosing/)
+
+## Why nlmixr2?
+
+The vision of nlmixr2 is to develop a R-based open-source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.
+
+In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.
+
+From: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)
+
+## Get involved in the nlmixr2 working group
+
+The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:
+
+Main repo: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)  
+Issues: [https://github.com/nlmixr2/nlmixr2/issues](https://github.com/nlmixr2/nlmixr2/issues)  
+Discussions: [https://github.com/nlmixr2/nlmixr2/discussions](https://github.com/nlmixr2/nlmixr2/discussions)
