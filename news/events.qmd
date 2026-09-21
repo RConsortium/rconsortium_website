@@ -12,22 +12,27 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html">Sustaining R: Investing in the People, Infrastructure, and Community Behind R</a>',
     '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI 2026</a>',
     '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
   dates = c(
+    "Oct 6, 2026",
     "Nov 10-11, 2026",
     "Nov 11, 2026"
   ),
   location = c(
     "Virtual",
+    "Virtual",
     "Virtual"
   ),
   icon = c(
+    "Webinar",
     "Conference",
     "Conference"
   ),
   Type = c(
+    "Webinar",
     "Conference",
     "Conference"
   ),
