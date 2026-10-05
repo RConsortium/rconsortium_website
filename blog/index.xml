@@ -10,7 +10,49 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Fri, 18 Sep 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 05 Oct 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Model Diagrams and Equations, Straight from the Code</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/nlmixr2-model-diagrams-equations/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/nlmixr2-model-diagrams-equations/code-to-math.png" class="img-fluid" style="width:100.0%" alt="Illustration titled Code to Math: model code leads to a two-compartment diagram of depot, central, and peripheral compartments and the matching differential equations"></p>
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-09-29-model-diagrams-equations/">here</a>.</em></p>
+<p>The nlmixr2 Working Group continues to expand what open source R tooling can support in pharmacometrics. In a new post, Matthew Fidler shows how the figure and the equations in a report can be generated from the model that was actually fit. <code>nlmixr2plot</code> 5.2.0 adds <code>modelDiagram()</code>, which reads the <code>d/dt()</code> equations and draws the compartment diagram. <code>nlmixr2extra</code> turns that same model object into aligned LaTeX equations with <code>knit_print()</code>. Because both read the fit, they stay with it when a transit compartment, an effect, or a covariate changes.</p>
+<p>That closes a common gap in pharmacometric reports, where the diagram is drawn by hand and the equations are typed separately, then left behind as the model changes. The post covers three diagram engines (<code>ggplot2</code>, <code>DiagrammeR</code>, and Graphviz DOT), pharmacodynamic arrows whose direction is read from the equation, and one R Markdown file that knits the diagram, the equations, and the parameter table to Word, HTML, and PDF. In the development version of <code>nlmixr2rpt</code> (0.2.3), the default Word and PowerPoint reports open with that diagram and those equations.</p>
+<p>Watch the 8-minute narrated walkthrough: <a href="https://youtu.be/Jf9QbmuR_Xw">https://youtu.be/Jf9QbmuR_Xw</a></p>
+<p>Read the full post from the nlmixr2 blog: <a href="https://blog.nlmixr2.org/blog/2026-09-29-model-diagrams-equations/">Model diagrams and equations, straight from the code</a></p>
+<section id="why-nlmixr2" class="level2">
+<h2 class="anchored" data-anchor-id="why-nlmixr2">Why nlmixr2?</h2>
+<p>The vision of nlmixr2 is to develop a R-based open source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.</p>
+<p>In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.</p>
+<p>From: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a></p>
+</section>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>pharma</category>
+  <category>submissions</category>
+  <category>clinical research</category>
+  <category>announcements</category>
+  <category>working groups</category>
+  <guid>https://r-consortium.org/posts/nlmixr2-model-diagrams-equations/</guid>
+  <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/nlmixr2-model-diagrams-equations/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
+</item>
 <item>
   <title>Adaptive Dosing in rxode2: Event Tables That Follow the Patient</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1700,82 +1742,6 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</guid>
   <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/bioc-pkg.png" medium="image" type="image/png" height="87" width="144"/>
-</item>
-<item>
-  <title>Q1 2026 Update: Community Growth, Collaboration, and Momentum Across the R Ecosystem</title>
-  <dc:creator>Terry Christiani, Executive Director</dc:creator>
-  <link>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>As we move through 2026, the R Consortium continues its social infrastructure mission to support and grow the global R community. The first quarter of the year has been marked by continued growth in technical collaboration, community engagement, and events that bring R users together to share ideas and innovation.</p>
-<p>Investments from the <a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">Sovereign Tech Fund</a> and the <a href="https://www.software.ac.uk/ssi-awards-funding-13-critical-projects-through-research-software-maintenance-fund-round-1">Research Software Maintenance Fund</a> in the R Foundation are underwriting significant progress in R’s sustainability and security through infrastructure modernization, active mentorship of the next generation of R Core, and increased engagement with the community.</p>
-<p>At the R Consortium, one of our roles is to help sustain and strengthen the ecosystem that supports R. That means supporting open technical work through our Infrastructure Steering Committee (ISC) grants, enabling grassroots community growth through R User Group (RUG) micro-grants, supporting R-Ladies promote gender diversity in the R community, and hosting multi-day events and webinars where practitioners can exchange knowledge and showcase how R is used to solve real problems.</p>
-<p>Together, these efforts reinforce a central goal: ensuring that R remains a vibrant, collaborative environment for statistical computing, data science, and applied analytics across industries.</p>
-<p><img src="https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/2026-collage.png" class="img-fluid" alt="Collage of 2026 R Consortium images"></p>
-<section id="structured-for-the-r-community" class="level2">
-<h2 class="anchored" data-anchor-id="structured-for-the-r-community">Structured for the R Community</h2>
-<p>I have focused my efforts as executive director in building a sustainable, annual platform for community events. These events provide a collegial and relevant venue for practitioners to share research, demonstrate applications, and discuss emerging trends across the R ecosystem.</p>
-<p>The R Consortium now annually hosts three flagship events:</p>
-<ul>
-<li>R/Medicine, which brings together experts applying R in healthcare, clinical research, and biomedical data analysis<br>
-</li>
-<li>R+AI, focused on the growing intersection of R with artificial intelligence and machine learning<br>
-</li>
-<li>R!sk, highlighting applications of R in financial risk, modeling, and quantitative analysis</li>
-</ul>
-<p>R/Medicine has grown into an important forum for knowledge exchange within its domain. Our inaugural R+AI and R!sk events focused on specific application areas, and provided the opportunity formeaningful discussions among practitioners facing similar challenges.</p>
-<p>At the same time, they connect participants to the broader R community, across specialities and industries.</p>
-<p>In addition to these hosted events, the R Consortium continues to sponsor useR!, the long-standing global conference for the R community. While useR! is organized independently, sponsorship helps support the conference and ensures that it remains accessible to the global R community.</p>
-<p>Together, these events create a structured platform for engagement across the ecosystem. The events help tell the stories of how R is used in practice - from clinical trials and financial modeling to AI workflows and reproducible research.</p>
-</section>
-<section id="supporting-the-technical-foundation-of-r" class="level2">
-<h2 class="anchored" data-anchor-id="supporting-the-technical-foundation-of-r">Supporting the Technical Foundation of R</h2>
-<p>One of the R Consortium’s most important responsibilities is supporting technical projects that benefit the broader R ecosystem. Through the ISC grants program and working groups, the Consortium helps fund and coordinate work that improves infrastructure, tooling, and long-term sustainability.</p>
-<p>ISC working groups bring together experts from multiple organizations to tackle challenges that benefit the entire community. These collaborative efforts lead to improvements that ripple across the entire ecosystem. From package infrastructure and interoperability to tools that make R more reliable in production and regulatory environments.</p>
-<p>At the end of 2025, the R Consortium announced eight newly funded ISC technical projects, continuing our investment in strengthening and modernizing the infrastructure that supports the global R ecosystem. These projects represent ongoing renewal and improvement of core capabilities across developer tooling, reproducible workflows, internationalization, and data infrastructure. Highlights include rw, a CLI for webR with sandboxing features; rextendr, supporting scientific computing development with Rust and R; birdnetTools 2.0, linking BirdNET outputs to occupancy modeling in R; and extendr, advancing modern object-oriented programming tools for R.</p>
-<p>Additional projects focus on ecosystem-wide improvements, including a consistent translations glossary for R, version-controlled reproducible workflows, efforts to modernize R’s web-mapping capabilities, and translating the <em>Causal Inference for the Brave and True</em> book to R. Together, these initiatives demonstrate the R Consortium’s ongoing commitment to strengthening the technical foundations that help the R community innovate and collaborate.</p>
-<p>The full list of funded projects is available here:<br>
-<a href="https://r-consortium.org/all-projects/funded-projects.html">https://r-consortium.org/all-projects/funded-projects.html</a></p>
-<p>For organizations that rely on R but may not yet be ready to become members of the R Consortium, participating in a working group is often the best first step. It allows teams to collaborate directly with other R practitioners, help shape technical priorities, and contribute to solutions that strengthen the ecosystem.</p>
-<p>You can explore the current working groups here:<br>
-<a href="https://r-consortium.org/all-projects/isc-working-groups.html">https://r-consortium.org/all-projects/isc-working-groups.html</a></p>
-</section>
-<section id="grassroots-growth-through-r-ladies-and-r-user-groups" class="level2">
-<h2 class="anchored" data-anchor-id="grassroots-growth-through-r-ladies-and-r-user-groups">Grassroots Growth Through R-Ladies and R User Groups</h2>
-<p>While technical work strengthens the infrastructure of R, community engagement helps the education ecosystem continue to grow and builds bridges to industry. The R Consortium has long supported this grassroots layer of the community through programs such as R-Ladies+, a Top-Level Project at the R Consortium, that promotes gender diversity in the R ecosystem by supporting women and underrepresented groups in learning and using R. With hundreds of chapters around the world, R-Ladies+ provides mentorship, training, and community support that helps expand access to data science and statistical computing. Their mission, to achieve gender diversity among R users, developers, and leaders, continues to have a powerful impact across the global R community.</p>
-<p>Alongside R-Ladies+, the R Consortium’s R User Group (RUG) micro-grant program helps local organizers host meetups, workshops, and small events that bring together practitioners from academia, industry, and government. These groups are often where new users first connect with the R community, providing welcoming spaces for learning, mentorship, and collaboration. Over time, many of these local networks become hubs for innovation and knowledge sharing. The stories emerging from these communities, from the Philippines and Malaysia to the United Kingdom, Australia, and beyond, highlight the global reach of R.</p>
-<p>You can read many of these R-Ladies and R User Groups community stories on the R Consortium blog: <a href="https://r-consortium.org/blog/">https://r-consortium.org/blog/</a></p>
-</section>
-<section id="opportunities-to-get-involved" class="level2">
-<h2 class="anchored" data-anchor-id="opportunities-to-get-involved">Opportunities to Get Involved</h2>
-<p>For organizations that rely on R or are exploring how R can support their data science and analytics work there are several ways to engage with the R Consortium.</p>
-<p>One option is to join an ISC working group and collaborate directly with peers on projects that strengthen the R ecosystem. R Consortium membership is not required.</p>
-<p>Another opportunity is to share your organization’s experience with R through a blog post or webinar. Many companies have compelling stories about how they use R to drive innovation, and sharing those stories benefits the broader community.</p>
-<p>Of course, the most impactful way to participate is to become a member of the R Consortium. Membership supports the programs that sustain the ecosystem - technical grants, community initiatives, and global events - and helps ensure that R continues to thrive.</p>
-<p>More information here: <a href="https://r-consortium.org/about/join.html">https://r-consortium.org/about/join.html</a></p>
-</section>
-<section id="looking-ahead" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
-<p>The first quarter of 2026 demonstrates the continued vitality of the R ecosystem. Through technical collaboration, grassroots community engagement, and a growing platform of global events, the R Consortium is helping bring practitioners together and amplify the work happening across the community.</p>
-<p>By providing platforms for sharing innovation, providing funds to build and improve R infrastructure, telling community stories, and encouraging collaboration across organizations and industries, we can ensure that R continues to evolve and expand.</p>
-<p>I look forward to continuing this momentum throughout the year and to welcoming new participants into the community along the way.</p>
-
-
-</section>
-
- ]]></description>
-  <category>top level projects</category>
-  <category>isc</category>
-  <category>announcements</category>
-  <category>rugs</category>
-  <category>events</category>
-  <guid>https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/</guid>
-  <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/community-growth-collaboration-momentum-across-r-ecosystem/r_wordcloud.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
