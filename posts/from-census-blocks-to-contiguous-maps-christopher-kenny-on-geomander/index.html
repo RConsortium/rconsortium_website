@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="R Consortium">
+<meta name="dcterms.date" content="2026-10-07">
+<meta name="description" content="Christopher T. Kenny discusses geomander, an R package that prepares messy geographic election data for redistricting research, journalism, and voting-rights work.">
+
+<title>From Census Blocks to Legal Contiguity: Christopher T. Kenny on geomander – R Consortium</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//images/rc-favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-609e0ed9670d325724d610bb306d8b49.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B697SX1BNN"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-B697SX1BNN', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo light-content">
+    <img src="../../images/RConsortium_Horizontal_Pantone.webp" alt="R Consortium logo" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../about/index.html">
+ <span class="dropdown-text">Mission</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Bylaws-09-23-2026.pdf">
+ <span class="dropdown-text">Bylaws (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../governance/isc-charter.html">
+ <span class="dropdown-text">ISC Charter</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Marketing-Committee-Charter-2021-10-27.pdf">
+ <span class="dropdown-text">Marketing Committee Charter (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/faq.html">
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/privacy.html">
+ <span class="dropdown-text">Privacy Policy</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Members</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
+        <li>
+    <a class="dropdown-item" href="../../members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about/join.html">
+ <span class="dropdown-text">Join</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../rc-docs/R-Consortium-Membership-Agreement-1157181-v2-Approved-11.20.19.pdf">
+ <span class="dropdown-text">Membership Agreement (PDF)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-grants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Grants</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-grants">    
+        <li>
+    <a class="dropdown-item" href="../../all-projects/index.html">
+ <span class="dropdown-text">Goal of ISC Grants Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/funded-projects.html">
+ <span class="dropdown-text">Recipients of ISC Grants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/callforproposals.html">
+ <span class="dropdown-text">Call for Proposals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/rugsprogram.html">
+ <span class="dropdown-text">RUGS Program</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/submittingforpayment.html">
+ <span class="dropdown-text">Submitting for payment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="https://rladies.org/">
+ <span class="dropdown-text">R-Ladies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-dbi.org/">
+ <span class="dropdown-text">DBI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r-universe.dev/search">
+ <span class="dropdown-text">R-Universe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/isc-working-groups.html">
+ <span class="dropdown-text">Working Groups</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../all-projects/previous-top-level-projects.html">
+ <span class="dropdown-text">Previous Top-Level Projects</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="https://rconsortium.github.io/RplusAI_website/">
+ <span class="dropdown-text">R+AI 2026 (Nov 10-11, 2026)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../webinars/webinars.html">
+ <span class="dropdown-text">Webinars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/events.html">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../news/cal.html">
+ <span class="dropdown-text">Working Groups Calendar</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="../../blog/index.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../newsletters/newsletters.html">
+ <span class="dropdown-text">Newsletter</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../codeofconduct.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rconsortium"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/r-consortium/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@RConsortium"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/rconsortium.bsky.social"> 
+<span class="menu-text"><i class="bi-bluesky " style="" role="img" aria-hidden="true"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@RConsortium"> <i class="bi bi-youtube" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">From Census Blocks to Legal Contiguity: Christopher T. Kenny on geomander</h1>
+                  <div>
+        <div class="description">
+          Christopher T. Kenny discusses geomander, an R package that prepares messy geographic election data for redistricting research, journalism, and voting-rights work.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">software development</div>
+                <div class="quarto-category">north america</div>
+                <div class="quarto-category">political science</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>R Consortium </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 7, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><em>How an R package makes redistricting data preparation faster, more transparent, and usable across political science, journalism, and voting-rights advocacy</em></p>
+<p>Redistricting analysis depends on geography that rarely arrives analysis-ready. Census demographics, precinct election returns, school districts, and legislative maps come from different agencies, at different geographic levels, and with boundaries that often fail to line up. Before researchers can simulate alternative maps or evaluate a plan, they have to stitch those sources together, fix gaps and overlaps, and represent legal rules about which areas count as contiguous.</p>
+<p><a href="https://christophertkenny.com/">Christopher T. Kenny, PhD</a>, is a postdoctoral research associate at Princeton Data-Driven Social Science. He received his PhD in Government from Harvard University in 2025, after a B.A. in Mathematics and Government from Cornell University and an M.A.&nbsp;in Government from Harvard. His research focuses on American politics and political methodology, with a specialization in redistricting. He is a founding member and co-PI of the Algorithm-Assisted Redistricting Methodology (ALARM) Project and has been affiliated with Harvard’s Center for American Political Studies, the Institute for Quantitative Social Science, and the Election Law Clinic at Harvard Law School.</p>
+<p><img src="christopher-kenny.jpg" class="img-fluid" alt="Christopher T. Kenny, developer of the geomander R package"></p>
+<p><em>Christopher T. Kenny. Photo courtesy of <a href="https://christophertkenny.com/">christophertkenny.com</a>.</em></p>
+<p>Kenny developed <a href="https://christophertkenny.com/geomander/">geomander</a> over the past five years as geographic infrastructure for studying gerrymandering. The package is designed to prepare spatial data for simulation and analysis with <a href="https://alarm-redist.org/redist/">redist</a>, focusing on matching geographies, aggregating and disaggregating counts, and adjusting adjacency so maps reflect legal contiguity rather than messy shapefile artifacts. In 2026, the Society for Political Methodology awarded geomander its Statistical Software Award. Kenny has not received funding from the R Consortium for the package; the interview is part of the Consortium’s broader interest in how R is used across research, public-interest work, and civic analysis.</p>
+<p><img src="geomander-hex.png" class="img-fluid" alt="geomander hex sticker logo" width="180"></p>
+<p><strong>Project website:</strong> <a href="https://christophertkenny.com/geomander/">geomander</a></p>
+<p><strong>CRAN:</strong> <a href="https://cran.r-project.org/package=geomander">geomander</a></p>
+<p>The R Consortium spoke with Kenny about the problems geomander solves, how it fits with redist, and why R has become central to political science and voting-rights work.</p>
+<p><em>This interview has been edited for clarity and length.</em></p>
+<p><strong>1. For readers who are unfamiliar with redistricting analysis, what problem does geomander solve? What kinds of geographic data preparation are difficult or time-consuming without it?</strong></p>
+<p>There are two big things that geomander tries to solve. The first is that data for redistricting come from a lot of different sources. There is no national clearinghouse for this type of data. The Census Bureau provides a lot of the fine-grained demographic data that is used, but every state has its own process, and each county often manages its own election data. When you want to bring these things together, you are working with somewhere between one and about 3,200 independent entities producing data of very different quality.</p>
+<p>Amazing tools like sf and geos provide great ways to read the data. geomander says: here are the common problems with that data, and here is how we adjust it in a way that gives you a common output. The second part is in that same vein. It provides tools for stitching the seam between two counties. If, for example, you have Bronx County and Westchester County, two counties that are adjacent in New York but provide the data separately, you know they are adjacent and that their borders should align. Often the data do not. You might have a gap, or a lot of overlap between them, that is not a real geographic gap. geomander helps read in those data sources and then deal with imperfect data—fixing overlaps or gaps—so you can bring things together.</p>
+<p><strong>2. A common challenge is combining information reported at different geographic levels—for example, census blocks, precincts, school districts, and electoral districts. How does geomander help researchers match, aggregate, or disaggregate these data?</strong></p>
+<p>geomander provides a set of very performant ways to match across levels. In the redistricting world we often have a nesting structure: many small units that nest into and cover an entire larger unit. Census blocks—of which there are hundreds of thousands in large states—all nest into congressional districts or state legislative districts.</p>
+<p>In the generic spatial-tools world, that creates a giant matrix, say 700,000 rows by 14,000 columns, which is not nice to work with. What we know about the data-generation process is that census blocks will almost never be split. Rather than working with that giant matrix, geomander asks what the best match is for a given block. That immediately reduces the problem and is significantly faster.</p>
+<p>For repeated spatial operations like that, geomander uses the geos package, which is a much lower-level approach than the standard sf package a lot of these tools would otherwise use. It tries to use what we know about how districts are drawn to reduce the computational burden. Once you have a crosswalk between the small geographies and the big geographies, there are additional helpers to aggregate those blocks into precincts within a county or across counties, so you can get from those 700,000 rows down to the 2,000 or 3,000 precincts you want to work with most of the time.</p>
+<p>One of the things that makes redistricting have this structure is detailed legal rules that constrain how you can draw plans. In the United States, in the 2010 cycle and the 2020 cycle as well, only something like six blocks were split in the entire country, out of millions of blocks. That gives a lot of structure you can use on the R side. These blocks are drawn in concert with the towns and counties they are drawn for. They become a common unit that people actually draw their plans out of, and they have input between each decade on how they think those units should change. The Census Bureau started collecting the shapes for the 2020 Census around 2017 or 2018, making prototypes by 2019, when they were finalized. They repeat this process every decade and the shapes change every decade. It is a multi-year process involving a lot of different players, and that happens to be very useful when you want to break data down or make the matching fast.</p>
+<p><img src="geomander-geo-trim.png" class="img-fluid" alt="Map of census blocks around North Rockland Central School District in New York. Blocks that remain after geomander’s geo_trim function are shown in teal; blocks that fall outside the district are shown in red."></p>
+<p><em>geomander trimming census blocks to a target school district. Teal blocks stay; red blocks are outside the district and would be dropped. Figure from the <a href="https://christophertkenny.com/geomander/articles/Redistricting_School_Districts.html">Redistricting School Districts</a> vignette on <a href="https://christophertkenny.com/">christophertkenny.com</a>.</em></p>
+<p><strong>3. geomander is designed to work alongside redist, while focusing on the geographic preparation required before simulation and analysis. How do the two packages fit together in a typical redistricting research workflow?</strong></p>
+<p>They will almost always be sequential. You start with geomander and then work with redist. geomander provides the geographic tools for blending this data. As we discussed with election data, you will have demographic data, and you might have voter-file data that you need to aggregate. All of these types of data can be brought together on the geomander side.</p>
+<p>Then there is a little switch you have to make: the spatial data frame is going to be represented by redist as a graph—in the mathematical sense of vertices and edges—where each unit, say a precinct or a voting district, is connected to the places it is geographically adjacent to. That contiguity defines the edges; the precincts define the vertices. That falls prey to all of the county-level issues we talked about: data that have not actually been matched up, or a hole in the map.</p>
+<p>What geomander has, to get you from step one to step two, is a bunch of tools that help you adjust the contiguity of your objects artificially. It is a lot of work to try to change the actual shapes, and editing the shapes is not going to get you any purchase in downstream analysis. Instead you say, artificially, we are going to connect this part of the map. Some states, such as Idaho, have rules that precincts are only contiguous across counties if they are connected by a major highway. There you will see precincts that are geographically contiguous but legally are not. geomander also has tools that say: let’s remove the seam between the two counties; we’ll remove all those edges.</p>
+<p>So geomander is the pre-data-wrangling and pre-cleanup step, and it gives you rules to handle that. That’s exactly right. All the different tools are inspired by things like Idaho’s unusual rules, or the fact that San Francisco is not actually connected geographically to parts of the state where it should be treated as connected. You have islands off to the side that are considered contiguous to their nearest point on land in the county. That becomes a single line in geomander because we know those types of rules are out there. Then redist can take in that shape with its somewhat artificially constructed graph—fake in the geographic sense, but made to be truthful to how that geography is legally defined. From there you can generate large sets of alternative redistricting plans, drawn depending on what constraints are allowed by a given state.</p>
+<p><strong>4. Which geomander capabilities do you consider especially important or distinctive? Are there particular functions or workflows that have proven more useful to researchers than you initially expected?</strong></p>
+<p>There is one that stands out: a contiguity checker on your adjacency graphs. Packages like igraph have incredibly fast implementations. This gives a relatively quick line that can apply to large matrices. Sometimes you generate plans that may not be contiguous. When I have gone to work with this, it is one of those tools that lets you check, for very large numbers of plans, whether they are contiguous under different ways of thinking about contiguity. That has become one of the particularly helpful tools.</p>
+<p>This matter is not just for the United States. Off of my team, there is a group that works on Japanese redistricting. If you think we have island problems, they have island disasters, because everything is an island, and things like contiguity are defined by area gaps. That becomes a major problem. One of the things that can happen is that you set up these artificial adjacencies incorrectly and create a backdoor loop. You never want to introduce a loop when you are doing this, because you can end up creating non-contiguous plans based on that adjacency. This type of check is very helpful for that back-of-the-envelope question: did we do things wrong? Do we need to adjust things and rerun?</p>
+<p><strong>5. Who is using geomander today? Is its audience primarily academic researchers, or is it also being used by journalists, government agencies, voting-rights organizations, mapmakers, or others working on redistricting?</strong></p>
+<p>Naturally, most of the audience is academic researchers. But I do know the <em>San Francisco Chronicle</em> has used it, along with redist, for some research. There are journalists in Florida who have used it. Then the rest of it is mostly voting-rights organizations. There is a lot of litigation that happens following the passage of pretty much any redistricting plan these days. From speaking with people and seeing expert reports and briefs of organizations to courts, it is used heavily there for preparation.</p>
+<p>That is because most of the people who are working on voting rights are using R. The preponderance of political science is in R. A lot of the methods that political scientists would use exist in R—the causal inference methods, graphing, of course. Things like the tidyverse are taught in pretty much every political science course now. Some of this is just the weird history of the field. About 25 years ago there were only two political science departments that taught statistics. Both of them started using R, and that has passed through generations of people training the next generation. I actually do not think I could name a single political science department that is not using R as its primary thing. Of course there are some people who use Stata, and a small set of things in Python, but pretty much the whole field uses R.</p>
+<p><strong>6. Geographic boundaries from different data sources often do not line up perfectly, and different matching or estimation methods can produce different results. How should researchers validate these choices and communicate the assumptions or uncertainty involved? How does geomander help make that process more transparent and reproducible?</strong></p>
+<p>To use geomander, you need to write the code, and it is going to give you a report of exactly what you connected and in what order. It will give you exact cases, and even things like the citation you should include when you use certain data sources, to try to give everyone a running record of what has changed.</p>
+<p>This has become, when I mention litigation, a very important thing, because that setting is much more adversarial than regular academic research. Using geomander to connect those graphs gives kind of an audit log of exactly what you have done. We also have an interactive tool, redistio, and there is an adjacency editor in there. When you are clicking through the interactive editor, it will print out code that you can copy, and that is exactly geomander code. You can add comments as you go, and it will put it into pipes so you can make a commented, edited block: here we are connecting the roads; here we are disconnecting the counties that are not connected by highways; here are the islands; some cities have roads about rivers, things of that nature.</p>
+<p>The whole thing is just to make it very clear exactly what is going on. You can do it by row index, which is not necessarily advised. You can also do it by identifier, so it is very clear what identifiers you are linking.</p>
+<p><strong>7. What’s next for geomander?</strong></p>
+<p>geomander is about five years old now, and the core feature set is fairly fixed. It is a piece in a larger machine, the redistverse—around 15 packages at this point—to cover different parts of the workflow, different types of data, different types of visualization, contracted tools, and so on. The core purpose of geomander is fixed. A lot of what will continue to come out are things like rewriting core functionality in Rcpp or C when we start pushing more data or decide it needs to be faster. Pretty much for the last year there have been almost no new features. Almost every change has been taking an existing tool and putting it in C or C++. That makes it significantly faster without changing the user experience. It is still just the same function.</p>
+<p>Of course things will get added over time. There are always new groups that appear that do collections of election data. One of the sets of tools for data ingestion is ways to read a given organization or educational group’s set of names into a common format. One thing that I know will be added very soon, because I need it and I started writing it, is support for a relatively newer group that has been collecting redistricting data over the past few years. Since they are collecting a lot of the new election data, they have their own custom name format, and there will be a function that converts all of their names into the clean, readable names we use in geomander.</p>
+<p>We are under different constraints, because many of these groups are picking up shapefiles that limit how many characters you can have in a name, so they have their own specific conventions. The goal of geomander is that you can ingest from any format that sf takes, and then you can push it through GeoJSON or GeoParquet, or whatever type of output makes more sense for you. That allows a lot more flexibility. I am doing all the geomander work, but my colleagues, who also use it heavily, have thoughts. They want standardized names that follow a format such as election type and year, all underscore-delimited, so it is very human readable. I know there is something coming soon that will ingest more of those names.</p>
+<p><img src="districts-vs-precincts.png" class="img-fluid" alt="Side-by-side maps of the contiguous United States. The left map shows 435 congressional districts as large polygons. The right map shows about 156,000 Census voting districts as a much finer mesh."></p>
+<p><em>Same country, very different geographic grain. Left: congressional districts for the 119th Congress (435 U.S. House seats). Right: 2020 Census voting districts, the national Census geography closest to precincts—not counties, of which there are only about 3,100. Kenny’s figure of about 180,000 precincts is the election geography researchers actually want to work with. Maps: U.S. Census Bureau cartographic boundary files (public domain).</em></p>
+<p>There is a feature of this field that only since about 2008 do we have very good precinct-level data. For years before that, most of what is available historically has exceptions—Wisconsin has a great data office that goes back to the 1980s—but in most places you are looking at a snapshot from 2008, and only now, for 2024, 16 years later. For this type of fine-grained data that I often use, it is a very limited window. geomander can take all those different sources and pull them together. We are coming up on a new election, and we will have new data, we can do new things, we can understand more, because that fine-grained data gets us a lot more insight than district-level data. There are only 435 districts at the congressional level. There are about 180,000 precincts. You can do a lot more with 180,000 precincts across the United States than you can with 435 districts. Every election has a chance to get new data.</p>
+<p>Before 2008 it was not cataloged in the same way. To use precinct data, you need both the shapefiles and the tabular data—votes for Harris, votes for Trump, and so on. In places, people were not putting out shapefiles for their data. We can get CSVs for 1995, but then you are looking at a CSV that has some identifiers and no way to figure out what those identifiers mean. There is no way to actually use that in research. Even though it exists in a way, the shapes do not. Shapefiles are only an invention of, I want to say, about 1990. There is a lag before counting offices across the United States adopted those types of tools.</p>
+<p>The only random tidbit to add is that this package actually started because I needed these tools for classwork during grad school. Most of the core functionality comes out of random analysis scripts from doing problem sets during class. Then the summer after, I sat down to make this useful. That is kind of a fun tidbit of why it even exists.</p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://christophertkenny.com/">Christopher T. Kenny’s website</a></li>
+<li><a href="https://christophertkenny.com/geomander/">geomander project website</a></li>
+<li><a href="https://cran.r-project.org/package=geomander">geomander on CRAN</a></li>
+<li><a href="https://github.com/christopherkenny/geomander">geomander on GitHub</a></li>
+<li><a href="https://alarm-redist.org/">ALARM Project</a></li>
+<li><a href="https://alarm-redist.org/redist/">redist</a></li>
+</ul>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/r-consortium\.org");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 R Consortium. R Consortium is a non-profit organization, and R Consortium™ is a trademark of R Consortium. All Rights Reserved.<br>This website is built on Quarto, an open-source scientific and technical publishing system. Quarto uses R Markdown and knitr to execute R code.<br>Contact us at: info@r-consortium.org</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

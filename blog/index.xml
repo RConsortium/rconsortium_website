@@ -9,8 +9,83 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 05 Oct 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.19</generator>
+<lastBuildDate>Wed, 07 Oct 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>From Census Blocks to Legal Contiguity: Christopher T. Kenny on geomander</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>How an R package makes redistricting data preparation faster, more transparent, and usable across political science, journalism, and voting-rights advocacy</em></p>
+<p>Redistricting analysis depends on geography that rarely arrives analysis-ready. Census demographics, precinct election returns, school districts, and legislative maps come from different agencies, at different geographic levels, and with boundaries that often fail to line up. Before researchers can simulate alternative maps or evaluate a plan, they have to stitch those sources together, fix gaps and overlaps, and represent legal rules about which areas count as contiguous.</p>
+<p><a href="https://christophertkenny.com/">Christopher T. Kenny, PhD</a>, is a postdoctoral research associate at Princeton Data-Driven Social Science. He received his PhD in Government from Harvard University in 2025, after a B.A. in Mathematics and Government from Cornell University and an M.A.&nbsp;in Government from Harvard. His research focuses on American politics and political methodology, with a specialization in redistricting. He is a founding member and co-PI of the Algorithm-Assisted Redistricting Methodology (ALARM) Project and has been affiliated with Harvard’s Center for American Political Studies, the Institute for Quantitative Social Science, and the Election Law Clinic at Harvard Law School.</p>
+<p><img src="https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/christopher-kenny.jpg" class="img-fluid" alt="Christopher T. Kenny, developer of the geomander R package"></p>
+<p><em>Christopher T. Kenny. Photo courtesy of <a href="https://christophertkenny.com/">christophertkenny.com</a>.</em></p>
+<p>Kenny developed <a href="https://christophertkenny.com/geomander/">geomander</a> over the past five years as geographic infrastructure for studying gerrymandering. The package is designed to prepare spatial data for simulation and analysis with <a href="https://alarm-redist.org/redist/">redist</a>, focusing on matching geographies, aggregating and disaggregating counts, and adjusting adjacency so maps reflect legal contiguity rather than messy shapefile artifacts. In 2026, the Society for Political Methodology awarded geomander its Statistical Software Award. Kenny has not received funding from the R Consortium for the package; the interview is part of the Consortium’s broader interest in how R is used across research, public-interest work, and civic analysis.</p>
+<p><img src="https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/geomander-hex.png" class="img-fluid" alt="geomander hex sticker logo" width="180"></p>
+<p><strong>Project website:</strong> <a href="https://christophertkenny.com/geomander/">geomander</a></p>
+<p><strong>CRAN:</strong> <a href="https://cran.r-project.org/package=geomander">geomander</a></p>
+<p>The R Consortium spoke with Kenny about the problems geomander solves, how it fits with redist, and why R has become central to political science and voting-rights work.</p>
+<p><em>This interview has been edited for clarity and length.</em></p>
+<p><strong>1. For readers who are unfamiliar with redistricting analysis, what problem does geomander solve? What kinds of geographic data preparation are difficult or time-consuming without it?</strong></p>
+<p>There are two big things that geomander tries to solve. The first is that data for redistricting come from a lot of different sources. There is no national clearinghouse for this type of data. The Census Bureau provides a lot of the fine-grained demographic data that is used, but every state has its own process, and each county often manages its own election data. When you want to bring these things together, you are working with somewhere between one and about 3,200 independent entities producing data of very different quality.</p>
+<p>Amazing tools like sf and geos provide great ways to read the data. geomander says: here are the common problems with that data, and here is how we adjust it in a way that gives you a common output. The second part is in that same vein. It provides tools for stitching the seam between two counties. If, for example, you have Bronx County and Westchester County, two counties that are adjacent in New York but provide the data separately, you know they are adjacent and that their borders should align. Often the data do not. You might have a gap, or a lot of overlap between them, that is not a real geographic gap. geomander helps read in those data sources and then deal with imperfect data—fixing overlaps or gaps—so you can bring things together.</p>
+<p><strong>2. A common challenge is combining information reported at different geographic levels—for example, census blocks, precincts, school districts, and electoral districts. How does geomander help researchers match, aggregate, or disaggregate these data?</strong></p>
+<p>geomander provides a set of very performant ways to match across levels. In the redistricting world we often have a nesting structure: many small units that nest into and cover an entire larger unit. Census blocks—of which there are hundreds of thousands in large states—all nest into congressional districts or state legislative districts.</p>
+<p>In the generic spatial-tools world, that creates a giant matrix, say 700,000 rows by 14,000 columns, which is not nice to work with. What we know about the data-generation process is that census blocks will almost never be split. Rather than working with that giant matrix, geomander asks what the best match is for a given block. That immediately reduces the problem and is significantly faster.</p>
+<p>For repeated spatial operations like that, geomander uses the geos package, which is a much lower-level approach than the standard sf package a lot of these tools would otherwise use. It tries to use what we know about how districts are drawn to reduce the computational burden. Once you have a crosswalk between the small geographies and the big geographies, there are additional helpers to aggregate those blocks into precincts within a county or across counties, so you can get from those 700,000 rows down to the 2,000 or 3,000 precincts you want to work with most of the time.</p>
+<p>One of the things that makes redistricting have this structure is detailed legal rules that constrain how you can draw plans. In the United States, in the 2010 cycle and the 2020 cycle as well, only something like six blocks were split in the entire country, out of millions of blocks. That gives a lot of structure you can use on the R side. These blocks are drawn in concert with the towns and counties they are drawn for. They become a common unit that people actually draw their plans out of, and they have input between each decade on how they think those units should change. The Census Bureau started collecting the shapes for the 2020 Census around 2017 or 2018, making prototypes by 2019, when they were finalized. They repeat this process every decade and the shapes change every decade. It is a multi-year process involving a lot of different players, and that happens to be very useful when you want to break data down or make the matching fast.</p>
+<p><img src="https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/geomander-geo-trim.png" class="img-fluid" alt="Map of census blocks around North Rockland Central School District in New York. Blocks that remain after geomander’s geo_trim function are shown in teal; blocks that fall outside the district are shown in red."></p>
+<p><em>geomander trimming census blocks to a target school district. Teal blocks stay; red blocks are outside the district and would be dropped. Figure from the <a href="https://christophertkenny.com/geomander/articles/Redistricting_School_Districts.html">Redistricting School Districts</a> vignette on <a href="https://christophertkenny.com/">christophertkenny.com</a>.</em></p>
+<p><strong>3. geomander is designed to work alongside redist, while focusing on the geographic preparation required before simulation and analysis. How do the two packages fit together in a typical redistricting research workflow?</strong></p>
+<p>They will almost always be sequential. You start with geomander and then work with redist. geomander provides the geographic tools for blending this data. As we discussed with election data, you will have demographic data, and you might have voter-file data that you need to aggregate. All of these types of data can be brought together on the geomander side.</p>
+<p>Then there is a little switch you have to make: the spatial data frame is going to be represented by redist as a graph—in the mathematical sense of vertices and edges—where each unit, say a precinct or a voting district, is connected to the places it is geographically adjacent to. That contiguity defines the edges; the precincts define the vertices. That falls prey to all of the county-level issues we talked about: data that have not actually been matched up, or a hole in the map.</p>
+<p>What geomander has, to get you from step one to step two, is a bunch of tools that help you adjust the contiguity of your objects artificially. It is a lot of work to try to change the actual shapes, and editing the shapes is not going to get you any purchase in downstream analysis. Instead you say, artificially, we are going to connect this part of the map. Some states, such as Idaho, have rules that precincts are only contiguous across counties if they are connected by a major highway. There you will see precincts that are geographically contiguous but legally are not. geomander also has tools that say: let’s remove the seam between the two counties; we’ll remove all those edges.</p>
+<p>So geomander is the pre-data-wrangling and pre-cleanup step, and it gives you rules to handle that. That’s exactly right. All the different tools are inspired by things like Idaho’s unusual rules, or the fact that San Francisco is not actually connected geographically to parts of the state where it should be treated as connected. You have islands off to the side that are considered contiguous to their nearest point on land in the county. That becomes a single line in geomander because we know those types of rules are out there. Then redist can take in that shape with its somewhat artificially constructed graph—fake in the geographic sense, but made to be truthful to how that geography is legally defined. From there you can generate large sets of alternative redistricting plans, drawn depending on what constraints are allowed by a given state.</p>
+<p><strong>4. Which geomander capabilities do you consider especially important or distinctive? Are there particular functions or workflows that have proven more useful to researchers than you initially expected?</strong></p>
+<p>There is one that stands out: a contiguity checker on your adjacency graphs. Packages like igraph have incredibly fast implementations. This gives a relatively quick line that can apply to large matrices. Sometimes you generate plans that may not be contiguous. When I have gone to work with this, it is one of those tools that lets you check, for very large numbers of plans, whether they are contiguous under different ways of thinking about contiguity. That has become one of the particularly helpful tools.</p>
+<p>This matter is not just for the United States. Off of my team, there is a group that works on Japanese redistricting. If you think we have island problems, they have island disasters, because everything is an island, and things like contiguity are defined by area gaps. That becomes a major problem. One of the things that can happen is that you set up these artificial adjacencies incorrectly and create a backdoor loop. You never want to introduce a loop when you are doing this, because you can end up creating non-contiguous plans based on that adjacency. This type of check is very helpful for that back-of-the-envelope question: did we do things wrong? Do we need to adjust things and rerun?</p>
+<p><strong>5. Who is using geomander today? Is its audience primarily academic researchers, or is it also being used by journalists, government agencies, voting-rights organizations, mapmakers, or others working on redistricting?</strong></p>
+<p>Naturally, most of the audience is academic researchers. But I do know the <em>San Francisco Chronicle</em> has used it, along with redist, for some research. There are journalists in Florida who have used it. Then the rest of it is mostly voting-rights organizations. There is a lot of litigation that happens following the passage of pretty much any redistricting plan these days. From speaking with people and seeing expert reports and briefs of organizations to courts, it is used heavily there for preparation.</p>
+<p>That is because most of the people who are working on voting rights are using R. The preponderance of political science is in R. A lot of the methods that political scientists would use exist in R—the causal inference methods, graphing, of course. Things like the tidyverse are taught in pretty much every political science course now. Some of this is just the weird history of the field. About 25 years ago there were only two political science departments that taught statistics. Both of them started using R, and that has passed through generations of people training the next generation. I actually do not think I could name a single political science department that is not using R as its primary thing. Of course there are some people who use Stata, and a small set of things in Python, but pretty much the whole field uses R.</p>
+<p><strong>6. Geographic boundaries from different data sources often do not line up perfectly, and different matching or estimation methods can produce different results. How should researchers validate these choices and communicate the assumptions or uncertainty involved? How does geomander help make that process more transparent and reproducible?</strong></p>
+<p>To use geomander, you need to write the code, and it is going to give you a report of exactly what you connected and in what order. It will give you exact cases, and even things like the citation you should include when you use certain data sources, to try to give everyone a running record of what has changed.</p>
+<p>This has become, when I mention litigation, a very important thing, because that setting is much more adversarial than regular academic research. Using geomander to connect those graphs gives kind of an audit log of exactly what you have done. We also have an interactive tool, redistio, and there is an adjacency editor in there. When you are clicking through the interactive editor, it will print out code that you can copy, and that is exactly geomander code. You can add comments as you go, and it will put it into pipes so you can make a commented, edited block: here we are connecting the roads; here we are disconnecting the counties that are not connected by highways; here are the islands; some cities have roads about rivers, things of that nature.</p>
+<p>The whole thing is just to make it very clear exactly what is going on. You can do it by row index, which is not necessarily advised. You can also do it by identifier, so it is very clear what identifiers you are linking.</p>
+<p><strong>7. What’s next for geomander?</strong></p>
+<p>geomander is about five years old now, and the core feature set is fairly fixed. It is a piece in a larger machine, the redistverse—around 15 packages at this point—to cover different parts of the workflow, different types of data, different types of visualization, contracted tools, and so on. The core purpose of geomander is fixed. A lot of what will continue to come out are things like rewriting core functionality in Rcpp or C when we start pushing more data or decide it needs to be faster. Pretty much for the last year there have been almost no new features. Almost every change has been taking an existing tool and putting it in C or C++. That makes it significantly faster without changing the user experience. It is still just the same function.</p>
+<p>Of course things will get added over time. There are always new groups that appear that do collections of election data. One of the sets of tools for data ingestion is ways to read a given organization or educational group’s set of names into a common format. One thing that I know will be added very soon, because I need it and I started writing it, is support for a relatively newer group that has been collecting redistricting data over the past few years. Since they are collecting a lot of the new election data, they have their own custom name format, and there will be a function that converts all of their names into the clean, readable names we use in geomander.</p>
+<p>We are under different constraints, because many of these groups are picking up shapefiles that limit how many characters you can have in a name, so they have their own specific conventions. The goal of geomander is that you can ingest from any format that sf takes, and then you can push it through GeoJSON or GeoParquet, or whatever type of output makes more sense for you. That allows a lot more flexibility. I am doing all the geomander work, but my colleagues, who also use it heavily, have thoughts. They want standardized names that follow a format such as election type and year, all underscore-delimited, so it is very human readable. I know there is something coming soon that will ingest more of those names.</p>
+<p><img src="https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/districts-vs-precincts.png" class="img-fluid" alt="Side-by-side maps of the contiguous United States. The left map shows 435 congressional districts as large polygons. The right map shows about 156,000 Census voting districts as a much finer mesh."></p>
+<p><em>Same country, very different geographic grain. Left: congressional districts for the 119th Congress (435 U.S. House seats). Right: 2020 Census voting districts, the national Census geography closest to precincts—not counties, of which there are only about 3,100. Kenny’s figure of about 180,000 precincts is the election geography researchers actually want to work with. Maps: U.S. Census Bureau cartographic boundary files (public domain).</em></p>
+<p>There is a feature of this field that only since about 2008 do we have very good precinct-level data. For years before that, most of what is available historically has exceptions—Wisconsin has a great data office that goes back to the 1980s—but in most places you are looking at a snapshot from 2008, and only now, for 2024, 16 years later. For this type of fine-grained data that I often use, it is a very limited window. geomander can take all those different sources and pull them together. We are coming up on a new election, and we will have new data, we can do new things, we can understand more, because that fine-grained data gets us a lot more insight than district-level data. There are only 435 districts at the congressional level. There are about 180,000 precincts. You can do a lot more with 180,000 precincts across the United States than you can with 435 districts. Every election has a chance to get new data.</p>
+<p>Before 2008 it was not cataloged in the same way. To use precinct data, you need both the shapefiles and the tabular data—votes for Harris, votes for Trump, and so on. In places, people were not putting out shapefiles for their data. We can get CSVs for 1995, but then you are looking at a CSV that has some identifiers and no way to figure out what those identifiers mean. There is no way to actually use that in research. Even though it exists in a way, the shapes do not. Shapefiles are only an invention of, I want to say, about 1990. There is a lag before counting offices across the United States adopted those types of tools.</p>
+<p>The only random tidbit to add is that this package actually started because I needed these tools for classwork during grad school. Most of the core functionality comes out of random analysis scripts from doing problem sets during class. Then the summer after, I sat down to make this useful. That is kind of a fun tidbit of why it even exists.</p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://christophertkenny.com/">Christopher T. Kenny’s website</a></li>
+<li><a href="https://christophertkenny.com/geomander/">geomander project website</a></li>
+<li><a href="https://cran.r-project.org/package=geomander">geomander on CRAN</a></li>
+<li><a href="https://github.com/christopherkenny/geomander">geomander on GitHub</a></li>
+<li><a href="https://alarm-redist.org/">ALARM Project</a></li>
+<li><a href="https://alarm-redist.org/redist/">redist</a></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>software development</category>
+  <category>north america</category>
+  <category>political science</category>
+  <guid>https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/</guid>
+  <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/geomander-listing.png" medium="image" type="image/png" height="67" width="144"/>
+</item>
 <item>
   <title>Model Diagrams and Equations, Straight from the Code</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1649,99 +1724,6 @@ Location: On-site at Warsaw University of Technology or virtual</p>
   <guid>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/</guid>
   <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" medium="image" type="image/png" height="41" width="144"/>
-</item>
-<item>
-  <title>Collaborating between Bioconductor and R-universe on Development of Common Infrastructure</title>
-  <dc:creator>The rOpenSci Team</dc:creator>
-  <dc:creator>The Bioconductor Team</dc:creator>
-  <link>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><small><i>This article is cross-posted on <a href="https://ropensci.org/blog/">rOpenSci</a> and <a href="https://blog.bioconductor.org/">Bioconductor</a> blogs.</i></small></p>
-<p>For more than two decades, the <a href="https://www.bioconductor.org/">Bioconductor project</a> has been a cornerstone of the R ecosystem, providing high-quality, peer-reviewed tools for bioinformatics and computational biology. Its curated repository model, rigorous review standards, and tightly coordinated release process have helped establish Bioconductor as one of the most trusted distribution channels in scientific computing.</p>
-<p>However, the infrastructure that supports such a long-standing and large-scale project inevitably accumulates technical debt. Legacy build systems, bespoke tooling, and historically grown workflows add up to costly and unsustainable maintenance work. For this reason, Bioconductor is collaborating with <a href="https://r-universe.dev/">R-universe</a> to gradually modernize parts of its infrastructure, while accommodating the project’s scale, governance, and established processes. In turn, Bioconductor is helping R-universe expand and refine its features as we learn to serve the complex needs of the Bioconductor community.</p>
-<p>This collaboration reflects a core principle of R-universe as an R Consortium <a href="https://r-consortium.org/all-projects/">Infrastructure Steering Committee (ISC)</a> top-level project: supporting reviewed package repositories such as rOpenSci and Bioconductor, and providing modern, open, and reusable infrastructure that strengthens the broader R ecosystem.</p>
-<section id="a-shared-mission-tooling-for-managed-repositories" class="level2">
-<h2 class="anchored" data-anchor-id="a-shared-mission-tooling-for-managed-repositories">A shared mission: Tooling for managed repositories</h2>
-<p>R-universe was designed as a next-generation package distribution and build system for R. It provides:</p>
-<ul>
-<li>Continuous building and checking of R packages across platforms<br>
-</li>
-<li>Binary packages for Windows, macOS, Linux, and WebAssembly<br>
-</li>
-<li>Transparent and reproducible build environments managed via GitHub actions<br>
-</li>
-<li>Dashboards and metadata APIs for monitoring ecosystem health and activity</li>
-<li>CRAN-like package repositories with discoverable metrics and documentation</li>
-</ul>
-<p>From the outset, a key objective has been to support curated and reviewed communities — such as rOpenSci and Bioconductor — by offering modern infrastructure without requiring them to redesign their governance model or review processes.</p>
-<p>For Bioconductor, this means incrementally introducing piece-wise functionality, with consideration for established release cycles and quality control mechanisms:</p>
-<ol type="1">
-<li>Setting up independent build and dashboard tooling, replicating processes from the current Bioconductor build systems on R-universe infrastructure</li>
-<li>Mirroring Windows and macOS binaries produced on R-universe to Bioconductor</li>
-<li>Exploring further integration of results and metadata produced by R-universe for Bioconductor health/activity monitoring and aiding the curation processes</li>
-<li>Potential future steps toward deeper automation and harmonization</li>
-</ol>
-<p>By taking small gradual steps towards adopting R-universe components, everyone gets the opportunity to experiment with new tooling and evaluate where adjustments may be needed in order to minimize disruption to existing practices.</p>
-<p>An important milestone in this venture is that Bioconductor now uses R-universe to build the Windows and macOS binaries, which significantly reduces costs and the maintenance load on the Bioconductor team. Beyond binary distribution, we are currently exploring deeper integration of R-universe’s continuous check results into Bioconductor’s quality control and release processes.</p>
-</section>
-<section id="two-universes-release-and-development" class="level2">
-<h2 class="anchored" data-anchor-id="two-universes-release-and-development">Two Universes: Release and Development</h2>
-<p>Bioconductor maintains two distinct repositories:</p>
-<ul>
-<li>A <strong>release</strong> branch for stable packages<br>
-</li>
-<li>A <strong>devel</strong> branch for ongoing development and the next release cycle</li>
-</ul>
-<p>To mirror this structure, we currently operate two dedicated R-universe instances:</p>
-<ul>
-<li><strong>Development branch:</strong> <a href="https://bioc.r-universe.dev">https://bioc.r-universe.dev</a><br>
-</li>
-<li><strong>Release branch:</strong> <a href="https://bioc-release.r-universe.dev">https://bioc-release.r-universe.dev</a></li>
-</ul>
-<p>These universes integrate directly with Bioconductor’s existing Git infrastructure and provide continuous builds for packages in both branches.</p>
-<p>Through the R-universe dashboard, package maintainers and users can:</p>
-<ul>
-<li>Inspect cross-platform check results<br>
-</li>
-<li>Review extended BiocCheck diagnostics<br>
-</li>
-<li>Monitor build logs and dependency graphs<br>
-</li>
-<li>Explore rich package metadata and metrics<br>
-</li>
-<li>Publish binary packages for Windows, macOS, and Linux</li>
-</ul>
-<p>This provides a familiar yet modern interface for Bioconductor contributors, aligned with what users increasingly expect from contemporary R package infrastructure.</p>
-<p>Information about each package is available on <code>https://bioc.r-universe.dev/{pkgname}</code>. For example, <a href="https://bioc.r-universe.dev/DESeq2">https://bioc.r-universe.dev/DESeq2</a> provides details on the DESeq2 package as shown below:</p>
-<p><a href="bioc-pkg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/bioc-pkg.png" class="img-fluid" alt="Screenshot of the DESeq2 package page on bioc.r-universe.dev, highlighting the Website Tour button and package check results"></a></p>
-<p>If this is your first time visiting R-universe, we recommend clicking the “Website Tour” button which will walk you through the most important information in 1 or 2 minutes.</p>
-</section>
-<section id="technical-documentation-for-bioconductor-maintainers" class="level2">
-<h2 class="anchored" data-anchor-id="technical-documentation-for-bioconductor-maintainers">Technical Documentation for Bioconductor Maintainers</h2>
-<p>The R-universe project maintains comprehensive technical documentation at <a href="https://docs.r-universe.dev">https://docs.r-universe.dev</a>. For Bioconductor specifically, we created a dedicated section summarizing the most relevant topics for developers to get started with R-universe: <a href="https://docs.r-universe.dev/bioconductor/">https://docs.r-universe.dev/bioconductor/</a></p>
-<p>As the collaboration evolves and new components get introduced, the documentation will continue to be expanded. The goal is to provide Bioconductor maintainers with a clear reference point for understanding how R-universe fits into their development workflow, while maintaining compatibility with the established practices that have made Bioconductor a successful project within the R community.</p>
-</section>
-<section id="looking-ahead" class="level2">
-<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
-<p>Adopting new infrastructure inevitably involves adjustments. For Bioconductor developers, integrating with a new build and distribution system will likely require some changes to workflows, and time to become familiar with new or different package checks, build diagnostics, and binary distribution.</p>
-<p>However, by gradually moving toward common infrastructure, the Bioconductor project will benefit from improvements that are being continuously developed and maintained for the broader R ecosystem. A system based on modern continuous integration (CI) will provide developers with improved tooling, and will give the core team more time to focus on community coordination and quality control, rather than on maintaining costly infrastructure. At the same time, the shared platform provided by R-universe can help to increase the visibility and accessibility of Bioconductor software to the greater R community.</p>
-<p>We look forward to continuing this alliance and to working with the Bioconductor community to ensure that the next generation of infrastructure supports the project for many years to come.</p>
-
-
-</section>
-
- ]]></description>
-  <category>top level projects</category>
-  <category>infrastructure</category>
-  <category>announcements</category>
-  <guid>https://r-consortium.org/posts/r-universe-bioconductor-collaboration/</guid>
-  <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/r-universe-bioconductor-collaboration/bioc-pkg.png" medium="image" type="image/png" height="87" width="144"/>
 </item>
 </channel>
 </rss>
