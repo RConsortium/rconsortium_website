@@ -12,27 +12,22 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html">Sustaining R: Investing in the People, Infrastructure, and Community Behind R</a>',
     '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI 2026</a>',
     '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
   ),
   dates = c(
-    "Oct 6, 2026",
     "Nov 10-11, 2026",
     "Nov 11, 2026"
   ),
   location = c(
     "Virtual",
-    "Virtual",
     "Virtual"
   ),
   icon = c(
-    "Webinar",
     "Conference",
     "Conference"
   ),
   Type = c(
-    "Webinar",
     "Conference",
     "Conference"
   ),
@@ -80,6 +75,7 @@ gt_table
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html" target="_blank" rel="noreferrer noopener">Sustaining R: Investing in the People, Infrastructure, and Community Behind R</a>',
     '<a href="https://ghana-rusers.org/ghana-r-conference-2026/" target="_blank" rel="noreferrer noopener">Ghana R Conference</a>',
     '<a href="https://user2026.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2026</a>',
     '<a href="https://cascadiarconf.com/" target="_blank" rel="noreferrer noopener">Cascadia R Conference</a>',
@@ -146,6 +142,7 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/AdoptionOfRInJapansPharma.html" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+    'Oct 6, 2026',
     'July 9-10, 2026',
     'July 6-9, 2026',
     'June 26-27, 2026',
@@ -212,6 +209,7 @@ df <- data.frame(
     'January 8, 2024'
   ),
   location = c(
+    'Virtual',
     'Accra Technical University, Ghana',
     'Warsaw, Poland',
     'Portland, OR, USA',
@@ -278,6 +276,7 @@ df <- data.frame(
     'Virtual'
   ),
   Type = c(
+    'Webinar',
     'Conference',
     'Conference',
     'Conference',
@@ -344,6 +343,7 @@ df <- data.frame(
     'Webinar'
   ),
   icon = c(
+    'Webinar',
     'Conference',
     'Conference',
     'Conference',
