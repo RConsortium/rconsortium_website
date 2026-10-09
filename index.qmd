@@ -175,7 +175,7 @@ format: html
   align-items: center;
   text-align: center;
   margin-left: calc(min(22vw, 14rem) - 60px);
-  margin-top: calc(11rem + 60px);
+  margin-top: calc(11rem + 24px);
   padding: 0 1.5rem;
 }
 .rai-cfp-slide .mustardButton {
@@ -185,7 +185,7 @@ format: html
   font-size: 1.6em;
 }
 @media (max-width: 700px) {
-  .rai-cfp-slide .rai-cfp-copy { margin-left: -60px; margin-top: calc(12.5rem + 60px); }
+  .rai-cfp-slide .rai-cfp-copy { margin-left: -60px; margin-top: calc(12.5rem + 24px); }
   .rai-cfp-slide .mustardButton { font-size: 1.15em; padding: 14px 26px; }
 }
 
@@ -289,7 +289,7 @@ format: html
 
 <div class="swiper-slide sustaining-r-webinar-slide" style="background-image: url(images/carousel/sustaining-r-panel-webinar.jpg?v=5);"></div>
 
-<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-early-bird-2026.png?v=3);">
+<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-early-bird-2026.png?v=5);">
 <div class="rai-cfp-copy">
 <button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/" style="text-decoration: none;">Register Now!</a></button>
 </div>
