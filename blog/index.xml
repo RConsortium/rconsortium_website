@@ -10,7 +10,49 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.10.19</generator>
-<lastBuildDate>Wed, 07 Oct 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Oct 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>nlmixr2save: Fits You Can Read, Runs You Don’t Repeat</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/nlmixr2save/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/nlmixr2save/nlmixr2save.png" class="img-fluid" style="width:100.0%" alt="Split illustration titled Slow Re-run and Instant Cache: an hourglass beside model code on the left, concentration curves with a lightning bolt and a check mark on the right, and a researcher between the panels"></p>
+<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-10-11-nlmixr2save/">here</a>.</em></p>
+<p>The nlmixr2 Working Group continues to expand what open source R tooling can support in pharmacometrics. In a new post, Matthew Fidler introduces <code>nlmixr2save</code> 0.2.0, now on CRAN. <code>saveFit()</code> writes a finished fit as text you can open later, and the <code>:=</code> operator caches a long run so a script or report does not fit the same model again.</p>
+<p>A nonlinear mixed-effects fit can take minutes to weeks, and <code>saveRDS()</code> ties the result to R’s binary format and to how nlmixr2 stored the object internally. That tie already broke once, when compressed fits moved off the <code>qs</code> package. <code>saveFit()</code> splits the fit into nlmixr2 and rxode2 source plus CSV tables, bundled in one zip, and <code>loadFit()</code> rebuilds a working fit for diagnostic plots, VPCs, and the next model. While you are developing, changing <code>&lt;-</code> to <code>:=</code> hashes the model, the data, and the estimation options, then loads the cache when nothing has changed. The post also covers cache options for a project or a rendered document, and <code>nlmixr2saveShare()</code> for sharing a model when the subject-level data has to stay behind. The same material is on the nlmixr2save poster at ACoP 2026 (October 11–14, National Harbor, Maryland).</p>
+<p>Watch the 7-minute narrated walkthrough: <a href="https://youtu.be/TD7yhaaQToE">https://youtu.be/TD7yhaaQToE</a></p>
+<p>Read the full post from the nlmixr2 blog: <a href="https://blog.nlmixr2.org/blog/2026-10-11-nlmixr2save/">nlmixr2save: fits you can read, runs you don’t repeat</a></p>
+<section id="why-nlmixr2" class="level2">
+<h2 class="anchored" data-anchor-id="why-nlmixr2">Why nlmixr2?</h2>
+<p>The vision of nlmixr2 is to develop a R-based open source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.</p>
+<p>In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.</p>
+<p>From: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a></p>
+</section>
+<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
+<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
+<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
+Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
+Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>pharma</category>
+  <category>submissions</category>
+  <category>clinical research</category>
+  <category>announcements</category>
+  <category>working groups</category>
+  <guid>https://r-consortium.org/posts/nlmixr2save/</guid>
+  <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/nlmixr2save/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
+</item>
 <item>
   <title>From Census Blocks to Legal Contiguity: Christopher T. Kenny on geomander</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1579,151 +1621,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/</guid>
   <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/Screenshot.png" medium="image" type="image/png" height="147" width="144"/>
-</item>
-<item>
-  <title>Investing in the R Community: Our Support for Global R Events in 2026</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>The R ecosystem continues to grow because of its community - organizers, educators, and practitioners who create spaces for collaboration and learning. These efforts often happen independently, across regions and domains, yet collectively they shape the future of R.</p>
-<p>At the R Consortium, we actively invest in that layer of the ecosystem. In 2026, we are committed to support R-related events and community initiatives worldwide, with a particular focus on strengthening independent, community-led conferences and user groups.</p>
-<p>Please note that R Dev Days are connected with three of the events listed below. These are open, collaborative events that help participants contribute base R. Both new and experienced contributors are welcome.</p>
-<p>You can explore the full list of supported events here:<br>
-👉 <a href="https://r-consortium.org/news/events.html?utm_source=chatgpt.com">R Consortium Events Page</a></p>
-<section id="supporting-key-global-events" class="level2">
-<h2 class="anchored" data-anchor-id="supporting-key-global-events">Supporting Key Global Events</h2>
-<p>As part of this annual initiative, we support important R-related events listed under our Upcoming Events. The events reflect different regions, audiences, and applications of R, demonstrating the breadth of the R ecosystem.</p>
-</section>
-<section id="eurobioc-2026" class="level2">
-<h2 class="anchored" data-anchor-id="eurobioc-2026"><a href="https://eurobioc2026.bioconductor.org/">EuroBioC 2026</a></h2>
-<p><a href="eurobioc2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" class="img-fluid" alt="Participants from previous EuroBioC conference"></a></p>
-<p>EuroBioC focuses on the Bioconductor ecosystem and the use of R in bioinformatics and computational biology. It is being held in Turku, Finland, during the first week of June. It connects scientists working on genomics, proteomics, and related fields, highlighting how R supports cutting-edge research in the life sciences.</p>
-</section>
-<section id="rencontres-r-2026" class="level2">
-<h2 class="anchored" data-anchor-id="rencontres-r-2026"><a href="https://astamm.github.io/en/rr2026.html">Rencontres R 2026</a></h2>
-<p><a href="rencontresr2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/rencontresr2026.png" class="img-fluid" alt="Logo for Rencontres 2026, organized by the French Statistical Society (SFdS)"></a></p>
-<p>Rencontres is a long-running conference rooted in the French-speaking R community. It is organized by the French Statistical Society (SFdS) and brings together researchers, public sector professionals, and industry practitioners to share applied work and foster collaboration. Its regional focus helps strengthen R adoption across Europe while maintaining strong technical depth. Rencontres is open to beginners as well as experienced users from all sectors and is being held June 16-18 in Nantes, France.</p>
-<p>This year’s Rencontres will also host an R Dev Day, supported in part by recent funding from the Research Software Maintenance Fund. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome.</p>
-<p>R Dev Day @ RencontresR 2026<br>
-Fri, June 19, 9am - 5pm UTC+2<br>
-Location: On-site at Nantes University or virtual<br>
-Working languages: French and English</p>
-<p>Registration deadline: Friday, May 29, 2026<br>
-<a href="https://pretix.eu/r-contributors/r-dev-day-rr2026/">https://pretix.eu/r-contributors/r-dev-day-rr2026/</a></p>
-</section>
-<section id="cascadia-r-conference" class="level2">
-<h2 class="anchored" data-anchor-id="cascadia-r-conference"><a href="https://cascadiarconf.com/">Cascadia R Conference</a></h2>
-<p><a href="cascadiar2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/cascadiar2026.png" class="img-fluid" style="width:30.0%" alt="CascadiaR conference 2026 logo, Portland, Oregon"></a></p>
-<p>The Cascadia R Conference serves the Pacific Northwest in the US, with a strong emphasis on practical data science and community engagement. It is held in Portland, OR, running over two days on June 26-27. Cascadia R is known for being accessible, welcoming, and highly relevant to both new and experienced R users working in industry and academia.</p>
-<p>There will be a satellite R Dev Day event at CascadiaR. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome. Please note: This is a satellite event to Cascadia R Conf 2026, which takes place on Sat, June 27 in Portland, OR, USA. It is not necessary to register for the main conference in order to attend the R Dev Day.</p>
-<p>R Dev Day @ Cascadia R 2026, Portland<br>
-Fri, June 26, 2026<br>
-Location: On-site or virtual<br>
-Working languages: English</p>
-<p>Registration deadline: Fri, June 12, 2026<br>
-<a href="https://pretix.eu/r-contributors/r-dev-day-cascadiar-2026/">https://pretix.eu/r-contributors/r-dev-day-cascadiar-2026/</a></p>
-</section>
-<section id="user-2026" class="level2">
-<h2 class="anchored" data-anchor-id="user-2026"><a href="https://user2026.r-project.org/">useR! 2026</a></h2>
-<p><a href="userbam2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/userbam2026.png" class="img-fluid" style="width:30.0%" alt="useR! 2026 logo, July 6 - 9, 2026 in Warsaw, Poland"></a></p>
-<p>The useR! 2026 conference is the flagship global gathering of the R community, taking place this year July 6 - 9, 2026 in Warsaw, Poland. It brings together data scientists, statisticians, developers, and researchers from around the world for keynote talks, hands-on workshops, and community-driven sessions that showcase cutting-edge applications and developments in the R ecosystem.</p>
-<p>There will be a satellite R Dev Day event at useR! 2026. Join this open, collaborative event to contribute to the code and documentation of base R, or to the infrastructure that supports those contributions. Both new and experienced contributors are welcome.</p>
-<p>Please note: R Dev Day @ useR! 2026 is a free, hybrid event that will take place on July 10, the day after the conference concludes. You will need to fill out a self-nomination form, this is different from registering. Participants will be selected from the nominations received to fill the available places, balancing experience levels and giving opportunity to members of historically underrepresented groups. R Dev Day is free of charge. No support is available for travel or accommodations. Registration at useR! 2026 is not required to participate in R Dev Day.</p>
-<p>R Dev Day @ useR! 2026<br>
-Fri, July 10, 2026<br>
-Location: On-site at Warsaw University of Technology or virtual</p>
-<p>Nomination deadline: Fri, April 24, 2026<br>
-<a href="https://user2026.r-project.org/additional/r-dev-day.html">https://user2026.r-project.org/additional/r-dev-day.html</a></p>
-</section>
-<section id="ghana-r-conference" class="level2">
-<h2 class="anchored" data-anchor-id="ghana-r-conference"><a href="https://ghana-rusers.org/ghana-r-conference-2026/">Ghana R Conference</a></h2>
-<p><a href="ghanar2026.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/ghanar2026.png" class="img-fluid" style="width:30.0%" alt="GhanaR 2026 conference logo"></a></p>
-<p>The Ghana R Conference 2026, organized by the Ghana R Users Community, will take place July 9 - 10, 2026, at Accra Technical University in Accra, bringing together data scientists, researchers, and practitioners to explore the role of R in advancing Ghana’s digital transformation. Centered on the theme of using R to support AI and data-driven development, the event features talks, workshops, and community engagement aimed at building local expertise and strengthening the data science ecosystem across Ghana and the broader African region.</p>
-</section>
-<section id="latinr" class="level2">
-<h2 class="anchored" data-anchor-id="latinr"><a href="https://latinr.org/">LatinR</a></h2>
-<p><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/latinr-main-image.png" class="img-fluid" alt="Photos from previous LatinR - credit:&nbsp;Comunicación FCEA"> <em>photo credit: <a href="https://www.flickr.com/people/comunicacionfcea/">Comunicación FCEA</a></em></p>
-<p>LatinR is one of the most important R conferences in Latin America. It provides a platform for Spanish- and Portuguese-speaking communities to share knowledge, present research, and build connections across countries. Its regional focus helps drive adoption and innovation in fast-growing data science markets.</p>
-<p><a href="latinr-logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/latinr-logo.png" class="img-fluid" style="width:38.0%" alt="LatinR 2026 conference logo"></a></p>
-<p>LatinR is being held in November 11-13, 2026. Don’t miss it!</p>
-</section>
-<section id="why-this-investment-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-investment-matters">Why This Investment Matters</h2>
-<p>These events differ in geography and specialization, but they serve a shared purpose: enabling people to learn, collaborate, and contribute to the R ecosystem.</p>
-<p>Our role is to support and complement these efforts.</p>
-<p>Funding from the R Consortium helps organizers:</p>
-<ul>
-<li>Keep events accessible and affordable<br>
-</li>
-<li>Expand speaker participation and diversity<br>
-</li>
-<li>Improve technical programming and workshops<br>
-</li>
-<li>Reach new audiences in emerging regions</li>
-</ul>
-<p>In practical terms, this support increases participation and strengthens the quality of engagement across the ecosystem.</p>
-</section>
-<section id="supporting-grassroots-growth-r-ladies" class="level2">
-<h2 class="anchored" data-anchor-id="supporting-grassroots-growth-r-ladies">Supporting Grassroots Growth: R-Ladies+</h2>
-<p>Beyond conferences, we also continue to support R-Ladies+, a global initiative focused on promoting gender diversity in the R community.</p>
-<p>R-Ladies+ operates hundreds of local chapters worldwide, offering workshops, mentorship, and community events that lower barriers to entry. Many R users have their first meaningful experience with the language through these groups.</p>
-<p>Supporting R-Ladies+ is a direct investment in expanding who participates in R and that has long-term implications for the health of the ecosystem.</p>
-</section>
-<section id="complementing-our-own-events" class="level2">
-<h2 class="anchored" data-anchor-id="complementing-our-own-events">Complementing Our Own Events</h2>
-<p>In addition to supporting independent events, the R Consortium organizes three annual conferences:</p>
-<ul>
-<li><a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine</a><br>
-</li>
-<li><a href="https://rconsortium.github.io/RplusAI_website/">R+AI</a><br>
-</li>
-<li><a href="https://rconsortium.github.io/Risk_website/">R!sk</a></li>
-</ul>
-<p>These events focus on specific domains where R is widely used. However, our broader strategy is to support a distributed ecosystem rather than centralize activity around a single set of conferences.</p>
-</section>
-<section id="get-involved---participants-and-sponsors" class="level2">
-<h2 class="anchored" data-anchor-id="get-involved---participants-and-sponsors">Get Involved - Participants and Sponsors</h2>
-<p>These events are where applied R work is presented, evaluated, and adopted.</p>
-<p>For participants, they offer direct access to:</p>
-<ul>
-<li>Practical implementations from peers working in production environments<br>
-</li>
-<li>Opportunities to present and validate your own work<br>
-</li>
-<li>Entry points into meaningful open source contribution<br>
-</li>
-<li>Professional relationships with practitioners across industries</li>
-</ul>
-<p>For sponsors, these events provide a targeted channel into the R ecosystem. Direct engagement with the people actively shaping tools, workflows, and standards.</p>
-<p>By sponsoring, your organization can:</p>
-<ul>
-<li>Position itself alongside credible, practitioner-led work<br>
-</li>
-<li>Reach highly technical audiences using R in finance, healthcare, AI, and research<br>
-</li>
-<li>Engage early with emerging approaches and infrastructure decisions<br>
-</li>
-<li>Build relationships with contributors, maintainers, and advanced users</li>
-</ul>
-<p>This is not passive brand exposure. It is proximity to the conversations and decisions that influence how R is used in real-world environments.</p>
-<p>Explore upcoming events and identify where your organization can participate:</p>
-<p>👉 <a href="https://r-consortium.org/news/events.html?utm_source=chatgpt.com">View Upcoming R Events</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>top level projects</category>
-  <category>events</category>
-  <category>announcements</category>
-  <guid>https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/</guid>
-  <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/investing-in-the-r-community-our-support-for-global-r-events-in-2026/eurobioc2026.png" medium="image" type="image/png" height="41" width="144"/>
 </item>
 </channel>
 </rss>
