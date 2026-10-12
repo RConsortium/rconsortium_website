@@ -1,0 +1,39 @@
+---
+title: "nlmixr2save: Fits You Can Read, Runs You Don't Repeat"
+unpublished: false
+url: "https://r-consortium.org/posts/nlmixr2save/"
+description: "The nlmixr2 Working Group shows how nlmixr2save stores a fit as readable text and caches long runs, so a script or report fits a model again only when the model, data, or settings change."
+categories: ["pharma", "submissions", "clinical research", "announcements", "working groups"]
+author: "R Consortium"
+image: "nlmixr2-logo.png"
+image-alt: "The nlmixr2 logo: a hexagonal sticker with a red border featuring nlmix in dark blue and r squared in red, with www.nlmixr2.org along the bottom edge"
+date: "10/12/2026"
+---
+
+![](nlmixr2save.png){width=100% fig-alt="Split illustration titled Slow Re-run and Instant Cache: an hourglass beside model code on the left, concentration curves with a lightning bolt and a check mark on the right, and a researcher between the panels"}
+
+_Original post on the nlmixr2 project blog is [here](https://blog.nlmixr2.org/blog/2026-10-11-nlmixr2save/)._
+
+The nlmixr2 Working Group continues to expand what open source R tooling can support in pharmacometrics. In a new post, Matthew Fidler introduces `nlmixr2save` 0.2.0, now on CRAN. `saveFit()` writes a finished fit as text you can open later, and the `:=` operator caches a long run so a script or report does not fit the same model again.
+
+A nonlinear mixed-effects fit can take minutes to weeks, and `saveRDS()` ties the result to R’s binary format and to how nlmixr2 stored the object internally. That tie already broke once, when compressed fits moved off the `qs` package. `saveFit()` splits the fit into nlmixr2 and rxode2 source plus CSV tables, bundled in one zip, and `loadFit()` rebuilds a working fit for diagnostic plots, VPCs, and the next model. While you are developing, changing `<-` to `:=` hashes the model, the data, and the estimation options, then loads the cache when nothing has changed. The post also covers cache options for a project or a rendered document, and `nlmixr2saveShare()` for sharing a model when the subject-level data has to stay behind. The same material is on the nlmixr2save poster at ACoP 2026 (October 11–14, National Harbor, Maryland).
+
+Watch the 7-minute narrated walkthrough: [https://youtu.be/TD7yhaaQToE](https://youtu.be/TD7yhaaQToE)
+
+Read the full post from the nlmixr2 blog: [nlmixr2save: fits you can read, runs you don't repeat](https://blog.nlmixr2.org/blog/2026-10-11-nlmixr2save/)
+
+## Why nlmixr2?
+
+The vision of nlmixr2 is to develop a R-based open source nonlinear mixed-effects modeling software package that can compete with commercial pharmacometric tools and is suitable for regulatory submissions.
+
+In short, the goal of nlmixr2 is to support easy and robust nonlinear mixed effects models in R.
+
+From: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)
+
+## Get involved in the nlmixr2 working group
+
+The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:
+
+Main repo: [https://github.com/nlmixr2/nlmixr2](https://github.com/nlmixr2/nlmixr2)  
+Issues: [https://github.com/nlmixr2/nlmixr2/issues](https://github.com/nlmixr2/nlmixr2/issues)  
+Discussions: [https://github.com/nlmixr2/nlmixr2/discussions](https://github.com/nlmixr2/nlmixr2/discussions)
