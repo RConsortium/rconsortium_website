@@ -3,13 +3,58 @@ title: "Sustaining R: Investing in the People, Infrastructure, and Community Beh
 image: "images/sustaining-r-panel-webinar-main-image.jpg"
 ---
 
+<style>
+#support-r {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-r-kicker {
+  order: -1;
+  color: #1e51a4;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 1.75rem 0 0 !important;
+}
+
+#support-r > h2 {
+  margin-top: 0.15rem !important;
+}
+
+.support-r {
+  display: grid;
+  grid-template-columns: 220px minmax(300px, 360px);
+  gap: 1.5rem 2rem;
+  align-items: start;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.support-r img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.support-r p {
+  margin-bottom: 0.35rem !important;
+}
+
+@media (max-width: 768px) {
+  .support-r {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
+</style>
+
 {{< video https://youtu.be/LH2oDSjoo28?si=TSN3SQ2WIzUJF1Qz >}}
 
-## Date and time: October 6, 2026
+[Slides: Sustaining R panel discussion (PDF)](sustaining-r-panel-discussion-slides.pdf)
 
-**12:00 PM PT / 3:00 PM ET / 8:00 PM London**
-
-Join the R Consortium for a panel discussion with **Simon Urbanek** (R Core | R Foundation President), **Kurt Hornik** (R Core | R Foundation Vice-President), and **Heather Turner** (R Core | R Foundation Board Member) on what it takes to keep R healthy for the long term: technical foundations, the next generation of contributors, and the institutions that support the project.
+This panel discussion is hosted by the R Consortium, with Simon Urbanek (R Core | R Foundation President), Kurt Hornik (R Core | R Foundation Vice-President), and Heather Turner (R Core | R Foundation Board Member) on what it takes to keep R healthy for the long term: technical foundations, the next generation of contributors, and the institutions that support the project.
 
 R’s success has created a sustainability challenge. Time-limited grants such as the Sovereign Tech Fund and the Research Software Maintenance Fund are addressing accumulated technical work and expanding the people able to do that work, while recognition such as the Rousseeuw Prize underscores the value of that stewardship. Those investments do not last forever. This session looks at why long-term support still matters, and what the community can do.
 
@@ -36,6 +81,30 @@ Kurt Hornik is a member of R Core and Vice-President of the R Foundation. He is 
 ### Heather Turner — R Core | R Foundation Board Member
 
 Heather Turner is a member of R Core and a member of the R Foundation board. She leads work supported by the Research Software Maintenance Fund to grow pathways into contributing to base R, including contributor infrastructure, mentoring, and community events such as R Dev Days and sprints.
+
+## Support R
+
+<p class="support-r-kicker">Your next step</p>
+
+::: {.support-r}
+::: {.support-r-item}
+[![](images/qr-contribute-to-r.png){fig-alt="QR code linking to contributor.r-project.org"}](https://contributor.r-project.org/)
+
+**Contribute to R**
+
+[contributor.r-project.org](https://contributor.r-project.org/)
+:::
+
+::: {.support-r-item}
+[![](images/qr-r-foundation-donations.png){fig-alt="QR code linking to the R Foundation donations page"}](https://www.r-project.org/foundation/donations.html)
+
+**Support the R Foundation**
+
+[r&#8209;project.org/foundation/donations.html](https://www.r-project.org/foundation/donations.html)
+:::
+:::
+
+Share your time, expertise, or financial support.
 
 ## The R Adoption Series
 
