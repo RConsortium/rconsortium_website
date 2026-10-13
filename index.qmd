@@ -175,7 +175,7 @@ format: html
   align-items: center;
   text-align: center;
   margin-left: calc(min(22vw, 14rem) - 60px);
-  margin-top: calc(11rem + 104px);
+  margin-top: calc(11rem + 44px);
   padding: 0 1.5rem;
 }
 .rai-cfp-slide .mustardButton {
