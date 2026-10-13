@@ -543,8 +543,53 @@ window.Quarto = {
 }
 
 .sustaining-r-webinar-slide {
-  background-size: cover;
-  background-position: center center;
+  background: #f7f9fc;
+}
+.sustaining-r-frame {
+  position: relative;
+  width: min(100%, calc(70vh * 16 / 9));
+  container-type: inline-size;
+}
+.sustaining-r-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sustaining-r-frame .blueButton {
+  position: absolute;
+  left: calc(3.5% + 80px);
+  bottom: calc(1.8% + 20px);
+  z-index: 2;
+  margin: 0;
+  max-width: 68%;
+  display: inline-block;
+  padding: 20px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.15;
+  white-space: nowrap;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+.sustaining-r-frame .blueButton a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 700px) {
+  .sustaining-r-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sustaining-r-frame .blueButton {
+    position: static;
+    margin: 0.65rem 0 0;
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+    font-size: 1.15em;
+    padding: 14px 26px;
+  }
 }
 
 .mike-testimonial-slide,
@@ -635,8 +680,10 @@ window.Quarto = {
 <div class="swiper-container">
 <!-- swiper slides -->
 <div class="swiper-wrapper">
-<div class="swiper-slide sustaining-r-webinar-slide" style="background-image: url(images/carousel/sustaining-r-panel-webinar.jpg?v=5);">
-
+<div class="swiper-slide sustaining-r-webinar-slide">
+<div class="sustaining-r-frame">
+<p><img src="images/carousel/sustaining-r-panel-webinar.jpg?v=6" alt="Sustaining R: Investing in the People, Infrastructure, and Community Behind R. A panel discussion with Simon Urbanek, Kurt Hornik, and Heather Turner, hosted by the R Consortium."> <button class="blueButton"><a href="./webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html">Full presentation recording available</a></button></p>
+</div>
 </div>
 <div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-registration-open-2026.png?v=2);">
 <div class="rai-cfp-copy">
@@ -826,7 +873,7 @@ var Swipes = new Swiper('.swiper-container', {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1791763200000" data-listing-file-modified-sort="1791905202212" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
+<div class="g-col-1" data-index="0" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1791763200000" data-listing-file-modified-sort="1791910526519" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
 <a href="./posts/nlmixr2save/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -850,7 +897,7 @@ Oct 12, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="c29mdHdhcmUlMjBkZXZlbG9wbWVudCUyQ25vcnRoJTIwYW1lcmljYSUyQ3BvbGl0aWNhbCUyMHNjaWVuY2U=" data-listing-date-sort="1791331200000" data-listing-file-modified-sort="1791905201568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3101">
+<div class="g-col-1" data-index="1" data-categories="c29mdHdhcmUlMjBkZXZlbG9wbWVudCUyQ25vcnRoJTIwYW1lcmljYSUyQ3BvbGl0aWNhbCUyMHNjaWVuY2U=" data-listing-date-sort="1791331200000" data-listing-file-modified-sort="1791910525989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3101">
 <a href="./posts/from-census-blocks-to-contiguous-maps-christopher-kenny-on-geomander/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -874,7 +921,7 @@ Oct 7, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1791905202211" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<div class="g-col-1" data-index="2" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1791910526519" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <a href="./posts/nlmixr2-model-diagrams-equations/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -898,7 +945,7 @@ Oct 5, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1789689600000" data-listing-file-modified-sort="1791905202211" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="252">
+<div class="g-col-1" data-index="3" data-categories="cGhhcm1hJTJDc3VibWlzc2lvbnMlMkNjbGluaWNhbCUyMHJlc2VhcmNoJTJDYW5ub3VuY2VtZW50cyUyQ3dvcmtpbmclMjBncm91cHM=" data-listing-date-sort="1789689600000" data-listing-file-modified-sort="1791910526517" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="252">
 <a href="./posts/nlmixr2-adaptive-dosing/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -922,7 +969,7 @@ Sep 18, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="aXNjJTJDc29mdHdhcmUlMjBkZXZlbG9wbWVudA==" data-listing-date-sort="1789603200000" data-listing-file-modified-sort="1791905201560" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1684">
+<div class="g-col-1" data-index="4" data-categories="aXNjJTJDc29mdHdhcmUlMjBkZXZlbG9wbWVudA==" data-listing-date-sort="1789603200000" data-listing-file-modified-sort="1791910525981" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1684">
 <a href="./posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -946,7 +993,7 @@ Sep 17, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="cnVncyUyQ2V2ZW50cyUyQ3NvdXRoJTIwYW1lcmljYQ==" data-listing-date-sort="1788393600000" data-listing-file-modified-sort="1791905201318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1464">
+<div class="g-col-1" data-index="5" data-categories="cnVncyUyQ2V2ZW50cyUyQ3NvdXRoJTIwYW1lcmljYQ==" data-listing-date-sort="1788393600000" data-listing-file-modified-sort="1791910525747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1464">
 <a href="./posts/a-decade-of-meetups-code-and-community-san-carlos-rug-turns-10/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
