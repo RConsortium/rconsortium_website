@@ -489,3 +489,10 @@ h2 {
 .swiper-container h2 a {
   display: none; /* Gets rid of icon */
 }
+
+/* Listing cards crop this wide banner. Show the full image instead. */
+.thumbnail-image[src*="how-do-i-contribute-to-r"] {
+  object-fit: contain !important;
+  object-position: center;
+  background: #f4f7fb;
+}

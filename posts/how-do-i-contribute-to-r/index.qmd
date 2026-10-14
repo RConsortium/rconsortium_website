@@ -7,7 +7,7 @@ categories: ["infrastructure", "events", "community"]
 author: "R Consortium"
 image: "sustaining-r-panel.jpg"
 image-alt: "Webinar banner for Sustaining R: Investing in the People, Infrastructure, and Community Behind R, a panel with Simon Urbanek, Kurt Hornik, and Heather Turner"
-date: "10/13/2026"
+date: "10/14/2026"
 ---
 
 {{< video https://youtu.be/LH2oDSjoo28 >}}
@@ -16,7 +16,7 @@ R has been developed and maintained for more than three decades, but its future 
 
 That was one of the central themes of the R Consortium webinar, [“Sustaining R: Investing in the People, Infrastructure, and Community Behind R”](https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html), featuring R Core members Simon Urbanek, Kurt Hornik, and Heather Turner.
 
-One question came up repeatedly: **How can an R user contribute to R itself?** The answer is broader than many people may think.
+One question came up repeatedly: How can an R user contribute to R itself? The answer is broader than many people may think.
 
 ## You don't have to be a C programmer
 
@@ -28,13 +28,13 @@ Contributions can include R code, documentation, translations of errors, message
 
 As Turner explained:
 
-> So I mean, there's various ways to contribute. So reporting a bug is one way of contributing or discussing a feature request on the [R-devel mailing list](https://stat.ethz.ch/mailman/listinfo/r-devel), but if you're actually talking about contributing code, then the standard way we have of doing that is submitting a patch through Bugzilla, the bug tracker we have.
+> There's various ways to contribute. Reporting a bug is one way of contributing or discussing a feature request on the [R-devel mailing list](https://stat.ethz.ch/mailman/listinfo/r-devel), but if you're actually talking about contributing code, then the standard way we have of doing that is submitting a patch through Bugzilla, the bug tracker we have.
 
 ## Start with Bugzilla or R-devel
 
 Simon Urbanek described R's [Bugzilla](https://bugs.r-project.org/) system as the main starting point for bringing issues and ideas to R Core.
 
-> The starting point really is our Bugzilla system, so our bugs.rproject.org, because that's where any, any kind of, whether it's a bug report or a wish list, you know, can start.
+> The starting point really is our Bugzilla system at bugs.rproject.org. Whether it's a bug report or a wish list, you can start there.
 
 For an idea that may need discussion first, another option is the [R-devel mailing list](https://stat.ethz.ch/mailman/listinfo/r-devel). This is particularly useful for finding out whether others have encountered the same issue or discussed the idea before.
 
@@ -42,7 +42,7 @@ For code contributions, the current process involves building R from source, mak
 
 Turner acknowledged the learning curve:
 
-> Yeah, so it's a bit of a learning curve, just to sort of… if you've got an idea of something that needs fixing, or a feature you want to propose, to sort of generating that patch and having something that can be shared with the R core team.
+> Yeah, it's a bit of a learning curve. If you've got an idea for something that needs fixing, or a feature you want to propose, to generate that patch and having something that can be shared with the R core team probably does take time.
 
 ## R Dev Days and contributor tools can help
 
@@ -54,7 +54,7 @@ At a three-day sprint at the University of Birmingham, Turner reported about 30 
 
 Turner estimated that “maybe a third would describe themselves as novices,” while others had contributed regularly or had decades of experience.
 
-> So it's quite a mix of people, and that's one of the nice things about it, you know, that we can get together this range of experience and work together.
+> So it's quite a mix of people, and that's one of the nice things about it, that we can get together this range of experience and work together.
 
 > And that's obviously part of the objective, is not just to make contributions, but also to learn from each other.
 
@@ -68,7 +68,7 @@ R currently uses Subversion for its primary source repository and Bugzilla for i
 
 Urbanek cautioned against treating SVN versus Git as the central issue:
 
-> I'd say the version control system is sort of the least relevant in all of this, so it's more about the ecosystem that we can use.
+> I'd say the version control system is sort of the least relevant in all of this. It's more about the ecosystem that we can use.
 
 Meanwhile, the R Dev Guide and R Dev Container can improve the contributor experience without waiting for a wholesale change in development platforms.
 
@@ -78,15 +78,15 @@ AI raises another emerging question for open source projects: what happens when 
 
 Urbanek said R Core has been discussing the issue. One concern is ensuring that AI-assisted submissions do not simply create additional work for maintainers.
 
-> definitely need to have at least a human in the loop that's actually, you know, working on this.
+> Definitely need to have at least a human in the loop that's actually, you know, working on this.
 
 He acknowledged the potential value of AI:
 
-> Obviously, you know, we acknowledge that AI can be very useful, especially for things like fixing bugs and so on, but
+> Obviously, we acknowledge that AI can be very useful, especially for things like fixing bugs.
 
 The distinction is whether AI is being used as a tool by a contributor who understands and takes responsibility for the work.
 
-> You know, as long as it's just a tool that a human uses to, essentially do the work, that, that would be fine. But, you know, if it's something where people just want to submit things that they essentially copy-pasted from AI tools, it's a whole different story.
+> As long as it's just a tool that a human uses to do the work, that would be fine. But if it's something where people just want to submit things that they essentially copy-pasted from AI tools, it's a whole different story.
 
 Kurt Hornik made a similar point: AI may identify real problems and suggest fixes, but people still have to assess their significance and review the proposed changes. He said R Core is discussing AI-assisted patch policies and looking at approaches taken by other open source projects, including Debian.
 
@@ -98,6 +98,52 @@ The work supported by the Research Software Maintenance Fund aims to make those 
 
 As Turner put it:
 
-> And we hope that through all these sort of different ways of attacking the problem, if you like, it will help to strengthen that contributor community and that pool of people that can keep R going into the future.
+> We hope that through all these different ways of attacking problems, it will help to strengthen the contributor community and the pool of people that can keep R going into the future.
 
-**[Watch the full webinar and audience Q&A](https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html).**
+<style>
+.support-r {
+  display: grid;
+  grid-template-columns: 220px minmax(300px, 360px);
+  gap: 1.5rem 2rem;
+  align-items: start;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.support-r img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.support-r p {
+  margin-bottom: 0.35rem !important;
+}
+
+@media (max-width: 768px) {
+  .support-r {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
+</style>
+
+## Support R Financially
+
+::: {.support-r}
+::: {.support-r-item}
+[![](qr-contribute-to-r.png){fig-alt="QR code linking to contributor.r-project.org"}](https://contributor.r-project.org/)
+
+**Contribute to R**
+
+[contributor.r-project.org](https://contributor.r-project.org/)
+:::
+
+::: {.support-r-item}
+[![](qr-r-foundation-donations.png){fig-alt="QR code linking to the R Foundation donations page"}](https://www.r-project.org/foundation/donations.html)
+
+**Support the R Foundation**
+
+[r&#8209;project.org/foundation/donations.html](https://www.r-project.org/foundation/donations.html)
+:::
+:::
