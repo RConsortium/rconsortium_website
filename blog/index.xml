@@ -10,7 +10,147 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.10.19</generator>
-<lastBuildDate>Mon, 12 Oct 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>How Do I Contribute to R? A Guide to Getting Involved with R Core</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/how-do-i-contribute-to-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LH2oDSjoo28" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>R has been developed and maintained for more than three decades, but its future depends on more people being able to participate in that work.</p>
+<p>That was one of the central themes of the R Consortium webinar, <a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html">“Sustaining R: Investing in the People, Infrastructure, and Community Behind R”</a>, featuring R Core members Simon Urbanek, Kurt Hornik, and Heather Turner.</p>
+<p>One question came up repeatedly: How can an R user contribute to R itself? The answer is broader than many people may think.</p>
+<section id="you-dont-have-to-be-a-c-programmer" class="level2">
+<h2 class="anchored" data-anchor-id="you-dont-have-to-be-a-c-programmer">You don’t have to be a C programmer</h2>
+<p>Much of R is written in C, which can make contributing to R Core seem inaccessible to people who primarily work in R. But Heather Turner emphasized that contributing is not limited to changing the internals of the language.</p>
+<p>Turner described the goal as “trying to recognise that there’s a diversity of ways that people can contribute, and different skills that people bring.”</p>
+<p>Contributions can include R code, documentation, translations of errors, messages and warnings, contributor infrastructure, websites, testing, and other work that supports the project. Reporting a bug is itself a contribution. So is proposing and discussing a feature.</p>
+<p>As Turner explained:</p>
+<blockquote class="blockquote">
+<p>There’s various ways to contribute. Reporting a bug is one way of contributing or discussing a feature request on the <a href="https://stat.ethz.ch/mailman/listinfo/r-devel">R-devel mailing list</a>, but if you’re actually talking about contributing code, then the standard way we have of doing that is submitting a patch through Bugzilla, the bug tracker we have.</p>
+</blockquote>
+</section>
+<section id="start-with-bugzilla-or-r-devel" class="level2">
+<h2 class="anchored" data-anchor-id="start-with-bugzilla-or-r-devel">Start with Bugzilla or R-devel</h2>
+<p>Simon Urbanek described R’s <a href="https://bugs.r-project.org/">Bugzilla</a> system as the main starting point for bringing issues and ideas to R Core.</p>
+<blockquote class="blockquote">
+<p>The starting point really is our Bugzilla system at bugs.rproject.org. Whether it’s a bug report or a wish list, you can start there.</p>
+</blockquote>
+<p>For an idea that may need discussion first, another option is the <a href="https://stat.ethz.ch/mailman/listinfo/r-devel">R-devel mailing list</a>. This is particularly useful for finding out whether others have encountered the same issue or discussed the idea before.</p>
+<p>For code contributions, the current process involves building R from source, making changes locally, creating a patch, and submitting it through Bugzilla.</p>
+<p>Turner acknowledged the learning curve:</p>
+<blockquote class="blockquote">
+<p>Yeah, it’s a bit of a learning curve. If you’ve got an idea for something that needs fixing, or a feature you want to propose, to generate that patch and having something that can be shared with the R core team probably does take time.</p>
+</blockquote>
+</section>
+<section id="r-dev-days-and-contributor-tools-can-help" class="level2">
+<h2 class="anchored" data-anchor-id="r-dev-days-and-contributor-tools-can-help">R Dev Days and contributor tools can help</h2>
+<p>A major focus of work supported by the Research Software Maintenance Fund is making it easier for new contributors to get started. The two-year project includes mentoring expert contributors, improving communication, and reducing barriers to participation.</p>
+<p>Tools such as the R Dev Guide and R Dev Container help contributors work with the R source without having to configure everything themselves. R Dev Days and longer development sprints offer opportunities to work alongside experienced contributors.</p>
+<p>At a three-day sprint at the University of Birmingham, Turner reported about 30 in-person participants, plus others online. They worked on statistical functions, package loading, installation, translation, documentation, website accessibility, and CRAN-related infrastructure.</p>
+<p>Turner estimated that “maybe a third would describe themselves as novices,” while others had contributed regularly or had decades of experience.</p>
+<blockquote class="blockquote">
+<p>So it’s quite a mix of people, and that’s one of the nice things about it, that we can get together this range of experience and work together.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>And that’s obviously part of the objective, is not just to make contributions, but also to learn from each other.</p>
+</blockquote>
+<p>For people looking to get involved, Turner also recommended R Contributor Office Hours, informal sessions where participants can discuss their background, skills, and possible first contributions. See the <a href="https://contributor.r-project.org/events/">R Contributor events calendar</a> for upcoming opportunities.</p>
+</section>
+<section id="what-about-git-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-git-and-github">What about Git and GitHub?</h2>
+<p>Another recurring question is why contributing to R does not follow the GitHub pull-request workflow familiar to many open source developers.</p>
+<p>R currently uses Subversion for its primary source repository and Bugzilla for issue and patch management. Turner explained that any migration must balance ease of contribution with the project’s long-term control of its own infrastructure, rather than relying on a commercially controlled platform.</p>
+<p>Urbanek cautioned against treating SVN versus Git as the central issue:</p>
+<blockquote class="blockquote">
+<p>I’d say the version control system is sort of the least relevant in all of this. It’s more about the ecosystem that we can use.</p>
+</blockquote>
+<p>Meanwhile, the R Dev Guide and R Dev Container can improve the contributor experience without waiting for a wholesale change in development platforms.</p>
+</section>
+<section id="what-about-ai-assisted-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-ai-assisted-contributions">What about AI-assisted contributions?</h2>
+<p>AI raises another emerging question for open source projects: what happens when contributors use AI to identify bugs or generate patches?</p>
+<p>Urbanek said R Core has been discussing the issue. One concern is ensuring that AI-assisted submissions do not simply create additional work for maintainers.</p>
+<blockquote class="blockquote">
+<p>Definitely need to have at least a human in the loop that’s actually, you know, working on this.</p>
+</blockquote>
+<p>He acknowledged the potential value of AI:</p>
+<blockquote class="blockquote">
+<p>Obviously, we acknowledge that AI can be very useful, especially for things like fixing bugs.</p>
+</blockquote>
+<p>The distinction is whether AI is being used as a tool by a contributor who understands and takes responsibility for the work.</p>
+<blockquote class="blockquote">
+<p>As long as it’s just a tool that a human uses to do the work, that would be fine. But if it’s something where people just want to submit things that they essentially copy-pasted from AI tools, it’s a whole different story.</p>
+</blockquote>
+<p>Kurt Hornik made a similar point: AI may identify real problems and suggest fixes, but people still have to assess their significance and review the proposed changes. He said R Core is discussing AI-assisted patch policies and looking at approaches taken by other open source projects, including Debian.</p>
+</section>
+<section id="there-are-many-ways-in" class="level2">
+<h2 class="anchored" data-anchor-id="there-are-many-ways-in">There are many ways in</h2>
+<p>Contributing to R is not reserved for a small group of language experts. You can report a bug, propose a feature, participate in R-devel discussions, improve documentation or translations, help with infrastructure, attend an R Dev Day or Contributor Office Hour, or develop and submit a patch.</p>
+<p>The work supported by the Research Software Maintenance Fund aims to make those pathways easier to find and follow.</p>
+<p>As Turner put it:</p>
+<blockquote class="blockquote">
+<p>We hope that through all these different ways of attacking problems, it will help to strengthen the contributor community and the pool of people that can keep R going into the future.</p>
+</blockquote>
+<style>
+.support-r {
+  display: grid;
+  grid-template-columns: 220px minmax(300px, 360px);
+  gap: 1.5rem 2rem;
+  align-items: start;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.support-r img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.support-r p {
+  margin-bottom: 0.35rem !important;
+}
+
+@media (max-width: 768px) {
+  .support-r {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
+</style>
+</section>
+<section id="support-r-financially" class="level2">
+<h2 class="anchored" data-anchor-id="support-r-financially">Support R Financially</h2>
+<div class="support-r">
+<div class="support-r-item">
+<p><a href="https://contributor.r-project.org/"><img src="https://r-consortium.org/posts/how-do-i-contribute-to-r/qr-contribute-to-r.png" class="img-fluid" alt="QR code linking to contributor.r-project.org"></a></p>
+<p><strong>Contribute to R</strong></p>
+<p><a href="https://contributor.r-project.org/">contributor.r-project.org</a></p>
+</div>
+<div class="support-r-item">
+<p><a href="https://www.r-project.org/foundation/donations.html"><img src="https://r-consortium.org/posts/how-do-i-contribute-to-r/qr-r-foundation-donations.png" class="img-fluid" alt="QR code linking to the R Foundation donations page"></a></p>
+<p><strong>Support the R Foundation</strong></p>
+<p><a href="https://www.r-project.org/foundation/donations.html">r‑project.org/foundation/donations.html</a></p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>infrastructure</category>
+  <category>events</category>
+  <category>community</category>
+  <guid>https://r-consortium.org/posts/how-do-i-contribute-to-r/</guid>
+  <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/how-do-i-contribute-to-r/sustaining-r-panel.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>nlmixr2save: Fits You Can Read, Runs You Don’t Repeat</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1590,37 +1730,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/open-source-makes-ai-better/</guid>
   <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/open-source-makes-ai-better/open-source-makes-ai-better-thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Beyond Feasibility: Learning from FDA’s Response to WebAssembly and Container-Based Submissions</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>In May 2026, the R Consortium R Submissions Working Group received the FDA’s review letter for Pilot 4, which summarized the FDA’s evaluation of using WebAssembly and Docker containers to package and run an R Shiny application in a regulatory review setting. The letter can be found here: <a href="https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot4_Submission.pdf">Summary R Pilot 4 Submission</a></p>
-<p>The R Consortium R Submissions Working Group’s Pilot 4 explored an important question for the future of regulatory submissions: can modern technologies such as WebAssembly and Docker containers help deliver R Shiny applications in a way that FDA reviewers can run, inspect, and reproduce?</p>
-<p>The pilot, led by Eric Nantz from Eli Lilly, was intentionally ambitious. Its goal was to package an R Shiny application and associated data into a more self-contained submission, reducing the need for reviewers to manually configure complex software environments. The first part of the submission, using WebAssembly, was made in September 2024. The pilot was then resubmitted in June 2025 with both WebAssembly and Docker containers. FDA staff successfully reviewed the submission, demonstrating the technical feasibility of both approaches. Just as importantly, the review generated valuable feedback on how to make modern submission artifacts even more practical, reproducible, and reviewer-friendly.</p>
-<p>WebAssembly testing did not identify major issues, which is an encouraging signal for browser-based approaches. At the same time, the review reinforced that WebAssembly does not fully eliminate the core reproducibility challenges inherent in FDA submissions. Even with WebAssembly, the renv package was still required to restore the dependencies needed to build the application, and a web server process was needed to view it. Robust package management, accurate file paths, and clear reviewer instructions remain essential — and that the approach does not yet remove the need to reproduce the applicant’s computing environment.</p>
-<p>Docker containers demonstrated potential as a model for portable and reproducible computing environments, but the review also surfaced practical barriers. The FDA report noted that the usability of Docker containers in the FDA environment remains uncertain: Docker Desktop requires Windows Subsystem for Linux (WSL), which may not be permitted on all FDA computing environments, and FDA does not currently support installation of Docker Desktop on agency-issued laptops without a paid license or Docker Community Edition. Additional issues included inconsistent build performance. The report concluded that Docker containers, as currently implemented, do not fully eliminate the need for manual configuration and may not yet provide the level of robustness required for regulatory submissions.</p>
-<p>Strategically, Pilot 4 was not just a technical test. It was also a learning exercise. As part of the pilot, a series of educational sessions on container technology was provided to FDA and industry participants, helping build a shared understanding of the opportunities, limitations, and practical considerations of these modern approaches. This pilot helped reveal the practical gap between technical feasibility and operational ease for reviewers, giving us a clearer view of what needs to be improved next. Pilot 4 reminds us that feasibility is only the first step. The broader goal is to make open-source-based regulatory submissions operational, repeatable, secure, and easy for reviewers to use. By demonstrating what is possible and illuminating where additional alignment is needed, Pilot 4 helps pave the way for a future where modern solutions like WebAssembly and Docker are not only technically possible, but truly practical for regulatory review.</p>
-<p>To learn more about the R Consortium Submission Working Group’s past and ongoing pilots, visit <a href="https://rconsortium.github.io/submissions-wg/" class="uri">https://rconsortium.github.io/submissions-wg/</a></p>
-<p>To learn more about the R Consortium Working Groups and how you can get involved, please see: <a href="https://r-consortium.org/all-projects/isc-working-groups.html" class="uri">https://r-consortium.org/all-projects/isc-working-groups.html</a></p>
-
-
-
- ]]></description>
-  <category>isc</category>
-  <category>announcements</category>
-  <category>submissions</category>
-  <category>pharma</category>
-  <category>working groups</category>
-  <guid>https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/</guid>
-  <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/Screenshot.png" medium="image" type="image/png" height="147" width="144"/>
 </item>
 </channel>
 </rss>
