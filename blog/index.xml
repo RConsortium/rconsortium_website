@@ -9,8 +9,91 @@
 <link>https://r-consortium.org/blog/</link>
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.10.19</generator>
-<lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.11.9</generator>
+<lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Consortium Awards Second Round of 2026 Technical Grants</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/r-consortium-awards-second-round-of-2026-technical-grants/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://r-consortium.org/posts/r-consortium-awards-second-round-of-2026-technical-grants/technical-grant-winners-announced-2026-group-2.png" class="img-fluid" alt="Graphic with text: Technical Awards, Second Group Awarded in 2026! on a blue background with stars"></p>
+<p>The R Consortium’s Infrastructure Steering Committee (ISC) is pleased to announce the second round of 2026 technical grant recipients. These six projects will receive support to benchmark and speed up the R interpreter, expand translation and census data resources, modernize the R Journal’s publishing infrastructure, bring Kubernetes and batch workflows to R, and deliver GeoArrow-native spatial computation.</p>
+<p>The R Consortium ISC grant program funds projects that strengthen the R ecosystem’s technical and social infrastructure. These grants support open source development, tools, and community initiatives that benefit the broader R community. Successful proposals typically show broad impact, focused scope, clear deliverables, and demonstrable value to R users and package developers.</p>
+<p>The second 2026 grant cycle reflects the range of work required to keep R useful, modern, and reliable. Some projects focus on core infrastructure, including a representative benchmark suite and performance dashboard for the R interpreter, the publishing workflow behind the R Journal, and a high-performance spatial computation engine. Others expand access and reach, with machine-assisted translation of R help pages and reproducible access to Argentina’s historical census statistics, or connect R to cloud and workflow systems through a Kubernetes client and a batch job framework.</p>
+<p>The recipients come from a geographically diverse set of institutions and communities across the Czech Republic, India, Argentina, Australia, Canada, Ireland, and the United States. They include university faculty and researchers, package authors and maintainers, national statistics office staff, journal editors, and independent developers, many of whom are already deeply involved in the R and rOpenSci communities.</p>
+<p>Together, these projects demonstrate the continuing importance of targeted funding and support for open source software.</p>
+<p>You can browse the complete list of ISC technical grant recipients on the <a href="https://r-consortium.org/all-projects/funded-projects.html">R Consortium funded projects page</a>. Looking to apply for funding? Visit the <a href="https://r-consortium.org/all-projects/callforproposals.html">R Consortium Call for Proposals page</a> for details on future grant opportunities, and follow the R Consortium blog for announcements.</p>
+<section id="measuring-r-performance-representative-benchmarks-performance-dashboard-and-profile-guided-builds" class="level3">
+<h3 class="anchored" data-anchor-id="measuring-r-performance-representative-benchmarks-performance-dashboard-and-profile-guided-builds">Measuring R Performance: Representative Benchmarks, Performance Dashboard, and Profile-Guided Builds</h3>
+<p>Leads: Pierre Donat-Bouillud, Assistant Professor, Czech Technical University in Prague (FIT CTU); Matěj Kocourek, Charles University; Filip Křikava, Associate Professor, Czech Technical University in Prague (FIT CTU)<br>
+Grant: $4,000</p>
+<p>This project will build an authoritative, representative benchmark suite for the R interpreter and use it to deliver profile-guided optimization (PGO) to R. Existing R benchmarks are scattered, often small, and tend to report only a single overall speedup or slowdown. The team’s benchmarks will be actionable: they will show not only how fast each program runs, but also where it spends its time across different regions of the R interpreter.</p>
+<p>The team will refine the categories used to classify R operations, collect a large corpus of real-world R code (including CRAN package vignettes, Kaggle notebooks, and GitHub scripts), and use it to check and improve how representative the suite is. They will also create a reusable GitHub Actions workflow and a public performance dashboard, similar to Python’s speed.python.org, for comparing R performance across versions, platforms, and build configurations. The same tooling can be used to benchmark R packages.</p>
+<p>Finally, the project will study whether PGO improves the performance of real-world R code and will provide a patch to R Core to enable PGO in R builds. Preliminary experiments have shown speedups of up to 10%.</p>
+</section>
+<section id="babelrd-machine-drafted-human-reviewed-translations-of-r-help-pages" class="level3">
+<h3 class="anchored" data-anchor-id="babelrd-machine-drafted-human-reviewed-translations-of-r-help-pages">babelrd: machine-drafted, human-reviewed translations of R help pages</h3>
+<p>Lead: Aditya Bansal, Indian Institute of Technology Madras; Google Summer of Code 2026 contributor, R Project<br>
+Grant: $5,600</p>
+<p><code>rdlocal</code> lets R users read help pages in their own language by installing a translation module, but every translation is still written by hand, and the help text for base R alone runs to roughly a million characters per language. Aditya Bansal will build <code>babelrd</code>, a companion package that lets a translation team machine-draft a shared <code>rdlocal</code> module for a package and language, check that every page still renders correctly, and then have people review the draft.</p>
+<p>Plain machine translation can easily break help pages by altering code, link targets, or the placeholders <code>rdlocal</code> uses for live values. <code>babelrd</code> will protect those elements, translate one help page at a time for consistent terminology, and validate the result. Every machine-drafted string will be marked as needing review, and human translations will never be overwritten. A bridge to PO files will allow review in Weblate or any gettext editor.</p>
+<p>The project will start with DeepL, then add glossary support and additional translation backends. It will also publish a pilot Spanish draft of the <code>MASS</code> package help pages together with a quality report. The work builds on earlier ISC-funded translation efforts, including <code>rhelpi18n</code>, <code>babeldown</code>, and the Consistent Translations Glossary.</p>
+</section>
+<section id="arcenso-expanding-and-strengthening-an-r-package-for-argentinas-census-data" class="level3">
+<h3 class="anchored" data-anchor-id="arcenso-expanding-and-strengthening-an-r-package-for-argentinas-census-data">ARcenso: Expanding and Strengthening an R Package for Argentina’s Census Data</h3>
+<p>Leads: Andrea Gomez Vargas, National Institute of Statistics and Censuses of Argentina (INDEC); rOpenSci; RLadies+; R en Buenos Aires. Emanuel Ciardullo, INDEC; rOpenSci; R en Buenos Aires<br>
+Grant: $5,500</p>
+<p><code>ARcenso</code> is an open-source R package, developed through the rOpenSci Champions Program, that provides reproducible access to Argentina’s official census statistics. Historical census results are scattered across printed publications, scanned documents, and spreadsheets whose structure and classifications change from one census round to the next, which makes them hard to access, compare, and reuse.</p>
+<p>This project will strengthen the package’s infrastructure, including internal data storage and data types, testing, and documentation, and prepare it for its first CRAN release and publication on R-universe. It will also extend the package’s reproducible, version-controlled processing and validation workflow, incorporating automation such as AI-assisted extraction and GitHub Actions together with automated checks and human review.</p>
+<p>Building on that foundation, census coverage will be expanded with the 1960 census and national and subnational data from the 1980 and 1991 censuses, representing roughly 3,500 Excel files of official tables. The work will give statistical offices, researchers, educators, and journalists a more robust way to analyze Argentina’s long-term demographic change, and it offers a model for preserving historical official statistics elsewhere.</p>
+</section>
+<section id="modernising-the-r-journal-publishing-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="modernising-the-r-journal-publishing-infrastructure">Modernising the R Journal Publishing Infrastructure</h3>
+<p>Lead: Emi Tanaka, Australian National University, with R Journal Executive Editorial Team members Emily Zabor (Case Western Reserve University; Cleveland Clinic Taussig Cancer Institute), Vincent Arel-Bundock (University of Montreal), and Rob Hyndman (Monash University)<br>
+Grant: $9,900</p>
+<p>The R Journal is an open-access, peer-reviewed, volunteer-run journal owned by the R Foundation, with more than 850 articles published since 2009. Its production workflow remains largely manual, LaTeX submissions have no reliable route to HTML (some articles are available only as PDF), the R Markdown article template lacks the unified cross-referencing and citation support that Quarto provides, and the <code>rj</code> package and distill-based website have accumulated technical debt.</p>
+<p>A contracted assistant, supervised by the Executive Editorial Team, will modernize this infrastructure. The project will build a LaTeX-to-HTML workflow around LaTeXML, the software arXiv uses for the same purpose, and package it as a Docker image and browser-based live preview that render an article to HTML and PDF with a readable report of errors and warnings. It will also publish author guidelines for LaTeX aligned with arXiv.</p>
+<p>The project will also replace the R Markdown article template in <code>rjtools</code> with a Quarto template that produces both galleys from a single source, simplify <code>rj</code> to work with the new workflow and emit a validated metadata record, and replace the distill website with a searchable Quarto website. Together, these changes will reduce the manual burden on volunteer editors and improve accessibility for readers.</p>
+</section>
+<section id="kubernetes-r-client-and-batch-framework-for-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="kubernetes-r-client-and-batch-framework-for-r-packages">Kubernetes R Client and Batch Framework for R Packages</h3>
+<p>Lead: Alexandru Mahmoud, University of Limerick; Bioconductor (via NumFOCUS)<br>
+Grant: $7,000</p>
+<p>R has no Kubernetes client on CRAN, even though most other major languages have had official clients for years. R users must shell out to <code>kubectl</code> or switch to Python, and parallelization frameworks such as BiocParallel, future, and crew cannot easily start workers on Kubernetes. R package maintainers also lack an established way to declare batch jobs from their own packages, so workflow systems such as Galaxy and Nextflow rely on hand-written wrappers that can lag years behind the packages they wrap.</p>
+<p>Alexandru Mahmoud will release <code>kube</code>, a dynamic R client for the Kubernetes API, and <code>RBatch</code>, a framework for declaring batch-shaped jobs within R packages and generating Galaxy, Nextflow, WDL, GA4GH TES, HTCondor, and Kubernetes job wrappers from a single declaration. <code>RBatch</code> generalizes the <code>BiocJobs</code> hackathon project, which is already used by a UKRI-funded BioFAIR project.</p>
+<p>The project will also provide a job-testing GitHub Action that starts a k3s cluster, submits each declared job with <code>kube</code>, and runs its test, along with a proposal to integrate it into R-universe’s build workflow. The work will be supported by developer and user documentation, a Getting Started guide, and a final report.</p>
+</section>
+<section id="native-geoarrow-computation-engine-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="native-geoarrow-computation-engine-in-r">Native GeoArrow Computation Engine in R</h3>
+<p>Lead: Josiah Parry<br>
+Grant: $5,000</p>
+<p>Spatial analysis in R with <code>sf</code> can struggle to scale, in part because geometries are stored as R lists and must be converted to and from GEOS or S2 geometries for every operation. GeoArrow, an extension of the Apache Arrow standard for representing spatial data in memory, avoids this overhead, but R still lacks a GeoArrow-native computation engine that scales well and has a small footprint.</p>
+<p>Josiah Parry will complete <code>geoarrowrs</code>, a Rust-based, GeoArrow-native, parallelized spatial computation engine for R built on extendr. The package has no system dependencies and no runtime downloads. This project will complete the core geometry engine, add persistent R-tree and KD-tree spatial indexes that can also be used to spatially sort geometries, and provide drop-in <code>sf</code> compatibility through <code>mask_sf()</code> along with a CRAN release.</p>
+<p>The project will also add enhanced GeoParquet support, including spatial sorting, bounding-box covering columns for predicate pushdown, and persistent coordinate reference systems in PROJJSON so that GeoArrow data moves losslessly between R, Python, DuckDB, and GDAL.</p>
+</section>
+<section id="supporting-open-infrastructure-for-the-r-community" class="level3">
+<h3 class="anchored" data-anchor-id="supporting-open-infrastructure-for-the-r-community">Supporting Open Infrastructure for the R Community</h3>
+<p>The R Consortium ISC is pleased to support these six projects. Each addresses a concrete need in the R ecosystem: measuring and improving interpreter performance, making documentation and official statistics more accessible, sustaining the infrastructure behind the R Journal, connecting R to modern cloud and workflow systems, and bringing scalable spatial computation to R users.</p>
+<p>We will be following the progress of these projects and sharing updates as the grantees deliver new releases, documentation, examples, workshops, and community resources.</p>
+<p>A full list of all ISC technical grant recipients is available <a href="https://r-consortium.org/all-projects/funded-projects.html">here</a>. We look forward to seeing your work on the list in the near future!</p>
+<p>For future grant opportunities, <a href="https://r-consortium.org/all-projects/callforproposals.html">visit the R Consortium Call for Proposals page</a> and follow the R Consortium blog for announcements.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>isc</category>
+  <category>announcements</category>
+  <category>infrastructure</category>
+  <guid>https://r-consortium.org/posts/r-consortium-awards-second-round-of-2026-technical-grants/</guid>
+  <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/r-consortium-awards-second-round-of-2026-technical-grants/technical-grant-winners-announced-2026-group-2.png" medium="image" type="image/png" height="60" width="144"/>
+</item>
 <item>
   <title>How Do I Contribute to R? A Guide to Getting Involved with R Core</title>
   <dc:creator>R Consortium</dc:creator>
@@ -149,7 +232,7 @@
   <category>community</category>
   <guid>https://r-consortium.org/posts/how-do-i-contribute-to-r/</guid>
   <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/how-do-i-contribute-to-r/sustaining-r-panel.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://r-consortium.org/posts/how-do-i-contribute-to-r/sustaining-r-panel.jpg" medium="image" type="image/jpeg" height="81" width="144"/>
 </item>
 <item>
   <title>nlmixr2save: Fits You Can Read, Runs You Don’t Repeat</title>
@@ -576,7 +659,7 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <category>community</category>
   <guid>https://r-consortium.org/posts/meet-our-2026-r-consortium-board-of-directors/</guid>
   <pubDate>Mon, 31 Aug 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/meet-our-2026-r-consortium-board-of-directors/board-of-directors-2026-homepage.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://r-consortium.org/posts/meet-our-2026-r-consortium-board-of-directors/board-of-directors-2026-homepage.jpg" medium="image" type="image/jpeg" height="62" width="144"/>
 </item>
 <item>
   <title>nlmixr2 7.0’s Covariance Step, All Grown Up</title>
@@ -1594,7 +1677,7 @@ font-style: inherit;">library</span>(planr)</span></code></pre></div></div>
   <category>supply chain</category>
   <guid>https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/</guid>
   <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/NicolasNguyen.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/NicolasNguyen.jpg" medium="image" type="image/jpeg" height="144" width="144"/>
 </item>
 <item>
   <title>Survival Analysis with nlmixr2</title>
@@ -1631,105 +1714,6 @@ Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://gi
   <guid>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/</guid>
   <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
-</item>
-<item>
-  <title>Open Source Makes AI Better</title>
-  <dc:creator>Terry Christiani, Executive Director</dc:creator>
-  <link>https://r-consortium.org/posts/open-source-makes-ai-better/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="investing-in-people-languages-and-shared-infrastructure-gives-companies-a-stronger-foundation-for-ai." class="level2">
-<h2 class="anchored" data-anchor-id="investing-in-people-languages-and-shared-infrastructure-gives-companies-a-stronger-foundation-for-ai.">Investing in people, languages, and shared infrastructure gives companies a stronger foundation for AI.</h2>
-<p>Artificial intelligence is changing how software gets written. It can help developers move faster, autocomplete routine code, explain unfamiliar functions, generate tests, and lower the friction of learning a new API. Used well, AI is a force multiplier for technical teams.</p>
-<p>That productivity gain is real. <a href="https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/">In a controlled experiment on GitHub Copilot</a>, developers with access to the AI pair programmer completed a programming task 55.8% faster than developers without it.</p>
-<p>That is good news for companies. It is also good news for open-source communities.</p>
-<p>But it points to an important strategic question: <em>What is the foundation that AI tools are multiplying?</em></p>
-<p>AI coding tools do not emerge from nowhere. They are built on human-created code, documentation, examples, issues, package ecosystems, tutorials, and years of direct experience solving real problems. <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-research-recitation">GitHub has described Copilot as trained on billions of lines of public code</a>, and the BigCode project’s “The Stack” dataset <a href="https://arxiv.org/abs/2211.15533">includes 6.4 TB of permissively licensed source code across 358 programming languages</a>. StarCoderBase was trained on more than 80 languages from that dataset.</p>
-<p>That matters because AI is downstream from open-source ecosystems.</p>
-<p>The better the ecosystem, the better the AI assistance can become. Better packages create better examples. Better documentation creates better answers. Better standards reduce ambiguity. Better public workflows give AI systems stronger patterns to learn from and give human developers stronger patterns to apply.</p>
-<p>For companies investing heavily in AI, this should be encouraging. Supporting open-source is not separate from AI strategy. It is part of building the knowledge base, practice base, and trust base that AI depends on.</p>
-<section id="open-source-is-where-new-practice-becomes-shared-infrastructure" class="level3">
-<h3 class="anchored" data-anchor-id="open-source-is-where-new-practice-becomes-shared-infrastructure">Open source is where new practice becomes shared infrastructure</h3>
-<p>Open-source languages stay relevant because people keep using them to solve new problems.</p>
-<p>That is especially true for R. R is not just a programming language. It is a working environment for statistics, data science, visualization, and research in medicine, finance, insurance, public policy, and regulated analytics. Its value comes from the interaction between the language, its package ecosystem, its users, and the community that test ideas in practice.</p>
-<p>Many important improvements in R reflect that cycle.</p>
-<p><a href="https://blog.r-project.org/2020/02/16/stringsasfactors">R 4.0.0 changed the default behavior of <code>stringsAsFactors</code> to <code>FALSE</code></a>, a change shaped by long-running user experience and by practices already adopted in modern alternatives such as <code>data.table</code> and tibble. R 4.1.0 introduced <a href="https://cran.r-project.org/bin/windows/base/old/4.1.0/NEWS.R-4.1.0.html">the native pipe operator</a>, reflecting the widespread value of pipeline-oriented programming in R workflows.</p>
-<p>These are not abstract language changes. They are examples of how real-world use creates better tooling.</p>
-<p>People encounter friction. They compare approaches. They build packages. They teach others. They document what works. Eventually, the best ideas influence the language and the broader ecosystem.</p>
-<p>That human pattern of engagement and development creates the examples AI systems learn from.</p>
-<p>If companies want AI tools that understand modern R practice, regulated analytics, reproducible research, production workflows, and domain-specific constraints, those practices need to exist in the open. They need maintainers. They need documentation. They need public examples. They need people with direct experience doing the work.</p>
-</section>
-<section id="human-experience-creates-the-use-cases-ai-cannot-invent-alone" class="level3">
-<h3 class="anchored" data-anchor-id="human-experience-creates-the-use-cases-ai-cannot-invent-alone">Human experience creates the use cases AI cannot invent alone</h3>
-<p>Novel use cases come from people applying tools under real constraints.</p>
-<p>Consider pharmaceutical and regulatory work. <a href="https://pharmar.org/riskassessment/">The R Validation Hub</a> supports the adoption of R in biopharmaceutical regulatory settings and develops resources such as <code>{riskmetric}</code> and the Risk Assessment Shiny application.</p>
-<p><a href="https://r-consortium.org/posts/submissions-wg-2026/">The R Consortium Submissions Working Group</a> is another example. Its cross-industry work focuses on improving practices for R-based clinical trial regulatory submissions. Recent pilots have explored WebAssembly and container technologies for bundling R-based Shiny applications for FDA submission workflows, R-based submissions using Dataset-JSON.</p>
-<p>This work is valuable because it is grounded in experience. It is not generic code generation. It is the result of statisticians, programmers, reviewers, companies, and regulators working through the details of reproducibility, reviewability, data standards, package risk, and submission workflows.</p>
-<p>That is how best practices are created.</p>
-<p>Best practices aren’t just snippets of code. They are habits formed through development, review, testing, documentation, release management, maintenance, user support, and organizational adoption. Open-source is a powerful environment for this work because decisions are visible, examples are reusable, and lessons can travel across companies instead of remaining locked inside one organization.</p>
-<p>AI can help accelerate that process because it benefits from the process first.</p>
-</section>
-<section id="ai-makes-open-source-ecosystem-investment-more-valuable" class="level3">
-<h3 class="anchored" data-anchor-id="ai-makes-open-source-ecosystem-investment-more-valuable">AI makes open-source ecosystem investment more valuable</h3>
-<p>The rise of AI should not reduce corporate investment in open-source languages. It should increase the value of that investment.</p>
-<p>There is a practical reason: AI tools need fresh, high-quality, human-tested material. Research in <a href="https://www.nature.com/articles/s41586-024-07566-y"><em>Nature</em></a> warns that generative models trained recursively on model-generated content can experience “model collapse,” where the tails of the original data distribution disappear and models misperceive the underlying reality.</p>
-<p>For software, the lesson is straightforward. AI systems need a continuing supply of human-created, human-reviewed, real-world examples. They need living ecosystems, not stale archives.</p>
-<p>That is where corporate participation matters.</p>
-<p>When companies contribute to open-source languages and communities, they strengthen the same foundation their internal teams use every day. They also improve the public knowledge base from which AI-enabled development benefits.</p>
-<p>That contribution can take many forms:</p>
-<ul>
-<li>Funding core infrastructure.</li>
-<li>Supporting package maintenance.</li>
-<li>Giving engineers time to contribute upstream.</li>
-<li>Sponsoring documentation, training, and translation.</li>
-<li>Participating in working groups.</li>
-<li>Sharing non-differentiating tools and workflows.</li>
-<li>Supporting conferences and community education.</li>
-<li>Helping develop industry standards around reproducibility, validation, risk, and regulatory use.</li>
-</ul>
-<p>None of these actions require a company to give away its competitive advantage. They strengthen the common layer beneath private innovation.</p>
-</section>
-<section id="the-r-consortiums-role" class="level3">
-<h3 class="anchored" data-anchor-id="the-r-consortiums-role">The R Consortium’s role</h3>
-<p><a href="https://r-consortium.org/about/">The R Consortium</a> exists to support that common layer. Its central mission is to work with and support the R Foundation and the key organizations developing, maintaining, distributing, and using R software through technical and social infrastructure projects. Its ISC grants program funds code development, technical infrastructure, and other research projects that help sustain the R community.</p>
-<p>Recent investments in R reinforce the same point.</p>
-<p><a href="https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/">The Software Sustainability Institute</a> awarded approximately USD $650,000 under the Research Software Maintenance Fund to support “Enabling the Next Generation of Contributors to R,” a project focused on sustaining the human contributor pipeline for the language.</p>
-<p><a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">The Sovereign Tech Fund</a> also invested $450,000 in the R Foundation to modernize R’s core infrastructure, improve maintainability, and strengthen the supply chain. More broadly, the Sovereign Tech Fund invests in open digital base technologies that are vital to other software, including programming language libraries, package managers, developer tools, and encryption technologies.</p>
-<p>That framing is useful for companies thinking about AI. Open-source languages are base technologies. They are part of the infrastructure that makes innovation possible.</p>
-<p>AI does not make that infrastructure less important. It increases the leverage of every improvement made to it.</p>
-</section>
-<section id="a-better-flywheel" class="level3">
-<h3 class="anchored" data-anchor-id="a-better-flywheel">A better flywheel</h3>
-<p>The opportunity is not to choose between AI and open-source. The opportunity is to connect them.</p>
-<p>A healthy open-source ecosystem produces better tools, better packages, better documentation, better standards, and better public examples. Those resources help developers work more effectively. They also help AI tools provide better assistance. Better AI assistance, in turn, can help more people contribute, learn, document, test, and build.</p>
-<p>This is the flywheel companies should want:</p>
-<ul>
-<li>Invest in open source.</li>
-<li>Improve the ecosystem.</li>
-<li>Strengthen the human knowledge base.</li>
-<li>Make AI tools more useful.</li>
-<li>Accelerate internal engineering.</li>
-<li>Contribute back what can be shared.</li>
-<li>Repeat.</li>
-</ul>
-<p>For companies that depend on R, the invitation is clear. Join the R Consortium. Participate in working groups. Support grants. Fund maintenance. Encourage engineers and statisticians to contribute upstream. Help build shared standards in regulatory submissions, assessing and assigning risk, ensuring reproducibility, automating package validation, and strengthening industry analytics.</p>
-<p>The future of AI-enabled development will be stronger if the open-source ecosystems beneath it are strong.</p>
-<p>Open-source languages are living systems. They need maintainers, contributors, reviewers, educators, users, and institutions willing to invest in the shared foundation. AI can help us move faster on that foundation. Together, we can make sure the foundation keeps getting stronger.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>ai</category>
-  <category>software development</category>
-  <guid>https://r-consortium.org/posts/open-source-makes-ai-better/</guid>
-  <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/open-source-makes-ai-better/open-source-makes-ai-better-thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
