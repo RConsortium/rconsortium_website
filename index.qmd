@@ -135,60 +135,6 @@ format: html
 .goldButton:active { transform:translateY(1px); }
 .goldButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
 
-.mustardButton {
-  display:inline-block;
-  padding:20px 36px;
-  border-radius:999px;
-  font-weight:700;
-  font-size:1.6em;
-  text-decoration:none;
-  background-color:#D09028;
-  color:#ffffff;
-  border:none;
-  box-shadow:0 6px 14px rgba(0,0,0,.25);
-  transition:background-color .2s ease, transform .06s ease;
-}
-.mustardButton a {
-  color:inherit;
-  text-decoration:none;
-}
-.mustardButton:hover {
-  background-color:#B87C1F;
-  color:#ffffff;
-}
-.mustardButton:hover a {
-  color:#ffffff;
-}
-.mustardButton:active { transform:translateY(1px); }
-.mustardButton:focus-visible { outline:3px solid #fff; outline-offset:2px; }
-
-.rai-cfp-slide {
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-}
-.rai-cfp-slide .rai-cfp-copy {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-left: calc(min(22vw, 14rem) - 60px);
-  margin-top: calc(11rem + 44px);
-  padding: 0 1.5rem;
-}
-.rai-cfp-slide .mustardButton {
-  z-index: 2;
-  margin-top: 0;
-  padding: 20px 40px;
-  font-size: 1.6em;
-}
-@media (max-width: 700px) {
-  .rai-cfp-slide .rai-cfp-copy { margin-left: -60px; margin-top: calc(12.5rem + 24px); }
-  .rai-cfp-slide .mustardButton { font-size: 1.15em; padding: 14px 26px; }
-}
-
 .sustaining-r-webinar-slide {
   background: #f7f9fc;
 }
@@ -336,12 +282,6 @@ format: html
 <div class="sustaining-r-frame">
 <img src="images/carousel/sustaining-r-panel-webinar.jpg?v=6" alt="Sustaining R: Investing in the People, Infrastructure, and Community Behind R. A panel discussion with Simon Urbanek, Kurt Hornik, and Heather Turner, hosted by the R Consortium.">
 <button class="blueButton"><a href="webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.qmd">Full presentation recording available</a></button>
-</div>
-</div>
-
-<div class="swiper-slide rai-cfp-slide" style="background-image: url(images/carousel/rplusai-registration-open-2026.png?v=2);">
-<div class="rai-cfp-copy">
-<button class="mustardButton"><a href="https://rconsortium.github.io/RplusAI_website/" style="text-decoration: none;">Register Now!</a></button>
 </div>
 </div>
 
