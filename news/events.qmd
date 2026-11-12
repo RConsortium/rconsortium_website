@@ -12,24 +12,34 @@ format:
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
-    '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI 2026</a>',
-    '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>'
+    'Risk 2027',
+    'R/Medicine 2027',
+    'rainbowR 2027',
+    'CascadiaR 2027'
   ),
   dates = c(
-    "Nov 10-11, 2026",
-    "Nov 11, 2026"
+    'Feb 2027',
+    'May 3-7, 2027',
+    'June 2027',
+    'June 2027'
   ),
   location = c(
-    "Virtual",
-    "Virtual"
+    'Virtual',
+    'Virtual',
+    'Virtual',
+    'Seattle, Washington'
   ),
   icon = c(
-    "Conference",
-    "Conference"
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference'
   ),
   Type = c(
-    "Conference",
-    "Conference"
+    'Conference',
+    'Conference',
+    'Conference',
+    'Conference'
   ),
   stringsAsFactors = FALSE
 )
@@ -75,6 +85,8 @@ gt_table
 # Data frame with HTML links
 df <- data.frame(
   Title = c(
+    '<a href="https://rconsortium.github.io/RplusAI_website/" target="_blank" rel="noreferrer noopener">R+AI 2026</a>',
+    '<a href="https://latin-r.com/" target="_blank" rel="noreferrer noopener">LatinR</a>',
     '<a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html" target="_blank" rel="noreferrer noopener">Sustaining R: Investing in the People, Infrastructure, and Community Behind R</a>',
     '<a href="https://ghana-rusers.org/ghana-r-conference-2026/" target="_blank" rel="noreferrer noopener">Ghana R Conference</a>',
     '<a href="https://user2026.r-project.org/" target="_blank" rel="noreferrer noopener">useR! 2026</a>',
@@ -142,6 +154,8 @@ df <- data.frame(
     '<a href="https://r-consortium.org/webinars/AdoptionOfRInJapansPharma.html" target="_blank" rel="noreferrer noopener">The use of R in Japan’s Pharma Industry</a>'
   ),
   dates = c(
+    'Nov 10-11, 2026',
+    'Nov 11, 2026',
     'Oct 6, 2026',
     'July 9-10, 2026',
     'July 6-9, 2026',
@@ -210,6 +224,8 @@ df <- data.frame(
   ),
   location = c(
     'Virtual',
+    'Virtual',
+    'Virtual',
     'Accra Technical University, Ghana',
     'Warsaw, Poland',
     'Portland, OR, USA',
@@ -276,6 +292,8 @@ df <- data.frame(
     'Virtual'
   ),
   Type = c(
+    'Conference',
+    'Conference',
     'Webinar',
     'Conference',
     'Conference',
@@ -343,6 +361,8 @@ df <- data.frame(
     'Webinar'
   ),
   icon = c(
+    'Conference',
+    'Conference',
     'Webinar',
     'Conference',
     'Conference',
