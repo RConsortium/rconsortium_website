@@ -10,7 +10,119 @@
 <atom:link href="https://r-consortium.org/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>What’s Ahead for R Core? Sustainability, Infrastructure, and the Next Generation of Contributors</title>
+  <dc:creator>R Consortium</dc:creator>
+  <link>https://r-consortium.org/posts/whats-ahead-for-r-core/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LH2oDSjoo28" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>R enters the late 2020s with significant new funding and international recognition of its contributions to statistical computing. <a href="https://www.rousseeuwprize.org/2026/press-release">R Core’s work was recognized in 2026 with the Rousseeuw Prize for Statistics</a>. The <a href="https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/">Sovereign Tech Fund committed $450,000 to the R Foundation</a> to strengthen R’s sustainability and security, while the <a href="https://r-consortium.org/posts/650K-for-R/">Research Software Maintenance Fund is supporting a two-year project</a> focused specifically on expanding the pool of people able to contribute to R. Together, these developments demonstrate substantial institutional support for R’s continued development and long-term sustainability.</p>
+<p>During the R Consortium webinar <a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html">“Sustaining R: Investing in the People, Infrastructure, and Community Behind R”</a>, R Core members Simon Urbanek, Kurt Hornik, and Heather Turner discussed work already underway to strengthen R’s technical foundations and expand the community capable of maintaining them.</p>
+<p>The discussion did not present a formal one- or two-year R Core roadmap. But it did identify several clear priorities: reducing technical debt, improving portability and testing, strengthening package infrastructure and software provenance, making R easier to contribute to, and developing the next generation of contributors. Urbanek, Turner, and Hornik each took up one part of that work: the software, the next generation of contributors, and the infrastructure behind both.</p>
+<section id="modernizing-rs-technical-foundations" class="level2">
+<h2 class="anchored" data-anchor-id="modernizing-rs-technical-foundations">Modernizing R’s Technical Foundations</h2>
+<p>Urbanek focused on keeping R reliable and maintainable through work that often happens behind the scenes. The Sovereign Tech Fund project spans ten milestones across R’s technical foundations, including bug fixes, package infrastructure, numerical work across platforms, provenance, testing, documentation, portability, and legacy code. For him, the common theme is sustainability.</p>
+<p>Open source ensures that source code is available, but availability alone does not make a project sustainable. Code must remain maintainable. Knowledge needs to be shared. New maintainers must be able to step in. And increasingly, users need confidence in the provenance and security of the software they install.</p>
+<section id="package-infrastructure-across-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="package-infrastructure-across-platforms">Package infrastructure across platforms</h3>
+<p>One visible piece of that work is R’s binary package infrastructure. Historically, R had separate binary package systems for Windows and macOS. Urbanek explained that the work began by making it possible to provide package binaries across platforms, rather than maintaining separate systems tied to particular operating systems. Different R builds and distributions can then define their own repositories and binary package sources.</p>
+</section>
+<section id="better-apis-documentation-and-testing" class="level3">
+<h3 class="anchored" data-anchor-id="better-apis-documentation-and-testing">Better APIs, documentation, and testing</h3>
+<p>Another priority is cleaning up and documenting R’s APIs, so the interfaces are understandable to people who did not originally create them. More work is also underway around portability and package testing, including containerizing test environments so the same tests can run across configurations and backend libraries and the results can be compared.</p>
+</section>
+<section id="reducing-technical-debt" class="level3">
+<h3 class="anchored" data-anchor-id="reducing-technical-debt">Reducing technical debt</h3>
+<p>R is more than 30 years old. Some code and libraries embedded in the system date back many years. One current task is deciding what should remain, what should be updated, and what can now be replaced by maintained external libraries, while preserving the stability and backward compatibility on which users depend.</p>
+</section>
+</section>
+<section id="supporting-the-infrastructure-behind-r" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-the-infrastructure-behind-r">Supporting the Infrastructure Behind R</h2>
+<p>Hornik focused on the <a href="https://www.r-project.org/foundation/">R Foundation</a>’s role in keeping R Core and CRAN running. He described one of its core functions as providing the hardware, software, and services their work requires, much of it invisible to everyday R users.</p>
+<p>Email is one example. Infrastructure previously supplied by a university now needs another sustainable home, and the R Foundation is working to address that need. A global open source project cannot assume indefinitely that universities, companies, individual volunteers, or temporary grants will continue supplying critical infrastructure. The Foundation’s work also extends beyond technical systems to outreach, community development, and securing the financial resources needed to sustain the project.</p>
+</section>
+<section id="stability-remains-a-design-constraint" class="level2">
+<h2 class="anchored" data-anchor-id="stability-remains-a-design-constraint">Stability Remains a Design Constraint</h2>
+<p>Turner emphasized that R Core deliberately works incrementally because users depend on existing R code continuing to work.</p>
+<p>“We want to keep things working for people in a predictable way,” Turner said. “We want things to be backwardly compatible, so that your code that you wrote a few years ago still works.”</p>
+<p>That has consequences for how quickly R changes.</p>
+<p>“Larger things can change, but we tend to work quite incrementally,” she said.</p>
+<p>For users in research, industry, and other settings where analyses may need to remain reproducible for years, that conservatism is a feature.</p>
+</section>
+<section id="building-the-next-generation-of-maintainers" class="level2">
+<h2 class="anchored" data-anchor-id="building-the-next-generation-of-maintainers">Building the Next Generation of Maintainers</h2>
+<p>The Research Software Maintenance Fund is supporting a two-year project focused on expanding the pool of people able to contribute to R. At the time of the webinar, Turner said the project was approximately six months underway. It includes mentoring a cohort of expert contributors, making it easier for people to begin contributing, and work on communication and the broader sustainability of the R Foundation.</p>
+<p>Turner said the project aims to “strengthen that contributor community and that pool of people that can keep R going into the future.”</p>
+<p>That includes <a href="https://contributor.r-project.org/r-dev-day/">R Dev Days</a>, development sprints, the <a href="https://contributor.r-project.org/rdevguide/">R Dev Guide</a>, contributor infrastructure, and environments that make it easier for a new contributor to build R and begin working with the source.</p>
+<p>At a recent three-day sprint at the University of Birmingham, approximately 30 people participated in person, with others joining online. Their work included statistical functions, package installation, translation, documentation, website accessibility, and CRAN-related infrastructure. The event brought together beginners, regular contributors, and experienced R Core members. Part of the objective, Turner explained, is to help participants learn from each other, not simply to complete individual contributions.</p>
+</section>
+<section id="thinking-beyond-the-next-grant" class="level2">
+<h2 class="anchored" data-anchor-id="thinking-beyond-the-next-grant">Thinking Beyond the Next Grant</h2>
+<p>The Sovereign Tech Fund and Research Software Maintenance Fund have enabled substantial work. But both are time-limited investments. The longer-term question is how to make the technical and human infrastructure around R sustainable beyond individual grants.</p>
+<p>Reflecting on the Rousseeuw Prize, Hornik connected recognition of R’s achievements over the past three decades with the responsibility to sustain the project for decades to come.</p>
+<p>“To make sure that R is still up and running and doing well in the next 30 years,” he said.</p>
+<p>The work underway is about ensuring that the language remains reliable, its infrastructure remains sustainable, and a new generation of contributors is ready to carry the project forward.</p>
+<p>Watch the full discussion and audience Q&amp;A on the <a href="https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html">R Consortium webinar page</a>.</p>
+<style>
+.support-r {
+  display: grid;
+  grid-template-columns: 220px minmax(300px, 360px);
+  gap: 1.5rem 2rem;
+  align-items: start;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.support-r img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.support-r p {
+  margin-bottom: 0.35rem !important;
+}
+
+@media (max-width: 768px) {
+  .support-r {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
+</style>
+</section>
+<section id="support-r-financially" class="level2">
+<h2 class="anchored" data-anchor-id="support-r-financially">Support R Financially</h2>
+<div class="support-r">
+<div class="support-r-item">
+<p><a href="https://contributor.r-project.org/"><img src="https://r-consortium.org/posts/whats-ahead-for-r-core/qr-contribute-to-r.png" class="img-fluid" alt="QR code linking to contributor.r-project.org"></a></p>
+<p><strong>Contribute to R</strong></p>
+<p><a href="https://contributor.r-project.org/">contributor.r-project.org</a></p>
+</div>
+<div class="support-r-item">
+<p><a href="https://www.r-project.org/foundation/donations.html"><img src="https://r-consortium.org/posts/whats-ahead-for-r-core/qr-r-foundation-donations.png" class="img-fluid" alt="QR code linking to the R Foundation donations page"></a></p>
+<p><strong>Support the R Foundation</strong></p>
+<p><a href="https://www.r-project.org/foundation/donations.html">r‑project.org/foundation/donations.html</a></p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>infrastructure</category>
+  <category>community</category>
+  <category>software development</category>
+  <guid>https://r-consortium.org/posts/whats-ahead-for-r-core/</guid>
+  <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://r-consortium.org/posts/whats-ahead-for-r-core/sustaining-r-panel.jpg" medium="image" type="image/jpeg" height="81" width="144"/>
+</item>
 <item>
   <title>R Consortium Awards Second Round of 2026 Technical Grants</title>
   <dc:creator>R Consortium</dc:creator>
@@ -1678,42 +1790,6 @@ font-style: inherit;">library</span>(planr)</span></code></pre></div></div>
   <guid>https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/</guid>
   <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
   <media:content url="https://r-consortium.org/posts/supply-chain-planning-with-r-an-interview-with-nicolas-nguyen-developer-of-the-planr-r-package/NicolasNguyen.jpg" medium="image" type="image/jpeg" height="144" width="144"/>
-</item>
-<item>
-  <title>Survival Analysis with nlmixr2</title>
-  <dc:creator>R Consortium</dc:creator>
-  <link>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" class="img-fluid" style="width:30.0%" alt="R Consortium new nlmixr2 Working Group logo"></p>
-<p><em>Original post on the nlmixr2 project blog is <a href="https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/">here</a>.</em></p>
-<p>The nlmixr2 Working Group is expanding what open-source R tooling can support in pharmacometrics, including time-to-event modeling workflows that are important in clinical and drug-development settings.</p>
-<p>In this technical post, Justin Wilkins and the nlmixr2 Development Team show how to fit parametric time-to-event models in nlmixr2 using the package’s custom log-likelihood interface.</p>
-<p>The post walks through simulated two-arm trial data, compares exponential and Gompertz models, and shows how nlmixr2 can support flexible survival modeling workflows in R.</p>
-<p>Read the full post from the nlmixr2 blog: <a href="https://blog.nlmixr2.org/blog/2026-05-28-survival-nlmixr2/">Survival Analysis with nlmixr2</a></p>
-<section id="get-involved-in-the-nlmixr2-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="get-involved-in-the-nlmixr2-working-group">Get involved in the nlmixr2 working group</h2>
-<p>The nlmixr2 working group is open to anyone interested in contributing to the project. You can get involved by:</p>
-<p>Main repo: <a href="https://github.com/nlmixr2/nlmixr2">https://github.com/nlmixr2/nlmixr2</a><br>
-Issues: <a href="https://github.com/nlmixr2/nlmixr2/issues">https://github.com/nlmixr2/nlmixr2/issues</a><br>
-Discussions: <a href="https://github.com/nlmixr2/nlmixr2/discussions">https://github.com/nlmixr2/nlmixr2/discussions</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>pharma</category>
-  <category>submissions</category>
-  <category>clinical research</category>
-  <category>announcements</category>
-  <category>working groups</category>
-  <guid>https://r-consortium.org/posts/survival-analysis-with-nlmixr2/</guid>
-  <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://r-consortium.org/posts/survival-analysis-with-nlmixr2/nlmixr2-logo.png" medium="image" type="image/png" height="166" width="144"/>
 </item>
 </channel>
 </rss>
