@@ -1,0 +1,125 @@
+---
+title: "What's Ahead for R Core? Sustainability, Infrastructure, and the Next Generation of Contributors"
+unpublished: false
+url: "https://r-consortium.org/posts/whats-ahead-for-r-core/"
+description: "R Core members discuss the future of R, including technical modernization, infrastructure sustainability, new funding, and developing the next generation of contributors."
+categories: ["infrastructure", "community", "software development"]
+author: "R Consortium"
+image: "sustaining-r-panel.jpg"
+image-alt: "Webinar banner for Sustaining R: Investing in the People, Infrastructure, and Community Behind R, a panel with Simon Urbanek, Kurt Hornik, and Heather Turner"
+date: "11/16/2026"
+---
+
+{{< video https://youtu.be/LH2oDSjoo28 >}}
+
+R enters the late 2020s with significant new funding and international recognition of its contributions to statistical computing. [R Core's work was recognized in 2026 with the Rousseeuw Prize for Statistics](https://www.rousseeuwprize.org/2026/press-release). The [Sovereign Tech Fund committed $450,000 to the R Foundation](https://r-consortium.org/posts/sovereign-tech-fund-invests-450000-in-r-foundation-to-enhance-r-sustainability-and-security/) to strengthen R's sustainability and security, while the [Research Software Maintenance Fund is supporting a two-year project](https://r-consortium.org/posts/650K-for-R/) focused specifically on expanding the pool of people able to contribute to R. Together, these developments demonstrate substantial institutional support for R's continued development and long-term sustainability.
+
+During the R Consortium webinar [“Sustaining R: Investing in the People, Infrastructure, and Community Behind R”](https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html), R Core members Simon Urbanek, Kurt Hornik, and Heather Turner discussed work already underway to strengthen R's technical foundations and expand the community capable of maintaining them.
+
+The discussion did not present a formal one- or two-year R Core roadmap. But it did identify several clear priorities: reducing technical debt, improving portability and testing, strengthening package infrastructure and software provenance, making R easier to contribute to, and developing the next generation of contributors. Urbanek, Turner, and Hornik each took up one part of that work: the software, the next generation of contributors, and the infrastructure behind both.
+
+## Modernizing R's Technical Foundations
+
+Urbanek focused on keeping R reliable and maintainable through work that often happens behind the scenes. The Sovereign Tech Fund project spans ten milestones across R's technical foundations, including bug fixes, package infrastructure, numerical work across platforms, provenance, testing, documentation, portability, and legacy code. For him, the common theme is sustainability.
+
+Open source ensures that source code is available, but availability alone does not make a project sustainable. Code must remain maintainable. Knowledge needs to be shared. New maintainers must be able to step in. And increasingly, users need confidence in the provenance and security of the software they install.
+
+### Package infrastructure across platforms
+
+One visible piece of that work is R's binary package infrastructure. Historically, R had separate binary package systems for Windows and macOS. Urbanek explained that the work began by making it possible to provide package binaries across platforms, rather than maintaining separate systems tied to particular operating systems. Different R builds and distributions can then define their own repositories and binary package sources.
+
+### Better APIs, documentation, and testing
+
+Another priority is cleaning up and documenting R's APIs, so the interfaces are understandable to people who did not originally create them. More work is also underway around portability and package testing, including containerizing test environments so the same tests can run across configurations and backend libraries and the results can be compared.
+
+### Reducing technical debt
+
+R is more than 30 years old. Some code and libraries embedded in the system date back many years. One current task is deciding what should remain, what should be updated, and what can now be replaced by maintained external libraries, while preserving the stability and backward compatibility on which users depend.
+
+## Supporting the Infrastructure Behind R
+
+Hornik focused on the [R Foundation](https://www.r-project.org/foundation/)'s role in keeping R Core and CRAN running. He described one of its core functions as providing the hardware, software, and services their work requires, much of it invisible to everyday R users.
+
+Email is one example. Infrastructure previously supplied by a university now needs another sustainable home, and the R Foundation is working to address that need. A global open source project cannot assume indefinitely that universities, companies, individual volunteers, or temporary grants will continue supplying critical infrastructure. The Foundation's work also extends beyond technical systems to outreach, community development, and securing the financial resources needed to sustain the project.
+
+## Stability Remains a Design Constraint
+
+Turner emphasized that R Core deliberately works incrementally because users depend on existing R code continuing to work.
+
+“We want to keep things working for people in a predictable way,” Turner said. “We want things to be backwardly compatible, so that your code that you wrote a few years ago still works.”
+
+That has consequences for how quickly R changes.
+
+“Larger things can change, but we tend to work quite incrementally,” she said.
+
+For users in research, industry, and other settings where analyses may need to remain reproducible for years, that conservatism is a feature.
+
+## Building the Next Generation of Maintainers
+
+The Research Software Maintenance Fund is supporting a two-year project focused on expanding the pool of people able to contribute to R. At the time of the webinar, Turner said the project was approximately six months underway. It includes mentoring a cohort of expert contributors, making it easier for people to begin contributing, and work on communication and the broader sustainability of the R Foundation.
+
+Turner said the project aims to “strengthen that contributor community and that pool of people that can keep R going into the future.”
+
+That includes [R Dev Days](https://contributor.r-project.org/r-dev-day/), development sprints, the [R Dev Guide](https://contributor.r-project.org/rdevguide/), contributor infrastructure, and environments that make it easier for a new contributor to build R and begin working with the source.
+
+At a recent three-day sprint at the University of Birmingham, approximately 30 people participated in person, with others joining online. Their work included statistical functions, package installation, translation, documentation, website accessibility, and CRAN-related infrastructure. The event brought together beginners, regular contributors, and experienced R Core members. Part of the objective, Turner explained, is to help participants learn from each other, not simply to complete individual contributions.
+
+## Thinking Beyond the Next Grant
+
+The Sovereign Tech Fund and Research Software Maintenance Fund have enabled substantial work. But both are time-limited investments. The longer-term question is how to make the technical and human infrastructure around R sustainable beyond individual grants.
+
+Reflecting on the Rousseeuw Prize, Hornik connected recognition of R's achievements over the past three decades with the responsibility to sustain the project for decades to come.
+
+“To make sure that R is still up and running and doing well in the next 30 years,” he said.
+
+The work underway is about ensuring that the language remains reliable, its infrastructure remains sustainable, and a new generation of contributors is ready to carry the project forward.
+
+Watch the full discussion and audience Q&A on the [R Consortium webinar page](https://r-consortium.org/webinars/sustaining-r-investing-in-the-people-infrastructure-and-community.html).
+
+<style>
+.support-r {
+  display: grid;
+  grid-template-columns: 220px minmax(300px, 360px);
+  gap: 1.5rem 2rem;
+  align-items: start;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.support-r img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.support-r p {
+  margin-bottom: 0.35rem !important;
+}
+
+@media (max-width: 768px) {
+  .support-r {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
+</style>
+
+## Support R Financially
+
+::: {.support-r}
+::: {.support-r-item}
+[![](qr-contribute-to-r.png){fig-alt="QR code linking to contributor.r-project.org"}](https://contributor.r-project.org/)
+
+**Contribute to R**
+
+[contributor.r-project.org](https://contributor.r-project.org/)
+:::
+
+::: {.support-r-item}
+[![](qr-r-foundation-donations.png){fig-alt="QR code linking to the R Foundation donations page"}](https://www.r-project.org/foundation/donations.html)
+
+**Support the R Foundation**
+
+[r&#8209;project.org/foundation/donations.html](https://www.r-project.org/foundation/donations.html)
+:::
+:::
